@@ -32,8 +32,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
     pub type ServerHandshakeState = crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState;
     pub fn AbortServerHandshake(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-        recordLayer: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+        recordLayer: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
+        >,
         alertDescription: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -41,204 +45,267 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AbortServerHandshake", (state, recordLayer, alertDescription))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Accept(
         &mut self,
-        server: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsServer,
-        transport: *mut crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport,
+        server: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsServer,
+        >,
+        transport: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport = __cordl_object
-            .invoke("Accept", (server, transport))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport,
+        > = __cordl_object.invoke("Accept", (server, transport))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ExpectCertificateVerifyMessage(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ExpectCertificateVerifyMessage", (state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateCertificateRequest(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-        certificateRequest: *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+        certificateRequest: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object
             .invoke("GenerateCertificateRequest", (state, certificateRequest))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateCertificateStatus(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-        certificateStatus: *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateStatus,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+        certificateStatus: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::CertificateStatus,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object
             .invoke("GenerateCertificateStatus", (state, certificateStatus))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateNewSessionTicket(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-        newSessionTicket: *mut crate::Org::BouncyCastle::Crypto::Tls::NewSessionTicket,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+        newSessionTicket: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::NewSessionTicket,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object
             .invoke("GenerateNewSessionTicket", (state, newSessionTicket))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateServerHello(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GenerateServerHello", (state))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("GenerateServerHello", (state))?;
+        Ok(__cordl_ret.into())
     }
     pub fn InvalidateSession(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvalidateSession", (state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        secureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        secureRandom: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (secureRandom))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn NotifyClientCertificate(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-        clientCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+        clientCertificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NotifyClientCertificate", (state, clientCertificate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessCertificateVerify(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-        body: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        prepareFinishHash: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+        body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        prepareFinishHash: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessCertificateVerify", (state, body, prepareFinishHash))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessClientCertificate(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-        body: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+        body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessClientCertificate", (state, body))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessClientHello(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-        body: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+        body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessClientHello", (state, body))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessClientKeyExchange(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-        body: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+        body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessClientKeyExchange", (state, body))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessClientSupplementalData(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-        body: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+        body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessClientSupplementalData", (state, body))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ServerHandshake(
         &mut self,
-        state: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
-        recordLayer: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
+        state: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState,
+        >,
+        recordLayer: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport = __cordl_object
-            .invoke("ServerHandshake", (state, recordLayer))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport,
+        > = __cordl_object.invoke("ServerHandshake", (state, recordLayer))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        secureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        secureRandom: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (secureRandom))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_VerifyRequests(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_VerifyRequests", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_VerifyRequests(
         &mut self,
@@ -249,7 +316,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_VerifyRequests", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
@@ -309,12 +376,12 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeSta
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState")]
 impl crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -324,7 +391,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeSt
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState")]

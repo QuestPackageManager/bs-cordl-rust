@@ -44,33 +44,33 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::RectMask2D {
 impl crate::UnityEngine::UI::RectMask2D {
     pub fn AddClippable(
         &mut self,
-        clippable: *mut crate::UnityEngine::UI::IClippable,
+        clippable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddClippable", (clippable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsRaycastLocationValid(
         &mut self,
         sp: crate::UnityEngine::Vector2,
-        eventCamera: *mut crate::UnityEngine::Camera,
+        eventCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsRaycastLocationValid", (sp, eventCamera))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnCanvasHierarchyChanged(
         &mut self,
@@ -80,7 +80,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnCanvasHierarchyChanged", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -110,7 +110,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnTransformParentChanged(
         &mut self,
@@ -120,7 +120,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnTransformParentChanged", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PerformClipping(
         &mut self,
@@ -130,18 +130,18 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PerformClipping", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveClippable(
         &mut self,
-        clippable: *mut crate::UnityEngine::UI::IClippable,
+        clippable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveClippable", (clippable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateClipSoftness(
         &mut self,
@@ -151,7 +151,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateClipSoftness", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -161,17 +161,19 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Canvas(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Canvas> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Canvas = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas> = __cordl_object
             .invoke("get_Canvas", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_canvasRect(
         &mut self,
@@ -181,7 +183,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
             .invoke("get_canvasRect", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_padding(
         &mut self,
@@ -191,17 +193,19 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: crate::UnityEngine::Vector4 = __cordl_object
             .invoke("get_padding", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rectTransform(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RectTransform> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::RectTransform = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform> = __cordl_object
             .invoke("get_rectTransform", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rootCanvasRect(
         &mut self,
@@ -211,7 +215,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
             .invoke("get_rootCanvasRect", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_softness(
         &mut self,
@@ -221,7 +225,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: crate::UnityEngine::Vector2Int = __cordl_object
             .invoke("get_softness", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_padding(
         &mut self,
@@ -232,7 +236,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_padding", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_softness(
         &mut self,
@@ -243,7 +247,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_softness", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UI+RectMask2D")]

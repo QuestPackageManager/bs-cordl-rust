@@ -26,24 +26,28 @@ impl std::ops::DerefMut for crate::System::Resources::FileBasedResourceGroveler 
 #[cfg(feature = "System+Resources+FileBasedResourceGroveler")]
 impl crate::System::Resources::FileBasedResourceGroveler {
     pub fn New(
-        mediator: *mut crate::System::Resources::ResourceManager_ResourceManagerMediator,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        mediator: quest_hook::libil2cpp::Gc<
+            crate::System::Resources::ResourceManager_ResourceManagerMediator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (mediator))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        mediator: *mut crate::System::Resources::ResourceManager_ResourceManagerMediator,
+        mediator: quest_hook::libil2cpp::Gc<
+            crate::System::Resources::ResourceManager_ResourceManagerMediator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (mediator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Resources+FileBasedResourceGroveler")]

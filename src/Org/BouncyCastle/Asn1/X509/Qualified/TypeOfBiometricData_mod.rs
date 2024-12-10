@@ -31,43 +31,50 @@ impl crate::Org::BouncyCastle::Asn1::X509::Qualified::TypeOfBiometricData {
     pub const HandwrittenSignature: i32 = 1i32;
     pub const Picture: i32 = 0i32;
     pub fn New_DerObjectIdentifier1(
-        biometricDataOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        biometricDataOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (biometricDataOid))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i32_0(
         predefinedBiometricType: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (predefinedBiometricType))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = __cordl_object.invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_DerObjectIdentifier1(
         &mut self,
-        biometricDataOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        biometricDataOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (biometricDataOid))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_0(
         &mut self,
@@ -78,33 +85,34 @@ impl crate::Org::BouncyCastle::Asn1::X509::Qualified::TypeOfBiometricData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (predefinedBiometricType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_BiometricDataOid(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier = __cordl_object
-            .invoke("get_BiometricDataOid", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        > = __cordl_object.invoke("get_BiometricDataOid", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsPredefined(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsPredefined", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PredefinedBiometricType(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_PredefinedBiometricType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Qualified+TypeOfBiometricData")]

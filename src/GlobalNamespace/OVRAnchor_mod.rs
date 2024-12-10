@@ -29,18 +29,18 @@ impl crate::GlobalNamespace::OVRAnchor {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_OVRAnchor0(
         &mut self,
@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::OVRAnchor {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetComponent<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::OVRAnchor {
             "GetComponent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::OVRAnchor {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SupportsComponent<T>(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -83,17 +83,17 @@ impl crate::GlobalNamespace::OVRAnchor {
             "SupportsComponent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetComponent<T>(
         &mut self,
@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::OVRAnchor {
             "TryGetComponent",
             (component),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::OVRAnchor {
             ".ctor",
             (handle, uuid),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -128,7 +128,7 @@ impl crate::GlobalNamespace::OVRAnchor {
             "get_Handle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Uuid(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
         let __cordl_ret: crate::System::Guid = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -136,6 +136,6 @@ impl crate::GlobalNamespace::OVRAnchor {
             "get_Uuid",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -46,26 +46,34 @@ impl crate::UnityEngine::UI::Scrollbar {
     pub type _ClickRepeat_d__58 = crate::UnityEngine::UI::Scrollbar__ClickRepeat_d__58;
     pub fn ClickRepeat_PointerEventData0(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("ClickRepeat", (eventData))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("ClickRepeat", (eventData))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ClickRepeat_Vector2_Camera1(
         &mut self,
         screenPosition: crate::UnityEngine::Vector2,
-        camera: *mut crate::UnityEngine::Camera,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("ClickRepeat", (screenPosition, camera))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("ClickRepeat", (screenPosition, camera))?;
+        Ok(__cordl_ret.into())
     }
     pub fn DoUpdateDrag(
         &mut self,
@@ -77,47 +85,55 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoUpdateDrag", (handleCorner, remainingSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindSelectableOnDown(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable> = __cordl_object
             .invoke("FindSelectableOnDown", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindSelectableOnLeft(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable> = __cordl_object
             .invoke("FindSelectableOnLeft", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindSelectableOnRight(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable> = __cordl_object
             .invoke("FindSelectableOnRight", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindSelectableOnUp(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Selectable> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Selectable = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable> = __cordl_object
             .invoke("FindSelectableOnUp", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GraphicUpdateComplete(
         &mut self,
@@ -127,7 +143,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GraphicUpdateComplete", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LayoutComplete(
         &mut self,
@@ -137,35 +153,39 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LayoutComplete", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MayDrag(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("MayDrag", (eventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnBeginDrag(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBeginDrag", (eventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -175,18 +195,20 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDrag(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDrag", (eventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -196,51 +218,59 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnInitializePotentialDrag(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnInitializePotentialDrag", (eventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnMove(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::AxisEventData,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::AxisEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnMove", (eventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPointerDown(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPointerDown", (eventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPointerUp(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPointerUp", (eventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnRectTransformDimensionsChange(
         &mut self,
@@ -250,7 +280,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnRectTransformDimensionsChange", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Rebuild(
         &mut self,
@@ -261,7 +291,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Rebuild", (executing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Set(
         &mut self,
@@ -273,7 +303,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Set", (input, sendCallback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDirection(
         &mut self,
@@ -285,7 +315,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDirection", (direction, includeRectLayouts))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetValueWithoutNotify(
         &mut self,
@@ -296,17 +326,19 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetValueWithoutNotify", (input))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UI_ICanvasElement_get_transform(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = __cordl_object
             .invoke("UnityEngine.UI.ICanvasElement.get_transform", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -316,7 +348,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateCachedReferences(
         &mut self,
@@ -326,18 +358,20 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateCachedReferences", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateDrag(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateDrag", (eventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateVisuals(
         &mut self,
@@ -347,7 +381,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateVisuals", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -357,7 +391,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_axis(
         &mut self,
@@ -367,7 +401,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: crate::UnityEngine::UI::Scrollbar_Axis = __cordl_object
             .invoke("get_axis", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_direction(
         &mut self,
@@ -377,64 +411,67 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: crate::UnityEngine::UI::Scrollbar_Direction = __cordl_object
             .invoke("get_direction", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_handleRect(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RectTransform> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::RectTransform = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform> = __cordl_object
             .invoke("get_handleRect", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_numberOfSteps(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_numberOfSteps", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_onValueChanged(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UI::Scrollbar_ScrollEvent,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Scrollbar_ScrollEvent>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Scrollbar_ScrollEvent = __cordl_object
-            .invoke("get_onValueChanged", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UI::Scrollbar_ScrollEvent,
+        > = __cordl_object.invoke("get_onValueChanged", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_reverseValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_reverseValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_size(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_size", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_stepSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_stepSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_value", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_direction(
         &mut self,
@@ -445,18 +482,18 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_direction", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_handleRect(
         &mut self,
-        value: *mut crate::UnityEngine::RectTransform,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_handleRect", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_numberOfSteps(
         &mut self,
@@ -467,18 +504,18 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_numberOfSteps", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_onValueChanged(
         &mut self,
-        value: *mut crate::UnityEngine::UI::Scrollbar_ScrollEvent,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Scrollbar_ScrollEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_onValueChanged", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_size(
         &mut self,
@@ -489,7 +526,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_size", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_value(
         &mut self,
@@ -500,7 +537,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_value", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar")]
@@ -564,12 +601,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::Scrollbar_ScrollEvent {
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
 impl crate::UnityEngine::UI::Scrollbar_ScrollEvent {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -579,7 +616,7 @@ impl crate::UnityEngine::UI::Scrollbar_ScrollEvent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]

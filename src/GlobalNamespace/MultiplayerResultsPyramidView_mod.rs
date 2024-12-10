@@ -42,17 +42,19 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerResultsPyramidVie
 }
 #[cfg(feature = "MultiplayerResultsPyramidView")]
 impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PrespawnAvatars(
         &mut self,
-        activePlayers: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::IConnectedPlayer,
+        activePlayers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::IConnectedPlayer,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -60,15 +62,17 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PrespawnAvatars", (activePlayers))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetupResults(
         &mut self,
-        resultsData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+        resultsData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            >,
         >,
-        badgeStartTransform: *mut crate::UnityEngine::Transform,
-        badgeMidTransform: *mut crate::UnityEngine::Transform,
+        badgeStartTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        badgeMidTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,7 +82,7 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
                 "SetupResults",
                 (resultsData, badgeStartTransform, badgeMidTransform),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -88,33 +92,37 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_badgeTimelines(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::GameObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
         > = __cordl_object.invoke("get_badgeTimelines", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_resultAvatarDirectors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::GameObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
         > = __cordl_object.invoke("get_resultAvatarDirectors", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerResultsPyramidView")]

@@ -43,32 +43,33 @@ impl crate::GlobalNamespace::AveragingValueRecorder {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetAverageValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHistoryValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Queue_1<f32>,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Queue_1<f32>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Queue_1<f32> = __cordl_object
-            .invoke("GetHistoryValues", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Queue_1<f32>,
+        > = __cordl_object.invoke("GetHistoryValues", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLastValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetLastValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         averageWindowDuration: f32,
         historyWindowDuration: f32,
         historyValuesPerSecond: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -76,7 +77,7 @@ impl crate::GlobalNamespace::AveragingValueRecorder {
                 ".ctor",
                 (averageWindowDuration, historyWindowDuration, historyValuesPerSecond),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Update(
         &mut self,
@@ -88,7 +89,7 @@ impl crate::GlobalNamespace::AveragingValueRecorder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (value, deltaTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -104,7 +105,7 @@ impl crate::GlobalNamespace::AveragingValueRecorder {
                 ".ctor",
                 (averageWindowDuration, historyWindowDuration, historyValuesPerSecond),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "AveragingValueRecorder")]
@@ -153,7 +154,7 @@ impl crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
             ".ctor",
             (value, _cordl_time),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -161,7 +162,7 @@ impl crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
             "get_time",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -169,7 +170,7 @@ impl crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
             "get_value",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_time(
         &mut self,
@@ -180,7 +181,7 @@ impl crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
             "set_time",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_value(
         &mut self,
@@ -191,6 +192,6 @@ impl crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
             "set_value",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

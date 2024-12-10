@@ -26,16 +26,21 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvide
 impl crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
     pub fn Get(
         &mut self,
-        entropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
+        entropySource: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IEntropySource,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg = __cordl_object
-            .invoke("Get", (entropySource))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
+        > = __cordl_object.invoke("Get", (entropySource))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

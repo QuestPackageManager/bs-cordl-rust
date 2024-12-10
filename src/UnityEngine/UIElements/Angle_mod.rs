@@ -34,18 +34,18 @@ impl crate::UnityEngine::UIElements::Angle {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -53,7 +53,7 @@ impl crate::UnityEngine::UIElements::Angle {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToDegrees(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -61,17 +61,17 @@ impl crate::UnityEngine::UIElements::Angle {
             "ToDegrees",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_AngleUnit0(
         &mut self,
@@ -83,7 +83,7 @@ impl crate::UnityEngine::UIElements::Angle {
             ".ctor",
             (value, unit),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Angle_Unit1(
         &mut self,
@@ -95,7 +95,7 @@ impl crate::UnityEngine::UIElements::Angle {
             ".ctor",
             (value, unit),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -103,7 +103,7 @@ impl crate::UnityEngine::UIElements::Angle {
             "get_value",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Angle+Unit")]

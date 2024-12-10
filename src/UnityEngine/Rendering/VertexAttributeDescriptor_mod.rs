@@ -28,14 +28,14 @@ for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
 impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
     pub fn Equals_Il2CppObject0(
         &mut self,
-        other: *mut quest_hook::libil2cpp::Il2CppObject,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_VertexAttributeDescriptor1(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -54,17 +54,17 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -78,7 +78,7 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
             ".ctor",
             (attribute, format, dimension, stream),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_attribute(
         &mut self,
@@ -88,7 +88,7 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
             "get_attribute",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dimension(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -96,7 +96,7 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
             "get_dimension",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_format(
         &mut self,
@@ -108,7 +108,7 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
             "get_format",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_stream(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -116,7 +116,7 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
             "get_stream",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_attribute(
         &mut self,
@@ -127,7 +127,7 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
             "set_attribute",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dimension(
         &mut self,
@@ -138,7 +138,7 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
             "set_dimension",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_format(
         &mut self,
@@ -149,7 +149,7 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
             "set_format",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_stream(
         &mut self,
@@ -160,6 +160,6 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
             "set_stream",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

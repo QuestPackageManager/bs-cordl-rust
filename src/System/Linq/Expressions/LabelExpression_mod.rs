@@ -28,64 +28,75 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::LabelExpression {
 impl crate::System::Linq::Expressions::LabelExpression {
     pub fn Accept(
         &mut self,
-        visitor: *mut crate::System::Linq::Expressions::ExpressionVisitor,
+        visitor: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ExpressionVisitor,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("Accept", (visitor))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        > = __cordl_object.invoke("Accept", (visitor))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        label: *mut crate::System::Linq::Expressions::LabelTarget,
-        defaultValue: *mut crate::System::Linq::Expressions::Expression,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        label: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+        defaultValue: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (label, defaultValue))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Update(
         &mut self,
-        target: *mut crate::System::Linq::Expressions::LabelTarget,
-        defaultValue: *mut crate::System::Linq::Expressions::Expression,
+        target: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+        defaultValue: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::LabelExpression,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelExpression>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::LabelExpression = __cordl_object
-            .invoke("Update", (target, defaultValue))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelExpression,
+        > = __cordl_object.invoke("Update", (target, defaultValue))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        label: *mut crate::System::Linq::Expressions::LabelTarget,
-        defaultValue: *mut crate::System::Linq::Expressions::Expression,
+        label: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+        defaultValue: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (label, defaultValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DefaultValue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("get_DefaultValue", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        > = __cordl_object.invoke("get_DefaultValue", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_NodeType(
         &mut self,
@@ -97,29 +108,30 @@ impl crate::System::Linq::Expressions::LabelExpression {
         );
         let __cordl_ret: crate::System::Linq::Expressions::ExpressionType = __cordl_object
             .invoke("get_NodeType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Target(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::LabelTarget,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::LabelTarget = __cordl_object
-            .invoke("get_Target", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelTarget,
+        > = __cordl_object.invoke("get_Target", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+LabelExpression")]

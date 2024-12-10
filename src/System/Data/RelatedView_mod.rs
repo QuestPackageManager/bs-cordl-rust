@@ -32,94 +32,100 @@ impl std::ops::DerefMut for crate::System::Data::RelatedView {
 impl crate::System::Data::RelatedView {
     pub fn AddNew(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataRowView> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::DataRowView = __cordl_object
-            .invoke("AddNew", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetFilter(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::IFilter> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Data::IFilter = __cordl_object
-            .invoke("GetFilter", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetParentValues(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataRowView>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowView> = __cordl_object
+            .invoke("AddNew", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFilter(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter> = __cordl_object
+            .invoke("GetFilter", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetParentValues(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("GetParentValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
-        row: *mut crate::System::Data::DataRow,
+        row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", (row, version))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_DataRowView_DataKey_Il2CppArray1(
-        parentRowView: *mut crate::System::Data::DataRowView,
+        parentRowView: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowView>,
         parentKey: crate::System::Data::DataKey,
-        childKeyColumns: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Data::DataColumn,
+        childKeyColumns: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (parentRowView, parentKey, childKeyColumns))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppArray_Il2CppArray0(
-        columns: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Data::DataColumn,
+        columns: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
-        values: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        values: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (columns, values))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetIndex(
         &mut self,
-        newSort: *mut quest_hook::libil2cpp::Il2CppString,
+        newSort: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newRowStates: crate::System::Data::DataViewRowState,
-        newRowFilter: *mut crate::System::Data::IFilter,
+        newRowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetIndex", (newSort, newRowStates, newRowFilter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_DataRowView_DataKey_Il2CppArray1(
         &mut self,
-        parentRowView: *mut crate::System::Data::DataRowView,
+        parentRowView: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowView>,
         parentKey: crate::System::Data::DataKey,
-        childKeyColumns: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Data::DataColumn,
+        childKeyColumns: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -127,15 +133,15 @@ impl crate::System::Data::RelatedView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (parentRowView, parentKey, childKeyColumns))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_Il2CppArray0(
         &mut self,
-        columns: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Data::DataColumn,
+        columns: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
-        values: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        values: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -143,7 +149,7 @@ impl crate::System::Data::RelatedView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (columns, values))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Data+RelatedView")]

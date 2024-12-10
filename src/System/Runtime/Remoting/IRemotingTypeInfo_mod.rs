@@ -26,14 +26,14 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::IRemotingTypeInfo 
 impl crate::System::Runtime::Remoting::IRemotingTypeInfo {
     pub fn CanCastTo(
         &mut self,
-        fromType: *mut crate::System::Type,
-        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        fromType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CanCastTo", (fromType, o))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -42,13 +42,16 @@ impl crate::System::Runtime::Remoting::IRemotingTypeInfo {
     }
     pub fn get_TypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_TypeName", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_TypeName", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+IRemotingTypeInfo")]

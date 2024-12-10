@@ -36,18 +36,20 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SettingsApplicatorSO {
 impl crate::GlobalNamespace::SettingsApplicatorSO {
     pub fn ApplyMainSettings(
         &mut self,
-        settings: *mut crate::BeatSaber::GameSettings::MainSettings,
+        settings: quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::MainSettings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyMainSettings", (settings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPerformancePreset(
         &mut self,
-        preset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
+        preset: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        >,
         sceneType: crate::GlobalNamespace::SceneType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -55,7 +57,7 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyPerformancePreset", (preset, sceneType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyWindowSettings(
         &mut self,
@@ -67,14 +69,14 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyWindowSettings", (resolution, windowMode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn NotifyRoomTransformOffsetWasUpdated(
         &mut self,
@@ -84,7 +86,7 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NotifyRoomTransformOffsetWasUpdated", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -94,29 +96,29 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_roomTransformOffsetDidUpdateEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_roomTransformOffsetDidUpdateEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_roomTransformOffsetDidUpdateEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_roomTransformOffsetDidUpdateEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SettingsApplicatorSO")]

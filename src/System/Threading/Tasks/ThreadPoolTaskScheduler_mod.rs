@@ -27,12 +27,12 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::ThreadPoolTaskSched
 impl crate::System::Threading::Tasks::ThreadPoolTaskScheduler {
     #[cfg(feature = "System+Threading+Tasks+ThreadPoolTaskScheduler+__c")]
     pub type __c = crate::System::Threading::Tasks::ThreadPoolTaskScheduler___c;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn NotifyWorkItemProgress(
         &mut self,
@@ -42,32 +42,32 @@ impl crate::System::Threading::Tasks::ThreadPoolTaskScheduler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NotifyWorkItemProgress", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn QueueTask(
         &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("QueueTask", (task))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryDequeue(
         &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryDequeue", (task))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryExecuteTaskInline(
         &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         taskWasPreviouslyQueued: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -75,7 +75,7 @@ impl crate::System::Threading::Tasks::ThreadPoolTaskScheduler {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryExecuteTaskInline", (task, taskWasPreviouslyQueued))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::System::Threading::Tasks::ThreadPoolTaskScheduler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RequiresAtomicStartTransition(
         &mut self,
@@ -95,7 +95,7 @@ impl crate::System::Threading::Tasks::ThreadPoolTaskScheduler {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_RequiresAtomicStartTransition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+Tasks+ThreadPoolTaskScheduler")]

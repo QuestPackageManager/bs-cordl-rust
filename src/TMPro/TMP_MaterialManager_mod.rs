@@ -77,12 +77,12 @@ impl std::ops::DerefMut for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
 }
 #[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
 impl crate::TMPro::TMP_MaterialManager_FallbackMaterial {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::TMPro::TMP_MaterialManager_FallbackMaterial {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
@@ -135,12 +135,12 @@ impl std::ops::DerefMut for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
 }
 #[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
 impl crate::TMPro::TMP_MaterialManager_MaskingMaterial {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -150,7 +150,7 @@ impl crate::TMPro::TMP_MaterialManager_MaskingMaterial {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]

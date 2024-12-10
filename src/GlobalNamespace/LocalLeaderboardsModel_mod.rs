@@ -65,8 +65,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
     pub type __c = crate::GlobalNamespace::LocalLeaderboardsModel___c;
     pub fn AddScore_Il2CppString_i32__cordl_bool1(
         &mut self,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
-        playerName: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         score: i32,
         fullCombo: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -75,13 +75,13 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddScore", (leaderboardId, playerName, score, fullCombo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddScore_LocalLeaderboardsModel_LeaderboardType_Il2CppString_i32__cordl_bool0(
         &mut self,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
-        playerName: *mut quest_hook::libil2cpp::Il2CppString,
+        playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         score: i32,
         fullCombo: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -93,18 +93,21 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                 "AddScore",
                 (leaderboardId, leaderboardType, playerName, score, fullCombo),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearAllLeaderboardsAsync(
         &mut self,
         deleteLeaderboardFile: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("ClearAllLeaderboardsAsync", (deleteLeaderboardFile))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("ClearAllLeaderboardsAsync", (deleteLeaderboardFile))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ClearLastScorePosition(
         &mut self,
@@ -114,29 +117,29 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearLastScorePosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearLeaderboard(
         &mut self,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearLeaderboard", (leaderboardId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCurrentTimestamp(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("GetCurrentTimestamp", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHighScore(
         &mut self,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -144,11 +147,11 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetHighScore", (leaderboardId, leaderboardType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLastScorePosition(
         &mut self,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -156,41 +159,49 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetLastScorePosition", (leaderboardId, leaderboardType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLeaderboardData(
         &mut self,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData = __cordl_object
-            .invoke("GetLeaderboardData", (leaderboardId, leaderboardType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetLeaderboardsData(
-        &mut self,
-        leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        > = __cordl_object
+            .invoke("GetLeaderboardData", (leaderboardId, leaderboardType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLeaderboardsData(
+        &mut self,
+        leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            >,
         > = __cordl_object.invoke("GetLeaderboardsData", (leaderboardType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPositionInLeaderboard(
         &mut self,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
         score: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -202,24 +213,28 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                 "GetPositionInLeaderboard",
                 (leaderboardId, leaderboardType, score),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetScores(
         &mut self,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+            >,
         > = __cordl_object.invoke("GetScores", (leaderboardId, leaderboardType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Load(
         &mut self,
@@ -229,17 +244,20 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Load", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("LoadAsync", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("LoadAsync", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn LoadInternal(
         &mut self,
@@ -249,104 +267,125 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LoadInternal", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadLeaderboardsData(
         &mut self,
-        filename: *mut quest_hook::libil2cpp::Il2CppString,
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            >,
         > = __cordl_object.invoke("LoadLeaderboardsData", (filename))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadLeaderboardsDataAsync(
         &mut self,
-        filename: *mut quest_hook::libil2cpp::Il2CppString,
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Collections::Generic::List_1<
+                    *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                >,
             >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Collections::Generic::List_1<
+                    *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                >,
             >,
         > = __cordl_object.invoke("LoadLeaderboardsDataAsync", (filename))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
-        localLeaderboardsSettingsSo: *mut crate::GlobalNamespace::LocalLeaderboardsSettingsSO,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+        localLeaderboardsSettingsSo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LocalLeaderboardsSettingsSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (fileStorage, localLeaderboardsSettingsSo))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SaveAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("SaveAsync", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("SaveAsync", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn SaveLeaderboardsData(
         &mut self,
-        filename: *mut quest_hook::libil2cpp::Il2CppString,
-        leaderboardsData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        leaderboardsData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("SaveLeaderboardsData", (filename, leaderboardsData))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("SaveLeaderboardsData", (filename, leaderboardsData))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SaveLeaderboardsDataAsync(
         &mut self,
-        filename: *mut quest_hook::libil2cpp::Il2CppString,
-        json: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("SaveLeaderboardsDataAsync", (filename, json))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("SaveLeaderboardsDataAsync", (filename, json))?;
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateDailyLeaderboard(
         &mut self,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateDailyLeaderboard", (leaderboardId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WillScoreGoIntoLeaderboard_LocalLeaderboardsModel_LeaderboardType_i32_0(
         &mut self,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
         score: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -358,11 +397,11 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                 "WillScoreGoIntoLeaderboard",
                 (leaderboardId, leaderboardType, score),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WillScoreGoIntoLeaderboard_i32_1(
         &mut self,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         score: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -370,25 +409,29 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("WillScoreGoIntoLeaderboard", (leaderboardId, score))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
-        localLeaderboardsSettingsSo: *mut crate::GlobalNamespace::LocalLeaderboardsSettingsSO,
+        fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+        localLeaderboardsSettingsSo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LocalLeaderboardsSettingsSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (fileStorage, localLeaderboardsSettingsSo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_newScoreWasAddedToLeaderboardEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -396,13 +439,15 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_newScoreWasAddedToLeaderboardEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_newScoreWasAddedToLeaderboardEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -410,7 +455,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_newScoreWasAddedToLeaderboardEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LocalLeaderboardsModel")]
@@ -455,12 +500,12 @@ for crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
 }
 #[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
 impl crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -470,7 +515,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
@@ -528,12 +573,12 @@ for crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData {
 }
 #[cfg(feature = "LocalLeaderboardsModel+SavedLeaderboardsData")]
 impl crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -543,7 +588,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LocalLeaderboardsModel+SavedLeaderboardsData")]
@@ -587,12 +632,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LocalLeaderboardsModel_Score
 }
 #[cfg(feature = "LocalLeaderboardsModel+ScoreData")]
 impl crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -602,7 +647,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LocalLeaderboardsModel+ScoreData")]

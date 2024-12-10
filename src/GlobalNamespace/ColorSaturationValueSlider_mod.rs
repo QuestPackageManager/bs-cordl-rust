@@ -43,11 +43,11 @@ impl crate::GlobalNamespace::ColorSaturationValueSlider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNormalizedValueDidChange(
         &mut self,
-        slider: *mut crate::HMUI::Slider2D,
+        slider: quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
         normalizedValue: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -55,14 +55,14 @@ impl crate::GlobalNamespace::ColorSaturationValueSlider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleNormalizedValueDidChange", (slider, normalizedValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -72,18 +72,20 @@ impl crate::GlobalNamespace::ColorSaturationValueSlider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPointerUp(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPointerUp", (eventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetHue(
         &mut self,
@@ -94,7 +96,7 @@ impl crate::GlobalNamespace::ColorSaturationValueSlider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHue", (hue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateVisuals(
         &mut self,
@@ -104,7 +106,7 @@ impl crate::GlobalNamespace::ColorSaturationValueSlider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateVisuals", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -114,14 +116,16 @@ impl crate::GlobalNamespace::ColorSaturationValueSlider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_colorSaturationOrValueDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_3<
-            *mut crate::GlobalNamespace::ColorSaturationValueSlider,
-            crate::UnityEngine::Vector2,
-            crate::GlobalNamespace::ColorChangeUIEventType,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<
+                *mut crate::GlobalNamespace::ColorSaturationValueSlider,
+                crate::UnityEngine::Vector2,
+                crate::GlobalNamespace::ColorChangeUIEventType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -129,14 +133,16 @@ impl crate::GlobalNamespace::ColorSaturationValueSlider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_colorSaturationOrValueDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_colorSaturationOrValueDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_3<
-            *mut crate::GlobalNamespace::ColorSaturationValueSlider,
-            crate::UnityEngine::Vector2,
-            crate::GlobalNamespace::ColorChangeUIEventType,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<
+                *mut crate::GlobalNamespace::ColorSaturationValueSlider,
+                crate::UnityEngine::Vector2,
+                crate::GlobalNamespace::ColorChangeUIEventType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -144,7 +150,7 @@ impl crate::GlobalNamespace::ColorSaturationValueSlider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_colorSaturationOrValueDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ColorSaturationValueSlider")]

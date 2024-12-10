@@ -80,7 +80,7 @@ impl<
         );
         let __cordl_ret: TValue = __cordl_object
             .invoke("Create", (param1, param2, param3, param4))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

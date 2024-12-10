@@ -25,49 +25,51 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::OpenSsl::PemWriter {
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+PemWriter")]
 impl crate::Org::BouncyCastle::OpenSsl::PemWriter {
     pub fn New(
-        writer: *mut crate::System::IO::TextWriter,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (writer))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn WriteObject_Il2CppObject0(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteObject", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteObject_Il2CppString_Il2CppArray_SecureRandom1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
-        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
-        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteObject", (obj, algorithm, password, random))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        writer: *mut crate::System::IO::TextWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (writer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+PemWriter")]

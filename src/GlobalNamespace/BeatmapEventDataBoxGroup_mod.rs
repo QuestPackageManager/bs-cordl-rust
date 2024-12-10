@@ -39,68 +39,75 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroup {
     pub type ElementData = crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData;
     pub fn CompareTo(
         &mut self,
-        b: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        b: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (b))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCopyWithNewBeat(
         &mut self,
         newBeat: f32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup = __cordl_object
-            .invoke("GetCopyWithNewBeat", (newBeat))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        > = __cordl_object.invoke("GetCopyWithNewBeat", (newBeat))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         beat: f32,
-        beatmapEventDataBoxList: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-            *mut crate::GlobalNamespace::BeatmapEventDataBox,
+        beatmapEventDataBoxList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyCollection_1<
+                *mut crate::GlobalNamespace::BeatmapEventDataBox,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (beat, beatmapEventDataBoxList))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveBeatmapEventDataFromBeatmapData(
         &mut self,
-        beatmapData: *mut crate::GlobalNamespace::BeatmapData,
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveBeatmapEventDataFromBeatmapData", (beatmapData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SyncWithBeatmapData(
         &mut self,
         groupId: i32,
-        beatmapData: *mut crate::GlobalNamespace::BeatmapData,
-        beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+        beatToTimeConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatToTimeConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SyncWithBeatmapData", (groupId, beatmapData, beatToTimeConverter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         beat: f32,
-        beatmapEventDataBoxList: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-            *mut crate::GlobalNamespace::BeatmapEventDataBox,
+        beatmapEventDataBoxList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyCollection_1<
+                *mut crate::GlobalNamespace::BeatmapEventDataBox,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -108,24 +115,28 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (beat, beatmapEventDataBoxList))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_elementDataDict(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyDictionary_2<
-            crate::System::ValueTuple_3<i32, *mut crate::System::Type, i32>,
-            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyDictionary_2<
+                crate::System::ValueTuple_3<i32, *mut crate::System::Type, i32>,
+                *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyDictionary_2<
-            crate::System::ValueTuple_3<i32, *mut crate::System::Type, i32>,
-            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyDictionary_2<
+                crate::System::ValueTuple_3<i32, *mut crate::System::Type, i32>,
+                *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+            >,
         > = __cordl_object.invoke("get_elementDataDict", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapEventDataBoxGroup")]
@@ -178,34 +189,40 @@ for crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
 impl crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
     pub fn ConnectWithNext(
         &mut self,
-        nextElementData: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        nextElementData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ConnectWithNext", (nextElementData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ConnectWithPrevious(
         &mut self,
-        prevElementData: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        prevElementData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ConnectWithPrevious", (prevElementData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        boxGroup: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-        eventBox: *mut crate::GlobalNamespace::BeatmapEventDataBox,
+        boxGroup: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        >,
+        eventBox: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBox>,
         elementId: i32,
         durationOrderIndex: i32,
         distributionOrderIndex: i32,
         startBeat: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -220,7 +237,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
                     startBeat,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ResetConnections(
         &mut self,
@@ -230,12 +247,14 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetConnections", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        boxGroup: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-        eventBox: *mut crate::GlobalNamespace::BeatmapEventDataBox,
+        boxGroup: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        >,
+        eventBox: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBox>,
         elementId: i32,
         durationOrderIndex: i32,
         distributionOrderIndex: i32,
@@ -256,31 +275,37 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
                     startBeat,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_next(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData = __cordl_object
-            .invoke("get_next", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        > = __cordl_object.invoke("get_next", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_previous(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData = __cordl_object
-            .invoke("get_previous", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        > = __cordl_object.invoke("get_previous", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapEventDataBoxGroup+ElementData")]

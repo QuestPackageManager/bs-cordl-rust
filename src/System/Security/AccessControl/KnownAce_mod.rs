@@ -29,22 +29,22 @@ impl crate::System::Security::AccessControl::KnownAce {
     pub fn New_AceType_AceFlags0(
         _cordl_type: crate::System::Security::AccessControl::AceType,
         flags: crate::System::Security::AccessControl::AceFlags,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_type, flags))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppArray_i32_1(
-        binaryForm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (binaryForm, offset))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_AceType_AceFlags0(
         &mut self,
@@ -56,11 +56,11 @@ impl crate::System::Security::AccessControl::KnownAce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_type, flags))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_i32_1(
         &mut self,
-        binaryForm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -68,26 +68,27 @@ impl crate::System::Security::AccessControl::KnownAce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (binaryForm, offset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AccessMask(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_AccessMask", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SecurityIdentifier(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Principal::SecurityIdentifier,
+        quest_hook::libil2cpp::Gc<crate::System::Security::Principal::SecurityIdentifier>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Principal::SecurityIdentifier = __cordl_object
-            .invoke("get_SecurityIdentifier", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        > = __cordl_object.invoke("get_SecurityIdentifier", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_AccessMask(
         &mut self,
@@ -98,18 +99,20 @@ impl crate::System::Security::AccessControl::KnownAce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_AccessMask", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_SecurityIdentifier(
         &mut self,
-        value: *mut crate::System::Security::Principal::SecurityIdentifier,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SecurityIdentifier", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+AccessControl+KnownAce")]

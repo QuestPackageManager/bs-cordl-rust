@@ -32,12 +32,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
 impl crate::GlobalNamespace::OVRScenePlaneMeshFilter {
     #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
     pub type TriangulateBoundaryJob = crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RequestMeshGeneration(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RequestMeshGeneration", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ScheduleMeshGeneration(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ScheduleMeshGeneration", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter")]
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
             "Execute",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
@@ -183,7 +183,7 @@ impl crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NLis
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAt(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -191,7 +191,7 @@ impl crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NLis
             "GetAt",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveAt(
         &mut self,
@@ -202,7 +202,7 @@ impl crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NLis
             "RemoveAt",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -214,7 +214,7 @@ impl crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NLis
             ".ctor",
             (capacity, allocator),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -222,7 +222,7 @@ impl crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NLis
             "get_Count",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -230,7 +230,7 @@ impl crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NLis
             "get_Item",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Count(
         &mut self,
@@ -241,6 +241,6 @@ impl crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NLis
             "set_Count",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

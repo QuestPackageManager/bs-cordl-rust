@@ -42,22 +42,24 @@ impl crate::HMUI::MouseBinder {
         &mut self,
         buttonType: crate::HMUI::MouseBinder_ButtonType,
         keyBindingType: crate::HMUI::MouseBinder_MouseEventType,
-        action: *mut crate::UnityEngine::Events::UnityAction,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddButtonBinding", (buttonType, keyBindingType, action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddButtonBindings(
         &mut self,
-        bindingData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Tuple_3<
-                crate::HMUI::MouseBinder_ButtonType,
-                crate::HMUI::MouseBinder_MouseEventType,
-                *mut crate::UnityEngine::Events::UnityAction,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Tuple_3<
+                    crate::HMUI::MouseBinder_ButtonType,
+                    crate::HMUI::MouseBinder_MouseEventType,
+                    *mut crate::UnityEngine::Events::UnityAction,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -66,23 +68,25 @@ impl crate::HMUI::MouseBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddButtonBindings", (bindingData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddScrollBinding(
         &mut self,
-        action: *mut crate::UnityEngine::Events::UnityAction_1<f32>,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddScrollBinding", (action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddScrollBindings(
         &mut self,
-        bindingData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Events::UnityAction_1<f32>,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::Events::UnityAction_1<f32>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -90,7 +94,7 @@ impl crate::HMUI::MouseBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddScrollBindings", (bindingData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearBindings(
         &mut self,
@@ -100,7 +104,7 @@ impl crate::HMUI::MouseBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearBindings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
@@ -110,7 +114,7 @@ impl crate::HMUI::MouseBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ManualUpdate(
         &mut self,
@@ -120,38 +124,38 @@ impl crate::HMUI::MouseBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ManualUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveButtonBinding(
         &mut self,
         buttonType: crate::HMUI::MouseBinder_ButtonType,
         keyBindingType: crate::HMUI::MouseBinder_MouseEventType,
-        action: *mut crate::UnityEngine::Events::UnityAction,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveButtonBinding", (buttonType, keyBindingType, action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveScrollBinding(
         &mut self,
-        action: *mut crate::UnityEngine::Events::UnityAction_1<f32>,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveScrollBinding", (action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -161,14 +165,14 @@ impl crate::HMUI::MouseBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_enabled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_enabled(
         &mut self,
@@ -179,7 +183,7 @@ impl crate::HMUI::MouseBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_enabled", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+MouseBinder")]

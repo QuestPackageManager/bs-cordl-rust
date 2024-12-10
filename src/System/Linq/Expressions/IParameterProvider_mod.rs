@@ -28,14 +28,15 @@ impl crate::System::Linq::Expressions::IParameterProvider {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::ParameterExpression = __cordl_object
-            .invoke("GetParameter", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        > = __cordl_object.invoke("GetParameter", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -47,7 +48,7 @@ impl crate::System::Linq::Expressions::IParameterProvider {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ParameterCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+IParameterProvider")]

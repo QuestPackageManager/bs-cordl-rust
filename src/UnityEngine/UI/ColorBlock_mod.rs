@@ -36,18 +36,18 @@ impl crate::UnityEngine::UI::ColorBlock {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -55,7 +55,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_colorMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -63,7 +63,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "get_colorMultiplier",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_disabledColor(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "get_disabledColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fadeDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -81,7 +81,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "get_fadeDuration",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_highlightedColor(
         &mut self,
@@ -91,7 +91,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "get_highlightedColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_normalColor(
         &mut self,
@@ -101,7 +101,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "get_normalColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_pressedColor(
         &mut self,
@@ -111,7 +111,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "get_pressedColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_selectedColor(
         &mut self,
@@ -121,7 +121,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "get_selectedColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_colorMultiplier(
         &mut self,
@@ -132,7 +132,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "set_colorMultiplier",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_disabledColor(
         &mut self,
@@ -143,7 +143,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "set_disabledColor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_fadeDuration(
         &mut self,
@@ -154,7 +154,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "set_fadeDuration",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_highlightedColor(
         &mut self,
@@ -165,7 +165,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "set_highlightedColor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_normalColor(
         &mut self,
@@ -176,7 +176,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "set_normalColor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_pressedColor(
         &mut self,
@@ -187,7 +187,7 @@ impl crate::UnityEngine::UI::ColorBlock {
             "set_pressedColor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_selectedColor(
         &mut self,
@@ -198,6 +198,6 @@ impl crate::UnityEngine::UI::ColorBlock {
             "set_selectedColor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

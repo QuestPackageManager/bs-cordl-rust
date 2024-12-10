@@ -24,16 +24,16 @@ impl std::ops::DerefMut for crate::LiteNetLib::Layers::Crc32cLayer {
 }
 #[cfg(feature = "LiteNetLib+Layers+Crc32cLayer")]
 impl crate::LiteNetLib::Layers::Crc32cLayer {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessInboundPacket(
         &mut self,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
@@ -45,11 +45,11 @@ impl crate::LiteNetLib::Layers::Crc32cLayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessInboundPacket", (remoteEndPoint, data, offset, length))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessOutBoundPacket(
         &mut self,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
@@ -61,7 +61,7 @@ impl crate::LiteNetLib::Layers::Crc32cLayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessOutBoundPacket", (remoteEndPoint, data, offset, length))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::LiteNetLib::Layers::Crc32cLayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Layers+Crc32cLayer")]

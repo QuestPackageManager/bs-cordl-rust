@@ -34,7 +34,7 @@ impl crate::UnityEngine::GUIStyleState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cleanup", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
@@ -44,24 +44,24 @@ impl crate::UnityEngine::GUIStyleState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_GUIStyle_IntPtr1(
-        sourceStyle: *mut crate::UnityEngine::GUIStyle,
+        sourceStyle: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
         source: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (sourceStyle, source))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -71,11 +71,11 @@ impl crate::UnityEngine::GUIStyleState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_GUIStyle_IntPtr1(
         &mut self,
-        sourceStyle: *mut crate::UnityEngine::GUIStyle,
+        sourceStyle: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
         source: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -83,7 +83,7 @@ impl crate::UnityEngine::GUIStyleState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (sourceStyle, source))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_textColor(
         &mut self,
@@ -94,7 +94,7 @@ impl crate::UnityEngine::GUIStyleState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_textColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_textColor_Injected(
         &mut self,
@@ -105,7 +105,7 @@ impl crate::UnityEngine::GUIStyleState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_textColor_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+GUIStyleState")]

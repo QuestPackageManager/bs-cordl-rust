@@ -31,18 +31,18 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "ConvertBounds",
             (openXrBounds),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_OVRBounded3D0(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRBounded3D__FromAnchor(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "IOVRAnchorComponent<OVRBounded3D>.FromAnchor",
             (anchor),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRBounded3D__SetEnabledAsync(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "IOVRAnchorComponent<OVRBounded3D>.SetEnabledAsync",
             (enabled, timeout),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRBounded3D__get_Handle(
         &mut self,
@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "IOVRAnchorComponent<OVRBounded3D>.get_Handle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRBounded3D__get_Type(
         &mut self,
@@ -106,17 +106,17 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "IOVRAnchorComponent<OVRBounded3D>.get_Type",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -127,7 +127,7 @@ impl crate::GlobalNamespace::OVRBounded3D {
             ".ctor",
             (anchor),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_BoundingBox(
         &mut self,
@@ -137,7 +137,7 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "get_BoundingBox",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "get_Handle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -153,7 +153,7 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "get_IsEnabled",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -161,7 +161,7 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "get_IsNull",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
@@ -173,6 +173,6 @@ impl crate::GlobalNamespace::OVRBounded3D {
             "get_Type",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

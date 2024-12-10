@@ -73,7 +73,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Add", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ContainsKey(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -86,7 +86,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ContainsKey", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -102,12 +102,14 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enumerate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<TValue>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TValue>,
+        >,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -118,10 +120,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            TValue,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TValue>,
         > = __cordl_object.invoke("Enumerate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Get(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -134,14 +136,16 @@ impl<
             self,
         );
         let __cordl_ret: TValue = __cordl_object.invoke("Get", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEntry(
         &mut self,
         key: TKey,
         value: TValue,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+        >,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -152,16 +156,15 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<
-            TKey,
-            TValue,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
         > = __cordl_object.invoke("GetEntry", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        timeProvider: *mut crate::BGNet::Core::ITimeProvider,
+        timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
         expirationLengthMs: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -172,7 +175,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (timeProvider, expirationLengthMs))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PollUpdate(
         &mut self,
@@ -188,11 +191,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PollUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReleaseEntry(
         &mut self,
-        entry: *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+        entry: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -205,7 +210,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReleaseEntry", (entry))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Remove(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -218,7 +223,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Remove", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveExpiredEntries(
         &mut self,
@@ -234,7 +239,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveExpiredEntries", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResetExpiration(
         &mut self,
@@ -251,7 +256,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetExpiration", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Set(
         &mut self,
@@ -269,12 +274,14 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Set", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IEnumerable_TValue__GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<TValue>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TValue>,
+        >,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -285,15 +292,17 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            TValue,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TValue>,
         > = __cordl_object
             .invoke("System.Collections.Generic.IEnumerable<TValue>.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -303,9 +312,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValue(
         &mut self,
@@ -322,7 +332,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValueAndResetExpiration(
         &mut self,
@@ -340,11 +350,11 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetValueAndResetExpiration", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        timeProvider: *mut crate::BGNet::Core::ITimeProvider,
+        timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
         expirationLengthMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -358,7 +368,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (timeProvider, expirationLengthMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -371,7 +381,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -384,7 +394,7 @@ impl<
             self,
         );
         let __cordl_ret: TValue = __cordl_object.invoke("get_Item", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
@@ -402,7 +412,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ExpiringDictionary_2")]
@@ -476,9 +486,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -489,7 +499,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -503,7 +513,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ExpiringDictionary_2+Entry")]

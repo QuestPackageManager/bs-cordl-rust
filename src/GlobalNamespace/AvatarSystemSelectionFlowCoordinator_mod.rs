@@ -45,14 +45,14 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     pub type _Initialize_d__10 = crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator__Initialize_d__10;
     pub fn BackButtonWasPressed(
         &mut self,
-        topViewController: *mut crate::HMUI::ViewController,
+        topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BackButtonWasPressed", (topViewController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidActivate(
         &mut self,
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidDeactivate(
         &mut self,
@@ -80,12 +80,16 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleAvatarEditorFlowCoordinatorDidFinish(
         &mut self,
-        flowCoordinator: *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        flowCoordinator: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+        >,
+        avatarSystem: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
         finishAction: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -96,7 +100,7 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
                 "HandleAvatarEditorFlowCoordinatorDidFinish",
                 (flowCoordinator, avatarSystem, finishAction),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSelectAvatarSystemViewControllerDidPressContinueButton(
         &mut self,
@@ -106,11 +110,13 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSelectAvatarSystemViewControllerDidPressContinueButton", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSelectAvatarSystemViewControllerDidRequestCreationOfAvatar(
         &mut self,
-        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        avatarSystem: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -120,11 +126,13 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
                 "HandleSelectAvatarSystemViewControllerDidRequestCreationOfAvatar",
                 (avatarSystem),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSelectAvatarSystemViewControllerDidRequestEditOfAvatar(
         &mut self,
-        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        avatarSystem: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -134,11 +142,13 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
                 "HandleSelectAvatarSystemViewControllerDidRequestEditOfAvatar",
                 (avatarSystem),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSelectAvatarSystemViewControllerDidSetAvatarSystemPreferred(
         &mut self,
-        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        avatarSystem: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -148,12 +158,14 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
                 "HandleSelectAvatarSystemViewControllerDidSetAvatarSystemPreferred",
                 (avatarSystem),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
-        avatarSystemsMetadata: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        avatarSystemsMetadata: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -161,25 +173,27 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", (avatarSystemsMetadata))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetAvatarSystemPreferred(
         &mut self,
-        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        avatarSystem: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetAvatarSystemPreferred", (avatarSystem))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Setup(
         &mut self,
@@ -190,12 +204,12 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Setup", (continueButtonVisible))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TopViewControllerWillChange(
         &mut self,
-        oldViewController: *mut crate::HMUI::ViewController,
-        newViewController: *mut crate::HMUI::ViewController,
+        oldViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        newViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -206,18 +220,20 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
                 "TopViewControllerWillChange",
                 (oldViewController, newViewController, animationType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Initialize_b__10_0(
         &mut self,
-        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        avatarSystem: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("<Initialize>b__10_0", (avatarSystem))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -227,13 +243,15 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
-            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -241,13 +259,15 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
-            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -255,7 +275,7 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]

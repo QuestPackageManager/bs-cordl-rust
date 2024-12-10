@@ -29,16 +29,20 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     pub type ObserverState = crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState;
     pub fn Subscribe(
         &mut self,
-        observer: *mut crate::System::IObserver_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        observer: quest_hook::libil2cpp::Gc<
+            crate::System::IObserver_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IDisposable> {
-        let __cordl_ret: *mut crate::System::IDisposable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Subscribe",
             (observer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -91,14 +95,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObs
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -108,7 +112,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObs
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -161,24 +165,24 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState 
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn __ctor_b__2_0(
         &mut self,
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<.ctor>b__2_0", (eventPtr, device))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -188,7 +192,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]

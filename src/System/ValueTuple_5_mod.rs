@@ -70,11 +70,11 @@ impl<
             "CompareTo",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -93,7 +93,7 @@ impl<
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_ValueTuple_5_1(
         &mut self,
@@ -116,7 +116,7 @@ impl<
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -136,11 +136,13 @@ impl<
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCodeCore(
         &mut self,
-        comparer: *mut crate::System::Collections::IEqualityComparer,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEqualityComparer,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -159,12 +161,12 @@ impl<
             "GetHashCodeCore",
             (comparer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IStructuralComparable_CompareTo(
         &mut self,
-        other: *mut quest_hook::libil2cpp::Il2CppObject,
-        comparer: *mut crate::System::Collections::IComparer,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -183,12 +185,14 @@ impl<
             "System.Collections.IStructuralComparable.CompareTo",
             (other, comparer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IStructuralEquatable_Equals(
         &mut self,
-        other: *mut quest_hook::libil2cpp::Il2CppObject,
-        comparer: *mut crate::System::Collections::IEqualityComparer,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEqualityComparer,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -207,11 +211,13 @@ impl<
             "System.Collections.IStructuralEquatable.Equals",
             (other, comparer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IStructuralEquatable_GetHashCode(
         &mut self,
-        comparer: *mut crate::System::Collections::IEqualityComparer,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEqualityComparer,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -230,11 +236,11 @@ impl<
             "System.Collections.IStructuralEquatable.GetHashCode",
             (comparer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_IComparable_CompareTo(
         &mut self,
-        other: *mut quest_hook::libil2cpp::Il2CppObject,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -253,11 +259,13 @@ impl<
             "System.IComparable.CompareTo",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_IValueTupleInternal_GetHashCode(
         &mut self,
-        comparer: *mut crate::System::Collections::IEqualityComparer,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEqualityComparer,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -276,11 +284,13 @@ impl<
             "System.IValueTupleInternal.GetHashCode",
             (comparer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_IValueTupleInternal_ToStringEnd(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -293,12 +303,14 @@ impl<
         T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.IValueTupleInternal.ToStringEnd",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Runtime_CompilerServices_ITuple_get_Length(
         &mut self,
@@ -320,11 +332,13 @@ impl<
             "System.Runtime.CompilerServices.ITuple.get_Length",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -337,12 +351,10 @@ impl<
         T5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -369,6 +381,6 @@ impl<
             ".ctor",
             (item1, item2, item3, item4, item5),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

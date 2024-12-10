@@ -72,7 +72,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyAddressablesOverrides", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -82,18 +82,21 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FetchTokenAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("FetchTokenAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("FetchTokenAsync", (cancellationToken))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
@@ -103,38 +106,48 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeInternalAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<bool>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
-            .invoke("InitializeInternalAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object.invoke("InitializeInternalAsync", (cancellationToken))?;
+        Ok(__cordl_ret.into())
     }
     pub fn InternalIdTransformFunc(
         &mut self,
-        resourceLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        resourceLocation: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("InternalIdTransformFunc", (resourceLocation))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("InternalIdTransformFunc", (resourceLocation))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
-        platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
-        remoteCatalogLoader: *mut crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
-        platform: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        networkConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>,
+        platformUserModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPlatformUserModel,
+        >,
+        remoteCatalogLoader: quest_hook::libil2cpp::Gc<
+            crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
+        >,
+        platform: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -142,59 +155,72 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                 ".ctor",
                 (networkConfig, platformUserModel, remoteCatalogLoader, platform),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateCatalogsAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("UpdateCatalogsAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateCatalogsInternalAsync(
-        &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("UpdateCatalogsInternalAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WaitInitAsync(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<bool>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
-            .invoke("WaitInitAsync", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("UpdateCatalogsAsync", (cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateCatalogsInternalAsync(
+        &mut self,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("UpdateCatalogsInternalAsync", (cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WaitInitAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object.invoke("WaitInitAsync", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn WebRequestOverride(
         &mut self,
-        request: *mut crate::UnityEngine::Networking::UnityWebRequest,
+        request: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequest,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WebRequestOverride", (request))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
-        platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
-        remoteCatalogLoader: *mut crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
-        platform: *mut quest_hook::libil2cpp::Il2CppString,
+        networkConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>,
+        platformUserModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPlatformUserModel,
+        >,
+        remoteCatalogLoader: quest_hook::libil2cpp::Gc<
+            crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
+        >,
+        platform: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -204,29 +230,29 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                 ".ctor",
                 (networkConfig, platformUserModel, remoteCatalogLoader, platform),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didCatalogLoadOrUpdateEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didCatalogLoadOrUpdateEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didCatalogLoadOrUpdateEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didCatalogLoadOrUpdateEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
@@ -282,28 +308,36 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorIn
 )]
 impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {
     pub fn New(
-        resourceLocator: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-        localHash: *mut quest_hook::libil2cpp::Il2CppString,
-        catalogLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        resourceLocator: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
+        localHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        catalogLocation: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (resourceLocator, localHash, catalogLocation))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        resourceLocator: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-        localHash: *mut quest_hook::libil2cpp::Il2CppString,
-        catalogLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        resourceLocator: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
+        localHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        catalogLocation: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (resourceLocator, localHash, catalogLocation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

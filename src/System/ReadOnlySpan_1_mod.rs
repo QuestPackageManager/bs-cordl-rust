@@ -37,11 +37,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             "CopyTo",
             (destination),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -52,7 +52,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -64,7 +64,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPinnableReference(
         &mut self,
@@ -78,7 +78,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             "GetPinnableReference",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Slice_i32_0(
         &mut self,
@@ -93,7 +93,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             "Slice",
             (start),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Slice_i32_1(
         &mut self,
@@ -109,35 +109,35 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             "Slice",
             (start, length),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToArray(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToArray",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToArray", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn TryCopyTo(
         &mut self,
@@ -152,7 +152,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             "TryCopyTo",
             (destination),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_ByRefMut_i32_3(
         &mut self,
@@ -168,11 +168,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             ".ctor",
             (ptr, length),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray0(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -183,11 +183,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             ".ctor",
             (array),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_i32_i32_1(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -200,11 +200,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             ".ctor",
             (array, start, length),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppObject_i32_2(
         &mut self,
-        pointer: *mut quest_hook::libil2cpp::Il2CppObject,
+        pointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -216,7 +216,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             ".ctor",
             (pointer, length),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -228,7 +228,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             "get_IsEmpty",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
@@ -243,7 +243,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             "get_Item",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -255,6 +255,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             "get_Length",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

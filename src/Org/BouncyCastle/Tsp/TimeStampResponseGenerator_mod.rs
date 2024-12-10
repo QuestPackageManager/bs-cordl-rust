@@ -36,89 +36,108 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
     pub type FailInfo = crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo;
     pub fn AddStatusString(
         &mut self,
-        statusString: *mut quest_hook::libil2cpp::Il2CppString,
+        statusString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddStatusString", (statusString))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateFailResponse(
         &mut self,
         status: crate::Org::BouncyCastle::Asn1::Cmp::PkiStatus,
         failInfoField: i32,
-        statusString: *mut quest_hook::libil2cpp::Il2CppString,
+        statusString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Tsp::TimeStampResponse,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampResponse>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Tsp::TimeStampResponse = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampResponse,
+        > = __cordl_object
             .invoke("GenerateFailResponse", (status, failInfoField, statusString))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_DateTime0(
         &mut self,
-        request: *mut crate::Org::BouncyCastle::Tsp::TimeStampRequest,
-        serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        request: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampRequest,
+        >,
+        serialNumber: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        >,
         genTime: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Tsp::TimeStampResponse,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampResponse>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Tsp::TimeStampResponse = __cordl_object
-            .invoke("Generate", (request, serialNumber, genTime))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampResponse,
+        > = __cordl_object.invoke("Generate", (request, serialNumber, genTime))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_DateTimeObject1(
         &mut self,
-        request: *mut crate::Org::BouncyCastle::Tsp::TimeStampRequest,
-        serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
-        genTime: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+        request: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampRequest,
+        >,
+        serialNumber: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        >,
+        genTime: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Tsp::TimeStampResponse,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampResponse>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Tsp::TimeStampResponse = __cordl_object
-            .invoke("Generate", (request, serialNumber, genTime))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampResponse,
+        > = __cordl_object.invoke("Generate", (request, serialNumber, genTime))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPkiStatusInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo = __cordl_object
-            .invoke("GetPkiStatusInfo", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
+        > = __cordl_object.invoke("GetPkiStatusInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_IList1(
-        tokenGenerator: *mut crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
-        acceptedAlgorithms: *mut crate::System::Collections::IList,
-        acceptedPolicy: *mut crate::System::Collections::IList,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        tokenGenerator: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
+        >,
+        acceptedAlgorithms: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        acceptedPolicy: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (tokenGenerator, acceptedAlgorithms, acceptedPolicy))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IList_IList2(
-        tokenGenerator: *mut crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
-        acceptedAlgorithms: *mut crate::System::Collections::IList,
-        acceptedPolicies: *mut crate::System::Collections::IList,
-        acceptedExtensions: *mut crate::System::Collections::IList,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        tokenGenerator: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
+        >,
+        acceptedAlgorithms: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        acceptedPolicies: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        acceptedExtensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -131,17 +150,19 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
                     acceptedExtensions,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_TimeStampTokenGenerator_IList0(
-        tokenGenerator: *mut crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
-        acceptedAlgorithms: *mut crate::System::Collections::IList,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        tokenGenerator: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
+        >,
+        acceptedAlgorithms: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (tokenGenerator, acceptedAlgorithms))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetFailInfoField(
         &mut self,
@@ -152,27 +173,31 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetFailInfoField", (field))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IList1(
         &mut self,
-        tokenGenerator: *mut crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
-        acceptedAlgorithms: *mut crate::System::Collections::IList,
-        acceptedPolicy: *mut crate::System::Collections::IList,
+        tokenGenerator: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
+        >,
+        acceptedAlgorithms: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        acceptedPolicy: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (tokenGenerator, acceptedAlgorithms, acceptedPolicy))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IList_IList2(
         &mut self,
-        tokenGenerator: *mut crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
-        acceptedAlgorithms: *mut crate::System::Collections::IList,
-        acceptedPolicies: *mut crate::System::Collections::IList,
-        acceptedExtensions: *mut crate::System::Collections::IList,
+        tokenGenerator: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
+        >,
+        acceptedAlgorithms: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        acceptedPolicies: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        acceptedExtensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -187,19 +212,21 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
                     acceptedExtensions,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_TimeStampTokenGenerator_IList0(
         &mut self,
-        tokenGenerator: *mut crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
-        acceptedAlgorithms: *mut crate::System::Collections::IList,
+        tokenGenerator: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
+        >,
+        acceptedAlgorithms: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (tokenGenerator, acceptedAlgorithms))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
@@ -241,12 +268,14 @@ for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
 impl crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
-    pub fn New(failInfoValue: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        failInfoValue: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (failInfoValue))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -257,7 +286,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (failInfoValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]

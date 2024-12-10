@@ -67,7 +67,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "AtomicAddAndGet",
             (delta),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AtomicCompareExchange(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "AtomicCompareExchange",
             (newValue, comparand),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AtomicDecrementAndGet(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -87,7 +87,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "AtomicDecrementAndGet",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AtomicExchange(
         &mut self,
@@ -98,7 +98,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "AtomicExchange",
             (newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AtomicIncrementAndGet(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -106,7 +106,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "AtomicIncrementAndGet",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAcquireFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -114,7 +114,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "ReadAcquireFence",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadCompilerOnlyFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -122,7 +122,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "ReadCompilerOnlyFence",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadFullFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -130,7 +130,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "ReadFullFence",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadUnfenced(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -138,17 +138,17 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "ReadUnfenced",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn WriteCompilerOnlyFence(
         &mut self,
@@ -159,7 +159,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "WriteCompilerOnlyFence",
             (newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteFullFence(
         &mut self,
@@ -170,7 +170,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "WriteFullFence",
             (newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteReleaseFence(
         &mut self,
@@ -181,7 +181,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "WriteReleaseFence",
             (newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteUnfenced(
         &mut self,
@@ -192,7 +192,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             "WriteUnfenced",
             (newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -203,6 +203,6 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             ".ctor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -38,11 +38,11 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "InitiateXsdDateTime",
             (parser),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IntToCharArray(
         &mut self,
-        text: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         start: i32,
         value: i32,
         digits: i32,
@@ -52,44 +52,44 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "IntToCharArray",
             (text, start, value, digits),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PrintDate(
         &mut self,
-        sb: *mut crate::System::Text::StringBuilder,
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "PrintDate",
             (sb),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PrintTime(
         &mut self,
-        sb: *mut crate::System::Text::StringBuilder,
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "PrintTime",
             (sb),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PrintZone(
         &mut self,
-        sb: *mut crate::System::Text::StringBuilder,
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "PrintZone",
             (sb),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShortToCharArray(
         &mut self,
-        text: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         start: i32,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -98,17 +98,17 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "ShortToCharArray",
             (text, start, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_DateTimeOffset3(
         &mut self,
@@ -119,7 +119,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             ".ctor",
             (dateTimeOffset),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_DateTimeOffset_XsdDateTimeFlags4(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             ".ctor",
             (dateTimeOffset, kinds),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_DateTime_XsdDateTimeFlags2(
         &mut self,
@@ -143,11 +143,11 @@ impl crate::System::Xml::Schema::XsdDateTime {
             ".ctor",
             (dateTime, kinds),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_XsdDateTimeFlags0(
         &mut self,
-        text: *mut quest_hook::libil2cpp::Il2CppString,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         kinds: crate::System::Xml::Schema::XsdDateTimeFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -155,7 +155,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             ".ctor",
             (text, kinds),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_XsdDateTime_Parser1(
         &mut self,
@@ -166,7 +166,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             ".ctor",
             (parser),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Day(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -174,7 +174,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_Day",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Fraction(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -182,7 +182,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_Fraction",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Hour(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -190,7 +190,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_Hour",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_InternalKind(
         &mut self,
@@ -202,7 +202,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_InternalKind",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_InternalTypeCode(
         &mut self,
@@ -214,7 +214,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_InternalTypeCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Minute(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -222,7 +222,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_Minute",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Month(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -230,7 +230,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_Month",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Second(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -238,7 +238,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_Second",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Year(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -246,7 +246,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_Year",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ZoneHour(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -254,7 +254,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_ZoneHour",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ZoneMinute(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -262,7 +262,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_ZoneMinute",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+XsdDateTime+DateTimeTypeCode")]
@@ -323,7 +323,7 @@ for crate::System::Xml::Schema::XsdDateTime_Parser {
 impl crate::System::Xml::Schema::XsdDateTime_Parser {
     pub fn Parse(
         &mut self,
-        text: *mut quest_hook::libil2cpp::Il2CppString,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         kinds: crate::System::Xml::Schema::XsdDateTimeFlags,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -331,7 +331,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
             "Parse",
             (text, kinds),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Parse2Dig(
         &mut self,
@@ -343,7 +343,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
             "Parse2Dig",
             (start, num),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Parse4Dig(
         &mut self,
@@ -355,7 +355,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
             "Parse4Dig",
             (start, num),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseChar(
         &mut self,
@@ -367,7 +367,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
             "ParseChar",
             (start, ch),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseDate(&mut self, start: i32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -375,7 +375,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
             "ParseDate",
             (start),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseTime(
         &mut self,
@@ -386,7 +386,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
             "ParseTime",
             (start),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseTimeAndWhitespace(
         &mut self,
@@ -397,7 +397,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
             "ParseTimeAndWhitespace",
             (start),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseTimeAndZoneAndWhitespace(
         &mut self,
@@ -408,7 +408,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
             "ParseTimeAndZoneAndWhitespace",
             (start),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseZoneAndWhitespace(
         &mut self,
@@ -419,7 +419,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
             "ParseZoneAndWhitespace",
             (start),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+XsdDateTime+XsdDateTimeKind")]

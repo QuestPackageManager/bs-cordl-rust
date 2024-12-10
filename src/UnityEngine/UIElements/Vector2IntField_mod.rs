@@ -41,41 +41,45 @@ impl crate::UnityEngine::UIElements::Vector2IntField {
     pub fn DescribeFields(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
-                crate::UnityEngine::Vector2Int,
-                *mut crate::UnityEngine::UIElements::IntegerField,
-                i32,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
+                    crate::UnityEngine::Vector2Int,
+                    *mut crate::UnityEngine::UIElements::IntegerField,
+                    i32,
+                >,
             >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
-                crate::UnityEngine::Vector2Int,
-                *mut crate::UnityEngine::UIElements::IntegerField,
-                i32,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
+                    crate::UnityEngine::Vector2Int,
+                    *mut crate::UnityEngine::UIElements::IntegerField,
+                    i32,
+                >,
             >,
         > = __cordl_object.invoke("DescribeFields", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppString1(
-        label: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (label))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -85,18 +89,18 @@ impl crate::UnityEngine::UIElements::Vector2IntField {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString1(
         &mut self,
-        label: *mut quest_hook::libil2cpp::Il2CppString,
+        label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (label))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Vector2IntField")]
@@ -142,12 +146,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Vector2IntField_Uxml
 }
 #[cfg(feature = "UnityEngine+UIElements+Vector2IntField+UxmlFactory")]
 impl crate::UnityEngine::UIElements::Vector2IntField_UxmlFactory {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -157,7 +161,7 @@ impl crate::UnityEngine::UIElements::Vector2IntField_UxmlFactory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Vector2IntField+UxmlFactory")]
@@ -205,8 +209,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Vector2IntField_Uxml
 impl crate::UnityEngine::UIElements::Vector2IntField_UxmlTraits {
     pub fn Init(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -214,14 +218,14 @@ impl crate::UnityEngine::UIElements::Vector2IntField_UxmlTraits {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (ve, bag, cc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -231,7 +235,7 @@ impl crate::UnityEngine::UIElements::Vector2IntField_UxmlTraits {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Vector2IntField+UxmlTraits")]

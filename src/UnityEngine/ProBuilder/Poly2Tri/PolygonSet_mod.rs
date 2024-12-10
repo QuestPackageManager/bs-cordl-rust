@@ -29,30 +29,32 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::PolygonSet
 impl crate::UnityEngine::ProBuilder::Poly2Tri::PolygonSet {
     pub fn Add(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+        p: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::Polygon>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Polygon1(
-        poly: *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        poly: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (poly))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -62,33 +64,39 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PolygonSet {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Polygon1(
         &mut self,
-        poly: *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+        poly: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (poly))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Polygons(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+            >,
         > = __cordl_object.invoke("get_Polygons", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PolygonSet")]

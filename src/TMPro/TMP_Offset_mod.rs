@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_Offset {
 impl crate::TMPro::TMP_Offset {
     pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_TMP_Offset1(
         &mut self,
@@ -43,7 +43,7 @@ impl crate::TMPro::TMP_Offset {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -51,7 +51,7 @@ impl crate::TMPro::TMP_Offset {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_0(
         &mut self,
@@ -65,7 +65,7 @@ impl crate::TMPro::TMP_Offset {
             ".ctor",
             (left, right, top, bottom),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_1(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::TMPro::TMP_Offset {
             ".ctor",
             (horizontal, vertical),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bottom(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -85,7 +85,7 @@ impl crate::TMPro::TMP_Offset {
             "get_bottom",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_horizontal(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -93,7 +93,7 @@ impl crate::TMPro::TMP_Offset {
             "get_horizontal",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_left(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -101,7 +101,7 @@ impl crate::TMPro::TMP_Offset {
             "get_left",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_right(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -109,7 +109,7 @@ impl crate::TMPro::TMP_Offset {
             "get_right",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_top(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -117,7 +117,7 @@ impl crate::TMPro::TMP_Offset {
             "get_top",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_vertical(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -125,7 +125,7 @@ impl crate::TMPro::TMP_Offset {
             "get_vertical",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_bottom(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::TMPro::TMP_Offset {
             "set_bottom",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_horizontal(
         &mut self,
@@ -147,7 +147,7 @@ impl crate::TMPro::TMP_Offset {
             "set_horizontal",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_left(
         &mut self,
@@ -158,7 +158,7 @@ impl crate::TMPro::TMP_Offset {
             "set_left",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_right(
         &mut self,
@@ -169,7 +169,7 @@ impl crate::TMPro::TMP_Offset {
             "set_right",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_top(
         &mut self,
@@ -180,7 +180,7 @@ impl crate::TMPro::TMP_Offset {
             "set_top",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_vertical(
         &mut self,
@@ -191,6 +191,6 @@ impl crate::TMPro::TMP_Offset {
             "set_vertical",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

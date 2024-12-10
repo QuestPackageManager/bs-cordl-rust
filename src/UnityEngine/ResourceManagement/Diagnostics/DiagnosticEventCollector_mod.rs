@@ -27,12 +27,12 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollecto
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector")]
 impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollector {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PostEvent(
         &mut self,
@@ -43,12 +43,14 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PostEvent", (diagnosticEvent))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnregisterEventHandler(
         &mut self,
-        handler: *mut crate::System::Action_1<
-            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+        handler: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -56,7 +58,7 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnregisterEventHandler", (handler))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -66,7 +68,7 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector")]

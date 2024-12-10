@@ -56,7 +56,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetNode", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Resize(
         &mut self,
@@ -73,7 +73,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Resize", (maxNodes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -91,7 +91,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_MaxSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Priority_Queue+IFixedSizePriorityQueue_2")]

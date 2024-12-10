@@ -34,7 +34,7 @@ impl<
     pub type __c = crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1___c<T>;
     pub fn GetValueFromBag(
         &mut self,
-        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -45,9 +45,9 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("GetValueFromBag", (bag, cc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -56,11 +56,11 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn TryGetValueFromBag(
         &mut self,
-        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
         value: quest_hook::libil2cpp::ByRefMut<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -73,7 +73,7 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetValueFromBag", (bag, cc, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -85,7 +85,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlEnumAttributeDescription_1")]

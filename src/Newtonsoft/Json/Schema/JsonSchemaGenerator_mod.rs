@@ -45,117 +45,135 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         );
         let __cordl_ret: crate::Newtonsoft::Json::Schema::JsonSchemaType = __cordl_object
             .invoke("AddNullType", (_cordl_type, valueRequired))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateISerializableContract(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateISerializableContract", (_cordl_type, contract))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateInternal(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         valueRequired: crate::Newtonsoft::Json::Required,
         required: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = __cordl_object
             .invoke("GenerateInternal", (_cordl_type, valueRequired, required))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateObjectSchema(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateObjectSchema", (_cordl_type, contract))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_JsonSchemaResolver1(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-        resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        resolver: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
-            .invoke("Generate", (_cordl_type, resolver))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = __cordl_object.invoke("Generate", (_cordl_type, resolver))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_JsonSchemaResolver__cordl_bool3(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-        resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        resolver: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+        >,
         rootSchemaNullable: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = __cordl_object
             .invoke("Generate", (_cordl_type, resolver, rootSchemaNullable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_Type0(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
-            .invoke("Generate", (_cordl_type))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = __cordl_object.invoke("Generate", (_cordl_type))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Generate__cordl_bool2(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         rootSchemaNullable: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
-            .invoke("Generate", (_cordl_type, rootSchemaNullable))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = __cordl_object.invoke("Generate", (_cordl_type, rootSchemaNullable))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetDescription(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetDescription", (_cordl_type))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetDescription", (_cordl_type))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetJsonSchemaType(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         valueRequired: crate::Newtonsoft::Json::Required,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Schema::JsonSchemaType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -163,30 +181,36 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         );
         let __cordl_ret: crate::Newtonsoft::Json::Schema::JsonSchemaType = __cordl_object
             .invoke("GetJsonSchemaType", (_cordl_type, valueRequired))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTitle(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetTitle", (_cordl_type))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetTitle", (_cordl_type))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetTypeId(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         explicitOnly: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetTypeId", (_cordl_type, explicitOnly))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetTypeId", (_cordl_type, explicitOnly))?;
+        Ok(__cordl_ret.into())
     }
     pub fn HasFlag(
         &mut self,
@@ -197,37 +221,42 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (value, flag))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Pop(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema = __cordl_object
-            .invoke("Pop", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
+        > = __cordl_object.invoke("Pop", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Push(
         &mut self,
-        typeSchema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
+        typeSchema: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Push", (typeSchema))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -237,31 +266,35 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ContractResolver(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::IContractResolver,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::IContractResolver,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::IContractResolver = __cordl_object
-            .invoke("get_ContractResolver", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::IContractResolver,
+        > = __cordl_object.invoke("get_ContractResolver", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_CurrentSchema(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
-            .invoke("get_CurrentSchema", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = __cordl_object.invoke("get_CurrentSchema", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_UndefinedSchemaIdHandling(
         &mut self,
@@ -273,18 +306,20 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         );
         let __cordl_ret: crate::Newtonsoft::Json::Schema::UndefinedSchemaIdHandling = __cordl_object
             .invoke("get_UndefinedSchemaIdHandling", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ContractResolver(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::Serialization::IContractResolver,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::IContractResolver,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ContractResolver", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_UndefinedSchemaIdHandling(
         &mut self,
@@ -295,7 +330,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_UndefinedSchemaIdHandling", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator")]
@@ -340,48 +375,49 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
 impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
     pub fn New(
-        _cordl_type: *mut crate::System::Type,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_type, schema))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_type, schema))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Schema(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchema = __cordl_object
-            .invoke("get_Schema", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = __cordl_object.invoke("get_Schema", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]

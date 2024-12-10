@@ -75,6 +75,6 @@ impl crate::UnityEngine::Rendering::BatchCullingContext {
                 inReceiverPlaneCount,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

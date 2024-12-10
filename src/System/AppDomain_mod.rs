@@ -46,27 +46,33 @@ impl std::ops::DerefMut for crate::System::AppDomain {
 impl crate::System::AppDomain {
     pub fn DoAssemblyLoad(
         &mut self,
-        assembly: *mut crate::System::Reflection::Assembly,
+        assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoAssemblyLoad", (assembly))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoAssemblyResolve(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        requestingAssembly: *mut crate::System::Reflection::Assembly,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        requestingAssembly: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        >,
         refonly: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::Assembly> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Reflection::Assembly = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        > = __cordl_object
             .invoke("DoAssemblyResolve", (name, requestingAssembly, refonly))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoDomainUnload(
         &mut self,
@@ -76,141 +82,174 @@ impl crate::System::AppDomain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoDomainUnload", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoTypeResolve(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::Assembly> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Reflection::Assembly = __cordl_object
-            .invoke("DoTypeResolve", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAssemblies_1(
-        &mut self,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Reflection::Assembly,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        > = __cordl_object.invoke("DoTypeResolve", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAssemblies_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
         > = __cordl_object.invoke("GetAssemblies", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAssemblies__cordl_bool0(
         &mut self,
         refOnly: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Reflection::Assembly,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
         > = __cordl_object.invoke("GetAssemblies", (refOnly))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetData(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("GetData", (name))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("GetData", (name))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetMarshalledDomainObjRef(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetMarshalledDomainObjRef", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("GetMarshalledDomainObjRef", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeLifetimeService(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("InitializeLifetimeService", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("InitializeLifetimeService", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn IsFinalizingForUnload(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsFinalizingForUnload", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadAssembly(
         &mut self,
-        assemblyRef: *mut quest_hook::libil2cpp::Il2CppString,
-        securityEvidence: *mut crate::System::Security::Policy::Evidence,
+        assemblyRef: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        securityEvidence: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Policy::Evidence,
+        >,
         refOnly: bool,
         stackMark: quest_hook::libil2cpp::ByRefMut<
             crate::System::Threading::StackCrawlMark,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::Assembly> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Reflection::Assembly = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        > = __cordl_object
             .invoke(
                 "LoadAssembly",
                 (assemblyRef, securityEvidence, refOnly, stackMark),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Load_Evidence__cordl_bool_ByRefMut1(
         &mut self,
-        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
-        assemblySecurity: *mut crate::System::Security::Policy::Evidence,
+        assemblyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assemblySecurity: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Policy::Evidence,
+        >,
         refonly: bool,
         stackMark: quest_hook::libil2cpp::ByRefMut<
             crate::System::Threading::StackCrawlMark,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::Assembly> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Reflection::Assembly = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        > = __cordl_object
             .invoke("Load", (assemblyString, assemblySecurity, refonly, stackMark))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Load_Il2CppString0(
         &mut self,
-        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::Assembly> {
+        assemblyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Reflection::Assembly = __cordl_object
-            .invoke("Load", (assemblyString))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        > = __cordl_object.invoke("Load", (assemblyString))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessMessageInDomain(
         &mut self,
-        arrRequest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        cadMsg: *mut crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage,
+        arrRequest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        cadMsg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage,
+        >,
         arrResponse: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
@@ -226,17 +265,20 @@ impl crate::System::AppDomain {
                 "ProcessMessageInDomain",
                 (arrRequest, cadMsg, arrResponse, cadMrm),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -246,104 +288,107 @@ impl crate::System::AppDomain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_AssemblyResolve(
         &mut self,
-        value: *mut crate::System::ResolveEventHandler,
+        value: quest_hook::libil2cpp::Gc<crate::System::ResolveEventHandler>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_AssemblyResolve", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_DomainUnload(
         &mut self,
-        value: *mut crate::System::EventHandler,
+        value: quest_hook::libil2cpp::Gc<crate::System::EventHandler>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_DomainUnload", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_UnhandledException(
         &mut self,
-        value: *mut crate::System::UnhandledExceptionEventHandler,
+        value: quest_hook::libil2cpp::Gc<crate::System::UnhandledExceptionEventHandler>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_UnhandledException", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getDomainID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("getDomainID", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getFriendlyName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("getFriendlyName", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("getFriendlyName", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsFullyTrusted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsFullyTrusted", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsHomogenous(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsHomogenous", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_AssemblyResolve(
         &mut self,
-        value: *mut crate::System::ResolveEventHandler,
+        value: quest_hook::libil2cpp::Gc<crate::System::ResolveEventHandler>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_AssemblyResolve", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_DomainUnload(
         &mut self,
-        value: *mut crate::System::EventHandler,
+        value: quest_hook::libil2cpp::Gc<crate::System::EventHandler>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_DomainUnload", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_UnhandledException(
         &mut self,
-        value: *mut crate::System::UnhandledExceptionEventHandler,
+        value: quest_hook::libil2cpp::Gc<crate::System::UnhandledExceptionEventHandler>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_UnhandledException", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+AppDomain")]

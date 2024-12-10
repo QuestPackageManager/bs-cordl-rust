@@ -28,8 +28,8 @@ impl crate::HMUI::StackedController {
     pub type __c__DisplayClass5_0 = crate::HMUI::StackedController___c__DisplayClass5_0;
     pub fn LayoutViewControllers(
         &mut self,
-        viewControllers: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::HMUI::ViewController,
+        viewControllers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::HMUI::ViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -37,18 +37,18 @@ impl crate::HMUI::StackedController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LayoutViewControllers", (viewControllers))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PopViewController(
         &mut self,
-        finishedCallback: *mut crate::System::Action,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -56,12 +56,12 @@ impl crate::HMUI::StackedController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PopViewController", (finishedCallback, immediately))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PopViewControllers(
         &mut self,
         numberOfViewControllersToPop: i32,
-        finishedCallback: *mut crate::System::Action,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -72,12 +72,12 @@ impl crate::HMUI::StackedController {
                 "PopViewControllers",
                 (numberOfViewControllersToPop, finishedCallback, immediately),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PushViewController(
         &mut self,
-        viewController: *mut crate::HMUI::ViewController,
-        finishedCallback: *mut crate::System::Action,
+        viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -88,7 +88,7 @@ impl crate::HMUI::StackedController {
                 "PushViewController",
                 (viewController, finishedCallback, immediately),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -98,17 +98,19 @@ impl crate::HMUI::StackedController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_topStackedViewController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController> = __cordl_object
             .invoke("get_topStackedViewController", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+StackedController")]

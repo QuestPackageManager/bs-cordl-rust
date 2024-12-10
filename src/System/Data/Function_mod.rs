@@ -32,16 +32,16 @@ impl std::ops::DerefMut for crate::System::Data::Function {
 #[cfg(feature = "System+Data+Function")]
 impl crate::System::Data::Function {
     pub fn New(
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         id: crate::System::Data::FunctionId,
-        result: *mut crate::System::Type,
+        result: quest_hook::libil2cpp::Gc<crate::System::Type>,
         IsValidateArguments: bool,
         IsVariantArgumentList: bool,
         argumentCount: i32,
-        a1: *mut crate::System::Type,
-        a2: *mut crate::System::Type,
-        a3: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        a1: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        a2: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        a3: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -59,19 +59,19 @@ impl crate::System::Data::Function {
                     a3,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         id: crate::System::Data::FunctionId,
-        result: *mut crate::System::Type,
+        result: quest_hook::libil2cpp::Gc<crate::System::Type>,
         IsValidateArguments: bool,
         IsVariantArgumentList: bool,
         argumentCount: i32,
-        a1: *mut crate::System::Type,
-        a2: *mut crate::System::Type,
-        a3: *mut crate::System::Type,
+        a1: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        a2: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        a3: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -91,7 +91,7 @@ impl crate::System::Data::Function {
                     a3,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Data+Function")]

@@ -37,7 +37,7 @@ impl crate::Unity::Properties::IConstructor {
         );
         let __cordl_ret: crate::Unity::Properties::InstantiationKind = __cordl_object
             .invoke("get_InstantiationKind", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Properties+IConstructor")]

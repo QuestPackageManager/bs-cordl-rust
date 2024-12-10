@@ -33,6 +33,6 @@ impl crate::TMPro::KerningPairKey {
             ".ctor",
             (ascii_left, ascii_right),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

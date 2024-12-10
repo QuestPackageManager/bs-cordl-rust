@@ -54,7 +54,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("AddReference", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetReferenceCount(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -67,7 +67,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetReferenceCount", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Insert(
         &mut self,
@@ -84,9 +84,9 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Insert", (key, item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -97,7 +97,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveReference(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -110,7 +110,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("RemoveReference", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGet(
         &mut self,
@@ -127,7 +127,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGet", (key, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -141,7 +141,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ReferenceCountingCache_2")]

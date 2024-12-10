@@ -33,40 +33,46 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier {
     pub type WTauNafCallback = crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier_WTauNafCallback;
     pub fn MultiplyPositive(
         &mut self,
-        point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        k: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        point: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+        k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("MultiplyPositive", (point, k))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::ECPoint,
+        > = __cordl_object.invoke("MultiplyPositive", (point, k))?;
+        Ok(__cordl_ret.into())
     }
     pub fn MultiplyWTnaf(
         &mut self,
-        p: *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
-        lambda: *mut crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement,
+        p: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+        >,
+        lambda: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement,
+        >,
         a: i8,
         mu: i8,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint = __cordl_object
-            .invoke("MultiplyWTnaf", (p, lambda, a, mu))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+        > = __cordl_object.invoke("MultiplyWTnaf", (p, lambda, a, mu))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -76,7 +82,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier")]
@@ -121,31 +127,40 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier_WTauNafCal
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier+WTauNafCallback")]
 impl crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier_WTauNafCallback {
     pub fn New(
-        p: *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+        >,
         a: i8,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (p, a))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Precompute(
         &mut self,
-        existing: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        existing: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo = __cordl_object
-            .invoke("Precompute", (existing))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        > = __cordl_object.invoke("Precompute", (existing))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        p: *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+        >,
         a: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -153,7 +168,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier_WTauNafCa
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (p, a))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier+WTauNafCallback")]

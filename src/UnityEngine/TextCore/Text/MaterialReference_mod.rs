@@ -33,9 +33,13 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
     pub fn _ctor(
         &mut self,
         index: i32,
-        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-        spriteAsset: *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
-        material: *mut crate::UnityEngine::Material,
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+        spriteAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::SpriteAsset,
+        >,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         padding: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -43,6 +47,6 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
             ".ctor",
             (index, fontAsset, spriteAsset, material, padding),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

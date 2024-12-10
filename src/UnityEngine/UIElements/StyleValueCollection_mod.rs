@@ -36,7 +36,7 @@ impl crate::UnityEngine::UIElements::StyleValueCollection {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleFloat = __cordl_object
             .invoke("GetStyleFloat", (id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetStyleInt(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::UnityEngine::UIElements::StyleValueCollection {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleInt = __cordl_object
             .invoke("GetStyleInt", (id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetStyleLength(
         &mut self,
@@ -58,14 +58,14 @@ impl crate::UnityEngine::UIElements::StyleValueCollection {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleLength = __cordl_object
             .invoke("GetStyleLength", (id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetStyleValue(
         &mut self,
@@ -76,7 +76,7 @@ impl crate::UnityEngine::UIElements::StyleValueCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetStyleValue", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetStyleValue(
         &mut self,
@@ -89,7 +89,7 @@ impl crate::UnityEngine::UIElements::StyleValueCollection {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetStyleValue", (id, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -99,7 +99,7 @@ impl crate::UnityEngine::UIElements::StyleValueCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleValueCollection")]

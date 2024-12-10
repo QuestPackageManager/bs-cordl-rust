@@ -38,7 +38,7 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Close", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DangerousAddRef(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DangerousAddRef", (success))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DangerousGetHandle(
         &mut self,
@@ -59,7 +59,7 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("DangerousGetHandle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DangerousRelease(
         &mut self,
@@ -69,7 +69,7 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DangerousRelease", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DangerousReleaseInternal(
         &mut self,
@@ -80,7 +80,7 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DangerousReleaseInternal", (dispose))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -101,7 +101,7 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
@@ -111,7 +111,7 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalDispose(
         &mut self,
@@ -121,7 +121,7 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InternalDispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalFinalize(
         &mut self,
@@ -131,24 +131,24 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InternalFinalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         invalidHandleValue: crate::System::IntPtr,
         ownsHandle: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (invalidHandleValue, ownsHandle))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReleaseHandle(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ReleaseHandle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetHandle(
         &mut self,
@@ -159,7 +159,7 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHandle", (handle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetHandleAsInvalid(
         &mut self,
@@ -169,7 +169,7 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHandleAsInvalid", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -181,21 +181,21 @@ impl crate::System::Runtime::InteropServices::SafeHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (invalidHandleValue, ownsHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsClosed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsClosed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsInvalid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsInvalid", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+InteropServices+SafeHandle")]

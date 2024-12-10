@@ -29,7 +29,9 @@ impl crate::GlobalNamespace::BloomFogParamsAnimator {
     pub type _AnimationCoroutine_d__2 = crate::GlobalNamespace::BloomFogParamsAnimator__AnimationCoroutine_d__2;
     pub fn AnimateBloomFogParamsChange(
         &mut self,
-        envFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+        envFogParams: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomFogEnvironmentParams,
+        >,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -37,42 +39,50 @@ impl crate::GlobalNamespace::BloomFogParamsAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AnimateBloomFogParamsChange", (envFogParams, duration))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AnimationCoroutine(
         &mut self,
-        envFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+        envFogParams: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomFogEnvironmentParams,
+        >,
         duration: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("AnimationCoroutine", (envFogParams, duration))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDefaultBloomFogParams(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BloomFogEnvironmentParams = __cordl_object
-            .invoke("GetDefaultBloomFogParams", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("AnimationCoroutine", (envFogParams, duration))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn GetDefaultBloomFogParams(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogEnvironmentParams>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomFogEnvironmentParams,
+        > = __cordl_object.invoke("GetDefaultBloomFogParams", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetBloomFogParamsChange(
         &mut self,
-        envFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+        envFogParams: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomFogEnvironmentParams,
+        >,
         transition: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -80,18 +90,20 @@ impl crate::GlobalNamespace::BloomFogParamsAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetBloomFogParamsChange", (envFogParams, transition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDefaultBloomFogParams(
         &mut self,
-        newDefaultBloomFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+        newDefaultBloomFogParams: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomFogEnvironmentParams,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDefaultBloomFogParams", (newDefaultBloomFogParams))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -101,7 +113,7 @@ impl crate::GlobalNamespace::BloomFogParamsAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BloomFogParamsAnimator")]

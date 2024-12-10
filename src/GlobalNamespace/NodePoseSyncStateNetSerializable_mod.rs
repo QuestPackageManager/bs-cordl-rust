@@ -30,21 +30,21 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NodePoseSyncStateNetSerializ
 impl crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
     pub fn Deserialize(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Deserialize", (reader))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Release(
         &mut self,
@@ -54,18 +54,18 @@ impl crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Serialize(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Serialize", (writer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -75,7 +75,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_id(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
         );
         let __cordl_ret: crate::GlobalNamespace::SyncStateId = __cordl_object
             .invoke("get_id", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_state(
         &mut self,
@@ -95,14 +95,14 @@ impl crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
         );
         let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState = __cordl_object
             .invoke("get_state", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_id(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_id", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_state(
         &mut self,
@@ -124,7 +124,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_state", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_time(
         &mut self,
@@ -135,7 +135,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_time", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NodePoseSyncStateNetSerializable")]

@@ -42,6 +42,6 @@ impl crate::HoudiniEngineUnity::HAPI_GeoInfo {
             "getGroupCountByType",
             (_cordl_type),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -32,7 +32,7 @@ impl crate::GlobalNamespace::IBeatToTimeConverter {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("ConvertBeatToTime", (beat))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

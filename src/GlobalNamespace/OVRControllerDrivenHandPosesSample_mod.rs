@@ -39,7 +39,7 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LateUpdate(
         &mut self,
@@ -49,14 +49,14 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LateUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetControllerDrivenHandPosesTypeToControllerConforming(
         &mut self,
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetControllerDrivenHandPosesTypeToControllerConforming", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetControllerDrivenHandPosesTypeToNatural(
         &mut self,
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetControllerDrivenHandPosesTypeToNatural", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetControllerDrivenHandPosesTypeToNone(
         &mut self,
@@ -116,7 +116,7 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetControllerDrivenHandPosesTypeToNone", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateLineRenderer(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateLineRenderer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateLineRendererForHand(
         &mut self,
@@ -147,7 +147,7 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateLineRendererForHand", (isLeft))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -157,7 +157,7 @@ impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRControllerDrivenHandPosesSample")]

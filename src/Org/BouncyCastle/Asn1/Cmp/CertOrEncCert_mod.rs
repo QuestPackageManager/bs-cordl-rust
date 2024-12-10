@@ -27,98 +27,115 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CertOrEncCert")]
 impl crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
     pub fn New_Asn1TaggedObject0(
-        tagged: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        tagged: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (tagged))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_CmpCertificate1(
-        certificate: *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (certificate))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_EncryptedValue2(
-        encryptedCert: *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        encryptedCert: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (encryptedCert))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = __cordl_object.invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Asn1TaggedObject0(
         &mut self,
-        tagged: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+        tagged: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (tagged))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_CmpCertificate1(
         &mut self,
-        certificate: *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (certificate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_EncryptedValue2(
         &mut self,
-        encryptedCert: *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+        encryptedCert: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (encryptedCert))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Certificate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate = __cordl_object
-            .invoke("get_Certificate", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+        > = __cordl_object.invoke("get_Certificate", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_EncryptedCert(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue = __cordl_object
-            .invoke("get_EncryptedCert", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+        > = __cordl_object.invoke("get_EncryptedCert", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CertOrEncCert")]

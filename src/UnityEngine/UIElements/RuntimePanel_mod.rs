@@ -28,24 +28,24 @@ impl crate::UnityEngine::UIElements::RuntimePanel {
     #[cfg(feature = "UnityEngine+UIElements+RuntimePanel+__c")]
     pub type __c = crate::UnityEngine::UIElements::RuntimePanel___c;
     pub fn New(
-        ownerObject: *mut crate::UnityEngine::ScriptableObject,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        ownerObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (ownerObject))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnElementFocus(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::FocusEvent,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnElementFocus", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -55,30 +55,31 @@ impl crate::UnityEngine::UIElements::RuntimePanel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        ownerObject: *mut crate::UnityEngine::ScriptableObject,
+        ownerObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (ownerObject))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_panelSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::PanelSettings,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PanelSettings>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::PanelSettings = __cordl_object
-            .invoke("get_panelSettings", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PanelSettings,
+        > = __cordl_object.invoke("get_panelSettings", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]

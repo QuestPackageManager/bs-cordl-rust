@@ -54,8 +54,10 @@ impl<
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
+            >,
         >,
     >
     where
@@ -67,17 +69,19 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
+            >,
         > = __cordl_object.invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetGrouping(
         &mut self,
         key: TKey,
         create: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Lookup_2_Grouping<TKey, TElement>>,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -88,9 +92,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement> = __cordl_object
-            .invoke("GetGrouping", (key, create))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+        > = __cordl_object.invoke("GetGrouping", (key, create))?;
+        Ok(__cordl_ret.into())
     }
     pub fn InternalGetHashCode(
         &mut self,
@@ -106,11 +111,13 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("InternalGetHashCode", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -121,7 +128,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (comparer))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Resize(
         &mut self,
@@ -137,11 +144,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Resize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -151,13 +160,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -170,7 +182,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (comparer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Lookup_2")]
@@ -251,12 +263,14 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (element))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<TElement>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TElement>,
+        >,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -267,12 +281,12 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            TElement,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TElement>,
         > = __cordl_object.invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -283,7 +297,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn System_Collections_Generic_ICollection_TElement__Add(
         &mut self,
@@ -300,7 +314,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.Collections.Generic.ICollection<TElement>.Add", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_TElement__Clear(
         &mut self,
@@ -316,7 +330,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.Collections.Generic.ICollection<TElement>.Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_TElement__Contains(
         &mut self,
@@ -336,11 +350,11 @@ impl<
                 "System.Collections.Generic.ICollection<TElement>.Contains",
                 (item),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_TElement__CopyTo(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<TElement>,
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TElement>>,
         arrayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -357,7 +371,7 @@ impl<
                 "System.Collections.Generic.ICollection<TElement>.CopyTo",
                 (array, arrayIndex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_TElement__Remove(
         &mut self,
@@ -374,7 +388,7 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("System.Collections.Generic.ICollection<TElement>.Remove", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_TElement__get_Count(
         &mut self,
@@ -390,7 +404,7 @@ impl<
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("System.Collections.Generic.ICollection<TElement>.get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_TElement__get_IsReadOnly(
         &mut self,
@@ -409,7 +423,7 @@ impl<
                 "System.Collections.Generic.ICollection<TElement>.get_IsReadOnly",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IList_TElement__IndexOf(
         &mut self,
@@ -426,7 +440,7 @@ impl<
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("System.Collections.Generic.IList<TElement>.IndexOf", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IList_TElement__Insert(
         &mut self,
@@ -444,7 +458,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.Collections.Generic.IList<TElement>.Insert", (index, item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IList_TElement__RemoveAt(
         &mut self,
@@ -461,7 +475,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.Collections.Generic.IList<TElement>.RemoveAt", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IList_TElement__get_Item(
         &mut self,
@@ -478,7 +492,7 @@ impl<
         );
         let __cordl_ret: TElement = __cordl_object
             .invoke("System.Collections.Generic.IList<TElement>.get_Item", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IList_TElement__set_Item(
         &mut self,
@@ -499,11 +513,13 @@ impl<
                 "System.Collections.Generic.IList<TElement>.set_Item",
                 (index, value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -513,9 +529,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -529,7 +546,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Key(&mut self) -> quest_hook::libil2cpp::Result<TKey>
     where
@@ -542,7 +559,7 @@ impl<
             self,
         );
         let __cordl_ret: TKey = __cordl_object.invoke("get_Key", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Lookup_2+Grouping")]

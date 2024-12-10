@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CalculateAndSetContent(
         &mut self,
@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CalculateAndSetContent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckIfBeatmapLevelDataExists(
         &mut self,
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckIfBeatmapLevelDataExists", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearBeatmapLevel(
         &mut self,
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearBeatmapLevel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearContent(
         &mut self,
@@ -116,7 +116,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearContent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateBeatmapKey(
         &mut self,
@@ -126,12 +126,16 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: crate::GlobalNamespace::BeatmapKey = __cordl_object
             .invoke("CreateBeatmapKey", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleBeatmapCharacteristicSegmentedControlControllerDidSelectBeatmapCharacteristic(
         &mut self,
-        controller: *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
-        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        controller: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
+        >,
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -141,11 +145,13 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
                 "HandleBeatmapCharacteristicSegmentedControlControllerDidSelectBeatmapCharacteristic",
                 (controller, beatmapCharacteristic),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleBeatmapDifficultySegmentedControlControllerDidSelectDifficulty(
         &mut self,
-        controller: *mut crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+        controller: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+        >,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -156,7 +162,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
                 "HandleBeatmapDifficultySegmentedControlControllerDidSelectDifficulty",
                 (controller, difficulty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleBeatmapLevelsModelLevelDownloadingUpdate(
         &mut self,
@@ -170,7 +176,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
                 "HandleBeatmapLevelsModelLevelDownloadingUpdate",
                 (levelDownloadingUpdate),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleDidPressRefreshButton(
         &mut self,
@@ -180,14 +186,14 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleDidPressRefreshButton", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -197,7 +203,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -207,7 +213,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -217,7 +223,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshContent(
         &mut self,
@@ -227,7 +233,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshContent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetBeatmapLevelVersions(
         &mut self,
@@ -237,7 +243,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetBeatmapLevelVersions", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetContentForBeatmapData(
         &mut self,
@@ -247,7 +253,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetContentForBeatmapData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetContent_1(
         &mut self,
@@ -257,18 +263,22 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetContent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetContent_BeatmapLevel_BeatmapDifficultyMask_HashSet_1_BeatmapDifficulty_BeatmapCharacteristicSO_PlayerData0(
         &mut self,
-        level: *mut crate::GlobalNamespace::BeatmapLevel,
+        level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
-        notAllowedCharacteristics: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+            >,
         >,
         defaultDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-        defaultBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-        playerData: *mut crate::GlobalNamespace::PlayerData,
+        defaultBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
+        playerData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -285,7 +295,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
                     playerData,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShowContent(
         &mut self,
@@ -297,7 +307,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ShowContent", (contentType, progress))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TriggerEvent(
         &mut self,
@@ -307,7 +317,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TriggerEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__47_0(
         &mut self,
@@ -318,7 +328,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__47_0", (_cordl__))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _CalculateAndSetContent_b__61_0(
         &mut self,
@@ -329,7 +339,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<CalculateAndSetContent>b__61_0", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -339,12 +349,12 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didChangeDifficultyBeatmapEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::StandardLevelDetailView,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::GlobalNamespace::StandardLevelDetailView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -352,28 +362,32 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didChangeDifficultyBeatmapEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didFavoriteToggleChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::UnityEngine::UI::Toggle>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::UI::Toggle>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didFavoriteToggleChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_actionButton(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Button> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Button = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button> = __cordl_object
             .invoke("get_actionButton", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_beatmapKey(
         &mut self,
@@ -383,22 +397,24 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: crate::GlobalNamespace::BeatmapKey = __cordl_object
             .invoke("get_beatmapKey", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_practiceButton(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Button> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Button = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button> = __cordl_object
             .invoke("get_practiceButton", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didChangeDifficultyBeatmapEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::StandardLevelDetailView,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::GlobalNamespace::StandardLevelDetailView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -406,29 +422,31 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didChangeDifficultyBeatmapEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didFavoriteToggleChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::UnityEngine::UI::Toggle>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::UI::Toggle>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didFavoriteToggleChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_actionButtonText(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_actionButtonText", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_beatmapKey(
         &mut self,
@@ -439,7 +457,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_beatmapKey", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_hidePracticeButton(
         &mut self,
@@ -450,7 +468,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_hidePracticeButton", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "StandardLevelDetailView")]

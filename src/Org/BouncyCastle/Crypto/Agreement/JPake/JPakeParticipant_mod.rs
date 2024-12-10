@@ -45,111 +45,139 @@ for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
 impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
     pub fn CalculateKeyingMaterial(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("CalculateKeyingMaterial", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        > = __cordl_object.invoke("CalculateKeyingMaterial", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateRound1PayloadToSend(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload = __cordl_object
-            .invoke("CreateRound1PayloadToSend", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
+        > = __cordl_object.invoke("CreateRound1PayloadToSend", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateRound2PayloadToSend(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload = __cordl_object
-            .invoke("CreateRound2PayloadToSend", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
+        > = __cordl_object.invoke("CreateRound2PayloadToSend", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateRound3PayloadToSend(
         &mut self,
-        keyingMaterial: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        keyingMaterial: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload = __cordl_object
-            .invoke("CreateRound3PayloadToSend", (keyingMaterial))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload,
+        > = __cordl_object.invoke("CreateRound3PayloadToSend", (keyingMaterial))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppString_Il2CppArray0(
-        participantId: *mut quest_hook::libil2cpp::Il2CppString,
-        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (participantId, password))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_JPakePrimeOrderGroup1(
-        participantId: *mut quest_hook::libil2cpp::Il2CppString,
-        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        group: *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        group: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (participantId, password, group))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_JPakePrimeOrderGroup_IDigest_SecureRandom2(
-        participantId: *mut quest_hook::libil2cpp::Il2CppString,
-        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        group: *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        group: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
+        >,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (participantId, password, group, digest, random))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ValidateRound1PayloadReceived(
         &mut self,
-        round1PayloadReceived: *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
+        round1PayloadReceived: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ValidateRound1PayloadReceived", (round1PayloadReceived))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateRound2PayloadReceived(
         &mut self,
-        round2PayloadReceived: *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
+        round2PayloadReceived: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound2Payload,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ValidateRound2PayloadReceived", (round2PayloadReceived))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateRound3PayloadReceived(
         &mut self,
-        round3PayloadReceived: *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload,
-        keyingMaterial: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        round3PayloadReceived: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound3Payload,
+        >,
+        keyingMaterial: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -159,54 +187,60 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
                 "ValidateRound3PayloadReceived",
                 (round3PayloadReceived, keyingMaterial),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_Il2CppArray0(
         &mut self,
-        participantId: *mut quest_hook::libil2cpp::Il2CppString,
-        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (participantId, password))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_JPakePrimeOrderGroup1(
         &mut self,
-        participantId: *mut quest_hook::libil2cpp::Il2CppString,
-        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        group: *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
+        participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        group: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (participantId, password, group))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_JPakePrimeOrderGroup_IDigest_SecureRandom2(
         &mut self,
-        participantId: *mut quest_hook::libil2cpp::Il2CppString,
-        password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        group: *mut crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        group: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroup,
+        >,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (participantId, password, group, digest, random))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_State(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_State", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeParticipant")]

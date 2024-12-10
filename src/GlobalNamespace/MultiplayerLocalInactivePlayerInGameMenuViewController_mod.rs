@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DetailsToggleValueChanged", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisconnectButtonPressed(
         &mut self,
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisconnectButtonPressed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleDisconnectPromptViewDidViewFinish(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleDisconnectPromptViewDidViewFinish", (disconnect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleStateChanged(
         &mut self,
@@ -84,14 +84,14 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleStateChanged", (state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -101,7 +101,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -121,7 +121,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _HandleDisconnectPromptViewDidViewFinish_b__22_0(
         &mut self,
@@ -141,7 +141,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<HandleDisconnectPromptViewDidViewFinish>b__22_0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _HandleStateChanged_b__23_0(
         &mut self,
@@ -152,7 +152,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<HandleStateChanged>b__23_0", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _HandleStateChanged_b__23_1(
         &mut self,
@@ -162,7 +162,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<HandleStateChanged>b__23_1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -172,7 +172,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerInGameMenuViewController")]

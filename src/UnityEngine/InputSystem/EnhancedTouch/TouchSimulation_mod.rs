@@ -51,14 +51,14 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
 impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
     pub fn AddPointer(
         &mut self,
-        pointer: *mut crate::UnityEngine::InputSystem::Pointer,
+        pointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pointer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddPointer", (pointer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InstallStateChangeMonitors(
         &mut self,
@@ -69,18 +69,18 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InstallStateChangeMonitors", (startIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDeviceChange(
         &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         change: crate::UnityEngine::InputSystem::InputDeviceChange,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -88,7 +88,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDeviceChange", (device, change))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -98,7 +98,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -108,23 +108,25 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEvent(
         &mut self,
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEvent", (eventPtr, device))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnSourceControlChangedValue(
         &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
         _cordl_time: f64,
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         sourceDeviceAndButtonIndex: i64,
@@ -137,18 +139,18 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
                 "OnSourceControlChangedValue",
                 (control, _cordl_time, eventPtr, sourceDeviceAndButtonIndex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemovePointer(
         &mut self,
-        pointer: *mut crate::UnityEngine::InputSystem::Pointer,
+        pointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pointer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemovePointer", (pointer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UninstallStateChangeMonitors(
         &mut self,
@@ -159,11 +161,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UninstallStateChangeMonitors", (startIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_InputSystem_LowLevel_IInputStateChangeMonitor_NotifyControlStateChanged(
         &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
         _cordl_time: f64,
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         monitorIndex: i64,
@@ -176,11 +180,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
                 "UnityEngine.InputSystem.LowLevel.IInputStateChangeMonitor.NotifyControlStateChanged",
                 (control, _cordl_time, eventPtr, monitorIndex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_InputSystem_LowLevel_IInputStateChangeMonitor_NotifyTimerExpired(
         &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
         _cordl_time: f64,
         monitorIndex: i64,
         timerIndex: i32,
@@ -193,7 +199,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
                 "UnityEngine.InputSystem.LowLevel.IInputStateChangeMonitor.NotifyTimerExpired",
                 (control, _cordl_time, monitorIndex, timerIndex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateTouch(
         &mut self,
@@ -207,7 +213,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateTouch", (touchIndex, pointerIndex, phase, eventPtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -217,30 +223,31 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_simulatedTouchscreen(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Touchscreen,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Touchscreen = __cordl_object
-            .invoke("get_simulatedTouchscreen", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Touchscreen,
+        > = __cordl_object.invoke("get_simulatedTouchscreen", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_simulatedTouchscreen(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Touchscreen,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_simulatedTouchscreen", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]

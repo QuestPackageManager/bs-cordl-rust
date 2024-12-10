@@ -34,12 +34,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PageControl {
 }
 #[cfg(feature = "PageControl")]
 impl crate::GlobalNamespace::PageControl {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetPagesCount(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::PageControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPagesCount", (pagesCount))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSelectedPageIndex(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::PageControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSelectedPageIndex", (page))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetVisible(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::PageControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetVisible", (isVisible))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::PageControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PageControl")]

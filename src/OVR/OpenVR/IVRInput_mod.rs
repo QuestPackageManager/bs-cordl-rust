@@ -114,13 +114,15 @@ impl crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
             >,
         >,
         unTransformArrayCount: u32,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (
@@ -133,21 +135,21 @@ impl crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
                     object,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         peTransformSpace: quest_hook::libil2cpp::ByRefMut<
             crate::OVR::OpenVR::EVRSkeletalTransformSpace,
         >,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (peTransformSpace, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -177,21 +179,21 @@ impl crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
                     unTransformArrayCount,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -199,7 +201,7 @@ impl crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
@@ -240,33 +242,35 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetActionHandle {
 impl crate::OVR::OpenVR::IVRInput__GetActionHandle {
     pub fn BeginInvoke(
         &mut self,
-        pchActionName: *mut quest_hook::libil2cpp::Il2CppString,
+        pchActionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginInvoke", (pchActionName, pHandle, callback, object))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (pHandle, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
-        pchActionName: *mut quest_hook::libil2cpp::Il2CppString,
+        pchActionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -274,21 +278,21 @@ impl crate::OVR::OpenVR::IVRInput__GetActionHandle {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("Invoke", (pchActionName, pHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -296,7 +300,7 @@ impl crate::OVR::OpenVR::IVRInput__GetActionHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionHandle")]
@@ -343,13 +347,15 @@ impl crate::OVR::OpenVR::IVRInput__GetActionOrigins {
             *mut quest_hook::libil2cpp::Il2CppArray<u64>,
         >,
         originOutCount: u32,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (
@@ -361,18 +367,18 @@ impl crate::OVR::OpenVR::IVRInput__GetActionOrigins {
                     object,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -391,21 +397,21 @@ impl crate::OVR::OpenVR::IVRInput__GetActionOrigins {
                 "Invoke",
                 (actionSetHandle, digitalActionHandle, originsOut, originOutCount),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -413,7 +419,7 @@ impl crate::OVR::OpenVR::IVRInput__GetActionOrigins {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionOrigins")]
@@ -454,33 +460,35 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
 impl crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
     pub fn BeginInvoke(
         &mut self,
-        pchActionSetName: *mut quest_hook::libil2cpp::Il2CppString,
+        pchActionSetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginInvoke", (pchActionSetName, pHandle, callback, object))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (pHandle, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
-        pchActionSetName: *mut quest_hook::libil2cpp::Il2CppString,
+        pchActionSetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -488,21 +496,21 @@ impl crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("Invoke", (pchActionSetName, pHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -510,7 +518,7 @@ impl crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionSetHandle")]
@@ -557,13 +565,15 @@ impl crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
         >,
         unActionDataSize: u32,
         ulRestrictToDevice: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (
@@ -575,21 +585,21 @@ impl crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
                     object,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         pActionData: quest_hook::libil2cpp::ByRefMut<
             crate::OVR::OpenVR::InputAnalogActionData_t,
         >,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (pActionData, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -608,21 +618,21 @@ impl crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
                 "Invoke",
                 (action, pActionData, unActionDataSize, ulRestrictToDevice),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -630,7 +640,7 @@ impl crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetAnalogActionData")]
@@ -677,13 +687,15 @@ impl crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
         >,
         unActionDataSize: u32,
         ulRestrictToDevice: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (
@@ -695,21 +707,21 @@ impl crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
                     object,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         pActionData: quest_hook::libil2cpp::ByRefMut<
             crate::OVR::OpenVR::InputDigitalActionData_t,
         >,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (pActionData, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -728,21 +740,21 @@ impl crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
                 "Invoke",
                 (action, pActionData, unActionDataSize, ulRestrictToDevice),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -750,7 +762,7 @@ impl crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetDigitalActionData")]
@@ -791,33 +803,39 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
 impl crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
     pub fn BeginInvoke(
         &mut self,
-        pchInputSourcePath: *mut quest_hook::libil2cpp::Il2CppString,
+        pchInputSourcePath: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginInvoke", (pchInputSourcePath, pHandle, callback, object))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (pHandle, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
-        pchInputSourcePath: *mut quest_hook::libil2cpp::Il2CppString,
+        pchInputSourcePath: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -825,21 +843,21 @@ impl crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("Invoke", (pchInputSourcePath, pHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -847,7 +865,7 @@ impl crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
@@ -889,36 +907,38 @@ impl crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
     pub fn BeginInvoke(
         &mut self,
         origin: u64,
-        pchNameArray: *mut crate::System::Text::StringBuilder,
+        pchNameArray: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unNameArraySize: u32,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (origin, pchNameArray, unNameArraySize, callback, object),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         origin: u64,
-        pchNameArray: *mut crate::System::Text::StringBuilder,
+        pchNameArray: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unNameArraySize: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -926,21 +946,21 @@ impl crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("Invoke", (origin, pchNameArray, unNameArraySize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -948,7 +968,7 @@ impl crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
@@ -995,32 +1015,34 @@ impl crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
             crate::OVR::OpenVR::InputOriginInfo_t,
         >,
         unOriginInfoSize: u32,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (origin, pOriginInfo, unOriginInfoSize, callback, object),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         pOriginInfo: quest_hook::libil2cpp::ByRefMut<
             crate::OVR::OpenVR::InputOriginInfo_t,
         >,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (pOriginInfo, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -1035,21 +1057,21 @@ impl crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("Invoke", (origin, pOriginInfo, unOriginInfoSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1057,7 +1079,7 @@ impl crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
@@ -1106,13 +1128,15 @@ impl crate::OVR::OpenVR::IVRInput__GetPoseActionData {
         >,
         unActionDataSize: u32,
         ulRestrictToDevice: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (
@@ -1126,21 +1150,21 @@ impl crate::OVR::OpenVR::IVRInput__GetPoseActionData {
                     object,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         pActionData: quest_hook::libil2cpp::ByRefMut<
             crate::OVR::OpenVR::InputPoseActionData_t,
         >,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (pActionData, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -1168,21 +1192,21 @@ impl crate::OVR::OpenVR::IVRInput__GetPoseActionData {
                     ulRestrictToDevice,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1190,7 +1214,7 @@ impl crate::OVR::OpenVR::IVRInput__GetPoseActionData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetPoseActionData")]
@@ -1237,13 +1261,15 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
         >,
         unActionDataSize: u32,
         ulRestrictToDevice: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (
@@ -1255,21 +1281,21 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
                     object,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         pActionData: quest_hook::libil2cpp::ByRefMut<
             crate::OVR::OpenVR::InputSkeletalActionData_t,
         >,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (pActionData, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -1288,21 +1314,21 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
                 "Invoke",
                 (action, pActionData, unActionDataSize, ulRestrictToDevice),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1310,7 +1336,7 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
@@ -1361,13 +1387,15 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
         >,
         unTransformArrayCount: u32,
         ulRestrictToDevice: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (
@@ -1381,18 +1409,18 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
                     object,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -1422,21 +1450,21 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
                     ulRestrictToDevice,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1444,7 +1472,7 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
@@ -1493,13 +1521,15 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
         unCompressedSize: u32,
         punRequiredCompressedSize: quest_hook::libil2cpp::ByRefMut<u32>,
         ulRestrictToDevice: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (
@@ -1514,19 +1544,19 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
                     object,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         punRequiredCompressedSize: quest_hook::libil2cpp::ByRefMut<u32>,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (punRequiredCompressedSize, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -1554,21 +1584,21 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
                     ulRestrictToDevice,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1576,7 +1606,7 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
@@ -1617,52 +1647,58 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__SetActionManifestPath 
 impl crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
     pub fn BeginInvoke(
         &mut self,
-        pchActionManifestPath: *mut quest_hook::libil2cpp::Il2CppString,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        pchActionManifestPath: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginInvoke", (pchActionManifestPath, callback, object))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
-        pchActionManifestPath: *mut quest_hook::libil2cpp::Il2CppString,
+        pchActionManifestPath: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("Invoke", (pchActionManifestPath))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1670,7 +1706,7 @@ impl crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_SetActionManifestPath")]
@@ -1713,26 +1749,28 @@ impl crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
         &mut self,
         actionSetHandle: u64,
         ulActionHandle: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginInvoke", (actionSetHandle, ulActionHandle, callback, object))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -1744,21 +1782,21 @@ impl crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("Invoke", (actionSetHandle, ulActionHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1766,7 +1804,7 @@ impl crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_ShowActionOrigins")]
@@ -1815,13 +1853,15 @@ impl crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
         unSizeOfVRSelectedActionSet_t: u32,
         unSetCount: u32,
         originToHighlight: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (
@@ -1833,18 +1873,18 @@ impl crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
                     object,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -1865,21 +1905,21 @@ impl crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
                 "Invoke",
                 (pSets, unSizeOfVRSelectedActionSet_t, unSetCount, originToHighlight),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1887,7 +1927,7 @@ impl crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
@@ -1935,13 +1975,15 @@ impl crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
         fFrequency: f32,
         fAmplitude: f32,
         ulRestrictToDevice: u64,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (
@@ -1955,18 +1997,18 @@ impl crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
                     object,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -1992,21 +2034,21 @@ impl crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
                     ulRestrictToDevice,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2014,7 +2056,7 @@ impl crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
@@ -2062,29 +2104,31 @@ impl crate::OVR::OpenVR::IVRInput__UpdateActionState {
         >,
         unSizeOfVRSelectedActionSet_t: u32,
         unSetCount: u32,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (pSets, unSizeOfVRSelectedActionSet_t, unSetCount, callback, object),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -2101,21 +2145,21 @@ impl crate::OVR::OpenVR::IVRInput__UpdateActionState {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("Invoke", (pSets, unSizeOfVRSelectedActionSet_t, unSetCount))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2123,7 +2167,7 @@ impl crate::OVR::OpenVR::IVRInput__UpdateActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_UpdateActionState")]

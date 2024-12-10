@@ -30,88 +30,96 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlReflectionMemb
 #[cfg(feature = "System+Xml+Serialization+XmlReflectionMember")]
 impl crate::System::Xml::Serialization::XmlReflectionMember {
     pub fn New(
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        _cordl_type: *mut crate::System::Type,
-        attributes: *mut crate::System::Xml::Serialization::XmlAttributes,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        attributes: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlAttributes,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (name, _cordl_type, attributes))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        _cordl_type: *mut crate::System::Type,
-        attributes: *mut crate::System::Xml::Serialization::XmlAttributes,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        attributes: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlAttributes,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name, _cordl_type, attributes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DeclaringType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("get_DeclaringType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsReturnValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsReturnValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MemberName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_MemberName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MemberType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_MemberType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_XmlAttributes(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Serialization::XmlAttributes,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::XmlAttributes = __cordl_object
-            .invoke("get_XmlAttributes", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_MemberName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MemberType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
+            .invoke("get_MemberType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_XmlAttributes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlAttributes>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlAttributes,
+        > = __cordl_object.invoke("get_XmlAttributes", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_DeclaringType(
         &mut self,
-        value: *mut crate::System::Type,
+        value: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_DeclaringType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Serialization+XmlReflectionMember")]

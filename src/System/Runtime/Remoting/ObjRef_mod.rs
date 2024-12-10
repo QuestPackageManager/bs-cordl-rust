@@ -33,18 +33,23 @@ impl crate::System::Runtime::Remoting::ObjRef {
     pub fn DeserializeInTheCurrentDomain(
         &mut self,
         domainId: i32,
-        tInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Runtime::Remoting::ObjRef> {
+        tInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::ObjRef = __cordl_object
-            .invoke("DeserializeInTheCurrentDomain", (domainId, tInfo))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::ObjRef,
+        > = __cordl_object.invoke("DeserializeInTheCurrentDomain", (domainId, tInfo))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetObjectData(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -52,66 +57,74 @@ impl crate::System::Runtime::Remoting::ObjRef {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetObjectData", (info, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRealObject(
         &mut self,
         context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("GetRealObject", (context))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("GetRealObject", (context))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppString_IChannelInfo1(
-        uri: *mut quest_hook::libil2cpp::Il2CppString,
-        cinfo: *mut crate::System::Runtime::Remoting::IChannelInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cinfo: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IChannelInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (uri, cinfo))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_SerializationInfo_StreamingContext3(
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Type_Il2CppString_Il2CppObject2(
-        _cordl_type: *mut crate::System::Type,
-        url: *mut quest_hook::libil2cpp::Il2CppString,
-        remoteChannelData: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        remoteChannelData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_type, url, remoteChannelData))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SerializeType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("SerializeType", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("SerializeType", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateChannelInfo(
         &mut self,
@@ -121,7 +134,7 @@ impl crate::System::Runtime::Remoting::ObjRef {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateChannelInfo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -131,23 +144,25 @@ impl crate::System::Runtime::Remoting::ObjRef {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_IChannelInfo1(
         &mut self,
-        uri: *mut quest_hook::libil2cpp::Il2CppString,
-        cinfo: *mut crate::System::Runtime::Remoting::IChannelInfo,
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cinfo: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IChannelInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (uri, cinfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SerializationInfo_StreamingContext3(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -155,116 +170,124 @@ impl crate::System::Runtime::Remoting::ObjRef {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Type_Il2CppString_Il2CppObject2(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-        url: *mut quest_hook::libil2cpp::Il2CppString,
-        remoteChannelData: *mut quest_hook::libil2cpp::Il2CppObject,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        remoteChannelData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_type, url, remoteChannelData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ChannelInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::IChannelInfo,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IChannelInfo>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::IChannelInfo = __cordl_object
-            .invoke("get_ChannelInfo", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::IChannelInfo,
+        > = __cordl_object.invoke("get_ChannelInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_EnvoyInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::IEnvoyInfo,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IEnvoyInfo>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::IEnvoyInfo = __cordl_object
-            .invoke("get_EnvoyInfo", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::IEnvoyInfo,
+        > = __cordl_object.invoke("get_EnvoyInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsReferenceToWellKnow(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsReferenceToWellKnow", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ServerType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("get_ServerType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TypeInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::IRemotingTypeInfo,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IRemotingTypeInfo>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::IRemotingTypeInfo = __cordl_object
-            .invoke("get_TypeInfo", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::IRemotingTypeInfo,
+        > = __cordl_object.invoke("get_TypeInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_URI(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_URI", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_URI", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_EnvoyInfo(
         &mut self,
-        value: *mut crate::System::Runtime::Remoting::IEnvoyInfo,
+        value: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IEnvoyInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_EnvoyInfo", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_TypeInfo(
         &mut self,
-        value: *mut crate::System::Runtime::Remoting::IRemotingTypeInfo,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::IRemotingTypeInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_TypeInfo", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_URI(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_URI", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+ObjRef")]

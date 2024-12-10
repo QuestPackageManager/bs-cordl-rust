@@ -45,36 +45,36 @@ impl crate::LiteNetLib::ReliableChannel {
     #[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
     pub type PendingPacket = crate::LiteNetLib::ReliableChannel_PendingPacket;
     pub fn New(
-        peer: *mut crate::LiteNetLib::NetPeer,
+        peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
         ordered: bool,
         id: u8,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (peer, ordered, id))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessAck(
         &mut self,
-        packet: *mut crate::LiteNetLib::NetPacket,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessAck", (packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessPacket(
         &mut self,
-        packet: *mut crate::LiteNetLib::NetPacket,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ProcessPacket", (packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendNextPackets(
         &mut self,
@@ -84,11 +84,11 @@ impl crate::LiteNetLib::ReliableChannel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendNextPackets", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        peer: *mut crate::LiteNetLib::NetPeer,
+        peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
         ordered: bool,
         id: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -97,7 +97,7 @@ impl crate::LiteNetLib::ReliableChannel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (peer, ordered, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+ReliableChannel")]
@@ -137,46 +137,46 @@ for crate::LiteNetLib::ReliableChannel_PendingPacket {
 impl crate::LiteNetLib::ReliableChannel_PendingPacket {
     pub fn Clear(
         &mut self,
-        peer: *mut crate::LiteNetLib::NetPeer,
+        peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Clear",
             (peer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        packet: *mut crate::LiteNetLib::NetPacket,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Init",
             (packet),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn TrySend(
         &mut self,
         currentTime: i64,
-        peer: *mut crate::LiteNetLib::NetPeer,
+        peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "TrySend",
             (currentTime, peer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -39,7 +39,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::SendBufferedHapticCommand {
             "get_typeStatic",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

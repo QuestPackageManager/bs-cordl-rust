@@ -26,57 +26,64 @@ impl std::ops::DerefMut for crate::UnityEngine::EventSystems::BaseEventData {
 #[cfg(feature = "UnityEngine+EventSystems+BaseEventData")]
 impl crate::UnityEngine::EventSystems::BaseEventData {
     pub fn New(
-        eventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        eventSystem: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::EventSystem,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (eventSystem))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        eventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
+        eventSystem: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::EventSystem,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (eventSystem))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentInputModule(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::EventSystems::BaseInputModule,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseInputModule>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::EventSystems::BaseInputModule = __cordl_object
-            .invoke("get_currentInputModule", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseInputModule,
+        > = __cordl_object.invoke("get_currentInputModule", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_selectedObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke("get_selectedObject", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_selectedObject(
         &mut self,
-        value: *mut crate::UnityEngine::GameObject,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_selectedObject", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+BaseEventData")]

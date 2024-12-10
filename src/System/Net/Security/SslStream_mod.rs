@@ -34,8 +34,10 @@ impl crate::System::Net::Security::SslStream {
     pub type __c__DisplayClass21_0 = crate::System::Net::Security::SslStream___c__DisplayClass21_0;
     pub fn AuthenticateAsClient(
         &mut self,
-        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
-        clientCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        targetHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        clientCertificates: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        >,
         enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
         checkCertificateRevocation: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -52,19 +54,25 @@ impl crate::System::Net::Security::SslStream {
                     checkCertificateRevocation,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AuthenticateAsClientAsync(
         &mut self,
-        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
-        clientCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        targetHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        clientCertificates: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        >,
         enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
         checkCertificateRevocation: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object
             .invoke(
                 "AuthenticateAsClientAsync",
                 (
@@ -74,11 +82,13 @@ impl crate::System::Net::Security::SslStream {
                     checkCertificateRevocation,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AuthenticateAsServer(
         &mut self,
-        serverCertificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        serverCertificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
         clientCertificateRequired: bool,
         enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
         checkCertificateRevocation: bool,
@@ -96,21 +106,25 @@ impl crate::System::Net::Security::SslStream {
                     checkCertificateRevocation,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BeginAuthenticateAsClient(
         &mut self,
-        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
-        clientCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        targetHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        clientCertificates: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        >,
         enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
         checkCertificateRevocation: bool,
-        asyncCallback: *mut crate::System::AsyncCallback,
-        asyncState: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        asyncCallback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        asyncState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginAuthenticateAsClient",
                 (
@@ -122,37 +136,41 @@ impl crate::System::Net::Security::SslStream {
                     asyncState,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BeginRead(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
-        callback: *mut crate::System::AsyncCallback,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginRead", (buffer, offset, count, callback, state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BeginWrite(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
-        callback: *mut crate::System::AsyncCallback,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginWrite", (buffer, offset, count, callback, state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckDisposed(
         &mut self,
@@ -162,7 +180,7 @@ impl crate::System::Net::Security::SslStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckDisposed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -173,39 +191,39 @@ impl crate::System::Net::Security::SslStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndAuthenticateAsClient(
         &mut self,
-        asyncResult: *mut crate::System::IAsyncResult,
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EndAuthenticateAsClient", (asyncResult))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndRead(
         &mut self,
-        asyncResult: *mut crate::System::IAsyncResult,
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("EndRead", (asyncResult))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndWrite(
         &mut self,
-        asyncResult: *mut crate::System::IAsyncResult,
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EndWrite", (asyncResult))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Flush(
         &mut self,
@@ -215,25 +233,32 @@ impl crate::System::Net::Security::SslStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Flush", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FlushAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("FlushAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("FlushAsync", (cancellationToken))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_MonoTlsProvider_MonoTlsSettings2(
-        innerStream: *mut crate::System::IO::Stream,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,
-        provider: *mut crate::Mono::Security::Interface::MonoTlsProvider,
-        settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsProvider,
+        >,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -241,13 +266,15 @@ impl crate::System::Net::Security::SslStream {
                 ".ctor",
                 (innerStream, leaveInnerStreamOpen, provider, settings),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_RemoteCertificateValidationCallback0(
-        innerStream: *mut crate::System::IO::Stream,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,
-        userCertificateValidationCallback: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        userCertificateValidationCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -255,14 +282,18 @@ impl crate::System::Net::Security::SslStream {
                 ".ctor",
                 (innerStream, leaveInnerStreamOpen, userCertificateValidationCallback),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_RemoteCertificateValidationCallback_LocalCertificateSelectionCallback1(
-        innerStream: *mut crate::System::IO::Stream,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,
-        userCertificateValidationCallback: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
-        userCertificateSelectionCallback: *mut crate::System::Net::Security::LocalCertificateSelectionCallback,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        userCertificateValidationCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        >,
+        userCertificateSelectionCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::LocalCertificateSelectionCallback,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -275,11 +306,11 @@ impl crate::System::Net::Security::SslStream {
                     userCertificateSelectionCallback,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -287,23 +318,25 @@ impl crate::System::Net::Security::SslStream {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer, offset, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAsync(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<i32>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<i32> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = __cordl_object
             .invoke("ReadAsync", (buffer, offset, count, cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Seek(
         &mut self,
@@ -314,29 +347,33 @@ impl crate::System::Net::Security::SslStream {
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetAndVerifySelectionCallback(
         &mut self,
-        callback: *mut crate::System::Net::Security::LocalCertificateSelectionCallback,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::LocalCertificateSelectionCallback,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetAndVerifySelectionCallback", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetAndVerifyValidationCallback(
         &mut self,
-        callback: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetAndVerifyValidationCallback", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLength(
         &mut self,
@@ -347,11 +384,11 @@ impl crate::System::Net::Security::SslStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetLength", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -360,41 +397,51 @@ impl crate::System::Net::Security::SslStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (buffer, offset, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteAsync(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object
             .invoke("WriteAsync", (buffer, offset, count, cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_MonoTlsProvider_MonoTlsSettings2(
         &mut self,
-        innerStream: *mut crate::System::IO::Stream,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,
-        provider: *mut crate::Mono::Security::Interface::MonoTlsProvider,
-        settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsProvider,
+        >,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (innerStream, leaveInnerStreamOpen, provider, settings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_RemoteCertificateValidationCallback0(
         &mut self,
-        innerStream: *mut crate::System::IO::Stream,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,
-        userCertificateValidationCallback: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
+        userCertificateValidationCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -404,14 +451,18 @@ impl crate::System::Net::Security::SslStream {
                 ".ctor",
                 (innerStream, leaveInnerStreamOpen, userCertificateValidationCallback),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_RemoteCertificateValidationCallback_LocalCertificateSelectionCallback1(
         &mut self,
-        innerStream: *mut crate::System::IO::Stream,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,
-        userCertificateValidationCallback: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
-        userCertificateSelectionCallback: *mut crate::System::Net::Security::LocalCertificateSelectionCallback,
+        userCertificateValidationCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        >,
+        userCertificateSelectionCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::LocalCertificateSelectionCallback,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -426,104 +477,111 @@ impl crate::System::Net::Security::SslStream {
                     userCertificateSelectionCallback,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CanTimeout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_CanTimeout", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Impl(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
+        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileAuthenticatedStream>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Net::Security::MobileAuthenticatedStream = __cordl_object
-            .invoke("get_Impl", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Net::Security::MobileAuthenticatedStream,
+        > = __cordl_object.invoke("get_Impl", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_InternalTargetHost(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_InternalTargetHost", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_InternalTargetHost", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsAuthenticated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsAuthenticated", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LocalCertificate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate = __cordl_object
-            .invoke("get_LocalCertificate", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        > = __cordl_object.invoke("get_LocalCertificate", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ReadTimeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ReadTimeout", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_WriteTimeout(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_WriteTimeout", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Position(
         &mut self,
@@ -534,7 +592,7 @@ impl crate::System::Net::Security::SslStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Position", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ReadTimeout(
         &mut self,
@@ -545,7 +603,7 @@ impl crate::System::Net::Security::SslStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ReadTimeout", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_WriteTimeout(
         &mut self,
@@ -556,7 +614,7 @@ impl crate::System::Net::Security::SslStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_WriteTimeout", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+Security+SslStream")]

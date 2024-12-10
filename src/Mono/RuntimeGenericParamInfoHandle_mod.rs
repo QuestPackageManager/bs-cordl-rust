@@ -25,12 +25,14 @@ impl crate::Mono::RuntimeGenericParamInfoHandle {
     pub fn GetConstraints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
     > {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Type,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetConstraints", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetConstraintsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -38,7 +40,7 @@ impl crate::Mono::RuntimeGenericParamInfoHandle {
             "GetConstraintsCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -49,7 +51,7 @@ impl crate::Mono::RuntimeGenericParamInfoHandle {
             ".ctor",
             (ptr),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Attributes(
         &mut self,
@@ -61,16 +63,18 @@ impl crate::Mono::RuntimeGenericParamInfoHandle {
             "get_Attributes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Constraints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
     > {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Type,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Constraints", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

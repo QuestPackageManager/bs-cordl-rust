@@ -26,46 +26,54 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::BerSetParser {
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerSetParser")]
 impl crate::Org::BouncyCastle::Asn1::BerSetParser {
     pub fn New(
-        parser: *mut crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        parser: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (parser))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReadObject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible = __cordl_object
-            .invoke("ReadObject", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+        > = __cordl_object.invoke("ReadObject", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToAsn1Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = __cordl_object.invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        parser: *mut crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+        parser: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (parser))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerSetParser")]

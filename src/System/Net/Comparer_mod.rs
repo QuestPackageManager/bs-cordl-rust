@@ -23,24 +23,24 @@ impl std::ops::DerefMut for crate::System::Net::Comparer {
 }
 #[cfg(feature = "System+Net+Comparer")]
 impl crate::System::Net::Comparer {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn System_Collections_IComparer_Compare(
         &mut self,
-        ol: *mut quest_hook::libil2cpp::Il2CppObject,
-        _cordl_or: *mut quest_hook::libil2cpp::Il2CppObject,
+        ol: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_or: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("System.Collections.IComparer.Compare", (ol, _cordl_or))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::System::Net::Comparer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+Comparer")]

@@ -27,13 +27,13 @@ impl std::ops::DerefMut for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoN
 #[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
 impl crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
     pub fn New(
-        reader: *mut crate::System::Xml::XmlReader,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (reader))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn System_Xml_Schema_IXmlSchemaInfo_get_IsDefault(
         &mut self,
@@ -43,7 +43,7 @@ impl crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("System.Xml.Schema.IXmlSchemaInfo.get_IsDefault", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Xml_Schema_IXmlSchemaInfo_get_IsNil(
         &mut self,
@@ -53,53 +53,63 @@ impl crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("System.Xml.Schema.IXmlSchemaInfo.get_IsNil", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Xml_Schema_IXmlSchemaInfo_get_MemberType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaSimpleType = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        > = __cordl_object
             .invoke("System.Xml.Schema.IXmlSchemaInfo.get_MemberType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Xml_Schema_IXmlSchemaInfo_get_SchemaAttribute(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAttribute>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaAttribute = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaAttribute,
+        > = __cordl_object
             .invoke("System.Xml.Schema.IXmlSchemaInfo.get_SchemaAttribute", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Xml_Schema_IXmlSchemaInfo_get_SchemaElement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaElement,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaElement = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaElement,
+        > = __cordl_object
             .invoke("System.Xml.Schema.IXmlSchemaInfo.get_SchemaElement", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Xml_Schema_IXmlSchemaInfo_get_SchemaType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchemaType> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaType = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaType,
+        > = __cordl_object
             .invoke("System.Xml.Schema.IXmlSchemaInfo.get_SchemaType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Xml_Schema_IXmlSchemaInfo_get_Validity(
         &mut self,
@@ -109,18 +119,18 @@ impl crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
         );
         let __cordl_ret: crate::System::Xml::Schema::XmlSchemaValidity = __cordl_object
             .invoke("System.Xml.Schema.IXmlSchemaInfo.get_Validity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        reader: *mut crate::System::Xml::XmlReader,
+        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (reader))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]

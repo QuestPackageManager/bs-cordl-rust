@@ -37,7 +37,9 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
     pub type WorkStealingQueue = crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue;
     pub fn Dequeue(
         &mut self,
-        tl: *mut crate::System::Threading::ThreadPoolWorkQueueThreadLocals,
+        tl: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ThreadPoolWorkQueueThreadLocals,
+        >,
         callback: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Threading::IThreadPoolWorkItem,
         >,
@@ -48,11 +50,13 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dequeue", (tl, callback, missedSteal))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enqueue(
         &mut self,
-        callback: *mut crate::System::Threading::IThreadPoolWorkItem,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::IThreadPoolWorkItem,
+        >,
         forceGlobal: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -60,19 +64,22 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Enqueue", (callback, forceGlobal))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnsureCurrentThreadHasQueue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::ThreadPoolWorkQueueThreadLocals,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ThreadPoolWorkQueueThreadLocals,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::ThreadPoolWorkQueueThreadLocals = __cordl_object
-            .invoke("EnsureCurrentThreadHasQueue", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ThreadPoolWorkQueueThreadLocals,
+        > = __cordl_object.invoke("EnsureCurrentThreadHasQueue", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn EnsureThreadRequested(
         &mut self,
@@ -82,17 +89,19 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnsureThreadRequested", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LocalFindAndPop(
         &mut self,
-        callback: *mut crate::System::Threading::IThreadPoolWorkItem,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::IThreadPoolWorkItem,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("LocalFindAndPop", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkThreadRequestSatisfied(
         &mut self,
@@ -102,14 +111,14 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkThreadRequestSatisfied", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -119,7 +128,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
@@ -179,7 +188,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
                 "CompareExchangeIndexes",
                 (prevUpper, newUpper, prevLower, newLower),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetIndexes(
         &mut self,
@@ -191,21 +200,21 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetIndexes", (upper, lower))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsUsedUp(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsUsedUp", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn TryDequeue(
         &mut self,
@@ -217,17 +226,17 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryDequeue", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryEnqueue(
         &mut self,
-        node: *mut crate::System::Threading::IThreadPoolWorkItem,
+        node: quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryEnqueue", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -237,7 +246,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
@@ -292,9 +301,11 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Add", (e))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(initialSize: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New(
+        initialSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -303,7 +314,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (initialSize))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Remove(
         &mut self,
@@ -318,7 +329,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (e))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -333,11 +344,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (initialSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -345,9 +358,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = __cordl_object
-            .invoke("get_Current", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = __cordl_object.invoke("get_Current", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
@@ -398,13 +412,13 @@ for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
 impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
     pub fn LocalFindAndPop(
         &mut self,
-        obj: *mut crate::System::Threading::IThreadPoolWorkItem,
+        obj: quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("LocalFindAndPop", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LocalPop(
         &mut self,
@@ -416,25 +430,25 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("LocalPop", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LocalPush(
         &mut self,
-        obj: *mut crate::System::Threading::IThreadPoolWorkItem,
+        obj: quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LocalPush", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn TrySteal_ByRefMut_ByRefMut0(
         &mut self,
@@ -447,7 +461,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TrySteal", (obj, missedSteal))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TrySteal_i32_1(
         &mut self,
@@ -462,7 +476,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TrySteal", (obj, missedSteal, millisecondsTimeout))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -472,7 +486,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]

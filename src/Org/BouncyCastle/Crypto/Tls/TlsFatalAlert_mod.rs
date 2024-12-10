@@ -27,32 +27,34 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlert
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlert {
     pub fn New_Exception1(
         alertDescription: u8,
-        alertCause: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        alertCause: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (alertDescription, alertCause))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
-    pub fn New_u8_0(alertDescription: u8) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_u8_0(
+        alertDescription: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (alertDescription))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_Exception1(
         &mut self,
         alertDescription: u8,
-        alertCause: *mut crate::System::Exception,
+        alertCause: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (alertDescription, alertCause))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u8_0(
         &mut self,
@@ -63,14 +65,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlert {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (alertDescription))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AlertDescription(&mut self) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u8 = __cordl_object.invoke("get_AlertDescription", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsFatalAlert")]

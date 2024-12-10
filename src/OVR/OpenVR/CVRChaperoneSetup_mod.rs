@@ -34,11 +34,11 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CommitWorkingCopy", (configFile))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExportLiveToBuffer(
         &mut self,
-        pBuffer: *mut crate::System::Text::StringBuilder,
+        pBuffer: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         pnBufferLength: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -46,7 +46,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ExportLiveToBuffer", (pBuffer, pnBufferLength))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLiveCollisionBoundsInfo(
         &mut self,
@@ -59,7 +59,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetLiveCollisionBoundsInfo", (pQuadsBuffer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLiveCollisionBoundsTagsInfo(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetLiveCollisionBoundsTagsInfo", (pTagsBuffer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLivePhysicalBoundsInfo(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetLivePhysicalBoundsInfo", (pQuadsBuffer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLiveSeatedZeroPoseToRawTrackingPose(
         &mut self,
@@ -101,7 +101,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
                 "GetLiveSeatedZeroPoseToRawTrackingPose",
                 (pmatSeatedZeroPoseToRawTrackingPose),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetWorkingCollisionBoundsInfo(
         &mut self,
@@ -114,7 +114,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetWorkingCollisionBoundsInfo", (pQuadsBuffer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetWorkingPlayAreaRect(
         &mut self,
@@ -124,7 +124,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetWorkingPlayAreaRect", (rect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetWorkingPlayAreaSize(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetWorkingPlayAreaSize", (pSizeX, pSizeZ))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetWorkingSeatedZeroPoseToRawTrackingPose(
         &mut self,
@@ -152,7 +152,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
                 "GetWorkingSeatedZeroPoseToRawTrackingPose",
                 (pmatSeatedZeroPoseToRawTrackingPose),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetWorkingStandingZeroPoseToRawTrackingPose(
         &mut self,
@@ -168,11 +168,11 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
                 "GetWorkingStandingZeroPoseToRawTrackingPose",
                 (pmatStandingZeroPoseToRawTrackingPose),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ImportFromBufferToWorking(
         &mut self,
-        pBuffer: *mut quest_hook::libil2cpp::Il2CppString,
+        pBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nImportFlags: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -180,16 +180,16 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ImportFromBufferToWorking", (pBuffer, nImportFlags))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pInterface))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReloadFromDisk(
         &mut self,
@@ -200,7 +200,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReloadFromDisk", (configFile))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RevertWorkingCopy(
         &mut self,
@@ -210,12 +210,12 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RevertWorkingCopy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetWorkingCollisionBoundsInfo(
         &mut self,
-        pQuadsBuffer: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::OVR::OpenVR::HmdQuad_t,
+        pQuadsBuffer: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::HmdQuad_t>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -223,23 +223,23 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetWorkingCollisionBoundsInfo", (pQuadsBuffer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetWorkingCollisionBoundsTagsInfo(
         &mut self,
-        pTagsBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        pTagsBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetWorkingCollisionBoundsTagsInfo", (pTagsBuffer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetWorkingPhysicalBoundsInfo(
         &mut self,
-        pQuadsBuffer: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::OVR::OpenVR::HmdQuad_t,
+        pQuadsBuffer: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::HmdQuad_t>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -247,7 +247,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("SetWorkingPhysicalBoundsInfo", (pQuadsBuffer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetWorkingPlayAreaSize(
         &mut self,
@@ -259,7 +259,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetWorkingPlayAreaSize", (sizeX, sizeZ))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetWorkingSeatedZeroPoseToRawTrackingPose(
         &mut self,
@@ -275,7 +275,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
                 "SetWorkingSeatedZeroPoseToRawTrackingPose",
                 (pMatSeatedZeroPoseToRawTrackingPose),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetWorkingStandingZeroPoseToRawTrackingPose(
         &mut self,
@@ -291,7 +291,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
                 "SetWorkingStandingZeroPoseToRawTrackingPose",
                 (pMatStandingZeroPoseToRawTrackingPose),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -302,7 +302,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (pInterface))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRChaperoneSetup")]

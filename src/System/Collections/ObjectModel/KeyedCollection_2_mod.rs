@@ -61,7 +61,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddKey", (key, item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearItems(
         &mut self,
@@ -77,7 +77,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearItems", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Contains(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -90,7 +90,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateDictionary(
         &mut self,
@@ -106,7 +106,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateDictionary", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetKeyForItem(&mut self, item: TItem) -> quest_hook::libil2cpp::Result<TKey>
     where
@@ -119,7 +119,7 @@ impl<
             self,
         );
         let __cordl_ret: TKey = __cordl_object.invoke("GetKeyForItem", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InsertItem(
         &mut self,
@@ -137,9 +137,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InsertItem", (index, item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -150,11 +150,13 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IEqualityComparer_1_1(
-        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -165,12 +167,14 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (comparer))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IEqualityComparer_1_i32_2(
-        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
         dictionaryCreationThreshold: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -181,7 +185,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (comparer, dictionaryCreationThreshold))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveItem(
         &mut self,
@@ -198,7 +202,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveItem", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveKey(
         &mut self,
@@ -215,7 +219,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveKey", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetItem(
         &mut self,
@@ -233,7 +237,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetItem", (index, item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValue(
         &mut self,
@@ -250,7 +254,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (key, item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -266,11 +270,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEqualityComparer_1_1(
         &mut self,
-        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -283,11 +289,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (comparer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEqualityComparer_1_i32_2(
         &mut self,
-        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
         dictionaryCreationThreshold: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -301,12 +309,14 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (comparer, dictionaryCreationThreshold))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Dictionary(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IDictionary_2<TKey, TItem>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IDictionary_2<TKey, TItem>,
+        >,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -317,11 +327,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
-            TKey,
-            TItem,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IDictionary_2<TKey, TItem>,
         > = __cordl_object.invoke("get_Dictionary", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<TItem>
     where
@@ -334,12 +343,12 @@ impl<
             self,
         );
         let __cordl_ret: TItem = __cordl_object.invoke("get_Item", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Items(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<TItem>,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TItem>>,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -350,9 +359,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<TItem> = __cordl_object
-            .invoke("get_Items", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TItem>,
+        > = __cordl_object.invoke("get_Items", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Collections+ObjectModel+KeyedCollection_2")]

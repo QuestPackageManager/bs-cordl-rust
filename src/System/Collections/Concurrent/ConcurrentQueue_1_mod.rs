@@ -43,7 +43,7 @@ impl<
     >;
     pub fn CopyTo(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -55,7 +55,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyTo", (array, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enqueue(
         &mut self,
@@ -70,7 +70,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Enqueue", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnqueueSlow(
         &mut self,
@@ -85,16 +85,20 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnqueueSlow", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enumerate(
         &mut self,
-        head: *mut crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
+        head: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
+        >,
         headHead: i32,
-        tail: *mut crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
+        tail: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
+        >,
         tailTail: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<T>,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -103,14 +107,15 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<T> = __cordl_object
-            .invoke("Enumerate", (head, headHead, tail, tailTail))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<T>,
+        > = __cordl_object.invoke("Enumerate", (head, headHead, tail, tailTail))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<T>,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -119,14 +124,15 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<T> = __cordl_object
-            .invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<T>,
+        > = __cordl_object.invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetItemWhenAvailable(
         &mut self,
-        segment: *mut crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<
-            T,
+        segment: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
         >,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -139,9 +145,9 @@ impl<
         );
         let __cordl_ret: T = __cordl_object
             .invoke("GetItemWhenAvailable", (segment, i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -150,7 +156,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SnapForObservation(
         &mut self,
@@ -172,7 +178,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SnapForObservation", (head, headHead, tail, tailTail))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Concurrent_IProducerConsumerCollection_T__TryAdd(
         &mut self,
@@ -190,7 +196,7 @@ impl<
                 "System.Collections.Concurrent.IProducerConsumerCollection<T>.TryAdd",
                 (item),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Concurrent_IProducerConsumerCollection_T__TryTake(
         &mut self,
@@ -208,11 +214,11 @@ impl<
                 "System.Collections.Concurrent.IProducerConsumerCollection<T>.TryTake",
                 (item),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_CopyTo(
         &mut self,
-        array: *mut crate::System::Array,
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -224,7 +230,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.Collections.ICollection.CopyTo", (array, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_get_IsSynchronized(
         &mut self,
@@ -238,11 +244,13 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("System.Collections.ICollection.get_IsSynchronized", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -250,13 +258,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("System.Collections.ICollection.get_SyncRoot", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -264,13 +275,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToArray(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -278,9 +292,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = __cordl_object
-            .invoke("ToArray", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = __cordl_object.invoke("ToArray", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn TryDequeue(
         &mut self,
@@ -294,7 +309,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryDequeue", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryDequeueSlow(
         &mut self,
@@ -308,7 +323,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryDequeueSlow", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -320,7 +335,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -331,7 +346,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
@@ -402,9 +417,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnsureFrozenForEnqueues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(boundedLength: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New(
+        boundedLength: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -413,7 +430,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (boundedLength))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn TryDequeue(
         &mut self,
@@ -427,7 +444,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryDequeue", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryEnqueue(&mut self, item: T) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -438,7 +455,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryEnqueue", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -453,7 +470,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (boundedLength))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Capacity(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -464,7 +481,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Capacity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_FreezeOffset(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -475,7 +492,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_FreezeOffset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment")]

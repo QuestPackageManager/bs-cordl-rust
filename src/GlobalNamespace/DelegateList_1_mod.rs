@@ -44,7 +44,7 @@ for crate::GlobalNamespace::DelegateList_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
     pub fn Add(
         &mut self,
-        action: *mut crate::System::Action_1<T>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -55,7 +55,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -67,7 +67,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -82,21 +82,25 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", (res))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        acquireFunc: *mut crate::System::Func_2<
-            *mut crate::System::Action_1<T>,
-            *mut crate::System::Collections::Generic::LinkedListNode_1<
+        acquireFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
                 *mut crate::System::Action_1<T>,
+                *mut crate::System::Collections::Generic::LinkedListNode_1<
+                    *mut crate::System::Action_1<T>,
+                >,
             >,
         >,
-        releaseFunc: *mut crate::System::Action_1<
-            *mut crate::System::Collections::Generic::LinkedListNode_1<
-                *mut crate::System::Action_1<T>,
+        releaseFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::System::Collections::Generic::LinkedListNode_1<
+                    *mut crate::System::Action_1<T>,
+                >,
             >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -105,11 +109,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (acquireFunc, releaseFunc))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Remove(
         &mut self,
-        action: *mut crate::System::Action_1<T>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -120,19 +124,23 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        acquireFunc: *mut crate::System::Func_2<
-            *mut crate::System::Action_1<T>,
-            *mut crate::System::Collections::Generic::LinkedListNode_1<
+        acquireFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
                 *mut crate::System::Action_1<T>,
+                *mut crate::System::Collections::Generic::LinkedListNode_1<
+                    *mut crate::System::Action_1<T>,
+                >,
             >,
         >,
-        releaseFunc: *mut crate::System::Action_1<
-            *mut crate::System::Collections::Generic::LinkedListNode_1<
-                *mut crate::System::Action_1<T>,
+        releaseFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::System::Collections::Generic::LinkedListNode_1<
+                    *mut crate::System::Action_1<T>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -145,7 +153,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (acquireFunc, releaseFunc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -156,7 +164,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "DelegateList_1")]

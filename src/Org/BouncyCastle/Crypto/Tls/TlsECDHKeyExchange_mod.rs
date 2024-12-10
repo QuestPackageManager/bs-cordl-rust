@@ -35,53 +35,67 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsECDHKeyExc
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsECDHKeyExchange {
     pub fn GenerateClientKeyExchange(
         &mut self,
-        output: *mut crate::System::IO::Stream,
+        output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateClientKeyExchange", (output))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GeneratePremasterSecret(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GeneratePremasterSecret", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("GeneratePremasterSecret", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateServerKeyExchange(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GenerateServerKeyExchange", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("GenerateServerKeyExchange", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+        context: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         keyExchange: i32,
-        supportedSignatureAlgorithms: *mut crate::System::Collections::IList,
-        namedCurves: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        clientECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        serverECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IList,
+        >,
+        namedCurves: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        clientECPointFormats: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        serverECPointFormats: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -95,62 +109,68 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsECDHKeyExchange {
                     serverECPointFormats,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessClientCertificate(
         &mut self,
-        clientCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+        clientCertificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessClientCertificate", (clientCertificate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessClientCredentials(
         &mut self,
-        clientCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+        clientCredentials: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessClientCredentials", (clientCredentials))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessClientKeyExchange(
         &mut self,
-        input: *mut crate::System::IO::Stream,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessClientKeyExchange", (input))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessServerCertificate(
         &mut self,
-        serverCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+        serverCertificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessServerCertificate", (serverCertificate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessServerKeyExchange(
         &mut self,
-        input: *mut crate::System::IO::Stream,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessServerKeyExchange", (input))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SkipServerCredentials(
         &mut self,
@@ -160,26 +180,34 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsECDHKeyExchange {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SkipServerCredentials", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateCertificateRequest(
         &mut self,
-        certificateRequest: *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+        certificateRequest: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ValidateCertificateRequest", (certificateRequest))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         keyExchange: i32,
-        supportedSignatureAlgorithms: *mut crate::System::Collections::IList,
-        namedCurves: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        clientECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        serverECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IList,
+        >,
+        namedCurves: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        clientECPointFormats: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        serverECPointFormats: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -195,7 +223,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsECDHKeyExchange {
                     serverECPointFormats,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RequiresServerKeyExchange(
         &mut self,
@@ -205,7 +233,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsECDHKeyExchange {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_RequiresServerKeyExchange", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsECDHKeyExchange")]

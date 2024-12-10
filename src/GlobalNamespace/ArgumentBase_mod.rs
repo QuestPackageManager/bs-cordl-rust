@@ -28,15 +28,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ArgumentBase {
 #[cfg(feature = "ArgumentBase")]
 impl crate::GlobalNamespace::ArgumentBase {
     pub fn New(
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        description: *mut quest_hook::libil2cpp::Il2CppString,
-        valueType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        valueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (name, description, valueType))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -46,11 +46,11 @@ impl crate::GlobalNamespace::ArgumentBase {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryParseWithValue(
         &mut self,
-        inValue: *mut quest_hook::libil2cpp::Il2CppString,
+        inValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         outError: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppString,
         >,
@@ -60,27 +60,27 @@ impl crate::GlobalNamespace::ArgumentBase {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryParseWithValue", (inValue, outError))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        description: *mut quest_hook::libil2cpp::Il2CppString,
-        valueType: *mut crate::System::Type,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        valueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name, description, valueType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isOptional(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isOptional", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ArgumentBase")]

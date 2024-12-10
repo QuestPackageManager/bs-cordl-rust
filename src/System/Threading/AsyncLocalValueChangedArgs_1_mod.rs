@@ -42,7 +42,7 @@ impl<
             ".ctor",
             (previousValue, currentValue, contextChanged),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CurrentValue(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -54,6 +54,6 @@ impl<
             "get_CurrentValue",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

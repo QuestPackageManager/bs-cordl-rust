@@ -30,12 +30,12 @@ impl crate::UnityEngine::UIElements::BindableElement {
     pub type UxmlFactory = crate::UnityEngine::UIElements::BindableElement_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -45,28 +45,31 @@ impl crate::UnityEngine::UIElements::BindableElement {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_binding(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::IBinding> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBinding>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IBinding = __cordl_object
-            .invoke("get_binding", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IBinding,
+        > = __cordl_object.invoke("get_binding", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_bindingPath(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_bindingPath", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement")]
@@ -112,12 +115,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::BindableElement_Uxml
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlFactory")]
 impl crate::UnityEngine::UIElements::BindableElement_UxmlFactory {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -127,7 +130,7 @@ impl crate::UnityEngine::UIElements::BindableElement_UxmlFactory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlFactory")]
@@ -170,8 +173,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::BindableElement_Uxml
 impl crate::UnityEngine::UIElements::BindableElement_UxmlTraits {
     pub fn Init(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -179,14 +182,14 @@ impl crate::UnityEngine::UIElements::BindableElement_UxmlTraits {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (ve, bag, cc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -196,7 +199,7 @@ impl crate::UnityEngine::UIElements::BindableElement_UxmlTraits {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlTraits")]

@@ -45,56 +45,62 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
     pub fn AddColorGradientPreset_Internal(
         &mut self,
         hashCode: i32,
-        spriteAsset: *mut crate::UnityEngine::TextCore::Text::TextColorGradient,
+        spriteAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextColorGradient,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddColorGradientPreset_Internal", (hashCode, spriteAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddFontAssetInternal(
         &mut self,
-        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddFontAssetInternal", (fontAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddFontMaterialInternal(
         &mut self,
         hashCode: i32,
-        material: *mut crate::UnityEngine::Material,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddFontMaterialInternal", (hashCode, material))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddSpriteAssetInternal(
         &mut self,
         hashCode: i32,
-        spriteAsset: *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
+        spriteAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::SpriteAsset,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddSpriteAssetInternal", (hashCode, spriteAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn TryGetColorGradientPresetInternal(
         &mut self,
@@ -108,7 +114,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetColorGradientPresetInternal", (hashCode, gradientPreset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetFontAssetInternal(
         &mut self,
@@ -122,7 +128,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetFontAssetInternal", (hashCode, fontAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetMaterialInternal(
         &mut self,
@@ -134,7 +140,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetMaterialInternal", (hashCode, material))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetSpriteAssetInternal(
         &mut self,
@@ -148,7 +154,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetSpriteAssetInternal", (hashCode, spriteAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -158,7 +164,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+MaterialReferenceManager")]

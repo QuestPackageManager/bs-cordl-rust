@@ -39,7 +39,7 @@ impl<TParam1: quest_hook::libil2cpp::Type> crate::Zenject::IPoolable_1<TParam1> 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDespawned", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnSpawned(
         &mut self,
@@ -54,7 +54,7 @@ impl<TParam1: quest_hook::libil2cpp::Type> crate::Zenject::IPoolable_1<TParam1> 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnSpawned", (p1))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

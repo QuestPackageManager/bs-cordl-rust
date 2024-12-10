@@ -33,62 +33,66 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     pub const kSfxLoudnessTarget: f32 = -10f32;
     pub fn GetLoudnessByLevelId(
         &mut self,
-        levelId: *mut quest_hook::libil2cpp::Il2CppString,
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetLoudnessByLevelId", (levelId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLoudnessByLevelIdOrNull(
         &mut self,
-        levelId: *mut quest_hook::libil2cpp::Il2CppString,
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::System::Nullable_1<f32> = __cordl_object
             .invoke("GetLoudnessByLevelIdOrNull", (levelId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLoudnessCorrectionByLevelId(
         &mut self,
-        levelId: *mut quest_hook::libil2cpp::Il2CppString,
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("GetLoudnessCorrectionByLevelId", (levelId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMaxSfxVolumeByLevelId(
         &mut self,
-        levelId: *mut quest_hook::libil2cpp::Il2CppString,
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("GetMaxSfxVolumeByLevelId", (levelId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        loudnessPerLeveDataList: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::PerceivedLoudnessSO,
+        loudnessPerLeveDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::GlobalNamespace::PerceivedLoudnessSO,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (loudnessPerLeveDataList))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        loudnessPerLeveDataList: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::PerceivedLoudnessSO,
+        loudnessPerLeveDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::GlobalNamespace::PerceivedLoudnessSO,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -96,7 +100,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (loudnessPerLeveDataList))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PerceivedLoudnessPerLevelModel")]

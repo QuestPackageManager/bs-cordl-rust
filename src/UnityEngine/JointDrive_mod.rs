@@ -30,7 +30,7 @@ impl crate::UnityEngine::JointDrive {
             "get_maximumForce",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mode(
         &mut self,
@@ -40,7 +40,7 @@ impl crate::UnityEngine::JointDrive {
             "get_mode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_positionDamper(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -48,7 +48,7 @@ impl crate::UnityEngine::JointDrive {
             "get_positionDamper",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_positionSpring(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -56,7 +56,7 @@ impl crate::UnityEngine::JointDrive {
             "get_positionSpring",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_useAcceleration(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -64,7 +64,7 @@ impl crate::UnityEngine::JointDrive {
             "get_useAcceleration",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maximumForce(
         &mut self,
@@ -75,7 +75,7 @@ impl crate::UnityEngine::JointDrive {
             "set_maximumForce",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_mode(
         &mut self,
@@ -86,7 +86,7 @@ impl crate::UnityEngine::JointDrive {
             "set_mode",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_positionDamper(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::UnityEngine::JointDrive {
             "set_positionDamper",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_positionSpring(
         &mut self,
@@ -108,7 +108,7 @@ impl crate::UnityEngine::JointDrive {
             "set_positionSpring",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_useAcceleration(
         &mut self,
@@ -119,6 +119,6 @@ impl crate::UnityEngine::JointDrive {
             "set_useAcceleration",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

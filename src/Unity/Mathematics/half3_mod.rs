@@ -27,14 +27,14 @@ impl crate::Unity::Mathematics::half3 {
     pub type DebuggerProxy = crate::Unity::Mathematics::half3_DebuggerProxy;
     pub fn Equals_Il2CppObject1(
         &mut self,
-        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (o),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_half3_0(
         &mut self,
@@ -45,7 +45,7 @@ impl crate::Unity::Mathematics::half3 {
             "Equals",
             (rhs),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -53,29 +53,33 @@ impl crate::Unity::Mathematics::half3 {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider1(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
-        formatProvider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (format, formatProvider),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_double3_8(
         &mut self,
@@ -86,7 +90,7 @@ impl crate::Unity::Mathematics::half3 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_5(
         &mut self,
@@ -97,7 +101,7 @@ impl crate::Unity::Mathematics::half3 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f64_7(
         &mut self,
@@ -108,7 +112,7 @@ impl crate::Unity::Mathematics::half3 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_float3_6(
         &mut self,
@@ -119,7 +123,7 @@ impl crate::Unity::Mathematics::half3 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_half2_half2(
         &mut self,
@@ -131,7 +135,7 @@ impl crate::Unity::Mathematics::half3 {
             ".ctor",
             (xy, z),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_half3_3(
         &mut self,
@@ -142,7 +146,7 @@ impl crate::Unity::Mathematics::half3 {
             ".ctor",
             (xyz),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_half4(
         &mut self,
@@ -153,7 +157,7 @@ impl crate::Unity::Mathematics::half3 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_half_half2_1(
         &mut self,
@@ -165,7 +169,7 @@ impl crate::Unity::Mathematics::half3 {
             ".ctor",
             (x, yz),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_half_half_half0(
         &mut self,
@@ -178,7 +182,7 @@ impl crate::Unity::Mathematics::half3 {
             ".ctor",
             (x, y, z),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
@@ -189,7 +193,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_Item",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xx(
         &mut self,
@@ -199,7 +203,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxx(
         &mut self,
@@ -209,7 +213,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxxx(
         &mut self,
@@ -219,7 +223,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxxy(
         &mut self,
@@ -229,7 +233,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxxz(
         &mut self,
@@ -239,7 +243,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxy(
         &mut self,
@@ -249,7 +253,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxyx(
         &mut self,
@@ -259,7 +263,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxyy(
         &mut self,
@@ -269,7 +273,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxyz(
         &mut self,
@@ -279,7 +283,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxz(
         &mut self,
@@ -289,7 +293,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxzx(
         &mut self,
@@ -299,7 +303,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxzy(
         &mut self,
@@ -309,7 +313,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxzz(
         &mut self,
@@ -319,7 +323,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xxzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xy(
         &mut self,
@@ -329,7 +333,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyx(
         &mut self,
@@ -339,7 +343,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyxx(
         &mut self,
@@ -349,7 +353,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyxy(
         &mut self,
@@ -359,7 +363,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyxz(
         &mut self,
@@ -369,7 +373,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyy(
         &mut self,
@@ -379,7 +383,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyyx(
         &mut self,
@@ -389,7 +393,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyyy(
         &mut self,
@@ -399,7 +403,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyyz(
         &mut self,
@@ -409,7 +413,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyz(
         &mut self,
@@ -419,7 +423,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyzx(
         &mut self,
@@ -429,7 +433,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyzy(
         &mut self,
@@ -439,7 +443,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyzz(
         &mut self,
@@ -449,7 +453,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xyzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xz(
         &mut self,
@@ -459,7 +463,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzx(
         &mut self,
@@ -469,7 +473,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzxx(
         &mut self,
@@ -479,7 +483,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzxy(
         &mut self,
@@ -489,7 +493,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzxz(
         &mut self,
@@ -499,7 +503,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzy(
         &mut self,
@@ -509,7 +513,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzyx(
         &mut self,
@@ -519,7 +523,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzyy(
         &mut self,
@@ -529,7 +533,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzyz(
         &mut self,
@@ -539,7 +543,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzz(
         &mut self,
@@ -549,7 +553,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzzx(
         &mut self,
@@ -559,7 +563,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzzy(
         &mut self,
@@ -569,7 +573,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzzz(
         &mut self,
@@ -579,7 +583,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_xzzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yx(
         &mut self,
@@ -589,7 +593,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxx(
         &mut self,
@@ -599,7 +603,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxxx(
         &mut self,
@@ -609,7 +613,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxxy(
         &mut self,
@@ -619,7 +623,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxxz(
         &mut self,
@@ -629,7 +633,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxy(
         &mut self,
@@ -639,7 +643,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxyx(
         &mut self,
@@ -649,7 +653,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxyy(
         &mut self,
@@ -659,7 +663,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxyz(
         &mut self,
@@ -669,7 +673,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxz(
         &mut self,
@@ -679,7 +683,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxzx(
         &mut self,
@@ -689,7 +693,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxzy(
         &mut self,
@@ -699,7 +703,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxzz(
         &mut self,
@@ -709,7 +713,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yxzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yy(
         &mut self,
@@ -719,7 +723,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyx(
         &mut self,
@@ -729,7 +733,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyxx(
         &mut self,
@@ -739,7 +743,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyxy(
         &mut self,
@@ -749,7 +753,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyxz(
         &mut self,
@@ -759,7 +763,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyy(
         &mut self,
@@ -769,7 +773,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyyx(
         &mut self,
@@ -779,7 +783,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyyy(
         &mut self,
@@ -789,7 +793,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyyz(
         &mut self,
@@ -799,7 +803,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyz(
         &mut self,
@@ -809,7 +813,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyzx(
         &mut self,
@@ -819,7 +823,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyzy(
         &mut self,
@@ -829,7 +833,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyzz(
         &mut self,
@@ -839,7 +843,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yyzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yz(
         &mut self,
@@ -849,7 +853,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzx(
         &mut self,
@@ -859,7 +863,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzxx(
         &mut self,
@@ -869,7 +873,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzxy(
         &mut self,
@@ -879,7 +883,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzxz(
         &mut self,
@@ -889,7 +893,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzy(
         &mut self,
@@ -899,7 +903,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzyx(
         &mut self,
@@ -909,7 +913,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzyy(
         &mut self,
@@ -919,7 +923,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzyz(
         &mut self,
@@ -929,7 +933,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzz(
         &mut self,
@@ -939,7 +943,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzzx(
         &mut self,
@@ -949,7 +953,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzzy(
         &mut self,
@@ -959,7 +963,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzzz(
         &mut self,
@@ -969,7 +973,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_yzzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zx(
         &mut self,
@@ -979,7 +983,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxx(
         &mut self,
@@ -989,7 +993,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxxx(
         &mut self,
@@ -999,7 +1003,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxxy(
         &mut self,
@@ -1009,7 +1013,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxxz(
         &mut self,
@@ -1019,7 +1023,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxy(
         &mut self,
@@ -1029,7 +1033,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxyx(
         &mut self,
@@ -1039,7 +1043,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxyy(
         &mut self,
@@ -1049,7 +1053,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxyz(
         &mut self,
@@ -1059,7 +1063,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxz(
         &mut self,
@@ -1069,7 +1073,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxzx(
         &mut self,
@@ -1079,7 +1083,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxzy(
         &mut self,
@@ -1089,7 +1093,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxzz(
         &mut self,
@@ -1099,7 +1103,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zxzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zy(
         &mut self,
@@ -1109,7 +1113,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyx(
         &mut self,
@@ -1119,7 +1123,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyxx(
         &mut self,
@@ -1129,7 +1133,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyxy(
         &mut self,
@@ -1139,7 +1143,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyxz(
         &mut self,
@@ -1149,7 +1153,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyy(
         &mut self,
@@ -1159,7 +1163,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyyx(
         &mut self,
@@ -1169,7 +1173,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyyy(
         &mut self,
@@ -1179,7 +1183,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyyz(
         &mut self,
@@ -1189,7 +1193,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyz(
         &mut self,
@@ -1199,7 +1203,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyzx(
         &mut self,
@@ -1209,7 +1213,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyzy(
         &mut self,
@@ -1219,7 +1223,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyzz(
         &mut self,
@@ -1229,7 +1233,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zyzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zz(
         &mut self,
@@ -1239,7 +1243,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzx(
         &mut self,
@@ -1249,7 +1253,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzxx(
         &mut self,
@@ -1259,7 +1263,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzxy(
         &mut self,
@@ -1269,7 +1273,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzxz(
         &mut self,
@@ -1279,7 +1283,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzy(
         &mut self,
@@ -1289,7 +1293,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzyx(
         &mut self,
@@ -1299,7 +1303,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzyy(
         &mut self,
@@ -1309,7 +1313,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzyz(
         &mut self,
@@ -1319,7 +1323,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzz(
         &mut self,
@@ -1329,7 +1333,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzzx(
         &mut self,
@@ -1339,7 +1343,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzzy(
         &mut self,
@@ -1349,7 +1353,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzzz(
         &mut self,
@@ -1359,7 +1363,7 @@ impl crate::Unity::Mathematics::half3 {
             "get_zzzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
@@ -1371,7 +1375,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_Item",
             (index, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xy(
         &mut self,
@@ -1382,7 +1386,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_xy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xyz(
         &mut self,
@@ -1393,7 +1397,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_xyz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xz(
         &mut self,
@@ -1404,7 +1408,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_xz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xzy(
         &mut self,
@@ -1415,7 +1419,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_xzy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yx(
         &mut self,
@@ -1426,7 +1430,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_yx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yxz(
         &mut self,
@@ -1437,7 +1441,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_yxz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yz(
         &mut self,
@@ -1448,7 +1452,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_yz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yzx(
         &mut self,
@@ -1459,7 +1463,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_yzx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zx(
         &mut self,
@@ -1470,7 +1474,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_zx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zxy(
         &mut self,
@@ -1481,7 +1485,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_zxy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zy(
         &mut self,
@@ -1492,7 +1496,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_zy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zyx(
         &mut self,
@@ -1503,7 +1507,7 @@ impl crate::Unity::Mathematics::half3 {
             "set_zyx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Mathematics+half3+DebuggerProxy")]
@@ -1537,12 +1541,12 @@ impl std::ops::DerefMut for crate::Unity::Mathematics::half3_DebuggerProxy {
 impl crate::Unity::Mathematics::half3_DebuggerProxy {
     pub fn New(
         v: crate::Unity::Mathematics::half3,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (v))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1553,7 +1557,7 @@ impl crate::Unity::Mathematics::half3_DebuggerProxy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (v))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Mathematics+half3+DebuggerProxy")]

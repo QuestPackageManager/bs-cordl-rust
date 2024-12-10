@@ -37,7 +37,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931Rng {
     pub const BLOCK64_RESEED_MAX: i64 = 32768i64;
     pub fn Generate(
         &mut self,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         predictionResistant: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -45,42 +45,48 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931Rng {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("Generate", (output, predictionResistant))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Increment(
         &mut self,
-        val: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Increment", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        engine: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        dateTimeVector: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        entropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        engine: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBlockCipher,
+        >,
+        dateTimeVector: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        entropySource: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IEntropySource,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (engine, dateTimeVector, entropySource))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Process(
         &mut self,
-        res: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        a: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        b: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Process", (res, a, b))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reseed(
         &mut self,
@@ -90,32 +96,39 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931Rng {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reseed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        engine: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        dateTimeVector: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        entropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
+        engine: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBlockCipher,
+        >,
+        dateTimeVector: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        entropySource: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IEntropySource,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (engine, dateTimeVector, entropySource))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_EntropySource(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IEntropySource>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IEntropySource = __cordl_object
-            .invoke("get_EntropySource", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IEntropySource,
+        > = __cordl_object.invoke("get_EntropySource", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+X931Rng")]

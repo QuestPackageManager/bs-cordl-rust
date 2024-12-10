@@ -27,19 +27,23 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::Triangulat
 impl crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
     pub fn AddTriangle(
         &mut self,
-        t: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        t: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddTriangle", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddTriangles(
         &mut self,
-        list: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -47,7 +51,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddTriangles", (list))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearTriangles(
         &mut self,
@@ -57,18 +61,20 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearTriangles", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Prepare(
         &mut self,
-        tcx: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+        tcx: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Prepare", (tcx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -78,32 +84,40 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
     pub fn get_Points(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            >,
         > = __cordl_object.invoke("get_Points", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Triangles(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+            >,
         > = __cordl_object.invoke("get_Triangles", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TriangulationMode(
         &mut self,
@@ -115,7 +129,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
         );
         let __cordl_ret: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode = __cordl_object
             .invoke("get_TriangulationMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+Triangulatable")]

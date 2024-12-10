@@ -83,7 +83,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
             "GetPhysicalMax",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPhysicalMin(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -91,7 +91,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
             "GetPhysicalMin",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetUsagePage(
         &mut self,
@@ -107,7 +107,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
             "GetUsagePage",
             (index, localItemState),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
@@ -150,7 +150,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
             "GetUsage",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetUsage(
         &mut self,
@@ -161,7 +161,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
             "SetUsage",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]

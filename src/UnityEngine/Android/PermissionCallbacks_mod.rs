@@ -33,12 +33,12 @@ impl std::ops::DerefMut for crate::UnityEngine::Android::PermissionCallbacks {
 }
 #[cfg(feature = "UnityEngine+Android+PermissionCallbacks")]
 impl crate::UnityEngine::Android::PermissionCallbacks {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -48,106 +48,118 @@ impl crate::UnityEngine::Android::PermissionCallbacks {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_PermissionDenied(
         &mut self,
-        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_PermissionDenied", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_PermissionDeniedAndDontAskAgain(
         &mut self,
-        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_PermissionDeniedAndDontAskAgain", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_PermissionGranted(
         &mut self,
-        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_PermissionGranted", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn onPermissionDenied(
         &mut self,
-        permissionName: *mut quest_hook::libil2cpp::Il2CppString,
+        permissionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("onPermissionDenied", (permissionName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn onPermissionDeniedAndDontAskAgain(
         &mut self,
-        permissionName: *mut quest_hook::libil2cpp::Il2CppString,
+        permissionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("onPermissionDeniedAndDontAskAgain", (permissionName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn onPermissionGranted(
         &mut self,
-        permissionName: *mut quest_hook::libil2cpp::Il2CppString,
+        permissionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("onPermissionGranted", (permissionName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_PermissionDenied(
         &mut self,
-        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_PermissionDenied", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_PermissionDeniedAndDontAskAgain(
         &mut self,
-        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_PermissionDeniedAndDontAskAgain", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_PermissionGranted(
         &mut self,
-        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_PermissionGranted", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Android+PermissionCallbacks")]

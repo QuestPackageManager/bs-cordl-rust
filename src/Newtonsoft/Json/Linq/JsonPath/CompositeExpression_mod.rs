@@ -31,24 +31,26 @@ for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
 impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
     pub fn IsMatch(
         &mut self,
-        root: *mut crate::Newtonsoft::Json::Linq::JToken,
-        t: *mut crate::Newtonsoft::Json::Linq::JToken,
-        settings: *mut crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+        root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsMatch", (root, t, settings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         _cordl_operator: crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_operator))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -59,27 +61,33 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_operator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Expressions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+            >,
         > = __cordl_object.invoke("get_Expressions", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Expressions(
         &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -87,7 +95,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Expressions", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]

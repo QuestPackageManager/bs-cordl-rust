@@ -32,7 +32,9 @@ for crate::GlobalNamespace::SyncBackgroundCommand_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SyncBackgroundCommand_1<T> {
     pub fn Execute(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -40,9 +42,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SyncBackgroundComma
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("Execute", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("Execute", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ExecuteInternal(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -53,9 +56,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SyncBackgroundComma
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("ExecuteInternal", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -64,7 +67,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SyncBackgroundComma
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -76,11 +79,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SyncBackgroundComma
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_resultTask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task_1<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -88,9 +93,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SyncBackgroundComma
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<T> = __cordl_object
-            .invoke("get_resultTask", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = __cordl_object.invoke("get_resultTask", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SyncBackgroundCommand_1")]

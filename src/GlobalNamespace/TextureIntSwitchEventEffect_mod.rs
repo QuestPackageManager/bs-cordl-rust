@@ -42,32 +42,34 @@ impl crate::GlobalNamespace::TextureIntSwitchEventEffect {
     pub type TextureValueTuple = crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple;
     pub fn HandleBasicBeatmapEventData(
         &mut self,
-        data: *mut crate::GlobalNamespace::BasicBeatmapEventData,
+        data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BasicBeatmapEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleBasicBeatmapEventData", (data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
-        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+        beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCallbacksController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", (beatmapCallbacksController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -77,7 +79,7 @@ impl crate::GlobalNamespace::TextureIntSwitchEventEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTextureByIndex(
         &mut self,
@@ -88,7 +90,7 @@ impl crate::GlobalNamespace::TextureIntSwitchEventEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTextureByIndex", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -98,7 +100,7 @@ impl crate::GlobalNamespace::TextureIntSwitchEventEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TextureIntSwitchEventEffect")]

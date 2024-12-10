@@ -48,11 +48,13 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CanStartDrag", (button, localPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        drivenField: *mut crate::UnityEngine::UIElements::IValueField_1<T>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        drivenField: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IValueField_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -61,11 +63,11 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (drivenField))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessDownEvent(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -76,7 +78,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessDownEvent", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessMoveEvent(
         &mut self,
@@ -93,11 +95,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessMoveEvent", (shiftKey, altKey, deltaPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessUpEvent(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -109,11 +111,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessUpEvent", (evt, pointerId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDragZone(
         &mut self,
-        dragElement: *mut crate::UnityEngine::UIElements::VisualElement,
+        dragElement: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
         hotZone: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -125,11 +129,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDragZone", (dragElement, hotZone))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValueOnKeyDown(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::KeyDownEvent,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::KeyDownEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -140,11 +144,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValueOnKeyDown", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValueOnPointerDown(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerDownEvent,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerDownEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -155,11 +159,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValueOnPointerDown", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValueOnPointerMove(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerMoveEvent,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerMoveEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -170,11 +174,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValueOnPointerMove", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValueOnPointerUp(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::PointerUpEvent,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -185,11 +189,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValueOnPointerUp", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        drivenField: *mut crate::UnityEngine::UIElements::IValueField_1<T>,
+        drivenField: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IValueField_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -200,7 +206,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (drivenField))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dragging(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -211,7 +217,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_dragging", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_startValue(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -222,7 +228,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_startValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dragging(
         &mut self,
@@ -237,7 +243,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_dragging", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_startValue(
         &mut self,
@@ -252,7 +258,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_startValue", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+FieldMouseDragger_1")]

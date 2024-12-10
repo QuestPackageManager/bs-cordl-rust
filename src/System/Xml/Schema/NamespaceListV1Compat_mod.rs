@@ -26,35 +26,35 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::NamespaceListV1Compat {
 impl crate::System::Xml::Schema::NamespaceListV1Compat {
     pub fn Allows(
         &mut self,
-        ns: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Allows", (ns))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        namespaces: *mut quest_hook::libil2cpp::Il2CppString,
-        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        namespaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (namespaces, targetNamespace))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        namespaces: *mut quest_hook::libil2cpp::Il2CppString,
-        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (namespaces, targetNamespace))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+NamespaceListV1Compat")]

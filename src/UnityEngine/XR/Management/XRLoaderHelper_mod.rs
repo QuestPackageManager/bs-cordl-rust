@@ -30,8 +30,10 @@ impl std::ops::DerefMut for crate::UnityEngine::XR::Management::XRLoaderHelper {
 impl crate::UnityEngine::XR::Management::XRLoaderHelper {
     pub fn CreateIntegratedSubsystem<TDescriptor, TSubsystem>(
         &mut self,
-        descriptors: *mut crate::System::Collections::Generic::List_1<TDescriptor>,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        descriptors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TDescriptor>,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TDescriptor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -44,12 +46,14 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateIntegratedSubsystem", (descriptors, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateStandaloneSubsystem<TDescriptor, TSubsystem>(
         &mut self,
-        descriptors: *mut crate::System::Collections::Generic::List_1<TDescriptor>,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        descriptors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TDescriptor>,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TDescriptor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -62,12 +66,14 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateStandaloneSubsystem", (descriptors, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateSubsystem<TDescriptor, TSubsystem>(
         &mut self,
-        descriptors: *mut crate::System::Collections::Generic::List_1<TDescriptor>,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        descriptors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TDescriptor>,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TDescriptor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -80,14 +86,14 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateSubsystem", (descriptors, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Deinitialize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Deinitialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DestroySubsystem<T>(
         &mut self,
@@ -101,7 +107,7 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DestroySubsystem", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLoadedSubsystem<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -112,14 +118,14 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("GetLoadedSubsystem", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn StartSubsystem<T>(
         &mut self,
@@ -133,7 +139,7 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartSubsystem", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StopSubsystem<T>(
         &mut self,
@@ -147,7 +153,7 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StopSubsystem", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -157,7 +163,7 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRLoaderHelper")]

@@ -71,13 +71,15 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
         nameHashCode: i32,
         familyNameHashCode: i32,
         styleNameHashCode: i32,
-        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (nameHashCode, familyNameHashCode, styleNameHashCode, fontAsset),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

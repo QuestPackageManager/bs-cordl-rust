@@ -25,38 +25,42 @@ impl std::ops::DerefMut for crate::UnityEngine::Texture {
 impl crate::UnityEngine::Texture {
     pub fn CreateNativeArrayLengthOverflowException(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UnityException> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UnityException>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UnityException = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UnityException> = __cordl_object
             .invoke("CreateNativeArrayLengthOverflowException", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateNonReadableException(
         &mut self,
-        t: *mut crate::UnityEngine::Texture,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UnityException> {
+        t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UnityException>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UnityException = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UnityException> = __cordl_object
             .invoke("CreateNonReadableException", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDataHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDataHeight", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDataWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDataWidth", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNativeTexturePtr(
         &mut self,
@@ -66,7 +70,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("GetNativeTexturePtr", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPixelDataOffset(
         &mut self,
@@ -78,7 +82,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: u64 = __cordl_object
             .invoke("GetPixelDataOffset", (mipLevel, element))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPixelDataSize(
         &mut self,
@@ -90,7 +94,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: u64 = __cordl_object
             .invoke("GetPixelDataSize", (mipLevel, element))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTextureColorSpace_GraphicsFormat1(
         &mut self,
@@ -101,7 +105,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: crate::UnityEngine::TextureColorSpace = __cordl_object
             .invoke("GetTextureColorSpace", (format))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTextureColorSpace__cordl_bool0(
         &mut self,
@@ -112,7 +116,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: crate::UnityEngine::TextureColorSpace = __cordl_object
             .invoke("GetTextureColorSpace", (linear))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_GetActiveTextureColorSpace(
         &mut self,
@@ -122,14 +126,14 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("Internal_GetActiveTextureColorSpace", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ValidateFormat_GraphicsFormat_FormatUsage1(
         &mut self,
@@ -141,7 +145,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ValidateFormat", (format, usage))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateFormat_TextureFormat0(
         &mut self,
@@ -151,7 +155,7 @@ impl crate::UnityEngine::Texture {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ValidateFormat", (format))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -161,7 +165,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_activeTextureColorSpace(
         &mut self,
@@ -171,14 +175,14 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: crate::UnityEngine::ColorSpace = __cordl_object
             .invoke("get_activeTextureColorSpace", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_anisoLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_anisoLevel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_filterMode(
         &mut self,
@@ -188,28 +192,28 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: crate::UnityEngine::FilterMode = __cordl_object
             .invoke("get_filterMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_height", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isReadable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isReadable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mipmapCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_mipmapCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_texelSize(
         &mut self,
@@ -219,7 +223,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("get_texelSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_texelSize_Injected(
         &mut self,
@@ -230,14 +234,14 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_texelSize_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_width", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wrapMode(
         &mut self,
@@ -247,7 +251,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: crate::UnityEngine::TextureWrapMode = __cordl_object
             .invoke("get_wrapMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_anisoLevel(
         &mut self,
@@ -258,7 +262,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_anisoLevel", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dimension(
         &mut self,
@@ -269,7 +273,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_dimension", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_filterMode(
         &mut self,
@@ -280,7 +284,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_filterMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_height(
         &mut self,
@@ -291,7 +295,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_height", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_width(
         &mut self,
@@ -302,7 +306,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_width", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wrapMode(
         &mut self,
@@ -313,7 +317,7 @@ impl crate::UnityEngine::Texture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_wrapMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Texture")]

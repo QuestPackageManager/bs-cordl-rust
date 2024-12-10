@@ -26,14 +26,14 @@ impl std::ops::DerefMut for crate::System::Collections::IComparer {
 impl crate::System::Collections::IComparer {
     pub fn Compare(
         &mut self,
-        x: *mut quest_hook::libil2cpp::Il2CppObject,
-        y: *mut quest_hook::libil2cpp::Il2CppObject,
+        x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (x, y))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

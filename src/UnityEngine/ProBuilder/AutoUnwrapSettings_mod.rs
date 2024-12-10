@@ -42,17 +42,17 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "Reset",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             ".ctor",
             (unwrapSettings),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_anchor(
         &mut self,
@@ -75,7 +75,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "get_anchor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fill(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "get_fill",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_flipU(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -95,7 +95,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "get_flipU",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_flipV(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -103,7 +103,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "get_flipV",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_offset(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "get_offset",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -121,7 +121,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "get_rotation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_scale(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "get_scale",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_swapUV(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -139,7 +139,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "get_swapUV",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_useWorldSpace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -147,7 +147,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "get_useWorldSpace",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_anchor(
         &mut self,
@@ -158,7 +158,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "set_anchor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_fill(
         &mut self,
@@ -169,7 +169,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "set_fill",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flipU(
         &mut self,
@@ -180,7 +180,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "set_flipU",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flipV(
         &mut self,
@@ -191,7 +191,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "set_flipV",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_offset(
         &mut self,
@@ -202,7 +202,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "set_offset",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rotation(
         &mut self,
@@ -213,7 +213,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "set_rotation",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_scale(
         &mut self,
@@ -224,7 +224,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "set_scale",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_swapUV(
         &mut self,
@@ -235,7 +235,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "set_swapUV",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_useWorldSpace(
         &mut self,
@@ -246,7 +246,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "set_useWorldSpace",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]

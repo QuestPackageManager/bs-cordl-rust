@@ -26,48 +26,48 @@ impl std::ops::DerefMut for crate::Mono::Security::Interface::TlsException {
 #[cfg(feature = "Mono+Security+Interface+TlsException")]
 impl crate::Mono::Security::Interface::TlsException {
     pub fn New_Alert0(
-        alert: *mut crate::Mono::Security::Interface::Alert,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        alert: quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::Alert>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (alert, message))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_AlertDescription1(
         description: crate::Mono::Security::Interface::AlertDescription,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (description, message))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_Alert0(
         &mut self,
-        alert: *mut crate::Mono::Security::Interface::Alert,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        alert: quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::Alert>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (alert, message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_AlertDescription1(
         &mut self,
         description: crate::Mono::Security::Interface::AlertDescription,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (description, message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Security+Interface+TlsException")]

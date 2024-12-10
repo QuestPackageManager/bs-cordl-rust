@@ -32,6 +32,6 @@ impl crate::HoudiniEngineUnity::HAPI_SphereInfo {
             ".ctor",
             (initialize_fields),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

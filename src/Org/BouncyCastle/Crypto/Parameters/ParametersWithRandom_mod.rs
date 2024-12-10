@@ -32,80 +32,95 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithRandom {
     pub fn GetRandom(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Security::SecureRandom = __cordl_object
-            .invoke("GetRandom", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        > = __cordl_object.invoke("GetRandom", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_ICipherParameters1(
-        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (parameters))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_SecureRandom0(
-        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        >,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (parameters, random))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_ICipherParameters1(
         &mut self,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (parameters))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SecureRandom0(
         &mut self,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        >,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (parameters, random))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Parameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters = __cordl_object
-            .invoke("get_Parameters", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        > = __cordl_object.invoke("get_Parameters", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Random(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Security::SecureRandom = __cordl_object
-            .invoke("get_Random", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        > = __cordl_object.invoke("get_Random", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ParametersWithRandom")]

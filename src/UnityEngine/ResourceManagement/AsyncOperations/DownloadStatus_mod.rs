@@ -31,6 +31,6 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
             "get_Percent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

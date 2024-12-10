@@ -60,11 +60,11 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
                 "AnimateColorsForAllPlayers",
                 (nameColor, scoreColor, duration, easeType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AnimateColorsForPlayer(
         &mut self,
-        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameColor: crate::UnityEngine::Color,
         scoreColor: crate::UnityEngine::Color,
         duration: f32,
@@ -78,44 +78,47 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
                 "AnimateColorsForPlayer",
                 (userId, nameColor, scoreColor, duration, easeType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetScoreRingItem(
         &mut self,
-        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MultiplayerScoreRingItem,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerScoreRingItem>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerScoreRingItem = __cordl_object
-            .invoke("GetScoreRingItem", (userId))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerScoreRingItem,
+        > = __cordl_object.invoke("GetScoreRingItem", (userId))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetScoreRingItems(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::GameObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
         > = __cordl_object.invoke("GetScoreRingItems", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerDisconnected(
         &mut self,
-        player: *mut crate::GlobalNamespace::IConnectedPlayer,
+        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePlayerDisconnected", (player))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerSpawningDidFinish(
         &mut self,
@@ -125,18 +128,18 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePlayerSpawningDidFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerStateChanged(
         &mut self,
-        player: *mut crate::GlobalNamespace::IConnectedPlayer,
+        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePlayerStateChanged", (player))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSpawnCenterDistanceWasFound(
         &mut self,
@@ -147,7 +150,7 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSpawnCenterDistanceWasFound", (spawnCenterDistance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleStateChanged(
         &mut self,
@@ -158,14 +161,14 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleStateChanged", (state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -175,18 +178,18 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPlayerToFailedState(
         &mut self,
-        player: *mut crate::GlobalNamespace::IConnectedPlayer,
+        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPlayerToFailedState", (player))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SpawnTexts(
         &mut self,
@@ -196,7 +199,7 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SpawnTexts", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -206,7 +209,7 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TrySpawnTexts(
         &mut self,
@@ -216,7 +219,7 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TrySpawnTexts", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -226,18 +229,20 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateScore(
         &mut self,
-        playerToUpdate: *mut crate::GlobalNamespace::IConnectedPlayer,
+        playerToUpdate: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateScore", (playerToUpdate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -247,7 +252,7 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerScoreRingManager")]

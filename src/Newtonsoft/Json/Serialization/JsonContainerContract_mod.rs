@@ -37,58 +37,63 @@ for crate::Newtonsoft::Json::Serialization::JsonContainerContract {
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonContainerContract")]
 impl crate::Newtonsoft::Json::Serialization::JsonContainerContract {
     pub fn New(
-        underlyingType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        underlyingType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (underlyingType))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        underlyingType: *mut crate::System::Type,
+        underlyingType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (underlyingType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_FinalItemContract(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonContract>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonContract = __cordl_object
-            .invoke("get_FinalItemContract", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        > = __cordl_object.invoke("get_FinalItemContract", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_ItemContract(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonContract>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonContract = __cordl_object
-            .invoke("get_ItemContract", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        > = __cordl_object.invoke("get_ItemContract", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_ItemConverter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::JsonConverter> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::JsonConverter = __cordl_object
-            .invoke("get_ItemConverter", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonConverter,
+        > = __cordl_object.invoke("get_ItemConverter", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_ItemIsReference(
         &mut self,
@@ -98,7 +103,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContainerContract {
         );
         let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
             .invoke("get_ItemIsReference", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ItemReferenceLoopHandling(
         &mut self,
@@ -111,7 +116,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContainerContract {
         let __cordl_ret: crate::System::Nullable_1<
             crate::Newtonsoft::Json::ReferenceLoopHandling,
         > = __cordl_object.invoke("get_ItemReferenceLoopHandling", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ItemTypeNameHandling(
         &mut self,
@@ -124,29 +129,31 @@ impl crate::Newtonsoft::Json::Serialization::JsonContainerContract {
         let __cordl_ret: crate::System::Nullable_1<
             crate::Newtonsoft::Json::TypeNameHandling,
         > = __cordl_object.invoke("get_ItemTypeNameHandling", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ItemContract(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ItemContract", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ItemConverter(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::JsonConverter,
+        value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ItemConverter", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ItemIsReference(
         &mut self,
@@ -157,7 +164,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContainerContract {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ItemIsReference", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ItemReferenceLoopHandling(
         &mut self,
@@ -168,7 +175,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContainerContract {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ItemReferenceLoopHandling", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ItemTypeNameHandling(
         &mut self,
@@ -179,7 +186,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContainerContract {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ItemTypeNameHandling", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonContainerContract")]

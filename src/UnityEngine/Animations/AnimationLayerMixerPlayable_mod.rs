@@ -32,7 +32,7 @@ impl crate::UnityEngine::Animations::AnimationLayerMixerPlayable {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -42,19 +42,19 @@ impl crate::UnityEngine::Animations::AnimationLayerMixerPlayable {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLayerMaskFromAvatarMask(
         &mut self,
         layerIndex: u32,
-        mask: *mut crate::UnityEngine::AvatarMask,
+        mask: quest_hook::libil2cpp::Gc<crate::UnityEngine::AvatarMask>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetLayerMaskFromAvatarMask",
             (layerIndex, mask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -66,6 +66,6 @@ impl crate::UnityEngine::Animations::AnimationLayerMixerPlayable {
             ".ctor",
             (handle, singleLayerOptimization),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

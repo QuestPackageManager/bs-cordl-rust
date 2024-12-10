@@ -26,13 +26,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::RevocationReason {
 impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
     pub fn GetRevocationDescription(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetRevocationDescription", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetRevocationDescription", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetRevocationReason(
         &mut self,
@@ -44,55 +47,55 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
         );
         let __cordl_ret: crate::Org::BouncyCastle::Bcpg::RevocationReasonTag = __cordl_object
             .invoke("GetRevocationReason", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_RevocationReasonTag_Il2CppString1(
         isCritical: bool,
         reason: crate::Org::BouncyCastle::Bcpg::RevocationReasonTag,
-        description: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (isCritical, reason, description))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New__cordl_bool_Il2CppArray0(
         isCritical: bool,
         isLongLength: bool,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (isCritical, isLongLength, data))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_RevocationReasonTag_Il2CppString1(
         &mut self,
         isCritical: bool,
         reason: crate::Org::BouncyCastle::Bcpg::RevocationReasonTag,
-        description: *mut quest_hook::libil2cpp::Il2CppString,
+        description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (isCritical, reason, description))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool_Il2CppArray0(
         &mut self,
         isCritical: bool,
         isLongLength: bool,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (isCritical, isLongLength, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReason")]

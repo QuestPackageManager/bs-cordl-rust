@@ -38,34 +38,38 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
 impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     #[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
     pub type Factory = crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReportPlayerDidFinish(
         &mut self,
-        results: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        results: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReportPlayerDidFinish", (results))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReportPlayerNetworkDidFailed(
         &mut self,
-        results: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        results: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReportPlayerNetworkDidFailed", (results))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -75,12 +79,14 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_playerDidFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -88,12 +94,14 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_playerDidFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_playerNetworkDidFailedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -101,70 +109,80 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_playerNetworkDidFailedEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_introAnimator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke("get_introAnimator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_introPlayableDirector(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::Playables::PlayableDirector,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Playables::PlayableDirector = __cordl_object
-            .invoke("get_introPlayableDirector", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Playables::PlayableDirector,
+        > = __cordl_object.invoke("get_introPlayableDirector", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_outroAnimator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator = __cordl_object
-            .invoke("get_outroAnimator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator,
+        > = __cordl_object.invoke("get_outroAnimator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_songController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::IStartSeekSongController,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStartSeekSongController>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::IStartSeekSongController = __cordl_object
-            .invoke("get_songController", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IStartSeekSongController,
+        > = __cordl_object.invoke("get_songController", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_spectatorController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MultiplayerSpectatorController,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerSpectatorController>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerSpectatorController = __cordl_object
-            .invoke("get_spectatorController", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSpectatorController,
+        > = __cordl_object.invoke("get_spectatorController", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn remove_playerDidFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -172,12 +190,14 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_playerDidFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_playerNetworkDidFailedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -185,7 +205,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_playerNetworkDidFailedEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
@@ -233,12 +253,12 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
 impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -248,7 +268,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]

@@ -48,11 +48,11 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSettingsMenuSegmentedControlDidSelectCell(
         &mut self,
-        segmentedControl: *mut crate::HMUI::SegmentedControl,
+        segmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
         cellIdx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
                 "HandleSettingsMenuSegmentedControlDidSelectCell",
                 (segmentedControl, cellIdx),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
@@ -74,14 +74,14 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (selectedSubMenuInfoIdx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -91,13 +91,15 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didSelectSettingsSubMenuEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::SettingsSubMenuInfo,
-            i32,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::SettingsSubMenuInfo,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -105,32 +107,35 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didSelectSettingsSubMenuEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_numberOfSubMenus(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_numberOfSubMenus", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_selectedSubMenuInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::SettingsSubMenuInfo,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::SettingsSubMenuInfo = __cordl_object
-            .invoke("get_selectedSubMenuInfo", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsSubMenuInfo,
+        > = __cordl_object.invoke("get_selectedSubMenuInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didSelectSettingsSubMenuEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::SettingsSubMenuInfo,
-            i32,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::SettingsSubMenuInfo,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -138,7 +143,7 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didSelectSettingsSubMenuEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MainSettingsMenuViewController")]

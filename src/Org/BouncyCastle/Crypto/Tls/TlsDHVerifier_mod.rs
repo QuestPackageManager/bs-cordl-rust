@@ -26,13 +26,15 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier {
     pub fn Accept(
         &mut self,
-        dhParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        dhParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Accept", (dhParameters))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

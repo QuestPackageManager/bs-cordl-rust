@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DestroyKeyboard", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HideKeyboard(
         &mut self,
@@ -59,7 +59,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HideKeyboard", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveKeyboard(
         &mut self,
@@ -69,7 +69,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveKeyboard", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveKeyboardFar(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveKeyboardFar", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveKeyboardNear(
         &mut self,
@@ -89,14 +89,14 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveKeyboardNear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnHideKeyboard(
         &mut self,
@@ -116,7 +116,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnHideKeyboard", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShowKeyboard(
         &mut self,
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ShowKeyboard", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateButtonInteractable(
         &mut self,
@@ -156,7 +156,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateButtonInteractable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -166,7 +166,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleControls")]
@@ -221,24 +221,24 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardB
 impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
     pub fn RestoreTo(
         &mut self,
-        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
+        keyboard: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRVirtualKeyboard>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "RestoreTo",
             (keyboard),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
+        keyboard: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRVirtualKeyboard>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (keyboard),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

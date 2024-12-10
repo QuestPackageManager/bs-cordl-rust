@@ -31,7 +31,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Signers::RsaDigest
 impl crate::Org::BouncyCastle::Crypto::Signers::RsaDigestSigner {
     pub fn BlockUpdate(
         &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inOff: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -40,102 +40,122 @@ impl crate::Org::BouncyCastle::Crypto::Signers::RsaDigestSigner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BlockUpdate", (input, inOff, length))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DerEncode(
         &mut self,
-        hash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("DerEncode", (hash))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("DerEncode", (hash))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateSignature(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GenerateSignature", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("GenerateSignature", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
         forSigning: bool,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (forSigning, parameters))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_IAsymmetricBlockCipher_IDigest_AlgorithmIdentifier5(
-        rsaEngine: *mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        algId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        rsaEngine: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+        >,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        algId: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (rsaEngine, digest, algId))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IDigest0(
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (digest))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IDigest_AlgorithmIdentifier2(
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        algId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        algId: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (digest, algId))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IDigest_DerObjectIdentifier1(
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        digestOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        digestOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (digest, digestOid))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IRsa_IDigest_AlgorithmIdentifier4(
-        rsa: *mut crate::Org::BouncyCastle::Crypto::IRsa,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        algId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        rsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRsa>,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        algId: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (rsa, digest, algId))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IRsa_IDigest_DerObjectIdentifier3(
-        rsa: *mut crate::Org::BouncyCastle::Crypto::IRsa,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        digestOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        rsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRsa>,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        digestOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (rsa, digest, digestOid))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -145,7 +165,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::RsaDigestSigner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -156,101 +176,116 @@ impl crate::Org::BouncyCastle::Crypto::Signers::RsaDigestSigner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (input))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn VerifySignature(
         &mut self,
-        signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("VerifySignature", (signature))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IAsymmetricBlockCipher_IDigest_AlgorithmIdentifier5(
         &mut self,
-        rsaEngine: *mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        algId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        rsaEngine: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+        >,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        algId: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rsaEngine, digest, algId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IDigest0(
         &mut self,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (digest))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IDigest_AlgorithmIdentifier2(
         &mut self,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        algId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        algId: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (digest, algId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IDigest_DerObjectIdentifier1(
         &mut self,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        digestOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        digestOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (digest, digestOid))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IRsa_IDigest_AlgorithmIdentifier4(
         &mut self,
-        rsa: *mut crate::Org::BouncyCastle::Crypto::IRsa,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        algId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        rsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRsa>,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        algId: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rsa, digest, algId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IRsa_IDigest_DerObjectIdentifier3(
         &mut self,
-        rsa: *mut crate::Org::BouncyCastle::Crypto::IRsa,
-        digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        digestOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        rsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRsa>,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        digestOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rsa, digest, digestOid))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AlgorithmName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_AlgorithmName", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_AlgorithmName", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+RsaDigestSigner")]

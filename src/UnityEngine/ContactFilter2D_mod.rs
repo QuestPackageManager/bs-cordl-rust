@@ -39,7 +39,7 @@ impl crate::UnityEngine::ContactFilter2D {
             "CheckConsistency",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDepth(
         &mut self,
@@ -51,7 +51,7 @@ impl crate::UnityEngine::ContactFilter2D {
             "SetDepth",
             (minDepth, maxDepth),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLayerMask(
         &mut self,
@@ -62,6 +62,6 @@ impl crate::UnityEngine::ContactFilter2D {
             "SetLayerMask",
             (layerMask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

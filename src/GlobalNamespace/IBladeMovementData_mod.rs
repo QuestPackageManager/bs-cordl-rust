@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::IBladeMovementData {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_bladeSpeed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lastAddedData(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::IBladeMovementData {
         );
         let __cordl_ret: crate::GlobalNamespace::BladeMovementDataElement = __cordl_object
             .invoke("get_lastAddedData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_prevAddedData(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::IBladeMovementData {
         );
         let __cordl_ret: crate::GlobalNamespace::BladeMovementDataElement = __cordl_object
             .invoke("get_prevAddedData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "IBladeMovementData")]

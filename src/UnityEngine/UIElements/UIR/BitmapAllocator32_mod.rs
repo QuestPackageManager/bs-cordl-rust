@@ -32,14 +32,16 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
     pub type Page = crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page;
     pub fn Allocate(
         &mut self,
-        storage: *mut crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
+        storage: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Allocate",
             (storage),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Construct(
         &mut self,
@@ -52,7 +54,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             "Construct",
             (pageHeight, entryWidth, entryHeight),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ForceFirstAlloc(
         &mut self,
@@ -64,7 +66,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             "ForceFirstAlloc",
             (firstPageX, firstPageY),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Free(
         &mut self,
@@ -75,7 +77,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             "Free",
             (alloc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAllocPageAtlasLocation(
         &mut self,
@@ -88,7 +90,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             "GetAllocPageAtlasLocation",
             (page, x, y),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_entryHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -96,7 +98,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             "get_entryHeight",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_entryWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -104,7 +106,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             "get_entryWidth",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]

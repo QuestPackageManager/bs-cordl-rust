@@ -34,8 +34,8 @@ impl crate::GlobalNamespace::FlyingSpriteEffect {
         duration: f32,
         targetPos: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
-        sprite: *mut crate::UnityEngine::Sprite,
-        material: *mut crate::UnityEngine::Material,
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         color: crate::UnityEngine::Color,
         shake: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::FlyingSpriteEffect {
                 "InitAndPresent",
                 (duration, targetPos, rotation, sprite, material, color, shake),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ManualUpdate(
         &mut self,
@@ -58,14 +58,14 @@ impl crate::GlobalNamespace::FlyingSpriteEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ManualUpdate", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -75,7 +75,7 @@ impl crate::GlobalNamespace::FlyingSpriteEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "FlyingSpriteEffect")]
@@ -117,12 +117,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FlyingSpriteEffect_Pool {
 }
 #[cfg(feature = "FlyingSpriteEffect+Pool")]
 impl crate::GlobalNamespace::FlyingSpriteEffect_Pool {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -132,7 +132,7 @@ impl crate::GlobalNamespace::FlyingSpriteEffect_Pool {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "FlyingSpriteEffect+Pool")]

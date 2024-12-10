@@ -41,24 +41,32 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cleanup", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleRotationChangeBeatmapEvent(
         &mut self,
-        currentEventData: *mut crate::GlobalNamespace::LightRotationBeatmapEventData,
+        currentEventData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightRotationBeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleRotationChangeBeatmapEvent", (currentEventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        initData: *mut crate::GlobalNamespace::LightRotationGroupEffect_InitData,
-        tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        initData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightRotationGroupEffect_InitData,
+        >,
+        tweeningManager: quest_hook::libil2cpp::Gc<
+            crate::Tweening::SongTimeTweeningManager,
+        >,
+        beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCallbacksController,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -66,7 +74,7 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
                 ".ctor",
                 (initData, tweeningManager, beatmapCallbacksController),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetRotation(
         &mut self,
@@ -77,20 +85,26 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetRotation", (rotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        initData: *mut crate::GlobalNamespace::LightRotationGroupEffect_InitData,
-        tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+        initData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightRotationGroupEffect_InitData,
+        >,
+        tweeningManager: quest_hook::libil2cpp::Gc<
+            crate::Tweening::SongTimeTweeningManager,
+        >,
+        beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCallbacksController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (initData, tweeningManager, beatmapCallbacksController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LightRotationGroupEffect")]
@@ -140,13 +154,13 @@ impl crate::GlobalNamespace::LightRotationGroupEffect_InitData {
         elementId: i32,
         axis: crate::GlobalNamespace::LightAxis,
         mirrored: bool,
-        transform: *mut crate::UnityEngine::Transform,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (groupId, elementId, axis, mirrored, transform))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -154,14 +168,14 @@ impl crate::GlobalNamespace::LightRotationGroupEffect_InitData {
         elementId: i32,
         axis: crate::GlobalNamespace::LightAxis,
         mirrored: bool,
-        transform: *mut crate::UnityEngine::Transform,
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (groupId, elementId, axis, mirrored, transform))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LightRotationGroupEffect+InitData")]

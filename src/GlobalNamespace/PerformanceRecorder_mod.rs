@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateReports(
         &mut self,
@@ -52,14 +52,14 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateReports", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -69,7 +69,7 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -99,17 +99,19 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_gamePause(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IGamePause> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::IGamePause = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause> = __cordl_object
             .invoke("get_gamePause", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_gameplayModifiers(
         &mut self,
@@ -119,66 +121,70 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         );
         let __cordl_ret: crate::GlobalNamespace::GameplayModifierMask = __cordl_object
             .invoke("get_gameplayModifiers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_graphicSettingsHandler(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::GraphicSettingsHandler>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler = __cordl_object
-            .invoke("get_graphicSettingsHandler", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+        > = __cordl_object.invoke("get_graphicSettingsHandler", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_mainSettingsHandler(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::MainSettingsHandler>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::BeatSaber::GameSettings::MainSettingsHandler = __cordl_object
-            .invoke("get_mainSettingsHandler", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::GameSettings::MainSettingsHandler,
+        > = __cordl_object.invoke("get_mainSettingsHandler", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_playerSpecificSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerSpecificSettings = __cordl_object
-            .invoke("get_playerSpecificSettings", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        > = __cordl_object.invoke("get_playerSpecificSettings", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_sceneSetupData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayCoreSceneSetupData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData = __cordl_object
-            .invoke("get_sceneSetupData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayCoreSceneSetupData,
+        > = __cordl_object.invoke("get_sceneSetupData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_gamePause(
         &mut self,
-        value: *mut crate::GlobalNamespace::IGamePause,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_gamePause", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_gameplayModifiers(
         &mut self,
@@ -189,51 +195,57 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_gameplayModifiers", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_graphicSettingsHandler(
         &mut self,
-        value: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+        value: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_graphicSettingsHandler", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_mainSettingsHandler(
         &mut self,
-        value: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+        value: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::GameSettings::MainSettingsHandler,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_mainSettingsHandler", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_playerSpecificSettings(
         &mut self,
-        value: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_playerSpecificSettings", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sceneSetupData(
         &mut self,
-        value: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
+        value: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayCoreSceneSetupData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sceneSetupData", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PerformanceRecorder")]

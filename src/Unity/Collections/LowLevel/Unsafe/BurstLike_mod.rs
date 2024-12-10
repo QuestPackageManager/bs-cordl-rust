@@ -110,7 +110,7 @@ impl<
 > crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
     pub fn _ctor(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppObject,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -121,7 +121,7 @@ impl<
             ".ctor",
             (buffer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Data(
         &mut self,
@@ -135,6 +135,6 @@ impl<
             "get_Data",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

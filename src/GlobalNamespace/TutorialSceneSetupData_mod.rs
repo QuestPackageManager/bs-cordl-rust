@@ -27,26 +27,30 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TutorialSceneSetupData {
 #[cfg(feature = "TutorialSceneSetupData")]
 impl crate::GlobalNamespace::TutorialSceneSetupData {
     pub fn New(
-        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
-        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (colorScheme, playerSpecificSettings))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
-        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (colorScheme, playerSpecificSettings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TutorialSceneSetupData")]

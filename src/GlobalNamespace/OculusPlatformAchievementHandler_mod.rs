@@ -34,14 +34,19 @@ impl crate::GlobalNamespace::OculusPlatformAchievementHandler {
     pub type __c__DisplayClass3_1 = crate::GlobalNamespace::OculusPlatformAchievementHandler___c__DisplayClass3_1;
     pub fn GetUnlockedAchievements(
         &mut self,
-        completionHandler: *mut crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
+        completionHandler: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAsyncRequest>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
-            .invoke("GetUnlockedAchievements", (completionHandler))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::HMAsyncRequest,
+        > = __cordl_object.invoke("GetUnlockedAchievements", (completionHandler))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
@@ -51,26 +56,32 @@ impl crate::GlobalNamespace::OculusPlatformAchievementHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UnlockAchievement(
         &mut self,
-        achievementId: *mut quest_hook::libil2cpp::Il2CppString,
-        completionHandler: *mut crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
+        achievementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        completionHandler: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAsyncRequest>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::HMAsyncRequest,
+        > = __cordl_object
             .invoke("UnlockAchievement", (achievementId, completionHandler))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -80,7 +91,7 @@ impl crate::GlobalNamespace::OculusPlatformAchievementHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OculusPlatformAchievementHandler")]

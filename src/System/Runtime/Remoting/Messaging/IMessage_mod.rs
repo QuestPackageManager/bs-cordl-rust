@@ -31,13 +31,16 @@ impl crate::System::Runtime::Remoting::Messaging::IMessage {
     }
     pub fn get_Properties(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
-            .invoke("get_Properties", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IDictionary,
+        > = __cordl_object.invoke("get_Properties", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+IMessage")]

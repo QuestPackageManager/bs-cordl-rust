@@ -31,36 +31,36 @@ impl crate::UnityEngine::UIElements::RepeatButton {
     pub type UxmlTraits = crate::UnityEngine::UIElements::RepeatButton_UxmlTraits;
     pub fn AddAction(
         &mut self,
-        clickEvent: *mut crate::System::Action,
+        clickEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddAction", (clickEvent))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Action_i64_i64_1(
-        clickEvent: *mut crate::System::Action,
+        clickEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
         delay: i64,
         interval: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (clickEvent, delay, interval))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetAction(
         &mut self,
-        clickEvent: *mut crate::System::Action,
+        clickEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
         delay: i64,
         interval: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -69,7 +69,7 @@ impl crate::UnityEngine::UIElements::RepeatButton {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetAction", (clickEvent, delay, interval))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -79,11 +79,11 @@ impl crate::UnityEngine::UIElements::RepeatButton {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Action_i64_i64_1(
         &mut self,
-        clickEvent: *mut crate::System::Action,
+        clickEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
         delay: i64,
         interval: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -92,7 +92,7 @@ impl crate::UnityEngine::UIElements::RepeatButton {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (clickEvent, delay, interval))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RepeatButton")]
@@ -137,12 +137,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::RepeatButton_UxmlFac
 }
 #[cfg(feature = "UnityEngine+UIElements+RepeatButton+UxmlFactory")]
 impl crate::UnityEngine::UIElements::RepeatButton_UxmlFactory {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -152,7 +152,7 @@ impl crate::UnityEngine::UIElements::RepeatButton_UxmlFactory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RepeatButton+UxmlFactory")]
@@ -195,8 +195,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::RepeatButton_UxmlTra
 impl crate::UnityEngine::UIElements::RepeatButton_UxmlTraits {
     pub fn Init(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -204,14 +204,14 @@ impl crate::UnityEngine::UIElements::RepeatButton_UxmlTraits {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (ve, bag, cc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -221,7 +221,7 @@ impl crate::UnityEngine::UIElements::RepeatButton_UxmlTraits {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RepeatButton+UxmlTraits")]

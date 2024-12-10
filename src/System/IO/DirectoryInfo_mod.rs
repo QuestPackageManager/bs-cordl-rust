@@ -32,42 +32,48 @@ impl crate::System::IO::DirectoryInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Delete", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDirectories_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::IO::DirectoryInfo>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::IO::DirectoryInfo>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::IO::DirectoryInfo,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::IO::DirectoryInfo>,
         > = __cordl_object.invoke("GetDirectories", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDirectories_Il2CppString_EnumerationOptions1(
         &mut self,
-        searchPattern: *mut quest_hook::libil2cpp::Il2CppString,
-        enumerationOptions: *mut crate::System::IO::EnumerationOptions,
+        searchPattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        enumerationOptions: quest_hook::libil2cpp::Gc<
+            crate::System::IO::EnumerationOptions,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::IO::DirectoryInfo>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::IO::DirectoryInfo>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::IO::DirectoryInfo,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::IO::DirectoryInfo>,
         > = __cordl_object
             .invoke("GetDirectories", (searchPattern, enumerationOptions))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        originalPath: *mut quest_hook::libil2cpp::Il2CppString,
-        fullPath: *mut quest_hook::libil2cpp::Il2CppString,
-        fileName: *mut quest_hook::libil2cpp::Il2CppString,
+        originalPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fullPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isNormalized: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -75,55 +81,57 @@ impl crate::System::IO::DirectoryInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (originalPath, fullPath, fileName, isNormalized))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppString0(
-        path: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (path))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppString_Il2CppString_Il2CppString__cordl_bool1(
-        originalPath: *mut quest_hook::libil2cpp::Il2CppString,
-        fullPath: *mut quest_hook::libil2cpp::Il2CppString,
-        fileName: *mut quest_hook::libil2cpp::Il2CppString,
+        originalPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fullPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isNormalized: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (originalPath, fullPath, fileName, isNormalized))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_SerializationInfo_StreamingContext2(
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_Il2CppString0(
         &mut self,
-        path: *mut quest_hook::libil2cpp::Il2CppString,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (path))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_Il2CppString_Il2CppString__cordl_bool1(
         &mut self,
-        originalPath: *mut quest_hook::libil2cpp::Il2CppString,
-        fullPath: *mut quest_hook::libil2cpp::Il2CppString,
-        fileName: *mut quest_hook::libil2cpp::Il2CppString,
+        originalPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fullPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isNormalized: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -131,11 +139,13 @@ impl crate::System::IO::DirectoryInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (originalPath, fullPath, fileName, isNormalized))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -143,7 +153,7 @@ impl crate::System::IO::DirectoryInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+IO+DirectoryInfo")]

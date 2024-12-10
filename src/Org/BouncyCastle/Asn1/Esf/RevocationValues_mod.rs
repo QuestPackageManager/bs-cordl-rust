@@ -30,130 +30,158 @@ impl crate::Org::BouncyCastle::Asn1::Esf::RevocationValues {
     pub fn GetCrlVals(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+            >,
         > = __cordl_object.invoke("GetCrlVals", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetOcspVals(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+            >,
         > = __cordl_object.invoke("GetOcspVals", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IEnumerable_IEnumerable_OtherRevVals2(
-        crlVals: *mut crate::System::Collections::IEnumerable,
-        ocspVals: *mut crate::System::Collections::IEnumerable,
-        otherRevVals: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        crlVals: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+        ocspVals: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+        otherRevVals: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (crlVals, ocspVals, otherRevVals))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppArray_Il2CppArray_OtherRevVals1(
-        crlVals: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+        crlVals: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+            >,
         >,
-        ocspVals: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+        ocspVals: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+            >,
         >,
-        otherRevVals: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        otherRevVals: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (crlVals, ocspVals, otherRevVals))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = __cordl_object.invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Asn1Sequence0(
         &mut self,
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEnumerable_IEnumerable_OtherRevVals2(
         &mut self,
-        crlVals: *mut crate::System::Collections::IEnumerable,
-        ocspVals: *mut crate::System::Collections::IEnumerable,
-        otherRevVals: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
+        crlVals: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+        ocspVals: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+        otherRevVals: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (crlVals, ocspVals, otherRevVals))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_Il2CppArray_OtherRevVals1(
         &mut self,
-        crlVals: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+        crlVals: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+            >,
         >,
-        ocspVals: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+        ocspVals: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+            >,
         >,
-        otherRevVals: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
+        otherRevVals: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (crlVals, ocspVals, otherRevVals))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_OtherRevVals(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals = __cordl_object
-            .invoke("get_OtherRevVals", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
+        > = __cordl_object.invoke("get_OtherRevVals", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+RevocationValues")]

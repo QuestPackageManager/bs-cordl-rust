@@ -32,7 +32,7 @@ impl crate::UnityEngine::Experimental::Video::VideoClipPlayable {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -42,6 +42,6 @@ impl crate::UnityEngine::Experimental::Video::VideoClipPlayable {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

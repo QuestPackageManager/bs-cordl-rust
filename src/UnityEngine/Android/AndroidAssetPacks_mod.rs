@@ -93,26 +93,30 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatu
 )]
 impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
     pub fn New(
-        callback: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::Android::AndroidAssetPackInfo,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::UnityEngine::Android::AndroidAssetPackInfo,
+            >,
         >,
-        assetPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        assetPacks: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (callback, assetPacks))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        callback: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::Android::AndroidAssetPackInfo,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::UnityEngine::Android::AndroidAssetPackInfo,
+            >,
         >,
-        assetPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        assetPacks: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -120,11 +124,11 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStat
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (callback, assetPacks))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn onStatusUpdate(
         &mut self,
-        assetPackName: *mut quest_hook::libil2cpp::Il2CppString,
+        assetPackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         assetPackStatus: i32,
         assetPackSize: i64,
         assetPackBytesDownloaded: i64,
@@ -146,7 +150,7 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStat
                     assetPackErrorCode,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -205,20 +209,24 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCon
 )]
 impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback {
     pub fn New(
-        callback: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (callback))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        callback: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -226,7 +234,7 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCo
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn onMobileDataConfirmationResult(
         &mut self,
@@ -237,7 +245,7 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCo
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("onMobileDataConfirmationResult", (allowed))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -305,32 +313,36 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCa
 )]
 impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
     pub fn New(
-        callback: *mut crate::System::Action_2<
-            u64,
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Android::AndroidAssetPackState,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                u64,
+                *mut quest_hook::libil2cpp::Il2CppArray<
+                    *mut crate::UnityEngine::Android::AndroidAssetPackState,
+                >,
             >,
         >,
-        assetPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        assetPacks: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (callback, assetPacks))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        callback: *mut crate::System::Action_2<
-            u64,
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Android::AndroidAssetPackState,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                u64,
+                *mut quest_hook::libil2cpp::Il2CppArray<
+                    *mut crate::UnityEngine::Android::AndroidAssetPackState,
+                >,
             >,
         >,
-        assetPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        assetPacks: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -338,16 +350,20 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryC
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (callback, assetPacks))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn onStatusResult(
         &mut self,
         totalBytes: i64,
-        assetPackNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        assetPackNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
-        assetPackStatuses: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        assetPackErrorCodes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        assetPackStatuses: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        >,
+        assetPackErrorCodes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -357,7 +373,7 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryC
                 "onStatusResult",
                 (totalBytes, assetPackNames, assetPackStatuses, assetPackErrorCodes),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

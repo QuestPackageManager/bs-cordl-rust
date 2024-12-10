@@ -34,7 +34,7 @@ impl crate::UnityEngine::UI::ILayoutIgnorer {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_ignoreLayout", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UI+ILayoutIgnorer")]

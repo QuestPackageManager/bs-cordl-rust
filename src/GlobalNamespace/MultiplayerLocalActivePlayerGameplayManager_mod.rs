@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleGameEnergyDidReach0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleHmdUnmounted(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleHmdUnmounted", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleInGameMenuControllerDidGiveUp(
         &mut self,
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleInGameMenuControllerDidGiveUp", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleInGameMenuControllerRequestsDisconnect(
         &mut self,
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleInGameMenuControllerRequestsDisconnect", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleInputFocusCaptured(
         &mut self,
@@ -88,7 +88,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleInputFocusCaptured", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleInputFocusReleased(
         &mut self,
@@ -98,7 +98,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleInputFocusReleased", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSongDidFinish(
         &mut self,
@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSongDidFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleVrFocusWasCapturedEvent(
         &mut self,
@@ -118,14 +118,14 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleVrFocusWasCapturedEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnApplicationFocus(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnApplicationFocus", (hasFocus))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PerformPlayerFail(
         &mut self,
@@ -156,7 +156,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PerformPlayerFail", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PerformPlayerGivenUp(
         &mut self,
@@ -166,7 +166,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PerformPlayerGivenUp", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -176,7 +176,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -186,7 +186,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
@@ -229,12 +229,14 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]
 impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData {
-    pub fn New(failOn0Energy: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        failOn0Energy: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (failOn0Energy))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -245,7 +247,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitDat
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (failOn0Energy))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]

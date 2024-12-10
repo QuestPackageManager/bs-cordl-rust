@@ -93,7 +93,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
             "ToNativeParams",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
@@ -155,7 +155,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
             "HasRadius",
             (epsilon),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasSlices(&mut self, epsilon: f32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -163,7 +163,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
             "HasSlices",
             (epsilon),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToNativeParams(
         &mut self,
@@ -176,6 +176,6 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
             "ToNativeParams",
             (uvRegion),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

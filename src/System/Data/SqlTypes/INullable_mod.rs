@@ -34,7 +34,7 @@ impl crate::System::Data::SqlTypes::INullable {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsNull", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+INullable")]

@@ -31,37 +31,51 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
     pub const IdeaCbc: &'static str = "1.3.6.1.4.1.188.7.1.1.2";
     pub fn AddKekRecipient_Il2CppArray0(
         &mut self,
-        keyAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
-        key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-        keyIdentifier: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        keyAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
+        keyIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddKekRecipient", (keyAlgorithm, key, keyIdentifier))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddKekRecipient_KekIdentifier1(
         &mut self,
-        keyAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
-        key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-        kekIdentifier: *mut crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
+        keyAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
+        kekIdentifier: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddKekRecipient", (keyAlgorithm, key, kekIdentifier))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddKeyAgreementRecipient(
         &mut self,
-        agreementAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
-        senderPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        senderPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        recipientCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        cekWrapAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
+        agreementAlgorithm: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        senderPrivateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        senderPublicKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        recipientCert: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
+        cekWrapAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -77,15 +91,23 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     cekWrapAlgorithm,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddKeyAgreementRecipients(
         &mut self,
-        agreementAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
-        senderPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        senderPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        recipientCerts: *mut crate::System::Collections::ICollection,
-        cekWrapAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
+        agreementAlgorithm: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        senderPrivateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        senderPublicKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        recipientCerts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        >,
+        cekWrapAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,104 +123,120 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     cekWrapAlgorithm,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddKeyTransRecipient_AsymmetricKeyParameter_Il2CppArray1(
         &mut self,
-        pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        subKeyId: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        subKeyId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddKeyTransRecipient", (pubKey, subKeyId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddKeyTransRecipient_X509Certificate0(
         &mut self,
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddKeyTransRecipient", (cert))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddPasswordRecipient(
         &mut self,
-        pbeKey: *mut crate::Org::BouncyCastle::Cms::CmsPbeKey,
-        kekAlgorithmOid: *mut quest_hook::libil2cpp::Il2CppString,
+        pbeKey: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsPbeKey>,
+        kekAlgorithmOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddPasswordRecipient", (pbeKey, kekAlgorithmOid))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRecipientInfoGenerator(
         &mut self,
-        recipientInfoGenerator: *mut crate::Org::BouncyCastle::Cms::RecipientInfoGenerator,
+        recipientInfoGenerator: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::RecipientInfoGenerator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRecipientInfoGenerator", (recipientInfoGenerator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateAsn1Parameters(
         &mut self,
-        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
-        encKeyBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        encryptionOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        encKeyBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        > = __cordl_object
             .invoke("GenerateAsn1Parameters", (encryptionOid, encKeyBytes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAlgorithmIdentifier(
         &mut self,
-        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
-        encKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-        asn1Params: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        encryptionOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        encKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
+        asn1Params: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        >,
         cipherParameters: quest_hook::libil2cpp::ByRefMut<
             *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        > = __cordl_object
             .invoke(
                 "GetAlgorithmIdentifier",
                 (encryptionOid, encKey, asn1Params, cipherParameters),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_SecureRandom1(
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_rand))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -208,41 +246,48 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SecureRandom1(
         &mut self,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_rand))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_UnprotectedAttributeGenerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator = __cordl_object
-            .invoke("get_UnprotectedAttributeGenerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+        > = __cordl_object.invoke("get_UnprotectedAttributeGenerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_UnprotectedAttributeGenerator(
         &mut self,
-        value: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_UnprotectedAttributeGenerator", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedGenerator")]

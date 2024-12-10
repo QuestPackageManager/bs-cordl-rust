@@ -36,7 +36,9 @@ impl std::ops::DerefMut for crate::System::Net::WebProxy {
 impl crate::System::Net::WebProxy {
     pub fn GetObjectData(
         &mut self,
-        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        serializationInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         streamingContext: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -44,22 +46,22 @@ impl crate::System::Net::WebProxy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetObjectData", (serializationInfo, streamingContext))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetProxy(
         &mut self,
-        destination: *mut crate::System::Uri,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
+        destination: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Uri>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Uri = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Uri> = __cordl_object
             .invoke("GetProxy", (destination))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetProxyAuto(
         &mut self,
-        destination: *mut crate::System::Uri,
+        destination: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         proxyUri: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -67,21 +69,21 @@ impl crate::System::Net::WebProxy {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetProxyAuto", (destination, proxyUri))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsBypassed(
         &mut self,
-        host: *mut crate::System::Uri,
+        host: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsBypassed", (host))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsBypassedAuto(
         &mut self,
-        destination: *mut crate::System::Uri,
+        destination: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         isBypassed: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -89,91 +91,95 @@ impl crate::System::Net::WebProxy {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsBypassedAuto", (destination, isBypassed))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsBypassedManual(
         &mut self,
-        host: *mut crate::System::Uri,
+        host: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsBypassedManual", (host))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsLocal(
         &mut self,
-        host: *mut crate::System::Uri,
+        host: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsLocal", (host))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsLocalInProxyHash(
         &mut self,
-        host: *mut crate::System::Uri,
+        host: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsLocalInProxyHash", (host))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsMatchInBypassList(
         &mut self,
-        input: *mut crate::System::Uri,
+        input: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsMatchInBypassList", (input))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_SerializationInfo_StreamingContext2(
-        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        serializationInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         streamingContext: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (serializationInfo, streamingContext))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Uri__cordl_bool_Il2CppArray_ICredentials1(
-        Address: *mut crate::System::Uri,
+        Address: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         BypassOnLocal: bool,
-        BypassList: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        BypassList: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
-        Credentials: *mut crate::System::Net::ICredentials,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        Credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (Address, BypassOnLocal, BypassList, Credentials))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New__cordl_bool3(
         enableAutoproxy: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (enableAutoproxy))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
         &mut self,
-        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        serializationInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         streamingContext: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -184,7 +190,7 @@ impl crate::System::Net::WebProxy {
                 "System.Runtime.Serialization.ISerializable.GetObjectData",
                 (serializationInfo, streamingContext),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnsafeUpdateFromRegistry(
         &mut self,
@@ -194,7 +200,7 @@ impl crate::System::Net::WebProxy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnsafeUpdateFromRegistry", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateRegExList(
         &mut self,
@@ -205,7 +211,7 @@ impl crate::System::Net::WebProxy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateRegExList", (canThrow))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -215,11 +221,13 @@ impl crate::System::Net::WebProxy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
-        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        serializationInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         streamingContext: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -227,23 +235,23 @@ impl crate::System::Net::WebProxy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (serializationInfo, streamingContext))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Uri__cordl_bool_Il2CppArray_ICredentials1(
         &mut self,
-        Address: *mut crate::System::Uri,
+        Address: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         BypassOnLocal: bool,
-        BypassList: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        BypassList: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
-        Credentials: *mut crate::System::Net::ICredentials,
+        Credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (Address, BypassOnLocal, BypassList, Credentials))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool3(
         &mut self,
@@ -254,36 +262,39 @@ impl crate::System::Net::WebProxy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (enableAutoproxy))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Credentials(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ICredentials> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Net::ICredentials = __cordl_object
-            .invoke("get_Credentials", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ScriptEngine(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::AutoWebProxyScriptEngine,
+        quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::AutoWebProxyScriptEngine = __cordl_object
-            .invoke("get_ScriptEngine", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials> = __cordl_object
+            .invoke("get_Credentials", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ScriptEngine(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::AutoWebProxyScriptEngine>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::AutoWebProxyScriptEngine,
+        > = __cordl_object.invoke("get_ScriptEngine", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_UseDefaultCredentials(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_UseDefaultCredentials", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_UseDefaultCredentials(
         &mut self,
@@ -294,7 +305,7 @@ impl crate::System::Net::WebProxy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_UseDefaultCredentials", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+WebProxy")]

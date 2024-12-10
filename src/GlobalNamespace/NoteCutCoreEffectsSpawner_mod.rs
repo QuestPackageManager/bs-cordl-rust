@@ -46,7 +46,9 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
     pub const kNormalNoteSparkleParticlesCount: i32 = 150i32;
     pub fn HandleNoteWasCut(
         &mut self,
-        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteController,
+        >,
         noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -54,7 +56,7 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleNoteWasCut", (noteController, noteCutInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsArcHapticsCurrentlyActive(
         &mut self,
@@ -65,14 +67,14 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsArcHapticsCurrentlyActive", (colorType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -82,7 +84,7 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PlayHitChainNoteHapticEffect(
         &mut self,
@@ -94,40 +96,42 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PlayHitChainNoteHapticEffect", (noteCutInfo, isChainHead))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PlayHitNoteHapticEffect(
         &mut self,
         noteCutInfo: crate::GlobalNamespace::NoteCutInfo,
-        noteData: *mut crate::GlobalNamespace::NoteData,
+        noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PlayHitNoteHapticEffect", (noteCutInfo, noteData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SpawnBombCutEffect(
         &mut self,
         noteCutInfo: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::NoteCutInfo,
         >,
-        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SpawnBombCutEffect", (noteCutInfo, noteController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SpawnNoteCutEffect(
         &mut self,
         noteCutInfo: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::NoteCutInfo,
         >,
-        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteController,
+        >,
         sparkleParticlesCount: i32,
         explosionParticlesCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -144,7 +148,7 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
                     explosionParticlesCount,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -154,7 +158,7 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -164,7 +168,7 @@ impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NoteCutCoreEffectsSpawner")]

@@ -39,7 +39,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::PacketPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Fill(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -51,11 +51,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::PacketPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Fill", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IPacketPool_Release(
         &mut self,
-        o: *mut crate::GlobalNamespace::IPoolablePacket,
+        o: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -66,9 +66,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::PacketPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("IPacketPool.Release", (o))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -77,7 +77,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::PacketPool_1<T> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Obtain(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -88,7 +88,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::PacketPool_1<T> {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Obtain", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Release(
         &mut self,
@@ -103,7 +103,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::PacketPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -115,7 +115,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::PacketPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PacketPool_1")]

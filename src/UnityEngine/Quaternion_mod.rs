@@ -27,14 +27,14 @@ impl crate::UnityEngine::Quaternion {
     pub const kEpsilon: f32 = 0.000001f32;
     pub fn Equals_Il2CppObject0(
         &mut self,
-        other: *mut quest_hook::libil2cpp::Il2CppObject,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Quaternion1(
         &mut self,
@@ -45,7 +45,7 @@ impl crate::UnityEngine::Quaternion {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -53,7 +53,7 @@ impl crate::UnityEngine::Quaternion {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Normalize(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::Quaternion {
             "Normalize",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLookRotation_Vector3_0(
         &mut self,
@@ -74,7 +74,7 @@ impl crate::UnityEngine::Quaternion {
             "SetLookRotation",
             (view),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLookRotation_Vector3_1(
         &mut self,
@@ -86,29 +86,33 @@ impl crate::UnityEngine::Quaternion {
             "SetLookRotation",
             (view, up),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider1(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
-        formatProvider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (format, formatProvider),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -122,7 +126,7 @@ impl crate::UnityEngine::Quaternion {
             ".ctor",
             (x, y, z, w),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -130,7 +134,7 @@ impl crate::UnityEngine::Quaternion {
             "get_Item",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_eulerAngles(
         &mut self,
@@ -140,7 +144,7 @@ impl crate::UnityEngine::Quaternion {
             "get_eulerAngles",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
@@ -152,7 +156,7 @@ impl crate::UnityEngine::Quaternion {
             "set_Item",
             (index, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_eulerAngles(
         &mut self,
@@ -163,6 +167,6 @@ impl crate::UnityEngine::Quaternion {
             "set_eulerAngles",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

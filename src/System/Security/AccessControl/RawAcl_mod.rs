@@ -31,21 +31,26 @@ impl crate::System::Security::AccessControl::RawAcl {
     pub fn InsertAce(
         &mut self,
         index: i32,
-        ace: *mut crate::System::Security::AccessControl::GenericAce,
+        ace: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InsertAce", (index, ace))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(revision: u8, capacity: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        revision: u8,
+        capacity: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (revision, capacity))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveAce(
         &mut self,
@@ -56,7 +61,7 @@ impl crate::System::Security::AccessControl::RawAcl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveAce", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -68,39 +73,42 @@ impl crate::System::Security::AccessControl::RawAcl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (revision, capacity))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::AccessControl::GenericAce,
+        quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::GenericAce>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::AccessControl::GenericAce = __cordl_object
-            .invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        > = __cordl_object.invoke("get_Item", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
         index: i32,
-        value: *mut crate::System::Security::AccessControl::GenericAce,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (index, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+AccessControl+RawAcl")]

@@ -27,22 +27,24 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::PrefabControlPlayable 
 impl crate::UnityEngine::Timeline::PrefabControlPlayable {
     pub fn Initialize(
         &mut self,
-        prefabGameObject: *mut crate::UnityEngine::GameObject,
-        parentTransform: *mut crate::UnityEngine::Transform,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        prefabGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        parentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke("Initialize", (prefabGameObject, parentTransform))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnBehaviourPause(
         &mut self,
@@ -54,7 +56,7 @@ impl crate::UnityEngine::Timeline::PrefabControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBehaviourPause", (playable, info))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnBehaviourPlay(
         &mut self,
@@ -66,7 +68,7 @@ impl crate::UnityEngine::Timeline::PrefabControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBehaviourPlay", (playable, info))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPlayableDestroy(
         &mut self,
@@ -77,7 +79,7 @@ impl crate::UnityEngine::Timeline::PrefabControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPlayableDestroy", (playable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -87,17 +89,19 @@ impl crate::UnityEngine::Timeline::PrefabControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_prefabInstance(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke("get_prefabInstance", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+PrefabControlPlayable")]

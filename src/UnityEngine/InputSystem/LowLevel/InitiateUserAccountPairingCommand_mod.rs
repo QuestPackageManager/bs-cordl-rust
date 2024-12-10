@@ -38,7 +38,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingComman
             "get_typeStatic",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

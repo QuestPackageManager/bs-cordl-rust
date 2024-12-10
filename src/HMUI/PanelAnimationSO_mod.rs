@@ -31,35 +31,35 @@ impl std::ops::DerefMut for crate::HMUI::PanelAnimationSO {
 impl crate::HMUI::PanelAnimationSO {
     pub fn ExecuteAnimation_Action1(
         &mut self,
-        go: *mut crate::UnityEngine::GameObject,
-        finishedCallback: *mut crate::System::Action,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExecuteAnimation", (go, finishedCallback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExecuteAnimation_CanvasGroup_Action2(
         &mut self,
-        go: *mut crate::UnityEngine::GameObject,
-        parentCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-        finishedCallback: *mut crate::System::Action,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        parentCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExecuteAnimation", (go, parentCanvasGroup, finishedCallback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExecuteAnimation_CanvasGroup__cordl_bool_Action3(
         &mut self,
-        go: *mut crate::UnityEngine::GameObject,
-        parentCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        parentCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
         instant: bool,
-        finishedCallback: *mut crate::System::Action,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,25 +69,25 @@ impl crate::HMUI::PanelAnimationSO {
                 "ExecuteAnimation",
                 (go, parentCanvasGroup, instant, finishedCallback),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExecuteAnimation_GameObject0(
         &mut self,
-        go: *mut crate::UnityEngine::GameObject,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExecuteAnimation", (go))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::HMUI::PanelAnimationSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+PanelAnimationSO")]

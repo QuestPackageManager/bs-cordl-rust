@@ -52,7 +52,7 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("AllocateRect", (width, height, uvs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateOrExpandTexture(
         &mut self,
@@ -66,7 +66,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateOrExpandTexture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -81,14 +81,16 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         format: crate::UnityEngine::TextureFormat,
-        convert: *mut crate::System::Func_2<crate::UnityEngine::Color, T>,
+        convert: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<crate::UnityEngine::Color, T>,
+        >,
         initialSize: i32,
         maxSize: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -97,7 +99,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (format, convert, initialSize, maxSize))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetTexel(
         &mut self,
@@ -114,7 +116,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTexel", (x, y, color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateTexture(
         &mut self,
@@ -128,12 +130,14 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateTexture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         format: crate::UnityEngine::TextureFormat,
-        convert: *mut crate::System::Func_2<crate::UnityEngine::Color, T>,
+        convert: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<crate::UnityEngine::Color, T>,
+        >,
         initialSize: i32,
         maxSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -146,11 +150,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (format, convert, initialSize, maxSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_texture(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -158,9 +164,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Texture2D = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
             .invoke("get_texture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorage_1")]

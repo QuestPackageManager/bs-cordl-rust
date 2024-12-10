@@ -35,7 +35,7 @@ impl crate::LufsMetering::CalculateRmsJob {
             "Execute",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -50,6 +50,6 @@ impl crate::LufsMetering::CalculateRmsJob {
             ".ctor",
             (inputData, outputData, step, timeGate, rate),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

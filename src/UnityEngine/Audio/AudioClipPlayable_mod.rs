@@ -31,17 +31,19 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetClip(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AudioClip> {
-        let __cordl_ret: *mut crate::UnityEngine::AudioClip = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetClip",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -51,7 +53,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLooped(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -59,7 +61,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "GetLooped",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPauseDelay_0(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -67,7 +69,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "GetPauseDelay",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPauseDelay_f64_1(
         &mut self,
@@ -78,7 +80,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "GetPauseDelay",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSpatialBlend(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -86,7 +88,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "GetSpatialBlend",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetStartDelay(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -94,7 +96,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "GetStartDelay",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetStereoPan(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -102,7 +104,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "GetStereoPan",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetVolume(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -110,7 +112,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "GetVolume",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsChannelPlaying(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -118,7 +120,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "IsChannelPlaying",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsPlaying(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -126,7 +128,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "IsPlaying",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Seek_f64_1(
         &mut self,
@@ -139,7 +141,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "Seek",
             (startTime, startDelay, duration),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Seek_f64_f64_0(
         &mut self,
@@ -151,18 +153,18 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "Seek",
             (startTime, startDelay),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetClip(
         &mut self,
-        value: *mut crate::UnityEngine::AudioClip,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetClip",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLooped(
         &mut self,
@@ -173,7 +175,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "SetLooped",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSpatialBlend(
         &mut self,
@@ -184,7 +186,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "SetSpatialBlend",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetStartDelay(
         &mut self,
@@ -195,7 +197,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "SetStartDelay",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetStereoPan(
         &mut self,
@@ -206,7 +208,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "SetStereoPan",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetVolume(
         &mut self,
@@ -217,7 +219,7 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "SetVolume",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -228,6 +230,6 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             ".ctor",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

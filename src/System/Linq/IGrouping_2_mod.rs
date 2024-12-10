@@ -54,7 +54,7 @@ impl<
             self,
         );
         let __cordl_ret: TKey = __cordl_object.invoke("get_Key", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+IGrouping_2")]

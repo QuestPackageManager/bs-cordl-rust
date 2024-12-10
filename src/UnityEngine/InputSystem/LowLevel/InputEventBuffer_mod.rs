@@ -52,24 +52,28 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
                 leaveEventInBuffer,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AllocateEvent(
         &mut self,
         sizeInBytes: i32,
         capacityIncrementInBytes: i32,
         allocator: crate::Unity::Collections::Allocator,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "AllocateEvent",
             (sizeInBytes, capacityIncrementInBytes, allocator),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AppendEvent(
         &mut self,
-        eventPtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        eventPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         capacityIncrementInBytes: i32,
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -78,7 +82,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
             "AppendEvent",
             (eventPtr, capacityIncrementInBytes, allocator),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clone(
         &mut self,
@@ -90,18 +94,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
             "Clone",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Contains(
         &mut self,
-        eventPtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        eventPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Contains",
             (eventPtr),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -111,19 +115,23 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
@@ -133,31 +141,39 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
             "Reset",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerable.GetEnumerator",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_ICloneable_Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.ICloneable.Clone",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppObject_i32_0(
         &mut self,
-        eventPtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        eventPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         eventCount: i32,
         sizeInBytes: i32,
         capacityInBytes: i32,
@@ -167,7 +183,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
             ".ctor",
             (eventPtr, eventCount, sizeInBytes, capacityInBytes),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_NativeArray_1__cordl_bool1(
         &mut self,
@@ -181,7 +197,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
             ".ctor",
             (buffer, eventCount, sizeInBytes, transferNativeArrayOwnership),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bufferPtr(
         &mut self,
@@ -193,7 +209,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
             "get_bufferPtr",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_capacityInBytes(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -201,7 +217,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
             "get_capacityInBytes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_data(
         &mut self,
@@ -211,7 +227,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
             "get_data",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_eventCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -219,7 +235,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
             "get_eventCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -227,7 +243,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
             "get_sizeInBytes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
@@ -266,7 +282,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -274,7 +290,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
             "MoveNext",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
@@ -284,17 +300,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
             "Reset",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerator.get_Current",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -305,7 +325,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
             ".ctor",
             (buffer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Current(
         &mut self,
@@ -317,6 +337,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
             "get_Current",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

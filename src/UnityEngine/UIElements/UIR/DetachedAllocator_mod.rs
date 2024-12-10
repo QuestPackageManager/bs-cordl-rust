@@ -41,7 +41,7 @@ impl crate::UnityEngine::UIElements::UIR::DetachedAllocator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::UIR::DetachedAllocator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+DetachedAllocator")]

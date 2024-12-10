@@ -27,7 +27,7 @@ for crate::GlobalNamespace::SortedList_1<TBase> {
 }
 #[cfg(feature = "SortedList_1")]
 impl<TBase: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SortedList_1<TBase> {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -36,13 +36,13 @@ impl<TBase: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SortedList_1<TB
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_ISortedListItemProcessor_1_1(
-        sortedListDataProcessor: *mut crate::GlobalNamespace::ISortedListItemProcessor_1<
-            TBase,
+        sortedListDataProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -51,7 +51,7 @@ impl<TBase: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SortedList_1<TB
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (sortedListDataProcessor))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -65,12 +65,12 @@ impl<TBase: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SortedList_1<TB
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_ISortedListItemProcessor_1_1(
         &mut self,
-        sortedListDataProcessor: *mut crate::GlobalNamespace::ISortedListItemProcessor_1<
-            TBase,
+        sortedListDataProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -82,7 +82,7 @@ impl<TBase: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SortedList_1<TB
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (sortedListDataProcessor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SortedList_1")]

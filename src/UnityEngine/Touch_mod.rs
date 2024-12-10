@@ -39,7 +39,7 @@ impl crate::UnityEngine::Touch {
             "get_altitudeAngle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_azimuthAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -47,7 +47,7 @@ impl crate::UnityEngine::Touch {
             "get_azimuthAngle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deltaPosition(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::UnityEngine::Touch {
             "get_deltaPosition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deltaTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -65,7 +65,7 @@ impl crate::UnityEngine::Touch {
             "get_deltaTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fingerId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -73,7 +73,7 @@ impl crate::UnityEngine::Touch {
             "get_fingerId",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maximumPossiblePressure(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -81,7 +81,7 @@ impl crate::UnityEngine::Touch {
             "get_maximumPossiblePressure",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_phase(
         &mut self,
@@ -91,7 +91,7 @@ impl crate::UnityEngine::Touch {
             "get_phase",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_position(
         &mut self,
@@ -101,7 +101,7 @@ impl crate::UnityEngine::Touch {
             "get_position",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_pressure(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -109,7 +109,7 @@ impl crate::UnityEngine::Touch {
             "get_pressure",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_radius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -117,7 +117,7 @@ impl crate::UnityEngine::Touch {
             "get_radius",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_radiusVariance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -125,7 +125,7 @@ impl crate::UnityEngine::Touch {
             "get_radiusVariance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rawPosition(
         &mut self,
@@ -135,7 +135,7 @@ impl crate::UnityEngine::Touch {
             "get_rawPosition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tapCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -143,7 +143,7 @@ impl crate::UnityEngine::Touch {
             "get_tapCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_type(
         &mut self,
@@ -153,7 +153,7 @@ impl crate::UnityEngine::Touch {
             "get_type",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_deltaPosition(
         &mut self,
@@ -164,7 +164,7 @@ impl crate::UnityEngine::Touch {
             "set_deltaPosition",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_position(
         &mut self,
@@ -175,7 +175,7 @@ impl crate::UnityEngine::Touch {
             "set_position",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rawPosition(
         &mut self,
@@ -186,6 +186,6 @@ impl crate::UnityEngine::Touch {
             "set_rawPosition",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

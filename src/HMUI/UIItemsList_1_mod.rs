@@ -33,7 +33,7 @@ for crate::HMUI::UIItemsList_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
     #[cfg(feature = "HMUI+UIItemsList_1+DataCallback")]
     pub type DataCallback = crate::HMUI::UIItemsList_1_DataCallback<T>;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -42,12 +42,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetData(
         &mut self,
         numberOfElements: i32,
-        dataCallback: *mut crate::HMUI::UIItemsList_1_DataCallback<T>,
+        dataCallback: quest_hook::libil2cpp::Gc<
+            crate::HMUI::UIItemsList_1_DataCallback<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -58,7 +60,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetData", (numberOfElements, dataCallback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -70,12 +72,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_items(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<T>,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -84,9 +86,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<T> = __cordl_object
-            .invoke("get_items", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        > = __cordl_object.invoke("get_items", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+UIItemsList_1")]
@@ -132,9 +135,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1_DataCallback<T> 
         &mut self,
         idx: i32,
         item: T,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult>
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -142,13 +147,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1_DataCallback<T> 
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginInvoke", (idx, item, callback, object))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -159,7 +164,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1_DataCallback<T> 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -175,12 +180,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1_DataCallback<T> 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", (idx, item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -189,11 +194,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1_DataCallback<T> 
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -205,7 +210,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1_DataCallback<T> 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+UIItemsList_1+DataCallback")]

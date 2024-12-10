@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::OVRFace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetFaceExpression(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::OVRFace {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRFaceExpressions_FaceExpression = __cordl_object
             .invoke("GetFaceExpression", (blendShapeIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetWeightValue(
         &mut self,
@@ -59,34 +59,40 @@ impl crate::GlobalNamespace::OVRFace {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetWeightValue", (blendShapeIndex, weightValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RetrieveSkinnedMeshRenderer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::SkinnedMeshRenderer> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::SkinnedMeshRenderer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::SkinnedMeshRenderer = __cordl_object
-            .invoke("RetrieveSkinnedMeshRenderer", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::SkinnedMeshRenderer,
+        > = __cordl_object.invoke("RetrieveSkinnedMeshRenderer", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn SearchFaceExpressions(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::OVRFaceExpressions> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRFaceExpressions>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::OVRFaceExpressions = __cordl_object
-            .invoke("SearchFaceExpressions", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRFaceExpressions,
+        > = __cordl_object.invoke("SearchFaceExpressions", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -96,7 +102,7 @@ impl crate::GlobalNamespace::OVRFace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -106,7 +112,7 @@ impl crate::GlobalNamespace::OVRFace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -116,7 +122,7 @@ impl crate::GlobalNamespace::OVRFace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_BlendShapeStrengthMultiplier(
         &mut self,
@@ -126,27 +132,33 @@ impl crate::GlobalNamespace::OVRFace {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_BlendShapeStrengthMultiplier", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_FaceExpressions(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::OVRFaceExpressions> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRFaceExpressions>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::OVRFaceExpressions = __cordl_object
-            .invoke("get_FaceExpressions", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRFaceExpressions,
+        > = __cordl_object.invoke("get_FaceExpressions", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_SkinnedMesh(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::SkinnedMeshRenderer> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::SkinnedMeshRenderer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::SkinnedMeshRenderer = __cordl_object
-            .invoke("get_SkinnedMesh", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::SkinnedMeshRenderer,
+        > = __cordl_object.invoke("get_SkinnedMesh", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_BlendShapeStrengthMultiplier(
         &mut self,
@@ -157,18 +169,18 @@ impl crate::GlobalNamespace::OVRFace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_BlendShapeStrengthMultiplier", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_FaceExpressions(
         &mut self,
-        value: *mut crate::GlobalNamespace::OVRFaceExpressions,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRFaceExpressions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_FaceExpressions", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRFace")]

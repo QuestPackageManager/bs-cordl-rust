@@ -33,10 +33,14 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextStyle {
 #[cfg(feature = "UnityEngine+TextCore+Text+TextStyle")]
 impl crate::UnityEngine::TextCore::Text::TextStyle {
     pub fn New(
-        styleName: *mut quest_hook::libil2cpp::Il2CppString,
-        styleOpeningDefinition: *mut quest_hook::libil2cpp::Il2CppString,
-        styleClosingDefinition: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        styleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        styleOpeningDefinition: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        styleClosingDefinition: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -44,7 +48,7 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
                 ".ctor",
                 (styleName, styleOpeningDefinition, styleClosingDefinition),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RefreshStyle(
         &mut self,
@@ -54,13 +58,17 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        styleName: *mut quest_hook::libil2cpp::Il2CppString,
-        styleOpeningDefinition: *mut quest_hook::libil2cpp::Il2CppString,
-        styleClosingDefinition: *mut quest_hook::libil2cpp::Il2CppString,
+        styleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        styleOpeningDefinition: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        styleClosingDefinition: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,34 +78,40 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
                 ".ctor",
                 (styleName, styleOpeningDefinition, styleClosingDefinition),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_hashCode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_styleClosingTagArray(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u32> = __cordl_object
-            .invoke("get_styleClosingTagArray", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u32>,
+        > = __cordl_object.invoke("get_styleClosingTagArray", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_styleOpeningTagArray(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u32> = __cordl_object
-            .invoke("get_styleOpeningTagArray", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u32>,
+        > = __cordl_object.invoke("get_styleOpeningTagArray", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextStyle")]

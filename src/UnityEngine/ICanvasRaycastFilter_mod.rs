@@ -27,14 +27,14 @@ impl crate::UnityEngine::ICanvasRaycastFilter {
     pub fn IsRaycastLocationValid(
         &mut self,
         sp: crate::UnityEngine::Vector2,
-        eventCamera: *mut crate::UnityEngine::Camera,
+        eventCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsRaycastLocationValid", (sp, eventCamera))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

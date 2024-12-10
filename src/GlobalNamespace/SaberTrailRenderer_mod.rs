@@ -53,14 +53,14 @@ impl crate::GlobalNamespace::SaberTrailRenderer {
                 "Init",
                 (trailWidth, trailDuration, granularity, whiteSectionMaxDuration),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::SaberTrailRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -80,7 +80,7 @@ impl crate::GlobalNamespace::SaberTrailRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::SaberTrailRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnValidate(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::SaberTrailRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnValidate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTrailWidth(
         &mut self,
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::SaberTrailRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTrailWidth", (width))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateIndices(
         &mut self,
@@ -121,11 +121,13 @@ impl crate::GlobalNamespace::SaberTrailRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateIndices", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateMesh(
         &mut self,
-        trailElementCollection: *mut crate::GlobalNamespace::TrailElementCollection,
+        trailElementCollection: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TrailElementCollection,
+        >,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -133,11 +135,13 @@ impl crate::GlobalNamespace::SaberTrailRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateMesh", (trailElementCollection, color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateVertices(
         &mut self,
-        trailElementCollection: *mut crate::GlobalNamespace::TrailElementCollection,
+        trailElementCollection: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TrailElementCollection,
+        >,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -145,7 +149,7 @@ impl crate::GlobalNamespace::SaberTrailRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateVertices", (trailElementCollection, color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -155,7 +159,7 @@ impl crate::GlobalNamespace::SaberTrailRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SaberTrailRenderer")]

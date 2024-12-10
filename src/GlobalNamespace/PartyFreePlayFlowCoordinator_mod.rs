@@ -38,7 +38,9 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
     pub type __c__DisplayClass23_0 = crate::GlobalNamespace::PartyFreePlayFlowCoordinator___c__DisplayClass23_0;
     pub fn HandleResultsViewControllerContinueButtonPressed(
         &mut self,
-        resultsViewController: *mut crate::GlobalNamespace::ResultsViewController,
+        resultsViewController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -48,11 +50,13 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
                 "HandleResultsViewControllerContinueButtonPressed",
                 (resultsViewController),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleResultsViewControllerRestartButtonPressed(
         &mut self,
-        resultsViewController: *mut crate::GlobalNamespace::ResultsViewController,
+        resultsViewController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -62,34 +66,40 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
                 "HandleResultsViewControllerRestartButtonPressed",
                 (resultsViewController),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsNewHighScore(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsNewHighScore", (levelCompletionResults, leaderboardId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessLevelCompletionResultsAfterLevelDidFinish(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
-        transformedBeatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
+        transformedBeatmapData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        >,
         beatmapKey: crate::GlobalNamespace::BeatmapKey,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-        modifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        modifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
         practice: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -107,13 +117,15 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
                     practice,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessScore(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
-        playerName: *mut quest_hook::libil2cpp::Il2CppString,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -123,7 +135,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
                 "ProcessScore",
                 (levelCompletionResults, leaderboardId, playerName),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SinglePlayerLevelSelectionFlowCoordinatorDidActivate(
         &mut self,
@@ -138,7 +150,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
                 "SinglePlayerLevelSelectionFlowCoordinatorDidActivate",
                 (firstActivation, addedToHierarchy),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SinglePlayerLevelSelectionFlowCoordinatorDidDeactivate(
         &mut self,
@@ -152,12 +164,14 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
                 "SinglePlayerLevelSelectionFlowCoordinatorDidDeactivate",
                 (removedFromHierarchy),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WillScoreGoToLeaderboard(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         practice: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -168,7 +182,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
                 "WillScoreGoToLeaderboard",
                 (levelCompletionResults, leaderboardId, practice),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -178,39 +192,46 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_gameMode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_gameMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_leaderboardViewController(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::LeaderboardViewController,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::LeaderboardViewController = __cordl_object
-            .invoke("get_leaderboardViewController", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_gameMode", ())?;
+        Ok(__cordl_ret.into())
     }
-    pub fn get_mainTitle(
+    pub fn get_leaderboardViewController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardViewController>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_mainTitle", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LeaderboardViewController,
+        > = __cordl_object.invoke("get_leaderboardViewController", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_mainTitle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_mainTitle", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_showBackButtonForMainViewController(
         &mut self,
@@ -220,7 +241,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_showBackButtonForMainViewController", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PartyFreePlayFlowCoordinator")]

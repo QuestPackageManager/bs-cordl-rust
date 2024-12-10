@@ -29,37 +29,43 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::CspParameters
 }
 #[cfg(feature = "System+Security+Cryptography+CspParameters")]
 impl crate::System::Security::Cryptography::CspParameters {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
-    pub fn New_i32_1(dwTypeIn: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_i32_1(
+        dwTypeIn: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (dwTypeIn))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i32_Il2CppString_Il2CppString2(
         dwTypeIn: i32,
-        strProviderNameIn: *mut quest_hook::libil2cpp::Il2CppString,
-        strContainerNameIn: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        strProviderNameIn: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        strContainerNameIn: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (dwTypeIn, strProviderNameIn, strContainerNameIn))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i32_Il2CppString_Il2CppString_CspProviderFlags3(
         providerType: i32,
-        providerName: *mut quest_hook::libil2cpp::Il2CppString,
-        keyContainerName: *mut quest_hook::libil2cpp::Il2CppString,
+        providerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keyContainerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         flags: crate::System::Security::Cryptography::CspProviderFlags,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -67,7 +73,7 @@ impl crate::System::Security::Cryptography::CspParameters {
                 ".ctor",
                 (providerType, providerName, keyContainerName, flags),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -77,7 +83,7 @@ impl crate::System::Security::Cryptography::CspParameters {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_1(
         &mut self,
@@ -88,26 +94,30 @@ impl crate::System::Security::Cryptography::CspParameters {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (dwTypeIn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_Il2CppString_Il2CppString2(
         &mut self,
         dwTypeIn: i32,
-        strProviderNameIn: *mut quest_hook::libil2cpp::Il2CppString,
-        strContainerNameIn: *mut quest_hook::libil2cpp::Il2CppString,
+        strProviderNameIn: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        strContainerNameIn: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (dwTypeIn, strProviderNameIn, strContainerNameIn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_Il2CppString_Il2CppString_CspProviderFlags3(
         &mut self,
         providerType: i32,
-        providerName: *mut quest_hook::libil2cpp::Il2CppString,
-        keyContainerName: *mut quest_hook::libil2cpp::Il2CppString,
+        providerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keyContainerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         flags: crate::System::Security::Cryptography::CspProviderFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -115,7 +125,7 @@ impl crate::System::Security::Cryptography::CspParameters {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (providerType, providerName, keyContainerName, flags))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Flags(
         &mut self,
@@ -127,7 +137,7 @@ impl crate::System::Security::Cryptography::CspParameters {
         );
         let __cordl_ret: crate::System::Security::Cryptography::CspProviderFlags = __cordl_object
             .invoke("get_Flags", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Flags(
         &mut self,
@@ -138,7 +148,7 @@ impl crate::System::Security::Cryptography::CspParameters {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Flags", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+Cryptography+CspParameters")]

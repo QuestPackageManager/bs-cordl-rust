@@ -30,19 +30,25 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority {
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+NamingAuthority")]
 impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority {
     pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_DerObjectIdentifier_Il2CppString_DirectoryString1(
-        namingAuthorityID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        namingAuthorityUrl: *mut quest_hook::libil2cpp::Il2CppString,
-        namingAuthorityText: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        namingAuthorityID: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        namingAuthorityUrl: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        namingAuthorityText: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -50,34 +56,43 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority {
                 ".ctor",
                 (namingAuthorityID, namingAuthorityUrl, namingAuthorityText),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = __cordl_object.invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Asn1Sequence0(
         &mut self,
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_DerObjectIdentifier_Il2CppString_DirectoryString1(
         &mut self,
-        namingAuthorityID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        namingAuthorityUrl: *mut quest_hook::libil2cpp::Il2CppString,
-        namingAuthorityText: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+        namingAuthorityID: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        namingAuthorityUrl: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        namingAuthorityText: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -87,41 +102,46 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority {
                 ".ctor",
                 (namingAuthorityID, namingAuthorityUrl, namingAuthorityText),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_NamingAuthorityID(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier = __cordl_object
-            .invoke("get_NamingAuthorityID", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        > = __cordl_object.invoke("get_NamingAuthorityID", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_NamingAuthorityText(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X500::DirectoryString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString = __cordl_object
-            .invoke("get_NamingAuthorityText", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+        > = __cordl_object.invoke("get_NamingAuthorityText", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_NamingAuthorityUrl(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_NamingAuthorityUrl", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_NamingAuthorityUrl", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+NamingAuthority")]

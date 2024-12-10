@@ -73,11 +73,13 @@ impl<
     pub fn DescribeFields(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
-                TValueType,
-                TField,
-                TFieldValue,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
+                    TValueType,
+                    TField,
+                    TFieldValue,
+                >,
             >,
         >,
     >
@@ -92,19 +94,21 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
-                TValueType,
-                TField,
-                TFieldValue,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
+                    TValueType,
+                    TField,
+                    TFieldValue,
+                >,
             >,
         > = __cordl_object.invoke("DescribeFields", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSpacer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     >
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -117,14 +121,15 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("GetSpacer", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("GetSpacer", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        label: *mut quest_hook::libil2cpp::Il2CppString,
+        label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fieldsByLine: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -137,7 +142,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (label, fieldsByLine))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnViewDataReady(
         &mut self,
@@ -155,7 +160,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnViewDataReady", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetValueWithoutNotify(
         &mut self,
@@ -174,7 +179,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetValueWithoutNotify", (newValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateDisplay(
         &mut self,
@@ -192,7 +197,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateDisplay", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateMixedValueContent(
         &mut self,
@@ -210,11 +215,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateMixedValueContent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        label: *mut quest_hook::libil2cpp::Il2CppString,
+        label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fieldsByLine: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -230,7 +235,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (label, fieldsByLine))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3")]
@@ -318,13 +323,15 @@ impl<
     >;
     pub fn _ctor(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        ussName: *mut quest_hook::libil2cpp::Il2CppString,
-        read: *mut crate::System::Func_2<TValueType, TFieldValue>,
-        write: *mut crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
-            TValueType,
-            TField,
-            TFieldValue,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ussName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        read: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValueType, TFieldValue>>,
+        write: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
+                TValueType,
+                TField,
+                TFieldValue,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -340,7 +347,7 @@ impl<
             ".ctor",
             (name, ussName, read, write),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -433,12 +440,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", (val, fieldValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -451,11 +458,11 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -471,7 +478,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

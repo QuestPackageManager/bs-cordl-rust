@@ -35,7 +35,9 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
     pub type Subscriber = crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber;
     pub fn Bind(
         &mut self,
-        connection: *mut crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection,
+        connection: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection,
+        >,
         isConnected: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -43,25 +45,27 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Bind", (connection, isConnected))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnChangeUsages(
         &mut self,
-        args: *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        args: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnChangeUsages", (args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnConnected(
         &mut self,
@@ -72,7 +76,7 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnConnected", (id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisconnected(
         &mut self,
@@ -83,98 +87,116 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisconnected", (id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnNewDevice(
         &mut self,
-        args: *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        args: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNewDevice", (args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnNewEvents(
         &mut self,
-        args: *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        args: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNewEvents", (args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnNewLayout(
         &mut self,
-        args: *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        args: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNewLayout", (args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnRemoveDevice(
         &mut self,
-        args: *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        args: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnRemoveDevice", (args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnStartSending(
         &mut self,
-        args: *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        args: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnStartSending", (args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnStopSending(
         &mut self,
-        args: *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        args: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnStopSending", (args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendToSubscribers(
         &mut self,
         _cordl_type: crate::UnityEngine::InputSystem::InputRemoting_MessageType,
-        args: *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        args: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendToSubscribers", (_cordl_type, args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Subscribe(
         &mut self,
-        observer: *mut crate::System::IObserver_1<
-            crate::UnityEngine::InputSystem::InputRemoting_Message,
+        observer: quest_hook::libil2cpp::Gc<
+            crate::System::IObserver_1<
+                crate::UnityEngine::InputSystem::InputRemoting_Message,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IDisposable> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IDisposable = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = __cordl_object
             .invoke("Subscribe", (observer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnCompleted(
         &mut self,
@@ -187,11 +209,11 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
                 "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnCompleted",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnError(
         &mut self,
-        error: *mut crate::System::Exception,
+        error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -201,7 +223,7 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
                 "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnError",
                 (error),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnNext(
         &mut self,
@@ -215,7 +237,7 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
                 "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnNext",
                 (msg),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -225,7 +247,7 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
@@ -279,14 +301,14 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -296,7 +318,7 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]

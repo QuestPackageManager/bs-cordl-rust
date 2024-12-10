@@ -30,25 +30,30 @@ impl crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator {
     pub fn GenerateKeyPair(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair = __cordl_object
-            .invoke("GenerateKeyPair", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
+        > = __cordl_object.invoke("GenerateKeyPair", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        parameters: *mut crate::Org::BouncyCastle::Crypto::KeyGenerationParameters,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::KeyGenerationParameters,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (parameters))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

@@ -38,7 +38,7 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDataCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMaxValueForType(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("GetMaxValueForType", (_cordl_type))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetStrideForType(
         &mut self,
@@ -59,18 +59,18 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetStrideForType", (_cordl_type))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        node: *mut crate::OVRSimpleJSON::JSONNode,
-        root: *mut crate::OVRSimpleJSON::JSONNode,
+        node: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+        root: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         bufferViewOnly: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (node, root, bufferViewOnly))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReadAsBoneWeights(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadAsBoneWeights", (chunk, data, offset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAsColor(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadAsColor", (chunk, data, offset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAsFloat(
         &mut self,
@@ -115,7 +115,7 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadAsFloat", (chunk, data, offset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAsInt(
         &mut self,
@@ -130,7 +130,7 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadAsInt", (chunk, data, offset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAsMatrix4x4(
         &mut self,
@@ -146,18 +146,21 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadAsMatrix4x4", (chunk, data, offset, conversionScale))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAsTexture(
         &mut self,
         chunk: crate::GlobalNamespace::OVRBinaryChunk,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("ReadAsTexture", (chunk))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("ReadAsTexture", (chunk))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAsVector2(
         &mut self,
@@ -172,7 +175,7 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadAsVector2", (chunk, data, offset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAsVector3(
         &mut self,
@@ -188,7 +191,7 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadAsVector3", (chunk, data, offset, conversionScale))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAsVector4(
         &mut self,
@@ -204,11 +207,11 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadAsVector4", (chunk, data, offset, conversionScale))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadElementAsFloat(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -216,11 +219,11 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("ReadElementAsFloat", (data, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadElementAsUint(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
         _cordl_type: crate::GlobalNamespace::OVRGLTFComponentType,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -229,12 +232,12 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke("ReadElementAsUint", (data, index, _cordl_type))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        node: *mut crate::OVRSimpleJSON::JSONNode,
-        root: *mut crate::OVRSimpleJSON::JSONNode,
+        node: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+        root: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         bufferViewOnly: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -242,7 +245,7 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (node, root, bufferViewOnly))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRGLTFAccessor")]

@@ -32,7 +32,7 @@ impl crate::GlobalNamespace::IUnityXRHapticsHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StopHaptics", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TriggerHapticPulse(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::IUnityXRHapticsHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TriggerHapticPulse", (strength, duration))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

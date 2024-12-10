@@ -38,7 +38,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
             "Press",
             (key),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Release(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
             "Release",
             (key),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Set(
         &mut self,
@@ -61,12 +61,12 @@ impl crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
             "Set",
             (key, state),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        pressedKeys: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::InputSystem::Key,
+        pressedKeys: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::InputSystem::Key>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -74,7 +74,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
             ".ctor",
             (pressedKeys),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_format(
         &mut self,
@@ -86,7 +86,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
             "get_format",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+KeyboardState+_keys_e__FixedBuffer")]

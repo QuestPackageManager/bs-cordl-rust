@@ -31,7 +31,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (f),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_f32_f32_13(
         &mut self,
@@ -45,7 +45,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (a, b, c, d),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f64_14(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (f),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f64_f64_15(
         &mut self,
@@ -68,7 +68,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (a, b),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i16_4(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i16_i16_i16_i16_i16_i16_i16_i16_5(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (a, b, c, d, e, f, g, h),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_8(
         &mut self,
@@ -108,7 +108,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_i32_9(
         &mut self,
@@ -122,7 +122,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (a, b, c, d),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i64_16(
         &mut self,
@@ -133,7 +133,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (f),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i64_i64_17(
         &mut self,
@@ -145,7 +145,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (a, b),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i8_2(
         &mut self,
@@ -156,7 +156,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (b),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_3(
         &mut self,
@@ -182,7 +182,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u16_6(
         &mut self,
@@ -193,7 +193,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u16_u16_u16_u16_u16_u16_u16_u16_7(
         &mut self,
@@ -211,7 +211,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (a, b, c, d, e, f, g, h),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_10(
         &mut self,
@@ -222,7 +222,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_u32_u32_u32_11(
         &mut self,
@@ -236,7 +236,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (a, b, c, d),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u64_18(
         &mut self,
@@ -247,7 +247,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (f),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u64_u64_19(
         &mut self,
@@ -259,7 +259,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (a, b),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u8_0(
         &mut self,
@@ -270,7 +270,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (b),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_1(
         &mut self,
@@ -296,7 +296,7 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_v64_v64_20(
         &mut self,
@@ -308,6 +308,6 @@ impl crate::Unity::Burst::Intrinsics::v128 {
             ".ctor",
             (lo, hi),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

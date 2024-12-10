@@ -29,21 +29,23 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
     pub type __c = crate::System::Net::Http::Headers::HttpRequestHeaders___c;
     pub fn AddHeaders(
         &mut self,
-        headers: *mut crate::System::Net::Http::Headers::HttpRequestHeaders,
+        headers: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HttpRequestHeaders,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddHeaders", (headers))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -53,22 +55,26 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Connection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("get_Connection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ConnectionClose(
         &mut self,
@@ -78,7 +84,7 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
         );
         let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
             .invoke("get_ConnectionClose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ExpectContinue(
         &mut self,
@@ -88,32 +94,39 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
         );
         let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
             .invoke("get_ExpectContinue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Host(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_Host", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_Host", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_TransferEncoding(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
-            *mut crate::System::Net::Http::Headers::TransferCodingHeaderValue,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
+                *mut crate::System::Net::Http::Headers::TransferCodingHeaderValue,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
-            *mut crate::System::Net::Http::Headers::TransferCodingHeaderValue,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
+                *mut crate::System::Net::Http::Headers::TransferCodingHeaderValue,
+            >,
         > = __cordl_object.invoke("get_TransferEncoding", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TransferEncodingChunked(
         &mut self,
@@ -123,18 +136,20 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
         );
         let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
             .invoke("get_TransferEncodingChunked", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Authorization(
         &mut self,
-        value: *mut crate::System::Net::Http::Headers::AuthenticationHeaderValue,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::AuthenticationHeaderValue,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Authorization", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+HttpRequestHeaders")]

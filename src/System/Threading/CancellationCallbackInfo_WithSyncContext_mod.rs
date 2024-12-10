@@ -29,12 +29,20 @@ for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
 #[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]
 impl crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     pub fn New(
-        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
-        stateForCallback: *mut quest_hook::libil2cpp::Il2CppObject,
-        targetExecutionContext: *mut crate::System::Threading::ExecutionContext,
-        cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-        targetSyncContext: *mut crate::System::Threading::SynchronizationContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+        stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        targetExecutionContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        >,
+        cancellationTokenSource: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::CancellationTokenSource,
+        >,
+        targetSyncContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SynchronizationContext,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -48,15 +56,23 @@ impl crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
                     targetSyncContext,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
-        stateForCallback: *mut quest_hook::libil2cpp::Il2CppObject,
-        targetExecutionContext: *mut crate::System::Threading::ExecutionContext,
-        cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-        targetSyncContext: *mut crate::System::Threading::SynchronizationContext,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+        stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        targetExecutionContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        >,
+        cancellationTokenSource: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::CancellationTokenSource,
+        >,
+        targetSyncContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SynchronizationContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -72,7 +88,7 @@ impl crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
                     targetSyncContext,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]

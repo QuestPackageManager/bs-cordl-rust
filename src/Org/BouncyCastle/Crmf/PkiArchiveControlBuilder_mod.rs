@@ -29,51 +29,67 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crmf::PkiArchiveControlBui
 impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
     pub fn AddRecipientGenerator(
         &mut self,
-        recipientGen: *mut crate::Org::BouncyCastle::Cms::RecipientInfoGenerator,
+        recipientGen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::RecipientInfoGenerator,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder = __cordl_object
-            .invoke("AddRecipientGenerator", (recipientGen))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder,
+        > = __cordl_object.invoke("AddRecipientGenerator", (recipientGen))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Build(
         &mut self,
-        contentEncryptor: *mut crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
+        contentEncryptor: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crmf::PkiArchiveControl,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::PkiArchiveControl>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crmf::PkiArchiveControl = __cordl_object
-            .invoke("Build", (contentEncryptor))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crmf::PkiArchiveControl,
+        > = __cordl_object.invoke("Build", (contentEncryptor))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        privateKeyInfo: *mut crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
-        generalName: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        privateKeyInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
+        >,
+        generalName: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (privateKeyInfo, generalName))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        privateKeyInfo: *mut crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
-        generalName: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        privateKeyInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
+        >,
+        generalName: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (privateKeyInfo, generalName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PkiArchiveControlBuilder")]

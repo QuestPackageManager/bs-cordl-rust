@@ -35,7 +35,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
             "Clear",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear__cordl_bool1(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
             "Clear",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Contains(&mut self, value: bool) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -54,31 +54,31 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
             "Contains",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enumerate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<bool>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<bool>,
+        >,
     > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Enumerate",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<bool>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "Enumerate", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<bool>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<bool>,
+        >,
     > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetEnumerator",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<bool>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn IndexOf(&mut self, value: bool) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -86,17 +86,21 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
             "IndexOf",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerable.GetEnumerator",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -104,7 +108,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
             "get_Item",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
@@ -116,6 +120,6 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
             "set_Item",
             (index, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -44,7 +44,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Collections+Generic+IReadOnlyCollection_1")]

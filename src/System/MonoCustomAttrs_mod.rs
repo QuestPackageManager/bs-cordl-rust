@@ -65,18 +65,18 @@ impl std::ops::DerefMut for crate::System::MonoCustomAttrs_AttributeInfo {
 #[cfg(feature = "System+MonoCustomAttrs+AttributeInfo")]
 impl crate::System::MonoCustomAttrs_AttributeInfo {
     pub fn New(
-        usage: *mut crate::System::AttributeUsageAttribute,
+        usage: quest_hook::libil2cpp::Gc<crate::System::AttributeUsageAttribute>,
         inheritanceLevel: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (usage, inheritanceLevel))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        usage: *mut crate::System::AttributeUsageAttribute,
+        usage: quest_hook::libil2cpp::Gc<crate::System::AttributeUsageAttribute>,
         inheritanceLevel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -84,24 +84,27 @@ impl crate::System::MonoCustomAttrs_AttributeInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (usage, inheritanceLevel))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_InheritanceLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_InheritanceLevel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Usage(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::AttributeUsageAttribute> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::AttributeUsageAttribute>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::AttributeUsageAttribute = __cordl_object
-            .invoke("get_Usage", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::AttributeUsageAttribute,
+        > = __cordl_object.invoke("get_Usage", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+MonoCustomAttrs+AttributeInfo")]

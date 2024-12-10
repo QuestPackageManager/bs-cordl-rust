@@ -28,8 +28,10 @@ for crate::System::Runtime::Serialization::ISerializationSurrogate {
 impl crate::System::Runtime::Serialization::ISerializationSurrogate {
     pub fn GetObjectData(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -37,21 +39,28 @@ impl crate::System::Runtime::Serialization::ISerializationSurrogate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetObjectData", (obj, info, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetObjectData(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
-        selector: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        selector: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ISurrogateSelector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("SetObjectData", (obj, info, context, selector))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("SetObjectData", (obj, info, context, selector))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

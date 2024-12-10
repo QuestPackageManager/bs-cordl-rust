@@ -27,20 +27,22 @@ impl crate::Mono::Math::Prime::Generator::PrimeGeneratorBase {
     pub fn GenerateNewPrime(
         &mut self,
         bits: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Math::BigInteger> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Math::BigInteger = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = __cordl_object
             .invoke("GenerateNewPrime", (bits))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -50,7 +52,7 @@ impl crate::Mono::Math::Prime::Generator::PrimeGeneratorBase {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Confidence(
         &mut self,
@@ -60,24 +62,27 @@ impl crate::Mono::Math::Prime::Generator::PrimeGeneratorBase {
         );
         let __cordl_ret: crate::Mono::Math::Prime::ConfidenceFactor = __cordl_object
             .invoke("get_Confidence", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PrimalityTest(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Math::Prime::PrimalityTest> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::Prime::PrimalityTest>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Math::Prime::PrimalityTest = __cordl_object
-            .invoke("get_PrimalityTest", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Math::Prime::PrimalityTest,
+        > = __cordl_object.invoke("get_PrimalityTest", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_TrialDivisionBounds(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_TrialDivisionBounds", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Math+Prime+Generator+PrimeGeneratorBase")]

@@ -30,7 +30,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::IArrayPool_1<T> {
     pub fn Rent(
         &mut self,
         minimumLength: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -38,13 +40,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::IArrayPool_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = __cordl_object
-            .invoke("Rent", (minimumLength))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = __cordl_object.invoke("Rent", (minimumLength))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Return(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -55,7 +58,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::IArrayPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Return", (array))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

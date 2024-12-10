@@ -41,7 +41,7 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
         tailControlPointLengthMultiplier: f32,
         tailCutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
         sliderMidAnchorMode: crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -62,7 +62,7 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
                     sliderMidAnchorMode,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
                     sliderMidAnchorMode,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_headControlPointLengthMultiplier(
         &mut self,
@@ -110,7 +110,7 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_headControlPointLengthMultiplier", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sliderMidAnchorMode(
         &mut self,
@@ -122,7 +122,7 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
         );
         let __cordl_ret: crate::BeatmapSaveDataCommon::SliderMidAnchorMode = __cordl_object
             .invoke("get_sliderMidAnchorMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tailControlPointLengthMultiplier(
         &mut self,
@@ -132,7 +132,7 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_tailControlPointLengthMultiplier", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tailCutDirection(
         &mut self,
@@ -142,7 +142,7 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
         );
         let __cordl_ret: crate::BeatmapSaveDataCommon::NoteCutDirection = __cordl_object
             .invoke("get_tailCutDirection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+SliderData")]

@@ -28,13 +28,13 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
     pub const PatternName: &'static str = "Pattern";
     pub fn CanConvert(
         &mut self,
-        objectType: *mut crate::System::Type,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CanConvert", (objectType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasFlag(
         &mut self,
@@ -45,101 +45,109 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (options, flag))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsRegex(
         &mut self,
-        objectType: *mut crate::System::Type,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsRegex", (objectType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReadJson(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectType: *mut crate::System::Type,
-        existingValue: *mut quest_hook::libil2cpp::Il2CppObject,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadRegexObject(
-        &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        existingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::Regex,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::Regex = __cordl_object
-            .invoke("ReadRegexObject", (reader, serializer))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
+            .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn ReadRegexString(
+    pub fn ReadRegexObject(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("ReadRegexString", (reader))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::Regex,
+        > = __cordl_object.invoke("ReadRegexObject", (reader, serializer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadRegexString(
+        &mut self,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ReadRegexString", (reader))?;
+        Ok(__cordl_ret.into())
     }
     pub fn WriteBson(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::Bson::BsonWriter,
-        regex: *mut crate::System::Text::RegularExpressions::Regex,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonWriter>,
+        regex: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteBson", (writer, regex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteJson_Il2CppObject0(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteJson", (writer, value, serializer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteJson_Regex1(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        regex: *mut crate::System::Text::RegularExpressions::Regex,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        regex: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteJson", (writer, regex, serializer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -149,7 +157,7 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+RegexConverter")]

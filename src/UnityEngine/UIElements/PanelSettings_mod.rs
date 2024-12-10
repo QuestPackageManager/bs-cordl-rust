@@ -68,7 +68,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyPanelSettings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplySortingOrder(
         &mut self,
@@ -78,40 +78,40 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplySortingOrder", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyThemeStyleSheet(
         &mut self,
-        root: *mut crate::UnityEngine::UIElements::VisualElement,
+        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyThemeStyleSheet", (root))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AttachAndInsertUIDocumentToVisualTree(
         &mut self,
-        uiDocument: *mut crate::UnityEngine::UIElements::UIDocument,
+        uiDocument: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIDocument>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AttachAndInsertUIDocumentToVisualTree", (uiDocument))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DetachUIDocument(
         &mut self,
-        uiDocument: *mut crate::UnityEngine::UIElements::UIDocument,
+        uiDocument: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIDocument>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DetachUIDocument", (uiDocument))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisposePanel(
         &mut self,
@@ -121,7 +121,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisposePanel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDisplayRect(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
             .invoke("GetDisplayRect", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeShaders(
         &mut self,
@@ -141,14 +141,14 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitializeShaders", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -158,7 +158,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -168,7 +168,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
@@ -178,7 +178,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResolveScale(
         &mut self,
@@ -190,13 +190,15 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("ResolveScale", (targetRect, screenDpi))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetScreenToPanelSpaceFunction(
         &mut self,
-        screentoPanelSpaceFunction: *mut crate::System::Func_2<
-            crate::UnityEngine::Vector2,
-            crate::UnityEngine::Vector2,
+        screentoPanelSpaceFunction: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                crate::UnityEngine::Vector2,
+                crate::UnityEngine::Vector2,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -204,7 +206,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetScreenToPanelSpaceFunction", (screentoPanelSpaceFunction))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateScreenDPI(
         &mut self,
@@ -214,7 +216,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateScreenDPI", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -224,28 +226,28 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ScreenDPI(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_ScreenDPI", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_clearColor(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_clearColor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_clearDepthStencil(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_clearDepthStencil", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_colorClearValue(
         &mut self,
@@ -255,66 +257,68 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_colorClearValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_depthClearValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_depthClearValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dynamicAtlasSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::DynamicAtlasSettings,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DynamicAtlasSettings>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::DynamicAtlasSettings = __cordl_object
-            .invoke("get_dynamicAtlasSettings", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DynamicAtlasSettings,
+        > = __cordl_object.invoke("get_dynamicAtlasSettings", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_fallbackDpi(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_fallbackDpi", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isInitialized", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_match(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_match", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_panel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::BaseRuntimePanel = __cordl_object
-            .invoke("get_panel", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseRuntimePanel,
+        > = __cordl_object.invoke("get_panel", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_referenceDpi(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_referenceDpi", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_referenceResolution(
         &mut self,
@@ -324,7 +328,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: crate::UnityEngine::Vector2Int = __cordl_object
             .invoke("get_referenceResolution", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_referenceSpritePixelsPerUnit(
         &mut self,
@@ -334,14 +338,14 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_referenceSpritePixelsPerUnit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_scale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_scale", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_scaleMode(
         &mut self,
@@ -351,7 +355,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::PanelScaleMode = __cordl_object
             .invoke("get_scaleMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_screenMatchMode(
         &mut self,
@@ -363,55 +367,59 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::PanelScreenMatchMode = __cordl_object
             .invoke("get_screenMatchMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sortingOrder(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_sortingOrder", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_targetDisplay(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_targetDisplay", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_targetTexture(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RenderTexture> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::RenderTexture = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = __cordl_object
             .invoke("get_targetTexture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_themeStyleSheet(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::ThemeStyleSheet,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ThemeStyleSheet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::ThemeStyleSheet = __cordl_object
-            .invoke("get_themeStyleSheet", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ThemeStyleSheet,
+        > = __cordl_object.invoke("get_themeStyleSheet", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_visualTree(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("get_visualTree", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_visualTree", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_ScreenDPI(
         &mut self,
@@ -422,7 +430,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ScreenDPI", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_clearColor(
         &mut self,
@@ -433,7 +441,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_clearColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_clearDepthStencil(
         &mut self,
@@ -444,7 +452,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_clearDepthStencil", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_colorClearValue(
         &mut self,
@@ -455,18 +463,20 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_colorClearValue", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dynamicAtlasSettings(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::DynamicAtlasSettings,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DynamicAtlasSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_dynamicAtlasSettings", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_fallbackDpi(
         &mut self,
@@ -477,7 +487,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_fallbackDpi", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_match(
         &mut self,
@@ -488,7 +498,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_match", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_referenceDpi(
         &mut self,
@@ -499,7 +509,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_referenceDpi", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_referenceResolution(
         &mut self,
@@ -510,7 +520,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_referenceResolution", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_referenceSpritePixelsPerUnit(
         &mut self,
@@ -521,7 +531,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_referenceSpritePixelsPerUnit", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_scale(
         &mut self,
@@ -532,7 +542,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_scale", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_scaleMode(
         &mut self,
@@ -543,7 +553,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_scaleMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_screenMatchMode(
         &mut self,
@@ -554,7 +564,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_screenMatchMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sortingOrder(
         &mut self,
@@ -565,7 +575,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sortingOrder", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_targetDisplay(
         &mut self,
@@ -576,29 +586,29 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_targetDisplay", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_targetTexture(
         &mut self,
-        value: *mut crate::UnityEngine::RenderTexture,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_targetTexture", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_themeStyleSheet(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::ThemeStyleSheet,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ThemeStyleSheet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_themeStyleSheet", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelSettings")]
@@ -645,14 +655,15 @@ impl crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
     pub fn CreateRelatedRuntimePanel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::BaseRuntimePanel = __cordl_object
-            .invoke("CreateRelatedRuntimePanel", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseRuntimePanel,
+        > = __cordl_object.invoke("CreateRelatedRuntimePanel", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn DisposePanel(
         &mut self,
@@ -662,7 +673,7 @@ impl crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisposePanel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisposeRelatedPanel(
         &mut self,
@@ -672,7 +683,7 @@ impl crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisposeRelatedPanel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkPotentiallyEmpty(
         &mut self,
@@ -682,16 +693,18 @@ impl crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkPotentiallyEmpty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        settings: *mut crate::UnityEngine::UIElements::PanelSettings,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        settings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PanelSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (settings))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetSortingPriority(
         &mut self,
@@ -701,7 +714,7 @@ impl crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSortingPriority", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTargetDisplay(
         &mut self,
@@ -711,7 +724,7 @@ impl crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTargetDisplay", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTargetTexture(
         &mut self,
@@ -721,37 +734,40 @@ impl crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTargetTexture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        settings: *mut crate::UnityEngine::UIElements::PanelSettings,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PanelSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (settings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isInitialized", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_panel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::BaseRuntimePanel = __cordl_object
-            .invoke("get_panel", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseRuntimePanel,
+        > = __cordl_object.invoke("get_panel", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]

@@ -34,12 +34,12 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDisplayContext", (avatarDisplayContext))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_dataDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::BeatSaber::AvatarCore::OptionalAvatarData,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -47,7 +47,7 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_dataDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -57,31 +57,35 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
     pub fn get_currentData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            crate::BeatSaber::AvatarCore::OptionalAvatarData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                crate::BeatSaber::AvatarCore::OptionalAvatarData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            crate::BeatSaber::AvatarCore::OptionalAvatarData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                crate::BeatSaber::AvatarCore::OptionalAvatarData,
+            >,
         > = __cordl_object.invoke("get_currentData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_playbackDelaySeconds(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_playbackDelaySeconds", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_dataDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::BeatSaber::AvatarCore::OptionalAvatarData,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -89,7 +93,7 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_dataDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+IOptionalAvatarDataProvider")]

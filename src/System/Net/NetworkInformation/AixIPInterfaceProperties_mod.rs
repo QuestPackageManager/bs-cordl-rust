@@ -29,23 +29,31 @@ for crate::System::Net::NetworkInformation::AixIPInterfaceProperties {
 #[cfg(feature = "System+Net+NetworkInformation+AixIPInterfaceProperties")]
 impl crate::System::Net::NetworkInformation::AixIPInterfaceProperties {
     pub fn New(
-        iface: *mut crate::System::Net::NetworkInformation::AixNetworkInterface,
-        addresses: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Net::IPAddress,
+        iface: quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::AixNetworkInterface,
+        >,
+        addresses: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Net::IPAddress,
+            >,
         >,
         mtu: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (iface, addresses, mtu))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        iface: *mut crate::System::Net::NetworkInformation::AixNetworkInterface,
-        addresses: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Net::IPAddress,
+        iface: quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::AixNetworkInterface,
+        >,
+        addresses: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Net::IPAddress,
+            >,
         >,
         mtu: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,19 +62,22 @@ impl crate::System::Net::NetworkInformation::AixIPInterfaceProperties {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (iface, addresses, mtu))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_GatewayAddresses(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection = __cordl_object
-            .invoke("get_GatewayAddresses", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection,
+        > = __cordl_object.invoke("get_GatewayAddresses", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+AixIPInterfaceProperties")]

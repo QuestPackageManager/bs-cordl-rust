@@ -45,12 +45,20 @@ impl crate::HMUI::InputFieldDataBinder {
     > = crate::HMUI::InputFieldDataBinder___c__DisplayClass2_0_2<T0, T1>;
     pub fn AddBindings<T0, T1>(
         &mut self,
-        bindingData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Tuple_4<
-                *mut crate::UnityEngine::UI::InputField,
-                T0,
-                *mut crate::System::Func_2<*mut quest_hook::libil2cpp::Il2CppString, T1>,
-                *mut crate::System::Func_2<T1, *mut quest_hook::libil2cpp::Il2CppString>,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Tuple_4<
+                    *mut crate::UnityEngine::UI::InputField,
+                    T0,
+                    *mut crate::System::Func_2<
+                        *mut quest_hook::libil2cpp::Il2CppString,
+                        T1,
+                    >,
+                    *mut crate::System::Func_2<
+                        T1,
+                        *mut quest_hook::libil2cpp::Il2CppString,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -65,12 +73,14 @@ impl crate::HMUI::InputFieldDataBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddBindings", (bindingData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddStringBindings<T>(
         &mut self,
-        bindingData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Tuple_2<*mut crate::UnityEngine::UI::InputField, T>,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Tuple_2<*mut crate::UnityEngine::UI::InputField, T>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -82,7 +92,7 @@ impl crate::HMUI::InputFieldDataBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddStringBindings", (bindingData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearBindings(
         &mut self,
@@ -92,14 +102,14 @@ impl crate::HMUI::InputFieldDataBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearBindings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -109,7 +119,7 @@ impl crate::HMUI::InputFieldDataBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+InputFieldDataBinder")]

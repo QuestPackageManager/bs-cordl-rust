@@ -31,7 +31,7 @@ impl<
 > crate::GlobalNamespace::INetworkPacketSerializer_1<TData> {
     pub fn ProcessAllPackets(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         data: TData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -43,12 +43,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessAllPackets", (reader, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializePacket(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        packet: *mut crate::LiteNetLib::Utils::INetSerializable,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -59,7 +59,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SerializePacket", (writer, packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

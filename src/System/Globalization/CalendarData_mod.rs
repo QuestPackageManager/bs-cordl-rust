@@ -74,7 +74,7 @@ impl crate::System::Globalization::CalendarData {
     pub const MAX_CALENDARS: i32 = 23i32;
     pub fn InitializeAbbreviatedEraNames(
         &mut self,
-        localeName: *mut quest_hook::libil2cpp::Il2CppString,
+        localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         calendarId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -82,11 +82,11 @@ impl crate::System::Globalization::CalendarData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitializeAbbreviatedEraNames", (localeName, calendarId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeEraNames(
         &mut self,
-        localeName: *mut quest_hook::libil2cpp::Il2CppString,
+        localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         calendarId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -94,25 +94,25 @@ impl crate::System::Globalization::CalendarData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitializeEraNames", (localeName, calendarId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppString_i32__cordl_bool1(
-        localeName: *mut quest_hook::libil2cpp::Il2CppString,
+        localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         calendarId: i32,
         bUseUserOverrides: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (localeName, calendarId, bUseUserOverrides))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -122,11 +122,11 @@ impl crate::System::Globalization::CalendarData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_i32__cordl_bool1(
         &mut self,
-        localeName: *mut quest_hook::libil2cpp::Il2CppString,
+        localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         calendarId: i32,
         bUseUserOverrides: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -135,11 +135,11 @@ impl crate::System::Globalization::CalendarData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (localeName, calendarId, bUseUserOverrides))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn fill_calendar_data(
         &mut self,
-        localeName: *mut quest_hook::libil2cpp::Il2CppString,
+        localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         datetimeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -147,7 +147,7 @@ impl crate::System::Globalization::CalendarData {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("fill_calendar_data", (localeName, datetimeIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Globalization+CalendarData")]

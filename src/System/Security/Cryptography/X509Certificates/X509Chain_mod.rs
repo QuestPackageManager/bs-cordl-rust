@@ -30,13 +30,15 @@ for crate::System::Security::Cryptography::X509Certificates::X509Chain {
 impl crate::System::Security::Cryptography::X509Certificates::X509Chain {
     pub fn Build(
         &mut self,
-        certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Build", (certificate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
@@ -46,7 +48,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Chain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -57,7 +59,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Chain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
@@ -67,41 +69,43 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Chain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IntPtr3(
         chainContext: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (chainContext))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_X509ChainImpl2(
-        _cordl_impl: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        _cordl_impl: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_impl))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New__cordl_bool1(
         useMachineContext: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (useMachineContext))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -111,7 +115,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Chain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -121,7 +125,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Chain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IntPtr3(
         &mut self,
@@ -132,18 +136,20 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Chain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (chainContext))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_X509ChainImpl2(
         &mut self,
-        _cordl_impl: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
+        _cordl_impl: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_impl))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool1(
         &mut self,
@@ -154,58 +160,71 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Chain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (useMachineContext))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ChainElements(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection = __cordl_object
-            .invoke("get_ChainElements", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ChainPolicy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy = __cordl_object
-            .invoke("get_ChainPolicy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ChainStatus(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
-        > = __cordl_object.invoke("get_ChainStatus", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
+        > = __cordl_object.invoke("get_ChainElements", ())?;
+        Ok(__cordl_ret.into())
     }
-    pub fn get_Impl(
+    pub fn get_ChainPolicy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainImpl = __cordl_object
-            .invoke("get_Impl", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
+        > = __cordl_object.invoke("get_ChainPolicy", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ChainStatus(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
+            >,
+        > = __cordl_object.invoke("get_ChainStatus", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Impl(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
+        > = __cordl_object.invoke("get_Impl", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Chain")]

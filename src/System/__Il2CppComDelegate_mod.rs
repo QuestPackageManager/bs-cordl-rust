@@ -32,7 +32,7 @@ impl crate::System::__Il2CppComDelegate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+__Il2CppComDelegate")]

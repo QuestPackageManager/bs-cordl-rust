@@ -79,10 +79,14 @@ impl crate::GlobalNamespace::GameScenesManager {
     pub type __c__DisplayClass43_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass43_0;
     pub fn AppendScenes(
         &mut self,
-        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        >,
         minDuration: f32,
-        afterMinDurationCallback: *mut crate::System::Action,
-        finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        afterMinDurationCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        finishCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -97,12 +101,14 @@ impl crate::GlobalNamespace::GameScenesManager {
                     finishCallback,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AreAllScenesInStack(
         &mut self,
-        sceneNames: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        sceneNames: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -110,14 +116,18 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("AreAllScenesInStack", (sceneNames))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearAndOpenScenes(
         &mut self,
-        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        >,
         minDuration: f32,
-        afterMinDurationCallback: *mut crate::System::Action,
-        finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        afterMinDurationCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        finishCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        >,
         unloadAllScenes: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -134,27 +144,33 @@ impl crate::GlobalNamespace::GameScenesManager {
                     unloadAllScenes,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCurrentlyLoadedSceneNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("GetCurrentlyLoadedSceneNames", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsAnySceneInStack(
         &mut self,
-        sceneNames: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        sceneNames: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -162,53 +178,55 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsAnySceneInStack", (sceneNames))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsSceneInStack(
         &mut self,
-        searchSceneName: *mut quest_hook::libil2cpp::Il2CppString,
+        searchSceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsSceneInStack", (searchSceneName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkSceneAsPersistent(
         &mut self,
-        sceneName: *mut quest_hook::libil2cpp::Il2CppString,
+        sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkSceneAsPersistent", (sceneName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveGameObjectsFromContainerToSceneRoot(
         &mut self,
-        sceneName: *mut quest_hook::libil2cpp::Il2CppString,
+        sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveGameObjectsFromContainerToSceneRoot", (sceneName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PopScenes(
         &mut self,
         minDuration: f32,
-        afterMinDurationCallback: *mut crate::System::Action,
-        finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        afterMinDurationCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        finishCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -218,14 +236,18 @@ impl crate::GlobalNamespace::GameScenesManager {
                 "PopScenes",
                 (minDuration, afterMinDurationCallback, finishCallback),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PushScenes(
         &mut self,
-        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        >,
         minDuration: f32,
-        afterMinDurationCallback: *mut crate::System::Action,
-        finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        afterMinDurationCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        finishCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -240,11 +262,11 @@ impl crate::GlobalNamespace::GameScenesManager {
                     finishCallback,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterExternallyLoadedScene(
         &mut self,
-        sceneName: *mut quest_hook::libil2cpp::Il2CppString,
+        sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         asyncOperationHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         >,
@@ -254,14 +276,18 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterExternallyLoadedScene", (sceneName, asyncOperationHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveScenes(
         &mut self,
-        scenesTransitionSetupDataSo: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        scenesTransitionSetupDataSo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        >,
         minDuration: f32,
-        afterMinDurationCallback: *mut crate::System::Action,
-        finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        afterMinDurationCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        finishCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -276,28 +302,34 @@ impl crate::GlobalNamespace::GameScenesManager {
                     finishCallback,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReparentRootGameObjectsToDisabledGameObject(
         &mut self,
-        sceneName: *mut quest_hook::libil2cpp::Il2CppString,
+        sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReparentRootGameObjectsToDisabledGameObject", (sceneName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReplaceScenes(
         &mut self,
-        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-        beforeNewScenesActivateRoutines: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Collections::IEnumerator,
+        scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        >,
+        beforeNewScenesActivateRoutines: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Collections::IEnumerator,
+            >,
         >,
         minDuration: f32,
-        afterMinDurationCallback: *mut crate::System::Action,
-        finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        afterMinDurationCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        finishCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -313,48 +345,64 @@ impl crate::GlobalNamespace::GameScenesManager {
                     finishCallback,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SceneNamesFromSceneInfoArray(
         &mut self,
-        sceneInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SceneInfo,
+        sceneInfos: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::SceneInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("SceneNamesFromSceneInfoArray", (sceneInfos))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ScenesTransitionCoroutine(
         &mut self,
-        newScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-        scenesToPresent: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        newScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        >,
+        scenesToPresent: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
         presentType: crate::GlobalNamespace::GameScenesManager_ScenePresentType,
-        scenesToDismiss: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        scenesToDismiss: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
         dismissType: crate::GlobalNamespace::GameScenesManager_SceneDismissType,
         minDuration: f32,
-        afterMinDurationCallback: *mut crate::System::Action,
-        extraBindingsCallback: *mut crate::System::Action_1<
-            *mut crate::Zenject::DiContainer,
+        afterMinDurationCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        extraBindingsCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
         >,
-        finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        finishCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object
             .invoke(
                 "ScenesTransitionCoroutine",
                 (
@@ -369,12 +417,14 @@ impl crate::GlobalNamespace::GameScenesManager {
                     finishCallback,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetActiveRootObjectsInScenes(
         &mut self,
-        sceneNames: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        sceneNames: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -383,7 +433,7 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetActiveRootObjectsInScenes", (sceneNames, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -393,7 +443,7 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _get_waitUntilSceneTransitionFinish_b__22_0(
         &mut self,
@@ -403,24 +453,26 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("<get_waitUntilSceneTransitionFinish>b__22_0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_beforeDismissingScenesEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_beforeDismissingScenesEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_installEarlyBindingsEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-            *mut crate::Zenject::DiContainer,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+                *mut crate::Zenject::DiContainer,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -428,13 +480,15 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_installEarlyBindingsEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_transitionDidFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-            *mut crate::Zenject::DiContainer,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+                *mut crate::Zenject::DiContainer,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -442,83 +496,93 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_transitionDidFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_transitionDidStartEvent(
         &mut self,
-        value: *mut crate::System::Action_1<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_transitionDidStartEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentScenesContainer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = __cordl_object
             .invoke("get_currentScenesContainer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isInTransition(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isInTransition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sceneNameToSceneOperationHandlesDictionary(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                    crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+                >,
             >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                    crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+                >,
             >,
         > = __cordl_object.invoke("get_sceneNameToSceneOperationHandlesDictionary", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_waitUntilSceneTransitionFinish(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::WaitUntil> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::WaitUntil>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::WaitUntil = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::WaitUntil> = __cordl_object
             .invoke("get_waitUntilSceneTransitionFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_beforeDismissingScenesEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_beforeDismissingScenesEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_installEarlyBindingsEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-            *mut crate::Zenject::DiContainer,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+                *mut crate::Zenject::DiContainer,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -526,13 +590,15 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_installEarlyBindingsEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_transitionDidFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-            *mut crate::Zenject::DiContainer,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+                *mut crate::Zenject::DiContainer,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -540,18 +606,18 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_transitionDidFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_transitionDidStartEvent(
         &mut self,
-        value: *mut crate::System::Action_1<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_transitionDidStartEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "GameScenesManager")]
@@ -623,31 +689,35 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameScenesManager_ScenesStac
 #[cfg(feature = "GameScenesManager+ScenesStackData")]
 impl crate::GlobalNamespace::GameScenesManager_ScenesStackData {
     pub fn New(
-        sceneNames: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        sceneNames: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (sceneNames))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetDiContainer(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDiContainer", (container))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        sceneNames: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        sceneNames: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -655,48 +725,56 @@ impl crate::GlobalNamespace::GameScenesManager_ScenesStackData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (sceneNames))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_container(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = __cordl_object
             .invoke("get_container", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sceneNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("get_sceneNames", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_container(
         &mut self,
-        value: *mut crate::Zenject::DiContainer,
+        value: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_container", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sceneNames(
         &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -704,7 +782,7 @@ impl crate::GlobalNamespace::GameScenesManager_ScenesStackData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sceneNames", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "GameScenesManager+ScenesStackData")]

@@ -33,7 +33,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         dest: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::RenderTargetIdentifier,
         >,
-        mat: *mut crate::UnityEngine::Material,
+        mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         pass: i32,
         scale: crate::UnityEngine::Vector2,
         offset: crate::UnityEngine::Vector2,
@@ -57,7 +57,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                     destDepthSlice,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Blit_Identifier_Injected(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         dest: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::RenderTargetIdentifier,
         >,
-        mat: *mut crate::UnityEngine::Material,
+        mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         pass: i32,
         scale: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
         offset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
@@ -91,26 +91,26 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                     destDepthSlice,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Blit_Material1(
         &mut self,
         source: crate::UnityEngine::Rendering::RenderTargetIdentifier,
         dest: crate::UnityEngine::Rendering::RenderTargetIdentifier,
-        mat: *mut crate::UnityEngine::Material,
+        mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Blit", (source, dest, mat))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Blit_Material_i32_2(
         &mut self,
         source: crate::UnityEngine::Rendering::RenderTargetIdentifier,
         dest: crate::UnityEngine::Rendering::RenderTargetIdentifier,
-        mat: *mut crate::UnityEngine::Material,
+        mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         pass: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -118,7 +118,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Blit", (source, dest, mat, pass))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Blit_RenderTargetIdentifier_RenderTargetIdentifier0(
         &mut self,
@@ -130,7 +130,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Blit", (source, dest))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
@@ -140,7 +140,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyTexture(
         &mut self,
@@ -152,7 +152,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyTexture", (src, dst))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyTexture_Internal(
         &mut self,
@@ -196,7 +196,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                     mode,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
@@ -206,7 +206,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -217,17 +217,19 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawMeshInstanced(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         submeshIndex: i32,
-        material: *mut crate::UnityEngine::Material,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         shaderPass: i32,
-        matrices: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+        matrices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+        >,
         count: i32,
-        properties: *mut crate::UnityEngine::MaterialPropertyBlock,
+        properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -237,26 +239,26 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                 "DrawMeshInstanced",
                 (mesh, submeshIndex, material, shaderPass, matrices, count, properties),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawMesh_Mesh_Matrix4x4_Material3(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         matrix: crate::UnityEngine::Matrix4x4,
-        material: *mut crate::UnityEngine::Material,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawMesh", (mesh, matrix, material))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawMesh_i32_2(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         matrix: crate::UnityEngine::Matrix4x4,
-        material: *mut crate::UnityEngine::Material,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         submeshIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -264,13 +266,13 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawMesh", (mesh, matrix, material, submeshIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawMesh_i32_i32_1(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         matrix: crate::UnityEngine::Matrix4x4,
-        material: *mut crate::UnityEngine::Material,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         submeshIndex: i32,
         shaderPass: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -279,16 +281,16 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawMesh", (mesh, matrix, material, submeshIndex, shaderPass))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawMesh_i32_i32_MaterialPropertyBlock0(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         matrix: crate::UnityEngine::Matrix4x4,
-        material: *mut crate::UnityEngine::Material,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         submeshIndex: i32,
         shaderPass: i32,
-        properties: *mut crate::UnityEngine::MaterialPropertyBlock,
+        properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -298,12 +300,12 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                 "DrawMesh",
                 (mesh, matrix, material, submeshIndex, shaderPass, properties),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawRenderer(
         &mut self,
-        renderer: *mut crate::UnityEngine::Renderer,
-        material: *mut crate::UnityEngine::Material,
+        renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         submeshIndex: i32,
         shaderPass: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -312,7 +314,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawRenderer", (renderer, material, submeshIndex, shaderPass))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
@@ -322,7 +324,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTemporaryRT_GraphicsFormat3(
         &mut self,
@@ -341,7 +343,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                 "GetTemporaryRT",
                 (nameID, width, height, depthBuffer, filter, format),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTemporaryRT_GraphicsFormat_i32_2(
         &mut self,
@@ -361,7 +363,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                 "GetTemporaryRT",
                 (nameID, width, height, depthBuffer, filter, format, antiAliasing),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTemporaryRT_GraphicsFormat_i32__cordl_bool_RenderTextureMemoryless1(
         &mut self,
@@ -393,7 +395,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                     memorylessMode,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTemporaryRT_GraphicsFormat_i32__cordl_bool_RenderTextureMemoryless__cordl_bool0(
         &mut self,
@@ -427,7 +429,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                     useDynamicScale,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTemporaryRT_RenderTextureFormat4(
         &mut self,
@@ -446,16 +448,16 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                 "GetTemporaryRT",
                 (nameID, width, height, depthBuffer, filter, format),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_DrawMesh(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         matrix: crate::UnityEngine::Matrix4x4,
-        material: *mut crate::UnityEngine::Material,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         submeshIndex: i32,
         shaderPass: i32,
-        properties: *mut crate::UnityEngine::MaterialPropertyBlock,
+        properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -465,17 +467,19 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                 "Internal_DrawMesh",
                 (mesh, matrix, material, submeshIndex, shaderPass, properties),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_DrawMeshInstanced(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         submeshIndex: i32,
-        material: *mut crate::UnityEngine::Material,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         shaderPass: i32,
-        matrices: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+        matrices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+        >,
         count: i32,
-        properties: *mut crate::UnityEngine::MaterialPropertyBlock,
+        properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -485,16 +489,16 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                 "Internal_DrawMeshInstanced",
                 (mesh, submeshIndex, material, shaderPass, matrices, count, properties),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_DrawMesh_Injected(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         matrix: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
-        material: *mut crate::UnityEngine::Material,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         submeshIndex: i32,
         shaderPass: i32,
-        properties: *mut crate::UnityEngine::MaterialPropertyBlock,
+        properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -504,12 +508,12 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                 "Internal_DrawMesh_Injected",
                 (mesh, matrix, material, submeshIndex, shaderPass, properties),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_DrawRenderer(
         &mut self,
-        renderer: *mut crate::UnityEngine::Renderer,
-        material: *mut crate::UnityEngine::Material,
+        renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         submeshIndex: i32,
         shaderPass: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -521,14 +525,14 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                 "Internal_DrawRenderer",
                 (renderer, material, submeshIndex, shaderPass),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReleaseBuffer(
         &mut self,
@@ -538,7 +542,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReleaseBuffer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReleaseTemporaryRT(
         &mut self,
@@ -549,7 +553,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReleaseTemporaryRT", (nameID))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGlobalFloat(
         &mut self,
@@ -561,11 +565,11 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGlobalFloat", (nameID, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGlobalTexture_Il2CppString0(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: crate::UnityEngine::Rendering::RenderTargetIdentifier,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -573,7 +577,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGlobalTexture", (name, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGlobalTexture_Impl(
         &mut self,
@@ -588,7 +592,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGlobalTexture_Impl", (nameID, rt, element))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGlobalTexture_i32_RenderTextureSubElement1(
         &mut self,
@@ -601,7 +605,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGlobalTexture", (nameID, value, element))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGlobalVector(
         &mut self,
@@ -613,7 +617,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGlobalVector", (nameID, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGlobalVector_Injected(
         &mut self,
@@ -625,7 +629,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGlobalVector_Injected", (nameID, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetRenderTarget(
         &mut self,
@@ -636,7 +640,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetRenderTarget", (rt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetRenderTargetSingle_Internal(
         &mut self,
@@ -660,7 +664,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                     depthStoreAction,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetRenderTargetSingle_Internal_Injected(
         &mut self,
@@ -686,7 +690,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                     depthStoreAction,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetViewProjectionMatrices(
         &mut self,
@@ -698,7 +702,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetViewProjectionMatrices", (view, proj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetViewProjectionMatrices_Injected(
         &mut self,
@@ -710,7 +714,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetViewProjectionMatrices_Injected", (view, proj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateAgainstExecutionFlags(
         &mut self,
@@ -722,7 +726,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ValidateAgainstExecutionFlags", (requiredFlags, invalidFlags))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -732,18 +736,18 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_name(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_name", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+CommandBuffer")]

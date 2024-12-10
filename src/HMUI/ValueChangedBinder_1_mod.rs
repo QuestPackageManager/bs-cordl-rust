@@ -35,8 +35,8 @@ for crate::HMUI::ValueChangedBinder_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
     pub fn AddBinding(
         &mut self,
-        valueChanger: *mut crate::HMUI::IValueChanger_1<T>,
-        action: *mut crate::System::Action_1<T>,
+        valueChanger: quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -47,14 +47,16 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddBinding", (valueChanger, action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddBindings(
         &mut self,
-        bindingData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Tuple_2<
-                *mut crate::HMUI::IValueChanger_1<T>,
-                *mut crate::System::Action_1<T>,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Tuple_2<
+                    *mut crate::HMUI::IValueChanger_1<T>,
+                    *mut crate::System::Action_1<T>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -67,7 +69,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddBindings", (bindingData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearBindings(
         &mut self,
@@ -81,7 +83,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearBindings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -93,9 +95,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -104,12 +106,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IValueChanger_1_Action_1_1(
-        valueChanger: *mut crate::HMUI::IValueChanger_1<T>,
-        action: *mut crate::System::Action_1<T>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        valueChanger: quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -118,16 +120,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (valueChanger, action))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_List_1_2(
-        bindingData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Tuple_2<
-                *mut crate::HMUI::IValueChanger_1<T>,
-                *mut crate::System::Action_1<T>,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Tuple_2<
+                    *mut crate::HMUI::IValueChanger_1<T>,
+                    *mut crate::System::Action_1<T>,
+                >,
             >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -136,7 +140,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindingData))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -150,12 +154,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IValueChanger_1_Action_1_1(
         &mut self,
-        valueChanger: *mut crate::HMUI::IValueChanger_1<T>,
-        action: *mut crate::System::Action_1<T>,
+        valueChanger: quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -166,14 +170,16 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (valueChanger, action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_List_1_2(
         &mut self,
-        bindingData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Tuple_2<
-                *mut crate::HMUI::IValueChanger_1<T>,
-                *mut crate::System::Action_1<T>,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Tuple_2<
+                    *mut crate::HMUI::IValueChanger_1<T>,
+                    *mut crate::System::Action_1<T>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -186,7 +192,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindingData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+ValueChangedBinder_1")]

@@ -38,31 +38,38 @@ for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLaz
 )]
 impl crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
     pub fn New(
-        subContainerBindInfo: *mut crate::Zenject::SubContainerCreatorBindInfo,
-        bindInfo: *mut crate::Zenject::BindInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        subContainerBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SubContainerCreatorBindInfo,
+        >,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (subContainerBindInfo, bindInfo))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn WithKernel_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("WithKernel", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("WithKernel", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn WithKernel_1<TKernel>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     >
     where
         TKernel: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -71,21 +78,24 @@ impl crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLa
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("WithKernel", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("WithKernel", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        subContainerBindInfo: *mut crate::Zenject::SubContainerCreatorBindInfo,
-        bindInfo: *mut crate::Zenject::BindInfo,
+        subContainerBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SubContainerCreatorBindInfo,
+        >,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (subContainerBindInfo, bindInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

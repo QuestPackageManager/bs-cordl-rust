@@ -34,36 +34,42 @@ impl crate::Oculus::Platform::MessageWithAssetFileDownloadCancelResult {
     pub fn GetAssetFileDownloadCancelResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AssetFileDownloadCancelResult = __cordl_object
-            .invoke("GetAssetFileDownloadCancelResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+        > = __cordl_object.invoke("GetAssetFileDownloadCancelResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetDataFromMessage(
         &mut self,
         c_message: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AssetFileDownloadCancelResult = __cordl_object
-            .invoke("GetDataFromMessage", (c_message))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+        > = __cordl_object.invoke("GetDataFromMessage", (c_message))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         c_message: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (c_message))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -74,7 +80,7 @@ impl crate::Oculus::Platform::MessageWithAssetFileDownloadCancelResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (c_message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Oculus+Platform+MessageWithAssetFileDownloadCancelResult")]

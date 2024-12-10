@@ -26,7 +26,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ISliderDidStartDissolvingEve
 impl crate::GlobalNamespace::ISliderDidStartDissolvingEvent {
     pub fn HandleSliderDidStartDissolving(
         &mut self,
-        sliderController: *mut crate::GlobalNamespace::SliderController,
+        sliderController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SliderController,
+        >,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -34,7 +36,7 @@ impl crate::GlobalNamespace::ISliderDidStartDissolvingEvent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSliderDidStartDissolving", (sliderController, duration))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

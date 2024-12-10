@@ -26,59 +26,70 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IFileStorage {
 impl crate::GlobalNamespace::IFileStorage {
     pub fn DeleteFileAsync(
         &mut self,
-        fileName: *mut quest_hook::libil2cpp::Il2CppString,
-        storageLocation: crate::GlobalNamespace::StoragePreference,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("DeleteFileAsync", (fileName, storageLocation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn FileExistsAsync(
-        &mut self,
-        fileName: *mut quest_hook::libil2cpp::Il2CppString,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<bool>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
-            .invoke("FileExistsAsync", (fileName, storageLocation))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("DeleteFileAsync", (fileName, storageLocation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FileExistsAsync(
+        &mut self,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        storageLocation: crate::GlobalNamespace::StoragePreference,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object.invoke("FileExistsAsync", (fileName, storageLocation))?;
+        Ok(__cordl_ret.into())
     }
     pub fn LoadFileAsync(
         &mut self,
-        fileName: *mut quest_hook::libil2cpp::Il2CppString,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("LoadFileAsync", (fileName, storageLocation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SaveFileAsync(
         &mut self,
-        fileName: *mut quest_hook::libil2cpp::Il2CppString,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         storageLocation: crate::GlobalNamespace::StoragePreference,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("SaveFileAsync", (fileName, value, storageLocation))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("SaveFileAsync", (fileName, value, storageLocation))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

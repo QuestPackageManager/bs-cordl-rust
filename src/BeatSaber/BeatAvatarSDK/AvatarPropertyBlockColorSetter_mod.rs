@@ -45,14 +45,14 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnValidate(
         &mut self,
@@ -62,7 +62,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnValidate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetColor(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetColor", (color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetColors(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetColors", (mainColor, rimLightColor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetHighlight(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHighlight", (highlighted, uvSegment))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateRenderer(
         &mut self,
@@ -107,7 +107,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateRenderer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -117,7 +117,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]

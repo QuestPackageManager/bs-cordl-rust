@@ -41,17 +41,19 @@ impl crate::GlobalNamespace::BeatmapBasicData {
         noteJumpMovementSpeed: f32,
         noteJumpStartBeatOffset: f32,
         environmentName: crate::GlobalNamespace::EnvironmentName,
-        beatmapColorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        beatmapColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorScheme,
+        >,
         notesCount: i32,
         obstaclesCount: i32,
         bombsCount: i32,
-        mappers: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        mappers: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
-        lighters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        lighters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -69,22 +71,24 @@ impl crate::GlobalNamespace::BeatmapBasicData {
                     lighters,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         noteJumpMovementSpeed: f32,
         noteJumpStartBeatOffset: f32,
         environmentName: crate::GlobalNamespace::EnvironmentName,
-        beatmapColorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        beatmapColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorScheme,
+        >,
         notesCount: i32,
         obstaclesCount: i32,
         bombsCount: i32,
-        mappers: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        mappers: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
-        lighters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        lighters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -105,7 +109,7 @@ impl crate::GlobalNamespace::BeatmapBasicData {
                     lighters,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapBasicData")]

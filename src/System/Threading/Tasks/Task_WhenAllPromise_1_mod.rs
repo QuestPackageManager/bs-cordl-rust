@@ -37,7 +37,7 @@ for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
     pub fn Invoke(
         &mut self,
-        ignored: *mut crate::System::Threading::Tasks::Task,
+        ignored: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -48,13 +48,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", (ignored))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        tasks: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Threading::Tasks::Task_1<T>,
+        tasks: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Threading::Tasks::Task_1<T>,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -63,12 +65,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (tasks))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        tasks: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Threading::Tasks::Task_1<T>,
+        tasks: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Threading::Tasks::Task_1<T>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -80,7 +84,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (tasks))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_InvokeMayRunArbitraryCode(
         &mut self,
@@ -94,7 +98,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_InvokeMayRunArbitraryCode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ShouldNotifyDebuggerOfWaitCompletion(
         &mut self,
@@ -108,7 +112,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_ShouldNotifyDebuggerOfWaitCompletion", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise_1")]

@@ -47,12 +47,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BlocksBlade {
 impl crate::GlobalNamespace::BlocksBlade {
     #[cfg(feature = "BlocksBlade+Element")]
     pub type Element = crate::GlobalNamespace::BlocksBlade_Element;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RandomPointOnCircle(
         &mut self,
@@ -63,11 +63,11 @@ impl crate::GlobalNamespace::BlocksBlade {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("RandomPointOnCircle", (radius))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetUpElement(
         &mut self,
-        element: *mut crate::GlobalNamespace::BlocksBlade_Element,
+        element: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BlocksBlade_Element>,
         velocity: f32,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::BlocksBlade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetUpElement", (element, velocity, color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::BlocksBlade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::BlocksBlade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::BlocksBlade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_color(
         &mut self,
@@ -116,7 +116,7 @@ impl crate::GlobalNamespace::BlocksBlade {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_color", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_color(
         &mut self,
@@ -127,7 +127,7 @@ impl crate::GlobalNamespace::BlocksBlade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_color", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BlocksBlade")]
@@ -167,12 +167,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BlocksBlade_Element {
 }
 #[cfg(feature = "BlocksBlade+Element")]
 impl crate::GlobalNamespace::BlocksBlade_Element {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -182,7 +182,7 @@ impl crate::GlobalNamespace::BlocksBlade_Element {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BlocksBlade+Element")]

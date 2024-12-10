@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CrossFade(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CrossFade", (toSongTime, toVolume))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InterruptLastPitchGainEffect(
         &mut self,
@@ -66,14 +66,14 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InterruptLastPitchGainEffect", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -83,7 +83,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Play(
         &mut self,
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Play", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PlayPitchGainEffect(
         &mut self,
@@ -104,7 +104,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PlayPitchGainEffect", (volumeScale))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Stop(
         &mut self,
@@ -114,7 +114,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Stop", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__21_0(
         &mut self,
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__21_0", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__21_1(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__21_1", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _CrossFade_b__25_0(
         &mut self,
@@ -147,7 +147,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<CrossFade>b__25_0", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _CrossFade_b__25_1(
         &mut self,
@@ -158,7 +158,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<CrossFade>b__25_1", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _CrossFade_b__25_2(
         &mut self,
@@ -168,7 +168,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<CrossFade>b__25_2", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -178,35 +178,37 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_clip(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AudioClip> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::AudioClip = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip> = __cordl_object
             .invoke("get_clip", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isPlaying(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isPlaying", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_clip(
         &mut self,
-        value: *mut crate::UnityEngine::AudioClip,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_clip", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_pitch(
         &mut self,
@@ -217,7 +219,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_pitch", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_time(
         &mut self,
@@ -228,7 +230,7 @@ impl crate::GlobalNamespace::CrossFadeAudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_time", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "CrossFadeAudioSource")]

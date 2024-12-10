@@ -28,35 +28,37 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonPath::QueryExpres
 impl crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression {
     pub fn IsMatch_JToken_JToken0(
         &mut self,
-        root: *mut crate::Newtonsoft::Json::Linq::JToken,
-        t: *mut crate::Newtonsoft::Json::Linq::JToken,
+        root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsMatch", (root, t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsMatch_JsonSelectSettings1(
         &mut self,
-        root: *mut crate::Newtonsoft::Json::Linq::JToken,
-        t: *mut crate::Newtonsoft::Json::Linq::JToken,
-        settings: *mut crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+        root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsMatch", (root, t, settings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         _cordl_operator: crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_operator))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -67,7 +69,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_operator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryExpression")]

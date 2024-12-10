@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindAchievementsHandler", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindAdditionalContentModel(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindAdditionalContentModel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindAnalyticsModel(
         &mut self,
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindAnalyticsModel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindBeatmapDataAssetFileModel(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindBeatmapDataAssetFileModel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindMockPlatformAdditionalContentModel(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindMockPlatformAdditionalContentModel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindPlatformUserModel(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindPlatformUserModel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InstallBindings(
         &mut self,
@@ -102,12 +102,16 @@ impl crate::GlobalNamespace::PlatformInstaller {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InstallBindings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        appInitSetupData: *mut crate::GlobalNamespace::AppInitSetupData,
-        mockPlatformAdditionalContentModelInitialData: *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        appInitSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AppInitSetupData,
+        >,
+        mockPlatformAdditionalContentModelInitialData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -115,12 +119,16 @@ impl crate::GlobalNamespace::PlatformInstaller {
                 ".ctor",
                 (appInitSetupData, mockPlatformAdditionalContentModelInitialData),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        appInitSetupData: *mut crate::GlobalNamespace::AppInitSetupData,
-        mockPlatformAdditionalContentModelInitialData: *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
+        appInitSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AppInitSetupData,
+        >,
+        mockPlatformAdditionalContentModelInitialData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -130,7 +138,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
                 ".ctor",
                 (appInitSetupData, mockPlatformAdditionalContentModelInitialData),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlatformInstaller")]

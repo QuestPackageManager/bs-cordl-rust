@@ -30,80 +30,84 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ContextualMenuManipu
 impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
     pub fn DoDisplayMenu(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoDisplayMenu", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        menuBuilder: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        menuBuilder: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (menuBuilder))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnContextualMenuEvent(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnContextualMenuEvent", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnKeyUpEvent(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::KeyUpEvent,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::KeyUpEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnKeyUpEvent", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnMouseDownEventOSX(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::MouseDownEvent,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseDownEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnMouseDownEventOSX", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnMouseUpDownEvent(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::IMouseEvent,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMouseEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnMouseUpDownEvent", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnMouseUpEventOSX(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::MouseUpEvent,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseUpEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnMouseUpEventOSX", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterCallbacksOnTarget(
         &mut self,
@@ -113,7 +117,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterCallbacksOnTarget", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnregisterCallbacksFromTarget(
         &mut self,
@@ -123,12 +127,14 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnregisterCallbacksFromTarget", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        menuBuilder: *mut crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        menuBuilder: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -136,7 +142,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (menuBuilder))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ContextualMenuManipulator")]

@@ -54,7 +54,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Capture", (capnum, start, end))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckTimeout(
         &mut self,
@@ -64,7 +64,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckTimeout", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Crawl(
         &mut self,
@@ -75,14 +75,14 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Crawl", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Crawlpos(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Crawlpos", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoCheckTimeout(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoCheckTimeout", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoubleCrawl(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoubleCrawl", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoubleStack(
         &mut self,
@@ -112,7 +112,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoubleStack", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoubleTrack(
         &mut self,
@@ -122,7 +122,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoubleTrack", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnsureStorage(
         &mut self,
@@ -132,21 +132,21 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnsureStorage", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindFirstChar(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("FindFirstChar", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Go(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Go", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitMatch(
         &mut self,
@@ -156,7 +156,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitMatch", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitTrackCount(
         &mut self,
@@ -166,7 +166,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitTrackCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsBoundary(
         &mut self,
@@ -179,7 +179,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsBoundary", (index, startpos, endpos))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsECMABoundary(
         &mut self,
@@ -192,47 +192,47 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsECMABoundary", (index, startpos, endpos))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsMatched(&mut self, cap: i32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsMatched", (cap))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MatchIndex(&mut self, cap: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("MatchIndex", (cap))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MatchLength(&mut self, cap: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("MatchLength", (cap))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Popcrawl(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Popcrawl", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Scan(
         &mut self,
-        regex: *mut crate::System::Text::RegularExpressions::Regex,
-        text: *mut quest_hook::libil2cpp::Il2CppString,
+        regex: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         textbeg: i32,
         textend: i32,
         textstart: i32,
@@ -240,17 +240,19 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         quick: bool,
         timeout: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::Match,
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Match>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::Match = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::Match,
+        > = __cordl_object
             .invoke(
                 "Scan",
                 (regex, text, textbeg, textend, textstart, prevlen, quick, timeout),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTimeoutWatch(
         &mut self,
@@ -260,20 +262,21 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartTimeoutWatch", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TidyMatch(
         &mut self,
         quick: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::Match,
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Match>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::Match = __cordl_object
-            .invoke("TidyMatch", (quick))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::Match,
+        > = __cordl_object.invoke("TidyMatch", (quick))?;
+        Ok(__cordl_ret.into())
     }
     pub fn TransferCapture(
         &mut self,
@@ -287,7 +290,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TransferCapture", (capnum, uncapnum, start, end))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Uncapture(
         &mut self,
@@ -297,7 +300,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Uncapture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -307,7 +310,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexRunner")]

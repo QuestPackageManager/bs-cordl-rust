@@ -36,6 +36,6 @@ impl crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo {
             ".ctor",
             (success, triggerPseudoMask, dependencyPseudoMask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

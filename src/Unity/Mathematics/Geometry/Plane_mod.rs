@@ -30,7 +30,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             "CheckPlaneIsNormalized",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Projection(
         &mut self,
@@ -41,7 +41,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             "Projection",
             (point),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SignedDistanceToPoint(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             "SignedDistanceToPoint",
             (point),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_f32_f32_0(
         &mut self,
@@ -66,7 +66,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             ".ctor",
             (coefficientA, coefficientB, coefficientC, coefficientD),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_float3_f32_1(
         &mut self,
@@ -78,7 +78,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             ".ctor",
             (normal, distance),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_float3_float3_2(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             ".ctor",
             (normal, pointInPlane),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_float3_float3_float3_3(
         &mut self,
@@ -103,7 +103,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             ".ctor",
             (vector1InPlane, vector2InPlane, pointInPlane),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -111,7 +111,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             "get_Distance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Flipped(
         &mut self,
@@ -121,7 +121,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             "get_Flipped",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Normal(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             "get_Normal",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Distance(
         &mut self,
@@ -142,7 +142,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             "set_Distance",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Normal(
         &mut self,
@@ -153,6 +153,6 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             "set_Normal",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

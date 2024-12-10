@@ -24,14 +24,14 @@ for crate::UnityEngine::Rendering::ScriptableRenderContext {
 impl crate::UnityEngine::Rendering::ScriptableRenderContext {
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_ScriptableRenderContext0(
         &mut self,
@@ -42,12 +42,12 @@ impl crate::UnityEngine::Rendering::ScriptableRenderContext {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCameras(
         &mut self,
-        results: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Camera,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Camera>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -55,19 +55,19 @@ impl crate::UnityEngine::Rendering::ScriptableRenderContext {
             "GetCameras",
             (results),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCameras_Internal(
         &mut self,
-        listType: *mut crate::System::Type,
-        resultList: *mut quest_hook::libil2cpp::Il2CppObject,
+        listType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        resultList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetCameras_Internal",
             (listType, resultList),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -75,7 +75,7 @@ impl crate::UnityEngine::Rendering::ScriptableRenderContext {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -86,6 +86,6 @@ impl crate::UnityEngine::Rendering::ScriptableRenderContext {
             ".ctor",
             (ptr),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

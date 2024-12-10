@@ -33,14 +33,14 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetCurrentForces", (linearForce, angularForce))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_anchor(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_anchor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_anchor_Injected(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_anchor_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_autoConfigureConnectedAnchor(
         &mut self,
@@ -81,7 +81,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_autoConfigureConnectedAnchor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_axis(
         &mut self,
@@ -91,7 +91,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_axis", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_axis_Injected(
         &mut self,
@@ -102,21 +102,21 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_axis_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_breakForce(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_breakForce", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_breakTorque(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_breakTorque", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_connectedAnchor(
         &mut self,
@@ -126,7 +126,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_connectedAnchor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_connectedAnchor_Injected(
         &mut self,
@@ -137,34 +137,39 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_connectedAnchor_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_connectedArticulationBody(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ArticulationBody> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ArticulationBody>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ArticulationBody = __cordl_object
-            .invoke("get_connectedArticulationBody", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ArticulationBody,
+        > = __cordl_object.invoke("get_connectedArticulationBody", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_connectedBody(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Rigidbody> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Rigidbody = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody> = __cordl_object
             .invoke("get_connectedBody", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_connectedMassScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_connectedMassScale", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentForce(
         &mut self,
@@ -174,7 +179,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_currentForce", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentTorque(
         &mut self,
@@ -184,28 +189,28 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_currentTorque", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_enableCollision(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_enableCollision", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_enablePreprocessing(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_enablePreprocessing", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_massScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_massScale", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_anchor(
         &mut self,
@@ -216,7 +221,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_anchor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_anchor_Injected(
         &mut self,
@@ -227,7 +232,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_anchor_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_autoConfigureConnectedAnchor(
         &mut self,
@@ -238,7 +243,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_autoConfigureConnectedAnchor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_axis(
         &mut self,
@@ -249,7 +254,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_axis", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_axis_Injected(
         &mut self,
@@ -260,7 +265,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_axis_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_breakForce(
         &mut self,
@@ -271,7 +276,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_breakForce", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_breakTorque(
         &mut self,
@@ -282,7 +287,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_breakTorque", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_connectedAnchor(
         &mut self,
@@ -293,7 +298,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_connectedAnchor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_connectedAnchor_Injected(
         &mut self,
@@ -304,29 +309,29 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_connectedAnchor_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_connectedArticulationBody(
         &mut self,
-        value: *mut crate::UnityEngine::ArticulationBody,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ArticulationBody>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_connectedArticulationBody", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_connectedBody(
         &mut self,
-        value: *mut crate::UnityEngine::Rigidbody,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_connectedBody", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_connectedMassScale(
         &mut self,
@@ -337,7 +342,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_connectedMassScale", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_enableCollision(
         &mut self,
@@ -348,7 +353,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_enableCollision", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_enablePreprocessing(
         &mut self,
@@ -359,7 +364,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_enablePreprocessing", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_massScale(
         &mut self,
@@ -370,7 +375,7 @@ impl crate::UnityEngine::Joint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_massScale", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Joint")]

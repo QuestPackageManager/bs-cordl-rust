@@ -24,12 +24,14 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonBoolean {
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonBoolean")]
 impl crate::Newtonsoft::Json::Bson::BsonBoolean {
-    pub fn New(value: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (value))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -40,7 +42,7 @@ impl crate::Newtonsoft::Json::Bson::BsonBoolean {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonBoolean")]

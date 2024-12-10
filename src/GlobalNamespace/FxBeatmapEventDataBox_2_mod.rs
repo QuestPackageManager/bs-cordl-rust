@@ -60,18 +60,20 @@ impl<
                 "CreateVfxBeatmapEventData",
                 (data, _cordl_time, groupId, elementId, distributionOffset),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
+        indexFilter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         beatDistributionParam: f32,
         eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         eventDistributionParam: f32,
         eventDistributionShouldAffectFirstBaseEvent: bool,
         eventDistributionEaseType: crate::GlobalNamespace::EaseType,
-        fxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        fxBaseDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TIn: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -94,7 +96,7 @@ impl<
                     fxBaseDataList,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Unpack(
         &mut self,
@@ -104,9 +106,13 @@ impl<
         durationOrderIndex: i32,
         distributionOrderIndex: i32,
         maxBeat: f32,
-        beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
-        output: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::BeatmapEventData,
+        beatToTimeConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatToTimeConverter,
+        >,
+        output: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::BeatmapEventData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -132,18 +138,20 @@ impl<
                     output,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
+        indexFilter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         beatDistributionParam: f32,
         eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         eventDistributionParam: f32,
         eventDistributionShouldAffectFirstBaseEvent: bool,
         eventDistributionEaseType: crate::GlobalNamespace::EaseType,
-        fxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
+        fxBaseDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TIn: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -168,7 +176,7 @@ impl<
                     fxBaseDataList,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "FxBeatmapEventDataBox_2")]

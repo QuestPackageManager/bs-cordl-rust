@@ -29,7 +29,7 @@ impl crate::ENet::Event {
             ".ctor",
             (event),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ChannelID(&mut self) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_ret: u8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -37,7 +37,7 @@ impl crate::ENet::Event {
             "get_ChannelID",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Data(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -45,7 +45,7 @@ impl crate::ENet::Event {
             "get_Data",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_NativeData(
         &mut self,
@@ -55,7 +55,7 @@ impl crate::ENet::Event {
             "get_NativeData",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Packet(&mut self) -> quest_hook::libil2cpp::Result<crate::ENet::Packet> {
         let __cordl_ret: crate::ENet::Packet = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -63,7 +63,7 @@ impl crate::ENet::Event {
             "get_Packet",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Peer(&mut self) -> quest_hook::libil2cpp::Result<crate::ENet::Peer> {
         let __cordl_ret: crate::ENet::Peer = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -71,7 +71,7 @@ impl crate::ENet::Event {
             "get_Peer",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Type(&mut self) -> quest_hook::libil2cpp::Result<crate::ENet::EventType> {
         let __cordl_ret: crate::ENet::EventType = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -79,7 +79,7 @@ impl crate::ENet::Event {
             "get_Type",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_NativeData(
         &mut self,
@@ -90,6 +90,6 @@ impl crate::ENet::Event {
             "set_NativeData",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

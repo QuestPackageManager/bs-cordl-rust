@@ -26,17 +26,17 @@ impl std::ops::DerefMut for crate::System::Data::DataCommonEventSource {
 impl crate::System::Data::DataCommonEventSource {
     pub fn EnterScope_Il2CppString0(
         &mut self,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("EnterScope", (message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnterScope_T1_1<T1>(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg1: T1,
     ) -> quest_hook::libil2cpp::Result<i64>
     where
@@ -47,11 +47,11 @@ impl crate::System::Data::DataCommonEventSource {
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("EnterScope", (format, arg1))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnterScope_T1_T2_2<T1, T2>(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg1: T1,
         arg2: T2,
     ) -> quest_hook::libil2cpp::Result<i64>
@@ -66,11 +66,11 @@ impl crate::System::Data::DataCommonEventSource {
         );
         let __cordl_ret: i64 = __cordl_object
             .invoke("EnterScope", (format, arg1, arg2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnterScope_T1_T2_T3_3<T1, T2, T3>(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg1: T1,
         arg2: T2,
         arg3: T3,
@@ -88,11 +88,11 @@ impl crate::System::Data::DataCommonEventSource {
         );
         let __cordl_ret: i64 = __cordl_object
             .invoke("EnterScope", (format, arg1, arg2, arg3))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnterScope_T1_T2_T3_T4_4<T1, T2, T3, T4>(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg1: T1,
         arg2: T2,
         arg3: T3,
@@ -113,7 +113,7 @@ impl crate::System::Data::DataCommonEventSource {
         );
         let __cordl_ret: i64 = __cordl_object
             .invoke("EnterScope", (format, arg1, arg2, arg3, arg4))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExitScope(
         &mut self,
@@ -124,29 +124,29 @@ impl crate::System::Data::DataCommonEventSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExitScope", (scopeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Trace_Il2CppString0(
         &mut self,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Trace", (message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Trace_T0_1<T0>(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: T0,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -158,11 +158,11 @@ impl crate::System::Data::DataCommonEventSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Trace", (format, arg0))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Trace_T0_T1_2<T0, T1>(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: T0,
         arg1: T1,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -177,11 +177,11 @@ impl crate::System::Data::DataCommonEventSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Trace", (format, arg0, arg1))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Trace_T0_T1_T2_3<T0, T1, T2>(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: T0,
         arg1: T1,
         arg2: T2,
@@ -199,11 +199,11 @@ impl crate::System::Data::DataCommonEventSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Trace", (format, arg0, arg1, arg2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Trace_T0_T1_T2_T3_4<T0, T1, T2, T3>(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: T0,
         arg1: T1,
         arg2: T2,
@@ -224,11 +224,11 @@ impl crate::System::Data::DataCommonEventSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Trace", (format, arg0, arg1, arg2, arg3))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Trace_T0_T1_T2_T3_T4_5<T0, T1, T2, T3, T4>(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: T0,
         arg1: T1,
         arg2: T2,
@@ -252,11 +252,11 @@ impl crate::System::Data::DataCommonEventSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Trace", (format, arg0, arg1, arg2, arg3, arg4))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Trace_T0_T1_T2_T3_T4_T5_T6_6<T0, T1, T2, T3, T4, T5, T6>(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: T0,
         arg1: T1,
         arg2: T2,
@@ -286,7 +286,7 @@ impl crate::System::Data::DataCommonEventSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Trace", (format, arg0, arg1, arg2, arg3, arg4, arg5, arg6))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -296,7 +296,7 @@ impl crate::System::Data::DataCommonEventSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Data+DataCommonEventSource")]

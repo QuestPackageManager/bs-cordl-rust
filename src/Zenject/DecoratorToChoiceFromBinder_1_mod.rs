@@ -33,10 +33,10 @@ impl<
     TContract: quest_hook::libil2cpp::Type,
 > crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
     pub fn New(
-        bindContainer: *mut crate::Zenject::DiContainer,
-        bindInfo: *mut crate::Zenject::BindInfo,
-        factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        bindContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -45,12 +45,14 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn With<TConcrete>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::FactoryFromBinder_2<TContract, TConcrete>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryFromBinder_2<TContract, TConcrete>,
+        >,
     >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -61,17 +63,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::FactoryFromBinder_2<
-            TContract,
-            TConcrete,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryFromBinder_2<TContract, TConcrete>,
         > = __cordl_object.invoke("With", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        bindContainer: *mut crate::Zenject::DiContainer,
-        bindInfo: *mut crate::Zenject::BindInfo,
-        factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
+        bindContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -82,7 +83,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]

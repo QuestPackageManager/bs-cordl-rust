@@ -26,29 +26,29 @@ impl std::ops::DerefMut for crate::LiteNetLib::INatPunchListener {
 impl crate::LiteNetLib::INatPunchListener {
     pub fn OnNatIntroductionRequest(
         &mut self,
-        localEndPoint: *mut crate::System::Net::IPEndPoint,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
-        token: *mut quest_hook::libil2cpp::Il2CppString,
+        localEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+        remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+        token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNatIntroductionRequest", (localEndPoint, remoteEndPoint, token))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnNatIntroductionSuccess(
         &mut self,
-        targetEndPoint: *mut crate::System::Net::IPEndPoint,
+        targetEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         _cordl_type: crate::LiteNetLib::NatAddressType,
-        token: *mut quest_hook::libil2cpp::Il2CppString,
+        token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNatIntroductionSuccess", (targetEndPoint, _cordl_type, token))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

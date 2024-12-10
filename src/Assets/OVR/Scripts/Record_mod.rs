@@ -29,27 +29,27 @@ impl std::ops::DerefMut for crate::Assets::OVR::Scripts::Record {
 impl crate::Assets::OVR::Scripts::Record {
     pub fn New(
         order: i32,
-        cat: *mut quest_hook::libil2cpp::Il2CppString,
-        msg: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        cat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (order, cat, msg))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         order: i32,
-        cat: *mut quest_hook::libil2cpp::Il2CppString,
-        msg: *mut quest_hook::libil2cpp::Il2CppString,
+        cat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (order, cat, msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Assets+OVR+Scripts+Record")]

@@ -29,7 +29,7 @@ impl crate::Oculus::Haptics::Haptics {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("CreateHapticPlayer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -39,7 +39,7 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAmplitudeHapticPlayer(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("GetAmplitudeHapticPlayer", (playerId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetClipDuration(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::Oculus::Haptics::Haptics {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetClipDuration", (clipId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetFrequencyShiftHapticPlayer(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("GetFrequencyShiftHapticPlayer", (playerId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPriorityHapticPlayer(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke("GetPriorityHapticPlayer", (playerId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsHapticPlayerLooping(
         &mut self,
@@ -93,17 +93,17 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsHapticPlayerLooping", (playerId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadClip(
         &mut self,
-        clipJson: *mut quest_hook::libil2cpp::Il2CppString,
+        clipJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("LoadClip", (clipJson))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoopHapticPlayer(
         &mut self,
@@ -115,14 +115,14 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LoopHapticPlayer", (playerId, enabled))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PlayHapticPlayer(
         &mut self,
@@ -134,14 +134,14 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PlayHapticPlayer", (playerId, controller))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReleaseClip(&mut self, clipId: i32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ReleaseClip", (clipId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReleaseHapticPlayer(
         &mut self,
@@ -152,7 +152,7 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ReleaseHapticPlayer", (playerId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetAmplitudeHapticPlayer(
         &mut self,
@@ -164,7 +164,7 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetAmplitudeHapticPlayer", (playerId, amplitude))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetFrequencyShiftHapticPlayer(
         &mut self,
@@ -176,7 +176,7 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetFrequencyShiftHapticPlayer", (playerId, amount))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetHapticPlayerClip(
         &mut self,
@@ -188,7 +188,7 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHapticPlayerClip", (playerId, clipId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPriorityHapticPlayer(
         &mut self,
@@ -200,7 +200,7 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPriorityHapticPlayer", (playerId, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StopHapticPlayer(
         &mut self,
@@ -211,7 +211,7 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StopHapticPlayer", (playerId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -221,7 +221,7 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Oculus+Haptics+Haptics")]

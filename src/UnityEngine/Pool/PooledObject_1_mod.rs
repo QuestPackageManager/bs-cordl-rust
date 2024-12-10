@@ -36,12 +36,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::PooledObject_1<T>
             "System.IDisposable.Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         value: T,
-        pool: *mut crate::UnityEngine::Pool::IObjectPool_1<T>,
+        pool: quest_hook::libil2cpp::Gc<crate::UnityEngine::Pool::IObjectPool_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -52,6 +52,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::PooledObject_1<T>
             ".ctor",
             (value, pool),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

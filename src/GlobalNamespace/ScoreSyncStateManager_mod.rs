@@ -49,14 +49,14 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("Interpolate", (prev, prevTime, curr, currTime, _cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deltaMessageType(
         &mut self,
@@ -78,29 +78,33 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
         );
         let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = __cordl_object
             .invoke("get_deltaMessageType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deltaSerializablePool(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::IPacketPool_1<
-            *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPacketPool_1<
+                *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::IPacketPool_1<
-            *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPacketPool_1<
+                *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+            >,
         > = __cordl_object.invoke("get_deltaSerializablePool", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deltaUpdateFrequencyMs(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_deltaUpdateFrequencyMs", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fullStateUpdateFrequencyMs(
         &mut self,
@@ -110,14 +114,14 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
         );
         let __cordl_ret: i64 = __cordl_object
             .invoke("get_fullStateUpdateFrequencyMs", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_localBufferSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_localBufferSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_messageType(
         &mut self,
@@ -129,29 +133,33 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
         );
         let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = __cordl_object
             .invoke("get_messageType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_remoteBufferSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_remoteBufferSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_serializablePool(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::IPacketPool_1<
-            *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPacketPool_1<
+                *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::IPacketPool_1<
-            *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPacketPool_1<
+                *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+            >,
         > = __cordl_object.invoke("get_serializablePool", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ScoreSyncStateManager")]

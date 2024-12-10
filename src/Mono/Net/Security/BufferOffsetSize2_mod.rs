@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::BufferOffsetSize2 {
 impl crate::Mono::Net::Security::BufferOffsetSize2 {
     pub fn AppendData(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -36,7 +36,7 @@ impl crate::Mono::Net::Security::BufferOffsetSize2 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AppendData", (buffer, offset, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MakeRoom(
         &mut self,
@@ -47,14 +47,16 @@ impl crate::Mono::Net::Security::BufferOffsetSize2 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MakeRoom", (_cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(_cordl_size: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_size))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -64,7 +66,7 @@ impl crate::Mono::Net::Security::BufferOffsetSize2 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -75,7 +77,7 @@ impl crate::Mono::Net::Security::BufferOffsetSize2 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Net+Security+BufferOffsetSize2")]

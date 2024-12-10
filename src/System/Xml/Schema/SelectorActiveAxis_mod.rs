@@ -29,34 +29,37 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::SelectorActiveAxis {
 impl crate::System::Xml::Schema::SelectorActiveAxis {
     pub fn EndElement(
         &mut self,
-        localname: *mut quest_hook::libil2cpp::Il2CppString,
-        URN: *mut quest_hook::libil2cpp::Il2CppString,
+        localname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        URN: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("EndElement", (localname, URN))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        axisTree: *mut crate::System::Xml::Schema::Asttree,
-        cs: *mut crate::System::Xml::Schema::ConstraintStruct,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        axisTree: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Asttree>,
+        cs: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ConstraintStruct>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (axisTree, cs))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PopKS(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::KeySequence> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::KeySequence>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::KeySequence = __cordl_object
-            .invoke("PopKS", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::KeySequence,
+        > = __cordl_object.invoke("PopKS", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn PushKS(
         &mut self,
@@ -67,26 +70,26 @@ impl crate::System::Xml::Schema::SelectorActiveAxis {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("PushKS", (errline, errcol))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        axisTree: *mut crate::System::Xml::Schema::Asttree,
-        cs: *mut crate::System::Xml::Schema::ConstraintStruct,
+        axisTree: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Asttree>,
+        cs: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ConstraintStruct>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (axisTree, cs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lastDepth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_lastDepth", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+SelectorActiveAxis")]

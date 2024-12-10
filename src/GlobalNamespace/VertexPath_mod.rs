@@ -64,7 +64,7 @@ impl crate::GlobalNamespace::VertexPath {
                     vertCount,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPoint(
         &mut self,
@@ -75,7 +75,7 @@ impl crate::GlobalNamespace::VertexPath {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("GetPoint", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetVertex(
         &mut self,
@@ -89,18 +89,20 @@ impl crate::GlobalNamespace::VertexPath {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetVertex", (index, position, tangent, normal))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(numberOfPathSegments: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        numberOfPathSegments: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (numberOfPathSegments))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SplitBezierPathIntoFixNumberOfSegments(
         &mut self,
-        bezierPath: *mut crate::GlobalNamespace::BezierPath,
+        bezierPath: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierPath>,
         numberOfVertexSegments: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -111,7 +113,7 @@ impl crate::GlobalNamespace::VertexPath {
                 "SplitBezierPathIntoFixNumberOfSegments",
                 (bezierPath, numberOfVertexSegments),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TimeAtPoint(
         &mut self,
@@ -121,18 +123,18 @@ impl crate::GlobalNamespace::VertexPath {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("TimeAtPoint", (pointIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateByBezierPath(
         &mut self,
-        bezierPath: *mut crate::GlobalNamespace::BezierPath,
+        bezierPath: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierPath>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateByBezierPath", (bezierPath))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -143,14 +145,14 @@ impl crate::GlobalNamespace::VertexPath {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (numberOfPathSegments))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_length", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "VertexPath")]

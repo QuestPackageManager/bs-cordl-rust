@@ -39,39 +39,45 @@ impl crate::Zenject::ConditionCopyNonLazyBinder {
     #[cfg(feature = "Zenject+ConditionCopyNonLazyBinder+__c__DisplayClass3_1")]
     pub type __c__DisplayClass3_1 = crate::Zenject::ConditionCopyNonLazyBinder___c__DisplayClass3_1;
     pub fn New(
-        bindInfo: *mut crate::Zenject::BindInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindInfo))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn When(
         &mut self,
-        condition: *mut crate::Zenject::BindingCondition,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::CopyNonLazyBinder> {
+        condition: quest_hook::libil2cpp::Gc<crate::Zenject::BindingCondition>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::CopyNonLazyBinder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder> = __cordl_object
             .invoke("When", (condition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WhenInjectedIntoInstance(
         &mut self,
-        instance: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::CopyNonLazyBinder> {
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::CopyNonLazyBinder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder> = __cordl_object
             .invoke("WhenInjectedIntoInstance", (instance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WhenInjectedInto_1<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::CopyNonLazyBinder>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -79,24 +85,30 @@ impl crate::Zenject::ConditionCopyNonLazyBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::CopyNonLazyBinder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder> = __cordl_object
             .invoke("WhenInjectedInto", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WhenInjectedInto_Il2CppArray0(
         &mut self,
-        targets: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::CopyNonLazyBinder> {
+        targets: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::CopyNonLazyBinder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder> = __cordl_object
             .invoke("WhenInjectedInto", (targets))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WhenNotInjectedInto<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::CopyNonLazyBinder>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -104,20 +116,20 @@ impl crate::Zenject::ConditionCopyNonLazyBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::CopyNonLazyBinder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder> = __cordl_object
             .invoke("WhenNotInjectedInto", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        bindInfo: *mut crate::Zenject::BindInfo,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+ConditionCopyNonLazyBinder")]

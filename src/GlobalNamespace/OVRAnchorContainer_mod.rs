@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OVRAnchorContainer {
 impl crate::GlobalNamespace::OVRAnchorContainer {
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_OVRAnchorContainer0(
         &mut self,
@@ -42,12 +42,14 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FetchChildrenAsync(
         &mut self,
-        anchors: *mut crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::OVRAnchor,
+        anchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -55,7 +57,7 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             "FetchChildrenAsync",
             (anchors),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -63,7 +65,7 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRAnchorContainer__FromAnchor(
         &mut self,
@@ -74,7 +76,7 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             "IOVRAnchorComponent<OVRAnchorContainer>.FromAnchor",
             (anchor),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRAnchorContainer__SetEnabledAsync(
         &mut self,
@@ -86,7 +88,7 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             "IOVRAnchorComponent<OVRAnchorContainer>.SetEnabledAsync",
             (enabled, timeout),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRAnchorContainer__get_Handle(
         &mut self,
@@ -96,7 +98,7 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             "IOVRAnchorComponent<OVRAnchorContainer>.get_Handle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRAnchorContainer__get_Type(
         &mut self,
@@ -108,17 +110,17 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             "IOVRAnchorComponent<OVRAnchorContainer>.get_Type",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -129,7 +131,7 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             ".ctor",
             (anchor),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -137,7 +139,7 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             "get_Handle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -145,7 +147,7 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             "get_IsEnabled",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -153,7 +155,7 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             "get_IsNull",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
@@ -165,18 +167,18 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
             "get_Type",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Uuids(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+        >,
     > {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::Guid> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Uuids",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Uuids", ())?;
+        Ok(__cordl_ret.into())
     }
 }

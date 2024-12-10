@@ -33,6 +33,6 @@ impl crate::System::DTSubString {
             "get_Item",
             (relativeIndex),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

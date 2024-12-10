@@ -36,21 +36,25 @@ impl crate::System::Runtime::Serialization::ObjectHolderListEnumerator {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        list: *mut crate::System::Runtime::Serialization::ObjectHolderList,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ObjectHolderList,
+        >,
         isFixupEnumerator: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (list, isFixupEnumerator))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        list: *mut crate::System::Runtime::Serialization::ObjectHolderList,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ObjectHolderList,
+        >,
         isFixupEnumerator: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -58,19 +62,20 @@ impl crate::System::Runtime::Serialization::ObjectHolderListEnumerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (list, isFixupEnumerator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Current(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Serialization::ObjectHolder,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ObjectHolder>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Serialization::ObjectHolder = __cordl_object
-            .invoke("get_Current", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ObjectHolder,
+        > = __cordl_object.invoke("get_Current", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+ObjectHolderListEnumerator")]

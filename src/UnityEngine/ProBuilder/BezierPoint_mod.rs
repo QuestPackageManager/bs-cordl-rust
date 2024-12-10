@@ -35,7 +35,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
             "EnforceTangentMode",
             (master, mode),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPosition(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
             "SetPosition",
             (position),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTangentIn(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
             "SetTangentIn",
             (tangent, mode),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTangentOut(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
             "SetTangentOut",
             (tangent, mode),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -84,6 +84,6 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
             ".ctor",
             (position, tangentIn, tangentOut, rotation),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

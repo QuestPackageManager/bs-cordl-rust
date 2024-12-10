@@ -30,70 +30,90 @@ for crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
 impl crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
     pub fn GenerateWrappedKey(
         &mut self,
-        contentKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        contentKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GenerateWrappedKey", (contentKey))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("GenerateWrappedKey", (contentKey))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppArray1(
-        subjectKeyID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        keyWrapper: *mut crate::Org::BouncyCastle::Crypto::IKeyWrapper,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        subjectKeyID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        keyWrapper: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (subjectKeyID, keyWrapper))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_X509Certificate0(
-        recipCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        keyWrapper: *mut crate::Org::BouncyCastle::Crypto::IKeyWrapper,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        recipCert: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
+        keyWrapper: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (recipCert, keyWrapper))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_Il2CppArray1(
         &mut self,
-        subjectKeyID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        keyWrapper: *mut crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+        subjectKeyID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        keyWrapper: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (subjectKeyID, keyWrapper))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_X509Certificate0(
         &mut self,
-        recipCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        keyWrapper: *mut crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+        recipCert: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
+        keyWrapper: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (recipCert, keyWrapper))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AlgorithmDetails(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier = __cordl_object
-            .invoke("get_AlgorithmDetails", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        > = __cordl_object.invoke("get_AlgorithmDetails", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator")]

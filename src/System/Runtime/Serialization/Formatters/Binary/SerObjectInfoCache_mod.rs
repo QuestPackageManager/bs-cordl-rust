@@ -38,29 +38,29 @@ for crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCach
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerObjectInfoCache")]
 impl crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache {
     pub fn New_Il2CppString_Il2CppString__cordl_bool0(
-        typeName: *mut quest_hook::libil2cpp::Il2CppString,
-        assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         hasTypeForwardedFrom: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (typeName, assemblyName, hasTypeForwardedFrom))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Type1(
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_type))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_Il2CppString_Il2CppString__cordl_bool0(
         &mut self,
-        typeName: *mut quest_hook::libil2cpp::Il2CppString,
-        assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         hasTypeForwardedFrom: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -68,18 +68,18 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCac
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (typeName, assemblyName, hasTypeForwardedFrom))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Type1(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_type))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerObjectInfoCache")]

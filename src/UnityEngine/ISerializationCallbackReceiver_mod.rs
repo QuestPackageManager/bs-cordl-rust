@@ -32,7 +32,7 @@ impl crate::UnityEngine::ISerializationCallbackReceiver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnAfterDeserialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnBeforeSerialize(
         &mut self,
@@ -42,7 +42,7 @@ impl crate::UnityEngine::ISerializationCallbackReceiver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBeforeSerialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

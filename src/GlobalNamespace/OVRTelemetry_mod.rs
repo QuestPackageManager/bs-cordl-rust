@@ -74,18 +74,18 @@ impl crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (name),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_NameHandle(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
             "get_NameHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTelemetry+NullTelemetryClient")]
@@ -125,7 +125,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetry_NullTelemetryCl
 impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
     pub fn CreateMarkerHandle(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CreateMarkerHandle", (name, nameHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DestroyMarkerHandle(
         &mut self,
@@ -144,13 +144,13 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("DestroyMarkerHandle", (nameHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerAnnotation(
         &mut self,
         markerId: i32,
-        annotationKey: *mut quest_hook::libil2cpp::Il2CppString,
-        annotationValue: *mut quest_hook::libil2cpp::Il2CppString,
+        annotationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        annotationValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -161,7 +161,7 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
                 "MarkerAnnotation",
                 (markerId, annotationKey, annotationValue, instanceKey),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerEnd(
         &mut self,
@@ -175,7 +175,7 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkerEnd", (markerId, resultTypeId, instanceKey, timestampMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerPointCached(
         &mut self,
@@ -192,7 +192,7 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
                 "MarkerPointCached",
                 (markerId, nameHandle, instanceKey, timestampMs),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerStart(
         &mut self,
@@ -205,14 +205,14 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkerStart", (markerId, instanceKey, timestampMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -222,7 +222,7 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTelemetry+NullTelemetryClient")]
@@ -263,7 +263,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetry_QPLTelemetryCli
 impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
     pub fn CreateMarkerHandle(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -271,7 +271,7 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CreateMarkerHandle", (name, nameHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DestroyMarkerHandle(
         &mut self,
@@ -282,13 +282,13 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("DestroyMarkerHandle", (nameHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerAnnotation(
         &mut self,
         markerId: i32,
-        annotationKey: *mut quest_hook::libil2cpp::Il2CppString,
-        annotationValue: *mut quest_hook::libil2cpp::Il2CppString,
+        annotationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        annotationValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -299,7 +299,7 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
                 "MarkerAnnotation",
                 (markerId, annotationKey, annotationValue, instanceKey),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerEnd(
         &mut self,
@@ -313,7 +313,7 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkerEnd", (markerId, resultTypeId, instanceKey, timestampMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerPointCached(
         &mut self,
@@ -330,7 +330,7 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
                 "MarkerPointCached",
                 (markerId, nameHandle, instanceKey, timestampMs),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerStart(
         &mut self,
@@ -343,14 +343,14 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkerStart", (markerId, instanceKey, timestampMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -360,7 +360,7 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTelemetry+QPLTelemetryClient")]
@@ -401,7 +401,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetry_TelemetryClient
 impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
     pub fn CreateMarkerHandle(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -409,7 +409,7 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CreateMarkerHandle", (name, nameHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DestroyMarkerHandle(
         &mut self,
@@ -420,13 +420,13 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("DestroyMarkerHandle", (nameHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerAnnotation(
         &mut self,
         markerId: i32,
-        annotationKey: *mut quest_hook::libil2cpp::Il2CppString,
-        annotationValue: *mut quest_hook::libil2cpp::Il2CppString,
+        annotationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        annotationValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -437,7 +437,7 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
                 "MarkerAnnotation",
                 (markerId, annotationKey, annotationValue, instanceKey),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerEnd(
         &mut self,
@@ -451,7 +451,7 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkerEnd", (markerId, resultTypeId, instanceKey, timestampMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerPointCached(
         &mut self,
@@ -468,7 +468,7 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
                 "MarkerPointCached",
                 (markerId, nameHandle, instanceKey, timestampMs),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkerStart(
         &mut self,
@@ -481,14 +481,14 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkerStart", (markerId, instanceKey, timestampMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -498,7 +498,7 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTelemetry+TelemetryClient")]

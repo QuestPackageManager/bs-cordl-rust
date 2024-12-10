@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LateUpdate(
         &mut self,
@@ -55,18 +55,20 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LateUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RaycastAndSetLightLength(
         &mut self,
-        bounce: *mut crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
+        bounce: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
+        >,
         rayWorldOrigin: crate::UnityEngine::Vector3,
         rayDirection: crate::UnityEngine::Vector3,
         hitWorldPosition: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
@@ -90,7 +92,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
                     endAlpha,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -100,7 +102,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TubeBloomPrePassLightReflectionEffect")]
@@ -159,12 +161,12 @@ for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePa
     feature = "TubeBloomPrePassLightReflectionEffect+TubeBloomPrePassLightWithHitPoint"
 )]
 impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetActive(
         &mut self,
@@ -176,7 +178,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPreP
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetActive", (enabled, mainLightColor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetCollisionLength(
         &mut self,
@@ -188,7 +190,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPreP
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCollisionLength", (rayHitGeometry, hit))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetData(
         &mut self,
@@ -205,7 +207,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPreP
                 "SetData",
                 (remainingLength, startAlpha, hitWorldPosition, hitReflection),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -215,7 +217,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPreP
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

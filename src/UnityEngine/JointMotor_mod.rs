@@ -29,7 +29,7 @@ impl crate::UnityEngine::JointMotor {
             "get_force",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_freeSpin(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -37,7 +37,7 @@ impl crate::UnityEngine::JointMotor {
             "get_freeSpin",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_targetVelocity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -45,7 +45,7 @@ impl crate::UnityEngine::JointMotor {
             "get_targetVelocity",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_force(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::UnityEngine::JointMotor {
             "set_force",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_freeSpin(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::UnityEngine::JointMotor {
             "set_freeSpin",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_targetVelocity(
         &mut self,
@@ -78,6 +78,6 @@ impl crate::UnityEngine::JointMotor {
             "set_targetVelocity",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -26,17 +26,19 @@ impl std::ops::DerefMut for crate::Zenject::ISubContainerCreator {
 impl crate::Zenject::ISubContainerCreator {
     pub fn CreateSubContainer(
         &mut self,
-        args: *mut crate::System::Collections::Generic::List_1<
-            crate::Zenject::TypeValuePair,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
-        context: *mut crate::Zenject::InjectContext,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+        context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = __cordl_object
             .invoke("CreateSubContainer", (args, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

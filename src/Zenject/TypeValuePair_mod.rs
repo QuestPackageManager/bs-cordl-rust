@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Zenject::TypeValuePai
 impl crate::Zenject::TypeValuePair {
     pub fn _ctor(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (_cordl_type, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -31,6 +31,6 @@ impl crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
             "Compare",
             (x, y),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

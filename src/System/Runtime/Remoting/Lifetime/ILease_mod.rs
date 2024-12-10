@@ -33,7 +33,7 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
         );
         let __cordl_ret: crate::System::TimeSpan = __cordl_object
             .invoke("Renew", (renewalTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -48,7 +48,7 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
         );
         let __cordl_ret: crate::System::TimeSpan = __cordl_object
             .invoke("get_CurrentLeaseTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CurrentState(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
         );
         let __cordl_ret: crate::System::Runtime::Remoting::Lifetime::LeaseState = __cordl_object
             .invoke("get_CurrentState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RenewOnCallTime(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
         );
         let __cordl_ret: crate::System::TimeSpan = __cordl_object
             .invoke("get_RenewOnCallTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+ILease")]

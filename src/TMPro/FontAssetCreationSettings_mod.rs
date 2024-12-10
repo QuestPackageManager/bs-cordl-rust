@@ -39,7 +39,9 @@ for crate::TMPro::FontAssetCreationSettings {
 impl crate::TMPro::FontAssetCreationSettings {
     pub fn _ctor(
         &mut self,
-        sourceFontFileGUID: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceFontFileGUID: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
         pointSize: i32,
         pointSizeSamplingMode: i32,
         padding: i32,
@@ -47,7 +49,7 @@ impl crate::TMPro::FontAssetCreationSettings {
         atlasWidth: i32,
         atlasHeight: i32,
         characterSelectionMode: i32,
-        characterSet: *mut quest_hook::libil2cpp::Il2CppString,
+        characterSet: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         renderMode: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -66,6 +68,6 @@ impl crate::TMPro::FontAssetCreationSettings {
                 renderMode,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

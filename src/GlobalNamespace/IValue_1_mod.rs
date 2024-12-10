@@ -41,7 +41,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IValue_1<T> {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_value", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_value(
         &mut self,
@@ -56,7 +56,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IValue_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_value", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "IValue_1")]

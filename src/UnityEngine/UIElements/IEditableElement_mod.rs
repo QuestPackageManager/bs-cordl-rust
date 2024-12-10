@@ -31,23 +31,27 @@ impl crate::UnityEngine::UIElements::IEditableElement {
     }
     pub fn get_editingEnded(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Action = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = __cordl_object
             .invoke("get_editingEnded", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_editingStarted(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Action = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = __cordl_object
             .invoke("get_editingStarted", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IEditableElement")]

@@ -38,14 +38,14 @@ impl crate::UnityEngine::InputSystem::XR::XRHMD {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FinishSetup", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -55,145 +55,175 @@ impl crate::UnityEngine::InputSystem::XR::XRHMD {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_centerEyePosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
-            .invoke("get_centerEyePosition", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        > = __cordl_object.invoke("get_centerEyePosition", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_centerEyeRotation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl = __cordl_object
-            .invoke("get_centerEyeRotation", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        > = __cordl_object.invoke("get_centerEyeRotation", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_leftEyePosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
-            .invoke("get_leftEyePosition", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        > = __cordl_object.invoke("get_leftEyePosition", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_leftEyeRotation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl = __cordl_object
-            .invoke("get_leftEyeRotation", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        > = __cordl_object.invoke("get_leftEyeRotation", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_rightEyePosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control = __cordl_object
-            .invoke("get_rightEyePosition", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        > = __cordl_object.invoke("get_rightEyePosition", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_rightEyeRotation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl = __cordl_object
-            .invoke("get_rightEyeRotation", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        > = __cordl_object.invoke("get_rightEyeRotation", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_centerEyePosition(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_centerEyePosition", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_centerEyeRotation(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_centerEyeRotation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_leftEyePosition(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_leftEyePosition", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_leftEyeRotation(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_leftEyeRotation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rightEyePosition(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector3Control,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_rightEyePosition", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rightEyeRotation(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_rightEyeRotation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRHMD")]

@@ -36,18 +36,22 @@ impl crate::System::Security::AccessControl::CommonAcl {
     pub fn AddAceGetQualifiedAce(
         &mut self,
         aceQualifier: crate::System::Security::AccessControl::AceQualifier,
-        sid: *mut crate::System::Security::Principal::SecurityIdentifier,
+        sid: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        >,
         accessMask: i32,
         inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,
         propagationFlags: crate::System::Security::AccessControl::PropagationFlags,
         auditFlags: crate::System::Security::AccessControl::AuditFlags,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::AccessControl::QualifiedAce,
+        quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::QualifiedAce>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::AccessControl::QualifiedAce = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::QualifiedAce,
+        > = __cordl_object
             .invoke(
                 "AddAceGetQualifiedAce",
                 (
@@ -59,12 +63,14 @@ impl crate::System::Security::AccessControl::CommonAcl {
                     auditFlags,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddAce_AceQualifier_SecurityIdentifier_i32_InheritanceFlags_PropagationFlags_AuditFlags0(
         &mut self,
         aceQualifier: crate::System::Security::AccessControl::AceQualifier,
-        sid: *mut crate::System::Security::Principal::SecurityIdentifier,
+        sid: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        >,
         accessMask: i32,
         inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,
         propagationFlags: crate::System::Security::AccessControl::PropagationFlags,
@@ -85,18 +91,20 @@ impl crate::System::Security::AccessControl::CommonAcl {
                     auditFlags,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddAce_QualifiedAce1(
         &mut self,
-        newAce: *mut crate::System::Security::AccessControl::QualifiedAce,
+        newAce: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::QualifiedAce,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddAce", (newAce))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyCanonicalSortToExplicitAces_0(
         &mut self,
@@ -106,7 +114,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyCanonicalSortToExplicitAces", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyCanonicalSortToExplicitAces_i32_i32_1(
         &mut self,
@@ -118,7 +126,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyCanonicalSortToExplicitAces", (start, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CanonicalizeAndClearAefa(
         &mut self,
@@ -128,7 +136,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CanonicalizeAndClearAefa", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAceFlags(
         &mut self,
@@ -143,7 +151,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: crate::System::Security::AccessControl::AceFlags = __cordl_object
             .invoke("GetAceFlags", (inheritanceFlags, propagationFlags, auditFlags))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAceInsertPosition(
         &mut self,
@@ -154,7 +162,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetAceInsertPosition", (aceQualifier))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCanonicalExplicitAceCount(
         &mut self,
@@ -164,7 +172,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetCanonicalExplicitAceCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCanonicalExplicitDenyAceCount(
         &mut self,
@@ -174,44 +182,51 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetCanonicalExplicitDenyAceCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
         isContainer: bool,
         isDS: bool,
-        rawAcl: *mut crate::System::Security::AccessControl::RawAcl,
+        rawAcl: quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::RawAcl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (isContainer, isDS, rawAcl))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsAceMeaningless(
         &mut self,
-        ace: *mut crate::System::Security::AccessControl::GenericAce,
+        ace: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsAceMeaningless", (ace))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MergeExplicitAcePair(
         &mut self,
-        ace1: *mut crate::System::Security::AccessControl::GenericAce,
-        ace2: *mut crate::System::Security::AccessControl::GenericAce,
+        ace1: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        >,
+        ace2: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::AccessControl::GenericAce,
+        quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::GenericAce>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::AccessControl::GenericAce = __cordl_object
-            .invoke("MergeExplicitAcePair", (ace1, ace2))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        > = __cordl_object.invoke("MergeExplicitAcePair", (ace1, ace2))?;
+        Ok(__cordl_ret.into())
     }
     pub fn MergeExplicitAces(
         &mut self,
@@ -221,35 +236,35 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MergeExplicitAces", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_i32_1(
         isContainer: bool,
         isDS: bool,
         capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (isContainer, isDS, capacity))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_u8_i32_0(
         isContainer: bool,
         isDS: bool,
         revision: u8,
         capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (isContainer, isDS, revision, capacity))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveAces<T>(
         &mut self,
-        callback: *mut crate::System::Security::AccessControl::CommonAcl_RemoveAcesCallback_1<
-            T,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::CommonAcl_RemoveAcesCallback_1<T>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -261,7 +276,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveAces", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RequireCanonicity(
         &mut self,
@@ -271,14 +286,14 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RequireCanonicity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TestCanonicity(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TestCanonicity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_1(
         &mut self,
@@ -291,7 +306,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (isContainer, isDS, capacity))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u8_i32_0(
         &mut self,
@@ -305,48 +320,49 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (isContainer, isDS, revision, capacity))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsCanonical(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsCanonical", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsContainer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsContainer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsDS(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsDS", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::AccessControl::GenericAce,
+        quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::GenericAce>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::AccessControl::GenericAce = __cordl_object
-            .invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        > = __cordl_object.invoke("get_Item", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_IsAefa(
         &mut self,
@@ -357,19 +373,21 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IsAefa", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
         index: i32,
-        value: *mut crate::System::Security::AccessControl::GenericAce,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (index, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+AccessControl+CommonAcl")]
@@ -423,12 +441,12 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", (ace))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -437,11 +455,11 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -453,7 +471,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1")]

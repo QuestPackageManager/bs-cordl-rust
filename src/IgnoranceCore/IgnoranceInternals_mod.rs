@@ -27,12 +27,12 @@ impl crate::IgnoranceCore::IgnoranceInternals {
     pub const BindAnyAddress: &'static str = "::0";
     pub const Scheme: &'static str = "enet";
     pub const Version: &'static str = "1.4.0r2 (LTS)";
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -42,7 +42,7 @@ impl crate::IgnoranceCore::IgnoranceInternals {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "IgnoranceCore+IgnoranceInternals")]

@@ -28,54 +28,63 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::ListMap {
 impl crate::System::Xml::Serialization::ListMap {
     pub fn Equals(
         &mut self,
-        other: *mut quest_hook::libil2cpp::Il2CppObject,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindElement_Il2CppObject_i32_Il2CppObject0(
         &mut self,
-        ob: *mut quest_hook::libil2cpp::Il2CppObject,
+        ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         index: i32,
-        memberValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        memberValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Serialization::XmlTypeMapElementInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapElementInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::XmlTypeMapElementInfo = __cordl_object
-            .invoke("FindElement", (ob, index, memberValue))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapElementInfo,
+        > = __cordl_object.invoke("FindElement", (ob, index, memberValue))?;
+        Ok(__cordl_ret.into())
     }
     pub fn FindElement_Il2CppString_Il2CppString1(
         &mut self,
-        elementName: *mut quest_hook::libil2cpp::Il2CppString,
-        ns: *mut quest_hook::libil2cpp::Il2CppString,
+        elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Serialization::XmlTypeMapElementInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapElementInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::XmlTypeMapElementInfo = __cordl_object
-            .invoke("FindElement", (elementName, ns))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapElementInfo,
+        > = __cordl_object.invoke("FindElement", (elementName, ns))?;
+        Ok(__cordl_ret.into())
     }
     pub fn FindTextElement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Serialization::XmlTypeMapElementInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapElementInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::XmlTypeMapElementInfo = __cordl_object
-            .invoke("FindTextElement", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapElementInfo,
+        > = __cordl_object.invoke("FindTextElement", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetArrayType(
         &mut self,
@@ -90,21 +99,21 @@ impl crate::System::Xml::Serialization::ListMap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetArrayType", (itemCount, localName, ns))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -114,41 +123,46 @@ impl crate::System::Xml::Serialization::ListMap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ItemInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::XmlTypeMapElementInfoList = __cordl_object
-            .invoke("get_ItemInfo", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
+        > = __cordl_object.invoke("get_ItemInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_ChoiceMember(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ChoiceMember", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ItemInfo(
         &mut self,
-        value: *mut crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ItemInfo", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Serialization+ListMap")]

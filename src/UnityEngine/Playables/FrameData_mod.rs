@@ -43,7 +43,7 @@ impl crate::UnityEngine::Playables::FrameData {
             "HasFlags",
             (flag),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deltaTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -51,7 +51,7 @@ impl crate::UnityEngine::Playables::FrameData {
             "get_deltaTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_effectivePlayState(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::UnityEngine::Playables::FrameData {
             "get_effectivePlayState",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_effectiveSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -69,7 +69,7 @@ impl crate::UnityEngine::Playables::FrameData {
             "get_effectiveSpeed",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_evaluationType(
         &mut self,
@@ -81,7 +81,7 @@ impl crate::UnityEngine::Playables::FrameData {
             "get_evaluationType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_output(
         &mut self,
@@ -91,7 +91,7 @@ impl crate::UnityEngine::Playables::FrameData {
             "get_output",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_seekOccurred(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -99,7 +99,7 @@ impl crate::UnityEngine::Playables::FrameData {
             "get_seekOccurred",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_timeHeld(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -107,7 +107,7 @@ impl crate::UnityEngine::Playables::FrameData {
             "get_timeHeld",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_timeLooped(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -115,7 +115,7 @@ impl crate::UnityEngine::Playables::FrameData {
             "get_timeLooped",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]

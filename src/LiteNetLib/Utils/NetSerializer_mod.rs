@@ -146,7 +146,7 @@ impl crate::LiteNetLib::Utils::NetSerializer {
     >;
     pub fn Deserialize_NetDataReader0<T>(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -156,11 +156,11 @@ impl crate::LiteNetLib::Utils::NetSerializer {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Deserialize", (reader))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Deserialize_T1<T>(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         target: T,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -171,21 +171,23 @@ impl crate::LiteNetLib::Utils::NetSerializer {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Deserialize", (reader, target))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
-    pub fn New_i32_1(maxStringLength: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_i32_1(
+        maxStringLength: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (maxStringLength))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Register<T>(
         &mut self,
@@ -199,12 +201,12 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Register", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterInternal<T>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T>,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -213,9 +215,10 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> = __cordl_object
-            .invoke("RegisterInternal", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T>,
+        > = __cordl_object.invoke("RegisterInternal", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterNestedType_0<T>(
         &mut self,
@@ -229,17 +232,15 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterNestedType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterNestedType_Action_2_Func_2_2<T>(
         &mut self,
-        writer: *mut crate::System::Action_2<
-            *mut crate::LiteNetLib::Utils::NetDataWriter,
-            T,
+        writer: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<*mut crate::LiteNetLib::Utils::NetDataWriter, T>,
         >,
-        reader: *mut crate::System::Func_2<
-            *mut crate::LiteNetLib::Utils::NetDataReader,
-            T,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<*mut crate::LiteNetLib::Utils::NetDataReader, T>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -251,11 +252,11 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterNestedType", (writer, reader))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterNestedType_Func_1_1<T>(
         &mut self,
-        constructor: *mut crate::System::Func_1<T>,
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -266,11 +267,11 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterNestedType", (constructor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Serialize_NetDataWriter_T0<T>(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         obj: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -282,12 +283,14 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Serialize", (writer, obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Serialize_T1<T>(
         &mut self,
         obj: T,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -295,9 +298,10 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("Serialize", (obj))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("Serialize", (obj))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -307,7 +311,7 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_1(
         &mut self,
@@ -318,7 +322,7 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (maxStringLength))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
@@ -362,7 +366,7 @@ for crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -371,12 +375,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -387,12 +391,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -403,12 +407,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -419,12 +423,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -435,7 +439,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -447,7 +451,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
@@ -492,7 +496,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -501,12 +505,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -517,12 +521,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -533,12 +537,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -549,12 +553,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -565,7 +569,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -577,7 +581,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ByteSerializer_1")]
@@ -630,7 +634,7 @@ impl<
 > crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
     pub fn ElementRead(
         &mut self,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         prop: quest_hook::libil2cpp::ByRefMut<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -642,11 +646,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ElementRead", (r, prop))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ElementWrite(
         &mut self,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         prop: quest_hook::libil2cpp::ByRefMut<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -658,9 +662,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ElementWrite", (w, prop))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -669,7 +673,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -681,7 +685,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CharSerializer_1")]
@@ -730,10 +734,12 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> {
     pub fn New(
-        serializers: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+        serializers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -742,12 +748,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (serializers))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         obj: T,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -758,12 +764,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (obj, reader))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         obj: T,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -774,12 +780,14 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (obj, writer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        serializers: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+        serializers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -791,7 +799,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (serializers))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ClassInfo_1")]
@@ -833,7 +841,7 @@ impl crate::LiteNetLib::Utils::NetSerializer_CustomType {
     pub fn Get<T>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -842,16 +850,17 @@ impl crate::LiteNetLib::Utils::NetSerializer_CustomType {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> = __cordl_object
-            .invoke("Get", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+        > = __cordl_object.invoke("Get", ())?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -861,7 +870,7 @@ impl crate::LiteNetLib::Utils::NetSerializer_CustomType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomType")]
@@ -910,7 +919,7 @@ impl<
     pub fn Get<T>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>>,
     >
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -921,13 +930,14 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> = __cordl_object
-            .invoke("Get", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+        > = __cordl_object.invoke("Get", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        constructor: *mut crate::System::Func_1<TProperty>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -936,11 +946,11 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (constructor))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        constructor: *mut crate::System::Func_1<TProperty>,
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -951,7 +961,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (constructor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeClass_1")]
@@ -1007,7 +1017,7 @@ impl<
     pub fn Get<T>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>>,
     >
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1018,20 +1028,25 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> = __cordl_object
-            .invoke("Get", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+        > = __cordl_object.invoke("Get", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        writer: *mut crate::System::Action_2<
-            *mut crate::LiteNetLib::Utils::NetDataWriter,
-            TProperty,
+        writer: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::LiteNetLib::Utils::NetDataWriter,
+                TProperty,
+            >,
         >,
-        reader: *mut crate::System::Func_2<
-            *mut crate::LiteNetLib::Utils::NetDataReader,
-            TProperty,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut crate::LiteNetLib::Utils::NetDataReader,
+                TProperty,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1040,17 +1055,21 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (writer, reader))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        writer: *mut crate::System::Action_2<
-            *mut crate::LiteNetLib::Utils::NetDataWriter,
-            TProperty,
+        writer: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::LiteNetLib::Utils::NetDataWriter,
+                TProperty,
+            >,
         >,
-        reader: *mut crate::System::Func_2<
-            *mut crate::LiteNetLib::Utils::NetDataReader,
-            TProperty,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut crate::LiteNetLib::Utils::NetDataReader,
+                TProperty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1062,7 +1081,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (writer, reader))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStatic_1")]
@@ -1110,7 +1129,7 @@ impl<
     pub fn Get<T>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>>,
     >
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1121,11 +1140,12 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> = __cordl_object
-            .invoke("Get", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+        > = __cordl_object.invoke("Get", ())?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1134,7 +1154,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1146,7 +1166,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStruct_1")]
@@ -1191,7 +1211,7 @@ for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1200,12 +1220,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1216,12 +1236,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1232,12 +1252,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1248,12 +1268,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1264,7 +1284,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1276,7 +1296,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+DoubleSerializer_1")]
@@ -1324,9 +1344,9 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T> {
     pub fn New(
-        property: *mut crate::System::Reflection::PropertyInfo,
-        propertyType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1335,12 +1355,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (property, propertyType))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1351,12 +1371,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1367,12 +1387,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        property: *mut crate::System::Reflection::PropertyInfo,
-        propertyType: *mut crate::System::Type,
+        property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1383,7 +1403,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (property, propertyType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumByteSerializer_1")]
@@ -1429,9 +1449,9 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<T> {
     pub fn New(
-        property: *mut crate::System::Reflection::PropertyInfo,
-        propertyType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1440,12 +1460,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (property, propertyType))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1456,12 +1476,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1472,12 +1492,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        property: *mut crate::System::Reflection::PropertyInfo,
-        propertyType: *mut crate::System::Type,
+        property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1488,7 +1508,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (property, propertyType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumIntSerializer_1")]
@@ -1552,8 +1572,8 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty> {
     pub fn New(
-        constructor: *mut crate::System::Func_1<TProperty>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1564,12 +1584,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (constructor))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: TClass,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1582,12 +1602,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: TClass,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1600,12 +1620,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: TClass,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1618,12 +1638,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: TClass,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1636,11 +1656,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        constructor: *mut crate::System::Func_1<TProperty>,
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1653,7 +1673,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (constructor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallClass_2")]
@@ -1720,7 +1740,7 @@ impl<
 > crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<TClass, TProperty> {
     pub fn ElementRead(
         &mut self,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         prop: quest_hook::libil2cpp::ByRefMut<TProperty>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1734,11 +1754,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ElementRead", (r, prop))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ElementWrite(
         &mut self,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         prop: quest_hook::libil2cpp::ByRefMut<TProperty>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1752,9 +1772,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ElementWrite", (w, prop))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1765,12 +1785,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: TClass,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1783,12 +1803,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: TClass,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1801,12 +1821,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: TClass,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1819,12 +1839,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: TClass,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1837,7 +1857,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1851,7 +1871,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecificAuto_2")]
@@ -1922,8 +1942,8 @@ impl<
 > crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<TClass, TProperty> {
     pub fn Init(
         &mut self,
-        getMethod: *mut crate::System::Reflection::MethodInfo,
-        setMethod: *mut crate::System::Reflection::MethodInfo,
+        getMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        setMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         isArray: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1937,9 +1957,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (getMethod, setMethod, isArray))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1950,14 +1970,14 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReadArrayHelper(
         &mut self,
         inf: TClass,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<TProperty>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TProperty>>,
     >
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1968,16 +1988,17 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<TProperty> = __cordl_object
-            .invoke("ReadArrayHelper", (inf, r))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<TProperty>,
+        > = __cordl_object.invoke("ReadArrayHelper", (inf, r))?;
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArrayHelper(
         &mut self,
         inf: TClass,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<TProperty>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TProperty>>,
     >
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1988,9 +2009,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<TProperty> = __cordl_object
-            .invoke("WriteArrayHelper", (inf, w))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<TProperty>,
+        > = __cordl_object.invoke("WriteArrayHelper", (inf, w))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2004,7 +2026,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecific_2")]
@@ -2078,15 +2100,19 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_FastCallStatic_2<TClass, TProperty> {
     pub fn New(
-        write: *mut crate::System::Action_2<
-            *mut crate::LiteNetLib::Utils::NetDataWriter,
-            TProperty,
+        write: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::LiteNetLib::Utils::NetDataWriter,
+                TProperty,
+            >,
         >,
-        read: *mut crate::System::Func_2<
-            *mut crate::LiteNetLib::Utils::NetDataReader,
-            TProperty,
+        read: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut crate::LiteNetLib::Utils::NetDataReader,
+                TProperty,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -2097,12 +2123,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (write, read))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: TClass,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2115,12 +2141,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: TClass,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2133,12 +2159,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: TClass,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2151,12 +2177,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: TClass,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2169,17 +2195,21 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        write: *mut crate::System::Action_2<
-            *mut crate::LiteNetLib::Utils::NetDataWriter,
-            TProperty,
+        write: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::LiteNetLib::Utils::NetDataWriter,
+                TProperty,
+            >,
         >,
-        read: *mut crate::System::Func_2<
-            *mut crate::LiteNetLib::Utils::NetDataReader,
-            TProperty,
+        read: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut crate::LiteNetLib::Utils::NetDataReader,
+                TProperty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2193,7 +2223,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (write, read))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallStatic_2")]
@@ -2259,7 +2289,7 @@ impl<
     TClass: quest_hook::libil2cpp::Type,
     TProperty: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_FastCallStruct_2<TClass, TProperty> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -2270,12 +2300,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: TClass,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2288,12 +2318,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: TClass,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2306,12 +2336,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: TClass,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2324,12 +2354,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: TClass,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2342,7 +2372,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2356,7 +2386,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallStruct_2")]
@@ -2406,8 +2436,8 @@ impl<
 > crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> {
     pub fn Init(
         &mut self,
-        getMethod: *mut crate::System::Reflection::MethodInfo,
-        setMethod: *mut crate::System::Reflection::MethodInfo,
+        getMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        setMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         isArray: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2419,9 +2449,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (getMethod, setMethod, isArray))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -2430,12 +2460,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2446,12 +2476,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2462,12 +2492,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2478,12 +2508,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2494,7 +2524,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2506,7 +2536,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCall_1")]
@@ -2551,7 +2581,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -2560,12 +2590,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2576,12 +2606,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2592,12 +2622,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2608,12 +2638,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2624,7 +2654,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2636,7 +2666,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FloatSerializer_1")]
@@ -2689,7 +2719,7 @@ impl<
 > crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<T> {
     pub fn ElementRead(
         &mut self,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         prop: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2701,11 +2731,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ElementRead", (r, prop))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ElementWrite(
         &mut self,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         prop: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2717,9 +2747,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ElementWrite", (w, prop))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -2728,7 +2758,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2740,7 +2770,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IPEndPointSerializer_1")]
@@ -2784,7 +2814,7 @@ for crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -2793,12 +2823,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2809,12 +2839,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2825,12 +2855,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2841,12 +2871,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2857,7 +2887,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2869,7 +2899,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IntSerializer_1")]
@@ -2914,7 +2944,7 @@ for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -2923,12 +2953,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2939,12 +2969,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2955,12 +2985,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2971,12 +3001,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2987,7 +3017,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2999,7 +3029,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
@@ -3044,7 +3074,7 @@ for crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3053,12 +3083,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3069,12 +3099,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3085,12 +3115,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3101,12 +3131,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3117,7 +3147,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3129,7 +3159,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+SByteSerializer_1")]
@@ -3174,7 +3204,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3183,12 +3213,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3199,12 +3229,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3215,12 +3245,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3231,12 +3261,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3247,7 +3277,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3259,7 +3289,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ShortSerializer_1")]
@@ -3311,7 +3341,9 @@ for crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
-    pub fn New(maxLength: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New(
+        maxLength: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3320,12 +3352,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (maxLength))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3336,12 +3368,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3352,12 +3384,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3368,12 +3400,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3384,7 +3416,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -3399,7 +3431,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (maxLength))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+StringSerializer_1")]
@@ -3444,7 +3476,7 @@ for crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3453,12 +3485,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3469,12 +3501,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3485,12 +3517,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3501,12 +3533,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3517,7 +3549,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3529,7 +3561,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UIntSerializer_1")]
@@ -3574,7 +3606,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3583,12 +3615,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3599,12 +3631,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3615,12 +3647,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3631,12 +3663,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3647,7 +3679,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3659,7 +3691,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ULongSerializer_1")]
@@ -3704,7 +3736,7 @@ for crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3713,12 +3745,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3729,12 +3761,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Read", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadArray(
         &mut self,
         inf: T,
-        r: *mut crate::LiteNetLib::Utils::NetDataReader,
+        r: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3745,12 +3777,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadArray", (inf, r))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3761,12 +3793,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteArray(
         &mut self,
         inf: T,
-        w: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        w: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3777,7 +3809,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteArray", (inf, w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3789,7 +3821,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UShortSerializer_1")]

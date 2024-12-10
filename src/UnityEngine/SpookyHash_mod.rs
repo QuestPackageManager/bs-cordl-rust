@@ -61,13 +61,13 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::SpookyHa
 impl crate::UnityEngine::SpookyHash_U {
     pub fn _ctor(
         &mut self,
-        p8: *mut quest_hook::libil2cpp::Il2CppObject,
+        p8: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (p8),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

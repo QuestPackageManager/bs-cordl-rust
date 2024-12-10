@@ -38,6 +38,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::PointerState {
             "get_format",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

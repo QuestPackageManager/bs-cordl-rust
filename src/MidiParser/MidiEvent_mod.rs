@@ -31,7 +31,7 @@ impl crate::MidiParser::MidiEvent {
             "get_Channel",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MetaEventType(
         &mut self,
@@ -41,7 +41,7 @@ impl crate::MidiParser::MidiEvent {
             "get_MetaEventType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Note(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -49,7 +49,7 @@ impl crate::MidiParser::MidiEvent {
             "get_Note",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -57,7 +57,7 @@ impl crate::MidiParser::MidiEvent {
             "get_Value",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Velocity(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -65,6 +65,6 @@ impl crate::MidiParser::MidiEvent {
             "get_Velocity",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

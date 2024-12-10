@@ -56,7 +56,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Add", (item, distance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetFurtherest(&mut self) -> quest_hook::libil2cpp::Result<TItem>
     where
@@ -69,7 +69,7 @@ impl<
             self,
         );
         let __cordl_ret: TItem = __cordl_object.invoke("GetFurtherest", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveFurtherest(&mut self) -> quest_hook::libil2cpp::Result<TItem>
     where
@@ -82,7 +82,7 @@ impl<
             self,
         );
         let __cordl_ret: TItem = __cordl_object.invoke("RemoveFurtherest", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -100,7 +100,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MaxCapacity(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -113,7 +113,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_MaxCapacity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]

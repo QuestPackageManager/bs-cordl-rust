@@ -32,52 +32,57 @@ impl crate::UnityEngine::ProBuilder::Changelog {
     pub const k_VersionInfoPattern: &'static str = "(?<=##\\s\\[).*(?=\\])";
     pub fn CreateEntry(
         &mut self,
-        version: *mut quest_hook::libil2cpp::Il2CppString,
-        contents: *mut quest_hook::libil2cpp::Il2CppString,
+        version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        contents: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::ChangelogEntry,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ChangelogEntry>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::ChangelogEntry = __cordl_object
-            .invoke("CreateEntry", (version, contents))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ChangelogEntry,
+        > = __cordl_object.invoke("CreateEntry", (version, contents))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        log: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        log: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (log))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        log: *mut quest_hook::libil2cpp::Il2CppString,
+        log: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (log))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_entries(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            *mut crate::UnityEngine::ProBuilder::ChangelogEntry,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::UnityEngine::ProBuilder::ChangelogEntry,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            *mut crate::UnityEngine::ProBuilder::ChangelogEntry,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::UnityEngine::ProBuilder::ChangelogEntry,
+            >,
         > = __cordl_object.invoke("get_entries", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Changelog")]

@@ -31,14 +31,14 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextEditingManipulat
 impl crate::UnityEngine::UIElements::TextEditingManipulator {
     pub fn ExecuteDefaultActionAtTarget(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExecuteDefaultActionAtTarget", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitTextEditorEventHandler(
         &mut self,
@@ -48,38 +48,42 @@ impl crate::UnityEngine::UIElements::TextEditingManipulator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitTextEditorEventHandler", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        textElement: *mut crate::UnityEngine::UIElements::TextElement,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        textElement: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextElement,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (textElement))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnFocusInEvent(
         &mut self,
-        _cordl__: *mut crate::UnityEngine::UIElements::FocusInEvent,
+        _cordl__: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusInEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnFocusInEvent", (_cordl__))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnFocusOutEvent(
         &mut self,
-        _cordl__: *mut crate::UnityEngine::UIElements::FocusOutEvent,
+        _cordl__: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusOutEvent,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnFocusOutEvent", (_cordl__))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _OnFocusInEvent_b__10_0(
         &mut self,
@@ -89,18 +93,20 @@ impl crate::UnityEngine::UIElements::TextEditingManipulator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<OnFocusInEvent>b__10_0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        textElement: *mut crate::UnityEngine::UIElements::TextElement,
+        textElement: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextElement,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (textElement))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_touchScreenTextFieldChanged(
         &mut self,
@@ -110,7 +116,7 @@ impl crate::UnityEngine::UIElements::TextEditingManipulator {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_touchScreenTextFieldChanged", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextEditingManipulator")]

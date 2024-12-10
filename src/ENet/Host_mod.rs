@@ -28,14 +28,16 @@ impl crate::ENet::Host {
         &mut self,
         channelID: u8,
         packet: quest_hook::libil2cpp::ByRefMut<crate::ENet::Packet>,
-        peers: *mut quest_hook::libil2cpp::Il2CppArray<crate::ENet::Peer>,
+        peers: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::ENet::Peer>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Broadcast", (channelID, packet, peers))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Broadcast_Peer1(
         &mut self,
@@ -48,7 +50,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Broadcast", (channelID, packet, excludedPeer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Broadcast_u8_ByRefMut0(
         &mut self,
@@ -60,7 +62,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Broadcast", (channelID, packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckEvents(
         &mut self,
@@ -70,7 +72,7 @@ impl crate::ENet::Host {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("CheckEvents", (event))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Connect_Address0(
         &mut self,
@@ -81,7 +83,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: crate::ENet::Peer = __cordl_object
             .invoke("Connect", (address))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Connect_i32_1(
         &mut self,
@@ -93,7 +95,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: crate::ENet::Peer = __cordl_object
             .invoke("Connect", (address, channelLimit))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Connect_i32_u32_2(
         &mut self,
@@ -106,7 +108,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: crate::ENet::Peer = __cordl_object
             .invoke("Connect", (address, channelLimit, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Create(
         &mut self,
@@ -134,7 +136,7 @@ impl crate::ENet::Host {
                     sslConfiguration,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
@@ -144,7 +146,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -155,7 +157,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
@@ -165,7 +167,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Flush(
         &mut self,
@@ -175,14 +177,14 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Flush", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PreventConnections(
         &mut self,
@@ -193,7 +195,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PreventConnections", (state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Service(
         &mut self,
@@ -204,7 +206,7 @@ impl crate::ENet::Host {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Service", (timeout, event))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetBandwidthLimit(
         &mut self,
@@ -216,7 +218,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetBandwidthLimit", (incomingBandwidth, outgoingBandwidth))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetChannelLimit(
         &mut self,
@@ -227,18 +229,18 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetChannelLimit", (channelLimit))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetChecksumCallback_ChecksumCallback1(
         &mut self,
-        callback: *mut crate::ENet::ChecksumCallback,
+        callback: quest_hook::libil2cpp::Gc<crate::ENet::ChecksumCallback>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetChecksumCallback", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetChecksumCallback_IntPtr0(
         &mut self,
@@ -249,7 +251,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetChecksumCallback", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetInterceptCallback_IntPtr0(
         &mut self,
@@ -260,18 +262,18 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetInterceptCallback", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetInterceptCallback_InterceptCallback1(
         &mut self,
-        callback: *mut crate::ENet::InterceptCallback,
+        callback: quest_hook::libil2cpp::Gc<crate::ENet::InterceptCallback>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetInterceptCallback", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetMaxDuplicatePeers(
         &mut self,
@@ -282,7 +284,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetMaxDuplicatePeers", (number))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ThrowIfNotCreated(
         &mut self,
@@ -292,7 +294,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ThrowIfNotCreated", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -302,28 +304,28 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_BytesReceived(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_BytesReceived", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_BytesSent(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_BytesSent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsSet(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsSet", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_NativeData(
         &mut self,
@@ -333,28 +335,28 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("get_NativeData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PacketsReceived(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_PacketsReceived", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PacketsSent(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_PacketsSent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PeersCount(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_PeersCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_NativeData(
         &mut self,
@@ -365,7 +367,7 @@ impl crate::ENet::Host {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_NativeData", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ENet+Host")]

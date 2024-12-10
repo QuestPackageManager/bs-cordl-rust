@@ -33,7 +33,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "SetValue",
             (id, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetValue_f32_0(
         &mut self,
@@ -45,19 +45,17 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "SetValue",
             (id, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Values(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::StyleValueCollection,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleValueCollection>,
     > {
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleValueCollection = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Values",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleValueCollection,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "Values", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_paddingTop(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -65,7 +63,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "get_paddingTop",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_backgroundColor(
         &mut self,
@@ -76,7 +74,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_backgroundColor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderBottomLeftRadius(
         &mut self,
@@ -87,7 +85,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_borderBottomLeftRadius",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderBottomRightRadius(
         &mut self,
@@ -98,7 +96,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_borderBottomRightRadius",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderBottomWidth(
         &mut self,
@@ -109,7 +107,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_borderBottomWidth",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderColor(
         &mut self,
@@ -120,7 +118,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_borderColor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderLeftWidth(
         &mut self,
@@ -131,7 +129,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_borderLeftWidth",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderRightWidth(
         &mut self,
@@ -142,7 +140,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_borderRightWidth",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderTopLeftRadius(
         &mut self,
@@ -153,7 +151,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_borderTopLeftRadius",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderTopRightRadius(
         &mut self,
@@ -164,7 +162,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_borderTopRightRadius",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderTopWidth(
         &mut self,
@@ -175,7 +173,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_borderTopWidth",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_bottom(
         &mut self,
@@ -186,7 +184,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_bottom",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_color(
         &mut self,
@@ -197,7 +195,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_color",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flexGrow(
         &mut self,
@@ -208,7 +206,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_flexGrow",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flexShrink(
         &mut self,
@@ -219,7 +217,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_flexShrink",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_height(
         &mut self,
@@ -230,7 +228,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_height",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_left(
         &mut self,
@@ -241,7 +239,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_left",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_marginBottom(
         &mut self,
@@ -252,7 +250,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_marginBottom",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_marginLeft(
         &mut self,
@@ -263,7 +261,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_marginLeft",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_marginRight(
         &mut self,
@@ -274,7 +272,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_marginRight",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_marginTop(
         &mut self,
@@ -285,7 +283,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_marginTop",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_opacity(
         &mut self,
@@ -296,7 +294,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_opacity",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_paddingBottom(
         &mut self,
@@ -307,7 +305,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_paddingBottom",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_paddingLeft(
         &mut self,
@@ -318,7 +316,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_paddingLeft",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_paddingRight(
         &mut self,
@@ -329,7 +327,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_paddingRight",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_paddingTop(
         &mut self,
@@ -340,7 +338,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_paddingTop",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_right(
         &mut self,
@@ -351,7 +349,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_right",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_top(
         &mut self,
@@ -362,7 +360,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_top",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_unityBackgroundImageTintColor(
         &mut self,
@@ -373,7 +371,7 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_unityBackgroundImageTintColor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_width(
         &mut self,
@@ -384,6 +382,6 @@ impl crate::UnityEngine::UIElements::Experimental::StyleValues {
             "set_width",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

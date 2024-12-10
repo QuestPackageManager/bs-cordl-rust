@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleStateChanged(
         &mut self,
@@ -60,14 +60,14 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleStateChanged", (state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SwitchToDefaultSpot(
         &mut self,
@@ -97,27 +97,33 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SwitchToDefaultSpot", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SwitchToDefaultSpotCoroutine(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("SwitchToDefaultSpotCoroutine", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("SwitchToDefaultSpotCoroutine", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn SwitchToDefaultSpotWithFadeCoroutine(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("SwitchToDefaultSpotWithFadeCoroutine", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("SwitchToDefaultSpotWithFadeCoroutine", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn SwitchToNext(
         &mut self,
@@ -127,7 +133,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SwitchToNext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SwitchToPrev(
         &mut self,
@@ -137,18 +143,20 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SwitchToPrev", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SwitchToSpectatingSpot(
         &mut self,
-        spectatingSpot: *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+        spectatingSpot: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SwitchToSpectatingSpot", (spectatingSpot))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -158,12 +166,14 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_spectatingSpotDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -171,24 +181,27 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_spectatingSpotDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentSpot(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot = __cordl_object
-            .invoke("get_currentSpot", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+        > = __cordl_object.invoke("get_currentSpot", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn remove_spectatingSpotDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -196,7 +209,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_spectatingSpotDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerSpectatorController")]

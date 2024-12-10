@@ -29,30 +29,30 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlNodeEventArgs 
 #[cfg(feature = "System+Xml+Serialization+XmlNodeEventArgs")]
 impl crate::System::Xml::Serialization::XmlNodeEventArgs {
     pub fn New(
-        xmlNode: *mut crate::System::Xml::XmlNode,
+        xmlNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
         lineNumber: i32,
         linePosition: i32,
-        o: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (xmlNode, lineNumber, linePosition, o))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        xmlNode: *mut crate::System::Xml::XmlNode,
+        xmlNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
         lineNumber: i32,
         linePosition: i32,
-        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (xmlNode, lineNumber, linePosition, o))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Serialization+XmlNodeEventArgs")]

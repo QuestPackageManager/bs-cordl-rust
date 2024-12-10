@@ -31,12 +31,12 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
         feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
     )]
     pub type FixedPointCallback = crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPointCallback;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
@@ -101,58 +101,67 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPoi
 impl crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPointCallback {
     pub fn CheckExisting(
         &mut self,
-        existingFP: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo,
+        existingFP: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo,
+        >,
         n: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CheckExisting", (existingFP, n))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckTable(
         &mut self,
-        table: *mut crate::Org::BouncyCastle::Math::EC::ECLookupTable,
+        table: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::ECLookupTable,
+        >,
         n: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CheckTable", (table, n))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        p: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (p))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Precompute(
         &mut self,
-        existing: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        existing: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo = __cordl_object
-            .invoke("Precompute", (existing))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        > = __cordl_object.invoke("Precompute", (existing))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        p: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

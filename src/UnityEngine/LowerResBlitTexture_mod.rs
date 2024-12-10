@@ -32,7 +32,7 @@ impl crate::UnityEngine::LowerResBlitTexture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LowerResBlitTextureDontStripMe", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+LowerResBlitTexture")]

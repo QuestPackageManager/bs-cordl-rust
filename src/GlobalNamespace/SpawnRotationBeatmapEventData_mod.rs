@@ -31,23 +31,29 @@ impl crate::GlobalNamespace::SpawnRotationBeatmapEventData {
     pub type SpawnRotationEventType = crate::GlobalNamespace::SpawnRotationBeatmapEventData_SpawnRotationEventType;
     pub fn GetCopy(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapDataItem> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapDataItem = __cordl_object
-            .invoke("GetCopy", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataItem,
+        > = __cordl_object.invoke("GetCopy", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetDefault(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapEventData> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventData = __cordl_object
-            .invoke("GetDefault", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventData,
+        > = __cordl_object.invoke("GetDefault", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Mirror(
         &mut self,
@@ -57,22 +63,24 @@ impl crate::GlobalNamespace::SpawnRotationBeatmapEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Mirror", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         _cordl_time: f32,
         spawnRotationEventType: crate::GlobalNamespace::SpawnRotationBeatmapEventData_SpawnRotationEventType,
         deltaRotation: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_time, spawnRotationEventType, deltaRotation))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RecalculateRotationFromPreviousEvent(
         &mut self,
-        previousSpawnRotationBeatmapEventData: *mut crate::GlobalNamespace::SpawnRotationBeatmapEventData,
+        previousSpawnRotationBeatmapEventData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SpawnRotationBeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -82,7 +90,7 @@ impl crate::GlobalNamespace::SpawnRotationBeatmapEventData {
                 "RecalculateRotationFromPreviousEvent",
                 (previousSpawnRotationBeatmapEventData),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetFirstRotationEventRotation(
         &mut self,
@@ -92,7 +100,7 @@ impl crate::GlobalNamespace::SpawnRotationBeatmapEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetFirstRotationEventRotation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -105,21 +113,21 @@ impl crate::GlobalNamespace::SpawnRotationBeatmapEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_time, spawnRotationEventType, deltaRotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_rotation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_subtypeGroupIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeGroupIdentifier", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rotation(
         &mut self,
@@ -130,7 +138,7 @@ impl crate::GlobalNamespace::SpawnRotationBeatmapEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_rotation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SpawnRotationBeatmapEventData")]

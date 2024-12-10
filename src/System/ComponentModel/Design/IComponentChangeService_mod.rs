@@ -28,29 +28,33 @@ for crate::System::ComponentModel::Design::IComponentChangeService {
 impl crate::System::ComponentModel::Design::IComponentChangeService {
     pub fn OnComponentChanged(
         &mut self,
-        component: *mut quest_hook::libil2cpp::Il2CppObject,
-        member: *mut crate::System::ComponentModel::MemberDescriptor,
-        oldValue: *mut quest_hook::libil2cpp::Il2CppObject,
-        newValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        member: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::MemberDescriptor,
+        >,
+        oldValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        newValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnComponentChanged", (component, member, oldValue, newValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnComponentChanging(
         &mut self,
-        component: *mut quest_hook::libil2cpp::Il2CppObject,
-        member: *mut crate::System::ComponentModel::MemberDescriptor,
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        member: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::MemberDescriptor,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnComponentChanging", (component, member))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

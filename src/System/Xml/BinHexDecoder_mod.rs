@@ -31,7 +31,7 @@ impl std::ops::DerefMut for crate::System::Xml::BinHexDecoder {
 impl crate::System::Xml::BinHexDecoder {
     pub fn Decode(
         &mut self,
-        chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         startPos: i32,
         len: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -39,14 +39,14 @@ impl crate::System::Xml::BinHexDecoder {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Decode", (chars, startPos, len))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsFull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsFull", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+BinHexDecoder")]

@@ -33,12 +33,12 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Shapes::ProBuilderSh
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Shapes+ProBuilderShape")]
 impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnValidate(
         &mut self,
@@ -48,7 +48,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnValidate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RebuildPivot(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RebuildPivot", (_cordl_size, rotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Rebuild_1(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Rebuild", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Rebuild_Bounds_Quaternion_Vector3_0(
         &mut self,
@@ -83,11 +83,11 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Rebuild", (bounds, rotation, cornerPivot))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResetPivot(
         &mut self,
-        mesh: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         _cordl_size: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,7 +96,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetPivot", (mesh, _cordl_size, rotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RotateInsideBounds(
         &mut self,
@@ -107,11 +107,11 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RotateInsideBounds", (deltaRotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetShape(
         &mut self,
-        shape: *mut crate::UnityEngine::ProBuilder::Shapes::Shape,
+        shape: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Shapes::Shape>,
         location: crate::UnityEngine::ProBuilder::PivotLocation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -119,7 +119,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetShape", (shape, location))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateBounds(
         &mut self,
@@ -130,7 +130,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateBounds", (bounds))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComponent(
         &mut self,
@@ -140,7 +140,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComponent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -150,7 +150,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_editionBounds(
         &mut self,
@@ -160,26 +160,27 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: crate::UnityEngine::Bounds = __cordl_object
             .invoke("get_editionBounds", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isEditable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isEditable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mesh(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh = __cordl_object
-            .invoke("get_mesh", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        > = __cordl_object.invoke("get_mesh", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_pivotGlobalPosition(
         &mut self,
@@ -189,7 +190,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_pivotGlobalPosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_pivotLocalPosition(
         &mut self,
@@ -199,7 +200,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_pivotLocalPosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_pivotLocation(
         &mut self,
@@ -209,7 +210,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: crate::UnityEngine::ProBuilder::PivotLocation = __cordl_object
             .invoke("get_pivotLocation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotation(
         &mut self,
@@ -219,19 +220,20 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
             .invoke("get_rotation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_shape(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Shapes::Shape,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Shapes::Shape>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Shapes::Shape = __cordl_object
-            .invoke("get_shape", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Shapes::Shape,
+        > = __cordl_object.invoke("get_shape", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_shapeBox(
         &mut self,
@@ -241,7 +243,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: crate::UnityEngine::Bounds = __cordl_object
             .invoke("get_shapeBox", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_size(
         &mut self,
@@ -251,7 +253,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_size", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_pivotGlobalPosition(
         &mut self,
@@ -262,7 +264,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_pivotGlobalPosition", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_pivotLocalPosition(
         &mut self,
@@ -273,7 +275,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_pivotLocalPosition", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_pivotLocation(
         &mut self,
@@ -284,7 +286,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_pivotLocation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rotation(
         &mut self,
@@ -295,18 +297,18 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_rotation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_shape(
         &mut self,
-        value: *mut crate::UnityEngine::ProBuilder::Shapes::Shape,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Shapes::Shape>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_shape", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_size(
         &mut self,
@@ -317,7 +319,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_size", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Shapes+ProBuilderShape")]

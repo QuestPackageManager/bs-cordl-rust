@@ -37,28 +37,28 @@ impl crate::UnityEngine::ModifiableContactPair {
             "GetBounciness",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetContact(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetContact",
-            (index),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetContact", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetContactPatch(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetContactPatch",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetContactPatch", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetDynamicFriction(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -66,7 +66,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "GetDynamicFriction",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetFaceIndex(&mut self, i: i32) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -74,7 +74,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "GetFaceIndex",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMaxImpulse(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -82,7 +82,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "GetMaxImpulse",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNormal(
         &mut self,
@@ -93,7 +93,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "GetNormal",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPoint(
         &mut self,
@@ -104,7 +104,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "GetPoint",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSeparation(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -112,7 +112,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "GetSeparation",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetStaticFriction(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -120,7 +120,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "GetStaticFriction",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTargetVelocity(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "GetTargetVelocity",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IgnoreContact(
         &mut self,
@@ -142,7 +142,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "IgnoreContact",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetBounciness(
         &mut self,
@@ -154,7 +154,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "SetBounciness",
             (i, bounciness),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDynamicFriction(
         &mut self,
@@ -166,7 +166,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "SetDynamicFriction",
             (i, dynamicFriction),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetMaxImpulse(
         &mut self,
@@ -178,7 +178,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "SetMaxImpulse",
             (i, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetNormal(
         &mut self,
@@ -190,7 +190,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "SetNormal",
             (i, normal),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPoint(
         &mut self,
@@ -202,7 +202,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "SetPoint",
             (i, v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSeparation(
         &mut self,
@@ -214,7 +214,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "SetSeparation",
             (i, separation),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetStaticFriction(
         &mut self,
@@ -226,7 +226,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "SetStaticFriction",
             (i, staticFriction),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTargetVelocity(
         &mut self,
@@ -238,7 +238,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "SetTargetVelocity",
             (i, velocity),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bodyAngularVelocity(
         &mut self,
@@ -248,7 +248,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "get_bodyAngularVelocity",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bodyInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -256,7 +256,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "get_bodyInstanceID",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bodyVelocity(
         &mut self,
@@ -266,7 +266,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "get_bodyVelocity",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_colliderInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -274,7 +274,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "get_colliderInstanceID",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_contactCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -282,7 +282,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "get_contactCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_massProperties(
         &mut self,
@@ -292,7 +292,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "get_massProperties",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_otherBodyAngularVelocity(
         &mut self,
@@ -302,7 +302,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "get_otherBodyAngularVelocity",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_otherBodyInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -310,7 +310,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "get_otherBodyInstanceID",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_otherBodyVelocity(
         &mut self,
@@ -320,7 +320,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "get_otherBodyVelocity",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_otherColliderInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -328,7 +328,7 @@ impl crate::UnityEngine::ModifiableContactPair {
             "get_otherColliderInstanceID",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_massProperties(
         &mut self,
@@ -339,6 +339,6 @@ impl crate::UnityEngine::ModifiableContactPair {
             "set_massProperties",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -28,17 +28,17 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ColorPalette {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ColorPalette")]
 impl crate::UnityEngine::ProBuilder::ColorPalette {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetColors(
         &mut self,
-        colors: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::Color,
+        colors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::UnityEngine::Color>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -46,7 +46,7 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetColors", (colors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDefaultValues(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDefaultValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -66,14 +66,14 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
@@ -84,22 +84,26 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_Item", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_colors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            crate::UnityEngine::Color,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                crate::UnityEngine::Color,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            crate::UnityEngine::Color,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                crate::UnityEngine::Color,
+            >,
         > = __cordl_object.invoke("get_colors", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_current(
         &mut self,
@@ -109,7 +113,7 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_current", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
@@ -121,7 +125,7 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (i, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_current(
         &mut self,
@@ -132,7 +136,7 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_current", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ColorPalette")]

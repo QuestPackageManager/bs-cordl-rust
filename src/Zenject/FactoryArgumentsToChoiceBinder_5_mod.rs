@@ -87,10 +87,10 @@ impl<
     TContract,
 > {
     pub fn New(
-        bindContainer: *mut crate::Zenject::DiContainer,
-        bindInfo: *mut crate::Zenject::BindInfo,
-        factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        bindContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -107,20 +107,24 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn WithFactoryArgumentsExplicit(
         &mut self,
-        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::Zenject::TypeValuePair,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         >,
     >
     where
@@ -138,27 +142,31 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = __cordl_object.invoke("WithFactoryArgumentsExplicit", (extraArgs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_Il2CppArray6(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         >,
     >
     where
@@ -176,25 +184,29 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = __cordl_object.invoke("WithFactoryArguments", (args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_T0<T>(
         &mut self,
         param: T,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         >,
     >
     where
@@ -214,14 +226,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = __cordl_object.invoke("WithFactoryArguments", (param))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_TFactoryParam1_TFactoryParam2_1<
         TFactoryParam1,
@@ -231,12 +245,14 @@ impl<
         param1: TFactoryParam1,
         param2: TFactoryParam2,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         >,
     >
     where
@@ -258,14 +274,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = __cordl_object.invoke("WithFactoryArguments", (param1, param2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_TFactoryParam1_TFactoryParam2_TFactoryParam3_2<
         TFactoryParam1,
@@ -277,12 +295,14 @@ impl<
         param2: TFactoryParam2,
         param3: TFactoryParam3,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         >,
     >
     where
@@ -306,14 +326,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = __cordl_object.invoke("WithFactoryArguments", (param1, param2, param3))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_TFactoryParam1_TFactoryParam2_TFactoryParam3_TFactoryParam4_3<
         TFactoryParam1,
@@ -327,12 +349,14 @@ impl<
         param3: TFactoryParam3,
         param4: TFactoryParam4,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         >,
     >
     where
@@ -358,15 +382,17 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = __cordl_object
             .invoke("WithFactoryArguments", (param1, param2, param3, param4))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_TFactoryParam1_TFactoryParam2_TFactoryParam3_TFactoryParam4_TFactoryParam5_4<
         TFactoryParam1,
@@ -382,12 +408,14 @@ impl<
         param4: TFactoryParam4,
         param5: TFactoryParam5,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         >,
     >
     where
@@ -415,15 +443,17 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = __cordl_object
             .invoke("WithFactoryArguments", (param1, param2, param3, param4, param5))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_TFactoryParam1_TFactoryParam2_TFactoryParam3_TFactoryParam4_TFactoryParam5_TFactoryParam6_5<
         TFactoryParam1,
@@ -441,12 +471,14 @@ impl<
         param5: TFactoryParam5,
         param6: TFactoryParam6,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         >,
     >
     where
@@ -476,24 +508,26 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::FactoryToChoiceBinder_5<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = __cordl_object
             .invoke(
                 "WithFactoryArguments",
                 (param1, param2, param3, param4, param5, param6),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        bindContainer: *mut crate::Zenject::DiContainer,
-        bindInfo: *mut crate::Zenject::BindInfo,
-        factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
+        bindContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -512,7 +546,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindContainer, bindInfo, factoryBindInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+FactoryArgumentsToChoiceBinder_5")]

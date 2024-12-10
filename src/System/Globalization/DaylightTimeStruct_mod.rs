@@ -35,6 +35,6 @@ impl crate::System::Globalization::DaylightTimeStruct {
             ".ctor",
             (start, end, delta),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

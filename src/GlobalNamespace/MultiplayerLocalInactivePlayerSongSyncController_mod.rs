@@ -52,11 +52,13 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FollowOffsetSyncTime(
         &mut self,
-        observable: *mut crate::GlobalNamespace::IMultiplayerObservable,
+        observable: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerObservable,
+        >,
         crossFade: bool,
         forceUpdate: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -65,7 +67,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FollowOffsetSyncTime", (observable, crossFade, forceUpdate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleVrFocusWasReleased(
         &mut self,
@@ -75,14 +77,14 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleVrFocusWasReleased", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -92,7 +94,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SeekTo__cordl_bool_f32_1(
         &mut self,
@@ -105,7 +107,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SeekTo", (offsetTime, crossFade, toVolume))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SeekTo_f32_0(
         &mut self,
@@ -116,7 +118,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SeekTo", (offsetTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -126,7 +128,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartSong(
         &mut self,
@@ -137,7 +139,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartSong", (offsetTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -147,7 +149,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateOffsetSyncTime(
         &mut self,
@@ -160,7 +162,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateOffsetSyncTime", (offsetSyncTime, crossFade, forceUpdate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -170,7 +172,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _get_waitUntilIsReadyToStartTheSong_b__8_0(
         &mut self,
@@ -180,24 +182,26 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("<get_waitUntilIsReadyToStartTheSong>b__8_0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isAudioLoaded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isAudioLoaded", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_waitUntilIsReadyToStartTheSong(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::WaitUntil> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::WaitUntil>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::WaitUntil = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::WaitUntil> = __cordl_object
             .invoke("get_waitUntilIsReadyToStartTheSong", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
@@ -244,11 +248,11 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_Ini
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData {
     pub fn New(
-        audioClip: *mut crate::UnityEngine::AudioClip,
+        audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         startSongTime: f32,
         songTimeOffset: f32,
         timeScale: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -256,11 +260,11 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_In
                 ".ctor",
                 (audioClip, startSongTime, songTimeOffset, timeScale),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        audioClip: *mut crate::UnityEngine::AudioClip,
+        audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         startSongTime: f32,
         songTimeOffset: f32,
         timeScale: f32,
@@ -270,7 +274,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_In
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (audioClip, startSongTime, songTimeOffset, timeScale))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]

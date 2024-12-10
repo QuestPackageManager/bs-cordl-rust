@@ -28,14 +28,15 @@ impl crate::System::Linq::Expressions::MemberAssignment {
     pub fn get_Expression(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("get_Expression", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        > = __cordl_object.invoke("get_Expression", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+MemberAssignment")]

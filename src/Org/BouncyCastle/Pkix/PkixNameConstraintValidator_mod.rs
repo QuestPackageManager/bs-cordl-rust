@@ -39,310 +39,368 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkix::PkixNameConstraintVa
 impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn AddExcludedSubtree(
         &mut self,
-        subtree: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralSubtree,
+        subtree: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralSubtree,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddExcludedSubtree", (subtree))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckExcludedDN(
         &mut self,
-        dn: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        dn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckExcludedDN", (dn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckExcludedDirectory(
         &mut self,
-        excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        directory: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        excluded: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        directory: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckExcludedDirectory", (excluded, directory))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckExcludedDns(
         &mut self,
-        excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        dns: *mut quest_hook::libil2cpp::Il2CppString,
+        excluded: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckExcludedDns", (excluded, dns))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckExcludedEmail(
         &mut self,
-        excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        email: *mut quest_hook::libil2cpp::Il2CppString,
+        excluded: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckExcludedEmail", (excluded, email))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckExcludedIP(
         &mut self,
-        excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        ip: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        excluded: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckExcludedIP", (excluded, ip))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckExcludedOtherName(
         &mut self,
-        excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        name: *mut crate::Org::BouncyCastle::Asn1::X509::OtherName,
+        excluded: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        name: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::OtherName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckExcludedOtherName", (excluded, name))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckExcludedUri(
         &mut self,
-        excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        uri: *mut quest_hook::libil2cpp::Il2CppString,
+        excluded: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckExcludedUri", (excluded, uri))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckPermittedDN(
         &mut self,
-        dn: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        dn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckPermittedDN", (dn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckPermittedDirectory(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        directory: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        directory: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckPermittedDirectory", (permitted, directory))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckPermittedDns(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        dns: *mut quest_hook::libil2cpp::Il2CppString,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckPermittedDns", (permitted, dns))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckPermittedEmail(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        email: *mut quest_hook::libil2cpp::Il2CppString,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckPermittedEmail", (permitted, email))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckPermittedIP(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        ip: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckPermittedIP", (permitted, ip))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckPermittedOtherName(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        name: *mut crate::Org::BouncyCastle::Asn1::X509::OtherName,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        name: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::OtherName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckPermittedOtherName", (permitted, name))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckPermittedUri(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        uri: *mut quest_hook::libil2cpp::Il2CppString,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckPermittedUri", (permitted, uri))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CollectionsAreEqual(
         &mut self,
-        coll1: *mut crate::System::Collections::ICollection,
-        coll2: *mut crate::System::Collections::ICollection,
+        coll1: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+        coll2: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CollectionsAreEqual", (coll1, coll2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
-        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (o))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExtractIPsAndSubnetMasks(
         &mut self,
-        ipWithSubmask1: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        ipWithSubmask2: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        ipWithSubmask1: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        ipWithSubmask2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
         > = __cordl_object
             .invoke("ExtractIPsAndSubnetMasks", (ipWithSubmask1, ipWithSubmask2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExtractNameAsString(
         &mut self,
-        name: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        name: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ExtractNameAsString", (name))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ExtractNameAsString", (name))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("HashCode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HashCollection(
         &mut self,
-        c: *mut crate::System::Collections::ICollection,
+        c: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("HashCollection", (c))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectDN(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        dns: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        dns: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("IntersectDN", (permitted, dns))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("IntersectDN", (permitted, dns))?;
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectDns(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        dnss: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        dnss: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("IntersectDns", (permitted, dnss))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("IntersectDns", (permitted, dnss))?;
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectEmail_ISet_ISet0(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        emails: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        emails: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("IntersectEmail", (permitted, emails))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("IntersectEmail", (permitted, emails))?;
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectEmail_Il2CppString_Il2CppString_ISet1(
         &mut self,
-        email1: *mut quest_hook::libil2cpp::Il2CppString,
-        email2: *mut quest_hook::libil2cpp::Il2CppString,
-        intersect: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        email1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        email2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        intersect: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("IntersectEmail", (email1, email2, intersect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectEmptyPermittedSubtree(
         &mut self,
@@ -353,447 +411,543 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("IntersectEmptyPermittedSubtree", (nameType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectIP(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        ips: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        ips: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("IntersectIP", (permitted, ips))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("IntersectIP", (permitted, ips))?;
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectIPRange(
         &mut self,
-        ipWithSubmask1: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        ipWithSubmask2: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        ipWithSubmask1: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        ipWithSubmask2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("IntersectIPRange", (ipWithSubmask1, ipWithSubmask2))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("IntersectIPRange", (ipWithSubmask1, ipWithSubmask2))?;
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectOtherName_ISet_ISet0(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        otherNames: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        otherNames: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("IntersectOtherName", (permitted, otherNames))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("IntersectOtherName", (permitted, otherNames))?;
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectOtherName_OtherName_OtherName_ISet1(
         &mut self,
-        otherName1: *mut crate::Org::BouncyCastle::Asn1::X509::OtherName,
-        otherName2: *mut crate::Org::BouncyCastle::Asn1::X509::OtherName,
-        intersect: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        otherName1: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::OtherName,
+        >,
+        otherName2: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::OtherName,
+        >,
+        intersect: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("IntersectOtherName", (otherName1, otherName2, intersect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectPermittedSubtree(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("IntersectPermittedSubtree", (permitted))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectUri_ISet_ISet0(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        uris: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        uris: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("IntersectUri", (permitted, uris))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("IntersectUri", (permitted, uris))?;
+        Ok(__cordl_ret.into())
     }
     pub fn IntersectUri_Il2CppString_Il2CppString_ISet1(
         &mut self,
-        email1: *mut quest_hook::libil2cpp::Il2CppString,
-        email2: *mut quest_hook::libil2cpp::Il2CppString,
-        intersect: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        email1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        email2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        intersect: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("IntersectUri", (email1, email2, intersect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IpWithSubnetMask(
         &mut self,
-        ip: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        subnetMask: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        subnetMask: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("IpWithSubnetMask", (ip, subnetMask))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("IpWithSubnetMask", (ip, subnetMask))?;
+        Ok(__cordl_ret.into())
     }
     pub fn IsDirectoryConstrained(
         &mut self,
-        constraints: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        directory: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        constraints: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        directory: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsDirectoryConstrained", (constraints, directory))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsDnsConstrained_ISet1(
         &mut self,
-        constraints: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        dns: *mut quest_hook::libil2cpp::Il2CppString,
+        constraints: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsDnsConstrained", (constraints, dns))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsDnsConstrained_Il2CppString0(
         &mut self,
-        constraint: *mut quest_hook::libil2cpp::Il2CppString,
-        dns: *mut quest_hook::libil2cpp::Il2CppString,
+        constraint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsDnsConstrained", (constraint, dns))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsEmailConstrained_ISet1(
         &mut self,
-        constraints: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        email: *mut quest_hook::libil2cpp::Il2CppString,
+        constraints: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsEmailConstrained", (constraints, email))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsEmailConstrained_Il2CppString0(
         &mut self,
-        constraint: *mut quest_hook::libil2cpp::Il2CppString,
-        email: *mut quest_hook::libil2cpp::Il2CppString,
+        constraint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsEmailConstrained", (constraint, email))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsIPConstrained_ISet1(
         &mut self,
-        constraints: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        ip: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        constraints: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsIPConstrained", (constraints, ip))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsIPConstrained_Il2CppArray0(
         &mut self,
-        constraint: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        ip: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        constraint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsIPConstrained", (constraint, ip))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsOtherNameConstrained_ISet1(
         &mut self,
-        constraints: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        otherName: *mut crate::Org::BouncyCastle::Asn1::X509::OtherName,
+        constraints: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        otherName: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::OtherName,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsOtherNameConstrained", (constraints, otherName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsOtherNameConstrained_OtherName0(
         &mut self,
-        constraint: *mut crate::Org::BouncyCastle::Asn1::X509::OtherName,
-        otherName: *mut crate::Org::BouncyCastle::Asn1::X509::OtherName,
+        constraint: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::OtherName,
+        >,
+        otherName: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::OtherName,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsOtherNameConstrained", (constraint, otherName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsUriConstrained_ISet1(
         &mut self,
-        constraints: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        uri: *mut quest_hook::libil2cpp::Il2CppString,
+        constraints: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsUriConstrained", (constraints, uri))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsUriConstrained_Il2CppString0(
         &mut self,
-        constraint: *mut quest_hook::libil2cpp::Il2CppString,
-        uri: *mut quest_hook::libil2cpp::Il2CppString,
+        constraint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsUriConstrained", (constraint, uri))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MinMaxIPs(
         &mut self,
-        ip1: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        subnetmask1: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        ip2: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        subnetmask2: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        ip1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        subnetmask1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        ip2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        subnetmask2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
         > = __cordl_object.invoke("MinMaxIPs", (ip1, subnetmask1, ip2, subnetmask2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SpecialEquals(
         &mut self,
-        o1: *mut quest_hook::libil2cpp::Il2CppObject,
-        o2: *mut quest_hook::libil2cpp::Il2CppObject,
+        o1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        o2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("SpecialEquals", (o1, o2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StringifyIP(
         &mut self,
-        ip: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("StringifyIP", (ip))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("StringifyIP", (ip))?;
+        Ok(__cordl_ret.into())
     }
     pub fn StringifyIPCollection(
         &mut self,
-        ips: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        ips: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("StringifyIPCollection", (ips))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("StringifyIPCollection", (ips))?;
+        Ok(__cordl_ret.into())
     }
     pub fn StringifyOtherNameCollection(
         &mut self,
-        otherNames: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        otherNames: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("StringifyOtherNameCollection", (otherNames))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("StringifyOtherNameCollection", (otherNames))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn UnionDN(
         &mut self,
-        excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        dn: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        excluded: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        dn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("UnionDN", (excluded, dn))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("UnionDN", (excluded, dn))?;
+        Ok(__cordl_ret.into())
     }
     pub fn UnionDns(
         &mut self,
-        excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        dns: *mut quest_hook::libil2cpp::Il2CppString,
+        excluded: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("UnionDns", (excluded, dns))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("UnionDns", (excluded, dns))?;
+        Ok(__cordl_ret.into())
     }
     pub fn UnionEmail_ISet0(
         &mut self,
-        excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        email: *mut quest_hook::libil2cpp::Il2CppString,
+        excluded: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("UnionEmail", (excluded, email))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("UnionEmail", (excluded, email))?;
+        Ok(__cordl_ret.into())
     }
     pub fn UnionEmail_Il2CppString_ISet1(
         &mut self,
-        email1: *mut quest_hook::libil2cpp::Il2CppString,
-        email2: *mut quest_hook::libil2cpp::Il2CppString,
-        _cordl_union: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        email1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        email2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_union: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnionEmail", (email1, email2, _cordl_union))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnionIP(
         &mut self,
-        excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        ip: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        excluded: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("UnionIP", (excluded, ip))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("UnionIP", (excluded, ip))?;
+        Ok(__cordl_ret.into())
     }
     pub fn UnionIPRange(
         &mut self,
-        ipWithSubmask1: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        ipWithSubmask2: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        ipWithSubmask1: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        ipWithSubmask2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("UnionIPRange", (ipWithSubmask1, ipWithSubmask2))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("UnionIPRange", (ipWithSubmask1, ipWithSubmask2))?;
+        Ok(__cordl_ret.into())
     }
     pub fn UnionOtherName(
         &mut self,
-        permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        otherName: *mut crate::Org::BouncyCastle::Asn1::X509::OtherName,
+        permitted: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        otherName: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::OtherName,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("UnionOtherName", (permitted, otherName))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("UnionOtherName", (permitted, otherName))?;
+        Ok(__cordl_ret.into())
     }
     pub fn UnionUri(
         &mut self,
-        excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        uri: *mut quest_hook::libil2cpp::Il2CppString,
+        excluded: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet = __cordl_object
-            .invoke("UnionUri", (excluded, uri))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = __cordl_object.invoke("UnionUri", (excluded, uri))?;
+        Ok(__cordl_ret.into())
     }
     pub fn WithinDomain(
         &mut self,
-        testDomain: *mut quest_hook::libil2cpp::Il2CppString,
-        domain: *mut quest_hook::libil2cpp::Il2CppString,
+        testDomain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("WithinDomain", (testDomain, domain))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -803,42 +957,48 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn checkExcluded(
         &mut self,
-        name: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        name: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("checkExcluded", (name))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn checkPermitted(
         &mut self,
-        name: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        name: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("checkPermitted", (name))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn unionURI(
         &mut self,
-        email1: *mut quest_hook::libil2cpp::Il2CppString,
-        email2: *mut quest_hook::libil2cpp::Il2CppString,
-        _cordl_union: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        email1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        email2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_union: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("unionURI", (email1, email2, _cordl_union))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixNameConstraintValidator")]

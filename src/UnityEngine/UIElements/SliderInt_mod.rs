@@ -39,7 +39,7 @@ impl crate::UnityEngine::UIElements::SliderInt {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyInputDeviceDelta", (delta, speed, startValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeValueAndDirectionFromClick(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::UnityEngine::UIElements::SliderInt {
                 "ComputeValueAndDirectionFromClick",
                 (sliderLength, dragElementLength, dragElementPos, dragElementLastPos),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeValueFromKey(
         &mut self,
@@ -68,39 +68,39 @@ impl crate::UnityEngine::UIElements::SliderInt {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ComputeValueFromKey", (sliderKey, isShift))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppString_i32_i32_SliderDirection_f32_1(
-        label: *mut quest_hook::libil2cpp::Il2CppString,
+        label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
         end: i32,
         direction: crate::UnityEngine::UIElements::SliderDirection,
         pageSize: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (label, start, end, direction, pageSize))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ParseStringToValue(
         &mut self,
-        previousValue: *mut quest_hook::libil2cpp::Il2CppString,
-        newValue: *mut quest_hook::libil2cpp::Il2CppString,
+        previousValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        newValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("ParseStringToValue", (previousValue, newValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SliderLerpUnclamped(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::UnityEngine::UIElements::SliderInt {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("SliderLerpUnclamped", (a, b, interpolant))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SliderNormalizeValue(
         &mut self,
@@ -126,7 +126,7 @@ impl crate::UnityEngine::UIElements::SliderInt {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("SliderNormalizeValue", (currentValue, lowerValue, higherValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -136,11 +136,11 @@ impl crate::UnityEngine::UIElements::SliderInt {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_i32_i32_SliderDirection_f32_1(
         &mut self,
-        label: *mut quest_hook::libil2cpp::Il2CppString,
+        label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
         end: i32,
         direction: crate::UnityEngine::UIElements::SliderDirection,
@@ -151,14 +151,14 @@ impl crate::UnityEngine::UIElements::SliderInt {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (label, start, end, direction, pageSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_pageSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_pageSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_pageSize(
         &mut self,
@@ -169,7 +169,7 @@ impl crate::UnityEngine::UIElements::SliderInt {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_pageSize", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt")]
@@ -213,12 +213,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::SliderInt_UxmlFactor
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlFactory")]
 impl crate::UnityEngine::UIElements::SliderInt_UxmlFactory {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -228,7 +228,7 @@ impl crate::UnityEngine::UIElements::SliderInt_UxmlFactory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlFactory")]
@@ -277,8 +277,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::SliderInt_UxmlTraits
 impl crate::UnityEngine::UIElements::SliderInt_UxmlTraits {
     pub fn Init(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -286,14 +286,14 @@ impl crate::UnityEngine::UIElements::SliderInt_UxmlTraits {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (ve, bag, cc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -303,7 +303,7 @@ impl crate::UnityEngine::UIElements::SliderInt_UxmlTraits {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlTraits")]

@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
 impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
     pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_ManipulatorActivationFilter1(
         &mut self,
@@ -45,7 +45,7 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -53,29 +53,29 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasModifiers_IMouseEvent0(
         &mut self,
-        e: *mut crate::UnityEngine::UIElements::IMouseEvent,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMouseEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "HasModifiers",
             (e),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasModifiers_IPointerEvent1(
         &mut self,
-        e: *mut crate::UnityEngine::UIElements::IPointerEvent,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "HasModifiers",
             (e),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MatchModifiers(
         &mut self,
@@ -89,29 +89,29 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
             "MatchModifiers",
             (alt, ctrl, shift, command),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Matches_IMouseEvent0(
         &mut self,
-        e: *mut crate::UnityEngine::UIElements::IMouseEvent,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMouseEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Matches",
             (e),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Matches_IPointerEvent1(
         &mut self,
-        e: *mut crate::UnityEngine::UIElements::IPointerEvent,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Matches",
             (e),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_button(
         &mut self,
@@ -121,7 +121,7 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
             "get_button",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_clickCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -129,7 +129,7 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
             "get_clickCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_modifiers(
         &mut self,
@@ -139,7 +139,7 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
             "get_modifiers",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_button(
         &mut self,
@@ -150,7 +150,7 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
             "set_button",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_modifiers(
         &mut self,
@@ -161,6 +161,6 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
             "set_modifiers",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

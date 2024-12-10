@@ -27,25 +27,29 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IMultiplayerLevelEndActionsL
 impl crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
     pub fn ReportPlayerDidFinish(
         &mut self,
-        results: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        results: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReportPlayerDidFinish", (results))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReportPlayerNetworkDidFailed(
         &mut self,
-        results: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        results: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReportPlayerNetworkDidFailed", (results))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

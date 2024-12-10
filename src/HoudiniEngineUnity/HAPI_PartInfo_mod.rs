@@ -41,7 +41,7 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
             "getElementCountByAttributeOwner",
             (owner),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getElementCountByGroupType(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
             "getElementCountByGroupType",
             (_cordl_type),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_detailAttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -60,7 +60,7 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
             "get_detailAttributeCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_pointAttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -68,7 +68,7 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
             "get_pointAttributeCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_primitiveAttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -76,7 +76,7 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
             "get_primitiveAttributeCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_vertexAttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -84,7 +84,7 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
             "get_vertexAttributeCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn init(
         &mut self,
@@ -94,7 +94,7 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
             "init",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_detailAttributeCount(
         &mut self,
@@ -105,7 +105,7 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
             "set_detailAttributeCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_pointAttributeCount(
         &mut self,
@@ -116,7 +116,7 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
             "set_pointAttributeCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_primitiveAttributeCount(
         &mut self,
@@ -127,7 +127,7 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
             "set_primitiveAttributeCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_vertexAttributeCount(
         &mut self,
@@ -138,6 +138,6 @@ impl crate::HoudiniEngineUnity::HAPI_PartInfo {
             "set_vertexAttributeCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

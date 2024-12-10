@@ -26,31 +26,39 @@ impl std::ops::DerefMut for crate::SFB::IStandaloneFileBrowser {
 impl crate::SFB::IStandaloneFileBrowser {
     pub fn OpenFilePanel(
         &mut self,
-        title: *mut quest_hook::libil2cpp::Il2CppString,
-        directory: *mut quest_hook::libil2cpp::Il2CppString,
-        extensions: *mut quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extensions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
+        >,
         multiselect: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object
             .invoke("OpenFilePanel", (title, directory, extensions, multiselect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OpenFilePanelAsync(
         &mut self,
-        title: *mut quest_hook::libil2cpp::Il2CppString,
-        directory: *mut quest_hook::libil2cpp::Il2CppString,
-        extensions: *mut quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extensions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
+        >,
         multiselect: bool,
-        cb: *mut crate::System::Action_1<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppString,
+        cb: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut quest_hook::libil2cpp::Il2CppArray<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -62,32 +70,36 @@ impl crate::SFB::IStandaloneFileBrowser {
                 "OpenFilePanelAsync",
                 (title, directory, extensions, multiselect, cb),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OpenFolderPanel(
         &mut self,
-        title: *mut quest_hook::libil2cpp::Il2CppString,
-        directory: *mut quest_hook::libil2cpp::Il2CppString,
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         multiselect: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("OpenFolderPanel", (title, directory, multiselect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OpenFolderPanelAsync(
         &mut self,
-        title: *mut quest_hook::libil2cpp::Il2CppString,
-        directory: *mut quest_hook::libil2cpp::Il2CppString,
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         multiselect: bool,
-        cb: *mut crate::System::Action_1<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppString,
+        cb: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut quest_hook::libil2cpp::Il2CppArray<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,29 +108,39 @@ impl crate::SFB::IStandaloneFileBrowser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OpenFolderPanelAsync", (title, directory, multiselect, cb))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SaveFilePanel(
         &mut self,
-        title: *mut quest_hook::libil2cpp::Il2CppString,
-        directory: *mut quest_hook::libil2cpp::Il2CppString,
-        defaultName: *mut quest_hook::libil2cpp::Il2CppString,
-        extensions: *mut quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extensions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object
             .invoke("SaveFilePanel", (title, directory, defaultName, extensions))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SaveFilePanelAsync(
         &mut self,
-        title: *mut quest_hook::libil2cpp::Il2CppString,
-        directory: *mut quest_hook::libil2cpp::Il2CppString,
-        defaultName: *mut quest_hook::libil2cpp::Il2CppString,
-        extensions: *mut quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
-        cb: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extensions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
+        >,
+        cb: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,7 +150,7 @@ impl crate::SFB::IStandaloneFileBrowser {
                 "SaveFilePanelAsync",
                 (title, directory, defaultName, extensions, cb),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

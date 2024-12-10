@@ -29,8 +29,10 @@ for crate::System::IObservable_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::System::IObservable_1<T> {
     pub fn Subscribe(
         &mut self,
-        observer: *mut crate::System::IObserver_1<T>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IDisposable>
+        observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -38,9 +40,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::IObservable_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IDisposable = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = __cordl_object
             .invoke("Subscribe", (observer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

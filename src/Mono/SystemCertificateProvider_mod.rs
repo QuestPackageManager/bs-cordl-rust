@@ -26,87 +26,113 @@ impl std::ops::DerefMut for crate::Mono::SystemCertificateProvider {
 impl crate::Mono::SystemCertificateProvider {
     pub fn Import_Il2CppArray_CertificateImportFlags0(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         importFlags: crate::Mono::CertificateImportFlags,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl = __cordl_object
-            .invoke("Import", (data, importFlags))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        > = __cordl_object.invoke("Import", (data, importFlags))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Import_Il2CppArray_SafePasswordHandle_X509KeyStorageFlags_CertificateImportFlags1(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        password: *mut crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        password: quest_hook::libil2cpp::Gc<
+            crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
+        >,
         keyStorageFlags: crate::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags,
         importFlags: crate::Mono::CertificateImportFlags,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
+        > = __cordl_object
             .invoke("Import", (data, password, keyStorageFlags, importFlags))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Import_X509Certificate_CertificateImportFlags2(
         &mut self,
-        cert: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        cert: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
         importFlags: crate::Mono::CertificateImportFlags,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl = __cordl_object
-            .invoke("Import", (cert, importFlags))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
+        > = __cordl_object.invoke("Import", (cert, importFlags))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Mono_ISystemCertificateProvider_Import_Il2CppArray_SafePasswordHandle_X509KeyStorageFlags_CertificateImportFlags0(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        password: *mut crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        password: quest_hook::libil2cpp::Gc<
+            crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
+        >,
         keyStorageFlags: crate::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags,
         importFlags: crate::Mono::CertificateImportFlags,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        > = __cordl_object
             .invoke(
                 "Mono.ISystemCertificateProvider.Import",
                 (data, password, keyStorageFlags, importFlags),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Mono_ISystemCertificateProvider_Import_X509Certificate_CertificateImportFlags1(
         &mut self,
-        cert: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        cert: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
         importFlags: crate::Mono::CertificateImportFlags,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        > = __cordl_object
             .invoke("Mono.ISystemCertificateProvider.Import", (cert, importFlags))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -116,17 +142,19 @@ impl crate::Mono::SystemCertificateProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_X509Pal(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::X509PalImpl> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::X509PalImpl = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl> = __cordl_object
             .invoke("get_X509Pal", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+SystemCertificateProvider")]

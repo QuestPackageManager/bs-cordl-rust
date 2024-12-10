@@ -58,7 +58,9 @@ impl<
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<TResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TResult>,
+        >,
     >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -67,18 +69,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            TResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TResult>,
         > = __cordl_object.invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        directory: *mut quest_hook::libil2cpp::Il2CppString,
-        transform: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<
-            TResult,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        transform: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult>,
         >,
-        options: *mut crate::System::IO::EnumerationOptions,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -87,11 +89,13 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (directory, transform, options))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -99,17 +103,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        directory: *mut quest_hook::libil2cpp::Il2CppString,
-        transform: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<
-            TResult,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        transform: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult>,
         >,
-        options: *mut crate::System::IO::EnumerationOptions,
+        options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -120,13 +125,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (directory, transform, options))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ShouldIncludePredicate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<
-            TResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
         >,
     >
     where
@@ -136,16 +141,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<
-            TResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
         > = __cordl_object.invoke("get_ShouldIncludePredicate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ShouldRecursePredicate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<
-            TResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
         >,
     >
     where
@@ -155,15 +160,15 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<
-            TResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
         > = __cordl_object.invoke("get_ShouldRecursePredicate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ShouldIncludePredicate(
         &mut self,
-        value: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<
-            TResult,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -175,7 +180,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ShouldIncludePredicate", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
@@ -226,8 +231,10 @@ impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
     pub fn New(
-        enumerable: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -236,7 +243,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (enumerable))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ShouldIncludeEntry(
         &mut self,
@@ -252,7 +259,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ShouldIncludeEntry", (entry))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldRecurseIntoEntry(
         &mut self,
@@ -269,7 +276,7 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldRecurseIntoEntry", (entry))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransformEntry(
         &mut self,
@@ -285,11 +292,13 @@ impl<
             self,
         );
         let __cordl_ret: TResult = __cordl_object.invoke("TransformEntry", (entry))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        enumerable: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult>,
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -300,7 +309,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (enumerable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
@@ -359,12 +368,12 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", (entry))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -373,11 +382,11 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -389,7 +398,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
@@ -448,12 +457,12 @@ impl<
             self,
         );
         let __cordl_ret: TResult = __cordl_object.invoke("Invoke", (entry))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -462,11 +471,11 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -478,7 +487,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]

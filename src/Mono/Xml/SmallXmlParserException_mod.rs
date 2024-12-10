@@ -27,19 +27,19 @@ impl std::ops::DerefMut for crate::Mono::Xml::SmallXmlParserException {
 #[cfg(feature = "Mono+Xml+SmallXmlParserException")]
 impl crate::Mono::Xml::SmallXmlParserException {
     pub fn New(
-        msg: *mut quest_hook::libil2cpp::Il2CppString,
+        msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         line: i32,
         column: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (msg, line, column))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        msg: *mut quest_hook::libil2cpp::Il2CppString,
+        msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         line: i32,
         column: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -48,7 +48,7 @@ impl crate::Mono::Xml::SmallXmlParserException {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (msg, line, column))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Xml+SmallXmlParserException")]

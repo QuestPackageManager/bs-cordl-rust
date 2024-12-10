@@ -35,7 +35,7 @@ impl crate::UnityEngine::ContactPairPoint {
             "get_Impulse",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Normal(
         &mut self,
@@ -45,7 +45,7 @@ impl crate::UnityEngine::ContactPairPoint {
             "get_Normal",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Position(
         &mut self,
@@ -55,7 +55,7 @@ impl crate::UnityEngine::ContactPairPoint {
             "get_Position",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Separation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -63,6 +63,6 @@ impl crate::UnityEngine::ContactPairPoint {
             "get_Separation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

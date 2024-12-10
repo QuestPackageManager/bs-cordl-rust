@@ -29,7 +29,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     pub type _data_e__FixedBuffer = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer;
     pub fn WithData(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState,
     > {
@@ -38,7 +38,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
             "WithData",
             (data),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_format(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
             "get_format",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

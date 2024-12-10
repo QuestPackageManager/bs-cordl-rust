@@ -34,7 +34,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_
     >;
     pub fn AddMenuItems(
         &mut self,
-        menu: *mut crate::UnityEngine::UIElements::IGenericMenu,
+        menu: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGenericMenu>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -45,7 +45,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddMenuItems", (menu))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ChangeValueFromMenu(
         &mut self,
@@ -60,12 +60,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ChangeValueFromMenu", (menuItem))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetListItemToDisplay(
         &mut self,
         value: T,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -73,13 +75,16 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetListItemToDisplay", (value))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetListItemToDisplay", (value))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetValueToDisplay(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -87,13 +92,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetValueToDisplay", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetValueToDisplay", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        label: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -102,7 +108,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (label))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetValueWithoutNotify(
         &mut self,
@@ -117,11 +123,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetValueWithoutNotify", (newValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        label: *mut quest_hook::libil2cpp::Il2CppString,
+        label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -132,7 +138,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (label))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -143,7 +149,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_value", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_index(
         &mut self,
@@ -158,7 +164,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_index", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_value(
         &mut self,
@@ -173,7 +179,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_value", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PopupField_1")]

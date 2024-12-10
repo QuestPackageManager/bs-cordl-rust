@@ -40,29 +40,34 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxParser")]
 impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Parse(
         &mut self,
-        syntax: *mut quest_hook::libil2cpp::Il2CppString,
+        syntax: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression = __cordl_object
-            .invoke("Parse", (syntax))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        > = __cordl_object.invoke("Parse", (syntax))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ParseCombinatorType(
         &mut self,
-        tokenizer: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        tokenizer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator,
     > {
@@ -71,50 +76,67 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator = __cordl_object
             .invoke("ParseCombinatorType", (tokenizer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseDataType(
         &mut self,
-        tokenizer: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        tokenizer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression = __cordl_object
-            .invoke("ParseDataType", (tokenizer))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        > = __cordl_object.invoke("ParseDataType", (tokenizer))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ParseExpression(
         &mut self,
-        tokenizer: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        tokenizer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression = __cordl_object
-            .invoke("ParseExpression", (tokenizer))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        > = __cordl_object.invoke("ParseExpression", (tokenizer))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ParseGroup(
         &mut self,
-        tokenizer: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        tokenizer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression = __cordl_object
-            .invoke("ParseGroup", (tokenizer))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        > = __cordl_object.invoke("ParseGroup", (tokenizer))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ParseMultiplier(
         &mut self,
-        tokenizer: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        tokenizer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        >,
         multiplier: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier,
         >,
@@ -124,37 +146,47 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ParseMultiplier", (tokenizer, multiplier))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseNonTerminalValue(
         &mut self,
-        syntax: *mut quest_hook::libil2cpp::Il2CppString,
+        syntax: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression = __cordl_object
-            .invoke("ParseNonTerminalValue", (syntax))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        > = __cordl_object.invoke("ParseNonTerminalValue", (syntax))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ParseProperty(
         &mut self,
-        tokenizer: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        tokenizer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression = __cordl_object
-            .invoke("ParseProperty", (tokenizer))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        > = __cordl_object.invoke("ParseProperty", (tokenizer))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ParseRanges(
         &mut self,
-        tokenizer: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        tokenizer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        >,
         min: quest_hook::libil2cpp::ByRefMut<i32>,
         max: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -163,20 +195,25 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ParseRanges", (tokenizer, min, max))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseTerm(
         &mut self,
-        tokenizer: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        tokenizer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression = __cordl_object
-            .invoke("ParseTerm", (tokenizer))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        > = __cordl_object.invoke("ParseTerm", (tokenizer))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessCombinatorStack(
         &mut self,
@@ -186,7 +223,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessCombinatorStack", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -196,7 +233,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxParser")]

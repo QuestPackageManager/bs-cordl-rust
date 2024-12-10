@@ -36,7 +36,7 @@ impl crate::UnityEngine::UIElements::IPointerCaptureEventInternal {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_pointerId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IPointerCaptureEventInternal")]

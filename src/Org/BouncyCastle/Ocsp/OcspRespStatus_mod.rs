@@ -30,12 +30,12 @@ impl crate::Org::BouncyCastle::Ocsp::OcspRespStatus {
     pub const Successful: i32 = 0i32;
     pub const TryLater: i32 = 3i32;
     pub const Unauthorized: i32 = 6i32;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Ocsp::OcspRespStatus {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspRespStatus")]

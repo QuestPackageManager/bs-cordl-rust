@@ -39,7 +39,7 @@ impl crate::UnityEngine::OverlapCapsuleCommand {
             ".ctor",
             (physicsScene, point0, point1, radius, queryParameters),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Vector3_f32_QueryParameters0(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::OverlapCapsuleCommand {
             ".ctor",
             (point0, point1, radius, queryParameters),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_physicsScene(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::OverlapCapsuleCommand {
             "get_physicsScene",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_point0(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::UnityEngine::OverlapCapsuleCommand {
             "get_point0",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_point1(
         &mut self,
@@ -83,7 +83,7 @@ impl crate::UnityEngine::OverlapCapsuleCommand {
             "get_point1",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_radius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -91,7 +91,7 @@ impl crate::UnityEngine::OverlapCapsuleCommand {
             "get_radius",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_physicsScene(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::UnityEngine::OverlapCapsuleCommand {
             "set_physicsScene",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_point0(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::UnityEngine::OverlapCapsuleCommand {
             "set_point0",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_point1(
         &mut self,
@@ -124,7 +124,7 @@ impl crate::UnityEngine::OverlapCapsuleCommand {
             "set_point1",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_radius(
         &mut self,
@@ -135,6 +135,6 @@ impl crate::UnityEngine::OverlapCapsuleCommand {
             "set_radius",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

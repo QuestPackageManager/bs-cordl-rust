@@ -30,7 +30,7 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
             "get_xPositionAdjustment",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yPositionAdjustment(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -38,6 +38,6 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
             "get_yPositionAdjustment",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

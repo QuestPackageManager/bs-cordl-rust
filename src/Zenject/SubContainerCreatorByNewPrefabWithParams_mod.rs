@@ -35,37 +35,43 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
     pub type __c__DisplayClass7_0 = crate::Zenject::SubContainerCreatorByNewPrefabWithParams___c__DisplayClass7_0;
     pub fn CreateSubContainer(
         &mut self,
-        args: *mut crate::System::Collections::Generic::List_1<
-            crate::Zenject::TypeValuePair,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
-        parentContext: *mut crate::Zenject::InjectContext,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+        parentContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = __cordl_object
             .invoke("CreateSubContainer", (args, parentContext))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateTempContainer(
         &mut self,
-        args: *mut crate::System::Collections::Generic::List_1<
-            crate::Zenject::TypeValuePair,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = __cordl_object
             .invoke("CreateTempContainer", (args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        installerType: *mut crate::System::Type,
-        container: *mut crate::Zenject::DiContainer,
-        prefabProvider: *mut crate::Zenject::IPrefabProvider,
-        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        prefabProvider: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabProvider>,
+        gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::GameObjectCreationParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -73,14 +79,16 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
                 ".ctor",
                 (installerType, container, prefabProvider, gameObjectBindInfo),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        installerType: *mut crate::System::Type,
-        container: *mut crate::Zenject::DiContainer,
-        prefabProvider: *mut crate::Zenject::IPrefabProvider,
-        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
+        installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        prefabProvider: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabProvider>,
+        gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::GameObjectCreationParameters,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,17 +98,19 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
                 ".ctor",
                 (installerType, container, prefabProvider, gameObjectBindInfo),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Container(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = __cordl_object
             .invoke("get_Container", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabWithParams")]

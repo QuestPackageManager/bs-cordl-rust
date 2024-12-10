@@ -30,15 +30,19 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::FxEventBox {
 #[cfg(feature = "BeatmapSaveDataVersion3+FxEventBox")]
 impl crate::BeatmapSaveDataVersion3::FxEventBox {
     pub fn New(
-        indexFilter: *mut crate::BeatmapSaveDataVersion3::IndexFilter,
+        indexFilter: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::IndexFilter,
+        >,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
         vfxDistributionParam: f32,
         vfxDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
         vfxDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
         vfxDistributionShouldAffectFirstBaseEvent: bool,
-        effectsBaseDataList: *mut crate::System::Collections::Generic::List_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        effectsBaseDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -55,18 +59,22 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
                     effectsBaseDataList,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        indexFilter: *mut crate::BeatmapSaveDataVersion3::IndexFilter,
+        indexFilter: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::IndexFilter,
+        >,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
         vfxDistributionParam: f32,
         vfxDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
         vfxDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
         vfxDistributionShouldAffectFirstBaseEvent: bool,
-        effectsBaseDataList: *mut crate::System::Collections::Generic::List_1<i32>,
+        effectsBaseDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -85,20 +93,22 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
                     effectsBaseDataList,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_vfxBaseDataList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<i32>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<i32>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            i32,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<i32>,
         > = __cordl_object.invoke("get_vfxBaseDataList", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_vfxDistributionEaseType(
         &mut self,
@@ -108,14 +118,14 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
         );
         let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType = __cordl_object
             .invoke("get_vfxDistributionEaseType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_vfxDistributionParam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_vfxDistributionParam", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_vfxDistributionParamType(
         &mut self,
@@ -127,7 +137,7 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
         );
         let __cordl_ret: crate::BeatmapSaveDataCommon::DistributionParamType = __cordl_object
             .invoke("get_vfxDistributionParamType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_vfxDistributionShouldAffectFirstBaseEvent(
         &mut self,
@@ -137,7 +147,7 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_vfxDistributionShouldAffectFirstBaseEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+FxEventBox")]

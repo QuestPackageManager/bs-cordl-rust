@@ -38,20 +38,22 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardUploadData {
 #[cfg(feature = "LeaderboardUploadData")]
 impl crate::GlobalNamespace::LeaderboardUploadData {
     pub fn New(
-        playerName: *mut quest_hook::libil2cpp::Il2CppString,
-        playerId: *mut quest_hook::libil2cpp::Il2CppString,
-        score: *mut quest_hook::libil2cpp::Il2CppString,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
-        songName: *mut quest_hook::libil2cpp::Il2CppString,
-        songSubName: *mut quest_hook::libil2cpp::Il2CppString,
-        authorName: *mut quest_hook::libil2cpp::Il2CppString,
-        bpm: *mut quest_hook::libil2cpp::Il2CppString,
-        difficulty: *mut quest_hook::libil2cpp::Il2CppString,
-        infoHash: *mut quest_hook::libil2cpp::Il2CppString,
-        modifiers: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        score: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        songName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        songSubName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        authorName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        bpm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        difficulty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        infoHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        modifiers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -71,22 +73,24 @@ impl crate::GlobalNamespace::LeaderboardUploadData {
                     modifiers,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        playerName: *mut quest_hook::libil2cpp::Il2CppString,
-        playerId: *mut quest_hook::libil2cpp::Il2CppString,
-        score: *mut quest_hook::libil2cpp::Il2CppString,
-        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
-        songName: *mut quest_hook::libil2cpp::Il2CppString,
-        songSubName: *mut quest_hook::libil2cpp::Il2CppString,
-        authorName: *mut quest_hook::libil2cpp::Il2CppString,
-        bpm: *mut quest_hook::libil2cpp::Il2CppString,
-        difficulty: *mut quest_hook::libil2cpp::Il2CppString,
-        infoHash: *mut quest_hook::libil2cpp::Il2CppString,
-        modifiers: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        score: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        songName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        songSubName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        authorName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        bpm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        difficulty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        infoHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        modifiers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -109,7 +113,7 @@ impl crate::GlobalNamespace::LeaderboardUploadData {
                     modifiers,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LeaderboardUploadData")]

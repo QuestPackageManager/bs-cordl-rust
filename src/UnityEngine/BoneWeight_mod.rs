@@ -37,18 +37,18 @@ impl crate::UnityEngine::BoneWeight {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
-        other: *mut quest_hook::libil2cpp::Il2CppObject,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -56,7 +56,7 @@ impl crate::UnityEngine::BoneWeight {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_boneIndex0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -64,7 +64,7 @@ impl crate::UnityEngine::BoneWeight {
             "get_boneIndex0",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_boneIndex1(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -72,7 +72,7 @@ impl crate::UnityEngine::BoneWeight {
             "get_boneIndex1",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_boneIndex2(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -80,7 +80,7 @@ impl crate::UnityEngine::BoneWeight {
             "get_boneIndex2",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_boneIndex3(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -88,7 +88,7 @@ impl crate::UnityEngine::BoneWeight {
             "get_boneIndex3",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_weight0(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -96,7 +96,7 @@ impl crate::UnityEngine::BoneWeight {
             "get_weight0",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_weight1(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -104,7 +104,7 @@ impl crate::UnityEngine::BoneWeight {
             "get_weight1",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_weight2(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -112,7 +112,7 @@ impl crate::UnityEngine::BoneWeight {
             "get_weight2",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_weight3(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -120,7 +120,7 @@ impl crate::UnityEngine::BoneWeight {
             "get_weight3",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_boneIndex0(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::UnityEngine::BoneWeight {
             "set_boneIndex0",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_boneIndex1(
         &mut self,
@@ -142,7 +142,7 @@ impl crate::UnityEngine::BoneWeight {
             "set_boneIndex1",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_boneIndex2(
         &mut self,
@@ -153,7 +153,7 @@ impl crate::UnityEngine::BoneWeight {
             "set_boneIndex2",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_boneIndex3(
         &mut self,
@@ -164,7 +164,7 @@ impl crate::UnityEngine::BoneWeight {
             "set_boneIndex3",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_weight0(
         &mut self,
@@ -175,7 +175,7 @@ impl crate::UnityEngine::BoneWeight {
             "set_weight0",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_weight1(
         &mut self,
@@ -186,7 +186,7 @@ impl crate::UnityEngine::BoneWeight {
             "set_weight1",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_weight2(
         &mut self,
@@ -197,7 +197,7 @@ impl crate::UnityEngine::BoneWeight {
             "set_weight2",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_weight3(
         &mut self,
@@ -208,6 +208,6 @@ impl crate::UnityEngine::BoneWeight {
             "set_weight3",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

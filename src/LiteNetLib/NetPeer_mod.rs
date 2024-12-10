@@ -87,25 +87,27 @@ impl crate::LiteNetLib::NetPeer {
     pub fn AddReliablePacket(
         &mut self,
         method: crate::LiteNetLib::DeliveryMethod,
-        p: *mut crate::LiteNetLib::NetPacket,
+        p: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddReliablePacket", (method, p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateChannel(
         &mut self,
         idx: u8,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::LiteNetLib::BaseChannel> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::LiteNetLib::BaseChannel = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel> = __cordl_object
             .invoke("CreateChannel", (idx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Disconnect_3(
         &mut self,
@@ -115,22 +117,22 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Disconnect", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Disconnect_Il2CppArray0(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Disconnect", (data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Disconnect_Il2CppArray_i32_i32_2(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -139,18 +141,18 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Disconnect", (data, start, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Disconnect_NetDataWriter1(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Disconnect", (writer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Flush(
         &mut self,
@@ -160,7 +162,7 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Flush", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMaxSinglePacketSize(
         &mut self,
@@ -171,7 +173,7 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetMaxSinglePacketSize", (options))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPacketsCountInReliableQueue(
         &mut self,
@@ -183,26 +185,26 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetPacketsCountInReliableQueue", (channelNumber, ordered))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_NetManager_IPEndPoint_i32_0(
-        netManager: *mut crate::LiteNetLib::NetManager,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        netManager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
+        remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         id: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (netManager, remoteEndPoint, id))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i64_u8_2(
-        netManager: *mut crate::LiteNetLib::NetManager,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        netManager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
+        remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         id: i32,
         connectId: i64,
         connectNum: u8,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -210,15 +212,15 @@ impl crate::LiteNetLib::NetPeer {
                 ".ctor",
                 (netManager, remoteEndPoint, id, connectId, connectNum),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_u8_NetDataWriter1(
-        netManager: *mut crate::LiteNetLib::NetManager,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        netManager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
+        remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         id: i32,
         connectNum: u8,
-        connectData: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        connectData: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -226,78 +228,80 @@ impl crate::LiteNetLib::NetPeer {
                 ".ctor",
                 (netManager, remoteEndPoint, id, connectNum, connectData),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessConnectAccept(
         &mut self,
-        packet: *mut crate::LiteNetLib::NetConnectAcceptPacket,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetConnectAcceptPacket>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ProcessConnectAccept", (packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessConnectRequest(
         &mut self,
-        connRequest: *mut crate::LiteNetLib::NetConnectRequestPacket,
+        connRequest: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::NetConnectRequestPacket,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::LiteNetLib::ConnectRequestResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::LiteNetLib::ConnectRequestResult = __cordl_object
             .invoke("ProcessConnectRequest", (connRequest))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessDisconnect(
         &mut self,
-        packet: *mut crate::LiteNetLib::NetPacket,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     ) -> quest_hook::libil2cpp::Result<crate::LiteNetLib::DisconnectResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::LiteNetLib::DisconnectResult = __cordl_object
             .invoke("ProcessDisconnect", (packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessMtuPacket(
         &mut self,
-        packet: *mut crate::LiteNetLib::NetPacket,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessMtuPacket", (packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessPacket(
         &mut self,
-        packet: *mut crate::LiteNetLib::NetPacket,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessPacket", (packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RecycleAndDeliver(
         &mut self,
-        packet: *mut crate::LiteNetLib::NetPacket,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RecycleAndDeliver", (packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reject(
         &mut self,
         connectionId: i64,
         connectionNumber: u8,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -306,16 +310,16 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reject", (connectionId, connectionNumber, data, start, length))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendInternal(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
         length: i32,
         channelNumber: u8,
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
-        userData: *mut quest_hook::libil2cpp::Il2CppObject,
+        userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -325,7 +329,7 @@ impl crate::LiteNetLib::NetPeer {
                 "SendInternal",
                 (data, start, length, channelNumber, deliveryMethod, userData),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendMerged(
         &mut self,
@@ -335,27 +339,27 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendMerged", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendUserData(
         &mut self,
-        packet: *mut crate::LiteNetLib::NetPacket,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendUserData", (packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendWithDeliveryEvent_Il2CppArray_i32_i32_u8_DeliveryMethod_Il2CppObject1(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
         length: i32,
         channelNumber: u8,
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
-        userData: *mut quest_hook::libil2cpp::Il2CppObject,
+        userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -365,14 +369,14 @@ impl crate::LiteNetLib::NetPeer {
                 "SendWithDeliveryEvent",
                 (data, start, length, channelNumber, deliveryMethod, userData),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendWithDeliveryEvent_Il2CppArray_u8_DeliveryMethod_Il2CppObject0(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         channelNumber: u8,
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
-        userData: *mut quest_hook::libil2cpp::Il2CppObject,
+        userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -382,14 +386,14 @@ impl crate::LiteNetLib::NetPeer {
                 "SendWithDeliveryEvent",
                 (data, channelNumber, deliveryMethod, userData),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendWithDeliveryEvent_NetDataWriter_u8_DeliveryMethod_Il2CppObject2(
         &mut self,
-        dataWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        dataWriter: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         channelNumber: u8,
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
-        userData: *mut quest_hook::libil2cpp::Il2CppObject,
+        userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -399,11 +403,11 @@ impl crate::LiteNetLib::NetPeer {
                 "SendWithDeliveryEvent",
                 (dataWriter, channelNumber, deliveryMethod, userData),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Send_Il2CppArray_DeliveryMethod0(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -411,11 +415,11 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Send", (data, deliveryMethod))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Send_Il2CppArray_i32_i32_DeliveryMethod2(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
         length: i32,
         options: crate::LiteNetLib::DeliveryMethod,
@@ -425,11 +429,11 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Send", (data, start, length, options))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Send_Il2CppArray_i32_i32_u8_DeliveryMethod5(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
         length: i32,
         channelNumber: u8,
@@ -440,11 +444,11 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Send", (data, start, length, channelNumber, deliveryMethod))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Send_Il2CppArray_u8_DeliveryMethod3(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         channelNumber: u8,
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -453,11 +457,11 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Send", (data, channelNumber, deliveryMethod))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Send_NetDataWriter_DeliveryMethod1(
         &mut self,
-        dataWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        dataWriter: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -465,11 +469,11 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Send", (dataWriter, deliveryMethod))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Send_NetDataWriter_u8_DeliveryMethod4(
         &mut self,
-        dataWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        dataWriter: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         channelNumber: u8,
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -478,7 +482,7 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Send", (dataWriter, channelNumber, deliveryMethod))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetMtu(
         &mut self,
@@ -489,11 +493,11 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetMtu", (mtuIdx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Shutdown(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
         length: i32,
         force: bool,
@@ -503,7 +507,7 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: crate::LiteNetLib::ShutdownResult = __cordl_object
             .invoke("Shutdown", (data, start, length, force))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -514,7 +518,7 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (deltaTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateMtuLogic(
         &mut self,
@@ -525,7 +529,7 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateMtuLogic", (deltaTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateRoundTripTime(
         &mut self,
@@ -536,12 +540,12 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateRoundTripTime", (roundTripTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_NetManager_IPEndPoint_i32_0(
         &mut self,
-        netManager: *mut crate::LiteNetLib::NetManager,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        netManager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
+        remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         id: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -549,12 +553,12 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (netManager, remoteEndPoint, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i64_u8_2(
         &mut self,
-        netManager: *mut crate::LiteNetLib::NetManager,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        netManager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
+        remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         id: i32,
         connectId: i64,
         connectNum: u8,
@@ -564,36 +568,36 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (netManager, remoteEndPoint, id, connectId, connectNum))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u8_NetDataWriter1(
         &mut self,
-        netManager: *mut crate::LiteNetLib::NetManager,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        netManager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
+        remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         id: i32,
         connectNum: u8,
-        connectData: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        connectData: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (netManager, remoteEndPoint, id, connectNum, connectData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ConnectTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_ConnectTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ConnectionNum(&mut self) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u8 = __cordl_object.invoke("get_ConnectionNum", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ConnectionState(
         &mut self,
@@ -603,28 +607,28 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: crate::LiteNetLib::ConnectionState = __cordl_object
             .invoke("get_ConnectionState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Mtu(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Mtu", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Ping(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Ping", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RemoteTimeDelta(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_RemoteTimeDelta", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RemoteUtcTime(
         &mut self,
@@ -634,21 +638,21 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: crate::System::DateTime = __cordl_object
             .invoke("get_RemoteUtcTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ResendDelay(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f64 = __cordl_object.invoke("get_ResendDelay", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TimeSinceLastPacket(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_TimeSinceLastPacket", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ConnectionNum(
         &mut self,
@@ -659,7 +663,7 @@ impl crate::LiteNetLib::NetPeer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ConnectionNum", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+NetPeer")]
@@ -703,12 +707,12 @@ impl std::ops::DerefMut for crate::LiteNetLib::NetPeer_IncomingFragments {
 }
 #[cfg(feature = "LiteNetLib+NetPeer+IncomingFragments")]
 impl crate::LiteNetLib::NetPeer_IncomingFragments {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -718,7 +722,7 @@ impl crate::LiteNetLib::NetPeer_IncomingFragments {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+NetPeer+IncomingFragments")]

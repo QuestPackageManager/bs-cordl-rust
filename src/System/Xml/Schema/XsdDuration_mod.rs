@@ -34,24 +34,28 @@ impl crate::System::Xml::Schema::XsdDuration {
     pub type Parts = crate::System::Xml::Schema::XsdDuration_Parts;
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_XsdDuration_DurationType1(
         &mut self,
         durationType: crate::System::Xml::Schema::XsdDuration_DurationType,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (durationType),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToTimeSpan_0(
         &mut self,
@@ -61,7 +65,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             "ToTimeSpan",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToTimeSpan_XsdDuration_DurationType1(
         &mut self,
@@ -72,45 +76,49 @@ impl crate::System::Xml::Schema::XsdDuration {
             "ToTimeSpan",
             (durationType),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryToTimeSpan_ByRefMut0(
         &mut self,
         result: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
-        let __cordl_ret: *mut crate::System::Exception = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "TryToTimeSpan",
             (result),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryToTimeSpan_XsdDuration_DurationType_ByRefMut1(
         &mut self,
         durationType: crate::System::Xml::Schema::XsdDuration_DurationType,
         result: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
-        let __cordl_ret: *mut crate::System::Exception = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "TryToTimeSpan",
             (durationType, result),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString3(
         &mut self,
-        s: *mut quest_hook::libil2cpp::Il2CppString,
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (s),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_XsdDuration_DurationType4(
         &mut self,
-        s: *mut quest_hook::libil2cpp::Il2CppString,
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         durationType: crate::System::Xml::Schema::XsdDuration_DurationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -118,7 +126,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             ".ctor",
             (s, durationType),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_TimeSpan1(
         &mut self,
@@ -129,7 +137,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             ".ctor",
             (timeSpan),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_TimeSpan_XsdDuration_DurationType2(
         &mut self,
@@ -141,7 +149,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             ".ctor",
             (timeSpan, durationType),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool_i32_i32_i32_i32_i32_i32_i32_0(
         &mut self,
@@ -159,7 +167,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             ".ctor",
             (isNegative, years, months, days, hours, minutes, seconds, nanoseconds),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Days(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -167,7 +175,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             "get_Days",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Hours(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -175,7 +183,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             "get_Hours",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsNegative(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -183,7 +191,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             "get_IsNegative",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Minutes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -191,7 +199,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             "get_Minutes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Months(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -199,7 +207,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             "get_Months",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Nanoseconds(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -207,7 +215,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             "get_Nanoseconds",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Seconds(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -215,7 +223,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             "get_Seconds",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Years(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -223,7 +231,7 @@ impl crate::System::Xml::Schema::XsdDuration {
             "get_Years",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]

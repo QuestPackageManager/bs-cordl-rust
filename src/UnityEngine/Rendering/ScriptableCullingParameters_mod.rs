@@ -56,14 +56,14 @@ impl crate::UnityEngine::Rendering::ScriptableCullingParameters {
     pub type _m_LayerFarCullDistances_e__FixedBuffer = crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDistances_e__FixedBuffer;
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_ScriptableCullingParameters0(
         &mut self,
@@ -74,7 +74,7 @@ impl crate::UnityEngine::Rendering::ScriptableCullingParameters {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCullingPlane(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::UnityEngine::Rendering::ScriptableCullingParameters {
             "GetCullingPlane",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -93,7 +93,7 @@ impl crate::UnityEngine::Rendering::ScriptableCullingParameters {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLayerCullingDistance(
         &mut self,
@@ -104,7 +104,7 @@ impl crate::UnityEngine::Rendering::ScriptableCullingParameters {
             "GetLayerCullingDistance",
             (layerIndex),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_cullingPlaneCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -112,7 +112,7 @@ impl crate::UnityEngine::Rendering::ScriptableCullingParameters {
             "get_cullingPlaneCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

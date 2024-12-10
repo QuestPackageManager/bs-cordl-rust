@@ -56,7 +56,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposeManaged))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoIMGUIRepaint(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoIMGUIRepaint", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoMeasure(
         &mut self,
@@ -91,16 +91,16 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("DoMeasure", (desiredWidth, widthMode, desiredHeight, heightMode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoOnGUI(
         &mut self,
-        evt: *mut crate::UnityEngine::Event,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
         parentTransform: crate::UnityEngine::Matrix4x4,
         clippingRect: crate::UnityEngine::Rect,
         isComputingLayout: bool,
         layoutSize: crate::UnityEngine::Rect,
-        onGUIHandler: *mut crate::System::Action,
+        onGUIHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
         canAffectFocus: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -119,18 +119,18 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
                     canAffectFocus,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExecuteDefaultAction(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExecuteDefaultAction", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCurrentClipRect(
         &mut self,
@@ -140,12 +140,12 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
             .invoke("GetCurrentClipRect", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleIMGUIEvent_Action__cordl_bool1(
         &mut self,
-        e: *mut crate::UnityEngine::Event,
-        onGUIHandler: *mut crate::System::Action,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+        onGUIHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
         canAffectFocus: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -153,14 +153,14 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("HandleIMGUIEvent", (e, onGUIHandler, canAffectFocus))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleIMGUIEvent_Matrix4x4_Rect_Action__cordl_bool2(
         &mut self,
-        e: *mut crate::UnityEngine::Event,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
         worldTransform: crate::UnityEngine::Matrix4x4,
         clippingRect: crate::UnityEngine::Rect,
-        onGUIHandler: *mut crate::System::Action,
+        onGUIHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
         canAffectFocus: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -171,11 +171,11 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
                 "HandleIMGUIEvent",
                 (e, worldTransform, clippingRect, onGUIHandler, canAffectFocus),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleIMGUIEvent__cordl_bool0(
         &mut self,
-        e: *mut crate::UnityEngine::Event,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
         canAffectFocus: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -183,7 +183,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("HandleIMGUIEvent", (e, canAffectFocus))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsContainerCapturingTheMouse(
         &mut self,
@@ -193,28 +193,28 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsContainerCapturingTheMouse", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsEventInsideLocalWindow(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsEventInsideLocalWindow", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsLocalEvent(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsLocalEvent", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkDirtyLayout(
         &mut self,
@@ -224,45 +224,47 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkDirtyLayout", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Action1(
-        onGUIHandler: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        onGUIHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (onGUIHandler))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnGenerateVisualContent(
         &mut self,
-        mgc: *mut crate::UnityEngine::UIElements::MeshGenerationContext,
+        mgc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MeshGenerationContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnGenerateVisualContent", (mgc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessEvent(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessEvent", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RestoreGlobals(
         &mut self,
@@ -272,7 +274,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RestoreGlobals", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SaveGlobals(
         &mut self,
@@ -282,11 +284,11 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SaveGlobals", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendEventToIMGUI(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         canAffectFocus: bool,
         verifyBounds: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -295,11 +297,11 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("SendEventToIMGUI", (evt, canAffectFocus, verifyBounds))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendEventToIMGUIRaw(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         canAffectFocus: bool,
         verifyBounds: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -308,7 +310,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("SendEventToIMGUIRaw", (evt, canAffectFocus, verifyBounds))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetFoldoutDepthClass(
         &mut self,
@@ -318,17 +320,17 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetFoldoutDepthClass", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn VerifyBounds(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("VerifyBounds", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _DoOnGUI_b__56_0(
         &mut self,
@@ -338,7 +340,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<DoOnGUI>b__56_0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -348,37 +350,38 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Action1(
         &mut self,
-        onGUIHandler: *mut crate::System::Action,
+        onGUIHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (onGUIHandler))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_cache(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::GUILayoutUtility_LayoutCache,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutUtility_LayoutCache>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GUILayoutUtility_LayoutCache = __cordl_object
-            .invoke("get_cache", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::GUILayoutUtility_LayoutCache,
+        > = __cordl_object.invoke("get_cache", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_canGrabFocus(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_canGrabFocus", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_contextType(
         &mut self,
@@ -388,14 +391,14 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::ContextType = __cordl_object
             .invoke("get_contextType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_cullingEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_cullingEnabled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_focusOnlyIfHasFocusableControls(
         &mut self,
@@ -405,17 +408,19 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_focusOnlyIfHasFocusableControls", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_guiState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ObjectGUIState> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ObjectGUIState>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ObjectGUIState = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ObjectGUIState> = __cordl_object
             .invoke("get_guiState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lastWorldClip(
         &mut self,
@@ -425,31 +430,33 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
             .invoke("get_lastWorldClip", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_layoutMeasuredHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_layoutMeasuredHeight", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_layoutMeasuredWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_layoutMeasuredWidth", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_onGUIHandler(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Action = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = __cordl_object
             .invoke("get_onGUIHandler", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_contextType(
         &mut self,
@@ -460,7 +467,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_contextType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_lastWorldClip(
         &mut self,
@@ -471,18 +478,18 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_lastWorldClip", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_onGUIHandler(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_onGUIHandler", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer")]
@@ -559,12 +566,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IMGUIContainer_UxmlF
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
 impl crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -574,7 +581,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
@@ -614,12 +621,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IMGUIContainer_UxmlT
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
 impl crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -629,7 +636,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]

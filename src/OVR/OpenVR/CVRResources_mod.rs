@@ -27,9 +27,11 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRResources {
 impl crate::OVR::OpenVR::CVRResources {
     pub fn GetResourceFullPath(
         &mut self,
-        pchResourceName: *mut quest_hook::libil2cpp::Il2CppString,
-        pchResourceTypeDirectory: *mut quest_hook::libil2cpp::Il2CppString,
-        pchPathBuffer: *mut crate::System::Text::StringBuilder,
+        pchResourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        pchResourceTypeDirectory: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        pchPathBuffer: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unBufferLen: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -40,12 +42,12 @@ impl crate::OVR::OpenVR::CVRResources {
                 "GetResourceFullPath",
                 (pchResourceName, pchResourceTypeDirectory, pchPathBuffer, unBufferLen),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadSharedResource(
         &mut self,
-        pchResourceName: *mut quest_hook::libil2cpp::Il2CppString,
-        pchBuffer: *mut quest_hook::libil2cpp::Il2CppString,
+        pchResourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        pchBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         unBufferLen: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -53,16 +55,16 @@ impl crate::OVR::OpenVR::CVRResources {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke("LoadSharedResource", (pchResourceName, pchBuffer, unBufferLen))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pInterface))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -73,7 +75,7 @@ impl crate::OVR::OpenVR::CVRResources {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (pInterface))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRResources")]

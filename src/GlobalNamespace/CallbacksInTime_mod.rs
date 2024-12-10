@@ -43,55 +43,65 @@ impl std::ops::DerefMut for crate::GlobalNamespace::CallbacksInTime {
 impl crate::GlobalNamespace::CallbacksInTime {
     pub fn AddCallback(
         &mut self,
-        callbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+        callbackWrapper: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddCallback", (callbackWrapper))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CallCallbacks_BeatmapDataItem0(
         &mut self,
-        beatmapDataItem: *mut crate::GlobalNamespace::BeatmapDataItem,
+        beatmapDataItem: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataItem,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CallCallbacks", (beatmapDataItem))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CallCallbacks_Type_BeatmapDataItem1(
         &mut self,
-        beatmapEventDataType: *mut crate::System::Type,
-        beatmapDataItem: *mut crate::GlobalNamespace::BeatmapDataItem,
+        beatmapEventDataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        beatmapDataItem: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataItem,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CallCallbacks", (beatmapEventDataType, beatmapDataItem))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(aheadTime: f32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        aheadTime: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (aheadTime))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveCallback(
         &mut self,
-        callbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+        callbackWrapper: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveCallback", (callbackWrapper))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -102,14 +112,14 @@ impl crate::GlobalNamespace::CallbacksInTime {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (aheadTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isEmpty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "CallbacksInTime")]

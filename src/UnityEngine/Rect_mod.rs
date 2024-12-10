@@ -32,7 +32,7 @@ impl crate::UnityEngine::Rect {
             "Contains",
             (point),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Contains_Vector3_1(
         &mut self,
@@ -43,18 +43,18 @@ impl crate::UnityEngine::Rect {
             "Contains",
             (point),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
-        other: *mut quest_hook::libil2cpp::Il2CppObject,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Rect1(
         &mut self,
@@ -65,7 +65,7 @@ impl crate::UnityEngine::Rect {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -73,7 +73,7 @@ impl crate::UnityEngine::Rect {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Overlaps_Rect0(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::UnityEngine::Rect {
             "Overlaps",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Overlaps__cordl_bool1(
         &mut self,
@@ -96,29 +96,33 @@ impl crate::UnityEngine::Rect {
             "Overlaps",
             (other, allowInverse),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider1(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
-        formatProvider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (format, formatProvider),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Rect2(
         &mut self,
@@ -129,7 +133,7 @@ impl crate::UnityEngine::Rect {
             ".ctor",
             (source),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Vector2_Vector2_1(
         &mut self,
@@ -141,7 +145,7 @@ impl crate::UnityEngine::Rect {
             ".ctor",
             (position, _cordl_size),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_f32_f32_0(
         &mut self,
@@ -155,7 +159,7 @@ impl crate::UnityEngine::Rect {
             ".ctor",
             (x, y, width, height),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_center(
         &mut self,
@@ -165,7 +169,7 @@ impl crate::UnityEngine::Rect {
             "get_center",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -173,7 +177,7 @@ impl crate::UnityEngine::Rect {
             "get_height",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_max(
         &mut self,
@@ -183,7 +187,7 @@ impl crate::UnityEngine::Rect {
             "get_max",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_min(
         &mut self,
@@ -193,7 +197,7 @@ impl crate::UnityEngine::Rect {
             "get_min",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_position(
         &mut self,
@@ -203,7 +207,7 @@ impl crate::UnityEngine::Rect {
             "get_position",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_size(
         &mut self,
@@ -213,7 +217,7 @@ impl crate::UnityEngine::Rect {
             "get_size",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -221,7 +225,7 @@ impl crate::UnityEngine::Rect {
             "get_width",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -229,7 +233,7 @@ impl crate::UnityEngine::Rect {
             "get_x",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xMax(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -237,7 +241,7 @@ impl crate::UnityEngine::Rect {
             "get_xMax",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xMin(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -245,7 +249,7 @@ impl crate::UnityEngine::Rect {
             "get_xMin",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_y(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -253,7 +257,7 @@ impl crate::UnityEngine::Rect {
             "get_y",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yMax(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -261,7 +265,7 @@ impl crate::UnityEngine::Rect {
             "get_yMax",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yMin(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -269,7 +273,7 @@ impl crate::UnityEngine::Rect {
             "get_yMin",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_height(
         &mut self,
@@ -280,7 +284,7 @@ impl crate::UnityEngine::Rect {
             "set_height",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_max(
         &mut self,
@@ -291,7 +295,7 @@ impl crate::UnityEngine::Rect {
             "set_max",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_min(
         &mut self,
@@ -302,7 +306,7 @@ impl crate::UnityEngine::Rect {
             "set_min",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_position(
         &mut self,
@@ -313,7 +317,7 @@ impl crate::UnityEngine::Rect {
             "set_position",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_size(
         &mut self,
@@ -324,7 +328,7 @@ impl crate::UnityEngine::Rect {
             "set_size",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_width(
         &mut self,
@@ -335,7 +339,7 @@ impl crate::UnityEngine::Rect {
             "set_width",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_x(
         &mut self,
@@ -346,7 +350,7 @@ impl crate::UnityEngine::Rect {
             "set_x",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xMax(
         &mut self,
@@ -357,7 +361,7 @@ impl crate::UnityEngine::Rect {
             "set_xMax",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xMin(
         &mut self,
@@ -368,7 +372,7 @@ impl crate::UnityEngine::Rect {
             "set_xMin",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_y(
         &mut self,
@@ -379,7 +383,7 @@ impl crate::UnityEngine::Rect {
             "set_y",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yMax(
         &mut self,
@@ -390,7 +394,7 @@ impl crate::UnityEngine::Rect {
             "set_yMax",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yMin(
         &mut self,
@@ -401,6 +405,6 @@ impl crate::UnityEngine::Rect {
             "set_yMin",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -37,19 +37,25 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RunLevelMenuDestination {
 #[cfg(feature = "RunLevelMenuDestination")]
 impl crate::GlobalNamespace::RunLevelMenuDestination {
     pub fn New(
-        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapLevelPack: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelPack,
+        >,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
         practice: bool,
         startSongTime: f32,
         songSpeedMultiplier: f32,
         overrideEnvironments: bool,
-        environmentType: *mut quest_hook::libil2cpp::Il2CppString,
-        environmentName: *mut quest_hook::libil2cpp::Il2CppString,
+        environmentType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quitAppAfterRun: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -70,21 +76,27 @@ impl crate::GlobalNamespace::RunLevelMenuDestination {
                     quitAppAfterRun,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapLevelPack: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelPack,
+        >,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
         practice: bool,
         startSongTime: f32,
         songSpeedMultiplier: f32,
         overrideEnvironments: bool,
-        environmentType: *mut quest_hook::libil2cpp::Il2CppString,
-        environmentName: *mut quest_hook::libil2cpp::Il2CppString,
+        environmentType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quitAppAfterRun: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -108,7 +120,7 @@ impl crate::GlobalNamespace::RunLevelMenuDestination {
                     quitAppAfterRun,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "RunLevelMenuDestination")]

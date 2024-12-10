@@ -181,7 +181,7 @@ impl<
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Enumerable_Iterator_1<TSource>,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Enumerable_Iterator_1<TSource>>,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -190,9 +190,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Enumerable_Iterator_1<TSource> = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Enumerable_Iterator_1<TSource>,
+        > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -206,12 +207,14 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<TSource>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TSource>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -220,10 +223,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            TSource,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TSource>,
         > = __cordl_object.invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -234,9 +237,9 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -245,13 +248,15 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Select<TResult>(
         &mut self,
-        selector: *mut crate::System::Func_2<TSource, TResult>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -262,14 +267,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
         > = __cordl_object.invoke("Select", (selector))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -277,9 +284,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_Reset(
         &mut self,
@@ -293,27 +301,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.Collections.IEnumerator.Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
-    where
-        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("System.Collections.IEnumerator.get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Where(
-        &mut self,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -322,10 +315,30 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TSource,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("System.Collections.IEnumerator.get_Current", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Where(
+        &mut self,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+    >
+    where
+        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
         > = __cordl_object.invoke("Where", (predicate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -337,7 +350,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<TSource>
     where
@@ -348,7 +361,7 @@ impl<
             self,
         );
         let __cordl_ret: TSource = __cordl_object.invoke("get_Current", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Enumerable+Iterator_1")]
@@ -398,7 +411,7 @@ impl<
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Enumerable_Iterator_1<TSource>,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Enumerable_Iterator_1<TSource>>,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -407,9 +420,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Enumerable_Iterator_1<TSource> = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Enumerable_Iterator_1<TSource>,
+        > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -420,12 +434,12 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        source: *mut quest_hook::libil2cpp::Il2CppArray<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TSource>>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -434,13 +448,15 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (source, predicate))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Select<TResult>(
         &mut self,
-        selector: *mut crate::System::Func_2<TSource, TResult>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -451,16 +467,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
         > = __cordl_object.invoke("Select", (selector))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Where(
         &mut self,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -469,15 +487,15 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TSource,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
         > = __cordl_object.invoke("Where", (predicate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        source: *mut quest_hook::libil2cpp::Il2CppArray<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TSource>>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -488,7 +506,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (source, predicate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereArrayIterator_1")]
@@ -539,7 +557,7 @@ impl<
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Enumerable_Iterator_1<TSource>,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Enumerable_Iterator_1<TSource>>,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -548,9 +566,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Enumerable_Iterator_1<TSource> = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Enumerable_Iterator_1<TSource>,
+        > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -564,7 +583,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -575,12 +594,14 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        source: *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -589,13 +610,15 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (source, predicate))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Select<TResult>(
         &mut self,
-        selector: *mut crate::System::Func_2<TSource, TResult>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -606,16 +629,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
         > = __cordl_object.invoke("Select", (selector))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Where(
         &mut self,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -624,15 +649,17 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TSource,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
         > = __cordl_object.invoke("Where", (predicate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        source: *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -643,7 +670,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (source, predicate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereEnumerableIterator_1")]
@@ -693,7 +720,7 @@ impl<
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Enumerable_Iterator_1<TSource>,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Enumerable_Iterator_1<TSource>>,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -702,9 +729,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Enumerable_Iterator_1<TSource> = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Enumerable_Iterator_1<TSource>,
+        > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -715,12 +743,14 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        source: *mut crate::System::Collections::Generic::List_1<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TSource>,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -729,13 +759,15 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (source, predicate))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Select<TResult>(
         &mut self,
-        selector: *mut crate::System::Func_2<TSource, TResult>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -746,16 +778,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
         > = __cordl_object.invoke("Select", (selector))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Where(
         &mut self,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -764,15 +798,17 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TSource,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
         > = __cordl_object.invoke("Where", (predicate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        source: *mut crate::System::Collections::Generic::List_1<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TSource>,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -783,7 +819,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (source, predicate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereListIterator_1")]
@@ -846,7 +882,7 @@ impl<
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Enumerable_Iterator_1<TResult>,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Enumerable_Iterator_1<TResult>>,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -857,9 +893,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Enumerable_Iterator_1<TResult> = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Enumerable_Iterator_1<TResult>,
+        > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -872,13 +909,13 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        source: *mut quest_hook::libil2cpp::Il2CppArray<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
-        selector: *mut crate::System::Func_2<TSource, TResult>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TSource>>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -889,13 +926,15 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (source, predicate, selector))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Select<TResult2>(
         &mut self,
-        selector: *mut crate::System::Func_2<TResult, TResult2>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, TResult2>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TResult2>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult2>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -908,16 +947,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TResult2,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult2>,
         > = __cordl_object.invoke("Select", (selector))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Where(
         &mut self,
-        predicate: *mut crate::System::Func_2<TResult, bool>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, bool>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -928,16 +969,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
         > = __cordl_object.invoke("Where", (predicate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        source: *mut quest_hook::libil2cpp::Il2CppArray<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
-        selector: *mut crate::System::Func_2<TSource, TResult>,
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TSource>>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -950,7 +991,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (source, predicate, selector))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereSelectArrayIterator_2")]
@@ -1016,7 +1057,7 @@ impl<
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Enumerable_Iterator_1<TResult>,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Enumerable_Iterator_1<TResult>>,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1027,9 +1068,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Enumerable_Iterator_1<TResult> = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Enumerable_Iterator_1<TResult>,
+        > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -1045,7 +1087,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -1058,13 +1100,15 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        source: *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
-        selector: *mut crate::System::Func_2<TSource, TResult>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1075,13 +1119,15 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (source, predicate, selector))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Select<TResult2>(
         &mut self,
-        selector: *mut crate::System::Func_2<TResult, TResult2>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, TResult2>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TResult2>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult2>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1094,16 +1140,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TResult2,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult2>,
         > = __cordl_object.invoke("Select", (selector))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Where(
         &mut self,
-        predicate: *mut crate::System::Func_2<TResult, bool>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, bool>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1114,16 +1162,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
         > = __cordl_object.invoke("Where", (predicate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        source: *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
-        selector: *mut crate::System::Func_2<TSource, TResult>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1136,7 +1186,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (source, predicate, selector))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
@@ -1202,7 +1252,7 @@ impl<
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Enumerable_Iterator_1<TResult>,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Enumerable_Iterator_1<TResult>>,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1213,9 +1263,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Enumerable_Iterator_1<TResult> = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Enumerable_Iterator_1<TResult>,
+        > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -1228,13 +1279,15 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        source: *mut crate::System::Collections::Generic::List_1<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
-        selector: *mut crate::System::Func_2<TSource, TResult>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TSource>,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1245,13 +1298,15 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (source, predicate, selector))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Select<TResult2>(
         &mut self,
-        selector: *mut crate::System::Func_2<TResult, TResult2>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, TResult2>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TResult2>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult2>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1264,16 +1319,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TResult2,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult2>,
         > = __cordl_object.invoke("Select", (selector))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Where(
         &mut self,
-        predicate: *mut crate::System::Func_2<TResult, bool>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, bool>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1284,16 +1341,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            TResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TResult>,
         > = __cordl_object.invoke("Where", (predicate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        source: *mut crate::System::Collections::Generic::List_1<TSource>,
-        predicate: *mut crate::System::Func_2<TSource, bool>,
-        selector: *mut crate::System::Func_2<TSource, TResult>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TSource>,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1306,7 +1365,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (source, predicate, selector))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereSelectListIterator_2")]

@@ -40,17 +40,22 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     pub type __c__DisplayClass13_0 = crate::GlobalNamespace::QuickPlaySongPacksDropdown___c__DisplayClass13_0;
     pub fn GetSelectedSerializedName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetSelectedSerializedName", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetSelectedSerializedName", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSimpleTextDropdownDidSelectCellWithIdx(
         &mut self,
-        dropdownWithTableView: *mut crate::HMUI::DropdownWithTableView,
+        dropdownWithTableView: quest_hook::libil2cpp::Gc<
+            crate::HMUI::DropdownWithTableView,
+        >,
         idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -61,7 +66,7 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
                 "HandleSimpleTextDropdownDidSelectCellWithIdx",
                 (dropdownWithTableView, idx),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LazyInit(
         &mut self,
@@ -71,14 +76,14 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LazyInit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -88,29 +93,31 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SelectCellWithSerializedName(
         &mut self,
-        serializedName: *mut quest_hook::libil2cpp::Il2CppString,
+        serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SelectCellWithSerializedName", (serializedName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetOverrideSongPacks(
         &mut self,
-        quickPlaySongPacksOverride: *mut crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride,
+        quickPlaySongPacksOverride: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetOverrideSongPacks", (quickPlaySongPacksOverride))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -120,33 +127,41 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _LazyInit_b__15_0(
         &mut self,
-        serializedName: *mut quest_hook::libil2cpp::Il2CppString,
+        serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem = __cordl_object
-            .invoke("<LazyInit>b__15_0", (serializedName))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+        > = __cordl_object.invoke("<LazyInit>b__15_0", (serializedName))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _LazyInit_b__15_1(
         &mut self,
-        pack: *mut crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_PredefinedPack,
+        pack: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_PredefinedPack,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem = __cordl_object
-            .invoke("<LazyInit>b__15_1", (pack))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+        > = __cordl_object.invoke("<LazyInit>b__15_1", (pack))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -156,29 +171,29 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
-        value: *mut crate::System::Action_1<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didSelectCellWithIdxEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
-        value: *mut crate::System::Action_1<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didSelectCellWithIdxEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "QuickPlaySongPacksDropdown")]
@@ -224,12 +239,12 @@ for crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem {
 }
 #[cfg(feature = "QuickPlaySongPacksDropdown+SongPackMaskItem")]
 impl crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -239,7 +254,7 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "QuickPlaySongPacksDropdown+SongPackMaskItem")]

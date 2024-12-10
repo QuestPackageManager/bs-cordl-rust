@@ -38,7 +38,7 @@ impl crate::System::Xml::ReadContentAsBinaryHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveToNextContentNode(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::System::Xml::ReadContentAsBinaryHelper {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("MoveToNextContentNode", (moveIfOnContentNode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
@@ -59,7 +59,7 @@ impl crate::System::Xml::ReadContentAsBinaryHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+ReadContentAsBinaryHelper")]

@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IXof {
 impl crate::Org::BouncyCastle::Crypto::IXof {
     pub fn DoFinal(
         &mut self,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outOff: i32,
         outLen: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -35,11 +35,11 @@ impl crate::Org::BouncyCastle::Crypto::IXof {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("DoFinal", (output, outOff, outLen))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoOutput(
         &mut self,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outOff: i32,
         outLen: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -48,7 +48,7 @@ impl crate::Org::BouncyCastle::Crypto::IXof {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("DoOutput", (output, outOff, outLen))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

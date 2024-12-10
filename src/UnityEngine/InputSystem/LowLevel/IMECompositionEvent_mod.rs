@@ -35,6 +35,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionEvent {
             "get_typeStatic",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

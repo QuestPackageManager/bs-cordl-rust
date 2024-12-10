@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetIdxForBeatmapDifficultyMask", (beatmapDifficultyMask))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSelectedBeatmapDifficultyMask(
         &mut self,
@@ -54,11 +54,13 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         );
         let __cordl_ret: crate::GlobalNamespace::BeatmapDifficultyMask = __cordl_object
             .invoke("GetSelectedBeatmapDifficultyMask", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSimpleTextDropdownDidSelectCellWithIdx(
         &mut self,
-        dropdownWithTableView: *mut crate::HMUI::DropdownWithTableView,
+        dropdownWithTableView: quest_hook::libil2cpp::Gc<
+            crate::HMUI::DropdownWithTableView,
+        >,
         idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -69,14 +71,14 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                 "HandleSimpleTextDropdownDidSelectCellWithIdx",
                 (dropdownWithTableView, idx),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -86,7 +88,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SelectCellWithBeatmapDifficultyMask(
         &mut self,
@@ -97,7 +99,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SelectCellWithBeatmapDifficultyMask", (beatmapDifficultyMask))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -107,7 +109,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -117,57 +119,61 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
-        value: *mut crate::System::Action_1<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didSelectCellWithIdxEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_beatmapDifficultyData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<
-                crate::GlobalNamespace::BeatmapDifficultyMask,
-                *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::System::Tuple_2<
+                    crate::GlobalNamespace::BeatmapDifficultyMask,
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
             >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<
-                crate::GlobalNamespace::BeatmapDifficultyMask,
-                *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::System::Tuple_2<
+                    crate::GlobalNamespace::BeatmapDifficultyMask,
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
             >,
         > = __cordl_object.invoke("get_beatmapDifficultyData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_includeAllDifficulties(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_includeAllDifficulties", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
-        value: *mut crate::System::Action_1<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didSelectCellWithIdxEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_includeAllDifficulties(
         &mut self,
@@ -178,7 +184,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_includeAllDifficulties", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapDifficultyDropdown")]

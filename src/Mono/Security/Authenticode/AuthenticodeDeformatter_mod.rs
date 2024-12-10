@@ -44,36 +44,36 @@ impl crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CheckSignature", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompareIssuerSerial(
         &mut self,
-        issuer: *mut quest_hook::libil2cpp::Il2CppString,
-        serial: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        x509: *mut crate::Mono::Security::X509::X509Certificate,
+        issuer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        serial: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        x509: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CompareIssuerSerial", (issuer, serial, x509))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppArray1(
-        rawData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (rawData))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -83,32 +83,36 @@ impl crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn VerifyCounterSignature(
         &mut self,
-        cs: *mut crate::Mono::Security::PKCS7_SignerInfo,
-        signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        cs: quest_hook::libil2cpp::Gc<crate::Mono::Security::PKCS7_SignerInfo>,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("VerifyCounterSignature", (cs, signature))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn VerifySignature(
         &mut self,
-        sd: *mut crate::Mono::Security::PKCS7_SignedData,
-        calculatedMessageDigest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        ha: *mut crate::System::Security::Cryptography::HashAlgorithm,
+        sd: quest_hook::libil2cpp::Gc<crate::Mono::Security::PKCS7_SignedData>,
+        calculatedMessageDigest: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        ha: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::HashAlgorithm,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("VerifySignature", (sd, calculatedMessageDigest, ha))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -118,41 +122,42 @@ impl crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray1(
         &mut self,
-        rawData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rawData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SigningCertificate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::X509::X509Certificate,
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::X509::X509Certificate = __cordl_object
-            .invoke("get_SigningCertificate", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::X509::X509Certificate,
+        > = __cordl_object.invoke("get_SigningCertificate", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_RawData(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_RawData", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Security+Authenticode+AuthenticodeDeformatter")]

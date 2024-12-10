@@ -28,23 +28,29 @@ for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
 impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
     pub fn GetGameLiftPlayerSessionInfo(
         &mut self,
-        authenticationTokenProvider: *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
-        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        authenticationTokenProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IAuthenticationTokenProvider,
+        >,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
-        secret: *mut quest_hook::libil2cpp::Il2CppString,
-        code: *mut quest_hook::libil2cpp::Il2CppString,
+        secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::BGNet::Core::GameLift::PlayerSessionInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::BGNet::Core::GameLift::PlayerSessionInfo,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::BGNet::Core::GameLift::PlayerSessionInfo,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::BGNet::Core::GameLift::PlayerSessionInfo,
+            >,
         > = __cordl_object
             .invoke(
                 "GetGameLiftPlayerSessionInfo",
@@ -58,7 +64,7 @@ impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
                     cancellationToken,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

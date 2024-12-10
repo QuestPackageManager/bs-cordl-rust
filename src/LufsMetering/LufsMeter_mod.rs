@@ -35,18 +35,20 @@ impl crate::LufsMetering::LufsMeter {
     pub type __c = crate::LufsMetering::LufsMeter___c;
     pub fn AnalyzeClipLoudness(
         &mut self,
-        clip: *mut crate::UnityEngine::AudioClip,
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::LoudnessData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::LufsMetering::LoudnessData = __cordl_object
             .invoke("AnalyzeClipLoudness", (clip))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IntegratedLoudness(
         &mut self,
-        interleavedData: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        interleavedData: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
         numChannels: i32,
         rate: i32,
     ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::LoudnessData> {
@@ -55,11 +57,13 @@ impl crate::LufsMetering::LufsMeter {
         );
         let __cordl_ret: crate::LufsMetering::LoudnessData = __cordl_object
             .invoke("IntegratedLoudness", (interleavedData, numChannels, rate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MomentaryLoudness(
         &mut self,
-        interleavedData: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        interleavedData: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
         numChannels: i32,
         rate: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -68,14 +72,14 @@ impl crate::LufsMetering::LufsMeter {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("MomentaryLoudness", (interleavedData, numChannels, rate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SwapData(
         &mut self,
@@ -85,7 +89,7 @@ impl crate::LufsMetering::LufsMeter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SwapData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -95,7 +99,7 @@ impl crate::LufsMetering::LufsMeter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LufsMetering+LufsMeter")]

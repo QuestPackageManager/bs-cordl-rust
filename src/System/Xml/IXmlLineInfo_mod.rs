@@ -29,7 +29,7 @@ impl crate::System::Xml::IXmlLineInfo {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasLineInfo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -41,14 +41,14 @@ impl crate::System::Xml::IXmlLineInfo {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_LineNumber", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LinePosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_LinePosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+IXmlLineInfo")]

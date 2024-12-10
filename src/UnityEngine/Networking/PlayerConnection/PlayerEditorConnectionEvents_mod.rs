@@ -60,22 +60,26 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         &mut self,
         messageId: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::Events::UnityEvent_1<
-            *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityEvent_1<
+                *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Events::UnityEvent_1<
-            *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityEvent_1<
+                *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+            >,
         > = __cordl_object.invoke("AddAndCreate", (messageId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokeMessageIdSubscribers(
         &mut self,
         messageId: crate::System::Guid,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         playerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -83,20 +87,22 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokeMessageIdSubscribers", (messageId, data, playerId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UnregisterManagedCallback(
         &mut self,
         messageId: crate::System::Guid,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<
-            *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<
+                *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -104,7 +110,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnregisterManagedCallback", (messageId, callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -114,7 +120,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
@@ -167,12 +173,12 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
 )]
 impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -182,7 +188,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -241,12 +247,12 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
 )]
 impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -256,7 +262,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -314,12 +320,12 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
 )]
 impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -329,7 +335,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MessageTypeId(
         &mut self,
@@ -339,7 +345,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         );
         let __cordl_ret: crate::System::Guid = __cordl_object
             .invoke("get_MessageTypeId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_MessageTypeId(
         &mut self,
@@ -350,7 +356,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_MessageTypeId", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

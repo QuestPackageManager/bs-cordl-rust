@@ -34,7 +34,7 @@ impl crate::System::Runtime::CompilerServices::ITuple {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+ITuple")]

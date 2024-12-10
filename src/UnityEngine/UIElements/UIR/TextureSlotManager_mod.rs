@@ -40,21 +40,21 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         id: crate::UnityEngine::UIElements::TextureId,
         sdfScale: f32,
         slot: i32,
-        mat: *mut crate::UnityEngine::MaterialPropertyBlock,
+        mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Bind", (id, sdfScale, slot, mat))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindOldestSlot(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("FindOldestSlot", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IndexOf(
         &mut self,
@@ -64,7 +64,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkUsed(
         &mut self,
@@ -75,14 +75,14 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkUsed", (slotIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGpuData(
         &mut self,
@@ -110,7 +110,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
                 "SetGpuData",
                 (slotIndex, id, textureWidth, textureHeight, sdfScale),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartNewBatch(
         &mut self,
@@ -120,7 +120,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartNewBatch", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -130,14 +130,14 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_FreeSlots(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_FreeSlots", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_FreeSlots(
         &mut self,
@@ -148,7 +148,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_FreeSlots", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TextureSlotManager")]

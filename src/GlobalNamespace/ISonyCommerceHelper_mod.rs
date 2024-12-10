@@ -34,56 +34,68 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
     pub type GetAdditionalContentEntitlementsResult = crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult;
     pub fn DisplayCategoryBrowseDialogAsync(
         &mut self,
-        categoryLabel: *mut quest_hook::libil2cpp::Il2CppString,
+        categoryLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
+            >,
         > = __cordl_object
             .invoke("DisplayCategoryBrowseDialogAsync", (categoryLabel, token))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisplayProductBrowseDialogAsync(
         &mut self,
-        productLabel: *mut quest_hook::libil2cpp::Il2CppString,
+        productLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
+            >,
         > = __cordl_object
             .invoke("DisplayProductBrowseDialogAsync", (productLabel, token))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAdditionalContentEntitlementsAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
+            >,
         > = __cordl_object
             .invoke("GetAdditionalContentEntitlementsAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

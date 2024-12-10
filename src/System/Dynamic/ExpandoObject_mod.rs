@@ -44,36 +44,42 @@ impl crate::System::Dynamic::ExpandoObject {
     pub type _GetExpandoEnumerator_d__51 = crate::System::Dynamic::ExpandoObject__GetExpandoEnumerator_d__51;
     pub fn ExpandoContainsKey(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppString,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ExpandoContainsKey", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetExpandoEnumerator(
         &mut self,
-        data: *mut crate::System::Dynamic::ExpandoObject_ExpandoData,
+        data: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::ExpandoObject_ExpandoData,
+        >,
         version: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                >,
             >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                >,
             >,
         > = __cordl_object.invoke("GetExpandoEnumerator", (data, version))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsDeletedMember(
         &mut self,
@@ -83,40 +89,41 @@ impl crate::System::Dynamic::ExpandoObject {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsDeletedMember", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PromoteClass(
         &mut self,
-        oldClass: *mut quest_hook::libil2cpp::Il2CppObject,
-        newClass: *mut quest_hook::libil2cpp::Il2CppObject,
+        oldClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        newClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PromoteClass", (oldClass, newClass))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PromoteClassCore(
         &mut self,
-        oldClass: *mut crate::System::Dynamic::ExpandoClass,
-        newClass: *mut crate::System::Dynamic::ExpandoClass,
+        oldClass: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
+        newClass: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Dynamic::ExpandoObject_ExpandoData,
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject_ExpandoData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::ExpandoObject_ExpandoData = __cordl_object
-            .invoke("PromoteClassCore", (oldClass, newClass))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::ExpandoObject_ExpandoData,
+        > = __cordl_object.invoke("PromoteClassCore", (oldClass, newClass))?;
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_System_String_System_Object___Add(
         &mut self,
@@ -133,7 +140,7 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Add",
                 (item),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_System_String_System_Object___Clear(
         &mut self,
@@ -146,7 +153,7 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Clear",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_System_String_System_Object___Contains(
         &mut self,
@@ -163,14 +170,16 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Contains",
                 (item),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_System_String_System_Object___CopyTo(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppObject,
+        array: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                >,
             >,
         >,
         arrayIndex: i32,
@@ -183,7 +192,7 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo",
                 (array, arrayIndex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_System_String_System_Object___Remove(
         &mut self,
@@ -200,7 +209,7 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Remove",
                 (item),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_System_String_System_Object___get_Count(
         &mut self,
@@ -213,7 +222,7 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.get_Count",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_System_String_System_Object___get_IsReadOnly(
         &mut self,
@@ -226,12 +235,12 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.get_IsReadOnly",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__Add(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppString,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -241,11 +250,11 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.IDictionary<System.String,System.Object>.Add",
                 (key, value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__ContainsKey(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppString,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -255,11 +264,11 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.IDictionary<System.String,System.Object>.ContainsKey",
                 (key),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__Remove(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppString,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -269,11 +278,11 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.IDictionary<System.String,System.Object>.Remove",
                 (key),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__TryGetValue(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppString,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -284,64 +293,76 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.IDictionary<System.String,System.Object>.TryGetValue",
                 (key, value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__get_Item(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke(
                 "System.Collections.Generic.IDictionary<System.String,System.Object>.get_Item",
                 (key),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__get_Keys(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::ICollection_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::ICollection_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object
             .invoke(
                 "System.Collections.Generic.IDictionary<System.String,System.Object>.get_Keys",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__get_Values(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::ICollection_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::ICollection_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object
             .invoke(
                 "System.Collections.Generic.IDictionary<System.String,System.Object>.get_Values",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__set_Item(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppString,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -351,76 +372,89 @@ impl crate::System::Dynamic::ExpandoObject {
                 "System.Collections.Generic.IDictionary<System.String,System.Object>.set_Item",
                 (key, value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                >,
             >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                >,
             >,
         > = __cordl_object
             .invoke(
                 "System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.GetEnumerator",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn System_Dynamic_IDynamicMetaObjectProvider_GetMetaObject(
         &mut self,
-        parameter: *mut crate::System::Linq::Expressions::Expression,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+        parameter: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObject,
+        > = __cordl_object
             .invoke(
                 "System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject",
                 (parameter),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryAddMember(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppString,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TryAddMember", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryDeleteValue(
         &mut self,
-        indexClass: *mut quest_hook::libil2cpp::Il2CppObject,
+        indexClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         index: i32,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ignoreCase: bool,
-        deleteValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        deleteValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -430,13 +464,13 @@ impl crate::System::Dynamic::ExpandoObject {
                 "TryDeleteValue",
                 (indexClass, index, name, ignoreCase, deleteValue),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValue(
         &mut self,
-        indexClass: *mut quest_hook::libil2cpp::Il2CppObject,
+        indexClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         index: i32,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ignoreCase: bool,
         value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -445,11 +479,11 @@ impl crate::System::Dynamic::ExpandoObject {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetValue", (indexClass, index, name, ignoreCase, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValueForKey(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppString,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -457,14 +491,14 @@ impl crate::System::Dynamic::ExpandoObject {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetValueForKey", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TrySetValue(
         &mut self,
-        indexClass: *mut quest_hook::libil2cpp::Il2CppObject,
+        indexClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         index: i32,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ignoreCase: bool,
         add: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -473,7 +507,7 @@ impl crate::System::Dynamic::ExpandoObject {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TrySetValue", (indexClass, index, value, name, ignoreCase, add))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -483,17 +517,20 @@ impl crate::System::Dynamic::ExpandoObject {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Class(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::ExpandoClass> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::ExpandoClass = __cordl_object
-            .invoke("get_Class", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::ExpandoClass,
+        > = __cordl_object.invoke("get_Class", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject")]
@@ -536,38 +573,39 @@ impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject_ExpandoData {
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ExpandoData")]
 impl crate::System::Dynamic::ExpandoObject_ExpandoData {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_ExpandoClass_Il2CppArray_i32_1(
-        klass: *mut crate::System::Dynamic::ExpandoClass,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        klass: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
+        data: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         version: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (klass, data, version))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateClass(
         &mut self,
-        newClass: *mut crate::System::Dynamic::ExpandoClass,
+        newClass: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Dynamic::ExpandoObject_ExpandoData,
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject_ExpandoData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::ExpandoObject_ExpandoData = __cordl_object
-            .invoke("UpdateClass", (newClass))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::ExpandoObject_ExpandoData,
+        > = __cordl_object.invoke("UpdateClass", (newClass))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -577,13 +615,13 @@ impl crate::System::Dynamic::ExpandoObject_ExpandoData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_ExpandoClass_Il2CppArray_i32_1(
         &mut self,
-        klass: *mut crate::System::Dynamic::ExpandoClass,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        klass: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
+        data: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         version: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -592,44 +630,47 @@ impl crate::System::Dynamic::ExpandoObject_ExpandoData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (klass, data, version))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_Item", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Version(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Version", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
         index: i32,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (index, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ExpandoData")]
@@ -676,14 +717,14 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
     pub type _GetEnumerator_d__15 = crate::System::Dynamic::KeyCollection_ExpandoObject__GetEnumerator_d__15;
     pub fn Add(
         &mut self,
-        item: *mut quest_hook::libil2cpp::Il2CppString,
+        item: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckVersion(
         &mut self,
@@ -693,7 +734,7 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckVersion", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
@@ -703,22 +744,22 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Contains(
         &mut self,
-        item: *mut quest_hook::libil2cpp::Il2CppString,
+        item: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyTo(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        array: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         arrayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -727,76 +768,83 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyTo", (array, arrayIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        expando: *mut crate::System::Dynamic::ExpandoObject,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (expando))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Remove(
         &mut self,
-        item: *mut quest_hook::libil2cpp::Il2CppString,
+        item: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Remove", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        expando: *mut crate::System::Dynamic::ExpandoObject,
+        expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (expando))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
@@ -881,174 +929,219 @@ impl crate::System::Dynamic::ExpandoObject_MetaExpando {
     pub type __c__DisplayClass3_0 = crate::System::Dynamic::MetaExpando_ExpandoObject___c__DisplayClass3_0;
     pub fn AddDynamicTestAndDefer(
         &mut self,
-        binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
-        klass: *mut crate::System::Dynamic::ExpandoClass,
-        originalClass: *mut crate::System::Dynamic::ExpandoClass,
-        succeeds: *mut crate::System::Dynamic::DynamicMetaObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+        binder: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObjectBinder,
+        >,
+        klass: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
+        originalClass: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
+        succeeds: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObject,
+        > = __cordl_object
             .invoke("AddDynamicTestAndDefer", (binder, klass, originalClass, succeeds))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindDeleteMember(
         &mut self,
-        binder: *mut crate::System::Dynamic::DeleteMemberBinder,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+        binder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DeleteMemberBinder>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindDeleteMember", (binder))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObject,
+        > = __cordl_object.invoke("BindDeleteMember", (binder))?;
+        Ok(__cordl_ret.into())
     }
     pub fn BindGetMember(
         &mut self,
-        binder: *mut crate::System::Dynamic::GetMemberBinder,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+        binder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::GetMemberBinder>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindGetMember", (binder))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObject,
+        > = __cordl_object.invoke("BindGetMember", (binder))?;
+        Ok(__cordl_ret.into())
     }
     pub fn BindGetOrInvokeMember(
         &mut self,
-        binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        ignoreCase: bool,
-        fallback: *mut crate::System::Dynamic::DynamicMetaObject,
-        fallbackInvoke: *mut crate::System::Func_2<
-            *mut crate::System::Dynamic::DynamicMetaObject,
-            *mut crate::System::Dynamic::DynamicMetaObject,
+        binder: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObjectBinder,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+        fallback: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+        fallbackInvoke: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut crate::System::Dynamic::DynamicMetaObject,
+                *mut crate::System::Dynamic::DynamicMetaObject,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObject,
+        > = __cordl_object
             .invoke(
                 "BindGetOrInvokeMember",
                 (binder, name, ignoreCase, fallback, fallbackInvoke),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindInvokeMember(
         &mut self,
-        binder: *mut crate::System::Dynamic::InvokeMemberBinder,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Dynamic::DynamicMetaObject,
+        binder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::InvokeMemberBinder>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Dynamic::DynamicMetaObject,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindInvokeMember", (binder, args))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObject,
+        > = __cordl_object.invoke("BindInvokeMember", (binder, args))?;
+        Ok(__cordl_ret.into())
     }
     pub fn BindSetMember(
         &mut self,
-        binder: *mut crate::System::Dynamic::SetMemberBinder,
-        value: *mut crate::System::Dynamic::DynamicMetaObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+        binder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::SetMemberBinder>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("BindSetMember", (binder, value))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObject,
+        > = __cordl_object.invoke("BindSetMember", (binder, value))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetClassEnsureIndex(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         caseInsensitive: bool,
-        obj: *mut crate::System::Dynamic::ExpandoObject,
+        obj: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
         klass: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Dynamic::ExpandoClass,
         >,
         index: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::ExpandoClass> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::ExpandoClass = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::ExpandoClass,
+        > = __cordl_object
             .invoke("GetClassEnsureIndex", (name, caseInsensitive, obj, klass, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDynamicMemberNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("GetDynamicMemberNames", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLimitedSelf(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("GetLimitedSelf", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        > = __cordl_object.invoke("GetLimitedSelf", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetRestrictions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Dynamic::BindingRestrictions,
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::BindingRestrictions = __cordl_object
-            .invoke("GetRestrictions", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::BindingRestrictions,
+        > = __cordl_object.invoke("GetRestrictions", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        expression: *mut crate::System::Linq::Expressions::Expression,
-        value: *mut crate::System::Dynamic::ExpandoObject,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        value: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (expression, value))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        expression: *mut crate::System::Linq::Expressions::Expression,
-        value: *mut crate::System::Dynamic::ExpandoObject,
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        value: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (expression, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::ExpandoObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::ExpandoObject = __cordl_object
-            .invoke("get_Value", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::ExpandoObject,
+        > = __cordl_object.invoke("get_Value", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+MetaExpando")]
@@ -1095,14 +1188,14 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
     pub type _GetEnumerator_d__15 = crate::System::Dynamic::ValueCollection_ExpandoObject__GetEnumerator_d__15;
     pub fn Add(
         &mut self,
-        item: *mut quest_hook::libil2cpp::Il2CppObject,
+        item: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckVersion(
         &mut self,
@@ -1112,7 +1205,7 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckVersion", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
@@ -1122,22 +1215,22 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Contains(
         &mut self,
-        item: *mut quest_hook::libil2cpp::Il2CppObject,
+        item: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyTo(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        array: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         arrayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1146,76 +1239,83 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyTo", (array, arrayIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        expando: *mut crate::System::Dynamic::ExpandoObject,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (expando))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Remove(
         &mut self,
-        item: *mut quest_hook::libil2cpp::Il2CppObject,
+        item: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Remove", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        expando: *mut crate::System::Dynamic::ExpandoObject,
+        expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (expando))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]

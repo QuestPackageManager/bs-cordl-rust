@@ -63,13 +63,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusMRCManager {
 impl crate::GlobalNamespace::OculusMRCManager {
     pub fn Init(
         &mut self,
-        instantiateMixedRealityBackgroundCameraGameObject: *mut crate::System::Func_2<
-            *mut crate::UnityEngine::GameObject,
-            *mut crate::UnityEngine::GameObject,
+        instantiateMixedRealityBackgroundCameraGameObject: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut crate::UnityEngine::GameObject,
+                *mut crate::UnityEngine::GameObject,
+            >,
         >,
-        instantiateMixedRealityForegroundCameraGameObject: *mut crate::System::Func_2<
-            *mut crate::UnityEngine::GameObject,
-            *mut crate::UnityEngine::GameObject,
+        instantiateMixedRealityForegroundCameraGameObject: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut crate::UnityEngine::GameObject,
+                *mut crate::UnityEngine::GameObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -83,29 +87,31 @@ impl crate::GlobalNamespace::OculusMRCManager {
                     instantiateMixedRealityForegroundCameraGameObject,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InstantiateMixedRealityCameraGameObject(
         &mut self,
-        mainCameraGameObject: *mut crate::UnityEngine::GameObject,
+        mainCameraGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         cameraType: crate::GlobalNamespace::OVRManager_MrcCameraType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke(
                 "InstantiateMixedRealityCameraGameObject",
                 (mainCameraGameObject, cameraType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -115,7 +121,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -125,7 +131,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -135,7 +141,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_capturingCameraDevice(
         &mut self,
@@ -145,7 +151,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_CameraDevice = __cordl_object
             .invoke("get_capturingCameraDevice", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_chromaKeyColor(
         &mut self,
@@ -155,28 +161,28 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_chromaKeyColor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_chromaKeySimilarity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_chromaKeySimilarity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_chromaKeySmoothRange(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_chromaKeySmoothRange", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_chromaKeySpillRange(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_chromaKeySpillRange", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_compositionMethod(
         &mut self,
@@ -188,7 +194,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_CompositionMethod = __cordl_object
             .invoke("get_compositionMethod", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_depthQuality(
         &mut self,
@@ -198,14 +204,14 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_DepthQuality = __cordl_object
             .invoke("get_depthQuality", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dynamicCullingMask(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_dynamicCullingMask", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dynamicLightingDepthVariationClampingValue(
         &mut self,
@@ -215,7 +221,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_dynamicLightingDepthVariationClampingValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dynamicLightingSmoothFactor(
         &mut self,
@@ -225,14 +231,14 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_dynamicLightingSmoothFactor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_enableMixedReality(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_enableMixedReality", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_externalCompositionBackdropColorQuest(
         &mut self,
@@ -242,7 +248,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_externalCompositionBackdropColorQuest", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_externalCompositionBackdropColorRift(
         &mut self,
@@ -252,7 +258,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_externalCompositionBackdropColorRift", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_extraHiddenLayers(
         &mut self,
@@ -262,7 +268,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
             .invoke("get_extraHiddenLayers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_extraVisibleLayers(
         &mut self,
@@ -272,7 +278,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
             .invoke("get_extraVisibleLayers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_flipCameraFrameHorizontally(
         &mut self,
@@ -282,7 +288,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_flipCameraFrameHorizontally", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_flipCameraFrameVertically(
         &mut self,
@@ -292,26 +298,29 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_flipCameraFrameVertically", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_handPoseStateLatency(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_handPoseStateLatency", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_instantiateMixedRealityCameraGameObject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate = __cordl_object
-            .invoke("get_instantiateMixedRealityCameraGameObject", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+        > = __cordl_object.invoke("get_instantiateMixedRealityCameraGameObject", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_mrcActivationMode(
         &mut self,
@@ -323,7 +332,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_MrcActivationMode = __cordl_object
             .invoke("get_mrcActivationMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sandwichCompositionBufferedFrames(
         &mut self,
@@ -333,7 +342,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("get_sandwichCompositionBufferedFrames", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sandwichCompositionRenderLatency(
         &mut self,
@@ -343,14 +352,14 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_sandwichCompositionRenderLatency", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_useDynamicLighting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_useDynamicLighting", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_virtualGreenScreenApplyDepthCulling(
         &mut self,
@@ -360,7 +369,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_virtualGreenScreenApplyDepthCulling", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_virtualGreenScreenBottomY(
         &mut self,
@@ -370,7 +379,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_virtualGreenScreenBottomY", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_virtualGreenScreenDepthTolerance(
         &mut self,
@@ -380,14 +389,14 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_virtualGreenScreenDepthTolerance", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_virtualGreenScreenTopY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_virtualGreenScreenTopY", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_virtualGreenScreenType(
         &mut self,
@@ -399,7 +408,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_VirtualGreenScreenType = __cordl_object
             .invoke("get_virtualGreenScreenType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_capturingCameraDevice(
         &mut self,
@@ -410,7 +419,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_capturingCameraDevice", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_chromaKeyColor(
         &mut self,
@@ -421,7 +430,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_chromaKeyColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_chromaKeySimilarity(
         &mut self,
@@ -432,7 +441,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_chromaKeySimilarity", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_chromaKeySmoothRange(
         &mut self,
@@ -443,7 +452,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_chromaKeySmoothRange", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_chromaKeySpillRange(
         &mut self,
@@ -454,7 +463,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_chromaKeySpillRange", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_compositionMethod(
         &mut self,
@@ -465,7 +474,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_compositionMethod", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_depthQuality(
         &mut self,
@@ -476,7 +485,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_depthQuality", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dynamicCullingMask(
         &mut self,
@@ -487,7 +496,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_dynamicCullingMask", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dynamicLightingDepthVariationClampingValue(
         &mut self,
@@ -498,7 +507,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_dynamicLightingDepthVariationClampingValue", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dynamicLightingSmoothFactor(
         &mut self,
@@ -509,7 +518,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_dynamicLightingSmoothFactor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_enableMixedReality(
         &mut self,
@@ -520,7 +529,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_enableMixedReality", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_externalCompositionBackdropColorQuest(
         &mut self,
@@ -531,7 +540,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_externalCompositionBackdropColorQuest", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_externalCompositionBackdropColorRift(
         &mut self,
@@ -542,7 +551,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_externalCompositionBackdropColorRift", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_extraHiddenLayers(
         &mut self,
@@ -553,7 +562,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_extraHiddenLayers", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_extraVisibleLayers(
         &mut self,
@@ -564,7 +573,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_extraVisibleLayers", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flipCameraFrameHorizontally(
         &mut self,
@@ -575,7 +584,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_flipCameraFrameHorizontally", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flipCameraFrameVertically(
         &mut self,
@@ -586,7 +595,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_flipCameraFrameVertically", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_handPoseStateLatency(
         &mut self,
@@ -597,18 +606,20 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_handPoseStateLatency", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_instantiateMixedRealityCameraGameObject(
         &mut self,
-        value: *mut crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+        value: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_instantiateMixedRealityCameraGameObject", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_mrcActivationMode(
         &mut self,
@@ -619,7 +630,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_mrcActivationMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sandwichCompositionBufferedFrames(
         &mut self,
@@ -630,7 +641,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sandwichCompositionBufferedFrames", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sandwichCompositionRenderLatency(
         &mut self,
@@ -641,7 +652,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sandwichCompositionRenderLatency", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_useDynamicLighting(
         &mut self,
@@ -652,7 +663,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_useDynamicLighting", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_virtualGreenScreenApplyDepthCulling(
         &mut self,
@@ -663,7 +674,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_virtualGreenScreenApplyDepthCulling", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_virtualGreenScreenBottomY(
         &mut self,
@@ -674,7 +685,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_virtualGreenScreenBottomY", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_virtualGreenScreenDepthTolerance(
         &mut self,
@@ -685,7 +696,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_virtualGreenScreenDepthTolerance", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_virtualGreenScreenTopY(
         &mut self,
@@ -696,7 +707,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_virtualGreenScreenTopY", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_virtualGreenScreenType(
         &mut self,
@@ -707,7 +718,7 @@ impl crate::GlobalNamespace::OculusMRCManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_virtualGreenScreenType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OculusMRCManager")]

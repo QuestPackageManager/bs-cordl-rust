@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::GlyphPairKey {
 impl crate::TMPro::GlyphPairKey {
     pub fn _ctor_TMP_GlyphPairAdjustmentRecord1(
         &mut self,
-        record: *mut crate::TMPro::TMP_GlyphPairAdjustmentRecord,
+        record: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (record),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_u32_0(
         &mut self,
@@ -43,6 +43,6 @@ impl crate::TMPro::GlyphPairKey {
             ".ctor",
             (firstGlyphIndex, secondGlyphIndex),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

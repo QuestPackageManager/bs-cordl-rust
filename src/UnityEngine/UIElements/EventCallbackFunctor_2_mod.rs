@@ -49,7 +49,7 @@ impl<
 > crate::UnityEngine::UIElements::EventCallbackFunctor_2<TEventType, TCallbackArgs> {
     pub fn Invoke(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         propagationPhase: crate::UnityEngine::UIElements::PropagationPhase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -63,12 +63,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", (evt, propagationPhase))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsEquivalentTo(
         &mut self,
         eventTypeId: i64,
-        callback: *mut crate::System::Delegate,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -82,17 +82,16 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsEquivalentTo", (eventTypeId, callback, phase))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        callback: *mut crate::UnityEngine::UIElements::EventCallback_2<
-            TEventType,
-            TCallbackArgs,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs>,
         >,
         userArgs: TCallbackArgs,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -103,13 +102,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (callback, userArgs, phase, invokePolicy))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        callback: *mut crate::UnityEngine::UIElements::EventCallback_2<
-            TEventType,
-            TCallbackArgs,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs>,
         >,
         userArgs: TCallbackArgs,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
@@ -126,7 +124,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (callback, userArgs, phase, invokePolicy))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_userArgs(&mut self) -> quest_hook::libil2cpp::Result<TCallbackArgs>
     where
@@ -139,7 +137,7 @@ impl<
             self,
         );
         let __cordl_ret: TCallbackArgs = __cordl_object.invoke("get_userArgs", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_userArgs(
         &mut self,
@@ -156,7 +154,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_userArgs", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventCallbackFunctor_2")]

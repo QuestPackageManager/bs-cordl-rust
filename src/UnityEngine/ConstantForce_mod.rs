@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::UnityEngine::ConstantForce {
 }
 #[cfg(feature = "UnityEngine+ConstantForce")]
 impl crate::UnityEngine::ConstantForce {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -39,7 +39,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_force(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_force", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_force_Injected(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_force_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_relativeForce(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_relativeForce", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_relativeForce_Injected(
         &mut self,
@@ -81,7 +81,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_relativeForce_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_relativeTorque(
         &mut self,
@@ -91,7 +91,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_relativeTorque", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_relativeTorque_Injected(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_relativeTorque_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_torque(
         &mut self,
@@ -112,7 +112,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_torque", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_torque_Injected(
         &mut self,
@@ -123,7 +123,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_torque_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_force(
         &mut self,
@@ -134,7 +134,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_force", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_force_Injected(
         &mut self,
@@ -145,7 +145,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_force_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_relativeForce(
         &mut self,
@@ -156,7 +156,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_relativeForce", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_relativeForce_Injected(
         &mut self,
@@ -167,7 +167,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_relativeForce_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_relativeTorque(
         &mut self,
@@ -178,7 +178,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_relativeTorque", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_relativeTorque_Injected(
         &mut self,
@@ -189,7 +189,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_relativeTorque_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_torque(
         &mut self,
@@ -200,7 +200,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_torque", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_torque_Injected(
         &mut self,
@@ -211,7 +211,7 @@ impl crate::UnityEngine::ConstantForce {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_torque_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ConstantForce")]

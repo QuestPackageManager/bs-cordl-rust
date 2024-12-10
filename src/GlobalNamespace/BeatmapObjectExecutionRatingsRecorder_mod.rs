@@ -38,43 +38,47 @@ for crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
 impl crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
     pub fn HandleObstacleDidPassAvoidedMark(
         &mut self,
-        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
+        obstacleController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleObstacleDidPassAvoidedMark", (obstacleController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerHeadDidEnterObstacle(
         &mut self,
-        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
+        obstacleController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePlayerHeadDidEnterObstacle", (obstacleController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleScoringForNoteDidFinish(
         &mut self,
-        scoringElement: *mut crate::GlobalNamespace::ScoringElement,
+        scoringElement: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleScoringForNoteDidFinish", (scoringElement))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -84,7 +88,7 @@ impl crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -94,7 +98,7 @@ impl crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -104,22 +108,26 @@ impl crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_beatmapObjectExecutionRatings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::BeatmapObjectExecutionRating,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::BeatmapObjectExecutionRating,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::BeatmapObjectExecutionRating,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::BeatmapObjectExecutionRating,
+            >,
         > = __cordl_object.invoke("get_beatmapObjectExecutionRatings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]

@@ -31,7 +31,7 @@ impl crate::UnityEngine::Playables::Playable {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -41,17 +41,17 @@ impl crate::UnityEngine::Playables::Playable {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPlayableType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetPlayableType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsPlayableOfType<T>(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -63,7 +63,7 @@ impl crate::UnityEngine::Playables::Playable {
             "IsPlayableOfType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -74,6 +74,6 @@ impl crate::UnityEngine::Playables::Playable {
             ".ctor",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -41,7 +41,7 @@ impl crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder {
             "AwaitOnCompleted",
             (awaiter, stateMachine),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(
         &mut self,
@@ -59,7 +59,7 @@ impl crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder {
             "AwaitUnsafeOnCompleted",
             (awaiter, stateMachine),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NotifySynchronizationContextOfCompletion(
         &mut self,
@@ -69,18 +69,18 @@ impl crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder {
             "NotifySynchronizationContextOfCompletion",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetException(
         &mut self,
-        exception: *mut crate::System::Exception,
+        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetException",
             (exception),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetResult(
         &mut self,
@@ -90,18 +90,20 @@ impl crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder {
             "SetResult",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetStateMachine(
         &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+        stateMachine: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetStateMachine",
             (stateMachine),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start<TStateMachine>(
         &mut self,
@@ -116,16 +118,16 @@ impl crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder {
             "Start",
             (stateMachine),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Task(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Task",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Task", ())?;
+        Ok(__cordl_ret.into())
     }
 }

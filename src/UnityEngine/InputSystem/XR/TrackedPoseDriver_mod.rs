@@ -53,7 +53,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindActions(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindActions", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindPosition(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindPosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindRotation(
         &mut self,
@@ -83,7 +83,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindRotation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindTrackingState(
         &mut self,
@@ -93,7 +93,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindTrackingState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasStereoCamera(
         &mut self,
@@ -104,14 +104,14 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("HasStereoCamera", (cameraComponent))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnBeforeRender(
         &mut self,
@@ -121,7 +121,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBeforeRender", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -141,7 +141,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -151,7 +151,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPositionCanceled(
         &mut self,
@@ -162,7 +162,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPositionCanceled", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPositionPerformed(
         &mut self,
@@ -173,7 +173,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPositionPerformed", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnRotationCanceled(
         &mut self,
@@ -184,7 +184,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnRotationCanceled", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnRotationPerformed(
         &mut self,
@@ -195,7 +195,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnRotationPerformed", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnTrackingStateCanceled(
         &mut self,
@@ -206,7 +206,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnTrackingStateCanceled", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnTrackingStatePerformed(
         &mut self,
@@ -217,7 +217,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnTrackingStatePerformed", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnUpdate(
         &mut self,
@@ -227,7 +227,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PerformUpdate(
         &mut self,
@@ -237,7 +237,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PerformUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadTrackingState(
         &mut self,
@@ -247,7 +247,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadTrackingState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
@@ -257,7 +257,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLocalTransform(
         &mut self,
@@ -269,7 +269,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetLocalTransform", (newPosition, newRotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnbindActions(
         &mut self,
@@ -279,7 +279,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnbindActions", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnbindPosition(
         &mut self,
@@ -289,7 +289,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnbindPosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnbindRotation(
         &mut self,
@@ -299,7 +299,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnbindRotation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnbindTrackingState(
         &mut self,
@@ -309,7 +309,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnbindTrackingState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize(
         &mut self,
@@ -322,7 +322,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                 "UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize(
         &mut self,
@@ -332,7 +332,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateCallback(
         &mut self,
@@ -342,7 +342,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateCallback", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -352,26 +352,27 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ignoreTrackingState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_ignoreTrackingState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_positionAction(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = __cordl_object
-            .invoke("get_positionAction", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputAction,
+        > = __cordl_object.invoke("get_positionAction", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_positionInput(
         &mut self,
@@ -383,19 +384,20 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::InputActionProperty = __cordl_object
             .invoke("get_positionInput", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotationAction(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = __cordl_object
-            .invoke("get_rotationAction", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputAction,
+        > = __cordl_object.invoke("get_rotationAction", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotationInput(
         &mut self,
@@ -407,7 +409,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::InputActionProperty = __cordl_object
             .invoke("get_rotationInput", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_trackingStateInput(
         &mut self,
@@ -419,7 +421,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::InputActionProperty = __cordl_object
             .invoke("get_trackingStateInput", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_trackingType(
         &mut self,
@@ -431,7 +433,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType = __cordl_object
             .invoke("get_trackingType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_updateType(
         &mut self,
@@ -443,7 +445,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType = __cordl_object
             .invoke("get_updateType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ignoreTrackingState(
         &mut self,
@@ -454,18 +456,18 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ignoreTrackingState", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_positionAction(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::InputAction,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_positionAction", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_positionInput(
         &mut self,
@@ -476,18 +478,18 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_positionInput", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rotationAction(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::InputAction,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_rotationAction", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rotationInput(
         &mut self,
@@ -498,7 +500,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_rotationInput", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_trackingStateInput(
         &mut self,
@@ -509,7 +511,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_trackingStateInput", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_trackingType(
         &mut self,
@@ -520,7 +522,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_trackingType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_updateType(
         &mut self,
@@ -531,7 +533,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_updateType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]

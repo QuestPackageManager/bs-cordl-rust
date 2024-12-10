@@ -28,10 +28,12 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::EventBox {
 #[cfg(feature = "BeatmapSaveDataVersion3+EventBox")]
 impl crate::BeatmapSaveDataVersion3::EventBox {
     pub fn New(
-        indexFilter: *mut crate::BeatmapSaveDataVersion3::IndexFilter,
+        indexFilter: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::IndexFilter,
+        >,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -39,11 +41,13 @@ impl crate::BeatmapSaveDataVersion3::EventBox {
                 ".ctor",
                 (indexFilter, beatDistributionParam, beatDistributionParamType),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        indexFilter: *mut crate::BeatmapSaveDataVersion3::IndexFilter,
+        indexFilter: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::IndexFilter,
+        >,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,14 +59,14 @@ impl crate::BeatmapSaveDataVersion3::EventBox {
                 ".ctor",
                 (indexFilter, beatDistributionParam, beatDistributionParamType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_beatDistributionParam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_beatDistributionParam", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_beatDistributionParamType(
         &mut self,
@@ -74,19 +78,20 @@ impl crate::BeatmapSaveDataVersion3::EventBox {
         );
         let __cordl_ret: crate::BeatmapSaveDataCommon::DistributionParamType = __cordl_object
             .invoke("get_beatDistributionParamType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_indexFilter(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatmapSaveDataVersion3::IndexFilter,
+        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::BeatmapSaveDataVersion3::IndexFilter = __cordl_object
-            .invoke("get_indexFilter", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::IndexFilter,
+        > = __cordl_object.invoke("get_indexFilter", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+EventBox")]

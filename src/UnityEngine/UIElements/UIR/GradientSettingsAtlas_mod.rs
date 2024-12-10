@@ -43,7 +43,7 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::Alloc = __cordl_object
             .invoke("Add", (count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Commit(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Commit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -74,14 +74,16 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(length: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (length))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PrepareAtlas(
         &mut self,
@@ -91,7 +93,7 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PrepareAtlas", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
@@ -101,22 +103,26 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::Alloc,
-        settings: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::UIElements::GradientSettings,
+        settings: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::GradientSettings,
+            >,
         >,
-        remap: *mut crate::UnityEngine::UIElements::UIR::GradientRemap,
+        remap: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::GradientRemap,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (alloc, settings, remap))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -127,38 +133,40 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (length))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MustCommit(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_MustCommit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_atlas(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Texture2D = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
             .invoke("get_atlas", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_length", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_MustCommit(
         &mut self,
@@ -169,7 +177,7 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_MustCommit", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_disposed(
         &mut self,
@@ -180,7 +188,7 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_disposed", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+GradientSettingsAtlas")]
@@ -234,7 +242,7 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
             "WriteRawFloat4Packed",
             (f0, f1, f2, f3, destX, destY),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteRawInt2Packed(
         &mut self,
@@ -248,6 +256,6 @@ impl crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
             "WriteRawInt2Packed",
             (v0, v1, destX, destY),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

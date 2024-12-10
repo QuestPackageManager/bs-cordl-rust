@@ -38,12 +38,12 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
     pub type RaycastHitData = crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData;
     #[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+__c")]
     pub type __c = crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -63,13 +63,17 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PerformRaycast(
         &mut self,
-        eventData: *mut crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData,
-        resultAppendList: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::EventSystems::RaycastResult,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData,
+        >,
+        resultAppendList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -77,13 +81,17 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PerformRaycast", (eventData, resultAppendList))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Raycast(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-        resultAppendList: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::EventSystems::RaycastResult,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+        resultAppendList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -91,14 +99,16 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Raycast", (eventData, resultAppendList))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SortedRaycastGraphics(
         &mut self,
-        canvas: *mut crate::UnityEngine::Canvas,
+        canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         ray: crate::UnityEngine::Ray,
-        results: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -106,7 +116,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SortedRaycastGraphics", (canvas, ray, results))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -116,7 +126,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_blockingMask(
         &mut self,
@@ -126,55 +136,59 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
             .invoke("get_blockingMask", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_canvas(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Canvas> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Canvas = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas> = __cordl_object
             .invoke("get_canvas", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_checkFor2DOcclusion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_checkFor2DOcclusion", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_checkFor3DOcclusion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_checkFor3DOcclusion", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_eventCamera(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera> = __cordl_object
             .invoke("get_eventCamera", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ignoreReversedGraphics(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_ignoreReversedGraphics", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_maxDistance", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_blockingMask(
         &mut self,
@@ -185,7 +199,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_blockingMask", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_checkFor2DOcclusion(
         &mut self,
@@ -196,7 +210,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_checkFor2DOcclusion", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_checkFor3DOcclusion(
         &mut self,
@@ -207,7 +221,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_checkFor3DOcclusion", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ignoreReversedGraphics(
         &mut self,
@@ -218,7 +232,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ignoreReversedGraphics", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maxDistance(
         &mut self,
@@ -229,7 +243,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_maxDistance", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
@@ -272,7 +286,7 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
 impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     pub fn _ctor(
         &mut self,
-        graphic: *mut crate::UnityEngine::UI::Graphic,
+        graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
         worldHitPosition: crate::UnityEngine::Vector3,
         screenPosition: crate::UnityEngine::Vector2,
         distance: f32,
@@ -282,7 +296,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData 
             ".ctor",
             (graphic, worldHitPosition, screenPosition, distance),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -290,17 +304,19 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData 
             "get_distance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_graphic(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Graphic> {
-        let __cordl_ret: *mut crate::UnityEngine::UI::Graphic = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_graphic",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_screenPosition(
         &mut self,
@@ -310,7 +326,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData 
             "get_screenPosition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_worldHitPosition(
         &mut self,
@@ -320,6 +336,6 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData 
             "get_worldHitPosition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

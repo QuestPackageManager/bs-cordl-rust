@@ -28,21 +28,23 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
     pub type HEU_InputDataTerrain = crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain;
     pub fn CreateHeightFieldInputNode(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        idt: *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        idt: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CreateHeightFieldInputNode", (session, idt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateInputNodeWithDataUpload(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         connectNodeID: i32,
-        inputObject: *mut crate::UnityEngine::GameObject,
+        inputObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         inputNodeID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -53,46 +55,49 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
                 "CreateInputNodeWithDataUpload",
                 (session, connectNodeID, inputObject, inputNodeID),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateTerrainDataFromGameObject(
         &mut self,
-        inputObject: *mut crate::UnityEngine::GameObject,
+        inputObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+        quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain = __cordl_object
-            .invoke("GenerateTerrainDataFromGameObject", (inputObject))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+        > = __cordl_object.invoke("GenerateTerrainDataFromGameObject", (inputObject))?;
+        Ok(__cordl_ret.into())
     }
     pub fn IsThisInputObjectSupported(
         &mut self,
-        inputObject: *mut crate::UnityEngine::GameObject,
+        inputObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsThisInputObjectSupported", (inputObject))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetHeightFieldData(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         volumeNodeID: i32,
         partID: i32,
-        heightValues: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-        heightFieldName: *mut quest_hook::libil2cpp::Il2CppString,
+        heightValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+        heightFieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         baseVolumeInfo: quest_hook::libil2cpp::ByRefMut<
             crate::HoudiniEngineUnity::HAPI_VolumeInfo,
         >,
@@ -112,12 +117,14 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
                     baseVolumeInfo,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetMaskLayer(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        idt: *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        idt: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+        >,
         baseVolumeInfo: quest_hook::libil2cpp::ByRefMut<
             crate::HoudiniEngineUnity::HAPI_VolumeInfo,
         >,
@@ -127,14 +134,14 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("SetMaskLayer", (session, idt, baseVolumeInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTerrainDataAttributesToHeightField(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         geoNodeID: i32,
         partID: i32,
-        terrainData: *mut crate::UnityEngine::TerrainData,
+        terrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -144,14 +151,14 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
                 "SetTerrainDataAttributesToHeightField",
                 (session, geoNodeID, partID, terrainData),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTerrainLayerAttributesToHeightField(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         geoNodeID: i32,
         partID: i32,
-        terrainLayer: *mut crate::UnityEngine::TerrainLayer,
+        terrainLayer: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -161,40 +168,42 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
                 "SetTerrainLayerAttributesToHeightField",
                 (session, geoNodeID, partID, terrainLayer),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTreeInstances(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         geoNodeID: i32,
         partID: i32,
-        terrainData: *mut crate::UnityEngine::TerrainData,
+        terrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTreeInstances", (session, geoNodeID, partID, terrainData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTreePrototypes(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         geoNodeID: i32,
         partID: i32,
-        terrainData: *mut crate::UnityEngine::TerrainData,
+        terrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTreePrototypes", (session, geoNodeID, partID, terrainData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UploadAlphaMaps(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        idt: *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        idt: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+        >,
         baseVolumeInfo: quest_hook::libil2cpp::ByRefMut<
             crate::HoudiniEngineUnity::HAPI_VolumeInfo,
         >,
@@ -205,12 +214,14 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("UploadAlphaMaps", (session, idt, baseVolumeInfo, bMaskSet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UploadHeightValuesWithTransform(
         &mut self,
-        session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        idt: *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        idt: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+        >,
         volumeInfo: quest_hook::libil2cpp::ByRefMut<
             crate::HoudiniEngineUnity::HAPI_VolumeInfo,
         >,
@@ -220,7 +231,7 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("UploadHeightValuesWithTransform", (session, idt, volumeInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -230,7 +241,7 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
@@ -285,12 +296,12 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain")]
 impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -300,7 +311,7 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain")]

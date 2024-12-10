@@ -37,12 +37,10 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
     pub type Use = crate::UnityEngine::UIElements::UxmlAttributeDescription_Use;
     pub fn GetValueFromBag<T>(
         &mut self,
-        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
-        converterFunc: *mut crate::System::Func_3<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            T,
-            T,
+        converterFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<*mut quest_hook::libil2cpp::Il2CppString, T, T>,
         >,
         defaultValue: T,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -55,23 +53,21 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
         );
         let __cordl_ret: T = __cordl_object
             .invoke("GetValueFromBag", (bag, cc, converterFunc, defaultValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn TryGetValueFromBag<T>(
         &mut self,
-        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
-        converterFunc: *mut crate::System::Func_3<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            T,
-            T,
+        converterFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<*mut quest_hook::libil2cpp::Il2CppString, T, T>,
         >,
         defaultValue: T,
         value: quest_hook::libil2cpp::ByRefMut<T>,
@@ -88,11 +84,11 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
                 "TryGetValueFromBag",
                 (bag, cc, converterFunc, defaultValue, value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValueFromBagAsString(
         &mut self,
-        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
         value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -101,7 +97,7 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetValueFromBagAsString", (bag, cc, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -111,33 +107,38 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_name", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_name", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_name(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_name", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_obsoleteNames(
         &mut self,
-        value: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -145,40 +146,42 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_obsoleteNames", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_restriction(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::UxmlTypeRestriction,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlTypeRestriction,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_restriction", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_type(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_type", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_typeNamespace(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_typeNamespace", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_use(
         &mut self,
@@ -189,7 +192,7 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_use", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription")]

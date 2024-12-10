@@ -41,7 +41,7 @@ impl crate::UnityEngine::InputSystem::Pen {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FinishSetup", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MakeCurrent(
         &mut self,
@@ -51,14 +51,14 @@ impl crate::UnityEngine::InputSystem::Pen {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MakeCurrent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnRemoved(
         &mut self,
@@ -68,7 +68,7 @@ impl crate::UnityEngine::InputSystem::Pen {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnRemoved", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -78,227 +78,273 @@ impl crate::UnityEngine::InputSystem::Pen {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
         button: crate::UnityEngine::InputSystem::PenButton,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_Item", (button))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        > = __cordl_object.invoke("get_Item", (button))?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_eraser(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_eraser", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        > = __cordl_object.invoke("get_eraser", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_firstBarrelButton(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_firstBarrelButton", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        > = __cordl_object.invoke("get_firstBarrelButton", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_fourthBarrelButton(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_fourthBarrelButton", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        > = __cordl_object.invoke("get_fourthBarrelButton", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_inRange(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_inRange", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        > = __cordl_object.invoke("get_inRange", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_secondBarrelButton(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_secondBarrelButton", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        > = __cordl_object.invoke("get_secondBarrelButton", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_thirdBarrelButton(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_thirdBarrelButton", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        > = __cordl_object.invoke("get_thirdBarrelButton", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_tilt(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector2Control,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control = __cordl_object
-            .invoke("get_tilt", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector2Control,
+        > = __cordl_object.invoke("get_tilt", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_tip(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl = __cordl_object
-            .invoke("get_tip", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        > = __cordl_object.invoke("get_tip", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_twist(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::Controls::AxisControl = __cordl_object
-            .invoke("get_twist", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::AxisControl,
+        > = __cordl_object.invoke("get_twist", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_eraser(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_eraser", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_firstBarrelButton(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_firstBarrelButton", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_fourthBarrelButton(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_fourthBarrelButton", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_inRange(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_inRange", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_secondBarrelButton(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_secondBarrelButton", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_thirdBarrelButton(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_thirdBarrelButton", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tilt(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::Vector2Control,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tilt", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tip(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tip", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_twist(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::AxisControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_twist", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Pen")]

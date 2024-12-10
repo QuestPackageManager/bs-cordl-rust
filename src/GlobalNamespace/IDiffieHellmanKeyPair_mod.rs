@@ -26,32 +26,43 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IDiffieHellmanKeyPair {
 impl crate::GlobalNamespace::IDiffieHellmanKeyPair {
     pub fn GetPreMasterSecret(
         &mut self,
-        clientPublicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        clientPublicKey: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetPreMasterSecret", (clientPublicKey))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("GetPreMasterSecret", (clientPublicKey))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPreMasterSecretAsync(
         &mut self,
-        taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-        clientPublicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+        clientPublicKey: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
         > = __cordl_object
             .invoke("GetPreMasterSecretAsync", (taskUtility, clientPublicKey))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -60,13 +71,16 @@ impl crate::GlobalNamespace::IDiffieHellmanKeyPair {
     }
     pub fn get_publicKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("get_publicKey", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("get_publicKey", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "IDiffieHellmanKeyPair")]

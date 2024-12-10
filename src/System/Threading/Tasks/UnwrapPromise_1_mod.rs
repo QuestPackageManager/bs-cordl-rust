@@ -35,7 +35,7 @@ impl<
     pub type __c = crate::System::Threading::Tasks::UnwrapPromise_1___c<TResult>;
     pub fn Invoke(
         &mut self,
-        completingTask: *mut crate::System::Threading::Tasks::Task,
+        completingTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -46,11 +46,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", (completingTask))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokeCore(
         &mut self,
-        completingTask: *mut crate::System::Threading::Tasks::Task,
+        completingTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -61,11 +61,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokeCore", (completingTask))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokeCoreAsync(
         &mut self,
-        completingTask: *mut crate::System::Threading::Tasks::Task,
+        completingTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -76,12 +76,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokeCoreAsync", (completingTask))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        outerTask: *mut crate::System::Threading::Tasks::Task,
+        outerTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         lookForOce: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -90,11 +90,11 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (outerTask, lookForOce))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessCompletedOuterTask(
         &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -105,11 +105,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessCompletedOuterTask", (task))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessInnerTask(
         &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -120,11 +120,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessInnerTask", (task))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TrySetFromTask(
         &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         lookForOce: bool,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -136,11 +136,11 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TrySetFromTask", (task, lookForOce))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        outerTask: *mut crate::System::Threading::Tasks::Task,
+        outerTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         lookForOce: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -152,7 +152,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (outerTask, lookForOce))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_InvokeMayRunArbitraryCode(
         &mut self,
@@ -166,7 +166,7 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_InvokeMayRunArbitraryCode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+Tasks+UnwrapPromise_1")]

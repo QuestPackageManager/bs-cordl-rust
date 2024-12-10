@@ -60,7 +60,7 @@ impl<
             "TryAdd",
             (id, obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGet(
         &mut self,
@@ -78,7 +78,7 @@ impl<
             "TryGet",
             (offset, val),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -95,7 +95,7 @@ impl<
             ".ctor",
             (limit),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
@@ -154,7 +154,7 @@ impl<
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -168,6 +168,6 @@ impl<
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

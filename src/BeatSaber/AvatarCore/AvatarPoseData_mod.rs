@@ -35,6 +35,6 @@ impl crate::BeatSaber::AvatarCore::AvatarPoseData {
             ".ctor",
             (headPose, leftHandPose, rightHandPose),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

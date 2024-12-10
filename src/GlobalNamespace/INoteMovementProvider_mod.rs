@@ -31,13 +31,16 @@ impl crate::GlobalNamespace::INoteMovementProvider {
     }
     pub fn get_noteMovement(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::NoteMovement> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::NoteMovement = __cordl_object
-            .invoke("get_noteMovement", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteMovement,
+        > = __cordl_object.invoke("get_noteMovement", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "INoteMovementProvider")]

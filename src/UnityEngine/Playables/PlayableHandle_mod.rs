@@ -33,7 +33,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "CheckInputBounds",
             (inputIndex, acceptAny),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckInputBounds_i32_0(
         &mut self,
@@ -44,18 +44,18 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "CheckInputBounds",
             (inputIndex),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
-        p: *mut quest_hook::libil2cpp::Il2CppObject,
+        p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (p),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_PlayableHandle1(
         &mut self,
@@ -66,7 +66,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDuration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -74,7 +74,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetDuration",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetGraph(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetGraph",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -92,7 +92,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetInput(
         &mut self,
@@ -103,7 +103,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetInput",
             (inputPort),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetInputCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -111,7 +111,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetInputCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetInputHandle(
         &mut self,
@@ -122,7 +122,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetInputHandle",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetInputWeight(
         &mut self,
@@ -133,7 +133,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetInputWeight",
             (inputIndex),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetInputWeightFromIndex(
         &mut self,
@@ -144,7 +144,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetInputWeightFromIndex",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetObject<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -156,7 +156,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetObject",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPlayState(
         &mut self,
@@ -166,17 +166,17 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetPlayState",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPlayableType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetPlayableType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPreviousTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -184,17 +184,17 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetPreviousTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetScriptInstance(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetScriptInstance",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetScriptInstance", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -202,7 +202,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTimeWrapMode(
         &mut self,
@@ -212,7 +212,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetTimeWrapMode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsDone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -220,7 +220,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "IsDone",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsPlayableOfType<T>(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -232,7 +232,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "IsPlayableOfType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -240,7 +240,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "IsValid",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Pause(
         &mut self,
@@ -250,7 +250,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "Pause",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Play(
         &mut self,
@@ -260,7 +260,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "Play",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDone(
         &mut self,
@@ -271,7 +271,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetDone",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDuration(
         &mut self,
@@ -282,7 +282,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetDuration",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetInputCount(
         &mut self,
@@ -293,7 +293,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetInputCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetInputWeightFromIndex(
         &mut self,
@@ -305,7 +305,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetInputWeightFromIndex",
             (index, weight),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetInputWeight_PlayableHandle1(
         &mut self,
@@ -317,7 +317,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetInputWeight",
             (input, weight),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetInputWeight_i32_0(
         &mut self,
@@ -329,7 +329,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetInputWeight",
             (inputIndex, weight),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPropagateSetTime(
         &mut self,
@@ -340,18 +340,18 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetPropagateSetTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetScriptInstance(
         &mut self,
-        scriptInstance: *mut quest_hook::libil2cpp::Il2CppObject,
+        scriptInstance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetScriptInstance",
             (scriptInstance),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSpeed(
         &mut self,
@@ -362,7 +362,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetSpeed",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTime(
         &mut self,
@@ -373,7 +373,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTimeWrapMode(
         &mut self,
@@ -384,7 +384,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetTimeWrapMode",
             (mode),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTraversalMode(
         &mut self,
@@ -395,6 +395,6 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetTraversalMode",
             (mode),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -28,12 +28,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SonyLevelProductPackSO {
 }
 #[cfg(feature = "SonyLevelProductPackSO")]
 impl crate::GlobalNamespace::SonyLevelProductPackSO {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -43,50 +43,61 @@ impl crate::GlobalNamespace::SonyLevelProductPackSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_levelPackProductData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData = __cordl_object
-            .invoke("get_levelPackProductData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_levelPackRedirectionData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+        > = __cordl_object.invoke("get_levelPackProductData", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_levelPackRedirectionData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+            >,
         > = __cordl_object.invoke("get_levelPackRedirectionData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_levelPackProductData(
         &mut self,
-        value: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+        value: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_levelPackProductData", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_levelPackRedirectionData(
         &mut self,
-        value: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -94,7 +105,7 @@ impl crate::GlobalNamespace::SonyLevelProductPackSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_levelPackRedirectionData", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SonyLevelProductPackSO")]

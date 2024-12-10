@@ -59,7 +59,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateAssets", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateBackgroundTexture(
         &mut self,
@@ -69,7 +69,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateBackgroundTexture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateComplexClipPlaneTexture(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateComplexClipPlaneTexture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateForegroundTexture(
         &mut self,
@@ -89,7 +89,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateForegroundTexture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateOptimizedTexture(
         &mut self,
@@ -99,7 +99,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateOptimizedTexture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DestroyAssets(
         &mut self,
@@ -109,7 +109,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DestroyAssets", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -119,35 +119,39 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetClipPlaneMaterial(
         &mut self,
         debugClipPlane: bool,
         complexClipPlane: bool,
         colorWriteMask: crate::UnityEngine::Rendering::ColorWriteMask,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = __cordl_object
             .invoke(
                 "GetClipPlaneMaterial",
                 (debugClipPlane, complexClipPlane, colorWriteMask),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetGroundClipPlaneMaterial(
         &mut self,
         debugClipPlane: bool,
         colorWriteMask: crate::UnityEngine::Rendering::ColorWriteMask,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = __cordl_object
             .invoke("GetGroundClipPlaneMaterial", (debugClipPlane, colorWriteMask))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokePostRenderBackground(
         &mut self,
@@ -157,7 +161,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokePostRenderBackground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokePostRenderForeground(
         &mut self,
@@ -167,7 +171,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokePostRenderForeground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokePreRender(
         &mut self,
@@ -177,7 +181,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokePreRender", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokePreRenderBackground(
         &mut self,
@@ -187,7 +191,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokePreRenderBackground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokePreRenderForeground(
         &mut self,
@@ -197,7 +201,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokePreRenderForeground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IvokePostRender(
         &mut self,
@@ -207,16 +211,16 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("IvokePostRender", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        liv: *mut crate::LIV::SDK::Unity::LIV,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        liv: quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::LIV>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (liv))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReleaseBridgePoseControl(
         &mut self,
@@ -226,7 +230,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReleaseBridgePoseControl", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Render(
         &mut self,
@@ -236,7 +240,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Render", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RenderBackground(
         &mut self,
@@ -246,7 +250,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RenderBackground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RenderForeground(
         &mut self,
@@ -256,7 +260,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RenderForeground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RenderOptimized(
         &mut self,
@@ -266,11 +270,11 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RenderOptimized", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendTextureToBridge(
         &mut self,
-        texture: *mut crate::UnityEngine::RenderTexture,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         id: crate::LIV::SDK::Unity::TEXTURE_ID,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -278,7 +282,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendTextureToBridge", (texture, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGroundPlane_Plane__cordl_bool1(
         &mut self,
@@ -290,11 +294,11 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGroundPlane", (plane, useLocalSpace))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGroundPlane_Transform__cordl_bool2(
         &mut self,
-        transform: *mut crate::UnityEngine::Transform,
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         useLocalSpace: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -302,7 +306,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGroundPlane", (transform, useLocalSpace))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGroundPlane_f32_Vector3__cordl_bool0(
         &mut self,
@@ -315,7 +319,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGroundPlane", (distance, normal, useLocalSpace))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPose(
         &mut self,
@@ -332,7 +336,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
                 "SetPose",
                 (position, rotation, verticalFieldOfView, useLocalSpace),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateBridgeInputFrame(
         &mut self,
@@ -342,7 +346,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateBridgeInputFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateBridgeResolution(
         &mut self,
@@ -352,7 +356,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateBridgeResolution", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateCameraSettings(
         &mut self,
@@ -362,7 +366,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateCameraSettings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateTextures(
         &mut self,
@@ -372,83 +376,89 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateTextures", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        liv: *mut crate::LIV::SDK::Unity::LIV,
+        liv: quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::LIV>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (liv))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_cameraInstance(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera> = __cordl_object
             .invoke("get_cameraInstance", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_cameraReference(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera> = __cordl_object
             .invoke("get_cameraReference", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_canRenderBackground(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_canRenderBackground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_canRenderForeground(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_canRenderForeground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_canRenderOptimized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_canRenderOptimized", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_canSetPose(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_canSetPose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_disableStandardAssets(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_disableStandardAssets", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hmdCamera(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Camera> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Camera = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera> = __cordl_object
             .invoke("get_hmdCamera", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_inputFrame(
         &mut self,
@@ -458,24 +468,26 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: crate::LIV::SDK::Unity::SDKInputFrame = __cordl_object
             .invoke("get_inputFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_interlacedRendering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_interlacedRendering", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_liv(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::LIV::SDK::Unity::LIV> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::LIV>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::LIV::SDK::Unity::LIV = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::LIV> = __cordl_object
             .invoke("get_liv", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_localToWorldMatrix(
         &mut self,
@@ -485,7 +497,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = __cordl_object
             .invoke("get_localToWorldMatrix", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_outputFrame(
         &mut self,
@@ -495,7 +507,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: crate::LIV::SDK::Unity::SDKOutputFrame = __cordl_object
             .invoke("get_outputFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_resolution(
         &mut self,
@@ -505,24 +517,26 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: crate::LIV::SDK::Unity::SDKResolution = __cordl_object
             .invoke("get_resolution", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_spectatorLayerMask(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_spectatorLayerMask", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_stage(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = __cordl_object
             .invoke("get_stage", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_stageLocalToWorldMatrix(
         &mut self,
@@ -532,24 +546,26 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = __cordl_object
             .invoke("get_stageLocalToWorldMatrix", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_stageTransform(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = __cordl_object
             .invoke("get_stageTransform", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_useDeferredRendering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_useDeferredRendering", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LIV+SDK+Unity+SDKRender")]

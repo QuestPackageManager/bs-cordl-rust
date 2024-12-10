@@ -32,14 +32,15 @@ impl crate::BeatSaber::AvatarCore::IAvatarSystemMetadata {
     pub fn get_avatarCreated(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<bool>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
-            .invoke("get_avatarCreated", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object.invoke("get_avatarCreated", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_typeIdentifier(
         &mut self,
@@ -51,7 +52,7 @@ impl crate::BeatSaber::AvatarCore::IAvatarSystemMetadata {
         );
         let __cordl_ret: crate::BeatSaber::AvatarCore::AvatarSystemIdentifier = __cordl_object
             .invoke("get_typeIdentifier", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+IAvatarSystemMetadata")]

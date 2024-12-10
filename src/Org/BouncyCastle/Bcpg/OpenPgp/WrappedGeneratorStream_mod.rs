@@ -36,29 +36,33 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::WrappedGeneratorStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Close", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        _cordl_gen: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
-        str: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        _cordl_gen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
+        >,
+        str: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_gen, str))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        _cordl_gen: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
-        str: *mut crate::System::IO::Stream,
+        _cordl_gen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
+        >,
+        str: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_gen, str))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+WrappedGeneratorStream")]

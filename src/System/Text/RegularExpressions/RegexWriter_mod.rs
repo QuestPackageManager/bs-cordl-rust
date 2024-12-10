@@ -40,12 +40,14 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EmitFragment(
         &mut self,
         nodetype: i32,
-        node: *mut crate::System::Text::RegularExpressions::RegexNode,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexNode,
+        >,
         curIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -53,7 +55,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
             "EmitFragment",
             (nodetype, node, curIndex),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Emit_i32_0(
         &mut self,
@@ -64,7 +66,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
             "Emit",
             (op),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Emit_i32_1(
         &mut self,
@@ -76,7 +78,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
             "Emit",
             (op, opd1),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Emit_i32_i32_2(
         &mut self,
@@ -89,7 +91,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
             "Emit",
             (op, opd1, opd2),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MapCapnum(&mut self, capnum: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -97,7 +99,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
             "MapCapnum",
             (capnum),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PatchJump(
         &mut self,
@@ -109,31 +111,35 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
             "PatchJump",
             (offset, jumpDest),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegexCodeFromRegexTree(
         &mut self,
-        tree: *mut crate::System::Text::RegularExpressions::RegexTree,
+        tree: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexTree,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexCode,
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexCode>,
     > {
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexCode = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexCode,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "RegexCodeFromRegexTree",
             (tree),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StringCode(
         &mut self,
-        str: *mut quest_hook::libil2cpp::Il2CppString,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "StringCode",
             (str),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -145,6 +151,6 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
             ".ctor",
             (emittedSpan, intStackSpan),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

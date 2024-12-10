@@ -99,7 +99,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
             "OnBeforeUpdate",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnUpdate(
         &mut self,
@@ -109,7 +109,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
             "OnUpdate",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -117,7 +117,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
             "get_value",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_value(
         &mut self,
@@ -128,6 +128,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
             "set_value",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

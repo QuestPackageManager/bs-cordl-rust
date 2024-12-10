@@ -32,33 +32,41 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
         &mut self,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
+            >,
         > = __cordl_object.invoke("DisplayJoinPremiumDialogAsync", (token))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPremiumStatusAsync(
         &mut self,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
+            >,
         > = __cordl_object.invoke("GetPremiumStatusAsync", (token))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NotifyPremiumFeature(
         &mut self,
@@ -69,7 +77,7 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NotifyPremiumFeature", (isSpectator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

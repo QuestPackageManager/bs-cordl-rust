@@ -26,36 +26,41 @@ impl std::ops::DerefMut for crate::GlobalNamespace::HealthWarningSceneSetupData 
 #[cfg(feature = "HealthWarningSceneSetupData")]
 impl crate::GlobalNamespace::HealthWarningSceneSetupData {
     pub fn New(
-        nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        nextScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (nextScenesTransitionSetupData))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        nextScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (nextScenesTransitionSetupData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_nextScenesTransitionSetupData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScenesTransitionSetupDataSO>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO = __cordl_object
-            .invoke("get_nextScenesTransitionSetupData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        > = __cordl_object.invoke("get_nextScenesTransitionSetupData", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HealthWarningSceneSetupData")]

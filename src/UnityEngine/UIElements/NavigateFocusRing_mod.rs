@@ -34,73 +34,91 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
     pub type FocusableHierarchyTraversal = crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal;
     pub fn GetFocusChangeDirection(
         &mut self,
-        currentFocusable: *mut crate::UnityEngine::UIElements::Focusable,
-        e: *mut crate::UnityEngine::UIElements::EventBase,
+        currentFocusable: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        >,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::FocusChangeDirection,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::FocusChangeDirection = __cordl_object
-            .invoke("GetFocusChangeDirection", (currentFocusable, e))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusChangeDirection,
+        > = __cordl_object.invoke("GetFocusChangeDirection", (currentFocusable, e))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetNextFocusable(
         &mut self,
-        currentFocusable: *mut crate::UnityEngine::UIElements::Focusable,
-        direction: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Focusable> {
+        currentFocusable: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        >,
+        direction: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusChangeDirection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Focusable = __cordl_object
-            .invoke("GetNextFocusable", (currentFocusable, direction))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        > = __cordl_object.invoke("GetNextFocusable", (currentFocusable, direction))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetNextFocusable2D(
         &mut self,
-        currentFocusable: *mut crate::UnityEngine::UIElements::Focusable,
-        direction: *mut crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Focusable> {
+        currentFocusable: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        >,
+        direction: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Focusable = __cordl_object
-            .invoke("GetNextFocusable2D", (currentFocusable, direction))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        > = __cordl_object.invoke("GetNextFocusable2D", (currentFocusable, direction))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        root: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (root))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        root: *mut crate::UnityEngine::UIElements::VisualElement,
+        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (root))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_focusController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::FocusController,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusController>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::FocusController = __cordl_object
-            .invoke("get_focusController", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusController,
+        > = __cordl_object.invoke("get_focusController", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
@@ -142,12 +160,14 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
 impl crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
-    pub fn New(i: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (i))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -158,7 +178,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
@@ -201,29 +221,35 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversa
 impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal {
     pub fn GetBestOverall(
         &mut self,
-        candidate: *mut crate::UnityEngine::UIElements::VisualElement,
-        bestSoFar: *mut crate::UnityEngine::UIElements::VisualElement,
+        candidate: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        bestSoFar: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetBestOverall",
             (candidate, bestSoFar),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Order(
         &mut self,
-        a: *mut crate::UnityEngine::UIElements::VisualElement,
-        b: *mut crate::UnityEngine::UIElements::VisualElement,
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Order",
             (a, b),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StrictOrder_Rect_Rect1(
         &mut self,
@@ -235,19 +261,19 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
             "StrictOrder",
             (ra, rb),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StrictOrder_VisualElement_VisualElement0(
         &mut self,
-        a: *mut crate::UnityEngine::UIElements::VisualElement,
-        b: *mut crate::UnityEngine::UIElements::VisualElement,
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "StrictOrder",
             (a, b),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TieBreaker(
         &mut self,
@@ -259,28 +285,28 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
             "TieBreaker",
             (ra, rb),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateElement(
         &mut self,
-        v: *mut crate::UnityEngine::UIElements::VisualElement,
+        v: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ValidateElement",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateHierarchyTraversal(
         &mut self,
-        v: *mut crate::UnityEngine::UIElements::VisualElement,
+        v: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ValidateHierarchyTraversal",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

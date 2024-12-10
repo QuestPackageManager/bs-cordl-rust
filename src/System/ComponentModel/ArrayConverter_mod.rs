@@ -28,52 +28,65 @@ impl crate::System::ComponentModel::ArrayConverter {
     pub type ArrayPropertyDescriptor = crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor;
     pub fn ConvertTo(
         &mut self,
-        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-        culture: *mut crate::System::Globalization::CultureInfo,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("ConvertTo", (context, culture, value, destinationType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetProperties(
-        &mut self,
-        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        attributes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Attribute,
+        context: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::ITypeDescriptorContext,
         >,
+        culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::ComponentModel::PropertyDescriptorCollection,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::ComponentModel::PropertyDescriptorCollection = __cordl_object
-            .invoke("GetProperties", (context, value, attributes))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
+            .invoke("ConvertTo", (context, culture, value, destinationType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProperties(
+        &mut self,
+        context: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::ITypeDescriptorContext,
+        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        attributes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        > = __cordl_object.invoke("GetProperties", (context, value, attributes))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPropertiesSupported(
         &mut self,
-        context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
+        context: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::ITypeDescriptorContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetPropertiesSupported", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -83,7 +96,7 @@ impl crate::System::ComponentModel::ArrayConverter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+ComponentModel+ArrayConverter")]
@@ -128,42 +141,45 @@ for crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
 impl crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
     pub fn GetValue(
         &mut self,
-        instance: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("GetValue", (instance))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("GetValue", (instance))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        arrayType: *mut crate::System::Type,
-        elementType: *mut crate::System::Type,
+        arrayType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (arrayType, elementType, index))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetValue(
         &mut self,
-        instance: *mut quest_hook::libil2cpp::Il2CppObject,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetValue", (instance, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        arrayType: *mut crate::System::Type,
-        elementType: *mut crate::System::Type,
+        arrayType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -171,7 +187,7 @@ impl crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (arrayType, elementType, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+ComponentModel+ArrayConverter+ArrayPropertyDescriptor")]

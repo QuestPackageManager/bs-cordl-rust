@@ -66,12 +66,14 @@ impl std::ops::DerefMut for crate::UnityEngine::GUILayoutUtility_LayoutCache {
 }
 #[cfg(feature = "UnityEngine+GUILayoutUtility+LayoutCache")]
 impl crate::UnityEngine::GUILayoutUtility_LayoutCache {
-    pub fn New(instanceID: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        instanceID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (instanceID))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ResetCursor(
         &mut self,
@@ -81,7 +83,7 @@ impl crate::UnityEngine::GUILayoutUtility_LayoutCache {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetCursor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -92,7 +94,7 @@ impl crate::UnityEngine::GUILayoutUtility_LayoutCache {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (instanceID))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_id(
         &mut self,
@@ -103,7 +105,7 @@ impl crate::UnityEngine::GUILayoutUtility_LayoutCache {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_id", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+GUILayoutUtility+LayoutCache")]

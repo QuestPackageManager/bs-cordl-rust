@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeDSPTimes(
         &mut self,
@@ -85,18 +85,20 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
                 "ComputeDSPTimes",
                 (noteDSPTime, aheadTime, timeToPrevNote, timeToNextNote),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        audioClip: *mut crate::UnityEngine::AudioClip,
-        noteController: *mut crate::GlobalNamespace::NoteController,
+        audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        noteController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteController,
+        >,
         noteDSPTime: f64,
         aheadTime: f32,
         missedTimeOffset: f32,
         timeToPrevNote: f32,
         timeToNextNote: f32,
-        saber: *mut crate::GlobalNamespace::Saber,
+        saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
         handleWrongSaberTypeAsGood: bool,
         volumeMultiplier: f32,
         ignoreSaberSpeed: bool,
@@ -123,29 +125,33 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
                     ignoreBadCuts,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn NoteDidStartDissolving(
         &mut self,
-        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
+        noteController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteControllerBase,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NoteDidStartDissolving", (noteController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NoteWasCut(
         &mut self,
-        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteController,
+        >,
         noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -153,7 +159,7 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NoteWasCut", (noteController, noteCutInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnLateUpdate(
         &mut self,
@@ -163,7 +169,7 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnLateUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -173,7 +179,7 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StopPlayingAndFinish(
         &mut self,
@@ -183,7 +189,7 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StopPlayingAndFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -193,36 +199,40 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_didFinishEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
-            *mut crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                *mut crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
-            *mut crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                *mut crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+            >,
         > = __cordl_object.invoke("get_didFinishEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_volumeMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_volumeMultiplier", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_volumeMultiplier(
         &mut self,
@@ -233,7 +243,7 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_volumeMultiplier", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NoteCutSoundEffect")]
@@ -275,12 +285,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutSoundEffect_Pool {
 }
 #[cfg(feature = "NoteCutSoundEffect+Pool")]
 impl crate::GlobalNamespace::NoteCutSoundEffect_Pool {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -290,7 +300,7 @@ impl crate::GlobalNamespace::NoteCutSoundEffect_Pool {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NoteCutSoundEffect+Pool")]

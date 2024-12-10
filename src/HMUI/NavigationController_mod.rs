@@ -39,28 +39,34 @@ impl crate::HMUI::NavigationController {
     pub type __c__DisplayClass8_0 = crate::HMUI::NavigationController___c__DisplayClass8_0;
     pub fn GetNewPositionsForViewControllers(
         &mut self,
-        viewControllers: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::HMUI::ViewController,
+        viewControllers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::HMUI::ViewController>,
         >,
-        fixedViewControllers: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::HMUI::ViewController,
+        fixedViewControllers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                *mut crate::HMUI::ViewController,
+            >,
         >,
         fixedEndPos: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f32> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<f32>,
+        > = __cordl_object
             .invoke(
                 "GetNewPositionsForViewControllers",
                 (viewControllers, fixedViewControllers, fixedEndPos),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LayoutViewControllers(
         &mut self,
-        viewControllers: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::HMUI::ViewController,
+        viewControllers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::HMUI::ViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -68,18 +74,18 @@ impl crate::HMUI::NavigationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LayoutViewControllers", (viewControllers))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PopViewController(
         &mut self,
-        finishedCallback: *mut crate::System::Action,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -87,12 +93,12 @@ impl crate::HMUI::NavigationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PopViewController", (finishedCallback, immediately))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PopViewControllers(
         &mut self,
         numberOfViewControllersToPop: i32,
-        finishedCallback: *mut crate::System::Action,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -103,7 +109,7 @@ impl crate::HMUI::NavigationController {
                 "PopViewControllers",
                 (numberOfViewControllersToPop, finishedCallback, immediately),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PositionVector(
         &mut self,
@@ -114,12 +120,12 @@ impl crate::HMUI::NavigationController {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("PositionVector", (pos))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PushViewController(
         &mut self,
-        viewController: *mut crate::HMUI::ViewController,
-        finishedCallback: *mut crate::System::Action,
+        viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -130,18 +136,18 @@ impl crate::HMUI::NavigationController {
                 "PushViewController",
                 (viewController, finishedCallback, immediately),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetupViewControllerRect(
         &mut self,
-        viewController: *mut crate::HMUI::ViewController,
+        viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetupViewControllerRect", (viewController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -151,7 +157,7 @@ impl crate::HMUI::NavigationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+NavigationController")]

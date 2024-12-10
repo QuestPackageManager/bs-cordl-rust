@@ -33,37 +33,41 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
     )]
     pub type CmsCompressedOutputStream = crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompressedOutputStream;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Open_Il2CppString1(
         &mut self,
-        outStream: *mut crate::System::IO::Stream,
-        contentOID: *mut quest_hook::libil2cpp::Il2CppString,
-        compressionOID: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        contentOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        compressionOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
             .invoke("Open", (outStream, contentOID, compressionOID))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Open_Stream_Il2CppString0(
         &mut self,
-        outStream: *mut crate::System::IO::Stream,
-        compressionOID: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        compressionOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
             .invoke("Open", (outStream, compressionOID))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetBufferSize(
         &mut self,
@@ -74,7 +78,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetBufferSize", (bufferSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -84,7 +88,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
@@ -149,23 +153,31 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompress
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Close", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        outStream: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
-        sGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-        cGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-        eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        outStream: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
+        >,
+        sGen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+        >,
+        cGen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+        >,
+        eiGen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (outStream, sGen, cGen, eiGen))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Write(
         &mut self,
-        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
         len: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -174,7 +186,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompress
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (bytes, off, len))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteByte(
         &mut self,
@@ -185,21 +197,29 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompress
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteByte", (b))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        outStream: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
-        sGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-        cGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-        eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+        outStream: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
+        >,
+        sGen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+        >,
+        cGen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+        >,
+        eiGen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (outStream, sGen, cGen, eiGen))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

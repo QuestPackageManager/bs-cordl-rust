@@ -28,12 +28,12 @@ impl std::ops::DerefMut for crate::BeatSaber::GameSettings::GraphicSettings {
 }
 #[cfg(feature = "BeatSaber+GameSettings+GraphicSettings")]
 impl crate::BeatSaber::GameSettings::GraphicSettings {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -43,36 +43,42 @@ impl crate::BeatSaber::GameSettings::GraphicSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_customPreset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatSaber::PerformancePresets::CustomPerformancePreset,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::PerformancePresets::CustomPerformancePreset,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::BeatSaber::PerformancePresets::CustomPerformancePreset = __cordl_object
-            .invoke("get_customPreset", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::PerformancePresets::CustomPerformancePreset,
+        > = __cordl_object.invoke("get_customPreset", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_isDirty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isDirty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_performancePresetKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_performancePresetKey", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_performancePresetKey", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_windowMode(
         &mut self,
@@ -82,7 +88,7 @@ impl crate::BeatSaber::GameSettings::GraphicSettings {
         );
         let __cordl_ret: crate::BeatSaber::GameSettings::WindowMode = __cordl_object
             .invoke("get_windowMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_windowResolution(
         &mut self,
@@ -92,18 +98,20 @@ impl crate::BeatSaber::GameSettings::GraphicSettings {
         );
         let __cordl_ret: crate::UnityEngine::Vector2Int = __cordl_object
             .invoke("get_windowResolution", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_customPreset(
         &mut self,
-        value: *mut crate::BeatSaber::PerformancePresets::CustomPerformancePreset,
+        value: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::PerformancePresets::CustomPerformancePreset,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_customPreset", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isDirty(
         &mut self,
@@ -114,18 +122,18 @@ impl crate::BeatSaber::GameSettings::GraphicSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isDirty", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_performancePresetKey(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_performancePresetKey", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_windowMode(
         &mut self,
@@ -136,7 +144,7 @@ impl crate::BeatSaber::GameSettings::GraphicSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_windowMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_windowResolution(
         &mut self,
@@ -147,7 +155,7 @@ impl crate::BeatSaber::GameSettings::GraphicSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_windowResolution", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+GameSettings+GraphicSettings")]

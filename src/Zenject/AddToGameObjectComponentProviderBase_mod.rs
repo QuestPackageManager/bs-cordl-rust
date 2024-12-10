@@ -40,13 +40,15 @@ impl crate::Zenject::AddToGameObjectComponentProviderBase {
     pub type __c__DisplayClass17_0 = crate::Zenject::AddToGameObjectComponentProviderBase___c__DisplayClass17_0;
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
-        context: *mut crate::Zenject::InjectContext,
-        args: *mut crate::System::Collections::Generic::List_1<
-            crate::Zenject::TypeValuePair,
+        context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
         injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
-        buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        buffer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -57,42 +59,50 @@ impl crate::Zenject::AddToGameObjectComponentProviderBase {
                 "GetAllInstancesWithInjectSplit",
                 (context, args, injectAction, buffer),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetGameObject(
         &mut self,
-        context: *mut crate::Zenject::InjectContext,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke("GetGameObject", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetInstanceType(
         &mut self,
-        context: *mut crate::Zenject::InjectContext,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("GetInstanceType", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        container: *mut crate::Zenject::DiContainer,
-        componentType: *mut crate::System::Type,
-        extraArguments: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::Zenject::TypeValuePair,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        extraArguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
         >,
-        concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
-        instantiateCallback: *mut crate::System::Action_2<
-            *mut crate::Zenject::InjectContext,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        concreteIdentifier: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        instantiateCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::Zenject::InjectContext,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -106,19 +116,25 @@ impl crate::Zenject::AddToGameObjectComponentProviderBase {
                     instantiateCallback,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        componentType: *mut crate::System::Type,
-        extraArguments: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::Zenject::TypeValuePair,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        extraArguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
         >,
-        concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
-        instantiateCallback: *mut crate::System::Action_2<
-            *mut crate::Zenject::InjectContext,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        concreteIdentifier: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        instantiateCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::Zenject::InjectContext,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -135,41 +151,43 @@ impl crate::Zenject::AddToGameObjectComponentProviderBase {
                     instantiateCallback,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ComponentType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("get_ComponentType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Container(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = __cordl_object
             .invoke("get_Container", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsCached(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsCached", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ShouldToggleActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_ShouldToggleActive", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TypeVariesBasedOnMemberType(
         &mut self,
@@ -179,7 +197,7 @@ impl crate::Zenject::AddToGameObjectComponentProviderBase {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_TypeVariesBasedOnMemberType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+AddToGameObjectComponentProviderBase")]

@@ -30,7 +30,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SteamLevelProductPacksSO {
 impl crate::GlobalNamespace::SteamLevelProductPacksSO {
     pub fn ILevelPackProductDataContainer_SteamLevelProductCollectionModel_LevelPackProductData_SteamLevelProductCollectionModel_LevelProductData__SetLevelPackProductData(
         &mut self,
-        newLevelPackProductData: *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
+        newLevelPackProductData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -40,14 +42,14 @@ impl crate::GlobalNamespace::SteamLevelProductPacksSO {
                 "ILevelPackProductDataContainer<SteamLevelProductCollectionModel.LevelPackProductData,SteamLevelProductCollectionModel.LevelProductData>.SetLevelPackProductData",
                 (newLevelPackProductData),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -57,34 +59,41 @@ impl crate::GlobalNamespace::SteamLevelProductPacksSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_levelPackProductData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData = __cordl_object
-            .invoke("get_levelPackProductData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_levelPackRedirectionData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
+        > = __cordl_object.invoke("get_levelPackProductData", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_levelPackRedirectionData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData,
+            >,
         > = __cordl_object.invoke("get_levelPackRedirectionData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SteamLevelProductPacksSO")]

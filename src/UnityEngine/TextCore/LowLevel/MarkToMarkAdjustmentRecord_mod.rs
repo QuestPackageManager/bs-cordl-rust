@@ -36,7 +36,7 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
             "get_baseMarkGlyphAnchorPoint",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_baseMarkGlyphID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -44,7 +44,7 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
             "get_baseMarkGlyphID",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_combiningMarkGlyphID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -52,7 +52,7 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
             "get_combiningMarkGlyphID",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_combiningMarkPositionAdjustment(
         &mut self,
@@ -64,6 +64,6 @@ impl crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
             "get_combiningMarkPositionAdjustment",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

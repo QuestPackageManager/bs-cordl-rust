@@ -32,7 +32,7 @@ impl crate::UnityEngine::Playables::ScriptPlayableOutput {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -43,6 +43,6 @@ impl crate::UnityEngine::Playables::ScriptPlayableOutput {
             ".ctor",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

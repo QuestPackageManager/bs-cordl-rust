@@ -56,19 +56,19 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateOrUpdateMirrorCamera(
         &mut self,
-        currentCamera: *mut crate::UnityEngine::Camera,
-        renderTexture: *mut crate::UnityEngine::RenderTexture,
+        currentCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        renderTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateOrUpdateMirrorCamera", (currentCamera, renderTexture))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
@@ -96,14 +96,14 @@ impl crate::GlobalNamespace::MirrorRendererSO {
                     enableBloomPrePass,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnValidate(
         &mut self,
@@ -123,7 +123,7 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnValidate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PrepareForNextFrame(
         &mut self,
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PrepareForNextFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RenderMirror(
         &mut self,
@@ -159,19 +159,21 @@ impl crate::GlobalNamespace::MirrorRendererSO {
                     reflectionPlaneNormal,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RenderMirrorTexture(
         &mut self,
         reflectionPlanePos: crate::UnityEngine::Vector3,
         reflectionPlaneNormal: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Texture = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = __cordl_object
             .invoke("RenderMirrorTexture", (reflectionPlanePos, reflectionPlaneNormal))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateParams(
         &mut self,
@@ -181,7 +183,7 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ValidateParams", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -191,7 +193,7 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MirrorRendererSO")]
@@ -233,14 +235,14 @@ for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
 impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_MirrorRendererSO_CameraTransformData0(
         &mut self,
@@ -251,7 +253,7 @@ impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -259,6 +261,6 @@ impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

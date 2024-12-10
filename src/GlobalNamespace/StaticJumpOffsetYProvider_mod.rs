@@ -27,12 +27,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StaticJumpOffsetYProvider {
 impl crate::GlobalNamespace::StaticJumpOffsetYProvider {
     #[cfg(feature = "StaticJumpOffsetYProvider+InitData")]
     pub type InitData = crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -42,14 +42,14 @@ impl crate::GlobalNamespace::StaticJumpOffsetYProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_jumpOffsetY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_jumpOffsetY", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "StaticJumpOffsetYProvider")]
@@ -90,12 +90,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StaticJumpOffsetYProvider_In
 }
 #[cfg(feature = "StaticJumpOffsetYProvider+InitData")]
 impl crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
-    pub fn New(jumpyYOffset: f32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        jumpyYOffset: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (jumpyYOffset))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -106,7 +108,7 @@ impl crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (jumpyYOffset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "StaticJumpOffsetYProvider+InitData")]

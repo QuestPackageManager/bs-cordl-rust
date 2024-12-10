@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetBakedLightsNormalizer(
         &mut self,
@@ -59,29 +59,33 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetBakedLightsNormalizer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLightWithIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::LightWithIds_LightWithId,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::GlobalNamespace::LightWithIds_LightWithId,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::LightWithIds_LightWithId,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::GlobalNamespace::LightWithIds_LightWithId,
+            >,
         > = __cordl_object.invoke("GetLightWithIds", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessNewColorData(
         &mut self,
@@ -91,7 +95,7 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessNewColorData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDataToShaders(
         &mut self,
@@ -103,7 +107,7 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDataToShaders", (lightmapColor, probeColor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetShaderProperties(
         &mut self,
@@ -113,7 +117,7 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetShaderProperties", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -123,7 +127,7 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bakeId(
         &mut self,
@@ -133,7 +137,7 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         );
         let __cordl_ret: crate::GlobalNamespace::LightConstants_BakeId = __cordl_object
             .invoke("get_bakeId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_calculatedColorPreNormalization(
         &mut self,
@@ -143,14 +147,14 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_calculatedColorPreNormalization", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_intensity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mixType(
         &mut self,
@@ -162,14 +166,14 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         );
         let __cordl_ret: crate::GlobalNamespace::ColorMixAndWeightingApproach = __cordl_object
             .invoke("get_mixType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_normalizerWeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_normalizerWeight", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_intensity(
         &mut self,
@@ -180,7 +184,7 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_intensity", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_normalizerWeight(
         &mut self,
@@ -191,7 +195,7 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_normalizerWeight", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LightmapLightWithIds")]
@@ -238,12 +242,12 @@ impl crate::GlobalNamespace::LightmapLightWithIds_LightIntensitiesWithId {
         lightId: i32,
         lightIntensity: f32,
         probeMultiplier: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (lightId, lightIntensity, probeMultiplier))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -256,14 +260,14 @@ impl crate::GlobalNamespace::LightmapLightWithIds_LightIntensitiesWithId {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (lightId, lightIntensity, probeMultiplier))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_intensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_intensity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_probeHighlightsIntensityMultiplier(
         &mut self,
@@ -273,7 +277,7 @@ impl crate::GlobalNamespace::LightmapLightWithIds_LightIntensitiesWithId {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_probeHighlightsIntensityMultiplier", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LightmapLightWithIds+LightIntensitiesWithId")]

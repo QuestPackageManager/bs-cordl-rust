@@ -37,6 +37,6 @@ impl crate::HoudiniEngineUnity::HAPI_Keyframe {
             ".ctor",
             (t, v, in_tangent, out_tangent),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

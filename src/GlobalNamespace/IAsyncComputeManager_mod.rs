@@ -26,19 +26,25 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IAsyncComputeManager {
 impl crate::GlobalNamespace::IAsyncComputeManager {
     pub fn BeginOperation_AsyncComputeOperation0(
         &mut self,
-        asyncComputeOperation: *mut crate::GlobalNamespace::AsyncComputeOperation,
+        asyncComputeOperation: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AsyncComputeOperation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BeginOperation", (asyncComputeOperation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BeginOperation_AsyncComputeOperation_1_1<T>(
         &mut self,
-        asyncComputeOperation: *mut crate::GlobalNamespace::AsyncComputeOperation_1<T>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task_1<T>>
+        asyncComputeOperation: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AsyncComputeOperation_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -46,9 +52,10 @@ impl crate::GlobalNamespace::IAsyncComputeManager {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<T> = __cordl_object
-            .invoke("BeginOperation", (asyncComputeOperation))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = __cordl_object.invoke("BeginOperation", (asyncComputeOperation))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

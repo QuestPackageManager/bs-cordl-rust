@@ -26,70 +26,80 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cmp::RevocationDetails {
 #[cfg(feature = "Org+BouncyCastle+Cmp+RevocationDetails")]
 impl crate::Org::BouncyCastle::Cmp::RevocationDetails {
     pub fn New(
-        revDetails: *mut crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        revDetails: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (revDetails))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ToASN1Structure(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::RevDetails>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::RevDetails = __cordl_object
-            .invoke("ToASN1Structure", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+        > = __cordl_object.invoke("ToASN1Structure", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        revDetails: *mut crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+        revDetails: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (revDetails))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Issuer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name = __cordl_object
-            .invoke("get_Issuer", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        > = __cordl_object.invoke("get_Issuer", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_SerialNumber(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
-            .invoke("get_SerialNumber", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        > = __cordl_object.invoke("get_SerialNumber", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Subject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name = __cordl_object
-            .invoke("get_Subject", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        > = __cordl_object.invoke("get_Subject", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cmp+RevocationDetails")]

@@ -68,7 +68,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Allocate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
@@ -78,7 +78,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Disable(
         &mut self,
@@ -88,7 +88,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Disable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -98,7 +98,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enable(
         &mut self,
@@ -108,22 +108,26 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Enable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         > = __cordl_object.invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNextEvent(
         &mut self,
@@ -135,15 +139,15 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetNextEvent", (current))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_InputDevice_i64__cordl_bool_i64_0(
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         bufferSizeInBytes: i64,
         growBuffer: bool,
         maxBufferSizeInBytes: i64,
         growIncrementSizeInBytes: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -157,14 +161,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
                     growIncrementSizeInBytes,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i64__cordl_bool_i64_1(
         bufferSizeInBytes: i64,
         growBuffer: bool,
         maxBufferSizeInBytes: i64,
         growIncrementSizeInBytes: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -177,7 +181,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
                     growIncrementSizeInBytes,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnBeforeUpdate(
         &mut self,
@@ -187,41 +191,41 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBeforeUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnInputEvent(
         &mut self,
         inputEvent: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnInputEvent", (inputEvent, device))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadFrom_Il2CppString0(
         &mut self,
-        filePath: *mut quest_hook::libil2cpp::Il2CppString,
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadFrom", (filePath))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadFrom_Stream1(
         &mut self,
-        stream: *mut crate::System::IO::Stream,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadFrom", (stream))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Release(
         &mut self,
@@ -231,19 +235,22 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Replay(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController = __cordl_object
-            .invoke("Replay", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        > = __cordl_object.invoke("Replay", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Resize(
         &mut self,
@@ -255,43 +262,46 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("Resize", (newBufferSize, newMaxBufferSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn WriteTo_Il2CppString0(
         &mut self,
-        filePath: *mut quest_hook::libil2cpp::Il2CppString,
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteTo", (filePath))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteTo_Stream1(
         &mut self,
-        stream: *mut crate::System::IO::Stream,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteTo", (stream))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_InputDevice_i64__cordl_bool_i64_0(
         &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         bufferSizeInBytes: i64,
         growBuffer: bool,
         maxBufferSizeInBytes: i64,
@@ -311,7 +321,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
                     growIncrementSizeInBytes,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i64__cordl_bool_i64_1(
         &mut self,
@@ -333,12 +343,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
                     growIncrementSizeInBytes,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_onEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -346,21 +358,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_onEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_allocatedSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_allocatedSizeInBytes", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deviceId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_deviceId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deviceInfos(
         &mut self,
@@ -375,96 +387,111 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo,
         > = __cordl_object.invoke("get_deviceInfos", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_enabled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_eventCount(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_eventCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_m_EventBuffer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_m_EventBuffer", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_m_EventBuffer", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_m_EventBufferHead(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_m_EventBufferHead", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_m_EventBufferHead", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_m_EventBufferTail(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_m_EventBufferTail", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_m_EventBufferTail", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_maxSizeInBytes", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_onFilterEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_3<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-            bool,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+                bool,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-            bool,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+                bool,
+            >,
         > = __cordl_object.invoke("get_onFilterEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_recordFrameMarkers(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_recordFrameMarkers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalEventSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_totalEventSizeInBytes", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_onEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -472,7 +499,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_onEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_deviceId(
         &mut self,
@@ -483,47 +510,49 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_deviceId", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_m_EventBuffer(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_m_EventBuffer", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_m_EventBufferHead(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_m_EventBufferHead", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_m_EventBufferTail(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_m_EventBufferTail", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_onFilterEvent(
         &mut self,
-        value: *mut crate::System::Func_3<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-            bool,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -531,7 +560,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_onFilterEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_recordFrameMarkers(
         &mut self,
@@ -542,7 +571,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_recordFrameMarkers", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
@@ -590,17 +619,17 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
             "get_deviceId",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_layout(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_layout",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_layout", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_stateFormat(
         &mut self,
@@ -612,7 +641,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
             "get_stateFormat",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -620,7 +649,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
             "get_stateSizeInBytes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_deviceId(
         &mut self,
@@ -631,18 +660,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
             "set_deviceId",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_layout(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_layout",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_stateFormat(
         &mut self,
@@ -653,7 +682,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
             "set_stateFormat",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_stateSizeInBytes(
         &mut self,
@@ -664,7 +693,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
             "set_stateSizeInBytes",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
@@ -707,23 +736,25 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        trace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        trace: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (trace))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -733,28 +764,33 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("System.Collections.IEnumerator.get_Current", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("System.Collections.IEnumerator.get_Current", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        trace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        trace: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (trace))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Current(
         &mut self,
@@ -766,7 +802,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = __cordl_object
             .invoke("get_Current", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
@@ -859,7 +895,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("ApplyDeviceMapping", (originalDeviceId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -869,7 +905,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finished(
         &mut self,
@@ -879,7 +915,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finished", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(
         &mut self,
@@ -893,16 +929,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("MoveNext", (skipFrameEvents, eventPtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        trace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        trace: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (trace))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnBeginFrame(
         &mut self,
@@ -912,83 +950,103 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBeginFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEvent(
         &mut self,
-        action: *mut crate::System::Action_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController = __cordl_object
-            .invoke("OnEvent", (action))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        > = __cordl_object.invoke("OnEvent", (action))?;
+        Ok(__cordl_ret.into())
     }
     pub fn OnFinished(
         &mut self,
-        action: *mut crate::System::Action,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController = __cordl_object
-            .invoke("OnFinished", (action))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        > = __cordl_object.invoke("OnFinished", (action))?;
+        Ok(__cordl_ret.into())
     }
     pub fn PlayAllEvents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController = __cordl_object
-            .invoke("PlayAllEvents", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        > = __cordl_object.invoke("PlayAllEvents", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn PlayAllEventsAccordingToTimestamps(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController = __cordl_object
-            .invoke("PlayAllEventsAccordingToTimestamps", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        > = __cordl_object.invoke("PlayAllEventsAccordingToTimestamps", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn PlayAllFramesOneByOne(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController = __cordl_object
-            .invoke("PlayAllFramesOneByOne", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        > = __cordl_object.invoke("PlayAllFramesOneByOne", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn PlayOneEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController = __cordl_object
-            .invoke("PlayOneEvent", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        > = __cordl_object.invoke("PlayOneEvent", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn QueueEvent(
         &mut self,
@@ -999,118 +1057,145 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("QueueEvent", (eventPtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Rewind(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController = __cordl_object
-            .invoke("Rewind", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        > = __cordl_object.invoke("Rewind", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn WithAllDevicesMappedToNewInstances(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController = __cordl_object
-            .invoke("WithAllDevicesMappedToNewInstances", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        > = __cordl_object.invoke("WithAllDevicesMappedToNewInstances", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn WithDeviceMappedFromTo_InputDevice_InputDevice0(
         &mut self,
-        recordedDevice: *mut crate::UnityEngine::InputSystem::InputDevice,
-        playbackDevice: *mut crate::UnityEngine::InputSystem::InputDevice,
+        recordedDevice: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputDevice,
+        >,
+        playbackDevice: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputDevice,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        > = __cordl_object
             .invoke("WithDeviceMappedFromTo", (recordedDevice, playbackDevice))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WithDeviceMappedFromTo_i32_i32_1(
         &mut self,
         recordedDeviceId: i32,
         playbackDeviceId: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
+        > = __cordl_object
             .invoke("WithDeviceMappedFromTo", (recordedDeviceId, playbackDeviceId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        trace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        trace: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (trace))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_createdDevices(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
         > = __cordl_object.invoke("get_createdDevices", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_finished(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_finished", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_paused(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_paused", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_position(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_position", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_trace(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace = __cordl_object
-            .invoke("get_trace", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        > = __cordl_object.invoke("get_trace", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_finished(
         &mut self,
@@ -1121,7 +1206,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_finished", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_paused(
         &mut self,
@@ -1132,7 +1217,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_paused", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_position(
         &mut self,
@@ -1143,7 +1228,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_position", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]

@@ -45,7 +45,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EndDrag", (dropIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetExpectedContentHeight(&mut self) -> quest_hook::libil2cpp::Result<f32>
     where
@@ -56,7 +56,7 @@ impl<
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetExpectedContentHeight", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetExpectedItemHeight(
         &mut self,
@@ -70,7 +70,7 @@ impl<
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetExpectedItemHeight", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetIndexFromPosition(
         &mut self,
@@ -85,7 +85,7 @@ impl<
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetIndexFromPosition", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetOrMakeItemAtIndex(
         &mut self,
@@ -101,11 +101,13 @@ impl<
         );
         let __cordl_ret: T = __cordl_object
             .invoke("GetOrMakeItemAtIndex", (activeItemIndex, scrollViewIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        collectionView: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        collectionView: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -114,7 +116,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (collectionView))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnScroll(
         &mut self,
@@ -129,7 +131,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnScroll", (scrollOffset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Resize(
         &mut self,
@@ -144,7 +146,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Resize", (_cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ScrollToItem(
         &mut self,
@@ -159,7 +161,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ScrollToItem", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn VisibleItemPredicate(&mut self, i: T) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -170,11 +172,13 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("VisibleItemPredicate", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        collectionView: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        collectionView: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -185,7 +189,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (collectionView))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_resolvedItemHeight(&mut self) -> quest_hook::libil2cpp::Result<f32>
     where
@@ -196,7 +200,7 @@ impl<
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_resolvedItemHeight", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+FixedHeightVirtualizationController_1")]

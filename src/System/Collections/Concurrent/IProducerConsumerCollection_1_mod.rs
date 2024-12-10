@@ -32,7 +32,9 @@ impl<
 > crate::System::Collections::Concurrent::IProducerConsumerCollection_1<T> {
     pub fn ToArray(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -40,9 +42,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = __cordl_object
-            .invoke("ToArray", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = __cordl_object.invoke("ToArray", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn TryAdd(&mut self, item: T) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -53,7 +56,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryAdd", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryTake(
         &mut self,
@@ -67,7 +70,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryTake", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

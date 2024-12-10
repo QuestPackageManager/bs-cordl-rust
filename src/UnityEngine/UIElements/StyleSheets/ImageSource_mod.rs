@@ -32,6 +32,6 @@ impl crate::UnityEngine::UIElements::StyleSheets::ImageSource {
             "IsNull",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

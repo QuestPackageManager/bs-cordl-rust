@@ -50,7 +50,7 @@ impl<
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "Acquire", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
@@ -67,12 +67,14 @@ impl<
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDependencies(
         &mut self,
-        deps: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        deps: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -84,7 +86,7 @@ impl<
             "GetDependencies",
             (deps),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDownloadStatus(
         &mut self,
@@ -100,7 +102,7 @@ impl<
             "GetDownloadStatus",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -112,12 +114,14 @@ impl<
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalGetDownloadStatus(
         &mut self,
-        visited: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        visited: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -131,7 +135,7 @@ impl<
             "InternalGetDownloadStatus",
             (visited),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -143,7 +147,7 @@ impl<
             "IsValid",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Release(
         &mut self,
@@ -157,7 +161,7 @@ impl<
             "Release",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_MoveNext(
         &mut self,
@@ -171,7 +175,7 @@ impl<
             "System.Collections.IEnumerator.MoveNext",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_Reset(
         &mut self,
@@ -185,21 +189,25 @@ impl<
             "System.Collections.IEnumerator.Reset",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerator.get_Current",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<TObject>
     where
@@ -211,12 +219,14 @@ impl<
             "WaitForCompletion",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_AsyncOperationBase_1_0(
         &mut self,
-        op: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-            TObject,
+        op: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+                TObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -228,11 +238,13 @@ impl<
             ".ctor",
             (op),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IAsyncOperation1(
         &mut self,
-        op: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        op: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -243,12 +255,14 @@ impl<
             ".ctor",
             (op),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IAsyncOperation_Il2CppString3(
         &mut self,
-        op: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
-        locationName: *mut quest_hook::libil2cpp::Il2CppString,
+        op: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        >,
+        locationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -259,11 +273,13 @@ impl<
             ".ctor",
             (op, locationName),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IAsyncOperation_i32_2(
         &mut self,
-        op: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        op: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        >,
         version: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -275,13 +291,15 @@ impl<
             ".ctor",
             (op, version),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IAsyncOperation_i32_Il2CppString4(
         &mut self,
-        op: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        op: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        >,
         version: i32,
-        locationName: *mut quest_hook::libil2cpp::Il2CppString,
+        locationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -292,13 +310,15 @@ impl<
             ".ctor",
             (op, version, locationName),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_Completed(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                TObject,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                    TObject,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -311,12 +331,14 @@ impl<
             "add_Completed",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_CompletedTypeless(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -328,12 +350,14 @@ impl<
             "add_CompletedTypeless",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_Destroyed(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -345,37 +369,41 @@ impl<
             "add_Destroyed",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DebugName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_DebugName",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_DebugName", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_InternalOp(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-            TObject,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+                TObject,
+            >,
         >,
     >
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-            TObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+                TObject,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_InternalOp", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsDone(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -387,35 +415,37 @@ impl<
             "get_IsDone",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LocationName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_LocationName",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_LocationName", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_OperationException(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    >
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::Exception = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_OperationException",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PercentComplete(&mut self) -> quest_hook::libil2cpp::Result<f32>
     where
@@ -427,7 +457,7 @@ impl<
             "get_PercentComplete",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ReferenceCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -439,7 +469,7 @@ impl<
             "get_ReferenceCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Result(&mut self) -> quest_hook::libil2cpp::Result<TObject>
     where
@@ -451,7 +481,7 @@ impl<
             "get_Result",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Status(
         &mut self,
@@ -467,23 +497,21 @@ impl<
             "get_Status",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Task(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<TObject>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TObject>>,
     >
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<TObject> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Task",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TObject>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Task", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_UnloadSceneOpExcludeReleaseCallback(
         &mut self,
@@ -497,13 +525,15 @@ impl<
             "get_UnloadSceneOpExcludeReleaseCallback",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_Completed(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                TObject,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                    TObject,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -516,12 +546,14 @@ impl<
             "remove_Completed",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_CompletedTypeless(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -533,12 +565,14 @@ impl<
             "remove_CompletedTypeless",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_Destroyed(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -550,11 +584,11 @@ impl<
             "remove_Destroyed",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_LocationName(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -565,7 +599,7 @@ impl<
             "set_LocationName",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_UnloadSceneOpExcludeReleaseCallback(
         &mut self,
@@ -580,6 +614,6 @@ impl<
             "set_UnloadSceneOpExcludeReleaseCallback",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

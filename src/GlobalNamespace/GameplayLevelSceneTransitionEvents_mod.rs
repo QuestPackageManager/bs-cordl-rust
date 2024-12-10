@@ -37,12 +37,16 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMissionLevelDidFinish(
         &mut self,
-        missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-        missionCompletionResults: *mut crate::GlobalNamespace::MissionCompletionResults,
+        missionLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+        >,
+        missionCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,11 +56,13 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
                 "HandleMissionLevelDidFinish",
                 (missionLevelScenesTransitionSetupData, missionCompletionResults),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMultiplayerLevelDidDisconnect(
         &mut self,
-        multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        multiplayerLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        >,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -67,12 +73,16 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
                 "HandleMultiplayerLevelDidDisconnect",
                 (multiplayerLevelScenesTransitionSetupData, disconnectedReason),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMultiplayerLevelDidFinish(
         &mut self,
-        multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-        multiplayerResultsData: *mut crate::GlobalNamespace::MultiplayerResultsData,
+        multiplayerLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        >,
+        multiplayerResultsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerResultsData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -82,12 +92,16 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
                 "HandleMultiplayerLevelDidFinish",
                 (multiplayerLevelScenesTransitionSetupData, multiplayerResultsData),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleStandardLevelDidFinish(
         &mut self,
-        standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        standardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        >,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -97,7 +111,7 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
                 "HandleStandardLevelDidFinish",
                 (standardLevelScenesTransitionSetupData, levelCompletionResults),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokeAnyGameplayLevelDidFinish(
         &mut self,
@@ -107,13 +121,19 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokeAnyGameplayLevelDidFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-        missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-        multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        standardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        >,
+        missionLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+        >,
+        multiplayerLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -125,13 +145,19 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
                     multiplayerLevelScenesTransitionSetupData,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-        missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-        multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        standardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        >,
+        missionLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+        >,
+        multiplayerLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -145,29 +171,29 @@ impl crate::GlobalNamespace::GameplayLevelSceneTransitionEvents {
                     multiplayerLevelScenesTransitionSetupData,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_anyGameplayLevelDidFinishEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_anyGameplayLevelDidFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_anyGameplayLevelDidFinishEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_anyGameplayLevelDidFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "GameplayLevelSceneTransitionEvents")]

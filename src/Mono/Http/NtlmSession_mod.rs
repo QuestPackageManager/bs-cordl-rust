@@ -27,23 +27,25 @@ impl std::ops::DerefMut for crate::Mono::Http::NtlmSession {
 impl crate::Mono::Http::NtlmSession {
     pub fn Authenticate(
         &mut self,
-        challenge: *mut quest_hook::libil2cpp::Il2CppString,
-        webRequest: *mut crate::System::Net::WebRequest,
-        credentials: *mut crate::System::Net::ICredentials,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::Authorization> {
+        challenge: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        webRequest: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+        credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::Authorization = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = __cordl_object
             .invoke("Authenticate", (challenge, webRequest, credentials))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -53,7 +55,7 @@ impl crate::Mono::Http::NtlmSession {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Http+NtlmSession")]

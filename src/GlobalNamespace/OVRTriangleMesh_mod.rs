@@ -32,14 +32,14 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
     pub type Triangle = crate::GlobalNamespace::OVRTriangleMesh_Triangle;
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_OVRTriangleMesh0(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRTriangleMesh__FromAnchor(
         &mut self,
@@ -69,7 +69,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "IOVRAnchorComponent<OVRTriangleMesh>.FromAnchor",
             (anchor),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRTriangleMesh__SetEnabledAsync(
         &mut self,
@@ -81,7 +81,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "IOVRAnchorComponent<OVRTriangleMesh>.SetEnabledAsync",
             (enabled, timeout),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRTriangleMesh__get_Handle(
         &mut self,
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "IOVRAnchorComponent<OVRTriangleMesh>.get_Handle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IOVRAnchorComponent_OVRTriangleMesh__get_Type(
         &mut self,
@@ -103,7 +103,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "IOVRAnchorComponent<OVRTriangleMesh>.get_Type",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ScheduleGetMeshJob(
         &mut self,
@@ -116,17 +116,17 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "ScheduleGetMeshJob",
             (positions, indices, dependencies),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetCounts(
         &mut self,
@@ -138,7 +138,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "TryGetCounts",
             (vertexCount, triangleCount),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetMesh(
         &mut self,
@@ -150,7 +150,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "TryGetMesh",
             (positions, indices),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetMeshRawUntransformed(
         &mut self,
@@ -162,7 +162,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "TryGetMeshRawUntransformed",
             (positions, indices),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -173,7 +173,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             ".ctor",
             (anchor),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Handle(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -181,7 +181,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "get_Handle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -189,7 +189,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "get_IsEnabled",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -197,7 +197,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "get_IsNull",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
@@ -209,7 +209,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             "get_Type",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
@@ -248,7 +248,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
             "Execute",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
@@ -285,7 +285,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
             "Execute",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTriangleMesh+NegateXJob")]
@@ -321,7 +321,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
             "Execute",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTriangleMesh+Triangle")]

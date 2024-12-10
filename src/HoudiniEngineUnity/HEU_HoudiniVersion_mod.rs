@@ -39,12 +39,12 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniVersion {
     pub const HOUDINI_PATCH: i32 = 0i32;
     pub const HOUDINI_VERSION_STRING: &'static str = "18.5.633";
     pub const UNITY_PLUGIN_VERSION: i32 = 2i32;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -54,7 +54,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniVersion {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniVersion")]

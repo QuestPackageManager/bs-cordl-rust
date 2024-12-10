@@ -34,14 +34,14 @@ impl crate::UnityEngine::Timeline::IInterval {
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_intervalEnd", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_intervalStart(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_intervalStart", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+IInterval")]

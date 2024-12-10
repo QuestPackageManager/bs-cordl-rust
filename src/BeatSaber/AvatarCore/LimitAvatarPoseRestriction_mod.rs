@@ -38,14 +38,14 @@ impl crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("LimitHandPositionRelativeToHead", (handPosition, headCenter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RestrictPose(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
                     newRightHandPosition,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
@@ -138,12 +138,12 @@ for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters {
 }
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction+Parameters")]
 impl crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -153,7 +153,7 @@ impl crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction+Parameters")]

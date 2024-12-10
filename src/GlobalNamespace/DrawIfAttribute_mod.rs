@@ -31,32 +31,32 @@ impl crate::GlobalNamespace::DrawIfAttribute {
     #[cfg(feature = "DrawIfAttribute+DisablingType")]
     pub type DisablingType = crate::GlobalNamespace::DrawIfAttribute_DisablingType;
     pub fn New_DrawIfAttribute_DisablingType0(
-        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (propertyName, value, disablingType))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppObject_DrawIfAttribute_DisablingType1(
-        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        orValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        orValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (propertyName, value, orValue, disablingType))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_DrawIfAttribute_DisablingType0(
         &mut self,
-        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -64,13 +64,13 @@ impl crate::GlobalNamespace::DrawIfAttribute {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (propertyName, value, disablingType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppObject_DrawIfAttribute_DisablingType1(
         &mut self,
-        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        orValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        orValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::DrawIfAttribute {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (propertyName, value, orValue, disablingType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "DrawIfAttribute")]

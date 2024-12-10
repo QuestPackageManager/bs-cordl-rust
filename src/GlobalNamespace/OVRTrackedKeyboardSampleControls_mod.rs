@@ -50,14 +50,14 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LaunchKeyboardSelection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetDiffuseShader(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDiffuseShader", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPresentationKeyLabels(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPresentationKeyLabels", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPresentationOpaque(
         &mut self,
@@ -87,18 +87,21 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPresentationOpaque", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetShaderCoroutine(
         &mut self,
-        shaderName: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        shaderName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("SetShaderCoroutine", (shaderName))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("SetShaderCoroutine", (shaderName))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetTrackingEnabled(
         &mut self,
@@ -109,7 +112,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTrackingEnabled", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetUnlitShader(
         &mut self,
@@ -119,7 +122,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetUnlitShader", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -129,7 +132,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -139,7 +142,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _SetShaderCoroutine_b__19_0(
         &mut self,
@@ -149,7 +152,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("<SetShaderCoroutine>b__19_0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -159,7 +162,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTrackedKeyboardSampleControls")]

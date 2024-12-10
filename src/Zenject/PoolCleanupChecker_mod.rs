@@ -40,29 +40,29 @@ impl crate::Zenject::PoolCleanupChecker {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LateDispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        poolFactories: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::IMemoryPool,
+        poolFactories: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::Zenject::IMemoryPool>,
         >,
-        ignoredPools: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Type,
+        ignoredPools: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (poolFactories, ignoredPools))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        poolFactories: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::IMemoryPool,
+        poolFactories: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::Zenject::IMemoryPool>,
         >,
-        ignoredPools: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Type,
+        ignoredPools: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -70,7 +70,7 @@ impl crate::Zenject::PoolCleanupChecker {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (poolFactories, ignoredPools))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+PoolCleanupChecker")]

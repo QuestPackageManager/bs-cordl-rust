@@ -29,24 +29,38 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
     pub fn AreSameBeatmapDataCached(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        environmentInfo: *mut crate::GlobalNamespace::IEnvironmentInfo,
-        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        environmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentInfo,
+        >,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "AreSameBeatmapDataCached",
             (beatmapKey, environmentInfo, gameplayModifiers, playerSpecificSettings),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+        beatmapData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        >,
         beatmapKey: crate::GlobalNamespace::BeatmapKey,
-        environmentInfo: *mut crate::GlobalNamespace::IEnvironmentInfo,
-        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        environmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentInfo,
+        >,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -59,6 +73,6 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
                 playerSpecificSettings,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

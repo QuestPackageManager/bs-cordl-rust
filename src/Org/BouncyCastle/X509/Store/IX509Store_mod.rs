@@ -26,14 +26,19 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::Store::IX509Store {
 impl crate::Org::BouncyCastle::X509::Store::IX509Store {
     pub fn GetMatches(
         &mut self,
-        selector: *mut crate::Org::BouncyCastle::X509::Store::IX509Selector,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+        selector: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Selector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("GetMatches", (selector))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = __cordl_object.invoke("GetMatches", (selector))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

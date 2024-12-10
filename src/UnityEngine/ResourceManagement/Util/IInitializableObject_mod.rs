@@ -29,20 +29,22 @@ for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
 impl crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
     pub fn Initialize(
         &mut self,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-        data: *mut quest_hook::libil2cpp::Il2CppString,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Initialize", (id, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeAsync(
         &mut self,
-        rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-        data: *mut quest_hook::libil2cpp::Il2CppString,
+        rm: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
@@ -54,7 +56,7 @@ impl crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
         > = __cordl_object.invoke("InitializeAsync", (rm, id, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

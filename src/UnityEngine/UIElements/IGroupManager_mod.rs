@@ -26,47 +26,53 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IGroupManager {
 impl crate::UnityEngine::UIElements::IGroupManager {
     pub fn Init(
         &mut self,
-        groupBox: *mut crate::UnityEngine::UIElements::IGroupBox,
+        groupBox: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (groupBox))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnOptionSelectionChanged(
         &mut self,
-        selectedOption: *mut crate::UnityEngine::UIElements::IGroupBoxOption,
+        selectedOption: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IGroupBoxOption,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnOptionSelectionChanged", (selectedOption))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterOption(
         &mut self,
-        option: *mut crate::UnityEngine::UIElements::IGroupBoxOption,
+        option: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IGroupBoxOption,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterOption", (option))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnregisterOption(
         &mut self,
-        option: *mut crate::UnityEngine::UIElements::IGroupBoxOption,
+        option: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IGroupBoxOption,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnregisterOption", (option))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

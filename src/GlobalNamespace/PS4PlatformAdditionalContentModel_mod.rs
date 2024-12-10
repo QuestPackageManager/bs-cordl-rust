@@ -26,9 +26,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PS4PlatformAdditionalContent
 #[cfg(feature = "PS4PlatformAdditionalContentModel")]
 impl crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
     pub fn New(
-        sonyCommerceHelper: *mut crate::GlobalNamespace::ISonyCommerceHelper,
-        sonyLevelProductCollectionModel: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        sonyCommerceHelper: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISonyCommerceHelper,
+        >,
+        sonyLevelProductCollectionModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyLevelProductCollectionModel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -36,19 +40,23 @@ impl crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
                 ".ctor",
                 (sonyCommerceHelper, sonyLevelProductCollectionModel),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        sonyCommerceHelper: *mut crate::GlobalNamespace::ISonyCommerceHelper,
-        sonyLevelProductCollectionModel: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel,
+        sonyCommerceHelper: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISonyCommerceHelper,
+        >,
+        sonyLevelProductCollectionModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyLevelProductCollectionModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (sonyCommerceHelper, sonyLevelProductCollectionModel))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PS4PlatformAdditionalContentModel")]

@@ -33,20 +33,22 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AssetSerializedMetaDa
 impl crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
     pub fn IsEquivalentTo(
         &mut self,
-        other: *mut crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData,
+        other: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsEquivalentTo", (other))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -56,35 +58,39 @@ impl crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SavedCurveNodeData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::CurveNodeData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::System::Collections::Generic::List_1<
+                    *mut crate::HoudiniEngineUnity::CurveNodeData,
+                >,
             >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::CurveNodeData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::System::Collections::Generic::List_1<
+                    *mut crate::HoudiniEngineUnity::CurveNodeData,
+                >,
             >,
         > = __cordl_object.invoke("get_SavedCurveNodeData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SoftDeleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_SoftDeleted", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_SoftDeleted(
         &mut self,
@@ -95,7 +101,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SoftDeleted", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSerializedMetaData")]

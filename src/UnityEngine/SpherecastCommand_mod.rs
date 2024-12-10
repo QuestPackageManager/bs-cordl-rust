@@ -41,7 +41,7 @@ impl crate::UnityEngine::SpherecastCommand {
             ".ctor",
             (physicsScene, origin, radius, direction, queryParameters, distance),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_PhysicsScene_Vector3_f32_Vector3_f32_i32_3(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::UnityEngine::SpherecastCommand {
             ".ctor",
             (physicsScene, origin, radius, direction, distance, layerMask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Vector3_f32_Vector3_QueryParameters_f32_0(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::UnityEngine::SpherecastCommand {
             ".ctor",
             (origin, radius, direction, queryParameters, distance),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Vector3_f32_Vector3_f32_i32_2(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::UnityEngine::SpherecastCommand {
             ".ctor",
             (origin, radius, direction, distance, layerMask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_direction(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::UnityEngine::SpherecastCommand {
             "get_direction",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -105,7 +105,7 @@ impl crate::UnityEngine::SpherecastCommand {
             "get_distance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_layerMask(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -113,7 +113,7 @@ impl crate::UnityEngine::SpherecastCommand {
             "get_layerMask",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_origin(
         &mut self,
@@ -123,7 +123,7 @@ impl crate::UnityEngine::SpherecastCommand {
             "get_origin",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_physicsScene(
         &mut self,
@@ -133,7 +133,7 @@ impl crate::UnityEngine::SpherecastCommand {
             "get_physicsScene",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_radius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -141,7 +141,7 @@ impl crate::UnityEngine::SpherecastCommand {
             "get_radius",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_direction(
         &mut self,
@@ -152,7 +152,7 @@ impl crate::UnityEngine::SpherecastCommand {
             "set_direction",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_distance(
         &mut self,
@@ -163,7 +163,7 @@ impl crate::UnityEngine::SpherecastCommand {
             "set_distance",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_layerMask(
         &mut self,
@@ -174,7 +174,7 @@ impl crate::UnityEngine::SpherecastCommand {
             "set_layerMask",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_origin(
         &mut self,
@@ -185,7 +185,7 @@ impl crate::UnityEngine::SpherecastCommand {
             "set_origin",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_physicsScene(
         &mut self,
@@ -196,7 +196,7 @@ impl crate::UnityEngine::SpherecastCommand {
             "set_physicsScene",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_radius(
         &mut self,
@@ -207,6 +207,6 @@ impl crate::UnityEngine::SpherecastCommand {
             "set_radius",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

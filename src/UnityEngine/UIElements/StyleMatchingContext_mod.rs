@@ -36,37 +36,42 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleMatchingContext
 impl crate::UnityEngine::UIElements::StyleMatchingContext {
     pub fn AddStyleSheet(
         &mut self,
-        sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
+        sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddStyleSheet", (sheet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetStyleSheetAt(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::StyleSheet> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleSheet = __cordl_object
-            .invoke("GetStyleSheetAt", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheet,
+        > = __cordl_object.invoke("GetStyleSheetAt", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        processResult: *mut crate::System::Action_2<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-            crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+        processResult: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::UnityEngine::UIElements::VisualElement,
+                crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (processResult))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveStyleSheetRange(
         &mut self,
@@ -78,13 +83,15 @@ impl crate::UnityEngine::UIElements::StyleMatchingContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveStyleSheetRange", (index, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        processResult: *mut crate::System::Action_2<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-            crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+        processResult: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::UnityEngine::UIElements::VisualElement,
+                crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -92,14 +99,14 @@ impl crate::UnityEngine::UIElements::StyleMatchingContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (processResult))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_styleSheetCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_styleSheetCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleMatchingContext")]

@@ -27,7 +27,7 @@ impl crate::UnityEngine::Timeline::ILayerable {
     pub fn CreateLayerMixer(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        go: *mut crate::UnityEngine::GameObject,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         inputCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -35,7 +35,7 @@ impl crate::UnityEngine::Timeline::ILayerable {
         );
         let __cordl_ret: crate::UnityEngine::Playables::Playable = __cordl_object
             .invoke("CreateLayerMixer", (graph, go, inputCount))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

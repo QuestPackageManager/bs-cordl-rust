@@ -38,62 +38,76 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
     pub type __c__DisplayClass74_0 = crate::System::Linq::Expressions::Interpreter::LightLambda___c__DisplayClass74_0;
     pub fn CreateCustomDelegate(
         &mut self,
-        delegateType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Delegate> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Delegate = __cordl_object
-            .invoke("CreateCustomDelegate", (delegateType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MakeDelegate(
-        &mut self,
-        delegateType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Delegate> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Delegate = __cordl_object
-            .invoke("MakeDelegate", (delegateType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MakeFrame(
-        &mut self,
+        delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame = __cordl_object
-            .invoke("MakeFrame", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = __cordl_object
+            .invoke("CreateCustomDelegate", (delegateType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeDelegate(
+        &mut self,
+        delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = __cordl_object
+            .invoke("MakeDelegate", (delegateType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeFrame(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+        > = __cordl_object.invoke("MakeFrame", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        delegateCreator: *mut crate::System::Linq::Expressions::Interpreter::LightDelegateCreator,
-        closure: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::CompilerServices::IStrongBox,
+        delegateCreator: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LightDelegateCreator,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        closure: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (delegateCreator, closure))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Run(
         &mut self,
-        arguments: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        arguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("Run", (arguments))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Run", (arguments))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Run0<TRet>(&mut self) -> quest_hook::libil2cpp::Result<TRet>
     where
@@ -104,7 +118,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
             self,
         );
         let __cordl_ret: TRet = __cordl_object.invoke("Run0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run1<T0, TRet>(&mut self, arg0: T0) -> quest_hook::libil2cpp::Result<TRet>
     where
@@ -117,7 +131,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
             self,
         );
         let __cordl_ret: TRet = __cordl_object.invoke("Run1", (arg0))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run10<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, TRet>(
         &mut self,
@@ -164,7 +178,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                 "Run10",
                 (arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run11<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TRet>(
         &mut self,
@@ -214,7 +228,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                 "Run11",
                 (arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run12<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TRet>(
         &mut self,
@@ -280,7 +294,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     arg11,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run13<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TRet>(
         &mut self,
@@ -350,7 +364,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     arg12,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run14<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TRet>(
         &mut self,
@@ -424,7 +438,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     arg13,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run15<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TRet>(
         &mut self,
@@ -502,7 +516,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     arg14,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run2<T0, T1, TRet>(
         &mut self,
@@ -521,7 +535,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
             self,
         );
         let __cordl_ret: TRet = __cordl_object.invoke("Run2", (arg0, arg1))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run3<T0, T1, T2, TRet>(
         &mut self,
@@ -543,7 +557,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
             self,
         );
         let __cordl_ret: TRet = __cordl_object.invoke("Run3", (arg0, arg1, arg2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run4<T0, T1, T2, T3, TRet>(
         &mut self,
@@ -568,7 +582,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
             self,
         );
         let __cordl_ret: TRet = __cordl_object.invoke("Run4", (arg0, arg1, arg2, arg3))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run5<T0, T1, T2, T3, T4, TRet>(
         &mut self,
@@ -597,7 +611,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: TRet = __cordl_object
             .invoke("Run5", (arg0, arg1, arg2, arg3, arg4))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run6<T0, T1, T2, T3, T4, T5, TRet>(
         &mut self,
@@ -629,7 +643,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: TRet = __cordl_object
             .invoke("Run6", (arg0, arg1, arg2, arg3, arg4, arg5))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run7<T0, T1, T2, T3, T4, T5, T6, TRet>(
         &mut self,
@@ -664,7 +678,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: TRet = __cordl_object
             .invoke("Run7", (arg0, arg1, arg2, arg3, arg4, arg5, arg6))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run8<T0, T1, T2, T3, T4, T5, T6, T7, TRet>(
         &mut self,
@@ -702,7 +716,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: TRet = __cordl_object
             .invoke("Run8", (arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run9<T0, T1, T2, T3, T4, T5, T6, T7, T8, TRet>(
         &mut self,
@@ -743,20 +757,23 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: TRet = __cordl_object
             .invoke("Run9", (arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid(
         &mut self,
-        arguments: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        arguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("RunVoid", (arguments))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("RunVoid", (arguments))?;
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid0(
         &mut self,
@@ -766,7 +783,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunVoid0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid1<T0>(
         &mut self,
@@ -781,7 +798,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunVoid1", (arg0))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid10<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9>(
         &mut self,
@@ -826,7 +843,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                 "RunVoid10",
                 (arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid11<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
         &mut self,
@@ -874,7 +891,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                 "RunVoid11",
                 (arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid12<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(
         &mut self,
@@ -938,7 +955,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     arg11,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid13<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(
         &mut self,
@@ -1006,7 +1023,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     arg12,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid14<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(
         &mut self,
@@ -1078,7 +1095,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     arg13,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid15<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(
         &mut self,
@@ -1154,7 +1171,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     arg14,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid2<T0, T1>(
         &mut self,
@@ -1172,7 +1189,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunVoid2", (arg0, arg1))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid3<T0, T1, T2>(
         &mut self,
@@ -1193,7 +1210,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunVoid3", (arg0, arg1, arg2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid4<T0, T1, T2, T3>(
         &mut self,
@@ -1217,7 +1234,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunVoid4", (arg0, arg1, arg2, arg3))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid5<T0, T1, T2, T3, T4>(
         &mut self,
@@ -1244,7 +1261,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunVoid5", (arg0, arg1, arg2, arg3, arg4))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid6<T0, T1, T2, T3, T4, T5>(
         &mut self,
@@ -1274,7 +1291,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunVoid6", (arg0, arg1, arg2, arg3, arg4, arg5))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid7<T0, T1, T2, T3, T4, T5, T6>(
         &mut self,
@@ -1307,7 +1324,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunVoid7", (arg0, arg1, arg2, arg3, arg4, arg5, arg6))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid8<T0, T1, T2, T3, T4, T5, T6, T7>(
         &mut self,
@@ -1343,7 +1360,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunVoid8", (arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoid9<T0, T1, T2, T3, T4, T5, T6, T7, T8>(
         &mut self,
@@ -1382,7 +1399,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunVoid9", (arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunVoidRef2<T0, T1>(
         &mut self,
@@ -1400,13 +1417,17 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunVoidRef2", (arg0, arg1))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        delegateCreator: *mut crate::System::Linq::Expressions::Interpreter::LightDelegateCreator,
-        closure: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::CompilerServices::IStrongBox,
+        delegateCreator: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LightDelegateCreator,
+        >,
+        closure: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1414,17 +1435,20 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (delegateCreator, closure))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DebugView(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_DebugView", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_DebugView", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda")]
@@ -1483,7 +1507,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddHandlerExit", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddTryStart(
         &mut self,
@@ -1494,7 +1518,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddTryStart", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Analyze(
         &mut self,
@@ -1504,7 +1528,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Analyze", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dedent(
         &mut self,
@@ -1514,11 +1538,11 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dedent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EmitExits(
         &mut self,
-        sb: *mut crate::System::Text::StringBuilder,
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1526,7 +1550,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EmitExits", (sb, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Indent(
         &mut self,
@@ -1536,37 +1560,44 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Indent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        interpreter: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Interpreter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (interpreter))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
+        interpreter: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Interpreter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (interpreter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]

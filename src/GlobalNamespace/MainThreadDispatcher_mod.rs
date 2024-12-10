@@ -51,18 +51,18 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
     > = crate::GlobalNamespace::MainThreadDispatcher___c__DisplayClass5_0_4<A, B, C, D>;
     pub fn DispatchOnMainThread_Action0(
         &mut self,
-        action: *mut crate::System::Action,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DispatchOnMainThread", (action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DispatchOnMainThread_Action_1_A1<A>(
         &mut self,
-        action: *mut crate::System::Action_1<A>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>,
         firstParameter: A,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -74,11 +74,11 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DispatchOnMainThread", (action, firstParameter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DispatchOnMainThread_Action_2_A_B2<A, B>(
         &mut self,
-        action: *mut crate::System::Action_2<A, B>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_2<A, B>>,
         firstParameter: A,
         secondParameter: B,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -93,11 +93,11 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DispatchOnMainThread", (action, firstParameter, secondParameter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DispatchOnMainThread_Action_3_A_B_C3<A, B, C>(
         &mut self,
-        action: *mut crate::System::Action_3<A, B, C>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_3<A, B, C>>,
         firstParameter: A,
         secondParameter: B,
         thirdParameter: C,
@@ -118,11 +118,11 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
                 "DispatchOnMainThread",
                 (action, firstParameter, secondParameter, thirdParameter),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DispatchOnMainThread_Action_4_A_B_C_D4<A, B, C, D>(
         &mut self,
-        action: *mut crate::System::Action_4<A, B, C, D>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_4<A, B, C, D>>,
         firstParameter: A,
         secondParameter: B,
         thirdParameter: C,
@@ -152,14 +152,14 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
                     fourthParameter,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Tick(
         &mut self,
@@ -169,7 +169,7 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Tick", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -179,7 +179,7 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MainThreadDispatcher")]

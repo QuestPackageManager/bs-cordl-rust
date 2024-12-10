@@ -28,84 +28,95 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::SignerInformationStor
 impl crate::Org::BouncyCastle::Cms::SignerInformationStore {
     pub fn GetFirstSigner(
         &mut self,
-        selector: *mut crate::Org::BouncyCastle::Cms::SignerID,
+        selector: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerID>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cms::SignerInformation,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerInformation>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::SignerInformation = __cordl_object
-            .invoke("GetFirstSigner", (selector))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformation,
+        > = __cordl_object.invoke("GetFirstSigner", (selector))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetSigners_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("GetSigners", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = __cordl_object.invoke("GetSigners", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetSigners_SignerID1(
         &mut self,
-        selector: *mut crate::Org::BouncyCastle::Cms::SignerID,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+        selector: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerID>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("GetSigners", (selector))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = __cordl_object.invoke("GetSigners", (selector))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_ICollection1(
-        signerInfos: *mut crate::System::Collections::ICollection,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        signerInfos: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (signerInfos))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_SignerInformation0(
-        signerInfo: *mut crate::Org::BouncyCastle::Cms::SignerInformation,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        signerInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformation,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (signerInfo))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_ICollection1(
         &mut self,
-        signerInfos: *mut crate::System::Collections::ICollection,
+        signerInfos: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (signerInfos))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SignerInformation0(
         &mut self,
-        signerInfo: *mut crate::Org::BouncyCastle::Cms::SignerInformation,
+        signerInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (signerInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+SignerInformationStore")]

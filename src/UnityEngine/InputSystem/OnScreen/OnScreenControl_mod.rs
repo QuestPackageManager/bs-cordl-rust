@@ -32,12 +32,12 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo"
     )]
     pub type OnScreenDeviceInfo = crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInfo;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendValueToControl<TValue>(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendValueToControl", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SentDefaultValueToControl(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SentDefaultValueToControl", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetupInputControl(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetupInputControl", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -102,61 +102,68 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_control(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = __cordl_object
-            .invoke("get_control", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        > = __cordl_object.invoke("get_control", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_controlPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_controlPath", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_controlPath", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_controlPathInternal(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_controlPathInternal", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_controlPathInternal", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_controlPath(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_controlPath", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_controlPathInternal(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_controlPathInternal", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl")]
@@ -199,7 +206,9 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInf
 impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInfo {
     pub fn AddControl(
         &mut self,
-        control: *mut crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInfo,
     > {
@@ -208,7 +217,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceIn
             "AddControl",
             (control),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Destroy(
         &mut self,
@@ -218,11 +227,13 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceIn
             "Destroy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveControl(
         &mut self,
-        control: *mut crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInfo,
     > {
@@ -231,6 +242,6 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceIn
             "RemoveControl",
             (control),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

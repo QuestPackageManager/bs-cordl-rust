@@ -93,7 +93,9 @@ impl<
     >;
     pub fn CopyFrom(
         &mut self,
-        other: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData>,
+        other: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -106,11 +108,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyFrom", (other))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlesType(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -122,11 +124,11 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HandlesType", (_cordl_type))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn INetworkPacketSubSerializer_TData__Deserialize(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         length: i32,
         data: TData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -144,12 +146,12 @@ impl<
                 "INetworkPacketSubSerializer<TData>.Deserialize",
                 (reader, length, data),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn INetworkPacketSubSerializer_TData__Serialize(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        packet: *mut crate::LiteNetLib::Utils::INetSerializable,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -162,11 +164,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("INetworkPacketSubSerializer<TData>.Serialize", (writer, packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Log(
         &mut self,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -179,9 +181,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Log", (message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -192,11 +194,11 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessAllPackets(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         data: TData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -210,11 +212,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessAllPackets", (reader, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessPacket(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         data: TData,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -227,11 +229,11 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ProcessPacket", (reader, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessPacketInternal(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         length: i32,
         data: TData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -246,12 +248,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessPacketInternal", (reader, length, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterCallback_Action_1_0<TPacket>(
         &mut self,
         packetType: TType,
-        callback: *mut crate::System::Action_1<TPacket>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TPacket>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -266,13 +268,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterCallback", (packetType, callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterCallback_Action_1_Func_1_1<TPacket>(
         &mut self,
         packetType: TType,
-        callback: *mut crate::System::Action_1<TPacket>,
-        constructor: *mut crate::System::Func_1<TPacket>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TPacket>>,
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TPacket>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -287,12 +289,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterCallback", (packetType, callback, constructor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterCallback_Action_2_2<TPacket>(
         &mut self,
         packetType: TType,
-        callback: *mut crate::System::Action_2<TPacket, TData>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_2<TPacket, TData>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -307,13 +309,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterCallback", (packetType, callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterCallback_Action_2_Func_1_3<TPacket>(
         &mut self,
         packetType: TType,
-        callback: *mut crate::System::Action_2<TPacket, TData>,
-        constructor: *mut crate::System::Func_1<TPacket>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_2<TPacket, TData>>,
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TPacket>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -328,13 +330,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterCallback", (packetType, callback, constructor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterCallback_Action_2_Func_2_4<TPacket>(
         &mut self,
         packetType: TType,
-        callback: *mut crate::System::Action_2<TPacket, TData>,
-        constructor: *mut crate::System::Func_2<TData, TPacket>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_2<TPacket, TData>>,
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_2<TData, TPacket>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -349,13 +351,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterCallback", (packetType, callback, constructor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterSubSerializer(
         &mut self,
         packetType: TType,
-        subSubSerializer: *mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<
-            TData,
+        subSubSerializer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -369,12 +371,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterSubSerializer", (packetType, subSubSerializer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializePacket(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        packet: *mut crate::LiteNetLib::Utils::INetSerializable,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -387,12 +389,14 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SerializePacket", (writer, packet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializePacketInternal(
         &mut self,
-        externalWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        packet: *mut crate::LiteNetLib::Utils::INetSerializable,
+        externalWriter: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetDataWriter,
+        >,
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>,
         prependLength: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -406,11 +410,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SerializePacketInternal", (externalWriter, packet, prependLength))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetPacketType(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         packetType: quest_hook::libil2cpp::ByRefMut<u8>,
         subSerializer: quest_hook::libil2cpp::ByRefMut<
             *mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
@@ -427,7 +431,7 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetPacketType", (_cordl_type, packetType, subSerializer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnregisterCallback<TPacket>(
         &mut self,
@@ -446,13 +450,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnregisterCallback", (packetType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnregisterSubSerializer(
         &mut self,
         packetType: TType,
-        subSubSerializer: *mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<
-            TData,
+        subSubSerializer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -466,7 +470,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnregisterSubSerializer", (packetType, subSubSerializer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -480,7 +484,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NetworkPacketSerializer_2")]

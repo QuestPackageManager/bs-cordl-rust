@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BuildMaterials(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BuildMaterials", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BuildMeshes(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BuildMeshes", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisableRenderers(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisableRenderers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnableRenderers(
         &mut self,
@@ -107,7 +107,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnableRenderers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTanFovAndOffsetForMonoEye(
         &mut self,
@@ -124,7 +124,7 @@ impl crate::GlobalNamespace::OVRVignette {
                 "GetTanFovAndOffsetForMonoEye",
                 (tanFovX, tanFovY, offsetX, offsetY),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTanFovAndOffsetForStereoEye(
         &mut self,
@@ -142,33 +142,33 @@ impl crate::GlobalNamespace::OVRVignette {
                 "GetTanFovAndOffsetForStereoEye",
                 (eye, tanFovX, tanFovY, offsetX, offsetY),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTriangleCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetTriangleCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnBeginCameraRendering(
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
-        camera: *mut crate::UnityEngine::Camera,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBeginCameraRendering", (context, camera))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -188,7 +188,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPostRender(
         &mut self,
@@ -198,7 +198,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPostRender", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPreCull(
         &mut self,
@@ -208,7 +208,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPreCull", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -218,7 +218,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn VisibilityTest(
         &mut self,
@@ -232,7 +232,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("VisibilityTest", (scaleX, scaleY, offsetX, offsetY))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -242,7 +242,7 @@ impl crate::GlobalNamespace::OVRVignette {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRVignette")]

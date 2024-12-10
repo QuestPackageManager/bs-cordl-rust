@@ -37,20 +37,22 @@ impl crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization 
     pub type __c__DisplayClass1_0 = crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization___c__DisplayClass1_0;
     pub fn Initialize(
         &mut self,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-        dataStr: *mut quest_hook::libil2cpp::Il2CppString,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        dataStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Initialize", (id, dataStr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeAsync(
         &mut self,
-        rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-        data: *mut quest_hook::libil2cpp::Il2CppString,
+        rm: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
@@ -62,14 +64,14 @@ impl crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization 
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
         > = __cordl_object.invoke("InitializeAsync", (rm, id, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -79,7 +81,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
@@ -145,32 +147,32 @@ impl crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Execute", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        callback: *mut crate::System::Func_1<bool>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Update(
         &mut self,
@@ -181,7 +183,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (unscaledDeltaTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -191,7 +193,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

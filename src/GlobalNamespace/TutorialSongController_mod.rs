@@ -69,43 +69,57 @@ impl crate::GlobalNamespace::TutorialSongController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateBasicNoteData(
         &mut self,
         _cordl_time: f32,
-        tutorialBasicNoteSpawnData: *mut crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::NoteData> {
+        tutorialBasicNoteSpawnData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::NoteData = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = __cordl_object
             .invoke("CreateBasicNoteData", (_cordl_time, tutorialBasicNoteSpawnData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateBombNoteData(
         &mut self,
         _cordl_time: f32,
-        tutorialBombNoteSpawnData: *mut crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::NoteData> {
+        tutorialBombNoteSpawnData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::NoteData = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = __cordl_object
             .invoke("CreateBombNoteData", (_cordl_time, tutorialBombNoteSpawnData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateObstacleData(
         &mut self,
         _cordl_time: f32,
-        tutorialObstacleSpawnData: *mut crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ObstacleData> {
+        tutorialObstacleSpawnData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::ObstacleData = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ObstacleData,
+        > = __cordl_object
             .invoke("CreateObstacleData", (_cordl_time, tutorialObstacleSpawnData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNextBeatmapObjectTime(
         &mut self,
@@ -116,11 +130,13 @@ impl crate::GlobalNamespace::TutorialSongController {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("GetNextBeatmapObjectTime", (beatOffset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoteWasCut(
         &mut self,
-        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteController,
+        >,
         noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -128,36 +144,38 @@ impl crate::GlobalNamespace::TutorialSongController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleNoteWasCut", (noteController, noteCutInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoteWasMissed(
         &mut self,
-        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleNoteWasMissed", (noteController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleObstacleDidPassThreeQuartersOfMove2(
         &mut self,
-        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
+        obstacleController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleObstacleDidPassThreeQuartersOfMove2", (obstacleController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -167,7 +185,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PauseSong(
         &mut self,
@@ -177,7 +195,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PauseSong", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResumeSong(
         &mut self,
@@ -187,7 +205,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResumeSong", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -197,7 +215,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartSong(
         &mut self,
@@ -208,7 +226,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartSong", (startTimeOffset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StopSong(
         &mut self,
@@ -218,7 +236,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StopSong", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateBeatmapData(
         &mut self,
@@ -229,7 +247,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateBeatmapData", (noteTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -239,7 +257,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TutorialSongController")]
@@ -282,25 +300,25 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TutorialSongController_InitD
 impl crate::GlobalNamespace::TutorialSongController_InitData {
     pub fn New(
         songBpm: f32,
-        beatmapData: *mut crate::GlobalNamespace::BeatmapData,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (songBpm, beatmapData))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         songBpm: f32,
-        beatmapData: *mut crate::GlobalNamespace::BeatmapData,
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (songBpm, beatmapData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TutorialSongController+InitData")]
@@ -345,14 +363,14 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
 #[cfg(feature = "TutorialSongController+TutorialBasicNoteSpawnData")]
 impl crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
     pub fn New(
-        signal: *mut crate::GlobalNamespace::Signal,
+        signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
         firstTimeBeatOffset: i32,
         beatOffset: i32,
         lineIndex: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
         colorType: crate::GlobalNamespace::ColorType,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -368,11 +386,11 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
                     colorType,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        signal: *mut crate::GlobalNamespace::Signal,
+        signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
         firstTimeBeatOffset: i32,
         beatOffset: i32,
         lineIndex: i32,
@@ -396,7 +414,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
                     colorType,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TutorialSongController+TutorialBasicNoteSpawnData")]
@@ -439,12 +457,12 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
 #[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
 impl crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
     pub fn New(
-        signal: *mut crate::GlobalNamespace::Signal,
+        signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
         firstTimeBeatOffset: i32,
         beatOffset: i32,
         lineIndex: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -452,11 +470,11 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
                 ".ctor",
                 (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        signal: *mut crate::GlobalNamespace::Signal,
+        signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
         firstTimeBeatOffset: i32,
         beatOffset: i32,
         lineIndex: i32,
@@ -470,7 +488,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
                 ".ctor",
                 (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
@@ -514,12 +532,12 @@ for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData 
 #[cfg(feature = "TutorialSongController+TutorialJumpingNoteSpawnData")]
 impl crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData {
     pub fn New(
-        signal: *mut crate::GlobalNamespace::Signal,
+        signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
         firstTimeBeatOffset: i32,
         beatOffset: i32,
         lineIndex: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -527,11 +545,11 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData
                 ".ctor",
                 (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        signal: *mut crate::GlobalNamespace::Signal,
+        signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
         firstTimeBeatOffset: i32,
         beatOffset: i32,
         lineIndex: i32,
@@ -545,7 +563,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData
                 ".ctor",
                 (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TutorialSongController+TutorialJumpingNoteSpawnData")]
@@ -592,20 +610,20 @@ for crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
 #[cfg(feature = "TutorialSongController+TutorialObjectSpawnData")]
 impl crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
     pub fn New(
-        signal: *mut crate::GlobalNamespace::Signal,
+        signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
         firstTimeBeatOffset: i32,
         beatOffset: i32,
         lineIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (signal, firstTimeBeatOffset, beatOffset, lineIndex))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        signal: *mut crate::GlobalNamespace::Signal,
+        signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
         firstTimeBeatOffset: i32,
         beatOffset: i32,
         lineIndex: i32,
@@ -615,7 +633,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (signal, firstTimeBeatOffset, beatOffset, lineIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TutorialSongController+TutorialObjectSpawnData")]
@@ -661,14 +679,14 @@ for crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
 #[cfg(feature = "TutorialSongController+TutorialObstacleSpawnData")]
 impl crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
     pub fn New(
-        signal: *mut crate::GlobalNamespace::Signal,
+        signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
         firstTimeBeatOffset: i32,
         beatOffset: i32,
         lineIndex: i32,
         width: i32,
         height: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -684,11 +702,11 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
                     noteLineLayer,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        signal: *mut crate::GlobalNamespace::Signal,
+        signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
         firstTimeBeatOffset: i32,
         beatOffset: i32,
         lineIndex: i32,
@@ -712,7 +730,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
                     noteLineLayer,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TutorialSongController+TutorialObstacleSpawnData")]

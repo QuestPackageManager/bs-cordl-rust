@@ -45,19 +45,25 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
         &mut self,
         maxStackDepth: i32,
         maxContinuationDepth: i32,
-        instructions: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+        instructions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+            >,
         >,
-        objects: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        objects: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
-        labels: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Linq::Expressions::Interpreter::RuntimeLabel,
+        labels: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Linq::Expressions::Interpreter::RuntimeLabel,
+            >,
         >,
-        debugCookies: *mut crate::System::Collections::Generic::List_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                i32,
-                *mut quest_hook::libil2cpp::Il2CppObject,
+        debugCookies: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    i32,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -73,7 +79,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
                 debugCookies,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray+DebugView")]
@@ -110,26 +116,30 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
         &mut self,
         includeDebugCookies: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView,
+            >,
         > = __cordl_object.invoke("GetInstructionViews", (includeDebugCookies))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         array: crate::System::Linq::Expressions::Interpreter::InstructionArray,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (array))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _GetInstructionViews_b__4_0(
         &mut self,
@@ -140,7 +150,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("<GetInstructionViews>b__4_0", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -151,7 +161,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (array))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray+DebugView")]

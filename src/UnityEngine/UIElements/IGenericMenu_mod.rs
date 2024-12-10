@@ -26,35 +26,39 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IGenericMenu {
 impl crate::UnityEngine::UIElements::IGenericMenu {
     pub fn AddItem_Action0(
         &mut self,
-        itemName: *mut quest_hook::libil2cpp::Il2CppString,
+        itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isChecked: bool,
-        action: *mut crate::System::Action,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddItem", (itemName, isChecked, action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddItem_Action_1_Il2CppObject1(
         &mut self,
-        itemName: *mut quest_hook::libil2cpp::Il2CppString,
+        itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isChecked: bool,
-        action: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
-        data: *mut quest_hook::libil2cpp::Il2CppObject,
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddItem", (itemName, isChecked, action, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DropDown(
         &mut self,
         position: crate::UnityEngine::Rect,
-        targetElement: *mut crate::UnityEngine::UIElements::VisualElement,
+        targetElement: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
         anchored: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -62,7 +66,7 @@ impl crate::UnityEngine::UIElements::IGenericMenu {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DropDown", (position, targetElement, anchored))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

@@ -107,7 +107,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DispatchVisibilityEvent", (timeOut))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDistanceToKeyboard(
         &mut self,
@@ -127,24 +127,27 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetDistanceToKeyboard", (point))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetKeyboardVisibility(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetKeyboardVisibility", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeHandPresenceData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("InitializeHandPresenceData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("InitializeHandPresenceData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeKeyboardInfo(
         &mut self,
@@ -154,14 +157,14 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitializeKeyboardInfo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn KeyboardTrackerIsRunning(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("KeyboardTrackerIsRunning", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LaunchLocalKeyboardSelectionDialog(
         &mut self,
@@ -171,18 +174,18 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LaunchLocalKeyboardSelectionDialog", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LaunchOverlayIntent(
         &mut self,
-        dataUri: *mut quest_hook::libil2cpp::Il2CppString,
+        dataUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LaunchOverlayIntent", (dataUri))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LaunchRemoteKeyboardSelectionDialog(
         &mut self,
@@ -192,7 +195,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LaunchRemoteKeyboardSelectionDialog", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadKeyboardMesh(
         &mut self,
@@ -202,24 +205,26 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LoadKeyboardMesh", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadRuntimeKeyboardMesh(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke("LoadRuntimeKeyboardMesh", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RegisterPassthroughMeshToSDK(
         &mut self,
@@ -229,7 +234,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterPassthroughMeshToSDK", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetKeyboardState(
         &mut self,
@@ -240,27 +245,33 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetKeyboardState", (state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("Start", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn StartKeyboardTrackingCoroutine(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("StartKeyboardTrackingCoroutine", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("StartKeyboardTrackingCoroutine", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn StopKeyboardTrackingInternal(
         &mut self,
@@ -270,17 +281,20 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StopKeyboardTrackingInternal", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateKeyboardPose(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("UpdateKeyboardPose", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("UpdateKeyboardPose", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateKeyboardVisibility(
         &mut self,
@@ -290,7 +304,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateKeyboardVisibility", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdatePresentation(
         &mut self,
@@ -301,7 +315,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdatePresentation", (isVisible))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateSkippedPoseTimer(
         &mut self,
@@ -311,7 +325,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateSkippedPoseTimer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateTextureQuality(
         &mut self,
@@ -321,17 +335,20 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateTextureQuality", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateTrackingStateCoroutine(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("UpdateTrackingStateCoroutine", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("UpdateTrackingStateCoroutine", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -341,7 +358,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ActiveKeyboardInfo(
         &mut self,
@@ -353,14 +370,14 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo = __cordl_object
             .invoke("get_ActiveKeyboardInfo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ConnectionRequired(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_ConnectionRequired", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CurrentKeyboardAngleFromUp(
         &mut self,
@@ -370,7 +387,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_CurrentKeyboardAngleFromUp", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_KeyboardQueryFlags(
         &mut self,
@@ -382,17 +399,19 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags = __cordl_object
             .invoke("get_KeyboardQueryFlags", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PassthroughOverlay(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::OVROverlay> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVROverlay>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::OVROverlay = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVROverlay> = __cordl_object
             .invoke("get_PassthroughOverlay", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Presentation(
         &mut self,
@@ -404,21 +423,21 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation = __cordl_object
             .invoke("get_Presentation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RemoteKeyboard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_RemoteKeyboard", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ShowUntracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_ShowUntracked", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SystemKeyboardInfo(
         &mut self,
@@ -430,14 +449,14 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo = __cordl_object
             .invoke("get_SystemKeyboardInfo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TrackingEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_TrackingEnabled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TrackingState(
         &mut self,
@@ -449,7 +468,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState = __cordl_object
             .invoke("get_TrackingState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ActiveKeyboardInfo(
         &mut self,
@@ -460,7 +479,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ActiveKeyboardInfo", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ConnectionRequired(
         &mut self,
@@ -471,7 +490,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ConnectionRequired", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_CurrentKeyboardAngleFromUp(
         &mut self,
@@ -482,7 +501,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_CurrentKeyboardAngleFromUp", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_KeyboardQueryFlags(
         &mut self,
@@ -493,18 +512,18 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_KeyboardQueryFlags", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_PassthroughOverlay(
         &mut self,
-        value: *mut crate::GlobalNamespace::OVROverlay,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVROverlay>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_PassthroughOverlay", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Presentation(
         &mut self,
@@ -515,7 +534,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Presentation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_RemoteKeyboard(
         &mut self,
@@ -526,7 +545,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_RemoteKeyboard", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ShowUntracked(
         &mut self,
@@ -537,7 +556,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ShowUntracked", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_SystemKeyboardInfo(
         &mut self,
@@ -548,7 +567,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SystemKeyboardInfo", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_TrackingEnabled(
         &mut self,
@@ -559,7 +578,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_TrackingEnabled", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_TrackingState(
         &mut self,
@@ -570,7 +589,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_TrackingState", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTrackedKeyboard")]
@@ -629,7 +648,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
             ".ctor",
             (isEnabled),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardState")]
@@ -680,7 +699,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedE
 impl crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent {
     pub fn _ctor(
         &mut self,
-        keyboardModel: *mut quest_hook::libil2cpp::Il2CppString,
+        keyboardModel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         state: crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState,
         timeout: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -689,6 +708,6 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChanged
             ".ctor",
             (keyboardModel, state, timeout),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

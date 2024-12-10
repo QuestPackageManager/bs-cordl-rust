@@ -32,28 +32,30 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
             "Activate",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ActivateAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AsyncOperation> {
-        let __cordl_ret: *mut crate::UnityEngine::AsyncOperation = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ActivateAsync",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -61,7 +63,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Scene(
         &mut self,
@@ -71,7 +73,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
             "get_Scene",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Scene(
         &mut self,
@@ -82,6 +84,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
             "set_Scene",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

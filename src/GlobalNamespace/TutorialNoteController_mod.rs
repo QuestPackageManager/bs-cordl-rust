@@ -39,11 +39,11 @@ impl crate::GlobalNamespace::TutorialNoteController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleBeforeNoteWasCutBySaber(
         &mut self,
-        saber: *mut crate::GlobalNamespace::Saber,
+        saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
         cutPoint: crate::UnityEngine::Vector3,
         orientation: crate::UnityEngine::Quaternion,
         cutDirVec: crate::UnityEngine::Vector3,
@@ -56,11 +56,11 @@ impl crate::GlobalNamespace::TutorialNoteController {
                 "HandleBeforeNoteWasCutBySaber",
                 (saber, cutPoint, orientation, cutDirVec),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleCoreWasCutBySaber(
         &mut self,
-        saber: *mut crate::GlobalNamespace::Saber,
+        saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
         cutPoint: crate::UnityEngine::Vector3,
         orientation: crate::UnityEngine::Quaternion,
         cutDirVec: crate::UnityEngine::Vector3,
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::TutorialNoteController {
                 "HandleCoreWasCutBySaber",
                 (saber, cutPoint, orientation, cutDirVec),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HiddenStateDidChange(
         &mut self,
@@ -84,11 +84,11 @@ impl crate::GlobalNamespace::TutorialNoteController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HiddenStateDidChange", (hide))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        noteData: *mut crate::GlobalNamespace::NoteData,
+        noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         worldRotation: f32,
         moveStartPos: crate::UnityEngine::Vector3,
         moveEndPos: crate::UnityEngine::Vector3,
@@ -118,14 +118,14 @@ impl crate::GlobalNamespace::TutorialNoteController {
                     uniformScale,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn NoteDidPassMissedMarker(
         &mut self,
@@ -135,7 +135,7 @@ impl crate::GlobalNamespace::TutorialNoteController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NoteDidPassMissedMarker", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::TutorialNoteController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Pause(
         &mut self,
@@ -156,7 +156,7 @@ impl crate::GlobalNamespace::TutorialNoteController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Pause", (pause))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -166,7 +166,7 @@ impl crate::GlobalNamespace::TutorialNoteController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_gameplayType(
         &mut self,
@@ -176,17 +176,20 @@ impl crate::GlobalNamespace::TutorialNoteController {
         );
         let __cordl_ret: crate::GlobalNamespace::NoteData_GameplayType = __cordl_object
             .invoke("get_gameplayType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_noteMovement(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::NoteMovement> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::NoteMovement = __cordl_object
-            .invoke("get_noteMovement", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteMovement,
+        > = __cordl_object.invoke("get_noteMovement", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_noteVisualModifierType(
         &mut self,
@@ -196,7 +199,7 @@ impl crate::GlobalNamespace::TutorialNoteController {
         );
         let __cordl_ret: crate::GlobalNamespace::NoteVisualModifierType = __cordl_object
             .invoke("get_noteVisualModifierType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TutorialNoteController")]
@@ -239,12 +242,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TutorialNoteController_Pool 
 }
 #[cfg(feature = "TutorialNoteController+Pool")]
 impl crate::GlobalNamespace::TutorialNoteController_Pool {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -254,7 +257,7 @@ impl crate::GlobalNamespace::TutorialNoteController_Pool {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TutorialNoteController+Pool")]

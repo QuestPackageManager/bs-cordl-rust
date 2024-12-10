@@ -30,23 +30,29 @@ impl crate::System::Security::AccessControl::CommonObjectSecurity {
         &mut self,
         includeExplicit: bool,
         includeInherited: bool,
-        targetType: *mut crate::System::Type,
+        targetType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::AccessControl::AuthorizationRuleCollection,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::AuthorizationRuleCollection,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::AccessControl::AuthorizationRuleCollection = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::AuthorizationRuleCollection,
+        > = __cordl_object
             .invoke("GetAccessRules", (includeExplicit, includeInherited, targetType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(isContainer: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        isContainer: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (isContainer))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -57,7 +63,7 @@ impl crate::System::Security::AccessControl::CommonObjectSecurity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (isContainer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+AccessControl+CommonObjectSecurity")]

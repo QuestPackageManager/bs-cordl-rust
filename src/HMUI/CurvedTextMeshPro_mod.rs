@@ -37,15 +37,17 @@ impl crate::HMUI::CurvedTextMeshPro {
         meshIndex: i32,
         color32: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Color32,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
         > = __cordl_object.invoke("FillColors", (meshIndex, color32))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FillUV3s(
         &mut self,
@@ -53,15 +55,17 @@ impl crate::HMUI::CurvedTextMeshPro {
         vertexCount: i32,
         curve: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Vector2,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         > = __cordl_object.invoke("FillUV3s", (meshIndex, vertexCount, curve))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateTextMesh(
         &mut self,
@@ -71,14 +75,14 @@ impl crate::HMUI::CurvedTextMeshPro {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateTextMesh", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -88,11 +92,11 @@ impl crate::HMUI::CurvedTextMeshPro {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateMesh(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         meshIndex: i32,
         curveUV: crate::UnityEngine::Vector2,
         color32: crate::UnityEngine::Color32,
@@ -102,7 +106,7 @@ impl crate::HMUI::CurvedTextMeshPro {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateMesh", (mesh, meshIndex, curveUV, color32))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn __Refresh(
         &mut self,
@@ -112,7 +116,7 @@ impl crate::HMUI::CurvedTextMeshPro {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("__Refresh", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -122,7 +126,7 @@ impl crate::HMUI::CurvedTextMeshPro {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_color(
         &mut self,
@@ -132,7 +136,7 @@ impl crate::HMUI::CurvedTextMeshPro {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_color", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_useScriptableObjectColors(
         &mut self,
@@ -142,7 +146,7 @@ impl crate::HMUI::CurvedTextMeshPro {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_useScriptableObjectColors", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_color(
         &mut self,
@@ -153,7 +157,7 @@ impl crate::HMUI::CurvedTextMeshPro {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_color", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_useScriptableObjectColors(
         &mut self,
@@ -164,7 +168,7 @@ impl crate::HMUI::CurvedTextMeshPro {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_useScriptableObjectColors", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+CurvedTextMeshPro")]

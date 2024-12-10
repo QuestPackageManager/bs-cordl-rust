@@ -69,7 +69,7 @@ impl crate::HoudiniEngineUnity::HAPI_ParmInfo {
             "isFloat",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn isInt(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -77,7 +77,7 @@ impl crate::HoudiniEngineUnity::HAPI_ParmInfo {
             "isInt",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn isNode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -85,7 +85,7 @@ impl crate::HoudiniEngineUnity::HAPI_ParmInfo {
             "isNode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn isNonValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -93,7 +93,7 @@ impl crate::HoudiniEngineUnity::HAPI_ParmInfo {
             "isNonValue",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn isPath(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -101,7 +101,7 @@ impl crate::HoudiniEngineUnity::HAPI_ParmInfo {
             "isPath",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn isString(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -109,6 +109,6 @@ impl crate::HoudiniEngineUnity::HAPI_ParmInfo {
             "isString",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

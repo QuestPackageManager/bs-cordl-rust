@@ -31,10 +31,12 @@ for crate::System::Threading::AsyncLocal_1<T> {
 #[cfg(feature = "System+Threading+AsyncLocal_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
     pub fn New(
-        valueChangedHandler: *mut crate::System::Action_1<
-            crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+        valueChangedHandler: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -43,12 +45,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (valueChangedHandler))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn System_Threading_IAsyncLocal_OnValueChanged(
         &mut self,
-        previousValueObj: *mut quest_hook::libil2cpp::Il2CppObject,
-        currentValueObj: *mut quest_hook::libil2cpp::Il2CppObject,
+        previousValueObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        currentValueObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         contextChanged: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -63,12 +65,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
                 "System.Threading.IAsyncLocal.OnValueChanged",
                 (previousValueObj, currentValueObj, contextChanged),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        valueChangedHandler: *mut crate::System::Action_1<
-            crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+        valueChangedHandler: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -80,7 +84,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (valueChangedHandler))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Value(
         &mut self,
@@ -95,7 +99,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Value", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+AsyncLocal_1")]

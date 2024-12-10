@@ -44,7 +44,7 @@ impl<
             "Add",
             (item),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -56,7 +56,7 @@ impl<
             "Clear",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CurrentItem(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -68,7 +68,7 @@ impl<
             "CurrentItem",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Peek(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -80,7 +80,7 @@ impl<
             "Peek",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -92,7 +92,7 @@ impl<
             "Pop",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Push(
         &mut self,
@@ -107,7 +107,7 @@ impl<
             "Push",
             (item),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Remove(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -119,7 +119,7 @@ impl<
             "Remove",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDefault(
         &mut self,
@@ -134,11 +134,11 @@ impl<
             "SetDefault",
             (item),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray0(
         &mut self,
-        stack: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        stack: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -149,7 +149,7 @@ impl<
             ".ctor",
             (stack),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_1(
         &mut self,
@@ -164,7 +164,7 @@ impl<
             ".ctor",
             (capacity),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_2(
         &mut self,
@@ -180,7 +180,7 @@ impl<
             ".ctor",
             (capacity, rolloverSize),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -192,7 +192,7 @@ impl<
             "get_Count",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_current(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -204,6 +204,6 @@ impl<
             "get_current",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

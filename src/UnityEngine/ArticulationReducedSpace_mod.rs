@@ -34,7 +34,7 @@ impl crate::UnityEngine::ArticulationReducedSpace {
             ".ctor",
             (a),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_1(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::UnityEngine::ArticulationReducedSpace {
             ".ctor",
             (a, b),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_2(
         &mut self,
@@ -59,7 +59,7 @@ impl crate::UnityEngine::ArticulationReducedSpace {
             ".ctor",
             (a, b, c),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, i: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -67,7 +67,7 @@ impl crate::UnityEngine::ArticulationReducedSpace {
             "get_Item",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::UnityEngine::ArticulationReducedSpace {
             "set_Item",
             (i, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]

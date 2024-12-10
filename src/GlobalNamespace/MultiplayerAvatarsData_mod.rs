@@ -27,25 +27,25 @@ for crate::GlobalNamespace::MultiplayerAvatarsData {
 impl crate::GlobalNamespace::MultiplayerAvatarsData {
     pub fn CreateFromSerializedData(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarsData> {
         let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarsData = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CreateFromSerializedData",
             (reader),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_MultiplayerAvatarsData0(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -64,29 +64,29 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Serialize(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Serialize",
             (writer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeAvatarsData(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SerializeAvatarsData",
             (writer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SupportsOptionalAvatarDataType(
         &mut self,
@@ -97,12 +97,14 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
             "SupportsOptionalAvatarDataType",
             (typeHash),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_BitMask128_1(
         &mut self,
-        multiplayerAvatarsData: *mut crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::MultiplayerAvatarData,
+        multiplayerAvatarsData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::MultiplayerAvatarData,
+            >,
         >,
         supportedAvatarTypeIdHashesBloomFilter: crate::GlobalNamespace::BitMask128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -111,15 +113,17 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
             ".ctor",
             (multiplayerAvatarsData, supportedAvatarTypeIdHashesBloomFilter),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEnumerable_1_0(
         &mut self,
-        multiplayerAvatarsData: *mut crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::MultiplayerAvatarData,
+        multiplayerAvatarsData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::MultiplayerAvatarData,
+            >,
         >,
-        supportedAvatarTypeIdHashes: *mut crate::System::Collections::Generic::IEnumerable_1<
-            u32,
+        supportedAvatarTypeIdHashes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<u32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -127,6 +131,6 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
             ".ctor",
             (multiplayerAvatarsData, supportedAvatarTypeIdHashes),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

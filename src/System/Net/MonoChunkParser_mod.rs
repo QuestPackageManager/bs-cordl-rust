@@ -40,7 +40,7 @@ impl crate::System::Net::MonoChunkParser {
     pub type State = crate::System::Net::MonoChunkParser_State;
     pub fn GetChunkSize(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::MonoChunkParser_State> {
@@ -49,11 +49,11 @@ impl crate::System::Net::MonoChunkParser {
         );
         let __cordl_ret: crate::System::Net::MonoChunkParser_State = __cordl_object
             .invoke("GetChunkSize", (buffer, offset, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalWrite(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -62,20 +62,20 @@ impl crate::System::Net::MonoChunkParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InternalWrite", (buffer, offset, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        headers: *mut crate::System::Net::WebHeaderCollection,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        headers: quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (headers))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -84,11 +84,11 @@ impl crate::System::Net::MonoChunkParser {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("Read", (buffer, offset, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadBody(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::MonoChunkParser_State> {
@@ -97,11 +97,11 @@ impl crate::System::Net::MonoChunkParser {
         );
         let __cordl_ret: crate::System::Net::MonoChunkParser_State = __cordl_object
             .invoke("ReadBody", (buffer, offset, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadCRLF(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::MonoChunkParser_State> {
@@ -110,11 +110,11 @@ impl crate::System::Net::MonoChunkParser {
         );
         let __cordl_ret: crate::System::Net::MonoChunkParser_State = __cordl_object
             .invoke("ReadCRLF", (buffer, offset, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadFromChunks(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -123,11 +123,11 @@ impl crate::System::Net::MonoChunkParser {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("ReadFromChunks", (buffer, offset, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadTrailer(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::MonoChunkParser_State> {
@@ -136,11 +136,11 @@ impl crate::System::Net::MonoChunkParser {
         );
         let __cordl_ret: crate::System::Net::MonoChunkParser_State = __cordl_object
             .invoke("ReadTrailer", (buffer, offset, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -149,39 +149,39 @@ impl crate::System::Net::MonoChunkParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (buffer, offset, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        headers: *mut crate::System::Net::WebHeaderCollection,
+        headers: quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (headers))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ChunkLeft(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ChunkLeft", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DataAvailable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_DataAvailable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_WantMore(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_WantMore", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+MonoChunkParser")]
@@ -222,17 +222,17 @@ impl std::ops::DerefMut for crate::System::Net::MonoChunkParser_Chunk {
 #[cfg(feature = "System+Net+MonoChunkParser+Chunk")]
 impl crate::System::Net::MonoChunkParser_Chunk {
     pub fn New(
-        chunk: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        chunk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (chunk))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Read(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -241,18 +241,18 @@ impl crate::System::Net::MonoChunkParser_Chunk {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("Read", (buffer, offset, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        chunk: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        chunk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (chunk))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+MonoChunkParser+Chunk")]

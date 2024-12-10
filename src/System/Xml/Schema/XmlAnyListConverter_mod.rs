@@ -26,36 +26,43 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlAnyListConverter {
 impl crate::System::Xml::Schema::XmlAnyListConverter {
     pub fn ChangeType(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        destinationType: *mut crate::System::Type,
-        nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("ChangeType", (value, destinationType, nsResolver))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ChangeType", (value, destinationType, nsResolver))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        atomicConverter: *mut crate::System::Xml::Schema::XmlBaseConverter,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        atomicConverter: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlBaseConverter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (atomicConverter))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        atomicConverter: *mut crate::System::Xml::Schema::XmlBaseConverter,
+        atomicConverter: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlBaseConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (atomicConverter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlAnyListConverter")]

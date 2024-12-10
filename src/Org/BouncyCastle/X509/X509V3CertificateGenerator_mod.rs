@@ -32,143 +32,169 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::X509V3CertificateGen
 impl crate::Org::BouncyCastle::X509::X509V3CertificateGenerator {
     pub fn AddExtension_DerObjectIdentifier_Asn1Encodable1(
         &mut self,
-        oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
         critical: bool,
-        extensionValue: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        extensionValue: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddExtension", (oid, critical, extensionValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddExtension_DerObjectIdentifier_Il2CppArray3(
         &mut self,
-        oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
         critical: bool,
-        extensionValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        extensionValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddExtension", (oid, critical, extensionValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddExtension_Il2CppString_Asn1Encodable0(
         &mut self,
-        oid: *mut quest_hook::libil2cpp::Il2CppString,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         critical: bool,
-        extensionValue: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        extensionValue: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddExtension", (oid, critical, extensionValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddExtension_Il2CppString_Il2CppArray2(
         &mut self,
-        oid: *mut quest_hook::libil2cpp::Il2CppString,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         critical: bool,
-        extensionValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        extensionValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddExtension", (oid, critical, extensionValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyAndAddExtension_DerObjectIdentifier1(
         &mut self,
-        oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
         critical: bool,
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyAndAddExtension", (oid, critical, cert))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyAndAddExtension_Il2CppString0(
         &mut self,
-        oid: *mut quest_hook::libil2cpp::Il2CppString,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         critical: bool,
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyAndAddExtension", (oid, critical, cert))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateJcaObject(
         &mut self,
-        tbsCert: *mut crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure,
-        sigAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        tbsCert: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure,
+        >,
+        sigAlg: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Certificate = __cordl_object
-            .invoke("GenerateJcaObject", (tbsCert, sigAlg, signature))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        > = __cordl_object.invoke("GenerateJcaObject", (tbsCert, sigAlg, signature))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_AsymmetricKeyParameter0(
         &mut self,
-        privateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        privateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Certificate = __cordl_object
-            .invoke("Generate", (privateKey))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        > = __cordl_object.invoke("Generate", (privateKey))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_AsymmetricKeyParameter_SecureRandom1(
         &mut self,
-        privateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        privateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Certificate = __cordl_object
-            .invoke("Generate", (privateKey, random))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        > = __cordl_object.invoke("Generate", (privateKey, random))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_ISignatureFactory2(
         &mut self,
-        signatureCalculatorFactory: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+        signatureCalculatorFactory: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Certificate = __cordl_object
-            .invoke("Generate", (signatureCalculatorFactory))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        > = __cordl_object.invoke("Generate", (signatureCalculatorFactory))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -178,29 +204,29 @@ impl crate::Org::BouncyCastle::X509::X509V3CertificateGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetIssuerDN(
         &mut self,
-        issuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        issuer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetIssuerDN", (issuer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetIssuerUniqueID(
         &mut self,
-        uniqueID: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+        uniqueID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetIssuerUniqueID", (uniqueID))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetNotAfter(
         &mut self,
@@ -211,7 +237,7 @@ impl crate::Org::BouncyCastle::X509::X509V3CertificateGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetNotAfter", (date))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetNotBefore(
         &mut self,
@@ -222,62 +248,70 @@ impl crate::Org::BouncyCastle::X509::X509V3CertificateGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetNotBefore", (date))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPublicKey(
         &mut self,
-        publicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        publicKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPublicKey", (publicKey))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSerialNumber(
         &mut self,
-        serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        serialNumber: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSerialNumber", (serialNumber))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSignatureAlgorithm(
         &mut self,
-        signatureAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
+        signatureAlgorithm: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSignatureAlgorithm", (signatureAlgorithm))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSubjectDN(
         &mut self,
-        subject: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        subject: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSubjectDN", (subject))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSubjectUniqueID(
         &mut self,
-        uniqueID: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+        uniqueID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSubjectUniqueID", (uniqueID))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -287,30 +321,34 @@ impl crate::Org::BouncyCastle::X509::X509V3CertificateGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn booleanToBitString(
         &mut self,
-        id: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBitString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerBitString = __cordl_object
-            .invoke("booleanToBitString", (id))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerBitString,
+        > = __cordl_object.invoke("booleanToBitString", (id))?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_SignatureAlgNames(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerable> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerable = __cordl_object
-            .invoke("get_SignatureAlgNames", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerable,
+        > = __cordl_object.invoke("get_SignatureAlgNames", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509V3CertificateGenerator")]

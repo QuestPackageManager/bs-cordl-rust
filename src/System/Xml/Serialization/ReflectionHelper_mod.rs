@@ -28,64 +28,70 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::ReflectionHelper 
 impl crate::System::Xml::Serialization::ReflectionHelper {
     pub fn GetRegisteredClrType(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-        ns: *mut quest_hook::libil2cpp::Il2CppString,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Serialization::XmlTypeMapping,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlTypeMapping>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::XmlTypeMapping = __cordl_object
-            .invoke("GetRegisteredClrType", (_cordl_type, ns))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapping,
+        > = __cordl_object.invoke("GetRegisteredClrType", (_cordl_type, ns))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetRegisteredSchemaType(
         &mut self,
-        xmlType: *mut quest_hook::libil2cpp::Il2CppString,
-        ns: *mut quest_hook::libil2cpp::Il2CppString,
+        xmlType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Serialization::XmlTypeMapping,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlTypeMapping>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::XmlTypeMapping = __cordl_object
-            .invoke("GetRegisteredSchemaType", (xmlType, ns))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapping,
+        > = __cordl_object.invoke("GetRegisteredSchemaType", (xmlType, ns))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RegisterClrType(
         &mut self,
-        map: *mut crate::System::Xml::Serialization::XmlTypeMapping,
-        _cordl_type: *mut crate::System::Type,
-        ns: *mut quest_hook::libil2cpp::Il2CppString,
+        map: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapping,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterClrType", (map, _cordl_type, ns))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterSchemaType(
         &mut self,
-        map: *mut crate::System::Xml::Serialization::XmlTypeMapping,
-        xmlType: *mut quest_hook::libil2cpp::Il2CppString,
-        ns: *mut quest_hook::libil2cpp::Il2CppString,
+        map: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapping,
+        >,
+        xmlType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterSchemaType", (map, xmlType, ns))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -95,7 +101,7 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Serialization+ReflectionHelper")]

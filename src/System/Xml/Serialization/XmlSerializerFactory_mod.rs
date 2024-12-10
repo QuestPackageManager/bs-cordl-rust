@@ -26,57 +26,69 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlSerializerFact
 impl crate::System::Xml::Serialization::XmlSerializerFactory {
     pub fn CreateSerializer_Type0(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Serialization::XmlSerializer,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlSerializer>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::XmlSerializer = __cordl_object
-            .invoke("CreateSerializer", (_cordl_type))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlSerializer,
+        > = __cordl_object.invoke("CreateSerializer", (_cordl_type))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateSerializer_XmlAttributeOverrides_Il2CppArray_XmlRootAttribute_Il2CppString2(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-        overrides: *mut crate::System::Xml::Serialization::XmlAttributeOverrides,
-        extraTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-        root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        overrides: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlAttributeOverrides,
+        >,
+        extraTypes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        root: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlRootAttribute,
+        >,
+        defaultNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Serialization::XmlSerializer,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlSerializer>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::XmlSerializer = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlSerializer,
+        > = __cordl_object
             .invoke(
                 "CreateSerializer",
                 (_cordl_type, overrides, extraTypes, root, defaultNamespace),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateSerializer_XmlRootAttribute1(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-        root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        root: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlRootAttribute,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Serialization::XmlSerializer,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlSerializer>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::XmlSerializer = __cordl_object
-            .invoke("CreateSerializer", (_cordl_type, root))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlSerializer,
+        > = __cordl_object.invoke("CreateSerializer", (_cordl_type, root))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -86,7 +98,7 @@ impl crate::System::Xml::Serialization::XmlSerializerFactory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializerFactory")]

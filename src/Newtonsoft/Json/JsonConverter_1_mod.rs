@@ -29,7 +29,7 @@ for crate::Newtonsoft::Json::JsonConverter_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::JsonConverter_1<T> {
     pub fn CanConvert(
         &mut self,
-        objectType: *mut crate::System::Type,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -39,9 +39,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::JsonConverter_1<T>
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CanConvert", (objectType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -50,15 +50,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::JsonConverter_1<T>
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReadJson_Il2CppObject_JsonSerializer0(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectType: *mut crate::System::Type,
-        existingValue: *mut quest_hook::libil2cpp::Il2CppObject,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        existingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -66,17 +68,19 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::JsonConverter_1<T>
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadJson_T__cordl_bool_JsonSerializer1(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectType: *mut crate::System::Type,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         existingValue: T,
         hasExistingValue: bool,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -90,13 +94,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::JsonConverter_1<T>
                 "ReadJson",
                 (reader, objectType, existingValue, hasExistingValue, serializer),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteJson_Il2CppObject0(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -107,13 +111,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::JsonConverter_1<T>
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteJson", (writer, value, serializer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteJson_T1(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         value: T,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -124,7 +128,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::JsonConverter_1<T>
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteJson", (writer, value, serializer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -136,7 +140,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::JsonConverter_1<T>
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+JsonConverter_1")]

@@ -44,7 +44,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Get(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -55,13 +55,13 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Get", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        createFunc: *mut crate::System::Func_1<T>,
-        resetAction: *mut crate::System::Action_1<T>,
+        createFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        resetAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
         limit: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -70,7 +70,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (createFunc, resetAction, limit))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Return(
         &mut self,
@@ -85,12 +85,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Return", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        createFunc: *mut crate::System::Func_1<T>,
-        resetAction: *mut crate::System::Action_1<T>,
+        createFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        resetAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
         limit: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -102,7 +102,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (createFunc, resetAction, limit))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -113,7 +113,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Count(
         &mut self,
@@ -128,7 +128,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Count", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+LinkedPool_1")]

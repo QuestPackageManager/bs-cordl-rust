@@ -36,32 +36,40 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
     pub fn get_attributeOverrides(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            >,
         > = __cordl_object.invoke("get_attributeOverrides", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_slotUsages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+            >,
         > = __cordl_object.invoke("get_slotUsages", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateAsset")]

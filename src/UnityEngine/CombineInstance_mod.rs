@@ -27,24 +27,26 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::CombineI
 impl crate::UnityEngine::CombineInstance {
     pub fn get_mesh(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Mesh> {
-        let __cordl_ret: *mut crate::UnityEngine::Mesh = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_mesh",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_mesh(
         &mut self,
-        value: *mut crate::UnityEngine::Mesh,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_mesh",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_subMeshIndex(
         &mut self,
@@ -55,7 +57,7 @@ impl crate::UnityEngine::CombineInstance {
             "set_subMeshIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_transform(
         &mut self,
@@ -66,6 +68,6 @@ impl crate::UnityEngine::CombineInstance {
             "set_transform",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

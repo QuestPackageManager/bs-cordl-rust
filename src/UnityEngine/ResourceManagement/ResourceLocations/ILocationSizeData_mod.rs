@@ -29,15 +29,19 @@ for crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData
 impl crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData {
     pub fn ComputeSize(
         &mut self,
-        location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        resourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+        location: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
+        resourceManager: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object
             .invoke("ComputeSize", (location, resourceManager))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

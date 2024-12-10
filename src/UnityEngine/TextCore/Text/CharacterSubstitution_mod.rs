@@ -34,6 +34,6 @@ impl crate::UnityEngine::TextCore::Text::CharacterSubstitution {
             ".ctor",
             (index, unicode),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

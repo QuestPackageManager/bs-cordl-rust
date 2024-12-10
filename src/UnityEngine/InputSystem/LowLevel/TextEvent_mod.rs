@@ -33,6 +33,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::TextEvent {
             "get_typeStatic",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -59,12 +59,12 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::FontFeatureTable
 impl crate::UnityEngine::TextCore::Text::FontFeatureTable {
     #[cfg(feature = "UnityEngine+TextCore+Text+FontFeatureTable+__c")]
     pub type __c = crate::UnityEngine::TextCore::Text::FontFeatureTable___c;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SortGlyphPairAdjustmentRecords(
         &mut self,
@@ -74,7 +74,7 @@ impl crate::UnityEngine::TextCore::Text::FontFeatureTable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SortGlyphPairAdjustmentRecords", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SortMarkToBaseAdjustmentRecords(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::UnityEngine::TextCore::Text::FontFeatureTable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SortMarkToBaseAdjustmentRecords", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SortMarkToMarkAdjustmentRecords(
         &mut self,
@@ -94,7 +94,7 @@ impl crate::UnityEngine::TextCore::Text::FontFeatureTable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SortMarkToMarkAdjustmentRecords", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -104,7 +104,7 @@ impl crate::UnityEngine::TextCore::Text::FontFeatureTable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+FontFeatureTable")]

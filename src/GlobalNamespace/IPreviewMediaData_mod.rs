@@ -28,29 +28,33 @@ impl crate::GlobalNamespace::IPreviewMediaData {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::UnityEngine::Sprite,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
         > = __cordl_object.invoke("GetCoverSpriteAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPreviewAudioClip(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::UnityEngine::AudioClip,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
         > = __cordl_object.invoke("GetPreviewAudioClip", (cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnloadPreviewAudioClip(
         &mut self,
@@ -60,7 +64,7 @@ impl crate::GlobalNamespace::IPreviewMediaData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnloadPreviewAudioClip", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

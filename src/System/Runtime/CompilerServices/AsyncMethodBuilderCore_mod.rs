@@ -40,53 +40,63 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
     pub type __c__DisplayClass5_0 = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore___c__DisplayClass5_0;
     pub fn GetCompletionAction(
         &mut self,
-        taskForTracing: *mut crate::System::Threading::Tasks::Task,
+        taskForTracing: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         runnerToInitialize: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action> {
-        let __cordl_ret: *mut crate::System::Action = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetCompletionAction",
             (taskForTracing, runnerToInitialize),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OutputAsyncCausalityEvents(
         &mut self,
-        innerTask: *mut crate::System::Threading::Tasks::Task,
-        continuation: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Action> {
-        let __cordl_ret: *mut crate::System::Action = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        innerTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "OutputAsyncCausalityEvents",
             (innerTask, continuation),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PostBoxInitialization(
         &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-        runner: *mut crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner,
-        builtTask: *mut crate::System::Threading::Tasks::Task,
+        stateMachine: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+        >,
+        runner: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner,
+        >,
+        builtTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "PostBoxInitialization",
             (stateMachine, runner, builtTask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetStateMachine(
         &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+        stateMachine: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetStateMachine",
             (stateMachine),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -139,31 +149,31 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuati
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        continuation: *mut crate::System::Action,
-        invokeAction: *mut crate::System::Action,
-        innerTask: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        invokeAction: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        innerTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (continuation, invokeAction, innerTask))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        continuation: *mut crate::System::Action,
-        invokeAction: *mut crate::System::Action,
-        innerTask: *mut crate::System::Threading::Tasks::Task,
+        continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        invokeAction: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        innerTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (continuation, invokeAction, innerTask))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -210,33 +220,37 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRun
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner")]
 impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner {
     pub fn New(
-        context: *mut crate::System::Threading::ExecutionContext,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+        stateMachine: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (context, stateMachine))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Run(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Run", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        context: *mut crate::System::Threading::ExecutionContext,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+        context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+        stateMachine: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (context, stateMachine))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner")]

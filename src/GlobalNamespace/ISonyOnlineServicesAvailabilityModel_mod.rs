@@ -31,17 +31,21 @@ impl crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
     pub fn GetOnlineServicesAvailabilityAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability,
+            >,
         > = __cordl_object.invoke("GetOnlineServicesAvailabilityAsync", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

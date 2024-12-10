@@ -31,19 +31,23 @@ impl crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
     pub fn CamerasDict(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::UnityEngine::Camera,
-            *mut crate::GlobalNamespace::CommandBufferOwners,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::UnityEngine::Camera,
+                *mut crate::GlobalNamespace::CommandBufferOwners,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::UnityEngine::Camera,
-            *mut crate::GlobalNamespace::CommandBufferOwners,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::UnityEngine::Camera,
+                *mut crate::GlobalNamespace::CommandBufferOwners,
+            >,
         > = __cordl_object.invoke("CamerasDict", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CommandBufferCameraEvent(
         &mut self,
@@ -53,27 +57,28 @@ impl crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
         );
         let __cordl_ret: crate::UnityEngine::Rendering::CameraEvent = __cordl_object
             .invoke("CommandBufferCameraEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateCommandBuffer(
         &mut self,
-        camera: *mut crate::UnityEngine::Camera,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::Rendering::CommandBuffer,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Rendering::CommandBuffer = __cordl_object
-            .invoke("CreateCommandBuffer", (camera))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Rendering::CommandBuffer,
+        > = __cordl_object.invoke("CreateCommandBuffer", (camera))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -83,7 +88,7 @@ impl crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "CommandBufferBlurryScreenGrab")]

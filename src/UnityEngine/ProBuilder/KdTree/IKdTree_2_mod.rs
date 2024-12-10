@@ -41,7 +41,7 @@ impl<
 > crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
     pub fn Add(
         &mut self,
-        point: *mut quest_hook::libil2cpp::Il2CppArray<TKey>,
+        point: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
         value: TValue,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -54,7 +54,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Add", (point, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -68,12 +68,14 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindValue(
         &mut self,
         value: TValue,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<TKey>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -83,13 +85,14 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<TKey> = __cordl_object
-            .invoke("FindValue", (value))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<TKey>,
+        > = __cordl_object.invoke("FindValue", (value))?;
+        Ok(__cordl_ret.into())
     }
     pub fn FindValueAt(
         &mut self,
-        point: *mut quest_hook::libil2cpp::Il2CppArray<TKey>,
+        point: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -101,15 +104,17 @@ impl<
             self,
         );
         let __cordl_ret: TValue = __cordl_object.invoke("FindValueAt", (point))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNearestNeighbours(
         &mut self,
-        point: *mut quest_hook::libil2cpp::Il2CppArray<TKey>,
+        point: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+            >,
         >,
     >
     where
@@ -121,19 +126,23 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+            >,
         > = __cordl_object.invoke("GetNearestNeighbours", (point, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RadialSearch(
         &mut self,
-        center: *mut quest_hook::libil2cpp::Il2CppArray<TKey>,
+        center: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
         radius: TKey,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+            >,
         >,
     >
     where
@@ -145,14 +154,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+            >,
         > = __cordl_object.invoke("RadialSearch", (center, radius, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveAt(
         &mut self,
-        point: *mut quest_hook::libil2cpp::Il2CppArray<TKey>,
+        point: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -165,7 +176,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveAt", (point))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryFindValue(
         &mut self,
@@ -184,11 +195,11 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryFindValue", (value, point))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryFindValueAt(
         &mut self,
-        point: *mut quest_hook::libil2cpp::Il2CppArray<TKey>,
+        point: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
         value: quest_hook::libil2cpp::ByRefMut<TValue>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -201,7 +212,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryFindValueAt", (point, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -219,7 +230,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+IKdTree_2")]

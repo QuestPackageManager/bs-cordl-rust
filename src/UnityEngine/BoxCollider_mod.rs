@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::UnityEngine::BoxCollider {
 }
 #[cfg(feature = "UnityEngine+BoxCollider")]
 impl crate::UnityEngine::BoxCollider {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -39,7 +39,7 @@ impl crate::UnityEngine::BoxCollider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_center(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::UnityEngine::BoxCollider {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_center", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_center_Injected(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::UnityEngine::BoxCollider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_center_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_extents(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::UnityEngine::BoxCollider {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_extents", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_size(
         &mut self,
@@ -80,7 +80,7 @@ impl crate::UnityEngine::BoxCollider {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_size", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_size_Injected(
         &mut self,
@@ -91,7 +91,7 @@ impl crate::UnityEngine::BoxCollider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_size_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_center(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::UnityEngine::BoxCollider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_center", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_center_Injected(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::UnityEngine::BoxCollider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_center_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_extents(
         &mut self,
@@ -124,7 +124,7 @@ impl crate::UnityEngine::BoxCollider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_extents", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_size(
         &mut self,
@@ -135,7 +135,7 @@ impl crate::UnityEngine::BoxCollider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_size", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_size_Injected(
         &mut self,
@@ -146,7 +146,7 @@ impl crate::UnityEngine::BoxCollider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_size_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+BoxCollider")]

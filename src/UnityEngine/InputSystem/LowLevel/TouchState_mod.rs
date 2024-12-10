@@ -25,13 +25,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
     pub const kSizeInBytes: i32 = 56i32;
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_beganInSameFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -39,7 +39,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "get_beganInSameFrame",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_format(
         &mut self,
@@ -51,7 +51,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "get_format",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isInProgress(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -59,7 +59,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "get_isInProgress",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isIndirectTouch(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -67,7 +67,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "get_isIndirectTouch",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isNoneEndedOrCanceled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -75,7 +75,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "get_isNoneEndedOrCanceled",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isOrphanedPrimaryTouch(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -83,7 +83,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "get_isOrphanedPrimaryTouch",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isPrimaryTouch(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -91,7 +91,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "get_isPrimaryTouch",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isTap(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -99,7 +99,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "get_isTap",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isTapPress(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -107,7 +107,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "get_isTapPress",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isTapRelease(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -115,7 +115,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "get_isTapRelease",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_phase(
         &mut self,
@@ -125,7 +125,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "get_phase",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_beganInSameFrame(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "set_beganInSameFrame",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isIndirectTouch(
         &mut self,
@@ -147,7 +147,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "set_isIndirectTouch",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isOrphanedPrimaryTouch(
         &mut self,
@@ -158,7 +158,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "set_isOrphanedPrimaryTouch",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isPrimaryTouch(
         &mut self,
@@ -169,7 +169,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "set_isPrimaryTouch",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isTap(
         &mut self,
@@ -180,7 +180,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "set_isTap",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isTapPress(
         &mut self,
@@ -191,7 +191,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "set_isTapPress",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isTapRelease(
         &mut self,
@@ -202,7 +202,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "set_isTapRelease",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_phase(
         &mut self,
@@ -213,6 +213,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchState {
             "set_phase",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

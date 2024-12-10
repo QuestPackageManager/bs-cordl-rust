@@ -43,7 +43,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             ".ctor",
             (physicsScene, p1, p2, radius, direction, queryParameters, distance),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_PhysicsScene_Vector3_f32_Vector3_f32_i32_3(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             ".ctor",
             (physicsScene, p1, p2, radius, direction, distance, layerMask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Vector3_f32_Vector3_QueryParameters_f32_0(
         &mut self,
@@ -76,7 +76,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             ".ctor",
             (p1, p2, radius, direction, queryParameters, distance),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Vector3_f32_Vector3_f32_i32_2(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             ".ctor",
             (p1, p2, radius, direction, distance, layerMask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_direction(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "get_direction",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -110,7 +110,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "get_distance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_layerMask(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -118,7 +118,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "get_layerMask",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_physicsScene(
         &mut self,
@@ -128,7 +128,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "get_physicsScene",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_point1(
         &mut self,
@@ -138,7 +138,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "get_point1",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_point2(
         &mut self,
@@ -148,7 +148,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "get_point2",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_radius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -156,7 +156,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "get_radius",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_direction(
         &mut self,
@@ -167,7 +167,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "set_direction",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_distance(
         &mut self,
@@ -178,7 +178,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "set_distance",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_layerMask(
         &mut self,
@@ -189,7 +189,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "set_layerMask",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_physicsScene(
         &mut self,
@@ -200,7 +200,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "set_physicsScene",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_point1(
         &mut self,
@@ -211,7 +211,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "set_point1",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_point2(
         &mut self,
@@ -222,7 +222,7 @@ impl crate::UnityEngine::CapsulecastCommand {
             "set_point2",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_radius(
         &mut self,
@@ -233,6 +233,6 @@ impl crate::UnityEngine::CapsulecastCommand {
             "set_radius",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

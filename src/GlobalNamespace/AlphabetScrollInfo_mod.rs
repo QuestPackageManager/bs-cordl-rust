@@ -26,12 +26,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AlphabetScrollInfo {
 impl crate::GlobalNamespace::AlphabetScrollInfo {
     #[cfg(feature = "AlphabetScrollInfo+Data")]
     pub type Data = crate::GlobalNamespace::AlphabetScrollInfo_Data;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::AlphabetScrollInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "AlphabetScrollInfo")]
@@ -84,12 +84,12 @@ impl crate::GlobalNamespace::AlphabetScrollInfo_Data {
     pub fn New(
         character: char,
         cellIdx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (character, cellIdx))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -101,7 +101,7 @@ impl crate::GlobalNamespace::AlphabetScrollInfo_Data {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (character, cellIdx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "AlphabetScrollInfo+Data")]

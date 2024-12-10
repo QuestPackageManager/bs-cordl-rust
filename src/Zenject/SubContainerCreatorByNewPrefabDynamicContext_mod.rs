@@ -31,37 +31,43 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
     pub fn CreateGameObject(
         &mut self,
         shouldMakeActive: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke("CreateGameObject", (shouldMakeActive))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        container: *mut crate::Zenject::DiContainer,
-        prefabProvider: *mut crate::Zenject::IPrefabProvider,
-        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        prefabProvider: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabProvider>,
+        gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::GameObjectCreationParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (container, prefabProvider, gameObjectBindInfo))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        prefabProvider: *mut crate::Zenject::IPrefabProvider,
-        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        prefabProvider: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabProvider>,
+        gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::GameObjectCreationParameters,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (container, prefabProvider, gameObjectBindInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabDynamicContext")]

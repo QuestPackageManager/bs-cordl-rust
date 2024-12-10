@@ -26,10 +26,12 @@ impl std::ops::DerefMut for crate::Zenject::Internal::IDecoratorProvider {
 impl crate::Zenject::Internal::IDecoratorProvider {
     pub fn GetAllInstances(
         &mut self,
-        provider: *mut crate::Zenject::IProvider,
-        context: *mut crate::Zenject::InjectContext,
-        buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+        context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+        buffer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -37,7 +39,7 @@ impl crate::Zenject::Internal::IDecoratorProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetAllInstances", (provider, context, buffer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

@@ -33,36 +33,46 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvi
     pub type __c__DisplayClass12_0 = crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvider___c__DisplayClass12_0;
     pub fn CreateCacheKeyForLocation(
         &mut self,
-        rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-        location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        desiredType: *mut crate::System::Type,
+        rm: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
+        location: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
+        desiredType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        > = __cordl_object
             .invoke("CreateCacheKeyForLocation", (rm, location, desiredType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDefaultType(
         &mut self,
-        location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        location: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("GetDefaultType", (location))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Provide(
         &mut self,
@@ -73,19 +83,21 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvi
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Provide", (providerInterface))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Release(
         &mut self,
-        location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        asset: *mut quest_hook::libil2cpp::Il2CppObject,
+        location: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
+        asset: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", (location, asset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -95,7 +107,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvi
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider")]

@@ -30,7 +30,7 @@ impl crate::UnityEngine::InputSystem::XR::Bone {
             "get_parentBoneIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_position(
         &mut self,
@@ -40,7 +40,7 @@ impl crate::UnityEngine::InputSystem::XR::Bone {
             "get_position",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotation(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::UnityEngine::InputSystem::XR::Bone {
             "get_rotation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_parentBoneIndex(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::UnityEngine::InputSystem::XR::Bone {
             "set_parentBoneIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_position(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::UnityEngine::InputSystem::XR::Bone {
             "set_position",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rotation(
         &mut self,
@@ -83,6 +83,6 @@ impl crate::UnityEngine::InputSystem::XR::Bone {
             "set_rotation",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

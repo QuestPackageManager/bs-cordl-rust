@@ -26,7 +26,7 @@ for crate::UnityEngine::ExposedReference_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::ExposedReference_1<T> {
     pub fn Resolve(
         &mut self,
-        resolver: *mut crate::UnityEngine::IExposedPropertyTable,
+        resolver: quest_hook::libil2cpp::Gc<crate::UnityEngine::IExposedPropertyTable>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -37,6 +37,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::ExposedReference_1<T> {
             "Resolve",
             (resolver),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

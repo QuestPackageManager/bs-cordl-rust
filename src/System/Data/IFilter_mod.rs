@@ -25,14 +25,14 @@ impl std::ops::DerefMut for crate::System::Data::IFilter {
 impl crate::System::Data::IFilter {
     pub fn Invoke(
         &mut self,
-        row: *mut crate::System::Data::DataRow,
+        row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Invoke", (row, version))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

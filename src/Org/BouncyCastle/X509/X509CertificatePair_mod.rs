@@ -28,96 +28,113 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::X509CertificatePair 
 impl crate::Org::BouncyCastle::X509::X509CertificatePair {
     pub fn Equals(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEncoded(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetEncoded", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("GetEncoded", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_CertificatePair1(
-        pair: *mut crate::Org::BouncyCastle::Asn1::X509::CertificatePair,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        pair: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::CertificatePair,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pair))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_X509Certificate_X509Certificate0(
-        forward: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        reverse: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        forward: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
+        reverse: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (forward, reverse))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_CertificatePair1(
         &mut self,
-        pair: *mut crate::Org::BouncyCastle::Asn1::X509::CertificatePair,
+        pair: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::CertificatePair,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (pair))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_X509Certificate_X509Certificate0(
         &mut self,
-        forward: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        reverse: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        forward: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
+        reverse: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (forward, reverse))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Forward(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Certificate = __cordl_object
-            .invoke("get_Forward", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        > = __cordl_object.invoke("get_Forward", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Reverse(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Certificate = __cordl_object
-            .invoke("get_Reverse", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        > = __cordl_object.invoke("get_Reverse", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509CertificatePair")]

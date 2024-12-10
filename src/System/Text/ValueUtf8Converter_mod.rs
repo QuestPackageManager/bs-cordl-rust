@@ -32,7 +32,7 @@ impl crate::System::Text::ValueUtf8Converter {
             "ConvertAndTerminateString",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -42,7 +42,7 @@ impl crate::System::Text::ValueUtf8Converter {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -53,6 +53,6 @@ impl crate::System::Text::ValueUtf8Converter {
             ".ctor",
             (initialBuffer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

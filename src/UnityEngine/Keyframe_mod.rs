@@ -37,7 +37,7 @@ impl crate::UnityEngine::Keyframe {
             ".ctor",
             (_cordl_time, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_1(
         &mut self,
@@ -51,6 +51,6 @@ impl crate::UnityEngine::Keyframe {
             ".ctor",
             (_cordl_time, value, inTangent, outTangent),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

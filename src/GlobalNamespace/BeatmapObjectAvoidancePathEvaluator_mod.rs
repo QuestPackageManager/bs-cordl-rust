@@ -42,19 +42,25 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("GetCurrentPathPosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-        playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
-        pathBezierCurveEvaluator: *mut crate::GlobalNamespace::BezierSplineEvaluator,
+        audioTimeSource: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IAudioTimeSource,
+        >,
+        playerTransforms: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerTransforms,
+        >,
+        pathBezierCurveEvaluator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BezierSplineEvaluator,
+        >,
         jumpStartZ: f32,
         jumpEndZ: f32,
         yOffset: f32,
         zOffset: f32,
         noteJumpSeed: f32,
         moveToPlayerHeadTParam: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -72,13 +78,19 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator {
                     moveToPlayerHeadTParam,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-        playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
-        pathBezierCurveEvaluator: *mut crate::GlobalNamespace::BezierSplineEvaluator,
+        audioTimeSource: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IAudioTimeSource,
+        >,
+        playerTransforms: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerTransforms,
+        >,
+        pathBezierCurveEvaluator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BezierSplineEvaluator,
+        >,
         jumpStartZ: f32,
         jumpEndZ: f32,
         yOffset: f32,
@@ -104,7 +116,7 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator {
                     moveToPlayerHeadTParam,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapObjectAvoidancePathEvaluator")]

@@ -49,15 +49,17 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InnerInvoke", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        antecedent: *mut crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-        action: *mut crate::System::Delegate,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
+        antecedent: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
+        >,
+        action: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
         internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TAntecedentResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -69,13 +71,15 @@ impl<
                 ".ctor",
                 (antecedent, action, state, creationOptions, internalOptions),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        antecedent: *mut crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-        action: *mut crate::System::Delegate,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
+        antecedent: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
+        >,
+        action: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
         internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -91,7 +95,7 @@ impl<
                 ".ctor",
                 (antecedent, action, state, creationOptions, internalOptions),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromResultTask_1")]

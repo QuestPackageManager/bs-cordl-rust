@@ -56,73 +56,81 @@ impl crate::GlobalNamespace::NetworkPlayersTableView {
     pub type CellInfo = crate::GlobalNamespace::NetworkPlayersTableView_CellInfo;
     pub fn AddPlayers(
         &mut self,
-        players: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::INetworkPlayer,
+        players: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::GlobalNamespace::INetworkPlayer,
+            >,
         >,
-        title: *mut quest_hook::libil2cpp::Il2CppString,
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddPlayers", (players, title))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CellForIdx(
         &mut self,
-        tableView: *mut crate::HMUI::TableView,
+        tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
         row: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::TableCell> = __cordl_object
             .invoke("CellForIdx", (tableView, row))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleCellWasPressed(
         &mut self,
-        tableView: *mut crate::HMUI::TableView,
-        tableCell: *mut crate::HMUI::TableCell,
+        tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+        tableCell: quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleCellWasPressed", (tableView, tableCell))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetParties(
         &mut self,
-        partyPlayers: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::INetworkPlayer,
+        partyPlayers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::GlobalNamespace::INetworkPlayer,
+            >,
         >,
-        otherPlayers: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::INetworkPlayer,
+        otherPlayers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::GlobalNamespace::INetworkPlayer,
+            >,
         >,
-        myPartyTitle: *mut quest_hook::libil2cpp::Il2CppString,
-        otherPlayersTitle: *mut quest_hook::libil2cpp::Il2CppString,
+        myPartyTitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        otherPlayersTitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -132,7 +140,7 @@ impl crate::GlobalNamespace::NetworkPlayersTableView {
                 "SetParties",
                 (partyPlayers, otherPlayers, myPartyTitle, otherPlayersTitle),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -142,7 +150,7 @@ impl crate::GlobalNamespace::NetworkPlayersTableView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NetworkPlayersTableView")]
@@ -188,12 +196,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NetworkPlayersTableView_Cell
 impl crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
     #[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
     pub type CellType = crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -203,7 +211,7 @@ impl crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NetworkPlayersTableView+CellInfo")]

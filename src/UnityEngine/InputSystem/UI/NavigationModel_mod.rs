@@ -34,6 +34,6 @@ impl crate::UnityEngine::InputSystem::UI::NavigationModel {
             "Reset",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

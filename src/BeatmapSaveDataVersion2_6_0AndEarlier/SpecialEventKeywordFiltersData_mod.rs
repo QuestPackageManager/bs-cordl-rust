@@ -31,20 +31,24 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData")]
 impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData {
     pub fn New(
-        keywords: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+        keywords: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (keywords))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        keywords: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+        keywords: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -52,22 +56,26 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (keywords))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_keywords(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+            >,
         > = __cordl_object.invoke("get_keywords", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData")]

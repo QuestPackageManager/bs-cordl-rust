@@ -48,7 +48,7 @@ impl<
             "AddCallback",
             (dlg),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -60,7 +60,7 @@ impl<
             "Clear",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LockForChanges(
         &mut self,
@@ -74,7 +74,7 @@ impl<
             "LockForChanges",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveCallback(
         &mut self,
@@ -89,7 +89,7 @@ impl<
             "RemoveCallback",
             (dlg),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnlockForChanges(
         &mut self,
@@ -103,7 +103,7 @@ impl<
             "UnlockForChanges",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<TDelegate>
     where
@@ -115,7 +115,7 @@ impl<
             "get_Item",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -127,6 +127,6 @@ impl<
             "get_length",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

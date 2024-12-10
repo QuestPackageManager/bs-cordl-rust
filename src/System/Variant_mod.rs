@@ -28,6 +28,6 @@ impl crate::System::Variant {
             "Clear",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

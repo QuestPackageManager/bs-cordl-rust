@@ -34,7 +34,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::PenState {
             "WithButton",
             (button, state),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_format(
         &mut self,
@@ -46,6 +46,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::PenState {
             "get_format",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

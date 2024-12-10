@@ -34,7 +34,7 @@ impl crate::System::Globalization::GregorianCalendar {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDatePart", (ticks, part))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDayOfMonth(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::System::Globalization::GregorianCalendar {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDayOfMonth", (_cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDayOfWeek(
         &mut self,
@@ -55,7 +55,7 @@ impl crate::System::Globalization::GregorianCalendar {
         );
         let __cordl_ret: crate::System::DayOfWeek = __cordl_object
             .invoke("GetDayOfWeek", (_cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDaysInMonth(
         &mut self,
@@ -68,7 +68,7 @@ impl crate::System::Globalization::GregorianCalendar {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetDaysInMonth", (year, month, era))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDaysInYear(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::System::Globalization::GregorianCalendar {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDaysInYear", (year, era))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEra(
         &mut self,
@@ -89,7 +89,7 @@ impl crate::System::Globalization::GregorianCalendar {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetEra", (_cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMonth(
         &mut self,
@@ -99,7 +99,7 @@ impl crate::System::Globalization::GregorianCalendar {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetMonth", (_cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMonthsInYear(
         &mut self,
@@ -110,7 +110,7 @@ impl crate::System::Globalization::GregorianCalendar {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetMonthsInYear", (year, era))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetYear(
         &mut self,
@@ -120,7 +120,7 @@ impl crate::System::Globalization::GregorianCalendar {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetYear", (_cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsLeapYear(
         &mut self,
@@ -131,23 +131,23 @@ impl crate::System::Globalization::GregorianCalendar {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsLeapYear", (year, era))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_GregorianCalendarTypes1(
         _cordl_type: crate::System::Globalization::GregorianCalendarTypes,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_type))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDeserialized(
         &mut self,
@@ -158,7 +158,7 @@ impl crate::System::Globalization::GregorianCalendar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDeserialized", (ctx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToDateTime(
         &mut self,
@@ -179,14 +179,14 @@ impl crate::System::Globalization::GregorianCalendar {
                 "ToDateTime",
                 (year, month, day, hour, minute, second, millisecond, era),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToFourDigitYear(&mut self, year: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("ToFourDigitYear", (year))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryToDateTime(
         &mut self,
@@ -208,7 +208,7 @@ impl crate::System::Globalization::GregorianCalendar {
                 "TryToDateTime",
                 (year, month, day, hour, minute, second, millisecond, era, result),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -218,7 +218,7 @@ impl crate::System::Globalization::GregorianCalendar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_GregorianCalendarTypes1(
         &mut self,
@@ -229,24 +229,27 @@ impl crate::System::Globalization::GregorianCalendar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_type))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Eras(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
-            .invoke("get_Eras", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = __cordl_object.invoke("get_Eras", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_ID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ID", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MaxSupportedDateTime(
         &mut self,
@@ -256,7 +259,7 @@ impl crate::System::Globalization::GregorianCalendar {
         );
         let __cordl_ret: crate::System::DateTime = __cordl_object
             .invoke("get_MaxSupportedDateTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MinSupportedDateTime(
         &mut self,
@@ -266,14 +269,14 @@ impl crate::System::Globalization::GregorianCalendar {
         );
         let __cordl_ret: crate::System::DateTime = __cordl_object
             .invoke("get_MinSupportedDateTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TwoDigitYearMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_TwoDigitYearMax", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_TwoDigitYearMax(
         &mut self,
@@ -284,7 +287,7 @@ impl crate::System::Globalization::GregorianCalendar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_TwoDigitYearMax", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Globalization+GregorianCalendar")]

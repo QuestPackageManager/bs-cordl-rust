@@ -26,14 +26,14 @@ impl crate::Unity::Mathematics::float2 {
     pub type DebuggerProxy = crate::Unity::Mathematics::float2_DebuggerProxy;
     pub fn Equals_Il2CppObject1(
         &mut self,
-        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (o),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_float2_0(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::Unity::Mathematics::float2 {
             "Equals",
             (rhs),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -52,29 +52,33 @@ impl crate::Unity::Mathematics::float2 {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider1(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
-        formatProvider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (format, formatProvider),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool3(
         &mut self,
@@ -85,7 +89,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_bool2_4(
         &mut self,
@@ -96,7 +100,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_double2_12(
         &mut self,
@@ -107,7 +111,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_2(
         &mut self,
@@ -118,7 +122,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_0(
         &mut self,
@@ -130,7 +134,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (x, y),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f64_11(
         &mut self,
@@ -141,7 +145,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_float2_1(
         &mut self,
@@ -152,7 +156,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (xy),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_half2_10(
         &mut self,
@@ -163,7 +167,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_half9(
         &mut self,
@@ -174,7 +178,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_5(
         &mut self,
@@ -185,7 +189,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_int2_6(
         &mut self,
@@ -196,7 +200,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_7(
         &mut self,
@@ -207,7 +211,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_uint2_8(
         &mut self,
@@ -218,7 +222,7 @@ impl crate::Unity::Mathematics::float2 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -226,7 +230,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_Item",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xx(
         &mut self,
@@ -236,7 +240,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxx(
         &mut self,
@@ -246,7 +250,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxxx(
         &mut self,
@@ -256,7 +260,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xxxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxxy(
         &mut self,
@@ -266,7 +270,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xxxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxy(
         &mut self,
@@ -276,7 +280,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxyx(
         &mut self,
@@ -286,7 +290,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xxyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxyy(
         &mut self,
@@ -296,7 +300,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xxyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xy(
         &mut self,
@@ -306,7 +310,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyx(
         &mut self,
@@ -316,7 +320,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyxx(
         &mut self,
@@ -326,7 +330,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xyxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyxy(
         &mut self,
@@ -336,7 +340,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xyxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyy(
         &mut self,
@@ -346,7 +350,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyyx(
         &mut self,
@@ -356,7 +360,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xyyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyyy(
         &mut self,
@@ -366,7 +370,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_xyyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yx(
         &mut self,
@@ -376,7 +380,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxx(
         &mut self,
@@ -386,7 +390,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxxx(
         &mut self,
@@ -396,7 +400,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yxxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxxy(
         &mut self,
@@ -406,7 +410,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yxxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxy(
         &mut self,
@@ -416,7 +420,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxyx(
         &mut self,
@@ -426,7 +430,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yxyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxyy(
         &mut self,
@@ -436,7 +440,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yxyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yy(
         &mut self,
@@ -446,7 +450,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyx(
         &mut self,
@@ -456,7 +460,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyxx(
         &mut self,
@@ -466,7 +470,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yyxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyxy(
         &mut self,
@@ -476,7 +480,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yyxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyy(
         &mut self,
@@ -486,7 +490,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyyx(
         &mut self,
@@ -496,7 +500,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yyyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyyy(
         &mut self,
@@ -506,7 +510,7 @@ impl crate::Unity::Mathematics::float2 {
             "get_yyyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
@@ -518,7 +522,7 @@ impl crate::Unity::Mathematics::float2 {
             "set_Item",
             (index, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xy(
         &mut self,
@@ -529,7 +533,7 @@ impl crate::Unity::Mathematics::float2 {
             "set_xy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yx(
         &mut self,
@@ -540,7 +544,7 @@ impl crate::Unity::Mathematics::float2 {
             "set_yx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Mathematics+float2+DebuggerProxy")]
@@ -573,12 +577,12 @@ impl std::ops::DerefMut for crate::Unity::Mathematics::float2_DebuggerProxy {
 impl crate::Unity::Mathematics::float2_DebuggerProxy {
     pub fn New(
         v: crate::Unity::Mathematics::float2,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (v))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -589,7 +593,7 @@ impl crate::Unity::Mathematics::float2_DebuggerProxy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (v))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Mathematics+float2+DebuggerProxy")]

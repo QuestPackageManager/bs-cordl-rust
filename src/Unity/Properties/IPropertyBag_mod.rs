@@ -26,14 +26,14 @@ impl std::ops::DerefMut for crate::Unity::Properties::IPropertyBag {
 impl crate::Unity::Properties::IPropertyBag {
     pub fn Accept(
         &mut self,
-        visitor: *mut crate::Unity::Properties::ITypeVisitor,
+        visitor: quest_hook::libil2cpp::Gc<crate::Unity::Properties::ITypeVisitor>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Accept", (visitor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

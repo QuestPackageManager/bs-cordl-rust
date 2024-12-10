@@ -40,7 +40,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::IgnoranceThirdparty::RingBuffer_1<T>
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Dequeue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enqueue(
         &mut self,
@@ -55,9 +55,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::IgnoranceThirdparty::RingBuffer_1<T>
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Enqueue", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(capacity: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New(
+        capacity: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -66,7 +68,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::IgnoranceThirdparty::RingBuffer_1<T>
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (capacity))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn TryDequeue(
         &mut self,
@@ -80,7 +82,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::IgnoranceThirdparty::RingBuffer_1<T>
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryDequeue", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -95,7 +97,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::IgnoranceThirdparty::RingBuffer_1<T>
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (capacity))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Capacity(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -106,7 +108,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::IgnoranceThirdparty::RingBuffer_1<T>
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Capacity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -117,7 +119,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::IgnoranceThirdparty::RingBuffer_1<T>
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i64) -> quest_hook::libil2cpp::Result<T>
     where
@@ -128,7 +130,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::IgnoranceThirdparty::RingBuffer_1<T>
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
@@ -144,7 +146,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::IgnoranceThirdparty::RingBuffer_1<T>
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (index, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "IgnoranceThirdparty+RingBuffer_1")]

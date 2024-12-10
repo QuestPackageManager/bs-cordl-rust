@@ -37,11 +37,15 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
     pub type _GetEnumerator_d__19 = crate::System::Net::Http::Headers::HttpHeaders__GetEnumerator_d__19;
     pub fn AddInternal(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        values: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
-        headerInfo: *mut crate::System::Net::Http::Headers::HeaderInfo,
+        headerInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HeaderInfo,
+        >,
         ignoreInvalid: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -49,15 +53,17 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("AddInternal", (name, values, headerInfo, ignoreInvalid))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddOrRemove<T>(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: T,
-        converter: *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppString,
+        converter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -69,46 +75,57 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddOrRemove", (name, value, converter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckName(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::Http::Headers::HeaderInfo,
+        quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::HeaderInfo>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::Http::Headers::HeaderInfo = __cordl_object
-            .invoke("CheckName", (name))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HeaderInfo,
+        > = __cordl_object.invoke("CheckName", (name))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetAllHeaderValues(
         &mut self,
-        bucket: *mut crate::System::Net::Http::Headers::HttpHeaders_HeaderBucket,
-        headerInfo: *mut crate::System::Net::Http::Headers::HeaderInfo,
+        bucket: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HttpHeaders_HeaderBucket,
+        >,
+        headerInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HeaderInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("GetAllHeaderValues", (bucket, headerInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
                     *mut quest_hook::libil2cpp::Il2CppString,
+                    *mut crate::System::Collections::Generic::IEnumerable_1<
+                        *mut quest_hook::libil2cpp::Il2CppString,
+                    >,
                 >,
             >,
         >,
@@ -116,19 +133,21 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::System::Collections::Generic::IEnumerable_1<
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
                     *mut quest_hook::libil2cpp::Il2CppString,
+                    *mut crate::System::Collections::Generic::IEnumerable_1<
+                        *mut quest_hook::libil2cpp::Il2CppString,
+                    >,
                 >,
             >,
         > = __cordl_object.invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetValue<T>(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -138,13 +157,15 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("GetValue", (name))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetValues<T>(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<T>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<T>,
+        >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -153,44 +174,46 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
-            T,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<T>,
         > = __cordl_object.invoke("GetValues", (name))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_HttpHeaderKind1(
         headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (headerKind))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Remove(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Remove", (name))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetValue<T>(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: T,
-        toStringConverter: *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppString,
+        toStringConverter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -202,33 +225,41 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetValue", (name, value, toStringConverter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn TryAddWithoutValidation(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        values: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -236,11 +267,11 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryAddWithoutValidation", (name, values))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryCheckName(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         headerInfo: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Net::Http::Headers::HeaderInfo,
         >,
@@ -250,7 +281,7 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryCheckName", (name, headerInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -260,7 +291,7 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_HttpHeaderKind1(
         &mut self,
@@ -271,7 +302,7 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (headerKind))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+HttpHeaders")]
@@ -320,34 +351,41 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::HttpHeaders_Heade
 #[cfg(feature = "System+Net+Http+Headers+HttpHeaders+HeaderBucket")]
 impl crate::System::Net::Http::Headers::HttpHeaders_HeaderBucket {
     pub fn New(
-        parsed: *mut quest_hook::libil2cpp::Il2CppObject,
-        converter: *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppString,
+        parsed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        converter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (parsed, converter))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ParsedToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ParsedToString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ParsedToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        parsed: *mut quest_hook::libil2cpp::Il2CppObject,
-        converter: *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppString,
+        parsed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        converter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -355,34 +393,40 @@ impl crate::System::Net::Http::Headers::HttpHeaders_HeaderBucket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (parsed, converter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasStringValues(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasStringValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Values(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("get_Values", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Values(
         &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -390,7 +434,7 @@ impl crate::System::Net::Http::Headers::HttpHeaders_HeaderBucket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Values", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+HttpHeaders+HeaderBucket")]

@@ -30,7 +30,7 @@ for crate::Zenject::ListPool_1<T> {
 }
 #[cfg(feature = "Zenject+ListPool_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ListPool_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -39,11 +39,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ListPool_1<T> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDespawned(
         &mut self,
-        list: *mut crate::System::Collections::Generic::List_1<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -54,7 +54,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ListPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDespawned", (list))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -66,7 +66,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ListPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+ListPool_1")]

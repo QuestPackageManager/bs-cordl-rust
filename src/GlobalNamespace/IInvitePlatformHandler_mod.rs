@@ -32,7 +32,7 @@ impl crate::GlobalNamespace::IInvitePlatformHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OpenInvitePanel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::IInvitePlatformHandler {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isSupported", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "IInvitePlatformHandler")]

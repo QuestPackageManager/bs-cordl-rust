@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_normalizedStrin
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_normalizedString")]
 impl crate::System::Xml::Schema::Datatype_normalizedString {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -39,7 +39,7 @@ impl crate::System::Xml::Schema::Datatype_normalizedString {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_BuiltInWhitespaceFacet(
         &mut self,
@@ -49,14 +49,14 @@ impl crate::System::Xml::Schema::Datatype_normalizedString {
         );
         let __cordl_ret: crate::System::Xml::Schema::XmlSchemaWhiteSpace = __cordl_object
             .invoke("get_BuiltInWhitespaceFacet", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasValueFacets(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasValueFacets", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TypeCode(
         &mut self,
@@ -66,7 +66,7 @@ impl crate::System::Xml::Schema::Datatype_normalizedString {
         );
         let __cordl_ret: crate::System::Xml::Schema::XmlTypeCode = __cordl_object
             .invoke("get_TypeCode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_normalizedString")]

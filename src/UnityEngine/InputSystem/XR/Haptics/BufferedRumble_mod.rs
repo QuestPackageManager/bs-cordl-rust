@@ -26,25 +26,25 @@ for crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
 impl crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
     pub fn EnqueueRumble(
         &mut self,
-        samples: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "EnqueueRumble",
             (samples),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (device),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_capabilities(
         &mut self,
@@ -56,19 +56,17 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
             "get_capabilities",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_device(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputDevice = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_device",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputDevice,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_device", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_capabilities(
         &mut self,
@@ -79,17 +77,17 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
             "set_capabilities",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_device(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::InputDevice,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_device",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

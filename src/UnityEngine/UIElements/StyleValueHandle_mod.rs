@@ -31,7 +31,7 @@ impl crate::UnityEngine::UIElements::StyleValueHandle {
             "get_valueType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_valueType(
         &mut self,
@@ -42,6 +42,6 @@ impl crate::UnityEngine::UIElements::StyleValueHandle {
             "set_valueType",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

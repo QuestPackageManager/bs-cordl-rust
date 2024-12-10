@@ -26,17 +26,19 @@ impl std::ops::DerefMut for crate::System::ComponentModel::ISynchronizeInvoke {
 impl crate::System::ComponentModel::ISynchronizeInvoke {
     pub fn BeginInvoke(
         &mut self,
-        method: *mut crate::System::Delegate,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        method: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginInvoke", (method, args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -48,7 +50,7 @@ impl crate::System::ComponentModel::ISynchronizeInvoke {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_InvokeRequired", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+ComponentModel+ISynchronizeInvoke")]

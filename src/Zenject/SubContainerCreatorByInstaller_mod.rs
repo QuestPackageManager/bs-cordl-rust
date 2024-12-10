@@ -32,37 +32,45 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByInstaller {
 impl crate::Zenject::SubContainerCreatorByInstaller {
     pub fn CreateSubContainer(
         &mut self,
-        args: *mut crate::System::Collections::Generic::List_1<
-            crate::Zenject::TypeValuePair,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
-        context: *mut crate::Zenject::InjectContext,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {
+        context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::DiContainer = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = __cordl_object
             .invoke("CreateSubContainer", (args, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_DiContainer_SubContainerCreatorBindInfo_Type1(
-        container: *mut crate::Zenject::DiContainer,
-        containerBindInfo: *mut crate::Zenject::SubContainerCreatorBindInfo,
-        installerType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        containerBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SubContainerCreatorBindInfo,
+        >,
+        installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (container, containerBindInfo, installerType))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IEnumerable_1_0(
-        container: *mut crate::Zenject::DiContainer,
-        containerBindInfo: *mut crate::Zenject::SubContainerCreatorBindInfo,
-        installerType: *mut crate::System::Type,
-        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::Zenject::TypeValuePair,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        containerBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SubContainerCreatorBindInfo,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -70,28 +78,34 @@ impl crate::Zenject::SubContainerCreatorByInstaller {
                 ".ctor",
                 (container, containerBindInfo, installerType, extraArgs),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_DiContainer_SubContainerCreatorBindInfo_Type1(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        containerBindInfo: *mut crate::Zenject::SubContainerCreatorBindInfo,
-        installerType: *mut crate::System::Type,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        containerBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SubContainerCreatorBindInfo,
+        >,
+        installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (container, containerBindInfo, installerType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEnumerable_1_0(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        containerBindInfo: *mut crate::Zenject::SubContainerCreatorBindInfo,
-        installerType: *mut crate::System::Type,
-        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::Zenject::TypeValuePair,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        containerBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SubContainerCreatorBindInfo,
+        >,
+        installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -99,7 +113,7 @@ impl crate::Zenject::SubContainerCreatorByInstaller {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (container, containerBindInfo, installerType, extraArgs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByInstaller")]

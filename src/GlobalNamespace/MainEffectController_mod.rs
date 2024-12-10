@@ -33,15 +33,15 @@ impl crate::GlobalNamespace::MainEffectController {
     pub const kMainEffectEnabledKeyword: &'static str = "MAIN_EFFECT_ENABLED";
     pub fn ImageEffectControllerCallback(
         &mut self,
-        src: *mut crate::UnityEngine::RenderTexture,
-        dest: *mut crate::UnityEngine::RenderTexture,
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ImageEffectControllerCallback", (src, dest))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LazySetupImageEffectController(
         &mut self,
@@ -51,14 +51,14 @@ impl crate::GlobalNamespace::MainEffectController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LazySetupImageEffectController", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::MainEffectController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::MainEffectController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPostRender(
         &mut self,
@@ -88,7 +88,7 @@ impl crate::GlobalNamespace::MainEffectController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPostRender", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPreRender(
         &mut self,
@@ -98,7 +98,7 @@ impl crate::GlobalNamespace::MainEffectController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPreRender", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnValidate(
         &mut self,
@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::MainEffectController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnValidate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -118,29 +118,33 @@ impl crate::GlobalNamespace::MainEffectController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_afterImageEffectEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::UnityEngine::RenderTexture>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::RenderTexture>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_afterImageEffectEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_afterImageEffectEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::UnityEngine::RenderTexture>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::RenderTexture>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_afterImageEffectEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MainEffectController")]

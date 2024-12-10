@@ -42,33 +42,41 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::Alloc = __cordl_object
             .invoke("Allocate", (_cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BestFitFindAvailableBlock(
         &mut self,
         _cordl_size: u32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block = __cordl_object
-            .invoke("BestFitFindAvailableBlock", (_cordl_size))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+        > = __cordl_object.invoke("BestFitFindAvailableBlock", (_cordl_size))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CoalesceBlockWithPrevious(
         &mut self,
-        block: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+        block: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block = __cordl_object
-            .invoke("CoalesceBlockWithPrevious", (block))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+        > = __cordl_object.invoke("CoalesceBlockWithPrevious", (block))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Free(
         &mut self,
@@ -79,18 +87,22 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Free", (alloc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(_cordl_size: u32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        _cordl_size: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_size))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SplitBlock(
         &mut self,
-        block: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+        block: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+        >,
         _cordl_size: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -98,7 +110,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SplitBlock", (block, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -109,21 +121,21 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_highWatermark(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_highWatermark", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalSize(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_totalSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
@@ -174,12 +186,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::BestFitAllocato
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
 impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -189,14 +201,14 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_size(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_size", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
@@ -242,12 +254,12 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
 impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -257,7 +269,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]

@@ -32,7 +32,7 @@ impl crate::UnityEngine::Timeline::ITimeControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnControlTimeStart", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnControlTimeStop(
         &mut self,
@@ -42,7 +42,7 @@ impl crate::UnityEngine::Timeline::ITimeControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnControlTimeStop", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTime(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::Timeline::ITimeControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTime", (_cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

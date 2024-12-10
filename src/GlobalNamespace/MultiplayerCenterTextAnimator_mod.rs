@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AnimateEnabled", (isEnabled, duration, easeType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AnimateFontSize(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AnimateFontSize", (fontSize, duration, easeType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AnimatePositionOffsetSize(
         &mut self,
@@ -69,7 +69,7 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AnimatePositionOffsetSize", (offset, duration, easeType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AnimateTextColor(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AnimateTextColor", (color, duration, easeType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Awake(
         &mut self,
@@ -92,14 +92,14 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -109,18 +109,18 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetText(
         &mut self,
-        text: *mut quest_hook::libil2cpp::Il2CppString,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetText", (text))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__8_0(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__8_0", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__8_1(
         &mut self,
@@ -142,7 +142,7 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__8_1", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__8_2(
         &mut self,
@@ -153,7 +153,7 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__8_2", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__8_3(
         &mut self,
@@ -164,7 +164,7 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__8_3", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__8_4(
         &mut self,
@@ -175,7 +175,7 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__8_4", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__8_5(
         &mut self,
@@ -185,7 +185,7 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__8_5", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -195,7 +195,7 @@ impl crate::GlobalNamespace::MultiplayerCenterTextAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerCenterTextAnimator")]

@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Animate", (show, duration, easeType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HideInstant(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HideInstant", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitIfNeeded(
         &mut self,
@@ -62,14 +62,14 @@ impl crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitIfNeeded", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPositionAndRotation(
         &mut self,
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPositionAndRotation", (position, rotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _InitIfNeeded_b__8_0(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<InitIfNeeded>b__8_0", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _InitIfNeeded_b__8_1(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<InitIfNeeded>b__8_1", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _InitIfNeeded_b__8_2(
         &mut self,
@@ -123,7 +123,7 @@ impl crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<InitIfNeeded>b__8_2", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerBigAvatarAnimator")]

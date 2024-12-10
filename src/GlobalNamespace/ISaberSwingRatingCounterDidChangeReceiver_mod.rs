@@ -29,7 +29,9 @@ for crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
 impl crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
     pub fn HandleSaberSwingRatingCounterDidChange(
         &mut self,
-        saberSwingRatingCounter: *mut crate::GlobalNamespace::ISaberSwingRatingCounter,
+        saberSwingRatingCounter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISaberSwingRatingCounter,
+        >,
         rating: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -40,7 +42,7 @@ impl crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
                 "HandleSaberSwingRatingCounterDidChange",
                 (saberSwingRatingCounter, rating),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

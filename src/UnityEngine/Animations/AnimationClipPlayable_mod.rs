@@ -31,7 +31,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -41,7 +41,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetApplyFootIK(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
             "SetApplyFootIK",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLoopTime(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
             "SetLoopTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetOverrideLoopTime(
         &mut self,
@@ -74,7 +74,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
             "SetOverrideLoopTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetRemoveStartOffset(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
             "SetRemoveStartOffset",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -96,6 +96,6 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
             ".ctor",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

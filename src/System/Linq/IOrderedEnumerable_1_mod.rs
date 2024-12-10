@@ -31,11 +31,13 @@ impl<
 > crate::System::Linq::IOrderedEnumerable_1<TElement> {
     pub fn CreateOrderedEnumerable<TKey>(
         &mut self,
-        keySelector: *mut crate::System::Func_2<TElement, TKey>,
-        comparer: *mut crate::System::Collections::Generic::IComparer_1<TKey>,
+        keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TKey>>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TKey>,
+        >,
         descending: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::IOrderedEnumerable_1<TElement>,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::IOrderedEnumerable_1<TElement>>,
     >
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -46,9 +48,11 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::IOrderedEnumerable_1<TElement> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::IOrderedEnumerable_1<TElement>,
+        > = __cordl_object
             .invoke("CreateOrderedEnumerable", (keySelector, comparer, descending))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

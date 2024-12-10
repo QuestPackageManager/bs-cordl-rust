@@ -39,7 +39,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("FromAnchor", (anchor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetEnabledAsync(
         &mut self,
@@ -55,7 +55,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
         );
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = __cordl_object
             .invoke("SetEnabledAsync", (enable, timeout))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -71,7 +71,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
             self,
         );
         let __cordl_ret: u64 = __cordl_object.invoke("get_Handle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -82,7 +82,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsEnabled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -93,7 +93,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsNull", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
@@ -109,7 +109,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
         );
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = __cordl_object
             .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "IOVRAnchorComponent_1")]

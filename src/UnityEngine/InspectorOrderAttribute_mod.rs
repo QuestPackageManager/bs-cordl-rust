@@ -34,7 +34,7 @@ impl crate::UnityEngine::InspectorOrderAttribute {
         );
         let __cordl_ret: crate::UnityEngine::InspectorSort = __cordl_object
             .invoke("get_m_inspectorSort", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_m_sortDirection(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::UnityEngine::InspectorOrderAttribute {
         );
         let __cordl_ret: crate::UnityEngine::InspectorSortDirection = __cordl_object
             .invoke("get_m_sortDirection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InspectorOrderAttribute")]

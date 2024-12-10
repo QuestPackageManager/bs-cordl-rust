@@ -40,22 +40,28 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
 impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
     pub fn _ctor(
         &mut self,
-        version: *mut quest_hook::libil2cpp::Il2CppString,
+        version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         serviceEnvironment: crate::GlobalNamespace::ServiceEnvironment,
-        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
         platform: crate::GlobalNamespace::AuthenticationToken_Platform,
-        authUserId: *mut quest_hook::libil2cpp::Il2CppString,
-        singleUseAuthToken: *mut quest_hook::libil2cpp::Il2CppString,
-        privateGameSecret: *mut quest_hook::libil2cpp::Il2CppString,
-        privateGameCode: *mut quest_hook::libil2cpp::Il2CppString,
-        gameliftRegionLatencies: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            i64,
+        authUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        singleUseAuthToken: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
         >,
-        ticketId: *mut quest_hook::libil2cpp::Il2CppString,
-        placementId: *mut quest_hook::libil2cpp::Il2CppString,
+        privateGameSecret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        privateGameCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        gameliftRegionLatencies: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                i64,
+            >,
+        >,
+        ticketId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        placementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -76,6 +82,6 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
                 placementId,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

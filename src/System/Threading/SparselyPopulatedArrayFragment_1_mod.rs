@@ -36,8 +36,10 @@ impl<
 > crate::System::Threading::SparselyPopulatedArrayFragment_1<T> {
     pub fn New_SparselyPopulatedArrayFragment_1_1(
         _cordl_size: i32,
-        prev: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        prev: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -46,9 +48,11 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_size, prev))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
-    pub fn New_i32_0(_cordl_size: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New_i32_0(
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -57,7 +61,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_size))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SafeAtomicRemove(
         &mut self,
@@ -73,12 +77,14 @@ impl<
         );
         let __cordl_ret: T = __cordl_object
             .invoke("SafeAtomicRemove", (index, expectedElement))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SparselyPopulatedArrayFragment_1_1(
         &mut self,
         _cordl_size: i32,
-        prev: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        prev: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -89,7 +95,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_size, prev))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_0(
         &mut self,
@@ -104,7 +110,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<T>
     where
@@ -115,7 +121,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -126,12 +132,14 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Prev(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -140,10 +148,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<
-            T,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
         > = __cordl_object.invoke("get_Prev", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+SparselyPopulatedArrayFragment_1")]

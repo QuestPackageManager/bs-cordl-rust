@@ -43,19 +43,19 @@ impl crate::GlobalNamespace::MouseLook {
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
             .invoke("ClampRotationAroundXAxis", (q))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        character: *mut crate::UnityEngine::Transform,
-        camera: *mut crate::UnityEngine::Transform,
+        character: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (character, camera))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalLockUpdate(
         &mut self,
@@ -65,26 +65,26 @@ impl crate::GlobalNamespace::MouseLook {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InternalLockUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LookRotation(
         &mut self,
-        character: *mut crate::UnityEngine::Transform,
-        camera: *mut crate::UnityEngine::Transform,
+        character: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LookRotation", (character, camera))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetCursorLock(
         &mut self,
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::MouseLook {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCursorLock", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetRotations(
         &mut self,
@@ -107,7 +107,7 @@ impl crate::GlobalNamespace::MouseLook {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetRotations", (characterRotation, cameraRotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateCursorLock(
         &mut self,
@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::MouseLook {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateCursorLock", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -127,7 +127,7 @@ impl crate::GlobalNamespace::MouseLook {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MouseLook")]

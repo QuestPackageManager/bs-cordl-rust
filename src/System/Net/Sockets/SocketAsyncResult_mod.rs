@@ -56,7 +56,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckIfThrowDelayedException", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompleteDisposed(
         &mut self,
@@ -66,7 +66,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CompleteDisposed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Complete_0(
         &mut self,
@@ -76,22 +76,22 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Complete", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Complete_Exception4(
         &mut self,
-        e: *mut crate::System::Exception,
+        e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Complete", (e))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Complete_Exception__cordl_bool3(
         &mut self,
-        e: *mut crate::System::Exception,
+        e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         synch: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -99,22 +99,22 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Complete", (e, synch))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Complete_Socket5(
         &mut self,
-        s: *mut crate::System::Net::Sockets::Socket,
+        s: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Complete", (s))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Complete_Socket_i32_6(
         &mut self,
-        s: *mut crate::System::Net::Sockets::Socket,
+        s: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
         total: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -122,7 +122,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Complete", (s, total))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Complete__cordl_bool1(
         &mut self,
@@ -133,7 +133,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Complete", (synch))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Complete_i32_2(
         &mut self,
@@ -144,13 +144,13 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Complete", (total))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        socket: *mut crate::System::Net::Sockets::Socket,
-        callback: *mut crate::System::AsyncCallback,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
+        socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         operation: crate::System::Net::Sockets::SocketOperation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -158,26 +158,26 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (socket, callback, state, operation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Socket_AsyncCallback_Il2CppObject_SocketOperation1(
-        socket: *mut crate::System::Net::Sockets::Socket,
-        callback: *mut crate::System::AsyncCallback,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
+        socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         operation: crate::System::Net::Sockets::SocketOperation,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (socket, callback, state, operation))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -187,13 +187,13 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Socket_AsyncCallback_Il2CppObject_SocketOperation1(
         &mut self,
-        socket: *mut crate::System::Net::Sockets::Socket,
-        callback: *mut crate::System::AsyncCallback,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
+        socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         operation: crate::System::Net::Sockets::SocketOperation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -201,7 +201,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (socket, callback, state, operation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ErrorCode(
         &mut self,
@@ -211,7 +211,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: crate::System::Net::Sockets::SocketError = __cordl_object
             .invoke("get_ErrorCode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Handle(
         &mut self,
@@ -221,7 +221,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         );
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("get_Handle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+Sockets+SocketAsyncResult")]

@@ -29,7 +29,7 @@ impl crate::Unity::Mathematics::Random {
             "CheckInitState",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckNextIntMax(
         &mut self,
@@ -40,7 +40,7 @@ impl crate::Unity::Mathematics::Random {
             "CheckNextIntMax",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckNextIntMinMax(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::Unity::Mathematics::Random {
             "CheckNextIntMinMax",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckNextUIntMinMax(
         &mut self,
@@ -64,7 +64,7 @@ impl crate::Unity::Mathematics::Random {
             "CheckNextUIntMinMax",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckState(
         &mut self,
@@ -74,7 +74,7 @@ impl crate::Unity::Mathematics::Random {
             "CheckState",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitState(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::Unity::Mathematics::Random {
             "InitState",
             (seed),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextBool(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -93,7 +93,7 @@ impl crate::Unity::Mathematics::Random {
             "NextBool",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextBool2(
         &mut self,
@@ -103,7 +103,7 @@ impl crate::Unity::Mathematics::Random {
             "NextBool2",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextBool3(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::Unity::Mathematics::Random {
             "NextBool3",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextBool4(
         &mut self,
@@ -123,7 +123,7 @@ impl crate::Unity::Mathematics::Random {
             "NextBool4",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble2Direction(
         &mut self,
@@ -133,7 +133,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble2Direction",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble2_0(
         &mut self,
@@ -143,7 +143,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble2",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble2_double2_1(
         &mut self,
@@ -154,7 +154,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble2",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble2_double2_double2_2(
         &mut self,
@@ -166,7 +166,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble2",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble3Direction(
         &mut self,
@@ -176,7 +176,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble3Direction",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble3_0(
         &mut self,
@@ -186,7 +186,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble3",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble3_double3_1(
         &mut self,
@@ -197,7 +197,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble3",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble3_double3_double3_2(
         &mut self,
@@ -209,7 +209,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble3",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble4_0(
         &mut self,
@@ -219,7 +219,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble4",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble4_double4_1(
         &mut self,
@@ -230,7 +230,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble4",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble4_double4_double4_2(
         &mut self,
@@ -242,7 +242,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble4",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble_0(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -250,7 +250,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble_f64_1(&mut self, max: f64) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -258,7 +258,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextDouble_f64_f64_2(
         &mut self,
@@ -270,7 +270,7 @@ impl crate::Unity::Mathematics::Random {
             "NextDouble",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat2Direction(
         &mut self,
@@ -280,7 +280,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat2Direction",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat2_0(
         &mut self,
@@ -290,7 +290,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat2",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat2_float2_1(
         &mut self,
@@ -301,7 +301,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat2",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat2_float2_float2_2(
         &mut self,
@@ -313,7 +313,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat2",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat3Direction(
         &mut self,
@@ -323,7 +323,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat3Direction",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat3_0(
         &mut self,
@@ -333,7 +333,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat3",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat3_float3_1(
         &mut self,
@@ -344,7 +344,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat3",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat3_float3_float3_2(
         &mut self,
@@ -356,7 +356,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat3",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat4_0(
         &mut self,
@@ -366,7 +366,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat4",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat4_float4_1(
         &mut self,
@@ -377,7 +377,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat4",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat4_float4_float4_2(
         &mut self,
@@ -389,7 +389,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat4",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat_0(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -397,7 +397,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat_f32_1(&mut self, max: f32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -405,7 +405,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextFloat_f32_f32_2(
         &mut self,
@@ -417,7 +417,7 @@ impl crate::Unity::Mathematics::Random {
             "NextFloat",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt2_0(
         &mut self,
@@ -427,7 +427,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt2",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt2_int2_1(
         &mut self,
@@ -438,7 +438,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt2",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt2_int2_int2_2(
         &mut self,
@@ -450,7 +450,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt2",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt3_0(
         &mut self,
@@ -460,7 +460,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt3",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt3_int3_1(
         &mut self,
@@ -471,7 +471,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt3",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt3_int3_int3_2(
         &mut self,
@@ -483,7 +483,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt3",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt4_0(
         &mut self,
@@ -493,7 +493,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt4",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt4_int4_1(
         &mut self,
@@ -504,7 +504,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt4",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt4_int4_int4_2(
         &mut self,
@@ -516,7 +516,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt4",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt_0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -524,7 +524,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt_i32_1(&mut self, max: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -532,7 +532,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextInt_i32_i32_2(
         &mut self,
@@ -544,7 +544,7 @@ impl crate::Unity::Mathematics::Random {
             "NextInt",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextQuaternionRotation(
         &mut self,
@@ -554,7 +554,7 @@ impl crate::Unity::Mathematics::Random {
             "NextQuaternionRotation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextState(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -562,7 +562,7 @@ impl crate::Unity::Mathematics::Random {
             "NextState",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt2_0(
         &mut self,
@@ -572,7 +572,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt2",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt2_uint2_1(
         &mut self,
@@ -583,7 +583,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt2",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt2_uint2_uint2_2(
         &mut self,
@@ -595,7 +595,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt2",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt3_0(
         &mut self,
@@ -605,7 +605,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt3",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt3_uint3_1(
         &mut self,
@@ -616,7 +616,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt3",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt3_uint3_uint3_2(
         &mut self,
@@ -628,7 +628,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt3",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt4_0(
         &mut self,
@@ -638,7 +638,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt4",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt4_uint4_1(
         &mut self,
@@ -649,7 +649,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt4",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt4_uint4_uint4_2(
         &mut self,
@@ -661,7 +661,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt4",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt_0(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -669,7 +669,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt_u32_1(&mut self, max: u32) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -677,7 +677,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt",
             (max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextUInt_u32_u32_2(
         &mut self,
@@ -689,7 +689,7 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt",
             (min, max),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -700,6 +700,6 @@ impl crate::Unity::Mathematics::Random {
             ".ctor",
             (seed),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

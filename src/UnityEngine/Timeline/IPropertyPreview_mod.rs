@@ -26,15 +26,19 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::IPropertyPreview {
 impl crate::UnityEngine::Timeline::IPropertyPreview {
     pub fn GatherProperties(
         &mut self,
-        director: *mut crate::UnityEngine::Playables::PlayableDirector,
-        driver: *mut crate::UnityEngine::Timeline::IPropertyCollector,
+        director: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Playables::PlayableDirector,
+        >,
+        driver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Timeline::IPropertyCollector,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GatherProperties", (director, driver))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

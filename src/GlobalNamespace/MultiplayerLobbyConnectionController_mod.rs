@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearCurrentConnection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ConnectToMatchmaking(
         &mut self,
@@ -66,41 +66,43 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
                 "ConnectToMatchmaking",
                 (beatmapDifficultyMask, songPackMask, allowSongSelection),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ConnectToParty(
         &mut self,
-        serverCode: *mut quest_hook::libil2cpp::Il2CppString,
+        serverCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ConnectToParty", (serverCode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ConnectToServer(
         &mut self,
-        server: *mut crate::GlobalNamespace::INetworkPlayer,
-        password: *mut quest_hook::libil2cpp::Il2CppString,
+        server: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ConnectToServer", (server, password))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateOrConnectToDestinationParty(
         &mut self,
-        lobbyDestination: *mut crate::GlobalNamespace::SelectMultiplayerLobbyDestination,
+        lobbyDestination: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SelectMultiplayerLobbyDestination,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateOrConnectToDestinationParty", (lobbyDestination))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateParty(
         &mut self,
@@ -111,7 +113,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateParty", (data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMultiplayerSessionManagerConnected(
         &mut self,
@@ -121,7 +123,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleMultiplayerSessionManagerConnected", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMultiplayerSessionManagerConnectionFailed(
         &mut self,
@@ -132,7 +134,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleMultiplayerSessionManagerConnectionFailed", (reason))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMultiplayerSessionManagerConnectionFailedWithRetry(
         &mut self,
@@ -146,7 +148,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
                 "HandleMultiplayerSessionManagerConnectionFailedWithRetry",
                 (reason),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LeaveLobby(
         &mut self,
@@ -156,14 +158,14 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LeaveLobby", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -173,13 +175,15 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_connectionFailedEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-            crate::GlobalNamespace::ConnectionFailedReason,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
+                crate::GlobalNamespace::ConnectionFailedReason,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -187,18 +191,18 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_connectionFailedEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_connectionSuccessEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_connectionSuccessEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_connectionFailedReason(
         &mut self,
@@ -208,7 +212,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: crate::GlobalNamespace::ConnectionFailedReason = __cordl_object
             .invoke("get_connectionFailedReason", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_connectionState(
         &mut self,
@@ -220,7 +224,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState = __cordl_object
             .invoke("get_connectionState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_connectionType(
         &mut self,
@@ -232,13 +236,15 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType = __cordl_object
             .invoke("get_connectionType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_connectionFailedEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-            crate::GlobalNamespace::ConnectionFailedReason,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
+                crate::GlobalNamespace::ConnectionFailedReason,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -246,18 +252,18 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_connectionFailedEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_connectionSuccessEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_connectionSuccessEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_connectionFailedReason(
         &mut self,
@@ -268,7 +274,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_connectionFailedReason", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_connectionState(
         &mut self,
@@ -279,7 +285,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_connectionState", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_connectionType(
         &mut self,
@@ -290,7 +296,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_connectionType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerLobbyConnectionController")]

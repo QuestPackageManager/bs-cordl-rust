@@ -29,39 +29,41 @@ impl crate::System::Net::FixedSizeReadStream {
     #[cfg(feature = "System+Net+FixedSizeReadStream+_ProcessReadAsync_d__5")]
     pub type _ProcessReadAsync_d__5 = crate::System::Net::FixedSizeReadStream__ProcessReadAsync_d__5;
     pub fn New(
-        operation: *mut crate::System::Net::WebOperation,
-        innerStream: *mut crate::System::IO::Stream,
+        operation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         contentLength: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (operation, innerStream, contentLength))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessReadAsync(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<i32>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<i32> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = __cordl_object
             .invoke(
                 "ProcessReadAsync",
                 (buffer, offset, _cordl_size, cancellationToken),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        operation: *mut crate::System::Net::WebOperation,
-        innerStream: *mut crate::System::IO::Stream,
+        operation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         contentLength: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -69,14 +71,14 @@ impl crate::System::Net::FixedSizeReadStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (operation, innerStream, contentLength))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ContentLength(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_ContentLength", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+FixedSizeReadStream")]

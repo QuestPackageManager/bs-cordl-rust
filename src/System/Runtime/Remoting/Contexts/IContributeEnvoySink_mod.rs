@@ -29,17 +29,22 @@ for crate::System::Runtime::Remoting::Contexts::IContributeEnvoySink {
 impl crate::System::Runtime::Remoting::Contexts::IContributeEnvoySink {
     pub fn GetEnvoySink(
         &mut self,
-        obj: *mut crate::System::MarshalByRefObject,
-        nextSink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        obj: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
+        nextSink: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink = __cordl_object
-            .invoke("GetEnvoySink", (obj, nextSink))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        > = __cordl_object.invoke("GetEnvoySink", (obj, nextSink))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

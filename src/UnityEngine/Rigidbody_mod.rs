@@ -46,7 +46,7 @@ impl crate::UnityEngine::Rigidbody {
                     mode,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddExplosionForce_f32_1(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::Rigidbody {
                 "AddExplosionForce",
                 (explosionForce, explosionPosition, explosionRadius, upwardsModifier),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddExplosionForce_f32_ForceMode0(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::UnityEngine::Rigidbody {
                     mode,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddExplosionForce_f32_Vector3_f32_2(
         &mut self,
@@ -103,7 +103,7 @@ impl crate::UnityEngine::Rigidbody {
                 "AddExplosionForce",
                 (explosionForce, explosionPosition, explosionRadius),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddForceAtPosition_ForceMode0(
         &mut self,
@@ -116,7 +116,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddForceAtPosition", (force, position, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddForceAtPosition_Injected(
         &mut self,
@@ -129,7 +129,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddForceAtPosition_Injected", (force, position, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddForceAtPosition_Vector3_Vector3_1(
         &mut self,
@@ -141,7 +141,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddForceAtPosition", (force, position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddForce_Injected(
         &mut self,
@@ -153,7 +153,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddForce_Injected", (force, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddForce_Vector3_1(
         &mut self,
@@ -164,7 +164,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddForce", (force))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddForce_Vector3_ForceMode0(
         &mut self,
@@ -176,7 +176,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddForce", (force, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddForce_f32_f32_f32_3(
         &mut self,
@@ -189,7 +189,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddForce", (x, y, z))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddForce_f32_f32_f32_ForceMode2(
         &mut self,
@@ -203,7 +203,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddForce", (x, y, z, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRelativeForce_Injected(
         &mut self,
@@ -215,7 +215,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRelativeForce_Injected", (force, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRelativeForce_Vector3_1(
         &mut self,
@@ -226,7 +226,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRelativeForce", (force))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRelativeForce_Vector3_ForceMode0(
         &mut self,
@@ -238,7 +238,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRelativeForce", (force, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRelativeForce_f32_f32_f32_3(
         &mut self,
@@ -251,7 +251,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRelativeForce", (x, y, z))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRelativeForce_f32_f32_f32_ForceMode2(
         &mut self,
@@ -265,7 +265,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRelativeForce", (x, y, z, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRelativeTorque_Injected(
         &mut self,
@@ -277,7 +277,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRelativeTorque_Injected", (torque, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRelativeTorque_Vector3_1(
         &mut self,
@@ -288,7 +288,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRelativeTorque", (torque))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRelativeTorque_Vector3_ForceMode0(
         &mut self,
@@ -300,7 +300,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRelativeTorque", (torque, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRelativeTorque_f32_f32_f32_3(
         &mut self,
@@ -313,7 +313,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRelativeTorque", (x, y, z))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRelativeTorque_f32_f32_f32_ForceMode2(
         &mut self,
@@ -327,7 +327,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRelativeTorque", (x, y, z, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddTorque_Injected(
         &mut self,
@@ -339,7 +339,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddTorque_Injected", (torque, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddTorque_Vector3_1(
         &mut self,
@@ -350,7 +350,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddTorque", (torque))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddTorque_Vector3_ForceMode0(
         &mut self,
@@ -362,7 +362,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddTorque", (torque, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddTorque_f32_f32_f32_3(
         &mut self,
@@ -375,7 +375,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddTorque", (x, y, z))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddTorque_f32_f32_f32_ForceMode2(
         &mut self,
@@ -389,7 +389,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddTorque", (x, y, z, mode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClosestPointOnBounds(
         &mut self,
@@ -400,7 +400,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("ClosestPointOnBounds", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAccumulatedForce_1(
         &mut self,
@@ -410,7 +410,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("GetAccumulatedForce", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAccumulatedForce_Injected(
         &mut self,
@@ -422,7 +422,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetAccumulatedForce_Injected", (step, ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAccumulatedForce_f32_0(
         &mut self,
@@ -433,7 +433,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("GetAccumulatedForce", (step))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAccumulatedTorque_1(
         &mut self,
@@ -443,7 +443,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("GetAccumulatedTorque", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAccumulatedTorque_Injected(
         &mut self,
@@ -455,7 +455,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetAccumulatedTorque_Injected", (step, ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAccumulatedTorque_f32_0(
         &mut self,
@@ -466,7 +466,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("GetAccumulatedTorque", (step))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPointVelocity(
         &mut self,
@@ -477,7 +477,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("GetPointVelocity", (worldPoint))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPointVelocity_Injected(
         &mut self,
@@ -489,7 +489,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetPointVelocity_Injected", (worldPoint, ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRelativePointVelocity(
         &mut self,
@@ -500,7 +500,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("GetRelativePointVelocity", (relativePoint))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRelativePointVelocity_Injected(
         &mut self,
@@ -512,7 +512,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetRelativePointVelocity_Injected", (relativePoint, ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_ClosestPointOnBounds(
         &mut self,
@@ -525,7 +525,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Internal_ClosestPointOnBounds", (point, outPos, distance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_ClosestPointOnBounds_Injected(
         &mut self,
@@ -541,7 +541,7 @@ impl crate::UnityEngine::Rigidbody {
                 "Internal_ClosestPointOnBounds_Injected",
                 (point, outPos, distance),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_SweepTestAll(
         &mut self,
@@ -549,19 +549,21 @@ impl crate::UnityEngine::Rigidbody {
         maxDistance: f32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::RaycastHit,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
         > = __cordl_object
             .invoke(
                 "Internal_SweepTestAll",
                 (direction, maxDistance, queryTriggerInteraction),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_SweepTestAll_Injected(
         &mut self,
@@ -569,26 +571,28 @@ impl crate::UnityEngine::Rigidbody {
         maxDistance: f32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::RaycastHit,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
         > = __cordl_object
             .invoke(
                 "Internal_SweepTestAll_Injected",
                 (direction, maxDistance, queryTriggerInteraction),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsSleeping(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsSleeping", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Move(
         &mut self,
@@ -600,7 +604,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Move", (position, rotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MovePosition(
         &mut self,
@@ -611,7 +615,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MovePosition", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MovePosition_Injected(
         &mut self,
@@ -622,7 +626,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MovePosition_Injected", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveRotation(
         &mut self,
@@ -633,7 +637,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveRotation", (rot))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveRotation_Injected(
         &mut self,
@@ -644,7 +648,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveRotation_Injected", (rot))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Move_Injected(
         &mut self,
@@ -656,14 +660,14 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Move_Injected", (position, rotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ResetCenterOfMass(
         &mut self,
@@ -673,7 +677,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetCenterOfMass", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResetInertiaTensor(
         &mut self,
@@ -683,7 +687,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetInertiaTensor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDensity(
         &mut self,
@@ -694,7 +698,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDensity", (density))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetMaxAngularVelocity(
         &mut self,
@@ -705,7 +709,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetMaxAngularVelocity", (a))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Sleep(
         &mut self,
@@ -715,36 +719,40 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Sleep", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SweepTestAll_Vector3_2(
         &mut self,
         direction: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::RaycastHit,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
         > = __cordl_object.invoke("SweepTestAll", (direction))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SweepTestAll_f32_1(
         &mut self,
         direction: crate::UnityEngine::Vector3,
         maxDistance: f32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::RaycastHit,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
         > = __cordl_object.invoke("SweepTestAll", (direction, maxDistance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SweepTestAll_f32_QueryTriggerInteraction0(
         &mut self,
@@ -752,16 +760,18 @@ impl crate::UnityEngine::Rigidbody {
         maxDistance: f32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::RaycastHit,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
         > = __cordl_object
             .invoke("SweepTestAll", (direction, maxDistance, queryTriggerInteraction))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SweepTest_ByRefMut3(
         &mut self,
@@ -773,7 +783,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("SweepTest", (direction, hitInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SweepTest_ByRefMut_f32_2(
         &mut self,
@@ -786,7 +796,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("SweepTest", (direction, hitInfo, maxDistance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SweepTest_ByRefMut_f32_QueryTriggerInteraction1(
         &mut self,
@@ -803,7 +813,7 @@ impl crate::UnityEngine::Rigidbody {
                 "SweepTest",
                 (direction, hitInfo, maxDistance, queryTriggerInteraction),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SweepTest_Injected(
         &mut self,
@@ -821,7 +831,7 @@ impl crate::UnityEngine::Rigidbody {
                 "SweepTest_Injected",
                 (direction, maxDistance, queryTriggerInteraction, hasHit, ret),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SweepTest_f32_QueryTriggerInteraction_ByRefMut0(
         &mut self,
@@ -838,7 +848,7 @@ impl crate::UnityEngine::Rigidbody {
                 "SweepTest",
                 (direction, maxDistance, queryTriggerInteraction, hasHit),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WakeUp(
         &mut self,
@@ -848,7 +858,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WakeUp", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -858,14 +868,14 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_angularDrag(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_angularDrag", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_angularVelocity(
         &mut self,
@@ -875,7 +885,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_angularVelocity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_angularVelocity_Injected(
         &mut self,
@@ -886,21 +896,21 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_angularVelocity_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_automaticCenterOfMass(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_automaticCenterOfMass", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_automaticInertiaTensor(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_automaticInertiaTensor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_centerOfMass(
         &mut self,
@@ -910,7 +920,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_centerOfMass", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_centerOfMass_Injected(
         &mut self,
@@ -921,7 +931,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_centerOfMass_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_collisionDetectionMode(
         &mut self,
@@ -931,7 +941,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::CollisionDetectionMode = __cordl_object
             .invoke("get_collisionDetectionMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_constraints(
         &mut self,
@@ -941,21 +951,21 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::RigidbodyConstraints = __cordl_object
             .invoke("get_constraints", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_detectCollisions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_detectCollisions", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_drag(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_drag", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_excludeLayers(
         &mut self,
@@ -965,7 +975,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
             .invoke("get_excludeLayers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_excludeLayers_Injected(
         &mut self,
@@ -976,14 +986,14 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_excludeLayers_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_freezeRotation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_freezeRotation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_includeLayers(
         &mut self,
@@ -993,7 +1003,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
             .invoke("get_includeLayers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_includeLayers_Injected(
         &mut self,
@@ -1004,7 +1014,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_includeLayers_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_inertiaTensor(
         &mut self,
@@ -1014,7 +1024,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_inertiaTensor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_inertiaTensorRotation(
         &mut self,
@@ -1024,7 +1034,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
             .invoke("get_inertiaTensorRotation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_inertiaTensorRotation_Injected(
         &mut self,
@@ -1035,7 +1045,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_inertiaTensorRotation_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_inertiaTensor_Injected(
         &mut self,
@@ -1046,7 +1056,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_inertiaTensor_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_interpolation(
         &mut self,
@@ -1056,28 +1066,28 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::RigidbodyInterpolation = __cordl_object
             .invoke("get_interpolation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isKinematic(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isKinematic", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mass(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_mass", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxAngularVelocity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_maxAngularVelocity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxDepenetrationVelocity(
         &mut self,
@@ -1087,14 +1097,14 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_maxDepenetrationVelocity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxLinearVelocity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_maxLinearVelocity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_position(
         &mut self,
@@ -1104,7 +1114,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_position", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_position_Injected(
         &mut self,
@@ -1115,7 +1125,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_position_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotation(
         &mut self,
@@ -1125,7 +1135,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
             .invoke("get_rotation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotation_Injected(
         &mut self,
@@ -1136,42 +1146,42 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_rotation_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sleepAngularVelocity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_sleepAngularVelocity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sleepThreshold(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_sleepThreshold", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sleepVelocity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_sleepVelocity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_solverIterationCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_solverIterationCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_solverIterations(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_solverIterations", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_solverVelocityIterationCount(
         &mut self,
@@ -1181,7 +1191,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("get_solverVelocityIterationCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_solverVelocityIterations(
         &mut self,
@@ -1191,21 +1201,21 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("get_solverVelocityIterations", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_useConeFriction(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_useConeFriction", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_useGravity(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_useGravity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_velocity(
         &mut self,
@@ -1215,7 +1225,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_velocity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_velocity_Injected(
         &mut self,
@@ -1226,7 +1236,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_velocity_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_worldCenterOfMass(
         &mut self,
@@ -1236,7 +1246,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_worldCenterOfMass", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_worldCenterOfMass_Injected(
         &mut self,
@@ -1247,7 +1257,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_worldCenterOfMass_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_angularDrag(
         &mut self,
@@ -1258,7 +1268,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_angularDrag", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_angularVelocity(
         &mut self,
@@ -1269,7 +1279,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_angularVelocity", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_angularVelocity_Injected(
         &mut self,
@@ -1280,7 +1290,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_angularVelocity_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_automaticCenterOfMass(
         &mut self,
@@ -1291,7 +1301,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_automaticCenterOfMass", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_automaticInertiaTensor(
         &mut self,
@@ -1302,7 +1312,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_automaticInertiaTensor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_centerOfMass(
         &mut self,
@@ -1313,7 +1323,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_centerOfMass", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_centerOfMass_Injected(
         &mut self,
@@ -1324,7 +1334,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_centerOfMass_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_collisionDetectionMode(
         &mut self,
@@ -1335,7 +1345,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_collisionDetectionMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_constraints(
         &mut self,
@@ -1346,7 +1356,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_constraints", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_detectCollisions(
         &mut self,
@@ -1357,7 +1367,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_detectCollisions", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_drag(
         &mut self,
@@ -1368,7 +1378,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_drag", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_excludeLayers(
         &mut self,
@@ -1379,7 +1389,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_excludeLayers", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_excludeLayers_Injected(
         &mut self,
@@ -1390,7 +1400,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_excludeLayers_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_freezeRotation(
         &mut self,
@@ -1401,7 +1411,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_freezeRotation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_includeLayers(
         &mut self,
@@ -1412,7 +1422,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_includeLayers", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_includeLayers_Injected(
         &mut self,
@@ -1423,7 +1433,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_includeLayers_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_inertiaTensor(
         &mut self,
@@ -1434,7 +1444,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_inertiaTensor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_inertiaTensorRotation(
         &mut self,
@@ -1445,7 +1455,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_inertiaTensorRotation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_inertiaTensorRotation_Injected(
         &mut self,
@@ -1456,7 +1466,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_inertiaTensorRotation_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_inertiaTensor_Injected(
         &mut self,
@@ -1467,7 +1477,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_inertiaTensor_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_interpolation(
         &mut self,
@@ -1478,7 +1488,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_interpolation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isKinematic(
         &mut self,
@@ -1489,7 +1499,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isKinematic", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_mass(
         &mut self,
@@ -1500,7 +1510,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_mass", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maxAngularVelocity(
         &mut self,
@@ -1511,7 +1521,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_maxAngularVelocity", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maxDepenetrationVelocity(
         &mut self,
@@ -1522,7 +1532,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_maxDepenetrationVelocity", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maxLinearVelocity(
         &mut self,
@@ -1533,7 +1543,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_maxLinearVelocity", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_position(
         &mut self,
@@ -1544,7 +1554,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_position", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_position_Injected(
         &mut self,
@@ -1555,7 +1565,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_position_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rotation(
         &mut self,
@@ -1566,7 +1576,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_rotation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rotation_Injected(
         &mut self,
@@ -1577,7 +1587,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_rotation_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sleepAngularVelocity(
         &mut self,
@@ -1588,7 +1598,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sleepAngularVelocity", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sleepThreshold(
         &mut self,
@@ -1599,7 +1609,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sleepThreshold", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sleepVelocity(
         &mut self,
@@ -1610,7 +1620,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sleepVelocity", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_solverIterationCount(
         &mut self,
@@ -1621,7 +1631,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_solverIterationCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_solverIterations(
         &mut self,
@@ -1632,7 +1642,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_solverIterations", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_solverVelocityIterationCount(
         &mut self,
@@ -1643,7 +1653,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_solverVelocityIterationCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_solverVelocityIterations(
         &mut self,
@@ -1654,7 +1664,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_solverVelocityIterations", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_useConeFriction(
         &mut self,
@@ -1665,7 +1675,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_useConeFriction", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_useGravity(
         &mut self,
@@ -1676,7 +1686,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_useGravity", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_velocity(
         &mut self,
@@ -1687,7 +1697,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_velocity", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_velocity_Injected(
         &mut self,
@@ -1698,7 +1708,7 @@ impl crate::UnityEngine::Rigidbody {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_velocity_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rigidbody")]

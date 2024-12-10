@@ -31,243 +31,315 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBu
 impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
     pub fn AddCmpCertificate(
         &mut self,
-        certificate: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder = __cordl_object
-            .invoke("AddCmpCertificate", (certificate))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        > = __cordl_object.invoke("AddCmpCertificate", (certificate))?;
+        Ok(__cordl_ret.into())
     }
     pub fn AddGeneralInfo(
         &mut self,
-        genInfo: *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+        genInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder = __cordl_object
-            .invoke("AddGeneralInfo", (genInfo))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        > = __cordl_object.invoke("AddGeneralInfo", (genInfo))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Build_IMacFactory1(
         &mut self,
-        factory: *mut crate::Org::BouncyCastle::Crypto::IMacFactory,
+        factory: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMacFactory>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage = __cordl_object
-            .invoke("Build", (factory))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
+        > = __cordl_object.invoke("Build", (factory))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Build_ISignatureFactory0(
         &mut self,
-        signatureFactory: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+        signatureFactory: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage = __cordl_object
-            .invoke("Build", (signatureFactory))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
+        > = __cordl_object.invoke("Build", (signatureFactory))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CalculateSignature(
         &mut self,
-        signer: *mut crate::Org::BouncyCastle::Crypto::IStreamCalculator,
-        header: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
-        body: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiBody,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        signer: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IStreamCalculator,
+        >,
+        header: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
+        >,
+        body: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiBody>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("CalculateSignature", (signer, header, body))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("CalculateSignature", (signer, header, body))?;
+        Ok(__cordl_ret.into())
     }
     pub fn FinalizeHeader(
         &mut self,
-        algorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        algorithmIdentifier: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FinalizeHeader", (algorithmIdentifier))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FinalizeMessage(
         &mut self,
-        header: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
-        protection: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+        header: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
+        >,
+        protection: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerBitString,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage = __cordl_object
-            .invoke("FinalizeMessage", (header, protection))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
+        > = __cordl_object.invoke("FinalizeMessage", (header, protection))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_GeneralName0(
-        sender: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-        recipient: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        sender: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
+        recipient: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (sender, recipient))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i32_GeneralName1(
         pvno: i32,
-        sender: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-        recipient: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        sender: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
+        recipient: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pvno, sender, recipient))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetBody(
         &mut self,
-        body: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiBody,
+        body: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiBody>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder = __cordl_object
-            .invoke("SetBody", (body))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        > = __cordl_object.invoke("SetBody", (body))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetFreeText(
         &mut self,
-        freeText: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
+        freeText: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder = __cordl_object
-            .invoke("SetFreeText", (freeText))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        > = __cordl_object.invoke("SetFreeText", (freeText))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetMessageTime(
         &mut self,
-        generalizedTime: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+        generalizedTime: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder = __cordl_object
-            .invoke("SetMessageTime", (generalizedTime))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        > = __cordl_object.invoke("SetMessageTime", (generalizedTime))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetRecipKID(
         &mut self,
-        id: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder = __cordl_object
-            .invoke("SetRecipKID", (id))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        > = __cordl_object.invoke("SetRecipKID", (id))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetRecipNonce(
         &mut self,
-        nonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        nonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder = __cordl_object
-            .invoke("SetRecipNonce", (nonce))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        > = __cordl_object.invoke("SetRecipNonce", (nonce))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetSenderKID(
         &mut self,
-        id: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder = __cordl_object
-            .invoke("SetSenderKID", (id))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        > = __cordl_object.invoke("SetSenderKID", (id))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetSenderNonce(
         &mut self,
-        nonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        nonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder = __cordl_object
-            .invoke("SetSenderNonce", (nonce))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        > = __cordl_object.invoke("SetSenderNonce", (nonce))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetTransactionId(
         &mut self,
-        tid: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        tid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder = __cordl_object
-            .invoke("SetTransactionId", (tid))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
+        > = __cordl_object.invoke("SetTransactionId", (tid))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_GeneralName0(
         &mut self,
-        sender: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-        recipient: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        sender: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
+        recipient: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (sender, recipient))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_GeneralName1(
         &mut self,
         pvno: i32,
-        sender: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-        recipient: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        sender: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
+        recipient: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (pvno, sender, recipient))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cmp+ProtectedPkiMessageBuilder")]

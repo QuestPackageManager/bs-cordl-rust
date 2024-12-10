@@ -77,7 +77,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AllocateCompressStructures", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BsFinishedWithStream(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BsFinishedWithStream", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BsPutIntVS(
         &mut self,
@@ -99,7 +99,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BsPutIntVS", (numBits, c))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BsPutUChar(
         &mut self,
@@ -110,7 +110,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BsPutUChar", (c))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BsPutint(
         &mut self,
@@ -121,18 +121,18 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BsPutint", (u))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BsSetStream(
         &mut self,
-        f: *mut crate::System::IO::Stream,
+        f: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BsSetStream", (f))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BsW(
         &mut self,
@@ -144,7 +144,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BsW", (n, v))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Close(
         &mut self,
@@ -154,7 +154,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Close", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoReversibleTransformation(
         &mut self,
@@ -164,7 +164,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoReversibleTransformation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndBlock(
         &mut self,
@@ -174,7 +174,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EndBlock", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndCompression(
         &mut self,
@@ -184,7 +184,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EndCompression", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finish(
         &mut self,
@@ -194,7 +194,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Flush(
         &mut self,
@@ -204,14 +204,14 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Flush", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FullGtU(&mut self, i1: i32, i2: i32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("FullGtU", (i1, i2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateMTFValues(
         &mut self,
@@ -221,12 +221,12 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateMTFValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HbAssignCodes(
         &mut self,
-        code: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        length: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        length: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         minLen: i32,
         maxLen: i32,
         alphaSize: i32,
@@ -236,7 +236,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HbAssignCodes", (code, length, minLen, maxLen, alphaSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitBlock(
         &mut self,
@@ -246,7 +246,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitBlock", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
@@ -256,7 +256,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MainSort(
         &mut self,
@@ -266,7 +266,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MainSort", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MakeMaps(
         &mut self,
@@ -276,7 +276,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MakeMaps", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Med3(
         &mut self,
@@ -288,7 +288,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
             self,
         );
         let __cordl_ret: char = __cordl_object.invoke("Med3", (a, b, c))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveToFrontCodeAndSend(
         &mut self,
@@ -298,26 +298,26 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveToFrontCodeAndSend", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_Stream0(
-        inStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (inStream))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i32_1(
-        inStream: *mut crate::System::IO::Stream,
+        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         inBlockSize: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (inStream, inBlockSize))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn QSort3(
         &mut self,
@@ -330,7 +330,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("QSort3", (loSt, hiSt, dSt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RandomiseBlock(
         &mut self,
@@ -340,11 +340,11 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RandomiseBlock", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Read(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -352,7 +352,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer, offset, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Seek(
         &mut self,
@@ -363,7 +363,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendMTFValues(
         &mut self,
@@ -373,7 +373,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendMTFValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLength(
         &mut self,
@@ -384,7 +384,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetLength", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SimpleSort(
         &mut self,
@@ -397,7 +397,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SimpleSort", (lo, hi, d))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Vswap(
         &mut self,
@@ -410,11 +410,11 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Vswap", (p1, p2, n))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -423,7 +423,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (buffer, offset, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteByte(
         &mut self,
@@ -434,7 +434,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteByte", (bv))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteRun(
         &mut self,
@@ -444,22 +444,22 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteRun", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Stream0(
         &mut self,
-        inStream: *mut crate::System::IO::Stream,
+        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (inStream))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_1(
         &mut self,
-        inStream: *mut crate::System::IO::Stream,
+        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         inBlockSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -467,42 +467,42 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (inStream, inBlockSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Position(
         &mut self,
@@ -513,7 +513,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Position", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
@@ -558,12 +558,12 @@ for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
 }
 #[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
 impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -573,7 +573,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]

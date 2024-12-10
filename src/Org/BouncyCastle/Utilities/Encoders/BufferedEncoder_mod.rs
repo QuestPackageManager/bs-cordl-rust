@@ -30,19 +30,21 @@ for crate::Org::BouncyCastle::Utilities::Encoders::BufferedEncoder {
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+BufferedEncoder")]
 impl crate::Org::BouncyCastle::Utilities::Encoders::BufferedEncoder {
     pub fn New(
-        translator: *mut crate::Org::BouncyCastle::Utilities::Encoders::ITranslator,
+        translator: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Encoders::ITranslator,
+        >,
         bufferSize: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (translator, bufferSize))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessByte(
         &mut self,
         input: u8,
-        outBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        outBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outOff: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -50,14 +52,14 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::BufferedEncoder {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("ProcessByte", (input, outBytes, outOff))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessBytes(
         &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inOff: i32,
         len: i32,
-        outBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        outBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outOff: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -65,11 +67,13 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::BufferedEncoder {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("ProcessBytes", (input, inOff, len, outBytes, outOff))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        translator: *mut crate::Org::BouncyCastle::Utilities::Encoders::ITranslator,
+        translator: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Encoders::ITranslator,
+        >,
         bufferSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -77,7 +81,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::BufferedEncoder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (translator, bufferSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+BufferedEncoder")]

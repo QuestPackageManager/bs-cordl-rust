@@ -42,18 +42,18 @@ impl crate::GlobalNamespace::SongStartHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ForceStart(
         &mut self,
-        sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
+        sessionGameId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ForceStart", (sessionGameId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLevelStartTimeOffset(
         &mut self,
@@ -63,33 +63,33 @@ impl crate::GlobalNamespace::SongStartHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetLevelStartTimeOffset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleGetGameplaySongReady(
         &mut self,
-        user: *mut quest_hook::libil2cpp::Il2CppString,
+        user: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleGetGameplaySongReady", (user))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSetGameplaySongReady(
         &mut self,
-        user: *mut quest_hook::libil2cpp::Il2CppString,
+        user: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSetGameplaySongReady", (user))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSetSongStartTime(
         &mut self,
-        user: *mut quest_hook::libil2cpp::Il2CppString,
+        user: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -97,24 +97,30 @@ impl crate::GlobalNamespace::SongStartHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSetSongStartTime", (user, _cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Log(
         &mut self,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Log", (message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-        playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSessionManager,
+        >,
+        gameplayRpcManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayRpcManager,
+        >,
+        playersAtGameStartModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -122,7 +128,7 @@ impl crate::GlobalNamespace::SongStartHandler {
                 ".ctor",
                 (multiplayerSessionManager, gameplayRpcManager, playersAtGameStartModel),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn StartSong(
         &mut self,
@@ -132,13 +138,19 @@ impl crate::GlobalNamespace::SongStartHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartSong", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-        playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+        multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSessionManager,
+        >,
+        gameplayRpcManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayRpcManager,
+        >,
+        playersAtGameStartModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -148,36 +160,36 @@ impl crate::GlobalNamespace::SongStartHandler {
                 ".ctor",
                 (multiplayerSessionManager, gameplayRpcManager, playersAtGameStartModel),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_setSongStartSyncTimeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<i64>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_setSongStartSyncTimeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_songStartSyncTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_songStartSyncTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_setSongStartSyncTimeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<i64>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_setSongStartSyncTimeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SongStartHandler")]

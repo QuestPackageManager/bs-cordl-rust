@@ -48,13 +48,16 @@ for crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo {
 impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo {
     pub fn GetAssemblyString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetAssemblyString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetAssemblyString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetMemberInfo(
         &mut self,
@@ -77,28 +80,31 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetMemberInfo", (outMemberNames, outMemberTypes, outMemberData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMemberType(
         &mut self,
-        objMember: *mut crate::System::Reflection::MemberInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        objMember: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("GetMemberType", (objMember))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTypeFullName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetTypeFullName", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetTypeFullName", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn InitMemberInfo(
         &mut self,
@@ -108,7 +114,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitMemberInfo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitNoMembers(
         &mut self,
@@ -118,17 +124,27 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitNoMembers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitSerialize_Il2CppObject_ObjectWriter_SerializationBinder0(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
-        surrogateSelector: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        surrogateSelector: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ISurrogateSelector,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
-        serObjectInfoInit: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
-        converter: *mut crate::System::Runtime::Serialization::IFormatterConverter,
-        objectWriter: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectWriter,
-        binder: *mut crate::System::Runtime::Serialization::SerializationBinder,
+        serObjectInfoInit: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
+        >,
+        converter: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::IFormatterConverter,
+        >,
+        objectWriter: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ObjectWriter,
+        >,
+        binder: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationBinder,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,16 +162,24 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
                     binder,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitSerialize_Type_SerializationBinder1(
         &mut self,
-        objectType: *mut crate::System::Type,
-        surrogateSelector: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        surrogateSelector: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ISurrogateSelector,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
-        serObjectInfoInit: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
-        converter: *mut crate::System::Runtime::Serialization::IFormatterConverter,
-        binder: *mut crate::System::Runtime::Serialization::SerializationBinder,
+        serObjectInfoInit: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
+        >,
+        converter: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::IFormatterConverter,
+        >,
+        binder: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationBinder,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -172,7 +196,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
                     binder,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitSiWrite(
         &mut self,
@@ -182,7 +206,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitSiWrite", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalInit(
         &mut self,
@@ -192,25 +216,27 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InternalInit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokeSerializationBinder(
         &mut self,
-        binder: *mut crate::System::Runtime::Serialization::SerializationBinder,
+        binder: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationBinder,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokeSerializationBinder", (binder))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ObjectEnd(
         &mut self,
@@ -220,7 +246,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ObjectEnd", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -230,7 +256,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+WriteObjectInfo")]

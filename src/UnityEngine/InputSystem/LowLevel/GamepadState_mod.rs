@@ -38,12 +38,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::GamepadState {
             "WithButton",
             (button, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        buttons: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::InputSystem::LowLevel::GamepadButton,
+        buttons: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::InputSystem::LowLevel::GamepadButton,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -51,7 +53,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::GamepadState {
             ".ctor",
             (buttons),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_format(
         &mut self,
@@ -63,6 +65,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::GamepadState {
             "get_format",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

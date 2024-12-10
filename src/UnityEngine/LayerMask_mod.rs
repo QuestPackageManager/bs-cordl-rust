@@ -27,7 +27,7 @@ impl crate::UnityEngine::LayerMask {
             "get_value",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_value(
         &mut self,
@@ -38,6 +38,6 @@ impl crate::UnityEngine::LayerMask {
             "set_value",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

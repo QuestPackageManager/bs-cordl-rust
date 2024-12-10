@@ -37,7 +37,7 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearPoseCache", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
@@ -48,18 +48,18 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", (anchor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeFrom(
         &mut self,
-        other: *mut crate::GlobalNamespace::OVRSceneAnchor,
+        other: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitializeFrom", (other))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsComponentEnabled(
         &mut self,
@@ -70,14 +70,14 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsComponentEnabled", (spaceComponentType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SyncComponent<T>(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SyncComponent", (spaceComponentType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryUpdateTransform(
         &mut self,
@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryUpdateTransform", (useCache))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -122,7 +122,7 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Anchor(
         &mut self,
@@ -132,14 +132,14 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRAnchor = __cordl_object
             .invoke("get_Anchor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsTracked", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Space(
         &mut self,
@@ -149,14 +149,14 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRSpace = __cordl_object
             .invoke("get_Space", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Uuid(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::System::Guid = __cordl_object.invoke("get_Uuid", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Anchor(
         &mut self,
@@ -167,7 +167,7 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Anchor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_IsTracked(
         &mut self,
@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IsTracked", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Space(
         &mut self,
@@ -189,7 +189,7 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Space", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Uuid(
         &mut self,
@@ -200,7 +200,7 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Uuid", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRSceneAnchor")]

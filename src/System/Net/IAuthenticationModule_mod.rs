@@ -26,28 +26,32 @@ impl std::ops::DerefMut for crate::System::Net::IAuthenticationModule {
 impl crate::System::Net::IAuthenticationModule {
     pub fn Authenticate(
         &mut self,
-        challenge: *mut quest_hook::libil2cpp::Il2CppString,
-        request: *mut crate::System::Net::WebRequest,
-        credentials: *mut crate::System::Net::ICredentials,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::Authorization> {
+        challenge: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        request: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+        credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::Authorization = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = __cordl_object
             .invoke("Authenticate", (challenge, request, credentials))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PreAuthenticate(
         &mut self,
-        request: *mut crate::System::Net::WebRequest,
-        credentials: *mut crate::System::Net::ICredentials,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::Authorization> {
+        request: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+        credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::Authorization = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = __cordl_object
             .invoke("PreAuthenticate", (request, credentials))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -56,13 +60,16 @@ impl crate::System::Net::IAuthenticationModule {
     }
     pub fn get_AuthenticationType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_AuthenticationType", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_AuthenticationType", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+IAuthenticationModule")]

@@ -46,20 +46,24 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitions
     )]
     pub type __c = crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel___c;
     pub fn New(
-        environmentTrackDefinitions: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+        environmentTrackDefinitions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (environmentTrackDefinitions))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        environmentTrackDefinitions: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+        environmentTrackDefinitions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -67,20 +71,23 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitions
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (environmentTrackDefinitions))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
-        _cordl_type: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel = __cordl_object
-            .invoke("get_Item", (_cordl_type))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel,
+        > = __cordl_object.invoke("get_Item", (_cordl_type))?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

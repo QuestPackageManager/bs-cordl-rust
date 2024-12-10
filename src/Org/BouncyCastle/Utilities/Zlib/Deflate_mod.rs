@@ -136,12 +136,12 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
     pub const Z_VERSION_ERROR: i32 = -6i32;
     #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Deflate+Config")]
     pub type Config = crate::Org::BouncyCastle::Utilities::Zlib::Deflate_Config;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -151,7 +151,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _tr_align(
         &mut self,
@@ -161,7 +161,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("_tr_align", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _tr_flush_block(
         &mut self,
@@ -174,7 +174,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("_tr_flush_block", (buf, stored_len, eof))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _tr_stored_block(
         &mut self,
@@ -187,7 +187,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("_tr_stored_block", (buf, stored_len, eof))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _tr_tally(
         &mut self,
@@ -198,7 +198,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("_tr_tally", (dist, lc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn bi_flush(
         &mut self,
@@ -208,7 +208,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("bi_flush", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn bi_windup(
         &mut self,
@@ -218,26 +218,26 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("bi_windup", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn build_bl_tree(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("build_bl_tree", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn compress_block(
         &mut self,
-        ltree: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
-        dtree: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
+        ltree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+        dtree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("compress_block", (ltree, dtree))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn copy_block(
         &mut self,
@@ -250,29 +250,33 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("copy_block", (buf, len, header))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn deflate(
         &mut self,
-        strm: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        strm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        >,
         flush: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("deflate", (strm, flush))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn deflateEnd(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("deflateEnd", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn deflateInit2(
         &mut self,
-        strm: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        strm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        >,
         level: i32,
         method: i32,
         windowBits: i32,
@@ -287,22 +291,26 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
                 "deflateInit2",
                 (strm, level, method, windowBits, memLevel, strategy),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn deflateInit_ZStream_i32_1(
         &mut self,
-        strm: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        strm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        >,
         level: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("deflateInit", (strm, level))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn deflateInit_i32_0(
         &mut self,
-        strm: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        strm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        >,
         level: i32,
         bits: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -311,11 +319,13 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("deflateInit", (strm, level, bits))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn deflateParams(
         &mut self,
-        strm: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        strm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        >,
         _level: i32,
         _strategy: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -324,22 +334,26 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("deflateParams", (strm, _level, _strategy))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn deflateReset(
         &mut self,
-        strm: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        strm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("deflateReset", (strm))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn deflateSetDictionary(
         &mut self,
-        strm: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
-        dictionary: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        strm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        >,
+        dictionary: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         dictLength: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -347,28 +361,28 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("deflateSetDictionary", (strm, dictionary, dictLength))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn deflate_fast(&mut self, flush: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("deflate_fast", (flush))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn deflate_slow(&mut self, flush: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("deflate_slow", (flush))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn deflate_stored(&mut self, flush: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("deflate_stored", (flush))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn fill_window(
         &mut self,
@@ -378,7 +392,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("fill_window", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn flush_block_only(
         &mut self,
@@ -389,7 +403,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("flush_block_only", (eof))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn init_block(
         &mut self,
@@ -399,7 +413,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("init_block", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn lm_init(
         &mut self,
@@ -409,7 +423,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("lm_init", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn longest_match(
         &mut self,
@@ -419,11 +433,11 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("longest_match", (cur_match))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn pqdownheap(
         &mut self,
-        tree: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
+        tree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
         k: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -431,7 +445,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("pqdownheap", (tree, k))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn putShortMSB(
         &mut self,
@@ -442,11 +456,11 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("putShortMSB", (b))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn put_byte_Il2CppArray_i32_i32_0(
         &mut self,
-        p: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
         len: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -455,7 +469,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("put_byte", (p, start, len))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn put_byte_u8_1(
         &mut self,
@@ -466,7 +480,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("put_byte", (c))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn put_short(
         &mut self,
@@ -477,11 +491,11 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("put_short", (w))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn scan_tree(
         &mut self,
-        tree: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
+        tree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
         max_code: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -489,7 +503,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("scan_tree", (tree, max_code))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn send_all_trees(
         &mut self,
@@ -502,7 +516,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("send_all_trees", (lcodes, dcodes, blcodes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn send_bits(
         &mut self,
@@ -514,23 +528,23 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("send_bits", (val, length))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn send_code(
         &mut self,
         c: i32,
-        tree: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
+        tree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("send_code", (c, tree))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn send_tree(
         &mut self,
-        tree: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
+        tree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
         max_code: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -538,7 +552,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("send_tree", (tree, max_code))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_data_type(
         &mut self,
@@ -548,7 +562,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_data_type", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn tr_init(
         &mut self,
@@ -558,7 +572,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("tr_init", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Deflate")]
@@ -609,7 +623,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate_Config {
         nice_length: i32,
         max_chain: i32,
         func: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -617,7 +631,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate_Config {
                 ".ctor",
                 (good_length, max_lazy, nice_length, max_chain, func),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -632,7 +646,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate_Config {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (good_length, max_lazy, nice_length, max_chain, func))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Deflate+Config")]

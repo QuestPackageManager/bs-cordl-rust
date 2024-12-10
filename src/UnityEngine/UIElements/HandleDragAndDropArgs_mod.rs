@@ -33,6 +33,6 @@ impl crate::UnityEngine::UIElements::HandleDragAndDropArgs {
             ".ctor",
             (position, dragAndDropArgs),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

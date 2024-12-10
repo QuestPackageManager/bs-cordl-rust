@@ -33,7 +33,7 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -44,12 +44,12 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalProcessRenderRequests<RequestData>(
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
-        camera: *mut crate::UnityEngine::Camera,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         renderRequest: RequestData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -61,13 +61,13 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InternalProcessRenderRequests", (context, camera, renderRequest))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalRender(
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
-        cameras: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Camera,
+        cameras: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Camera>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -75,11 +75,11 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InternalRender", (context, cameras))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsRenderRequestSupported<RequestData>(
         &mut self,
-        camera: *mut crate::UnityEngine::Camera,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         data: RequestData,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -91,12 +91,12 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsRenderRequestSupported", (camera, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessRenderRequests<RequestData>(
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
-        camera: *mut crate::UnityEngine::Camera,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         renderRequest: RequestData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -108,25 +108,13 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessRenderRequests", (context, camera, renderRequest))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Render_Il2CppArray0(
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
-        cameras: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Render", (context, cameras))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Render_List_1_1(
-        &mut self,
-        context: crate::UnityEngine::Rendering::ScriptableRenderContext,
-        cameras: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Camera,
+        cameras: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -134,14 +122,28 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Render", (context, cameras))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
+    }
+    pub fn Render_List_1_1(
+        &mut self,
+        context: crate::UnityEngine::Rendering::ScriptableRenderContext,
+        cameras: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Camera>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Render", (context, cameras))?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_disposed(
         &mut self,
@@ -152,7 +154,7 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_disposed", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderPipeline")]

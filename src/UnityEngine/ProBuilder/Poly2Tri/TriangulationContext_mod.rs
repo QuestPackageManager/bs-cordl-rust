@@ -45,7 +45,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Done(
         &mut self,
@@ -55,50 +55,59 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Done", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn NewConstraint(
         &mut self,
-        a: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        b: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        a: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        b: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationConstraint,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationConstraint,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationConstraint = __cordl_object
-            .invoke("NewConstraint", (a, b))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationConstraint,
+        > = __cordl_object.invoke("NewConstraint", (a, b))?;
+        Ok(__cordl_ret.into())
     }
     pub fn PrepareTriangulation(
         &mut self,
-        t: *mut crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+        t: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PrepareTriangulation", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -108,7 +117,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Algorithm(
         &mut self,
@@ -120,57 +129,66 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
         );
         let __cordl_ret: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm = __cordl_object
             .invoke("get_Algorithm", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DTDebugContext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepDebugContext,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepDebugContext,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepDebugContext = __cordl_object
-            .invoke("get_DTDebugContext", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepDebugContext,
+        > = __cordl_object.invoke("get_DTDebugContext", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_DebugContext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext = __cordl_object
-            .invoke("get_DebugContext", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
+        > = __cordl_object.invoke("get_DebugContext", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsDebugEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsDebugEnabled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_StepCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_StepCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Triangulatable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable = __cordl_object
-            .invoke("get_Triangulatable", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+        > = __cordl_object.invoke("get_Triangulatable", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_TriangulationMode(
         &mut self,
@@ -182,18 +200,20 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
         );
         let __cordl_ret: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode = __cordl_object
             .invoke("get_TriangulationMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_DebugContext(
         &mut self,
-        value: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_DebugContext", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_IsDebugEnabled(
         &mut self,
@@ -204,7 +224,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IsDebugEnabled", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_StepCount(
         &mut self,
@@ -215,18 +235,20 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_StepCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Triangulatable(
         &mut self,
-        value: *mut crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Triangulatable", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_TriangulationMode(
         &mut self,
@@ -237,7 +259,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_TriangulationMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]

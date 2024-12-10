@@ -28,13 +28,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::RaycastH
 impl crate::UnityEngine::RaycastHit2D {
     pub fn get_collider(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider2D> {
-        let __cordl_ret: *mut crate::UnityEngine::Collider2D = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider2D> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_collider",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -42,7 +44,7 @@ impl crate::UnityEngine::RaycastHit2D {
             "get_distance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fraction(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -50,7 +52,7 @@ impl crate::UnityEngine::RaycastHit2D {
             "get_fraction",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_normal(
         &mut self,
@@ -60,7 +62,7 @@ impl crate::UnityEngine::RaycastHit2D {
             "get_normal",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_point(
         &mut self,
@@ -70,6 +72,6 @@ impl crate::UnityEngine::RaycastHit2D {
             "get_point",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

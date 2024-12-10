@@ -34,7 +34,7 @@ impl crate::UnityEngine::ArticulationJacobian {
             ".ctor",
             (rows, cols),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::UnityEngine::ArticulationJacobian {
             "get_Item",
             (row, col),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_columns(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -54,19 +54,17 @@ impl crate::UnityEngine::ArticulationJacobian {
             "get_columns",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_elements(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<f32>,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<f32>>,
     > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<f32> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_elements",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_elements", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_rows(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -74,7 +72,7 @@ impl crate::UnityEngine::ArticulationJacobian {
             "get_rows",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
@@ -87,7 +85,7 @@ impl crate::UnityEngine::ArticulationJacobian {
             "set_Item",
             (row, col, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_columns(
         &mut self,
@@ -98,18 +96,20 @@ impl crate::UnityEngine::ArticulationJacobian {
             "set_columns",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_elements(
         &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<f32>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_elements",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rows(
         &mut self,
@@ -120,6 +120,6 @@ impl crate::UnityEngine::ArticulationJacobian {
             "set_rows",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

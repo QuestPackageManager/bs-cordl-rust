@@ -29,7 +29,7 @@ impl crate::System::Threading::SpinWait {
             "Reset",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SpinOnceCore(
         &mut self,
@@ -40,7 +40,7 @@ impl crate::System::Threading::SpinWait {
             "SpinOnceCore",
             (sleep1Threshold),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SpinOnce_0(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::System::Threading::SpinWait {
             "SpinOnce",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SpinOnce_i32_1(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::System::Threading::SpinWait {
             "SpinOnce",
             (sleep1Threshold),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -69,7 +69,7 @@ impl crate::System::Threading::SpinWait {
             "get_Count",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_NextSpinWillYield(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -77,6 +77,6 @@ impl crate::System::Threading::SpinWait {
             "get_NextSpinWillYield",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -58,7 +58,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EndDrag", (dropIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDraggedIndex(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -69,7 +69,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDraggedIndex", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetOrMakeItemAtIndex(
         &mut self,
@@ -85,11 +85,13 @@ impl<
         );
         let __cordl_ret: T = __cordl_object
             .invoke("GetOrMakeItemAtIndex", (activeItemIndex, scrollViewIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleFocus(
         &mut self,
-        recycledItem: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        recycledItem: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ReusableCollectionItem,
+        >,
         previousIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -101,11 +103,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleFocus", (recycledItem, previousIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        collectionView: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        collectionView: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -114,11 +118,13 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (collectionView))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnBlur(
         &mut self,
-        willFocus: *mut crate::UnityEngine::UIElements::VisualElement,
+        willFocus: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -129,11 +135,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBlur", (willFocus))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDestroyItem(
         &mut self,
-        item: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        item: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ReusableCollectionItem,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -144,11 +152,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroyItem", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnFocus(
         &mut self,
-        leafTarget: *mut crate::UnityEngine::UIElements::VisualElement,
+        leafTarget: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -159,7 +169,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnFocus", (leafTarget))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Refresh(
         &mut self,
@@ -174,7 +184,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Refresh", (rebuild))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReleaseItem(
         &mut self,
@@ -189,7 +199,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReleaseItem", (activeItemsIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Setup(
         &mut self,
@@ -205,11 +215,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Setup", (recycledItem, newIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartDragItem(
         &mut self,
-        item: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        item: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ReusableCollectionItem,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -220,7 +232,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartDragItem", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateBackground(
         &mut self,
@@ -234,7 +246,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateBackground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn VisibleItemPredicate(&mut self, i: T) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -245,11 +257,13 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("VisibleItemPredicate", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        collectionView: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        collectionView: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -260,13 +274,15 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (collectionView))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_activeItems(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+            >,
         >,
     >
     where
@@ -276,10 +292,12 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+            >,
         > = __cordl_object.invoke("get_activeItems", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_alwaysRebindOnRefresh(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -290,7 +308,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_alwaysRebindOnRefresh", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_firstVisibleIndex(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -301,7 +319,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_firstVisibleIndex", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_firstVisibleItem(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -312,7 +330,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_firstVisibleItem", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_itemsCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -323,7 +341,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_itemsCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lastHeight(&mut self) -> quest_hook::libil2cpp::Result<f32>
     where
@@ -334,7 +352,7 @@ impl<
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_lastHeight", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lastVisibleItem(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -345,12 +363,14 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_lastVisibleItem", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_serializedData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::SerializedVirtualizationData,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::SerializedVirtualizationData,
+        >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -359,9 +379,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::SerializedVirtualizationData = __cordl_object
-            .invoke("get_serializedData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::SerializedVirtualizationData,
+        > = __cordl_object.invoke("get_serializedData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_visibleItemCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -372,7 +393,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_visibleItemCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_firstVisibleIndex(
         &mut self,
@@ -387,7 +408,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_firstVisibleIndex", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VerticalVirtualizationController_1")]

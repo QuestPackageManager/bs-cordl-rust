@@ -29,7 +29,7 @@ impl crate::UnityEngine::ClosestPointCommand {
     pub fn _ctor_Collider1(
         &mut self,
         point: crate::UnityEngine::Vector3,
-        collider: *mut crate::UnityEngine::Collider,
+        collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
         scale: crate::UnityEngine::Vector3,
@@ -39,7 +39,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             ".ctor",
             (point, collider, position, rotation, scale),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_0(
         &mut self,
@@ -54,7 +54,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             ".ctor",
             (point, colliderInstanceID, position, rotation, scale),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_colliderInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -62,7 +62,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             "get_colliderInstanceID",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_point(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             "get_point",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_position(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             "get_position",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotation(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             "get_rotation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_scale(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             "get_scale",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_colliderInstanceID(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             "set_colliderInstanceID",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_point(
         &mut self,
@@ -124,7 +124,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             "set_point",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_position(
         &mut self,
@@ -135,7 +135,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             "set_position",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rotation(
         &mut self,
@@ -146,7 +146,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             "set_rotation",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_scale(
         &mut self,
@@ -157,6 +157,6 @@ impl crate::UnityEngine::ClosestPointCommand {
             "set_scale",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

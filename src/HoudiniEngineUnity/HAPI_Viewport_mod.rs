@@ -32,7 +32,7 @@ impl crate::HoudiniEngineUnity::HAPI_Viewport {
             "Init",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -43,6 +43,6 @@ impl crate::HoudiniEngineUnity::HAPI_Viewport {
             ".ctor",
             (initializeFields),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -39,8 +39,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     pub type ParsingResult = crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult;
     pub fn AddPercentEncodedOctetToRawOctetsList(
         &mut self,
-        encoding: *mut crate::System::Text::Encoding,
-        escapedCharacter: *mut quest_hook::libil2cpp::Il2CppString,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+        escapedCharacter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,25 +50,28 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                 "AddPercentEncodedOctetToRawOctetsList",
                 (encoding, escapedCharacter),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AppendUnicodeCodePointValuePercentEncoded(
         &mut self,
-        codePoint: *mut quest_hook::libil2cpp::Il2CppString,
+        codePoint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("AppendUnicodeCodePointValuePercentEncoded", (codePoint))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn Build(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
+    pub fn Build(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Uri>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Uri = __cordl_object.invoke("Build", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Uri> = __cordl_object
+            .invoke("Build", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn BuildRequestUriUsingCookedPath(
         &mut self,
@@ -78,7 +81,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BuildRequestUriUsingCookedPath", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BuildRequestUriUsingRawPath_0(
         &mut self,
@@ -88,11 +91,11 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BuildRequestUriUsingRawPath", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BuildRequestUriUsingRawPath_Encoding1(
         &mut self,
-        encoding: *mut crate::System::Text::Encoding,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult,
     > {
@@ -101,25 +104,25 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         );
         let __cordl_ret: crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult = __cordl_object
             .invoke("BuildRequestUriUsingRawPath", (encoding))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EmptyDecodeAndAppendRawOctetsList(
         &mut self,
-        encoding: *mut crate::System::Text::Encoding,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("EmptyDecodeAndAppendRawOctetsList", (encoding))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LogWarning(
         &mut self,
-        methodName: *mut quest_hook::libil2cpp::Il2CppString,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -127,15 +130,15 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LogWarning", (methodName, message, args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        rawUri: *mut quest_hook::libil2cpp::Il2CppString,
-        cookedUriScheme: *mut quest_hook::libil2cpp::Il2CppString,
-        cookedUriHost: *mut quest_hook::libil2cpp::Il2CppString,
-        cookedUriPath: *mut quest_hook::libil2cpp::Il2CppString,
-        cookedUriQuery: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        rawUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriQuery: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -143,11 +146,11 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                 ".ctor",
                 (rawUri, cookedUriScheme, cookedUriHost, cookedUriPath, cookedUriQuery),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ParseRawPath(
         &mut self,
-        encoding: *mut crate::System::Text::Encoding,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult,
     > {
@@ -156,15 +159,15 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         );
         let __cordl_ret: crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult = __cordl_object
             .invoke("ParseRawPath", (encoding))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        rawUri: *mut quest_hook::libil2cpp::Il2CppString,
-        cookedUriScheme: *mut quest_hook::libil2cpp::Il2CppString,
-        cookedUriHost: *mut quest_hook::libil2cpp::Il2CppString,
-        cookedUriPath: *mut quest_hook::libil2cpp::Il2CppString,
-        cookedUriQuery: *mut quest_hook::libil2cpp::Il2CppString,
+        rawUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriQuery: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -174,7 +177,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                 ".ctor",
                 (rawUri, cookedUriScheme, cookedUriHost, cookedUriPath, cookedUriQuery),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+HttpListenerRequestUriBuilder")]

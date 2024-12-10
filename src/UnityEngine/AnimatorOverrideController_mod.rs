@@ -31,10 +31,12 @@ impl crate::UnityEngine::AnimatorOverrideController {
     pub type OnOverrideControllerDirtyCallback = crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCallback;
     pub fn ApplyOverrides(
         &mut self,
-        overrides: *mut crate::System::Collections::Generic::IList_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::UnityEngine::AnimationClip,
-                *mut crate::UnityEngine::AnimationClip,
+        overrides: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    *mut crate::UnityEngine::AnimationClip,
+                    *mut crate::UnityEngine::AnimationClip,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -43,16 +45,18 @@ impl crate::UnityEngine::AnimatorOverrideController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyOverrides", (overrides))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        controller: *mut crate::UnityEngine::RuntimeAnimatorController,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        controller: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::RuntimeAnimatorController,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (controller))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SendNotification(
         &mut self,
@@ -62,12 +66,12 @@ impl crate::UnityEngine::AnimatorOverrideController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendNotification", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetClip(
         &mut self,
-        originalClip: *mut crate::UnityEngine::AnimationClip,
-        overrideClip: *mut crate::UnityEngine::AnimationClip,
+        originalClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+        overrideClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
         notify: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -75,18 +79,20 @@ impl crate::UnityEngine::AnimatorOverrideController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetClip", (originalClip, overrideClip, notify))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        controller: *mut crate::UnityEngine::RuntimeAnimatorController,
+        controller: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::RuntimeAnimatorController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (controller))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+AnimatorOverrideController")]
@@ -146,21 +152,21 @@ impl crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCal
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -168,7 +174,7 @@ impl crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCal
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

@@ -56,7 +56,7 @@ impl crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Destroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Execute(
         &mut self,
@@ -66,12 +66,14 @@ impl crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Execute", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDependencies(
         &mut self,
-        dependencies: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        dependencies: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -79,28 +81,32 @@ impl crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetDependencies", (dependencies))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        aa: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        aa: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::AddressablesImpl,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (aa))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Start(
         &mut self,
-        locatorInfos: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
+        locatorInfos: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -117,18 +123,20 @@ impl crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
                 *mut quest_hook::libil2cpp::Il2CppString,
             >,
         > = __cordl_object.invoke("Start", (locatorInfos))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        aa: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
+        aa: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::AddressablesImpl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (aa))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+CheckCatalogsOperation")]

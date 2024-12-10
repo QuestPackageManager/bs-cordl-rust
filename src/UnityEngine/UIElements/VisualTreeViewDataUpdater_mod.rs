@@ -33,16 +33,16 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualTreeViewDataUp
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeViewDataUpdater")]
 impl crate::UnityEngine::UIElements::VisualTreeViewDataUpdater {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnVersionChanged(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         versionChangeType: crate::UnityEngine::UIElements::VersionChangeType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -50,18 +50,18 @@ impl crate::UnityEngine::UIElements::VisualTreeViewDataUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnVersionChanged", (ve, versionChangeType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PropagateToParents(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PropagateToParents", (ve))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -71,11 +71,11 @@ impl crate::UnityEngine::UIElements::VisualTreeViewDataUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateViewDataOnSubTree(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         enablePersistence: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -83,7 +83,7 @@ impl crate::UnityEngine::UIElements::VisualTreeViewDataUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ValidateViewDataOnSubTree", (ve, enablePersistence))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -93,7 +93,7 @@ impl crate::UnityEngine::UIElements::VisualTreeViewDataUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_profilerMarker(
         &mut self,
@@ -103,7 +103,7 @@ impl crate::UnityEngine::UIElements::VisualTreeViewDataUpdater {
         );
         let __cordl_ret: crate::Unity::Profiling::ProfilerMarker = __cordl_object
             .invoke("get_profilerMarker", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeViewDataUpdater")]

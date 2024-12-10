@@ -32,9 +32,9 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::InputSystem::Utilities::Observer_1<TValue> {
     pub fn New(
-        onNext: *mut crate::System::Action_1<TValue>,
-        onCompleted: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        onNext: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+        onCompleted: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -43,7 +43,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (onNext, onCompleted))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnCompleted(
         &mut self,
@@ -57,11 +57,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnCompleted", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnError(
         &mut self,
-        error: *mut crate::System::Exception,
+        error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -72,7 +72,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnError", (error))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnNext(
         &mut self,
@@ -87,12 +87,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNext", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        onNext: *mut crate::System::Action_1<TValue>,
-        onCompleted: *mut crate::System::Action,
+        onNext: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+        onCompleted: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -103,7 +103,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (onNext, onCompleted))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Observer_1")]

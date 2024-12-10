@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IBeatmapObjectSpawner {
 impl crate::GlobalNamespace::IBeatmapObjectSpawner {
     pub fn ProcessNoteData(
         &mut self,
-        noteData: *mut crate::GlobalNamespace::NoteData,
+        noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
         >,
@@ -41,11 +41,11 @@ impl crate::GlobalNamespace::IBeatmapObjectSpawner {
                 "ProcessNoteData",
                 (noteData, noteSpawnData, rotation, forceIsFirstNoteBehaviour),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessObstacleData(
         &mut self,
-        obstacleData: *mut crate::GlobalNamespace::ObstacleData,
+        obstacleData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
         obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
         >,
@@ -56,11 +56,11 @@ impl crate::GlobalNamespace::IBeatmapObjectSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessObstacleData", (obstacleData, obstacleSpawnData, rotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessSliderData(
         &mut self,
-        sliderData: *mut crate::GlobalNamespace::SliderData,
+        sliderData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
         sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
         >,
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::IBeatmapObjectSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessSliderData", (sliderData, sliderSpawnData, rotation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

@@ -42,7 +42,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyDragAndDropUI", (dragPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CanStartDrag(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CanStartDrag", (pointerPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearDragAndDropUI(
         &mut self,
@@ -64,17 +64,19 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearDragAndDropUI", (dragCancelled))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHoverBarTopPosition(
         &mut self,
-        item: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        item: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ReusableCollectionItem,
+        >,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetHoverBarTopPosition", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPreviousAndNextItemsIgnoringDraggedItems(
         &mut self,
@@ -90,20 +92,21 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
                 "GetPreviousAndNextItemsIgnoringDraggedItems",
                 (insertAtIndex, previousItemId, nextItemId),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRecycledItem(
         &mut self,
         pointerPosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ReusableCollectionItem>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::ReusableCollectionItem = __cordl_object
-            .invoke("GetRecycledItem", (pointerPosition))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ReusableCollectionItem,
+        > = __cordl_object.invoke("GetRecycledItem", (pointerPosition))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetVisualMode(
         &mut self,
@@ -117,7 +120,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::DragVisualMode = __cordl_object
             .invoke("GetVisualMode", (pointerPosition, dragPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleAutoExpansion(
         &mut self,
@@ -128,7 +131,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleAutoExpansion", (pointerPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleDragAndScroll(
         &mut self,
@@ -139,7 +142,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleDragAndScroll", (pointerPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSiblingInsertionAtAvailableDepthsAndChangeTargetIfNeeded(
         &mut self,
@@ -156,7 +159,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
                 "HandleSiblingInsertionAtAvailableDepthsAndChangeTargetIfNeeded",
                 (dragPosition, pointerPosition),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleTreePosition(
         &mut self,
@@ -170,7 +173,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleTreePosition", (pointerPosition, dragPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MakeDragAndDropArgs(
         &mut self,
@@ -181,16 +184,18 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::DragAndDropArgs = __cordl_object
             .invoke("MakeDragAndDropArgs", (dragPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        listView: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        listView: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (listView))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDrop(
         &mut self,
@@ -201,7 +206,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDrop", (pointerPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PlaceHoverBarAt(
         &mut self,
@@ -214,18 +219,20 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PlaceHoverBarAt", (top, indentationPadding, siblingBottom))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PlaceHoverBarAtElement(
         &mut self,
-        item: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        item: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ReusableCollectionItem,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PlaceHoverBarAtElement", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartDrag(
         &mut self,
@@ -236,7 +243,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StartDragArgs = __cordl_object
             .invoke("StartDrag", (pointerPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetDragPosition(
         &mut self,
@@ -250,7 +257,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetDragPosition", (pointerPosition, dragPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateDrag(
         &mut self,
@@ -261,74 +268,89 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateDrag", (pointerPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ApplyDragAndDropUI_g__GeometryChangedCallback_27_0(
         &mut self,
-        e: *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+        e: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::GeometryChangedEvent,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<ApplyDragAndDropUI>g__GeometryChangedCallback|27_0", (e))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        listView: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        listView: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (listView))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dragAndDropController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::ICollectionDragAndDropController,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ICollectionDragAndDropController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::ICollectionDragAndDropController = __cordl_object
-            .invoke("get_dragAndDropController", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ICollectionDragAndDropController,
+        > = __cordl_object.invoke("get_dragAndDropController", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_targetScrollView(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::ScrollView> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::ScrollView = __cordl_object
-            .invoke("get_targetScrollView", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ScrollView,
+        > = __cordl_object.invoke("get_targetScrollView", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_targetView(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView = __cordl_object
-            .invoke("get_targetView", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        > = __cordl_object.invoke("get_targetView", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_dragAndDropController(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::ICollectionDragAndDropController,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ICollectionDragAndDropController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_dragAndDropController", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDragger")]
@@ -372,14 +394,14 @@ for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
 impl crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_ListViewDragger_DragPosition0(
         &mut self,
@@ -390,7 +412,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -398,6 +420,6 @@ impl crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

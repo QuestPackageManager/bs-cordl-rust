@@ -32,7 +32,7 @@ impl crate::System::Xml::Schema::AutoValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CompleteValidation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DetectValidationType(
         &mut self,
@@ -42,29 +42,36 @@ impl crate::System::Xml::Schema::AutoValidator {
         );
         let __cordl_ret: crate::System::Xml::ValidationType = __cordl_object
             .invoke("DetectValidationType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindId(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("FindId", (name))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("FindId", (name))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
-        schemaCollection: *mut crate::System::Xml::Schema::XmlSchemaCollection,
-        eventHandling: *mut crate::System::Xml::IValidationEventHandling,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlValidatingReaderImpl>,
+        schemaCollection: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaCollection,
+        >,
+        eventHandling: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::IValidationEventHandling,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (reader, schemaCollection, eventHandling))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Validate(
         &mut self,
@@ -74,27 +81,31 @@ impl crate::System::Xml::Schema::AutoValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Validate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
-        schemaCollection: *mut crate::System::Xml::Schema::XmlSchemaCollection,
-        eventHandling: *mut crate::System::Xml::IValidationEventHandling,
+        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlValidatingReaderImpl>,
+        schemaCollection: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaCollection,
+        >,
+        eventHandling: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::IValidationEventHandling,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (reader, schemaCollection, eventHandling))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PreserveWhitespace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_PreserveWhitespace", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+AutoValidator")]

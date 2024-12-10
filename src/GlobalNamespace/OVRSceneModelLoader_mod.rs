@@ -31,13 +31,16 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
     pub type _AttemptToLoadSceneModel_d__7 = crate::GlobalNamespace::OVRSceneModelLoader__AttemptToLoadSceneModel_d__7;
     pub fn AttemptToLoadSceneModel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("AttemptToLoadSceneModel", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("AttemptToLoadSceneModel", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn LoadSceneModel(
         &mut self,
@@ -47,14 +50,14 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LoadSceneModel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnNewSceneModelAvailable(
         &mut self,
@@ -64,7 +67,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNewSceneModelAvailable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnNoSceneModelToLoad(
         &mut self,
@@ -74,7 +77,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNoSceneModelToLoad", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnSceneCaptureReturnedWithoutError(
         &mut self,
@@ -84,7 +87,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnSceneCaptureReturnedWithoutError", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnSceneModelLoadedSuccessfully(
         &mut self,
@@ -94,7 +97,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnSceneModelLoadedSuccessfully", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnStart(
         &mut self,
@@ -104,7 +107,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnStart", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnUnexpectedErrorWithSceneCapture(
         &mut self,
@@ -114,7 +117,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnUnexpectedErrorWithSceneCapture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -124,7 +127,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -134,28 +137,31 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SceneManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::OVRSceneManager> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneManager>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::OVRSceneManager = __cordl_object
-            .invoke("get_SceneManager", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRSceneManager,
+        > = __cordl_object.invoke("get_SceneManager", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_SceneManager(
         &mut self,
-        value: *mut crate::GlobalNamespace::OVRSceneManager,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SceneManager", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRSceneModelLoader")]

@@ -33,7 +33,7 @@ impl crate::GlobalNamespace::ICPUMonitor {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_utilization", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ICPUMonitor")]

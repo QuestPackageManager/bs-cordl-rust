@@ -34,13 +34,13 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::IndexFilter {
 #[cfg(feature = "BeatmapSaveDataVersion3+IndexFilter")]
 impl crate::BeatmapSaveDataVersion3::IndexFilter {
     pub fn New_IndexFilter1(
-        other: *mut crate::BeatmapSaveDataVersion3::IndexFilter,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        other: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (other))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IndexFilterType_i32_i32__cordl_bool_IndexFilterRandomType_i32_i32_f32_IndexFilterLimitAlsoAffectsType0(
         _cordl_type: crate::BeatmapSaveDataCommon::IndexFilterType,
@@ -52,7 +52,7 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
         chunks: i32,
         limit: f32,
         limitAlsoAffectsType: crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -70,18 +70,18 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
                     limitAlsoAffectsType,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_IndexFilter1(
         &mut self,
-        other: *mut crate::BeatmapSaveDataVersion3::IndexFilter,
+        other: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (other))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IndexFilterType_i32_i32__cordl_bool_IndexFilterRandomType_i32_i32_f32_IndexFilterLimitAlsoAffectsType0(
         &mut self,
@@ -113,21 +113,21 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
                     limitAlsoAffectsType,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_chunks(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_chunks", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_limit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_limit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_limitAlsoAffectsType(
         &mut self,
@@ -139,21 +139,21 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
         );
         let __cordl_ret: crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType = __cordl_object
             .invoke("get_limitAlsoAffectsType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_param0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_param0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_param1(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_param1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_random(
         &mut self,
@@ -165,21 +165,21 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
         );
         let __cordl_ret: crate::BeatmapSaveDataCommon::IndexFilterRandomType = __cordl_object
             .invoke("get_random", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_reversed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_reversed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_seed(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_seed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_type(
         &mut self,
@@ -189,7 +189,7 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
         );
         let __cordl_ret: crate::BeatmapSaveDataCommon::IndexFilterType = __cordl_object
             .invoke("get_type", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+IndexFilter")]

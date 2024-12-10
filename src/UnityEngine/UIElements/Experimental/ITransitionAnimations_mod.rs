@@ -32,17 +32,21 @@ impl crate::UnityEngine::UIElements::Experimental::ITransitionAnimations {
         to: crate::UnityEngine::UIElements::Experimental::StyleValues,
         durationMs: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
-            crate::UnityEngine::UIElements::Experimental::StyleValues,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+                crate::UnityEngine::UIElements::Experimental::StyleValues,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
-            crate::UnityEngine::UIElements::Experimental::StyleValues,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+                crate::UnityEngine::UIElements::Experimental::StyleValues,
+            >,
         > = __cordl_object.invoke("Start", (to, durationMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

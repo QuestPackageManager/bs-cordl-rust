@@ -30,36 +30,41 @@ impl std::ops::DerefMut for crate::System::Net::Sockets::TcpListener {
 impl crate::System::Net::Sockets::TcpListener {
     pub fn BeginAcceptTcpClient(
         &mut self,
-        callback: *mut crate::System::AsyncCallback,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginAcceptTcpClient", (callback, state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndAcceptTcpClient(
         &mut self,
-        asyncResult: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::Sockets::TcpClient> {
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::Sockets::TcpClient = __cordl_object
-            .invoke("EndAcceptTcpClient", (asyncResult))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::TcpClient,
+        > = __cordl_object.invoke("EndAcceptTcpClient", (asyncResult))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        localaddr: *mut crate::System::Net::IPAddress,
+        localaddr: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         port: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (localaddr, port))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Start_0(
         &mut self,
@@ -69,7 +74,7 @@ impl crate::System::Net::Sockets::TcpListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start_i32_1(
         &mut self,
@@ -80,7 +85,7 @@ impl crate::System::Net::Sockets::TcpListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", (backlog))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Stop(
         &mut self,
@@ -90,11 +95,11 @@ impl crate::System::Net::Sockets::TcpListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Stop", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        localaddr: *mut crate::System::Net::IPAddress,
+        localaddr: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         port: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -102,17 +107,19 @@ impl crate::System::Net::Sockets::TcpListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (localaddr, port))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LocalEndpoint(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::EndPoint> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::EndPoint = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint> = __cordl_object
             .invoke("get_LocalEndpoint", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+Sockets+TcpListener")]

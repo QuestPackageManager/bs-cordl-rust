@@ -46,11 +46,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRule", (newRule))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateCustomNoMatchDelegate(
         &mut self,
-        invoke: *mut crate::System::Reflection::MethodInfo,
+        invoke: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -61,11 +61,11 @@ impl<
         );
         let __cordl_ret: T = __cordl_object
             .invoke("CreateCustomNoMatchDelegate", (invoke))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateCustomUpdateDelegate(
         &mut self,
-        invoke: *mut crate::System::Reflection::MethodInfo,
+        invoke: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -76,12 +76,14 @@ impl<
         );
         let __cordl_ret: T = __cordl_object
             .invoke("CreateCustomUpdateDelegate", (invoke))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateMatchMaker(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -90,9 +92,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::CompilerServices::CallSite_1<T> = __cordl_object
-            .invoke("CreateMatchMaker", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        > = __cordl_object.invoke("CreateMatchMaker", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetUpdateDelegate_0(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -103,7 +106,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("GetUpdateDelegate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetUpdateDelegate_ByRefMut1(
         &mut self,
@@ -117,7 +120,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("GetUpdateDelegate", (addr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MakeUpdateDelegate(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -128,7 +131,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("MakeUpdateDelegate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveRule(
         &mut self,
@@ -143,9 +146,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveRule", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_1() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New_1() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -154,11 +157,13 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_CallSiteBinder0(
-        binder: *mut crate::System::Runtime::CompilerServices::CallSiteBinder,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        binder: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSiteBinder,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -167,7 +172,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (binder))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_1(
         &mut self,
@@ -181,11 +186,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_CallSiteBinder0(
         &mut self,
-        binder: *mut crate::System::Runtime::CompilerServices::CallSiteBinder,
+        binder: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSiteBinder,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -196,7 +203,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (binder))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Update(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -207,7 +214,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CallSite_1")]

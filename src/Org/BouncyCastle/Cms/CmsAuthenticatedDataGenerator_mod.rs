@@ -28,48 +28,58 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataGenerator {
 impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataGenerator {
     pub fn Generate_CipherKeyGenerator0(
         &mut self,
-        content: *mut crate::Org::BouncyCastle::Cms::CmsProcessable,
-        macOid: *mut quest_hook::libil2cpp::Il2CppString,
-        keyGen: *mut crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
+        content: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsProcessable,
+        >,
+        macOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keyGen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cms::CmsAuthenticatedData,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsAuthenticatedData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::CmsAuthenticatedData = __cordl_object
-            .invoke("Generate", (content, macOid, keyGen))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsAuthenticatedData,
+        > = __cordl_object.invoke("Generate", (content, macOid, keyGen))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_CmsProcessable_Il2CppString1(
         &mut self,
-        content: *mut crate::Org::BouncyCastle::Cms::CmsProcessable,
-        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
+        content: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsProcessable,
+        >,
+        encryptionOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cms::CmsAuthenticatedData,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsAuthenticatedData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::CmsAuthenticatedData = __cordl_object
-            .invoke("Generate", (content, encryptionOid))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsAuthenticatedData,
+        > = __cordl_object.invoke("Generate", (content, encryptionOid))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_SecureRandom1(
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_rand))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -79,18 +89,20 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SecureRandom1(
         &mut self,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_rand))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataGenerator")]

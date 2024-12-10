@@ -27,18 +27,22 @@ impl std::ops::DerefMut for crate::UnityEngine::EventSystems::Physics2DRaycaster
 }
 #[cfg(feature = "UnityEngine+EventSystems+Physics2DRaycaster")]
 impl crate::UnityEngine::EventSystems::Physics2DRaycaster {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Raycast(
         &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-        resultAppendList: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::EventSystems::RaycastResult,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+        resultAppendList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -46,7 +50,7 @@ impl crate::UnityEngine::EventSystems::Physics2DRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Raycast", (eventData, resultAppendList))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -56,7 +60,7 @@ impl crate::UnityEngine::EventSystems::Physics2DRaycaster {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+Physics2DRaycaster")]

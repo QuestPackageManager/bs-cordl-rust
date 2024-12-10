@@ -34,25 +34,29 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
     pub type _SpawnFlyingScoreNextFrameCoroutine_d__5 = crate::GlobalNamespace::FlyingScoreSpawner__SpawnFlyingScoreNextFrameCoroutine_d__5;
     pub fn HandleFlyingObjectEffectDidFinish(
         &mut self,
-        flyingObjectEffect: *mut crate::GlobalNamespace::FlyingObjectEffect,
+        flyingObjectEffect: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FlyingObjectEffect,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleFlyingObjectEffectDidFinish", (flyingObjectEffect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SpawnFlyingScore(
         &mut self,
-        cutScoreBuffer: *mut crate::GlobalNamespace::IReadonlyCutScoreBuffer,
+        cutScoreBuffer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyCutScoreBuffer,
+        >,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -60,11 +64,13 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SpawnFlyingScore", (cutScoreBuffer, color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SpawnFlyingScoreNextFrame(
         &mut self,
-        cutScoreBuffer: *mut crate::GlobalNamespace::IReadonlyCutScoreBuffer,
+        cutScoreBuffer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyCutScoreBuffer,
+        >,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -72,19 +78,25 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SpawnFlyingScoreNextFrame", (cutScoreBuffer, color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SpawnFlyingScoreNextFrameCoroutine(
         &mut self,
-        cutScoreBuffer: *mut crate::GlobalNamespace::IReadonlyCutScoreBuffer,
+        cutScoreBuffer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyCutScoreBuffer,
+        >,
         color: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object
             .invoke("SpawnFlyingScoreNextFrameCoroutine", (cutScoreBuffer, color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -94,7 +106,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "FlyingScoreSpawner")]
@@ -135,12 +147,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FlyingScoreSpawner_InitData 
 impl crate::GlobalNamespace::FlyingScoreSpawner_InitData {
     pub fn New(
         spawnPosition: crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (spawnPosition))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -151,7 +163,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner_InitData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (spawnPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "FlyingScoreSpawner+InitData")]

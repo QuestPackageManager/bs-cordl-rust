@@ -36,7 +36,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
 impl crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
     pub fn BindToName(
         &mut self,
-        serializedType: *mut crate::System::Type,
+        serializedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         assemblyName: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppString,
         >,
@@ -49,31 +49,31 @@ impl crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindToName", (serializedType, assemblyName, typeName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindToType(
         &mut self,
-        assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
-        typeName: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("BindToType", (assemblyName, typeName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetGenericTypeFromTypeName(
         &mut self,
-        typeName: *mut quest_hook::libil2cpp::Il2CppString,
-        assembly: *mut crate::System::Reflection::Assembly,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("GetGenericTypeFromTypeName", (typeName, assembly))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTypeByName(
         &mut self,
@@ -81,13 +81,13 @@ impl crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
             *mut quest_hook::libil2cpp::Il2CppString,
             *mut quest_hook::libil2cpp::Il2CppString,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("GetTypeByName", (typeNameKey))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTypeFromTypeNameKey(
         &mut self,
@@ -95,20 +95,20 @@ impl crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
             *mut quest_hook::libil2cpp::Il2CppString,
             *mut quest_hook::libil2cpp::Il2CppString,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("GetTypeFromTypeNameKey", (typeNameKey))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -118,7 +118,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultSerializationBinder")]

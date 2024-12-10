@@ -60,7 +60,7 @@ impl<
             self,
         );
         let __cordl_ret: TItem = __cordl_object.invoke("Dequeue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enqueue(
         &mut self,
@@ -78,7 +78,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Enqueue", (item, priority))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExpandCapacity(
         &mut self,
@@ -94,7 +94,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExpandCapacity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHighest(&mut self) -> quest_hook::libil2cpp::Result<TItem>
     where
@@ -107,7 +107,7 @@ impl<
             self,
         );
         let __cordl_ret: TItem = __cordl_object.invoke("GetHighest", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHighestPriority(&mut self) -> quest_hook::libil2cpp::Result<TPriority>
     where
@@ -120,12 +120,14 @@ impl<
             self,
         );
         let __cordl_ret: TPriority = __cordl_object.invoke("GetHighestPriority", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         capacity: i32,
-        priorityMath: *mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TPriority>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        priorityMath: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TPriority>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -136,7 +138,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (capacity, priorityMath))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReorderItem(
         &mut self,
@@ -154,12 +156,14 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReorderItem", (index, direction))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         capacity: i32,
-        priorityMath: *mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TPriority>,
+        priorityMath: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TPriority>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -172,7 +176,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (capacity, priorityMath))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -185,7 +189,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]

@@ -29,7 +29,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit {
     pub fn ReceivedHandshakeRecord(
         &mut self,
         epoch: i32,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
         len: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -38,7 +38,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReceivedHandshakeRecord", (epoch, buf, off, len))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

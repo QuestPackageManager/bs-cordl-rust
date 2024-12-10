@@ -33,39 +33,44 @@ impl crate::Org::BouncyCastle::Bcpg::OutputStreamPacket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Close", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        bcpgOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        bcpgOut: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bcpgOut))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Open(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgOutputStream>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream = __cordl_object
-            .invoke("Open", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+        > = __cordl_object.invoke("Open", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        bcpgOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+        bcpgOut: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bcpgOut))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OutputStreamPacket")]

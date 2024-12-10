@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::UnityEngine::PlayerConnectionInternal {
 }
 #[cfg(feature = "UnityEngine+PlayerConnectionInternal")]
 impl crate::UnityEngine::PlayerConnectionInternal {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UnityEngine_IPlayerEditorConnectionNative_DisconnectAll(
         &mut self,
@@ -39,7 +39,7 @@ impl crate::UnityEngine::PlayerConnectionInternal {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnityEngine.IPlayerEditorConnectionNative.DisconnectAll", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_IPlayerEditorConnectionNative_Initialize(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::UnityEngine::PlayerConnectionInternal {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnityEngine.IPlayerEditorConnectionNative.Initialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_IPlayerEditorConnectionNative_IsConnected(
         &mut self,
@@ -59,7 +59,7 @@ impl crate::UnityEngine::PlayerConnectionInternal {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("UnityEngine.IPlayerEditorConnectionNative.IsConnected", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_IPlayerEditorConnectionNative_Poll(
         &mut self,
@@ -69,7 +69,7 @@ impl crate::UnityEngine::PlayerConnectionInternal {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnityEngine.IPlayerEditorConnectionNative.Poll", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_IPlayerEditorConnectionNative_RegisterInternal(
         &mut self,
@@ -83,12 +83,12 @@ impl crate::UnityEngine::PlayerConnectionInternal {
                 "UnityEngine.IPlayerEditorConnectionNative.RegisterInternal",
                 (messageId),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_IPlayerEditorConnectionNative_SendMessage(
         &mut self,
         messageId: crate::System::Guid,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         playerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -99,12 +99,12 @@ impl crate::UnityEngine::PlayerConnectionInternal {
                 "UnityEngine.IPlayerEditorConnectionNative.SendMessage",
                 (messageId, data, playerId),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_IPlayerEditorConnectionNative_TrySendMessage(
         &mut self,
         messageId: crate::System::Guid,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         playerId: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -115,7 +115,7 @@ impl crate::UnityEngine::PlayerConnectionInternal {
                 "UnityEngine.IPlayerEditorConnectionNative.TrySendMessage",
                 (messageId, data, playerId),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_IPlayerEditorConnectionNative_UnregisterInternal(
         &mut self,
@@ -129,7 +129,7 @@ impl crate::UnityEngine::PlayerConnectionInternal {
                 "UnityEngine.IPlayerEditorConnectionNative.UnregisterInternal",
                 (messageId),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -139,7 +139,7 @@ impl crate::UnityEngine::PlayerConnectionInternal {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+PlayerConnectionInternal")]

@@ -31,6 +31,6 @@ impl crate::Unity::Collections::NativeArrayDispose {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

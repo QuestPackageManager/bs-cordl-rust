@@ -28,13 +28,17 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::RaycastH
 impl crate::UnityEngine::RaycastHit {
     pub fn get_articulationBody(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ArticulationBody> {
-        let __cordl_ret: *mut crate::UnityEngine::ArticulationBody = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ArticulationBody>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ArticulationBody,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_articulationBody",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_barycentricCoordinate(
         &mut self,
@@ -44,17 +48,19 @@ impl crate::UnityEngine::RaycastHit {
             "get_barycentricCoordinate",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_collider(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Collider> {
-        let __cordl_ret: *mut crate::UnityEngine::Collider = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_collider",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_colliderInstanceID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -62,7 +68,7 @@ impl crate::UnityEngine::RaycastHit {
             "get_colliderInstanceID",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -70,7 +76,7 @@ impl crate::UnityEngine::RaycastHit {
             "get_distance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lightmapCoord(
         &mut self,
@@ -80,7 +86,7 @@ impl crate::UnityEngine::RaycastHit {
             "get_lightmapCoord",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_normal(
         &mut self,
@@ -90,7 +96,7 @@ impl crate::UnityEngine::RaycastHit {
             "get_normal",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_point(
         &mut self,
@@ -100,17 +106,19 @@ impl crate::UnityEngine::RaycastHit {
             "get_point",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rigidbody(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Rigidbody> {
-        let __cordl_ret: *mut crate::UnityEngine::Rigidbody = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_rigidbody",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_textureCoord(
         &mut self,
@@ -120,7 +128,7 @@ impl crate::UnityEngine::RaycastHit {
             "get_textureCoord",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_textureCoord1(
         &mut self,
@@ -130,7 +138,7 @@ impl crate::UnityEngine::RaycastHit {
             "get_textureCoord1",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_textureCoord2(
         &mut self,
@@ -140,17 +148,19 @@ impl crate::UnityEngine::RaycastHit {
             "get_textureCoord2",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transform(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
-        let __cordl_ret: *mut crate::UnityEngine::Transform = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_transform",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_triangleIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -158,7 +168,7 @@ impl crate::UnityEngine::RaycastHit {
             "get_triangleIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_barycentricCoordinate(
         &mut self,
@@ -169,7 +179,7 @@ impl crate::UnityEngine::RaycastHit {
             "set_barycentricCoordinate",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_distance(
         &mut self,
@@ -180,7 +190,7 @@ impl crate::UnityEngine::RaycastHit {
             "set_distance",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_normal(
         &mut self,
@@ -191,7 +201,7 @@ impl crate::UnityEngine::RaycastHit {
             "set_normal",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_point(
         &mut self,
@@ -202,6 +212,6 @@ impl crate::UnityEngine::RaycastHit {
             "set_point",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

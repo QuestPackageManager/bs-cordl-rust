@@ -72,7 +72,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
             ".ctor",
             (usage),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_HID_UsagePage_i32_0(
         &mut self,
@@ -84,6 +84,6 @@ impl crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
             ".ctor",
             (page, usage),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

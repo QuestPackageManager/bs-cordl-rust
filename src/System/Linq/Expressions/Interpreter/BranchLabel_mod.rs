@@ -32,7 +32,9 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::Interpreter::Branc
 impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
     pub fn AddBranch(
         &mut self,
-        instructions: *mut crate::System::Linq::Expressions::Interpreter::InstructionList,
+        instructions: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::InstructionList,
+        >,
         branchIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -40,11 +42,13 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddBranch", (instructions, branchIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FixupBranch(
         &mut self,
-        instructions: *mut crate::System::Linq::Expressions::Interpreter::InstructionList,
+        instructions: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::InstructionList,
+        >,
         branchIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -52,25 +56,27 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FixupBranch", (instructions, branchIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Mark(
         &mut self,
-        instructions: *mut crate::System::Linq::Expressions::Interpreter::InstructionList,
+        instructions: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::InstructionList,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Mark", (instructions))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ToRuntimeLabel(
         &mut self,
@@ -82,7 +88,7 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         );
         let __cordl_ret: crate::System::Linq::Expressions::Interpreter::RuntimeLabel = __cordl_object
             .invoke("ToRuntimeLabel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -92,28 +98,28 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasRuntimeLabel(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasRuntimeLabel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LabelIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_LabelIndex", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TargetIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_TargetIndex", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_LabelIndex(
         &mut self,
@@ -124,7 +130,7 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_LabelIndex", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+BranchLabel")]

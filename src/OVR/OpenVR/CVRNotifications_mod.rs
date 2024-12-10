@@ -30,7 +30,7 @@ impl crate::OVR::OpenVR::CVRNotifications {
         ulOverlayHandle: u64,
         ulUserValue: u64,
         _cordl_type: crate::OVR::OpenVR::EVRNotificationType,
-        pchText: *mut quest_hook::libil2cpp::Il2CppString,
+        pchText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         style: crate::OVR::OpenVR::EVRNotificationStyle,
         pImage: quest_hook::libil2cpp::ByRefMut<
             crate::OVR::OpenVR::NotificationBitmap_t,
@@ -53,16 +53,16 @@ impl crate::OVR::OpenVR::CVRNotifications {
                     pNotificationId,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pInterface))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveNotification(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::OVR::OpenVR::CVRNotifications {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRNotificationError = __cordl_object
             .invoke("RemoveNotification", (notificationId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::OVR::OpenVR::CVRNotifications {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (pInterface))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRNotifications")]

@@ -28,73 +28,92 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder {
     pub fn Build(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::RevocationDetails,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::RevocationDetails>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::RevocationDetails = __cordl_object
-            .invoke("Build", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::RevocationDetails,
+        > = __cordl_object.invoke("Build", ())?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetIssuer(
         &mut self,
-        issuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        issuer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder = __cordl_object
-            .invoke("SetIssuer", (issuer))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        > = __cordl_object.invoke("SetIssuer", (issuer))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetPublicKey(
         &mut self,
-        publicKey: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        publicKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder = __cordl_object
-            .invoke("SetPublicKey", (publicKey))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        > = __cordl_object.invoke("SetPublicKey", (publicKey))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetSerialNumber(
         &mut self,
-        serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        serialNumber: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder = __cordl_object
-            .invoke("SetSerialNumber", (serialNumber))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        > = __cordl_object.invoke("SetSerialNumber", (serialNumber))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetSubject(
         &mut self,
-        subject: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        subject: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder = __cordl_object
-            .invoke("SetSubject", (subject))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+        > = __cordl_object.invoke("SetSubject", (subject))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -104,7 +123,7 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cmp+RevocationDetailsBuilder")]

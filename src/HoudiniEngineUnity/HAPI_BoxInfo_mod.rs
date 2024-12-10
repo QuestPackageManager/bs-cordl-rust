@@ -33,6 +33,6 @@ impl crate::HoudiniEngineUnity::HAPI_BoxInfo {
             ".ctor",
             (initialize_fields),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

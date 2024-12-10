@@ -28,104 +28,116 @@ impl crate::System::Net::NetEventSource {
     pub type Keywords = crate::System::Net::NetEventSource_Keywords;
     pub fn Associate(
         &mut self,
-        thisOrContextObject: *mut quest_hook::libil2cpp::Il2CppString,
-        memberName: *mut quest_hook::libil2cpp::Il2CppString,
-        first: *mut quest_hook::libil2cpp::Il2CppString,
-        second: *mut quest_hook::libil2cpp::Il2CppString,
+        thisOrContextObject: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        first: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        second: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Associate", (thisOrContextObject, memberName, first, second))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CriticalFailure(
         &mut self,
-        thisOrContextObject: *mut quest_hook::libil2cpp::Il2CppString,
-        memberName: *mut quest_hook::libil2cpp::Il2CppString,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        thisOrContextObject: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CriticalFailure", (thisOrContextObject, memberName, message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enter(
         &mut self,
-        thisOrContextObject: *mut quest_hook::libil2cpp::Il2CppString,
-        memberName: *mut quest_hook::libil2cpp::Il2CppString,
-        parameters: *mut quest_hook::libil2cpp::Il2CppString,
+        thisOrContextObject: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        parameters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Enter", (thisOrContextObject, memberName, parameters))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ErrorMessage(
         &mut self,
-        thisOrContextObject: *mut quest_hook::libil2cpp::Il2CppString,
-        memberName: *mut quest_hook::libil2cpp::Il2CppString,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        thisOrContextObject: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ErrorMessage", (thisOrContextObject, memberName, message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Exit(
         &mut self,
-        thisOrContextObject: *mut quest_hook::libil2cpp::Il2CppString,
-        memberName: *mut quest_hook::libil2cpp::Il2CppString,
-        result: *mut quest_hook::libil2cpp::Il2CppString,
+        thisOrContextObject: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Exit", (thisOrContextObject, memberName, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Info(
         &mut self,
-        thisOrContextObject: *mut quest_hook::libil2cpp::Il2CppString,
-        memberName: *mut quest_hook::libil2cpp::Il2CppString,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        thisOrContextObject: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Info", (thisOrContextObject, memberName, message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn WriteEvent(
         &mut self,
         eventId: i32,
-        arg1: *mut quest_hook::libil2cpp::Il2CppString,
-        arg2: *mut quest_hook::libil2cpp::Il2CppString,
-        arg3: *mut quest_hook::libil2cpp::Il2CppString,
-        arg4: *mut quest_hook::libil2cpp::Il2CppString,
+        arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg4: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteEvent", (eventId, arg1, arg2, arg3, arg4))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -135,7 +147,7 @@ impl crate::System::Net::NetEventSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+NetEventSource")]

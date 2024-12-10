@@ -32,38 +32,46 @@ impl crate::BGLib::SaveDataCore::ISaveDataHandler {
         );
         let __cordl_ret: crate::BGLib::SaveDataCore::LoaderState = __cordl_object
             .invoke("GetState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResetChangesAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::BGLib::SaveDataCore::SaveDataResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::BGLib::SaveDataCore::SaveDataResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::BGLib::SaveDataCore::SaveDataResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::BGLib::SaveDataCore::SaveDataResult,
+            >,
         > = __cordl_object.invoke("ResetChangesAsync", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SaveAsync(
         &mut self,
         force: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::BGLib::SaveDataCore::SaveDataResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::BGLib::SaveDataCore::SaveDataResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::BGLib::SaveDataCore::SaveDataResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::BGLib::SaveDataCore::SaveDataResult,
+            >,
         > = __cordl_object.invoke("SaveAsync", (force))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -73,14 +81,15 @@ impl crate::BGLib::SaveDataCore::ISaveDataHandler {
     pub fn get_instance(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BGLib::SaveDataCore::VersionableSaveData,
+        quest_hook::libil2cpp::Gc<crate::BGLib::SaveDataCore::VersionableSaveData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::BGLib::SaveDataCore::VersionableSaveData = __cordl_object
-            .invoke("get_instance", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BGLib::SaveDataCore::VersionableSaveData,
+        > = __cordl_object.invoke("get_instance", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BGLib+SaveDataCore+ISaveDataHandler")]

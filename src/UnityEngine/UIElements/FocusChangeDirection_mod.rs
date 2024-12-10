@@ -27,15 +27,17 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::FocusChangeDirection
 impl crate::UnityEngine::UIElements::FocusChangeDirection {
     pub fn ApplyTo(
         &mut self,
-        focusController: *mut crate::UnityEngine::UIElements::FocusController,
-        f: *mut crate::UnityEngine::UIElements::Focusable,
+        focusController: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusController,
+        >,
+        f: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyTo", (focusController, f))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -45,14 +47,16 @@ impl crate::UnityEngine::UIElements::FocusChangeDirection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(value: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (value))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn System_IDisposable_Dispose(
         &mut self,
@@ -62,7 +66,7 @@ impl crate::UnityEngine::UIElements::FocusChangeDirection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.IDisposable.Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -73,7 +77,7 @@ impl crate::UnityEngine::UIElements::FocusChangeDirection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+FocusChangeDirection")]

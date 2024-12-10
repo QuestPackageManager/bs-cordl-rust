@@ -28,34 +28,42 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstaller {
     type IInstallerRegistry = crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry;
     pub fn LoadResourcesBeforeInstall(
         &mut self,
-        registry: *mut crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
-        container: *mut crate::Zenject::DiContainer,
+        registry: quest_hook::libil2cpp::Gc<
+            crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
+        >,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LoadResourcesBeforeInstall", (registry, container))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadResourcesBeforeInstallAsync(
         &mut self,
-        registry: *mut crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
-        container: *mut crate::Zenject::DiContainer,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        registry: quest_hook::libil2cpp::Gc<
+            crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
+        >,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object
             .invoke("LoadResourcesBeforeInstallAsync", (registry, container))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -65,7 +73,7 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstaller {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller")]
@@ -109,25 +117,27 @@ for crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
 impl crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
     pub fn AddMonoInstaller(
         &mut self,
-        newMonoInstaller: *mut crate::Zenject::MonoInstaller,
+        newMonoInstaller: quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddMonoInstaller", (newMonoInstaller))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddScriptableObjectInstaller(
         &mut self,
-        newScriptableObjectInstaller: *mut crate::Zenject::ScriptableObjectInstaller,
+        newScriptableObjectInstaller: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ScriptableObjectInstaller,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddScriptableObjectInstaller", (newScriptableObjectInstaller))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

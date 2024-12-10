@@ -25,14 +25,14 @@ for crate::System::Net::Sockets::IPPacketInformation {
 impl crate::System::Net::Sockets::IPPacketInformation {
     pub fn Equals(
         &mut self,
-        comparand: *mut quest_hook::libil2cpp::Il2CppObject,
+        comparand: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (comparand),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -40,6 +40,6 @@ impl crate::System::Net::Sockets::IPPacketInformation {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

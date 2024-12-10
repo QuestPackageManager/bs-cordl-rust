@@ -38,12 +38,12 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
     pub type LightGroupEvent = crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent;
     #[cfg(feature = "DefaultEnvironmentEvents+LightGroupFiltering")]
     pub type LightGroupFiltering = crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -53,44 +53,52 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_basicBeatmapEvents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+            >,
         > = __cordl_object.invoke("get_basicBeatmapEvents", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isEmpty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lightGroupEvents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+            >,
         > = __cordl_object.invoke("get_lightGroupEvents", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "DefaultEnvironmentEvents")]
@@ -135,12 +143,12 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
 }
 #[cfg(feature = "DefaultEnvironmentEvents+BasicBeatmapEvent")]
 impl crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -150,7 +158,7 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_eventType(
         &mut self,
@@ -160,21 +168,21 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
         );
         let __cordl_ret: crate::GlobalNamespace::BasicBeatmapEventType = __cordl_object
             .invoke("get_eventType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_floatValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_floatValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_value", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "DefaultEnvironmentEvents+BasicBeatmapEvent")]
@@ -219,12 +227,12 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupDistribution")]
 impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -234,14 +242,14 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_distributionParam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_distributionParam", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_distributionParamType(
         &mut self,
@@ -253,14 +261,14 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
         );
         let __cordl_ret: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType = __cordl_object
             .invoke("get_distributionParamType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_useDistribution(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_useDistribution", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupDistribution")]
@@ -324,12 +332,12 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupEvent")]
 impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -339,38 +347,44 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_brightness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_brightness", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_brightnessDistribution(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution = __cordl_object
-            .invoke("get_brightnessDistribution", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        > = __cordl_object.invoke("get_brightnessDistribution", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_brightnessFiltering(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering = __cordl_object
-            .invoke("get_brightnessFiltering", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        > = __cordl_object.invoke("get_brightnessFiltering", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_environmentColorType(
         &mut self,
@@ -380,186 +394,219 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
         );
         let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = __cordl_object
             .invoke("get_environmentColorType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_floatFxDistribution(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution = __cordl_object
-            .invoke("get_floatFxDistribution", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        > = __cordl_object.invoke("get_floatFxDistribution", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_floatFxFiltering(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering = __cordl_object
-            .invoke("get_floatFxFiltering", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        > = __cordl_object.invoke("get_floatFxFiltering", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_floatFxValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_floatFxValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lightGroup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::LightGroupSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::LightGroupSO = __cordl_object
-            .invoke("get_lightGroup", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rotationFiltering(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering = __cordl_object
-            .invoke("get_rotationFiltering", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightGroupSO,
+        > = __cordl_object.invoke("get_lightGroup", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_rotationFiltering(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        > = __cordl_object.invoke("get_rotationFiltering", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotationX(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_rotationX", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotationXDistribution(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution = __cordl_object
-            .invoke("get_rotationXDistribution", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        > = __cordl_object.invoke("get_rotationXDistribution", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotationY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_rotationY", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotationYDistribution(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution = __cordl_object
-            .invoke("get_rotationYDistribution", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        > = __cordl_object.invoke("get_rotationYDistribution", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotationZ(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_rotationZ", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotationZDistribution(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution = __cordl_object
-            .invoke("get_rotationZDistribution", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        > = __cordl_object.invoke("get_rotationZDistribution", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_translationFiltering(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering = __cordl_object
-            .invoke("get_translationFiltering", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+        > = __cordl_object.invoke("get_translationFiltering", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_translationX(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_translationX", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_translationXDistribution(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution = __cordl_object
-            .invoke("get_translationXDistribution", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        > = __cordl_object.invoke("get_translationXDistribution", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_translationY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_translationY", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_translationYDistribution(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution = __cordl_object
-            .invoke("get_translationYDistribution", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        > = __cordl_object.invoke("get_translationYDistribution", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_translationZ(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_translationZ", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_translationZDistribution(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution = __cordl_object
-            .invoke("get_translationZDistribution", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+        > = __cordl_object.invoke("get_translationZDistribution", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupEvent")]
@@ -607,12 +654,12 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupFiltering")]
 impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -622,7 +669,7 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_alsoAffectType(
         &mut self,
@@ -634,21 +681,21 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
         );
         let __cordl_ret: crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType = __cordl_object
             .invoke("get_alsoAffectType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_chunks(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_chunks", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_limit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_limit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_randomType(
         &mut self,
@@ -660,21 +707,21 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
         );
         let __cordl_ret: crate::GlobalNamespace::IndexFilter_IndexFilterRandomType = __cordl_object
             .invoke("get_randomType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_seed(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_seed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_useFiltering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_useFiltering", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupFiltering")]

@@ -36,32 +36,50 @@ for crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataS
 impl crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
     pub fn Finish(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finish", (levelCompletionResults))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
+        beatmapLevelData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLevelData,
+        >,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
-        practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
-        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
-        environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-        audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-        performancePreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        practiceSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PracticeSettings,
+        >,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
+        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        performancePreset: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        >,
         useFirstPersonFlyingController: bool,
-        beforeSceneSwitchCallback: *mut crate::System::Action,
-        levelFinishedCallback: *mut crate::System::Action_2<
-            *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
-            *mut crate::GlobalNamespace::LevelCompletionResults,
+        beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        levelFinishedCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+                *mut crate::GlobalNamespace::LevelCompletionResults,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -86,14 +104,14 @@ impl crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupData
                     levelFinishedCallback,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -103,13 +121,15 @@ impl crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupData
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
-            *mut crate::GlobalNamespace::LevelCompletionResults,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+                *mut crate::GlobalNamespace::LevelCompletionResults,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -117,13 +137,15 @@ impl crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupData
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
-            *mut crate::GlobalNamespace::LevelCompletionResults,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+                *mut crate::GlobalNamespace::LevelCompletionResults,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -131,7 +153,7 @@ impl crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupData
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO")]

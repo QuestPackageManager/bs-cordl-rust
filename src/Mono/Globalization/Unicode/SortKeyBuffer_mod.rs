@@ -59,7 +59,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AppendBufferPrimitive", (value, buf, bidx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AppendCJKExtension(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AppendCJKExtension", (lv1msb, lv1lsb))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AppendKana(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                 "AppendKana",
                 (category, lv1, lv2, lv3, isSmallKana, markType, isKatakana, isHalfWidth),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AppendLevel5(
         &mut self,
@@ -104,7 +104,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AppendLevel5", (category, lv1))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AppendNormal(
         &mut self,
@@ -118,11 +118,11 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AppendNormal", (category, lv1, lv2, lv3))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetOptimizedLength(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         len: i32,
         defaultValue: u8,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -131,33 +131,39 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetOptimizedLength", (data, len, defaultValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetResult(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::SortKey> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Globalization::SortKey = __cordl_object
-            .invoke("GetResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::SortKey,
+        > = __cordl_object.invoke("GetResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetResultAndReset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::SortKey> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Globalization::SortKey = __cordl_object
-            .invoke("GetResultAndReset", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::SortKey,
+        > = __cordl_object.invoke("GetResultAndReset", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
         options: crate::System::Globalization::CompareOptions,
         lcid: i32,
-        s: *mut quest_hook::libil2cpp::Il2CppString,
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         frenchSort: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -165,14 +171,16 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", (options, lcid, s, frenchSort))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(lcid: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        lcid: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (lcid))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -182,7 +190,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -193,7 +201,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (lcid))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Globalization+Unicode+SortKeyBuffer")]

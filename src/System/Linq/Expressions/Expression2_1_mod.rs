@@ -35,7 +35,7 @@ impl<
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
     >
     where
         TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -44,15 +44,20 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::ParameterExpression = __cordl_object
-            .invoke("GetParameter", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        > = __cordl_object.invoke("GetParameter", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        body: *mut crate::System::Linq::Expressions::Expression,
-        par0: *mut crate::System::Linq::Expressions::ParameterExpression,
-        par1: *mut crate::System::Linq::Expressions::ParameterExpression,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        par0: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        >,
+        par1: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -61,16 +66,20 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (body, par0, par1))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Rewrite(
         &mut self,
-        body: *mut crate::System::Linq::Expressions::Expression,
-        parameters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        parameters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        >,
     >
     where
         TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -79,16 +88,20 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression_1<
-            TDelegate,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
         > = __cordl_object.invoke("Rewrite", (body, parameters))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        body: *mut crate::System::Linq::Expressions::Expression,
-        par0: *mut crate::System::Linq::Expressions::ParameterExpression,
-        par1: *mut crate::System::Linq::Expressions::ParameterExpression,
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        par0: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        >,
+        par1: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -99,7 +112,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (body, par0, par1))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ParameterCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -110,7 +123,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ParameterCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Expression2_1")]

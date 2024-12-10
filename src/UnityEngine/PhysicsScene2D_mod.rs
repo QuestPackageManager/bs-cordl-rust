@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::PhysicsS
 impl crate::UnityEngine::PhysicsScene2D {
     pub fn Equals_Il2CppObject0(
         &mut self,
-        other: *mut quest_hook::libil2cpp::Il2CppObject,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_PhysicsScene2D1(
         &mut self,
@@ -41,7 +41,7 @@ impl crate::UnityEngine::PhysicsScene2D {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -49,14 +49,14 @@ impl crate::UnityEngine::PhysicsScene2D {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRayIntersection_Il2CppArray_i32_1(
         &mut self,
         ray: crate::UnityEngine::Ray,
         distance: f32,
-        results: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::RaycastHit2D,
+        results: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
         >,
         layerMask: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -65,7 +65,7 @@ impl crate::UnityEngine::PhysicsScene2D {
             "GetRayIntersection",
             (ray, distance, results, layerMask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRayIntersection_i32_0(
         &mut self,
@@ -78,7 +78,7 @@ impl crate::UnityEngine::PhysicsScene2D {
             "GetRayIntersection",
             (ray, distance, layerMask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Raycast_ContactFilter2D1(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::UnityEngine::PhysicsScene2D {
             "Raycast",
             (origin, direction, distance, contactFilter),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Raycast_ContactFilter2D_Il2CppArray2(
         &mut self,
@@ -100,8 +100,8 @@ impl crate::UnityEngine::PhysicsScene2D {
         direction: crate::UnityEngine::Vector2,
         distance: f32,
         contactFilter: crate::UnityEngine::ContactFilter2D,
-        results: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::RaycastHit2D,
+        results: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -109,7 +109,7 @@ impl crate::UnityEngine::PhysicsScene2D {
             "Raycast",
             (origin, direction, distance, contactFilter, results),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Raycast_ContactFilter2D_List_1_3(
         &mut self,
@@ -117,8 +117,8 @@ impl crate::UnityEngine::PhysicsScene2D {
         direction: crate::UnityEngine::Vector2,
         distance: f32,
         contactFilter: crate::UnityEngine::ContactFilter2D,
-        results: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::RaycastHit2D,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::RaycastHit2D>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -126,7 +126,7 @@ impl crate::UnityEngine::PhysicsScene2D {
             "Raycast",
             (origin, direction, distance, contactFilter, results),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Raycast_i32_0(
         &mut self,
@@ -140,16 +140,16 @@ impl crate::UnityEngine::PhysicsScene2D {
             "Raycast",
             (origin, direction, distance, layerMask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
 }

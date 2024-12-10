@@ -124,7 +124,7 @@ impl crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
             "GetBit",
             (aindex, bindex),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetBit(
         &mut self,
@@ -137,7 +137,7 @@ impl crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
             "SetBit",
             (aindex, bindex, val),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer")]
@@ -566,7 +566,7 @@ impl crate::Unity::Burst::Intrinsics::X86_RoundingScope {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -577,7 +577,7 @@ impl crate::Unity::Burst::Intrinsics::X86_RoundingScope {
             ".ctor",
             (roundingMode),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse")]

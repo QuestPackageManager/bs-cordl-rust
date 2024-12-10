@@ -29,14 +29,14 @@ for crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
 impl crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
     pub fn UnsafeOnCompleted(
         &mut self,
-        continuation: *mut crate::System::Action,
+        continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnsafeOnCompleted", (continuation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

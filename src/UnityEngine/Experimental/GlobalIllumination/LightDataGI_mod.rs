@@ -47,7 +47,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
             "InitNoBake",
             (lightInstanceID),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init_ByRefMut_ByRefMut0(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
             "Init",
             (light, cookie),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init_ByRefMut_ByRefMut1(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
             "Init",
             (light, cookie),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init_ByRefMut_ByRefMut2(
         &mut self,
@@ -95,7 +95,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
             "Init",
             (light, cookie),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init_ByRefMut_ByRefMut3(
         &mut self,
@@ -111,7 +111,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
             "Init",
             (light, cookie),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init_ByRefMut_ByRefMut4(
         &mut self,
@@ -127,6 +127,6 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
             "Init",
             (light, cookie),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -64,7 +64,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Add", (item, distance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetFurtherest(&mut self) -> quest_hook::libil2cpp::Result<TItem>
     where
@@ -77,7 +77,7 @@ impl<
             self,
         );
         let __cordl_ret: TItem = __cordl_object.invoke("GetFurtherest", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetFurtherestDistance(&mut self) -> quest_hook::libil2cpp::Result<TDistance>
     where
@@ -90,12 +90,14 @@ impl<
             self,
         );
         let __cordl_ret: TDistance = __cordl_object.invoke("GetFurtherestDistance", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         maxCapacity: i32,
-        distanceMath: *mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TDistance>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        distanceMath: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TDistance>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -106,7 +108,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (maxCapacity, distanceMath))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveFurtherest(&mut self) -> quest_hook::libil2cpp::Result<TItem>
     where
@@ -119,12 +121,14 @@ impl<
             self,
         );
         let __cordl_ret: TItem = __cordl_object.invoke("RemoveFurtherest", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         maxCapacity: i32,
-        distanceMath: *mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TDistance>,
+        distanceMath: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TDistance>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -137,7 +141,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (maxCapacity, distanceMath))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -150,7 +154,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsCapacityReached(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -163,7 +167,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsCapacityReached", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MaxCapacity(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -176,7 +180,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_MaxCapacity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+NearestNeighbourList_2")]

@@ -40,31 +40,39 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         &mut self,
         colorType: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState = __cordl_object
-            .invoke("GetState", (colorType))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
+        > = __cordl_object.invoke("GetState", (colorType))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetState_SaberType0(
         &mut self,
         saberType: crate::GlobalNamespace::SaberType,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState = __cordl_object
-            .invoke("GetState", (saberType))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
+        > = __cordl_object.invoke("GetState", (saberType))?;
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSliderInteractionManagerAllSliderWereRemovedFromActiveSliders(
         &mut self,
-        sliderInteractionManager: *mut crate::GlobalNamespace::SliderInteractionManager,
+        sliderInteractionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SliderInteractionManager,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -74,11 +82,13 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
                 "HandleSliderInteractionManagerAllSliderWereRemovedFromActiveSliders",
                 (sliderInteractionManager),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSliderInteractionManagerSliderWasAddedToActiveSliders(
         &mut self,
-        sliderInteractionManager: *mut crate::GlobalNamespace::SliderInteractionManager,
+        sliderInteractionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SliderInteractionManager,
+        >,
         sliderInteractionParam: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -89,7 +99,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
                 "HandleSliderInteractionManagerSliderWasAddedToActiveSliders",
                 (sliderInteractionManager, sliderInteractionParam),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSparkleEffectDidEnd(
         &mut self,
@@ -100,7 +110,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSparkleEffectDidEnd", (saberType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSparkleEffectDidStart(
         &mut self,
@@ -111,14 +121,14 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSparkleEffectDidStart", (saberType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -128,7 +138,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -138,7 +148,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryDisableThis(
         &mut self,
@@ -148,7 +158,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TryDisableThis", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -158,11 +168,13 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateHaptic(
         &mut self,
-        state: *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
+        state: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
+        >,
         node: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -170,7 +182,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateHaptic", (state, node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -180,7 +192,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ArcAndObstacleHapticEffectManager")]
@@ -226,12 +238,12 @@ for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
 }
 #[cfg(feature = "ArcAndObstacleHapticEffectManager+EffectState")]
 impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -241,21 +253,21 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_canBeActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_canBeActive", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isActive", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ArcAndObstacleHapticEffectManager+EffectState")]

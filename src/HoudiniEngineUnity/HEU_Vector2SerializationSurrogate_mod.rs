@@ -26,17 +26,19 @@ for crate::HoudiniEngineUnity::HEU_Vector2SerializationSurrogate {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Vector2SerializationSurrogate")]
 impl crate::HoudiniEngineUnity::HEU_Vector2SerializationSurrogate {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn System_Runtime_Serialization_ISerializationSurrogate_GetObjectData(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -47,24 +49,32 @@ impl crate::HoudiniEngineUnity::HEU_Vector2SerializationSurrogate {
                 "System.Runtime.Serialization.ISerializationSurrogate.GetObjectData",
                 (obj, info, context),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Runtime_Serialization_ISerializationSurrogate_SetObjectData(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
-        selector: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        selector: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ISurrogateSelector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke(
                 "System.Runtime.Serialization.ISerializationSurrogate.SetObjectData",
                 (obj, info, context, selector),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -74,7 +84,7 @@ impl crate::HoudiniEngineUnity::HEU_Vector2SerializationSurrogate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Vector2SerializationSurrogate")]

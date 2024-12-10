@@ -32,14 +32,14 @@ for crate::UnityEngine::XR::MeshGenerationResult {
 impl crate::UnityEngine::XR::MeshGenerationResult {
     pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_MeshGenerationResult1(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -58,7 +58,7 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Attributes(
         &mut self,
@@ -68,27 +68,31 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
             "get_Attributes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Mesh(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Mesh> {
-        let __cordl_ret: *mut crate::UnityEngine::Mesh = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Mesh",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MeshCollider(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::MeshCollider> {
-        let __cordl_ret: *mut crate::UnityEngine::MeshCollider = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshCollider>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshCollider> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_MeshCollider",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MeshId(
         &mut self,
@@ -98,7 +102,7 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
             "get_MeshId",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Position(
         &mut self,
@@ -108,7 +112,7 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
             "get_Position",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Rotation(
         &mut self,
@@ -118,7 +122,7 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
             "get_Rotation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Scale(
         &mut self,
@@ -128,7 +132,7 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
             "get_Scale",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Status(
         &mut self,
@@ -138,6 +142,6 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
             "get_Status",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

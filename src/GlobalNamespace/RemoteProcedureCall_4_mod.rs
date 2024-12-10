@@ -54,7 +54,7 @@ impl<
 > crate::GlobalNamespace::RemoteProcedureCall_4<T0, T1, T2, T3> {
     pub fn DeserializeData(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         protocolVersion: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -72,7 +72,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DeserializeData", (reader, protocolVersion))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
@@ -81,7 +81,9 @@ impl<
         value1: T1,
         value2: T2,
         value3: T3,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IRemoteProcedureCall>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRemoteProcedureCall>,
+    >
     where
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -95,11 +97,12 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::IRemoteProcedureCall = __cordl_object
-            .invoke("Init", (syncTime, value0, value1, value2, value3))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IRemoteProcedureCall,
+        > = __cordl_object.invoke("Init", (syncTime, value0, value1, value2, value3))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -114,7 +117,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Release(
         &mut self,
@@ -134,11 +137,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeData(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         protocolVersion: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -156,7 +159,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SerializeData", (writer, protocolVersion))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -174,7 +177,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value0(&mut self) -> quest_hook::libil2cpp::Result<T0>
     where
@@ -191,7 +194,7 @@ impl<
             self,
         );
         let __cordl_ret: T0 = __cordl_object.invoke("get_value0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value1(&mut self) -> quest_hook::libil2cpp::Result<T1>
     where
@@ -208,7 +211,7 @@ impl<
             self,
         );
         let __cordl_ret: T1 = __cordl_object.invoke("get_value1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value2(&mut self) -> quest_hook::libil2cpp::Result<T2>
     where
@@ -225,7 +228,7 @@ impl<
             self,
         );
         let __cordl_ret: T2 = __cordl_object.invoke("get_value2", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value3(&mut self) -> quest_hook::libil2cpp::Result<T3>
     where
@@ -242,7 +245,7 @@ impl<
             self,
         );
         let __cordl_ret: T3 = __cordl_object.invoke("get_value3", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "RemoteProcedureCall_4")]

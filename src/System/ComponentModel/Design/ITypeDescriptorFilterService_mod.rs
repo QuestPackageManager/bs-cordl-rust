@@ -29,39 +29,39 @@ for crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
 impl crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
     pub fn FilterAttributes(
         &mut self,
-        component: *mut crate::System::ComponentModel::IComponent,
-        attributes: *mut crate::System::Collections::IDictionary,
+        component: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>,
+        attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("FilterAttributes", (component, attributes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FilterEvents(
         &mut self,
-        component: *mut crate::System::ComponentModel::IComponent,
-        events: *mut crate::System::Collections::IDictionary,
+        component: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>,
+        events: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("FilterEvents", (component, events))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FilterProperties(
         &mut self,
-        component: *mut crate::System::ComponentModel::IComponent,
-        properties: *mut crate::System::Collections::IDictionary,
+        component: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>,
+        properties: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("FilterProperties", (component, properties))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

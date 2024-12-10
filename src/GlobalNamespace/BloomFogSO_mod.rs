@@ -31,12 +31,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BloomFogSO {
 #[cfg(feature = "BloomFogSO")]
 impl crate::GlobalNamespace::BloomFogSO {
     pub const kBloomFogEnabledKeyword: &'static str = "ENABLE_BLOOM_FOG";
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::BloomFogSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetParams(
         &mut self,
@@ -72,18 +72,20 @@ impl crate::GlobalNamespace::BloomFogSO {
                     noteSpawnIntensity,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Setup(
         &mut self,
-        defaultFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+        defaultFogParams: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomFogEnvironmentParams,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Setup", (defaultFogParams))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateShaderParams(
         &mut self,
@@ -93,7 +95,7 @@ impl crate::GlobalNamespace::BloomFogSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateShaderParams", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -103,33 +105,34 @@ impl crate::GlobalNamespace::BloomFogSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_autoExposureLimit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_autoExposureLimit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bloomFogEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_bloomFogEnabled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_defaultForParams(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogEnvironmentParams>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BloomFogEnvironmentParams = __cordl_object
-            .invoke("get_defaultForParams", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomFogEnvironmentParams,
+        > = __cordl_object.invoke("get_defaultForParams", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_legacyAutoExposureEnabled(
         &mut self,
@@ -139,33 +142,34 @@ impl crate::GlobalNamespace::BloomFogSO {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_legacyAutoExposureEnabled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_noteSpawnIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_noteSpawnIntensity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transition(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_transition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transitionFogParams(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogEnvironmentParams>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BloomFogEnvironmentParams = __cordl_object
-            .invoke("get_transitionFogParams", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomFogEnvironmentParams,
+        > = __cordl_object.invoke("get_transitionFogParams", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_bloomFogEnabled(
         &mut self,
@@ -176,18 +180,20 @@ impl crate::GlobalNamespace::BloomFogSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_bloomFogEnabled", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_defaultForParams(
         &mut self,
-        value: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+        value: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomFogEnvironmentParams,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_defaultForParams", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_legacyAutoExposureEnabled(
         &mut self,
@@ -198,7 +204,7 @@ impl crate::GlobalNamespace::BloomFogSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_legacyAutoExposureEnabled", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_transition(
         &mut self,
@@ -209,18 +215,20 @@ impl crate::GlobalNamespace::BloomFogSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_transition", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_transitionFogParams(
         &mut self,
-        value: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+        value: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomFogEnvironmentParams,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_transitionFogParams", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BloomFogSO")]

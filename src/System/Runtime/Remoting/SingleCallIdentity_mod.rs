@@ -26,54 +26,68 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::SingleCallIdentity
 impl crate::System::Runtime::Remoting::SingleCallIdentity {
     pub fn AsyncObjectProcessMessage(
         &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
-        replySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        >,
+        replySink: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl = __cordl_object
-            .invoke("AsyncObjectProcessMessage", (msg, replySink))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+        > = __cordl_object.invoke("AsyncObjectProcessMessage", (msg, replySink))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        objectUri: *mut quest_hook::libil2cpp::Il2CppString,
-        context: *mut crate::System::Runtime::Remoting::Contexts::Context,
-        objectType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        objectUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        context: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        >,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (objectUri, context, objectType))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SyncObjectProcessMessage(
         &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessage = __cordl_object
-            .invoke("SyncObjectProcessMessage", (msg))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        > = __cordl_object.invoke("SyncObjectProcessMessage", (msg))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        objectUri: *mut quest_hook::libil2cpp::Il2CppString,
-        context: *mut crate::System::Runtime::Remoting::Contexts::Context,
-        objectType: *mut crate::System::Type,
+        objectUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        context: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        >,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (objectUri, context, objectType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+SingleCallIdentity")]

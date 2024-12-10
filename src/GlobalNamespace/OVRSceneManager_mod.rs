@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DestroyExistingAnchors(
         &mut self,
@@ -83,12 +83,14 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DestroyExistingAnchors", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoesRoomSetupExist(
         &mut self,
-        requestedAnchorClassifications: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        requestedAnchorClassifications: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -96,36 +98,44 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = __cordl_object
             .invoke("DoesRoomSetupExist", (requestedAnchorClassifications))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRoomLayoutInformation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation = __cordl_object
-            .invoke("GetRoomLayoutInformation", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation,
+        > = __cordl_object.invoke("GetRoomLayoutInformation", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn InstantiateSceneAnchor(
         &mut self,
         anchor: crate::GlobalNamespace::OVRAnchor,
-        prefab: *mut crate::GlobalNamespace::OVRSceneAnchor,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::OVRSceneAnchor> {
+        prefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::OVRSceneAnchor = __cordl_object
-            .invoke("InstantiateSceneAnchor", (anchor, prefab))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRSceneAnchor,
+        > = __cordl_object.invoke("InstantiateSceneAnchor", (anchor, prefab))?;
+        Ok(__cordl_ret.into())
     }
     pub fn InstantiateSceneRooms(
         &mut self,
-        roomLayoutAnchors: *mut crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::OVRAnchor,
+        roomLayoutAnchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -133,21 +143,21 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InstantiateSceneRooms", (roomLayoutAnchors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadSceneModel(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("LoadSceneModel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OVRManager_SceneCaptureComplete(
         &mut self,
@@ -159,13 +169,15 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OVRManager_SceneCaptureComplete", (requestId, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnAnchorsFetchCompleted(
         &mut self,
         success: bool,
-        roomLayoutAnchors: *mut crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::OVRAnchor,
+        roomLayoutAnchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -173,7 +185,7 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnAnchorsFetchCompleted", (success, roomLayoutAnchors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnApplicationPause(
         &mut self,
@@ -184,7 +196,7 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnApplicationPause", (isPaused))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -194,7 +206,7 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -204,7 +216,7 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnSceneRoomLoadCompleted(
         &mut self,
@@ -214,7 +226,7 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnSceneRoomLoadCompleted", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn QueryForExistingAnchorsTransform(
         &mut self,
@@ -224,19 +236,21 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("QueryForExistingAnchorsTransform", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RequestSceneCapture_0(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("RequestSceneCapture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RequestSceneCapture_IEnumerable_1_1(
         &mut self,
-        requestedAnchorClassifications: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        requestedAnchorClassifications: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -244,18 +258,18 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("RequestSceneCapture", (requestedAnchorClassifications))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RequestSceneCapture_Il2CppString2(
         &mut self,
-        requestString: *mut quest_hook::libil2cpp::Il2CppString,
+        requestString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("RequestSceneCapture", (requestString))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -265,7 +279,7 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateSomeSceneAnchors(
         &mut self,
@@ -275,7 +289,7 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateSomeSceneAnchors", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -285,17 +299,19 @@ impl crate::GlobalNamespace::OVRSceneManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_InitialAnchorParent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Transform = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = __cordl_object
             .invoke("get_InitialAnchorParent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Verbose(
         &mut self,
@@ -308,18 +324,18 @@ impl crate::GlobalNamespace::OVRSceneManager {
         let __cordl_ret: crate::System::Nullable_1<
             crate::GlobalNamespace::OVRSceneManager_LogForwarder,
         > = __cordl_object.invoke("get_Verbose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_InitialAnchorParent(
         &mut self,
-        value: *mut crate::UnityEngine::Transform,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_InitialAnchorParent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRSceneManager")]
@@ -445,42 +461,42 @@ for crate::GlobalNamespace::OVRSceneManager_LogForwarder {
 impl crate::GlobalNamespace::OVRSceneManager_LogForwarder {
     pub fn Log(
         &mut self,
-        context: *mut quest_hook::libil2cpp::Il2CppString,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
-        gameObject: *mut crate::UnityEngine::GameObject,
+        context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Log",
             (context, message, gameObject),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LogError(
         &mut self,
-        context: *mut quest_hook::libil2cpp::Il2CppString,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
-        gameObject: *mut crate::UnityEngine::GameObject,
+        context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "LogError",
             (context, message, gameObject),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LogWarning(
         &mut self,
-        context: *mut quest_hook::libil2cpp::Il2CppString,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
-        gameObject: *mut crate::UnityEngine::GameObject,
+        context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "LogWarning",
             (context, message, gameObject),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]
@@ -516,12 +532,12 @@ for crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation {
 }
 #[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]
 impl crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -531,7 +547,7 @@ impl crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]

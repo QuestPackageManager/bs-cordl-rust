@@ -28,18 +28,30 @@ impl crate::HMUI::PanelAnimation {
     pub fn AnimationCoroutine(
         &mut self,
         duration: f32,
-        canvasGroup: *mut crate::UnityEngine::CanvasGroup,
-        parentCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-        scaleXAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-        scaleYAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-        alphaAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-        parentAlphaAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-        finishedCallback: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        canvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        parentCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        scaleXAnimationCurve: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AnimationCurve,
+        >,
+        scaleYAnimationCurve: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AnimationCurve,
+        >,
+        alphaAnimationCurve: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AnimationCurve,
+        >,
+        parentAlphaAnimationCurve: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AnimationCurve,
+        >,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object
             .invoke(
                 "AnimationCoroutine",
                 (
@@ -53,25 +65,33 @@ impl crate::HMUI::PanelAnimation {
                     finishedCallback,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn StartAnimation(
         &mut self,
-        canvasGroup: *mut crate::UnityEngine::CanvasGroup,
-        parentCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
+        canvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        parentCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
         duration: f32,
-        scaleXAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-        scaleYAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-        alphaAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-        parentAlphaAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-        finishedCallback: *mut crate::System::Action,
+        scaleXAnimationCurve: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AnimationCurve,
+        >,
+        scaleYAnimationCurve: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AnimationCurve,
+        >,
+        alphaAnimationCurve: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AnimationCurve,
+        >,
+        parentAlphaAnimationCurve: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AnimationCurve,
+        >,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,7 +110,7 @@ impl crate::HMUI::PanelAnimation {
                     finishedCallback,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -100,7 +120,7 @@ impl crate::HMUI::PanelAnimation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+PanelAnimation")]

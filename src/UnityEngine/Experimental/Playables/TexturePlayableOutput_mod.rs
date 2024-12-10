@@ -33,6 +33,6 @@ impl crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

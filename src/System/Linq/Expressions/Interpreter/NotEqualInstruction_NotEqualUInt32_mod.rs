@@ -35,22 +35,24 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NotEqualInstruction_NotEqual
     feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt32"
 )]
 impl crate::GlobalNamespace::NotEqualInstruction_NotEqualUInt32 {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Run(
         &mut self,
-        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+        frame: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -60,7 +62,7 @@ impl crate::GlobalNamespace::NotEqualInstruction_NotEqualUInt32 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

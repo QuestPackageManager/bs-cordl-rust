@@ -34,14 +34,16 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepCon
 impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
     pub fn AddNode(
         &mut self,
-        node: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+        node: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddNode", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
@@ -51,7 +53,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateAdvancingFront(
         &mut self,
@@ -61,7 +63,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateAdvancingFront", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FinalizeTriangulation(
         &mut self,
@@ -71,107 +73,131 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FinalizeTriangulation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LocateNode(
         &mut self,
-        point: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        point: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode = __cordl_object
-            .invoke("LocateNode", (point))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+        > = __cordl_object.invoke("LocateNode", (point))?;
+        Ok(__cordl_ret.into())
     }
     pub fn MapTriangleToNodes(
         &mut self,
-        t: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        t: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MapTriangleToNodes", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MeshClean(
         &mut self,
-        triangle: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        triangle: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MeshClean", (triangle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MeshCleanReq(
         &mut self,
-        triangle: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        triangle: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MeshCleanReq", (triangle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn NewConstraint(
         &mut self,
-        a: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        b: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        a: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        b: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationConstraint,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationConstraint,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationConstraint = __cordl_object
-            .invoke("NewConstraint", (a, b))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationConstraint,
+        > = __cordl_object.invoke("NewConstraint", (a, b))?;
+        Ok(__cordl_ret.into())
     }
     pub fn PrepareTriangulation(
         &mut self,
-        t: *mut crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+        t: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PrepareTriangulation", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveFromList(
         &mut self,
-        triangle: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        triangle: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveFromList", (triangle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveNode(
         &mut self,
-        node: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+        node: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveNode", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -181,7 +207,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Algorithm(
         &mut self,
@@ -193,49 +219,57 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         );
         let __cordl_ret: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm = __cordl_object
             .invoke("get_Algorithm", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Head(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint = __cordl_object
-            .invoke("get_Head", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        > = __cordl_object.invoke("get_Head", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsDebugEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsDebugEnabled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Tail(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint = __cordl_object
-            .invoke("get_Tail", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        > = __cordl_object.invoke("get_Tail", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_Head(
         &mut self,
-        value: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Head", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_IsDebugEnabled(
         &mut self,
@@ -246,18 +280,20 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IsDebugEnabled", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Tail(
         &mut self,
-        value: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Tail", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepContext")]

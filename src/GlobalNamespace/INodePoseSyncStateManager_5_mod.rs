@@ -95,13 +95,15 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearBufferedStates", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSyncState(
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        >,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -118,18 +120,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
         > = __cordl_object.invoke("GetSyncState", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSyncStateForPlayer(
         &mut self,
-        player: *mut crate::GlobalNamespace::IConnectedPlayer,
+        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        >,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -146,12 +148,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
         > = __cordl_object.invoke("GetSyncStateForPlayer", (player))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -175,15 +175,17 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_connectedPlayerCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_localState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LocalMultiplayerSyncState_3<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
     >
     where
@@ -201,12 +203,14 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LocalMultiplayerSyncState_3<
+                TStateTable,
+                TType,
+                TState,
+            >,
         > = __cordl_object.invoke("get_localState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_syncTime(&mut self) -> quest_hook::libil2cpp::Result<i64>
     where
@@ -225,7 +229,7 @@ impl<
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_syncTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "INodePoseSyncStateManager_5")]

@@ -52,26 +52,30 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
     pub type LoadType = crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType;
     pub fn AddBeginWebRequestHandler(
         &mut self,
-        webRequestQueueOperation: *mut crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+        webRequestQueueOperation: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddBeginWebRequestHandler", (webRequestQueueOperation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddCallbackInvokeIfDone(
         &mut self,
-        operation: *mut crate::UnityEngine::AsyncOperation,
-        callback: *mut crate::System::Action_1<*mut crate::UnityEngine::AsyncOperation>,
+        operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::AsyncOperation>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddCallbackInvokeIfDone", (operation, callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BeginOperation(
         &mut self,
@@ -81,88 +85,100 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BeginOperation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BeginWebRequestOperation(
         &mut self,
-        asyncOp: *mut crate::UnityEngine::AsyncOperation,
+        asyncOp: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BeginWebRequestOperation", (asyncOp))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompleteBundleLoad(
         &mut self,
-        bundle: *mut crate::UnityEngine::AssetBundle,
+        bundle: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CompleteBundleLoad", (bundle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateWebRequest_IResourceLocation0(
         &mut self,
-        loc: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        loc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::Networking::UnityWebRequest,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Networking::UnityWebRequest = __cordl_object
-            .invoke("CreateWebRequest", (loc))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequest,
+        > = __cordl_object.invoke("CreateWebRequest", (loc))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateWebRequest_Il2CppString1(
         &mut self,
-        url: *mut quest_hook::libil2cpp::Il2CppString,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::Networking::UnityWebRequest,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Networking::UnityWebRequest = __cordl_object
-            .invoke("CreateWebRequest", (url))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequest,
+        > = __cordl_object.invoke("CreateWebRequest", (url))?;
+        Ok(__cordl_ret.into())
     }
     pub fn EnqueueWebRequest(
         &mut self,
-        internalId: *mut quest_hook::libil2cpp::Il2CppString,
+        internalId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::WebRequestQueueOperation = __cordl_object
-            .invoke("EnqueueWebRequest", (internalId))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+        > = __cordl_object.invoke("EnqueueWebRequest", (internalId))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundle(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundle> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::AssetBundle = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle> = __cordl_object
             .invoke("GetAssetBundle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAssetPreloadRequest(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AssetBundleRequest> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::AssetBundleRequest = __cordl_object
-            .invoke("GetAssetPreloadRequest", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AssetBundleRequest,
+        > = __cordl_object.invoke("GetAssetPreloadRequest", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetDownloadStatus(
         &mut self,
@@ -174,7 +190,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus = __cordl_object
             .invoke("GetDownloadStatus", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadLocalBundle(
         &mut self,
@@ -184,55 +200,57 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LoadLocalBundle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LocalRequestOperationCompleted(
         &mut self,
-        op: *mut crate::UnityEngine::AsyncOperation,
+        op: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LocalRequestOperationCompleted", (op))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnUnloadOperationComplete(
         &mut self,
-        op: *mut crate::UnityEngine::AsyncOperation,
+        op: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnUnloadOperationComplete", (op))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PercentComplete(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("PercentComplete", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
         provideHandle: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
-        unloadOp: *mut crate::UnityEngine::AssetBundleUnloadOperation,
+        unloadOp: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AssetBundleUnloadOperation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", (provideHandle, unloadOp))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Unload(
         &mut self,
@@ -244,7 +262,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Unload", (unloadOp))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -255,47 +273,49 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (unscaledDeltaTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WaitForCompletionHandler(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("WaitForCompletionHandler", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WebRequestOperationCompleted(
         &mut self,
-        op: *mut crate::UnityEngine::AsyncOperation,
+        op: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WebRequestOperationCompleted", (op))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _AddBeginWebRequestHandler_b__39_0(
         &mut self,
-        asyncOp: *mut crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+        asyncOp: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<AddBeginWebRequestHandler>b__39_0", (asyncOp))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _GetAssetPreloadRequest_b__26_0(
         &mut self,
-        operation: *mut crate::UnityEngine::AsyncOperation,
+        operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<GetAssetPreloadRequest>b__26_0", (operation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -305,21 +325,21 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_BytesToDownload(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_BytesToDownload", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasTimedOut(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasTimedOut", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]

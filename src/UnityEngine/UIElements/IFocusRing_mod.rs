@@ -26,29 +26,39 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IFocusRing {
 impl crate::UnityEngine::UIElements::IFocusRing {
     pub fn GetFocusChangeDirection(
         &mut self,
-        currentFocusable: *mut crate::UnityEngine::UIElements::Focusable,
-        e: *mut crate::UnityEngine::UIElements::EventBase,
+        currentFocusable: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        >,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::FocusChangeDirection,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::FocusChangeDirection = __cordl_object
-            .invoke("GetFocusChangeDirection", (currentFocusable, e))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusChangeDirection,
+        > = __cordl_object.invoke("GetFocusChangeDirection", (currentFocusable, e))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetNextFocusable(
         &mut self,
-        currentFocusable: *mut crate::UnityEngine::UIElements::Focusable,
-        direction: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Focusable> {
+        currentFocusable: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        >,
+        direction: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusChangeDirection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Focusable = __cordl_object
-            .invoke("GetNextFocusable", (currentFocusable, direction))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        > = __cordl_object.invoke("GetNextFocusable", (currentFocusable, direction))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

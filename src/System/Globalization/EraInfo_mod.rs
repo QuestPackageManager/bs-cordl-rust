@@ -40,10 +40,10 @@ impl crate::System::Globalization::EraInfo {
         yearOffset: i32,
         minEraYear: i32,
         maxEraYear: i32,
-        eraName: *mut quest_hook::libil2cpp::Il2CppString,
-        abbrevEraName: *mut quest_hook::libil2cpp::Il2CppString,
-        englishEraName: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        eraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        abbrevEraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        englishEraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -62,7 +62,7 @@ impl crate::System::Globalization::EraInfo {
                     englishEraName,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i32_i32_i32_i32_i32_i32_i32_0(
         era: i32,
@@ -72,7 +72,7 @@ impl crate::System::Globalization::EraInfo {
         yearOffset: i32,
         minEraYear: i32,
         maxEraYear: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -88,7 +88,7 @@ impl crate::System::Globalization::EraInfo {
                     maxEraYear,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_Il2CppString_Il2CppString_Il2CppString1(
         &mut self,
@@ -99,9 +99,9 @@ impl crate::System::Globalization::EraInfo {
         yearOffset: i32,
         minEraYear: i32,
         maxEraYear: i32,
-        eraName: *mut quest_hook::libil2cpp::Il2CppString,
-        abbrevEraName: *mut quest_hook::libil2cpp::Il2CppString,
-        englishEraName: *mut quest_hook::libil2cpp::Il2CppString,
+        eraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        abbrevEraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        englishEraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -122,7 +122,7 @@ impl crate::System::Globalization::EraInfo {
                     englishEraName,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_i32_i32_i32_i32_0(
         &mut self,
@@ -150,7 +150,7 @@ impl crate::System::Globalization::EraInfo {
                     maxEraYear,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Globalization+EraInfo")]

@@ -44,32 +44,32 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
     pub const kMinLifeTime: f32 = 0.2f32;
     pub fn DespawnNoteDebris(
         &mut self,
-        noteDebris: *mut crate::GlobalNamespace::NoteDebris,
+        noteDebris: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DespawnNoteDebris", (noteDebris))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoteDebrisDidFinish(
         &mut self,
-        noteDebris: *mut crate::GlobalNamespace::NoteDebris,
+        noteDebris: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleNoteDebrisDidFinish", (noteDebris))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SpawnDebris(
         &mut self,
@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
                     moveVec,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SpawnNoteDebris(
         &mut self,
@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SpawnNoteDebris", (noteGameplayType, debris0, debris1))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -130,7 +130,7 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -140,7 +140,7 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NoteDebrisSpawner")]

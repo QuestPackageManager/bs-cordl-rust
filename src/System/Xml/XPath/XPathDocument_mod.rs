@@ -47,12 +47,14 @@ impl crate::System::Xml::XPath::XPathDocument {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetXmlNamespaceNode", (pageXmlNmsp))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LookupNamespaces(
         &mut self,
-        pageElem: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::MS::Internal::Xml::Cache::XPathNode,
+        pageElem: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::MS::Internal::Xml::Cache::XPathNode,
+            >,
         >,
         idxElem: i32,
         pageNmsp: quest_hook::libil2cpp::ByRefMut<
@@ -66,24 +68,26 @@ impl crate::System::Xml::XPath::XPathDocument {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("LookupNamespaces", (pageElem, idxElem, pageNmsp))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasLineInfo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasLineInfo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_NameTable(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNameTable> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::XmlNameTable = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable> = __cordl_object
             .invoke("get_NameTable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+XPath+XPathDocument")]

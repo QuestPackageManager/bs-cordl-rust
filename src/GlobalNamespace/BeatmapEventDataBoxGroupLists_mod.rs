@@ -34,25 +34,33 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
     pub fn Insert(
         &mut self,
         groupId: i32,
-        beatmapEventDataBoxGroup: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        beatmapEventDataBoxGroup: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+            >,
         > = __cordl_object.invoke("Insert", (groupId, beatmapEventDataBoxGroup))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        beatmapData: *mut crate::GlobalNamespace::BeatmapData,
-        beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+        beatToTimeConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatToTimeConverter,
+        >,
         updateBeatmapDataOnInsert: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -60,13 +68,15 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
                 ".ctor",
                 (beatmapData, beatToTimeConverter, updateBeatmapDataOnInsert),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Remove(
         &mut self,
         groupId: i32,
-        nodeToDelete: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        nodeToDelete: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -74,7 +84,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (groupId, nodeToDelete))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SyncWithBeatmapData(
         &mut self,
@@ -84,7 +94,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SyncWithBeatmapData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToggleUpdateBeatmapDataOnInsert(
         &mut self,
@@ -95,12 +105,14 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ToggleUpdateBeatmapDataOnInsert", (enableUpdateOnInsert))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        beatmapData: *mut crate::GlobalNamespace::BeatmapData,
-        beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+        beatToTimeConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatToTimeConverter,
+        >,
         updateBeatmapDataOnInsert: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -111,7 +123,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
                 ".ctor",
                 (beatmapData, beatToTimeConverter, updateBeatmapDataOnInsert),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupLists")]

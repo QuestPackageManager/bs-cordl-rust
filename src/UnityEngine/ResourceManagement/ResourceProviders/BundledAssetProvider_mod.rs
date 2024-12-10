@@ -31,12 +31,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
     )]
     pub type InternalOp = crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvider_InternalOp;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Provide(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Provide", (provideHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider")]
@@ -118,14 +118,14 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvi
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvider_InternalOp {
     pub fn ActionComplete(
         &mut self,
-        obj: *mut crate::UnityEngine::AsyncOperation,
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ActionComplete", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BeginAssetLoad(
         &mut self,
@@ -135,7 +135,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BeginAssetLoad", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompleteOperation(
         &mut self,
@@ -145,12 +145,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CompleteOperation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetArrayResult(
         &mut self,
-        allAssets: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Object,
+        allAssets: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -158,23 +158,23 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetArrayResult", (allAssets))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAssetResult(
         &mut self,
-        asset: *mut crate::UnityEngine::Object,
+        asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetAssetResult", (asset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAssetSubObjectResult(
         &mut self,
-        allAssets: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Object,
+        allAssets: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -182,12 +182,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetAssetSubObjectResult", (allAssets))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetListResult(
         &mut self,
-        allAssets: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Object,
+        allAssets: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -195,21 +195,21 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetListResult", (allAssets))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProgressCallback(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("ProgressCallback", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -220,25 +220,25 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", (provideHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WaitForCompletionHandler(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("WaitForCompletionHandler", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Start_b__7_0(
         &mut self,
-        operation: *mut crate::UnityEngine::AsyncOperation,
+        operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Start>b__7_0", (operation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -248,7 +248,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

@@ -34,10 +34,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::IJEnumerable
     }
     pub fn get_Item(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppObject,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-            *mut crate::Newtonsoft::Json::Linq::JToken,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                *mut crate::Newtonsoft::Json::Linq::JToken,
+            >,
         >,
     >
     where
@@ -47,10 +49,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::IJEnumerable
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-            *mut crate::Newtonsoft::Json::Linq::JToken,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                *mut crate::Newtonsoft::Json::Linq::JToken,
+            >,
         > = __cordl_object.invoke("get_Item", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+IJEnumerable_1")]

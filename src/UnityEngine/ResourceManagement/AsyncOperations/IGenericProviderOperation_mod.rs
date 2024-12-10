@@ -39,8 +39,10 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOpe
 impl crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation {
     pub fn GetDependencies(
         &mut self,
-        dstList: *mut crate::System::Collections::Generic::IList_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        dstList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -48,7 +50,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOp
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetDependencies", (dstList))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDependency<TDepObject>(
         &mut self,
@@ -62,13 +64,19 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOp
             self,
         );
         let __cordl_ret: TDepObject = __cordl_object.invoke("GetDependency", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init_ResourceManager_IResourceProvider_IResourceLocation_AsyncOperationHandle_1_0(
         &mut self,
-        rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-        provider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
-        location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        rm: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
+        provider: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
+        >,
+        location: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
         depOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             *mut crate::System::Collections::Generic::IList_1<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
@@ -80,13 +88,19 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOp
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (rm, provider, location, depOp))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init__cordl_bool1(
         &mut self,
-        rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-        provider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
-        location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        rm: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
+        provider: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
+        >,
+        location: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
         depOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             *mut crate::System::Collections::Generic::IList_1<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
@@ -102,13 +116,13 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOp
                 "Init",
                 (rm, provider, location, depOp, releaseDependenciesOnFailure),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProviderCompleted<T>(
         &mut self,
         result: T,
         status: bool,
-        e: *mut crate::System::Exception,
+        e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -119,12 +133,14 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOp
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProviderCompleted", (result, status, e))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDownloadProgressCallback(
         &mut self,
-        callback: *mut crate::System::Func_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -132,29 +148,29 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOp
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDownloadProgressCallback", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetProgressCallback(
         &mut self,
-        callback: *mut crate::System::Func_1<f32>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetProgressCallback", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetWaitForCompletionCallback(
         &mut self,
-        callback: *mut crate::System::Func_1<bool>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetWaitForCompletionCallback", (callback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -166,36 +182,39 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOp
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_DependencyCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Location(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation = __cordl_object
-            .invoke("get_Location", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        > = __cordl_object.invoke("get_Location", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_ProvideHandleVersion(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ProvideHandleVersion", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RequestedType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("get_RequestedType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

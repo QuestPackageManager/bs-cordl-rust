@@ -37,40 +37,46 @@ impl crate::System::Net::Http::HttpClientHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IMonoHttpClientHandler1(
-        handler: *mut crate::System::Net::Http::IMonoHttpClientHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        handler: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::IMonoHttpClientHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (handler))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SendAsync(
         &mut self,
-        request: *mut crate::System::Net::Http::HttpRequestMessage,
+        request: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpRequestMessage>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::Http::HttpResponseMessage,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Net::Http::HttpResponseMessage,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::Http::HttpResponseMessage,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Net::Http::HttpResponseMessage,
+            >,
         > = __cordl_object.invoke("SendAsync", (request, cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetWebRequestTimeout(
         &mut self,
@@ -81,7 +87,7 @@ impl crate::System::Net::Http::HttpClientHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetWebRequestTimeout", (timeout))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ThrowForModifiedManagedSslOptionsIfStarted(
         &mut self,
@@ -91,7 +97,7 @@ impl crate::System::Net::Http::HttpClientHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ThrowForModifiedManagedSslOptionsIfStarted", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -101,35 +107,45 @@ impl crate::System::Net::Http::HttpClientHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IMonoHttpClientHandler1(
         &mut self,
-        handler: *mut crate::System::Net::Http::IMonoHttpClientHandler,
+        handler: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::IMonoHttpClientHandler,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (handler))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _set_ClientCertificateOptions_b__23_0(
         &mut self,
-        sender: *mut quest_hook::libil2cpp::Il2CppObject,
-        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
-        localCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
-        remoteCertificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        acceptableIssuers: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        targetHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        localCertificates: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        >,
+        remoteCertificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
+        acceptableIssuers: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        > = __cordl_object
             .invoke(
                 "<set_ClientCertificateOptions>b__23_0",
                 (
@@ -140,7 +156,7 @@ impl crate::System::Net::Http::HttpClientHandler {
                     acceptableIssuers,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ClientCertificateOptions(
         &mut self,
@@ -152,19 +168,22 @@ impl crate::System::Net::Http::HttpClientHandler {
         );
         let __cordl_ret: crate::System::Net::Http::ClientCertificateOption = __cordl_object
             .invoke("get_ClientCertificateOptions", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ClientCertificates(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection = __cordl_object
-            .invoke("get_ClientCertificates", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        > = __cordl_object.invoke("get_ClientCertificates", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_ClientCertificateOptions(
         &mut self,
@@ -175,7 +194,7 @@ impl crate::System::Net::Http::HttpClientHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ClientCertificateOptions", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+Http+HttpClientHandler")]

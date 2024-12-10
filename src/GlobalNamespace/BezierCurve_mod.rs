@@ -35,6 +35,6 @@ impl crate::GlobalNamespace::BezierCurve {
             ".ctor",
             (p0, p1, p2, p3),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

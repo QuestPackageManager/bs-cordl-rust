@@ -33,7 +33,7 @@ impl crate::GlobalNamespace::ILightWithId {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ColorWasSet", (color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn __SetIsRegistered(
         &mut self,
@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::ILightWithId {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("__SetIsRegistered", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn __SetIsUnRegistered(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::GlobalNamespace::ILightWithId {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("__SetIsUnRegistered", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -65,14 +65,14 @@ impl crate::GlobalNamespace::ILightWithId {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isRegistered", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lightId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_lightId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ILightWithId")]

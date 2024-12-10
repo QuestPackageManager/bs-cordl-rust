@@ -30,6 +30,6 @@ impl crate::UnityEngine::UIElements::StyleSheets::MatchResult {
             "get_success",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

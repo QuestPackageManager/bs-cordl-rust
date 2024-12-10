@@ -49,7 +49,7 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finish", (finishAction))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleBeatAvatarEditorRandomizeAllButtonWasPressed(
         &mut self,
@@ -59,14 +59,14 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleBeatAvatarEditorRandomizeAllButtonWasPressed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OneTimeInitialize(
         &mut self,
@@ -76,18 +76,20 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OneTimeInitialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetAvatarSystem(
         &mut self,
-        avatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        avatarSystem: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetAvatarSystem", (avatarSystem))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Setup(
         &mut self,
@@ -98,7 +100,7 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Setup", (editMode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -108,14 +110,16 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_3<
-            *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<
+                *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+                *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -123,12 +127,14 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didSetupEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -136,25 +142,27 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didSetupEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_randomizeAllButtonWasPressedEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_randomizeAllButtonWasPressedEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_3<
-            *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<
+                *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+                *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -162,12 +170,14 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didSetupEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -175,18 +185,18 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didSetupEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_randomizeAllButtonWasPressedEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_randomizeAllButtonWasPressedEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator")]

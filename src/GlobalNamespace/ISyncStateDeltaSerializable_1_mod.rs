@@ -46,7 +46,7 @@ impl<
         );
         let __cordl_ret: crate::GlobalNamespace::SyncStateId = __cordl_object
             .invoke("get_baseId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_delta(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -57,7 +57,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_delta", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_timeOffsetMs(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -68,7 +68,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_timeOffsetMs", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_baseId(
         &mut self,
@@ -83,7 +83,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_baseId", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_delta(
         &mut self,
@@ -98,7 +98,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_delta", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_timeOffsetMs(
         &mut self,
@@ -113,7 +113,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_timeOffsetMs", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ISyncStateDeltaSerializable_1")]

@@ -32,12 +32,14 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceResponse {
     pub fn _ctor(
         &mut self,
         errorCode: crate::GlobalNamespace::MultiplayerPlacementErrorCode,
-        playerSessionInfo: *mut crate::BGNet::Core::GameLift::PlayerSessionInfo,
+        playerSessionInfo: quest_hook::libil2cpp::Gc<
+            crate::BGNet::Core::GameLift::PlayerSessionInfo,
+        >,
         pollIntervalMs: i32,
-        ticketId: *mut quest_hook::libil2cpp::Il2CppString,
-        ticketStatus: *mut quest_hook::libil2cpp::Il2CppString,
-        placementId: *mut quest_hook::libil2cpp::Il2CppString,
-        placementStatus: *mut quest_hook::libil2cpp::Il2CppString,
+        ticketId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ticketStatus: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        placementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        placementStatus: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -52,6 +54,6 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceResponse {
                 placementStatus,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

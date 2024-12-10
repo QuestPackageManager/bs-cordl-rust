@@ -25,9 +25,9 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::SFB::ExtensionFilter 
 impl crate::SFB::ExtensionFilter {
     pub fn _ctor(
         &mut self,
-        filterName: *mut quest_hook::libil2cpp::Il2CppString,
-        filterExtensions: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        filterName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        filterExtensions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -35,6 +35,6 @@ impl crate::SFB::ExtensionFilter {
             ".ctor",
             (filterName, filterExtensions),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

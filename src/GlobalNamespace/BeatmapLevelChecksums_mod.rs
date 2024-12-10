@@ -38,8 +38,12 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
     pub type __c__DisplayClass8_0 = crate::GlobalNamespace::BeatmapLevelChecksums___c__DisplayClass8_0;
     pub fn GetOrAddDifficultyBeatmapChecksums(
         &mut self,
-        beatmapDifficulty: *mut quest_hook::libil2cpp::Il2CppString,
-        beatmapCharacteristic: *mut quest_hook::libil2cpp::Il2CppString,
+        beatmapDifficulty: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums,
     > {
@@ -48,14 +52,22 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
             "GetOrAddDifficultyBeatmapChecksums",
             (beatmapDifficulty, beatmapCharacteristic),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDifficultyBeatmapChecksums(
         &mut self,
-        beatmapDifficulty: *mut quest_hook::libil2cpp::Il2CppString,
-        beatmapCharacteristic: *mut quest_hook::libil2cpp::Il2CppString,
-        beatmapAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
-        lightshowAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
+        beatmapDifficulty: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        beatmapAssetChecksum: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        lightshowAssetChecksum: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -67,7 +79,7 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
                 lightshowAssetChecksum,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -78,7 +90,7 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
             ".ctor",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
@@ -118,14 +130,22 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
             ".ctor",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_Il2CppString0(
         &mut self,
-        beatmapDifficulty: *mut quest_hook::libil2cpp::Il2CppString,
-        beatmapCharacteristic: *mut quest_hook::libil2cpp::Il2CppString,
-        beatmapAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
-        lightshowAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
+        beatmapDifficulty: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        beatmapAssetChecksum: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        lightshowAssetChecksum: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -137,6 +157,6 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
                 lightshowAssetChecksum,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

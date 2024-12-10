@@ -34,16 +34,18 @@ impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexTree {
 #[cfg(feature = "System+Text+RegularExpressions+RegexTree")]
 impl crate::System::Text::RegularExpressions::RegexTree {
     pub fn New(
-        root: *mut crate::System::Text::RegularExpressions::RegexNode,
-        caps: *mut crate::System::Collections::Hashtable,
-        capNumList: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        root: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexNode,
+        >,
+        caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+        capNumList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         capTop: i32,
-        capNames: *mut crate::System::Collections::Hashtable,
-        capsList: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        capNames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+        capsList: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         options: crate::System::Text::RegularExpressions::RegexOptions,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -51,17 +53,19 @@ impl crate::System::Text::RegularExpressions::RegexTree {
                 ".ctor",
                 (root, caps, capNumList, capTop, capNames, capsList, options),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        root: *mut crate::System::Text::RegularExpressions::RegexNode,
-        caps: *mut crate::System::Collections::Hashtable,
-        capNumList: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        root: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexNode,
+        >,
+        caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+        capNumList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         capTop: i32,
-        capNames: *mut crate::System::Collections::Hashtable,
-        capsList: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        capNames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+        capsList: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         options: crate::System::Text::RegularExpressions::RegexOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -73,7 +77,7 @@ impl crate::System::Text::RegularExpressions::RegexTree {
                 ".ctor",
                 (root, caps, capNumList, capTop, capNames, capsList, options),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexTree")]

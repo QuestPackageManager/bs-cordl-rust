@@ -43,7 +43,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Collections+Generic+IReadOnlyList_1")]

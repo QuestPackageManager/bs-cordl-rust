@@ -43,7 +43,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("CalculateCompletedOperationHashcode", (handle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CalculateHashCode(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("CalculateHashCode", (handle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -63,27 +63,32 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateCompletedOperationDisplayName(
         &mut self,
         handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GenerateCompletedOperationDisplayName", (handle))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GenerateCompletedOperationDisplayName", (handle))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        resourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        resourceManager: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (resourceManager))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnResourceManagerDiagnosticEvent(
         &mut self,
@@ -94,7 +99,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnResourceManagerDiagnosticEvent", (eventContext))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SumDependencyNameHashCodes(
         &mut self,
@@ -105,18 +110,20 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("SumDependencyNameHashCodes", (handle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        resourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+        resourceManager: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (resourceManager))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics")]

@@ -39,39 +39,52 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerat
 impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
     pub fn Generate(
         &mut self,
-        request: *mut crate::Org::BouncyCastle::Tsp::TimeStampRequest,
-        serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        request: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampRequest,
+        >,
+        serialNumber: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        >,
         genTime: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Tsp::TimeStampToken,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampToken>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Tsp::TimeStampToken = __cordl_object
-            .invoke("Generate", (request, serialNumber, genTime))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampToken,
+        > = __cordl_object.invoke("Generate", (request, serialNumber, genTime))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_AsymmetricKeyParameter_X509Certificate_Il2CppString_Il2CppString0(
-        key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        digestOID: *mut quest_hook::libil2cpp::Il2CppString,
-        tsaPolicyOID: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        tsaPolicyOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (key, cert, digestOID, tsaPolicyOID))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_AttributeTable_AttributeTable1(
-        key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        digestOID: *mut quest_hook::libil2cpp::Il2CppString,
-        tsaPolicyOID: *mut quest_hook::libil2cpp::Il2CppString,
-        signedAttr: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-        unsignedAttr: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        tsaPolicyOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        signedAttr: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+        >,
+        unsignedAttr: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -79,7 +92,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
                 ".ctor",
                 (key, cert, digestOID, tsaPolicyOID, signedAttr, unsignedAttr),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetAccuracyMicros(
         &mut self,
@@ -90,7 +103,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetAccuracyMicros", (accuracyMicros))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetAccuracyMillis(
         &mut self,
@@ -101,7 +114,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetAccuracyMillis", (accuracyMillis))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetAccuracySeconds(
         &mut self,
@@ -112,29 +125,33 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetAccuracySeconds", (accuracySeconds))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetCertificates(
         &mut self,
-        certificates: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
+        certificates: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCertificates", (certificates))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetCrls(
         &mut self,
-        crls: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
+        crls: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCrls", (crls))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetOrdering(
         &mut self,
@@ -145,41 +162,49 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetOrdering", (ordering))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTsa(
         &mut self,
-        tsa: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        tsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::GeneralName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTsa", (tsa))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_AsymmetricKeyParameter_X509Certificate_Il2CppString_Il2CppString0(
         &mut self,
-        key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        digestOID: *mut quest_hook::libil2cpp::Il2CppString,
-        tsaPolicyOID: *mut quest_hook::libil2cpp::Il2CppString,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        tsaPolicyOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (key, cert, digestOID, tsaPolicyOID))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_AttributeTable_AttributeTable1(
         &mut self,
-        key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        digestOID: *mut quest_hook::libil2cpp::Il2CppString,
-        tsaPolicyOID: *mut quest_hook::libil2cpp::Il2CppString,
-        signedAttr: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-        unsignedAttr: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        tsaPolicyOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        signedAttr: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+        >,
+        unsignedAttr: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -189,7 +214,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
                 ".ctor",
                 (key, cert, digestOID, tsaPolicyOID, signedAttr, unsignedAttr),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampTokenGenerator")]

@@ -61,20 +61,23 @@ impl crate::System::Net::WebOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Abort", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckDisposed(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo = __cordl_object
-            .invoke("CheckDisposed", (cancellationToken))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        > = __cordl_object.invoke("CheckDisposed", (cancellationToken))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CheckThrowDisposed(
         &mut self,
@@ -83,14 +86,17 @@ impl crate::System::Net::WebOperation {
             *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo = __cordl_object
-            .invoke("CheckThrowDisposed", (throwIt, field))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        > = __cordl_object.invoke("CheckThrowDisposed", (throwIt, field))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Close(
         &mut self,
@@ -100,81 +106,91 @@ impl crate::System::Net::WebOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Close", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompleteRequestWritten(
         &mut self,
-        stream: *mut crate::System::Net::WebRequestStream,
-        error: *mut crate::System::Exception,
+        stream: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+        error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CompleteRequestWritten", (stream, error))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finish(
         &mut self,
         ok: bool,
-        error: *mut crate::System::Exception,
+        error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finish", (ok, error))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRequestStream(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::IO::Stream,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
         > = __cordl_object.invoke("GetRequestStream", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRequestStreamInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::WebRequestStream,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Net::WebRequestStream,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::WebRequestStream,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Net::WebRequestStream,
+            >,
         > = __cordl_object.invoke("GetRequestStreamInternal", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetResponseStream(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::WebResponseStream,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Net::WebResponseStream,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::WebResponseStream,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Net::WebResponseStream,
+            >,
         > = __cordl_object.invoke("GetResponseStream", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        request: *mut crate::System::Net::HttpWebRequest,
-        writeBuffer: *mut crate::System::Net::BufferOffsetSize,
+        request: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest>,
+        writeBuffer: quest_hook::libil2cpp::Gc<crate::System::Net::BufferOffsetSize>,
         isNtlmChallenge: bool,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -182,26 +198,26 @@ impl crate::System::Net::WebOperation {
                 ".ctor",
                 (request, writeBuffer, isNtlmChallenge, cancellationToken),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RegisterRequest(
         &mut self,
-        servicePoint: *mut crate::System::Net::ServicePoint,
-        connection: *mut crate::System::Net::WebConnection,
+        servicePoint: quest_hook::libil2cpp::Gc<crate::System::Net::ServicePoint>,
+        connection: quest_hook::libil2cpp::Gc<crate::System::Net::WebConnection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterRequest", (servicePoint, connection))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Run(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Run", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetCanceled(
         &mut self,
@@ -211,7 +227,7 @@ impl crate::System::Net::WebOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCanceled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDisposed(
         &mut self,
@@ -231,29 +247,29 @@ impl crate::System::Net::WebOperation {
             *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
             bool,
         > = __cordl_object.invoke("SetDisposed", (field))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetError(
         &mut self,
-        error: *mut crate::System::Exception,
+        error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetError", (error))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPriorityRequest(
         &mut self,
-        operation: *mut crate::System::Net::WebOperation,
+        operation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPriorityRequest", (operation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ThrowIfClosedOrDisposed_0(
         &mut self,
@@ -263,7 +279,7 @@ impl crate::System::Net::WebOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ThrowIfClosedOrDisposed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ThrowIfClosedOrDisposed_CancellationToken1(
         &mut self,
@@ -274,7 +290,7 @@ impl crate::System::Net::WebOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ThrowIfClosedOrDisposed", (cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ThrowIfDisposed_0(
         &mut self,
@@ -284,7 +300,7 @@ impl crate::System::Net::WebOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ThrowIfDisposed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ThrowIfDisposed_CancellationToken1(
         &mut self,
@@ -295,7 +311,7 @@ impl crate::System::Net::WebOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ThrowIfDisposed", (cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _RegisterRequest_b__48_0(
         &mut self,
@@ -305,12 +321,12 @@ impl crate::System::Net::WebOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<RegisterRequest>b__48_0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        request: *mut crate::System::Net::HttpWebRequest,
-        writeBuffer: *mut crate::System::Net::BufferOffsetSize,
+        request: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest>,
+        writeBuffer: quest_hook::libil2cpp::Gc<crate::System::Net::BufferOffsetSize>,
         isNtlmChallenge: bool,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -322,115 +338,131 @@ impl crate::System::Net::WebOperation {
                 ".ctor",
                 (request, writeBuffer, isNtlmChallenge, cancellationToken),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Aborted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_Aborted", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Closed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_Closed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Connection(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebConnection> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::WebConnection>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::WebConnection = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebConnection> = __cordl_object
             .invoke("get_Connection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Finished(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::WebCompletionSource_1<
-            crate::System::ValueTuple_2<bool, *mut crate::System::Net::WebOperation>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::WebCompletionSource_1<
+                crate::System::ValueTuple_2<bool, *mut crate::System::Net::WebOperation>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::WebCompletionSource_1<
-            crate::System::ValueTuple_2<bool, *mut crate::System::Net::WebOperation>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::WebCompletionSource_1<
+                crate::System::ValueTuple_2<bool, *mut crate::System::Net::WebOperation>,
+            >,
         > = __cordl_object.invoke("get_Finished", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsNtlmChallenge(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsNtlmChallenge", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Request(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpWebRequest> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::HttpWebRequest = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest> = __cordl_object
             .invoke("get_Request", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ServicePoint(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::ServicePoint> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::ServicePoint>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::ServicePoint = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::ServicePoint> = __cordl_object
             .invoke("get_ServicePoint", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_WriteBuffer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::BufferOffsetSize> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::BufferOffsetSize>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::BufferOffsetSize = __cordl_object
-            .invoke("get_WriteBuffer", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::BufferOffsetSize,
+        > = __cordl_object.invoke("get_WriteBuffer", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_WriteStream(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebRequestStream> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::WebRequestStream = __cordl_object
-            .invoke("get_WriteStream", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::WebRequestStream,
+        > = __cordl_object.invoke("get_WriteStream", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_Connection(
         &mut self,
-        value: *mut crate::System::Net::WebConnection,
+        value: quest_hook::libil2cpp::Gc<crate::System::Net::WebConnection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Connection", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ServicePoint(
         &mut self,
-        value: *mut crate::System::Net::ServicePoint,
+        value: quest_hook::libil2cpp::Gc<crate::System::Net::ServicePoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ServicePoint", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+WebOperation")]

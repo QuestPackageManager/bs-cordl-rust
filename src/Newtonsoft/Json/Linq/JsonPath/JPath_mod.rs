@@ -31,13 +31,16 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonPath::JPath {
 impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
     pub fn CreateUnexpectedCharacterException(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::JsonException> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonException>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::JsonException = __cordl_object
-            .invoke("CreateUnexpectedCharacterException", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonException,
+        > = __cordl_object.invoke("CreateUnexpectedCharacterException", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn EatWhitespace(
         &mut self,
@@ -47,94 +50,105 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EatWhitespace", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnsureLength(
         &mut self,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnsureLength", (message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Evaluate(
         &mut self,
-        root: *mut crate::Newtonsoft::Json::Linq::JToken,
-        t: *mut crate::Newtonsoft::Json::Linq::JToken,
-        settings: *mut crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+        root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Newtonsoft::Json::Linq::JToken,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::Newtonsoft::Json::Linq::JToken,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Newtonsoft::Json::Linq::JToken,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::Newtonsoft::Json::Linq::JToken,
+            >,
         > = __cordl_object.invoke("Evaluate", (root, t, settings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Match(
         &mut self,
-        s: *mut quest_hook::libil2cpp::Il2CppString,
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Match", (s))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        expression: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (expression))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ParseArrayIndexer(
         &mut self,
         indexerCloseChar: char,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JsonPath::PathFilter>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter = __cordl_object
-            .invoke("ParseArrayIndexer", (indexerCloseChar))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        > = __cordl_object.invoke("ParseArrayIndexer", (indexerCloseChar))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ParseExpression(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression = __cordl_object
-            .invoke("ParseExpression", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+        > = __cordl_object.invoke("ParseExpression", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ParseIndexer(
         &mut self,
         indexerOpenChar: char,
         scan: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JsonPath::PathFilter>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter = __cordl_object
-            .invoke("ParseIndexer", (indexerOpenChar, scan))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        > = __cordl_object.invoke("ParseIndexer", (indexerOpenChar, scan))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ParseMain(
         &mut self,
@@ -144,7 +158,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ParseMain", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseOperator(
         &mut self,
@@ -156,12 +170,14 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
         );
         let __cordl_ret: crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator = __cordl_object
             .invoke("ParseOperator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParsePath(
         &mut self,
-        filters: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        filters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+            >,
         >,
         currentPartStartIndex: i32,
         query: bool,
@@ -171,65 +187,76 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ParsePath", (filters, currentPartStartIndex, query))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseQuery(
         &mut self,
         indexerCloseChar: char,
         scan: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JsonPath::PathFilter>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter = __cordl_object
-            .invoke("ParseQuery", (indexerCloseChar, scan))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        > = __cordl_object.invoke("ParseQuery", (indexerCloseChar, scan))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ParseQuotedField(
         &mut self,
         indexerCloseChar: char,
         scan: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JsonPath::PathFilter>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter = __cordl_object
-            .invoke("ParseQuotedField", (indexerCloseChar, scan))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        > = __cordl_object.invoke("ParseQuotedField", (indexerCloseChar, scan))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ParseSide(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("ParseSide", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ParseSide", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadQuotedString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ReadQuotedString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ReadQuotedString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadRegexString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ReadRegexString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ReadRegexString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn TryParseExpression(
         &mut self,
@@ -244,7 +271,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryParseExpression", (expressionPath))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryParseValue(
         &mut self,
@@ -254,33 +281,37 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryParseValue", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        expression: *mut quest_hook::libil2cpp::Il2CppString,
+        expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (expression))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Filters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+            >,
         > = __cordl_object.invoke("get_Filters", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+JPath")]

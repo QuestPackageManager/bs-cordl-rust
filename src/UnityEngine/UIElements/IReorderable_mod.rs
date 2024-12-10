@@ -34,7 +34,7 @@ impl crate::UnityEngine::UIElements::IReorderable {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_enableReordering", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_enableReordering(
         &mut self,
@@ -45,7 +45,7 @@ impl crate::UnityEngine::UIElements::IReorderable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_enableReordering", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IReorderable")]

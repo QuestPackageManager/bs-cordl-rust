@@ -33,12 +33,12 @@ impl crate::GlobalNamespace::EnvironmentSizeData {
     pub type FloorType = crate::GlobalNamespace::EnvironmentSizeData_FloorType;
     #[cfg(feature = "EnvironmentSizeData+TrackLaneType")]
     pub type TrackLaneType = crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::EnvironmentSizeData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ceilingType(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::EnvironmentSizeData {
         );
         let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_CeilingType = __cordl_object
             .invoke("get_ceilingType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_floorType(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::EnvironmentSizeData {
         );
         let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_FloorType = __cordl_object
             .invoke("get_floorType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_trackLaneType(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::GlobalNamespace::EnvironmentSizeData {
         );
         let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType = __cordl_object
             .invoke("get_trackLaneType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "EnvironmentSizeData")]

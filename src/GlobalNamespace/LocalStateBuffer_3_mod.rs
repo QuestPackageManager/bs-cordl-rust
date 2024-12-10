@@ -86,7 +86,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetState(
         &mut self,
@@ -104,7 +104,7 @@ impl<
             self,
         );
         let __cordl_ret: TState = __cordl_object.invoke("GetState", (_cordl_type))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkDirty(
         &mut self,
@@ -122,23 +122,27 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkDirty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         fullStateUpdateFrequency: i64,
         deltaUpdateFrequency: i64,
         _cordl_size: i32,
-        interpolator: *mut crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-            TStateTable,
-            TType,
-            TState,
+        interpolator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
-        smoother: *mut crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-            TStateTable,
-            TType,
-            TState,
+        smoother: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -160,7 +164,7 @@ impl<
                     smoother,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetState(
         &mut self,
@@ -180,7 +184,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetState", (_cordl_type, state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTime(
         &mut self,
@@ -199,7 +203,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTime", (_cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetSerializedState(
         &mut self,
@@ -220,7 +224,7 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetSerializedState", (state, _cordl_time, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetSerializedStateDelta(
         &mut self,
@@ -241,22 +245,26 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetSerializedStateDelta", (delta, timeOffset, baseId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         fullStateUpdateFrequency: i64,
         deltaUpdateFrequency: i64,
         _cordl_size: i32,
-        interpolator: *mut crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-            TStateTable,
-            TType,
-            TState,
+        interpolator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
-        smoother: *mut crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-            TStateTable,
-            TType,
-            TState,
+        smoother: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -281,7 +289,7 @@ impl<
                     smoother,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LocalStateBuffer_3")]

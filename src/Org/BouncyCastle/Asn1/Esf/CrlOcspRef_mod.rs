@@ -28,94 +28,112 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef {
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+CrlOcspRef")]
 impl crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef {
     pub fn New_Asn1Sequence0(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_CrlListID_OcspListID_OtherRevRefs1(
-        crlids: *mut crate::Org::BouncyCastle::Asn1::Esf::CrlListID,
-        ocspids: *mut crate::Org::BouncyCastle::Asn1::Esf::OcspListID,
-        otherRev: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevRefs,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        crlids: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::CrlListID,
+        >,
+        ocspids: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::OcspListID,
+        >,
+        otherRev: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::OtherRevRefs,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (crlids, ocspids, otherRev))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = __cordl_object.invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Asn1Sequence0(
         &mut self,
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_CrlListID_OcspListID_OtherRevRefs1(
         &mut self,
-        crlids: *mut crate::Org::BouncyCastle::Asn1::Esf::CrlListID,
-        ocspids: *mut crate::Org::BouncyCastle::Asn1::Esf::OcspListID,
-        otherRev: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevRefs,
+        crlids: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::CrlListID,
+        >,
+        ocspids: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::OcspListID,
+        >,
+        otherRev: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::OtherRevRefs,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (crlids, ocspids, otherRev))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CrlIDs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Esf::CrlListID,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Esf::CrlListID>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Esf::CrlListID = __cordl_object
-            .invoke("get_CrlIDs", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::CrlListID,
+        > = __cordl_object.invoke("get_CrlIDs", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_OcspIDs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Esf::OcspListID,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Esf::OcspListID>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Esf::OcspListID = __cordl_object
-            .invoke("get_OcspIDs", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::OcspListID,
+        > = __cordl_object.invoke("get_OcspIDs", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_OtherRev(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevRefs,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Esf::OtherRevRefs>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevRefs = __cordl_object
-            .invoke("get_OtherRev", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::OtherRevRefs,
+        > = __cordl_object.invoke("get_OtherRev", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+CrlOcspRef")]

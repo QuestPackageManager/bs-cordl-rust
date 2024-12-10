@@ -32,7 +32,7 @@ impl crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -42,7 +42,7 @@ impl crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -53,6 +53,6 @@ impl crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
             ".ctor",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

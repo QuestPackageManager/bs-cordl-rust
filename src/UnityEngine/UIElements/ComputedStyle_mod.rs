@@ -57,7 +57,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "Acquire",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyAllPropertyInitial(
         &mut self,
@@ -67,18 +67,20 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyAllPropertyInitial",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyCustomStyleProperty(
         &mut self,
-        reader: *mut crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ApplyCustomStyleProperty",
             (reader),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyFromComputedStyle(
         &mut self,
@@ -92,7 +94,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyFromComputedStyle",
             (id, other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyGlobalKeyword_StylePropertyId_StyleKeyword_ByRefMut1(
         &mut self,
@@ -107,11 +109,13 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyGlobalKeyword",
             (id, keyword, parentStyle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyGlobalKeyword_StylePropertyReader_ByRefMut0(
         &mut self,
-        reader: *mut crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        >,
         parentStyle: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
@@ -121,7 +125,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyGlobalKeyword",
             (reader, parentStyle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyInitialValue_StylePropertyId1(
         &mut self,
@@ -132,22 +136,26 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyInitialValue",
             (id),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyInitialValue_StylePropertyReader0(
         &mut self,
-        reader: *mut crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ApplyInitialValue",
             (reader),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyProperties(
         &mut self,
-        reader: *mut crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        >,
         parentStyle: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
@@ -157,11 +165,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyProperties",
             (reader, parentStyle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_Background7(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::UIElements::Background,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -170,11 +178,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_BackgroundPosition3(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::UIElements::BackgroundPosition,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -183,11 +191,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_BackgroundRepeat4(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::UIElements::BackgroundRepeat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -196,11 +204,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_BackgroundSize5(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::UIElements::BackgroundSize,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -209,11 +217,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_Color6(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -222,24 +230,24 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_Font8(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        newValue: *mut crate::UnityEngine::Font,
+        newValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_FontDefinition9(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::UIElements::FontDefinition,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -248,11 +256,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_Length0(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::UIElements::Length,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -261,11 +269,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_Rotate13(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::UIElements::Rotate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -274,11 +282,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_Scale14(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::UIElements::Scale,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -287,11 +295,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_TextShadow10(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::UIElements::TextShadow,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -300,11 +308,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_TransformOrigin12(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::UIElements::TransformOrigin,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -313,11 +321,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_Translate11(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: crate::UnityEngine::UIElements::Translate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -326,11 +334,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_f32_1(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -339,11 +347,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyPropertyAnimation_i32_2(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         newValue: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -352,7 +360,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyPropertyAnimation",
             (ve, id, newValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyStyleBackgroundSize(
         &mut self,
@@ -363,7 +371,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyStyleBackgroundSize",
             (backgroundSizeValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyStyleCursor(
         &mut self,
@@ -374,7 +382,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyStyleCursor",
             (cursor),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyStyleRotate(
         &mut self,
@@ -385,7 +393,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyStyleRotate",
             (rotateValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyStyleScale(
         &mut self,
@@ -396,7 +404,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyStyleScale",
             (scaleValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyStyleTextShadow(
         &mut self,
@@ -407,7 +415,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyStyleTextShadow",
             (st),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyStyleTransformOrigin(
         &mut self,
@@ -418,7 +426,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyStyleTransformOrigin",
             (st),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyStyleTranslate(
         &mut self,
@@ -429,7 +437,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyStyleTranslate",
             (translateValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyStyleValue(
         &mut self,
@@ -443,7 +451,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyStyleValue",
             (sv, parentStyle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyStyleValueManaged(
         &mut self,
@@ -457,7 +465,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyStyleValueManaged",
             (sv, parentStyle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyUnsetValue_StylePropertyId1(
         &mut self,
@@ -471,11 +479,13 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyUnsetValue",
             (id, parentStyle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyUnsetValue_StylePropertyReader0(
         &mut self,
-        reader: *mut crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        >,
         parentStyle: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
@@ -485,7 +495,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ApplyUnsetValue",
             (reader, parentStyle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyFrom(
         &mut self,
@@ -498,7 +508,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "CopyFrom",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FinalizeApply(
         &mut self,
@@ -511,7 +521,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "FinalizeApply",
             (parentStyle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Release(
         &mut self,
@@ -521,18 +531,20 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "Release",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveCustomStyleProperty(
         &mut self,
-        reader: *mut crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "RemoveCustomStyleProperty",
             (reader),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResetComputedTransitions(
         &mut self,
@@ -542,18 +554,18 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ResetComputedTransitions",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SyncWithLayout(
         &mut self,
-        targetNode: *mut crate::UnityEngine::Yoga::YogaNode,
+        targetNode: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SyncWithLayout",
             (targetNode),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_alignContent(
         &mut self,
@@ -563,7 +575,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_alignContent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_alignItems(
         &mut self,
@@ -573,7 +585,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_alignItems",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_alignSelf(
         &mut self,
@@ -583,7 +595,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_alignSelf",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_backgroundColor(
         &mut self,
@@ -593,7 +605,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_backgroundColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_backgroundImage(
         &mut self,
@@ -603,7 +615,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_backgroundImage",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_backgroundPositionX(
         &mut self,
@@ -615,7 +627,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_backgroundPositionX",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_backgroundPositionY(
         &mut self,
@@ -627,7 +639,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_backgroundPositionY",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_backgroundRepeat(
         &mut self,
@@ -639,7 +651,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_backgroundRepeat",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_backgroundSize(
         &mut self,
@@ -649,7 +661,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_backgroundSize",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderBottomColor(
         &mut self,
@@ -659,7 +671,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderBottomColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderBottomLeftRadius(
         &mut self,
@@ -669,7 +681,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderBottomLeftRadius",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderBottomRightRadius(
         &mut self,
@@ -679,7 +691,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderBottomRightRadius",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderBottomWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -687,7 +699,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderBottomWidth",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderLeftColor(
         &mut self,
@@ -697,7 +709,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderLeftColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderLeftWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -705,7 +717,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderLeftWidth",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderRightColor(
         &mut self,
@@ -715,7 +727,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderRightColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderRightWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -723,7 +735,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderRightWidth",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderTopColor(
         &mut self,
@@ -733,7 +745,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderTopColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderTopLeftRadius(
         &mut self,
@@ -743,7 +755,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderTopLeftRadius",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderTopRightRadius(
         &mut self,
@@ -753,7 +765,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderTopRightRadius",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_borderTopWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -761,7 +773,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_borderTopWidth",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bottom(
         &mut self,
@@ -771,7 +783,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_bottom",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_color(
         &mut self,
@@ -781,7 +793,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_color",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_cursor(
         &mut self,
@@ -791,7 +803,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_cursor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_customPropertiesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -799,7 +811,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_customPropertiesCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_display(
         &mut self,
@@ -809,7 +821,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_display",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_flexBasis(
         &mut self,
@@ -819,7 +831,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_flexBasis",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_flexDirection(
         &mut self,
@@ -829,7 +841,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_flexDirection",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_flexGrow(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -837,7 +849,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_flexGrow",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_flexShrink(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -845,7 +857,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_flexShrink",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_flexWrap(
         &mut self,
@@ -855,7 +867,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_flexWrap",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fontSize(
         &mut self,
@@ -865,7 +877,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_fontSize",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasTransition(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -873,7 +885,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_hasTransition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_height(
         &mut self,
@@ -883,7 +895,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_height",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_justifyContent(
         &mut self,
@@ -893,7 +905,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_justifyContent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_left(
         &mut self,
@@ -903,7 +915,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_left",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_letterSpacing(
         &mut self,
@@ -913,7 +925,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_letterSpacing",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_marginBottom(
         &mut self,
@@ -923,7 +935,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_marginBottom",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_marginLeft(
         &mut self,
@@ -933,7 +945,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_marginLeft",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_marginRight(
         &mut self,
@@ -943,7 +955,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_marginRight",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_marginTop(
         &mut self,
@@ -953,7 +965,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_marginTop",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxHeight(
         &mut self,
@@ -963,7 +975,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_maxHeight",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxWidth(
         &mut self,
@@ -973,7 +985,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_maxWidth",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_minHeight(
         &mut self,
@@ -983,7 +995,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_minHeight",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_minWidth(
         &mut self,
@@ -993,7 +1005,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_minWidth",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_opacity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1001,7 +1013,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_opacity",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_overflow(
         &mut self,
@@ -1013,7 +1025,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_overflow",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_paddingBottom(
         &mut self,
@@ -1023,7 +1035,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_paddingBottom",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_paddingLeft(
         &mut self,
@@ -1033,7 +1045,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_paddingLeft",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_paddingRight(
         &mut self,
@@ -1043,7 +1055,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_paddingRight",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_paddingTop(
         &mut self,
@@ -1053,7 +1065,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_paddingTop",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_position(
         &mut self,
@@ -1063,7 +1075,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_position",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_right(
         &mut self,
@@ -1073,7 +1085,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_right",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotate(
         &mut self,
@@ -1083,7 +1095,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_rotate",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_scale(
         &mut self,
@@ -1093,7 +1105,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_scale",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_textOverflow(
         &mut self,
@@ -1103,7 +1115,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_textOverflow",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_textShadow(
         &mut self,
@@ -1113,7 +1125,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_textShadow",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_top(
         &mut self,
@@ -1123,7 +1135,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_top",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transformOrigin(
         &mut self,
@@ -1133,71 +1145,87 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_transformOrigin",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transitionDelay(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TimeValue,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TimeValue,
+            >,
         >,
     > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TimeValue,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TimeValue,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_transitionDelay",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transitionDuration(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TimeValue,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TimeValue,
+            >,
         >,
     > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TimeValue,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TimeValue,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_transitionDuration",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transitionProperty(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StylePropertyName,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StylePropertyName,
+            >,
         >,
     > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StylePropertyName,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StylePropertyName,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_transitionProperty",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transitionTimingFunction(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::EasingFunction,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::EasingFunction,
+            >,
         >,
     > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::EasingFunction,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::EasingFunction,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_transitionTimingFunction",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_translate(
         &mut self,
@@ -1207,7 +1235,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_translate",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unityBackgroundImageTintColor(
         &mut self,
@@ -1217,17 +1245,19 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unityBackgroundImageTintColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unityFont(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Font> {
-        let __cordl_ret: *mut crate::UnityEngine::Font = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_unityFont",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unityFontDefinition(
         &mut self,
@@ -1237,7 +1267,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unityFontDefinition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unityFontStyleAndWeight(
         &mut self,
@@ -1247,7 +1277,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unityFontStyleAndWeight",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unityOverflowClipBox(
         &mut self,
@@ -1257,7 +1287,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unityOverflowClipBox",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unityParagraphSpacing(
         &mut self,
@@ -1267,7 +1297,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unityParagraphSpacing",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unitySliceBottom(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1275,7 +1305,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unitySliceBottom",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unitySliceLeft(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1283,7 +1313,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unitySliceLeft",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unitySliceRight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1291,7 +1321,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unitySliceRight",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unitySliceScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1299,7 +1329,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unitySliceScale",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unitySliceTop(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1307,7 +1337,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unitySliceTop",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unityTextAlign(
         &mut self,
@@ -1317,7 +1347,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unityTextAlign",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unityTextOutlineColor(
         &mut self,
@@ -1327,7 +1357,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unityTextOutlineColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unityTextOutlineWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1335,7 +1365,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unityTextOutlineWidth",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unityTextOverflowPosition(
         &mut self,
@@ -1347,7 +1377,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_unityTextOverflowPosition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_visibility(
         &mut self,
@@ -1357,7 +1387,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_visibility",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_whiteSpace(
         &mut self,
@@ -1367,7 +1397,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_whiteSpace",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_width(
         &mut self,
@@ -1377,7 +1407,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_width",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wordSpacing(
         &mut self,
@@ -1387,6 +1417,6 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "get_wordSpacing",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

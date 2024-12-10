@@ -30,7 +30,7 @@ for crate::GlobalNamespace::RemoteProcedureCall_1<T0> {
 impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCall_1<T0> {
     pub fn DeserializeData(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         protocolVersion: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -42,13 +42,15 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DeserializeData", (reader, protocolVersion))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
         syncTime: i64,
         value0: T0,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IRemoteProcedureCall>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRemoteProcedureCall>,
+    >
     where
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -56,11 +58,12 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::IRemoteProcedureCall = __cordl_object
-            .invoke("Init", (syncTime, value0))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IRemoteProcedureCall,
+        > = __cordl_object.invoke("Init", (syncTime, value0))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -69,7 +72,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Release(
         &mut self,
@@ -83,11 +86,11 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeData(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         protocolVersion: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -99,7 +102,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SerializeData", (writer, protocolVersion))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -111,7 +114,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value0(&mut self) -> quest_hook::libil2cpp::Result<T0>
     where
@@ -122,7 +125,7 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
             self,
         );
         let __cordl_ret: T0 = __cordl_object.invoke("get_value0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "RemoteProcedureCall_1")]

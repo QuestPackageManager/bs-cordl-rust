@@ -35,14 +35,14 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_ThreadManager {
 impl crate::HoudiniEngineUnity::HEU_ThreadManager {
     pub fn AddTask(
         &mut self,
-        task: *mut crate::HoudiniEngineUnity::HEU_ThreadedTask,
+        task: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ThreadedTask>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddTask", (task))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
@@ -52,14 +52,14 @@ impl crate::HoudiniEngineUnity::HEU_ThreadManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Register(
         &mut self,
@@ -69,18 +69,18 @@ impl crate::HoudiniEngineUnity::HEU_ThreadManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Register", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveTask(
         &mut self,
-        task: *mut crate::HoudiniEngineUnity::HEU_ThreadedTask,
+        task: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ThreadedTask>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveTask", (task))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Unregister(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Unregister", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -110,7 +110,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadManager")]

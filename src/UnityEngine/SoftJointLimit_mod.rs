@@ -29,7 +29,7 @@ impl crate::UnityEngine::SoftJointLimit {
             "get_bounciness",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bouncyness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -37,7 +37,7 @@ impl crate::UnityEngine::SoftJointLimit {
             "get_bouncyness",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_contactDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -45,7 +45,7 @@ impl crate::UnityEngine::SoftJointLimit {
             "get_contactDistance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_damper(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -53,7 +53,7 @@ impl crate::UnityEngine::SoftJointLimit {
             "get_damper",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_limit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -61,7 +61,7 @@ impl crate::UnityEngine::SoftJointLimit {
             "get_limit",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_spring(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -69,7 +69,7 @@ impl crate::UnityEngine::SoftJointLimit {
             "get_spring",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_bounciness(
         &mut self,
@@ -80,7 +80,7 @@ impl crate::UnityEngine::SoftJointLimit {
             "set_bounciness",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_bouncyness(
         &mut self,
@@ -91,7 +91,7 @@ impl crate::UnityEngine::SoftJointLimit {
             "set_bouncyness",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_contactDistance(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::UnityEngine::SoftJointLimit {
             "set_contactDistance",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_damper(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::UnityEngine::SoftJointLimit {
             "set_damper",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_limit(
         &mut self,
@@ -124,7 +124,7 @@ impl crate::UnityEngine::SoftJointLimit {
             "set_limit",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_spring(
         &mut self,
@@ -135,6 +135,6 @@ impl crate::UnityEngine::SoftJointLimit {
             "set_spring",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

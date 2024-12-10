@@ -34,34 +34,41 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
         newBeat: crate::System::Nullable_1<f32>,
         newGroupId: crate::System::Nullable_1<i32>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup = __cordl_object
-            .invoke("CopyWith", (newBeat, newGroupId))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+        > = __cordl_object.invoke("CopyWith", (newBeat, newGroupId))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         beat: f32,
         groupId: i32,
-        eventBoxes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightRotationEventBox,
+        eventBoxes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::LightRotationEventBox,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (beat, groupId, eventBoxes))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         beat: f32,
         groupId: i32,
-        eventBoxes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightRotationEventBox,
+        eventBoxes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::LightRotationEventBox,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -69,7 +76,7 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (beat, groupId, eventBoxes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]

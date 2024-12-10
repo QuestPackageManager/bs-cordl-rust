@@ -42,7 +42,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "Add",
             (item),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -54,7 +54,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "Clear",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CurrentItem(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -66,7 +66,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "CurrentItem",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Peek(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -78,7 +78,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "Peek",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -90,7 +90,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "Pop",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PreviousItem(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -102,7 +102,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "PreviousItem",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Push(
         &mut self,
@@ -117,7 +117,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "Push",
             (item),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Remove(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -129,7 +129,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "Remove",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDefault(
         &mut self,
@@ -144,11 +144,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "SetDefault",
             (item),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray0(
         &mut self,
-        stack: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        stack: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -159,7 +159,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             ".ctor",
             (stack),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_1(
         &mut self,
@@ -174,7 +174,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             ".ctor",
             (capacity),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_2(
         &mut self,
@@ -190,7 +190,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             ".ctor",
             (capacity, rolloverSize),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -202,7 +202,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "get_Count",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_current(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -214,7 +214,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "get_current",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rolloverSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -226,7 +226,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "get_rolloverSize",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rolloverSize(
         &mut self,
@@ -241,6 +241,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
             "set_rolloverSize",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

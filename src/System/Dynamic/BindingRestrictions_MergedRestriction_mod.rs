@@ -31,36 +31,37 @@ impl crate::GlobalNamespace::BindingRestrictions_MergedRestriction {
     pub fn GetExpression(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("GetExpression", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        > = __cordl_object.invoke("GetExpression", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        left: *mut crate::System::Dynamic::BindingRestrictions,
-        right: *mut crate::System::Dynamic::BindingRestrictions,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        left: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (left, right))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        left: *mut crate::System::Dynamic::BindingRestrictions,
-        right: *mut crate::System::Dynamic::BindingRestrictions,
+        left: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (left, right))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+MergedRestriction")]

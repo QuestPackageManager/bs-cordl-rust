@@ -27,46 +27,52 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonRegex {
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonRegex")]
 impl crate::Newtonsoft::Json::Bson::BsonRegex {
     pub fn New(
-        pattern: *mut quest_hook::libil2cpp::Il2CppString,
-        options: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        options: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pattern, options))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        pattern: *mut quest_hook::libil2cpp::Il2CppString,
-        options: *mut quest_hook::libil2cpp::Il2CppString,
+        pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        options: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (pattern, options))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Options(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::Bson::BsonString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Bson::BsonString = __cordl_object
-            .invoke("get_Options", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Bson::BsonString,
+        > = __cordl_object.invoke("get_Options", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Pattern(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::Bson::BsonString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Bson::BsonString = __cordl_object
-            .invoke("get_Pattern", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Bson::BsonString,
+        > = __cordl_object.invoke("get_Pattern", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
@@ -76,29 +82,29 @@ impl crate::Newtonsoft::Json::Bson::BsonRegex {
         );
         let __cordl_ret: crate::Newtonsoft::Json::Bson::BsonType = __cordl_object
             .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Options(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::Bson::BsonString,
+        value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Options", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Pattern(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::Bson::BsonString,
+        value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Pattern", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonRegex")]

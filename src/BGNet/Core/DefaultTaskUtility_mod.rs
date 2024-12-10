@@ -33,16 +33,20 @@ impl crate::BGNet::Core::DefaultTaskUtility {
         );
         let __cordl_ret: crate::System::Threading::CancellationToken = __cordl_object
             .invoke("CancellationTokenWithDelay", (timeSpan))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ContinueWith<T1, T2>(
         &mut self,
-        task: *mut crate::System::Threading::Tasks::Task_1<T1>,
-        continuation: *mut crate::System::Func_2<
-            *mut crate::System::Threading::Tasks::Task_1<T1>,
-            *mut crate::System::Threading::Tasks::Task_1<T2>,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T1>>,
+        continuation: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut crate::System::Threading::Tasks::Task_1<T1>,
+                *mut crate::System::Threading::Tasks::Task_1<T2>,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task_1<T2>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T2>>,
+    >
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -52,58 +56,72 @@ impl crate::BGNet::Core::DefaultTaskUtility {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<T2> = __cordl_object
-            .invoke("ContinueWith", (task, continuation))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T2>,
+        > = __cordl_object.invoke("ContinueWith", (task, continuation))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Delay(
         &mut self,
         timeSpan: crate::System::TimeSpan,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("Delay", (timeSpan, cancellationToken))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("Delay", (timeSpan, cancellationToken))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Run_Action0(
         &mut self,
-        action: *mut crate::System::Action,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("Run", (action, cancellationToken))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("Run", (action, cancellationToken))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Run_Func_1_1(
         &mut self,
-        func: *mut crate::System::Func_1<*mut crate::System::Threading::Tasks::Task>,
+        func: quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<*mut crate::System::Threading::Tasks::Task>,
+        >,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("Run", (func, cancellationToken))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("Run", (func, cancellationToken))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Run_Func_1_2<T>(
         &mut self,
-        func: *mut crate::System::Func_1<T>,
+        func: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task_1<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -111,24 +129,25 @@ impl crate::BGNet::Core::DefaultTaskUtility {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<T> = __cordl_object
-            .invoke("Run", (func, cancellationToken))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = __cordl_object.invoke("Run", (func, cancellationToken))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Wait_Task0(
         &mut self,
-        task: *mut crate::System::Threading::Tasks::Task,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Wait", (task))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Wait_Task_1_1<T>(
         &mut self,
-        task: *mut crate::System::Threading::Tasks::Task_1<T>,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -138,7 +157,7 @@ impl crate::BGNet::Core::DefaultTaskUtility {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Wait", (task))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -148,7 +167,7 @@ impl crate::BGNet::Core::DefaultTaskUtility {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BGNet+Core+DefaultTaskUtility")]

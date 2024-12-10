@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleDidHideAllBeatmapObjects(
         &mut self,
@@ -83,83 +83,105 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleDidHideAllBeatmapObjects", (hide))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoteWasDespawned(
         &mut self,
-        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleNoteWasDespawned", (noteController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoteWasSpawned(
         &mut self,
-        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleNoteWasSpawned", (noteController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleObstacleWasDespawned(
         &mut self,
-        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
+        obstacleController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleObstacleWasDespawned", (obstacleController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleObstacleWasSpawned(
         &mut self,
-        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
+        obstacleController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleObstacleWasSpawned", (obstacleController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSliderWasDespawned(
         &mut self,
-        sliderController: *mut crate::GlobalNamespace::SliderController,
+        sliderController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SliderController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSliderWasDespawned", (sliderController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSliderWasSpawned(
         &mut self,
-        sliderController: *mut crate::GlobalNamespace::SliderController,
+        sliderController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SliderController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSliderWasSpawned", (sliderController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-        mirroredBasicGameNotePool: *mut crate::GlobalNamespace::MirroredGameNoteController_Pool,
-        burstSliderHeadGameNotePool: *mut crate::GlobalNamespace::MirroredGameNoteController_Pool,
-        burstSliderGameNotePool: *mut crate::GlobalNamespace::MirroredGameNoteController_Pool,
-        mirroredBombNotePool: *mut crate::GlobalNamespace::MirroredBombNoteController_Pool,
-        mirroredObstaclePool: *mut crate::GlobalNamespace::MirroredObstacleController_Pool,
-        mirroredSlidersPool: *mut crate::GlobalNamespace::MirroredSliderController_Pool,
+        beatmapObjectManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapObjectManager,
+        >,
+        mirroredBasicGameNotePool: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MirroredGameNoteController_Pool,
+        >,
+        burstSliderHeadGameNotePool: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MirroredGameNoteController_Pool,
+        >,
+        burstSliderGameNotePool: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MirroredGameNoteController_Pool,
+        >,
+        mirroredBombNotePool: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MirroredBombNoteController_Pool,
+        >,
+        mirroredObstaclePool: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MirroredObstacleController_Pool,
+        >,
+        mirroredSlidersPool: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MirroredSliderController_Pool,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -177,14 +199,14 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
                     mirroredSlidersPool,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -194,7 +216,7 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MirroredBeatmapObjectManager")]

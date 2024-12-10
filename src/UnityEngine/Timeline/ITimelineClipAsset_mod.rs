@@ -37,7 +37,7 @@ impl crate::UnityEngine::Timeline::ITimelineClipAsset {
         );
         let __cordl_ret: crate::UnityEngine::Timeline::ClipCaps = __cordl_object
             .invoke("get_clipCaps", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ITimelineClipAsset")]

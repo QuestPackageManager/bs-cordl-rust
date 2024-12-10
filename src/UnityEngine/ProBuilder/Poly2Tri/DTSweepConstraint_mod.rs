@@ -26,26 +26,34 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepCon
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepConstraint")]
 impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint {
     pub fn New(
-        p1: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        p2: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        p1: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        p2: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (p1, p2))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        p1: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        p2: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p1: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        p2: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (p1, p2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepConstraint")]

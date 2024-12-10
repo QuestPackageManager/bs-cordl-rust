@@ -54,8 +54,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AchievementsEvaluationHandle
 impl crate::GlobalNamespace::AchievementsEvaluationHandler {
     pub fn HandleCampaignOverallStatsDataDidUpdate(
         &mut self,
-        missionCompletionResults: *mut crate::GlobalNamespace::MissionCompletionResults,
-        missionNode: *mut crate::GlobalNamespace::IMissionNode,
+        missionCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionCompletionResults,
+        >,
+        missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -65,11 +67,13 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
                 "HandleCampaignOverallStatsDataDidUpdate",
                 (missionCompletionResults, missionNode),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePartyFreePlayOverallStatsDataDidUpdate(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -80,11 +84,13 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
                 "HandlePartyFreePlayOverallStatsDataDidUpdate",
                 (levelCompletionResults, beatmapDifficulty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSoloFreePlayOverallStatsDataDidUpdate(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -95,14 +101,14 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
                 "HandleSoloFreePlayOverallStatsDataDidUpdate",
                 (levelCompletionResults, beatmapDifficulty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -112,12 +118,14 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessLevelFinishData(
         &mut self,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -127,12 +135,14 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
                 "ProcessLevelFinishData",
                 (beatmapDifficulty, levelCompletionResults),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessMissionFinishData(
         &mut self,
-        missionNode: *mut crate::GlobalNamespace::IMissionNode,
-        missionCompletionResults: *mut crate::GlobalNamespace::MissionCompletionResults,
+        missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+        missionCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -142,12 +152,14 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
                 "ProcessMissionFinishData",
                 (missionNode, missionCompletionResults),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessSoloFreePlayLevelFinishData(
         &mut self,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -157,7 +169,7 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
                 "ProcessSoloFreePlayLevelFinishData",
                 (beatmapDifficulty, levelCompletionResults),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -167,7 +179,7 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -177,7 +189,7 @@ impl crate::GlobalNamespace::AchievementsEvaluationHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "AchievementsEvaluationHandler")]

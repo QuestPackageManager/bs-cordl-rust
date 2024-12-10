@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleAdvancedHudToggleChanged(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleAdvancedHudToggleChanged", (on))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleArcVisibilityDropdownDidSelectCellWithIdx(
         &mut self,
@@ -94,11 +94,13 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                 "HandleArcVisibilityDropdownDidSelectCellWithIdx",
                 (idx, arcVisibilityType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleHeadsetHapticIntensityControllerValueDidChange(
         &mut self,
-        settingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+        settingsController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FormattedFloatListSettingsController,
+        >,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -109,7 +111,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                 "HandleHeadsetHapticIntensityControllerValueDidChange",
                 (settingsController, value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleLightReductionAmountSelected(
         &mut self,
@@ -124,7 +126,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                 "HandleLightReductionAmountSelected",
                 (obj, environmentEffectsFilterPreset),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoTextsAndHudsToggleChanged(
         &mut self,
@@ -135,7 +137,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleNoTextsAndHudsToggleChanged", (on))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoteJumpDurationTypeSettingsDropdownDidSelectCellWithIdx(
         &mut self,
@@ -150,11 +152,13 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                 "HandleNoteJumpDurationTypeSettingsDropdownDidSelectCellWithIdx",
                 (idx, noteJumpDurationTypeSettings),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoteJumpFixedDurationSettingsControllerValueDidChange(
         &mut self,
-        formattedFloatListSettingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+        formattedFloatListSettingsController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FormattedFloatListSettingsController,
+        >,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -165,7 +169,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                 "HandleNoteJumpFixedDurationSettingsControllerValueDidChange",
                 (formattedFloatListSettingsController, value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoteJumpStartBeatOffsetPositionSelected(
         &mut self,
@@ -180,7 +184,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                 "HandleNoteJumpStartBeatOffsetPositionSelected",
                 (idx, startBeatOffset),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerHeightSettingsControllerValueDidChange(
         &mut self,
@@ -191,11 +195,13 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePlayerHeightSettingsControllerValueDidChange", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSFXVolumeSettingsControllerValueDidChange(
         &mut self,
-        settingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+        settingsController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FormattedFloatListSettingsController,
+        >,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -206,11 +212,13 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                 "HandleSFXVolumeSettingsControllerValueDidChange",
                 (settingsController, value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSaberTrailIntensitySettingsControllerValueDidChange(
         &mut self,
-        settingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+        settingsController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FormattedFloatListSettingsController,
+        >,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -221,14 +229,14 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                 "HandleSaberTrailIntensitySettingsControllerValueDidChange",
                 (settingsController, value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -238,7 +246,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -248,7 +256,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -258,7 +266,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Refresh(
         &mut self,
@@ -268,7 +276,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Refresh", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshArcsWarning(
         &mut self,
@@ -280,7 +288,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshArcsWarning", (arcVisibilityType, forceRebuild))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshNoteJumpUI(
         &mut self,
@@ -291,18 +299,18 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshNoteJumpUI", (noteJumpDurationTypeSettings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetData(
         &mut self,
-        playerData: *mut crate::GlobalNamespace::PlayerData,
+        playerData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetData", (playerData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetIsDirty(
         &mut self,
@@ -312,7 +320,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetIsDirty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLayout(
         &mut self,
@@ -323,11 +331,11 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetLayout", (layout))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSectionDisabled(
         &mut self,
-        sectionCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
+        sectionCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
         disable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -335,7 +343,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSectionDisabled", (sectionCanvasGroup, disable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnsubscribeAllUICallbacks(
         &mut self,
@@ -345,7 +353,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnsubscribeAllUICallbacks", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _OnEnable_b__42_0(
         &mut self,
@@ -356,7 +364,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<OnEnable>b__42_0", (on))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _OnEnable_b__42_1(
         &mut self,
@@ -367,7 +375,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<OnEnable>b__42_1", (on))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _OnEnable_b__42_2(
         &mut self,
@@ -378,7 +386,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<OnEnable>b__42_2", (on))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _OnEnable_b__42_3(
         &mut self,
@@ -389,7 +397,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<OnEnable>b__42_3", (on))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _OnEnable_b__42_4(
         &mut self,
@@ -400,7 +408,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<OnEnable>b__42_4", (on))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _OnEnable_b__42_5(
         &mut self,
@@ -411,7 +419,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<OnEnable>b__42_5", (on))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _OnEnable_b__42_6(
         &mut self,
@@ -422,7 +430,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<OnEnable>b__42_6", (on))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _OnEnable_b__42_7(
         &mut self,
@@ -432,7 +440,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<OnEnable>b__42_7", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _OnEnable_b__42_8(
         &mut self,
@@ -442,7 +450,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<OnEnable>b__42_8", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -452,41 +460,42 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didChangePlayerSettingsEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didChangePlayerSettingsEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_playerSpecificSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerSpecificSettings = __cordl_object
-            .invoke("get_playerSpecificSettings", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        > = __cordl_object.invoke("get_playerSpecificSettings", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didChangePlayerSettingsEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didChangePlayerSettingsEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSettingsPanelController")]

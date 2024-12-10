@@ -31,7 +31,9 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
     pub fn CalculateFC(
         &mut self,
         NodeType: i32,
-        node: *mut crate::System::Text::RegularExpressions::RegexNode,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexNode,
+        >,
         CurIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -39,7 +41,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             "CalculateFC",
             (NodeType, node, CurIndex),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -49,7 +51,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FCIsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -57,7 +59,7 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             "FCIsEmpty",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IntIsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -65,19 +67,17 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             "IntIsEmpty",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PopFC(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexFC,
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     > {
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexFC = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "PopFC",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexFC,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "PopFC", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn PopInt(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -85,18 +85,18 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             "PopInt",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PushFC(
         &mut self,
-        fc: *mut crate::System::Text::RegularExpressions::RegexFC,
+        fc: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "PushFC",
             (fc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PushInt(
         &mut self,
@@ -107,20 +107,24 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             "PushInt",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegexFCFromRegexTree(
         &mut self,
-        tree: *mut crate::System::Text::RegularExpressions::RegexTree,
+        tree: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexTree,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexFC,
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     > {
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexFC = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexFC,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "RegexFCFromRegexTree",
             (tree),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SkipChild(
         &mut self,
@@ -130,19 +134,17 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             "SkipChild",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TopFC(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexFC,
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
     > {
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexFC = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "TopFC",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexFC,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "TopFC", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -153,6 +155,6 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             ".ctor",
             (intStack),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -52,26 +52,38 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ConvertBeatmapSaveDataPreV2_5_0Inline", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        events: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+        events: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            >,
         >,
-        notes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+        notes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+            >,
         >,
-        sliders: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+        sliders: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+            >,
         >,
-        waypoints: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+        waypoints: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+            >,
         >,
-        obstacles: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+        obstacles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+            >,
         >,
-        specialEventsKeywordFilters: *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        specialEventsKeywordFilters: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -86,26 +98,38 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     specialEventsKeywordFilters,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        events: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+        events: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            >,
         >,
-        notes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+        notes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+            >,
         >,
-        sliders: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+        sliders: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+            >,
         >,
-        waypoints: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+        waypoints: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+            >,
         >,
-        obstacles: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+        obstacles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+            >,
         >,
-        specialEventsKeywordFilters: *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData,
+        specialEventsKeywordFilters: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -122,104 +146,130 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     specialEventsKeywordFilters,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_events(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            >,
         > = __cordl_object.invoke("get_events", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_notes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+            >,
         > = __cordl_object.invoke("get_notes", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_obstacles(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+            >,
         > = __cordl_object.invoke("get_obstacles", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sliders(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+            >,
         > = __cordl_object.invoke("get_sliders", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_specialEventsKeywordFilters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData = __cordl_object
-            .invoke("get_specialEventsKeywordFilters", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_version(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_version", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_waypoints(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData,
+        > = __cordl_object.invoke("get_specialEventsKeywordFilters", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_version(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_version", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_waypoints(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+            >,
         > = __cordl_object.invoke("get_waypoints", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+BeatmapSaveData")]

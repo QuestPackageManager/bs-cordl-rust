@@ -28,30 +28,33 @@ impl std::ops::DerefMut for crate::Mono::Security::X509::X509Stores {
 #[cfg(feature = "Mono+Security+X509+X509Stores")]
 impl crate::Mono::Security::X509::X509Stores {
     pub fn New(
-        path: *mut quest_hook::libil2cpp::Il2CppString,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newFormat: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (path, newFormat))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Open(
         &mut self,
-        storeName: *mut quest_hook::libil2cpp::Il2CppString,
+        storeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         create: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::X509::X509Store> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Store>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::X509::X509Store = __cordl_object
-            .invoke("Open", (storeName, create))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::X509::X509Store,
+        > = __cordl_object.invoke("Open", (storeName, create))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        path: *mut quest_hook::libil2cpp::Il2CppString,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newFormat: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -59,17 +62,20 @@ impl crate::Mono::Security::X509::X509Stores {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (path, newFormat))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TrustedRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::X509::X509Store> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Store>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::X509::X509Store = __cordl_object
-            .invoke("get_TrustedRoot", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::X509::X509Store,
+        > = __cordl_object.invoke("get_TrustedRoot", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Security+X509+X509Stores")]

@@ -31,8 +31,8 @@ impl crate::OVR::OpenVR::CVRInput {
         peTransformSpace: quest_hook::libil2cpp::ByRefMut<
             crate::OVR::OpenVR::EVRSkeletalTransformSpace,
         >,
-        pTransformArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::OVR::OpenVR::VRBoneTransform_t,
+        pTransformArray: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::VRBoneTransform_t>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -48,11 +48,11 @@ impl crate::OVR::OpenVR::CVRInput {
                     pTransformArray,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetActionHandle(
         &mut self,
-        pchActionName: *mut quest_hook::libil2cpp::Il2CppString,
+        pchActionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -60,13 +60,13 @@ impl crate::OVR::OpenVR::CVRInput {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("GetActionHandle", (pchActionName, pHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetActionOrigins(
         &mut self,
         actionSetHandle: u64,
         digitalActionHandle: u64,
-        originsOut: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        originsOut: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -76,11 +76,11 @@ impl crate::OVR::OpenVR::CVRInput {
                 "GetActionOrigins",
                 (actionSetHandle, digitalActionHandle, originsOut),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetActionSetHandle(
         &mut self,
-        pchActionSetName: *mut quest_hook::libil2cpp::Il2CppString,
+        pchActionSetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -88,7 +88,7 @@ impl crate::OVR::OpenVR::CVRInput {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("GetActionSetHandle", (pchActionSetName, pHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAnalogActionData(
         &mut self,
@@ -107,7 +107,7 @@ impl crate::OVR::OpenVR::CVRInput {
                 "GetAnalogActionData",
                 (action, pActionData, unActionDataSize, ulRestrictToDevice),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDigitalActionData(
         &mut self,
@@ -126,11 +126,13 @@ impl crate::OVR::OpenVR::CVRInput {
                 "GetDigitalActionData",
                 (action, pActionData, unActionDataSize, ulRestrictToDevice),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetInputSourceHandle(
         &mut self,
-        pchInputSourcePath: *mut quest_hook::libil2cpp::Il2CppString,
+        pchInputSourcePath: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -138,12 +140,12 @@ impl crate::OVR::OpenVR::CVRInput {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("GetInputSourceHandle", (pchInputSourcePath, pHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetOriginLocalizedName(
         &mut self,
         origin: u64,
-        pchNameArray: *mut crate::System::Text::StringBuilder,
+        pchNameArray: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unNameArraySize: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -151,7 +153,7 @@ impl crate::OVR::OpenVR::CVRInput {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("GetOriginLocalizedName", (origin, pchNameArray, unNameArraySize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetOriginTrackedDeviceInfo(
         &mut self,
@@ -169,7 +171,7 @@ impl crate::OVR::OpenVR::CVRInput {
                 "GetOriginTrackedDeviceInfo",
                 (origin, pOriginInfo, unOriginInfoSize),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPoseActionData(
         &mut self,
@@ -197,7 +199,7 @@ impl crate::OVR::OpenVR::CVRInput {
                     ulRestrictToDevice,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSkeletalActionData(
         &mut self,
@@ -216,15 +218,15 @@ impl crate::OVR::OpenVR::CVRInput {
                 "GetSkeletalActionData",
                 (action, pActionData, unActionDataSize, ulRestrictToDevice),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSkeletalBoneData(
         &mut self,
         action: u64,
         eTransformSpace: crate::OVR::OpenVR::EVRSkeletalTransformSpace,
         eMotionRange: crate::OVR::OpenVR::EVRSkeletalMotionRange,
-        pTransformArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::OVR::OpenVR::VRBoneTransform_t,
+        pTransformArray: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::VRBoneTransform_t>,
         >,
         ulRestrictToDevice: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
@@ -242,7 +244,7 @@ impl crate::OVR::OpenVR::CVRInput {
                     ulRestrictToDevice,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSkeletalBoneDataCompressed(
         &mut self,
@@ -270,27 +272,29 @@ impl crate::OVR::OpenVR::CVRInput {
                     ulRestrictToDevice,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pInterface))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetActionManifestPath(
         &mut self,
-        pchActionManifestPath: *mut quest_hook::libil2cpp::Il2CppString,
+        pchActionManifestPath: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("SetActionManifestPath", (pchActionManifestPath))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShowActionOrigins(
         &mut self,
@@ -302,12 +306,12 @@ impl crate::OVR::OpenVR::CVRInput {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("ShowActionOrigins", (actionSetHandle, ulActionHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShowBindingsForActionSet(
         &mut self,
-        pSets: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::OVR::OpenVR::VRActiveActionSet_t,
+        pSets: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::VRActiveActionSet_t>,
         >,
         unSizeOfVRSelectedActionSet_t: u32,
         originToHighlight: u64,
@@ -320,7 +324,7 @@ impl crate::OVR::OpenVR::CVRInput {
                 "ShowBindingsForActionSet",
                 (pSets, unSizeOfVRSelectedActionSet_t, originToHighlight),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TriggerHapticVibrationAction(
         &mut self,
@@ -346,12 +350,12 @@ impl crate::OVR::OpenVR::CVRInput {
                     ulRestrictToDevice,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateActionState(
         &mut self,
-        pSets: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::OVR::OpenVR::VRActiveActionSet_t,
+        pSets: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::VRActiveActionSet_t>,
         >,
         unSizeOfVRSelectedActionSet_t: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
@@ -360,7 +364,7 @@ impl crate::OVR::OpenVR::CVRInput {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = __cordl_object
             .invoke("UpdateActionState", (pSets, unSizeOfVRSelectedActionSet_t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -371,7 +375,7 @@ impl crate::OVR::OpenVR::CVRInput {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (pInterface))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRInput")]

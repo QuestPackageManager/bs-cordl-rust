@@ -26,16 +26,17 @@ impl std::ops::DerefMut for crate::System::ComponentModel::Design::IDesignerHost
 impl crate::System::ComponentModel::Design::IDesignerHost {
     pub fn GetDesigner(
         &mut self,
-        component: *mut crate::System::ComponentModel::IComponent,
+        component: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::ComponentModel::Design::IDesigner,
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::Design::IDesigner>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::ComponentModel::Design::IDesigner = __cordl_object
-            .invoke("GetDesigner", (component))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::Design::IDesigner,
+        > = __cordl_object.invoke("GetDesigner", (component))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -44,13 +45,16 @@ impl crate::System::ComponentModel::Design::IDesignerHost {
     }
     pub fn get_RootComponent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::ComponentModel::IComponent> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::ComponentModel::IComponent = __cordl_object
-            .invoke("get_RootComponent", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::IComponent,
+        > = __cordl_object.invoke("get_RootComponent", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+ComponentModel+Design+IDesignerHost")]

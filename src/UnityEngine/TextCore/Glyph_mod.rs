@@ -30,21 +30,21 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Glyph {
 }
 #[cfg(feature = "UnityEngine+TextCore+Glyph")]
 impl crate::UnityEngine::TextCore::Glyph {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_GlyphMarshallingStruct1(
         glyphStruct: crate::UnityEngine::TextCore::LowLevel::GlyphMarshallingStruct,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (glyphStruct))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_u32_GlyphMetrics_GlyphRect_f32_i32_2(
         index: u32,
@@ -52,12 +52,12 @@ impl crate::UnityEngine::TextCore::Glyph {
         glyphRect: crate::UnityEngine::TextCore::GlyphRect,
         scale: f32,
         atlasIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (index, metrics, glyphRect, scale, atlasIndex))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::UnityEngine::TextCore::Glyph {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_GlyphMarshallingStruct1(
         &mut self,
@@ -78,7 +78,7 @@ impl crate::UnityEngine::TextCore::Glyph {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (glyphStruct))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_GlyphMetrics_GlyphRect_f32_i32_2(
         &mut self,
@@ -93,14 +93,14 @@ impl crate::UnityEngine::TextCore::Glyph {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (index, metrics, glyphRect, scale, atlasIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_atlasIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_atlasIndex", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_glyphRect(
         &mut self,
@@ -110,14 +110,14 @@ impl crate::UnityEngine::TextCore::Glyph {
         );
         let __cordl_ret: crate::UnityEngine::TextCore::GlyphRect = __cordl_object
             .invoke("get_glyphRect", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_index", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_metrics(
         &mut self,
@@ -127,14 +127,14 @@ impl crate::UnityEngine::TextCore::Glyph {
         );
         let __cordl_ret: crate::UnityEngine::TextCore::GlyphMetrics = __cordl_object
             .invoke("get_metrics", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_scale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_scale", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_atlasIndex(
         &mut self,
@@ -145,7 +145,7 @@ impl crate::UnityEngine::TextCore::Glyph {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_atlasIndex", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_glyphRect(
         &mut self,
@@ -156,7 +156,7 @@ impl crate::UnityEngine::TextCore::Glyph {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_glyphRect", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_index(
         &mut self,
@@ -167,7 +167,7 @@ impl crate::UnityEngine::TextCore::Glyph {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_index", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_metrics(
         &mut self,
@@ -178,7 +178,7 @@ impl crate::UnityEngine::TextCore::Glyph {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_metrics", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_scale(
         &mut self,
@@ -189,7 +189,7 @@ impl crate::UnityEngine::TextCore::Glyph {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_scale", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Glyph")]

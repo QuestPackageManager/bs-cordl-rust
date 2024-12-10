@@ -34,6 +34,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::RequestResetCommand {
             "get_typeStatic",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

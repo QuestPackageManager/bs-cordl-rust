@@ -30,24 +30,24 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BasicMockPlayerScoreCalculat
 impl crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
     pub fn GetScoreForNote(
         &mut self,
-        noteData: *mut crate::GlobalNamespace::MockNoteData,
+        noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetScoreForNote", (noteData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         hitFrequency: f32,
         minScore: i32,
         maxScore: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (hitFrequency, minScore, maxScore))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (hitFrequency, minScore, maxScore))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BasicMockPlayerScoreCalculator")]

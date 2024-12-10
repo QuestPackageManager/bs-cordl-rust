@@ -32,7 +32,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LightTranslationBeatmapEvent
 #[cfg(feature = "LightTranslationBeatmapEventDataBox")]
 impl crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
     pub fn New(
-        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
+        indexFilter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         axis: crate::GlobalNamespace::LightAxis,
@@ -41,10 +41,12 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
         gapDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         gapDistributionShouldAffectFirstBaseEvent: bool,
         gapDistributionEaseType: crate::GlobalNamespace::EaseType,
-        lightTranslationBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::LightTranslationBaseData,
+        lightTranslationBaseDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::LightTranslationBaseData,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -63,7 +65,7 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
                     lightTranslationBaseDataList,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Unpack(
         &mut self,
@@ -73,9 +75,13 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
         durationOrderIndex: i32,
         distributionOrderIndex: i32,
         maxBeat: f32,
-        beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
-        output: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::BeatmapEventData,
+        beatToTimeConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatToTimeConverter,
+        >,
+        output: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::BeatmapEventData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -95,11 +101,11 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
                     output,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
+        indexFilter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         axis: crate::GlobalNamespace::LightAxis,
@@ -108,8 +114,10 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
         gapDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         gapDistributionShouldAffectFirstBaseEvent: bool,
         gapDistributionEaseType: crate::GlobalNamespace::EaseType,
-        lightTranslationBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::LightTranslationBaseData,
+        lightTranslationBaseDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::LightTranslationBaseData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -131,21 +139,21 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
                     lightTranslationBaseDataList,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_beatStep(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_beatStep", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_subtypeIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeIdentifier", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LightTranslationBeatmapEventDataBox")]

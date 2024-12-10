@@ -33,6 +33,6 @@ impl crate::System::Globalization::HebrewNumberParsingContext {
             ".ctor",
             (result),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

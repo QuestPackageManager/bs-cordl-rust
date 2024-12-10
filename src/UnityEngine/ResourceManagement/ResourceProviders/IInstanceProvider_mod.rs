@@ -29,33 +29,39 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider {
     pub fn ProvideInstance(
         &mut self,
-        resourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+        resourceManager: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
         prefabHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             *mut crate::UnityEngine::GameObject,
         >,
         instantiateParameters: crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke(
                 "ProvideInstance",
                 (resourceManager, prefabHandle, instantiateParameters),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReleaseInstance(
         &mut self,
-        resourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-        instance: *mut crate::UnityEngine::GameObject,
+        resourceManager: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
+        instance: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReleaseInstance", (resourceManager, instance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

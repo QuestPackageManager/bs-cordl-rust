@@ -26,34 +26,38 @@ impl std::ops::DerefMut for crate::System::Xml::IDtdParser {
 impl crate::System::Xml::IDtdParser {
     pub fn ParseFreeFloatingDtd(
         &mut self,
-        baseUri: *mut quest_hook::libil2cpp::Il2CppString,
-        docTypeName: *mut quest_hook::libil2cpp::Il2CppString,
-        publicId: *mut quest_hook::libil2cpp::Il2CppString,
-        systemId: *mut quest_hook::libil2cpp::Il2CppString,
-        internalSubset: *mut quest_hook::libil2cpp::Il2CppString,
-        adapter: *mut crate::System::Xml::IDtdParserAdapter,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::IDtdInfo> {
+        baseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        docTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        internalSubset: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        adapter: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::IDtdInfo = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo> = __cordl_object
             .invoke(
                 "ParseFreeFloatingDtd",
                 (baseUri, docTypeName, publicId, systemId, internalSubset, adapter),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ParseInternalDtd(
         &mut self,
-        adapter: *mut crate::System::Xml::IDtdParserAdapter,
+        adapter: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>,
         saveInternalSubset: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::IDtdInfo> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::IDtdInfo = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo> = __cordl_object
             .invoke("ParseInternalDtd", (adapter, saveInternalSubset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

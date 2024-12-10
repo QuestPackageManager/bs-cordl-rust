@@ -48,14 +48,14 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
     pub type __c__DisplayClass24_0 = crate::GlobalNamespace::CampaignFlowCoordinator___c__DisplayClass24_0;
     pub fn BackButtonWasPressed(
         &mut self,
-        topViewController: *mut crate::HMUI::ViewController,
+        topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BackButtonWasPressed", (topViewController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidActivate(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidDeactivate(
         &mut self,
@@ -83,23 +83,29 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMissionHelpViewControllerDidFinish(
         &mut self,
-        viewController: *mut crate::GlobalNamespace::MissionHelpViewController,
+        viewController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionHelpViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleMissionHelpViewControllerDidFinish", (viewController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMissionLevelSceneDidFinish(
         &mut self,
-        missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-        missionCompletionResults: *mut crate::GlobalNamespace::MissionCompletionResults,
+        missionLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+        >,
+        missionCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -109,12 +115,16 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                 "HandleMissionLevelSceneDidFinish",
                 (missionLevelScenesTransitionSetupData, missionCompletionResults),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMissionLevelSceneRestarted(
         &mut self,
-        missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-        missionCompletionResults: *mut crate::GlobalNamespace::MissionCompletionResults,
+        missionLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+        >,
+        missionCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,11 +134,13 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                 "HandleMissionLevelSceneRestarted",
                 (missionLevelScenesTransitionSetupData, missionCompletionResults),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMissionResultsViewControllerContinueButtonPressed(
         &mut self,
-        viewController: *mut crate::GlobalNamespace::MissionResultsViewController,
+        viewController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -138,11 +150,13 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                 "HandleMissionResultsViewControllerContinueButtonPressed",
                 (viewController),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMissionResultsViewControllerRetryButtonPressed(
         &mut self,
-        viewController: *mut crate::GlobalNamespace::MissionResultsViewController,
+        viewController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -152,11 +166,13 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                 "HandleMissionResultsViewControllerRetryButtonPressed",
                 (viewController),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMissionSelectionNavigationControllerDidPressPlayButton(
         &mut self,
-        viewController: *mut crate::GlobalNamespace::MissionSelectionNavigationController,
+        viewController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionSelectionNavigationController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -166,30 +182,30 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                 "HandleMissionSelectionNavigationControllerDidPressPlayButton",
                 (viewController),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn StartLevel(
         &mut self,
-        beforeSceneSwitchCallback: *mut crate::System::Action,
+        beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartLevel", (beforeSceneSwitchCallback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TopViewControllerWillChange(
         &mut self,
-        oldViewController: *mut crate::HMUI::ViewController,
-        newViewController: *mut crate::HMUI::ViewController,
+        oldViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        newViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -200,19 +216,21 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                 "TopViewControllerWillChange",
                 (oldViewController, newViewController, animationType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdatePlayerStatistics(
         &mut self,
-        missionCompletionResults: *mut crate::GlobalNamespace::MissionCompletionResults,
-        missionNode: *mut crate::GlobalNamespace::MissionNode,
+        missionCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionCompletionResults,
+        >,
+        missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdatePlayerStatistics", (missionCompletionResults, missionNode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _HandleMissionResultsViewControllerContinueButtonPressed_b__23_0(
         &mut self,
@@ -225,7 +243,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                 "<HandleMissionResultsViewControllerContinueButtonPressed>b__23_0",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _HandleMissionResultsViewControllerContinueButtonPressed_b__23_1(
         &mut self,
@@ -239,7 +257,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                 "<HandleMissionResultsViewControllerContinueButtonPressed>b__23_1",
                 (presented),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -249,12 +267,12 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::CampaignFlowCoordinator,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::GlobalNamespace::CampaignFlowCoordinator>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -262,12 +280,12 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::CampaignFlowCoordinator,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::GlobalNamespace::CampaignFlowCoordinator>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -275,7 +293,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "CampaignFlowCoordinator")]

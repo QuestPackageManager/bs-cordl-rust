@@ -36,7 +36,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LazyInit(
         &mut self,
@@ -46,14 +46,14 @@ impl crate::GlobalNamespace::MaterialPropertyBlockAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LazyInit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RefreshProperty(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshProperty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetProperty(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetProperty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -83,7 +83,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -93,30 +93,35 @@ impl crate::GlobalNamespace::MaterialPropertyBlockAnimator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_materialPropertyBlockController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MaterialPropertyBlockController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MaterialPropertyBlockController = __cordl_object
-            .invoke("get_materialPropertyBlockController", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MaterialPropertyBlockController,
+        > = __cordl_object.invoke("get_materialPropertyBlockController", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_materialPropertyBlockController(
         &mut self,
-        value: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+        value: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MaterialPropertyBlockController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_materialPropertyBlockController", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MaterialPropertyBlockAnimator")]

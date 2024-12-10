@@ -28,38 +28,40 @@ impl crate::System::Net::BufferedReadStream {
     #[cfg(feature = "System+Net+BufferedReadStream+_ProcessReadAsync_d__2")]
     pub type _ProcessReadAsync_d__2 = crate::System::Net::BufferedReadStream__ProcessReadAsync_d__2;
     pub fn New(
-        operation: *mut crate::System::Net::WebOperation,
-        innerStream: *mut crate::System::IO::Stream,
-        readBuffer: *mut crate::System::Net::BufferOffsetSize,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        operation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        readBuffer: quest_hook::libil2cpp::Gc<crate::System::Net::BufferOffsetSize>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (operation, innerStream, readBuffer))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessReadAsync(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<i32>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<i32> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = __cordl_object
             .invoke(
                 "ProcessReadAsync",
                 (buffer, offset, _cordl_size, cancellationToken),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryReadFromBuffer(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
         result: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -69,20 +71,20 @@ impl crate::System::Net::BufferedReadStream {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryReadFromBuffer", (buffer, offset, _cordl_size, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        operation: *mut crate::System::Net::WebOperation,
-        innerStream: *mut crate::System::IO::Stream,
-        readBuffer: *mut crate::System::Net::BufferOffsetSize,
+        operation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        readBuffer: quest_hook::libil2cpp::Gc<crate::System::Net::BufferOffsetSize>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (operation, innerStream, readBuffer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+BufferedReadStream")]

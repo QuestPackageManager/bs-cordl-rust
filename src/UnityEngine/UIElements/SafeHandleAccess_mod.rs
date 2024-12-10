@@ -28,7 +28,7 @@ impl crate::UnityEngine::UIElements::SafeHandleAccess {
             "IsNull",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -39,6 +39,6 @@ impl crate::UnityEngine::UIElements::SafeHandleAccess {
             ".ctor",
             (ptr),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

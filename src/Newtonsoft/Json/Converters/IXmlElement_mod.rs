@@ -26,25 +26,30 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::IXmlElement {
 impl crate::Newtonsoft::Json::Converters::IXmlElement {
     pub fn GetPrefixOfNamespace(
         &mut self,
-        namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetPrefixOfNamespace", (namespaceUri))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetPrefixOfNamespace", (namespaceUri))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetAttributeNode(
         &mut self,
-        attribute: *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+        attribute: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Converters::IXmlNode,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetAttributeNode", (attribute))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -56,7 +61,7 @@ impl crate::Newtonsoft::Json::Converters::IXmlElement {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsEmpty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+IXmlElement")]

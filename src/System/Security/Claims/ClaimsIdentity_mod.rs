@@ -47,30 +47,33 @@ impl crate::System::Security::Claims::ClaimsIdentity {
     pub type _get_Claims_d__51 = crate::System::Security::Claims::ClaimsIdentity__get_Claims_d__51;
     pub fn AddClaim(
         &mut self,
-        claim: *mut crate::System::Security::Claims::Claim,
+        claim: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddClaim", (claim))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Claims::ClaimsIdentity,
+        quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Claims::ClaimsIdentity = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Claims::ClaimsIdentity,
+        > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Deserialize(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
         useContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -79,33 +82,38 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Deserialize", (info, context, useContext))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DeserializeClaims(
         &mut self,
-        serializedClaims: *mut quest_hook::libil2cpp::Il2CppString,
+        serializedClaims: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DeserializeClaims", (serializedClaims))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindFirst(
         &mut self,
-        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Security::Claims::Claim> {
+        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Claims::Claim = __cordl_object
-            .invoke("FindFirst", (_cordl_type))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Claims::Claim,
+        > = __cordl_object.invoke("FindFirst", (_cordl_type))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetObjectData(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -113,54 +121,64 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetObjectData", (info, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsCircular(
         &mut self,
-        subject: *mut crate::System::Security::Claims::ClaimsIdentity,
+        subject: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Claims::ClaimsIdentity,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsCircular", (subject))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_ClaimsIdentity4(
-        other: *mut crate::System::Security::Claims::ClaimsIdentity,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        other: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (other))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IEnumerable_1_1(
-        claims: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Security::Claims::Claim,
+        claims: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Claims::Claim,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (claims))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IIdentity_IEnumerable_1_Il2CppString_Il2CppString_Il2CppString2(
-        identity: *mut crate::System::Security::Principal::IIdentity,
-        claims: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Security::Claims::Claim,
+        identity: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::IIdentity,
         >,
-        authenticationType: *mut quest_hook::libil2cpp::Il2CppString,
-        nameType: *mut quest_hook::libil2cpp::Il2CppString,
-        roleType: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        claims: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Claims::Claim,
+            >,
+        >,
+        authenticationType: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        nameType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        roleType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -168,18 +186,24 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                 ".ctor",
                 (identity, claims, authenticationType, nameType, roleType),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IIdentity_IEnumerable_1_Il2CppString_Il2CppString_Il2CppString__cordl_bool3(
-        identity: *mut crate::System::Security::Principal::IIdentity,
-        claims: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Security::Claims::Claim,
+        identity: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::IIdentity,
         >,
-        authenticationType: *mut quest_hook::libil2cpp::Il2CppString,
-        nameType: *mut quest_hook::libil2cpp::Il2CppString,
-        roleType: *mut quest_hook::libil2cpp::Il2CppString,
+        claims: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Claims::Claim,
+            >,
+        >,
+        authenticationType: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        nameType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        roleType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         checkAuthType: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -187,17 +211,19 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                 ".ctor",
                 (identity, claims, authenticationType, nameType, roleType, checkAuthType),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_SerializationInfo_StreamingContext5(
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDeserializedMethod(
         &mut self,
@@ -208,7 +234,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDeserializedMethod", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDeserializingMethod(
         &mut self,
@@ -219,7 +245,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDeserializingMethod", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnSerializingMethod(
         &mut self,
@@ -230,23 +256,25 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnSerializingMethod", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SafeAddClaim(
         &mut self,
-        claim: *mut crate::System::Security::Claims::Claim,
+        claim: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SafeAddClaim", (claim))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SafeAddClaims(
         &mut self,
-        claims: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Security::Claims::Claim,
+        claims: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Claims::Claim,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -254,17 +282,20 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SafeAddClaims", (claims))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeClaims(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("SerializeClaims", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("SerializeClaims", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -274,23 +305,25 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_ClaimsIdentity4(
         &mut self,
-        other: *mut crate::System::Security::Claims::ClaimsIdentity,
+        other: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (other))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEnumerable_1_1(
         &mut self,
-        claims: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Security::Claims::Claim,
+        claims: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Claims::Claim,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -298,17 +331,23 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (claims))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IIdentity_IEnumerable_1_Il2CppString_Il2CppString_Il2CppString2(
         &mut self,
-        identity: *mut crate::System::Security::Principal::IIdentity,
-        claims: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Security::Claims::Claim,
+        identity: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::IIdentity,
         >,
-        authenticationType: *mut quest_hook::libil2cpp::Il2CppString,
-        nameType: *mut quest_hook::libil2cpp::Il2CppString,
-        roleType: *mut quest_hook::libil2cpp::Il2CppString,
+        claims: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Claims::Claim,
+            >,
+        >,
+        authenticationType: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        nameType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        roleType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -318,17 +357,23 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                 ".ctor",
                 (identity, claims, authenticationType, nameType, roleType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IIdentity_IEnumerable_1_Il2CppString_Il2CppString_Il2CppString__cordl_bool3(
         &mut self,
-        identity: *mut crate::System::Security::Principal::IIdentity,
-        claims: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Security::Claims::Claim,
+        identity: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::IIdentity,
         >,
-        authenticationType: *mut quest_hook::libil2cpp::Il2CppString,
-        nameType: *mut quest_hook::libil2cpp::Il2CppString,
-        roleType: *mut quest_hook::libil2cpp::Il2CppString,
+        claims: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Claims::Claim,
+            >,
+        >,
+        authenticationType: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        nameType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        roleType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         checkAuthType: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -339,11 +384,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                 ".ctor",
                 (identity, claims, authenticationType, nameType, roleType, checkAuthType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SerializationInfo_StreamingContext5(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -351,75 +398,89 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Actor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Claims::ClaimsIdentity,
+        quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Claims::ClaimsIdentity = __cordl_object
-            .invoke("get_Actor", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Claims::ClaimsIdentity,
+        > = __cordl_object.invoke("get_Actor", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_AuthenticationType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_AuthenticationType", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_AuthenticationType", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Claims(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Security::Claims::Claim,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Claims::Claim,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Security::Claims::Claim,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Claims::Claim,
+            >,
         > = __cordl_object.invoke("get_Claims", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_Name", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_Name", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_NameClaimType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_NameClaimType", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_NameClaimType", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_Actor(
         &mut self,
-        value: *mut crate::System::Security::Claims::ClaimsIdentity,
+        value: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Actor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+Claims+ClaimsIdentity")]

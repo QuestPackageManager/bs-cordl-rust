@@ -27,31 +27,37 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::AsyncProtocolResult {
 #[cfg(feature = "Mono+Net+Security+AsyncProtocolResult")]
 impl crate::Mono::Net::Security::AsyncProtocolResult {
     pub fn New_ExceptionDispatchInfo1(
-        error: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        error: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (error))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
-    pub fn New_i32_0(result: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_i32_0(
+        result: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (result))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_ExceptionDispatchInfo1(
         &mut self,
-        error: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        error: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (error))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_0(
         &mut self,
@@ -62,26 +68,29 @@ impl crate::Mono::Net::Security::AsyncProtocolResult {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Error(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo = __cordl_object
-            .invoke("get_Error", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        > = __cordl_object.invoke("get_Error", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_UserResult(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_UserResult", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Net+Security+AsyncProtocolResult")]

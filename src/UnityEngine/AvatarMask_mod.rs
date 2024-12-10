@@ -33,7 +33,7 @@ impl crate::UnityEngine::AvatarMask {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetHumanoidBodyPartActive", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTransformActive(
         &mut self,
@@ -43,18 +43,21 @@ impl crate::UnityEngine::AvatarMask {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetTransformActive", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTransformPath(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetTransformPath", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetTransformPath", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetTransformWeight(
         &mut self,
@@ -64,14 +67,14 @@ impl crate::UnityEngine::AvatarMask {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetTransformWeight", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transformCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_transformCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+AvatarMask")]

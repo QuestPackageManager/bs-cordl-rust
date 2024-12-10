@@ -25,14 +25,14 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
     pub const k_Tick: f64 = 0.000000000001f64;
     pub fn CompareTo(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CompareTo",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_DiscreteTime0(
         &mut self,
@@ -43,18 +43,18 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -62,7 +62,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTick(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -70,7 +70,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             "GetTick",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OneTickAfter(
         &mut self,
@@ -80,7 +80,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             "OneTickAfter",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OneTickBefore(
         &mut self,
@@ -90,17 +90,17 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             "OneTickBefore",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_DiscreteTime0(
         &mut self,
@@ -111,7 +111,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             ".ctor",
             (_cordl_time),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_3(
         &mut self,
@@ -122,7 +122,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             ".ctor",
             (_cordl_time),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f64_2(
         &mut self,
@@ -133,7 +133,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             ".ctor",
             (_cordl_time),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_4(
         &mut self,
@@ -144,7 +144,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             ".ctor",
             (_cordl_time),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_f64_5(
         &mut self,
@@ -156,7 +156,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             ".ctor",
             (frame, fps),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i64_1(
         &mut self,
@@ -167,6 +167,6 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             ".ctor",
             (_cordl_time),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

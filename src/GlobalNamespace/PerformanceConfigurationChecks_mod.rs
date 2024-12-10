@@ -53,33 +53,42 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
     pub type XRConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig;
     pub fn CreateErrorLog(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("CreateErrorLog", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("CreateErrorLog", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsValid", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetExpected(
         &mut self,
-        mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-        graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-        playerSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        mainSettingsHandler: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::GameSettings::MainSettingsHandler,
+        >,
+        graphicSettingsHandler: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+        >,
+        playerSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
         modifiers: crate::GlobalNamespace::GameplayModifierMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -90,11 +99,11 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
                 "SetExpected",
                 (mainSettingsHandler, graphicSettingsHandler, playerSettings, modifiers),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn VerifyEntry<T>(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         expected: T,
         actual: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -107,13 +116,19 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("VerifyEntry", (name, expected, actual))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn VerifyExpected(
         &mut self,
-        mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-        graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-        playerSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        mainSettingsHandler: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::GameSettings::MainSettingsHandler,
+        >,
+        graphicSettingsHandler: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+        >,
+        playerSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
         modifiers: crate::GlobalNamespace::GameplayModifierMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -124,7 +139,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
                 "VerifyExpected",
                 (mainSettingsHandler, graphicSettingsHandler, playerSettings, modifiers),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -134,7 +149,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PerformanceConfigurationChecks")]

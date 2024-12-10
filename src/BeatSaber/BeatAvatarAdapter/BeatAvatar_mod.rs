@@ -26,12 +26,12 @@ impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatar")]
 impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetLightColor(
         &mut self,
@@ -42,7 +42,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetLightColor", (lightColor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateAvatarFromOptionalData(
         &mut self,
@@ -54,7 +54,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateAvatarFromOptionalData", (data, playbackDelaySeconds))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateAvatarFromPose(
         &mut self,
@@ -65,7 +65,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateAvatarFromPose", (currentPose))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateAvatarFromVisualData(
         &mut self,
@@ -76,7 +76,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateAvatarFromVisualData", (visualData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -86,7 +86,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bodyCenterWorldPosition(
         &mut self,
@@ -96,7 +96,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_bodyCenterWorldPosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatar")]

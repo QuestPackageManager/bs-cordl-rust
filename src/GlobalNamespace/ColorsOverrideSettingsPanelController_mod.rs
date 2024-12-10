@@ -41,7 +41,9 @@ for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
 impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
     pub fn HandleDropDownDidSelectCellWithIdx(
         &mut self,
-        dropDownWithTableView: *mut crate::HMUI::DropdownWithTableView,
+        dropDownWithTableView: quest_hook::libil2cpp::Gc<
+            crate::HMUI::DropdownWithTableView,
+        >,
         idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -49,7 +51,7 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleDropDownDidSelectCellWithIdx", (dropDownWithTableView, idx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleEditColorSchemeButtonWasPressed(
         &mut self,
@@ -59,11 +61,11 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleEditColorSchemeButtonWasPressed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleEditColorSchemeControllerDidChangeColorScheme(
         &mut self,
-        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -73,7 +75,7 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
                 "HandleEditColorSchemeControllerDidChangeColorScheme",
                 (colorScheme),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleEditColorSchemeControllerDidFinish(
         &mut self,
@@ -83,7 +85,7 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleEditColorSchemeControllerDidFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleOverrideColorsToggleValueChanged(
         &mut self,
@@ -94,14 +96,14 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleOverrideColorsToggleValueChanged", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -111,7 +113,7 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -121,7 +123,7 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -131,7 +133,7 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Refresh(
         &mut self,
@@ -141,18 +143,20 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Refresh", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetData(
         &mut self,
-        colorSchemesSettings: *mut crate::GlobalNamespace::ColorSchemesSettings,
+        colorSchemesSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorSchemesSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetData", (colorSchemesSettings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _HandleOverrideColorsToggleValueChanged_b__19_0(
         &mut self,
@@ -162,7 +166,7 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<HandleOverrideColorsToggleValueChanged>b__19_0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -172,7 +176,7 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]

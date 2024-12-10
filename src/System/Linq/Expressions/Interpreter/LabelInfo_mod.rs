@@ -36,91 +36,109 @@ impl crate::System::Linq::Expressions::Interpreter::LabelInfo {
     pub type __c = crate::System::Linq::Expressions::Interpreter::LabelInfo___c;
     pub fn AddDefinition(
         &mut self,
-        scope: *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        scope: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddDefinition", (scope))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Define(
         &mut self,
-        block: *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        block: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Define", (block))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DefinedIn(
         &mut self,
-        scope: *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        scope: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("DefinedIn", (scope))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnsureLabel(
         &mut self,
-        compiler: *mut crate::System::Linq::Expressions::Interpreter::LightCompiler,
+        compiler: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LightCompiler,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnsureLabel", (compiler))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FirstDefinition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo = __cordl_object
-            .invoke("FirstDefinition", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        > = __cordl_object.invoke("FirstDefinition", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLabel(
         &mut self,
-        compiler: *mut crate::System::Linq::Expressions::Interpreter::LightCompiler,
+        compiler: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LightCompiler,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Interpreter::BranchLabel,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::BranchLabel,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Interpreter::BranchLabel = __cordl_object
-            .invoke("GetLabel", (compiler))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::BranchLabel,
+        > = __cordl_object.invoke("GetLabel", (compiler))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        node: *mut crate::System::Linq::Expressions::LabelTarget,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (node))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reference(
         &mut self,
-        block: *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        block: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reference", (block))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateFinish(
         &mut self,
@@ -130,43 +148,45 @@ impl crate::System::Linq::Expressions::Interpreter::LabelInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ValidateFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateJump(
         &mut self,
-        reference: *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        reference: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ValidateJump", (reference))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        node: *mut crate::System::Linq::Expressions::LabelTarget,
+        node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasDefinitions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasDefinitions", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasMultipleDefinitions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasMultipleDefinitions", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LabelInfo")]

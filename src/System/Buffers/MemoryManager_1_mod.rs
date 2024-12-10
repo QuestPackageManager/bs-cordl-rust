@@ -37,7 +37,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
         );
         let __cordl_ret: crate::System::Span_1<T> = __cordl_object
             .invoke("GetSpan", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Pin(
         &mut self,
@@ -52,7 +52,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
         );
         let __cordl_ret: crate::System::Buffers::MemoryHandle = __cordl_object
             .invoke("Pin", (elementIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetArray(
         &mut self,
@@ -66,7 +66,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetArray", (segment))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Buffers+MemoryManager_1")]

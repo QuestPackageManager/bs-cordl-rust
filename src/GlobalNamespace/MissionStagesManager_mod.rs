@@ -39,14 +39,14 @@ impl crate::GlobalNamespace::MissionStagesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitStages", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateFirtsLockedMissionStage(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::MissionStagesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateFirtsLockedMissionStage", (numberOfClearedMissions))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateStageLockPosition(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::MissionStagesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateStageLockPosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateStageLockPositionAnimated(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::MissionStagesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateStageLockPositionAnimated", (animated, animationDuration))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateStageLockText(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::MissionStagesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateStageLockText", (numberOfClearedMissions))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -100,17 +100,20 @@ impl crate::GlobalNamespace::MissionStagesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_firstLockedMissionStage(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::MissionStage> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionStage>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MissionStage = __cordl_object
-            .invoke("get_firstLockedMissionStage", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionStage,
+        > = __cordl_object.invoke("get_firstLockedMissionStage", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MissionStagesManager")]

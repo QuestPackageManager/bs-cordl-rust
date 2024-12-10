@@ -26,14 +26,14 @@ impl std::ops::DerefMut for crate::System::ComponentModel::IContainer {
 impl crate::System::ComponentModel::IContainer {
     pub fn Remove(
         &mut self,
-        component: *mut crate::System::ComponentModel::IComponent,
+        component: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (component))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -43,14 +43,15 @@ impl crate::System::ComponentModel::IContainer {
     pub fn get_Components(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::ComponentModel::ComponentCollection,
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ComponentCollection>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::ComponentModel::ComponentCollection = __cordl_object
-            .invoke("get_Components", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::ComponentCollection,
+        > = __cordl_object.invoke("get_Components", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+ComponentModel+IContainer")]

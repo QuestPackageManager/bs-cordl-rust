@@ -31,12 +31,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LobbyGameStateModel {
 }
 #[cfg(feature = "LobbyGameStateModel")]
 impl crate::GlobalNamespace::LobbyGameStateModel {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetGameStateWithoutNotification(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::LobbyGameStateModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGameStateWithoutNotification", (newGameState))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGameState_MultiplayerGameState0(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::LobbyGameStateModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGameState", (newGameState))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetGameState__cordl_bool1(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::LobbyGameStateModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGameState", (newGameState, sendNotification))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -80,29 +80,33 @@ impl crate::GlobalNamespace::LobbyGameStateModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_gameStateDidChangeAlwaysSentEvent(
         &mut self,
-        value: *mut crate::System::Action_1<crate::GlobalNamespace::MultiplayerGameState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::MultiplayerGameState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_gameStateDidChangeAlwaysSentEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_gameStateDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<crate::GlobalNamespace::MultiplayerGameState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::MultiplayerGameState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_gameStateDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_gameState(
         &mut self,
@@ -112,29 +116,33 @@ impl crate::GlobalNamespace::LobbyGameStateModel {
         );
         let __cordl_ret: crate::GlobalNamespace::MultiplayerGameState = __cordl_object
             .invoke("get_gameState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_gameStateDidChangeAlwaysSentEvent(
         &mut self,
-        value: *mut crate::System::Action_1<crate::GlobalNamespace::MultiplayerGameState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::MultiplayerGameState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_gameStateDidChangeAlwaysSentEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_gameStateDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<crate::GlobalNamespace::MultiplayerGameState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::MultiplayerGameState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_gameStateDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LobbyGameStateModel")]

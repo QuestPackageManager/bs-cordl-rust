@@ -26,7 +26,9 @@ impl crate::LufsMetering::LoudnessData {
     pub fn _ctor(
         &mut self,
         lufs: f32,
-        momentaryValues: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        momentaryValues: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
         blockDuration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -34,6 +36,6 @@ impl crate::LufsMetering::LoudnessData {
             ".ctor",
             (lufs, momentaryValues, blockDuration),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

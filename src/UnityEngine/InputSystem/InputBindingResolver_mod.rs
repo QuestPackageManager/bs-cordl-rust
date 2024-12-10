@@ -47,14 +47,16 @@ for crate::UnityEngine::InputSystem::InputBindingResolver {
 impl crate::UnityEngine::InputSystem::InputBindingResolver {
     pub fn AddActionMap(
         &mut self,
-        actionMap: *mut crate::UnityEngine::InputSystem::InputActionMap,
+        actionMap: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "AddActionMap",
             (actionMap),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -64,17 +66,21 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InstantiateWithParameters<TType>(
         &mut self,
         registrations: crate::UnityEngine::InputSystem::Utilities::TypeTable,
-        namesAndParameters: *mut quest_hook::libil2cpp::Il2CppString,
+        namesAndParameters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
         array: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<TType>,
         >,
         count: quest_hook::libil2cpp::ByRefMut<i32>,
-        actionMap: *mut crate::UnityEngine::InputSystem::InputActionMap,
+        actionMap: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        >,
         binding: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputBinding,
         >,
@@ -88,11 +94,13 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             "InstantiateWithParameters",
             (registrations, namesAndParameters, array, count, actionMap, binding),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartWithPreviousResolve(
         &mut self,
-        state: *mut crate::UnityEngine::InputSystem::InputActionState,
+        state: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionState,
+        >,
         isFullResolve: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -100,7 +108,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             "StartWithPreviousResolve",
             (state, isFullResolve),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalActionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -108,7 +116,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             "get_totalActionCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalBindingCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -116,7 +124,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             "get_totalBindingCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalControlCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -124,7 +132,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             "get_totalControlCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalMapCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -132,6 +140,6 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             "get_totalMapCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -39,7 +39,7 @@ impl crate::UnityEngine::OverlapBoxCommand {
             ".ctor",
             (physicsScene, center, halfExtents, orientation, queryParameters),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Vector3_Quaternion_QueryParameters0(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::OverlapBoxCommand {
             ".ctor",
             (center, halfExtents, orientation, queryParameters),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_center(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::OverlapBoxCommand {
             "get_center",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_halfExtents(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::UnityEngine::OverlapBoxCommand {
             "get_halfExtents",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_orientation(
         &mut self,
@@ -83,7 +83,7 @@ impl crate::UnityEngine::OverlapBoxCommand {
             "get_orientation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_physicsScene(
         &mut self,
@@ -93,7 +93,7 @@ impl crate::UnityEngine::OverlapBoxCommand {
             "get_physicsScene",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_center(
         &mut self,
@@ -104,7 +104,7 @@ impl crate::UnityEngine::OverlapBoxCommand {
             "set_center",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_halfExtents(
         &mut self,
@@ -115,7 +115,7 @@ impl crate::UnityEngine::OverlapBoxCommand {
             "set_halfExtents",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_orientation(
         &mut self,
@@ -126,7 +126,7 @@ impl crate::UnityEngine::OverlapBoxCommand {
             "set_orientation",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_physicsScene(
         &mut self,
@@ -137,6 +137,6 @@ impl crate::UnityEngine::OverlapBoxCommand {
             "set_physicsScene",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

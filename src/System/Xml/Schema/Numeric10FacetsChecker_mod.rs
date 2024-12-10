@@ -33,112 +33,138 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         fractionDigits: i32,
         checkTotal: bool,
         checkFraction: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Exception = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
             .invoke(
                 "CheckTotalAndFractionDigits",
                 (value, totalDigits, fractionDigits, checkTotal, checkFraction),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckValueFacets_Decimal1(
         &mut self,
         value: crate::System::Decimal,
-        datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
+        datatype: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Exception = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
             .invoke("CheckValueFacets", (value, datatype))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckValueFacets_Il2CppObject0(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        datatype: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Exception = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
             .invoke("CheckValueFacets", (value, datatype))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckValueFacets_i16_4(
         &mut self,
         value: i16,
-        datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
+        datatype: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Exception = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
             .invoke("CheckValueFacets", (value, datatype))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckValueFacets_i32_3(
         &mut self,
         value: i32,
-        datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
+        datatype: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Exception = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
             .invoke("CheckValueFacets", (value, datatype))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckValueFacets_i64_2(
         &mut self,
         value: i64,
-        datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
+        datatype: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Exception = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
             .invoke("CheckValueFacets", (value, datatype))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MatchEnumeration_Decimal_XmlValueConverter1(
         &mut self,
         value: crate::System::Decimal,
-        enumeration: *mut crate::System::Collections::ArrayList,
-        valueConverter: *mut crate::System::Xml::Schema::XmlValueConverter,
+        enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+        valueConverter: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlValueConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("MatchEnumeration", (value, enumeration, valueConverter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MatchEnumeration_Il2CppObject_XmlSchemaDatatype0(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        enumeration: *mut crate::System::Collections::ArrayList,
-        datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+        datatype: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("MatchEnumeration", (value, enumeration, datatype))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         minVal: crate::System::Decimal,
         maxVal: crate::System::Decimal,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (minVal, maxVal))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -150,7 +176,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (minVal, maxVal))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+Numeric10FacetsChecker")]

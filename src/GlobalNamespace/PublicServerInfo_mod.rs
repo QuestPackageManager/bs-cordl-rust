@@ -25,18 +25,18 @@ for crate::GlobalNamespace::PublicServerInfo {
 impl crate::GlobalNamespace::PublicServerInfo {
     pub fn Serialize(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Serialize",
             (writer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        code: *mut quest_hook::libil2cpp::Il2CppString,
+        code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         currentPlayerCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -44,6 +44,6 @@ impl crate::GlobalNamespace::PublicServerInfo {
             ".ctor",
             (code, currentPlayerCount),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

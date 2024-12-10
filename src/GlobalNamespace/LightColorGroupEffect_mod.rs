@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cleanup", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetColor(
         &mut self,
@@ -65,27 +65,37 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("GetColor", (colorType, colorBoost, brightness))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleColorChangeBeatmapEvent(
         &mut self,
-        currentEventData: *mut crate::GlobalNamespace::LightColorBeatmapEventData,
+        currentEventData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightColorBeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleColorChangeBeatmapEvent", (currentEventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        initData: *mut crate::GlobalNamespace::LightColorGroupEffect_InitData,
-        lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
-        tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-        colorManager: *mut crate::GlobalNamespace::ColorManager,
-        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-        bpmController: *mut crate::GlobalNamespace::IBpmController,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        initData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightColorGroupEffect_InitData,
+        >,
+        lightManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightWithIdManager,
+        >,
+        tweeningManager: quest_hook::libil2cpp::Gc<
+            crate::Tweening::SongTimeTweeningManager,
+        >,
+        colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+        beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCallbacksController,
+        >,
+        bpmController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBpmController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -100,7 +110,7 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
                     bpmController,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetColor(
         &mut self,
@@ -111,7 +121,7 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetColor", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetData(
         &mut self,
@@ -143,7 +153,7 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
                     strobeFade,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UseBoostColors(
         &mut self,
@@ -154,16 +164,24 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UseBoostColors", (useBoostColors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        initData: *mut crate::GlobalNamespace::LightColorGroupEffect_InitData,
-        lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
-        tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-        colorManager: *mut crate::GlobalNamespace::ColorManager,
-        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-        bpmController: *mut crate::GlobalNamespace::IBpmController,
+        initData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightColorGroupEffect_InitData,
+        >,
+        lightManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightWithIdManager,
+        >,
+        tweeningManager: quest_hook::libil2cpp::Gc<
+            crate::Tweening::SongTimeTweeningManager,
+        >,
+        colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+        beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCallbacksController,
+        >,
+        bpmController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBpmController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -180,7 +198,7 @@ impl crate::GlobalNamespace::LightColorGroupEffect {
                     bpmController,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LightColorGroupEffect")]
@@ -226,12 +244,12 @@ impl crate::GlobalNamespace::LightColorGroupEffect_InitData {
         groupId: i32,
         elementId: i32,
         lightId: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (groupId, elementId, lightId))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -244,7 +262,7 @@ impl crate::GlobalNamespace::LightColorGroupEffect_InitData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (groupId, elementId, lightId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LightColorGroupEffect+InitData")]

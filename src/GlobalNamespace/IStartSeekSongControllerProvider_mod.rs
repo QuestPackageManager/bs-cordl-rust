@@ -33,14 +33,15 @@ impl crate::GlobalNamespace::IStartSeekSongControllerProvider {
     pub fn get_songController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::IStartSeekSongController,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStartSeekSongController>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::IStartSeekSongController = __cordl_object
-            .invoke("get_songController", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IStartSeekSongController,
+        > = __cordl_object.invoke("get_songController", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "IStartSeekSongControllerProvider")]

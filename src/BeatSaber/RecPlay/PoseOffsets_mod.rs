@@ -33,7 +33,7 @@ impl crate::BeatSaber::RecPlay::PoseOffsets {
             "AdjustHead",
             (pose),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AdjustLeftHand(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::BeatSaber::RecPlay::PoseOffsets {
             "AdjustLeftHand",
             (pose),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AdjustRightHand(
         &mut self,
@@ -55,6 +55,6 @@ impl crate::BeatSaber::RecPlay::PoseOffsets {
             "AdjustRightHand",
             (pose),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

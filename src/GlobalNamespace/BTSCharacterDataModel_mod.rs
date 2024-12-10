@@ -34,12 +34,12 @@ impl crate::GlobalNamespace::BTSCharacterDataModel {
     pub type AnimationClipWithId = crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId;
     #[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
     pub type PrefabWithId = crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -49,37 +49,45 @@ impl crate::GlobalNamespace::BTSCharacterDataModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_animationClipsWithIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId,
+            >,
         > = __cordl_object.invoke("get_animationClipsWithIds", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_prefabsWithIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId,
+            >,
         > = __cordl_object.invoke("get_prefabsWithIds", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BTSCharacterDataModel")]
@@ -123,12 +131,12 @@ for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
 }
 #[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
 impl crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -138,26 +146,27 @@ impl crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_animationClipAssetReference(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::AddressableAssets::AssetReference,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReference>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::AddressableAssets::AssetReference = __cordl_object
-            .invoke("get_animationClipAssetReference", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::AssetReference,
+        > = __cordl_object.invoke("get_animationClipAssetReference", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_id", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
@@ -199,12 +208,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterDataModel_Prefab
 }
 #[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
 impl crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -214,26 +223,27 @@ impl crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_id", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_prefabAssetReference(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::AddressableAssets::AssetReference,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::AssetReference>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::AddressableAssets::AssetReference = __cordl_object
-            .invoke("get_prefabAssetReference", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::AssetReference,
+        > = __cordl_object.invoke("get_prefabAssetReference", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]

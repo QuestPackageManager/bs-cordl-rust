@@ -36,42 +36,46 @@ impl crate::Zenject::SignalCallbackWrapper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        bindInfo: *mut crate::Zenject::SignalBindingBindInfo,
-        action: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
-        signalBus: *mut crate::Zenject::SignalBus,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBindingBindInfo>,
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+        signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindInfo, action, signalBus))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnSignalFired(
         &mut self,
-        signal: *mut quest_hook::libil2cpp::Il2CppObject,
+        signal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnSignalFired", (signal))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        bindInfo: *mut crate::Zenject::SignalBindingBindInfo,
-        action: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
-        signalBus: *mut crate::Zenject::SignalBus,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBindingBindInfo>,
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+        signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindInfo, action, signalBus))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+SignalCallbackWrapper")]

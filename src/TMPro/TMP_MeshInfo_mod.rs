@@ -37,7 +37,7 @@ impl crate::TMPro::TMP_MeshInfo {
             "ClearUnusedVertices",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearUnusedVertices_i32_1(
         &mut self,
@@ -48,7 +48,7 @@ impl crate::TMPro::TMP_MeshInfo {
             "ClearUnusedVertices",
             (startIndex),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearUnusedVertices_i32__cordl_bool2(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::TMPro::TMP_MeshInfo {
             "ClearUnusedVertices",
             (startIndex, updateMesh),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear_0(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::TMPro::TMP_MeshInfo {
             "Clear",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear__cordl_bool1(
         &mut self,
@@ -81,7 +81,7 @@ impl crate::TMPro::TMP_MeshInfo {
             "Clear",
             (uploadChanges),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResizeMeshInfo__cordl_bool1(
         &mut self,
@@ -93,7 +93,7 @@ impl crate::TMPro::TMP_MeshInfo {
             "ResizeMeshInfo",
             (_cordl_size, isVolumetric),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResizeMeshInfo_i32_0(
         &mut self,
@@ -104,18 +104,20 @@ impl crate::TMPro::TMP_MeshInfo {
             "ResizeMeshInfo",
             (_cordl_size),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SortGeometry_IList_1_1(
         &mut self,
-        sortingOrder: *mut crate::System::Collections::Generic::IList_1<i32>,
+        sortingOrder: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SortGeometry",
             (sortingOrder),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SortGeometry_VertexSortingOrder0(
         &mut self,
@@ -126,7 +128,7 @@ impl crate::TMPro::TMP_MeshInfo {
             "SortGeometry",
             (order),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SwapVertexData(
         &mut self,
@@ -138,11 +140,11 @@ impl crate::TMPro::TMP_MeshInfo {
             "SwapVertexData",
             (src, dst),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Mesh_i32_0(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -150,11 +152,11 @@ impl crate::TMPro::TMP_MeshInfo {
             ".ctor",
             (mesh, _cordl_size),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool1(
         &mut self,
-        mesh: *mut crate::UnityEngine::Mesh,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         _cordl_size: i32,
         isVolumetric: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -163,6 +165,6 @@ impl crate::TMPro::TMP_MeshInfo {
             ".ctor",
             (mesh, _cordl_size, isVolumetric),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

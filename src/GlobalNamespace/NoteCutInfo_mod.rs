@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::NoteCutInfo {
     pub type FailReason = crate::GlobalNamespace::NoteCutInfo_FailReason;
     pub fn _ctor(
         &mut self,
-        noteData: *mut crate::GlobalNamespace::NoteData,
+        noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         speedOK: bool,
         directionOK: bool,
         saberTypeOK: bool,
@@ -60,7 +60,9 @@ impl crate::GlobalNamespace::NoteCutInfo {
         inverseWorldRotation: crate::UnityEngine::Quaternion,
         noteRotation: crate::UnityEngine::Quaternion,
         notePosition: crate::UnityEngine::Vector3,
-        saberMovementData: *mut crate::GlobalNamespace::ISaberMovementData,
+        saberMovementData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISaberMovementData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -87,7 +89,7 @@ impl crate::GlobalNamespace::NoteCutInfo {
                 saberMovementData,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_allExceptSaberTypeIsOK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -95,7 +97,7 @@ impl crate::GlobalNamespace::NoteCutInfo {
             "get_allExceptSaberTypeIsOK",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_allIsOK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -103,7 +105,7 @@ impl crate::GlobalNamespace::NoteCutInfo {
             "get_allIsOK",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_failReason(
         &mut self,
@@ -113,7 +115,7 @@ impl crate::GlobalNamespace::NoteCutInfo {
             "get_failReason",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NoteCutInfo+FailReason")]

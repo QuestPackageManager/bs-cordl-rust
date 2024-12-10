@@ -31,7 +31,7 @@ impl crate::System::Xml::LineInfo {
             "Set",
             (lineNo, linePos),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -43,6 +43,6 @@ impl crate::System::Xml::LineInfo {
             ".ctor",
             (lineNo, linePos),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -34,14 +34,14 @@ impl crate::HMUI::ITableCellOwner {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_canSelectSelectedCell", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_numberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_numberOfCells", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_selectionType(
         &mut self,
@@ -51,7 +51,7 @@ impl crate::HMUI::ITableCellOwner {
         );
         let __cordl_ret: crate::HMUI::TableViewSelectionType = __cordl_object
             .invoke("get_selectionType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+ITableCellOwner")]

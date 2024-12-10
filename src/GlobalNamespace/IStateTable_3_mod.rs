@@ -60,7 +60,7 @@ impl<
             self,
         );
         let __cordl_ret: TStateTable = __cordl_object.invoke("ApplyDelta", (delta))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDelta(
         &mut self,
@@ -78,7 +78,7 @@ impl<
             self,
         );
         let __cordl_ret: TStateTable = __cordl_object.invoke("GetDelta", (stateTable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -93,7 +93,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetState(
         &mut self,
@@ -111,7 +111,7 @@ impl<
             self,
         );
         let __cordl_ret: TState = __cordl_object.invoke("GetState", (_cordl_type))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetState(
         &mut self,
@@ -131,7 +131,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetState", (_cordl_type, state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

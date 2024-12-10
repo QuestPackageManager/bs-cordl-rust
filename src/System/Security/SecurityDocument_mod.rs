@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::System::Security::SecurityDocument {
 impl crate::System::Security::SecurityDocument {
     pub fn AddString(
         &mut self,
-        str: *mut quest_hook::libil2cpp::Il2CppString,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         position: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -35,7 +35,7 @@ impl crate::System::Security::SecurityDocument {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddString", (str, position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddToken(
         &mut self,
@@ -47,11 +47,11 @@ impl crate::System::Security::SecurityDocument {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddToken", (b, position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AppendString(
         &mut self,
-        str: *mut quest_hook::libil2cpp::Il2CppString,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         position: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -59,41 +59,50 @@ impl crate::System::Security::SecurityDocument {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AppendString", (str, position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetElement(
         &mut self,
         position: i32,
         bCreate: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Security::SecurityElement> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::SecurityElement>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::SecurityElement = __cordl_object
-            .invoke("GetElement", (position, bCreate))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::SecurityElement,
+        > = __cordl_object.invoke("GetElement", (position, bCreate))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetRootElement(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Security::SecurityElement> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::SecurityElement>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::SecurityElement = __cordl_object
-            .invoke("GetRootElement", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::SecurityElement,
+        > = __cordl_object.invoke("GetRootElement", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetString(
         &mut self,
         position: quest_hook::libil2cpp::ByRefMut<i32>,
         bCreate: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetString", (position, bCreate))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetString", (position, bCreate))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GuaranteeSize(
         &mut self,
@@ -104,26 +113,31 @@ impl crate::System::Security::SecurityDocument {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GuaranteeSize", (_cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalGetElement(
         &mut self,
         position: quest_hook::libil2cpp::ByRefMut<i32>,
         bCreate: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Security::SecurityElement> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::SecurityElement>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::SecurityElement = __cordl_object
-            .invoke("InternalGetElement", (position, bCreate))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::SecurityElement,
+        > = __cordl_object.invoke("InternalGetElement", (position, bCreate))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New(numData: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        numData: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (numData))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -134,7 +148,7 @@ impl crate::System::Security::SecurityDocument {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (numData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+SecurityDocument")]

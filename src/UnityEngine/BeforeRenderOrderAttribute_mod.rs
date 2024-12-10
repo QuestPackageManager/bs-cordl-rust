@@ -25,12 +25,14 @@ impl std::ops::DerefMut for crate::UnityEngine::BeforeRenderOrderAttribute {
 }
 #[cfg(feature = "UnityEngine+BeforeRenderOrderAttribute")]
 impl crate::UnityEngine::BeforeRenderOrderAttribute {
-    pub fn New(order: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        order: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (order))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -41,14 +43,14 @@ impl crate::UnityEngine::BeforeRenderOrderAttribute {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (order))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_order(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_order", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_order(
         &mut self,
@@ -59,7 +61,7 @@ impl crate::UnityEngine::BeforeRenderOrderAttribute {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_order", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+BeforeRenderOrderAttribute")]

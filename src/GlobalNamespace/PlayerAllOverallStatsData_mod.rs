@@ -42,19 +42,27 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerAllOverallStatsData {
 impl crate::GlobalNamespace::PlayerAllOverallStatsData {
     #[cfg(feature = "PlayerAllOverallStatsData+PlayerOverallStatsData")]
     pub type PlayerOverallStatsData = crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData;
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_PlayerAllOverallStatsData_PlayerOverallStatsData_PlayerAllOverallStatsData_PlayerOverallStatsData_PlayerAllOverallStatsData_PlayerOverallStatsData_PlayerAllOverallStatsData_PlayerOverallStatsData1(
-        campaignOverallStatsData: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-        soloFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-        partyFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-        onlinePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        campaignOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
+        soloFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
+        partyFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
+        onlinePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -67,12 +75,14 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
                     onlinePlayOverallStatsData,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateCampaignOverallStatsData(
         &mut self,
-        missionCompletionResults: *mut crate::GlobalNamespace::MissionCompletionResults,
-        missionNode: *mut crate::GlobalNamespace::IMissionNode,
+        missionCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionCompletionResults,
+        >,
+        missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -82,22 +92,26 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
                 "UpdateCampaignOverallStatsData",
                 (missionCompletionResults, missionNode),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateOnlinePlayOverallStatsData(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateOnlinePlayOverallStatsData", (levelCompletionResults))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdatePartyFreePlayOverallStatsData(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -108,11 +122,13 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
                 "UpdatePartyFreePlayOverallStatsData",
                 (levelCompletionResults, beatmapDifficulty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateSoloFreePlayOverallStatsData(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -123,7 +139,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
                 "UpdateSoloFreePlayOverallStatsData",
                 (levelCompletionResults, beatmapDifficulty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -133,14 +149,22 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_PlayerAllOverallStatsData_PlayerOverallStatsData_PlayerAllOverallStatsData_PlayerOverallStatsData_PlayerAllOverallStatsData_PlayerOverallStatsData_PlayerAllOverallStatsData_PlayerOverallStatsData1(
         &mut self,
-        campaignOverallStatsData: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-        soloFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-        partyFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-        onlinePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        campaignOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
+        soloFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
+        partyFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
+        onlinePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -155,13 +179,15 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
                     onlinePlayOverallStatsData,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didUpdateCampaignOverallStatsDataEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::MissionCompletionResults,
-            *mut crate::GlobalNamespace::IMissionNode,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::MissionCompletionResults,
+                *mut crate::GlobalNamespace::IMissionNode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -169,13 +195,15 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didUpdateCampaignOverallStatsDataEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didUpdatePartyFreePlayOverallStatsDataEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::LevelCompletionResults,
-            crate::GlobalNamespace::BeatmapDifficulty,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::LevelCompletionResults,
+                crate::GlobalNamespace::BeatmapDifficulty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -183,13 +211,15 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didUpdatePartyFreePlayOverallStatsDataEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didUpdateSoloFreePlayOverallStatsDataEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::LevelCompletionResults,
-            crate::GlobalNamespace::BeatmapDifficulty,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::LevelCompletionResults,
+                crate::GlobalNamespace::BeatmapDifficulty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -197,73 +227,90 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didUpdateSoloFreePlayOverallStatsDataEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_allOverallStatsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData = __cordl_object
-            .invoke("get_allOverallStatsData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        > = __cordl_object.invoke("get_allOverallStatsData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_campaignOverallStatsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData = __cordl_object
-            .invoke("get_campaignOverallStatsData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        > = __cordl_object.invoke("get_campaignOverallStatsData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_onlinePlayOverallStatsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData = __cordl_object
-            .invoke("get_onlinePlayOverallStatsData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        > = __cordl_object.invoke("get_onlinePlayOverallStatsData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_partyFreePlayOverallStatsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData = __cordl_object
-            .invoke("get_partyFreePlayOverallStatsData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        > = __cordl_object.invoke("get_partyFreePlayOverallStatsData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_soloFreePlayOverallStatsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData = __cordl_object
-            .invoke("get_soloFreePlayOverallStatsData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        > = __cordl_object.invoke("get_soloFreePlayOverallStatsData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didUpdateCampaignOverallStatsDataEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::MissionCompletionResults,
-            *mut crate::GlobalNamespace::IMissionNode,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::MissionCompletionResults,
+                *mut crate::GlobalNamespace::IMissionNode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -271,13 +318,15 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didUpdateCampaignOverallStatsDataEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didUpdatePartyFreePlayOverallStatsDataEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::LevelCompletionResults,
-            crate::GlobalNamespace::BeatmapDifficulty,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::LevelCompletionResults,
+                crate::GlobalNamespace::BeatmapDifficulty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -285,13 +334,15 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didUpdatePartyFreePlayOverallStatsDataEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didUpdateSoloFreePlayOverallStatsDataEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::LevelCompletionResults,
-            crate::GlobalNamespace::BeatmapDifficulty,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::LevelCompletionResults,
+                crate::GlobalNamespace::BeatmapDifficulty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -299,7 +350,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didUpdateSoloFreePlayOverallStatsDataEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerAllOverallStatsData")]
@@ -352,12 +403,12 @@ for crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
 }
 #[cfg(feature = "PlayerAllOverallStatsData+PlayerOverallStatsData")]
 impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i32_i32_i32_i64_i32_i32_i32_i32_f32_i32_i64_1(
         goodCutsCount: i32,
@@ -371,7 +422,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         timePlayed: f32,
         handDistanceTravelled: i32,
         totalCutScore: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -391,18 +442,20 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
                     totalCutScore,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateWithLevelCompletionResults(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateWithLevelCompletionResults", (levelCompletionResults))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -412,7 +465,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_i64_i32_i32_i32_i32_f32_i32_i64_1(
         &mut self,
@@ -448,84 +501,84 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
                     totalCutScore,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_badCutsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_badCutsCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_clearedLevelsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_clearedLevelsCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_failedLevelsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_failedLevelsCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fullComboCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_fullComboCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_goodCutsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_goodCutsCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_handDistanceTravelled(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_handDistanceTravelled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_missedCutsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_missedCutsCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_playedLevelsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_playedLevelsCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_timePlayed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_timePlayed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalCutScore(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_totalCutScore", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalScore(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_totalScore", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_badCutsCount(
         &mut self,
@@ -536,7 +589,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_badCutsCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_clearedLevelsCount(
         &mut self,
@@ -547,7 +600,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_clearedLevelsCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_failedLevelsCount(
         &mut self,
@@ -558,7 +611,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_failedLevelsCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_fullComboCount(
         &mut self,
@@ -569,7 +622,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_fullComboCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_goodCutsCount(
         &mut self,
@@ -580,7 +633,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_goodCutsCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_handDistanceTravelled(
         &mut self,
@@ -591,7 +644,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_handDistanceTravelled", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_missedCutsCount(
         &mut self,
@@ -602,7 +655,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_missedCutsCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_playedLevelsCount(
         &mut self,
@@ -613,7 +666,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_playedLevelsCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_timePlayed(
         &mut self,
@@ -624,7 +677,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_timePlayed", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_totalCutScore(
         &mut self,
@@ -635,7 +688,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_totalCutScore", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_totalScore(
         &mut self,
@@ -646,7 +699,7 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_totalScore", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerAllOverallStatsData+PlayerOverallStatsData")]

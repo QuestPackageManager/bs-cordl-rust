@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckPlayerSensitivityFlagAndContinueFlow", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidActivate(
         &mut self,
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidDeactivate(
         &mut self,
@@ -88,7 +88,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndOfLifeNoticeContinueFlow(
         &mut self,
@@ -98,7 +98,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EndOfLifeNoticeContinueFlow", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GoToNextScene(
         &mut self,
@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GoToNextScene", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleEndOfLifeNoticeViewControllerDidFinish(
         &mut self,
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleEndOfLifeNoticeViewControllerDidFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleEulaViewControllerDidFinish(
         &mut self,
@@ -129,7 +129,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleEulaViewControllerDidFinish", (buttonType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleExplicitContentWarningViewControllerDidFinish(
         &mut self,
@@ -139,7 +139,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleExplicitContentWarningViewControllerDidFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleHealthWarningViewControllerDidFinish(
         &mut self,
@@ -149,7 +149,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleHealthWarningViewControllerDidFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoUserAgeWarningViewControllerDidFinish(
         &mut self,
@@ -159,7 +159,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleNoUserAgeWarningViewControllerDidFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePrivacyPolicyViewControllerDidFinish(
         &mut self,
@@ -170,7 +170,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePrivacyPolicyViewControllerDidFinish", (buttonType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSelectLanguageViewControllerDidChangeLanguageAsync(
         &mut self,
@@ -180,7 +180,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSelectLanguageViewControllerDidChangeLanguageAsync", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSelectLanguageViewControllerDidPressContinueButton(
         &mut self,
@@ -190,7 +190,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSelectLanguageViewControllerDidPressContinueButton", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSelectRegionViewControllerDidPressContinueButton(
         &mut self,
@@ -201,7 +201,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSelectRegionViewControllerDidPressContinueButton", (region))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleUserAgeCategoryArrived(
         &mut self,
@@ -211,39 +211,43 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleUserAgeCategoryArrived", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ResolveMainViewController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController> = __cordl_object
             .invoke("ResolveMainViewController", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResolvePlayerAgreementsViewController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::ViewController> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HMUI::ViewController = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController> = __cordl_object
             .invoke("ResolvePlayerAgreementsViewController", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TopViewControllerWillChange(
         &mut self,
-        oldViewController: *mut crate::HMUI::ViewController,
-        newViewController: *mut crate::HMUI::ViewController,
+        oldViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        newViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -254,7 +258,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
                 "TopViewControllerWillChange",
                 (oldViewController, newViewController, animationType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WaitForUserAgeCategory(
         &mut self,
@@ -264,7 +268,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WaitForUserAgeCategory", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -274,7 +278,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HealthWarningFlowCoordinator")]
@@ -317,24 +321,28 @@ for crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
 #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
 impl crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
     pub fn New(
-        nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        nextScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (nextScenesTransitionSetupData))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        nextScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (nextScenesTransitionSetupData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]

@@ -28,14 +28,14 @@ for crate::System::Reflection::CustomAttributeNamedArgument {
 impl crate::System::Reflection::CustomAttributeNamedArgument {
     pub fn Equals(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -43,21 +43,21 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_MemberInfo_CustomAttributeTypedArgument2(
         &mut self,
-        memberInfo: *mut crate::System::Reflection::MemberInfo,
+        memberInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         typedArgument: crate::System::Reflection::CustomAttributeTypedArgument,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -65,24 +65,24 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
             ".ctor",
             (memberInfo, typedArgument),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_MemberInfo_Il2CppObject1(
         &mut self,
-        memberInfo: *mut crate::System::Reflection::MemberInfo,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        memberInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (memberInfo, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Type_Il2CppString__cordl_bool_CustomAttributeTypedArgument0(
         &mut self,
-        attributeType: *mut crate::System::Type,
-        memberName: *mut quest_hook::libil2cpp::Il2CppString,
+        attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isField: bool,
         typedValue: crate::System::Reflection::CustomAttributeTypedArgument,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -91,7 +91,7 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
             ".ctor",
             (attributeType, memberName, isField, typedValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsField(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -99,27 +99,27 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
             "get_IsField",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MemberInfo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MemberInfo> {
-        let __cordl_ret: *mut crate::System::Reflection::MemberInfo = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_MemberInfo",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MemberInfo,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_MemberInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_MemberName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_MemberName",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_MemberName", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_TypedValue(
         &mut self,
@@ -131,6 +131,6 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
             "get_TypedValue",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

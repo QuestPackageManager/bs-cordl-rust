@@ -27,12 +27,12 @@ impl std::ops::DerefMut for crate::UnityEngine::CharacterJoint {
 }
 #[cfg(feature = "UnityEngine+CharacterJoint")]
 impl crate::UnityEngine::CharacterJoint {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -42,14 +42,14 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_enableProjection(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_enableProjection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_highTwistLimit(
         &mut self,
@@ -59,7 +59,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = __cordl_object
             .invoke("get_highTwistLimit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_highTwistLimit_Injected(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_highTwistLimit_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lowTwistLimit(
         &mut self,
@@ -80,7 +80,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = __cordl_object
             .invoke("get_lowTwistLimit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lowTwistLimit_Injected(
         &mut self,
@@ -91,21 +91,21 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_lowTwistLimit_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_projectionAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_projectionAngle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_projectionDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_projectionDistance", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_swing1Limit(
         &mut self,
@@ -115,7 +115,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = __cordl_object
             .invoke("get_swing1Limit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_swing1Limit_Injected(
         &mut self,
@@ -126,7 +126,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_swing1Limit_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_swing2Limit(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = __cordl_object
             .invoke("get_swing2Limit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_swing2Limit_Injected(
         &mut self,
@@ -147,7 +147,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_swing2Limit_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_swingAxis(
         &mut self,
@@ -157,7 +157,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_swingAxis", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_swingAxis_Injected(
         &mut self,
@@ -168,7 +168,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_swingAxis_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_swingLimitSpring(
         &mut self,
@@ -178,7 +178,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: crate::UnityEngine::SoftJointLimitSpring = __cordl_object
             .invoke("get_swingLimitSpring", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_swingLimitSpring_Injected(
         &mut self,
@@ -189,7 +189,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_swingLimitSpring_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_twistLimitSpring(
         &mut self,
@@ -199,7 +199,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: crate::UnityEngine::SoftJointLimitSpring = __cordl_object
             .invoke("get_twistLimitSpring", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_twistLimitSpring_Injected(
         &mut self,
@@ -210,7 +210,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_twistLimitSpring_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_enableProjection(
         &mut self,
@@ -221,7 +221,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_enableProjection", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_highTwistLimit(
         &mut self,
@@ -232,7 +232,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_highTwistLimit", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_highTwistLimit_Injected(
         &mut self,
@@ -243,7 +243,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_highTwistLimit_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_lowTwistLimit(
         &mut self,
@@ -254,7 +254,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_lowTwistLimit", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_lowTwistLimit_Injected(
         &mut self,
@@ -265,7 +265,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_lowTwistLimit_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_projectionAngle(
         &mut self,
@@ -276,7 +276,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_projectionAngle", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_projectionDistance(
         &mut self,
@@ -287,7 +287,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_projectionDistance", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_swing1Limit(
         &mut self,
@@ -298,7 +298,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_swing1Limit", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_swing1Limit_Injected(
         &mut self,
@@ -309,7 +309,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_swing1Limit_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_swing2Limit(
         &mut self,
@@ -320,7 +320,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_swing2Limit", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_swing2Limit_Injected(
         &mut self,
@@ -331,7 +331,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_swing2Limit_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_swingAxis(
         &mut self,
@@ -342,7 +342,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_swingAxis", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_swingAxis_Injected(
         &mut self,
@@ -353,7 +353,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_swingAxis_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_swingLimitSpring(
         &mut self,
@@ -364,7 +364,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_swingLimitSpring", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_swingLimitSpring_Injected(
         &mut self,
@@ -375,7 +375,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_swingLimitSpring_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_twistLimitSpring(
         &mut self,
@@ -386,7 +386,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_twistLimitSpring", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_twistLimitSpring_Injected(
         &mut self,
@@ -397,7 +397,7 @@ impl crate::UnityEngine::CharacterJoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_twistLimitSpring_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+CharacterJoint")]

@@ -33,7 +33,7 @@ impl crate::System::Threading::CancellationTokenRegistration {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisposeAsync(
         &mut self,
@@ -43,7 +43,7 @@ impl crate::System::Threading::CancellationTokenRegistration {
             "DisposeAsync",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_CancellationTokenRegistration1(
         &mut self,
@@ -54,18 +54,18 @@ impl crate::System::Threading::CancellationTokenRegistration {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -73,7 +73,7 @@ impl crate::System::Threading::CancellationTokenRegistration {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Unregister(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -81,11 +81,13 @@ impl crate::System::Threading::CancellationTokenRegistration {
             "Unregister",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        callbackInfo: *mut crate::System::Threading::CancellationCallbackInfo,
+        callbackInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::CancellationCallbackInfo,
+        >,
         registrationInfo: crate::System::Threading::SparselyPopulatedArrayAddInfo_1<
             *mut crate::System::Threading::CancellationCallbackInfo,
         >,
@@ -95,6 +97,6 @@ impl crate::System::Threading::CancellationTokenRegistration {
             ".ctor",
             (callbackInfo, registrationInfo),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

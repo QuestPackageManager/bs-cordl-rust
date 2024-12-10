@@ -49,7 +49,7 @@ impl crate::TMPro::KerningTable {
                 "AddGlyphPairAdjustmentRecord",
                 (first, firstAdjustments, second, secondAdjustments),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddKerningPair_0(
         &mut self,
@@ -59,7 +59,7 @@ impl crate::TMPro::KerningTable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddKerningPair", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddKerningPair_u32_u32_f32_1(
         &mut self,
@@ -72,14 +72,14 @@ impl crate::TMPro::KerningTable {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("AddKerningPair", (first, second, offset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveKerningPair_i32_0(
         &mut self,
@@ -91,7 +91,7 @@ impl crate::TMPro::KerningTable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveKerningPair", (left, right))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveKerningPair_i32_1(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::TMPro::KerningTable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveKerningPair", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SortKerningPairs(
         &mut self,
@@ -112,7 +112,7 @@ impl crate::TMPro::KerningTable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SortKerningPairs", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -122,7 +122,7 @@ impl crate::TMPro::KerningTable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TMPro+KerningTable")]

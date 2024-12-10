@@ -40,7 +40,7 @@ impl crate::System::Runtime::Remoting::Channels::ISecurableChannel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IsSecured", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+ISecurableChannel")]

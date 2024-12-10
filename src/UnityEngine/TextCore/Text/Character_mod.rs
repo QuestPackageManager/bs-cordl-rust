@@ -24,33 +24,35 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::Character {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+Character")]
 impl crate::UnityEngine::TextCore::Text::Character {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_u32_FontAsset_Glyph1(
         unicode: u32,
-        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-        glyph: *mut crate::UnityEngine::TextCore::Glyph,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+        glyph: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (unicode, fontAsset, glyph))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_u32_u32_2(
         unicode: u32,
         glyphIndex: u32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (unicode, glyphIndex))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -60,20 +62,22 @@ impl crate::UnityEngine::TextCore::Text::Character {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_FontAsset_Glyph1(
         &mut self,
         unicode: u32,
-        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-        glyph: *mut crate::UnityEngine::TextCore::Glyph,
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+        glyph: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (unicode, fontAsset, glyph))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_u32_2(
         &mut self,
@@ -85,7 +89,7 @@ impl crate::UnityEngine::TextCore::Text::Character {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (unicode, glyphIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+Character")]

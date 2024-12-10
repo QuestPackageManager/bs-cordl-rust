@@ -29,68 +29,76 @@ impl std::ops::DerefMut for crate::System::Collections::Specialized::CompatibleC
 impl crate::System::Collections::Specialized::CompatibleComparer {
     pub fn Equals(
         &mut self,
-        a: *mut quest_hook::libil2cpp::Il2CppObject,
-        b: *mut quest_hook::libil2cpp::Il2CppObject,
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (a, b))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        comparer: *mut crate::System::Collections::IComparer,
-        hashCodeProvider: *mut crate::System::Collections::IHashCodeProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+        hashCodeProvider: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IHashCodeProvider,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (comparer, hashCodeProvider))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        comparer: *mut crate::System::Collections::IComparer,
-        hashCodeProvider: *mut crate::System::Collections::IHashCodeProvider,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+        hashCodeProvider: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IHashCodeProvider,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (comparer, hashCodeProvider))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Comparer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IComparer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IComparer = __cordl_object
-            .invoke("get_Comparer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HashCodeProvider(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::IHashCodeProvider,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IHashCodeProvider = __cordl_object
-            .invoke("get_HashCodeProvider", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IComparer,
+        > = __cordl_object.invoke("get_Comparer", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_HashCodeProvider(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IHashCodeProvider>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IHashCodeProvider,
+        > = __cordl_object.invoke("get_HashCodeProvider", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Collections+Specialized+CompatibleComparer")]

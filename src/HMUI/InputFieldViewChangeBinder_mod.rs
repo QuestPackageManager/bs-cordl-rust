@@ -35,22 +35,26 @@ impl std::ops::DerefMut for crate::HMUI::InputFieldViewChangeBinder {
 impl crate::HMUI::InputFieldViewChangeBinder {
     pub fn AddBinding(
         &mut self,
-        inputField: *mut crate::HMUI::InputFieldView,
-        action: *mut crate::System::Action_1<*mut crate::HMUI::InputFieldView>,
+        inputField: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::HMUI::InputFieldView>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddBinding", (inputField, action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddBindings(
         &mut self,
-        bindings: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Tuple_2<
-                *mut crate::HMUI::InputFieldView,
-                *mut crate::System::Action_1<*mut crate::HMUI::InputFieldView>,
+        bindings: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Tuple_2<
+                    *mut crate::HMUI::InputFieldView,
+                    *mut crate::System::Action_1<*mut crate::HMUI::InputFieldView>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,7 +63,7 @@ impl crate::HMUI::InputFieldViewChangeBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddBindings", (bindings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearBindings(
         &mut self,
@@ -69,7 +73,7 @@ impl crate::HMUI::InputFieldViewChangeBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearBindings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Disable(
         &mut self,
@@ -79,7 +83,7 @@ impl crate::HMUI::InputFieldViewChangeBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Disable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enable(
         &mut self,
@@ -89,7 +93,7 @@ impl crate::HMUI::InputFieldViewChangeBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Enable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
@@ -99,14 +103,14 @@ impl crate::HMUI::InputFieldViewChangeBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -116,7 +120,7 @@ impl crate::HMUI::InputFieldViewChangeBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+InputFieldViewChangeBinder")]

@@ -41,7 +41,7 @@ impl crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Evaluate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindMixers_0(
         &mut self,
@@ -51,7 +51,7 @@ impl crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FindMixers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindMixers_Playable_i32_Playable1(
         &mut self,
@@ -64,16 +64,16 @@ impl crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FindMixers", (parent, port, node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         output: crate::UnityEngine::Animations::AnimationPlayableOutput,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (output))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (output))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor")]

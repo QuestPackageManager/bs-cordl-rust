@@ -29,7 +29,7 @@ impl crate::UnityEngine::SoftJointLimitSpring {
             "get_damper",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_spring(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -37,7 +37,7 @@ impl crate::UnityEngine::SoftJointLimitSpring {
             "get_spring",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_damper(
         &mut self,
@@ -48,7 +48,7 @@ impl crate::UnityEngine::SoftJointLimitSpring {
             "set_damper",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_spring(
         &mut self,
@@ -59,6 +59,6 @@ impl crate::UnityEngine::SoftJointLimitSpring {
             "set_spring",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

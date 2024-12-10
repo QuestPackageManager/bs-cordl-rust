@@ -73,70 +73,88 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     pub type __c__DisplayClass16_0 = crate::GlobalNamespace::OculusBeatmapDataAssetFileModel___c__DisplayClass16_0;
     pub fn GetAssetBundleFileForBeatmapLevelAsync(
         &mut self,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::GetAssetBundleFileResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::GetAssetBundleFileResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
         > = __cordl_object
             .invoke(
                 "GetAssetBundleFileForBeatmapLevelAsync",
                 (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDownloadAssetBundleFileAsync(
         &mut self,
-        levelId: *mut quest_hook::libil2cpp::Il2CppString,
-        assetDetails: *mut crate::Oculus::Platform::Models::AssetDetails,
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assetDetails: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetDetails,
+        >,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::GetAssetBundleFileResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::GetAssetBundleFileResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
         > = __cordl_object
             .invoke(
                 "GetDownloadAssetBundleFileAsync",
                 (levelId, assetDetails, cancellationToken),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTaskCompletionSourceForDownload(
         &mut self,
-        levelId: *mut quest_hook::libil2cpp::Il2CppString,
-        assetDetail: *mut crate::Oculus::Platform::Models::AssetDetails,
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assetDetail: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetDetails,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
-            crate::GlobalNamespace::GetAssetBundleFileResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskCompletionSource_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
-            crate::GlobalNamespace::GetAssetBundleFileResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskCompletionSource_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
         > = __cordl_object
             .invoke("GetTaskCompletionSourceForDownload", (levelId, assetDetail))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleAssetFileDownloadUpdate(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message_1<
-            *mut crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1<
+                *mut crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -144,63 +162,71 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleAssetFileDownloadUpdate", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        oculusPlatformAdditionalContentModel: *mut crate::GlobalNamespace::OculusPlatformAdditionalContentModel,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        oculusPlatformAdditionalContentModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OculusPlatformAdditionalContentModel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (oculusPlatformAdditionalContentModel))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReloadAssetDetailsForAllLevelsAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<bool>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object
             .invoke("ReloadAssetDetailsForAllLevelsAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryDeleteAssetBundleFileForBeatmapLevelAsync(
         &mut self,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<bool>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<bool> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object
             .invoke(
                 "TryDeleteAssetBundleFileForBeatmapLevelAsync",
                 (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        oculusPlatformAdditionalContentModel: *mut crate::GlobalNamespace::OculusPlatformAdditionalContentModel,
+        oculusPlatformAdditionalContentModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OculusPlatformAdditionalContentModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (oculusPlatformAdditionalContentModel))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_levelDataAssetDownloadUpdateEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -208,12 +234,12 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_levelDataAssetDownloadUpdateEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_levelDataAssetDownloadUpdateEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -221,7 +247,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_levelDataAssetDownloadUpdateEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OculusBeatmapDataAssetFileModel")]
@@ -269,26 +295,26 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_LevelDownloadingData
 #[cfg(feature = "OculusBeatmapDataAssetFileModel+LevelDownloadingData")]
 impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_LevelDownloadingData {
     pub fn New(
-        levelId: *mut quest_hook::libil2cpp::Il2CppString,
-        assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (levelId, assetBundlePath))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        levelId: *mut quest_hook::libil2cpp::Il2CppString,
-        assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (levelId, assetBundlePath))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OculusBeatmapDataAssetFileModel+LevelDownloadingData")]

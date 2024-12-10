@@ -31,6 +31,6 @@ impl crate::TMPro::CaretInfo {
             ".ctor",
             (index, position),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

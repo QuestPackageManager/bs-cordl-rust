@@ -32,51 +32,54 @@ for crate::System::ComponentModel::Design::Serialization::InstanceDescriptor {
 impl crate::System::ComponentModel::Design::Serialization::InstanceDescriptor {
     pub fn Invoke(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("Invoke", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Invoke", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_MemberInfo_ICollection0(
-        member: *mut crate::System::Reflection::MemberInfo,
-        arguments: *mut crate::System::Collections::ICollection,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        arguments: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (member, arguments))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New__cordl_bool1(
-        member: *mut crate::System::Reflection::MemberInfo,
-        arguments: *mut crate::System::Collections::ICollection,
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        arguments: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
         isComplete: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (member, arguments, isComplete))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_MemberInfo_ICollection0(
         &mut self,
-        member: *mut crate::System::Reflection::MemberInfo,
-        arguments: *mut crate::System::Collections::ICollection,
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        arguments: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (member, arguments))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool1(
         &mut self,
-        member: *mut crate::System::Reflection::MemberInfo,
-        arguments: *mut crate::System::Collections::ICollection,
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        arguments: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
         isComplete: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -84,27 +87,33 @@ impl crate::System::ComponentModel::Design::Serialization::InstanceDescriptor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (member, arguments, isComplete))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Arguments(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("get_Arguments", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = __cordl_object.invoke("get_Arguments", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_MemberInfo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MemberInfo> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Reflection::MemberInfo = __cordl_object
-            .invoke("get_MemberInfo", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MemberInfo,
+        > = __cordl_object.invoke("get_MemberInfo", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+ComponentModel+Design+Serialization+InstanceDescriptor")]

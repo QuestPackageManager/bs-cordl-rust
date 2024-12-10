@@ -32,44 +32,50 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::FxEventsCollection {
 impl crate::BeatmapSaveDataVersion3::FxEventsCollection {
     pub fn AddEventAndGetIndex_FloatFxEventBaseData0(
         &mut self,
-        e: *mut crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+        e: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("AddEventAndGetIndex", (e))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddEventAndGetIndex_IntFxEventBaseData1(
         &mut self,
-        e: *mut crate::BeatmapSaveDataVersion3::IntFxEventBaseData,
+        e: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IntFxEventBaseData>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("AddEventAndGetIndex", (e))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_List_1_List_1_1(
-        intFxEventBaseData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::IntFxEventBaseData,
+        intFxEventBaseData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::IntFxEventBaseData,
+            >,
         >,
-        floatFxEventBaseData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+        floatFxEventBaseData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (intFxEventBaseData, floatFxEventBaseData))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -79,15 +85,19 @@ impl crate::BeatmapSaveDataVersion3::FxEventsCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_List_1_List_1_1(
         &mut self,
-        intFxEventBaseData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::IntFxEventBaseData,
+        intFxEventBaseData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::IntFxEventBaseData,
+            >,
         >,
-        floatFxEventBaseData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+        floatFxEventBaseData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -95,37 +105,45 @@ impl crate::BeatmapSaveDataVersion3::FxEventsCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (intFxEventBaseData, floatFxEventBaseData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_floatEventsList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+            >,
         > = __cordl_object.invoke("get_floatEventsList", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_intEventsList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::BeatmapSaveDataVersion3::IntFxEventBaseData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::BeatmapSaveDataVersion3::IntFxEventBaseData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::BeatmapSaveDataVersion3::IntFxEventBaseData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::BeatmapSaveDataVersion3::IntFxEventBaseData,
+            >,
         > = __cordl_object.invoke("get_intEventsList", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+FxEventsCollection")]

@@ -39,18 +39,18 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
     pub type TextureInfo = crate::UnityEngine::UIElements::TextureRegistry_TextureInfo;
     pub fn Acquire(
         &mut self,
-        tex: *mut crate::UnityEngine::Texture,
+        tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TextureId> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::UIElements::TextureId = __cordl_object
             .invoke("Acquire", (tex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AllocAndAcquire(
         &mut self,
-        texture: *mut crate::UnityEngine::Texture,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         dynamic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TextureId> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -58,7 +58,7 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::TextureId = __cordl_object
             .invoke("AllocAndAcquire", (texture, dynamic))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AllocAndAcquireDynamic(
         &mut self,
@@ -68,25 +68,27 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::TextureId = __cordl_object
             .invoke("AllocAndAcquireDynamic", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTexture(
         &mut self,
         id: crate::UnityEngine::UIElements::TextureId,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Texture = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = __cordl_object
             .invoke("GetTexture", (id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Release(
         &mut self,
@@ -97,19 +99,19 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", (id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateDynamic(
         &mut self,
         id: crate::UnityEngine::UIElements::TextureId,
-        texture: *mut crate::UnityEngine::Texture,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateDynamic", (id, texture))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -119,7 +121,7 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextureRegistry")]

@@ -28,35 +28,40 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::NoThrowGetBinder
 impl crate::Newtonsoft::Json::Utilities::NoThrowGetBinderMember {
     pub fn FallbackGetMember(
         &mut self,
-        target: *mut crate::System::Dynamic::DynamicMetaObject,
-        errorSuggestion: *mut crate::System::Dynamic::DynamicMetaObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Dynamic::DynamicMetaObject> {
+        target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+        errorSuggestion: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Dynamic::DynamicMetaObject = __cordl_object
-            .invoke("FallbackGetMember", (target, errorSuggestion))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObject,
+        > = __cordl_object.invoke("FallbackGetMember", (target, errorSuggestion))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        innerBinder: *mut crate::System::Dynamic::GetMemberBinder,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        innerBinder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::GetMemberBinder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (innerBinder))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        innerBinder: *mut crate::System::Dynamic::GetMemberBinder,
+        innerBinder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::GetMemberBinder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (innerBinder))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowGetBinderMember")]

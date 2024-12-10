@@ -36,7 +36,7 @@ impl crate::UnityEngine::Tilemaps::TileData {
             "set_colliderType",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_color(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::UnityEngine::Tilemaps::TileData {
             "set_color",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flags(
         &mut self,
@@ -58,29 +58,29 @@ impl crate::UnityEngine::Tilemaps::TileData {
             "set_flags",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_gameObject(
         &mut self,
-        value: *mut crate::UnityEngine::GameObject,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_gameObject",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sprite(
         &mut self,
-        value: *mut crate::UnityEngine::Sprite,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_sprite",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_transform(
         &mut self,
@@ -91,6 +91,6 @@ impl crate::UnityEngine::Tilemaps::TileData {
             "set_transform",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

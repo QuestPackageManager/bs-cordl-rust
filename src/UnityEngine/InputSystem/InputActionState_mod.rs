@@ -85,13 +85,15 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddToGlobalList", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyProcessors<TValue>(
         &mut self,
         bindingIndex: i32,
         value: TValue,
-        controlOfType: *mut crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        controlOfType: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -102,12 +104,14 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: TValue = __cordl_object
             .invoke("ApplyProcessors", (bindingIndex, value, controlOfType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CallActionListeners(
         &mut self,
         actionIndex: i32,
-        actionMap: *mut crate::UnityEngine::InputSystem::InputActionMap,
+        actionMap: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        >,
         phase: crate::UnityEngine::InputSystem::InputActionPhase,
         listeners: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
@@ -116,7 +120,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 >,
             >,
         >,
-        callbackName: *mut quest_hook::libil2cpp::Il2CppString,
+        callbackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -126,17 +130,17 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "CallActionListeners",
                 (actionIndex, actionMap, phase, listeners, callbackName),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CanUseDevice(
         &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CanUseDevice", (device))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ChangePhaseOfAction(
         &mut self,
@@ -154,12 +158,12 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "ChangePhaseOfAction",
                 (newPhase, trigger, phaseAfterPerformedOrCanceled),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ChangePhaseOfActionInternal(
         &mut self,
         actionIndex: i32,
-        actionState: *mut quest_hook::libil2cpp::Il2CppObject,
+        actionState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         newPhase: crate::UnityEngine::InputSystem::InputActionPhase,
         trigger: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputActionState_TriggerState,
@@ -173,7 +177,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "ChangePhaseOfActionInternal",
                 (actionIndex, actionState, newPhase, trigger),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ChangePhaseOfInteraction(
         &mut self,
@@ -192,7 +196,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "ChangePhaseOfInteraction",
                 (newPhase, trigger, phaseAfterPerformed, processNextInteractionOnCancel),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClaimDataFrom(
         &mut self,
@@ -203,19 +207,20 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClaimDataFrom", (resolver))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputActionState,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionState>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputActionState = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionState,
+        > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeControlGroupingIfNecessary(
         &mut self,
@@ -225,7 +230,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ComputeControlGroupingIfNecessary", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Destroy(
         &mut self,
@@ -236,40 +241,40 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Destroy", (isFinalizing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisableAllActions(
         &mut self,
-        map: *mut crate::UnityEngine::InputSystem::InputActionMap,
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisableAllActions", (map))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisableControls_InputAction1(
         &mut self,
-        action: *mut crate::UnityEngine::InputSystem::InputAction,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisableControls", (action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisableControls_InputActionMap0(
         &mut self,
-        map: *mut crate::UnityEngine::InputSystem::InputActionMap,
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisableControls", (map))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisableControls_i32_i32_i32_2(
         &mut self,
@@ -282,18 +287,18 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisableControls", (mapIndex, controlStartIndex, numControls))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisableSingleAction(
         &mut self,
-        action: *mut crate::UnityEngine::InputSystem::InputAction,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisableSingleAction", (action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -303,40 +308,40 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnableAllActions(
         &mut self,
-        map: *mut crate::UnityEngine::InputSystem::InputActionMap,
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnableAllActions", (map))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnableControls_InputAction1(
         &mut self,
-        action: *mut crate::UnityEngine::InputSystem::InputAction,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnableControls", (action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnableControls_InputActionMap0(
         &mut self,
-        map: *mut crate::UnityEngine::InputSystem::InputActionMap,
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnableControls", (map))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnableControls_i32_i32_i32_2(
         &mut self,
@@ -349,18 +354,18 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnableControls", (mapIndex, controlStartIndex, numControls))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnableSingleAction(
         &mut self,
-        action: *mut crate::UnityEngine::InputSystem::InputAction,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnableSingleAction", (action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EvaluateCompositePartMagnitude(
         &mut self,
@@ -372,11 +377,11 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("EvaluateCompositePartMagnitude", (bindingIndex, partNumber))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FetchActionState(
         &mut self,
-        action: *mut crate::UnityEngine::InputSystem::InputAction,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputActionState_TriggerState,
@@ -388,11 +393,11 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputActionState_TriggerState,
         > = __cordl_object.invoke("FetchActionState", (action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FetchMapIndices(
         &mut self,
-        map: *mut crate::UnityEngine::InputSystem::InputActionMap,
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices,
     > {
@@ -401,7 +406,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices = __cordl_object
             .invoke("FetchMapIndices", (map))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
@@ -411,19 +416,19 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindControlIndexOnBinding(
         &mut self,
         bindingIndex: i32,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("FindControlIndexOnBinding", (bindingIndex, control))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FinishBindingCompositeSetups(
         &mut self,
@@ -433,7 +438,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FinishBindingCompositeSetups", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FinishBindingResolution(
         &mut self,
@@ -452,7 +457,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "FinishBindingResolution",
                 (hasEnabledActions, oldMemory, activeControls, isFullResolve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetActionBindingStartIndexAndCount(
         &mut self,
@@ -464,33 +469,37 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: u16 = __cordl_object
             .invoke("GetActionBindingStartIndexAndCount", (actionIndex, bindingCount))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetActionMap(
         &mut self,
         bindingIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputActionMap,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputActionMap = __cordl_object
-            .invoke("GetActionMap", (bindingIndex))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        > = __cordl_object.invoke("GetActionMap", (bindingIndex))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetActionOrNoneString(
         &mut self,
         trigger: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputActionState_TriggerState,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("GetActionOrNoneString", (trigger))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("GetActionOrNoneString", (trigger))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetActionOrNull_ByRefMut1(
         &mut self,
@@ -498,27 +507,29 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             crate::UnityEngine::InputSystem::InputActionState_TriggerState,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = __cordl_object
-            .invoke("GetActionOrNull", (trigger))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputAction,
+        > = __cordl_object.invoke("GetActionOrNull", (trigger))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetActionOrNull_i32_0(
         &mut self,
         bindingIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = __cordl_object
-            .invoke("GetActionOrNull", (bindingIndex))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputAction,
+        > = __cordl_object.invoke("GetActionOrNull", (bindingIndex))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetBinding(
         &mut self,
@@ -532,7 +543,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputBinding,
         > = __cordl_object.invoke("GetBinding", (bindingIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetBindingIndexInMap(
         &mut self,
@@ -543,7 +554,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetBindingIndexInMap", (bindingIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetBindingIndexInState(
         &mut self,
@@ -555,7 +566,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetBindingIndexInState", (mapIndex, bindingIndexInMap))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetBindingState(
         &mut self,
@@ -571,7 +582,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputActionState_BindingState,
         > = __cordl_object.invoke("GetBindingState", (bindingIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCompositePartPressTime(
         &mut self,
@@ -583,7 +594,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: f64 = __cordl_object
             .invoke("GetCompositePartPressTime", (bindingIndex, partNumber))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetControl(
         &mut self,
@@ -591,14 +602,15 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             crate::UnityEngine::InputSystem::InputActionState_TriggerState,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = __cordl_object
-            .invoke("GetControl", (trigger))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        > = __cordl_object.invoke("GetControl", (trigger))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetInteractionOrNull(
         &mut self,
@@ -611,7 +623,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: Blacklisted = __cordl_object
             .invoke("GetInteractionOrNull", (trigger))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetValueSizeInBytes(
         &mut self,
@@ -623,26 +635,26 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetValueSizeInBytes", (bindingIndex, controlIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetValueType(
         &mut self,
         bindingIndex: i32,
         controlIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("GetValueType", (bindingIndex, controlIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasEnabledActions(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasEnabledActions", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HookOnBeforeUpdate(
         &mut self,
@@ -652,7 +664,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HookOnBeforeUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
@@ -663,11 +675,11 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", (resolver))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsActionBoundToControlFromDevice(
         &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         actionIndex: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -675,7 +687,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsActionBoundToControlFromDevice", (device, actionIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsActiveControl(
         &mut self,
@@ -687,7 +699,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsActiveControl", (bindingIndex, controlIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsConflictingInput(
         &mut self,
@@ -701,7 +713,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsConflictingInput", (trigger, actionIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsControlEnabled(
         &mut self,
@@ -712,24 +724,24 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsControlEnabled", (controlIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsUsingDevice(
         &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsUsingDevice", (device))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn NotifyListenersOfActionChange(
         &mut self,
@@ -740,7 +752,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NotifyListenersOfActionChange", (change))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnBeforeInitialUpdate(
         &mut self,
@@ -750,7 +762,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBeforeInitialUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PrepareForBindingReResolution(
         &mut self,
@@ -770,7 +782,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "PrepareForBindingReResolution",
                 (needFullResolve, activeControls, hasEnabledActions),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessButtonState(
         &mut self,
@@ -778,14 +790,14 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             crate::UnityEngine::InputSystem::InputActionState_TriggerState,
         >,
         actionIndex: i32,
-        bindingStatePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        bindingStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessButtonState", (trigger, actionIndex, bindingStatePtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessControlStateChange(
         &mut self,
@@ -803,7 +815,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "ProcessControlStateChange",
                 (mapIndex, controlIndex, bindingIndex, _cordl_time, eventPtr),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessDefaultInteraction(
         &mut self,
@@ -817,7 +829,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessDefaultInteraction", (trigger, actionIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessInteractions(
         &mut self,
@@ -835,7 +847,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "ProcessInteractions",
                 (trigger, interactionStartIndex, interactionCount),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessTimeout(
         &mut self,
@@ -853,25 +865,29 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "ProcessTimeout",
                 (_cordl_time, mapIndex, controlIndex, bindingIndex, interactionIndex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadCompositePartValueAsObject(
         &mut self,
         bindingIndex: i32,
         partNumber: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke("ReadCompositePartValueAsObject", (bindingIndex, partNumber))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadCompositePartValue_ByRefMut_TComparer0<TValue, TComparer>(
         &mut self,
         bindingIndex: i32,
         partNumber: i32,
-        buttonValuePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        buttonValuePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         controlIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         comparer: TComparer,
     ) -> quest_hook::libil2cpp::Result<TValue>
@@ -889,13 +905,13 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "ReadCompositePartValue",
                 (bindingIndex, partNumber, buttonValuePtr, controlIndex, comparer),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadCompositePartValue_i32_1(
         &mut self,
         bindingIndex: i32,
         partNumber: i32,
-        buffer: *mut quest_hook::libil2cpp::Il2CppObject,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferSize: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -906,7 +922,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "ReadCompositePartValue",
                 (bindingIndex, partNumber, buffer, bufferSize),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValueAsButton(
         &mut self,
@@ -918,29 +934,33 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ReadValueAsButton", (bindingIndex, controlIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValueAsObject(
         &mut self,
         bindingIndex: i32,
         controlIndex: i32,
         ignoreComposites: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke(
                 "ReadValueAsObject",
                 (bindingIndex, controlIndex, ignoreComposites),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValue_Il2CppObject_i32__cordl_bool0(
         &mut self,
         bindingIndex: i32,
         controlIndex: i32,
-        buffer: *mut quest_hook::libil2cpp::Il2CppObject,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferSize: i32,
         ignoreComposites: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -952,7 +972,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "ReadValue",
                 (bindingIndex, controlIndex, buffer, bufferSize, ignoreComposites),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValue__cordl_bool1<TValue>(
         &mut self,
@@ -969,7 +989,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: TValue = __cordl_object
             .invoke("ReadValue", (bindingIndex, controlIndex, ignoreComposites))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveMapFromGlobalList(
         &mut self,
@@ -979,7 +999,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveMapFromGlobalList", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResetActionState(
         &mut self,
@@ -992,18 +1012,18 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetActionState", (actionIndex, toPhase, hardReset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResetActionStatesDrivenBy(
         &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetActionStatesDrivenBy", (device))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResetInteractionState(
         &mut self,
@@ -1014,7 +1034,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetInteractionState", (interactionIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResetInteractionStateAndCancelIfNecessary(
         &mut self,
@@ -1030,7 +1050,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "ResetInteractionStateAndCancelIfNecessary",
                 (mapIndex, bindingIndex, interactionIndex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RestoreActionStatesAfterReResolvingBindings(
         &mut self,
@@ -1048,7 +1068,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "RestoreActionStatesAfterReResolvingBindings",
                 (oldState, activeControls, isFullResolve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetControlEnabled(
         &mut self,
@@ -1060,11 +1080,11 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetControlEnabled", (controlIndex, state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetInitialStateCheckPending_Il2CppObject1(
         &mut self,
-        bindingStatePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        bindingStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1072,7 +1092,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetInitialStateCheckPending", (bindingStatePtr, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetInitialStateCheckPending_i32_0(
         &mut self,
@@ -1084,7 +1104,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetInitialStateCheckPending", (actionIndex, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTotalTimeoutCompletionTime(
         &mut self,
@@ -1098,7 +1118,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTotalTimeoutCompletionTime", (seconds, trigger))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SplitUpMapAndControlAndBindingIndex(
         &mut self,
@@ -1115,7 +1135,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "SplitUpMapAndControlAndBindingIndex",
                 (mapControlAndBindingIndex, mapIndex, controlIndex, bindingIndex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTimeout(
         &mut self,
@@ -1129,7 +1149,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartTimeout", (seconds, trigger))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StopTimeout(
         &mut self,
@@ -1140,17 +1160,20 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StopTimeout", (interactionIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_ICloneable_Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("System.ICloneable.Clone", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("System.ICloneable.Clone", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToCombinedMapAndControlAndBindingIndex(
         &mut self,
@@ -1166,7 +1189,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "ToCombinedMapAndControlAndBindingIndex",
                 (mapIndex, controlIndex, bindingIndex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnhookOnBeforeUpdate(
         &mut self,
@@ -1176,11 +1199,13 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnhookOnBeforeUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_InputSystem_LowLevel_IInputStateChangeMonitor_NotifyControlStateChanged(
         &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
         _cordl_time: f64,
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         mapControlAndBindingIndex: i64,
@@ -1193,11 +1218,13 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "UnityEngine.InputSystem.LowLevel.IInputStateChangeMonitor.NotifyControlStateChanged",
                 (control, _cordl_time, eventPtr, mapControlAndBindingIndex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_InputSystem_LowLevel_IInputStateChangeMonitor_NotifyTimerExpired(
         &mut self,
-        control: *mut crate::UnityEngine::InputSystem::InputControl,
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
         _cordl_time: f64,
         mapControlAndBindingIndex: i64,
         interactionIndex: i32,
@@ -1210,7 +1237,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "UnityEngine.InputSystem.LowLevel.IInputStateChangeMonitor.NotifyTimerExpired",
                 (control, _cordl_time, mapControlAndBindingIndex, interactionIndex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1220,77 +1247,98 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_actionStates(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_actionStates", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_actionStates", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_bindingStates(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_bindingStates", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_bindingStates", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_controlGroupingAndComplexity(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_controlGroupingAndComplexity", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_controlGroupingAndComplexity", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_controlIndexToBindingIndex(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_controlIndexToBindingIndex", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_controlIndexToBindingIndex", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_controlMagnitudes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_controlMagnitudes", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_controlMagnitudes", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_enabledControls(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_enabledControls", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_enabledControls", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_interactionStates(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_interactionStates", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_interactionStates", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_isProcessingControlStateChange(
         &mut self,
@@ -1300,59 +1348,62 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_isProcessingControlStateChange", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mapIndices(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_mapIndices", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_mapIndices", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalActionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_totalActionCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalBindingCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_totalBindingCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalCompositeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_totalCompositeCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalControlCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_totalControlCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalInteractionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_totalInteractionCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalMapCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_totalMapCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
@@ -1434,7 +1485,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_actionIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_chainsWithNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1442,7 +1493,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_chainsWithNext",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_compositeOrCompositeBindingIndex(
         &mut self,
@@ -1452,7 +1503,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_compositeOrCompositeBindingIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_controlCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1460,7 +1511,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_controlCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_controlStartIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1468,7 +1519,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_controlStartIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_flags(
         &mut self,
@@ -1480,7 +1531,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_flags",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_initialStateCheckPending(
         &mut self,
@@ -1490,7 +1541,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_initialStateCheckPending",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_interactionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1498,7 +1549,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_interactionCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_interactionStartIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1506,7 +1557,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_interactionStartIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isComposite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1514,7 +1565,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_isComposite",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isEndOfChain(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1522,7 +1573,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_isEndOfChain",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isPartOfChain(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1530,7 +1581,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_isPartOfChain",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isPartOfComposite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1538,7 +1589,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_isPartOfComposite",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mapIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1546,7 +1597,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_mapIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_partIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1554,7 +1605,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_partIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_pressTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1562,7 +1613,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_pressTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_processorCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1570,7 +1621,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_processorCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_processorStartIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1578,7 +1629,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_processorStartIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_triggerEventIdForComposite(
         &mut self,
@@ -1588,7 +1639,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_triggerEventIdForComposite",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wantsInitialStateCheck(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1596,7 +1647,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "get_wantsInitialStateCheck",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_actionIndex(
         &mut self,
@@ -1607,7 +1658,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_actionIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_chainsWithNext(
         &mut self,
@@ -1618,7 +1669,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_chainsWithNext",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_compositeOrCompositeBindingIndex(
         &mut self,
@@ -1629,7 +1680,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_compositeOrCompositeBindingIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_controlCount(
         &mut self,
@@ -1640,7 +1691,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_controlCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_controlStartIndex(
         &mut self,
@@ -1651,7 +1702,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_controlStartIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flags(
         &mut self,
@@ -1662,7 +1713,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_flags",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_initialStateCheckPending(
         &mut self,
@@ -1673,7 +1724,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_initialStateCheckPending",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_interactionCount(
         &mut self,
@@ -1684,7 +1735,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_interactionCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_interactionStartIndex(
         &mut self,
@@ -1695,7 +1746,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_interactionStartIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isComposite(
         &mut self,
@@ -1706,7 +1757,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_isComposite",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isEndOfChain(
         &mut self,
@@ -1717,7 +1768,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_isEndOfChain",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isPartOfComposite(
         &mut self,
@@ -1728,7 +1779,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_isPartOfComposite",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_mapIndex(
         &mut self,
@@ -1739,7 +1790,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_mapIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_partIndex(
         &mut self,
@@ -1750,7 +1801,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_partIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_pressTime(
         &mut self,
@@ -1761,7 +1812,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_pressTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_processorCount(
         &mut self,
@@ -1772,7 +1823,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_processorCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_processorStartIndex(
         &mut self,
@@ -1783,7 +1834,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_processorStartIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_triggerEventIdForComposite(
         &mut self,
@@ -1794,7 +1845,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_triggerEventIdForComposite",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wantsInitialStateCheck(
         &mut self,
@@ -1805,7 +1856,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
             "set_wantsInitialStateCheck",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
@@ -1877,7 +1928,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "get_isTimerRunning",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_performedTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1885,7 +1936,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "get_performedTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_phase(
         &mut self,
@@ -1897,7 +1948,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "get_phase",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_startTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1905,7 +1956,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "get_startTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_timerDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1913,7 +1964,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "get_timerDuration",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_timerMonitorIndex(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1921,7 +1972,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "get_timerMonitorIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_timerStartTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1929,7 +1980,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "get_timerStartTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalTimeoutCompletionDone(
         &mut self,
@@ -1939,7 +1990,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "get_totalTimeoutCompletionDone",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalTimeoutCompletionTimeRemaining(
         &mut self,
@@ -1949,7 +2000,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "get_totalTimeoutCompletionTimeRemaining",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_triggerControlIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1957,7 +2008,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "get_triggerControlIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isTimerRunning(
         &mut self,
@@ -1968,7 +2019,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "set_isTimerRunning",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_performedTime(
         &mut self,
@@ -1979,7 +2030,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "set_performedTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_phase(
         &mut self,
@@ -1990,7 +2041,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "set_phase",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_startTime(
         &mut self,
@@ -2001,7 +2052,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "set_startTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_timerDuration(
         &mut self,
@@ -2012,7 +2063,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "set_timerDuration",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_timerMonitorIndex(
         &mut self,
@@ -2023,7 +2074,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "set_timerMonitorIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_timerStartTime(
         &mut self,
@@ -2034,7 +2085,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "set_timerStartTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_totalTimeoutCompletionDone(
         &mut self,
@@ -2045,7 +2096,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "set_totalTimeoutCompletionDone",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_totalTimeoutCompletionTimeRemaining(
         &mut self,
@@ -2056,7 +2107,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "set_totalTimeoutCompletionTimeRemaining",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_triggerControlIndex(
         &mut self,
@@ -2067,7 +2118,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
             "set_triggerControlIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
@@ -2106,7 +2157,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_bindingIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_controlIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2114,7 +2165,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_controlIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_flags(
         &mut self,
@@ -2126,7 +2177,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_flags",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasMultipleConcurrentActuations(
         &mut self,
@@ -2136,7 +2187,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_hasMultipleConcurrentActuations",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_haveMagnitude(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2144,7 +2195,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_haveMagnitude",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_inProcessing(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2152,7 +2203,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_inProcessing",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_interactionIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2160,7 +2211,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_interactionIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2168,7 +2219,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_isButton",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isCanceled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2176,7 +2227,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_isCanceled",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isDisabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2184,7 +2235,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_isDisabled",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isPassThrough(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2192,7 +2243,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_isPassThrough",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isPerformed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2200,7 +2251,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_isPerformed",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isPressed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2208,7 +2259,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_isPressed",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isStarted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2216,7 +2267,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_isStarted",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isWaiting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2224,7 +2275,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_isWaiting",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lastCanceledInUpdate(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2232,7 +2283,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_lastCanceledInUpdate",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lastPerformedInUpdate(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2240,7 +2291,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_lastPerformedInUpdate",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_magnitude(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2248,7 +2299,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_magnitude",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mapIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2256,7 +2307,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_mapIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mayNeedConflictResolution(
         &mut self,
@@ -2266,7 +2317,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_mayNeedConflictResolution",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_phase(
         &mut self,
@@ -2278,7 +2329,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_phase",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_pressedInUpdate(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2286,7 +2337,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_pressedInUpdate",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_releasedInUpdate(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2294,7 +2345,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_releasedInUpdate",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_startTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2302,7 +2353,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_startTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2310,7 +2361,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "get_time",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_bindingIndex(
         &mut self,
@@ -2321,7 +2372,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_bindingIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_controlIndex(
         &mut self,
@@ -2332,7 +2383,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_controlIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flags(
         &mut self,
@@ -2343,7 +2394,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_flags",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_hasMultipleConcurrentActuations(
         &mut self,
@@ -2354,7 +2405,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_hasMultipleConcurrentActuations",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_inProcessing(
         &mut self,
@@ -2365,7 +2416,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_inProcessing",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_interactionIndex(
         &mut self,
@@ -2376,7 +2427,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_interactionIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isButton(
         &mut self,
@@ -2387,7 +2438,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_isButton",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isPassThrough(
         &mut self,
@@ -2398,7 +2449,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_isPassThrough",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isPressed(
         &mut self,
@@ -2409,7 +2460,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_isPressed",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_lastCanceledInUpdate(
         &mut self,
@@ -2420,7 +2471,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_lastCanceledInUpdate",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_lastPerformedInUpdate(
         &mut self,
@@ -2431,7 +2482,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_lastPerformedInUpdate",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_magnitude(
         &mut self,
@@ -2442,7 +2493,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_magnitude",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_mapIndex(
         &mut self,
@@ -2453,7 +2504,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_mapIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_mayNeedConflictResolution(
         &mut self,
@@ -2464,7 +2515,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_mayNeedConflictResolution",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_phase(
         &mut self,
@@ -2475,7 +2526,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_phase",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_pressedInUpdate(
         &mut self,
@@ -2486,7 +2537,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_pressedInUpdate",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_releasedInUpdate(
         &mut self,
@@ -2497,7 +2548,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_releasedInUpdate",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_startTime(
         &mut self,
@@ -2508,7 +2559,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_startTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_time(
         &mut self,
@@ -2519,7 +2570,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
             "set_time",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
@@ -2586,7 +2637,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
                 compositeCount,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clone(
         &mut self,
@@ -2598,7 +2649,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
             "Clone",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyDataFrom(
         &mut self,
@@ -2609,7 +2660,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
             "CopyDataFrom",
             (memory),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -2619,7 +2670,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isAllocated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2627,7 +2678,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
             "get_isAllocated",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -2635,7 +2686,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
             "get_sizeInBytes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]

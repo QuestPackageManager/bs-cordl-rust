@@ -47,13 +47,16 @@ impl crate::GlobalNamespace::SliderData {
     pub type Type = crate::GlobalNamespace::SliderData_Type;
     pub fn GetCopy(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapDataItem> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapDataItem = __cordl_object
-            .invoke("GetCopy", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataItem,
+        > = __cordl_object.invoke("GetCopy", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Mirror(
         &mut self,
@@ -64,7 +67,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Mirror", (lineCount))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         sliderType: crate::GlobalNamespace::SliderData_Type,
@@ -88,7 +91,7 @@ impl crate::GlobalNamespace::SliderData {
         midAnchorMode: crate::GlobalNamespace::SliderMidAnchorMode,
         sliceCount: i32,
         squishAmount: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -118,7 +121,7 @@ impl crate::GlobalNamespace::SliderData {
                     squishAmount,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetCutDirectionAngleOffset(
         &mut self,
@@ -133,7 +136,7 @@ impl crate::GlobalNamespace::SliderData {
                 "SetCutDirectionAngleOffset",
                 (headCutDirectionAngleOffset, tailCutDirectionAngleOffset),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetHasHeadNote(
         &mut self,
@@ -144,7 +147,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHasHeadNote", (hasHeadNote))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetHasTailNote(
         &mut self,
@@ -155,7 +158,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHasTailNote", (hasTailNote))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetHeadBeforeJumpLineLayer(
         &mut self,
@@ -166,7 +169,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHeadBeforeJumpLineLayer", (lineLayer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTailBeforeJumpLineLayer(
         &mut self,
@@ -177,7 +180,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTailBeforeJumpLineLayer", (lineLayer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -233,7 +236,7 @@ impl crate::GlobalNamespace::SliderData {
                     squishAmount,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_colorType(
         &mut self,
@@ -243,21 +246,21 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: crate::GlobalNamespace::ColorType = __cordl_object
             .invoke("get_colorType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasHeadNote(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_hasHeadNote", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasTailNote(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_hasTailNote", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_headBeforeJumpLineLayer(
         &mut self,
@@ -267,7 +270,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = __cordl_object
             .invoke("get_headBeforeJumpLineLayer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_headControlPointLengthMultiplier(
         &mut self,
@@ -277,7 +280,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_headControlPointLengthMultiplier", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_headCutDirection(
         &mut self,
@@ -287,7 +290,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = __cordl_object
             .invoke("get_headCutDirection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_headCutDirectionAngleOffset(
         &mut self,
@@ -297,14 +300,14 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_headCutDirectionAngleOffset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_headLineIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_headLineIndex", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_headLineLayer(
         &mut self,
@@ -314,7 +317,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = __cordl_object
             .invoke("get_headLineLayer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_midAnchorMode(
         &mut self,
@@ -324,14 +327,14 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: crate::GlobalNamespace::SliderMidAnchorMode = __cordl_object
             .invoke("get_midAnchorMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sliceCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_sliceCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sliderType(
         &mut self,
@@ -341,21 +344,21 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: crate::GlobalNamespace::SliderData_Type = __cordl_object
             .invoke("get_sliderType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_squishAmount(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_squishAmount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_subtypeGroupIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeGroupIdentifier", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tailBeforeJumpLineLayer(
         &mut self,
@@ -365,7 +368,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = __cordl_object
             .invoke("get_tailBeforeJumpLineLayer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tailControlPointLengthMultiplier(
         &mut self,
@@ -375,7 +378,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_tailControlPointLengthMultiplier", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tailCutDirection(
         &mut self,
@@ -385,7 +388,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = __cordl_object
             .invoke("get_tailCutDirection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tailCutDirectionAngleOffset(
         &mut self,
@@ -395,14 +398,14 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_tailCutDirectionAngleOffset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tailLineIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_tailLineIndex", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tailLineLayer(
         &mut self,
@@ -412,14 +415,14 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = __cordl_object
             .invoke("get_tailLineLayer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tailTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_tailTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_colorType(
         &mut self,
@@ -430,7 +433,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_colorType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_hasHeadNote(
         &mut self,
@@ -441,7 +444,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_hasHeadNote", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_hasTailNote(
         &mut self,
@@ -452,7 +455,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_hasTailNote", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_headBeforeJumpLineLayer(
         &mut self,
@@ -463,7 +466,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_headBeforeJumpLineLayer", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_headControlPointLengthMultiplier(
         &mut self,
@@ -474,7 +477,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_headControlPointLengthMultiplier", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_headCutDirection(
         &mut self,
@@ -485,7 +488,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_headCutDirection", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_headCutDirectionAngleOffset(
         &mut self,
@@ -496,7 +499,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_headCutDirectionAngleOffset", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_headLineIndex(
         &mut self,
@@ -507,7 +510,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_headLineIndex", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_headLineLayer(
         &mut self,
@@ -518,7 +521,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_headLineLayer", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_midAnchorMode(
         &mut self,
@@ -529,7 +532,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_midAnchorMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sliceCount(
         &mut self,
@@ -540,7 +543,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sliceCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sliderType(
         &mut self,
@@ -551,7 +554,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sliderType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_squishAmount(
         &mut self,
@@ -562,7 +565,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_squishAmount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tailBeforeJumpLineLayer(
         &mut self,
@@ -573,7 +576,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tailBeforeJumpLineLayer", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tailControlPointLengthMultiplier(
         &mut self,
@@ -584,7 +587,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tailControlPointLengthMultiplier", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tailCutDirection(
         &mut self,
@@ -595,7 +598,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tailCutDirection", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tailCutDirectionAngleOffset(
         &mut self,
@@ -606,7 +609,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tailCutDirectionAngleOffset", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tailLineIndex(
         &mut self,
@@ -617,7 +620,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tailLineIndex", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tailLineLayer(
         &mut self,
@@ -628,7 +631,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tailLineLayer", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tailTime(
         &mut self,
@@ -639,7 +642,7 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tailTime", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SliderData")]

@@ -40,14 +40,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Redo(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Redo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Undo(
         &mut self,
@@ -67,11 +67,13 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Undo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateEditHistory(
         &mut self,
-        avatarData: *mut crate::BeatSaber::BeatAvatarSDK::AvatarData,
+        avatarData: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarData,
+        >,
         avatarEditPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -79,7 +81,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateEditHistory", (avatarData, avatarEditPart))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -89,7 +91,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentSnapShot(
         &mut self,
@@ -101,7 +103,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         );
         let __cordl_ret: crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot = __cordl_object
             .invoke("get_currentSnapShot", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lastEditedPart(
         &mut self,
@@ -111,21 +113,21 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         );
         let __cordl_ret: crate::BeatSaber::BeatAvatarSDK::AvatarPart = __cordl_object
             .invoke("get_lastEditedPart", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_redoAvailable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_redoAvailable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_undoAvailable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_undoAvailable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarEditHistory")]

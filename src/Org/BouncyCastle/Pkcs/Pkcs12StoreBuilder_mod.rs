@@ -32,74 +32,87 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
     pub fn Build(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Pkcs::Pkcs12Store,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkcs::Pkcs12Store>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Pkcs::Pkcs12Store = __cordl_object
-            .invoke("Build", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Pkcs::Pkcs12Store,
+        > = __cordl_object.invoke("Build", ())?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetCertAlgorithm(
         &mut self,
-        certAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        certAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder = __cordl_object
-            .invoke("SetCertAlgorithm", (certAlgorithm))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
+        > = __cordl_object.invoke("SetCertAlgorithm", (certAlgorithm))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetKeyAlgorithm_DerObjectIdentifier0(
         &mut self,
-        keyAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        keyAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder = __cordl_object
-            .invoke("SetKeyAlgorithm", (keyAlgorithm))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
+        > = __cordl_object.invoke("SetKeyAlgorithm", (keyAlgorithm))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetKeyAlgorithm_DerObjectIdentifier1(
         &mut self,
-        keyAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        keyPrfAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        keyAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        keyPrfAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder = __cordl_object
-            .invoke("SetKeyAlgorithm", (keyAlgorithm, keyPrfAlgorithm))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
+        > = __cordl_object.invoke("SetKeyAlgorithm", (keyAlgorithm, keyPrfAlgorithm))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetUseDerEncoding(
         &mut self,
         useDerEncoding: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder = __cordl_object
-            .invoke("SetUseDerEncoding", (useDerEncoding))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder,
+        > = __cordl_object.invoke("SetUseDerEncoding", (useDerEncoding))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -109,7 +122,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12StoreBuilder")]

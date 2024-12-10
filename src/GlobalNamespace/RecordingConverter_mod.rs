@@ -26,36 +26,36 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RecordingConverter {
 #[cfg(feature = "RecordingConverter")]
 impl crate::GlobalNamespace::RecordingConverter {
     pub fn New(
-        logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (logger))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SaveToOldFormat(
         &mut self,
-        path: *mut quest_hook::libil2cpp::Il2CppString,
-        data: *mut crate::GlobalNamespace::PosesRecordingData,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SaveToOldFormat", (path, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
+        logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (logger))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "RecordingConverter")]

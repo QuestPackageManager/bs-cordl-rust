@@ -33,17 +33,19 @@ impl crate::GlobalNamespace::MultiplayerBadgesProvider {
     pub const kTargetPositiveBadgesCount: i32 = 2i32;
     #[cfg(feature = "MultiplayerBadgesProvider+__c")]
     pub type __c = crate::GlobalNamespace::MultiplayerBadgesProvider___c;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SelectBadgesAndPutThemIntoResults(
         &mut self,
-        playerResults: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+        playerResults: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -51,7 +53,7 @@ impl crate::GlobalNamespace::MultiplayerBadgesProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SelectBadgesAndPutThemIntoResults", (playerResults))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -61,7 +63,7 @@ impl crate::GlobalNamespace::MultiplayerBadgesProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerBadgesProvider")]

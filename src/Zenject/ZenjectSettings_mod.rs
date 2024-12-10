@@ -31,20 +31,22 @@ impl std::ops::DerefMut for crate::Zenject::ZenjectSettings {
 impl crate::Zenject::ZenjectSettings {
     #[cfg(feature = "Zenject+ZenjectSettings+SignalSettings")]
     pub type SignalSettings = crate::Zenject::ZenjectSettings_SignalSettings;
-    pub fn New_1() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_1() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_ValidationErrorResponses_RootResolveMethods__cordl_bool__cordl_bool_ZenjectSettings_SignalSettings0(
         validationErrorResponse: crate::Zenject::ValidationErrorResponses,
         validationRootResolveMethod: crate::Zenject::RootResolveMethods,
         displayWarningWhenResolvingDuringInstall: bool,
         ensureDeterministicDestructionOrderOnApplicationQuit: bool,
-        signalSettings: *mut crate::Zenject::ZenjectSettings_SignalSettings,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        signalSettings: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ZenjectSettings_SignalSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -58,7 +60,7 @@ impl crate::Zenject::ZenjectSettings {
                     signalSettings,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_1(
         &mut self,
@@ -68,7 +70,7 @@ impl crate::Zenject::ZenjectSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_ValidationErrorResponses_RootResolveMethods__cordl_bool__cordl_bool_ZenjectSettings_SignalSettings0(
         &mut self,
@@ -76,7 +78,9 @@ impl crate::Zenject::ZenjectSettings {
         validationRootResolveMethod: crate::Zenject::RootResolveMethods,
         displayWarningWhenResolvingDuringInstall: bool,
         ensureDeterministicDestructionOrderOnApplicationQuit: bool,
-        signalSettings: *mut crate::Zenject::ZenjectSettings_SignalSettings,
+        signalSettings: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ZenjectSettings_SignalSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -92,7 +96,7 @@ impl crate::Zenject::ZenjectSettings {
                     signalSettings,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DisplayWarningWhenResolvingDuringInstall(
         &mut self,
@@ -102,7 +106,7 @@ impl crate::Zenject::ZenjectSettings {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_DisplayWarningWhenResolvingDuringInstall", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_EnsureDeterministicDestructionOrderOnApplicationQuit(
         &mut self,
@@ -112,19 +116,20 @@ impl crate::Zenject::ZenjectSettings {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_EnsureDeterministicDestructionOrderOnApplicationQuit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Signals(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::ZenjectSettings_SignalSettings,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings_SignalSettings>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::ZenjectSettings_SignalSettings = __cordl_object
-            .invoke("get_Signals", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ZenjectSettings_SignalSettings,
+        > = __cordl_object.invoke("get_Signals", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_ValidationErrorResponse(
         &mut self,
@@ -134,7 +139,7 @@ impl crate::Zenject::ZenjectSettings {
         );
         let __cordl_ret: crate::Zenject::ValidationErrorResponses = __cordl_object
             .invoke("get_ValidationErrorResponse", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ValidationRootResolveMethod(
         &mut self,
@@ -144,7 +149,7 @@ impl crate::Zenject::ZenjectSettings {
         );
         let __cordl_ret: crate::Zenject::RootResolveMethods = __cordl_object
             .invoke("get_ValidationRootResolveMethod", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+ZenjectSettings")]
@@ -186,19 +191,19 @@ impl std::ops::DerefMut for crate::Zenject::ZenjectSettings_SignalSettings {
 }
 #[cfg(feature = "Zenject+ZenjectSettings+SignalSettings")]
 impl crate::Zenject::ZenjectSettings_SignalSettings {
-    pub fn New_1() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_1() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_SignalDefaultSyncModes_SignalMissingHandlerResponses__cordl_bool_i32_0(
         defaultSyncMode: crate::Zenject::SignalDefaultSyncModes,
         missingHandlerDefaultResponse: crate::Zenject::SignalMissingHandlerResponses,
         requireStrictUnsubscribe: bool,
         defaultAsyncTickPriority: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -211,7 +216,7 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
                     defaultAsyncTickPriority,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_1(
         &mut self,
@@ -221,7 +226,7 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SignalDefaultSyncModes_SignalMissingHandlerResponses__cordl_bool_i32_0(
         &mut self,
@@ -243,7 +248,7 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
                     defaultAsyncTickPriority,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DefaultAsyncTickPriority(
         &mut self,
@@ -253,7 +258,7 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("get_DefaultAsyncTickPriority", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DefaultSyncMode(
         &mut self,
@@ -263,7 +268,7 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
         );
         let __cordl_ret: crate::Zenject::SignalDefaultSyncModes = __cordl_object
             .invoke("get_DefaultSyncMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MissingHandlerDefaultResponse(
         &mut self,
@@ -273,7 +278,7 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
         );
         let __cordl_ret: crate::Zenject::SignalMissingHandlerResponses = __cordl_object
             .invoke("get_MissingHandlerDefaultResponse", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RequireStrictUnsubscribe(
         &mut self,
@@ -283,7 +288,7 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_RequireStrictUnsubscribe", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+ZenjectSettings+SignalSettings")]

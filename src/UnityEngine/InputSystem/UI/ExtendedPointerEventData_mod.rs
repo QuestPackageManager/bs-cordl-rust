@@ -34,13 +34,15 @@ for crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
 #[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
 impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     pub fn New(
-        eventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        eventSystem: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::EventSystem,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (eventSystem))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReadDeviceState(
         &mut self,
@@ -50,52 +52,59 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadDeviceState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        eventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
+        eventSystem: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::EventSystem,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (eventSystem))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_control(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = __cordl_object
-            .invoke("get_control", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        > = __cordl_object.invoke("get_control", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_device(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputDevice = __cordl_object
-            .invoke("get_device", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputDevice,
+        > = __cordl_object.invoke("get_device", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_pointerType(
         &mut self,
@@ -107,14 +116,14 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::UI::UIPointerType = __cordl_object
             .invoke("get_pointerType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_touchId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_touchId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_trackedDeviceOrientation(
         &mut self,
@@ -124,7 +133,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
             .invoke("get_trackedDeviceOrientation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_trackedDevicePosition(
         &mut self,
@@ -134,36 +143,36 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_trackedDevicePosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_uiToolkitPointerId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_uiToolkitPointerId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_control(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::InputControl,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_control", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_device(
         &mut self,
-        value: *mut crate::UnityEngine::InputSystem::InputDevice,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_device", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_pointerType(
         &mut self,
@@ -174,7 +183,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_pointerType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_touchId(
         &mut self,
@@ -185,7 +194,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_touchId", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_trackedDeviceOrientation(
         &mut self,
@@ -196,7 +205,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_trackedDeviceOrientation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_trackedDevicePosition(
         &mut self,
@@ -207,7 +216,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_trackedDevicePosition", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_uiToolkitPointerId(
         &mut self,
@@ -218,7 +227,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_uiToolkitPointerId", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedPointerEventData")]

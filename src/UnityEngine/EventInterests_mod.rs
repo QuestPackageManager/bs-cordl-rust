@@ -32,7 +32,7 @@ impl crate::UnityEngine::EventInterests {
             "WantsEvent",
             (_cordl_type),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WantsLayoutPass(
         &mut self,
@@ -43,7 +43,7 @@ impl crate::UnityEngine::EventInterests {
             "WantsLayoutPass",
             (_cordl_type),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wantsLessLayoutEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -51,7 +51,7 @@ impl crate::UnityEngine::EventInterests {
             "get_wantsLessLayoutEvents",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wantsMouseEnterLeaveWindow(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::UnityEngine::EventInterests {
             "get_wantsMouseEnterLeaveWindow",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wantsMouseMove(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -69,7 +69,7 @@ impl crate::UnityEngine::EventInterests {
             "get_wantsMouseMove",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wantsMouseEnterLeaveWindow(
         &mut self,
@@ -80,7 +80,7 @@ impl crate::UnityEngine::EventInterests {
             "set_wantsMouseEnterLeaveWindow",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wantsMouseMove(
         &mut self,
@@ -91,6 +91,6 @@ impl crate::UnityEngine::EventInterests {
             "set_wantsMouseMove",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

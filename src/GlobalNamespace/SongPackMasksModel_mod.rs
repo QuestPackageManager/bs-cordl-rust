@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::SongPackMasksModel {
         );
         let __cordl_ret: crate::GlobalNamespace::SongPackMasksModel_LocalizedText = __cordl_object
             .invoke("GetSongPackMaskText", (songPackMask))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
@@ -60,21 +60,25 @@ impl crate::GlobalNamespace::SongPackMasksModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        songPackMasks: *mut crate::GlobalNamespace::SongPackMasksModelSO,
-        beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        songPackMasks: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SongPackMasksModelSO,
+        >,
+        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsModel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (songPackMasks, beatmapLevelsModel))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ToLocalizedName(
         &mut self,
-        serializedName: *mut quest_hook::libil2cpp::Il2CppString,
+        serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
     > {
@@ -83,41 +87,48 @@ impl crate::GlobalNamespace::SongPackMasksModel {
         );
         let __cordl_ret: crate::GlobalNamespace::SongPackMasksModel_LocalizedText = __cordl_object
             .invoke("ToLocalizedName", (serializedName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToSerializedName(
         &mut self,
         songPackMask: crate::GlobalNamespace::SongPackMask,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ToSerializedName", (songPackMask))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToSerializedName", (songPackMask))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToSongPackMask(
         &mut self,
-        serializedName: *mut quest_hook::libil2cpp::Il2CppString,
+        serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::GlobalNamespace::SongPackMask = __cordl_object
             .invoke("ToSongPackMask", (serializedName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        songPackMasks: *mut crate::GlobalNamespace::SongPackMasksModelSO,
-        beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
+        songPackMasks: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SongPackMasksModelSO,
+        >,
+        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (songPackMasks, beatmapLevelsModel))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SongPackMasksModel")]
@@ -157,7 +168,7 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
 impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     pub fn _ctor(
         &mut self,
-        textKey: *mut quest_hook::libil2cpp::Il2CppString,
+        textKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isPlural: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -165,17 +176,17 @@ impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
             ".ctor",
             (textKey, isPlural),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_text",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_text", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SongPackMasksModel+MaskInfo")]
@@ -213,6 +224,6 @@ impl crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
             ".ctor",
             (localizedText, mask),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -29,18 +29,20 @@ impl crate::System::Configuration::ConfigurationElement {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsModified", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
-        parentElement: *mut crate::System::Configuration::ConfigurationElement,
+        parentElement: quest_hook::libil2cpp::Gc<
+            crate::System::Configuration::ConfigurationElement,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", (parentElement))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResetModified(
         &mut self,
@@ -50,19 +52,22 @@ impl crate::System::Configuration::ConfigurationElement {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetModified", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Properties(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Configuration::ConfigurationPropertyCollection,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Configuration::ConfigurationPropertyCollection,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Configuration::ConfigurationPropertyCollection = __cordl_object
-            .invoke("get_Properties", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Configuration::ConfigurationPropertyCollection,
+        > = __cordl_object.invoke("get_Properties", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Configuration+ConfigurationElement")]

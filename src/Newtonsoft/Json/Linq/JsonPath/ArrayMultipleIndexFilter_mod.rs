@@ -34,43 +34,55 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArrayMultipleIndexFilter {
     pub type _ExecuteFilter_d__2 = crate::Newtonsoft::Json::Linq::JsonPath::ArrayMultipleIndexFilter__ExecuteFilter_d__2;
     pub fn ExecuteFilter(
         &mut self,
-        root: *mut crate::Newtonsoft::Json::Linq::JToken,
-        current: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Newtonsoft::Json::Linq::JToken,
+        root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        current: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::Newtonsoft::Json::Linq::JToken,
+            >,
         >,
-        settings: *mut crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Newtonsoft::Json::Linq::JToken,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::Newtonsoft::Json::Linq::JToken,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::Newtonsoft::Json::Linq::JToken,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::Newtonsoft::Json::Linq::JToken,
+            >,
         > = __cordl_object.invoke("ExecuteFilter", (root, current, settings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        indexes: *mut crate::System::Collections::Generic::List_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (indexes))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        indexes: *mut crate::System::Collections::Generic::List_1<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (indexes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArrayMultipleIndexFilter")]

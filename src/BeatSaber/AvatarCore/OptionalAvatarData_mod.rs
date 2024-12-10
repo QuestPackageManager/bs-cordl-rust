@@ -34,6 +34,6 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarData {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

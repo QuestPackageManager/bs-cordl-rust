@@ -33,20 +33,29 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
     pub fn GenerateSeed(
         &mut self,
         numBytes: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GenerateSeed", (numBytes))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("GenerateSeed", (numBytes))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        randomSource: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-        entropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
-        drbgProvider: *mut crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+        randomSource: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+        entropySource: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IEntropySource,
+        >,
+        drbgProvider: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+        >,
         predictionResistant: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -54,22 +63,22 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
                 ".ctor",
                 (randomSource, entropySource, drbgProvider, predictionResistant),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn NextBytes_Il2CppArray0(
         &mut self,
-        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NextBytes", (bytes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NextBytes_i32_i32_1(
         &mut self,
-        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
         len: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -78,29 +87,31 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NextBytes", (buf, off, len))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reseed(
         &mut self,
-        additionalInput: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        additionalInput: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reseed", (additionalInput))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSeed_Il2CppArray0(
         &mut self,
-        seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSeed", (seed))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSeed_i64_1(
         &mut self,
@@ -111,13 +122,19 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSeed", (seed))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        randomSource: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-        entropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
-        drbgProvider: *mut crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+        randomSource: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+        entropySource: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IEntropySource,
+        >,
+        drbgProvider: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+        >,
         predictionResistant: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -128,7 +145,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
                 ".ctor",
                 (randomSource, entropySource, drbgProvider, predictionResistant),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandom")]

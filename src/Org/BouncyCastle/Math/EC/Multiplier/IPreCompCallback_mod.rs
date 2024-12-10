@@ -29,16 +29,21 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
 impl crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
     pub fn Precompute(
         &mut self,
-        existing: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        existing: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo = __cordl_object
-            .invoke("Precompute", (existing))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        > = __cordl_object.invoke("Precompute", (existing))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

@@ -33,7 +33,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("ClosestPoint", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClosestPointOnBounds(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("ClosestPointOnBounds", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClosestPoint_Injected(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClosestPoint_Injected", (position, ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_ClosestPointOnBounds(
         &mut self,
@@ -69,7 +69,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Internal_ClosestPointOnBounds", (point, outPos, distance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_ClosestPointOnBounds_Injected(
         &mut self,
@@ -85,14 +85,14 @@ impl crate::UnityEngine::Collider {
                 "Internal_ClosestPointOnBounds_Injected",
                 (point, outPos, distance),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Raycast_ByRefMut_f32_1(
         &mut self,
@@ -105,7 +105,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("Raycast", (ray, hitInfo, maxDistance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Raycast_Injected(
         &mut self,
@@ -119,7 +119,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Raycast_Injected", (ray, maxDistance, hasHit, ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Raycast_f32_ByRefMut0(
         &mut self,
@@ -132,7 +132,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: crate::UnityEngine::RaycastHit = __cordl_object
             .invoke("Raycast", (ray, maxDistance, hasHit))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -142,27 +142,32 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_attachedArticulationBody(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ArticulationBody> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ArticulationBody>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ArticulationBody = __cordl_object
-            .invoke("get_attachedArticulationBody", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ArticulationBody,
+        > = __cordl_object.invoke("get_attachedArticulationBody", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_attachedRigidbody(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Rigidbody> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Rigidbody = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody> = __cordl_object
             .invoke("get_attachedRigidbody", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bounds(
         &mut self,
@@ -172,7 +177,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: crate::UnityEngine::Bounds = __cordl_object
             .invoke("get_bounds", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bounds_Injected(
         &mut self,
@@ -183,21 +188,21 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_bounds_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_contactOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_contactOffset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_enabled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_excludeLayers(
         &mut self,
@@ -207,7 +212,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
             .invoke("get_excludeLayers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_excludeLayers_Injected(
         &mut self,
@@ -218,14 +223,14 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_excludeLayers_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasModifiableContacts(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_hasModifiableContacts", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_includeLayers(
         &mut self,
@@ -235,7 +240,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
             .invoke("get_includeLayers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_includeLayers_Injected(
         &mut self,
@@ -246,48 +251,52 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_includeLayers_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isTrigger(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isTrigger", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_layerOverridePriority(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_layerOverridePriority", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_material(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::PhysicMaterial> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicMaterial>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::PhysicMaterial = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicMaterial> = __cordl_object
             .invoke("get_material", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_providesContacts(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_providesContacts", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sharedMaterial(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::PhysicMaterial> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicMaterial>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::PhysicMaterial = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicMaterial> = __cordl_object
             .invoke("get_sharedMaterial", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_contactOffset(
         &mut self,
@@ -298,7 +307,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_contactOffset", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_enabled(
         &mut self,
@@ -309,7 +318,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_enabled", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_excludeLayers(
         &mut self,
@@ -320,7 +329,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_excludeLayers", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_excludeLayers_Injected(
         &mut self,
@@ -331,7 +340,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_excludeLayers_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_hasModifiableContacts(
         &mut self,
@@ -342,7 +351,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_hasModifiableContacts", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_includeLayers(
         &mut self,
@@ -353,7 +362,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_includeLayers", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_includeLayers_Injected(
         &mut self,
@@ -364,7 +373,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_includeLayers_Injected", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isTrigger(
         &mut self,
@@ -375,7 +384,7 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isTrigger", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_layerOverridePriority(
         &mut self,
@@ -386,18 +395,18 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_layerOverridePriority", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_material(
         &mut self,
-        value: *mut crate::UnityEngine::PhysicMaterial,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicMaterial>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_material", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_providesContacts(
         &mut self,
@@ -408,18 +417,18 @@ impl crate::UnityEngine::Collider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_providesContacts", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sharedMaterial(
         &mut self,
-        value: *mut crate::UnityEngine::PhysicMaterial,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicMaterial>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sharedMaterial", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Collider")]

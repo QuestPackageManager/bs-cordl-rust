@@ -34,7 +34,7 @@ impl crate::HoudiniEngineUnity::HAPI_Transform {
             "Init",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -45,6 +45,6 @@ impl crate::HoudiniEngineUnity::HAPI_Transform {
             ".ctor",
             (initializeFields),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -25,23 +25,25 @@ impl std::ops::DerefMut for crate::BGLib::Polyglot::SaveLanguagePreference {
 }
 #[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]
 impl crate::BGLib::Polyglot::SaveLanguagePreference {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnLocalize(
         &mut self,
-        localization: *mut crate::BGLib::Polyglot::LocalizationModel,
+        localization: quest_hook::libil2cpp::Gc<
+            crate::BGLib::Polyglot::LocalizationModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnLocalize", (localization))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -51,7 +53,7 @@ impl crate::BGLib::Polyglot::SaveLanguagePreference {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -61,7 +63,7 @@ impl crate::BGLib::Polyglot::SaveLanguagePreference {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]

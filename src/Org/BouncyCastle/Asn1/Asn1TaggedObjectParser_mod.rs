@@ -29,14 +29,15 @@ impl crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser {
         tag: i32,
         isExplicit: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible = __cordl_object
-            .invoke("GetObjectParser", (tag, isExplicit))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+        > = __cordl_object.invoke("GetObjectParser", (tag, isExplicit))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -48,7 +49,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_TagNo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1TaggedObjectParser")]

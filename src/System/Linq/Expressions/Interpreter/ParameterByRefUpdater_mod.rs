@@ -29,30 +29,36 @@ for crate::System::Linq::Expressions::Interpreter::ParameterByRefUpdater {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
 impl crate::System::Linq::Expressions::Interpreter::ParameterByRefUpdater {
     pub fn New(
-        parameter: *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        parameter: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        >,
         argumentIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (parameter, argumentIndex))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Update(
         &mut self,
-        frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        frame: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (frame, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        parameter: *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        parameter: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        >,
         argumentIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -60,7 +66,7 @@ impl crate::System::Linq::Expressions::Interpreter::ParameterByRefUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (parameter, argumentIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]

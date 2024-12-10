@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::ITimeProvider {
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ITimeProvider")]

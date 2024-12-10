@@ -35,18 +35,18 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -54,7 +54,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xAdvance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -62,7 +62,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
             "get_xAdvance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xPlacement(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -70,7 +70,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
             "get_xPlacement",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yAdvance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -78,7 +78,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
             "get_yAdvance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yPlacement(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -86,7 +86,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
             "get_yPlacement",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xPlacement(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
             "set_xPlacement",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yPlacement(
         &mut self,
@@ -108,6 +108,6 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
             "set_yPlacement",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

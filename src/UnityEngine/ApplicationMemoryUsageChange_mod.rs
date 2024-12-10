@@ -31,7 +31,7 @@ impl crate::UnityEngine::ApplicationMemoryUsageChange {
             ".ctor",
             (usage),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_memoryUsage(
         &mut self,
@@ -42,6 +42,6 @@ impl crate::UnityEngine::ApplicationMemoryUsageChange {
             "set_memoryUsage",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

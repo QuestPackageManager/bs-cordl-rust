@@ -28,14 +28,14 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken {
     pub fn _ctor_Il2CppString1(
         &mut self,
         _cordl_type: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType,
-        text: *mut quest_hook::libil2cpp::Il2CppString,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (_cordl_type, text),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_StyleSyntaxTokenType0(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken {
             ".ctor",
             (t),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_2(
         &mut self,
@@ -58,6 +58,6 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken {
             ".ctor",
             (_cordl_type, number),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

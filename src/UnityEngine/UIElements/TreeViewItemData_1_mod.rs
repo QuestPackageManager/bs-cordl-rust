@@ -39,7 +39,7 @@ impl<
             "GetChildIndex",
             (itemId),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InsertChild(
         &mut self,
@@ -55,7 +55,7 @@ impl<
             "InsertChild",
             (child, index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveChild(
         &mut self,
@@ -70,7 +70,7 @@ impl<
             "RemoveChild",
             (childId),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReplaceChild(
         &mut self,
@@ -85,23 +85,27 @@ impl<
             "ReplaceChild",
             (newChild),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_children(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            >,
         >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_children", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_data(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -113,7 +117,7 @@ impl<
             "get_data",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasChildren(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -125,7 +129,7 @@ impl<
             "get_hasChildren",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -137,6 +141,6 @@ impl<
             "get_id",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

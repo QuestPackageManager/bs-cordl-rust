@@ -44,7 +44,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SceneStartHandler {
 impl crate::GlobalNamespace::SceneStartHandler {
     pub fn AddPlayerSpecificSettingsToDictionary(
         &mut self,
-        playerSpecificSettingsNetSerializable: *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
+        playerSpecificSettingsNetSerializable: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,19 +56,22 @@ impl crate::GlobalNamespace::SceneStartHandler {
                 "AddPlayerSpecificSettingsToDictionary",
                 (playerSpecificSettingsNetSerializable),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreatePlayersSpecificSettingsAtGameStartData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable = __cordl_object
-            .invoke("CreatePlayersSpecificSettingsAtGameStartData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
+        > = __cordl_object.invoke("CreatePlayersSpecificSettingsAtGameStartData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -76,7 +81,7 @@ impl crate::GlobalNamespace::SceneStartHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ForceStart(
         &mut self,
@@ -86,7 +91,7 @@ impl crate::GlobalNamespace::SceneStartHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ForceStart", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSceneLoadStatus(
         &mut self,
@@ -96,36 +101,40 @@ impl crate::GlobalNamespace::SceneStartHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetSceneLoadStatus", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleGetGameplaySceneReady(
         &mut self,
-        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleGetGameplaySceneReady", (userId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSetGameplaySceneReady(
         &mut self,
-        userId: *mut quest_hook::libil2cpp::Il2CppString,
-        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSetGameplaySceneReady", (userId, playerSpecificSettings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSetGameplaySceneSyncFinished(
         &mut self,
-        userId: *mut quest_hook::libil2cpp::Il2CppString,
-        playersAtGameStart: *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
-        sessionId: *mut quest_hook::libil2cpp::Il2CppString,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playersAtGameStart: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
+        >,
+        sessionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -135,14 +144,16 @@ impl crate::GlobalNamespace::SceneStartHandler {
                 "HandleSetGameplaySceneSyncFinished",
                 (userId, playersAtGameStart, sessionId),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSetPlayerDidConnectLate(
         &mut self,
-        userId: *mut quest_hook::libil2cpp::Il2CppString,
-        failedUserId: *mut quest_hook::libil2cpp::Il2CppString,
-        playersAtGameStart: *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
-        sessionId: *mut quest_hook::libil2cpp::Il2CppString,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        failedUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playersAtGameStart: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
+        >,
+        sessionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -152,13 +163,19 @@ impl crate::GlobalNamespace::SceneStartHandler {
                 "HandleSetPlayerDidConnectLate",
                 (userId, failedUserId, playersAtGameStart, sessionId),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-        playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSessionManager,
+        >,
+        gameplayRpcManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayRpcManager,
+        >,
+        playersAtGameStartModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -166,13 +183,19 @@ impl crate::GlobalNamespace::SceneStartHandler {
                 ".ctor",
                 (multiplayerSessionManager, gameplayRpcManager, playersAtGameStartModel),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-        playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+        multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSessionManager,
+        >,
+        gameplayRpcManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayRpcManager,
+        >,
+        playersAtGameStartModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -182,51 +205,59 @@ impl crate::GlobalNamespace::SceneStartHandler {
                 ".ctor",
                 (multiplayerSessionManager, gameplayRpcManager, playersAtGameStartModel),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_sceneSetupDidFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_sceneSetupDidFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_sceneSetupDidReceiveTooLateEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_sceneSetupDidReceiveTooLateEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_sceneSetupDidFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_sceneSetupDidFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_sceneSetupDidReceiveTooLateEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_sceneSetupDidReceiveTooLateEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SceneStartHandler")]

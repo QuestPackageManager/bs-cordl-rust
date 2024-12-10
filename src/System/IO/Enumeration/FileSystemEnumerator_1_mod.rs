@@ -55,7 +55,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CloseDirectoryHandle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ContinueOnError(&mut self, error: i32) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -66,11 +66,11 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ContinueOnError", (error))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateDirectoryHandle(
         &mut self,
-        path: *mut quest_hook::libil2cpp::Il2CppString,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ignoreNotFound: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr>
     where
@@ -82,7 +82,7 @@ impl<
         );
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("CreateDirectoryHandle", (path, ignoreNotFound))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DequeueNextDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -93,7 +93,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("DequeueNextDirectory", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DirectoryFinished(
         &mut self,
@@ -107,7 +107,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DirectoryFinished", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
@@ -121,7 +121,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -136,7 +136,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
@@ -150,7 +150,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindNextEntry_0(
         &mut self,
@@ -164,11 +164,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FindNextEntry", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindNextEntry_Il2CppObject_i32_1(
         &mut self,
-        entryBufferPtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        entryBufferPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -180,7 +180,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FindNextEntry", (entryBufferPtr, bufferLength))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalContinueOnError(
         &mut self,
@@ -196,7 +196,7 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("InternalContinueOnError", (info, ignoreNotFound))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalDispose(
         &mut self,
@@ -211,7 +211,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InternalDispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -222,12 +222,12 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        directory: *mut quest_hook::libil2cpp::Il2CppString,
-        options: *mut crate::System::IO::EnumerationOptions,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -236,7 +236,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (directory, options))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDirectoryFinished(
         &mut self,
@@ -251,7 +251,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDirectoryFinished", (directory))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -263,7 +263,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldIncludeEntry(
         &mut self,
@@ -279,7 +279,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ShouldIncludeEntry", (entry))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldRecurseIntoEntry(
         &mut self,
@@ -296,11 +296,13 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldRecurseIntoEntry", (entry))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -308,9 +310,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("System.Collections.IEnumerator.get_Current", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("System.Collections.IEnumerator.get_Current", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn TransformEntry(
         &mut self,
@@ -326,12 +329,12 @@ impl<
             self,
         );
         let __cordl_ret: TResult = __cordl_object.invoke("TransformEntry", (entry))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        directory: *mut quest_hook::libil2cpp::Il2CppString,
-        options: *mut crate::System::IO::EnumerationOptions,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -342,7 +345,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (directory, options))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<TResult>
     where
@@ -353,7 +356,7 @@ impl<
             self,
         );
         let __cordl_ret: TResult = __cordl_object.invoke("get_Current", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerator_1")]

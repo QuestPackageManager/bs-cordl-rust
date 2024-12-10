@@ -26,47 +26,55 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ISaberSwingRatingCounter {
 impl crate::GlobalNamespace::ISaberSwingRatingCounter {
     pub fn RegisterDidChangeReceiver(
         &mut self,
-        receiver: *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterDidChangeReceiver", (receiver))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterDidFinishReceiver(
         &mut self,
-        receiver: *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterDidFinishReceiver", (receiver))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnregisterDidChangeReceiver(
         &mut self,
-        receiver: *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnregisterDidChangeReceiver", (receiver))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnregisterDidFinishReceiver(
         &mut self,
-        receiver: *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnregisterDidFinishReceiver", (receiver))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -78,14 +86,14 @@ impl crate::GlobalNamespace::ISaberSwingRatingCounter {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_afterCutRating", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_beforeCutRating(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_beforeCutRating", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ISaberSwingRatingCounter")]

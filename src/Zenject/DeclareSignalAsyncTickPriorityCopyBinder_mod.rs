@@ -26,46 +26,53 @@ impl std::ops::DerefMut for crate::Zenject::DeclareSignalAsyncTickPriorityCopyBi
 #[cfg(feature = "Zenject+DeclareSignalAsyncTickPriorityCopyBinder")]
 impl crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder {
     pub fn New(
-        signalBindInfo: *mut crate::Zenject::SignalDeclarationBindInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        signalBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SignalDeclarationBindInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (signalBindInfo))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RunAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::SignalTickPriorityCopyBinder,
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalTickPriorityCopyBinder>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::SignalTickPriorityCopyBinder = __cordl_object
-            .invoke("RunAsync", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SignalTickPriorityCopyBinder,
+        > = __cordl_object.invoke("RunAsync", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn RunSync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SignalCopyBinder> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::SignalCopyBinder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder> = __cordl_object
             .invoke("RunSync", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        signalBindInfo: *mut crate::Zenject::SignalDeclarationBindInfo,
+        signalBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SignalDeclarationBindInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (signalBindInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+DeclareSignalAsyncTickPriorityCopyBinder")]

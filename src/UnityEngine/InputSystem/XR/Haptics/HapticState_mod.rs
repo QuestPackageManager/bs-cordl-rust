@@ -34,7 +34,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticState {
             ".ctor",
             (samplesQueued, samplesAvailable),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_samplesAvailable(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -42,7 +42,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticState {
             "get_samplesAvailable",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_samplesQueued(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -50,7 +50,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticState {
             "get_samplesQueued",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_samplesAvailable(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticState {
             "set_samplesAvailable",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_samplesQueued(
         &mut self,
@@ -72,6 +72,6 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticState {
             "set_samplesQueued",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

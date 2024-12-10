@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleGameplayModifiersPanelControllerDidChangeGameplayModifiers(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
                 "HandleGameplayModifiersPanelControllerDidChangeGameplayModifiers",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerSettingsPanelControllerDidChangePlayerSettings(
         &mut self,
@@ -81,11 +81,11 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePlayerSettingsPanelControllerDidChangePlayerSettings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSelectionSegmentedControlDidSelectCell(
         &mut self,
-        segmentedControl: *mut crate::HMUI::SegmentedControl,
+        segmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
         cellIdx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
                 "HandleSelectionSegmentedControlDidSelectCell",
                 (segmentedControl, cellIdx),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
@@ -106,14 +106,14 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -123,7 +123,7 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshActivePanel(
         &mut self,
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshActivePanel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshContent(
         &mut self,
@@ -143,7 +143,7 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshContent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetActivePanel(
         &mut self,
@@ -154,7 +154,7 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetActivePanel", (panelIdx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Setup(
         &mut self,
@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
                     playerSettingsPanelLayout,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -188,75 +188,81 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didChangeGameplayModifiersEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didChangeGameplayModifiersEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_colorSchemesSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::ColorSchemesSettings,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemesSettings>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::ColorSchemesSettings = __cordl_object
-            .invoke("get_colorSchemesSettings", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorSchemesSettings,
+        > = __cordl_object.invoke("get_colorSchemesSettings", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_environmentOverrideSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OverrideEnvironmentSettings>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::OverrideEnvironmentSettings = __cordl_object
-            .invoke("get_environmentOverrideSettings", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OverrideEnvironmentSettings,
+        > = __cordl_object.invoke("get_environmentOverrideSettings", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_gameplayModifiers(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
-            .invoke("get_gameplayModifiers", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        > = __cordl_object.invoke("get_gameplayModifiers", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_playerSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerSpecificSettings = __cordl_object
-            .invoke("get_playerSettings", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        > = __cordl_object.invoke("get_playerSettings", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didChangeGameplayModifiersEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didChangeGameplayModifiersEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "GameplaySetupViewController")]
@@ -300,28 +306,28 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameplaySetupViewController_
 #[cfg(feature = "GameplaySetupViewController+Panel")]
 impl crate::GlobalNamespace::GameplaySetupViewController_Panel {
     pub fn New(
-        title: *mut quest_hook::libil2cpp::Il2CppString,
-        refreshable: *mut crate::GlobalNamespace::IRefreshable,
-        gameObject: *mut crate::UnityEngine::GameObject,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        refreshable: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>,
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (title, refreshable, gameObject))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        title: *mut quest_hook::libil2cpp::Il2CppString,
-        refreshable: *mut crate::GlobalNamespace::IRefreshable,
-        gameObject: *mut crate::UnityEngine::GameObject,
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        refreshable: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>,
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (title, refreshable, gameObject))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "GameplaySetupViewController+Panel")]

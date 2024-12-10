@@ -30,112 +30,138 @@ impl std::ops::DerefMut for crate::UnityEngine::AddressableAssets::ResourceLocat
 #[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocatorInfo")]
 impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
     pub fn New(
-        loc: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-        localHash: *mut quest_hook::libil2cpp::Il2CppString,
-        remoteCatalogLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        loc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
+        localHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        remoteCatalogLocation: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (loc, localHash, remoteCatalogLocation))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateContent(
         &mut self,
-        locator: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-        hash: *mut quest_hook::libil2cpp::Il2CppString,
-        loc: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        locator: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
+        hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        loc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateContent", (locator, hash, loc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        loc: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-        localHash: *mut quest_hook::libil2cpp::Il2CppString,
-        remoteCatalogLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        loc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
+        localHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        remoteCatalogLocation: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (loc, localHash, remoteCatalogLocation))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CanUpdateContent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_CanUpdateContent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CatalogLocation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation = __cordl_object
-            .invoke("get_CatalogLocation", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        > = __cordl_object.invoke("get_CatalogLocation", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_ContentUpdateAvailable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_ContentUpdateAvailable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HashLocation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation = __cordl_object
-            .invoke("get_HashLocation", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        > = __cordl_object.invoke("get_HashLocation", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_LocalHash(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_LocalHash", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_LocalHash", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Locator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator = __cordl_object
-            .invoke("get_Locator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        > = __cordl_object.invoke("get_Locator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_CatalogLocation(
         &mut self,
-        value: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_CatalogLocation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ContentUpdateAvailable(
         &mut self,
@@ -146,29 +172,31 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ContentUpdateAvailable", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_LocalHash(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_LocalHash", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Locator(
         &mut self,
-        value: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Locator", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocatorInfo")]

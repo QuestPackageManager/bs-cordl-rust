@@ -27,38 +27,49 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::KekRecipientInformati
 impl crate::Org::BouncyCastle::Cms::KekRecipientInformation {
     pub fn GetContentStream(
         &mut self,
-        key: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsTypedStream>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream = __cordl_object
-            .invoke("GetContentStream", (key))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsTypedStream,
+        > = __cordl_object.invoke("GetContentStream", (key))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        info: *mut crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo,
-        secureReadable: *mut crate::Org::BouncyCastle::Cms::CmsSecureReadable,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo,
+        >,
+        secureReadable: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSecureReadable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, secureReadable))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        info: *mut crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo,
-        secureReadable: *mut crate::Org::BouncyCastle::Cms::CmsSecureReadable,
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo,
+        >,
+        secureReadable: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSecureReadable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, secureReadable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+KekRecipientInformation")]

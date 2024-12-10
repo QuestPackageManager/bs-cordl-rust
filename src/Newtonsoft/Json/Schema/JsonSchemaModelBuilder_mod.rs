@@ -32,50 +32,60 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaModelBuil
 impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
     pub fn AddAdditionalItems(
         &mut self,
-        parentNode: *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        parentNode: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        >,
+        schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddAdditionalItems", (parentNode, schema))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddAdditionalProperties(
         &mut self,
-        parentNode: *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        parentNode: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        >,
+        schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddAdditionalProperties", (parentNode, schema))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddItem(
         &mut self,
-        parentNode: *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        parentNode: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        >,
         index: i32,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddItem", (parentNode, index, schema))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddProperties(
         &mut self,
-        source: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IDictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+            >,
         >,
-        target: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        target: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IDictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -83,70 +93,77 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddProperties", (source, target))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddProperty(
         &mut self,
-        target: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        target: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IDictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+            >,
         >,
-        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddProperty", (target, propertyName, schema))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddSchema(
         &mut self,
-        existingNode: *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        existingNode: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        >,
+        schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaNode>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode = __cordl_object
-            .invoke("AddSchema", (existingNode, schema))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        > = __cordl_object.invoke("AddSchema", (existingNode, schema))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Build(
         &mut self,
-        schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel = __cordl_object
-            .invoke("Build", (schema))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        > = __cordl_object.invoke("Build", (schema))?;
+        Ok(__cordl_ret.into())
     }
     pub fn BuildNodeModel(
         &mut self,
-        node: *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        node: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaNode>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel = __cordl_object
-            .invoke("BuildNodeModel", (node))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        > = __cordl_object.invoke("BuildNodeModel", (node))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -156,7 +173,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaModelBuilder")]

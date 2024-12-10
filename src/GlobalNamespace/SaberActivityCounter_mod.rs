@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::SaberActivityCounter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleDidPauseEvent(
         &mut self,
@@ -61,26 +61,26 @@ impl crate::GlobalNamespace::SaberActivityCounter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleDidPauseEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSaberPositionsWereUpdated(
         &mut self,
-        leftSaber: *mut crate::GlobalNamespace::Saber,
-        rightSaber: *mut crate::GlobalNamespace::Saber,
+        leftSaber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+        rightSaber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSaberPositionsWereUpdated", (leftSaber, rightSaber))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::SaberActivityCounter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::SaberActivityCounter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -110,30 +110,31 @@ impl crate::GlobalNamespace::SaberActivityCounter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_totalDistanceDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_totalDistanceDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_handMovementAveragingValueRecorder(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::AveragingValueRecorder,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AveragingValueRecorder>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::AveragingValueRecorder = __cordl_object
-            .invoke("get_handMovementAveragingValueRecorder", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AveragingValueRecorder,
+        > = __cordl_object.invoke("get_handMovementAveragingValueRecorder", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_leftHandMovementDistance(
         &mut self,
@@ -143,7 +144,7 @@ impl crate::GlobalNamespace::SaberActivityCounter {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_leftHandMovementDistance", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_leftSaberMovementDistance(
         &mut self,
@@ -153,7 +154,7 @@ impl crate::GlobalNamespace::SaberActivityCounter {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_leftSaberMovementDistance", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rightHandMovementDistance(
         &mut self,
@@ -163,7 +164,7 @@ impl crate::GlobalNamespace::SaberActivityCounter {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_rightHandMovementDistance", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rightSaberMovementDistance(
         &mut self,
@@ -173,30 +174,31 @@ impl crate::GlobalNamespace::SaberActivityCounter {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_rightSaberMovementDistance", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_saberMovementAveragingValueRecorder(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::AveragingValueRecorder,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AveragingValueRecorder>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::AveragingValueRecorder = __cordl_object
-            .invoke("get_saberMovementAveragingValueRecorder", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AveragingValueRecorder,
+        > = __cordl_object.invoke("get_saberMovementAveragingValueRecorder", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn remove_totalDistanceDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_totalDistanceDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SaberActivityCounter")]

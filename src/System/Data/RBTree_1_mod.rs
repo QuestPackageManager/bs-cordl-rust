@@ -57,12 +57,14 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Add", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AllocPage(
         &mut self,
         _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::RBTree_1_TreePage<K>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
+    >
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -70,9 +72,10 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Data::RBTree_1_TreePage<K> = __cordl_object
-            .invoke("AllocPage", (_cordl_size))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Data::RBTree_1_TreePage<K>,
+        > = __cordl_object.invoke("AllocPage", (_cordl_size))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -84,7 +87,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompareNode(
         &mut self,
@@ -99,7 +102,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("CompareNode", (record1, record2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompareSateliteTreeNode(
         &mut self,
@@ -115,7 +118,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("CompareSateliteTreeNode", (record1, record2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeIndexByNode(
         &mut self,
@@ -129,7 +132,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("ComputeIndexByNode", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeIndexWithSatelliteByNode(
         &mut self,
@@ -144,7 +147,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("ComputeIndexWithSatelliteByNode", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeNodeByIndex_ByRefMut0(
         &mut self,
@@ -160,7 +163,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("ComputeNodeByIndex", (index, satelliteRootId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeNodeByIndex_i32_1(
         &mut self,
@@ -176,11 +179,11 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("ComputeNodeByIndex", (x_id, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyTo_Array0(
         &mut self,
-        array: *mut crate::System::Array,
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -192,11 +195,11 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyTo", (array, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyTo_Il2CppArray1(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<K>,
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<K>>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -208,7 +211,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyTo", (array, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DecreaseSize(
         &mut self,
@@ -223,7 +226,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DecreaseSize", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DeleteByIndex(&mut self, i: i32) -> quest_hook::libil2cpp::Result<K>
     where
@@ -234,7 +237,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: K = __cordl_object.invoke("DeleteByIndex", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FreeNode(
         &mut self,
@@ -249,11 +252,11 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FreeNode", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FreePage(
         &mut self,
-        page: *mut crate::System::Data::RBTree_1_TreePage<K>,
+        page: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -264,11 +267,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FreePage", (page))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    >
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -276,9 +281,10 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetIndexByKey(&mut self, key: K) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -289,7 +295,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetIndexByKey", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetIndexByNode(&mut self, node: i32) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -300,7 +306,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetIndexByNode", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetIndexByNodePath(
         &mut self,
@@ -314,7 +320,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetIndexByNodePath", (path))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetIndexOfPageWithFreeSlot(
         &mut self,
@@ -329,7 +335,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetIndexOfPageWithFreeSlot", (allocatedPage))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNewNode(&mut self, key: K) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -340,7 +346,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetNewNode", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNodeByIndex(
         &mut self,
@@ -355,7 +361,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: crate::System::Data::RBTree_1_NodePath<K> = __cordl_object
             .invoke("GetNodeByIndex", (userIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNodeByKey(
         &mut self,
@@ -370,7 +376,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: crate::System::Data::RBTree_1_NodePath<K> = __cordl_object
             .invoke("GetNodeByKey", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IncreaseSize(
         &mut self,
@@ -385,7 +391,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("IncreaseSize", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IndexOf(&mut self, nodeId: i32, item: K) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -396,7 +402,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (nodeId, item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitTree(
         &mut self,
@@ -410,7 +416,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitTree", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InsertAt(
         &mut self,
@@ -427,7 +433,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("InsertAt", (position, item, append))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Insert_K0(&mut self, item: K) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -438,7 +444,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Insert", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Insert_i32_K1(
         &mut self,
@@ -453,7 +459,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Insert", (position, item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Key(&mut self, nodeId: i32) -> quest_hook::libil2cpp::Result<K>
     where
@@ -464,7 +470,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: K = __cordl_object.invoke("Key", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Left(&mut self, nodeId: i32) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -475,7 +481,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Left", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LeftRotate(
         &mut self,
@@ -492,11 +498,11 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("LeftRotate", (root_id, x_id, mainTreeNode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkPageFree(
         &mut self,
-        page: *mut crate::System::Data::RBTree_1_TreePage<K>,
+        page: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -507,11 +513,11 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkPageFree", (page))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkPageFull(
         &mut self,
-        page: *mut crate::System::Data::RBTree_1_TreePage<K>,
+        page: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -522,7 +528,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkPageFull", (page))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Minimum(&mut self, x_id: i32) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -533,11 +539,11 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Minimum", (x_id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         accessMethod: crate::System::Data::TreeAccessMethod,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -546,7 +552,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (accessMethod))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Next(&mut self, nodeId: i32) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -557,7 +563,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Next", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Parent(&mut self, nodeId: i32) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -568,7 +574,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Parent", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RBDelete(&mut self, z_id: i32) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -579,7 +585,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("RBDelete", (z_id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RBDeleteFixup(
         &mut self,
@@ -597,7 +603,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("RBDeleteFixup", (root_id, x_id, px_id, mainTreeNodeID))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RBDeleteX(
         &mut self,
@@ -614,7 +620,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("RBDeleteX", (root_id, z_id, mainTreeNodeID))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RBInsert(
         &mut self,
@@ -633,7 +639,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("RBInsert", (root_id, x_id, mainTreeNodeID, position, append))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RecomputeSize(
         &mut self,
@@ -648,7 +654,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RecomputeSize", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveAt(
         &mut self,
@@ -663,7 +669,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveAt", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Right(&mut self, nodeId: i32) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -674,7 +680,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Right", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RightRotate(
         &mut self,
@@ -691,7 +697,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("RightRotate", (root_id, x_id, mainTreeNode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SearchSubTree(
         &mut self,
@@ -706,7 +712,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("SearchSubTree", (root_id, key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetColor(
         &mut self,
@@ -722,7 +728,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetColor", (nodeId, color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetKey(
         &mut self,
@@ -738,7 +744,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetKey", (nodeId, key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLeft(
         &mut self,
@@ -754,7 +760,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetLeft", (nodeId, leftNodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetNext(
         &mut self,
@@ -770,7 +776,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetNext", (nodeId, nextNodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetParent(
         &mut self,
@@ -786,7 +792,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetParent", (nodeId, parentNodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetRight(
         &mut self,
@@ -802,7 +808,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetRight", (nodeId, rightNodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSubTreeSize(
         &mut self,
@@ -818,7 +824,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSubTreeSize", (nodeId, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SubTreeSize(&mut self, nodeId: i32) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -829,7 +835,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("SubTreeSize", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Successor_ByRefMut_ByRefMut1(
         &mut self,
@@ -845,7 +851,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("Successor", (nodeId, mainTreeNodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Successor_i32_0(&mut self, x_id: i32) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -856,7 +862,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Successor", (x_id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateNodeKey(
         &mut self,
@@ -872,7 +878,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateNodeKey", (currentKey, newKey))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -887,7 +893,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (accessMethod))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn color(
         &mut self,
@@ -902,7 +908,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         );
         let __cordl_ret: crate::System::Data::RBTree_1_NodeColor<K> = __cordl_object
             .invoke("color", (nodeId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -913,7 +919,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasDuplicates(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -924,7 +930,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasDuplicates", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<K>
     where
@@ -935,7 +941,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             self,
         );
         let __cordl_ret: K = __cordl_object.invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Data+RBTree_1")]
@@ -1032,7 +1038,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
             ".ctor",
             (nodeID, mainTreeNodeID),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
@@ -1076,7 +1082,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -1088,7 +1094,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             "MoveNext",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_Reset(
         &mut self,
@@ -1102,25 +1108,29 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             "System.Collections.IEnumerator.Reset",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerator.get_Current",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_RBTree_1_0(
         &mut self,
-        tree: *mut crate::System::Data::RBTree_1<K>,
+        tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1131,11 +1141,11 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             ".ctor",
             (tree),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_1(
         &mut self,
-        tree: *mut crate::System::Data::RBTree_1<K>,
+        tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
         position: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1147,7 +1157,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             ".ctor",
             (tree, position),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<K>
     where
@@ -1159,7 +1169,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             "get_Current",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Data+RBTree_1+TreePage")]
@@ -1200,7 +1210,7 @@ for crate::System::Data::RBTree_1_TreePage<K> {
 impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
     pub fn AllocSlot(
         &mut self,
-        tree: *mut crate::System::Data::RBTree_1<K>,
+        tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1210,9 +1220,11 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("AllocSlot", (tree))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(_cordl_size: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New(
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1221,7 +1233,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_size))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1236,7 +1248,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_InUseCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -1247,7 +1259,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_InUseCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PageId(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -1258,7 +1270,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_PageId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_InUseCount(
         &mut self,
@@ -1273,7 +1285,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_InUseCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_PageId(
         &mut self,
@@ -1288,7 +1300,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_PageId", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Data+RBTree_1+TreePage")]

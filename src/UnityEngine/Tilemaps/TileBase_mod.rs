@@ -27,7 +27,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
     pub fn GetTileAnimationData(
         &mut self,
         position: crate::UnityEngine::Vector3Int,
-        tilemap: *mut crate::UnityEngine::Tilemaps::ITilemap,
+        tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
         tileAnimationData: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Tilemaps::TileAnimationData,
         >,
@@ -37,24 +37,24 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetTileAnimationData", (position, tilemap, tileAnimationData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTileAnimationDataNoRef(
         &mut self,
         position: crate::UnityEngine::Vector3Int,
-        tilemap: *mut crate::UnityEngine::Tilemaps::ITilemap,
+        tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Tilemaps::TileAnimationData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Tilemaps::TileAnimationData = __cordl_object
             .invoke("GetTileAnimationDataNoRef", (position, tilemap))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTileAnimationDataRef(
         &mut self,
         position: crate::UnityEngine::Vector3Int,
-        tilemap: *mut crate::UnityEngine::Tilemaps::ITilemap,
+        tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
         tileAnimationData: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Tilemaps::TileAnimationData,
         >,
@@ -68,12 +68,12 @@ impl crate::UnityEngine::Tilemaps::TileBase {
                 "GetTileAnimationDataRef",
                 (position, tilemap, tileAnimationData, hasAnimation),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTileData(
         &mut self,
         position: crate::UnityEngine::Vector3Int,
-        tilemap: *mut crate::UnityEngine::Tilemaps::ITilemap,
+        tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
         tileData: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Tilemaps::TileData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -81,57 +81,57 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetTileData", (position, tilemap, tileData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTileDataNoRef(
         &mut self,
         position: crate::UnityEngine::Vector3Int,
-        tilemap: *mut crate::UnityEngine::Tilemaps::ITilemap,
+        tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Tilemaps::TileData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Tilemaps::TileData = __cordl_object
             .invoke("GetTileDataNoRef", (position, tilemap))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RefreshTile(
         &mut self,
         position: crate::UnityEngine::Vector3Int,
-        tilemap: *mut crate::UnityEngine::Tilemaps::ITilemap,
+        tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshTile", (position, tilemap))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartUp(
         &mut self,
         position: crate::UnityEngine::Vector3Int,
-        tilemap: *mut crate::UnityEngine::Tilemaps::ITilemap,
-        go: *mut crate::UnityEngine::GameObject,
+        tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("StartUp", (position, tilemap, go))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartUpRef(
         &mut self,
         position: crate::UnityEngine::Vector3Int,
-        tilemap: *mut crate::UnityEngine::Tilemaps::ITilemap,
-        go: *mut crate::UnityEngine::GameObject,
+        tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         startUpInvokedByUser: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -139,7 +139,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartUpRef", (position, tilemap, go, startUpInvokedByUser))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -149,7 +149,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Tilemaps+TileBase")]

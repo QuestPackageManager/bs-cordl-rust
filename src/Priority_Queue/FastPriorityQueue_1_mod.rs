@@ -46,7 +46,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CascadeDown", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CascadeUp(
         &mut self,
@@ -61,7 +61,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CascadeUp", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -73,7 +73,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Contains(&mut self, node: T) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -84,7 +84,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dequeue(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -95,7 +95,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Dequeue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enqueue(
         &mut self,
@@ -111,12 +111,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Enqueue", (node, priority))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<T>,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -125,9 +125,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<T> = __cordl_object
-            .invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<T>,
+        > = __cordl_object.invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn HasHigherOrEqualPriority(
         &mut self,
@@ -143,7 +144,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("HasHigherOrEqualPriority", (higher, lower))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasHigherPriority(
         &mut self,
@@ -159,7 +160,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("HasHigherPriority", (higher, lower))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsValidQueue(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -170,9 +171,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsValidQueue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(maxNodes: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New(
+        maxNodes: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -181,7 +184,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (maxNodes))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnNodeUpdated(
         &mut self,
@@ -196,7 +199,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNodeUpdated", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Remove(
         &mut self,
@@ -211,7 +214,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResetNode(
         &mut self,
@@ -226,7 +229,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetNode", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Resize(
         &mut self,
@@ -241,11 +244,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Resize", (maxNodes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -253,9 +258,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn UpdatePriority(
         &mut self,
@@ -271,7 +277,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdatePriority", (node, priority))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -286,7 +292,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (maxNodes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -297,7 +303,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_First(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -308,7 +314,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_First", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MaxSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -319,7 +325,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::FastPriorityQueue_1<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_MaxSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Priority_Queue+FastPriorityQueue_1")]

@@ -30,13 +30,17 @@ for crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
 impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
     pub fn CreateDynamicLocations(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-        locations: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        locations: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            >,
         >,
-        locName: *mut quest_hook::libil2cpp::Il2CppString,
-        subKey: *mut quest_hook::libil2cpp::Il2CppString,
-        mainLoc: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        locName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        subKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        mainLoc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -46,12 +50,12 @@ impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
                 "CreateDynamicLocations",
                 (_cordl_type, locations, locName, subKey, mainLoc),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Locate(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppObject,
-        _cordl_type: *mut crate::System::Type,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         locations: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Collections::Generic::IList_1<
                 *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -63,77 +67,95 @@ impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("Locate", (key, _cordl_type, locations))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        addr: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        addr: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::AddressablesImpl,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (addr))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        addr: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
+        addr: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::AddressablesImpl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (addr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AllLocations(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            >,
         > = __cordl_object.invoke("get_AllLocations", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AtlasSpriteProviderId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_AtlasSpriteProviderId", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_AtlasSpriteProviderId", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Keys(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("get_Keys", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LocatorId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_LocatorId", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_LocatorId", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+DynamicResourceLocator")]

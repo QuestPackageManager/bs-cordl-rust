@@ -27,7 +27,7 @@ for crate::Zenject::PoolableMemoryPool_1<TValue> {
 }
 #[cfg(feature = "Zenject+PoolableMemoryPool_1")]
 impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::PoolableMemoryPool_1<TValue> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -36,7 +36,7 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::PoolableMemoryPool_1<T
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDespawned(
         &mut self,
@@ -51,7 +51,7 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::PoolableMemoryPool_1<T
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDespawned", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reinitialize(
         &mut self,
@@ -66,7 +66,7 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::PoolableMemoryPool_1<T
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reinitialize", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -78,7 +78,7 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::PoolableMemoryPool_1<T
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+PoolableMemoryPool_1")]

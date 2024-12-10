@@ -32,14 +32,17 @@ impl crate::System::Runtime::Remoting::IEnvoyInfo {
     pub fn get_EnvoySinks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink = __cordl_object
-            .invoke("get_EnvoySinks", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        > = __cordl_object.invoke("get_EnvoySinks", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+IEnvoyInfo")]

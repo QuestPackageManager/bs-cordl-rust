@@ -52,23 +52,27 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RecordingSettings {
 #[cfg(feature = "RecordingSettings")]
 impl crate::GlobalNamespace::RecordingSettings {
     pub fn New(
-        gameMode: *mut quest_hook::libil2cpp::Il2CppString,
-        pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-        level: *mut crate::GlobalNamespace::BeatmapLevel,
+        gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-        characteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        characteristic: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
         runLevel: bool,
         recordPerformance: bool,
         recordingMode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-        recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
+        recordingPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
         addDateTimeSuffixToRecordingName: bool,
         screenshotRecording: bool,
         screenshotWidth: i32,
         screenshotHeight: i32,
         framerate: i32,
-        playbackScreenshots: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+        playbackScreenshots: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            >,
         >,
         practice: bool,
         startSongTime: f32,
@@ -77,9 +81,11 @@ impl crate::GlobalNamespace::RecordingSettings {
         environmentType: crate::System::Nullable_1<
             crate::GlobalNamespace::EnvironmentType,
         >,
-        environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        environmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
         saveToOldFormat: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -111,37 +117,44 @@ impl crate::GlobalNamespace::RecordingSettings {
                     saveToOldFormat,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        gameMode: *mut quest_hook::libil2cpp::Il2CppString,
-        pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-        level: *mut crate::GlobalNamespace::BeatmapLevel,
+        gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-        characteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        characteristic: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
         runLevel: bool,
         recordPerformance: bool,
         recordingMode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-        recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
+        recordingPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
         addDateTimeSuffixToRecordingName: bool,
         screenshotRecording: bool,
         screenshotWidth: i32,
         screenshotHeight: i32,
         framerate: i32,
-        playbackScreenshots: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+        playbackScreenshots: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            >,
         >,
         practice: bool,
         startSongTime: f32,
@@ -150,7 +163,9 @@ impl crate::GlobalNamespace::RecordingSettings {
         environmentType: crate::System::Nullable_1<
             crate::GlobalNamespace::EnvironmentType,
         >,
-        environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        environmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
         saveToOldFormat: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -185,7 +200,7 @@ impl crate::GlobalNamespace::RecordingSettings {
                     saveToOldFormat,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "RecordingSettings")]

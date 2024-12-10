@@ -30,20 +30,28 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::EnvelopedData {
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+EnvelopedData")]
 impl crate::Org::BouncyCastle::Asn1::Cms::EnvelopedData {
     pub fn New_Asn1Sequence2(
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_OriginatorInfo_Asn1Set_EncryptedContentInfo_Asn1Set0(
-        originatorInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
-        recipientInfos: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-        encryptedContentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
-        unprotectedAttrs: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        originatorInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
+        >,
+        recipientInfos: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Set,
+        >,
+        encryptedContentInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
+        >,
+        unprotectedAttrs: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Set,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -51,14 +59,22 @@ impl crate::Org::BouncyCastle::Asn1::Cms::EnvelopedData {
                 ".ctor",
                 (originatorInfo, recipientInfos, encryptedContentInfo, unprotectedAttrs),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_OriginatorInfo_Asn1Set_EncryptedContentInfo_Attributes1(
-        originatorInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
-        recipientInfos: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-        encryptedContentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
-        unprotectedAttrs: *mut crate::Org::BouncyCastle::Asn1::Cms::Attributes,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        originatorInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
+        >,
+        recipientInfos: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Set,
+        >,
+        encryptedContentInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
+        >,
+        unprotectedAttrs: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::Attributes,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -66,35 +82,46 @@ impl crate::Org::BouncyCastle::Asn1::Cms::EnvelopedData {
                 ".ctor",
                 (originatorInfo, recipientInfos, encryptedContentInfo, unprotectedAttrs),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
-            .invoke("ToAsn1Object", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = __cordl_object.invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Asn1Sequence2(
         &mut self,
-        seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_OriginatorInfo_Asn1Set_EncryptedContentInfo_Asn1Set0(
         &mut self,
-        originatorInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
-        recipientInfos: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-        encryptedContentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
-        unprotectedAttrs: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+        originatorInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
+        >,
+        recipientInfos: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Set,
+        >,
+        encryptedContentInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
+        >,
+        unprotectedAttrs: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Set,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -104,14 +131,22 @@ impl crate::Org::BouncyCastle::Asn1::Cms::EnvelopedData {
                 ".ctor",
                 (originatorInfo, recipientInfos, encryptedContentInfo, unprotectedAttrs),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_OriginatorInfo_Asn1Set_EncryptedContentInfo_Attributes1(
         &mut self,
-        originatorInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
-        recipientInfos: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-        encryptedContentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
-        unprotectedAttrs: *mut crate::Org::BouncyCastle::Asn1::Cms::Attributes,
+        originatorInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
+        >,
+        recipientInfos: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Set,
+        >,
+        encryptedContentInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
+        >,
+        unprotectedAttrs: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::Attributes,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -121,61 +156,74 @@ impl crate::Org::BouncyCastle::Asn1::Cms::EnvelopedData {
                 ".ctor",
                 (originatorInfo, recipientInfos, encryptedContentInfo, unprotectedAttrs),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_EncryptedContentInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo = __cordl_object
-            .invoke("get_EncryptedContentInfo", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
+        > = __cordl_object.invoke("get_EncryptedContentInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_OriginatorInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo = __cordl_object
-            .invoke("get_OriginatorInfo", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
+        > = __cordl_object.invoke("get_OriginatorInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_RecipientInfos(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Set> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Set = __cordl_object
-            .invoke("get_RecipientInfos", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Set,
+        > = __cordl_object.invoke("get_RecipientInfos", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_UnprotectedAttrs(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Set> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Set = __cordl_object
-            .invoke("get_UnprotectedAttrs", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Set,
+        > = __cordl_object.invoke("get_UnprotectedAttrs", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Version(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::DerInteger> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::DerInteger = __cordl_object
-            .invoke("get_Version", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerInteger,
+        > = __cordl_object.invoke("get_Version", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+EnvelopedData")]

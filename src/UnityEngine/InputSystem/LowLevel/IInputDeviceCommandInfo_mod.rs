@@ -42,7 +42,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = __cordl_object
             .invoke("get_typeStatic", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputDeviceCommandInfo")]

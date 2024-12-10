@@ -56,11 +56,11 @@ impl<
             self,
         );
         let __cordl_ret: TValue = __cordl_object.invoke("Get", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        creator: *mut crate::System::Func_2<TKey, TValue>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        creator: quest_hook::libil2cpp::Gc<crate::System::Func_2<TKey, TValue>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -71,11 +71,11 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (creator))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        creator: *mut crate::System::Func_2<TKey, TValue>,
+        creator: quest_hook::libil2cpp::Gc<crate::System::Func_2<TKey, TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -88,7 +88,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (creator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ThreadSafeStore_2")]

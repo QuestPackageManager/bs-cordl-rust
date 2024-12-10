@@ -71,15 +71,20 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     pub type RepeatRectUV = crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV;
     pub fn AdjustSpriteWinding(
         &mut self,
-        vertices: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        indices: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u16>> {
+        vertices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        >,
+        indices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u16> = __cordl_object
-            .invoke("AdjustSpriteWinding", (vertices, indices))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u16>,
+        > = __cordl_object.invoke("AdjustSpriteWinding", (vertices, indices))?;
+        Ok(__cordl_ret.into())
     }
     pub fn AllocRawVertsIndices(
         &mut self,
@@ -89,14 +94,16 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
             crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::MeshWriteData,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::MeshWriteData = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MeshWriteData,
+        > = __cordl_object
             .invoke("AllocRawVertsIndices", (vertexCount, indexCount, allocatorData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AllocThroughDrawMesh(
         &mut self,
@@ -106,28 +113,30 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
             crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::MeshWriteData,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::MeshWriteData = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MeshWriteData,
+        > = __cordl_object
             .invoke("AllocThroughDrawMesh", (vertexCount, indexCount, allocatorData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyInset(
         &mut self,
         rectParams: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
         >,
-        tex: *mut crate::UnityEngine::Texture,
+        tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyInset", (rectParams, tex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyVisualElementClipping(
         &mut self,
@@ -137,26 +146,26 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyVisualElementClipping", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Begin(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Begin", (ve))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BuildEntryFromNativeMesh(
         &mut self,
         meshData: crate::UnityEngine::UIElements::MeshWriteDataInterface,
-        texture: *mut crate::UnityEngine::Texture,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         textureId: crate::UnityEngine::UIElements::TextureId,
         isAtlas: bool,
-        material: *mut crate::UnityEngine::Material,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         flags: crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags,
         uvRegion: crate::UnityEngine::Rect,
         addFlags: crate::UnityEngine::UIElements::UIR::VertexFlags,
@@ -178,7 +187,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
                     addFlags,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BuildGradientEntryFromNativeMesh(
         &mut self,
@@ -190,7 +199,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BuildGradientEntryFromNativeMesh", (meshData, svgTextureId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BuildRawEntryFromNativeMesh(
         &mut self,
@@ -201,7 +210,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BuildRawEntryFromNativeMesh", (meshData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawBorder(
         &mut self,
@@ -212,11 +221,11 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawBorder", (borderParams))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawImmediate(
         &mut self,
-        callback: *mut crate::System::Action,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         cullingEnabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -224,24 +233,26 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawImmediate", (callback, cullingEnabled))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawMesh(
         &mut self,
         vertexCount: i32,
         indexCount: i32,
-        texture: *mut crate::UnityEngine::Texture,
-        material: *mut crate::UnityEngine::Material,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         flags: crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::MeshWriteData,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::MeshWriteData = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MeshWriteData,
+        > = __cordl_object
             .invoke("DrawMesh", (vertexCount, indexCount, texture, material, flags))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawRectangle(
         &mut self,
@@ -252,7 +263,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawRectangle", (rectParams))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawRectangleRepeat(
         &mut self,
@@ -268,7 +279,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
                 "DrawRectangleRepeat",
                 (rectParams, totalRect, scaledPixelsPerPoint),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawSprite(
         &mut self,
@@ -279,22 +290,24 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawSprite", (rectParams))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawText(
         &mut self,
-        te: *mut crate::UnityEngine::UIElements::TextElement,
+        te: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawText", (te))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawTextInfo(
         &mut self,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        textInfo: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextInfo,
+        >,
         offset: crate::UnityEngine::Vector2,
         useHints: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -303,7 +316,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawTextInfo", (textInfo, offset, useHints))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawVectorImage(
         &mut self,
@@ -314,7 +327,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawVectorImage", (rectParams))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawVisualElementBackground(
         &mut self,
@@ -324,7 +337,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawVisualElementBackground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawVisualElementBorder(
         &mut self,
@@ -334,7 +347,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawVisualElementBorder", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateStencilClipEntryForRoundedRectBackground(
         &mut self,
@@ -344,7 +357,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateStencilClipEntryForRoundedRectBackground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateStencilClipEntryForSVGBackground(
         &mut self,
@@ -354,19 +367,20 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateStencilClipEntryForSVGBackground", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPooledMeshWriteData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::MeshWriteData,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::MeshWriteData = __cordl_object
-            .invoke("GetPooledMeshWriteData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MeshWriteData,
+        > = __cordl_object.invoke("GetPooledMeshWriteData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn LandClipRegisterMesh(
         &mut self,
@@ -381,18 +395,20 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LandClipRegisterMesh", (vertices, indices, indexOffset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LandClipUnregisterMeshDrawCommand(
         &mut self,
-        cmd: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        cmd: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LandClipUnregisterMeshDrawCommand", (cmd))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MakeVectorGraphics(
         &mut self,
@@ -418,16 +434,18 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
                     finalIndexCount,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        renderChain: *mut crate::UnityEngine::UIElements::UIR::RenderChain,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        renderChain: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChain,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (renderChain))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -437,7 +455,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StampRectangleWithSubRect(
         &mut self,
@@ -450,11 +468,11 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StampRectangleWithSubRect", (rectParams, targetRect, targetUV))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryAtlasTexture(
         &mut self,
-        texture: *mut crate::UnityEngine::Texture,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         flags: crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags,
         outUVRegion: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
         outIsAtlas: quest_hook::libil2cpp::ByRefMut<bool>,
@@ -473,7 +491,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
                 "TryAtlasTexture",
                 (texture, flags, outUVRegion, outIsAtlas, outTextureId, outAddFlags),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateMeshWriteData(
         &mut self,
@@ -483,18 +501,20 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ValidateMeshWriteData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        renderChain: *mut crate::UnityEngine::UIElements::UIR::RenderChain,
+        renderChain: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChain,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (renderChain))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_closingInfo(
         &mut self,
@@ -506,83 +526,90 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo = __cordl_object
             .invoke("get_closingInfo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentElement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("get_currentElement", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_currentElement", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_entries(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+            >,
         > = __cordl_object.invoke("get_entries", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_meshGenerationContext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::MeshGenerationContext,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshGenerationContext>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::MeshGenerationContext = __cordl_object
-            .invoke("get_meshGenerationContext", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MeshGenerationContext,
+        > = __cordl_object.invoke("get_meshGenerationContext", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalIndices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_totalIndices", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalVertices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_totalVertices", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_visualElement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("get_visualElement", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_visualElement", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_currentElement(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::VisualElement,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_currentElement", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_totalIndices(
         &mut self,
@@ -593,7 +620,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_totalIndices", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_totalVertices(
         &mut self,
@@ -604,7 +631,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_totalVertices", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter")]

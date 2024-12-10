@@ -53,7 +53,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Canvas_preWillRenderCanvases", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Handle(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Handle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleConstantPhysicalSize(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleConstantPhysicalSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleConstantPixelSize(
         &mut self,
@@ -83,7 +83,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleConstantPixelSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleScaleWithScreenSize(
         &mut self,
@@ -93,7 +93,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleScaleWithScreenSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleWorldCanvas(
         &mut self,
@@ -103,14 +103,14 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleWorldCanvas", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -120,7 +120,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -130,7 +130,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetReferencePixelsPerUnit(
         &mut self,
@@ -141,7 +141,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetReferencePixelsPerUnit", (referencePixelsPerUnit))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetScaleFactor(
         &mut self,
@@ -152,7 +152,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetScaleFactor", (scaleFactor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -162,35 +162,35 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_defaultSpriteDPI(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_defaultSpriteDPI", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dynamicPixelsPerUnit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_dynamicPixelsPerUnit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fallbackScreenDPI(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_fallbackScreenDPI", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_matchWidthOrHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_matchWidthOrHeight", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_physicalUnit(
         &mut self,
@@ -200,14 +200,14 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: crate::UnityEngine::UI::CanvasScaler_Unit = __cordl_object
             .invoke("get_physicalUnit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_referencePixelsPerUnit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_referencePixelsPerUnit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_referenceResolution(
         &mut self,
@@ -217,14 +217,14 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("get_referenceResolution", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_scaleFactor(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_scaleFactor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_screenMatchMode(
         &mut self,
@@ -236,7 +236,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode = __cordl_object
             .invoke("get_screenMatchMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_uiScaleMode(
         &mut self,
@@ -246,7 +246,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: crate::UnityEngine::UI::CanvasScaler_ScaleMode = __cordl_object
             .invoke("get_uiScaleMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_defaultSpriteDPI(
         &mut self,
@@ -257,7 +257,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_defaultSpriteDPI", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dynamicPixelsPerUnit(
         &mut self,
@@ -268,7 +268,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_dynamicPixelsPerUnit", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_fallbackScreenDPI(
         &mut self,
@@ -279,7 +279,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_fallbackScreenDPI", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_matchWidthOrHeight(
         &mut self,
@@ -290,7 +290,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_matchWidthOrHeight", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_physicalUnit(
         &mut self,
@@ -301,7 +301,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_physicalUnit", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_referencePixelsPerUnit(
         &mut self,
@@ -312,7 +312,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_referencePixelsPerUnit", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_referenceResolution(
         &mut self,
@@ -323,7 +323,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_referenceResolution", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_scaleFactor(
         &mut self,
@@ -334,7 +334,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_scaleFactor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_screenMatchMode(
         &mut self,
@@ -345,7 +345,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_screenMatchMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_uiScaleMode(
         &mut self,
@@ -356,7 +356,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_uiScaleMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UI+CanvasScaler")]

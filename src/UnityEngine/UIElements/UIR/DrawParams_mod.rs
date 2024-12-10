@@ -36,12 +36,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::DrawParams {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+DrawParams")]
 impl crate::UnityEngine::UIElements::UIR::DrawParams {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -51,7 +51,7 @@ impl crate::UnityEngine::UIElements::UIR::DrawParams {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::UnityEngine::UIElements::UIR::DrawParams {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+DrawParams")]

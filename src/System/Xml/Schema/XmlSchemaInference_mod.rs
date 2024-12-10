@@ -37,21 +37,27 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     pub type InferenceOption = crate::System::Xml::Schema::XmlSchemaInference_InferenceOption;
     pub fn AddAttribute(
         &mut self,
-        localName: *mut quest_hook::libil2cpp::Il2CppString,
-        prefix: *mut quest_hook::libil2cpp::Il2CppString,
-        childURI: *mut quest_hook::libil2cpp::Il2CppString,
-        attrValue: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        childURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        attrValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         bCreatingNewType: bool,
-        parentSchema: *mut crate::System::Xml::Schema::XmlSchema,
-        addLocation: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-        compiledAttributes: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
+        parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+        addLocation: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        >,
+        compiledAttributes: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectTable,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAttribute>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaAttribute = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaAttribute,
+        > = __cordl_object
             .invoke(
                 "AddAttribute",
                 (
@@ -65,23 +71,27 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
                     compiledAttributes,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddElement(
         &mut self,
-        localName: *mut quest_hook::libil2cpp::Il2CppString,
-        prefix: *mut quest_hook::libil2cpp::Il2CppString,
-        childURI: *mut quest_hook::libil2cpp::Il2CppString,
-        parentSchema: *mut crate::System::Xml::Schema::XmlSchema,
-        addLocation: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        childURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+        addLocation: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        >,
         positionWithinCollection: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaElement,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaElement = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaElement,
+        > = __cordl_object
             .invoke(
                 "AddElement",
                 (
@@ -93,136 +103,158 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
                     positionWithinCollection,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckSimpleContentExtension(
         &mut self,
-        ct: *mut crate::System::Xml::Schema::XmlSchemaComplexType,
+        ct: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaSimpleContentExtension = __cordl_object
-            .invoke("CheckSimpleContentExtension", (ct))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+        > = __cordl_object.invoke("CheckSimpleContentExtension", (ct))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateNewElementforChoice(
         &mut self,
-        copyElement: *mut crate::System::Xml::Schema::XmlSchemaElement,
+        copyElement: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaElement,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaElement,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaElement = __cordl_object
-            .invoke("CreateNewElementforChoice", (copyElement))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaElement,
+        > = __cordl_object.invoke("CreateNewElementforChoice", (copyElement))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateXmlSchema(
         &mut self,
-        targetNS: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
+        targetNS: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchema = __cordl_object
-            .invoke("CreateXmlSchema", (targetNS))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchema,
+        > = __cordl_object.invoke("CreateXmlSchema", (targetNS))?;
+        Ok(__cordl_ret.into())
     }
     pub fn FindAttribute(
         &mut self,
-        attributes: *mut crate::System::Collections::ICollection,
-        attrName: *mut quest_hook::libil2cpp::Il2CppString,
+        attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+        attrName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAttribute>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaAttribute = __cordl_object
-            .invoke("FindAttribute", (attributes, attrName))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaAttribute,
+        > = __cordl_object.invoke("FindAttribute", (attributes, attrName))?;
+        Ok(__cordl_ret.into())
     }
     pub fn FindAttributeRef(
         &mut self,
-        attributes: *mut crate::System::Collections::ICollection,
-        attributeName: *mut quest_hook::libil2cpp::Il2CppString,
-        nsURI: *mut quest_hook::libil2cpp::Il2CppString,
+        attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+        attributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        nsURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAttribute>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaAttribute = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaAttribute,
+        > = __cordl_object
             .invoke("FindAttributeRef", (attributes, attributeName, nsURI))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindElement(
         &mut self,
-        elements: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-        elementName: *mut quest_hook::libil2cpp::Il2CppString,
+        elements: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        >,
+        elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaElement,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaElement = __cordl_object
-            .invoke("FindElement", (elements, elementName))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaElement,
+        > = __cordl_object.invoke("FindElement", (elements, elementName))?;
+        Ok(__cordl_ret.into())
     }
     pub fn FindElementRef(
         &mut self,
-        elements: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-        elementName: *mut quest_hook::libil2cpp::Il2CppString,
-        nsURI: *mut quest_hook::libil2cpp::Il2CppString,
+        elements: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        >,
+        elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        nsURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaElement,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaElement = __cordl_object
-            .invoke("FindElementRef", (elements, elementName, nsURI))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaElement,
+        > = __cordl_object.invoke("FindElementRef", (elements, elementName, nsURI))?;
+        Ok(__cordl_ret.into())
     }
     pub fn FindGlobalElement(
         &mut self,
-        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
-        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentSchema: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Xml::Schema::XmlSchema,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaElement,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaElement = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaElement,
+        > = __cordl_object
             .invoke("FindGlobalElement", (namespaceURI, localName, parentSchema))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindMatchingElement(
         &mut self,
         bCreatingNewType: bool,
-        xtr: *mut crate::System::Xml::XmlReader,
-        ct: *mut crate::System::Xml::Schema::XmlSchemaComplexType,
+        xtr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+        ct: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
         lastUsedSeqItem: quest_hook::libil2cpp::ByRefMut<i32>,
         bParticleChanged: quest_hook::libil2cpp::ByRefMut<bool>,
-        parentSchema: *mut crate::System::Xml::Schema::XmlSchema,
+        parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
         setMaxoccurs: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::Schema::XmlSchemaElement,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaElement = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaElement,
+        > = __cordl_object
             .invoke(
                 "FindMatchingElement",
                 (
@@ -235,72 +267,85 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
                     setMaxoccurs,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEffectiveSchemaType(
         &mut self,
-        elem: *mut crate::System::Xml::Schema::XmlSchemaElement,
+        elem: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
         bCreatingNewType: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchemaType> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaType = __cordl_object
-            .invoke("GetEffectiveSchemaType", (elem, bCreatingNewType))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaType,
+        > = __cordl_object.invoke("GetEffectiveSchemaType", (elem, bCreatingNewType))?;
+        Ok(__cordl_ret.into())
     }
     pub fn InferElement(
         &mut self,
-        xse: *mut crate::System::Xml::Schema::XmlSchemaElement,
+        xse: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
         bCreatingNewType: bool,
-        parentSchema: *mut crate::System::Xml::Schema::XmlSchema,
+        parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InferElement", (xse, bCreatingNewType, parentSchema))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InferSchema(
         &mut self,
-        instanceDocument: *mut crate::System::Xml::XmlReader,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchemaSet> {
+        instanceDocument: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaSet = __cordl_object
-            .invoke("InferSchema", (instanceDocument))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSet,
+        > = __cordl_object.invoke("InferSchema", (instanceDocument))?;
+        Ok(__cordl_ret.into())
     }
     pub fn InferSchema1(
         &mut self,
-        instanceDocument: *mut crate::System::Xml::XmlReader,
-        schemas: *mut crate::System::Xml::Schema::XmlSchemaSet,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchemaSet> {
+        instanceDocument: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+        schemas: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::XmlSchemaSet = __cordl_object
-            .invoke("InferSchema1", (instanceDocument, schemas))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSet,
+        > = __cordl_object.invoke("InferSchema1", (instanceDocument, schemas))?;
+        Ok(__cordl_ret.into())
     }
     pub fn MakeExistingAttributesOptional(
         &mut self,
-        ct: *mut crate::System::Xml::Schema::XmlSchemaComplexType,
-        attributesInInstance: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        ct: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+        attributesInInstance: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MakeExistingAttributesOptional", (ct, attributesInInstance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveAttributes_XmlSchemaComplexType_XmlSchemaSimpleContentExtension__cordl_bool1(
         &mut self,
-        ct: *mut crate::System::Xml::Schema::XmlSchemaComplexType,
-        simpleContentExtension: *mut crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+        ct: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+        simpleContentExtension: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+        >,
         bCreatingNewType: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -308,35 +353,39 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveAttributes", (ct, simpleContentExtension, bCreatingNewType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveAttributes_XmlSchemaSimpleContentExtension_XmlSchemaComplexType0(
         &mut self,
-        scExtension: *mut crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
-        ct: *mut crate::System::Xml::Schema::XmlSchemaComplexType,
+        scExtension: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+        >,
+        ct: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveAttributes", (scExtension, ct))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessAttributes(
         &mut self,
         xse: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Xml::Schema::XmlSchemaElement,
         >,
-        effectiveSchemaType: *mut crate::System::Xml::Schema::XmlSchemaType,
+        effectiveSchemaType: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaType,
+        >,
         bCreatingNewType: bool,
-        parentSchema: *mut crate::System::Xml::Schema::XmlSchema,
+        parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -346,23 +395,26 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
                 "ProcessAttributes",
                 (xse, effectiveSchemaType, bCreatingNewType, parentSchema),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefineSimpleType(
         &mut self,
-        s: *mut quest_hook::libil2cpp::Il2CppString,
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         iTypeFlags: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::XmlQualifiedName = __cordl_object
-            .invoke("RefineSimpleType", (s, iTypeFlags))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName,
+        > = __cordl_object.invoke("RefineSimpleType", (s, iTypeFlags))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetMinMaxOccurs(
         &mut self,
-        el: *mut crate::System::Xml::Schema::XmlSchemaElement,
+        el: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
         setMaxOccurs: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -370,19 +422,23 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetMinMaxOccurs", (el, setMaxOccurs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SwitchUseToOptional(
         &mut self,
-        attributes: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-        attributesInInstance: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        attributes: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        >,
+        attributesInInstance: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SwitchUseToOptional", (attributes, attributesInInstance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -392,7 +448,7 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Occurrence(
         &mut self,
@@ -404,7 +460,7 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         );
         let __cordl_ret: crate::System::Xml::Schema::XmlSchemaInference_InferenceOption = __cordl_object
             .invoke("get_Occurrence", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Occurrence(
         &mut self,
@@ -415,7 +471,7 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Occurrence", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_TypeInference(
         &mut self,
@@ -426,7 +482,7 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_TypeInference", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInference")]

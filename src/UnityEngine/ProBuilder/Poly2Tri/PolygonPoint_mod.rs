@@ -26,12 +26,16 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoi
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PolygonPoint")]
 impl crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint {
-    pub fn New(x: f64, y: f64, index: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        x: f64,
+        y: f64,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (x, y, index))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -44,53 +48,59 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (x, y, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Next(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint = __cordl_object
-            .invoke("get_Next", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        > = __cordl_object.invoke("get_Next", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Previous(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint = __cordl_object
-            .invoke("get_Previous", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        > = __cordl_object.invoke("get_Previous", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_Next(
         &mut self,
-        value: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Next", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Previous(
         &mut self,
-        value: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Previous", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PolygonPoint")]

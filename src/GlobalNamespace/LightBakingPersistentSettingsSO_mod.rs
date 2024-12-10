@@ -36,23 +36,25 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LightBakingPersistentSetting
 }
 #[cfg(feature = "LightBakingPersistentSettingsSO")]
 impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetGraphicsSettingsForBaking(
         &mut self,
-        lightBakingPreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
+        lightBakingPreset: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGraphicsSettingsForBaking", (lightBakingPreset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPlatformGraphics(
         &mut self,
@@ -62,7 +64,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPlatformGraphics", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -72,102 +74,113 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bakedLightDataLoaderPrefab(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::BakedLightDataLoader,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BakedLightDataLoader>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BakedLightDataLoader = __cordl_object
-            .invoke("get_bakedLightDataLoaderPrefab", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BakedLightDataLoader,
+        > = __cordl_object.invoke("get_bakedLightDataLoaderPrefab", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_bakedLightEditorColors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Color,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         > = __cordl_object.invoke("get_bakedLightEditorColors", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bakedReflectionProbePrefab(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::BakedReflectionProbe,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BakedReflectionProbe>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BakedReflectionProbe = __cordl_object
-            .invoke("get_bakedReflectionProbePrefab", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BakedReflectionProbe,
+        > = __cordl_object.invoke("get_bakedReflectionProbePrefab", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_colorFromSchemeAlpha(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_colorFromSchemeAlpha", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_defaultDepthOnlyWriteMaterialForFakeMirror(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Material = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = __cordl_object
             .invoke("get_defaultDepthOnlyWriteMaterialForFakeMirror", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fakeMirrorObjectsInstallerPrefab(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::FakeMirrorObjectsInstaller,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FakeMirrorObjectsInstaller>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::FakeMirrorObjectsInstaller = __cordl_object
-            .invoke("get_fakeMirrorObjectsInstallerPrefab", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FakeMirrorObjectsInstaller,
+        > = __cordl_object.invoke("get_fakeMirrorObjectsInstallerPrefab", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_fakeMirrorSettingsPrefab(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::FakeMirrorSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FakeMirrorSettings>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::FakeMirrorSettings = __cordl_object
-            .invoke("get_fakeMirrorSettingsPrefab", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FakeMirrorSettings,
+        > = __cordl_object.invoke("get_fakeMirrorSettingsPrefab", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_lightmapLightsWithIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::LightmapLightsWithIds,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightsWithIds>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::LightmapLightsWithIds = __cordl_object
-            .invoke("get_lightmapLightsWithIds", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightmapLightsWithIds,
+        > = __cordl_object.invoke("get_lightmapLightsWithIds", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_reflectionsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_reflectionsCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_colorFromSchemeAlpha(
         &mut self,
@@ -178,7 +191,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_colorFromSchemeAlpha", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_reflectionsCount(
         &mut self,
@@ -189,7 +202,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_reflectionsCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LightBakingPersistentSettingsSO")]

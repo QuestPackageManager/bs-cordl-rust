@@ -44,7 +44,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CalculateLayoutInputHorizontal", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CalculateLayoutInputVertical(
         &mut self,
@@ -54,14 +54,14 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CalculateLayoutInputVertical", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetCellsAlongAxis(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCellsAlongAxis", (axis))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLayoutHorizontal(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetLayoutHorizontal", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLayoutVertical(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetLayoutVertical", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_cellSize(
         &mut self,
@@ -112,7 +112,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("get_cellSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_constraint(
         &mut self,
@@ -124,14 +124,14 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: crate::UnityEngine::UI::GridLayoutGroup_Constraint = __cordl_object
             .invoke("get_constraint", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_constraintCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_constraintCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_spacing(
         &mut self,
@@ -141,7 +141,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("get_spacing", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_startAxis(
         &mut self,
@@ -151,7 +151,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: crate::UnityEngine::UI::GridLayoutGroup_Axis = __cordl_object
             .invoke("get_startAxis", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_startCorner(
         &mut self,
@@ -161,7 +161,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: crate::UnityEngine::UI::GridLayoutGroup_Corner = __cordl_object
             .invoke("get_startCorner", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_cellSize(
         &mut self,
@@ -172,7 +172,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_cellSize", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_constraint(
         &mut self,
@@ -183,7 +183,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_constraint", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_constraintCount(
         &mut self,
@@ -194,7 +194,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_constraintCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_spacing(
         &mut self,
@@ -205,7 +205,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_spacing", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_startAxis(
         &mut self,
@@ -216,7 +216,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_startAxis", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_startCorner(
         &mut self,
@@ -227,7 +227,7 @@ impl crate::UnityEngine::UI::GridLayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_startCorner", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UI+GridLayoutGroup")]

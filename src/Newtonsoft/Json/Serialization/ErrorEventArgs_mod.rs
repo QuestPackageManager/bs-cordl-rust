@@ -27,48 +27,56 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::ErrorEventAr
 #[cfg(feature = "Newtonsoft+Json+Serialization+ErrorEventArgs")]
 impl crate::Newtonsoft::Json::Serialization::ErrorEventArgs {
     pub fn New(
-        currentObject: *mut quest_hook::libil2cpp::Il2CppObject,
-        errorContext: *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        currentObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        errorContext: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::ErrorContext,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (currentObject, errorContext))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        currentObject: *mut quest_hook::libil2cpp::Il2CppObject,
-        errorContext: *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
+        currentObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        errorContext: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::ErrorContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (currentObject, errorContext))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CurrentObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_CurrentObject", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ErrorContext(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ErrorContext = __cordl_object
-            .invoke("get_ErrorContext", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_CurrentObject", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ErrorContext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::ErrorContext>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::ErrorContext,
+        > = __cordl_object.invoke("get_ErrorContext", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ErrorEventArgs")]

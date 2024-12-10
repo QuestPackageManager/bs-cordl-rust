@@ -33,15 +33,15 @@ impl std::ops::DerefMut for crate::Assets::OVR::Scripts::FixRecord {
 impl crate::Assets::OVR::Scripts::FixRecord {
     pub fn New(
         order: i32,
-        cat: *mut quest_hook::libil2cpp::Il2CppString,
-        msg: *mut quest_hook::libil2cpp::Il2CppString,
-        fix: *mut crate::Assets::OVR::Scripts::FixMethodDelegate,
-        target: *mut crate::UnityEngine::Object,
+        cat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fix: quest_hook::libil2cpp::Gc<crate::Assets::OVR::Scripts::FixMethodDelegate>,
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         editRequired: bool,
-        buttons: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        buttons: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -49,18 +49,18 @@ impl crate::Assets::OVR::Scripts::FixRecord {
                 ".ctor",
                 (order, cat, msg, fix, target, editRequired, buttons),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         order: i32,
-        cat: *mut quest_hook::libil2cpp::Il2CppString,
-        msg: *mut quest_hook::libil2cpp::Il2CppString,
-        fix: *mut crate::Assets::OVR::Scripts::FixMethodDelegate,
-        target: *mut crate::UnityEngine::Object,
+        cat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fix: quest_hook::libil2cpp::Gc<crate::Assets::OVR::Scripts::FixMethodDelegate>,
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         editRequired: bool,
-        buttons: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        buttons: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -68,7 +68,7 @@ impl crate::Assets::OVR::Scripts::FixRecord {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (order, cat, msg, fix, target, editRequired, buttons))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Assets+OVR+Scripts+FixRecord")]

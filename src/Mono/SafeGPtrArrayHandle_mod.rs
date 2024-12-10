@@ -29,7 +29,7 @@ impl crate::Mono::SafeGPtrArrayHandle {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -40,7 +40,7 @@ impl crate::Mono::SafeGPtrArrayHandle {
             ".ctor",
             (ptr),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
@@ -51,7 +51,7 @@ impl crate::Mono::SafeGPtrArrayHandle {
             "get_Item",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -59,6 +59,6 @@ impl crate::Mono::SafeGPtrArrayHandle {
             "get_Length",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

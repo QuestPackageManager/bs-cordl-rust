@@ -33,7 +33,7 @@ impl crate::UnityEngine::JointLimits {
             "get_bounceMinVelocity",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bounciness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -41,7 +41,7 @@ impl crate::UnityEngine::JointLimits {
             "get_bounciness",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_contactDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -49,7 +49,7 @@ impl crate::UnityEngine::JointLimits {
             "get_contactDistance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_max(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -57,7 +57,7 @@ impl crate::UnityEngine::JointLimits {
             "get_max",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_min(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -65,7 +65,7 @@ impl crate::UnityEngine::JointLimits {
             "get_min",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_bounceMinVelocity(
         &mut self,
@@ -76,7 +76,7 @@ impl crate::UnityEngine::JointLimits {
             "set_bounceMinVelocity",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_bounciness(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::UnityEngine::JointLimits {
             "set_bounciness",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_contactDistance(
         &mut self,
@@ -98,7 +98,7 @@ impl crate::UnityEngine::JointLimits {
             "set_contactDistance",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_max(
         &mut self,
@@ -109,7 +109,7 @@ impl crate::UnityEngine::JointLimits {
             "set_max",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_min(
         &mut self,
@@ -120,6 +120,6 @@ impl crate::UnityEngine::JointLimits {
             "set_min",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

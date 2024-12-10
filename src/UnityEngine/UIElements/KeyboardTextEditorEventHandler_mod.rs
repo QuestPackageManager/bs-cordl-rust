@@ -30,72 +30,80 @@ for crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
 impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
     pub fn ExecuteDefaultActionAtTarget(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExecuteDefaultActionAtTarget", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        textElement: *mut crate::UnityEngine::UIElements::TextElement,
-        editingUtilities: *mut crate::UnityEngine::TextEditingUtilities,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        textElement: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextElement,
+        >,
+        editingUtilities: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextEditingUtilities,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (textElement, editingUtilities))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnBlur(
         &mut self,
-        _cordl__: *mut crate::UnityEngine::UIElements::BlurEvent,
+        _cordl__: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BlurEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBlur", (_cordl__))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnExecuteCommandEvent(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::ExecuteCommandEvent,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ExecuteCommandEvent,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnExecuteCommandEvent", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnFocus(
         &mut self,
-        _cordl__: *mut crate::UnityEngine::UIElements::FocusEvent,
+        _cordl__: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnFocus", (_cordl__))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnKeyDown(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::KeyDownEvent,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::KeyDownEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnKeyDown", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnNavigationEvent<TEvent>(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::NavigationEventBase_1<TEvent>,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::NavigationEventBase_1<TEvent>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TEvent: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -106,18 +114,20 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNavigationEvent", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnValidateCommandEvent(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::ValidateCommandEvent,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ValidateCommandEvent,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnValidateCommandEvent", (evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateLabel(
         &mut self,
@@ -127,19 +137,23 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateLabel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        textElement: *mut crate::UnityEngine::UIElements::TextElement,
-        editingUtilities: *mut crate::UnityEngine::TextEditingUtilities,
+        textElement: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextElement,
+        >,
+        editingUtilities: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextEditingUtilities,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (textElement, editingUtilities))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+KeyboardTextEditorEventHandler")]

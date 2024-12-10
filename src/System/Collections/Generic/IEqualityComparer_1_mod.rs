@@ -39,7 +39,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (x, y))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self, obj: T) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -50,7 +50,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

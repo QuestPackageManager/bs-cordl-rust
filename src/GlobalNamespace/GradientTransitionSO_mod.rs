@@ -36,12 +36,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GradientTransitionSO {
 }
 #[cfg(feature = "GradientTransitionSO")]
 impl crate::GlobalNamespace::GradientTransitionSO {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_disabledColor1(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_disabledColor1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_disabledColor2(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_disabledColor2", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_highlightColor1(
         &mut self,
@@ -81,7 +81,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_highlightColor1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_highlightColor2(
         &mut self,
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_highlightColor2", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_normalColor1(
         &mut self,
@@ -101,7 +101,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_normalColor1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_normalColor2(
         &mut self,
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_normalColor2", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_pressedColor1(
         &mut self,
@@ -121,7 +121,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_pressedColor1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_pressedColor2(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_pressedColor2", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_selectedAndHighlightedColor1(
         &mut self,
@@ -141,7 +141,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_selectedAndHighlightedColor1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_selectedAndHighlightedColor2(
         &mut self,
@@ -151,7 +151,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_selectedAndHighlightedColor2", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_selectedColor1(
         &mut self,
@@ -161,7 +161,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_selectedColor1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_selectedColor2(
         &mut self,
@@ -171,7 +171,7 @@ impl crate::GlobalNamespace::GradientTransitionSO {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_selectedColor2", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "GradientTransitionSO")]

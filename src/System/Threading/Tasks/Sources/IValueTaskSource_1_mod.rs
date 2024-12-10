@@ -39,7 +39,7 @@ impl<
             self,
         );
         let __cordl_ret: TResult = __cordl_object.invoke("GetResult", (token))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetStatus(
         &mut self,
@@ -56,14 +56,14 @@ impl<
         );
         let __cordl_ret: crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus = __cordl_object
             .invoke("GetStatus", (token))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnCompleted(
         &mut self,
-        continuation: *mut crate::System::Action_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        continuation: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         token: i16,
         flags: crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -76,7 +76,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnCompleted", (continuation, state, token, flags))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

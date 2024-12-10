@@ -32,12 +32,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SelectableStateController {
 impl crate::GlobalNamespace::SelectableStateController {
     #[cfg(feature = "SelectableStateController+ViewState")]
     pub type ViewState = crate::GlobalNamespace::SelectableStateController_ViewState;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetState(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::SelectableStateController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetState", (state, animated))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -59,13 +59,15 @@ impl crate::GlobalNamespace::SelectableStateController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_stateDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            crate::GlobalNamespace::SelectableStateController_ViewState,
-            bool,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                crate::GlobalNamespace::SelectableStateController_ViewState,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -73,7 +75,7 @@ impl crate::GlobalNamespace::SelectableStateController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_stateDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentViewState(
         &mut self,
@@ -85,17 +87,20 @@ impl crate::GlobalNamespace::SelectableStateController {
         );
         let __cordl_ret: crate::GlobalNamespace::SelectableStateController_ViewState = __cordl_object
             .invoke("get_currentViewState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tweeningManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Tweening::TimeTweeningManager> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Tweening::TimeTweeningManager>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Tweening::TimeTweeningManager = __cordl_object
-            .invoke("get_tweeningManager", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Tweening::TimeTweeningManager,
+        > = __cordl_object.invoke("get_tweeningManager", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_viewState(
         &mut self,
@@ -107,13 +112,15 @@ impl crate::GlobalNamespace::SelectableStateController {
         );
         let __cordl_ret: crate::GlobalNamespace::SelectableStateController_ViewState = __cordl_object
             .invoke("get_viewState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_stateDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            crate::GlobalNamespace::SelectableStateController_ViewState,
-            bool,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                crate::GlobalNamespace::SelectableStateController_ViewState,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -121,7 +128,7 @@ impl crate::GlobalNamespace::SelectableStateController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_stateDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_currentViewState(
         &mut self,
@@ -132,7 +139,7 @@ impl crate::GlobalNamespace::SelectableStateController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_currentViewState", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SelectableStateController")]

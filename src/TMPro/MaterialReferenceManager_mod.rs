@@ -43,87 +43,87 @@ impl crate::TMPro::MaterialReferenceManager {
     pub fn AddColorGradientPreset_Internal(
         &mut self,
         hashCode: i32,
-        spriteAsset: *mut crate::TMPro::TMP_ColorGradient,
+        spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_ColorGradient>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddColorGradientPreset_Internal", (hashCode, spriteAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddFontAssetInternal(
         &mut self,
-        fontAsset: *mut crate::TMPro::TMP_FontAsset,
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddFontAssetInternal", (fontAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddFontMaterialInternal(
         &mut self,
         hashCode: i32,
-        material: *mut crate::UnityEngine::Material,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddFontMaterialInternal", (hashCode, material))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddSpriteAssetInternal_TMP_SpriteAsset0(
         &mut self,
-        spriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
+        spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddSpriteAssetInternal", (spriteAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddSpriteAssetInternal_i32_TMP_SpriteAsset1(
         &mut self,
         hashCode: i32,
-        spriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
+        spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddSpriteAssetInternal", (hashCode, spriteAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Contains_TMP_FontAsset0(
         &mut self,
-        font: *mut crate::TMPro::TMP_FontAsset,
+        font: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (font))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Contains_TMP_SpriteAsset1(
         &mut self,
-        sprite: *mut crate::TMPro::TMP_SpriteAsset,
+        sprite: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (sprite))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn TryGetColorGradientPresetInternal(
         &mut self,
@@ -137,7 +137,7 @@ impl crate::TMPro::MaterialReferenceManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetColorGradientPresetInternal", (hashCode, gradientPreset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetFontAssetInternal(
         &mut self,
@@ -149,7 +149,7 @@ impl crate::TMPro::MaterialReferenceManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetFontAssetInternal", (hashCode, fontAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetMaterialInternal(
         &mut self,
@@ -161,7 +161,7 @@ impl crate::TMPro::MaterialReferenceManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetMaterialInternal", (hashCode, material))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetSpriteAssetInternal(
         &mut self,
@@ -173,7 +173,7 @@ impl crate::TMPro::MaterialReferenceManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetSpriteAssetInternal", (hashCode, spriteAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -183,7 +183,7 @@ impl crate::TMPro::MaterialReferenceManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TMPro+MaterialReferenceManager")]

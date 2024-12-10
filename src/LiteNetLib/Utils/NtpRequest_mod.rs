@@ -38,14 +38,14 @@ impl crate::LiteNetLib::Utils::NtpRequest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Close", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LiteNetLib_INetSocketListener_OnMessageReceived(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         length: i32,
         errorCode: crate::System::Net::Sockets::SocketError,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -55,19 +55,19 @@ impl crate::LiteNetLib::Utils::NtpRequest {
                 "LiteNetLib.INetSocketListener.OnMessageReceived",
                 (data, length, errorCode, remoteEndPoint),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        endPoint: *mut crate::System::Net::IPEndPoint,
-        onRequestComplete: *mut crate::System::Action_1<
-            *mut crate::LiteNetLib::Utils::NtpPacket,
+        endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+        onRequestComplete: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::LiteNetLib::Utils::NtpPacket>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (endPoint, onRequestComplete))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Send(
         &mut self,
@@ -77,13 +77,13 @@ impl crate::LiteNetLib::Utils::NtpRequest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Send", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        endPoint: *mut crate::System::Net::IPEndPoint,
-        onRequestComplete: *mut crate::System::Action_1<
-            *mut crate::LiteNetLib::Utils::NtpPacket,
+        endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+        onRequestComplete: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::LiteNetLib::Utils::NtpPacket>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -91,7 +91,7 @@ impl crate::LiteNetLib::Utils::NtpRequest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (endPoint, onRequestComplete))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NtpRequest")]

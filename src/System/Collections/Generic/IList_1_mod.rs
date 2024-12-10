@@ -36,7 +36,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::IList_
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Insert(
         &mut self,
@@ -52,7 +52,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::IList_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Insert", (index, item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveAt(
         &mut self,
@@ -67,7 +67,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::IList_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveAt", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -83,7 +83,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::IList_
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
@@ -99,7 +99,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::IList_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (index, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Collections+Generic+IList_1")]

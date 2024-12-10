@@ -123,13 +123,15 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearBufferedStates", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDisconnectedSyncState(
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        >,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -146,18 +148,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
         > = __cordl_object.invoke("GetDisconnectedSyncState", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSyncState(
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        >,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -174,18 +176,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
         > = __cordl_object.invoke("GetSyncState", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSyncStateForPlayer(
         &mut self,
-        player: *mut crate::GlobalNamespace::IConnectedPlayer,
+        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        >,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -202,16 +204,14 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
         > = __cordl_object.invoke("GetSyncStateForPlayer", (player))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerConnected(
         &mut self,
-        player: *mut crate::GlobalNamespace::IConnectedPlayer,
+        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -230,11 +230,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePlayerConnected", (player))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerDisconnected(
         &mut self,
-        player: *mut crate::GlobalNamespace::IConnectedPlayer,
+        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -253,12 +253,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePlayerDisconnected", (player))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSyncDeltaPacket(
         &mut self,
         packet: TDeltaSerializable,
-        player: *mut crate::GlobalNamespace::IConnectedPlayer,
+        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -277,12 +277,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSyncDeltaPacket", (packet, player))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSyncPacket(
         &mut self,
         packet: TSerializable,
-        player: *mut crate::GlobalNamespace::IConnectedPlayer,
+        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -301,7 +301,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSyncPacket", (packet, player))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Interpolate(
         &mut self,
@@ -328,7 +328,7 @@ impl<
         );
         let __cordl_ret: TState = __cordl_object
             .invoke("Interpolate", (a, timeA, b, timeB, _cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LateUpdate(
         &mut self,
@@ -350,9 +350,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LateUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -369,7 +369,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -391,7 +391,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Smooth(
         &mut self,
@@ -415,7 +415,7 @@ impl<
             self,
         );
         let __cordl_ret: TState = __cordl_object.invoke("Smooth", (a, b, smoooth))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -435,7 +435,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryCreateLocalState(
         &mut self,
@@ -457,7 +457,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TryCreateLocalState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -477,7 +477,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_connectedPlayerCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -496,7 +496,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_connectedPlayerCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deltaMessageType(
         &mut self,
@@ -520,12 +520,14 @@ impl<
         );
         let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = __cordl_object
             .invoke("get_deltaMessageType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deltaSerializablePool(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::IPacketPool_1<TDeltaSerializable>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPacketPool_1<TDeltaSerializable>,
+        >,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -542,10 +544,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::IPacketPool_1<
-            TDeltaSerializable,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPacketPool_1<TDeltaSerializable>,
         > = __cordl_object.invoke("get_deltaSerializablePool", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deltaUpdateFrequencyMs(&mut self) -> quest_hook::libil2cpp::Result<i64>
     where
@@ -564,7 +566,7 @@ impl<
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_deltaUpdateFrequencyMs", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_disconnectedPlayerCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -583,7 +585,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_disconnectedPlayerCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fullStateUpdateFrequencyMs(
         &mut self,
@@ -605,7 +607,7 @@ impl<
         );
         let __cordl_ret: i64 = __cordl_object
             .invoke("get_fullStateUpdateFrequencyMs", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_localBufferSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -624,15 +626,17 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_localBufferSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_localState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LocalMultiplayerSyncState_3<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
     >
     where
@@ -650,12 +654,14 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LocalMultiplayerSyncState_3<
+                TStateTable,
+                TType,
+                TState,
+            >,
         > = __cordl_object.invoke("get_localState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_messageType(
         &mut self,
@@ -679,12 +685,12 @@ impl<
         );
         let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = __cordl_object
             .invoke("get_messageType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_multiplayerSessionManager(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSessionManager>,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -701,9 +707,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::IMultiplayerSessionManager = __cordl_object
-            .invoke("get_multiplayerSessionManager", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSessionManager,
+        > = __cordl_object.invoke("get_multiplayerSessionManager", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_remoteBufferSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -722,12 +729,12 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_remoteBufferSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_serializablePool(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::IPacketPool_1<TSerializable>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool_1<TSerializable>>,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -744,9 +751,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::IPacketPool_1<TSerializable> = __cordl_object
-            .invoke("get_serializablePool", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPacketPool_1<TSerializable>,
+        > = __cordl_object.invoke("get_serializablePool", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_syncTime(&mut self) -> quest_hook::libil2cpp::Result<i64>
     where
@@ -765,7 +773,7 @@ impl<
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_syncTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerSyncStateManager_5")]

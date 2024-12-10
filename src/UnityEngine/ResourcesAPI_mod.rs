@@ -26,85 +26,96 @@ impl std::ops::DerefMut for crate::UnityEngine::ResourcesAPI {
 impl crate::UnityEngine::ResourcesAPI {
     pub fn FindObjectsOfTypeAll(
         &mut self,
-        systemTypeInstance: *mut crate::System::Type,
+        systemTypeInstance: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Object,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
         > = __cordl_object.invoke("FindObjectsOfTypeAll", (systemTypeInstance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FindShaderByName(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Shader> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Shader = __cordl_object
-            .invoke("FindShaderByName", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Load(
-        &mut self,
-        path: *mut quest_hook::libil2cpp::Il2CppString,
-        systemTypeInstance: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
-            .invoke("Load", (path, systemTypeInstance))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LoadAll(
-        &mut self,
-        path: *mut quest_hook::libil2cpp::Il2CppString,
-        systemTypeInstance: *mut crate::System::Type,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Object,
-        > = __cordl_object.invoke("LoadAll", (path, systemTypeInstance))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader> = __cordl_object
+            .invoke("FindShaderByName", (name))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn LoadAsync(
+    pub fn Load(
         &mut self,
-        path: *mut quest_hook::libil2cpp::Il2CppString,
-        systemTypeInstance: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ResourceRequest> {
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        systemTypeInstance: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ResourceRequest = __cordl_object
-            .invoke("LoadAsync", (path, systemTypeInstance))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = __cordl_object
+            .invoke("Load", (path, systemTypeInstance))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn LoadAll(
+        &mut self,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        systemTypeInstance: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        > = __cordl_object.invoke("LoadAll", (path, systemTypeInstance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadAsync(
+        &mut self,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        systemTypeInstance: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceRequest>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceRequest,
+        > = __cordl_object.invoke("LoadAsync", (path, systemTypeInstance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UnloadAsset(
         &mut self,
-        assetToUnload: *mut crate::UnityEngine::Object,
+        assetToUnload: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnloadAsset", (assetToUnload))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -114,7 +125,7 @@ impl crate::UnityEngine::ResourcesAPI {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ResourcesAPI")]

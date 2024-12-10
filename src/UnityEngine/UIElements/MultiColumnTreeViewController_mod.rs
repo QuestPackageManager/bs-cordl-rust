@@ -29,7 +29,9 @@ for crate::UnityEngine::UIElements::MultiColumnTreeViewController {
 impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
     pub fn BindItem(
         &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -37,18 +39,18 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindItem", (element, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DestroyItem(
         &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DestroyItem", (element))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -58,43 +60,50 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokeMakeItem(
         &mut self,
-        reusableItem: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        reusableItem: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ReusableCollectionItem,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokeMakeItem", (reusableItem))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MakeItem(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("MakeItem", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("MakeItem", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        columns: *mut crate::UnityEngine::UIElements::Columns,
-        sortDescriptions: *mut crate::UnityEngine::UIElements::SortColumnDescriptions,
-        sortedColumns: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::SortColumnDescription,
+        columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
+        sortDescriptions: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::SortColumnDescriptions,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        sortedColumns: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::SortColumnDescription,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (columns, sortDescriptions, sortedColumns))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PrepareView(
         &mut self,
@@ -104,11 +113,13 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PrepareView", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnbindItem(
         &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -116,14 +127,18 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnbindItem", (element, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        columns: *mut crate::UnityEngine::UIElements::Columns,
-        sortDescriptions: *mut crate::UnityEngine::UIElements::SortColumnDescriptions,
-        sortedColumns: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::SortColumnDescription,
+        columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
+        sortDescriptions: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::SortColumnDescriptions,
+        >,
+        sortedColumns: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::SortColumnDescription,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -131,31 +146,35 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (columns, sortDescriptions, sortedColumns))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_columnController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::MultiColumnController,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MultiColumnController>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::MultiColumnController = __cordl_object
-            .invoke("get_columnController", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MultiColumnController,
+        > = __cordl_object.invoke("get_columnController", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_header(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader = __cordl_object
-            .invoke("get_header", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader,
+        > = __cordl_object.invoke("get_header", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeViewController")]

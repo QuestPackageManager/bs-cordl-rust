@@ -30,6 +30,6 @@ impl crate::Unity::Collections::NativeArrayDisposeJob {
             "Execute",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

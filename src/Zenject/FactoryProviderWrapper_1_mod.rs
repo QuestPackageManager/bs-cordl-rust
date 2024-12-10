@@ -40,12 +40,12 @@ impl<
             self,
         );
         let __cordl_ret: TContract = __cordl_object.invoke("Create", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        provider: *mut crate::Zenject::IProvider,
-        injectContext: *mut crate::Zenject::InjectContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+        injectContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -54,12 +54,12 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (provider, injectContext))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        provider: *mut crate::Zenject::IProvider,
-        injectContext: *mut crate::Zenject::InjectContext,
+        provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+        injectContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -70,7 +70,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (provider, injectContext))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+FactoryProviderWrapper_1")]

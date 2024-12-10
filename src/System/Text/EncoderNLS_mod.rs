@@ -37,14 +37,14 @@ impl crate::System::Text::EncoderNLS {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearMustFlush", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Convert_Il2CppArray_i32_Il2CppArray_i32_i32__cordl_bool_ByRefMut_ByRefMut0(
         &mut self,
-        chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         charIndex: i32,
         charCount: i32,
-        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         byteIndex: i32,
         byteCount: i32,
         flush: bool,
@@ -71,13 +71,13 @@ impl crate::System::Text::EncoderNLS {
                     completed,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Convert_Il2CppObject_Il2CppObject_i32__cordl_bool_ByRefMut_ByRefMut1(
         &mut self,
-        chars: *mut quest_hook::libil2cpp::Il2CppObject,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         charCount: i32,
-        bytes: *mut quest_hook::libil2cpp::Il2CppObject,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         byteCount: i32,
         flush: bool,
         charsUsed: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -101,11 +101,11 @@ impl crate::System::Text::EncoderNLS {
                     completed,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetByteCount_Il2CppArray_i32__cordl_bool0(
         &mut self,
-        chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
         count: i32,
         flush: bool,
@@ -115,11 +115,11 @@ impl crate::System::Text::EncoderNLS {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetByteCount", (chars, index, count, flush))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetByteCount_Il2CppObject__cordl_bool1(
         &mut self,
-        chars: *mut quest_hook::libil2cpp::Il2CppObject,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
         flush: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -128,14 +128,14 @@ impl crate::System::Text::EncoderNLS {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetByteCount", (chars, count, flush))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetBytes_Il2CppArray_i32_Il2CppArray_i32__cordl_bool0(
         &mut self,
-        chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         charIndex: i32,
         charCount: i32,
-        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         byteIndex: i32,
         flush: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -144,13 +144,13 @@ impl crate::System::Text::EncoderNLS {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetBytes", (chars, charIndex, charCount, bytes, byteIndex, flush))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetBytes_Il2CppObject_Il2CppObject_i32__cordl_bool1(
         &mut self,
-        chars: *mut quest_hook::libil2cpp::Il2CppObject,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         charCount: i32,
-        bytes: *mut quest_hook::libil2cpp::Il2CppObject,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         byteCount: i32,
         flush: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -159,16 +159,16 @@ impl crate::System::Text::EncoderNLS {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetBytes", (chars, charCount, bytes, byteCount, flush))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        encoding: *mut crate::System::Text::Encoding,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (encoding))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -178,42 +178,44 @@ impl crate::System::Text::EncoderNLS {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        encoding: *mut crate::System::Text::Encoding,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (encoding))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Encoding(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Text::Encoding> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Text::Encoding = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = __cordl_object
             .invoke("get_Encoding", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MustFlush(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_MustFlush", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Text+EncoderNLS")]

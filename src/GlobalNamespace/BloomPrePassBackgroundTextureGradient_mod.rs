@@ -40,14 +40,14 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitIfNeeded", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnValidate(
         &mut self,
@@ -67,11 +67,11 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnValidate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Render(
         &mut self,
-        dest: *mut crate::UnityEngine::RenderTexture,
+        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         viewMatrix: crate::UnityEngine::Matrix4x4,
         projectionMatrix: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -80,7 +80,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Render", (dest, viewMatrix, projectionMatrix))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateGradientTexture(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateGradientTexture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdatePixels(
         &mut self,
@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdatePixels", (pixels, numberOfPixels))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -122,7 +122,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tintColor(
         &mut self,
@@ -132,7 +132,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_tintColor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tintColor(
         &mut self,
@@ -143,7 +143,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tintColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundTextureGradient")]

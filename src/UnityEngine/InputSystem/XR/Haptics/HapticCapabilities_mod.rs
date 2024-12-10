@@ -36,7 +36,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
             ".ctor",
             (numChannels, frequencyHz, maxBufferSize),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_frequencyHz(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -44,7 +44,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
             "get_frequencyHz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxBufferSize(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -52,7 +52,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
             "get_maxBufferSize",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_numChannels(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -60,7 +60,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
             "get_numChannels",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_frequencyHz(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
             "set_frequencyHz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maxBufferSize(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
             "set_maxBufferSize",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_numChannels(
         &mut self,
@@ -93,6 +93,6 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
             "set_numChannels",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

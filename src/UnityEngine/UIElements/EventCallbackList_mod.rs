@@ -31,25 +31,29 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventCallbackList {
 impl crate::UnityEngine::UIElements::EventCallbackList {
     pub fn Add(
         &mut self,
-        item: *mut crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+        item: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddRange(
         &mut self,
-        list: *mut crate::UnityEngine::UIElements::EventCallbackList,
+        list: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackList,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddRange", (list))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
@@ -59,12 +63,12 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Contains(
         &mut self,
         eventTypeId: i64,
-        callback: *mut crate::System::Delegate,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -72,43 +76,48 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("Contains", (eventTypeId, callback, phase))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Find(
         &mut self,
         eventTypeId: i64,
-        callback: *mut crate::System::Delegate,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::EventCallbackFunctorBase = __cordl_object
-            .invoke("Find", (eventTypeId, callback, phase))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+        > = __cordl_object.invoke("Find", (eventTypeId, callback, phase))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_EventCallbackList1(
-        source: *mut crate::UnityEngine::UIElements::EventCallbackList,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        source: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackList,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (source))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Remove(
         &mut self,
         eventTypeId: i64,
-        callback: *mut crate::System::Delegate,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -116,7 +125,7 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("Remove", (eventTypeId, callback, phase))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -126,45 +135,50 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_EventCallbackList1(
         &mut self,
-        source: *mut crate::UnityEngine::UIElements::EventCallbackList,
+        source: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackList,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (source))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::EventCallbackFunctorBase = __cordl_object
-            .invoke("get_Item", (i))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+        > = __cordl_object.invoke("get_Item", (i))?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_bubbleUpCallbackCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_bubbleUpCallbackCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_trickleDownCallbackCount(
         &mut self,
@@ -174,7 +188,7 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("get_trickleDownCallbackCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_bubbleUpCallbackCount(
         &mut self,
@@ -185,7 +199,7 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_bubbleUpCallbackCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_trickleDownCallbackCount(
         &mut self,
@@ -196,7 +210,7 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_trickleDownCallbackCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventCallbackList")]

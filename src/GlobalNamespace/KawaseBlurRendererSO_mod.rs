@@ -51,26 +51,28 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
     pub type WeightsType = crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType;
     pub fn AlphaWeights(
         &mut self,
-        src: *mut crate::UnityEngine::RenderTexture,
-        dest: *mut crate::UnityEngine::RenderTexture,
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AlphaWeights", (src, dest))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Bloom(
         &mut self,
-        src: *mut crate::UnityEngine::RenderTexture,
-        dest: *mut crate::UnityEngine::RenderTexture,
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         iterationsStart: i32,
         iterations: i32,
         boost: f32,
         alphaWeights: f32,
         blurStartWeightsType: crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType,
-        bloomIterationWeights: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        bloomIterationWeights: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,26 +91,28 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
                     bloomIterationWeights,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Blur_KawaseBlurRendererSO_KernelSize_i32_0(
         &mut self,
-        src: *mut crate::UnityEngine::Texture,
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
         downsample: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Texture2D = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
             .invoke("Blur", (src, kernelSize, downsample))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Blur_RenderTexture_Il2CppArray_f32_i32_i32_i32_f32_f32__cordl_bool__cordl_bool_KawaseBlurRendererSO_WeightsType2(
         &mut self,
-        src: *mut crate::UnityEngine::Texture,
-        dest: *mut crate::UnityEngine::RenderTexture,
-        kernel: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        kernel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         boost: f32,
         downsample: i32,
         startIdx: i32,
@@ -140,12 +144,12 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
                     blurStartWeightsType,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Blur_RenderTexture_KawaseBlurRendererSO_KernelSize_f32_i32_1(
         &mut self,
-        src: *mut crate::UnityEngine::Texture,
-        dest: *mut crate::UnityEngine::RenderTexture,
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
         boost: f32,
         downsample: i32,
@@ -155,32 +159,36 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Blur", (src, dest, kernelSize, boost, downsample))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateBlurCommandBuffer(
         &mut self,
         width: i32,
         height: i32,
-        globalTextureName: *mut quest_hook::libil2cpp::Il2CppString,
+        globalTextureName: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
         kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
         boost: f32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::Rendering::CommandBuffer,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Rendering::CommandBuffer = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Rendering::CommandBuffer,
+        > = __cordl_object
             .invoke(
                 "CreateBlurCommandBuffer",
                 (width, height, globalTextureName, kernelSize, boost),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoubleBlur(
         &mut self,
-        src: *mut crate::UnityEngine::RenderTexture,
-        dest: *mut crate::UnityEngine::RenderTexture,
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         kernelSize0: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
         boost0: f32,
         kernelSize1: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
@@ -207,25 +215,28 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
                     gammaCorrection,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetBlurKernel(
         &mut self,
         kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<i32> = __cordl_object
-            .invoke("GetBlurKernel", (kernelSize))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = __cordl_object.invoke("GetBlurKernel", (kernelSize))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -235,7 +246,7 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -245,7 +256,7 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -255,7 +266,7 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "KawaseBlurRendererSO")]
@@ -296,12 +307,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKe
 }
 #[cfg(feature = "KawaseBlurRendererSO+BloomKernel")]
 impl crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -311,7 +322,7 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "KawaseBlurRendererSO+BloomKernel")]

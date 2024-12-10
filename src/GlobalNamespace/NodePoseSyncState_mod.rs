@@ -35,18 +35,18 @@ impl crate::GlobalNamespace::NodePoseSyncState {
             "ApplyDelta",
             (delta),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Deserialize(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Deserialize",
             (reader),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::NodePoseSyncState {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDelta(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::NodePoseSyncState {
             "GetDelta",
             (latest),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::NodePoseSyncState {
             "GetSize",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetState(
         &mut self,
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::NodePoseSyncState {
             "GetState",
             (nodePose),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IEquatableByReference_NodePoseSyncState__Equals(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::NodePoseSyncState {
             "IEquatableByReference<NodePoseSyncState>.Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IStateTable_NodePoseSyncState_NodePoseSyncState_NodePose_PoseSerializable__ApplyDelta(
         &mut self,
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::NodePoseSyncState {
             "IStateTable<NodePoseSyncState,NodePoseSyncState.NodePose,PoseSerializable>.ApplyDelta",
             (delta),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IStateTable_NodePoseSyncState_NodePoseSyncState_NodePose_PoseSerializable__GetDelta(
         &mut self,
@@ -124,18 +124,18 @@ impl crate::GlobalNamespace::NodePoseSyncState {
             "IStateTable<NodePoseSyncState,NodePoseSyncState.NodePose,PoseSerializable>.GetDelta",
             (stateTable),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Serialize(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Serialize",
             (writer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetState(
         &mut self,
@@ -147,7 +147,7 @@ impl crate::GlobalNamespace::NodePoseSyncState {
             "SetState",
             (nodePose, pose),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NodePoseSyncState+NodePose")]

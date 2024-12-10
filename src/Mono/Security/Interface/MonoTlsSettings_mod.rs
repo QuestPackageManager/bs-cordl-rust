@@ -55,43 +55,49 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::Interface::MonoTlsSettings,
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::Interface::MonoTlsSettings = __cordl_object
-            .invoke("Clone", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn CloneWithValidator(
         &mut self,
-        validator: *mut crate::Mono::Security::Interface::ICertificateValidator,
+        validator: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::ICertificateValidator,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::Interface::MonoTlsSettings,
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::Interface::MonoTlsSettings = __cordl_object
-            .invoke("CloneWithValidator", (validator))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        > = __cordl_object.invoke("CloneWithValidator", (validator))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_MonoTlsSettings1(
-        other: *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        other: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (other))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -101,18 +107,20 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_MonoTlsSettings1(
         &mut self,
-        other: *mut crate::Mono::Security::Interface::MonoTlsSettings,
+        other: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (other))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CallbackNeedsCertificateChain(
         &mut self,
@@ -122,20 +130,22 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_CallbackNeedsCertificateChain", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CertificateSearchPaths(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_CertificateSearchPaths", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CertificateValidationTime(
         &mut self,
@@ -147,44 +157,52 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: crate::System::Nullable_1<crate::System::DateTime> = __cordl_object
             .invoke("get_CertificateValidationTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CertificateValidator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::Interface::ICertificateValidator,
+        quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::ICertificateValidator,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::Interface::ICertificateValidator = __cordl_object
-            .invoke("get_CertificateValidator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::ICertificateValidator,
+        > = __cordl_object.invoke("get_CertificateValidator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_ClientCertificateIssuers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_ClientCertificateIssuers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ClientCertificateSelectionCallback(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
+        quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback = __cordl_object
-            .invoke("get_ClientCertificateSelectionCallback", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
+        > = __cordl_object.invoke("get_ClientCertificateSelectionCallback", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_DisallowUnauthenticatedCertificateRequest(
         &mut self,
@@ -194,22 +212,26 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_DisallowUnauthenticatedCertificateRequest", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_EnabledCiphers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::Mono::Security::Interface::CipherSuiteCode,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::Mono::Security::Interface::CipherSuiteCode,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::Mono::Security::Interface::CipherSuiteCode,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::Mono::Security::Interface::CipherSuiteCode,
+            >,
         > = __cordl_object.invoke("get_EnabledCiphers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_EnabledProtocols(
         &mut self,
@@ -222,38 +244,44 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         let __cordl_ret: crate::System::Nullable_1<
             crate::Mono::Security::Interface::TlsProtocols,
         > = __cordl_object.invoke("get_EnabledProtocols", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RemoteCertificateValidationCallback(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
+        quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback = __cordl_object
-            .invoke("get_RemoteCertificateValidationCallback", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
+        > = __cordl_object.invoke("get_RemoteCertificateValidationCallback", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_SendCloseNotify(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_SendCloseNotify", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TrustAnchors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection = __cordl_object
-            .invoke("get_TrustAnchors", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        > = __cordl_object.invoke("get_TrustAnchors", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_UseServicePointManagerCallback(
         &mut self,
@@ -263,22 +291,25 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: crate::System::Nullable_1<bool> = __cordl_object
             .invoke("get_UseServicePointManagerCallback", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_UserSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_UserSettings", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_UserSettings", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_CertificateSearchPaths(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -286,7 +317,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_CertificateSearchPaths", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_CertificateValidationTime(
         &mut self,
@@ -297,12 +328,12 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_CertificateValidationTime", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ClientCertificateIssuers(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -310,18 +341,20 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ClientCertificateIssuers", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ClientCertificateSelectionCallback(
         &mut self,
-        value: *mut crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ClientCertificateSelectionCallback", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_DisallowUnauthenticatedCertificateRequest(
         &mut self,
@@ -332,12 +365,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_DisallowUnauthenticatedCertificateRequest", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_EnabledCiphers(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::Mono::Security::Interface::CipherSuiteCode,
+        value: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::Mono::Security::Interface::CipherSuiteCode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -345,7 +380,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_EnabledCiphers", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_EnabledProtocols(
         &mut self,
@@ -356,18 +391,20 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_EnabledProtocols", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_RemoteCertificateValidationCallback(
         &mut self,
-        value: *mut crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_RemoteCertificateValidationCallback", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_SendCloseNotify(
         &mut self,
@@ -378,18 +415,20 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SendCloseNotify", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_TrustAnchors(
         &mut self,
-        value: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_TrustAnchors", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_UseServicePointManagerCallback(
         &mut self,
@@ -400,18 +439,18 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_UseServicePointManagerCallback", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_UserSettings(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_UserSettings", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Security+Interface+MonoTlsSettings")]

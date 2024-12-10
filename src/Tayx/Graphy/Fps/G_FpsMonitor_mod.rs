@@ -46,7 +46,7 @@ impl crate::Tayx::Graphy::Fps::G_FpsMonitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
@@ -56,14 +56,14 @@ impl crate::Tayx::Graphy::Fps::G_FpsMonitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Update(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::Tayx::Graphy::Fps::G_FpsMonitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateParameters(
         &mut self,
@@ -83,7 +83,7 @@ impl crate::Tayx::Graphy::Fps::G_FpsMonitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateParameters", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -93,35 +93,35 @@ impl crate::Tayx::Graphy::Fps::G_FpsMonitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AverageFPS(&mut self) -> quest_hook::libil2cpp::Result<i16> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i16 = __cordl_object.invoke("get_AverageFPS", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CurrentFPS(&mut self) -> quest_hook::libil2cpp::Result<i16> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i16 = __cordl_object.invoke("get_CurrentFPS", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_OnePercentFPS(&mut self) -> quest_hook::libil2cpp::Result<i16> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i16 = __cordl_object.invoke("get_OnePercentFPS", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Zero1PercentFps(&mut self) -> quest_hook::libil2cpp::Result<i16> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i16 = __cordl_object.invoke("get_Zero1PercentFps", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_AverageFPS(
         &mut self,
@@ -132,7 +132,7 @@ impl crate::Tayx::Graphy::Fps::G_FpsMonitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_AverageFPS", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_CurrentFPS(
         &mut self,
@@ -143,7 +143,7 @@ impl crate::Tayx::Graphy::Fps::G_FpsMonitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_CurrentFPS", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_OnePercentFPS(
         &mut self,
@@ -154,7 +154,7 @@ impl crate::Tayx::Graphy::Fps::G_FpsMonitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_OnePercentFPS", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Zero1PercentFps(
         &mut self,
@@ -165,7 +165,7 @@ impl crate::Tayx::Graphy::Fps::G_FpsMonitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Zero1PercentFps", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Tayx+Graphy+Fps+G_FpsMonitor")]

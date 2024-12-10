@@ -29,7 +29,9 @@ for crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink {
 impl crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink {
     pub fn ProcessMessageFinish(
         &mut self,
-        replyMsg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+        replyMsg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        >,
         bCliSide: bool,
         bAsync: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -38,11 +40,13 @@ impl crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessMessageFinish", (replyMsg, bCliSide, bAsync))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessMessageStart(
         &mut self,
-        reqMsg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+        reqMsg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        >,
         bCliSide: bool,
         bAsync: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -51,7 +55,7 @@ impl crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessMessageStart", (reqMsg, bCliSide, bAsync))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

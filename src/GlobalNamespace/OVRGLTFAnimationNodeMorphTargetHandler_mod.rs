@@ -37,16 +37,16 @@ impl crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkModified", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         meshData: crate::GlobalNamespace::OVRMeshData,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (meshData))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Update(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (meshData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MeshData(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRMeshData = __cordl_object
             .invoke("get_MeshData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_MeshData(
         &mut self,
@@ -88,7 +88,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_MeshData", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRGLTFAnimationNodeMorphTargetHandler")]

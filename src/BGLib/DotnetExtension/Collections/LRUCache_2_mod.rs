@@ -78,7 +78,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -92,7 +92,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsInCache(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -105,14 +105,16 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsInCache", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MakeNodeMostRecentlyUsed(
         &mut self,
-        node: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<
-                TKey,
-                TValue,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<
+                    TKey,
+                    TValue,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -127,9 +129,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MakeNodeMostRecentlyUsed", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(maxNumberElements: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New(
+        maxNumberElements: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -140,7 +144,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (maxNumberElements))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveLeastUsedElement(
         &mut self,
@@ -156,7 +160,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveLeastUsedElement", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetFromCache(
         &mut self,
@@ -173,7 +177,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetFromCache", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -190,11 +194,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (maxNumberElements))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_itemWillBeRemovedFromCacheEvent(
         &mut self,
-        value: *mut crate::System::Action_2<TKey, TValue>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<TKey, TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -207,7 +211,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_itemWillBeRemovedFromCacheEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -220,11 +224,11 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_itemWillBeRemovedFromCacheEvent(
         &mut self,
-        value: *mut crate::System::Action_2<TKey, TValue>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<TKey, TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -237,7 +241,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_itemWillBeRemovedFromCacheEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2")]
@@ -298,7 +302,10 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<TKey, TValue> {
-    pub fn New(key: TKey, value: TValue) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New(
+        key: TKey,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -309,7 +316,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (key, value))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -327,7 +334,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_key(&mut self) -> quest_hook::libil2cpp::Result<TKey>
     where
@@ -340,7 +347,7 @@ impl<
             self,
         );
         let __cordl_ret: TKey = __cordl_object.invoke("get_key", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2+CacheElement")]

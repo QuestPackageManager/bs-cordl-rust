@@ -27,12 +27,12 @@ impl crate::Org::BouncyCastle::Asn1::X9::X9ObjectIdentifiers {
     pub const AnsiX962: &'static str = "1.2.840.10045";
     pub const IdECSigType: &'static str = "1.2.840.10045.4";
     pub const IdPublicKeyType: &'static str = "1.2.840.10045.2";
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -42,7 +42,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::X9ObjectIdentifiers {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9ObjectIdentifiers")]

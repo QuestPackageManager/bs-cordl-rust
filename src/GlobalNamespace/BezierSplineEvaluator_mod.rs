@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("Evaluate", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EvaluateFirstDerivation(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("EvaluateFirstDerivation", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EvaluatePosition(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("EvaluatePosition", (_cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EvaluateSecondDerivation(
         &mut self,
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("EvaluateSecondDerivation", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTForSegment(
         &mut self,
@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("GetTForSegment", (segmentIndex, _cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTimeValuesForSegment(
         &mut self,
@@ -99,16 +99,16 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetTimeValuesForSegment", (segmentIndex, t0Value, t1Value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        spline: *mut crate::GlobalNamespace::BezierSpline,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        spline: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierSpline>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (spline))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OffsetSegmentAndGetT(
         &mut self,
@@ -119,7 +119,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("OffsetSegmentAndGetT", (_cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OffsetStartIndexToDistance(
         &mut self,
@@ -130,18 +130,18 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OffsetStartIndexToDistance", (_cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        spline: *mut crate::GlobalNamespace::BezierSpline,
+        spline: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierSpline>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (spline))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BezierSplineEvaluator")]
@@ -191,7 +191,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
             ".ctor",
             (solution1),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_1(
         &mut self,
@@ -203,7 +203,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
             ".ctor",
             (solution1, solution2),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_2(
         &mut self,
@@ -216,6 +216,6 @@ impl crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
             ".ctor",
             (solution1, solution2, solution3),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

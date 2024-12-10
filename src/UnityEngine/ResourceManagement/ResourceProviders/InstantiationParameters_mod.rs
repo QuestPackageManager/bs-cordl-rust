@@ -48,11 +48,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
             "Instantiate",
             (source),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Transform__cordl_bool0(
         &mut self,
-        parent: *mut crate::UnityEngine::Transform,
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         instantiateInWorldSpace: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -60,20 +60,20 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
             ".ctor",
             (parent, instantiateInWorldSpace),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Vector3_Quaternion_Transform1(
         &mut self,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
-        parent: *mut crate::UnityEngine::Transform,
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (position, rotation, parent),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_InstantiateInWorldPosition(
         &mut self,
@@ -83,17 +83,19 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
             "get_InstantiateInWorldPosition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Parent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
-        let __cordl_ret: *mut crate::UnityEngine::Transform = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Parent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Position(
         &mut self,
@@ -103,7 +105,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
             "get_Position",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Rotation(
         &mut self,
@@ -113,7 +115,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
             "get_Rotation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SetPositionRotation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -121,6 +123,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
             "get_SetPositionRotation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

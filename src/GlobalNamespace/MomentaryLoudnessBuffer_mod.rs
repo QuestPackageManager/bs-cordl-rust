@@ -36,14 +36,14 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddSample", (data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         numChannels: i32,
         sampleFrequency: i32,
         momentaryWindowDuration: f32,
         readingsPerBuffer: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
                     readingsPerBuffer,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -78,17 +78,20 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
                     readingsPerBuffer,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_buffer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<f32> = __cordl_object
-            .invoke("get_buffer", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<f32>,
+        > = __cordl_object.invoke("get_buffer", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_isNextReadingIntervalReady(
         &mut self,
@@ -98,7 +101,7 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_isNextReadingIntervalReady", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MomentaryLoudnessBuffer")]

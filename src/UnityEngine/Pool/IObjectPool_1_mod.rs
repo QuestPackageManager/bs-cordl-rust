@@ -40,7 +40,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::IObjectPool_1<T> 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", (element))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

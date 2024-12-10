@@ -33,19 +33,21 @@ impl crate::UnityEngine::UIElements::DragAndDropArgs {
             "get_childIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dragAndDropData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::DragAndDropData,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DragAndDropData>,
     > {
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::DragAndDropData = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DragAndDropData,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_dragAndDropData",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dragAndDropPosition(
         &mut self,
@@ -57,7 +59,7 @@ impl crate::UnityEngine::UIElements::DragAndDropArgs {
             "get_dragAndDropPosition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_insertAtIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -65,7 +67,7 @@ impl crate::UnityEngine::UIElements::DragAndDropArgs {
             "get_insertAtIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_parentId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -73,7 +75,7 @@ impl crate::UnityEngine::UIElements::DragAndDropArgs {
             "get_parentId",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_childIndex(
         &mut self,
@@ -84,18 +86,18 @@ impl crate::UnityEngine::UIElements::DragAndDropArgs {
             "set_childIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dragAndDropData(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::DragAndDropData,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DragAndDropData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_dragAndDropData",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dragAndDropPosition(
         &mut self,
@@ -106,7 +108,7 @@ impl crate::UnityEngine::UIElements::DragAndDropArgs {
             "set_dragAndDropPosition",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_insertAtIndex(
         &mut self,
@@ -117,7 +119,7 @@ impl crate::UnityEngine::UIElements::DragAndDropArgs {
             "set_insertAtIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_parentId(
         &mut self,
@@ -128,17 +130,17 @@ impl crate::UnityEngine::UIElements::DragAndDropArgs {
             "set_parentId",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_target(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_target",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

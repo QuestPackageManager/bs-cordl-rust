@@ -26,25 +26,29 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IGroupBox {
 impl crate::UnityEngine::UIElements::IGroupBox {
     pub fn OnOptionAdded(
         &mut self,
-        option: *mut crate::UnityEngine::UIElements::IGroupBoxOption,
+        option: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IGroupBoxOption,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnOptionAdded", (option))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnOptionRemoved(
         &mut self,
-        option: *mut crate::UnityEngine::UIElements::IGroupBoxOption,
+        option: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IGroupBoxOption,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnOptionRemoved", (option))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

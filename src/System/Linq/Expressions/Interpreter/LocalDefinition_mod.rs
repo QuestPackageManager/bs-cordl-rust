@@ -26,14 +26,14 @@ for crate::System::Linq::Expressions::Interpreter::LocalDefinition {
 impl crate::System::Linq::Expressions::Interpreter::LocalDefinition {
     pub fn Equals(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -41,19 +41,21 @@ impl crate::System::Linq::Expressions::Interpreter::LocalDefinition {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         localIndex: i32,
-        parameter: *mut crate::System::Linq::Expressions::ParameterExpression,
+        parameter: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (localIndex, parameter),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -61,18 +63,16 @@ impl crate::System::Linq::Expressions::Interpreter::LocalDefinition {
             "get_Index",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Parameter(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
     > {
-        let __cordl_ret: *mut crate::System::Linq::Expressions::ParameterExpression = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Parameter",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Parameter", ())?;
+        Ok(__cordl_ret.into())
     }
 }

@@ -33,7 +33,7 @@ impl crate::TMPro::TMP_GlyphValueRecord {
             ".ctor",
             (valueRecord),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_GlyphValueRecord_Legacy1(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::TMPro::TMP_GlyphValueRecord {
             ".ctor",
             (valueRecord),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_f32_f32_0(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::TMPro::TMP_GlyphValueRecord {
             ".ctor",
             (xPlacement, yPlacement, xAdvance, yAdvance),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xAdvance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -66,7 +66,7 @@ impl crate::TMPro::TMP_GlyphValueRecord {
             "get_xAdvance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xPlacement(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -74,7 +74,7 @@ impl crate::TMPro::TMP_GlyphValueRecord {
             "get_xPlacement",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yAdvance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -82,7 +82,7 @@ impl crate::TMPro::TMP_GlyphValueRecord {
             "get_yAdvance",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yPlacement(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -90,7 +90,7 @@ impl crate::TMPro::TMP_GlyphValueRecord {
             "get_yPlacement",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xAdvance(
         &mut self,
@@ -101,7 +101,7 @@ impl crate::TMPro::TMP_GlyphValueRecord {
             "set_xAdvance",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xPlacement(
         &mut self,
@@ -112,7 +112,7 @@ impl crate::TMPro::TMP_GlyphValueRecord {
             "set_xPlacement",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yAdvance(
         &mut self,
@@ -123,7 +123,7 @@ impl crate::TMPro::TMP_GlyphValueRecord {
             "set_yAdvance",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yPlacement(
         &mut self,
@@ -134,6 +134,6 @@ impl crate::TMPro::TMP_GlyphValueRecord {
             "set_yPlacement",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

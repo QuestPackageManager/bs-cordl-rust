@@ -35,36 +35,40 @@ impl crate::BeatSaber::GameSettings::MainSettingsHandler {
     pub fn InternalLoadAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::BGLib::SaveDataCore::SaveDataResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::BGLib::SaveDataCore::SaveDataResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::BGLib::SaveDataCore::SaveDataResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::BGLib::SaveDataCore::SaveDataResult,
+            >,
         > = __cordl_object.invoke("InternalLoadAsync", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_IFileStorage0(
-        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (fileStorage))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_MainSettings1(
-        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
-        instance: *mut crate::BeatSaber::GameSettings::MainSettings,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+        instance: quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::MainSettings>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (fileStorage, instance))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PerformPostLoad(
         &mut self,
@@ -74,65 +78,74 @@ impl crate::BeatSaber::GameSettings::MainSettingsHandler {
         );
         let __cordl_ret: crate::BGLib::SaveDataCore::SaveDataResult = __cordl_object
             .invoke("PerformPostLoad", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn __n__0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::BGLib::SaveDataCore::SaveDataResult,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::BGLib::SaveDataCore::SaveDataResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::BGLib::SaveDataCore::SaveDataResult,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::BGLib::SaveDataCore::SaveDataResult,
+            >,
         > = __cordl_object.invoke("<>n__0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IFileStorage0(
         &mut self,
-        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
+        fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (fileStorage))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_MainSettings1(
         &mut self,
-        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
-        instance: *mut crate::BeatSaber::GameSettings::MainSettings,
+        fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+        instance: quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::MainSettings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (fileStorage, instance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fileNameWithExtension(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_fileNameWithExtension", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_fileNameWithExtension", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_firstVersion(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Version> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Version = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = __cordl_object
             .invoke("get_firstVersion", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_preferredStorageLocation(
         &mut self,
@@ -142,17 +155,19 @@ impl crate::BeatSaber::GameSettings::MainSettingsHandler {
         );
         let __cordl_ret: crate::GlobalNamespace::StoragePreference = __cordl_object
             .invoke("get_preferredStorageLocation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_version(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Version> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Version = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = __cordl_object
             .invoke("get_version", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+GameSettings+MainSettingsHandler")]

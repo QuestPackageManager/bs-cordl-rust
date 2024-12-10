@@ -26,14 +26,14 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IBindingRequest {
 impl crate::UnityEngine::UIElements::IBindingRequest {
     pub fn Bind(
         &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Bind", (element))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

@@ -31,85 +31,101 @@ impl crate::System::Xml::XmlDownloadManager {
     pub type __c__DisplayClass4_0 = crate::System::Xml::XmlDownloadManager___c__DisplayClass4_0;
     pub fn GetNonFileStream(
         &mut self,
-        uri: *mut crate::System::Uri,
-        credentials: *mut crate::System::Net::ICredentials,
-        proxy: *mut crate::System::Net::IWebProxy,
-        cachePolicy: *mut crate::System::Net::Cache::RequestCachePolicy,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+        proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+        cachePolicy: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Cache::RequestCachePolicy,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
             .invoke("GetNonFileStream", (uri, credentials, proxy, cachePolicy))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNonFileStreamAsync(
         &mut self,
-        uri: *mut crate::System::Uri,
-        credentials: *mut crate::System::Net::ICredentials,
-        proxy: *mut crate::System::Net::IWebProxy,
-        cachePolicy: *mut crate::System::Net::Cache::RequestCachePolicy,
+        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+        proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+        cachePolicy: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Cache::RequestCachePolicy,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::IO::Stream,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
         > = __cordl_object
             .invoke("GetNonFileStreamAsync", (uri, credentials, proxy, cachePolicy))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetStream(
         &mut self,
-        uri: *mut crate::System::Uri,
-        credentials: *mut crate::System::Net::ICredentials,
-        proxy: *mut crate::System::Net::IWebProxy,
-        cachePolicy: *mut crate::System::Net::Cache::RequestCachePolicy,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("GetStream", (uri, credentials, proxy, cachePolicy))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetStreamAsync(
-        &mut self,
-        uri: *mut crate::System::Uri,
-        credentials: *mut crate::System::Net::ICredentials,
-        proxy: *mut crate::System::Net::IWebProxy,
-        cachePolicy: *mut crate::System::Net::Cache::RequestCachePolicy,
+        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+        proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+        cachePolicy: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Cache::RequestCachePolicy,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::IO::Stream,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
+            .invoke("GetStream", (uri, credentials, proxy, cachePolicy))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStreamAsync(
+        &mut self,
+        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+        proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+        cachePolicy: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Cache::RequestCachePolicy,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
         > = __cordl_object
             .invoke("GetStreamAsync", (uri, credentials, proxy, cachePolicy))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Remove(
         &mut self,
-        host: *mut quest_hook::libil2cpp::Il2CppString,
+        host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (host))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -119,7 +135,7 @@ impl crate::System::Xml::XmlDownloadManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+XmlDownloadManager")]

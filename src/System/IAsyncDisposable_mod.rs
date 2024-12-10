@@ -32,7 +32,7 @@ impl crate::System::IAsyncDisposable {
         );
         let __cordl_ret: crate::System::Threading::Tasks::ValueTask = __cordl_object
             .invoke("DisposeAsync", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

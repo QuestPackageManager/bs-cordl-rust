@@ -37,7 +37,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
     pub fn AddNotification(
         &mut self,
         _cordl_time: f64,
-        payload: *mut crate::UnityEngine::Playables::INotification,
+        payload: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification>,
         flags: crate::UnityEngine::Timeline::NotificationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -45,14 +45,14 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddNotification", (_cordl_time, payload, flags))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnBehaviourPause(
         &mut self,
@@ -64,7 +64,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBehaviourPause", (playable, info))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnGraphStart(
         &mut self,
@@ -75,7 +75,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnGraphStart", (playable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PrepareFrame(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PrepareFrame", (playable, info))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SortNotifications(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SortNotifications", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SyncDurationWithExternalSource(
         &mut self,
@@ -108,7 +108,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SyncDurationWithExternalSource", (playable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TriggerNotificationsInRange(
         &mut self,
@@ -126,7 +126,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
                 "TriggerNotificationsInRange",
                 (start, end, info, playable, checkState),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_timeSource(
         &mut self,
@@ -147,7 +147,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_timeSource", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour")]
@@ -194,7 +194,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
             "get_prewarm",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_triggerInEditor(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -202,7 +202,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
             "get_triggerInEditor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_triggerOnce(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -210,6 +210,6 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
             "get_triggerOnce",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

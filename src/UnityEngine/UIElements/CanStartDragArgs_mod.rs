@@ -26,15 +26,19 @@ for crate::UnityEngine::UIElements::CanStartDragArgs {
 impl crate::UnityEngine::UIElements::CanStartDragArgs {
     pub fn _ctor(
         &mut self,
-        draggedElement: *mut crate::UnityEngine::UIElements::VisualElement,
+        draggedElement: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
         id: i32,
-        selectedIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        selectedIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (draggedElement, id, selectedIds),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

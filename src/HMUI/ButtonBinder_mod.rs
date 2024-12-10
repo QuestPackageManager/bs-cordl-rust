@@ -31,22 +31,24 @@ impl std::ops::DerefMut for crate::HMUI::ButtonBinder {
 impl crate::HMUI::ButtonBinder {
     pub fn AddBinding(
         &mut self,
-        button: *mut crate::UnityEngine::UI::Button,
-        action: *mut crate::System::Action,
+        button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddBinding", (button, action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddBindings(
         &mut self,
-        bindingData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Tuple_2<
-                *mut crate::UnityEngine::UI::Button,
-                *mut crate::System::Action,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Tuple_2<
+                    *mut crate::UnityEngine::UI::Button,
+                    *mut crate::System::Action,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,7 +57,7 @@ impl crate::HMUI::ButtonBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddBindings", (bindingData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearBindings(
         &mut self,
@@ -65,7 +67,7 @@ impl crate::HMUI::ButtonBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearBindings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
@@ -75,38 +77,40 @@ impl crate::HMUI::ButtonBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Button_Action1(
-        button: *mut crate::UnityEngine::UI::Button,
-        action: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (button, action))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_List_1_2(
-        bindingData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Tuple_2<
-                *mut crate::UnityEngine::UI::Button,
-                *mut crate::System::Action,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Tuple_2<
+                    *mut crate::UnityEngine::UI::Button,
+                    *mut crate::System::Action,
+                >,
             >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindingData))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -116,26 +120,28 @@ impl crate::HMUI::ButtonBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Button_Action1(
         &mut self,
-        button: *mut crate::UnityEngine::UI::Button,
-        action: *mut crate::System::Action,
+        button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (button, action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_List_1_2(
         &mut self,
-        bindingData: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Tuple_2<
-                *mut crate::UnityEngine::UI::Button,
-                *mut crate::System::Action,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Tuple_2<
+                    *mut crate::UnityEngine::UI::Button,
+                    *mut crate::System::Action,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -144,7 +150,7 @@ impl crate::HMUI::ButtonBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindingData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+ButtonBinder")]

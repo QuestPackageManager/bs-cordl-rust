@@ -34,7 +34,7 @@ impl crate::System::Net::Http::HttpMessageInvoker {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -45,38 +45,42 @@ impl crate::System::Net::Http::HttpMessageInvoker {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        handler: *mut crate::System::Net::Http::HttpMessageHandler,
+        handler: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMessageHandler>,
         disposeHandler: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (handler, disposeHandler))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SendAsync(
         &mut self,
-        request: *mut crate::System::Net::Http::HttpRequestMessage,
+        request: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpRequestMessage>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::Http::HttpResponseMessage,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Net::Http::HttpResponseMessage,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Net::Http::HttpResponseMessage,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Net::Http::HttpResponseMessage,
+            >,
         > = __cordl_object.invoke("SendAsync", (request, cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        handler: *mut crate::System::Net::Http::HttpMessageHandler,
+        handler: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMessageHandler>,
         disposeHandler: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -84,7 +88,7 @@ impl crate::System::Net::Http::HttpMessageInvoker {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (handler, disposeHandler))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+Http+HttpMessageInvoker")]

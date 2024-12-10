@@ -67,7 +67,7 @@ impl crate::UnityEngine::GUIClip_ParentClipScope {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -79,6 +79,6 @@ impl crate::UnityEngine::GUIClip_ParentClipScope {
             ".ctor",
             (objectTransform, clipRect),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

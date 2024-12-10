@@ -25,12 +25,12 @@ impl std::ops::DerefMut for crate::TMPro::TMP_SpriteGlyph {
 }
 #[cfg(feature = "TMPro+TMP_SpriteGlyph")]
 impl crate::TMPro::TMP_SpriteGlyph {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_u32_GlyphMetrics_GlyphRect_f32_i32_1(
         index: u32,
@@ -38,12 +38,12 @@ impl crate::TMPro::TMP_SpriteGlyph {
         glyphRect: crate::UnityEngine::TextCore::GlyphRect,
         scale: f32,
         atlasIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (index, metrics, glyphRect, scale, atlasIndex))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_u32_GlyphMetrics_GlyphRect_f32_i32_Sprite2(
         index: u32,
@@ -51,8 +51,8 @@ impl crate::TMPro::TMP_SpriteGlyph {
         glyphRect: crate::UnityEngine::TextCore::GlyphRect,
         scale: f32,
         atlasIndex: i32,
-        sprite: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -60,7 +60,7 @@ impl crate::TMPro::TMP_SpriteGlyph {
                 ".ctor",
                 (index, metrics, glyphRect, scale, atlasIndex, sprite),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::TMPro::TMP_SpriteGlyph {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_GlyphMetrics_GlyphRect_f32_i32_1(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::TMPro::TMP_SpriteGlyph {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (index, metrics, glyphRect, scale, atlasIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_GlyphMetrics_GlyphRect_f32_i32_Sprite2(
         &mut self,
@@ -94,14 +94,14 @@ impl crate::TMPro::TMP_SpriteGlyph {
         glyphRect: crate::UnityEngine::TextCore::GlyphRect,
         scale: f32,
         atlasIndex: i32,
-        sprite: *mut crate::UnityEngine::Sprite,
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (index, metrics, glyphRect, scale, atlasIndex, sprite))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TMPro+TMP_SpriteGlyph")]

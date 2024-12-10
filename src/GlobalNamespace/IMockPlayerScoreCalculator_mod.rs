@@ -26,13 +26,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IMockPlayerScoreCalculator {
 impl crate::GlobalNamespace::IMockPlayerScoreCalculator {
     pub fn GetScoreForNote(
         &mut self,
-        noteData: *mut crate::GlobalNamespace::MockNoteData,
+        noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetScoreForNote", (noteData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

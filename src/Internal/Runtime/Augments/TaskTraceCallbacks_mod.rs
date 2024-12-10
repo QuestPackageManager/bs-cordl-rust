@@ -46,7 +46,7 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
                     TaskCreationOptions,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TaskWaitBegin_Asynchronous(
         &mut self,
@@ -62,7 +62,7 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
                 "TaskWaitBegin_Asynchronous",
                 (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TaskWaitBegin_Synchronous(
         &mut self,
@@ -78,7 +78,7 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
                 "TaskWaitBegin_Synchronous",
                 (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TaskWaitEnd(
         &mut self,
@@ -94,14 +94,14 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
                 "TaskWaitEnd",
                 (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_Enabled", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Internal+Runtime+Augments+TaskTraceCallbacks")]

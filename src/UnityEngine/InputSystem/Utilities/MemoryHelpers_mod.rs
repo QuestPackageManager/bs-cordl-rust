@@ -75,7 +75,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
             "Overlap",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_1(
         &mut self,
@@ -88,7 +88,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
             ".ctor",
             (byteOffset, bitOffset, sizeInBits),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_u32_0(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
             ".ctor",
             (bitOffset, sizeInBits),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -108,6 +108,6 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
             "get_isEmpty",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

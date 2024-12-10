@@ -95,10 +95,10 @@ impl<
     >;
     pub fn AddInstallers(
         &mut self,
-        args: *mut crate::System::Collections::Generic::List_1<
-            crate::Zenject::TypeValuePair,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
-        context: *mut crate::Zenject::GameObjectContext,
+        context: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -117,21 +117,25 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddInstallers", (args, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        container: *mut crate::Zenject::DiContainer,
-        prefabProvider: *mut crate::Zenject::IPrefabProvider,
-        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-        installerMethod: *mut crate::System::Action_6<
-            *mut crate::Zenject::DiContainer,
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        prefabProvider: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabProvider>,
+        gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::GameObjectCreationParameters,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        installerMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Action_6<
+                *mut crate::Zenject::DiContainer,
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -151,20 +155,24 @@ impl<
                 ".ctor",
                 (container, prefabProvider, gameObjectBindInfo, installerMethod),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        prefabProvider: *mut crate::Zenject::IPrefabProvider,
-        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-        installerMethod: *mut crate::System::Action_6<
-            *mut crate::Zenject::DiContainer,
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        prefabProvider: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabProvider>,
+        gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::GameObjectCreationParameters,
+        >,
+        installerMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Action_6<
+                *mut crate::Zenject::DiContainer,
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -187,7 +195,7 @@ impl<
                 ".ctor",
                 (container, prefabProvider, gameObjectBindInfo, installerMethod),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod_5")]

@@ -35,28 +35,35 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     >;
     pub fn Bind(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
-        parameters: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
         >,
-        returnLabel: *mut crate::System::Linq::Expressions::LabelTarget,
+        returnLabel: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelTarget,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("Bind", (args, parameters, returnLabel))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        > = __cordl_object.invoke("Bind", (args, parameters, returnLabel))?;
+        Ok(__cordl_ret.into())
     }
     pub fn BindCore<T>(
         &mut self,
-        site: *mut crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        site: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        >,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -67,13 +74,15 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("BindCore", (site, args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindDelegate<T>(
         &mut self,
-        site: *mut crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        site: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        >,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -84,7 +93,7 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("BindDelegate", (site, args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CacheTarget<T>(
         &mut self,
@@ -99,12 +108,14 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CacheTarget", (target))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRuleCache<T>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+        >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -113,16 +124,17 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::CompilerServices::RuleCache_1<T> = __cordl_object
-            .invoke("GetRuleCache", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+        > = __cordl_object.invoke("GetRuleCache", ())?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -132,7 +144,7 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder")]
@@ -181,7 +193,7 @@ for crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -190,7 +202,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -202,7 +214,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1")]

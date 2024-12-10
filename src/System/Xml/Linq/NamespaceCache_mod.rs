@@ -25,13 +25,13 @@ for crate::System::Xml::Linq::NamespaceCache {
 impl crate::System::Xml::Linq::NamespaceCache {
     pub fn Get(
         &mut self,
-        namespaceName: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XNamespace> {
-        let __cordl_ret: *mut crate::System::Xml::Linq::XNamespace = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Get",
-            (namespaceName),
-        )?;
-        Ok(__cordl_ret)
+        namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XNamespace,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "Get", (namespaceName))?;
+        Ok(__cordl_ret.into())
     }
 }

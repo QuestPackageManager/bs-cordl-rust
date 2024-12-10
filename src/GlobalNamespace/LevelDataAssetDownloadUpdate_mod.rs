@@ -29,7 +29,7 @@ impl crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
     pub type AssetDownloadingState = crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState;
     pub fn _ctor(
         &mut self,
-        levelID: *mut quest_hook::libil2cpp::Il2CppString,
+        levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         bytesTotal: u32,
         bytesTransferred: u32,
         assetDownloadingState: crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState,
@@ -39,7 +39,7 @@ impl crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
             ".ctor",
             (levelID, bytesTotal, bytesTransferred, assetDownloadingState),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]

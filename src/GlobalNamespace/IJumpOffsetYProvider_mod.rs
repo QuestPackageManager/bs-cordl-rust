@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::IJumpOffsetYProvider {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_jumpOffsetY", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "IJumpOffsetYProvider")]

@@ -38,19 +38,19 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LightTranslationGroup {
 }
 #[cfg(feature = "LightTranslationGroup")]
 impl crate::GlobalNamespace::LightTranslationGroup {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn __Validate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("__Validate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xDistributionLimits(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("get_xDistributionLimits", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xTranslationLimits(
         &mut self,
@@ -80,7 +80,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("get_xTranslationLimits", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yDistributionLimits(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("get_yDistributionLimits", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yTranslationLimits(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("get_yTranslationLimits", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zDistributionLimits(
         &mut self,
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("get_zDistributionLimits", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zTranslationLimits(
         &mut self,
@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("get_zTranslationLimits", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LightTranslationGroup")]

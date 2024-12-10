@@ -36,7 +36,7 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
             "AdjustSlot",
             (index, increment),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ContainsHash(&mut self, hash: u32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -44,7 +44,7 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
             "ContainsHash",
             (hash),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Hash1(&mut self, hash: u32) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
             "Hash1",
             (hash),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Hash2(&mut self, hash: u32) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -60,7 +60,7 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
             "Hash2",
             (hash),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InsertHash(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
             "InsertHash",
             (hash),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsSlotEmpty(&mut self, index: u32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -79,7 +79,7 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
             "IsSlotEmpty",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveHash(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
             "RemoveHash",
             (hash),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer")]

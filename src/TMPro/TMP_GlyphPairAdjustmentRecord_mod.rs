@@ -29,22 +29,22 @@ impl std::ops::DerefMut for crate::TMPro::TMP_GlyphPairAdjustmentRecord {
 impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
     pub fn New_GlyphPairAdjustmentRecord1(
         glyphPairAdjustmentRecord: crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (glyphPairAdjustmentRecord))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_TMP_GlyphAdjustmentRecord_TMP_GlyphAdjustmentRecord0(
         firstAdjustmentRecord: crate::TMPro::TMP_GlyphAdjustmentRecord,
         secondAdjustmentRecord: crate::TMPro::TMP_GlyphAdjustmentRecord,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (firstAdjustmentRecord, secondAdjustmentRecord))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_GlyphPairAdjustmentRecord1(
         &mut self,
@@ -55,7 +55,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (glyphPairAdjustmentRecord))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_TMP_GlyphAdjustmentRecord_TMP_GlyphAdjustmentRecord0(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (firstAdjustmentRecord, secondAdjustmentRecord))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_featureLookupFlags(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         );
         let __cordl_ret: crate::TMPro::FontFeatureLookupFlags = __cordl_object
             .invoke("get_featureLookupFlags", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_firstAdjustmentRecord(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         );
         let __cordl_ret: crate::TMPro::TMP_GlyphAdjustmentRecord = __cordl_object
             .invoke("get_firstAdjustmentRecord", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_secondAdjustmentRecord(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         );
         let __cordl_ret: crate::TMPro::TMP_GlyphAdjustmentRecord = __cordl_object
             .invoke("get_secondAdjustmentRecord", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_featureLookupFlags(
         &mut self,
@@ -108,7 +108,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_featureLookupFlags", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_firstAdjustmentRecord(
         &mut self,
@@ -119,7 +119,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_firstAdjustmentRecord", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_secondAdjustmentRecord(
         &mut self,
@@ -130,7 +130,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_secondAdjustmentRecord", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TMPro+TMP_GlyphPairAdjustmentRecord")]

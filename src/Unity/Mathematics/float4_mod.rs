@@ -28,14 +28,14 @@ impl crate::Unity::Mathematics::float4 {
     pub type DebuggerProxy = crate::Unity::Mathematics::float4_DebuggerProxy;
     pub fn Equals_Il2CppObject1(
         &mut self,
-        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (o),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_float4_0(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::Unity::Mathematics::float4 {
             "Equals",
             (rhs),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -54,29 +54,33 @@ impl crate::Unity::Mathematics::float4 {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider1(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
-        formatProvider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (format, formatProvider),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool9(
         &mut self,
@@ -87,7 +91,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_bool4_10(
         &mut self,
@@ -98,7 +102,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_double4_18(
         &mut self,
@@ -109,7 +113,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_8(
         &mut self,
@@ -120,7 +124,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_f32_f32_0(
         &mut self,
@@ -134,7 +138,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (x, y, z, w),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_float2_1(
         &mut self,
@@ -147,7 +151,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (x, y, zw),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_float2_f32_2(
         &mut self,
@@ -160,7 +164,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (x, yz, w),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_float3_3(
         &mut self,
@@ -172,7 +176,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (x, yzw),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_f64_17(
         &mut self,
@@ -183,7 +187,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_float2_f32_f32_4(
         &mut self,
@@ -196,7 +200,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (xy, z, w),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_float2_float2_5(
         &mut self,
@@ -208,7 +212,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (xy, zw),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_float3_f32_6(
         &mut self,
@@ -220,7 +224,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (xyz, w),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_float4_7(
         &mut self,
@@ -231,7 +235,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (xyzw),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_half15(
         &mut self,
@@ -242,7 +246,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_half4_16(
         &mut self,
@@ -253,7 +257,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_11(
         &mut self,
@@ -264,7 +268,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_int4_12(
         &mut self,
@@ -275,7 +279,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_13(
         &mut self,
@@ -286,7 +290,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_uint4_14(
         &mut self,
@@ -297,7 +301,7 @@ impl crate::Unity::Mathematics::float4 {
             ".ctor",
             (v),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -305,7 +309,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_Item",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ww(
         &mut self,
@@ -315,7 +319,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_www(
         &mut self,
@@ -325,7 +329,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_www",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwww(
         &mut self,
@@ -335,7 +339,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwwx(
         &mut self,
@@ -345,7 +349,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwwy(
         &mut self,
@@ -355,7 +359,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwwz(
         &mut self,
@@ -365,7 +369,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwx(
         &mut self,
@@ -375,7 +379,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwxw(
         &mut self,
@@ -385,7 +389,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwxx(
         &mut self,
@@ -395,7 +399,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwxy(
         &mut self,
@@ -405,7 +409,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwxz(
         &mut self,
@@ -415,7 +419,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwy(
         &mut self,
@@ -425,7 +429,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwyw(
         &mut self,
@@ -435,7 +439,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwyx(
         &mut self,
@@ -445,7 +449,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwyy(
         &mut self,
@@ -455,7 +459,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwyz(
         &mut self,
@@ -465,7 +469,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwz(
         &mut self,
@@ -475,7 +479,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwzw(
         &mut self,
@@ -485,7 +489,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwzx(
         &mut self,
@@ -495,7 +499,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwzy(
         &mut self,
@@ -505,7 +509,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wwzz(
         &mut self,
@@ -515,7 +519,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wwzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wx(
         &mut self,
@@ -525,7 +529,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxw(
         &mut self,
@@ -535,7 +539,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxww(
         &mut self,
@@ -545,7 +549,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxwx(
         &mut self,
@@ -555,7 +559,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxwy(
         &mut self,
@@ -565,7 +569,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxwz(
         &mut self,
@@ -575,7 +579,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxx(
         &mut self,
@@ -585,7 +589,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxxw(
         &mut self,
@@ -595,7 +599,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxxx(
         &mut self,
@@ -605,7 +609,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxxy(
         &mut self,
@@ -615,7 +619,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxxz(
         &mut self,
@@ -625,7 +629,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxy(
         &mut self,
@@ -635,7 +639,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxyw(
         &mut self,
@@ -645,7 +649,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxyx(
         &mut self,
@@ -655,7 +659,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxyy(
         &mut self,
@@ -665,7 +669,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxyz(
         &mut self,
@@ -675,7 +679,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxz(
         &mut self,
@@ -685,7 +689,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxzw(
         &mut self,
@@ -695,7 +699,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxzx(
         &mut self,
@@ -705,7 +709,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxzy(
         &mut self,
@@ -715,7 +719,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wxzz(
         &mut self,
@@ -725,7 +729,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wxzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wy(
         &mut self,
@@ -735,7 +739,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyw(
         &mut self,
@@ -745,7 +749,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyww(
         &mut self,
@@ -755,7 +759,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wywx(
         &mut self,
@@ -765,7 +769,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wywx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wywy(
         &mut self,
@@ -775,7 +779,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wywy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wywz(
         &mut self,
@@ -785,7 +789,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wywz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyx(
         &mut self,
@@ -795,7 +799,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyxw(
         &mut self,
@@ -805,7 +809,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyxx(
         &mut self,
@@ -815,7 +819,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyxy(
         &mut self,
@@ -825,7 +829,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyxz(
         &mut self,
@@ -835,7 +839,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyy(
         &mut self,
@@ -845,7 +849,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyyw(
         &mut self,
@@ -855,7 +859,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyyx(
         &mut self,
@@ -865,7 +869,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyyy(
         &mut self,
@@ -875,7 +879,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyyz(
         &mut self,
@@ -885,7 +889,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyz(
         &mut self,
@@ -895,7 +899,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyzw(
         &mut self,
@@ -905,7 +909,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyzx(
         &mut self,
@@ -915,7 +919,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyzy(
         &mut self,
@@ -925,7 +929,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wyzz(
         &mut self,
@@ -935,7 +939,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wyzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wz(
         &mut self,
@@ -945,7 +949,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzw(
         &mut self,
@@ -955,7 +959,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzww(
         &mut self,
@@ -965,7 +969,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzwx(
         &mut self,
@@ -975,7 +979,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzwy(
         &mut self,
@@ -985,7 +989,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzwz(
         &mut self,
@@ -995,7 +999,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzx(
         &mut self,
@@ -1005,7 +1009,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzxw(
         &mut self,
@@ -1015,7 +1019,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzxx(
         &mut self,
@@ -1025,7 +1029,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzxy(
         &mut self,
@@ -1035,7 +1039,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzxz(
         &mut self,
@@ -1045,7 +1049,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzy(
         &mut self,
@@ -1055,7 +1059,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzyw(
         &mut self,
@@ -1065,7 +1069,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzyx(
         &mut self,
@@ -1075,7 +1079,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzyy(
         &mut self,
@@ -1085,7 +1089,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzyz(
         &mut self,
@@ -1095,7 +1099,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzz(
         &mut self,
@@ -1105,7 +1109,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzzw(
         &mut self,
@@ -1115,7 +1119,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzzx(
         &mut self,
@@ -1125,7 +1129,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzzy(
         &mut self,
@@ -1135,7 +1139,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_wzzz(
         &mut self,
@@ -1145,7 +1149,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_wzzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xw(
         &mut self,
@@ -1155,7 +1159,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xww(
         &mut self,
@@ -1165,7 +1169,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwww(
         &mut self,
@@ -1175,7 +1179,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwwx(
         &mut self,
@@ -1185,7 +1189,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwwy(
         &mut self,
@@ -1195,7 +1199,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwwz(
         &mut self,
@@ -1205,7 +1209,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwx(
         &mut self,
@@ -1215,7 +1219,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwxw(
         &mut self,
@@ -1225,7 +1229,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwxx(
         &mut self,
@@ -1235,7 +1239,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwxy(
         &mut self,
@@ -1245,7 +1249,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwxz(
         &mut self,
@@ -1255,7 +1259,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwy(
         &mut self,
@@ -1265,7 +1269,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwyw(
         &mut self,
@@ -1275,7 +1279,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwyx(
         &mut self,
@@ -1285,7 +1289,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwyy(
         &mut self,
@@ -1295,7 +1299,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwyz(
         &mut self,
@@ -1305,7 +1309,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwz(
         &mut self,
@@ -1315,7 +1319,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwzw(
         &mut self,
@@ -1325,7 +1329,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwzx(
         &mut self,
@@ -1335,7 +1339,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwzy(
         &mut self,
@@ -1345,7 +1349,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xwzz(
         &mut self,
@@ -1355,7 +1359,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xwzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xx(
         &mut self,
@@ -1365,7 +1369,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxw(
         &mut self,
@@ -1375,7 +1379,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxww(
         &mut self,
@@ -1385,7 +1389,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxwx(
         &mut self,
@@ -1395,7 +1399,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxwy(
         &mut self,
@@ -1405,7 +1409,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxwz(
         &mut self,
@@ -1415,7 +1419,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxx(
         &mut self,
@@ -1425,7 +1429,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxxw(
         &mut self,
@@ -1435,7 +1439,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxxx(
         &mut self,
@@ -1445,7 +1449,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxxy(
         &mut self,
@@ -1455,7 +1459,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxxz(
         &mut self,
@@ -1465,7 +1469,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxy(
         &mut self,
@@ -1475,7 +1479,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxyw(
         &mut self,
@@ -1485,7 +1489,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxyx(
         &mut self,
@@ -1495,7 +1499,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxyy(
         &mut self,
@@ -1505,7 +1509,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxyz(
         &mut self,
@@ -1515,7 +1519,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxz(
         &mut self,
@@ -1525,7 +1529,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxzw(
         &mut self,
@@ -1535,7 +1539,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxzx(
         &mut self,
@@ -1545,7 +1549,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxzy(
         &mut self,
@@ -1555,7 +1559,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xxzz(
         &mut self,
@@ -1565,7 +1569,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xxzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xy(
         &mut self,
@@ -1575,7 +1579,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyw(
         &mut self,
@@ -1585,7 +1589,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyww(
         &mut self,
@@ -1595,7 +1599,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xywx(
         &mut self,
@@ -1605,7 +1609,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xywx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xywy(
         &mut self,
@@ -1615,7 +1619,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xywy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xywz(
         &mut self,
@@ -1625,7 +1629,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xywz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyx(
         &mut self,
@@ -1635,7 +1639,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyxw(
         &mut self,
@@ -1645,7 +1649,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyxx(
         &mut self,
@@ -1655,7 +1659,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyxy(
         &mut self,
@@ -1665,7 +1669,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyxz(
         &mut self,
@@ -1675,7 +1679,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyy(
         &mut self,
@@ -1685,7 +1689,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyyw(
         &mut self,
@@ -1695,7 +1699,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyyx(
         &mut self,
@@ -1705,7 +1709,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyyy(
         &mut self,
@@ -1715,7 +1719,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyyz(
         &mut self,
@@ -1725,7 +1729,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyz(
         &mut self,
@@ -1735,7 +1739,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyzw(
         &mut self,
@@ -1745,7 +1749,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyzx(
         &mut self,
@@ -1755,7 +1759,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyzy(
         &mut self,
@@ -1765,7 +1769,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xyzz(
         &mut self,
@@ -1775,7 +1779,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xyzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xz(
         &mut self,
@@ -1785,7 +1789,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzw(
         &mut self,
@@ -1795,7 +1799,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzww(
         &mut self,
@@ -1805,7 +1809,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzwx(
         &mut self,
@@ -1815,7 +1819,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzwy(
         &mut self,
@@ -1825,7 +1829,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzwz(
         &mut self,
@@ -1835,7 +1839,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzx(
         &mut self,
@@ -1845,7 +1849,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzxw(
         &mut self,
@@ -1855,7 +1859,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzxx(
         &mut self,
@@ -1865,7 +1869,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzxy(
         &mut self,
@@ -1875,7 +1879,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzxz(
         &mut self,
@@ -1885,7 +1889,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzy(
         &mut self,
@@ -1895,7 +1899,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzyw(
         &mut self,
@@ -1905,7 +1909,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzyx(
         &mut self,
@@ -1915,7 +1919,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzyy(
         &mut self,
@@ -1925,7 +1929,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzyz(
         &mut self,
@@ -1935,7 +1939,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzz(
         &mut self,
@@ -1945,7 +1949,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzzw(
         &mut self,
@@ -1955,7 +1959,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzzx(
         &mut self,
@@ -1965,7 +1969,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzzy(
         &mut self,
@@ -1975,7 +1979,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xzzz(
         &mut self,
@@ -1985,7 +1989,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_xzzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yw(
         &mut self,
@@ -1995,7 +1999,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yww(
         &mut self,
@@ -2005,7 +2009,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywww(
         &mut self,
@@ -2015,7 +2019,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywwx(
         &mut self,
@@ -2025,7 +2029,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywwy(
         &mut self,
@@ -2035,7 +2039,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywwz(
         &mut self,
@@ -2045,7 +2049,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywx(
         &mut self,
@@ -2055,7 +2059,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywxw(
         &mut self,
@@ -2065,7 +2069,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywxx(
         &mut self,
@@ -2075,7 +2079,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywxy(
         &mut self,
@@ -2085,7 +2089,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywxz(
         &mut self,
@@ -2095,7 +2099,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywy(
         &mut self,
@@ -2105,7 +2109,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywyw(
         &mut self,
@@ -2115,7 +2119,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywyx(
         &mut self,
@@ -2125,7 +2129,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywyy(
         &mut self,
@@ -2135,7 +2139,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywyz(
         &mut self,
@@ -2145,7 +2149,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywz(
         &mut self,
@@ -2155,7 +2159,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywzw(
         &mut self,
@@ -2165,7 +2169,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywzx(
         &mut self,
@@ -2175,7 +2179,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywzy(
         &mut self,
@@ -2185,7 +2189,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ywzz(
         &mut self,
@@ -2195,7 +2199,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_ywzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yx(
         &mut self,
@@ -2205,7 +2209,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxw(
         &mut self,
@@ -2215,7 +2219,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxww(
         &mut self,
@@ -2225,7 +2229,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxwx(
         &mut self,
@@ -2235,7 +2239,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxwy(
         &mut self,
@@ -2245,7 +2249,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxwz(
         &mut self,
@@ -2255,7 +2259,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxx(
         &mut self,
@@ -2265,7 +2269,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxxw(
         &mut self,
@@ -2275,7 +2279,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxxx(
         &mut self,
@@ -2285,7 +2289,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxxy(
         &mut self,
@@ -2295,7 +2299,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxxz(
         &mut self,
@@ -2305,7 +2309,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxy(
         &mut self,
@@ -2315,7 +2319,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxyw(
         &mut self,
@@ -2325,7 +2329,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxyx(
         &mut self,
@@ -2335,7 +2339,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxyy(
         &mut self,
@@ -2345,7 +2349,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxyz(
         &mut self,
@@ -2355,7 +2359,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxz(
         &mut self,
@@ -2365,7 +2369,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxzw(
         &mut self,
@@ -2375,7 +2379,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxzx(
         &mut self,
@@ -2385,7 +2389,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxzy(
         &mut self,
@@ -2395,7 +2399,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yxzz(
         &mut self,
@@ -2405,7 +2409,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yxzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yy(
         &mut self,
@@ -2415,7 +2419,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyw(
         &mut self,
@@ -2425,7 +2429,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyww(
         &mut self,
@@ -2435,7 +2439,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yywx(
         &mut self,
@@ -2445,7 +2449,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yywx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yywy(
         &mut self,
@@ -2455,7 +2459,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yywy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yywz(
         &mut self,
@@ -2465,7 +2469,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yywz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyx(
         &mut self,
@@ -2475,7 +2479,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyxw(
         &mut self,
@@ -2485,7 +2489,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyxx(
         &mut self,
@@ -2495,7 +2499,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyxy(
         &mut self,
@@ -2505,7 +2509,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyxz(
         &mut self,
@@ -2515,7 +2519,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyy(
         &mut self,
@@ -2525,7 +2529,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyyw(
         &mut self,
@@ -2535,7 +2539,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyyx(
         &mut self,
@@ -2545,7 +2549,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyyy(
         &mut self,
@@ -2555,7 +2559,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyyz(
         &mut self,
@@ -2565,7 +2569,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyz(
         &mut self,
@@ -2575,7 +2579,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyzw(
         &mut self,
@@ -2585,7 +2589,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyzx(
         &mut self,
@@ -2595,7 +2599,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyzy(
         &mut self,
@@ -2605,7 +2609,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yyzz(
         &mut self,
@@ -2615,7 +2619,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yyzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yz(
         &mut self,
@@ -2625,7 +2629,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzw(
         &mut self,
@@ -2635,7 +2639,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzww(
         &mut self,
@@ -2645,7 +2649,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzwx(
         &mut self,
@@ -2655,7 +2659,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzwy(
         &mut self,
@@ -2665,7 +2669,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzwz(
         &mut self,
@@ -2675,7 +2679,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzx(
         &mut self,
@@ -2685,7 +2689,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzxw(
         &mut self,
@@ -2695,7 +2699,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzxx(
         &mut self,
@@ -2705,7 +2709,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzxy(
         &mut self,
@@ -2715,7 +2719,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzxz(
         &mut self,
@@ -2725,7 +2729,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzy(
         &mut self,
@@ -2735,7 +2739,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzyw(
         &mut self,
@@ -2745,7 +2749,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzyx(
         &mut self,
@@ -2755,7 +2759,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzyy(
         &mut self,
@@ -2765,7 +2769,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzyz(
         &mut self,
@@ -2775,7 +2779,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzz(
         &mut self,
@@ -2785,7 +2789,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzzw(
         &mut self,
@@ -2795,7 +2799,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzzx(
         &mut self,
@@ -2805,7 +2809,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzzy(
         &mut self,
@@ -2815,7 +2819,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_yzzz(
         &mut self,
@@ -2825,7 +2829,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_yzzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zw(
         &mut self,
@@ -2835,7 +2839,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zww(
         &mut self,
@@ -2845,7 +2849,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwww(
         &mut self,
@@ -2855,7 +2859,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwwx(
         &mut self,
@@ -2865,7 +2869,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwwy(
         &mut self,
@@ -2875,7 +2879,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwwz(
         &mut self,
@@ -2885,7 +2889,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwx(
         &mut self,
@@ -2895,7 +2899,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwxw(
         &mut self,
@@ -2905,7 +2909,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwxx(
         &mut self,
@@ -2915,7 +2919,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwxy(
         &mut self,
@@ -2925,7 +2929,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwxz(
         &mut self,
@@ -2935,7 +2939,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwy(
         &mut self,
@@ -2945,7 +2949,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwyw(
         &mut self,
@@ -2955,7 +2959,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwyx(
         &mut self,
@@ -2965,7 +2969,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwyy(
         &mut self,
@@ -2975,7 +2979,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwyz(
         &mut self,
@@ -2985,7 +2989,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwz(
         &mut self,
@@ -2995,7 +2999,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwzw(
         &mut self,
@@ -3005,7 +3009,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwzx(
         &mut self,
@@ -3015,7 +3019,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwzy(
         &mut self,
@@ -3025,7 +3029,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zwzz(
         &mut self,
@@ -3035,7 +3039,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zwzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zx(
         &mut self,
@@ -3045,7 +3049,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxw(
         &mut self,
@@ -3055,7 +3059,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxww(
         &mut self,
@@ -3065,7 +3069,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxwx(
         &mut self,
@@ -3075,7 +3079,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxwy(
         &mut self,
@@ -3085,7 +3089,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxwz(
         &mut self,
@@ -3095,7 +3099,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxx(
         &mut self,
@@ -3105,7 +3109,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxxw(
         &mut self,
@@ -3115,7 +3119,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxxx(
         &mut self,
@@ -3125,7 +3129,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxxy(
         &mut self,
@@ -3135,7 +3139,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxxz(
         &mut self,
@@ -3145,7 +3149,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxy(
         &mut self,
@@ -3155,7 +3159,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxyw(
         &mut self,
@@ -3165,7 +3169,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxyx(
         &mut self,
@@ -3175,7 +3179,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxyy(
         &mut self,
@@ -3185,7 +3189,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxyz(
         &mut self,
@@ -3195,7 +3199,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxz(
         &mut self,
@@ -3205,7 +3209,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxzw(
         &mut self,
@@ -3215,7 +3219,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxzx(
         &mut self,
@@ -3225,7 +3229,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxzy(
         &mut self,
@@ -3235,7 +3239,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zxzz(
         &mut self,
@@ -3245,7 +3249,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zxzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zy(
         &mut self,
@@ -3255,7 +3259,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyw(
         &mut self,
@@ -3265,7 +3269,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyww(
         &mut self,
@@ -3275,7 +3279,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zywx(
         &mut self,
@@ -3285,7 +3289,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zywx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zywy(
         &mut self,
@@ -3295,7 +3299,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zywy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zywz(
         &mut self,
@@ -3305,7 +3309,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zywz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyx(
         &mut self,
@@ -3315,7 +3319,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyxw(
         &mut self,
@@ -3325,7 +3329,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyxx(
         &mut self,
@@ -3335,7 +3339,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyxy(
         &mut self,
@@ -3345,7 +3349,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyxz(
         &mut self,
@@ -3355,7 +3359,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyy(
         &mut self,
@@ -3365,7 +3369,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyyw(
         &mut self,
@@ -3375,7 +3379,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyyx(
         &mut self,
@@ -3385,7 +3389,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyyy(
         &mut self,
@@ -3395,7 +3399,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyyz(
         &mut self,
@@ -3405,7 +3409,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyz(
         &mut self,
@@ -3415,7 +3419,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyzw(
         &mut self,
@@ -3425,7 +3429,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyzx(
         &mut self,
@@ -3435,7 +3439,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyzy(
         &mut self,
@@ -3445,7 +3449,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zyzz(
         &mut self,
@@ -3455,7 +3459,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zyzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zz(
         &mut self,
@@ -3465,7 +3469,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzw(
         &mut self,
@@ -3475,7 +3479,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzww(
         &mut self,
@@ -3485,7 +3489,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzww",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzwx(
         &mut self,
@@ -3495,7 +3499,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzwx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzwy(
         &mut self,
@@ -3505,7 +3509,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzwy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzwz(
         &mut self,
@@ -3515,7 +3519,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzwz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzx(
         &mut self,
@@ -3525,7 +3529,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzxw(
         &mut self,
@@ -3535,7 +3539,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzxw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzxx(
         &mut self,
@@ -3545,7 +3549,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzxx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzxy(
         &mut self,
@@ -3555,7 +3559,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzxy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzxz(
         &mut self,
@@ -3565,7 +3569,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzxz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzy(
         &mut self,
@@ -3575,7 +3579,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzyw(
         &mut self,
@@ -3585,7 +3589,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzyw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzyx(
         &mut self,
@@ -3595,7 +3599,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzyx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzyy(
         &mut self,
@@ -3605,7 +3609,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzyy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzyz(
         &mut self,
@@ -3615,7 +3619,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzyz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzz(
         &mut self,
@@ -3625,7 +3629,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzzw(
         &mut self,
@@ -3635,7 +3639,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzzw",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzzx(
         &mut self,
@@ -3645,7 +3649,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzzx",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzzy(
         &mut self,
@@ -3655,7 +3659,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzzy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_zzzz(
         &mut self,
@@ -3665,7 +3669,7 @@ impl crate::Unity::Mathematics::float4 {
             "get_zzzz",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
@@ -3677,7 +3681,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_Item",
             (index, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wx(
         &mut self,
@@ -3688,7 +3692,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wxy(
         &mut self,
@@ -3699,7 +3703,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wxy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wxyz(
         &mut self,
@@ -3710,7 +3714,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wxyz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wxz(
         &mut self,
@@ -3721,7 +3725,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wxz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wxzy(
         &mut self,
@@ -3732,7 +3736,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wxzy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wy(
         &mut self,
@@ -3743,7 +3747,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wyx(
         &mut self,
@@ -3754,7 +3758,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wyx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wyxz(
         &mut self,
@@ -3765,7 +3769,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wyxz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wyz(
         &mut self,
@@ -3776,7 +3780,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wyz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wyzx(
         &mut self,
@@ -3787,7 +3791,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wyzx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wz(
         &mut self,
@@ -3798,7 +3802,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wzx(
         &mut self,
@@ -3809,7 +3813,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wzx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wzxy(
         &mut self,
@@ -3820,7 +3824,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wzxy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wzy(
         &mut self,
@@ -3831,7 +3835,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wzy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_wzyx(
         &mut self,
@@ -3842,7 +3846,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_wzyx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xw(
         &mut self,
@@ -3853,7 +3857,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xwy(
         &mut self,
@@ -3864,7 +3868,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xwy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xwyz(
         &mut self,
@@ -3875,7 +3879,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xwyz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xwz(
         &mut self,
@@ -3886,7 +3890,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xwz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xwzy(
         &mut self,
@@ -3897,7 +3901,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xwzy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xy(
         &mut self,
@@ -3908,7 +3912,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xyw(
         &mut self,
@@ -3919,7 +3923,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xyw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xywz(
         &mut self,
@@ -3930,7 +3934,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xywz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xyz(
         &mut self,
@@ -3941,7 +3945,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xyz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xyzw(
         &mut self,
@@ -3952,7 +3956,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xyzw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xz(
         &mut self,
@@ -3963,7 +3967,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xzw(
         &mut self,
@@ -3974,7 +3978,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xzw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xzwy(
         &mut self,
@@ -3985,7 +3989,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xzwy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xzy(
         &mut self,
@@ -3996,7 +4000,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xzy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_xzyw(
         &mut self,
@@ -4007,7 +4011,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_xzyw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yw(
         &mut self,
@@ -4018,7 +4022,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_yw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ywx(
         &mut self,
@@ -4029,7 +4033,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_ywx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ywxz(
         &mut self,
@@ -4040,7 +4044,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_ywxz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ywz(
         &mut self,
@@ -4051,7 +4055,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_ywz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ywzx(
         &mut self,
@@ -4062,7 +4066,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_ywzx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yx(
         &mut self,
@@ -4073,7 +4077,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_yx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yxw(
         &mut self,
@@ -4084,7 +4088,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_yxw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yxwz(
         &mut self,
@@ -4095,7 +4099,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_yxwz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yxz(
         &mut self,
@@ -4106,7 +4110,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_yxz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yxzw(
         &mut self,
@@ -4117,7 +4121,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_yxzw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yz(
         &mut self,
@@ -4128,7 +4132,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_yz",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yzw(
         &mut self,
@@ -4139,7 +4143,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_yzw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yzwx(
         &mut self,
@@ -4150,7 +4154,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_yzwx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yzx(
         &mut self,
@@ -4161,7 +4165,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_yzx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_yzxw(
         &mut self,
@@ -4172,7 +4176,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_yzxw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zw(
         &mut self,
@@ -4183,7 +4187,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zwx(
         &mut self,
@@ -4194,7 +4198,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zwx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zwxy(
         &mut self,
@@ -4205,7 +4209,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zwxy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zwy(
         &mut self,
@@ -4216,7 +4220,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zwy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zwyx(
         &mut self,
@@ -4227,7 +4231,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zwyx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zx(
         &mut self,
@@ -4238,7 +4242,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zxw(
         &mut self,
@@ -4249,7 +4253,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zxw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zxwy(
         &mut self,
@@ -4260,7 +4264,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zxwy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zxy(
         &mut self,
@@ -4271,7 +4275,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zxy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zxyw(
         &mut self,
@@ -4282,7 +4286,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zxyw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zy(
         &mut self,
@@ -4293,7 +4297,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zy",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zyw(
         &mut self,
@@ -4304,7 +4308,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zyw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zywx(
         &mut self,
@@ -4315,7 +4319,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zywx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zyx(
         &mut self,
@@ -4326,7 +4330,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zyx",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zyxw(
         &mut self,
@@ -4337,7 +4341,7 @@ impl crate::Unity::Mathematics::float4 {
             "set_zyxw",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Mathematics+float4+DebuggerProxy")]
@@ -4372,12 +4376,12 @@ impl std::ops::DerefMut for crate::Unity::Mathematics::float4_DebuggerProxy {
 impl crate::Unity::Mathematics::float4_DebuggerProxy {
     pub fn New(
         v: crate::Unity::Mathematics::float4,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (v))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -4388,7 +4392,7 @@ impl crate::Unity::Mathematics::float4_DebuggerProxy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (v))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Mathematics+float4+DebuggerProxy")]

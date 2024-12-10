@@ -30,39 +30,39 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::AxisElement {
 impl crate::System::Xml::Schema::AxisElement {
     pub fn MoveToChild(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        URN: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        URN: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         depth: i32,
-        parent: *mut crate::System::Xml::Schema::ForwardAxis,
+        parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ForwardAxis>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("MoveToChild", (name, URN, depth, parent))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveToParent(
         &mut self,
         depth: i32,
-        parent: *mut crate::System::Xml::Schema::ForwardAxis,
+        parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ForwardAxis>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveToParent", (depth, parent))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        node: *mut crate::System::Xml::Schema::DoubleLinkAxis,
+        node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
         depth: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (node, depth))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetDepth(
         &mut self,
@@ -73,11 +73,11 @@ impl crate::System::Xml::Schema::AxisElement {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDepth", (depth))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        node: *mut crate::System::Xml::Schema::DoubleLinkAxis,
+        node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
         depth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -85,17 +85,20 @@ impl crate::System::Xml::Schema::AxisElement {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (node, depth))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CurNode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::DoubleLinkAxis> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::DoubleLinkAxis = __cordl_object
-            .invoke("get_CurNode", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::DoubleLinkAxis,
+        > = __cordl_object.invoke("get_CurNode", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+AxisElement")]

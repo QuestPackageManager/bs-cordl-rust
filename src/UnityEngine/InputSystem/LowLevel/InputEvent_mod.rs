@@ -29,13 +29,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
     pub const kIdMask: u32 = 4294967280u32;
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             ".ctor",
             (_cordl_type, sizeInBytes, deviceId, _cordl_time),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_deviceId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -57,7 +57,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "get_deviceId",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_eventId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -65,7 +65,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "get_eventId",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_handled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -73,7 +73,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "get_handled",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_internalTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -81,7 +81,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "get_internalTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -89,7 +89,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "get_sizeInBytes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -97,7 +97,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "get_time",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_type(
         &mut self,
@@ -109,7 +109,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "get_type",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_deviceId(
         &mut self,
@@ -120,7 +120,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "set_deviceId",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_eventId(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "set_eventId",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_handled(
         &mut self,
@@ -142,7 +142,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "set_handled",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_internalTime(
         &mut self,
@@ -153,7 +153,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "set_internalTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sizeInBytes(
         &mut self,
@@ -164,7 +164,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "set_sizeInBytes",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_time(
         &mut self,
@@ -175,7 +175,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "set_time",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_type(
         &mut self,
@@ -186,6 +186,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
             "set_type",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

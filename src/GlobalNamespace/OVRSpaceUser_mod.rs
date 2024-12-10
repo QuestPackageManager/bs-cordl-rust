@@ -30,7 +30,7 @@ impl crate::GlobalNamespace::OVRSpaceUser {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::OVRSpaceUser {
             ".ctor",
             (spaceUserId),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Id(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::OVRSpaceUser {
             "get_Id",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -57,6 +57,6 @@ impl crate::GlobalNamespace::OVRSpaceUser {
             "get_Valid",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

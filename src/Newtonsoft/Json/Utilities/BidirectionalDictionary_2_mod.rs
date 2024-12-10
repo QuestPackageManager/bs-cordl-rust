@@ -51,7 +51,7 @@ impl<
     TFirst: quest_hook::libil2cpp::Type,
     TSecond: quest_hook::libil2cpp::Type,
 > crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<TFirst, TSecond> {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TFirst: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -62,16 +62,16 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IEqualityComparer_1_IEqualityComparer_1_1(
-        firstEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TFirst,
+        firstEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TFirst>,
         >,
-        secondEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TSecond,
+        secondEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TSecond>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TFirst: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -82,18 +82,22 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (firstEqualityComparer, secondEqualityComparer))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IEqualityComparer_1_IEqualityComparer_1_Il2CppString_Il2CppString2(
-        firstEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TFirst,
+        firstEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TFirst>,
         >,
-        secondEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TSecond,
+        secondEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TSecond>,
         >,
-        duplicateFirstErrorMessage: *mut quest_hook::libil2cpp::Il2CppString,
-        duplicateSecondErrorMessage: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        duplicateFirstErrorMessage: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        duplicateSecondErrorMessage: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TFirst: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -112,7 +116,7 @@ impl<
                     duplicateSecondErrorMessage,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Set(
         &mut self,
@@ -130,7 +134,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Set", (first, second))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetByFirst(
         &mut self,
@@ -147,7 +151,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetByFirst", (first, second))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetBySecond(
         &mut self,
@@ -165,7 +169,7 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetBySecond", (second, first))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -181,15 +185,15 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEqualityComparer_1_IEqualityComparer_1_1(
         &mut self,
-        firstEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TFirst,
+        firstEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TFirst>,
         >,
-        secondEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TSecond,
+        secondEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TSecond>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -203,18 +207,22 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (firstEqualityComparer, secondEqualityComparer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEqualityComparer_1_IEqualityComparer_1_Il2CppString_Il2CppString2(
         &mut self,
-        firstEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TFirst,
+        firstEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TFirst>,
         >,
-        secondEqualityComparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-            TSecond,
+        secondEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TSecond>,
         >,
-        duplicateFirstErrorMessage: *mut quest_hook::libil2cpp::Il2CppString,
-        duplicateSecondErrorMessage: *mut quest_hook::libil2cpp::Il2CppString,
+        duplicateFirstErrorMessage: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        duplicateSecondErrorMessage: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TFirst: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -235,7 +243,7 @@ impl<
                     duplicateSecondErrorMessage,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]

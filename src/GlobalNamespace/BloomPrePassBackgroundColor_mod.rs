@@ -37,18 +37,18 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitIfNeeded", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Render(
         &mut self,
-        dest: *mut crate::UnityEngine::RenderTexture,
+        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         viewMatrix: crate::UnityEngine::Matrix4x4,
         projectionMatrix: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Render", (dest, viewMatrix, projectionMatrix))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bgColor(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColor {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_bgColor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_color(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColor {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_color", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_color(
         &mut self,
@@ -98,7 +98,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_color", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColor")]

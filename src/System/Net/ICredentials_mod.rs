@@ -26,15 +26,18 @@ impl std::ops::DerefMut for crate::System::Net::ICredentials {
 impl crate::System::Net::ICredentials {
     pub fn GetCredential(
         &mut self,
-        uri: *mut crate::System::Uri,
-        authType: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::NetworkCredential> {
+        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        authType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::NetworkCredential>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::NetworkCredential = __cordl_object
-            .invoke("GetCredential", (uri, authType))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkCredential,
+        > = __cordl_object.invoke("GetCredential", (uri, authType))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

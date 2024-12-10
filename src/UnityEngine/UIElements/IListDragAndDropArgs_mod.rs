@@ -34,19 +34,20 @@ impl crate::UnityEngine::UIElements::IListDragAndDropArgs {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_childIndex", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dragAndDropData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::DragAndDropData,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DragAndDropData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::DragAndDropData = __cordl_object
-            .invoke("get_dragAndDropData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DragAndDropData,
+        > = __cordl_object.invoke("get_dragAndDropData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_dragAndDropPosition(
         &mut self,
@@ -58,21 +59,21 @@ impl crate::UnityEngine::UIElements::IListDragAndDropArgs {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::DragAndDropPosition = __cordl_object
             .invoke("get_dragAndDropPosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_insertAtIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_insertAtIndex", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_parentId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_parentId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IListDragAndDropArgs")]

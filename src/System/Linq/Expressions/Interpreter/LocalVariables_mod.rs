@@ -40,32 +40,43 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
     pub type VariableScope = crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope;
     pub fn AddClosureVariable(
         &mut self,
-        variable: *mut crate::System::Linq::Expressions::ParameterExpression,
+        variable: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Interpreter::LocalVariable = __cordl_object
-            .invoke("AddClosureVariable", (variable))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        > = __cordl_object.invoke("AddClosureVariable", (variable))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Box(
         &mut self,
-        variable: *mut crate::System::Linq::Expressions::ParameterExpression,
-        instructions: *mut crate::System::Linq::Expressions::Interpreter::InstructionList,
+        variable: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        >,
+        instructions: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::InstructionList,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Box", (variable, instructions))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DefineLocal(
         &mut self,
-        variable: *mut crate::System::Linq::Expressions::ParameterExpression,
+        variable: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        >,
         start: i32,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Linq::Expressions::Interpreter::LocalDefinition,
@@ -75,18 +86,20 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
         );
         let __cordl_ret: crate::System::Linq::Expressions::Interpreter::LocalDefinition = __cordl_object
             .invoke("DefineLocal", (variable, start))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn TryGetLocalOrClosure(
         &mut self,
-        var: *mut crate::System::Linq::Expressions::ParameterExpression,
+        var: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        >,
         local: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
         >,
@@ -96,7 +109,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetLocalOrClosure", (var, local))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UndefineLocal(
         &mut self,
@@ -108,7 +121,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UndefineLocal", (definition, end))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -118,31 +131,35 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ClosureVariables(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
-            *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+                *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
-            *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+                *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+            >,
         > = __cordl_object.invoke("get_ClosureVariables", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LocalCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_LocalCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariables")]
@@ -192,28 +209,36 @@ for crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope 
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariables+VariableScope")]
 impl crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope {
     pub fn New(
-        variable: *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        variable: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        >,
         start: i32,
-        parent: *mut crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        parent: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (variable, start, parent))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        variable: *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        variable: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        >,
         start: i32,
-        parent: *mut crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
+        parent: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (variable, start, parent))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariables+VariableScope")]

@@ -45,7 +45,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FixedUpdate", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetValue(
         &mut self,
@@ -59,7 +59,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("GetValue", (interpolationFactor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Interpolate(
         &mut self,
@@ -75,9 +75,11 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Interpolate", (value0, value1, t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(smooth: f32) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New(
+        smooth: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -86,7 +88,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (smooth))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetStartValue(
         &mut self,
@@ -101,7 +103,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetStartValue", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -116,7 +118,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (smooth))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "FixedUpdateSmoothValue_1")]

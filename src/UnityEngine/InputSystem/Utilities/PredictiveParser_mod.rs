@@ -32,7 +32,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
             "AcceptInt",
             (str),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AcceptSingleChar(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
             "AcceptSingleChar",
             (str, c),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AcceptString(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
             "AcceptString",
             (input, output),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExpectInt(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
             "ExpectInt",
             (str),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExpectSingleChar(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
             "ExpectSingleChar",
             (str, c),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExpectString(
         &mut self,
@@ -90,6 +90,6 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
             "ExpectString",
             (str),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

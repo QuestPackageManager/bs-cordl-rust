@@ -82,14 +82,14 @@ impl crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     pub fn SetLocation(
         &mut self,
         position: crate::UnityEngine::Vector2,
-        panel: *mut crate::UnityEngine::UIElements::IPanel,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetLocation",
             (position, panel),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Flags(
         &mut self,
@@ -101,17 +101,17 @@ impl crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
             "get_Flags",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Panel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::IPanel> {
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IPanel = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Panel",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IPanel,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Panel", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Position(
         &mut self,
@@ -121,7 +121,7 @@ impl crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
             "get_Position",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Flags(
         &mut self,
@@ -132,18 +132,18 @@ impl crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
             "set_Flags",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Panel(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::IPanel,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_Panel",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Position(
         &mut self,
@@ -154,6 +154,6 @@ impl crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
             "set_Position",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

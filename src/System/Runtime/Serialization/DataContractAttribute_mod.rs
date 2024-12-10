@@ -32,7 +32,7 @@ impl crate::System::Runtime::Serialization::DataContractAttribute {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsReference", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+DataContractAttribute")]

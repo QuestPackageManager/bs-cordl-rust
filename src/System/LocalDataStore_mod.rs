@@ -36,7 +36,7 @@ impl crate::System::LocalDataStore {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FreeData(
         &mut self,
@@ -48,55 +48,61 @@ impl crate::System::LocalDataStore {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FreeData", (slot, cookie))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetData(
         &mut self,
-        slot: *mut crate::System::LocalDataStoreSlot,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        slot: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("GetData", (slot))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("GetData", (slot))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        mgr: *mut crate::System::LocalDataStoreMgr,
+        mgr: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreMgr>,
         InitialCapacity: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (mgr, InitialCapacity))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PopulateElement(
         &mut self,
-        slot: *mut crate::System::LocalDataStoreSlot,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::LocalDataStoreElement> {
+        slot: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreElement>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::LocalDataStoreElement = __cordl_object
-            .invoke("PopulateElement", (slot))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::LocalDataStoreElement,
+        > = __cordl_object.invoke("PopulateElement", (slot))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetData(
         &mut self,
-        slot: *mut crate::System::LocalDataStoreSlot,
-        data: *mut quest_hook::libil2cpp::Il2CppObject,
+        slot: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetData", (slot, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        mgr: *mut crate::System::LocalDataStoreMgr,
+        mgr: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreMgr>,
         InitialCapacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -104,7 +110,7 @@ impl crate::System::LocalDataStore {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (mgr, InitialCapacity))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+LocalDataStore")]

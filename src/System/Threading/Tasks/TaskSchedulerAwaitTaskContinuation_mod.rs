@@ -31,19 +31,21 @@ impl crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
     #[cfg(feature = "System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation+__c")]
     pub type __c = crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation___c;
     pub fn New(
-        scheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
-        action: *mut crate::System::Action,
+        scheduler: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        >,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
         flowExecutionContext: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (scheduler, action, flowExecutionContext))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Run(
         &mut self,
-        ignored: *mut crate::System::Threading::Tasks::Task,
+        ignored: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         canInlineContinuationTask: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -51,12 +53,14 @@ impl crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Run", (ignored, canInlineContinuationTask))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        scheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
-        action: *mut crate::System::Action,
+        scheduler: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        >,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
         flowExecutionContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -64,7 +68,7 @@ impl crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (scheduler, action, flowExecutionContext))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]

@@ -33,8 +33,8 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
     pub type ColorTweenMode = crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode;
     pub fn AddOnChangedCallback(
         &mut self,
-        callback: *mut crate::UnityEngine::Events::UnityAction_1<
-            crate::UnityEngine::Color,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<crate::UnityEngine::Color>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -42,7 +42,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "AddOnChangedCallback",
             (callback),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -50,7 +50,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "GetDuration",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetIgnoreTimescale(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -58,7 +58,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "GetIgnoreTimescale",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TweenValue(
         &mut self,
@@ -69,7 +69,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "TweenValue",
             (floatPercentage),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidTarget(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -77,7 +77,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "ValidTarget",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -85,7 +85,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "get_duration",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ignoreTimeScale(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -93,7 +93,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "get_ignoreTimeScale",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_startColor(
         &mut self,
@@ -103,7 +103,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "get_startColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_targetColor(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "get_targetColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tweenMode(
         &mut self,
@@ -125,7 +125,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "get_tweenMode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_duration(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "set_duration",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ignoreTimeScale(
         &mut self,
@@ -147,7 +147,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "set_ignoreTimeScale",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_startColor(
         &mut self,
@@ -158,7 +158,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "set_startColor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_targetColor(
         &mut self,
@@ -169,7 +169,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "set_targetColor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tweenMode(
         &mut self,
@@ -180,7 +180,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
             "set_tweenMode",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]
@@ -212,12 +212,12 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
 }
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]
 impl crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -227,7 +227,7 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]

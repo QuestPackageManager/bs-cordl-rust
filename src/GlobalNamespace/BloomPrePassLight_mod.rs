@@ -52,13 +52,15 @@ impl crate::GlobalNamespace::BloomPrePassLight {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DidRegisterLight", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FillMeshData(
         &mut self,
         lightNum: quest_hook::libil2cpp::ByRefMut<i32>,
-        lightQuads: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::GlobalNamespace::BloomPrePassLight_QuadData,
+        lightQuads: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::GlobalNamespace::BloomPrePassLight_QuadData,
+            >,
         >,
         viewMatrix: crate::UnityEngine::Matrix4x4,
         projectionMatrix: crate::UnityEngine::Matrix4x4,
@@ -72,14 +74,14 @@ impl crate::GlobalNamespace::BloomPrePassLight {
                 "FillMeshData",
                 (lightNum, lightQuads, viewMatrix, projectionMatrix, lineWidth),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -89,7 +91,7 @@ impl crate::GlobalNamespace::BloomPrePassLight {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -99,7 +101,7 @@ impl crate::GlobalNamespace::BloomPrePassLight {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -109,7 +111,7 @@ impl crate::GlobalNamespace::BloomPrePassLight {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Refresh(
         &mut self,
@@ -119,7 +121,7 @@ impl crate::GlobalNamespace::BloomPrePassLight {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Refresh", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterLight(
         &mut self,
@@ -129,7 +131,7 @@ impl crate::GlobalNamespace::BloomPrePassLight {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterLight", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnregisterLight(
         &mut self,
@@ -139,7 +141,7 @@ impl crate::GlobalNamespace::BloomPrePassLight {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnregisterLight", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -149,7 +151,7 @@ impl crate::GlobalNamespace::BloomPrePassLight {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BloomPrePassLight")]
@@ -193,22 +195,30 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassLight_LightsData
 #[cfg(feature = "BloomPrePassLight+LightsDataItem")]
 impl crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
     pub fn New(
-        lightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
-        lights: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::GlobalNamespace::BloomPrePassLight,
+        lightType: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomPrePassLightTypeSO,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        lights: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                *mut crate::GlobalNamespace::BloomPrePassLight,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (lightType, lights))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        lightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
-        lights: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::GlobalNamespace::BloomPrePassLight,
+        lightType: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BloomPrePassLightTypeSO,
+        >,
+        lights: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                *mut crate::GlobalNamespace::BloomPrePassLight,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -216,7 +226,7 @@ impl crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (lightType, lights))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BloomPrePassLight+LightsDataItem")]

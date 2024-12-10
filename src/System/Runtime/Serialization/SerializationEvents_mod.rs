@@ -39,52 +39,66 @@ impl std::ops::DerefMut for crate::System::Runtime::Serialization::Serialization
 impl crate::System::Runtime::Serialization::SerializationEvents {
     pub fn AddOnDeserialized(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
-        handler: *mut crate::System::Runtime::Serialization::SerializationEventHandler,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        handler: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationEventHandler,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Serialization::SerializationEventHandler,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Runtime::Serialization::SerializationEventHandler = __cordl_object
-            .invoke("AddOnDeserialized", (obj, handler))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddOnSerialized(
-        &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
-        handler: *mut crate::System::Runtime::Serialization::SerializationEventHandler,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Serialization::SerializationEventHandler,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Runtime::Serialization::SerializationEventHandler = __cordl_object
-            .invoke("AddOnSerialized", (obj, handler))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMethodsWithAttribute(
-        &mut self,
-        attribute: *mut crate::System::Type,
-        t: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Reflection::MethodInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationEventHandler,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Reflection::MethodInfo,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationEventHandler,
+        > = __cordl_object.invoke("AddOnDeserialized", (obj, handler))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddOnSerialized(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        handler: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationEventHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationEventHandler,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationEventHandler,
+        > = __cordl_object.invoke("AddOnSerialized", (obj, handler))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodsWithAttribute(
+        &mut self,
+        attribute: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Reflection::MethodInfo,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Reflection::MethodInfo,
+            >,
         > = __cordl_object.invoke("GetMethodsWithAttribute", (attribute, t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokeOnDeserialized(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -92,11 +106,11 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokeOnDeserialized", (obj, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokeOnDeserializing(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -104,11 +118,11 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokeOnDeserializing", (obj, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InvokeOnSerializing(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -116,32 +130,34 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvokeOnSerializing", (obj, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(t: *mut crate::System::Type) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (t))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        t: *mut crate::System::Type,
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasOnSerializingEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasOnSerializingEvents", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationEvents")]

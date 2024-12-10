@@ -39,7 +39,9 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
     pub fn AddSubKey_HashAlgorithmTag1(
         &mut self,
-        keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        keyPair: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -47,37 +49,51 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddSubKey", (keyPair, hashAlgorithm))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddSubKey_PgpKeyPair0(
         &mut self,
-        keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        keyPair: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddSubKey", (keyPair))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddSubKey_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector2(
         &mut self,
-        keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        keyPair: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddSubKey", (keyPair, hashedPackets, unhashedPackets))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddSubKey_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_HashAlgorithmTag3(
         &mut self,
-        keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        keyPair: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -88,44 +104,58 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                 "AddSubKey",
                 (keyPair, hashedPackets, unhashedPackets, hashAlgorithm),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GeneratePublicKeyRing(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing = __cordl_object
-            .invoke("GeneratePublicKeyRing", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing,
+        > = __cordl_object.invoke("GeneratePublicKeyRing", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateSecretKeyRing(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing = __cordl_object
-            .invoke("GenerateSecretKeyRing", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing,
+        > = __cordl_object.invoke("GenerateSecretKeyRing", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom4(
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -144,20 +174,28 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom6(
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-        rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -176,21 +214,29 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_HashAlgorithmTag__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom5(
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         utf8PassPhrase: bool,
-        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -210,18 +256,26 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppArray_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom0(
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -238,19 +292,27 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom1(
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -268,19 +330,27 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom3(
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -298,20 +368,28 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom2(
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         utf8PassPhrase: bool,
-        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -330,20 +408,28 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom4(
         &mut self,
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -364,20 +450,28 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom6(
         &mut self,
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-        rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -398,21 +492,29 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_HashAlgorithmTag__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom5(
         &mut self,
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         utf8PassPhrase: bool,
-        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -434,18 +536,26 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom0(
         &mut self,
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -464,19 +574,27 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom1(
         &mut self,
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -496,19 +614,27 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom3(
         &mut self,
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-        rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -528,20 +654,28 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom2(
         &mut self,
         certificationLevel: i32,
-        masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         utf8PassPhrase: bool,
-        passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         useSha1: bool,
-        hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        unhashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-        _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -562,7 +696,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
                     _cordl_rand,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpKeyRingGenerator")]

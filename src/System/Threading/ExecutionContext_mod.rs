@@ -44,23 +44,29 @@ impl crate::System::Threading::ExecutionContext {
     pub type Reader = crate::System::Threading::ExecutionContext_Reader;
     pub fn CreateCopy(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::ExecutionContext> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::ExecutionContext = __cordl_object
-            .invoke("CreateCopy", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        > = __cordl_object.invoke("CreateCopy", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateMutableCopy(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::ExecutionContext> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::ExecutionContext = __cordl_object
-            .invoke("CreateMutableCopy", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        > = __cordl_object.invoke("CreateMutableCopy", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -70,11 +76,13 @@ impl crate::System::Threading::ExecutionContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetObjectData(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -82,7 +90,7 @@ impl crate::System::Threading::ExecutionContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetObjectData", (info, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsDefaultFTContext(
         &mut self,
@@ -93,33 +101,35 @@ impl crate::System::Threading::ExecutionContext {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsDefaultFTContext", (ignoreSyncCtx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_SerializationInfo_StreamingContext2(
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New__cordl_bool1(
         isPreAllocatedDefault: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (isPreAllocatedDefault))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -129,11 +139,13 @@ impl crate::System::Threading::ExecutionContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -141,7 +153,7 @@ impl crate::System::Threading::ExecutionContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool1(
         &mut self,
@@ -152,120 +164,136 @@ impl crate::System::Threading::ExecutionContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (isPreAllocatedDefault))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IllogicalCallContext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::IllogicalCallContext,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IllogicalCallContext,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IllogicalCallContext = __cordl_object
-            .invoke("get_IllogicalCallContext", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IllogicalCallContext,
+        > = __cordl_object.invoke("get_IllogicalCallContext", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsPreAllocatedDefault(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsPreAllocatedDefault", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LogicalCallContext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext = __cordl_object
-            .invoke("get_LogicalCallContext", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+        > = __cordl_object.invoke("get_LogicalCallContext", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_SynchronizationContext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::SynchronizationContext,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::SynchronizationContext>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::SynchronizationContext = __cordl_object
-            .invoke("get_SynchronizationContext", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SynchronizationContext,
+        > = __cordl_object.invoke("get_SynchronizationContext", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_SynchronizationContextNoFlow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::SynchronizationContext,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::SynchronizationContext>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::SynchronizationContext = __cordl_object
-            .invoke("get_SynchronizationContextNoFlow", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SynchronizationContext,
+        > = __cordl_object.invoke("get_SynchronizationContextNoFlow", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_isFlowSuppressed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isFlowSuppressed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isNewCapture(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isNewCapture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_IllogicalCallContext(
         &mut self,
-        value: *mut crate::System::Runtime::Remoting::Messaging::IllogicalCallContext,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IllogicalCallContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IllogicalCallContext", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_LogicalCallContext(
         &mut self,
-        value: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_LogicalCallContext", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_SynchronizationContext(
         &mut self,
-        value: *mut crate::System::Threading::SynchronizationContext,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SynchronizationContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SynchronizationContext", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_SynchronizationContextNoFlow(
         &mut self,
-        value: *mut crate::System::Threading::SynchronizationContext,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SynchronizationContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SynchronizationContextNoFlow", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isFlowSuppressed(
         &mut self,
@@ -276,7 +304,7 @@ impl crate::System::Threading::ExecutionContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isFlowSuppressed", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isNewCapture(
         &mut self,
@@ -287,7 +315,7 @@ impl crate::System::Threading::ExecutionContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isNewCapture", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+ExecutionContext")]
@@ -353,24 +381,28 @@ for crate::System::Threading::ExecutionContext_Reader {
 impl crate::System::Threading::ExecutionContext_Reader {
     pub fn DangerousGetRawExecutionContext(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::ExecutionContext> {
-        let __cordl_ret: *mut crate::System::Threading::ExecutionContext = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "DangerousGetRawExecutionContext",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasSameLocalValues(
         &mut self,
-        other: *mut crate::System::Threading::ExecutionContext,
+        other: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "HasSameLocalValues",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsDefaultFTContext(
         &mut self,
@@ -381,18 +413,18 @@ impl crate::System::Threading::ExecutionContext_Reader {
             "IsDefaultFTContext",
             (ignoreSyncCtx),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        ec: *mut crate::System::Threading::ExecutionContext,
+        ec: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (ec),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsFlowSuppressed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -400,7 +432,7 @@ impl crate::System::Threading::ExecutionContext_Reader {
             "get_IsFlowSuppressed",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -408,7 +440,7 @@ impl crate::System::Threading::ExecutionContext_Reader {
             "get_IsNull",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LogicalCallContext(
         &mut self,
@@ -420,30 +452,34 @@ impl crate::System::Threading::ExecutionContext_Reader {
             "get_LogicalCallContext",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SynchronizationContext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::SynchronizationContext,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::SynchronizationContext>,
     > {
-        let __cordl_ret: *mut crate::System::Threading::SynchronizationContext = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SynchronizationContext,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_SynchronizationContext",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SynchronizationContextNoFlow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::SynchronizationContext,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::SynchronizationContext>,
     > {
-        let __cordl_ret: *mut crate::System::Threading::SynchronizationContext = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SynchronizationContext,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_SynchronizationContextNoFlow",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -29,131 +29,183 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInfo
 impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
     pub fn CalculateAgreedWrapKey(
         &mut self,
-        wrapAlg: *mut quest_hook::libil2cpp::Il2CppString,
-        senderPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        receiverPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        wrapAlg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        senderPublicKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        receiverPrivateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        > = __cordl_object
             .invoke(
                 "CalculateAgreedWrapKey",
                 (wrapAlg, senderPublicKey, receiverPrivateKey),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetContentStream(
         &mut self,
-        key: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsTypedStream>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream = __cordl_object
-            .invoke("GetContentStream", (key))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsTypedStream,
+        > = __cordl_object.invoke("GetContentStream", (key))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPublicKeyFromOriginatorID(
         &mut self,
-        origID: *mut crate::Org::BouncyCastle::Cms::OriginatorID,
+        origID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::OriginatorID>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter = __cordl_object
-            .invoke("GetPublicKeyFromOriginatorID", (origID))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        > = __cordl_object.invoke("GetPublicKeyFromOriginatorID", (origID))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPublicKeyFromOriginatorPublicKey(
         &mut self,
-        receiverPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        originatorPublicKey: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorPublicKey,
+        receiverPrivateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        originatorPublicKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorPublicKey,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        > = __cordl_object
             .invoke(
                 "GetPublicKeyFromOriginatorPublicKey",
                 (receiverPrivateKey, originatorPublicKey),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSenderPublicKey(
         &mut self,
-        receiverPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        originator: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey,
+        receiverPrivateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        originator: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        > = __cordl_object
             .invoke("GetSenderPublicKey", (receiverPrivateKey, originator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSessionKey(
         &mut self,
-        receiverPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        receiverPrivateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter = __cordl_object
-            .invoke("GetSessionKey", (receiverPrivateKey))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        > = __cordl_object.invoke("GetSessionKey", (receiverPrivateKey))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        info: *mut crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
-        rid: *mut crate::Org::BouncyCastle::Cms::RecipientID,
-        encryptedKey: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        secureReadable: *mut crate::Org::BouncyCastle::Cms::CmsSecureReadable,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
+        >,
+        rid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::RecipientID>,
+        encryptedKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        >,
+        secureReadable: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSecureReadable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, rid, encryptedKey, secureReadable))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UnwrapSessionKey(
         &mut self,
-        wrapAlg: *mut quest_hook::libil2cpp::Il2CppString,
-        agreedKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        wrapAlg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        agreedKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter = __cordl_object
-            .invoke("UnwrapSessionKey", (wrapAlg, agreedKey))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        > = __cordl_object.invoke("UnwrapSessionKey", (wrapAlg, agreedKey))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        info: *mut crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
-        rid: *mut crate::Org::BouncyCastle::Cms::RecipientID,
-        encryptedKey: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        secureReadable: *mut crate::Org::BouncyCastle::Cms::CmsSecureReadable,
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
+        >,
+        rid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::RecipientID>,
+        encryptedKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        >,
+        secureReadable: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSecureReadable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, rid, encryptedKey, secureReadable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+KeyAgreeRecipientInformation")]

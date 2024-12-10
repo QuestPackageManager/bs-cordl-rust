@@ -51,10 +51,10 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
     pub fn BindRingsAndSetTiming(
         &mut self,
         connectedPlayersCount: i32,
-        connectedRings: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::GameObject,
+        connectedRings: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
         >,
-        localRing: *mut crate::UnityEngine::GameObject,
+        localRing: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,7 +64,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
                 "BindRingsAndSetTiming",
                 (connectedPlayersCount, connectedRings, localRing),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindTimeline(
         &mut self,
@@ -74,22 +74,25 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindTimeline", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CalculatePlayerIndexSequence(
         &mut self,
-        allActivePlayer: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::IConnectedPlayer,
+        allActivePlayer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::IConnectedPlayer,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Queue_1<i32>,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Queue_1<i32>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Queue_1<i32> = __cordl_object
-            .invoke("CalculatePlayerIndexSequence", (allActivePlayer))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Queue_1<i32>,
+        > = __cordl_object.invoke("CalculatePlayerIndexSequence", (allActivePlayer))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Completed(
         &mut self,
@@ -99,21 +102,21 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Completed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetFullIntroAnimationTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("GetFullIntroAnimationTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnValidate(
         &mut self,
@@ -123,12 +126,12 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnValidate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PlayIntroAnimation(
         &mut self,
         maxDesiredIntroAnimationDuration: f32,
-        onCompleted: *mut crate::System::Action,
+        onCompleted: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -138,7 +141,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
                 "PlayIntroAnimation",
                 (maxDesiredIntroAnimationDuration, onCompleted),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetBeforeIntroValue(
         &mut self,
@@ -148,7 +151,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetBeforeIntroValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransitionToAfterIntroAnimationState(
         &mut self,
@@ -158,7 +161,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TransitionToAfterIntroAnimationState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -168,7 +171,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerIntroAnimationController")]

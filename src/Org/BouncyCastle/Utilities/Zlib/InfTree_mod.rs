@@ -43,12 +43,12 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
     pub const Z_VERSION_ERROR: i32 = -6i32;
     pub const fixed_bd: i32 = 5i32;
     pub const fixed_bl: i32 = 9i32;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -58,62 +58,62 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn huft_build(
         &mut self,
-        b: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         bindex: i32,
         n: i32,
         s: i32,
-        d: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        e: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        t: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        m: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        hp: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        hn: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        v: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        d: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        e: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        t: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        m: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        hp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        hn: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("huft_build", (b, bindex, n, s, d, e, t, m, hp, hn, v))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn inflate_trees_bits(
         &mut self,
-        c: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        bb: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        tb: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        hp: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        z: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        c: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        bb: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        tb: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        hp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        z: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::ZStream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("inflate_trees_bits", (c, bb, tb, hp, z))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn inflate_trees_dynamic(
         &mut self,
         nl: i32,
         nd: i32,
-        c: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        bl: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        bd: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        tl: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        td: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        hp: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        z: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        c: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        bl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        bd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        tl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        td: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        hp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        z: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::ZStream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("inflate_trees_dynamic", (nl, nd, c, bl, bd, tl, td, hp, z))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn initWorkArea(
         &mut self,
@@ -124,7 +124,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("initWorkArea", (vsize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+InfTree")]

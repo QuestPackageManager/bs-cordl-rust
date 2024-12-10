@@ -32,26 +32,32 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MissionConnectionsGenerator 
 impl crate::GlobalNamespace::MissionConnectionsGenerator {
     pub fn CreateConnectionBetweenNodes(
         &mut self,
-        parentMissionNode: *mut crate::GlobalNamespace::MissionNode,
-        childMissionNode: *mut crate::GlobalNamespace::MissionNode,
+        parentMissionNode: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionNode,
+        >,
+        childMissionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MissionNodeConnection,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNodeConnection>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MissionNodeConnection = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionNodeConnection,
+        > = __cordl_object
             .invoke(
                 "CreateConnectionBetweenNodes",
                 (parentMissionNode, childMissionNode),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateConnections(
         &mut self,
-        missionNode: *mut crate::GlobalNamespace::MissionNode,
-        visitedNodes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::MissionNode,
+        missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+        visitedNodes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::MissionNode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -59,7 +65,7 @@ impl crate::GlobalNamespace::MissionConnectionsGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateConnections", (missionNode, visitedNodes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateNodeConnections(
         &mut self,
@@ -69,14 +75,14 @@ impl crate::GlobalNamespace::MissionConnectionsGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateNodeConnections", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveOldConnections(
         &mut self,
@@ -86,7 +92,7 @@ impl crate::GlobalNamespace::MissionConnectionsGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveOldConnections", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -96,17 +102,20 @@ impl crate::GlobalNamespace::MissionConnectionsGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get__rootMissionNode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::MissionNode> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MissionNode = __cordl_object
-            .invoke("get__rootMissionNode", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionNode,
+        > = __cordl_object.invoke("get__rootMissionNode", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MissionConnectionsGenerator")]

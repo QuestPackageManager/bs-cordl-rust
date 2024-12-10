@@ -36,7 +36,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetBehaviour(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -48,7 +48,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
             "GetBehaviour",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -62,7 +62,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -77,6 +77,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
             ".ctor",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

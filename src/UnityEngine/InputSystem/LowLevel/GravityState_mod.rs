@@ -32,6 +32,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::GravityState {
             "get_format",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

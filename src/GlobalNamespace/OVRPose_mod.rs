@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 impl crate::GlobalNamespace::OVRPose {
     pub fn Equals(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -38,7 +38,7 @@ impl crate::GlobalNamespace::OVRPose {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Inverse(
         &mut self,
@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::OVRPose {
             "Inverse",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Rotate180AlongX(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::OVRPose {
             "Rotate180AlongX",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToPosef(
         &mut self,
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::OVRPose {
             "ToPosef",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToPosef_Legacy(
         &mut self,
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::OVRPose {
             "ToPosef_Legacy",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn flipZ(
         &mut self,
@@ -88,6 +88,6 @@ impl crate::GlobalNamespace::OVRPose {
             "flipZ",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

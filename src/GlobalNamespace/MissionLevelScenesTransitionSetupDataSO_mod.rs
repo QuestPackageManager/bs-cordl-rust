@@ -36,32 +36,52 @@ for crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
 impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     pub fn Finish(
         &mut self,
-        levelCompletionResults: *mut crate::GlobalNamespace::MissionCompletionResults,
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionCompletionResults,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finish", (levelCompletionResults))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init_ByRefMut_BeatmapLevel_Il2CppArray_ColorScheme_GameplayModifiers_PlayerSpecificSettings_EnvironmentsListModel_BeatmapLevelsModel1(
         &mut self,
-        missionId: *mut quest_hook::libil2cpp::Il2CppString,
+        missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MissionObjective,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        missionObjectives: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::MissionObjective,
+            >,
         >,
-        overrideColorScheme: *mut crate::GlobalNamespace::ColorScheme,
-        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
-        environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-        beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-        audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-        performancePreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
-        beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
-        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
+        overrideColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorScheme,
+        >,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
+        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsModel,
+        >,
+        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        performancePreset: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        >,
+        beatmapDataLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataLoader,
+        >,
+        backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -85,25 +105,43 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
                     backButtonText,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init_IBeatmapLevelData_ByRefMut_BeatmapLevel_Il2CppArray_ColorScheme_GameplayModifiers_PlayerSpecificSettings_EnvironmentsListModel0(
         &mut self,
-        missionId: *mut quest_hook::libil2cpp::Il2CppString,
-        beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MissionObjective,
+        missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        beatmapLevelData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLevelData,
         >,
-        overrideColorScheme: *mut crate::GlobalNamespace::ColorScheme,
-        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
-        environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-        audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-        performancePreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
-        beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
-        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        missionObjectives: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::MissionObjective,
+            >,
+        >,
+        overrideColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorScheme,
+        >,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
+        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        performancePreset: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        >,
+        beatmapDataLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataLoader,
+        >,
+        backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -127,14 +165,14 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
                     backButtonText,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -144,13 +182,15 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-            *mut crate::GlobalNamespace::MissionCompletionResults,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+                *mut crate::GlobalNamespace::MissionCompletionResults,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -158,23 +198,28 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_missionId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_missionId", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_missionId", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-            *mut crate::GlobalNamespace::MissionCompletionResults,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+                *mut crate::GlobalNamespace::MissionCompletionResults,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -182,18 +227,18 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_missionId(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_missionId", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MissionLevelScenesTransitionSetupDataSO")]

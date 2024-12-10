@@ -36,33 +36,36 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetUpdater(
         &mut self,
         phase: crate::UnityEngine::UIElements::VisualTreeUpdatePhase,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IVisualTreeUpdater,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IVisualTreeUpdater>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualTreeUpdater = __cordl_object
-            .invoke("GetUpdater", (phase))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IVisualTreeUpdater,
+        > = __cordl_object.invoke("GetUpdater", (phase))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        panel: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        panel: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVisualElementPanel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (panel))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnVersionChanged(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         versionChangeType: crate::UnityEngine::UIElements::VersionChangeType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -70,7 +73,7 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnVersionChanged", (ve, versionChangeType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDefaultUpdaters(
         &mut self,
@@ -80,7 +83,7 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDefaultUpdaters", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetUpdater<T>(
         &mut self,
@@ -95,7 +98,7 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetUpdater", (phase))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateVisualTreePhase(
         &mut self,
@@ -106,18 +109,20 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateVisualTreePhase", (phase))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        panel: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
+        panel: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVisualElementPanel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (panel))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater")]
@@ -161,12 +166,12 @@ for crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
 impl crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -176,45 +181,49 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item_VisualTreeUpdatePhase0(
         &mut self,
         phase: crate::UnityEngine::UIElements::VisualTreeUpdatePhase,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IVisualTreeUpdater,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IVisualTreeUpdater>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualTreeUpdater = __cordl_object
-            .invoke("get_Item", (phase))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IVisualTreeUpdater,
+        > = __cordl_object.invoke("get_Item", (phase))?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item_i32_1(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IVisualTreeUpdater,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IVisualTreeUpdater>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualTreeUpdater = __cordl_object
-            .invoke("get_Item", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IVisualTreeUpdater,
+        > = __cordl_object.invoke("get_Item", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
         phase: crate::UnityEngine::UIElements::VisualTreeUpdatePhase,
-        value: *mut crate::UnityEngine::UIElements::IVisualTreeUpdater,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IVisualTreeUpdater,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (phase, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]

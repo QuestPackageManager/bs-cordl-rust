@@ -43,7 +43,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::UndoRedoBuffer_1<T>
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -55,9 +55,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::UndoRedoBuffer_1<T>
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(capacity: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New(
+        capacity: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -66,7 +68,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::UndoRedoBuffer_1<T>
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (capacity))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Redo(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -77,7 +79,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::UndoRedoBuffer_1<T>
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Redo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Undo(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -88,7 +90,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::UndoRedoBuffer_1<T>
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Undo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -103,7 +105,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::UndoRedoBuffer_1<T>
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (capacity))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UndoRedoBuffer_1")]

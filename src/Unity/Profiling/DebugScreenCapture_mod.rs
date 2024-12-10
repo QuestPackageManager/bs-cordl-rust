@@ -36,7 +36,7 @@ impl crate::Unity::Profiling::DebugScreenCapture {
             "set_Height",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ImageFormat(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::Unity::Profiling::DebugScreenCapture {
             "set_ImageFormat",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_RawImageDataReference(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::Unity::Profiling::DebugScreenCapture {
             "set_RawImageDataReference",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Width(
         &mut self,
@@ -69,6 +69,6 @@ impl crate::Unity::Profiling::DebugScreenCapture {
             "set_Width",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

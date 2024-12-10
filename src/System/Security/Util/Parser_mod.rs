@@ -28,17 +28,19 @@ impl std::ops::DerefMut for crate::System::Security::Util::Parser {
 impl crate::System::Security::Util::Parser {
     pub fn DetermineFormat(
         &mut self,
-        stream: *mut crate::System::Security::Util::TokenizerStream,
+        stream: quest_hook::libil2cpp::Gc<crate::System::Security::Util::TokenizerStream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("DetermineFormat", (stream))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRequiredSizes(
         &mut self,
-        stream: *mut crate::System::Security::Util::TokenizerStream,
+        stream: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Util::TokenizerStream,
+        >,
         index: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -46,35 +48,38 @@ impl crate::System::Security::Util::Parser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetRequiredSizes", (stream, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTopElement(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Security::SecurityElement> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::SecurityElement>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::SecurityElement = __cordl_object
-            .invoke("GetTopElement", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::SecurityElement,
+        > = __cordl_object.invoke("GetTopElement", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppString1(
-        input: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (input))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Tokenizer0(
-        t: *mut crate::System::Security::Util::Tokenizer,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        t: quest_hook::libil2cpp::Gc<crate::System::Security::Util::Tokenizer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (t))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ParseContents(
         &mut self,
@@ -84,29 +89,29 @@ impl crate::System::Security::Util::Parser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ParseContents", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString1(
         &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppString,
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (input))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Tokenizer0(
         &mut self,
-        t: *mut crate::System::Security::Util::Tokenizer,
+        t: quest_hook::libil2cpp::Gc<crate::System::Security::Util::Tokenizer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+Util+Parser")]

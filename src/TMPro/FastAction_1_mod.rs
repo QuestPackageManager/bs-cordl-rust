@@ -37,7 +37,7 @@ for crate::TMPro::FastAction_1<A> {
 impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
     pub fn Add(
         &mut self,
-        rhs: *mut crate::System::Action_1<A>,
+        rhs: quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -48,7 +48,7 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (rhs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Call(
         &mut self,
@@ -63,9 +63,9 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Call", (a))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -74,11 +74,11 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Remove(
         &mut self,
-        rhs: *mut crate::System::Action_1<A>,
+        rhs: quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -89,7 +89,7 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (rhs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -101,7 +101,7 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TMPro+FastAction_1")]

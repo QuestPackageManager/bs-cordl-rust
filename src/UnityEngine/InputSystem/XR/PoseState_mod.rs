@@ -37,7 +37,7 @@ impl crate::UnityEngine::InputSystem::XR::PoseState {
             ".ctor",
             (isTracked, trackingState, position, rotation, velocity, angularVelocity),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_format(
         &mut self,
@@ -49,6 +49,6 @@ impl crate::UnityEngine::InputSystem::XR::PoseState {
             "get_format",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -27,8 +27,10 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP800
 impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
     pub fn Generate(
         &mut self,
-        output: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        additionalInput: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        additionalInput: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
         predictionResistant: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -36,18 +38,20 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("Generate", (output, additionalInput, predictionResistant))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reseed(
         &mut self,
-        additionalInput: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        additionalInput: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reseed", (additionalInput))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -59,7 +63,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_BlockSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+ISP80090Drbg")]

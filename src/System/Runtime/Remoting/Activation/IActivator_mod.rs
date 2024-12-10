@@ -27,16 +27,21 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Activation::IActiv
 impl crate::System::Runtime::Remoting::Activation::IActivator {
     pub fn Activate(
         &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage = __cordl_object
-            .invoke("Activate", (msg))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage,
+        > = __cordl_object.invoke("Activate", (msg))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -46,14 +51,17 @@ impl crate::System::Runtime::Remoting::Activation::IActivator {
     pub fn get_NextActivator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Activation::IActivator,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Activation::IActivator,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Activation::IActivator = __cordl_object
-            .invoke("get_NextActivator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Activation::IActivator,
+        > = __cordl_object.invoke("get_NextActivator", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+IActivator")]

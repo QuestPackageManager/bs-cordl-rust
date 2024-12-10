@@ -58,21 +58,21 @@ impl crate::UnityEngine::InputSystem::InputSettings {
     pub type UpdateMode = crate::UnityEngine::InputSystem::InputSettings_UpdateMode;
     pub fn IsFeatureEnabled(
         &mut self,
-        featureName: *mut quest_hook::libil2cpp::Il2CppString,
+        featureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsFeatureEnabled", (featureName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnChange(
         &mut self,
@@ -82,11 +82,11 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnChange", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetInternalFeatureFlag(
         &mut self,
-        featureName: *mut quest_hook::libil2cpp::Il2CppString,
+        featureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         enabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -94,7 +94,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetInternalFeatureFlag", (featureName, enabled))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -104,7 +104,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_backgroundBehavior(
         &mut self,
@@ -116,14 +116,14 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior = __cordl_object
             .invoke("get_backgroundBehavior", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_buttonReleaseThreshold(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_buttonReleaseThreshold", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_compensateForScreenOrientation(
         &mut self,
@@ -133,49 +133,49 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_compensateForScreenOrientation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_defaultButtonPressPoint(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_defaultButtonPressPoint", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_defaultDeadzoneMax(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_defaultDeadzoneMax", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_defaultDeadzoneMin(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_defaultDeadzoneMin", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_defaultHoldTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_defaultHoldTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_defaultSlowTapTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_defaultSlowTapTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_defaultTapTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_defaultTapTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_disableRedundantEventsMerging(
         &mut self,
@@ -185,7 +185,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_disableRedundantEventsMerging", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_editorInputBehaviorInPlayMode(
         &mut self,
@@ -197,21 +197,21 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode = __cordl_object
             .invoke("get_editorInputBehaviorInPlayMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_filterNoiseOnCurrent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_filterNoiseOnCurrent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxEventBytesPerUpdate(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_maxEventBytesPerUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxQueuedEventsPerUpdate(
         &mut self,
@@ -221,14 +221,14 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("get_maxQueuedEventsPerUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_multiTapDelayTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_multiTapDelayTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_shortcutKeysConsumeInput(
         &mut self,
@@ -238,7 +238,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_shortcutKeysConsumeInput", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_supportedDevices(
         &mut self,
@@ -253,14 +253,14 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_supportedDevices", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tapRadius(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_tapRadius", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_updateMode(
         &mut self,
@@ -272,7 +272,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::InputSettings_UpdateMode = __cordl_object
             .invoke("get_updateMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_backgroundBehavior(
         &mut self,
@@ -283,7 +283,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_backgroundBehavior", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_buttonReleaseThreshold(
         &mut self,
@@ -294,7 +294,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_buttonReleaseThreshold", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_compensateForScreenOrientation(
         &mut self,
@@ -305,7 +305,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_compensateForScreenOrientation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_defaultButtonPressPoint(
         &mut self,
@@ -316,7 +316,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_defaultButtonPressPoint", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_defaultDeadzoneMax(
         &mut self,
@@ -327,7 +327,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_defaultDeadzoneMax", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_defaultDeadzoneMin(
         &mut self,
@@ -338,7 +338,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_defaultDeadzoneMin", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_defaultHoldTime(
         &mut self,
@@ -349,7 +349,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_defaultHoldTime", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_defaultSlowTapTime(
         &mut self,
@@ -360,7 +360,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_defaultSlowTapTime", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_defaultTapTime(
         &mut self,
@@ -371,7 +371,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_defaultTapTime", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_disableRedundantEventsMerging(
         &mut self,
@@ -382,7 +382,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_disableRedundantEventsMerging", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_editorInputBehaviorInPlayMode(
         &mut self,
@@ -393,7 +393,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_editorInputBehaviorInPlayMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_filterNoiseOnCurrent(
         &mut self,
@@ -404,7 +404,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_filterNoiseOnCurrent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maxEventBytesPerUpdate(
         &mut self,
@@ -415,7 +415,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_maxEventBytesPerUpdate", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maxQueuedEventsPerUpdate(
         &mut self,
@@ -426,7 +426,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_maxQueuedEventsPerUpdate", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_multiTapDelayTime(
         &mut self,
@@ -437,7 +437,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_multiTapDelayTime", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_shortcutKeysConsumeInput(
         &mut self,
@@ -448,7 +448,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_shortcutKeysConsumeInput", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_supportedDevices(
         &mut self,
@@ -461,7 +461,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_supportedDevices", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tapRadius(
         &mut self,
@@ -472,7 +472,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tapRadius", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_updateMode(
         &mut self,
@@ -483,7 +483,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_updateMode", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputSettings")]

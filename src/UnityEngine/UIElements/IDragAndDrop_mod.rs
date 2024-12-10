@@ -32,7 +32,7 @@ impl crate::UnityEngine::UIElements::IDragAndDrop {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AcceptDrag", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DragCleanup(
         &mut self,
@@ -42,7 +42,7 @@ impl crate::UnityEngine::UIElements::IDragAndDrop {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DragCleanup", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetVisualMode(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::UIElements::IDragAndDrop {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetVisualMode", (visualMode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartDrag(
         &mut self,
@@ -65,7 +65,7 @@ impl crate::UnityEngine::UIElements::IDragAndDrop {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartDrag", (args, pointerPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateDrag(
         &mut self,
@@ -76,7 +76,7 @@ impl crate::UnityEngine::UIElements::IDragAndDrop {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateDrag", (pointerPosition))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -86,14 +86,15 @@ impl crate::UnityEngine::UIElements::IDragAndDrop {
     pub fn get_data(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::DragAndDropData,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DragAndDropData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::DragAndDropData = __cordl_object
-            .invoke("get_data", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DragAndDropData,
+        > = __cordl_object.invoke("get_data", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IDragAndDrop")]

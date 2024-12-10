@@ -50,14 +50,16 @@ impl crate::GlobalNamespace::LightSwitchEventEffect {
     pub const kHighlightDuration: f32 = 0.6f32;
     pub fn CheckNextEventForFade(
         &mut self,
-        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
+        basicBeatmapEventData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BasicBeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckNextEventForFade", (basicBeatmapEventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHighlightColor(
         &mut self,
@@ -69,7 +71,7 @@ impl crate::GlobalNamespace::LightSwitchEventEffect {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("GetHighlightColor", (beatmapEventValue, colorBoost))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNormalColor(
         &mut self,
@@ -81,36 +83,40 @@ impl crate::GlobalNamespace::LightSwitchEventEffect {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("GetNormalColor", (beatmapEventValue, colorBoost))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleColorBoostBeatmapEvent(
         &mut self,
-        eventData: *mut crate::GlobalNamespace::ColorBoostBeatmapEventData,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorBoostBeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleColorBoostBeatmapEvent", (eventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleColorChangeBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
+        basicBeatmapEventData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BasicBeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleColorChangeBeatmapEvent", (basicBeatmapEventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -120,7 +126,7 @@ impl crate::GlobalNamespace::LightSwitchEventEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetColor(
         &mut self,
@@ -131,7 +137,7 @@ impl crate::GlobalNamespace::LightSwitchEventEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetColor", (color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetupTweenAndSaveOtherColors(
         &mut self,
@@ -148,7 +154,7 @@ impl crate::GlobalNamespace::LightSwitchEventEffect {
                 "SetupTweenAndSaveOtherColors",
                 (fromColor, toColor, alternativeFromColor, alternativeToColor),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -158,7 +164,7 @@ impl crate::GlobalNamespace::LightSwitchEventEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -168,7 +174,7 @@ impl crate::GlobalNamespace::LightSwitchEventEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_eventType(
         &mut self,
@@ -178,14 +184,14 @@ impl crate::GlobalNamespace::LightSwitchEventEffect {
         );
         let __cordl_ret: crate::GlobalNamespace::BasicBeatmapEventType = __cordl_object
             .invoke("get_eventType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lightsId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_lightsId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LightSwitchEventEffect")]

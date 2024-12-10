@@ -31,24 +31,28 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AssetEventData {
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetEventData")]
 impl crate::HoudiniEngineUnity::HEU_AssetEventData {
     pub fn New(
-        asset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+        asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         successful: bool,
-        outputObjects: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::GameObject,
+        outputObjects: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::GameObject,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (asset, successful, outputObjects))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        asset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+        asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         successful: bool,
-        outputObjects: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::GameObject,
+        outputObjects: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::GameObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -56,7 +60,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (asset, successful, outputObjects))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetEventData")]

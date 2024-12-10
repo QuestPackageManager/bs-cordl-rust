@@ -142,18 +142,20 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DeregisterEventListener(
         &mut self,
-        listener: *mut crate::GlobalNamespace::OVRManager_EventListener,
+        listener: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRManager_EventListener,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DeregisterEventListener", (listener))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FixedUpdate(
         &mut self,
@@ -163,7 +165,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FixedUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitOVRManager(
         &mut self,
@@ -173,7 +175,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitOVRManager", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitPermissionRequest(
         &mut self,
@@ -183,7 +185,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitPermissionRequest", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
@@ -193,7 +195,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LateUpdate(
         &mut self,
@@ -203,14 +205,14 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LateUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_capturingCameraDevice(
         &mut self,
@@ -223,7 +225,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_capturingCameraDevice",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_chromaKeyColor(
         &mut self,
@@ -233,7 +235,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_chromaKeyColor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_chromaKeySimilarity(
         &mut self,
@@ -243,7 +245,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_chromaKeySimilarity", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_chromaKeySmoothRange(
         &mut self,
@@ -253,7 +255,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_chromaKeySmoothRange", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_chromaKeySpillRange(
         &mut self,
@@ -263,7 +265,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_chromaKeySpillRange", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_compositionMethod(
         &mut self,
@@ -275,7 +277,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_CompositionMethod = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_compositionMethod", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_depthQuality(
         &mut self,
@@ -285,7 +287,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_DepthQuality = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_depthQuality", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_dynamicCullingMask(
         &mut self,
@@ -295,7 +297,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_dynamicCullingMask", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_dynamicLightingDepthVariationClampingValue(
         &mut self,
@@ -308,7 +310,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_dynamicLightingDepthVariationClampingValue",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_dynamicLightingSmoothFactor(
         &mut self,
@@ -321,7 +323,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_dynamicLightingSmoothFactor",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_enableMixedReality(
         &mut self,
@@ -331,7 +333,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_enableMixedReality", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_externalCompositionBackdropColorQuest(
         &mut self,
@@ -344,7 +346,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_externalCompositionBackdropColorQuest",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_externalCompositionBackdropColorRift(
         &mut self,
@@ -357,7 +359,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_externalCompositionBackdropColorRift",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_extraHiddenLayers(
         &mut self,
@@ -367,7 +369,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_extraHiddenLayers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_extraVisibleLayers(
         &mut self,
@@ -377,7 +379,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_extraVisibleLayers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_flipCameraFrameHorizontally(
         &mut self,
@@ -390,7 +392,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_flipCameraFrameHorizontally",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_flipCameraFrameVertically(
         &mut self,
@@ -403,7 +405,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_flipCameraFrameVertically",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_handPoseStateLatency(
         &mut self,
@@ -413,22 +415,26 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_handPoseStateLatency", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_instantiateMixedRealityCameraGameObject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+        > = __cordl_object
             .invoke(
                 "OVRMixedRealityCaptureConfiguration.get_instantiateMixedRealityCameraGameObject",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_mrcActivationMode(
         &mut self,
@@ -440,7 +446,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_MrcActivationMode = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_mrcActivationMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_sandwichCompositionBufferedFrames(
         &mut self,
@@ -453,7 +459,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_sandwichCompositionBufferedFrames",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_sandwichCompositionRenderLatency(
         &mut self,
@@ -466,7 +472,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_sandwichCompositionRenderLatency",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_useDynamicLighting(
         &mut self,
@@ -476,7 +482,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.get_useDynamicLighting", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenApplyDepthCulling(
         &mut self,
@@ -489,7 +495,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenApplyDepthCulling",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenBottomY(
         &mut self,
@@ -502,7 +508,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenBottomY",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenDepthTolerance(
         &mut self,
@@ -515,7 +521,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenDepthTolerance",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenTopY(
         &mut self,
@@ -528,7 +534,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenTopY",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenType(
         &mut self,
@@ -543,7 +549,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenType",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_capturingCameraDevice(
         &mut self,
@@ -557,7 +563,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_capturingCameraDevice",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_chromaKeyColor(
         &mut self,
@@ -568,7 +574,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.set_chromaKeyColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_chromaKeySimilarity(
         &mut self,
@@ -582,7 +588,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_chromaKeySimilarity",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_chromaKeySmoothRange(
         &mut self,
@@ -596,7 +602,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_chromaKeySmoothRange",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_chromaKeySpillRange(
         &mut self,
@@ -610,7 +616,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_chromaKeySpillRange",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_compositionMethod(
         &mut self,
@@ -624,7 +630,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_compositionMethod",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_depthQuality(
         &mut self,
@@ -635,7 +641,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OVRMixedRealityCaptureConfiguration.set_depthQuality", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_dynamicCullingMask(
         &mut self,
@@ -649,7 +655,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_dynamicCullingMask",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_dynamicLightingDepthVariationClampingValue(
         &mut self,
@@ -663,7 +669,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_dynamicLightingDepthVariationClampingValue",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_dynamicLightingSmoothFactor(
         &mut self,
@@ -677,7 +683,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_dynamicLightingSmoothFactor",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_enableMixedReality(
         &mut self,
@@ -691,7 +697,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_enableMixedReality",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_externalCompositionBackdropColorQuest(
         &mut self,
@@ -705,7 +711,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_externalCompositionBackdropColorQuest",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_externalCompositionBackdropColorRift(
         &mut self,
@@ -719,7 +725,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_externalCompositionBackdropColorRift",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_extraHiddenLayers(
         &mut self,
@@ -733,7 +739,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_extraHiddenLayers",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_extraVisibleLayers(
         &mut self,
@@ -747,7 +753,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_extraVisibleLayers",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_flipCameraFrameHorizontally(
         &mut self,
@@ -761,7 +767,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_flipCameraFrameHorizontally",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_flipCameraFrameVertically(
         &mut self,
@@ -775,7 +781,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_flipCameraFrameVertically",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_handPoseStateLatency(
         &mut self,
@@ -789,11 +795,13 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_handPoseStateLatency",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_instantiateMixedRealityCameraGameObject(
         &mut self,
-        value: *mut crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+        value: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -803,7 +811,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_instantiateMixedRealityCameraGameObject",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_mrcActivationMode(
         &mut self,
@@ -817,7 +825,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_mrcActivationMode",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_sandwichCompositionBufferedFrames(
         &mut self,
@@ -831,7 +839,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_sandwichCompositionBufferedFrames",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_sandwichCompositionRenderLatency(
         &mut self,
@@ -845,7 +853,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_sandwichCompositionRenderLatency",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_useDynamicLighting(
         &mut self,
@@ -859,7 +867,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_useDynamicLighting",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenApplyDepthCulling(
         &mut self,
@@ -873,7 +881,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenApplyDepthCulling",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenBottomY(
         &mut self,
@@ -887,7 +895,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenBottomY",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenDepthTolerance(
         &mut self,
@@ -901,7 +909,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenDepthTolerance",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenTopY(
         &mut self,
@@ -915,7 +923,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenTopY",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenType(
         &mut self,
@@ -929,7 +937,7 @@ impl crate::GlobalNamespace::OVRManager {
                 "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenType",
                 (value),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnApplicationFocus(
         &mut self,
@@ -940,7 +948,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnApplicationFocus", (focus))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnApplicationPause(
         &mut self,
@@ -951,7 +959,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnApplicationPause", (pause))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnApplicationQuit(
         &mut self,
@@ -961,7 +969,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnApplicationQuit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -971,7 +979,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -981,18 +989,20 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RegisterEventListener(
         &mut self,
-        listener: *mut crate::GlobalNamespace::OVRManager_EventListener,
+        listener: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRManager_EventListener,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterEventListener", (listener))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReturnToLauncher(
         &mut self,
@@ -1002,7 +1012,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReturnToLauncher", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetCurrentXRDevice(
         &mut self,
@@ -1012,7 +1022,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCurrentXRDevice", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -1022,7 +1032,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateHMDEvents(
         &mut self,
@@ -1032,7 +1042,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateHMDEvents", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1042,7 +1052,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsSimultaneousHandsAndControllersSupported(
         &mut self,
@@ -1052,14 +1062,14 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_IsSimultaneousHandsAndControllersSupported", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_chromatic(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_chromatic", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_colorGamut(
         &mut self,
@@ -1069,7 +1079,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_ColorSpace = __cordl_object
             .invoke("get_colorGamut", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_headPoseRelativeOffsetRotation(
         &mut self,
@@ -1079,7 +1089,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_headPoseRelativeOffsetRotation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_headPoseRelativeOffsetTranslation(
         &mut self,
@@ -1089,28 +1099,28 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_headPoseRelativeOffsetTranslation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isSupportedPlatform(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isSupportedPlatform", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isUserPresent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isUserPresent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_monoscopic(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_monoscopic", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_nativeColorGamut(
         &mut self,
@@ -1120,7 +1130,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_ColorSpace = __cordl_object
             .invoke("get_nativeColorGamut", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sharpenType(
         &mut self,
@@ -1132,7 +1142,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_LayerSharpenType = __cordl_object
             .invoke("get_sharpenType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_trackingOriginType(
         &mut self,
@@ -1144,14 +1154,14 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_TrackingOrigin = __cordl_object
             .invoke("get_trackingOriginType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_vsyncCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_vsyncCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xrApi(
         &mut self,
@@ -1161,21 +1171,21 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_XrApi = __cordl_object
             .invoke("get_xrApi", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xrInstance(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u64 = __cordl_object.invoke("get_xrInstance", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_xrSession(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u64 = __cordl_object.invoke("get_xrSession", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_chromatic(
         &mut self,
@@ -1186,7 +1196,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_chromatic", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_colorGamut(
         &mut self,
@@ -1197,7 +1207,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_colorGamut", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_headPoseRelativeOffsetRotation(
         &mut self,
@@ -1208,7 +1218,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_headPoseRelativeOffsetRotation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_headPoseRelativeOffsetTranslation(
         &mut self,
@@ -1219,7 +1229,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_headPoseRelativeOffsetTranslation", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isSupportedPlatform(
         &mut self,
@@ -1230,7 +1240,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isSupportedPlatform", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isUserPresent(
         &mut self,
@@ -1241,7 +1251,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isUserPresent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_monoscopic(
         &mut self,
@@ -1252,7 +1262,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_monoscopic", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sharpenType(
         &mut self,
@@ -1263,7 +1273,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sharpenType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_trackingOriginType(
         &mut self,
@@ -1274,7 +1284,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_trackingOriginType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_vsyncCount(
         &mut self,
@@ -1285,7 +1295,7 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_vsyncCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRManager")]
@@ -1403,7 +1413,7 @@ impl crate::GlobalNamespace::OVRManager_EventListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEvent", (eventData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -1497,57 +1507,63 @@ for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
 impl crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
     pub fn BeginInvoke(
         &mut self,
-        mainCameraGameObject: *mut crate::UnityEngine::GameObject,
+        mainCameraGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         cameraType: crate::GlobalNamespace::OVRManager_MrcCameraType,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
                 (mainCameraGameObject, cameraType, callback, object),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
-        mainCameraGameObject: *mut crate::UnityEngine::GameObject,
+        mainCameraGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         cameraType: crate::GlobalNamespace::OVRManager_MrcCameraType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke("Invoke", (mainCameraGameObject, cameraType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1555,7 +1571,7 @@ impl crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
@@ -1627,7 +1643,7 @@ impl crate::GlobalNamespace::OVRManager_PassthroughCapabilities {
         supportsPassthrough: bool,
         supportsColorPassthrough: bool,
         maxColorLutResolution: u32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -1635,7 +1651,7 @@ impl crate::GlobalNamespace::OVRManager_PassthroughCapabilities {
                 ".ctor",
                 (supportsPassthrough, supportsColorPassthrough, maxColorLutResolution),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1651,14 +1667,14 @@ impl crate::GlobalNamespace::OVRManager_PassthroughCapabilities {
                 ".ctor",
                 (supportsPassthrough, supportsColorPassthrough, maxColorLutResolution),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MaxColorLutResolution(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_MaxColorLutResolution", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SupportsColorPassthrough(
         &mut self,
@@ -1668,14 +1684,14 @@ impl crate::GlobalNamespace::OVRManager_PassthroughCapabilities {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_SupportsColorPassthrough", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SupportsPassthrough(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_SupportsPassthrough", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRManager+PassthroughCapabilities")]

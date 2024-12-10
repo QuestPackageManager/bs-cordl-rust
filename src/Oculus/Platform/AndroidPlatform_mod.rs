@@ -26,36 +26,40 @@ impl std::ops::DerefMut for crate::Oculus::Platform::AndroidPlatform {
 impl crate::Oculus::Platform::AndroidPlatform {
     pub fn AsyncInitialize(
         &mut self,
-        appId: *mut quest_hook::libil2cpp::Il2CppString,
+        appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Request_1<
-            *mut crate::Oculus::Platform::Models::PlatformInitialize,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Request_1<
-            *mut crate::Oculus::Platform::Models::PlatformInitialize,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            >,
         > = __cordl_object.invoke("AsyncInitialize", (appId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
-        appId: *mut quest_hook::libil2cpp::Il2CppString,
+        appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Initialize", (appId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -65,7 +69,7 @@ impl crate::Oculus::Platform::AndroidPlatform {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Oculus+Platform+AndroidPlatform")]

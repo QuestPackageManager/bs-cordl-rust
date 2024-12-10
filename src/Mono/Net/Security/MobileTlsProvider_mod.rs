@@ -26,36 +26,44 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::MobileTlsProvider {
 impl crate::Mono::Net::Security::MobileTlsProvider {
     pub fn CreateSslStream(
         &mut self,
-        sslStream: *mut crate::System::Net::Security::SslStream,
-        innerStream: *mut crate::System::IO::Stream,
+        sslStream: quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,
-        settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
+        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileAuthenticatedStream>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Mono::Net::Security::MobileAuthenticatedStream = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Net::Security::MobileAuthenticatedStream,
+        > = __cordl_object
             .invoke(
                 "CreateSslStream",
                 (sslStream, innerStream, leaveInnerStreamOpen, settings),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ValidateCertificate(
         &mut self,
-        validator: *mut crate::Mono::Net::Security::ChainValidationHelper,
-        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
+        validator: quest_hook::libil2cpp::Gc<
+            crate::Mono::Net::Security::ChainValidationHelper,
+        >,
+        targetHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         serverMode: bool,
-        certificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        certificates: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        >,
         wantsChain: bool,
         chain: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
@@ -82,7 +90,7 @@ impl crate::Mono::Net::Security::MobileTlsProvider {
                     status11,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -92,7 +100,7 @@ impl crate::Mono::Net::Security::MobileTlsProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Net+Security+MobileTlsProvider")]

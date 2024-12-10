@@ -29,21 +29,21 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Lifetime::LeaseMan
 impl crate::System::Runtime::Remoting::Lifetime::LeaseManager {
     pub fn ManageLeases(
         &mut self,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ManageLeases", (state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetPollTime(
         &mut self,
@@ -54,7 +54,7 @@ impl crate::System::Runtime::Remoting::Lifetime::LeaseManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPollTime", (timeSpan))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartManager(
         &mut self,
@@ -64,7 +64,7 @@ impl crate::System::Runtime::Remoting::Lifetime::LeaseManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartManager", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StopManager(
         &mut self,
@@ -74,18 +74,20 @@ impl crate::System::Runtime::Remoting::Lifetime::LeaseManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StopManager", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TrackLifetime(
         &mut self,
-        identity: *mut crate::System::Runtime::Remoting::ServerIdentity,
+        identity: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::ServerIdentity,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TrackLifetime", (identity))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -95,7 +97,7 @@ impl crate::System::Runtime::Remoting::Lifetime::LeaseManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+LeaseManager")]

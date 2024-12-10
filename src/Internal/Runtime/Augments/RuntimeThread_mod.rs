@@ -26,35 +26,35 @@ impl std::ops::DerefMut for crate::Internal::Runtime::Augments::RuntimeThread {
 #[cfg(feature = "Internal+Runtime+Augments+RuntimeThread")]
 impl crate::Internal::Runtime::Augments::RuntimeThread {
     pub fn New(
-        t: *mut crate::System::Threading::Thread,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        t: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (t))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Start(
         &mut self,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", (state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        t: *mut crate::System::Threading::Thread,
+        t: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_IsBackground(
         &mut self,
@@ -65,7 +65,7 @@ impl crate::Internal::Runtime::Augments::RuntimeThread {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IsBackground", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Internal+Runtime+Augments+RuntimeThread")]

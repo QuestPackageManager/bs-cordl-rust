@@ -282,12 +282,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CipherSuite {
     pub const TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA: i32 = 49178i32;
     pub const TLS_SRP_SHA_WITH_AES_128_CBC_SHA: i32 = 49181i32;
     pub const TLS_SRP_SHA_WITH_AES_256_CBC_SHA: i32 = 49184i32;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -297,7 +297,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CipherSuite {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CipherSuite")]

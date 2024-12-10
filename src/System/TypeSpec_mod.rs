@@ -40,82 +40,91 @@ impl crate::System::TypeSpec {
     pub type DisplayNameFormat = crate::System::TypeSpec_DisplayNameFormat;
     pub fn AddModifier(
         &mut self,
-        md: *mut crate::System::ModifierSpec,
+        md: quest_hook::libil2cpp::Gc<crate::System::ModifierSpec>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddModifier", (md))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddName(
         &mut self,
-        type_name: *mut quest_hook::libil2cpp::Il2CppString,
+        type_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddName", (type_name))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDisplayFullName(
         &mut self,
         flags: crate::System::TypeSpec_DisplayNameFormat,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetDisplayFullName", (flags))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetDisplayFullName", (flags))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetModifierString(
         &mut self,
-        sb: *mut crate::System::Text::StringBuilder,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Text::StringBuilder> {
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Text::StringBuilder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
             .invoke("GetModifierString", (sb))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Resolve(
         &mut self,
-        assemblyResolver: *mut crate::System::Func_2<
-            *mut crate::System::Reflection::AssemblyName,
-            *mut crate::System::Reflection::Assembly,
+        assemblyResolver: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut crate::System::Reflection::AssemblyName,
+                *mut crate::System::Reflection::Assembly,
+            >,
         >,
-        typeResolver: *mut crate::System::Func_4<
-            *mut crate::System::Reflection::Assembly,
-            *mut quest_hook::libil2cpp::Il2CppString,
-            bool,
-            *mut crate::System::Type,
+        typeResolver: quest_hook::libil2cpp::Gc<
+            crate::System::Func_4<
+                *mut crate::System::Reflection::Assembly,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                bool,
+                *mut crate::System::Type,
+            >,
         >,
         throwOnError: bool,
         ignoreCase: bool,
         stackMark: quest_hook::libil2cpp::ByRefMut<
             crate::System::Threading::StackCrawlMark,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke(
                 "Resolve",
                 (assemblyResolver, typeResolver, throwOnError, ignoreCase, stackMark),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -125,24 +134,27 @@ impl crate::System::TypeSpec {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DisplayFullName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_DisplayFullName", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_DisplayFullName", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasModifiers(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasModifiers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+TypeSpec")]

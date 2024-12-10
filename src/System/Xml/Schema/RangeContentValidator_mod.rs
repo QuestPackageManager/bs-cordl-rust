@@ -35,63 +35,74 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::RangeContentValidator {
 impl crate::System::Xml::Schema::RangeContentValidator {
     pub fn CompleteValidation(
         &mut self,
-        context: *mut crate::System::Xml::Schema::ValidationState,
+        context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CompleteValidation", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExpectedElements(
         &mut self,
-        context: *mut crate::System::Xml::Schema::ValidationState,
+        context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
         isRequiredOnly: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
-            .invoke("ExpectedElements", (context, isRequiredOnly))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ArrayList,
+        > = __cordl_object.invoke("ExpectedElements", (context, isRequiredOnly))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ExpectedParticles(
         &mut self,
-        context: *mut crate::System::Xml::Schema::ValidationState,
+        context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
         isRequiredOnly: bool,
-        schemaSet: *mut crate::System::Xml::Schema::XmlSchemaSet,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ArrayList = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ArrayList,
+        > = __cordl_object
             .invoke("ExpectedParticles", (context, isRequiredOnly, schemaSet))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitValidation(
         &mut self,
-        context: *mut crate::System::Xml::Schema::ValidationState,
+        context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitValidation", (context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        firstpos: *mut crate::System::Xml::Schema::BitSet,
-        followpos: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::BitSet,
+        firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+        followpos: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
         >,
-        symbols: *mut crate::System::Xml::Schema::SymbolsDictionary,
-        positions: *mut crate::System::Xml::Schema::Positions,
+        symbols: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::SymbolsDictionary,
+        >,
+        positions: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Positions>,
         endMarkerPos: i32,
         contentType: crate::System::Xml::Schema::XmlSchemaContentType,
         isEmptiable: bool,
-        positionsWithRangeTerminals: *mut crate::System::Xml::Schema::BitSet,
+        positionsWithRangeTerminals: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::BitSet,
+        >,
         minmaxNodesCount: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -109,33 +120,40 @@ impl crate::System::Xml::Schema::RangeContentValidator {
                     minmaxNodesCount,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ValidateElement(
         &mut self,
-        name: *mut crate::System::Xml::XmlQualifiedName,
-        context: *mut crate::System::Xml::Schema::ValidationState,
+        name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+        context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
         errorCode: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("ValidateElement", (name, context, errorCode))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ValidateElement", (name, context, errorCode))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        firstpos: *mut crate::System::Xml::Schema::BitSet,
-        followpos: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::BitSet,
+        firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+        followpos: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
         >,
-        symbols: *mut crate::System::Xml::Schema::SymbolsDictionary,
-        positions: *mut crate::System::Xml::Schema::Positions,
+        symbols: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::SymbolsDictionary,
+        >,
+        positions: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Positions>,
         endMarkerPos: i32,
         contentType: crate::System::Xml::Schema::XmlSchemaContentType,
         isEmptiable: bool,
-        positionsWithRangeTerminals: *mut crate::System::Xml::Schema::BitSet,
+        positionsWithRangeTerminals: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::BitSet,
+        >,
         minmaxNodesCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -156,7 +174,7 @@ impl crate::System::Xml::Schema::RangeContentValidator {
                     minmaxNodesCount,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+RangeContentValidator")]

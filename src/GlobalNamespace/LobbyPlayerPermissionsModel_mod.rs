@@ -40,7 +40,7 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Activate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Deactivate(
         &mut self,
@@ -50,12 +50,14 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Deactivate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMenuRpcManagerSetPlayersPermissionConfiguration(
         &mut self,
-        userId: *mut quest_hook::libil2cpp::Il2CppString,
-        playersLobbyPermissionConfiguration: *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playersLobbyPermissionConfiguration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -65,14 +67,14 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
                 "HandleMenuRpcManagerSetPlayersPermissionConfiguration",
                 (userId, playersLobbyPermissionConfiguration),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetPlayerPermissions(
         &mut self,
@@ -96,7 +98,7 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
                     hasInvitePermission,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -106,32 +108,32 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_permissionsChangedEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_permissionsChangedEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasInvitePermission(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_hasInvitePermission", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasKickVotePermission(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_hasKickVotePermission", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasRecommendBeatmapPermission(
         &mut self,
@@ -141,7 +143,7 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_hasRecommendBeatmapPermission", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasRecommendModifiersPermission(
         &mut self,
@@ -151,25 +153,25 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_hasRecommendModifiersPermission", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isPartyOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isPartyOwner", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_permissionsChangedEvent(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_permissionsChangedEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_hasInvitePermission(
         &mut self,
@@ -180,7 +182,7 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_hasInvitePermission", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_hasKickVotePermission(
         &mut self,
@@ -191,7 +193,7 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_hasKickVotePermission", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_hasRecommendBeatmapPermission(
         &mut self,
@@ -202,7 +204,7 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_hasRecommendBeatmapPermission", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_hasRecommendModifiersPermission(
         &mut self,
@@ -213,7 +215,7 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_hasRecommendModifiersPermission", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isPartyOwner(
         &mut self,
@@ -224,7 +226,7 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isPartyOwner", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LobbyPlayerPermissionsModel")]

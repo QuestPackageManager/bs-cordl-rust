@@ -26,31 +26,41 @@ impl std::ops::DerefMut for crate::System::ComponentModel::ITypedList {
 impl crate::System::ComponentModel::ITypedList {
     pub fn GetItemProperties(
         &mut self,
-        listAccessors: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::ComponentModel::PropertyDescriptor,
+        listAccessors: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::ComponentModel::PropertyDescriptor,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::ComponentModel::PropertyDescriptorCollection,
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::ComponentModel::PropertyDescriptorCollection = __cordl_object
-            .invoke("GetItemProperties", (listAccessors))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        > = __cordl_object.invoke("GetItemProperties", (listAccessors))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetListName(
         &mut self,
-        listAccessors: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::ComponentModel::PropertyDescriptor,
+        listAccessors: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::ComponentModel::PropertyDescriptor,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetListName", (listAccessors))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetListName", (listAccessors))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

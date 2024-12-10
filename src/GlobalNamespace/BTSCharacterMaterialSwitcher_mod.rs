@@ -31,12 +31,12 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
     pub type MaterialPairs = crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs;
     #[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
     pub type RendererMaterialsPairs = crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SwapMaterials(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SwapMaterials", (alternative))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher")]
@@ -102,12 +102,12 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
 impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
@@ -164,49 +164,55 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs 
 #[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
     pub fn New(
-        renderer: *mut crate::UnityEngine::Renderer,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (renderer))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        renderer: *mut crate::UnityEngine::Renderer,
+        renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (renderer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_materialPairs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+            >,
         > = __cordl_object.invoke("get_materialPairs", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_renderer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Renderer> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Renderer = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer> = __cordl_object
             .invoke("get_renderer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]

@@ -55,7 +55,9 @@ impl crate::Zenject::SubContainerBinder {
     pub fn ByInstaller_0<TInstaller>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     >
     where
         TInstaller: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -64,95 +66,120 @@ impl crate::Zenject::SubContainerBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByInstaller", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByInstaller", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByInstaller_Type1(
         &mut self,
-        installerType: *mut crate::System::Type,
+        installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByInstaller", (installerType))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByInstaller", (installerType))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByInstance(
         &mut self,
-        subContainer: *mut crate::Zenject::DiContainer,
+        subContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByInstance", (subContainer))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByInstance", (subContainer))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByInstanceGetter(
         &mut self,
-        subContainerGetter: *mut crate::System::Func_2<
-            *mut crate::Zenject::InjectContext,
-            *mut crate::Zenject::DiContainer,
+        subContainerGetter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut crate::Zenject::InjectContext,
+                *mut crate::Zenject::DiContainer,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByInstanceGetter", (subContainerGetter))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByInstanceGetter", (subContainerGetter))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByMethod(
         &mut self,
-        installerMethod: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        installerMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByMethod", (installerMethod))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByMethod", (installerMethod))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewContextPrefab(
         &mut self,
-        prefab: *mut crate::UnityEngine::Object,
+        prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByNewContextPrefab", (prefab))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByNewContextPrefab", (prefab))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewContextPrefabResource(
         &mut self,
-        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
+        resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByNewContextPrefabResource", (resourcePath))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByNewContextPrefabResource", (resourcePath))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewGameObjectInstaller_0<TInstaller>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     >
     where
         TInstaller: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -161,54 +188,68 @@ impl crate::Zenject::SubContainerBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByNewGameObjectInstaller", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByNewGameObjectInstaller", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewGameObjectInstaller_Type1(
         &mut self,
-        installerType: *mut crate::System::Type,
+        installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByNewGameObjectInstaller", (installerType))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByNewGameObjectInstaller", (installerType))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewGameObjectMethod(
         &mut self,
-        installerMethod: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        installerMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByNewGameObjectMethod", (installerMethod))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByNewGameObjectMethod", (installerMethod))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefab(
         &mut self,
-        prefab: *mut crate::UnityEngine::Object,
+        prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByNewPrefab", (prefab))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByNewPrefab", (prefab))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefabInstaller_Object0<TInstaller>(
         &mut self,
-        prefab: *mut crate::UnityEngine::Object,
+        prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     >
     where
         TInstaller: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -217,56 +258,70 @@ impl crate::Zenject::SubContainerBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByNewPrefabInstaller", (prefab))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByNewPrefabInstaller", (prefab))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefabInstaller_Type1(
         &mut self,
-        prefab: *mut crate::UnityEngine::Object,
-        installerType: *mut crate::System::Type,
+        prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByNewPrefabInstaller", (prefab, installerType))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByNewPrefabInstaller", (prefab, installerType))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefabMethod(
         &mut self,
-        prefab: *mut crate::UnityEngine::Object,
-        installerMethod: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        installerMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByNewPrefabMethod", (prefab, installerMethod))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByNewPrefabMethod", (prefab, installerMethod))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefabResource(
         &mut self,
-        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
+        resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByNewPrefabResource", (resourcePath))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByNewPrefabResource", (resourcePath))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefabResourceInstaller_Il2CppString0<TInstaller>(
         &mut self,
-        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
+        resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     >
     where
         TInstaller: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -275,55 +330,66 @@ impl crate::Zenject::SubContainerBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
-            .invoke("ByNewPrefabResourceInstaller", (resourcePath))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("ByNewPrefabResourceInstaller", (resourcePath))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefabResourceInstaller_Type1(
         &mut self,
-        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
-        installerType: *mut crate::System::Type,
+        resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object
             .invoke("ByNewPrefabResourceInstaller", (resourcePath, installerType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefabResourceMethod(
         &mut self,
-        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
-        installerMethod: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        installerMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object
             .invoke("ByNewPrefabResourceMethod", (resourcePath, installerMethod))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        bindInfo: *mut crate::Zenject::BindInfo,
-        bindStatement: *mut crate::Zenject::BindStatement,
-        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        bindStatement: quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
+        subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         resolveAll: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindInfo, bindStatement, subIdentifier, resolveAll))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        bindInfo: *mut crate::Zenject::BindInfo,
-        bindStatement: *mut crate::Zenject::BindStatement,
-        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        bindStatement: quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
+        subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         resolveAll: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -331,18 +397,18 @@ impl crate::Zenject::SubContainerBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindInfo, bindStatement, subIdentifier, resolveAll))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_SubFinalizer(
         &mut self,
-        value: *mut crate::Zenject::IBindingFinalizer,
+        value: quest_hook::libil2cpp::Gc<crate::Zenject::IBindingFinalizer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SubFinalizer", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+SubContainerBinder")]

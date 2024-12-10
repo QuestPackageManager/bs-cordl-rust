@@ -41,11 +41,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FirstPersonFlyingController 
 impl crate::GlobalNamespace::FirstPersonFlyingController {
     pub fn Inject(
         &mut self,
-        camera: *mut crate::UnityEngine::Camera,
-        centerAdjust: *mut crate::GlobalNamespace::VRCenterAdjust,
-        controller0: *mut crate::GlobalNamespace::VRController,
-        controller1: *mut crate::GlobalNamespace::VRController,
-        trackedPoseDriver: *mut crate::UnityEngine::SpatialTracking::TrackedPoseDriver,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        centerAdjust: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRCenterAdjust>,
+        controller0: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+        controller1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+        trackedPoseDriver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::SpatialTracking::TrackedPoseDriver,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -55,14 +57,14 @@ impl crate::GlobalNamespace::FirstPersonFlyingController {
                 "Inject",
                 (camera, centerAdjust, controller0, controller1, trackedPoseDriver),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -72,7 +74,7 @@ impl crate::GlobalNamespace::FirstPersonFlyingController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -82,7 +84,7 @@ impl crate::GlobalNamespace::FirstPersonFlyingController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -92,7 +94,7 @@ impl crate::GlobalNamespace::FirstPersonFlyingController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -102,7 +104,7 @@ impl crate::GlobalNamespace::FirstPersonFlyingController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "FirstPersonFlyingController")]

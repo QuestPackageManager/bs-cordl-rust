@@ -46,8 +46,10 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     pub fn CreateArrayPropertyBag<TElement>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Unity::Properties::IPropertyBag_1<
-            *mut quest_hook::libil2cpp::Il2CppArray<TElement>,
+        quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<
+                *mut quest_hook::libil2cpp::Il2CppArray<TElement>,
+            >,
         >,
     >
     where
@@ -57,16 +59,20 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Unity::Properties::IPropertyBag_1<
-            *mut quest_hook::libil2cpp::Il2CppArray<TElement>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<
+                *mut quest_hook::libil2cpp::Il2CppArray<TElement>,
+            >,
         > = __cordl_object.invoke("CreateArrayPropertyBag", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateDictionaryPropertyBag<TKey, TValue>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Unity::Properties::IPropertyBag_1<
-            *mut crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<
+                *mut crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+            >,
         >,
     >
     where
@@ -78,16 +84,20 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Unity::Properties::IPropertyBag_1<
-            *mut crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<
+                *mut crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+            >,
         > = __cordl_object.invoke("CreateDictionaryPropertyBag", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateHashSetPropertyBag<TElement>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Unity::Properties::IPropertyBag_1<
-            *mut crate::System::Collections::Generic::HashSet_1<TElement>,
+        quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<
+                *mut crate::System::Collections::Generic::HashSet_1<TElement>,
+            >,
         >,
     >
     where
@@ -97,15 +107,17 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Unity::Properties::IPropertyBag_1<
-            *mut crate::System::Collections::Generic::HashSet_1<TElement>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<
+                *mut crate::System::Collections::Generic::HashSet_1<TElement>,
+            >,
         > = __cordl_object.invoke("CreateHashSetPropertyBag", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateIndexedCollectionPropertyBag<TList, TElement>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Unity::Properties::IPropertyBag_1<TList>,
+        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag_1<TList>>,
     >
     where
         TList: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -116,14 +128,15 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Unity::Properties::IPropertyBag_1<TList> = __cordl_object
-            .invoke("CreateIndexedCollectionPropertyBag", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<TList>,
+        > = __cordl_object.invoke("CreateIndexedCollectionPropertyBag", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateKeyValueCollectionPropertyBag<TDictionary, TKey, TValue>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Unity::Properties::IPropertyBag_1<TDictionary>,
+        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag_1<TDictionary>>,
     >
     where
         TDictionary: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -136,15 +149,18 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Unity::Properties::IPropertyBag_1<TDictionary> = __cordl_object
-            .invoke("CreateKeyValueCollectionPropertyBag", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<TDictionary>,
+        > = __cordl_object.invoke("CreateKeyValueCollectionPropertyBag", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateKeyValuePairPropertyBag<TKey, TValue>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Unity::Properties::IPropertyBag_1<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<
+                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            >,
         >,
     >
     where
@@ -156,16 +172,20 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Unity::Properties::IPropertyBag_1<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<
+                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            >,
         > = __cordl_object.invoke("CreateKeyValuePairPropertyBag", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateListPropertyBag<TElement>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Unity::Properties::IPropertyBag_1<
-            *mut crate::System::Collections::Generic::List_1<TElement>,
+        quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<
+                *mut crate::System::Collections::Generic::List_1<TElement>,
+            >,
         >,
     >
     where
@@ -175,16 +195,18 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Unity::Properties::IPropertyBag_1<
-            *mut crate::System::Collections::Generic::List_1<TElement>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<
+                *mut crate::System::Collections::Generic::List_1<TElement>,
+            >,
         > = __cordl_object.invoke("CreateListPropertyBag", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateProperty<TContainer, TValue>(
         &mut self,
-        member: *mut crate::Unity::Properties::IMemberInfo,
-        propertyBag: *mut crate::Unity::Properties::Internal::ReflectedPropertyBag_1<
-            TContainer,
+        member: quest_hook::libil2cpp::Gc<crate::Unity::Properties::IMemberInfo>,
+        propertyBag: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::Internal::ReflectedPropertyBag_1<TContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -198,12 +220,12 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateProperty", (member, propertyBag))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreatePropertyBag_1<TContainer>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Unity::Properties::IPropertyBag_1<TContainer>,
+        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag_1<TContainer>>,
     >
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -212,25 +234,29 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Unity::Properties::IPropertyBag_1<TContainer> = __cordl_object
-            .invoke("CreatePropertyBag", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<TContainer>,
+        > = __cordl_object.invoke("CreatePropertyBag", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreatePropertyBag_Type0(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Unity::Properties::IPropertyBag> {
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Unity::Properties::IPropertyBag = __cordl_object
-            .invoke("CreatePropertyBag", (_cordl_type))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag,
+        > = __cordl_object.invoke("CreatePropertyBag", (_cordl_type))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateSetPropertyBag<TSet, TValue>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Unity::Properties::IPropertyBag_1<TSet>,
+        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag_1<TSet>>,
     >
     where
         TSet: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -241,16 +267,17 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Unity::Properties::IPropertyBag_1<TSet> = __cordl_object
-            .invoke("CreateSetPropertyBag", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<TSet>,
+        > = __cordl_object.invoke("CreateSetPropertyBag", ())?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -260,7 +287,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider")]

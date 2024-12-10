@@ -39,7 +39,7 @@ impl crate::TMPro::TMP_FontStyleStack {
             "Add",
             (style),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::TMPro::TMP_FontStyleStack {
             "Clear",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Remove(
         &mut self,
@@ -60,6 +60,6 @@ impl crate::TMPro::TMP_FontStyleStack {
             "Remove",
             (style),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

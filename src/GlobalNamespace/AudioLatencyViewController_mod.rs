@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::AudioLatencyViewController {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidDeactivate(
         &mut self,
@@ -61,11 +61,13 @@ impl crate::GlobalNamespace::AudioLatencyViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleAmbientVolumeChanged(
         &mut self,
-        _cordl__: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+        _cordl__: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FormattedFloatListSettingsController,
+        >,
         newValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -73,7 +75,7 @@ impl crate::GlobalNamespace::AudioLatencyViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleAmbientVolumeChanged", (_cordl__, newValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleOverrideAudioLatencyToggleValueChanged(
         &mut self,
@@ -84,11 +86,13 @@ impl crate::GlobalNamespace::AudioLatencyViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleOverrideAudioLatencyToggleValueChanged", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleVolumeChanged(
         &mut self,
-        _cordl__: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+        _cordl__: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FormattedFloatListSettingsController,
+        >,
         newValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -96,14 +100,14 @@ impl crate::GlobalNamespace::AudioLatencyViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleVolumeChanged", (_cordl__, newValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -113,7 +117,7 @@ impl crate::GlobalNamespace::AudioLatencyViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshVisuals(
         &mut self,
@@ -124,11 +128,11 @@ impl crate::GlobalNamespace::AudioLatencyViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshVisuals", (overrideAudioLatencyIsEnabled))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SliderValueDidChange(
         &mut self,
-        slider: *mut crate::HMUI::RangeValuesTextSlider,
+        slider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -136,7 +140,7 @@ impl crate::GlobalNamespace::AudioLatencyViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SliderValueDidChange", (slider, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -146,7 +150,7 @@ impl crate::GlobalNamespace::AudioLatencyViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "AudioLatencyViewController")]

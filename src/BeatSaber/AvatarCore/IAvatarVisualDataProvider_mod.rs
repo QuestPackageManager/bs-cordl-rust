@@ -37,7 +37,7 @@ impl crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
         );
         let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarsData = __cordl_object
             .invoke("get_avatarsData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+IAvatarVisualDataProvider")]

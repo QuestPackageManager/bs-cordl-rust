@@ -36,7 +36,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ByReference_1<T> {
             ".ctor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Value(
         &mut self,
@@ -50,6 +50,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ByReference_1<T> {
             "get_Value",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

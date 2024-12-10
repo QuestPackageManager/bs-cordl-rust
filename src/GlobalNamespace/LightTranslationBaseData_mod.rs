@@ -33,7 +33,7 @@ impl crate::GlobalNamespace::LightTranslationBaseData {
         usePreviousEventTranslationValue: bool,
         easeType: crate::GlobalNamespace::EaseType,
         translation: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::LightTranslationBaseData {
                 ".ctor",
                 (beat, usePreviousEventTranslationValue, easeType, translation),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::LightTranslationBaseData {
                 ".ctor",
                 (beat, usePreviousEventTranslationValue, easeType, translation),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LightTranslationBaseData")]

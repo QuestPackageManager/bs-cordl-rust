@@ -27,46 +27,52 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ContextualMenuManage
 impl crate::UnityEngine::UIElements::ContextualMenuManager {
     pub fn DisplayMenu(
         &mut self,
-        triggerEvent: *mut crate::UnityEngine::UIElements::EventBase,
-        target: *mut crate::UnityEngine::UIElements::IEventHandler,
+        triggerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventBase,
+        >,
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisplayMenu", (triggerEvent, target))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisplayMenuIfEventMatches(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-        eventHandler: *mut crate::UnityEngine::UIElements::IEventHandler,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        eventHandler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IEventHandler,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisplayMenuIfEventMatches", (evt, eventHandler))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoDisplayMenu(
         &mut self,
-        menu: *mut crate::UnityEngine::UIElements::DropdownMenu,
-        triggerEvent: *mut crate::UnityEngine::UIElements::EventBase,
+        menu: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenu>,
+        triggerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventBase,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoDisplayMenu", (menu, triggerEvent))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_displayMenuHandledOSX(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_displayMenuHandledOSX", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_displayMenuHandledOSX(
         &mut self,
@@ -77,7 +83,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_displayMenuHandledOSX", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ContextualMenuManager")]

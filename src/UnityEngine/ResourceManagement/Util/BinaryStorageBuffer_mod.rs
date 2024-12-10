@@ -60,12 +60,12 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     pub type TypeSerializer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer;
     #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
     pub type Writer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -75,7 +75,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
@@ -137,45 +137,52 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
     pub type __c__DisplayClass4_0 = crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0;
     pub fn Deserialize(
         &mut self,
-        reader: *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader,
-        t: *mut crate::System::Type,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader,
+        >,
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         offset: u32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("Deserialize", (reader, t, offset))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Deserialize", (reader, t, offset))?;
+        Ok(__cordl_ret.into())
     }
     pub fn FindBestSeparator(
         &mut self,
-        str: *mut quest_hook::libil2cpp::Il2CppString,
-        seps: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        seps: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<char> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: char = __cordl_object.invoke("FindBestSeparator", (str, seps))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Serialize(
         &mut self,
-        writer: *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer,
-        val: *mut quest_hook::libil2cpp::Il2CppObject,
+        writer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer,
+        >,
+        val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("Serialize", (writer, val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -185,22 +192,26 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Dependencies(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         > = __cordl_object.invoke("get_Dependencies", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -282,27 +293,34 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
     pub fn Deserialize(
         &mut self,
-        reader: *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader,
-        t: *mut crate::System::Type,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader,
+        >,
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         offset: u32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("Deserialize", (reader, t, offset))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Deserialize", (reader, t, offset))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Serialize(
         &mut self,
-        writer: *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer,
-        val: *mut quest_hook::libil2cpp::Il2CppObject,
+        writer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer,
+        >,
+        val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("Serialize", (writer, val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -312,17 +330,21 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializ
     pub fn get_Dependencies(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         > = __cordl_object.invoke("get_Dependencies", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -481,31 +503,38 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
     pub fn AddSerializationAdapter(
         &mut self,
-        a: *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        a: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddSerializationAdapter", (a))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetBuffer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("GetBuffer", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("GetBuffer", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         maxCachedObjects: i32,
-        adapters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        adapters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -513,29 +542,33 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (data, maxCachedObjects, adapters))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppArray_i32_Il2CppArray0(
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         maxCachedObjects: i32,
-        adapters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        adapters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (data, maxCachedObjects, adapters))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Stream_u32_i32_Il2CppArray1(
-        inputStream: *mut crate::System::IO::Stream,
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         bufferSize: u32,
         maxCachedObjects: i32,
-        adapters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        adapters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -543,69 +576,81 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
                 ".ctor",
                 (inputStream, bufferSize, maxCachedObjects, adapters),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReadAutoEncodedString(
         &mut self,
         id: u32,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ReadAutoEncodedString", (id, cacheValue))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ReadAutoEncodedString", (id, cacheValue))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadDynamicString(
         &mut self,
         id: u32,
         sep: char,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ReadDynamicString", (id, sep, cacheValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadObjectArray_Type_u32__cordl_bool1(
-        &mut self,
-        t: *mut crate::System::Type,
-        id: u32,
-        cacheValues: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ReadDynamicString", (id, sep, cacheValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadObjectArray_Type_u32__cordl_bool1(
+        &mut self,
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        id: u32,
+        cacheValues: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("ReadObjectArray", (t, id, cacheValues))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadObjectArray_u32__cordl_bool0(
         &mut self,
         id: u32,
         cacheValues: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("ReadObjectArray", (id, cacheValues))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadObjectArray_u32__cordl_bool2<T>(
         &mut self,
         id: u32,
         cacheValues: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -613,34 +658,41 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = __cordl_object
-            .invoke("ReadObjectArray", (id, cacheValues))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = __cordl_object.invoke("ReadObjectArray", (id, cacheValues))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadObject_Type_u32__cordl_bool2(
         &mut self,
-        t: *mut crate::System::Type,
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         id: u32,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("ReadObject", (t, id, cacheValue))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ReadObject", (t, id, cacheValue))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadObject_u32__cordl_bool0(
         &mut self,
         id: u32,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("ReadObject", (id, cacheValue))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ReadObject", (id, cacheValue))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadObject_u32__cordl_bool1<T>(
         &mut self,
@@ -655,33 +707,39 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("ReadObject", (offset, cacheValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadString(
         &mut self,
         id: u32,
         sep: char,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ReadString", (id, sep, cacheValue))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ReadString", (id, sep, cacheValue))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadStringInternal(
         &mut self,
         offset: u32,
-        enc: *mut crate::System::Text::Encoding,
+        enc: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ReadStringInternal", (offset, enc, cacheValue))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ReadStringInternal", (offset, enc, cacheValue))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValue<T>(&mut self, id: u32) -> quest_hook::libil2cpp::Result<T>
     where
@@ -692,13 +750,15 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("ReadValue", (id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValueArray<T>(
         &mut self,
         id: u32,
         cacheValue: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -706,9 +766,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<T> = __cordl_object
-            .invoke("ReadValueArray", (id, cacheValue))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = __cordl_object.invoke("ReadValueArray", (id, cacheValue))?;
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetCachedValue<T>(
         &mut self,
@@ -724,14 +785,16 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetCachedValue", (offset, val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_i32_Il2CppArray0(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         maxCachedObjects: i32,
-        adapters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        adapters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -739,15 +802,17 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (data, maxCachedObjects, adapters))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Stream_u32_i32_Il2CppArray1(
         &mut self,
-        inputStream: *mut crate::System::IO::Stream,
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         bufferSize: u32,
         maxCachedObjects: i32,
-        adapters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        adapters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -755,7 +820,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (inputStream, bufferSize, maxCachedObjects, adapters))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
@@ -813,34 +878,41 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
     pub type Data = crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data;
     pub fn Deserialize(
         &mut self,
-        reader: *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader,
-        _cordl_type: *mut crate::System::Type,
+        reader: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         offset: u32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("Deserialize", (reader, _cordl_type, offset))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Deserialize", (reader, _cordl_type, offset))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Serialize(
         &mut self,
-        writer: *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer,
-        val: *mut quest_hook::libil2cpp::Il2CppObject,
+        writer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer,
+        >,
+        val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("Serialize", (writer, val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -850,22 +922,26 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Dependencies(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         > = __cordl_object.invoke("get_Dependencies", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -934,31 +1010,38 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         &mut self,
         length: u32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk = __cordl_object
-            .invoke("FindChunkWithSpace", (length))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk,
+        > = __cordl_object.invoke("FindChunkWithSpace", (length))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         chunkSize: i32,
-        adapters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        adapters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (chunkSize, adapters))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RecurseDynamicStringParts(
         &mut self,
-        parts: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts,
+        parts: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts,
+            >,
         >,
         index: i32,
         sep: char,
@@ -969,7 +1052,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke("RecurseDynamicStringParts", (parts, index, sep, minSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReserveInternal(
         &mut self,
@@ -981,7 +1064,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke("ReserveInternal", (dataSize, prefixSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reserve_0<T>(&mut self) -> quest_hook::libil2cpp::Result<u32>
     where
@@ -992,7 +1075,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("Reserve", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reserve_u32_1<T>(&mut self, count: u32) -> quest_hook::libil2cpp::Result<u32>
     where
@@ -1003,52 +1086,55 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("Reserve", (count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeToByteArray(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("SerializeToByteArray", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("SerializeToByteArray", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeToStream(
         &mut self,
-        str: *mut crate::System::IO::Stream,
+        str: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("SerializeToStream", (str))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteAutoEncodedString(
         &mut self,
-        str: *mut quest_hook::libil2cpp::Il2CppString,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("WriteAutoEncodedString", (str))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteDynamicString(
         &mut self,
-        str: *mut quest_hook::libil2cpp::Il2CppString,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sep: char,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("WriteDynamicString", (str, sep))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteInternal_Il2CppObject_u32__cordl_bool0(
         &mut self,
-        pData: *mut quest_hook::libil2cpp::Il2CppObject,
+        pData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         dataSize: u32,
         prefixSize: bool,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -1057,12 +1143,12 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke("WriteInternal", (pData, dataSize, prefixSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteInternal_u32_Il2CppObject_u32__cordl_bool1(
         &mut self,
         id: u32,
-        pData: *mut quest_hook::libil2cpp::Il2CppObject,
+        pData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         dataSize: u32,
         prefixSize: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1071,11 +1157,11 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteInternal", (id, pData, dataSize, prefixSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteObject(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         serializeTypeData: bool,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1083,11 +1169,13 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke("WriteObject", (obj, serializeTypeData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteObjects<T>(
         &mut self,
-        objs: *mut crate::System::Collections::Generic::IEnumerable_1<T>,
+        objs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
         serizalizeTypeData: bool,
     ) -> quest_hook::libil2cpp::Result<u32>
     where
@@ -1099,39 +1187,39 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke("WriteObjects", (objs, serizalizeTypeData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteString(
         &mut self,
-        str: *mut quest_hook::libil2cpp::Il2CppString,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sep: char,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("WriteString", (str, sep))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteStringInternal(
         &mut self,
-        val: *mut quest_hook::libil2cpp::Il2CppString,
-        enc: *mut crate::System::Text::Encoding,
+        val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        enc: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("WriteStringInternal", (val, enc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteUnicodeString(
         &mut self,
-        str: *mut quest_hook::libil2cpp::Il2CppString,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("WriteUnicodeString", (str))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write_ByRefMut0<T>(
         &mut self,
@@ -1145,11 +1233,11 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("Write", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write_Il2CppArray__cordl_bool4<T>(
         &mut self,
-        values: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         hashElements: bool,
     ) -> quest_hook::libil2cpp::Result<u32>
     where
@@ -1160,7 +1248,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("Write", (values, hashElements))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write_T1<T>(&mut self, val: T) -> quest_hook::libil2cpp::Result<u32>
     where
@@ -1171,7 +1259,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("Write", (val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write_u32_ByRefMut2<T>(
         &mut self,
@@ -1186,12 +1274,12 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("Write", (offset, val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write_u32_Il2CppArray__cordl_bool5<T>(
         &mut self,
         offset: u32,
-        values: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         hashElements: bool,
     ) -> quest_hook::libil2cpp::Result<u32>
     where
@@ -1203,7 +1291,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke("Write", (offset, values, hashElements))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Write_u32_T3<T>(
         &mut self,
@@ -1218,13 +1306,15 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("Write", (offset, val))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         chunkSize: i32,
-        adapters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        adapters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1232,14 +1322,14 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (chunkSize, adapters))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_Length", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
@@ -1352,12 +1442,12 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chu
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
 impl crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1367,7 +1457,7 @@ impl crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Ch
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]

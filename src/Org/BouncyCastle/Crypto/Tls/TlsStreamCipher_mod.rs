@@ -34,10 +34,10 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsStreamCipher {
         &mut self,
         seqNo: i64,
         _cordl_type: u8,
-        recBuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        recBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         recStart: i32,
         recEnd: i32,
-        calcBuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        calcBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         calcOff: i32,
         calcLen: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -49,37 +49,45 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsStreamCipher {
                 "CheckMac",
                 (seqNo, _cordl_type, recBuf, recStart, recEnd, calcBuf, calcOff, calcLen),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DecodeCiphertext(
         &mut self,
         seqNo: i64,
         _cordl_type: u8,
-        ciphertext: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        ciphertext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         len: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object
             .invoke("DecodeCiphertext", (seqNo, _cordl_type, ciphertext, offset, len))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EncodePlaintext(
         &mut self,
         seqNo: i64,
         _cordl_type: u8,
-        plaintext: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        plaintext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         len: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object
             .invoke("EncodePlaintext", (seqNo, _cordl_type, plaintext, offset, len))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPlaintextLimit(
         &mut self,
@@ -90,17 +98,27 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsStreamCipher {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetPlaintextLimit", (ciphertextLimit))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-        clientWriteCipher: *mut crate::Org::BouncyCastle::Crypto::IStreamCipher,
-        serverWriteCipher: *mut crate::Org::BouncyCastle::Crypto::IStreamCipher,
-        clientWriteDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        serverWriteDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        context: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+        >,
+        clientWriteCipher: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IStreamCipher,
+        >,
+        serverWriteCipher: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IStreamCipher,
+        >,
+        clientWriteDigest: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IDigest,
+        >,
+        serverWriteDigest: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IDigest,
+        >,
         cipherKeySize: i32,
         usesNonce: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -116,11 +134,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsStreamCipher {
                     usesNonce,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateIV(
         &mut self,
-        cipher: *mut crate::Org::BouncyCastle::Crypto::IStreamCipher,
+        cipher: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IStreamCipher,
+        >,
         forEncryption: bool,
         seqNo: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -129,15 +149,25 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsStreamCipher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateIV", (cipher, forEncryption, seqNo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-        clientWriteCipher: *mut crate::Org::BouncyCastle::Crypto::IStreamCipher,
-        serverWriteCipher: *mut crate::Org::BouncyCastle::Crypto::IStreamCipher,
-        clientWriteDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-        serverWriteDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+        context: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+        >,
+        clientWriteCipher: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IStreamCipher,
+        >,
+        serverWriteCipher: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IStreamCipher,
+        >,
+        clientWriteDigest: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IDigest,
+        >,
+        serverWriteDigest: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IDigest,
+        >,
         cipherKeySize: i32,
         usesNonce: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -157,7 +187,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsStreamCipher {
                     usesNonce,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsStreamCipher")]

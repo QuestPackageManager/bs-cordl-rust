@@ -28,13 +28,13 @@ impl crate::System::Net::Http::Headers::Token {
     pub type Type = crate::System::Net::Http::Headers::Token_Type;
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::System::Net::Http::Headers::Token {
             ".ctor",
             (_cordl_type, startPosition, endPosition),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_EndPosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -55,7 +55,7 @@ impl crate::System::Net::Http::Headers::Token {
             "get_EndPosition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Kind(
         &mut self,
@@ -65,7 +65,7 @@ impl crate::System::Net::Http::Headers::Token {
             "get_Kind",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_StartPosition(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -73,7 +73,7 @@ impl crate::System::Net::Http::Headers::Token {
             "get_StartPosition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_EndPosition(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::System::Net::Http::Headers::Token {
             "set_EndPosition",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_StartPosition(
         &mut self,
@@ -95,7 +95,7 @@ impl crate::System::Net::Http::Headers::Token {
             "set_StartPosition",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+Token+Type")]

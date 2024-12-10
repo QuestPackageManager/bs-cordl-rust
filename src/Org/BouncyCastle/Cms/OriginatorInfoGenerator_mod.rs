@@ -29,76 +29,93 @@ impl crate::Org::BouncyCastle::Cms::OriginatorInfoGenerator {
     pub fn Generate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo = __cordl_object
-            .invoke("Generate", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
+        > = __cordl_object.invoke("Generate", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_IX509Store1(
-        origCerts: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        origCerts: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (origCerts))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IX509Store_IX509Store2(
-        origCerts: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-        origCrls: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        origCerts: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
+        origCrls: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (origCerts, origCrls))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_X509Certificate0(
-        origCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        origCert: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (origCert))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_IX509Store1(
         &mut self,
-        origCerts: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
+        origCerts: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (origCerts))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IX509Store_IX509Store2(
         &mut self,
-        origCerts: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-        origCrls: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
+        origCerts: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
+        origCrls: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (origCerts, origCrls))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_X509Certificate0(
         &mut self,
-        origCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+        origCert: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (origCert))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+OriginatorInfoGenerator")]

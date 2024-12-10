@@ -31,7 +31,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
     pub type Pool = crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool;
     pub fn Init(
         &mut self,
-        noteData: *mut crate::GlobalNamespace::NoteData,
+        noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         worldRotation: f32,
         moveStartPos: crate::UnityEngine::Vector3,
         moveEndPos: crate::UnityEngine::Vector3,
@@ -57,14 +57,14 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
                     jumpGravity,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBombNoteController")]
@@ -120,12 +120,12 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBombNoteController+Pool")]
 impl crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -135,7 +135,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBombNoteController+Pool")]

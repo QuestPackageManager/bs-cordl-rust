@@ -26,24 +26,26 @@ for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
 impl crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        methodName: *mut quest_hook::libil2cpp::Il2CppString,
-        info: *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::DebugInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (methodName, info),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -27,17 +27,18 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::IInputActionCollect
 impl crate::UnityEngine::InputSystem::IInputActionCollection2 {
     pub fn FindAction(
         &mut self,
-        actionNameOrId: *mut quest_hook::libil2cpp::Il2CppString,
+        actionNameOrId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         throwIfNotFound: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = __cordl_object
-            .invoke("FindAction", (actionNameOrId, throwIfNotFound))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputAction,
+        > = __cordl_object.invoke("FindAction", (actionNameOrId, throwIfNotFound))?;
+        Ok(__cordl_ret.into())
     }
     pub fn FindBinding(
         &mut self,
@@ -50,7 +51,7 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection2 {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("FindBinding", (mask, action))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -60,17 +61,21 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection2 {
     pub fn get_bindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::InputSystem::InputBinding,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputBinding,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::UnityEngine::InputSystem::InputBinding,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputBinding,
+            >,
         > = __cordl_object.invoke("get_bindings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection2")]

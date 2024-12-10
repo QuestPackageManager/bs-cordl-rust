@@ -41,812 +41,948 @@ impl crate::Oculus::Platform::Message {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAbuseReportRecording(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AbuseReportRecording,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AbuseReportRecording>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AbuseReportRecording = __cordl_object
-            .invoke("GetAbuseReportRecording", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AbuseReportRecording,
+        > = __cordl_object.invoke("GetAbuseReportRecording", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetAchievementDefinitions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AchievementDefinitionList,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AchievementDefinitionList = __cordl_object
-            .invoke("GetAchievementDefinitions", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAchievementProgressList(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AchievementProgressList,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AchievementProgressList = __cordl_object
-            .invoke("GetAchievementProgressList", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAchievementUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AchievementUpdate,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AchievementUpdate = __cordl_object
-            .invoke("GetAchievementUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAppDownloadProgressResult(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AppDownloadProgressResult,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AppDownloadProgressResult = __cordl_object
-            .invoke("GetAppDownloadProgressResult", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAppDownloadResult(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AppDownloadResult,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AppDownloadResult = __cordl_object
-            .invoke("GetAppDownloadResult", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetApplicationInviteList(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::ApplicationInviteList,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::ApplicationInviteList = __cordl_object
-            .invoke("GetApplicationInviteList", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetApplicationVersion(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::ApplicationVersion,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::ApplicationVersion = __cordl_object
-            .invoke("GetApplicationVersion", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAssetDetails(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AssetDetails,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AssetDetails = __cordl_object
-            .invoke("GetAssetDetails", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAssetDetailsList(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AssetDetailsList,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AssetDetailsList = __cordl_object
-            .invoke("GetAssetDetailsList", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAssetFileDeleteResult(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AssetFileDeleteResult,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AssetFileDeleteResult = __cordl_object
-            .invoke("GetAssetFileDeleteResult", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAssetFileDownloadCancelResult(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AssetFileDownloadCancelResult = __cordl_object
-            .invoke("GetAssetFileDownloadCancelResult", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAssetFileDownloadResult(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AssetFileDownloadResult,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AssetFileDownloadResult = __cordl_object
-            .invoke("GetAssetFileDownloadResult", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAssetFileDownloadUpdate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AssetFileDownloadUpdate = __cordl_object
-            .invoke("GetAssetFileDownloadUpdate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAvatarEditorResult(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::AvatarEditorResult,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::AvatarEditorResult = __cordl_object
-            .invoke("GetAvatarEditorResult", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetBlockedUserList(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::BlockedUserList,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::BlockedUserList = __cordl_object
-            .invoke("GetBlockedUserList", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetChallenge(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Platform::Models::Challenge> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::Challenge = __cordl_object
-            .invoke("GetChallenge", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetChallengeEntryList(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::ChallengeEntryList,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::ChallengeEntryList = __cordl_object
-            .invoke("GetChallengeEntryList", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetChallengeList(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::ChallengeList,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::ChallengeList = __cordl_object
-            .invoke("GetChallengeList", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDataStore(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AchievementDefinitionList,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut quest_hook::libil2cpp::Il2CppString,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AchievementDefinitionList,
+        > = __cordl_object.invoke("GetAchievementDefinitions", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAchievementProgressList(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AchievementProgressList,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AchievementProgressList,
+        > = __cordl_object.invoke("GetAchievementProgressList", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAchievementUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AchievementUpdate>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AchievementUpdate,
+        > = __cordl_object.invoke("GetAchievementUpdate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAppDownloadProgressResult(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AppDownloadProgressResult,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AppDownloadProgressResult,
+        > = __cordl_object.invoke("GetAppDownloadProgressResult", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAppDownloadResult(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AppDownloadResult,
+        > = __cordl_object.invoke("GetAppDownloadResult", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetApplicationInviteList(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationInviteList>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::ApplicationInviteList,
+        > = __cordl_object.invoke("GetApplicationInviteList", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetApplicationVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationVersion>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::ApplicationVersion,
+        > = __cordl_object.invoke("GetApplicationVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAssetDetails(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetDetails,
+        > = __cordl_object.invoke("GetAssetDetails", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAssetDetailsList(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetailsList>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetDetailsList,
+        > = __cordl_object.invoke("GetAssetDetailsList", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAssetFileDeleteResult(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetFileDeleteResult>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDeleteResult,
+        > = __cordl_object.invoke("GetAssetFileDeleteResult", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAssetFileDownloadCancelResult(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+        > = __cordl_object.invoke("GetAssetFileDownloadCancelResult", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAssetFileDownloadResult(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadResult,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadResult,
+        > = __cordl_object.invoke("GetAssetFileDownloadResult", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAssetFileDownloadUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
+        > = __cordl_object.invoke("GetAssetFileDownloadUpdate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAvatarEditorResult(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AvatarEditorResult>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AvatarEditorResult,
+        > = __cordl_object.invoke("GetAvatarEditorResult", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBlockedUserList(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUserList>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::BlockedUserList,
+        > = __cordl_object.invoke("GetBlockedUserList", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetChallenge(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::Challenge,
+        > = __cordl_object.invoke("GetChallenge", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetChallengeEntryList(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntryList>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::ChallengeEntryList,
+        > = __cordl_object.invoke("GetChallengeEntryList", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetChallengeList(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::ChallengeList,
+        > = __cordl_object.invoke("GetChallengeList", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDataStore(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("GetDataStore", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDestinationList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::DestinationList,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::DestinationList>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::DestinationList = __cordl_object
-            .invoke("GetDestinationList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::DestinationList,
+        > = __cordl_object.invoke("GetDestinationList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetError(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Platform::Models::Error> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Error>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::Error = __cordl_object
-            .invoke("GetError", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::Error,
+        > = __cordl_object.invoke("GetError", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetGroupPresenceJoinIntent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::GroupPresenceJoinIntent = __cordl_object
-            .invoke("GetGroupPresenceJoinIntent", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+        > = __cordl_object.invoke("GetGroupPresenceJoinIntent", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetGroupPresenceLeaveIntent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::GroupPresenceLeaveIntent = __cordl_object
-            .invoke("GetGroupPresenceLeaveIntent", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
+        > = __cordl_object.invoke("GetGroupPresenceLeaveIntent", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetHttpTransferUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::HttpTransferUpdate,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::HttpTransferUpdate>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::HttpTransferUpdate = __cordl_object
-            .invoke("GetHttpTransferUpdate", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::HttpTransferUpdate,
+        > = __cordl_object.invoke("GetHttpTransferUpdate", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetInstalledApplicationList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::InstalledApplicationList,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::InstalledApplicationList,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::InstalledApplicationList = __cordl_object
-            .invoke("GetInstalledApplicationList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::InstalledApplicationList,
+        > = __cordl_object.invoke("GetInstalledApplicationList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetInvitePanelResultInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::InvitePanelResultInfo,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::InvitePanelResultInfo>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::InvitePanelResultInfo = __cordl_object
-            .invoke("GetInvitePanelResultInfo", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::InvitePanelResultInfo,
+        > = __cordl_object.invoke("GetInvitePanelResultInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLaunchBlockFlowResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LaunchBlockFlowResult,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LaunchBlockFlowResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LaunchBlockFlowResult = __cordl_object
-            .invoke("GetLaunchBlockFlowResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchBlockFlowResult,
+        > = __cordl_object.invoke("GetLaunchBlockFlowResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLaunchFriendRequestFlowResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult = __cordl_object
-            .invoke("GetLaunchFriendRequestFlowResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
+        > = __cordl_object.invoke("GetLaunchFriendRequestFlowResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLaunchInvitePanelFlowResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult = __cordl_object
-            .invoke("GetLaunchInvitePanelFlowResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
+        > = __cordl_object.invoke("GetLaunchInvitePanelFlowResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLaunchReportFlowResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LaunchReportFlowResult,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchReportFlowResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LaunchReportFlowResult = __cordl_object
-            .invoke("GetLaunchReportFlowResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchReportFlowResult,
+        > = __cordl_object.invoke("GetLaunchReportFlowResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLaunchUnblockFlowResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LaunchUnblockFlowResult = __cordl_object
-            .invoke("GetLaunchUnblockFlowResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+        > = __cordl_object.invoke("GetLaunchUnblockFlowResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLeaderboardDidUpdate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetLeaderboardDidUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLeaderboardEntryList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardEntryList>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LeaderboardEntryList = __cordl_object
-            .invoke("GetLeaderboardEntryList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LeaderboardEntryList,
+        > = __cordl_object.invoke("GetLeaderboardEntryList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLeaderboardList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LeaderboardList,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardList>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LeaderboardList = __cordl_object
-            .invoke("GetLeaderboardList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LeaderboardList,
+        > = __cordl_object.invoke("GetLeaderboardList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLinkedAccountList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LinkedAccountList,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LinkedAccountList>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LinkedAccountList = __cordl_object
-            .invoke("GetLinkedAccountList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LinkedAccountList,
+        > = __cordl_object.invoke("GetLinkedAccountList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLivestreamingApplicationStatus(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LivestreamingApplicationStatus,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LivestreamingApplicationStatus,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LivestreamingApplicationStatus = __cordl_object
-            .invoke("GetLivestreamingApplicationStatus", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LivestreamingApplicationStatus,
+        > = __cordl_object.invoke("GetLivestreamingApplicationStatus", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLivestreamingStartResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LivestreamingStartResult,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LivestreamingStartResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LivestreamingStartResult = __cordl_object
-            .invoke("GetLivestreamingStartResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LivestreamingStartResult,
+        > = __cordl_object.invoke("GetLivestreamingStartResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLivestreamingStatus(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LivestreamingStatus,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LivestreamingStatus>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LivestreamingStatus = __cordl_object
-            .invoke("GetLivestreamingStatus", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LivestreamingStatus,
+        > = __cordl_object.invoke("GetLivestreamingStatus", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetLivestreamingVideoStats(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::LivestreamingVideoStats,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LivestreamingVideoStats,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::LivestreamingVideoStats = __cordl_object
-            .invoke("GetLivestreamingVideoStats", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LivestreamingVideoStats,
+        > = __cordl_object.invoke("GetLivestreamingVideoStats", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetMicrophoneAvailabilityState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::MicrophoneAvailabilityState = __cordl_object
-            .invoke("GetMicrophoneAvailabilityState", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
+        > = __cordl_object.invoke("GetMicrophoneAvailabilityState", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetNetSyncConnection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::NetSyncConnection,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::NetSyncConnection>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::NetSyncConnection = __cordl_object
-            .invoke("GetNetSyncConnection", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncConnection,
+        > = __cordl_object.invoke("GetNetSyncConnection", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetNetSyncSessionList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::NetSyncSessionList,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::NetSyncSessionList>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::NetSyncSessionList = __cordl_object
-            .invoke("GetNetSyncSessionList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncSessionList,
+        > = __cordl_object.invoke("GetNetSyncSessionList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetNetSyncSessionsChangedNotification(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification = __cordl_object
-            .invoke("GetNetSyncSessionsChangedNotification", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
+        > = __cordl_object.invoke("GetNetSyncSessionsChangedNotification", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetNetSyncSetSessionPropertyResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult = __cordl_object
-            .invoke("GetNetSyncSetSessionPropertyResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult,
+        > = __cordl_object.invoke("GetNetSyncSetSessionPropertyResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetNetSyncVoipAttenuationValueList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::NetSyncVoipAttenuationValueList,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncVoipAttenuationValueList,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::NetSyncVoipAttenuationValueList = __cordl_object
-            .invoke("GetNetSyncVoipAttenuationValueList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncVoipAttenuationValueList,
+        > = __cordl_object.invoke("GetNetSyncVoipAttenuationValueList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetOrgScopedID(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::OrgScopedID,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::OrgScopedID>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::OrgScopedID = __cordl_object
-            .invoke("GetOrgScopedID", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::OrgScopedID,
+        > = __cordl_object.invoke("GetOrgScopedID", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetParty(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Platform::Models::Party> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Party>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::Party = __cordl_object
-            .invoke("GetParty", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::Party,
+        > = __cordl_object.invoke("GetParty", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPartyID(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Platform::Models::PartyID> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PartyID>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::PartyID = __cordl_object
-            .invoke("GetPartyID", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::PartyID,
+        > = __cordl_object.invoke("GetPartyID", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPartyUpdateNotification(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::PartyUpdateNotification,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::PartyUpdateNotification,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::PartyUpdateNotification = __cordl_object
-            .invoke("GetPartyUpdateNotification", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::PartyUpdateNotification,
+        > = __cordl_object.invoke("GetPartyUpdateNotification", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPidList(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Platform::Models::PidList> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PidList>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::PidList = __cordl_object
-            .invoke("GetPidList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::PidList,
+        > = __cordl_object.invoke("GetPidList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPlatformInitialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::PlatformInitialize,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PlatformInitialize>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::PlatformInitialize = __cordl_object
-            .invoke("GetPlatformInitialize", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::PlatformInitialize,
+        > = __cordl_object.invoke("GetPlatformInitialize", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetProductList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::ProductList,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::ProductList = __cordl_object
-            .invoke("GetProductList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::ProductList,
+        > = __cordl_object.invoke("GetProductList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPurchase(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Platform::Models::Purchase> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Purchase>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::Purchase = __cordl_object
-            .invoke("GetPurchase", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::Purchase,
+        > = __cordl_object.invoke("GetPurchase", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPurchaseList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::PurchaseList,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::PurchaseList = __cordl_object
-            .invoke("GetPurchaseList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::PurchaseList,
+        > = __cordl_object.invoke("GetPurchaseList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetRejoinDialogResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::RejoinDialogResult,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::RejoinDialogResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::RejoinDialogResult = __cordl_object
-            .invoke("GetRejoinDialogResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::RejoinDialogResult,
+        > = __cordl_object.invoke("GetRejoinDialogResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetSdkAccountList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::SdkAccountList,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SdkAccountList>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::SdkAccountList = __cordl_object
-            .invoke("GetSdkAccountList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::SdkAccountList,
+        > = __cordl_object.invoke("GetSdkAccountList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetSendInvitesResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::SendInvitesResult,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SendInvitesResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::SendInvitesResult = __cordl_object
-            .invoke("GetSendInvitesResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::SendInvitesResult,
+        > = __cordl_object.invoke("GetSendInvitesResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetShareMediaResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::ShareMediaResult,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ShareMediaResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::ShareMediaResult = __cordl_object
-            .invoke("GetShareMediaResult", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::ShareMediaResult,
+        > = __cordl_object.invoke("GetShareMediaResult", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetSystemVoipState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::SystemVoipState,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SystemVoipState>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::SystemVoipState = __cordl_object
-            .invoke("GetSystemVoipState", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::SystemVoipState,
+        > = __cordl_object.invoke("GetSystemVoipState", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetUser(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Platform::Models::User> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::User = __cordl_object
-            .invoke("GetUser", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::User,
+        > = __cordl_object.invoke("GetUser", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetUserAccountAgeCategory(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::UserAccountAgeCategory,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::UserAccountAgeCategory,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::UserAccountAgeCategory = __cordl_object
-            .invoke("GetUserAccountAgeCategory", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::UserAccountAgeCategory,
+        > = __cordl_object.invoke("GetUserAccountAgeCategory", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetUserCapabilityList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::UserCapabilityList,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserCapabilityList>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::UserCapabilityList = __cordl_object
-            .invoke("GetUserCapabilityList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::UserCapabilityList,
+        > = __cordl_object.invoke("GetUserCapabilityList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetUserDataStoreUpdateResponse(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::UserDataStoreUpdateResponse = __cordl_object
-            .invoke("GetUserDataStoreUpdateResponse", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
+        > = __cordl_object.invoke("GetUserDataStoreUpdateResponse", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetUserList(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Platform::Models::UserList> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::UserList = __cordl_object
-            .invoke("GetUserList", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::UserList,
+        > = __cordl_object.invoke("GetUserList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetUserProof(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Platform::Models::UserProof> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserProof>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::UserProof = __cordl_object
-            .invoke("GetUserProof", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::UserProof,
+        > = __cordl_object.invoke("GetUserProof", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetUserReportID(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Oculus::Platform::Models::UserReportID,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserReportID>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Models::UserReportID = __cordl_object
-            .invoke("GetUserReportID", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::UserReportID,
+        > = __cordl_object.invoke("GetUserReportID", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         c_message: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (c_message))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -857,21 +993,21 @@ impl crate::Oculus::Platform::Message {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (c_message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsError(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsError", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RequestID(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u64 = __cordl_object.invoke("get_RequestID", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
@@ -881,7 +1017,7 @@ impl crate::Oculus::Platform::Message {
         );
         let __cordl_ret: crate::Oculus::Platform::Message_MessageType = __cordl_object
             .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Oculus+Platform+Message")]
@@ -921,52 +1057,54 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Message_Callback {
 impl crate::Oculus::Platform::Message_Callback {
     pub fn BeginInvoke(
         &mut self,
-        message: *mut crate::Oculus::Platform::Message,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        message: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginInvoke", (message, callback, object))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
-        message: *mut crate::Oculus::Platform::Message,
+        message: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", (message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -974,7 +1112,7 @@ impl crate::Oculus::Platform::Message_Callback {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Oculus+Platform+Message+Callback")]
@@ -1017,52 +1155,58 @@ impl crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
         &mut self,
         messageHandle: crate::System::IntPtr,
         message_type: crate::Oculus::Platform::Message_MessageType,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginInvoke", (messageHandle, message_type, callback, object))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Platform::Message> {
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Message = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message> = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         messageHandle: crate::System::IntPtr,
         message_type: crate::Oculus::Platform::Message_MessageType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Platform::Message> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Platform::Message = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message> = __cordl_object
             .invoke("Invoke", (messageHandle, message_type))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1070,7 +1214,7 @@ impl crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Oculus+Platform+Message+ExtraMessageTypesHandler")]

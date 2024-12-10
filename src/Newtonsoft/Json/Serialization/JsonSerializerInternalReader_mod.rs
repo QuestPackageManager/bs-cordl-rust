@@ -43,27 +43,33 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     pub type __c__DisplayClass38_0 = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader___c__DisplayClass38_0;
     pub fn AddReference(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddReference", (reader, id, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CalculatePropertyDetails(
         &mut self,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
         propertyConverter: quest_hook::libil2cpp::ByRefMut<
             *mut crate::Newtonsoft::Json::JsonConverter,
         >,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        target: *mut quest_hook::libil2cpp::Il2CppObject,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         useExistingValue: quest_hook::libil2cpp::ByRefMut<bool>,
         currentValue: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppObject,
@@ -94,146 +100,205 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                     ignoredValue,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckPropertyName(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        memberName: *mut quest_hook::libil2cpp::Il2CppString,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CheckPropertyName", (reader, memberName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateDynamic(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonDynamicContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonDynamicContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("CreateDynamic", (reader, contract, member, id))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("CreateDynamic", (reader, contract, member, id))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateISerializable(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke("CreateISerializable", (reader, contract, member, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateISerializableItem(
         &mut self,
-        token: *mut crate::Newtonsoft::Json::Linq::JToken,
-        _cordl_type: *mut crate::System::Type,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        token: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke("CreateISerializableItem", (token, _cordl_type, contract, member))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateJObject(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::Linq::JToken> {
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Linq::JToken = __cordl_object
-            .invoke("CreateJObject", (reader))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JToken,
+        > = __cordl_object.invoke("CreateJObject", (reader))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateJToken(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::Linq::JToken> {
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Linq::JToken = __cordl_object
-            .invoke("CreateJToken", (reader, contract))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JToken,
+        > = __cordl_object.invoke("CreateJToken", (reader, contract))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CreateList(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectType: *mut crate::System::Type,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        existingValue: *mut quest_hook::libil2cpp::Il2CppObject,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        existingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke(
                 "CreateList",
                 (reader, objectType, contract, member, existingValue, id),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateNewDictionary(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonDictionaryContract,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonDictionaryContract,
+        >,
         createdFromNonDefaultCreator: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IDictionary = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IDictionary,
+        > = __cordl_object
             .invoke(
                 "CreateNewDictionary",
                 (reader, contract, createdFromNonDefaultCreator),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateNewList(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+        >,
         createdFromNonDefaultCreator: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IList> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IList = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = __cordl_object
             .invoke("CreateNewList", (reader, contract, createdFromNonDefaultCreator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateNewObject(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectContract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
-        containerMember: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
+        containerMember: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         createdFromNonDefaultCreator: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke(
                 "CreateNewObject",
                 (
@@ -245,22 +310,34 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                     createdFromNonDefaultCreator,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateObject(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectType: *mut crate::System::Type,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerMember: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        existingValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerMember: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        existingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke(
                 "CreateObject",
                 (
@@ -273,42 +350,64 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                     existingValue,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateObjectUsingCreatorWithParameters(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        creator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
         >,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        creator: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke(
                 "CreateObjectUsingCreatorWithParameters",
                 (reader, contract, containerProperty, creator, id),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateValueInternal(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectType: *mut crate::System::Type,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerMember: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        existingValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerMember: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        existingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke(
                 "CreateValueInternal",
                 (
@@ -321,45 +420,57 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                     existingValue,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Deserialize(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectType: *mut crate::System::Type,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         checkAdditionalContent: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke("Deserialize", (reader, objectType, checkAdditionalContent))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DeserializeConvertable(
         &mut self,
-        converter: *mut crate::Newtonsoft::Json::JsonConverter,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectType: *mut crate::System::Type,
-        existingValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        converter: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        existingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke(
                 "DeserializeConvertable",
                 (converter, reader, objectType, existingValue),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndProcessProperty(
         &mut self,
-        newObject: *mut quest_hook::libil2cpp::Il2CppObject,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        newObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
         initialDepth: i32,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
         presence: crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
         setDefaultValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -379,107 +490,141 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                     setDefaultValue,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnsureArrayContract(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectType: *mut crate::System::Type,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonArrayContract = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+        > = __cordl_object
             .invoke("EnsureArrayContract", (reader, objectType, contract))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EnsureType(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        culture: *mut crate::System::Globalization::CultureInfo,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        targetType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        targetType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke("EnsureType", (reader, value, culture, contract, targetType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetContract(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonContract>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonContract = __cordl_object
-            .invoke("GetContract", (_cordl_type))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        > = __cordl_object.invoke("GetContract", (_cordl_type))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetContractSafe(
         &mut self,
-        _cordl_type: *mut crate::System::Type,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonContract>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonContract = __cordl_object
-            .invoke("GetContractSafe", (_cordl_type))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        > = __cordl_object.invoke("GetContractSafe", (_cordl_type))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetConverter(
         &mut self,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        memberConverter: *mut crate::Newtonsoft::Json::JsonConverter,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::JsonConverter> {
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        memberConverter: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonConverter,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::JsonConverter = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonConverter,
+        > = __cordl_object
             .invoke(
                 "GetConverter",
                 (contract, memberConverter, containerContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetExpectedDescription(
         &mut self,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetExpectedDescription", (contract))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetInternalSerializer(
-        &mut self,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonSerializerProxy = __cordl_object
-            .invoke("GetInternalSerializer", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetExpectedDescription", (contract))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInternalSerializer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
+        > = __cordl_object.invoke("GetInternalSerializer", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn HandleError(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
         readPastError: bool,
         initialDepth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -488,7 +633,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleError", (reader, readPastError, initialDepth))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasFlag(
         &mut self,
@@ -499,155 +644,206 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (value, flag))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasNoDefinedType(
         &mut self,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasNoDefinedType", (contract))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (serializer))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDeserialized(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDeserialized", (reader, contract, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDeserializing(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDeserializing", (reader, contract, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Populate(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        target: *mut quest_hook::libil2cpp::Il2CppObject,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Populate", (reader, target))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PopulateDictionary(
         &mut self,
-        dictionary: *mut crate::System::Collections::IDictionary,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonDictionaryContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        dictionary: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonDictionaryContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke(
                 "PopulateDictionary",
                 (dictionary, reader, contract, containerProperty, id),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PopulateList(
         &mut self,
-        list: *mut crate::System::Collections::IList,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonArrayContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke("PopulateList", (list, reader, contract, containerProperty, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PopulateMultidimensionalArray(
         &mut self,
-        list: *mut crate::System::Collections::IList,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonArrayContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke(
                 "PopulateMultidimensionalArray",
                 (list, reader, contract, containerProperty, id),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PopulateObject(
         &mut self,
-        newObject: *mut quest_hook::libil2cpp::Il2CppObject,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        id: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        newObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke("PopulateObject", (newObject, reader, contract, member, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadExtensionDataValue(
         &mut self,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("ReadExtensionDataValue", (contract, member, reader))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ReadExtensionDataValue", (contract, member, reader))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadMetadataProperties(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
         objectType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
         contract: quest_hook::libil2cpp::ByRefMut<
             *mut crate::Newtonsoft::Json::Serialization::JsonContract,
         >,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerMember: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        existingValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerMember: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        existingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         newValue: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppObject,
         >,
@@ -671,19 +867,25 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                     id,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadMetadataPropertiesToken(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::Linq::JTokenReader,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JTokenReader>,
         objectType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
         contract: quest_hook::libil2cpp::ByRefMut<
             *mut crate::Newtonsoft::Json::Serialization::JsonContract,
         >,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerMember: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        existingValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerMember: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        existingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         newValue: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppObject,
         >,
@@ -707,42 +909,56 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                     id,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResolvePropertyAndCreatorValues(
         &mut self,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        objectType: *mut crate::System::Type,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+            >,
         > = __cordl_object
             .invoke(
                 "ResolvePropertyAndCreatorValues",
                 (contract, containerProperty, reader, objectType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResolveTypeName(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
         objectType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
         contract: quest_hook::libil2cpp::ByRefMut<
             *mut crate::Newtonsoft::Json::Serialization::JsonContract,
         >,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerMember: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        qualifiedTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerMember: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        qualifiedTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -760,30 +976,38 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                     qualifiedTypeName,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetExtensionData(
         &mut self,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        memberName: *mut quest_hook::libil2cpp::Il2CppString,
-        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetExtensionData", (contract, member, reader, memberName, o))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPropertyPresence(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        requiredProperties: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-            crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        requiredProperties: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+                crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -791,16 +1015,24 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPropertyPresence", (reader, property, requiredProperties))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPropertyValue(
         &mut self,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        propertyConverter: *mut crate::Newtonsoft::Json::JsonConverter,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        target: *mut quest_hook::libil2cpp::Il2CppObject,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        propertyConverter: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonConverter,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -817,40 +1049,48 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                     target,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldDeserialize(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        target: *mut quest_hook::libil2cpp::Il2CppObject,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldDeserialize", (reader, property, target))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldSetPropertyValue(
         &mut self,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldSetPropertyValue", (property, contract, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ThrowUnexpectedEndException(
         &mut self,
-        reader: *mut crate::Newtonsoft::Json::JsonReader,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        currentObject: *mut quest_hook::libil2cpp::Il2CppObject,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        currentObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -860,18 +1100,18 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                 "ThrowUnexpectedEndException",
                 (reader, contract, currentObject, message),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (serializer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
@@ -933,24 +1173,24 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Creator
 )]
 impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext {
     pub fn New(
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

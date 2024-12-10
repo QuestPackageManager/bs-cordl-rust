@@ -32,7 +32,7 @@ impl crate::UnityEngine::RangeInt {
             ".ctor",
             (start, length),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_end(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -40,6 +40,6 @@ impl crate::UnityEngine::RangeInt {
             "get_end",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

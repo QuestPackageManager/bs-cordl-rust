@@ -27,13 +27,16 @@ impl crate::GlobalNamespace::IEnvironmentLightGroups {
     pub fn GetDataForGroup(
         &mut self,
         groupId: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ILightGroup> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightGroup>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::ILightGroup = __cordl_object
-            .invoke("GetDataForGroup", (groupId))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ILightGroup,
+        > = __cordl_object.invoke("GetDataForGroup", (groupId))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -43,17 +46,21 @@ impl crate::GlobalNamespace::IEnvironmentLightGroups {
     pub fn get_lightGroups(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::ILightGroup,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::GlobalNamespace::ILightGroup,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::ILightGroup,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::GlobalNamespace::ILightGroup,
+            >,
         > = __cordl_object.invoke("get_lightGroups", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "IEnvironmentLightGroups")]

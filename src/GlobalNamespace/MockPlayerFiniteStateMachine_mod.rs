@@ -32,16 +32,28 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-        menuRpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
-        beatmapDataProvider: *mut crate::GlobalNamespace::IMockBeatmapDataProvider,
-        lobbyPoseGenerator: *mut crate::GlobalNamespace::MockPlayerLobbyPoseGenerator,
-        gamePoseGenerator: *mut crate::GlobalNamespace::MockPlayerGamePoseGenerator,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSessionManager,
+        >,
+        gameplayRpcManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayRpcManager,
+        >,
+        menuRpcManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMenuRpcManager,
+        >,
+        beatmapDataProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMockBeatmapDataProvider,
+        >,
+        lobbyPoseGenerator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockPlayerLobbyPoseGenerator,
+        >,
+        gamePoseGenerator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockPlayerGamePoseGenerator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -56,19 +68,19 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
                     gamePoseGenerator,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RecommendBeatmap(
         &mut self,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-        beatmapLevelId: *mut quest_hook::libil2cpp::Il2CppString,
+        beatmapLevelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RecommendBeatmap", (beatmapDifficulty, beatmapLevelId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetIsReady(
         &mut self,
@@ -79,7 +91,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetIsReady", (isReady))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Tick(
         &mut self,
@@ -89,16 +101,28 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Tick", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-        menuRpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
-        beatmapDataProvider: *mut crate::GlobalNamespace::IMockBeatmapDataProvider,
-        lobbyPoseGenerator: *mut crate::GlobalNamespace::MockPlayerLobbyPoseGenerator,
-        gamePoseGenerator: *mut crate::GlobalNamespace::MockPlayerGamePoseGenerator,
+        multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSessionManager,
+        >,
+        gameplayRpcManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayRpcManager,
+        >,
+        menuRpcManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMenuRpcManager,
+        >,
+        beatmapDataProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMockBeatmapDataProvider,
+        >,
+        lobbyPoseGenerator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockPlayerLobbyPoseGenerator,
+        >,
+        gamePoseGenerator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockPlayerGamePoseGenerator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -115,33 +139,34 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
                     gamePoseGenerator,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_gamePoseGenerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MockPlayerGamePoseGenerator,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerGamePoseGenerator>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MockPlayerGamePoseGenerator = __cordl_object
-            .invoke("get_gamePoseGenerator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockPlayerGamePoseGenerator,
+        > = __cordl_object.invoke("get_gamePoseGenerator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_inactiveByDefault(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_inactiveByDefault", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_leftHanded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_leftHanded", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_obstaclesColor(
         &mut self,
@@ -151,7 +176,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_obstaclesColor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_saberAColor(
         &mut self,
@@ -161,7 +186,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_saberAColor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_saberBColor(
         &mut self,
@@ -171,7 +196,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_saberBColor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_inactiveByDefault(
         &mut self,
@@ -182,7 +207,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_inactiveByDefault", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_leftHanded(
         &mut self,
@@ -193,7 +218,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_leftHanded", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_obstaclesColor(
         &mut self,
@@ -204,7 +229,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_obstaclesColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_saberAColor(
         &mut self,
@@ -215,7 +240,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_saberAColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_saberBColor(
         &mut self,
@@ -226,7 +251,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_saberBColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MockPlayerFiniteStateMachine")]

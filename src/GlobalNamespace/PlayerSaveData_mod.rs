@@ -104,12 +104,12 @@ impl crate::GlobalNamespace::PlayerSaveData {
     pub type PracticeSettings = crate::GlobalNamespace::PlayerSaveData_PracticeSettings;
     #[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
     pub type UserAgeCategorySaveData = crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -119,7 +119,7 @@ impl crate::GlobalNamespace::PlayerSaveData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData")]
@@ -166,7 +166,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_ColorScheme {
 #[cfg(feature = "PlayerSaveData+ColorScheme")]
 impl crate::GlobalNamespace::PlayerSaveData_ColorScheme {
     pub fn New(
-        colorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
+        colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
         environmentColor0: crate::UnityEngine::Color,
@@ -174,7 +174,7 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorScheme {
         obstaclesColor: crate::UnityEngine::Color,
         environmentColor0Boost: crate::UnityEngine::Color,
         environmentColor1Boost: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -191,11 +191,11 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorScheme {
                     environmentColor1Boost,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        colorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
+        colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
         environmentColor0: crate::UnityEngine::Color,
@@ -221,7 +221,7 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorScheme {
                     environmentColor1Boost,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+ColorScheme")]
@@ -268,11 +268,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_ColorSchemesS
 impl crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
     pub fn New(
         overrideDefaultColors: bool,
-        selectedColorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
-        colorSchemes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::PlayerSaveData_ColorScheme,
+        selectedColorSchemeId: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        colorSchemes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::PlayerSaveData_ColorScheme,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -280,14 +284,18 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
                 ".ctor",
                 (overrideDefaultColors, selectedColorSchemeId, colorSchemes),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         overrideDefaultColors: bool,
-        selectedColorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
-        colorSchemes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::PlayerSaveData_ColorScheme,
+        selectedColorSchemeId: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        colorSchemes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::PlayerSaveData_ColorScheme,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -298,7 +306,7 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
                 ".ctor",
                 (overrideDefaultColors, selectedColorSchemeId, colorSchemes),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+ColorSchemesSettings")]
@@ -359,12 +367,12 @@ impl crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
     pub type EnergyType = crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType;
     #[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
     pub type SongSpeed = crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -374,7 +382,7 @@ impl crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+GameplayModifiers")]
@@ -414,12 +422,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
 }
 #[cfg(feature = "PlayerSaveData+GuestPlayer")]
 impl crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -429,7 +437,7 @@ impl crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+GuestPlayer")]
@@ -503,12 +511,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
 }
 #[cfg(feature = "PlayerSaveData+LocalPlayer")]
 impl crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -518,7 +526,7 @@ impl crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+LocalPlayer")]
@@ -564,12 +572,12 @@ for crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
 }
 #[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
 impl crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -579,7 +587,7 @@ impl crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
@@ -624,12 +632,12 @@ for crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
 }
 #[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
 impl crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -639,7 +647,7 @@ impl crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
@@ -684,12 +692,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_PlayerAgreeme
 }
 #[cfg(feature = "PlayerSaveData+PlayerAgreementsData")]
 impl crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -699,7 +707,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+PlayerAgreementsData")]
@@ -745,19 +753,27 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
 }
 #[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
 impl crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_PlayerSaveData_PlayerOverallStatsData_PlayerSaveData_PlayerOverallStatsData_PlayerSaveData_PlayerOverallStatsData_PlayerSaveData_PlayerOverallStatsData1(
-        campaignOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-        soloFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-        partyFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-        onlinePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        campaignOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+        >,
+        soloFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+        >,
+        partyFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+        >,
+        onlinePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -770,7 +786,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
                     onlinePlayOverallStatsData,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -780,14 +796,22 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_PlayerSaveData_PlayerOverallStatsData_PlayerSaveData_PlayerOverallStatsData_PlayerSaveData_PlayerOverallStatsData_PlayerSaveData_PlayerOverallStatsData1(
         &mut self,
-        campaignOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-        soloFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-        partyFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-        onlinePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+        campaignOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+        >,
+        soloFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+        >,
+        partyFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+        >,
+        onlinePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -802,7 +826,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
                     onlinePlayOverallStatsData,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
@@ -851,12 +875,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_PlayerLevelSt
 }
 #[cfg(feature = "PlayerSaveData+PlayerLevelStatsData")]
 impl crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -866,7 +890,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+PlayerLevelStatsData")]
@@ -909,12 +933,12 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData {
 }
 #[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]
 impl crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -924,7 +948,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]
@@ -976,12 +1000,12 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
 }
 #[cfg(feature = "PlayerSaveData+PlayerOverallStatsData")]
 impl crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i32_i32_i32_i64_i32_i32_i32_i32_f32_i32_i64_1(
         goodCutsCount: i32,
@@ -995,7 +1019,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
         timePlayed: f32,
         handDistanceTravelled: i32,
         cummulativeCutScoreWithoutMultiplier: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -1015,7 +1039,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
                     cummulativeCutScoreWithoutMultiplier,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -1025,7 +1049,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_i64_i32_i32_i32_i32_f32_i32_i64_1(
         &mut self,
@@ -1061,7 +1085,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
                     cummulativeCutScoreWithoutMultiplier,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+PlayerOverallStatsData")]
@@ -1148,12 +1172,12 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
         feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
     )]
     pub type NoteJumpDurationTypeSettingsSaveData = crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1163,7 +1187,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
@@ -1204,12 +1228,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_PracticeSetti
 }
 #[cfg(feature = "PlayerSaveData+PracticeSettings")]
 impl crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1219,7 +1243,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerSaveData+PracticeSettings")]

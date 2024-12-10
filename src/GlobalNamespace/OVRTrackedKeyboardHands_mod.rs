@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeOpacity(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("ComputeOpacity", (distance, innerThreshold, outerThreshold))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisableHandObjects(
         &mut self,
@@ -95,18 +95,18 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisableHandObjects", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandDistanceToKeyboard(
         &mut self,
-        handSkeleton: *mut crate::GlobalNamespace::OVRSkeleton,
+        handSkeleton: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSkeleton>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("GetHandDistanceToKeyboard", (handSkeleton))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LateUpdate(
         &mut self,
@@ -116,14 +116,14 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LateUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RetargetHandTrackingToHandPresence(
         &mut self,
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RetargetHandTrackingToHandPresence", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetHandModelsEnabled(
         &mut self,
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHandModelsEnabled", (enableLeftModel, enableRightModel))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldEnableModel(
         &mut self,
@@ -155,7 +155,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ShouldEnableModel", (distance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldEnablePassthrough(
         &mut self,
@@ -166,7 +166,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldEnablePassthrough", (distance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -176,7 +176,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StopHandPresence(
         &mut self,
@@ -186,7 +186,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StopHandPresence", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TrackedKeyboardActiveUpdated(
         &mut self,
@@ -197,7 +197,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TrackedKeyboardActiveUpdated", (e))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TrackedKeyboardVisibilityChanged(
         &mut self,
@@ -208,7 +208,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TrackedKeyboardVisibilityChanged", (e))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -218,28 +218,28 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AreControllersActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_AreControllersActive", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LeftHandOverKeyboard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_LeftHandOverKeyboard", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RightHandOverKeyboard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_RightHandOverKeyboard", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_LeftHandOverKeyboard(
         &mut self,
@@ -250,7 +250,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_LeftHandOverKeyboard", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_RightHandOverKeyboard(
         &mut self,
@@ -261,7 +261,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_RightHandOverKeyboard", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRTrackedKeyboardHands")]

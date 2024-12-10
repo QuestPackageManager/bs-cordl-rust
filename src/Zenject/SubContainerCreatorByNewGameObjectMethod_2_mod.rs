@@ -55,10 +55,10 @@ impl<
     >;
     pub fn AddInstallers(
         &mut self,
-        args: *mut crate::System::Collections::Generic::List_1<
-            crate::Zenject::TypeValuePair,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
-        context: *mut crate::Zenject::GameObjectContext,
+        context: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -71,17 +71,17 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddInstallers", (args, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        container: *mut crate::Zenject::DiContainer,
-        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-        installerMethod: *mut crate::System::Action_3<
-            *mut crate::Zenject::DiContainer,
-            TParam1,
-            TParam2,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::GameObjectCreationParameters,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        installerMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<*mut crate::Zenject::DiContainer, TParam1, TParam2>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -92,16 +92,16 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (container, gameObjectBindInfo, installerMethod))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-        installerMethod: *mut crate::System::Action_3<
-            *mut crate::Zenject::DiContainer,
-            TParam1,
-            TParam2,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::GameObjectCreationParameters,
+        >,
+        installerMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<*mut crate::Zenject::DiContainer, TParam1, TParam2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -115,7 +115,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (container, gameObjectBindInfo, installerMethod))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod_2")]

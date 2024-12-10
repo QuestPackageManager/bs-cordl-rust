@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::System::Threading::IAsyncLocal {
 impl crate::System::Threading::IAsyncLocal {
     pub fn OnValueChanged(
         &mut self,
-        previousValue: *mut quest_hook::libil2cpp::Il2CppObject,
-        currentValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        previousValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        currentValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         contextChanged: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -35,7 +35,7 @@ impl crate::System::Threading::IAsyncLocal {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnValueChanged", (previousValue, currentValue, contextChanged))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

@@ -34,7 +34,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand 
             "get_capabilities",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_typeStatic(
         &mut self,
@@ -46,6 +46,6 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand 
             "get_typeStatic",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

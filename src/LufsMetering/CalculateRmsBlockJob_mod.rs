@@ -31,6 +31,6 @@ impl crate::LufsMetering::CalculateRmsBlockJob {
             "Execute",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

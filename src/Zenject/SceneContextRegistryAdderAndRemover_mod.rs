@@ -34,7 +34,7 @@ impl crate::Zenject::SceneContextRegistryAdderAndRemover {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
@@ -44,29 +44,29 @@ impl crate::Zenject::SceneContextRegistryAdderAndRemover {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        sceneContext: *mut crate::Zenject::SceneContext,
-        registry: *mut crate::Zenject::SceneContextRegistry,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        sceneContext: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+        registry: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContextRegistry>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (sceneContext, registry))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        sceneContext: *mut crate::Zenject::SceneContext,
-        registry: *mut crate::Zenject::SceneContextRegistry,
+        sceneContext: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+        registry: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContextRegistry>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (sceneContext, registry))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+SceneContextRegistryAdderAndRemover")]

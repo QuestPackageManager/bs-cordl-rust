@@ -47,7 +47,7 @@ impl crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationS
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (x, y))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(
         &mut self,
@@ -57,14 +57,14 @@ impl crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationS
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -74,7 +74,7 @@ impl crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationS
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -224,22 +224,22 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAllAnimations", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CancelAllAnimations_VisualElement1(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAllAnimations", (owner))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CancelAnimation(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -247,20 +247,22 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAnimation", (owner, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CurrentTimeMs(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("CurrentTimeMs", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAllAnimations(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
-        propertyIds: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        propertyIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -268,7 +270,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetAllAnimations", (owner, propertyIds))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetOrCreate<T>(
         &mut self,
@@ -282,24 +284,24 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("GetOrCreate", (values))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn StartTransition_BackgroundPosition_BackgroundPosition13(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::UIElements::BackgroundPosition,
         endValue: crate::UnityEngine::UIElements::BackgroundPosition,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -309,17 +311,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_BackgroundRepeat_BackgroundRepeat14(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::UIElements::BackgroundRepeat,
         endValue: crate::UnityEngine::UIElements::BackgroundRepeat,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -329,17 +331,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_BackgroundSize_BackgroundSize15(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::UIElements::BackgroundSize,
         endValue: crate::UnityEngine::UIElements::BackgroundSize,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -349,17 +351,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Background_Background5(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::UIElements::Background,
         endValue: crate::UnityEngine::UIElements::Background,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -369,17 +371,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Color_Color4(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::Color,
         endValue: crate::UnityEngine::Color,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -389,17 +391,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_FontDefinition_FontDefinition6(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::UIElements::FontDefinition,
         endValue: crate::UnityEngine::UIElements::FontDefinition,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -409,17 +411,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Font_Font7(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        startValue: *mut crate::UnityEngine::Font,
-        endValue: *mut crate::UnityEngine::Font,
+        startValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+        endValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -429,17 +431,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Length_Length3(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::UIElements::Length,
         endValue: crate::UnityEngine::UIElements::Length,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -449,17 +451,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Rotate_Rotate10(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::UIElements::Rotate,
         endValue: crate::UnityEngine::UIElements::Rotate,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -469,17 +471,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Scale_Scale9(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::UIElements::Scale,
         endValue: crate::UnityEngine::UIElements::Scale,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -489,19 +491,19 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_T_T_StylePropertyAnimationSystem_Values_1_0<T>(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: T,
         endValue: T,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
-        values: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
-            T,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -525,17 +527,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                     values,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_TextShadow_TextShadow8(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::UIElements::TextShadow,
         endValue: crate::UnityEngine::UIElements::TextShadow,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -545,17 +547,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_TransformOrigin_TransformOrigin12(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::UIElements::TransformOrigin,
         endValue: crate::UnityEngine::UIElements::TransformOrigin,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -565,17 +567,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Translate_Translate11(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: crate::UnityEngine::UIElements::Translate,
         endValue: crate::UnityEngine::UIElements::Translate,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -585,17 +587,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_f32_f32_1(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: f32,
         endValue: f32,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -605,17 +607,17 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition_i32_i32_2(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: i32,
         endValue: i32,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -625,7 +627,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                 "StartTransition",
                 (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -635,11 +637,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateAnimation(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -647,12 +649,12 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateAnimation", (owner, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateTracking<T>(
         &mut self,
-        values: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
-            T,
+        values: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -664,7 +666,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateTracking", (values))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -674,7 +676,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem")]
@@ -753,7 +755,7 @@ impl<
 > {
     pub fn Add(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         timingData: TTimingData,
         styleData: TStyleData,
@@ -769,13 +771,15 @@ impl<
             "Add",
             (owner, prop, timingData, styleData),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetActivePropertiesForElement(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        outProperties: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        outProperties: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -789,11 +793,11 @@ impl<
             "GetActivePropertiesForElement",
             (ve, outProperties),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IndexOf(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         index: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -808,7 +812,7 @@ impl<
             "IndexOf",
             (ve, prop, index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LocalInit(
         &mut self,
@@ -824,7 +828,7 @@ impl<
             "LocalInit",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Remove(
         &mut self,
@@ -841,7 +845,7 @@ impl<
             "Remove",
             (cancelledIndex),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveAll_1(
         &mut self,
@@ -857,11 +861,11 @@ impl<
             "RemoveAll",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveAll_VisualElement0(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -874,7 +878,7 @@ impl<
             "RemoveAll",
             (ve),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Replace(
         &mut self,
@@ -893,7 +897,7 @@ impl<
             "Replace",
             (index, timingData, styleData),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_capacity(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -907,7 +911,7 @@ impl<
             "get_capacity",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_capacity(
         &mut self,
@@ -924,7 +928,7 @@ impl<
             "set_capacity",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -967,7 +971,9 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropert
     pub type EqualityComparer = crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer;
     pub fn _ctor(
         &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
         property: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -975,7 +981,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropert
             ".ctor",
             (element, property),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+TransitionState")]
@@ -1031,22 +1037,22 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAllAnimations", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CancelAllAnimations_VisualElement1(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAllAnimations", (ve))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CancelAnimation(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1054,13 +1060,15 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAnimation", (ve, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAllAnimations(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        outPropertyIds: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        outPropertyIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1068,14 +1076,14 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetAllAnimations", (ve, outPropertyIds))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Update(
         &mut self,
@@ -1086,11 +1094,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (currentTimeMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateAnimation(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1098,7 +1106,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateAnimation", (ve, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -1108,7 +1116,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -1119,7 +1127,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -1129,7 +1137,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1139,7 +1147,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values")]
@@ -1185,12 +1193,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackground")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackground {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -1200,7 +1208,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -1211,7 +1219,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1221,7 +1229,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackground")]
@@ -1277,12 +1285,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundPosition"
 )]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundPosition {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -1292,7 +1300,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -1303,7 +1311,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1313,7 +1321,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -1371,12 +1379,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundRepeat"
 )]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundRepeat {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -1386,7 +1394,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -1397,7 +1405,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1407,7 +1415,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -1472,7 +1480,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundSize {
     pub fn ConvertUnits(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         a: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::BackgroundSize,
@@ -1486,14 +1494,14 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ConvertUnits", (owner, prop, a, b))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -1503,7 +1511,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -1514,7 +1522,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -1524,7 +1532,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1534,26 +1542,30 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::BackgroundSize,
-            crate::UnityEngine::UIElements::BackgroundSize,
-            bool,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::BackgroundSize,
+                crate::UnityEngine::UIElements::BackgroundSize,
+                bool,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::BackgroundSize,
-            crate::UnityEngine::UIElements::BackgroundSize,
-            bool,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::BackgroundSize,
+                crate::UnityEngine::UIElements::BackgroundSize,
+                bool,
+            >,
         > = __cordl_object.invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -1606,12 +1618,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -1621,7 +1633,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -1632,7 +1644,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -1642,7 +1654,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1652,26 +1664,30 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_3<
-            crate::UnityEngine::Color,
-            crate::UnityEngine::Color,
-            bool,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::Color,
+                crate::UnityEngine::Color,
+                bool,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<
-            crate::UnityEngine::Color,
-            crate::UnityEngine::Color,
-            bool,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::Color,
+                crate::UnityEngine::Color,
+                bool,
+            >,
         > = __cordl_object.invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor")]
@@ -1723,7 +1739,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1732,7 +1748,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -1746,7 +1762,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1758,11 +1774,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Func_3<T, T, bool>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, bool>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1770,9 +1788,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<T, T, bool> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, bool>> = __cordl_object
             .invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesDiscrete_1")]
@@ -1819,12 +1837,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -1834,7 +1852,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -1845,7 +1863,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -1855,7 +1873,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1865,17 +1883,20 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Func_3<f32, f32, bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Func_3<f32, f32, bool>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<f32, f32, bool> = __cordl_object
-            .invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<f32, f32, bool>,
+        > = __cordl_object.invoke("get_SameFunc", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat")]
@@ -1921,12 +1942,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFont")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -1936,7 +1957,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -1947,7 +1968,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -1957,7 +1978,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFont")]
@@ -2013,12 +2034,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefin
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFontDefinition"
 )]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefinition {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -2028,7 +2049,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefi
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -2039,7 +2060,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefi
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -2049,7 +2070,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefi
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -2098,12 +2119,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -2113,7 +2134,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -2124,7 +2145,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -2134,7 +2155,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -2144,17 +2165,20 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Func_3<i32, i32, bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Func_3<i32, i32, bool>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<i32, i32, bool> = __cordl_object
-            .invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<i32, i32, bool>,
+        > = __cordl_object.invoke("get_SameFunc", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt")]
@@ -2207,7 +2231,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
     pub fn ConvertUnits(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         a: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
         b: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Length>,
@@ -2217,14 +2241,14 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ConvertUnits", (owner, prop, a, b))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -2234,7 +2258,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -2245,7 +2269,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -2255,7 +2279,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -2265,26 +2289,30 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::Length,
-            crate::UnityEngine::UIElements::Length,
-            bool,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Length,
+                crate::UnityEngine::UIElements::Length,
+                bool,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::Length,
-            crate::UnityEngine::UIElements::Length,
-            bool,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Length,
+                crate::UnityEngine::UIElements::Length,
+                bool,
+            >,
         > = __cordl_object.invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesLength")]
@@ -2335,12 +2363,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -2350,7 +2378,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -2361,7 +2389,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -2371,7 +2399,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -2381,26 +2409,30 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::Rotate,
-            crate::UnityEngine::UIElements::Rotate,
-            bool,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Rotate,
+                crate::UnityEngine::UIElements::Rotate,
+                bool,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::Rotate,
-            crate::UnityEngine::UIElements::Rotate,
-            bool,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Rotate,
+                crate::UnityEngine::UIElements::Rotate,
+                bool,
+            >,
         > = __cordl_object.invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate")]
@@ -2451,12 +2483,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -2466,7 +2498,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -2477,7 +2509,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -2487,7 +2519,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -2497,26 +2529,30 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::Scale,
-            crate::UnityEngine::UIElements::Scale,
-            bool,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Scale,
+                crate::UnityEngine::UIElements::Scale,
+                bool,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::Scale,
-            crate::UnityEngine::UIElements::Scale,
-            bool,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Scale,
+                crate::UnityEngine::UIElements::Scale,
+                bool,
+            >,
         > = __cordl_object.invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale")]
@@ -2567,12 +2603,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShado
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShadow {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -2582,7 +2618,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShad
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -2593,7 +2629,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShad
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -2603,7 +2639,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShad
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -2613,26 +2649,30 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShad
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::TextShadow,
-            crate::UnityEngine::UIElements::TextShadow,
-            bool,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::TextShadow,
+                crate::UnityEngine::UIElements::TextShadow,
+                bool,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::TextShadow,
-            crate::UnityEngine::UIElements::TextShadow,
-            bool,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::TextShadow,
+                crate::UnityEngine::UIElements::TextShadow,
+                bool,
+            >,
         > = __cordl_object.invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow")]
@@ -2695,7 +2735,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransform
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransformOrigin {
     pub fn ConvertUnits(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         a: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::TransformOrigin,
@@ -2709,14 +2749,14 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransfor
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ConvertUnits", (owner, prop, a, b))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -2726,7 +2766,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransfor
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -2737,7 +2777,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransfor
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -2747,7 +2787,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransfor
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -2757,26 +2797,30 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransfor
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::TransformOrigin,
-            crate::UnityEngine::UIElements::TransformOrigin,
-            bool,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::TransformOrigin,
+                crate::UnityEngine::UIElements::TransformOrigin,
+                bool,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::TransformOrigin,
-            crate::UnityEngine::UIElements::TransformOrigin,
-            bool,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::TransformOrigin,
+                crate::UnityEngine::UIElements::TransformOrigin,
+                bool,
+            >,
         > = __cordl_object.invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -2831,7 +2875,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate {
     pub fn ConvertUnits(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         a: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Translate>,
         b: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::Translate>,
@@ -2841,14 +2885,14 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslat
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ConvertUnits", (owner, prop, a, b))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateComputedStyle_0(
         &mut self,
@@ -2858,7 +2902,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslat
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedStyle_i32_1(
         &mut self,
@@ -2869,7 +2913,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslat
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateComputedStyle", (i))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateValues(
         &mut self,
@@ -2879,7 +2923,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslat
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateValues", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -2889,26 +2933,30 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslat
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::Translate,
-            crate::UnityEngine::UIElements::Translate,
-            bool,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Translate,
+                crate::UnityEngine::UIElements::Translate,
+                bool,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<
-            crate::UnityEngine::UIElements::Translate,
-            crate::UnityEngine::UIElements::Translate,
-            bool,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Translate,
+                crate::UnityEngine::UIElements::Translate,
+                bool,
+            >,
         > = __cordl_object.invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTranslate")]
@@ -3010,11 +3058,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAllAnimations", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CancelAllAnimations_VisualElement1(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3025,11 +3073,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAllAnimations", (ve))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CancelAnimation(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3041,7 +3089,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAnimation", (ve, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearEventQueue(
         &mut self,
@@ -3056,7 +3104,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearEventQueue", (epp))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeReversingDelay(
         &mut self,
@@ -3072,7 +3120,7 @@ impl<
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("ComputeReversingDelay", (delayMs, newReversingShorteningFactor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeReversingDuration(
         &mut self,
@@ -3091,7 +3139,7 @@ impl<
                 "ComputeReversingDuration",
                 (newTransitionDurationMs, newReversingShorteningFactor),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeReversingShorteningFactor(
         &mut self,
@@ -3106,11 +3154,11 @@ impl<
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("ComputeReversingShorteningFactor", (oldIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ConvertUnits(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         a: quest_hook::libil2cpp::ByRefMut<T>,
         b: quest_hook::libil2cpp::ByRefMut<T>,
@@ -3124,7 +3172,7 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ConvertUnits", (owner, prop, a, b))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ForceComputedStyleEndValue(
         &mut self,
@@ -3139,13 +3187,15 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ForceComputedStyleEndValue", (runningIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAllAnimations(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        outPropertyIds: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        outPropertyIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3157,9 +3207,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetAllAnimations", (ve, outPropertyIds))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3168,7 +3218,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessEventQueue(
         &mut self,
@@ -3182,11 +3232,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessEventQueue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn QueueEvent(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         epp: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3198,11 +3248,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("QueueEvent", (evt, epp))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn QueueTransitionCancelEvent(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         runningIndex: i32,
         panelElapsedMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -3215,11 +3265,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("QueueTransitionCancelEvent", (ve, runningIndex, panelElapsedMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn QueueTransitionEndEvent(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         runningIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3231,11 +3281,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("QueueTransitionEndEvent", (ve, runningIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn QueueTransitionRunEvent(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         runningIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3247,11 +3297,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("QueueTransitionRunEvent", (ve, runningIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn QueueTransitionStartEvent(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         runningIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3263,11 +3313,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("QueueTransitionStartEvent", (ve, runningIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendTransitionCancelEvent(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         runningIndex: i32,
         panelElapsedMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -3280,17 +3330,17 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendTransitionCancelEvent", (ve, runningIndex, panelElapsedMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartTransition(
         &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         startValue: T,
         endValue: T,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: *mut crate::System::Func_2<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
         currentTimeMs: i64,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -3314,7 +3364,7 @@ impl<
                     currentTimeMs,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SwapFrameStates(
         &mut self,
@@ -3328,7 +3378,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SwapFrameStates", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -3343,11 +3393,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (currentTimeMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateAnimation(
         &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3359,7 +3409,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateAnimation", (ve, id))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateProgress(
         &mut self,
@@ -3374,7 +3424,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateProgress", (currentTimeMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3386,11 +3436,13 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SameFunc(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Func_3<T, T, bool>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, bool>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3398,9 +3450,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_3<T, T, bool> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, bool>> = __cordl_object
             .invoke("get_SameFunc", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -3411,7 +3463,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isEmpty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1")]
@@ -3625,9 +3677,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3636,7 +3688,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RegisterChange(
         &mut self,
@@ -3650,7 +3702,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterChange", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StateChanged(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -3661,7 +3713,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("StateChanged", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnregisterChange(
         &mut self,
@@ -3675,7 +3727,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnregisterChange", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3687,7 +3739,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

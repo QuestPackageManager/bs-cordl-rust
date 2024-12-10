@@ -36,17 +36,18 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::VectorImageMana
 impl crate::UnityEngine::UIElements::UIR::VectorImageManager {
     pub fn AddUser(
         &mut self,
-        vi: *mut crate::UnityEngine::UIElements::VectorImage,
-        context: *mut crate::UnityEngine::UIElements::VisualElement,
+        vi: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VectorImage>,
+        context: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::UIR::GradientRemap,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::GradientRemap>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::UIR::GradientRemap = __cordl_object
-            .invoke("AddUser", (vi, context))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::GradientRemap,
+        > = __cordl_object.invoke("AddUser", (vi, context))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Commit(
         &mut self,
@@ -56,7 +57,7 @@ impl crate::UnityEngine::UIElements::UIR::VectorImageManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Commit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
@@ -66,7 +67,7 @@ impl crate::UnityEngine::UIElements::UIR::VectorImageManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -77,58 +78,63 @@ impl crate::UnityEngine::UIElements::UIR::VectorImageManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        atlas: *mut crate::UnityEngine::UIElements::AtlasBase,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AtlasBase>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (atlas))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Register(
         &mut self,
-        vi: *mut crate::UnityEngine::UIElements::VectorImage,
-        context: *mut crate::UnityEngine::UIElements::VisualElement,
+        vi: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VectorImage>,
+        context: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo = __cordl_object
-            .invoke("Register", (vi, context))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
+        > = __cordl_object.invoke("Register", (vi, context))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        atlas: *mut crate::UnityEngine::UIElements::AtlasBase,
+        atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AtlasBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (atlas))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_atlas(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Texture2D = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
             .invoke("get_atlas", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_disposed(
         &mut self,
@@ -139,7 +145,7 @@ impl crate::UnityEngine::UIElements::UIR::VectorImageManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_disposed", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageManager")]

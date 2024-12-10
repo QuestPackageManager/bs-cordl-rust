@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::BezierSpline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddArtificialStartAndFinishPoint", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddPoint(
         &mut self,
@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::BezierSpline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddPoint", (distance, point))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
@@ -64,7 +64,7 @@ impl crate::GlobalNamespace::BezierSpline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeControlPoints_0(
         &mut self,
@@ -74,11 +74,11 @@ impl crate::GlobalNamespace::BezierSpline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ComputeControlPoints", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeControlPoints_List_1_1(
         &mut self,
-        k: *mut crate::System::Collections::Generic::List_1<f32>,
+        k: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults,
     > {
@@ -87,14 +87,14 @@ impl crate::GlobalNamespace::BezierSpline {
         );
         let __cordl_ret: crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults = __cordl_object
             .invoke("ComputeControlPoints", (k))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SortSourceData(
         &mut self,
@@ -104,7 +104,7 @@ impl crate::GlobalNamespace::BezierSpline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SortSourceData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -114,22 +114,26 @@ impl crate::GlobalNamespace::BezierSpline {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_segments(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::BezierCurve,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::BezierCurve,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::BezierCurve,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::BezierCurve,
+            >,
         > = __cordl_object.invoke("get_segments", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BezierSpline")]
@@ -169,14 +173,14 @@ for crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults {
 impl crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults {
     pub fn _ctor(
         &mut self,
-        p1: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-        p2: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+        p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (p1, p2),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

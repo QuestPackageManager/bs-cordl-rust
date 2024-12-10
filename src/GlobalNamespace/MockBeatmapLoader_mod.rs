@@ -38,31 +38,45 @@ impl crate::GlobalNamespace::MockBeatmapLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetBeatmapData(
         &mut self,
-        beatmap: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        beatmap: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        >,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::GlobalNamespace::MockBeatmapData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::MockBeatmapData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::GlobalNamespace::MockBeatmapData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::MockBeatmapData,
+            >,
         > = __cordl_object.invoke("GetBeatmapData", (beatmap, cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-        beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
-        environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-        beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsModel,
+        >,
+        beatmapDataLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataLoader,
+        >,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
+        beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicCollection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -75,14 +89,22 @@ impl crate::GlobalNamespace::MockBeatmapLoader {
                     beatmapCharacteristicCollection,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-        beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
-        environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-        beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
+        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsModel,
+        >,
+        beatmapDataLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataLoader,
+        >,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
+        beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicCollection,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -97,7 +119,7 @@ impl crate::GlobalNamespace::MockBeatmapLoader {
                     beatmapCharacteristicCollection,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MockBeatmapLoader")]

@@ -31,7 +31,7 @@ impl crate::UnityEngine::Playables::PlayableOutput {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -43,7 +43,7 @@ impl crate::UnityEngine::Playables::PlayableOutput {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsPlayableOutputOfType<T>(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -55,7 +55,7 @@ impl crate::UnityEngine::Playables::PlayableOutput {
             "IsPlayableOutputOfType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -66,6 +66,6 @@ impl crate::UnityEngine::Playables::PlayableOutput {
             ".ctor",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

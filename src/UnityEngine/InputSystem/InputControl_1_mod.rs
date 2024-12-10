@@ -37,7 +37,7 @@ impl<
 > crate::UnityEngine::InputSystem::InputControl_1<TValue> {
     pub fn AddProcessor(
         &mut self,
-        processor: *mut quest_hook::libil2cpp::Il2CppObject,
+        processor: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -48,12 +48,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddProcessor", (processor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompareValue(
         &mut self,
-        firstStatePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-        secondStatePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        firstStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        secondStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -64,7 +64,7 @@ impl<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CompareValue", (firstStatePtr, secondStatePtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FinishSetup(
         &mut self,
@@ -78,9 +78,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FinishSetup", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -89,7 +89,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessValue_ByRefMut1(
         &mut self,
@@ -104,7 +104,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessValue", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessValue_TValue0(
         &mut self,
@@ -118,7 +118,7 @@ impl<
             self,
         );
         let __cordl_ret: TValue = __cordl_object.invoke("ProcessValue", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadDefaultValue(&mut self) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -129,7 +129,7 @@ impl<
             self,
         );
         let __cordl_ret: TValue = __cordl_object.invoke("ReadDefaultValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadUnprocessedValue(&mut self) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -140,11 +140,11 @@ impl<
             self,
         );
         let __cordl_ret: TValue = __cordl_object.invoke("ReadUnprocessedValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadUnprocessedValueFromState(
         &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -155,11 +155,11 @@ impl<
         );
         let __cordl_ret: TValue = __cordl_object
             .invoke("ReadUnprocessedValueFromState", (statePtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadUnprocessedValueFromStateWithCaching(
         &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -170,7 +170,7 @@ impl<
         );
         let __cordl_ret: TValue = __cordl_object
             .invoke("ReadUnprocessedValueFromStateWithCaching", (statePtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValue(&mut self) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -181,13 +181,15 @@ impl<
             self,
         );
         let __cordl_ret: TValue = __cordl_object.invoke("ReadValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValueFromBufferAsObject(
         &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppObject,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferSize: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -195,9 +197,10 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("ReadValueFromBufferAsObject", (buffer, bufferSize))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ReadValueFromBufferAsObject", (buffer, bufferSize))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValueFromPreviousFrame(&mut self) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -209,11 +212,11 @@ impl<
         );
         let __cordl_ret: TValue = __cordl_object
             .invoke("ReadValueFromPreviousFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValueFromState(
         &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -224,12 +227,14 @@ impl<
         );
         let __cordl_ret: TValue = __cordl_object
             .invoke("ReadValueFromState", (statePtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValueFromStateAsObject(
         &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -237,14 +242,15 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("ReadValueFromStateAsObject", (statePtr))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ReadValueFromStateAsObject", (statePtr))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValueFromStateIntoBuffer(
         &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-        bufferPtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -256,11 +262,11 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadValueFromStateIntoBuffer", (statePtr, bufferPtr, bufferSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValueFromStateWithCaching(
         &mut self,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -271,7 +277,7 @@ impl<
         );
         let __cordl_ret: TValue = __cordl_object
             .invoke("ReadValueFromStateWithCaching", (statePtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetProcessor<TProcessor>(
         &mut self,
@@ -286,13 +292,13 @@ impl<
             self,
         );
         let __cordl_ret: TProcessor = __cordl_object.invoke("TryGetProcessor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteValueFromBufferIntoState(
         &mut self,
-        bufferPtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        bufferPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferSize: i32,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -303,12 +309,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteValueFromBufferIntoState", (bufferPtr, bufferSize, statePtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteValueFromObjectIntoState(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -319,12 +325,12 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteValueFromObjectIntoState", (value, statePtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteValueIntoState(
         &mut self,
         value: TValue,
-        statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -335,7 +341,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteValueIntoState", (value, statePtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -347,13 +353,15 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_processors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+            >,
         >,
     >
     where
@@ -363,10 +371,12 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+            >,
         > = __cordl_object.invoke("get_processors", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unprocessedValue(
         &mut self,
@@ -380,7 +390,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<TValue> = __cordl_object
             .invoke("get_unprocessedValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value(
         &mut self,
@@ -394,7 +404,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<TValue> = __cordl_object
             .invoke("get_value", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_valueSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -405,11 +415,11 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_valueSizeInBytes", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_valueType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type>
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -417,9 +427,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("get_valueType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControl_1")]

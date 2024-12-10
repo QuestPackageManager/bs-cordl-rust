@@ -30,30 +30,42 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
 impl crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
     pub fn New(
-        message: *mut quest_hook::libil2cpp::Il2CppString,
-        a: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        b: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        c: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        a: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        b: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        c: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (message, a, b, c))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        message: *mut quest_hook::libil2cpp::Il2CppString,
-        a: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        b: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        c: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        a: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        b: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        c: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (message, a, b, c))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]

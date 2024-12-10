@@ -29,7 +29,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 {
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 {
     pub fn ReleaseScene(
         &mut self,
-        resourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+        resourceManager: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
         sceneLoadHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         >,
@@ -46,7 +48,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         > = __cordl_object
             .invoke("ReleaseScene", (resourceManager, sceneLoadHandle, unloadOptions))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

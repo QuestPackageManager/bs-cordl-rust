@@ -44,7 +44,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::IStyleValue
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = __cordl_object
             .invoke("get_keyword", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -55,7 +55,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::IStyleValue
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_value", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IStyleValue_1")]

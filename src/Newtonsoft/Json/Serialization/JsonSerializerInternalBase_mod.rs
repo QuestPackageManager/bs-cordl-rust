@@ -47,32 +47,36 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearErrorContext", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetErrorContext(
         &mut self,
-        currentObject: *mut quest_hook::libil2cpp::Il2CppObject,
-        member: *mut quest_hook::libil2cpp::Il2CppObject,
-        path: *mut quest_hook::libil2cpp::Il2CppString,
-        error: *mut crate::System::Exception,
+        currentObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        member: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::ErrorContext>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ErrorContext = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::ErrorContext,
+        > = __cordl_object
             .invoke("GetErrorContext", (currentObject, member, path, error))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsErrorHandled(
         &mut self,
-        currentObject: *mut quest_hook::libil2cpp::Il2CppObject,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        keyValue: *mut quest_hook::libil2cpp::Il2CppObject,
-        lineInfo: *mut crate::Newtonsoft::Json::IJsonLineInfo,
-        path: *mut quest_hook::libil2cpp::Il2CppString,
-        ex: *mut crate::System::Exception,
+        currentObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        keyValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        lineInfo: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -82,56 +86,64 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
                 "IsErrorHandled",
                 (currentObject, contract, keyValue, lineInfo, path, ex),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (serializer))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ResolvedNullValueHandling(
         &mut self,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::NullValueHandling> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::Newtonsoft::Json::NullValueHandling = __cordl_object
             .invoke("ResolvedNullValueHandling", (containerContract, property))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (serializer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DefaultReferenceMappings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("get_DefaultReferenceMappings", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
@@ -184,17 +196,17 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Reference
     feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
 )]
 impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn System_Collections_Generic_IEqualityComparer_System_Object__Equals(
         &mut self,
-        x: *mut quest_hook::libil2cpp::Il2CppObject,
-        y: *mut quest_hook::libil2cpp::Il2CppObject,
+        x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -204,11 +216,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
                 "System.Collections.Generic.IEqualityComparer<System.Object>.Equals",
                 (x, y),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IEqualityComparer_System_Object__GetHashCode(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -218,7 +230,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
                 "System.Collections.Generic.IEqualityComparer<System.Object>.GetHashCode",
                 (obj),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -228,7 +240,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

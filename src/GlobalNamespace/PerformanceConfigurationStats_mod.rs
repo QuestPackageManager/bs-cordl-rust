@@ -45,12 +45,12 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats {
     pub type FloatStats = crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats;
     #[cfg(feature = "PerformanceConfigurationStats+IntStats")]
     pub type IntStats = crate::GlobalNamespace::PerformanceConfigurationStats_IntStats;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Update(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PerformanceConfigurationStats")]
@@ -111,13 +111,13 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
 impl crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
     pub fn CreateLogValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CreateLogValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "CreateLogValue", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -128,7 +128,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
             "Update",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PerformanceConfigurationStats+EnumStats_1")]
@@ -161,17 +161,17 @@ impl<
 > crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<T> {
     pub fn CreateLogValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CreateLogValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "CreateLogValue", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -186,7 +186,7 @@ impl<
             "Update",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PerformanceConfigurationStats+FloatStats")]
@@ -217,13 +217,13 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
 impl crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
     pub fn CreateLogValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CreateLogValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "CreateLogValue", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -234,7 +234,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
             "Update",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PerformanceConfigurationStats+IntStats")]
@@ -265,13 +265,13 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
 impl crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
     pub fn CreateLogValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CreateLogValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "CreateLogValue", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -282,6 +282,6 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
             "Update",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

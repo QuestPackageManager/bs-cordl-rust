@@ -33,28 +33,34 @@ impl crate::GlobalNamespace::MockNodePoseSyncStateSender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNodePoseSyncStateUpdate(
         &mut self,
-        nodePose: *mut crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
-        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+        nodePose: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
+        >,
+        connectedPlayer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleNodePoseSyncStateUpdate", (nodePose, connectedPlayer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        msm: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        msm: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSessionManager,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (msm))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SendPose(
         &mut self,
@@ -67,18 +73,20 @@ impl crate::GlobalNamespace::MockNodePoseSyncStateSender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendPose", (headPose, leftHandPose, rightHandPose))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        msm: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+        msm: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSessionManager,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (msm))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MockNodePoseSyncStateSender")]

@@ -47,7 +47,7 @@ impl crate::System::DateTimeResult {
             "Init",
             (originalDateTimeString),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetBadDateTimeFailure(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::System::DateTimeResult {
             "SetBadDateTimeFailure",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetBadFormatSpecifierFailure_0(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::System::DateTimeResult {
             "SetBadFormatSpecifierFailure",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetBadFormatSpecifierFailure_ReadOnlySpan_1_1(
         &mut self,
@@ -78,7 +78,7 @@ impl crate::System::DateTimeResult {
             "SetBadFormatSpecifierFailure",
             (failedFormatSpecifier),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDate(
         &mut self,
@@ -91,27 +91,33 @@ impl crate::System::DateTimeResult {
             "SetDate",
             (year, month, day),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetFailure_Il2CppObject1(
         &mut self,
         failure: crate::System::ParseFailureKind,
-        failureMessageID: *mut quest_hook::libil2cpp::Il2CppString,
-        failureMessageFormatArgument: *mut quest_hook::libil2cpp::Il2CppObject,
+        failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        failureMessageFormatArgument: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetFailure",
             (failure, failureMessageID, failureMessageFormatArgument),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetFailure_Il2CppObject_Il2CppString2(
         &mut self,
         failure: crate::System::ParseFailureKind,
-        failureMessageID: *mut quest_hook::libil2cpp::Il2CppString,
-        failureMessageFormatArgument: *mut quest_hook::libil2cpp::Il2CppObject,
-        failureArgumentName: *mut quest_hook::libil2cpp::Il2CppString,
+        failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        failureMessageFormatArgument: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        failureArgumentName: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -123,18 +129,18 @@ impl crate::System::DateTimeResult {
                 failureArgumentName,
             ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetFailure_ParseFailureKind_Il2CppString0(
         &mut self,
         failure: crate::System::ParseFailureKind,
-        failureMessageID: *mut quest_hook::libil2cpp::Il2CppString,
+        failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetFailure",
             (failure, failureMessageID),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

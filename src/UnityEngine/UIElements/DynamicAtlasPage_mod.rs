@@ -44,17 +44,19 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Commit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateAtlasTexture(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RenderTexture> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::RenderTexture = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = __cordl_object
             .invoke("CreateAtlasTexture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
@@ -64,7 +66,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -75,19 +77,19 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         format: crate::UnityEngine::RenderTextureFormat,
         filterMode: crate::UnityEngine::FilterMode,
         minSize: crate::UnityEngine::Vector2Int,
         maxSize: crate::UnityEngine::Vector2Int,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (format, filterMode, minSize, maxSize))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Remove(
         &mut self,
@@ -98,11 +100,11 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (alloc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryAdd(
         &mut self,
-        image: *mut crate::UnityEngine::Texture2D,
+        image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         alloc: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D,
         >,
@@ -112,11 +114,11 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryAdd", (image, alloc, rect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
-        image: *mut crate::UnityEngine::Texture2D,
+        image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         rect: crate::UnityEngine::RectInt,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -124,7 +126,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (image, rect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateAtlasTexture(
         &mut self,
@@ -134,7 +136,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateAtlasTexture", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -148,24 +150,26 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (format, filterMode, minSize, maxSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_atlas(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RenderTexture> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::RenderTexture = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = __cordl_object
             .invoke("get_atlas", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_filterMode(
         &mut self,
@@ -175,7 +179,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: crate::UnityEngine::FilterMode = __cordl_object
             .invoke("get_filterMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_format(
         &mut self,
@@ -185,7 +189,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: crate::UnityEngine::RenderTextureFormat = __cordl_object
             .invoke("get_format", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_textureId(
         &mut self,
@@ -195,18 +199,18 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::TextureId = __cordl_object
             .invoke("get_textureId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_atlas(
         &mut self,
-        value: *mut crate::UnityEngine::RenderTexture,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_atlas", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_disposed(
         &mut self,
@@ -217,7 +221,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_disposed", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_textureId(
         &mut self,
@@ -228,7 +232,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_textureId", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlasPage")]

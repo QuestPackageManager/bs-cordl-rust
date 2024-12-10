@@ -40,12 +40,16 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Get", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        actionOnGet: *mut crate::UnityEngine::Events::UnityAction_1<T>,
-        actionOnRelease: *mut crate::UnityEngine::Events::UnityAction_1<T>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        actionOnGet: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<T>,
+        >,
+        actionOnRelease: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -54,7 +58,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (actionOnGet, actionOnRelease))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Release(
         &mut self,
@@ -69,12 +73,16 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", (element))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        actionOnGet: *mut crate::UnityEngine::Events::UnityAction_1<T>,
-        actionOnRelease: *mut crate::UnityEngine::Events::UnityAction_1<T>,
+        actionOnGet: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<T>,
+        >,
+        actionOnRelease: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -85,7 +93,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (actionOnGet, actionOnRelease))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_countActive(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -96,7 +104,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_countActive", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_countAll(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -107,7 +115,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_countAll", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_countInactive(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -118,7 +126,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_countInactive", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_countAll(
         &mut self,
@@ -133,7 +141,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_countAll", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TMPro+TMP_ObjectPool_1")]

@@ -35,14 +35,14 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSelectableStateControllerStateDidChange", (state, animated))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDisabledState(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDisabledState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetHighlightedState(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHighlightedState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetNormalState(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetNormalState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetPressedState(
         &mut self,
@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPressedState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSelectedAndHighlightedState(
         &mut self,
@@ -122,7 +122,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSelectedAndHighlightedState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSelectedState(
         &mut self,
@@ -132,7 +132,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSelectedState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetState(
         &mut self,
@@ -143,7 +143,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetState", (viewState))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransitionToDisabledState(
         &mut self,
@@ -153,7 +153,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TransitionToDisabledState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransitionToHighlightedState(
         &mut self,
@@ -163,7 +163,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TransitionToHighlightedState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransitionToNormalState(
         &mut self,
@@ -173,7 +173,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TransitionToNormalState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransitionToPressedState(
         &mut self,
@@ -183,7 +183,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TransitionToPressedState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransitionToSelectedAndHighlightedState(
         &mut self,
@@ -193,7 +193,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TransitionToSelectedAndHighlightedState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransitionToSelectedState(
         &mut self,
@@ -203,7 +203,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TransitionToSelectedState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -213,27 +213,33 @@ impl crate::GlobalNamespace::BaseStateTransition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BaseTransitionSO> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BaseTransitionSO>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BaseTransitionSO = __cordl_object
-            .invoke("get_transition", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BaseTransitionSO,
+        > = __cordl_object.invoke("get_transition", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_tweeningManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Tweening::TimeTweeningManager> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Tweening::TimeTweeningManager>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Tweening::TimeTweeningManager = __cordl_object
-            .invoke("get_tweeningManager", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Tweening::TimeTweeningManager,
+        > = __cordl_object.invoke("get_tweeningManager", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BaseStateTransition")]

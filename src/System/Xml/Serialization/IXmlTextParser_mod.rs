@@ -34,7 +34,7 @@ impl crate::System::Xml::Serialization::IXmlTextParser {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_Normalized", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Normalized(
         &mut self,
@@ -45,7 +45,7 @@ impl crate::System::Xml::Serialization::IXmlTextParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Normalized", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Serialization+IXmlTextParser")]

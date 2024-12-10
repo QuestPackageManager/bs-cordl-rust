@@ -33,7 +33,7 @@ impl crate::System::Threading::SpinLock {
             "ContinueTryEnter",
             (millisecondsTimeout, lockTaken),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ContinueTryEnterWithThreadTracking(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::System::Threading::SpinLock {
             "ContinueTryEnterWithThreadTracking",
             (millisecondsTimeout, startTime, lockTaken),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DecrementWaiters(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::System::Threading::SpinLock {
             "DecrementWaiters",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enter(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::System::Threading::SpinLock {
             "Enter",
             (lockTaken),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Exit(
         &mut self,
@@ -78,7 +78,7 @@ impl crate::System::Threading::SpinLock {
             "Exit",
             (useMemoryBarrier),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExitSlowPath(
         &mut self,
@@ -89,7 +89,7 @@ impl crate::System::Threading::SpinLock {
             "ExitSlowPath",
             (useMemoryBarrier),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryEnter(
         &mut self,
@@ -101,7 +101,7 @@ impl crate::System::Threading::SpinLock {
             "TryEnter",
             (millisecondsTimeout, lockTaken),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -112,7 +112,7 @@ impl crate::System::Threading::SpinLock {
             ".ctor",
             (enableThreadOwnerTracking),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsHeldByCurrentThread(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -120,7 +120,7 @@ impl crate::System::Threading::SpinLock {
             "get_IsHeldByCurrentThread",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsThreadOwnerTrackingEnabled(
         &mut self,
@@ -130,7 +130,7 @@ impl crate::System::Threading::SpinLock {
             "get_IsThreadOwnerTrackingEnabled",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+SpinLock+SystemThreading_SpinLockDebugView")]

@@ -27,12 +27,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameServersFilterText {
 }
 #[cfg(feature = "GameServersFilterText")]
 impl crate::GlobalNamespace::GameServersFilterText {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Setup_BeatmapDifficultyMask_SongPackMask__cordl_bool1(
         &mut self,
@@ -45,11 +45,11 @@ impl crate::GlobalNamespace::GameServersFilterText {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Setup", (beatmapDifficultyMask, songPackMask, visible))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Setup_GameServersFilter__cordl_bool0(
         &mut self,
-        filter: *mut crate::GlobalNamespace::GameServersFilter,
+        filter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameServersFilter>,
         visible: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::GameServersFilterText {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Setup", (filter, visible))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::GameServersFilterText {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "GameServersFilterText")]

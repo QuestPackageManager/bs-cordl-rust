@@ -44,14 +44,14 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HideBigAvatar", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PauseSpawning(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PauseSpawning", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResumeSpawning(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResumeSpawning", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSongStartSyncTime(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSongStartSyncTime", (songStartSyncTime))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn __ForceStopSong(
         &mut self,
@@ -92,17 +92,20 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("__ForceStopSong", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn __GetPlayerAvatar(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::BeatSaber::AvatarCore::Avatar> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::Avatar>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::BeatSaber::AvatarCore::Avatar = __cordl_object
-            .invoke("__GetPlayerAvatar", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::Avatar,
+        > = __cordl_object.invoke("__GetPlayerAvatar", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -112,41 +115,47 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_introAnimator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator = __cordl_object
-            .invoke("get_introAnimator", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator,
+        > = __cordl_object.invoke("get_introAnimator", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_outroAnimator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke("get_outroAnimator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_scoreDiffText(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::MultiplayerScoreDiffText,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerScoreDiffText>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerScoreDiffText = __cordl_object
-            .invoke("get_scoreDiffText", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerScoreDiffText,
+        > = __cordl_object.invoke("get_scoreDiffText", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerFacade")]
@@ -196,12 +205,12 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
 }
 #[cfg(feature = "MultiplayerConnectedPlayerFacade+Factory")]
 impl crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -211,7 +220,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerFacade+Factory")]

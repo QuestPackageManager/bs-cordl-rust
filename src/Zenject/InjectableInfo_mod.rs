@@ -32,12 +32,12 @@ impl std::ops::DerefMut for crate::Zenject::InjectableInfo {
 impl crate::Zenject::InjectableInfo {
     pub fn New(
         optional: bool,
-        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
-        memberName: *mut quest_hook::libil2cpp::Il2CppString,
-        memberType: *mut crate::System::Type,
-        defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         sourceType: crate::Zenject::InjectSources,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -45,15 +45,15 @@ impl crate::Zenject::InjectableInfo {
                 ".ctor",
                 (optional, identifier, memberName, memberType, defaultValue, sourceType),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         optional: bool,
-        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
-        memberName: *mut quest_hook::libil2cpp::Il2CppString,
-        memberType: *mut crate::System::Type,
-        defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         sourceType: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -64,7 +64,7 @@ impl crate::Zenject::InjectableInfo {
                 ".ctor",
                 (optional, identifier, memberName, memberType, defaultValue, sourceType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+InjectableInfo")]

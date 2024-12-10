@@ -33,7 +33,7 @@ impl crate::TMPro::VertexGradient {
             ".ctor",
             (color),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Color_Color_Color1(
         &mut self,
@@ -47,6 +47,6 @@ impl crate::TMPro::VertexGradient {
             ".ctor",
             (color0, color1, color2, color3),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

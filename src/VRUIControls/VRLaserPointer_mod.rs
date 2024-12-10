@@ -25,12 +25,12 @@ impl std::ops::DerefMut for crate::VRUIControls::VRLaserPointer {
 }
 #[cfg(feature = "VRUIControls+VRLaserPointer")]
 impl crate::VRUIControls::VRLaserPointer {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetFadeDistance(
         &mut self,
@@ -41,7 +41,7 @@ impl crate::VRUIControls::VRLaserPointer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetFadeDistance", (distance))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLocalPosition(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::VRUIControls::VRLaserPointer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetLocalPosition", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetLocalScale(
         &mut self,
@@ -63,7 +63,7 @@ impl crate::VRUIControls::VRLaserPointer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetLocalScale", (scale))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::VRUIControls::VRLaserPointer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "VRUIControls+VRLaserPointer")]

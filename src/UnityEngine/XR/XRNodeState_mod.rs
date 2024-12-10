@@ -39,7 +39,7 @@ impl crate::UnityEngine::XR::XRNodeState {
             "TryGetAcceleration",
             (acceleration),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetAngularAcceleration(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::UnityEngine::XR::XRNodeState {
             "TryGetAngularAcceleration",
             (angularAcceleration),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetAngularVelocity(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::UnityEngine::XR::XRNodeState {
             "TryGetAngularVelocity",
             (angularVelocity),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetPosition(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::UnityEngine::XR::XRNodeState {
             "TryGetPosition",
             (position),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetRotation(
         &mut self,
@@ -83,7 +83,7 @@ impl crate::UnityEngine::XR::XRNodeState {
             "TryGetRotation",
             (rotation),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetVelocity(
         &mut self,
@@ -94,7 +94,7 @@ impl crate::UnityEngine::XR::XRNodeState {
             "TryGetVelocity",
             (velocity),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGet_Quaternion1(
         &mut self,
@@ -107,7 +107,7 @@ impl crate::UnityEngine::XR::XRNodeState {
             "TryGet",
             (inValue, availabilityFlag, outValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGet_Vector3_0(
         &mut self,
@@ -120,7 +120,7 @@ impl crate::UnityEngine::XR::XRNodeState {
             "TryGet",
             (inValue, availabilityFlag, outValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_nodeType(
         &mut self,
@@ -130,7 +130,7 @@ impl crate::UnityEngine::XR::XRNodeState {
             "get_nodeType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_nodeType(
         &mut self,
@@ -141,7 +141,7 @@ impl crate::UnityEngine::XR::XRNodeState {
             "set_nodeType",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tracked(
         &mut self,
@@ -152,7 +152,7 @@ impl crate::UnityEngine::XR::XRNodeState {
             "set_tracked",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_uniqueID(
         &mut self,
@@ -163,6 +163,6 @@ impl crate::UnityEngine::XR::XRNodeState {
             "set_uniqueID",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

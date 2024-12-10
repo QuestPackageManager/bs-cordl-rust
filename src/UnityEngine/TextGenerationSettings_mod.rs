@@ -49,7 +49,7 @@ impl crate::UnityEngine::TextGenerationSettings {
             "CompareColors",
             (left, right),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompareVector2(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::UnityEngine::TextGenerationSettings {
             "CompareVector2",
             (left, right),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
@@ -72,6 +72,6 @@ impl crate::UnityEngine::TextGenerationSettings {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

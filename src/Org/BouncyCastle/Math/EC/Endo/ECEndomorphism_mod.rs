@@ -35,19 +35,20 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasEfficientPointMap", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PointMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPointMap,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPointMap>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPointMap = __cordl_object
-            .invoke("get_PointMap", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::ECPointMap,
+        > = __cordl_object.invoke("get_PointMap", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+ECEndomorphism")]

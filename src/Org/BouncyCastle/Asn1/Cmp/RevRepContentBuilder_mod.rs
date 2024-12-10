@@ -30,62 +30,78 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBu
 impl crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder {
     pub fn AddCrl(
         &mut self,
-        crl: *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+        crl: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder = __cordl_object
-            .invoke("AddCrl", (crl))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder,
+        > = __cordl_object.invoke("AddCrl", (crl))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Add_CertId1(
         &mut self,
-        status: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
-        certId: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertId,
+        status: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
+        >,
+        certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::CertId>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder = __cordl_object
-            .invoke("Add", (status, certId))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder,
+        > = __cordl_object.invoke("Add", (status, certId))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Add_PkiStatusInfo0(
         &mut self,
-        status: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
+        status: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder = __cordl_object
-            .invoke("Add", (status))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder,
+        > = __cordl_object.invoke("Add", (status))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Build(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent = __cordl_object
-            .invoke("Build", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent,
+        > = __cordl_object.invoke("Build", ())?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -95,7 +111,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevRepContentBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+RevRepContentBuilder")]

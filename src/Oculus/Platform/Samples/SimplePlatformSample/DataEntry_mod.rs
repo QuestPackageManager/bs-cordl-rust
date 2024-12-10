@@ -28,12 +28,12 @@ for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
 }
 #[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
 impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Start(
         &mut self,
@@ -43,18 +43,18 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SubmitCommand(
         &mut self,
-        command: *mut quest_hook::libil2cpp::Il2CppString,
+        command: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SubmitCommand", (command))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -64,7 +64,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -74,23 +74,25 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn achievementCountCallback(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message,
+        msg: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("achievementCountCallback", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn achievementDefinitionCallback(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message_1<
-            *mut crate::Oculus::Platform::Models::AchievementDefinitionList,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1<
+                *mut crate::Oculus::Platform::Models::AchievementDefinitionList,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -98,23 +100,25 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("achievementDefinitionCallback", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn achievementFieldsCallback(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message,
+        msg: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("achievementFieldsCallback", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn achievementProgressCallback(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message_1<
-            *mut crate::Oculus::Platform::Models::AchievementProgressList,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1<
+                *mut crate::Oculus::Platform::Models::AchievementProgressList,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -122,42 +126,42 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("achievementProgressCallback", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn achievementUnlockCallback(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message,
+        msg: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("achievementUnlockCallback", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn addCountAchievement(
         &mut self,
-        achievementName: *mut quest_hook::libil2cpp::Il2CppString,
-        count: *mut quest_hook::libil2cpp::Il2CppString,
+        achievementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        count: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("addCountAchievement", (achievementName, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn addFieldsAchievement(
         &mut self,
-        achievementName: *mut quest_hook::libil2cpp::Il2CppString,
-        fields: *mut quest_hook::libil2cpp::Il2CppString,
+        achievementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fields: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("addFieldsAchievement", (achievementName, fields))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn checkEntitlement(
         &mut self,
@@ -167,45 +171,47 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("checkEntitlement", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getAchievementDefinition(
         &mut self,
-        achievementName: *mut quest_hook::libil2cpp::Il2CppString,
+        achievementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("getAchievementDefinition", (achievementName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getAchievementProgress(
         &mut self,
-        achievementName: *mut quest_hook::libil2cpp::Il2CppString,
+        achievementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("getAchievementProgress", (achievementName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getEntitlementCallback(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message,
+        msg: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("getEntitlementCallback", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getFriendsCallback(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message_1<
-            *mut crate::Oculus::Platform::Models::UserList,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1<
+                *mut crate::Oculus::Platform::Models::UserList,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -213,18 +219,18 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("getFriendsCallback", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getLeaderboardEntries(
         &mut self,
-        leaderboardName: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("getLeaderboardEntries", (leaderboardName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getLoggedInFriends(
         &mut self,
@@ -234,7 +240,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("getLoggedInFriends", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getLoggedInUser(
         &mut self,
@@ -244,23 +250,25 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("getLoggedInUser", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getUser(
         &mut self,
-        userID: *mut quest_hook::libil2cpp::Il2CppString,
+        userID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("getUser", (userID))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getUserCallback(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message_1<
-            *mut crate::Oculus::Platform::Models::User,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1<
+                *mut crate::Oculus::Platform::Models::User,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -268,7 +276,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("getUserCallback", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn getUserNonce(
         &mut self,
@@ -278,12 +286,14 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("getUserNonce", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn leaderboardGetCallback(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message_1<
-            *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1<
+                *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -291,56 +301,58 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("leaderboardGetCallback", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn leaderboardWriteCallback(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message,
+        msg: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("leaderboardWriteCallback", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn outputUserArray(
         &mut self,
-        users: *mut crate::Oculus::Platform::Models::UserList,
+        users: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("outputUserArray", (users))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn printOutputLine(
         &mut self,
-        newLine: *mut quest_hook::libil2cpp::Il2CppString,
+        newLine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("printOutputLine", (newLine))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn unlockAchievement(
         &mut self,
-        achievementName: *mut quest_hook::libil2cpp::Il2CppString,
+        achievementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("unlockAchievement", (achievementName))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn userProofCallback(
         &mut self,
-        msg: *mut crate::Oculus::Platform::Message_1<
-            *mut crate::Oculus::Platform::Models::UserProof,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1<
+                *mut crate::Oculus::Platform::Models::UserProof,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -348,19 +360,19 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("userProofCallback", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn writeLeaderboardEntry(
         &mut self,
-        leaderboardName: *mut quest_hook::libil2cpp::Il2CppString,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("writeLeaderboardEntry", (leaderboardName, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]

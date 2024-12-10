@@ -33,7 +33,7 @@ impl crate::System::Threading::ExecutionContextSwitcher {
             "Undo",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UndoNoThrow(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -41,6 +41,6 @@ impl crate::System::Threading::ExecutionContextSwitcher {
             "UndoNoThrow",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

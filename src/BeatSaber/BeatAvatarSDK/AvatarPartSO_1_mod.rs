@@ -30,7 +30,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<T> {
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartSO_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<T> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -39,7 +39,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatSaber::BeatAvatarSDK::AvatarPart
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -51,11 +51,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatSaber::BeatAvatarSDK::AvatarPart
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_id(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -63,13 +65,16 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatSaber::BeatAvatarSDK::AvatarPart
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_id", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_id", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_localizationKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -77,9 +82,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatSaber::BeatAvatarSDK::AvatarPart
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_localizationKey", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_localizationKey", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_partAsset(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -90,7 +96,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatSaber::BeatAvatarSDK::AvatarPart
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_partAsset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartSO_1")]

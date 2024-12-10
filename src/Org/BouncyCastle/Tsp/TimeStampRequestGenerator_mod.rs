@@ -31,120 +31,136 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Tsp::TimeStampRequestGener
 impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
     pub fn AddExtension_DerObjectIdentifier_Asn1Encodable2(
         &mut self,
-        oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
         critical: bool,
-        extValue: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        extValue: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddExtension", (oid, critical, extValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddExtension_DerObjectIdentifier_Il2CppArray3(
         &mut self,
-        oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
         critical: bool,
-        extValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        extValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddExtension", (oid, critical, extValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddExtension_Il2CppString_Asn1Encodable0(
         &mut self,
-        oid: *mut quest_hook::libil2cpp::Il2CppString,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         critical: bool,
-        value: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        value: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddExtension", (oid, critical, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddExtension_Il2CppString_Il2CppArray1(
         &mut self,
-        oid: *mut quest_hook::libil2cpp::Il2CppString,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         critical: bool,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddExtension", (oid, critical, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_DerObjectIdentifier2(
         &mut self,
-        digestAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        digest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        digestAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Tsp::TimeStampRequest,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampRequest>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Tsp::TimeStampRequest = __cordl_object
-            .invoke("Generate", (digestAlgorithm, digest))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampRequest,
+        > = __cordl_object.invoke("Generate", (digestAlgorithm, digest))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_DerObjectIdentifier_BigInteger3(
         &mut self,
-        digestAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        digest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        nonce: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        digestAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        nonce: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Tsp::TimeStampRequest,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampRequest>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Tsp::TimeStampRequest = __cordl_object
-            .invoke("Generate", (digestAlgorithm, digest, nonce))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampRequest,
+        > = __cordl_object.invoke("Generate", (digestAlgorithm, digest, nonce))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_Il2CppString0(
         &mut self,
-        digestAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
-        digest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        digestAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Tsp::TimeStampRequest,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampRequest>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Tsp::TimeStampRequest = __cordl_object
-            .invoke("Generate", (digestAlgorithm, digest))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampRequest,
+        > = __cordl_object.invoke("Generate", (digestAlgorithm, digest))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Generate_Il2CppString_BigInteger1(
         &mut self,
-        digestAlgorithmOid: *mut quest_hook::libil2cpp::Il2CppString,
-        digest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        nonce: *mut crate::Org::BouncyCastle::Math::BigInteger,
+        digestAlgorithmOid: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        nonce: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Tsp::TimeStampRequest,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampRequest>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Tsp::TimeStampRequest = __cordl_object
-            .invoke("Generate", (digestAlgorithmOid, digest, nonce))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Tsp::TimeStampRequest,
+        > = __cordl_object.invoke("Generate", (digestAlgorithmOid, digest, nonce))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetCertReq(
         &mut self,
@@ -155,18 +171,18 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCertReq", (certReq))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetReqPolicy(
         &mut self,
-        reqPolicy: *mut quest_hook::libil2cpp::Il2CppString,
+        reqPolicy: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetReqPolicy", (reqPolicy))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -176,7 +192,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampRequestGenerator")]

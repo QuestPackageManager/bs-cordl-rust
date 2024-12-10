@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidDeactivate(
         &mut self,
@@ -67,11 +67,11 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleStatsScopeSegmentedControlDidSelectCell(
         &mut self,
-        segmentedControl: *mut crate::HMUI::SegmentedControl,
+        segmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
         cellIdx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -82,85 +82,102 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController {
                 "HandleStatsScopeSegmentedControlDidSelectCell",
                 (segmentedControl, cellIdx),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateView(
         &mut self,
-        playerOverallStatsData: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        playerOverallStatsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateView", (playerOverallStatsData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _DidActivate_b__14_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData = __cordl_object
-            .invoke("<DidActivate>b__14_0", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        > = __cordl_object.invoke("<DidActivate>b__14_0", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _DidActivate_b__14_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData = __cordl_object
-            .invoke("<DidActivate>b__14_1", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        > = __cordl_object.invoke("<DidActivate>b__14_1", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _DidActivate_b__14_2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData = __cordl_object
-            .invoke("<DidActivate>b__14_2", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        > = __cordl_object.invoke("<DidActivate>b__14_2", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _DidActivate_b__14_3(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData = __cordl_object
-            .invoke("<DidActivate>b__14_3", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        > = __cordl_object.invoke("<DidActivate>b__14_3", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _DidActivate_b__14_4(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData = __cordl_object
-            .invoke("<DidActivate>b__14_4", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        > = __cordl_object.invoke("<DidActivate>b__14_4", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -170,7 +187,7 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PlayerStatisticsViewController")]
@@ -213,9 +230,11 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
 impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     pub fn _ctor(
         &mut self,
-        text: *mut quest_hook::libil2cpp::Il2CppString,
-        playerOverallStatsDataFunc: *mut crate::System::Func_1<
-            *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playerOverallStatsDataFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<
+                *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -223,38 +242,44 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
             ".ctor",
             (text, playerOverallStatsDataFunc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_playerOverallStatsDataFunc(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_1<
-            *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<
+                *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+            >,
         >,
     > {
-        let __cordl_ret: *mut crate::System::Func_1<
-            *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<
+                *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_playerOverallStatsDataFunc",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_text",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_text", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_playerOverallStatsDataFunc(
         &mut self,
-        value: *mut crate::System::Func_1<
-            *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<
+                *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -262,17 +287,17 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
             "set_playerOverallStatsDataFunc",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_text(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_text",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

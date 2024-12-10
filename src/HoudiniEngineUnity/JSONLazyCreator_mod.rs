@@ -28,36 +28,36 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::JSONLazyCreator {
 impl crate::HoudiniEngineUnity::JSONLazyCreator {
     pub fn Add_Il2CppString_JSONNode1(
         &mut self,
-        aKey: *mut quest_hook::libil2cpp::Il2CppString,
-        aItem: *mut crate::HoudiniEngineUnity::JSONNode,
+        aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        aItem: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (aKey, aItem))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Add_JSONNode0(
         &mut self,
-        aItem: *mut crate::HoudiniEngineUnity::JSONNode,
+        aItem: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Add", (aItem))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
@@ -67,33 +67,33 @@ impl crate::HoudiniEngineUnity::JSONLazyCreator {
         );
         let __cordl_ret: crate::HoudiniEngineUnity::JSONNode_Enumerator = __cordl_object
             .invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppString1(
-        aNode: *mut crate::HoudiniEngineUnity::JSONNode,
-        aKey: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        aNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+        aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (aNode, aKey))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_JSONNode0(
-        aNode: *mut crate::HoudiniEngineUnity::JSONNode,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        aNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (aNode))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Set<T>(&mut self, aVal: T) -> quest_hook::libil2cpp::Result<T>
     where
@@ -104,11 +104,11 @@ impl crate::HoudiniEngineUnity::JSONLazyCreator {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Set", (aVal))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteToStringBuilder(
         &mut self,
-        aSB: *mut crate::System::Text::StringBuilder,
+        aSB: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         aIndent: i32,
         aIndentInc: i32,
         aMode: crate::HoudiniEngineUnity::JSONTextMode,
@@ -118,107 +118,119 @@ impl crate::HoudiniEngineUnity::JSONLazyCreator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteToStringBuilder", (aSB, aIndent, aIndentInc, aMode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString1(
         &mut self,
-        aNode: *mut crate::HoudiniEngineUnity::JSONNode,
-        aKey: *mut quest_hook::libil2cpp::Il2CppString,
+        aNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+        aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (aNode, aKey))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_JSONNode0(
         &mut self,
-        aNode: *mut crate::HoudiniEngineUnity::JSONNode,
+        aNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (aNode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AsArray(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::JSONArray> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONArray>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HoudiniEngineUnity::JSONArray = __cordl_object
-            .invoke("get_AsArray", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::JSONArray,
+        > = __cordl_object.invoke("get_AsArray", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_AsBool(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_AsBool", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AsDouble(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f64 = __cordl_object.invoke("get_AsDouble", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AsFloat(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_AsFloat", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AsInt(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_AsInt", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AsLong(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_AsLong", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_AsObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::JSONObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HoudiniEngineUnity::JSONObject = __cordl_object
-            .invoke("get_AsObject", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::JSONObject,
+        > = __cordl_object.invoke("get_AsObject", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item_Il2CppString1(
         &mut self,
-        aKey: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::JSONNode> {
+        aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HoudiniEngineUnity::JSONNode = __cordl_object
-            .invoke("get_Item", (aKey))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::JSONNode,
+        > = __cordl_object.invoke("get_Item", (aKey))?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item_i32_0(
         &mut self,
         aIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::JSONNode> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::HoudiniEngineUnity::JSONNode = __cordl_object
-            .invoke("get_Item", (aIndex))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::JSONNode,
+        > = __cordl_object.invoke("get_Item", (aIndex))?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Tag(
         &mut self,
@@ -228,7 +240,7 @@ impl crate::HoudiniEngineUnity::JSONLazyCreator {
         );
         let __cordl_ret: crate::HoudiniEngineUnity::JSONNodeType = __cordl_object
             .invoke("get_Tag", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_AsBool(
         &mut self,
@@ -239,7 +251,7 @@ impl crate::HoudiniEngineUnity::JSONLazyCreator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_AsBool", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_AsDouble(
         &mut self,
@@ -250,7 +262,7 @@ impl crate::HoudiniEngineUnity::JSONLazyCreator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_AsDouble", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_AsFloat(
         &mut self,
@@ -261,7 +273,7 @@ impl crate::HoudiniEngineUnity::JSONLazyCreator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_AsFloat", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_AsInt(
         &mut self,
@@ -272,7 +284,7 @@ impl crate::HoudiniEngineUnity::JSONLazyCreator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_AsInt", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_AsLong(
         &mut self,
@@ -283,31 +295,31 @@ impl crate::HoudiniEngineUnity::JSONLazyCreator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_AsLong", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item_Il2CppString1(
         &mut self,
-        aKey: *mut quest_hook::libil2cpp::Il2CppString,
-        value: *mut crate::HoudiniEngineUnity::JSONNode,
+        aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (aKey, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item_i32_0(
         &mut self,
         aIndex: i32,
-        value: *mut crate::HoudiniEngineUnity::JSONNode,
+        value: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (aIndex, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+JSONLazyCreator")]

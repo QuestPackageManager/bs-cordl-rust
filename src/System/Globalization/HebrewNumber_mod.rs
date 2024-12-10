@@ -125,6 +125,6 @@ impl crate::System::Globalization::HebrewNumber_HebrewValue {
             ".ctor",
             (token, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

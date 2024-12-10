@@ -26,30 +26,37 @@ impl std::ops::DerefMut for crate::System::Xml::IDtdAttributeListInfo {
 impl crate::System::Xml::IDtdAttributeListInfo {
     pub fn LookupAttribute(
         &mut self,
-        prefix: *mut quest_hook::libil2cpp::Il2CppString,
-        localName: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::IDtdAttributeInfo> {
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdAttributeInfo>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::IDtdAttributeInfo = __cordl_object
-            .invoke("LookupAttribute", (prefix, localName))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::IDtdAttributeInfo,
+        > = __cordl_object.invoke("LookupAttribute", (prefix, localName))?;
+        Ok(__cordl_ret.into())
     }
     pub fn LookupDefaultAttributes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Xml::IDtdDefaultAttributeInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Xml::IDtdDefaultAttributeInfo,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Xml::IDtdDefaultAttributeInfo,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Xml::IDtdDefaultAttributeInfo,
+            >,
         > = __cordl_object.invoke("LookupDefaultAttributes", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -61,7 +68,7 @@ impl crate::System::Xml::IDtdAttributeListInfo {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasNonCDataAttributes", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+IDtdAttributeListInfo")]

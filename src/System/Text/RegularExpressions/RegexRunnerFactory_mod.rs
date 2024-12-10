@@ -28,14 +28,15 @@ impl crate::System::Text::RegularExpressions::RegexRunnerFactory {
     pub fn CreateInstance(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Text::RegularExpressions::RegexRunner,
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexRunner>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Text::RegularExpressions::RegexRunner = __cordl_object
-            .invoke("CreateInstance", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexRunner,
+        > = __cordl_object.invoke("CreateInstance", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexRunnerFactory")]

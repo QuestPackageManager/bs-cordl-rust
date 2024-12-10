@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::HMUI::GradientImage {
 impl crate::HMUI::GradientImage {
     pub fn GenerateFilledSprite(
         &mut self,
-        toFill: *mut crate::UnityEngine::UI::VertexHelper,
+        toFill: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
         preserveAspect: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -36,11 +36,11 @@ impl crate::HMUI::GradientImage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateFilledSprite", (toFill, preserveAspect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateSimpleSprite(
         &mut self,
-        vh: *mut crate::UnityEngine::UI::VertexHelper,
+        vh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
         lPreserveAspect: bool,
         curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -49,11 +49,11 @@ impl crate::HMUI::GradientImage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateSimpleSprite", (vh, lPreserveAspect, curvedUIRadius))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateSlicedSprite(
         &mut self,
-        vh: *mut crate::UnityEngine::UI::VertexHelper,
+        vh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
         curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -61,18 +61,18 @@ impl crate::HMUI::GradientImage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateSlicedSprite", (vh, curvedUIRadius))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateTiledSprite(
         &mut self,
-        toFill: *mut crate::UnityEngine::UI::VertexHelper,
+        toFill: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateTiledSprite", (toFill))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAdjustedBorders(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::HMUI::GradientImage {
         );
         let __cordl_ret: crate::UnityEngine::Vector4 = __cordl_object
             .invoke("GetAdjustedBorders", (border, rect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDrawingDimensions(
         &mut self,
@@ -95,25 +95,25 @@ impl crate::HMUI::GradientImage {
         );
         let __cordl_ret: crate::UnityEngine::Vector4 = __cordl_object
             .invoke("GetDrawingDimensions", (shouldPreserveAspect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnPopulateMesh(
         &mut self,
-        toFill: *mut crate::UnityEngine::UI::VertexHelper,
+        toFill: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPopulateMesh", (toFill))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -123,7 +123,7 @@ impl crate::HMUI::GradientImage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_color0(
         &mut self,
@@ -133,7 +133,7 @@ impl crate::HMUI::GradientImage {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_color0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_color1(
         &mut self,
@@ -143,7 +143,7 @@ impl crate::HMUI::GradientImage {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_color1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_color0(
         &mut self,
@@ -154,7 +154,7 @@ impl crate::HMUI::GradientImage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_color0", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_color1(
         &mut self,
@@ -165,7 +165,7 @@ impl crate::HMUI::GradientImage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_color1", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HMUI+GradientImage")]

@@ -30,26 +30,28 @@ impl crate::UnityEngine::UIElements::TreeItem {
         &mut self,
         id: i32,
         parentId: i32,
-        childrenIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        childrenIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (id, parentId, childrenIds),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_childrenIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<i32> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_childrenIds",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_childrenIds", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasChildren(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -57,7 +59,7 @@ impl crate::UnityEngine::UIElements::TreeItem {
             "get_hasChildren",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -65,7 +67,7 @@ impl crate::UnityEngine::UIElements::TreeItem {
             "get_id",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_parentId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -73,6 +75,6 @@ impl crate::UnityEngine::UIElements::TreeItem {
             "get_parentId",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

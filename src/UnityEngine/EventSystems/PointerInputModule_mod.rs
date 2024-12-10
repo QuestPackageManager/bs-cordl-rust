@@ -47,69 +47,80 @@ impl crate::UnityEngine::EventSystems::PointerInputModule {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearSelection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyFromTo(
         &mut self,
-        from: *mut crate::UnityEngine::EventSystems::PointerEventData,
-        to: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        from: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+        to: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyFromTo", (from, to))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DeselectIfSelectionChanged(
         &mut self,
-        currentOverGo: *mut crate::UnityEngine::GameObject,
-        pointerEvent: *mut crate::UnityEngine::EventSystems::BaseEventData,
+        currentOverGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DeselectIfSelectionChanged", (currentOverGo, pointerEvent))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLastPointerEventData(
         &mut self,
         id: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::EventSystems::PointerEventData,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::EventSystems::PointerEventData = __cordl_object
-            .invoke("GetLastPointerEventData", (id))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        > = __cordl_object.invoke("GetLastPointerEventData", (id))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetMousePointerEventData_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::EventSystems::PointerInputModule_MouseState = __cordl_object
-            .invoke("GetMousePointerEventData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
+        > = __cordl_object.invoke("GetMousePointerEventData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetMousePointerEventData_i32_1(
         &mut self,
         id: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::EventSystems::PointerInputModule_MouseState = __cordl_object
-            .invoke("GetMousePointerEventData", (id))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
+        > = __cordl_object.invoke("GetMousePointerEventData", (id))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPointerData(
         &mut self,
@@ -124,7 +135,7 @@ impl crate::UnityEngine::EventSystems::PointerInputModule {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetPointerData", (id, data, create))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTouchPointerEventData(
         &mut self,
@@ -132,14 +143,16 @@ impl crate::UnityEngine::EventSystems::PointerInputModule {
         pressed: quest_hook::libil2cpp::ByRefMut<bool>,
         released: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::EventSystems::PointerEventData,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::EventSystems::PointerEventData = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        > = __cordl_object
             .invoke("GetTouchPointerEventData", (input, pressed, released))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsPointerOverGameObject(
         &mut self,
@@ -150,47 +163,53 @@ impl crate::UnityEngine::EventSystems::PointerInputModule {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsPointerOverGameObject", (pointerId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessDrag(
         &mut self,
-        pointerEvent: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessDrag", (pointerEvent))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessMove(
         &mut self,
-        pointerEvent: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessMove", (pointerEvent))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemovePointerData(
         &mut self,
-        data: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        data: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemovePointerData", (data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StateForMouseButton(
         &mut self,
@@ -203,17 +222,20 @@ impl crate::UnityEngine::EventSystems::PointerInputModule {
         );
         let __cordl_ret: crate::UnityEngine::EventSystems::PointerEventData_FramePressState = __cordl_object
             .invoke("StateForMouseButton", (buttonId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -223,7 +245,7 @@ impl crate::UnityEngine::EventSystems::PointerInputModule {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule")]
@@ -267,12 +289,12 @@ for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
 impl crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -282,7 +304,7 @@ impl crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_button(
         &mut self,
@@ -294,19 +316,22 @@ impl crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
         );
         let __cordl_ret: crate::UnityEngine::EventSystems::PointerEventData_InputButton = __cordl_object
             .invoke("get_button", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_eventData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData = __cordl_object
-            .invoke("get_eventData", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData,
+        > = __cordl_object.invoke("get_eventData", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_button(
         &mut self,
@@ -317,18 +342,20 @@ impl crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_button", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_eventData(
         &mut self,
-        value: *mut crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_eventData", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
@@ -372,26 +399,26 @@ for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
 impl crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PressedThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("PressedThisFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReleasedThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ReleasedThisFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -401,7 +428,7 @@ impl crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
@@ -451,47 +478,52 @@ impl crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("AnyPressesThisFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AnyReleasesThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("AnyReleasesThisFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetButtonState(
         &mut self,
         button: crate::UnityEngine::EventSystems::PointerEventData_InputButton,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::EventSystems::PointerInputModule_ButtonState,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerInputModule_ButtonState,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::EventSystems::PointerInputModule_ButtonState = __cordl_object
-            .invoke("GetButtonState", (button))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerInputModule_ButtonState,
+        > = __cordl_object.invoke("GetButtonState", (button))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetButtonState(
         &mut self,
         button: crate::UnityEngine::EventSystems::PointerEventData_InputButton,
         stateForMouseButton: crate::UnityEngine::EventSystems::PointerEventData_FramePressState,
-        data: *mut crate::UnityEngine::EventSystems::PointerEventData,
+        data: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetButtonState", (button, stateForMouseButton, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -501,7 +533,7 @@ impl crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseState")]

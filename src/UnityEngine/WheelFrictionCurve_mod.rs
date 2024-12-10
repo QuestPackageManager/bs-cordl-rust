@@ -32,7 +32,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
             "get_asymptoteSlip",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_asymptoteValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -40,7 +40,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
             "get_asymptoteValue",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_extremumSlip(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -48,7 +48,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
             "get_extremumSlip",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_extremumValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -56,7 +56,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
             "get_extremumValue",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_stiffness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -64,7 +64,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
             "get_stiffness",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_asymptoteSlip(
         &mut self,
@@ -75,7 +75,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
             "set_asymptoteSlip",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_asymptoteValue(
         &mut self,
@@ -86,7 +86,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
             "set_asymptoteValue",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_extremumSlip(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
             "set_extremumSlip",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_extremumValue(
         &mut self,
@@ -108,7 +108,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
             "set_extremumValue",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_stiffness(
         &mut self,
@@ -119,6 +119,6 @@ impl crate::UnityEngine::WheelFrictionCurve {
             "set_stiffness",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

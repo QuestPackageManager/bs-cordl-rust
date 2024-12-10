@@ -29,24 +29,26 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::CompletionActionInv
 impl crate::System::Threading::Tasks::CompletionActionInvoker {
     pub fn MarkAborted(
         &mut self,
-        e: *mut crate::System::Threading::ThreadAbortException,
+        e: quest_hook::libil2cpp::Gc<crate::System::Threading::ThreadAbortException>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkAborted", (e))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        action: *mut crate::System::Threading::Tasks::ITaskCompletionAction,
-        completingTask: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::ITaskCompletionAction,
+        >,
+        completingTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (action, completingTask))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn System_Threading_IThreadPoolWorkItem_ExecuteWorkItem(
         &mut self,
@@ -56,19 +58,21 @@ impl crate::System::Threading::Tasks::CompletionActionInvoker {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.Threading.IThreadPoolWorkItem.ExecuteWorkItem", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        action: *mut crate::System::Threading::Tasks::ITaskCompletionAction,
-        completingTask: *mut crate::System::Threading::Tasks::Task,
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::ITaskCompletionAction,
+        >,
+        completingTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (action, completingTask))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+Tasks+CompletionActionInvoker")]

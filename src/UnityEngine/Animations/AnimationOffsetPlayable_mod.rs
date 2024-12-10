@@ -31,7 +31,7 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -41,7 +41,7 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -52,6 +52,6 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             ".ctor",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

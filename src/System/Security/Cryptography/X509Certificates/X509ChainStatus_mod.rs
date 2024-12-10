@@ -33,7 +33,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
             ".ctor",
             (flag),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Status(
         &mut self,
@@ -45,7 +45,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
             "get_Status",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Status(
         &mut self,
@@ -56,17 +56,17 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
             "set_Status",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_StatusInformation(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_StatusInformation",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

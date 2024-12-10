@@ -36,7 +36,7 @@ impl crate::GlobalNamespace::OVRComposition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cleanup", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompositionMethod(
         &mut self,
@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::OVRComposition {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_CompositionMethod = __cordl_object
             .invoke("CompositionMethod", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeCameraTrackingSpacePose(
         &mut self,
@@ -59,30 +59,32 @@ impl crate::GlobalNamespace::OVRComposition {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRPose = __cordl_object
             .invoke("ComputeCameraTrackingSpacePose", (extrinsics))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeCameraWorldSpacePose(
         &mut self,
         extrinsics: crate::GlobalNamespace::OVRPlugin_CameraExtrinsics,
-        mainCamera: *mut crate::UnityEngine::Camera,
+        mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::GlobalNamespace::OVRPose = __cordl_object
             .invoke("ComputeCameraWorldSpacePose", (extrinsics, mainCamera))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        parentObject: *mut crate::UnityEngine::GameObject,
-        mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        parentObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        configuration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (parentObject, mainCamera, configuration))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RecenterPose(
         &mut self,
@@ -92,25 +94,27 @@ impl crate::GlobalNamespace::OVRComposition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RecenterPose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshCameraRig(
         &mut self,
-        parentObject: *mut crate::UnityEngine::GameObject,
-        mainCamera: *mut crate::UnityEngine::Camera,
+        parentObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshCameraRig", (parentObject, mainCamera))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
-        gameObject: *mut crate::UnityEngine::GameObject,
-        mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        configuration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
         trackingOrigin: crate::GlobalNamespace::OVRManager_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -118,20 +122,22 @@ impl crate::GlobalNamespace::OVRComposition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (gameObject, mainCamera, configuration, trackingOrigin))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        parentObject: *mut crate::UnityEngine::GameObject,
-        mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        parentObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        configuration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (parentObject, mainCamera, configuration))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRComposition")]

@@ -30,29 +30,29 @@ impl std::ops::DerefMut for crate::Mono::Globalization::Unicode::Contraction {
 impl crate::Mono::Globalization::Unicode::Contraction {
     pub fn New(
         index: i32,
-        source: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        replacement: *mut quest_hook::libil2cpp::Il2CppString,
-        sortkey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        replacement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        sortkey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (index, source, replacement, sortkey))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         index: i32,
-        source: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        replacement: *mut quest_hook::libil2cpp::Il2CppString,
-        sortkey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        replacement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        sortkey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (index, source, replacement, sortkey))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Mono+Globalization+Unicode+Contraction")]

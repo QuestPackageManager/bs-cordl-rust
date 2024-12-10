@@ -31,11 +31,11 @@ impl crate::Newtonsoft::Json::JsonPosition {
             "CalculateLength",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteTo(
         &mut self,
-        sb: *mut crate::System::Text::StringBuilder,
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         writer: quest_hook::libil2cpp::ByRefMut<*mut crate::System::IO::StringWriter>,
         buffer: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -46,7 +46,7 @@ impl crate::Newtonsoft::Json::JsonPosition {
             "WriteTo",
             (sb, writer, buffer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -57,6 +57,6 @@ impl crate::Newtonsoft::Json::JsonPosition {
             ".ctor",
             (_cordl_type),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

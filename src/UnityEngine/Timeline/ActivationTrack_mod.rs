@@ -33,12 +33,12 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CanCompileClips", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateTrackMixer(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        go: *mut crate::UnityEngine::GameObject,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         inputCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -46,37 +46,41 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         );
         let __cordl_ret: crate::UnityEngine::Playables::Playable = __cordl_object
             .invoke("CreateTrackMixer", (graph, go, inputCount))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GatherProperties(
         &mut self,
-        director: *mut crate::UnityEngine::Playables::PlayableDirector,
-        driver: *mut crate::UnityEngine::Timeline::IPropertyCollector,
+        director: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Playables::PlayableDirector,
+        >,
+        driver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Timeline::IPropertyCollector,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GatherProperties", (director, driver))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnCreateClip(
         &mut self,
-        clip: *mut crate::UnityEngine::Timeline::TimelineClip,
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnCreateClip", (clip))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateTrackMode(
         &mut self,
@@ -86,7 +90,7 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateTrackMode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -96,7 +100,7 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_postPlaybackState(
         &mut self,
@@ -108,7 +112,7 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         );
         let __cordl_ret: crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState = __cordl_object
             .invoke("get_postPlaybackState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_postPlaybackState(
         &mut self,
@@ -119,7 +123,7 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_postPlaybackState", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ActivationTrack")]

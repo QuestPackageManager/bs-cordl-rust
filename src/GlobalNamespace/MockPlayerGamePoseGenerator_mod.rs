@@ -37,14 +37,16 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
         introStartTime: i64,
-        beatmapData: *mut crate::GlobalNamespace::MockBeatmapData,
-        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-        onSongFinished: *mut crate::System::Action,
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        onSongFinished: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,13 +56,17 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
                 "Init",
                 (introStartTime, beatmapData, gameplayModifiers, onSongFinished),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+        multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSessionManager,
+        >,
+        gameplayRpcManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayRpcManager,
+        >,
         leftHanded: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -68,7 +74,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
                 ".ctor",
                 (multiplayerSessionManager, gameplayRpcManager, leftHanded),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SimulateFail(
         &mut self,
@@ -78,7 +84,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SimulateFail", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SimulateGiveUp(
         &mut self,
@@ -88,7 +94,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SimulateGiveUp", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Tick(
         &mut self,
@@ -98,12 +104,16 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Tick", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+        multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IMultiplayerSessionManager,
+        >,
+        gameplayRpcManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayRpcManager,
+        >,
         leftHanded: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -114,7 +124,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
                 ".ctor",
                 (multiplayerSessionManager, gameplayRpcManager, leftHanded),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MockPlayerGamePoseGenerator")]

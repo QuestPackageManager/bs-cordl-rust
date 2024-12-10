@@ -27,18 +27,18 @@ impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizationAsset {
 #[cfg(feature = "BGLib+Polyglot+LocalizationAsset")]
 impl crate::BGLib::Polyglot::LocalizationAsset {
     pub fn New(
-        textAsset: *mut crate::UnityEngine::TextAsset,
+        textAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
         format: crate::BGLib::Polyglot::GoogleDriveDownloadFormat,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (textAsset, format))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        textAsset: *mut crate::UnityEngine::TextAsset,
+        textAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
         format: crate::BGLib::Polyglot::GoogleDriveDownloadFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -46,7 +46,7 @@ impl crate::BGLib::Polyglot::LocalizationAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (textAsset, format))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Format(
         &mut self,
@@ -58,17 +58,19 @@ impl crate::BGLib::Polyglot::LocalizationAsset {
         );
         let __cordl_ret: crate::BGLib::Polyglot::GoogleDriveDownloadFormat = __cordl_object
             .invoke("get_Format", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_TextAsset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::TextAsset> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::TextAsset = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset> = __cordl_object
             .invoke("get_TextAsset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizationAsset")]

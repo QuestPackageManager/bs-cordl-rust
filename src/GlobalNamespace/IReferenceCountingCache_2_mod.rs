@@ -50,7 +50,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("AddReference", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetReferenceCount(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -63,7 +63,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetReferenceCount", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Insert(
         &mut self,
@@ -80,7 +80,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Insert", (key, item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveReference(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -93,7 +93,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("RemoveReference", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGet(
         &mut self,
@@ -110,7 +110,7 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGet", (key, result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

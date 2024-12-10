@@ -32,12 +32,12 @@ impl crate::GlobalNamespace::ScoreModel {
     pub type MaxScoreCounterElement = crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement;
     #[cfg(feature = "ScoreModel+NoteScoreDefinition")]
     pub type NoteScoreDefinition = crate::GlobalNamespace::ScoreModel_NoteScoreDefinition;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::ScoreModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ScoreModel")]
@@ -90,23 +90,25 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ScoreModel_MaxScoreCounterEl
 impl crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     pub fn CompareTo(
         &mut self,
-        other: *mut crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+        other: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (other))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         scoringType: crate::GlobalNamespace::NoteData_ScoringType,
         _cordl_time: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (scoringType, _cordl_time))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -118,7 +120,7 @@ impl crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (scoringType, _cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
@@ -170,7 +172,7 @@ impl crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
         minAfterCutScore: i32,
         maxAfterCutScore: i32,
         fixedCutScore: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -185,7 +187,7 @@ impl crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
                     fixedCutScore,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -211,21 +213,21 @@ impl crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
                     fixedCutScore,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_executionOrder(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_executionOrder", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_maxCutScore", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ScoreModel+NoteScoreDefinition")]

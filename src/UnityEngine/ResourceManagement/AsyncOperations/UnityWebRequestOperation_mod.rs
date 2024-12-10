@@ -50,38 +50,42 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOpe
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Execute", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        webRequest: *mut crate::UnityEngine::Networking::UnityWebRequest,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        webRequest: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequest,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (webRequest))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _Execute_b__2_0(
         &mut self,
-        request: *mut crate::UnityEngine::AsyncOperation,
+        request: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Execute>b__2_0", (request))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        webRequest: *mut crate::UnityEngine::Networking::UnityWebRequest,
+        webRequest: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequest,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (webRequest))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

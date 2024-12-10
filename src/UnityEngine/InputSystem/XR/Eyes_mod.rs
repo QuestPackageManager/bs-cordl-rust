@@ -36,7 +36,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "get_fixationPoint",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_leftEyeOpenAmount(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -44,7 +44,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "get_leftEyeOpenAmount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_leftEyePosition(
         &mut self,
@@ -54,7 +54,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "get_leftEyePosition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_leftEyeRotation(
         &mut self,
@@ -64,7 +64,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "get_leftEyeRotation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rightEyeOpenAmount(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -72,7 +72,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "get_rightEyeOpenAmount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rightEyePosition(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "get_rightEyePosition",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rightEyeRotation(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "get_rightEyeRotation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_fixationPoint(
         &mut self,
@@ -103,7 +103,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "set_fixationPoint",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_leftEyeOpenAmount(
         &mut self,
@@ -114,7 +114,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "set_leftEyeOpenAmount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_leftEyePosition(
         &mut self,
@@ -125,7 +125,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "set_leftEyePosition",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_leftEyeRotation(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "set_leftEyeRotation",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rightEyeOpenAmount(
         &mut self,
@@ -147,7 +147,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "set_rightEyeOpenAmount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rightEyePosition(
         &mut self,
@@ -158,7 +158,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "set_rightEyePosition",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_rightEyeRotation(
         &mut self,
@@ -169,6 +169,6 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
             "set_rightEyeRotation",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

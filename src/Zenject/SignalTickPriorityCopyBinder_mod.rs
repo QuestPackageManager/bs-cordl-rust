@@ -26,56 +26,65 @@ impl std::ops::DerefMut for crate::Zenject::SignalTickPriorityCopyBinder {
 #[cfg(feature = "Zenject+SignalTickPriorityCopyBinder")]
 impl crate::Zenject::SignalTickPriorityCopyBinder {
     pub fn New(
-        signalBindInfo: *mut crate::Zenject::SignalDeclarationBindInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        signalBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SignalDeclarationBindInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (signalBindInfo))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn WithTickPriority(
         &mut self,
         priority: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SignalCopyBinder> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::SignalCopyBinder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder> = __cordl_object
             .invoke("WithTickPriority", (priority))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        signalBindInfo: *mut crate::Zenject::SignalDeclarationBindInfo,
+        signalBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SignalDeclarationBindInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (signalBindInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SignalBindInfo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SignalDeclarationBindInfo> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::SignalDeclarationBindInfo = __cordl_object
-            .invoke("get_SignalBindInfo", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SignalDeclarationBindInfo,
+        > = __cordl_object.invoke("get_SignalBindInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_SignalBindInfo(
         &mut self,
-        value: *mut crate::Zenject::SignalDeclarationBindInfo,
+        value: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SignalBindInfo", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+SignalTickPriorityCopyBinder")]

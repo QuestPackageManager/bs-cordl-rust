@@ -39,165 +39,202 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
             self,
         );
         let __cordl_ret: f64 = __cordl_object.invoke("Area", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Centroid(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint = __cordl_object
-            .invoke("Centroid", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        > = __cordl_object.invoke("Centroid", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Contains(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EdgeIndex(
         &mut self,
-        p1: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        p2: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p1: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        p2: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("EdgeIndex", (p1, p2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetConstrainedEdgeAcross(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetConstrainedEdgeAcross", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetConstrainedEdgeCCW(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetConstrainedEdgeCCW", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetConstrainedEdgeCW(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetConstrainedEdgeCW", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDelaunayEdgeAcross(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetDelaunayEdgeAcross", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDelaunayEdgeCCW(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetDelaunayEdgeCCW", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDelaunayEdgeCW(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetDelaunayEdgeCW", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IndexCCWFrom(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("IndexCCWFrom", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IndexCWFrom(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("IndexCWFrom", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IndexOf(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (p))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Legalize(
         &mut self,
-        oPoint: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        nPoint: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        oPoint: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        nPoint: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Legalize", (oPoint, nPoint))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkConstrainedEdge_DTSweepConstraint1(
         &mut self,
-        edge: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+        edge: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkConstrainedEdge", (edge))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkConstrainedEdge_TriangulationPoint_TriangulationPoint2(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        q: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        q: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkConstrainedEdge", (p, q))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkConstrainedEdge_i32_0(
         &mut self,
@@ -208,23 +245,27 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkConstrainedEdge", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkEdge_DelaunayTriangle0(
         &mut self,
-        triangle: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        triangle: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkEdge", (triangle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkEdge_List_1_1(
         &mut self,
-        tList: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        tList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -232,7 +273,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkEdge", (tList))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkNeighborEdges(
         &mut self,
@@ -242,121 +283,167 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkNeighborEdges", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkNeighbor_DelaunayTriangle1(
         &mut self,
-        t: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        t: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkNeighbor", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MarkNeighbor_TriangulationPoint_TriangulationPoint_DelaunayTriangle0(
         &mut self,
-        p1: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        p2: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        t: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        p1: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        p2: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        t: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkNeighbor", (p1, p2, t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn NeighborAcrossFrom(
         &mut self,
-        point: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        point: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle = __cordl_object
-            .invoke("NeighborAcrossFrom", (point))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        > = __cordl_object.invoke("NeighborAcrossFrom", (point))?;
+        Ok(__cordl_ret.into())
     }
     pub fn NeighborCCWFrom(
         &mut self,
-        point: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        point: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle = __cordl_object
-            .invoke("NeighborCCWFrom", (point))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        > = __cordl_object.invoke("NeighborCCWFrom", (point))?;
+        Ok(__cordl_ret.into())
     }
     pub fn NeighborCWFrom(
         &mut self,
-        point: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        point: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle = __cordl_object
-            .invoke("NeighborCWFrom", (point))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        > = __cordl_object.invoke("NeighborCWFrom", (point))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        p1: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        p2: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        p3: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        p1: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        p2: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        p3: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (p1, p2, p3))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OppositePoint(
         &mut self,
-        t: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        t: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint = __cordl_object
-            .invoke("OppositePoint", (t, p))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        > = __cordl_object.invoke("OppositePoint", (t, p))?;
+        Ok(__cordl_ret.into())
     }
     pub fn PointCCWFrom(
         &mut self,
-        point: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        point: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint = __cordl_object
-            .invoke("PointCCWFrom", (point))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        > = __cordl_object.invoke("PointCCWFrom", (point))?;
+        Ok(__cordl_ret.into())
     }
     pub fn PointCWFrom(
         &mut self,
-        point: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        point: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint = __cordl_object
-            .invoke("PointCWFrom", (point))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        > = __cordl_object.invoke("PointCWFrom", (point))?;
+        Ok(__cordl_ret.into())
     }
     pub fn RotateCW(
         &mut self,
@@ -366,11 +453,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RotateCW", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetConstrainedEdgeAcross(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
         ce: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -378,11 +467,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetConstrainedEdgeAcross", (p, ce))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetConstrainedEdgeCCW(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
         ce: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -390,11 +481,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetConstrainedEdgeCCW", (p, ce))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetConstrainedEdgeCW(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
         ce: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -402,11 +495,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetConstrainedEdgeCW", (p, ce))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDelaunayEdgeAcross(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
         ce: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -414,11 +509,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDelaunayEdgeAcross", (p, ce))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDelaunayEdgeCCW(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
         ce: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -426,11 +523,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDelaunayEdgeCCW", (p, ce))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDelaunayEdgeCW(
         &mut self,
-        p: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
         ce: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -438,37 +537,46 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDelaunayEdgeCW", (p, ce))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        p1: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        p2: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        p3: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        p1: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        p2: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        p3: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (p1, p2, p3))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsInterior(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsInterior", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_IsInterior(
         &mut self,
@@ -479,7 +587,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IsInterior", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]

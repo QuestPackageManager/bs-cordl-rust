@@ -39,6 +39,6 @@ impl crate::UnityEngine::TransformDispatchData {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

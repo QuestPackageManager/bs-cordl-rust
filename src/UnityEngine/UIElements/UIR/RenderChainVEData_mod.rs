@@ -74,18 +74,22 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainVEData {
             "get_isIgnoringDynamicColorHint",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lastClosingOrLastCommand(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        >,
     > {
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_lastClosingOrLastCommand",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

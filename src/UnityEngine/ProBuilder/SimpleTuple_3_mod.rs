@@ -41,7 +41,9 @@ impl<
 > crate::UnityEngine::ProBuilder::SimpleTuple_3<T1, T2, T3> {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -50,12 +52,10 @@ impl<
         T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -76,7 +76,7 @@ impl<
             ".ctor",
             (item1, item2, item3),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_item1(&mut self) -> quest_hook::libil2cpp::Result<T1>
     where
@@ -92,7 +92,7 @@ impl<
             "get_item1",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_item2(&mut self) -> quest_hook::libil2cpp::Result<T2>
     where
@@ -108,7 +108,7 @@ impl<
             "get_item2",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_item3(&mut self) -> quest_hook::libil2cpp::Result<T3>
     where
@@ -124,7 +124,7 @@ impl<
             "get_item3",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_item1(
         &mut self,
@@ -143,7 +143,7 @@ impl<
             "set_item1",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_item2(
         &mut self,
@@ -162,7 +162,7 @@ impl<
             "set_item2",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_item3(
         &mut self,
@@ -181,6 +181,6 @@ impl<
             "set_item3",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -29,111 +29,124 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
     pub type EventKeyValue = crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue;
     pub fn AddEmptyReaction(
         &mut self,
-        reaction: *mut crate::UnityEngine::Events::UnityEvent,
+        reaction: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("AddEmptyReaction", (reaction))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddReaction(
         &mut self,
-        asset: *mut crate::UnityEngine::Timeline::SignalAsset,
-        reaction: *mut crate::UnityEngine::Events::UnityEvent,
+        asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
+        reaction: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddReaction", (asset, reaction))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ChangeReactionAtIndex(
         &mut self,
         idx: i32,
-        reaction: *mut crate::UnityEngine::Events::UnityEvent,
+        reaction: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ChangeReactionAtIndex", (idx, reaction))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ChangeSignalAtIndex(
         &mut self,
         idx: i32,
-        newKey: *mut crate::UnityEngine::Timeline::SignalAsset,
+        newKey: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ChangeSignalAtIndex", (idx, newKey))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Count", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetReaction(
         &mut self,
-        key: *mut crate::UnityEngine::Timeline::SignalAsset,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Events::UnityEvent> {
+        key: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Events::UnityEvent = __cordl_object
-            .invoke("GetReaction", (key))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityEvent,
+        > = __cordl_object.invoke("GetReaction", (key))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetReactionAtIndex(
         &mut self,
         idx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Events::UnityEvent> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Events::UnityEvent = __cordl_object
-            .invoke("GetReactionAtIndex", (idx))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityEvent,
+        > = __cordl_object.invoke("GetReactionAtIndex", (idx))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetRegisteredSignals(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::Timeline::SignalAsset,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::Timeline::SignalAsset,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::Timeline::SignalAsset,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::Timeline::SignalAsset,
+            >,
         > = __cordl_object.invoke("GetRegisteredSignals", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSignalAssetAtIndex(
         &mut self,
         idx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Timeline::SignalAsset> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Timeline::SignalAsset = __cordl_object
-            .invoke("GetSignalAssetAtIndex", (idx))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Timeline::SignalAsset,
+        > = __cordl_object.invoke("GetSignalAssetAtIndex", (idx))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -143,31 +156,33 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnNotify(
         &mut self,
         origin: crate::UnityEngine::Playables::Playable,
-        notification: *mut crate::UnityEngine::Playables::INotification,
-        context: *mut quest_hook::libil2cpp::Il2CppObject,
+        notification: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Playables::INotification,
+        >,
+        context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnNotify", (origin, notification, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Remove(
         &mut self,
-        asset: *mut crate::UnityEngine::Timeline::SignalAsset,
+        asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (asset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveAtIndex(
         &mut self,
@@ -178,7 +193,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveAtIndex", (idx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -188,7 +203,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+SignalReceiver")]
@@ -235,33 +250,33 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::SignalReceiver_EventKe
 impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
     pub fn Append(
         &mut self,
-        key: *mut crate::UnityEngine::Timeline::SignalAsset,
-        value: *mut crate::UnityEngine::Events::UnityEvent,
+        key: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Append", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Remove_SignalAsset1(
         &mut self,
-        key: *mut crate::UnityEngine::Timeline::SignalAsset,
+        key: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (key))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Remove_i32_0(
         &mut self,
@@ -272,11 +287,11 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (idx))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValue(
         &mut self,
-        key: *mut crate::UnityEngine::Timeline::SignalAsset,
+        key: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
         value: quest_hook::libil2cpp::ByRefMut<
             *mut crate::UnityEngine::Events::UnityEvent,
         >,
@@ -285,7 +300,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (key, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -295,37 +310,45 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_events(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Events::UnityEvent,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::Events::UnityEvent,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Events::UnityEvent,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::Events::UnityEvent,
+            >,
         > = __cordl_object.invoke("get_events", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_signals(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Timeline::SignalAsset,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::Timeline::SignalAsset,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Timeline::SignalAsset,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::Timeline::SignalAsset,
+            >,
         > = __cordl_object.invoke("get_signals", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+SignalReceiver+EventKeyValue")]

@@ -37,33 +37,39 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     pub type __fileNameBuffer_e__FixedBuffer = crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer;
     pub fn ToFileSystemInfo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::FileSystemInfo> {
-        let __cordl_ret: *mut crate::System::IO::FileSystemInfo = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToFileSystemInfo",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToFullPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToFullPath",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToFullPath", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToSpecifiedFullPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToSpecifiedFullPath",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Attributes(
         &mut self,
@@ -73,7 +79,7 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
             "get_Attributes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Directory(
         &mut self,
@@ -83,7 +89,7 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
             "get_Directory",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_FileName(
         &mut self,
@@ -93,7 +99,7 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
             "get_FileName",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_FullPath(
         &mut self,
@@ -103,7 +109,7 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
             "get_FullPath",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -111,7 +117,7 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
             "get_IsDirectory",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_OriginalRootDirectory(
         &mut self,
@@ -121,7 +127,7 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
             "get_OriginalRootDirectory",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RootDirectory(
         &mut self,
@@ -131,7 +137,7 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
             "get_RootDirectory",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Directory(
         &mut self,
@@ -142,7 +148,7 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
             "set_Directory",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_OriginalRootDirectory(
         &mut self,
@@ -153,7 +159,7 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
             "set_OriginalRootDirectory",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_RootDirectory(
         &mut self,
@@ -164,7 +170,7 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
             "set_RootDirectory",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]

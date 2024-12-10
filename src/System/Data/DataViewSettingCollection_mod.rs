@@ -28,37 +28,40 @@ impl std::ops::DerefMut for crate::System::Data::DataViewSettingCollection {
 impl crate::System::Data::DataViewSettingCollection {
     pub fn Remove(
         &mut self,
-        table: *mut crate::System::Data::DataTable,
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (table))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
-        table: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataViewSetting> {
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataViewSetting>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Data::DataViewSetting = __cordl_object
-            .invoke("get_Item", (table))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Data::DataViewSetting,
+        > = __cordl_object.invoke("get_Item", (table))?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
-        table: *mut crate::System::Data::DataTable,
-        value: *mut crate::System::Data::DataViewSetting,
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Data::DataViewSetting>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Item", (table, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Data+DataViewSettingCollection")]

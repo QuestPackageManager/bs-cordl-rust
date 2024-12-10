@@ -26,7 +26,7 @@ for crate::System::Nullable_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::System::Nullable_1<T> {
     pub fn Equals(
         &mut self,
-        other: *mut quest_hook::libil2cpp::Il2CppObject,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -37,7 +37,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Nullable_1<T> {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -49,7 +49,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Nullable_1<T> {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetValueOrDefault_0(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -61,7 +61,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Nullable_1<T> {
             "GetValueOrDefault",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetValueOrDefault_T1(
         &mut self,
@@ -76,21 +76,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Nullable_1<T> {
             "GetValueOrDefault",
             (defaultValue),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -105,7 +105,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Nullable_1<T> {
             ".ctor",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasValue(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -117,7 +117,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Nullable_1<T> {
             "get_HasValue",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -129,6 +129,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Nullable_1<T> {
             "get_Value",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

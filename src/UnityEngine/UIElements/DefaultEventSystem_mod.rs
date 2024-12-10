@@ -71,19 +71,22 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceContext = __cordl_object
             .invoke("FocusBasedEventSequence", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDefaultInput(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::DefaultEventSystem_IInput = __cordl_object
-            .invoke("GetDefaultInput", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
+        > = __cordl_object.invoke("GetDefaultInput", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetRawMoveVector(
         &mut self,
@@ -93,26 +96,26 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("GetRawMoveVector", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnFocusEvent(
         &mut self,
-        panel: *mut crate::UnityEngine::UIElements::RuntimePanel,
-        evt: *mut crate::UnityEngine::UIElements::FocusEvent,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RuntimePanel>,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnFocusEvent", (panel, evt))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessMouseEvents(
         &mut self,
@@ -122,18 +125,18 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessMouseEvents", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessPenEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ProcessPenEvents", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessTabEvent(
         &mut self,
-        e: *mut crate::UnityEngine::Event,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
         modifiers: crate::UnityEngine::EventModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -141,20 +144,19 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessTabEvent", (e, modifiers))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessTouchEvents(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ProcessTouchEvents", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendFocusBasedEvent<TArg>(
         &mut self,
-        evtFactory: *mut crate::System::Func_2<
-            TArg,
-            *mut crate::UnityEngine::UIElements::EventBase,
+        evtFactory: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<TArg, *mut crate::UnityEngine::UIElements::EventBase>,
         >,
         arg: TArg,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -167,7 +169,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendFocusBasedEvent", (evtFactory, arg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendIMGUIEvents(
         &mut self,
@@ -177,7 +179,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendIMGUIEvents", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendInputEvents(
         &mut self,
@@ -187,7 +189,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendInputEvents", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendPositionBasedEvent<TArg>(
         &mut self,
@@ -195,11 +197,13 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         delta: crate::UnityEngine::Vector3,
         pointerId: i32,
         targetDisplay: crate::System::Nullable_1<i32>,
-        evtFactory: *mut crate::System::Func_4<
-            crate::UnityEngine::Vector3,
-            crate::UnityEngine::Vector3,
-            TArg,
-            *mut crate::UnityEngine::UIElements::EventBase,
+        evtFactory: quest_hook::libil2cpp::Gc<
+            crate::System::Func_4<
+                crate::UnityEngine::Vector3,
+                crate::UnityEngine::Vector3,
+                TArg,
+                *mut crate::UnityEngine::UIElements::EventBase,
+            >,
         >,
         arg: TArg,
         deselectIfNoTarget: bool,
@@ -224,7 +228,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
                     deselectIfNoTarget,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldIgnoreEventsOnAppNotFocused(
         &mut self,
@@ -234,14 +238,14 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldIgnoreEventsOnAppNotFocused", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldSendMoveFromInput(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ShouldSendMoveFromInput", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -252,18 +256,20 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (updateMode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateFocusedPanel(
         &mut self,
-        runtimePanel: *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
+        runtimePanel: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseRuntimePanel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateFocusedPanel", (runtimePanel))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -273,49 +279,55 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_focusedPanel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::BaseRuntimePanel = __cordl_object
-            .invoke("get_focusedPanel", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseRuntimePanel,
+        > = __cordl_object.invoke("get_focusedPanel", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_input(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::DefaultEventSystem_IInput = __cordl_object
-            .invoke("get_input", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
+        > = __cordl_object.invoke("get_input", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_isAppFocused(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isAppFocused", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_focusedPanel(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseRuntimePanel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_focusedPanel", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem")]
@@ -369,18 +381,18 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceC
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        es: *mut crate::UnityEngine::UIElements::DefaultEventSystem,
+        es: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DefaultEventSystem>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (es),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+IInput")]
@@ -418,27 +430,27 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearLastPenContactEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAxisRaw(
         &mut self,
-        axis: *mut quest_hook::libil2cpp::Il2CppString,
+        axis: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetAxisRaw", (axis))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetButtonDown(
         &mut self,
-        button: *mut quest_hook::libil2cpp::Il2CppString,
+        button: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetButtonDown", (button))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLastPenContactEvent(
         &mut self,
@@ -448,7 +460,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
         );
         let __cordl_ret: crate::UnityEngine::PenData = __cordl_object
             .invoke("GetLastPenContactEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMouseButtonDown(
         &mut self,
@@ -458,7 +470,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetMouseButtonDown", (button))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMouseButtonUp(
         &mut self,
@@ -468,7 +480,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetMouseButtonUp", (button))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTouch(
         &mut self,
@@ -479,7 +491,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
         );
         let __cordl_ret: crate::UnityEngine::Touch = __cordl_object
             .invoke("GetTouch", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -491,21 +503,21 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_anyKey", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_doubleClickTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_doubleClickTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mouseButtonCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_mouseButtonCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mousePosition(
         &mut self,
@@ -515,28 +527,28 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_mousePosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mousePresent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_mousePresent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_touchCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_touchCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unscaledTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_unscaledTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+IInput")]
@@ -584,27 +596,27 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_Input {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearLastPenContactEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAxisRaw(
         &mut self,
-        axis: *mut quest_hook::libil2cpp::Il2CppString,
+        axis: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetAxisRaw", (axis))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetButtonDown(
         &mut self,
-        button: *mut quest_hook::libil2cpp::Il2CppString,
+        button: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetButtonDown", (button))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLastPenContactEvent(
         &mut self,
@@ -614,7 +626,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_Input {
         );
         let __cordl_ret: crate::UnityEngine::PenData = __cordl_object
             .invoke("GetLastPenContactEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMouseButtonDown(
         &mut self,
@@ -624,7 +636,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_Input {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetMouseButtonDown", (button))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMouseButtonUp(
         &mut self,
@@ -634,7 +646,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_Input {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetMouseButtonUp", (button))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTouch(
         &mut self,
@@ -645,14 +657,14 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_Input {
         );
         let __cordl_ret: crate::UnityEngine::Touch = __cordl_object
             .invoke("GetTouch", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -662,28 +674,28 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_Input {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_anyKey(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_anyKey", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_doubleClickTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_doubleClickTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mouseButtonCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_mouseButtonCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mousePosition(
         &mut self,
@@ -693,28 +705,28 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_Input {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_mousePosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mousePresent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_mousePresent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_touchCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_touchCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unscaledTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_unscaledTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
@@ -762,27 +774,27 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearLastPenContactEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAxisRaw(
         &mut self,
-        axis: *mut quest_hook::libil2cpp::Il2CppString,
+        axis: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetAxisRaw", (axis))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetButtonDown(
         &mut self,
-        button: *mut quest_hook::libil2cpp::Il2CppString,
+        button: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetButtonDown", (button))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLastPenContactEvent(
         &mut self,
@@ -792,7 +804,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
         );
         let __cordl_ret: crate::UnityEngine::PenData = __cordl_object
             .invoke("GetLastPenContactEvent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMouseButtonDown(
         &mut self,
@@ -802,7 +814,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetMouseButtonDown", (button))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMouseButtonUp(
         &mut self,
@@ -812,7 +824,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetMouseButtonUp", (button))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTouch(
         &mut self,
@@ -823,14 +835,14 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
         );
         let __cordl_ret: crate::UnityEngine::Touch = __cordl_object
             .invoke("GetTouch", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -840,28 +852,28 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_anyKey(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_anyKey", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_doubleClickTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_doubleClickTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mouseButtonCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_mouseButtonCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mousePosition(
         &mut self,
@@ -871,28 +883,28 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_mousePosition", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_mousePresent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_mousePresent", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_touchCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_touchCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_unscaledTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_unscaledTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]

@@ -40,7 +40,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cancel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Complete(
         &mut self,
@@ -55,7 +55,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Complete", (computeResult))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Compute(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -66,7 +66,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("Compute", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Execute(
         &mut self,
@@ -81,11 +81,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Execute", (disposed))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Fail(
         &mut self,
-        ex: *mut crate::System::Exception,
+        ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -96,7 +96,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Fail", (ex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finally(
         &mut self,
@@ -110,7 +110,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finally", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsValidRequest(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -121,9 +121,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsValidRequest", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New(timeoutMs: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New(
+        timeoutMs: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -132,7 +134,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (timeoutMs))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -147,11 +149,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (timeoutMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_task(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task_1<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -159,9 +163,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<T> = __cordl_object
-            .invoke("get_task", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = __cordl_object.invoke("get_task", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "AsyncComputeOperation_1")]

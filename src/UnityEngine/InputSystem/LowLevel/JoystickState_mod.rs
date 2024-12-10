@@ -36,7 +36,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::JoystickState {
             "get_format",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]

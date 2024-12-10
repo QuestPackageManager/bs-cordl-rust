@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Map
             "Execute",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
@@ -81,7 +81,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
             ".ctor",
             (width, height, resolution, slicesPerRow, channelCount, flipY),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ChannelCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
             "get_ChannelCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_FlipY(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
             "get_FlipY",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
             "get_Height",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Resolution(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -113,7 +113,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
             "get_Resolution",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SlicesPerRow(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -121,7 +121,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
             "get_SlicesPerRow",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -129,7 +129,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
             "get_Width",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPassthroughColorLut")]
@@ -183,7 +183,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Create", (lutData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateLutData(
         &mut self,
@@ -198,11 +198,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = __cordl_object
             .invoke("CreateLutData", (colorBytes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateLutDataFromArray_Il2CppArray0(
         &mut self,
-        colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+        colors: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
@@ -211,11 +213,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = __cordl_object
             .invoke("CreateLutDataFromArray", (colors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateLutDataFromArray_Il2CppArray1(
         &mut self,
-        colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+        colors: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
@@ -224,11 +228,11 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = __cordl_object
             .invoke("CreateLutDataFromArray", (colors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateLutDataFromArray_Il2CppArray2(
         &mut self,
-        colors: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        colors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
@@ -237,11 +241,11 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = __cordl_object
             .invoke("CreateLutDataFromArray", (colors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateLutDataFromTexture(
         &mut self,
-        lut: *mut crate::UnityEngine::Texture2D,
+        lut: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         flipY: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
@@ -251,7 +255,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = __cordl_object
             .invoke("CreateLutDataFromTexture", (lut, flipY))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Destroy(
         &mut self,
@@ -261,7 +265,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Destroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -271,7 +275,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
@@ -281,11 +285,11 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsValidLutUpdate<T>(
         &mut self,
-        colorArray: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        colorArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         elementByteSize: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -297,7 +301,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsValidLutUpdate", (colorArray, elementByteSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsValidUpdateResolution(
         &mut self,
@@ -309,98 +313,104 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsValidUpdateResolution", (lutSize, elementByteSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppArray_OVRPassthroughColorLut_ColorChannels1(
-        initialColorLut: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Color,
+        initialColorLut: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         >,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (initialColorLut, channels))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppArray_OVRPassthroughColorLut_ColorChannels2(
-        initialColorLut: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Color32,
+        initialColorLut: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
         >,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (initialColorLut, channels))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppArray_OVRPassthroughColorLut_ColorChannels3(
-        initialColorLut: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        initialColorLut: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (initialColorLut, channels))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Texture2D__cordl_bool0(
-        initialLutTexture: *mut crate::UnityEngine::Texture2D,
+        initialLutTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         flipY: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (initialLutTexture, flipY))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i32_OVRPassthroughColorLut_ColorChannels4(
         _cordl_size: i32,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_size, channels))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateFrom_Il2CppArray0(
         &mut self,
-        colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+        colors: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateFrom", (colors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateFrom_Il2CppArray1(
         &mut self,
-        colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+        colors: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateFrom", (colors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateFrom_Il2CppArray2(
         &mut self,
-        colors: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        colors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateFrom", (colors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateFrom_Texture2D__cordl_bool3(
         &mut self,
-        lutTexture: *mut crate::UnityEngine::Texture2D,
+        lutTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         flipY: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -408,36 +418,40 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateFrom", (lutTexture, flipY))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteColorsAsBytes_Il2CppArray_Il2CppArray0(
         &mut self,
-        colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
-        target: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        colors: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+        >,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteColorsAsBytes", (colors, target))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteColorsAsBytes_Il2CppArray_Il2CppArray1(
         &mut self,
-        colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
-        target: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        colors: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+        >,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteColorsAsBytes", (colors, target))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_OVRPassthroughColorLut_ColorChannels1(
         &mut self,
-        initialColorLut: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Color,
+        initialColorLut: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         >,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -446,12 +460,12 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (initialColorLut, channels))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_OVRPassthroughColorLut_ColorChannels2(
         &mut self,
-        initialColorLut: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Color32,
+        initialColorLut: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
         >,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -460,11 +474,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (initialColorLut, channels))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_OVRPassthroughColorLut_ColorChannels3(
         &mut self,
-        initialColorLut: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        initialColorLut: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -472,11 +488,11 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (initialColorLut, channels))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Texture2D__cordl_bool0(
         &mut self,
-        initialLutTexture: *mut crate::UnityEngine::Texture2D,
+        initialLutTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         flipY: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -484,7 +500,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (initialLutTexture, flipY))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_OVRPassthroughColorLut_ColorChannels4(
         &mut self,
@@ -496,7 +512,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_size, channels))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Channels(
         &mut self,
@@ -508,21 +524,21 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels = __cordl_object
             .invoke("get_Channels", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsInitialized", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Resolution(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_Resolution", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Channels(
         &mut self,
@@ -533,7 +549,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Channels", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_IsInitialized(
         &mut self,
@@ -544,7 +560,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IsInitialized", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Resolution(
         &mut self,
@@ -555,7 +571,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Resolution", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPassthroughColorLut")]
@@ -661,6 +677,6 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
             "Execute",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

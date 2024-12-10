@@ -34,7 +34,7 @@ impl crate::UnityEngine::UIElements::IKeyboardEvent {
             self,
         );
         let __cordl_ret: char = __cordl_object.invoke("get_character", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_keyCode(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::UnityEngine::UIElements::IKeyboardEvent {
         );
         let __cordl_ret: crate::UnityEngine::KeyCode = __cordl_object
             .invoke("get_keyCode", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_modifiers(
         &mut self,
@@ -54,7 +54,7 @@ impl crate::UnityEngine::UIElements::IKeyboardEvent {
         );
         let __cordl_ret: crate::UnityEngine::EventModifiers = __cordl_object
             .invoke("get_modifiers", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IKeyboardEvent")]

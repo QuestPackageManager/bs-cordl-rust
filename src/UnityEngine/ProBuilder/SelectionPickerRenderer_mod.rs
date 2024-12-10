@@ -99,18 +99,20 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRend
 impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer {
     pub fn RenderLookupTexture(
         &mut self,
-        camera: *mut crate::UnityEngine::Camera,
-        shader: *mut crate::UnityEngine::Shader,
-        tag: *mut quest_hook::libil2cpp::Il2CppString,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+        tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         width: i32,
         height: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Texture2D = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
             .invoke("RenderLookupTexture", (camera, shader, tag, width, height))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -169,27 +171,29 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
 )]
 impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RenderLookupTexture(
         &mut self,
-        camera: *mut crate::UnityEngine::Camera,
-        shader: *mut crate::UnityEngine::Shader,
-        tag: *mut quest_hook::libil2cpp::Il2CppString,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+        tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         width: i32,
         height: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Texture2D = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
             .invoke("RenderLookupTexture", (camera, shader, tag, width, height))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -199,7 +203,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -253,27 +257,29 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
 )]
 impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RenderLookupTexture(
         &mut self,
-        camera: *mut crate::UnityEngine::Camera,
-        shader: *mut crate::UnityEngine::Shader,
-        tag: *mut quest_hook::libil2cpp::Il2CppString,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+        tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         width: i32,
         height: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Texture2D = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
             .invoke("RenderLookupTexture", (camera, shader, tag, width, height))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -283,7 +289,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

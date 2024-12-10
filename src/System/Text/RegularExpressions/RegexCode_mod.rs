@@ -86,20 +86,24 @@ impl crate::System::Text::RegularExpressions::RegexCode {
     pub const Stop: i32 = 40i32;
     pub const Testref: i32 = 37i32;
     pub fn New(
-        codes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        stringlist: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        codes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        stringlist: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
         trackcount: i32,
-        caps: *mut crate::System::Collections::Hashtable,
+        caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
         capsize: i32,
-        bmPrefix: *mut crate::System::Text::RegularExpressions::RegexBoyerMoore,
+        bmPrefix: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexBoyerMoore,
+        >,
         fcPrefix: crate::System::Nullable_1<
             crate::System::Text::RegularExpressions::RegexPrefix,
         >,
         anchors: i32,
         rightToLeft: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -117,18 +121,22 @@ impl crate::System::Text::RegularExpressions::RegexCode {
                     rightToLeft,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        codes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-        stringlist: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        codes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        stringlist: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
         trackcount: i32,
-        caps: *mut crate::System::Collections::Hashtable,
+        caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
         capsize: i32,
-        bmPrefix: *mut crate::System::Text::RegularExpressions::RegexBoyerMoore,
+        bmPrefix: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexBoyerMoore,
+        >,
         fcPrefix: crate::System::Nullable_1<
             crate::System::Text::RegularExpressions::RegexPrefix,
         >,
@@ -153,7 +161,7 @@ impl crate::System::Text::RegularExpressions::RegexCode {
                     rightToLeft,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCode")]

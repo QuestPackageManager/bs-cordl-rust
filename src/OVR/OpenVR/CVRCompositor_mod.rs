@@ -30,7 +30,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CanRenderScene", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearLastSubmittedFrame(
         &mut self,
@@ -40,7 +40,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearLastSubmittedFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearSkyboxOverride(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearSkyboxOverride", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompositorBringToFront(
         &mut self,
@@ -60,7 +60,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CompositorBringToFront", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompositorDumpImages(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CompositorDumpImages", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompositorGoToBack(
         &mut self,
@@ -80,7 +80,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CompositorGoToBack", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompositorQuit(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CompositorQuit", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FadeGrid(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FadeGrid", (fSeconds, bFadeIn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FadeToColor(
         &mut self,
@@ -121,7 +121,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
                 "FadeToColor",
                 (fSeconds, fRed, fGreen, fBlue, fAlpha, bBackground),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ForceInterleavedReprojectionOn(
         &mut self,
@@ -132,7 +132,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ForceInterleavedReprojectionOn", (bOverride))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ForceReconnectProcess(
         &mut self,
@@ -142,7 +142,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ForceReconnectProcess", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCumulativeStats(
         &mut self,
@@ -156,7 +156,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetCumulativeStats", (pStats, nStatsSizeInBytes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCurrentFadeColor(
         &mut self,
@@ -167,28 +167,28 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: crate::OVR::OpenVR::HmdColor_t = __cordl_object
             .invoke("GetCurrentFadeColor", (bBackground))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCurrentGridAlpha(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetCurrentGridAlpha", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCurrentSceneFocusProcess(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("GetCurrentSceneFocusProcess", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetFrameTimeRemaining(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetFrameTimeRemaining", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetFrameTiming(
         &mut self,
@@ -202,7 +202,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetFrameTiming", (pTiming, unFramesAgo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetFrameTimings(
         &mut self,
@@ -216,14 +216,14 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke("GetFrameTimings", (pTiming, nFrames))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLastFrameRenderer(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("GetLastFrameRenderer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLastPoseForTrackedDeviceIndex(
         &mut self,
@@ -243,15 +243,15 @@ impl crate::OVR::OpenVR::CVRCompositor {
                 "GetLastPoseForTrackedDeviceIndex",
                 (unDeviceIndex, pOutputPose, pOutputGamePose),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLastPoses(
         &mut self,
-        pRenderPoseArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::OVR::OpenVR::TrackedDevicePose_t,
+        pRenderPoseArray: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::TrackedDevicePose_t>,
         >,
-        pGamePoseArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::OVR::OpenVR::TrackedDevicePose_t,
+        pGamePoseArray: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::TrackedDevicePose_t>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRCompositorError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -259,7 +259,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError = __cordl_object
             .invoke("GetLastPoses", (pRenderPoseArray, pGamePoseArray))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMirrorTextureD3D11(
         &mut self,
@@ -275,7 +275,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
                 "GetMirrorTextureD3D11",
                 (eEye, pD3D11DeviceOrResource, ppD3D11ShaderResourceView),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetMirrorTextureGL(
         &mut self,
@@ -288,7 +288,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError = __cordl_object
             .invoke("GetMirrorTextureGL", (eEye, pglTextureId, pglSharedTextureHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTrackingSpace(
         &mut self,
@@ -298,12 +298,12 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: crate::OVR::OpenVR::ETrackingUniverseOrigin = __cordl_object
             .invoke("GetTrackingSpace", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetVulkanDeviceExtensionsRequired(
         &mut self,
         pPhysicalDevice: crate::System::IntPtr,
-        pchValue: *mut crate::System::Text::StringBuilder,
+        pchValue: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unBufferSize: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -314,11 +314,11 @@ impl crate::OVR::OpenVR::CVRCompositor {
                 "GetVulkanDeviceExtensionsRequired",
                 (pPhysicalDevice, pchValue, unBufferSize),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetVulkanInstanceExtensionsRequired(
         &mut self,
-        pchValue: *mut crate::System::Text::StringBuilder,
+        pchValue: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unBufferSize: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -326,7 +326,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: u32 = __cordl_object
             .invoke("GetVulkanInstanceExtensionsRequired", (pchValue, unBufferSize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HideMirrorWindow(
         &mut self,
@@ -336,21 +336,21 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HideMirrorWindow", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsFullscreen(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsFullscreen", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsMirrorWindowVisible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsMirrorWindowVisible", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LockGLSharedTextureForAccess(
         &mut self,
@@ -361,16 +361,16 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LockGLSharedTextureForAccess", (glSharedTextureHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pInterface))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PostPresentHandoff(
         &mut self,
@@ -380,7 +380,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PostPresentHandoff", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReleaseMirrorTextureD3D11(
         &mut self,
@@ -391,7 +391,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReleaseMirrorTextureD3D11", (pD3D11ShaderResourceView))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReleaseSharedGLTexture(
         &mut self,
@@ -403,7 +403,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ReleaseSharedGLTexture", (glTextureId, glSharedTextureHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetExplicitTimingMode(
         &mut self,
@@ -414,18 +414,20 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetExplicitTimingMode", (eTimingMode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSkyboxOverride(
         &mut self,
-        pTextures: *mut quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::Texture_t>,
+        pTextures: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::Texture_t>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRCompositorError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError = __cordl_object
             .invoke("SetSkyboxOverride", (pTextures))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTrackingSpace(
         &mut self,
@@ -436,7 +438,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTrackingSpace", (eOrigin))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldAppRenderWithLowResources(
         &mut self,
@@ -446,7 +448,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldAppRenderWithLowResources", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShowMirrorWindow(
         &mut self,
@@ -456,7 +458,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ShowMirrorWindow", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Submit(
         &mut self,
@@ -470,7 +472,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError = __cordl_object
             .invoke("Submit", (eEye, pTexture, pBounds, nSubmitFlags))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SubmitExplicitTimingData(
         &mut self,
@@ -480,7 +482,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError = __cordl_object
             .invoke("SubmitExplicitTimingData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SuspendRendering(
         &mut self,
@@ -491,7 +493,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SuspendRendering", (bSuspend))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnlockGLSharedTextureForAccess(
         &mut self,
@@ -502,15 +504,15 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnlockGLSharedTextureForAccess", (glSharedTextureHandle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WaitGetPoses(
         &mut self,
-        pRenderPoseArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::OVR::OpenVR::TrackedDevicePose_t,
+        pRenderPoseArray: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::TrackedDevicePose_t>,
         >,
-        pGamePoseArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::OVR::OpenVR::TrackedDevicePose_t,
+        pGamePoseArray: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::TrackedDevicePose_t>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRCompositorError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -518,7 +520,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: crate::OVR::OpenVR::EVRCompositorError = __cordl_object
             .invoke("WaitGetPoses", (pRenderPoseArray, pGamePoseArray))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -529,7 +531,7 @@ impl crate::OVR::OpenVR::CVRCompositor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (pInterface))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRCompositor")]

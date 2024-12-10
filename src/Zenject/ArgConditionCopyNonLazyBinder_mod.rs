@@ -25,49 +25,59 @@ impl std::ops::DerefMut for crate::Zenject::ArgConditionCopyNonLazyBinder {
 #[cfg(feature = "Zenject+ArgConditionCopyNonLazyBinder")]
 impl crate::Zenject::ArgConditionCopyNonLazyBinder {
     pub fn New(
-        bindInfo: *mut crate::Zenject::BindInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindInfo))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn WithArgumentsExplicit(
         &mut self,
-        extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::Zenject::TypeValuePair,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder = __cordl_object
-            .invoke("WithArgumentsExplicit", (extraArgs))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("WithArgumentsExplicit", (extraArgs))?;
+        Ok(__cordl_ret.into())
     }
     pub fn WithArguments_Il2CppArray6(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder = __cordl_object
-            .invoke("WithArguments", (args))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("WithArguments", (args))?;
+        Ok(__cordl_ret.into())
     }
     pub fn WithArguments_T0<T>(
         &mut self,
         param: T,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -76,16 +86,19 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder = __cordl_object
-            .invoke("WithArguments", (param))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("WithArguments", (param))?;
+        Ok(__cordl_ret.into())
     }
     pub fn WithArguments_TParam1_TParam2_1<TParam1, TParam2>(
         &mut self,
         param1: TParam1,
         param2: TParam2,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -96,9 +109,10 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder = __cordl_object
-            .invoke("WithArguments", (param1, param2))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("WithArguments", (param1, param2))?;
+        Ok(__cordl_ret.into())
     }
     pub fn WithArguments_TParam1_TParam2_TParam3_2<TParam1, TParam2, TParam3>(
         &mut self,
@@ -106,7 +120,9 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
         param2: TParam2,
         param3: TParam3,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -119,9 +135,10 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder = __cordl_object
-            .invoke("WithArguments", (param1, param2, param3))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("WithArguments", (param1, param2, param3))?;
+        Ok(__cordl_ret.into())
     }
     pub fn WithArguments_TParam1_TParam2_TParam3_TParam4_3<
         TParam1,
@@ -135,7 +152,9 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
         param3: TParam3,
         param4: TParam4,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -150,9 +169,10 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder = __cordl_object
-            .invoke("WithArguments", (param1, param2, param3, param4))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("WithArguments", (param1, param2, param3, param4))?;
+        Ok(__cordl_ret.into())
     }
     pub fn WithArguments_TParam1_TParam2_TParam3_TParam4_TParam5_4<
         TParam1,
@@ -168,7 +188,9 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
         param4: TParam4,
         param5: TParam5,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -185,9 +207,11 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        > = __cordl_object
             .invoke("WithArguments", (param1, param2, param3, param4, param5))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WithArguments_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_5<
         TParam1,
@@ -205,7 +229,9 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
         param5: TParam5,
         param6: TParam6,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -224,20 +250,22 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+        > = __cordl_object
             .invoke("WithArguments", (param1, param2, param3, param4, param5, param6))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        bindInfo: *mut crate::Zenject::BindInfo,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+ArgConditionCopyNonLazyBinder")]

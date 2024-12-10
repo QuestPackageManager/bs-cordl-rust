@@ -77,14 +77,14 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
     pub type _TryShowModeSelection_d__51 = crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator__TryShowModeSelection_d__51;
     pub fn BackButtonWasPressed(
         &mut self,
-        topViewController: *mut crate::HMUI::ViewController,
+        topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BackButtonWasPressed", (topViewController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidActivate(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidDeactivate(
         &mut self,
@@ -112,18 +112,20 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleConnectedPlayerManagerCreated(
         &mut self,
-        networkPlayerModel: *mut crate::GlobalNamespace::INetworkPlayerModel,
+        networkPlayerModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::INetworkPlayerModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleConnectedPlayerManagerCreated", (networkPlayerModel))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleCreateServerViewControllerDidFinish(
         &mut self,
@@ -135,11 +137,13 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleCreateServerViewControllerDidFinish", (success, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleGameServerBrowserFlowCoordinatorDidFinish(
         &mut self,
-        flowCoordinator: *mut crate::GlobalNamespace::GameServerBrowserFlowCoordinator,
+        flowCoordinator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameServerBrowserFlowCoordinator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -149,7 +153,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                 "HandleGameServerBrowserFlowCoordinatorDidFinish",
                 (flowCoordinator),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleGameServerLobbyFlowCoordinatorDidFinish(
         &mut self,
@@ -159,7 +163,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleGameServerLobbyFlowCoordinatorDidFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleGameServerLobbyFlowCoordinatorWillFinish(
         &mut self,
@@ -169,7 +173,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleGameServerLobbyFlowCoordinatorWillFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleJoinQuickPlayViewControllerDidFinish(
         &mut self,
@@ -180,7 +184,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleJoinQuickPlayViewControllerDidFinish", (success))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleJoiningLobbyViewControllerDidCancel(
         &mut self,
@@ -190,7 +194,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleJoiningLobbyViewControllerDidCancel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMultiplayerLobbyConnectionControllerConnectionFailed(
         &mut self,
@@ -205,7 +209,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                 "HandleMultiplayerLobbyConnectionControllerConnectionFailed",
                 (connectionType, reason),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMultiplayerLobbyConnectionControllerConnectionSuccess(
         &mut self,
@@ -215,7 +219,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleMultiplayerLobbyConnectionControllerConnectionSuccess", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMultiplayerLobbyConnectionControllerConnectionSuccessActivateModel(
         &mut self,
@@ -228,11 +232,13 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                 "HandleMultiplayerLobbyConnectionControllerConnectionSuccessActivateModel",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMultiplayerLobbyControllerDidFinish(
         &mut self,
-        viewController: *mut crate::GlobalNamespace::MultiplayerModeSelectionViewController,
+        viewController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerModeSelectionViewController,
+        >,
         menuButton: crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -243,26 +249,26 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                 "HandleMultiplayerLobbyControllerDidFinish",
                 (viewController, menuButton),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleServerCodeEntryViewControllerDidFinish(
         &mut self,
         success: bool,
-        code: *mut quest_hook::libil2cpp::Il2CppString,
+        code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleServerCodeEntryViewControllerDidFinish", (success, code))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PresentConnectionErrorDialog(
         &mut self,
@@ -274,14 +280,16 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PresentConnectionErrorDialog", (connectionType, reason))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PresentMasterServerUnavailableErrorDialog(
         &mut self,
         reason: crate::GlobalNamespace::MultiplayerUnavailableReason,
-        exception: *mut crate::System::Exception,
+        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         maintenanceWindowEndTime: crate::System::Nullable_1<i64>,
-        remoteLocalizedMessage: *mut quest_hook::libil2cpp::Il2CppString,
+        remoteLocalizedMessage: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -291,7 +299,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                 "PresentMasterServerUnavailableErrorDialog",
                 (reason, exception, maintenanceWindowEndTime, remoteLocalizedMessage),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessDeeplinkingToLobby(
         &mut self,
@@ -301,7 +309,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessDeeplinkingToLobby", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResolveAndPresentNextFlowCoordinator(
         &mut self,
@@ -312,23 +320,25 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResolveAndPresentNextFlowCoordinator", (cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Setup(
         &mut self,
-        lobbyDestination: *mut crate::GlobalNamespace::SelectMultiplayerLobbyDestination,
+        lobbyDestination: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SelectMultiplayerLobbyDestination,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Setup", (lobbyDestination))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TopViewControllerWillChange(
         &mut self,
-        oldViewController: *mut crate::HMUI::ViewController,
-        newViewController: *mut crate::HMUI::ViewController,
+        oldViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        newViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -339,7 +349,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                 "TopViewControllerWillChange",
                 (oldViewController, newViewController, animationType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransitionDidFinish(
         &mut self,
@@ -349,7 +359,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TransitionDidFinish", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransitionDidStart(
         &mut self,
@@ -359,7 +369,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TransitionDidStart", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryShowModeSelection(
         &mut self,
@@ -374,7 +384,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                 "TryShowModeSelection",
                 (shouldProvideInitialViewControllers, cancellationToken),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _PresentConnectionErrorDialog_b__53_0(
         &mut self,
@@ -385,7 +395,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<PresentConnectionErrorDialog>b__53_0", (btnId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _PresentConnectionErrorDialog_b__53_1(
         &mut self,
@@ -396,7 +406,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<PresentConnectionErrorDialog>b__53_1", (btnId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _PresentMasterServerUnavailableErrorDialog_b__54_0(
         &mut self,
@@ -407,7 +417,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<PresentMasterServerUnavailableErrorDialog>b__54_0", (btnId))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ResolveAndPresentNextFlowCoordinator_b__52_0(
         &mut self,
@@ -417,7 +427,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<ResolveAndPresentNextFlowCoordinator>b__52_0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -427,12 +437,14 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -440,12 +452,14 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -453,7 +467,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerModeSelectionFlowCoordinator")]

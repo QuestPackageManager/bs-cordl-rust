@@ -44,7 +44,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "AllocClipRect",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AllocColor(
         &mut self,
@@ -54,7 +54,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "AllocColor",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AllocOpacity(
         &mut self,
@@ -64,7 +64,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "AllocOpacity",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AllocTextCoreSettings(
         &mut self,
@@ -75,7 +75,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "AllocTextCoreSettings",
             (settings),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AllocTransform(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "AllocTransform",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClipRectAllocToVertexData(
         &mut self,
@@ -96,7 +96,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "ClipRectAllocToVertexData",
             (alloc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ColorAllocToVertexData(
         &mut self,
@@ -107,7 +107,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "ColorAllocToVertexData",
             (alloc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Construct(
         &mut self,
@@ -117,7 +117,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "Construct",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -127,7 +127,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FreeClipRect(
         &mut self,
@@ -138,7 +138,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "FreeClipRect",
             (alloc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FreeColor(
         &mut self,
@@ -149,7 +149,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "FreeColor",
             (alloc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FreeOpacity(
         &mut self,
@@ -160,7 +160,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "FreeOpacity",
             (alloc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FreeTextCoreSettings(
         &mut self,
@@ -171,7 +171,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "FreeTextCoreSettings",
             (alloc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FreeTransform(
         &mut self,
@@ -182,7 +182,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "FreeTransform",
             (alloc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IssuePendingStorageChanges(
         &mut self,
@@ -192,7 +192,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "IssuePendingStorageChanges",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OpacityAllocToVertexData(
         &mut self,
@@ -203,7 +203,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "OpacityAllocToVertexData",
             (alloc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReallyCreateStorage(
         &mut self,
@@ -213,7 +213,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "ReallyCreateStorage",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetClipRectValue(
         &mut self,
@@ -225,7 +225,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "SetClipRectValue",
             (alloc, clipRect),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetColorValue(
         &mut self,
@@ -238,7 +238,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "SetColorValue",
             (alloc, color, isEditorContext),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetOpacityValue(
         &mut self,
@@ -250,7 +250,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "SetOpacityValue",
             (alloc, opacity),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTextCoreSettingValue(
         &mut self,
@@ -263,7 +263,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "SetTextCoreSettingValue",
             (alloc, settings, isEditorContext),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTransformValue(
         &mut self,
@@ -275,7 +275,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "SetTransformValue",
             (alloc, xform),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TextCoreSettingsToVertexData(
         &mut self,
@@ -286,7 +286,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "TextCoreSettingsToVertexData",
             (alloc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransformAllocToVertexData(
         &mut self,
@@ -297,17 +297,19 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "TransformAllocToVertexData",
             (alloc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_atlas(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
-        let __cordl_ret: *mut crate::UnityEngine::Texture = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_atlas",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_clipRectConstants(
         &mut self,
@@ -321,7 +323,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "get_clipRectConstants",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transformConstants(
         &mut self,
@@ -337,6 +339,6 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "get_transformConstants",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

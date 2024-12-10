@@ -30,95 +30,116 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
     pub fn GetCertificate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate = __cordl_object
-            .invoke("GetCertificate", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        > = __cordl_object.invoke("GetCertificate", ())?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReadAttrCert_Il2CppArray0(
         &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate = __cordl_object
-            .invoke("ReadAttrCert", (input))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        > = __cordl_object.invoke("ReadAttrCert", (input))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAttrCert_Stream1(
         &mut self,
-        inStream: *mut crate::System::IO::Stream,
+        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate = __cordl_object
-            .invoke("ReadAttrCert", (inStream))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        > = __cordl_object.invoke("ReadAttrCert", (inStream))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAttrCerts_Il2CppArray0(
         &mut self,
-        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("ReadAttrCerts", (input))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = __cordl_object.invoke("ReadAttrCerts", (input))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadAttrCerts_Stream1(
         &mut self,
-        inStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
-            .invoke("ReadAttrCerts", (inStream))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = __cordl_object.invoke("ReadAttrCerts", (inStream))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadDerCertificate(
         &mut self,
-        dIn: *mut crate::Org::BouncyCastle::Asn1::Asn1InputStream,
+        dIn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1InputStream>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate = __cordl_object
-            .invoke("ReadDerCertificate", (dIn))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        > = __cordl_object.invoke("ReadDerCertificate", (dIn))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadPemCertificate(
         &mut self,
-        inStream: *mut crate::System::IO::Stream,
+        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate = __cordl_object
-            .invoke("ReadPemCertificate", (inStream))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+        > = __cordl_object.invoke("ReadPemCertificate", (inStream))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -128,7 +149,7 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509AttrCertParser")]

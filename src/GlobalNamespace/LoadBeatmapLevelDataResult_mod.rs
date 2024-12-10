@@ -26,13 +26,15 @@ impl crate::GlobalNamespace::LoadBeatmapLevelDataResult {
     pub fn _ctor(
         &mut self,
         isError: bool,
-        beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
+        beatmapLevelData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLevelData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (isError, beatmapLevelData),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

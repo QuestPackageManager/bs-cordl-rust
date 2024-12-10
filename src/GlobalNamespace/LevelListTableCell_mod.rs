@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAsyncOperations", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HighlightDidChange(
         &mut self,
@@ -67,26 +67,28 @@ impl crate::GlobalNamespace::LevelListTableCell {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HighlightDidChange", (transitionType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RefreshAvailabilityAsync(
         &mut self,
-        entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
-        levelID: *mut quest_hook::libil2cpp::Il2CppString,
+        entitlementModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEntitlementModel,
+        >,
+        levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshAvailabilityAsync", (entitlementModel, levelID))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshVisuals(
         &mut self,
@@ -96,7 +98,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshVisuals", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SelectionDidChange(
         &mut self,
@@ -107,11 +109,11 @@ impl crate::GlobalNamespace::LevelListTableCell {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SelectionDidChange", (transitionType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetDataFromLevelAsync(
         &mut self,
-        level: *mut crate::GlobalNamespace::BeatmapLevel,
+        level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         isFavorite: bool,
         isPromoted: bool,
         isUpdated: bool,
@@ -124,7 +126,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
                 "SetDataFromLevelAsync",
                 (level, isFavorite, isPromoted, isUpdated),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WasPreparedForReuse(
         &mut self,
@@ -134,7 +136,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WasPreparedForReuse", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -144,7 +146,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LevelListTableCell")]

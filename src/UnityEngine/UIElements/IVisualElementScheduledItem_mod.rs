@@ -29,14 +29,17 @@ impl crate::UnityEngine::UIElements::IVisualElementScheduledItem {
         &mut self,
         intervalMs: i64,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem = __cordl_object
-            .invoke("Every", (intervalMs))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+        > = __cordl_object.invoke("Every", (intervalMs))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ExecuteLater(
         &mut self,
@@ -47,7 +50,7 @@ impl crate::UnityEngine::UIElements::IVisualElementScheduledItem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExecuteLater", (delayMs))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Pause(
         &mut self,
@@ -57,7 +60,7 @@ impl crate::UnityEngine::UIElements::IVisualElementScheduledItem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Pause", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Resume(
         &mut self,
@@ -67,20 +70,23 @@ impl crate::UnityEngine::UIElements::IVisualElementScheduledItem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Resume", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn StartingIn(
         &mut self,
         delayMs: i64,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem = __cordl_object
-            .invoke("StartingIn", (delayMs))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+        > = __cordl_object.invoke("StartingIn", (delayMs))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

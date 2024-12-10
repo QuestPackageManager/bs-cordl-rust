@@ -27,7 +27,7 @@ for crate::Zenject::MonoInstaller_1<TDerived> {
 }
 #[cfg(feature = "Zenject+MonoInstaller_1")]
 impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDerived> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TDerived: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -36,7 +36,7 @@ impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDer
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -48,7 +48,7 @@ impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDer
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+MonoInstaller_1")]

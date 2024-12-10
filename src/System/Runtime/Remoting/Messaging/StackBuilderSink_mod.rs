@@ -30,77 +30,89 @@ for crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
 impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
     pub fn AsyncProcessMessage(
         &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
-        replySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        >,
+        replySink: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl = __cordl_object
-            .invoke("AsyncProcessMessage", (msg, replySink))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+        > = __cordl_object.invoke("AsyncProcessMessage", (msg, replySink))?;
+        Ok(__cordl_ret.into())
     }
     pub fn CheckParameters(
         &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckParameters", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExecuteAsyncMessage(
         &mut self,
-        ob: *mut quest_hook::libil2cpp::Il2CppObject,
+        ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExecuteAsyncMessage", (ob))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        obj: *mut crate::System::MarshalByRefObject,
+        obj: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
         forceInternalExecute: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (obj, forceInternalExecute))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SyncProcessMessage(
         &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::IMessage = __cordl_object
-            .invoke("SyncProcessMessage", (msg))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        > = __cordl_object.invoke("SyncProcessMessage", (msg))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _AsyncProcessMessage_b__4_0(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppObject,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<AsyncProcessMessage>b__4_0", (data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        obj: *mut crate::System::MarshalByRefObject,
+        obj: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
         forceInternalExecute: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -108,7 +120,7 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (obj, forceInternalExecute))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+StackBuilderSink")]

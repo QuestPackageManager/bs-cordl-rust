@@ -737,7 +737,7 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
             "get_OrientationTracked",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_OrientationValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -745,7 +745,7 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
             "get_OrientationValid",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PositionTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -753,7 +753,7 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
             "get_PositionTracked",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PositionValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -761,7 +761,7 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
             "get_PositionValid",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+BodyState")]
@@ -1344,13 +1344,13 @@ for crate::GlobalNamespace::OVRPlugin_Colorf {
 impl crate::GlobalNamespace::OVRPlugin_Colorf {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+Controller")]
@@ -1451,7 +1451,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState2 {
             ".ctor",
             (cs),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+ControllerState4")]
@@ -1530,7 +1530,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState4 {
             ".ctor",
             (cs),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+ControllerState5")]
@@ -1589,7 +1589,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState5 {
             ".ctor",
             (cs),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+ControllerState6")]
@@ -1650,7 +1650,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState6 {
             ".ctor",
             (cs),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+EventDataBuffer")]
@@ -1750,7 +1750,7 @@ impl crate::GlobalNamespace::OVRPlugin_EyeGazeState {
             "get_IsValid",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+EyeGazesState")]
@@ -1972,7 +1972,7 @@ impl crate::GlobalNamespace::OVRPlugin_FaceExpressionStatusInternal {
             "ToFaceExpressionStatus",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+FaceRegionConfidence")]
@@ -2365,12 +2365,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_GUID {
 }
 #[cfg(feature = "OVRPlugin+GUID")]
 impl crate::GlobalNamespace::OVRPlugin_GUID {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -2380,7 +2380,7 @@ impl crate::GlobalNamespace::OVRPlugin_GUID {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+GUID")]
@@ -2843,7 +2843,7 @@ impl crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle2 {
             "CopyTo",
             (target),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+InsightPassthroughStyleFlags")]
@@ -2970,12 +2970,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_Ktx {
 }
 #[cfg(feature = "OVRPlugin+Ktx")]
 impl crate::GlobalNamespace::OVRPlugin_Ktx {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -2985,7 +2985,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+Ktx")]
@@ -3040,13 +3040,13 @@ for crate::GlobalNamespace::OVRPlugin_LayerDesc {
 impl crate::GlobalNamespace::OVRPlugin_LayerDesc {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+LayerDescInternal")]
@@ -3096,7 +3096,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
             "ToLayerDesc",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -3107,7 +3107,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
             ".ctor",
             (layerDesc),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+LayerFlags")]
@@ -3233,26 +3233,28 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         logLevel: crate::GlobalNamespace::OVRPlugin_LogLevel,
         message: crate::System::IntPtr,
         _cordl_size: i32,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke("BeginInvoke", (logLevel, message, _cordl_size, callback, object))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
-        result: *mut crate::System::IAsyncResult,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
@@ -3265,21 +3267,21 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", (logLevel, message, _cordl_size))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3287,7 +3289,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+LogCallback2DelegateType")]
@@ -3345,12 +3347,12 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
     pub type MrcActivationMode = crate::GlobalNamespace::Media_OVRPlugin_MrcActivationMode;
     #[cfg(feature = "OVRPlugin+Media+PlatformCameraMode")]
     pub type PlatformCameraMode = crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -3360,7 +3362,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+Media")]
@@ -3417,12 +3419,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_Mesh {
 }
 #[cfg(feature = "OVRPlugin+Mesh")]
 impl crate::GlobalNamespace::OVRPlugin_Mesh {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -3432,7 +3434,7 @@ impl crate::GlobalNamespace::OVRPlugin_Mesh {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+Mesh")]
@@ -6696,11 +6698,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -6711,7 +6713,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
             ".ctor",
             (array),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+PlatformUI")]
@@ -6810,13 +6812,13 @@ for crate::GlobalNamespace::OVRPlugin_Posef {
 impl crate::GlobalNamespace::OVRPlugin_Posef {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+ProcessorPerformanceLevel")]
@@ -6905,13 +6907,13 @@ for crate::GlobalNamespace::OVRPlugin_Quatf {
 impl crate::GlobalNamespace::OVRPlugin_Quatf {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+RecenterFlags")]
@@ -7232,14 +7234,14 @@ for crate::GlobalNamespace::OVRPlugin_Sizei {
 impl crate::GlobalNamespace::OVRPlugin_Sizei {
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_OVRPlugin_Sizei0(
         &mut self,
@@ -7250,7 +7252,7 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -7258,7 +7260,7 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+Skeleton")]
@@ -7861,13 +7863,13 @@ for crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf {
 impl crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+TiledMultiResLevel")]
@@ -8025,12 +8027,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
 }
 #[cfg(feature = "OVRPlugin+UnityOpenXR")]
 impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -8040,7 +8042,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+UnityOpenXR")]
@@ -8131,13 +8133,13 @@ for crate::GlobalNamespace::OVRPlugin_Vector3f {
 impl crate::GlobalNamespace::OVRPlugin_Vector3f {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+Vector4f")]
@@ -8169,13 +8171,13 @@ for crate::GlobalNamespace::OVRPlugin_Vector4f {
 impl crate::GlobalNamespace::OVRPlugin_Vector4f {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+Vector4s")]
@@ -8207,13 +8209,13 @@ for crate::GlobalNamespace::OVRPlugin_Vector4s {
 impl crate::GlobalNamespace::OVRPlugin_Vector4s {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+VirtualKeyboardCreateInfo")]
@@ -8451,7 +8453,7 @@ impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
             "get_Visible",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Visible(
         &mut self,
@@ -8462,7 +8464,7 @@ impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
             "set_Visible",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRPlugin+VirtualKeyboardSpaceCreateInfo")]

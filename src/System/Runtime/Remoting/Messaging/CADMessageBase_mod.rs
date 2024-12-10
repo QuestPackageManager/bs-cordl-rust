@@ -34,68 +34,83 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Messaging::CADMess
 impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
     pub fn GetLogicalCallContext(
         &mut self,
-        args: *mut crate::System::Collections::ArrayList,
+        args: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext = __cordl_object
-            .invoke("GetLogicalCallContext", (args))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+        > = __cordl_object.invoke("GetLogicalCallContext", (args))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetMethod(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodBase> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Reflection::MethodBase = __cordl_object
-            .invoke("GetMethod", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MarshalArgument(
-        &mut self,
-        arg: *mut quest_hook::libil2cpp::Il2CppObject,
-        args: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Collections::ArrayList>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("MarshalArgument", (arg, args))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MarshalArguments(
-        &mut self,
-        arguments: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-        >,
-        args: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Collections::ArrayList>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodBase,
+        > = __cordl_object.invoke("GetMethod", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MarshalArgument(
+        &mut self,
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        args: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Collections::ArrayList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("MarshalArgument", (arg, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MarshalArguments(
+        &mut self,
+        arguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+        args: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Collections::ArrayList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("MarshalArguments", (arguments, args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMethodMessage,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (msg))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SaveLogicalCallContext(
         &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+        >,
         serializeList: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Collections::ArrayList,
         >,
@@ -105,47 +120,54 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SaveLogicalCallContext", (msg, serializeList))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnmarshalArgument(
         &mut self,
-        arg: *mut quest_hook::libil2cpp::Il2CppObject,
-        args: *mut crate::System::Collections::ArrayList,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("UnmarshalArgument", (arg, args))?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnmarshalArguments(
-        &mut self,
-        arguments: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-        >,
-        args: *mut crate::System::Collections::ArrayList,
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        args: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("UnmarshalArgument", (arg, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnmarshalArguments(
+        &mut self,
+        arguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+        args: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("UnmarshalArguments", (arguments, args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        msg: *mut crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (msg))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CADMessageBase")]

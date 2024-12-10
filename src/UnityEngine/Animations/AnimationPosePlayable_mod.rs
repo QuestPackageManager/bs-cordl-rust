@@ -31,7 +31,7 @@ impl crate::UnityEngine::Animations::AnimationPosePlayable {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -41,7 +41,7 @@ impl crate::UnityEngine::Animations::AnimationPosePlayable {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -52,6 +52,6 @@ impl crate::UnityEngine::Animations::AnimationPosePlayable {
             ".ctor",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

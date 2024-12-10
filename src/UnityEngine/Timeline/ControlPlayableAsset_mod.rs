@@ -47,10 +47,12 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub type _GetControlableScripts_d__39 = crate::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__39;
     pub fn CreateActivationPlayable(
         &mut self,
-        root: *mut crate::UnityEngine::GameObject,
+        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        outplayables: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::Playables::Playable,
+        outplayables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -58,37 +60,41 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateActivationPlayable", (root, graph, outplayables))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreatePlayable(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        go: *mut crate::UnityEngine::GameObject,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Playables::Playable = __cordl_object
             .invoke("CreatePlayable", (graph, go))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GatherProperties(
         &mut self,
-        director: *mut crate::UnityEngine::Playables::PlayableDirector,
-        driver: *mut crate::UnityEngine::Timeline::IPropertyCollector,
+        director: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Playables::PlayableDirector,
+        >,
+        driver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Timeline::IPropertyCollector,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GatherProperties", (director, driver))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetComponent<T>(
         &mut self,
-        gameObject: *mut crate::UnityEngine::GameObject,
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<T>,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -97,32 +103,37 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<T> = __cordl_object
-            .invoke("GetComponent", (gameObject))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<T>,
+        > = __cordl_object.invoke("GetComponent", (gameObject))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetControllableParticleSystems(
         &mut self,
-        go: *mut crate::UnityEngine::GameObject,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ParticleSystem,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ParticleSystem,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ParticleSystem,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ParticleSystem,
+            >,
         > = __cordl_object.invoke("GetControllableParticleSystems", (go))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -132,16 +143,20 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SearchHierarchyAndConnectDirector(
         &mut self,
-        directors: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::Playables::PlayableDirector,
+        directors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::Playables::PlayableDirector,
+            >,
         >,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        outplayables: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::Playables::Playable,
+        outplayables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
         >,
         disableSelfReferences: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -153,16 +168,20 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                 "SearchHierarchyAndConnectDirector",
                 (directors, graph, outplayables, disableSelfReferences),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SearchHierarchyAndConnectParticleSystem(
         &mut self,
-        particleSystems: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::ParticleSystem,
+        particleSystems: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ParticleSystem,
+            >,
         >,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        outplayables: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::Playables::Playable,
+        outplayables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -173,15 +192,19 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                 "SearchHierarchyAndConnectParticleSystem",
                 (particleSystems, graph, outplayables),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateDurationAndLoopFlag(
         &mut self,
-        directors: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::Playables::PlayableDirector,
+        directors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::Playables::PlayableDirector,
+            >,
         >,
-        particleSystems: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ParticleSystem,
+        particleSystems: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ParticleSystem,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -189,7 +212,7 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateDurationAndLoopFlag", (directors, particleSystems))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -199,7 +222,7 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_clipCaps(
         &mut self,
@@ -209,28 +232,28 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         );
         let __cordl_ret: crate::UnityEngine::Timeline::ClipCaps = __cordl_object
             .invoke("get_clipCaps", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_controllingDirectors(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_controllingDirectors", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_controllingParticles(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_controllingParticles", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f64 = __cordl_object.invoke("get_duration", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_controllingDirectors(
         &mut self,
@@ -241,7 +264,7 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_controllingDirectors", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_controllingParticles(
         &mut self,
@@ -252,7 +275,7 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_controllingParticles", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ControlPlayableAsset")]

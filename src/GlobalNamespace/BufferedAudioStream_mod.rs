@@ -36,23 +36,23 @@ impl crate::GlobalNamespace::BufferedAudioStream {
     pub const sampleRate: i32 = 48000i32;
     pub fn AddData(
         &mut self,
-        samples: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddData", (samples))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        audio: *mut crate::UnityEngine::AudioSource,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        audio: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (audio))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Stop(
         &mut self,
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::BufferedAudioStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Stop", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
@@ -72,18 +72,18 @@ impl crate::GlobalNamespace::BufferedAudioStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        audio: *mut crate::UnityEngine::AudioSource,
+        audio: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (audio))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BufferedAudioStream")]

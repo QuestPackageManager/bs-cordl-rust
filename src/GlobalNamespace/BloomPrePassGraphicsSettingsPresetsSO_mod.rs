@@ -31,12 +31,12 @@ for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
 impl crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
     #[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO+Preset")]
     pub type Preset = crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -46,35 +46,41 @@ impl crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_namedPresets(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::NamedPreset>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::NamedPreset,
-        > = __cordl_object.invoke("get_namedPresets", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_presets(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::NamedPreset>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::NamedPreset>,
+        > = __cordl_object.invoke("get_namedPresets", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_presets(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+            >,
         > = __cordl_object.invoke("get_presets", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO")]
@@ -117,12 +123,12 @@ for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset {
 }
 #[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO+Preset")]
 impl crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -132,7 +138,7 @@ impl crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO+Preset")]

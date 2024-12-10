@@ -37,26 +37,27 @@ impl crate::UnityEngine::UIElements::IMouseEventInternal {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_recomputeTopElementUnderMouse", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sourcePointerEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IPointerEvent,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IPointerEvent = __cordl_object
-            .invoke("get_sourcePointerEvent", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IPointerEvent,
+        > = __cordl_object.invoke("get_sourcePointerEvent", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_triggeredByOS(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_triggeredByOS", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_recomputeTopElementUnderMouse(
         &mut self,
@@ -67,18 +68,18 @@ impl crate::UnityEngine::UIElements::IMouseEventInternal {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_recomputeTopElementUnderMouse", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sourcePointerEvent(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::IPointerEvent,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_sourcePointerEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_triggeredByOS(
         &mut self,
@@ -89,7 +90,7 @@ impl crate::UnityEngine::UIElements::IMouseEventInternal {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_triggeredByOS", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IMouseEventInternal")]

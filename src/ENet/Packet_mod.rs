@@ -22,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::ENet::Packet {
 impl crate::ENet::Packet {
     pub fn CopyTo(
         &mut self,
-        destination: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startPos: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -30,22 +30,22 @@ impl crate::ENet::Packet {
             "CopyTo",
             (destination, startPos),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Create_Il2CppArray0(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Create",
             (data),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Create_Il2CppArray_PacketFlags2(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         flags: crate::ENet::PacketFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -53,11 +53,11 @@ impl crate::ENet::Packet {
             "Create",
             (data, flags),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Create_Il2CppArray_i32_1(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -65,11 +65,11 @@ impl crate::ENet::Packet {
             "Create",
             (data, length),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Create_Il2CppArray_i32_PacketFlags3(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         length: i32,
         flags: crate::ENet::PacketFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -78,11 +78,11 @@ impl crate::ENet::Packet {
             "Create",
             (data, length, flags),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Create_Il2CppArray_i32_i32_PacketFlags5(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         length: i32,
         flags: crate::ENet::PacketFlags,
@@ -92,7 +92,7 @@ impl crate::ENet::Packet {
             "Create",
             (data, offset, length, flags),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Create_IntPtr_i32_PacketFlags4(
         &mut self,
@@ -105,7 +105,7 @@ impl crate::ENet::Packet {
             "Create",
             (data, length, flags),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Create_IntPtr_i32_i32_PacketFlags6(
         &mut self,
@@ -119,7 +119,7 @@ impl crate::ENet::Packet {
             "Create",
             (data, offset, length, flags),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -129,7 +129,7 @@ impl crate::ENet::Packet {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetFreeCallback_IntPtr0(
         &mut self,
@@ -140,18 +140,18 @@ impl crate::ENet::Packet {
             "SetFreeCallback",
             (callback),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetFreeCallback_PacketFreeCallback1(
         &mut self,
-        callback: *mut crate::ENet::PacketFreeCallback,
+        callback: quest_hook::libil2cpp::Gc<crate::ENet::PacketFreeCallback>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetFreeCallback",
             (callback),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ThrowIfNotCreated(
         &mut self,
@@ -161,7 +161,7 @@ impl crate::ENet::Packet {
             "ThrowIfNotCreated",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -172,7 +172,7 @@ impl crate::ENet::Packet {
             ".ctor",
             (packet),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Data(&mut self) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -180,7 +180,7 @@ impl crate::ENet::Packet {
             "get_Data",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_HasReferences(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -188,7 +188,7 @@ impl crate::ENet::Packet {
             "get_HasReferences",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsSet(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -196,7 +196,7 @@ impl crate::ENet::Packet {
             "get_IsSet",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -204,7 +204,7 @@ impl crate::ENet::Packet {
             "get_Length",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_NativeData(
         &mut self,
@@ -214,7 +214,7 @@ impl crate::ENet::Packet {
             "get_NativeData",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_UserData(
         &mut self,
@@ -224,7 +224,7 @@ impl crate::ENet::Packet {
             "get_UserData",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_NativeData(
         &mut self,
@@ -235,7 +235,7 @@ impl crate::ENet::Packet {
             "set_NativeData",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_UserData(
         &mut self,
@@ -246,6 +246,6 @@ impl crate::ENet::Packet {
             "set_UserData",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -51,7 +51,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
             "WithAxis",
             (axis, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WithButton(
         &mut self,
@@ -65,7 +65,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
             "WithButton",
             (code, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_format(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
             "get_format",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(
@@ -123,12 +123,12 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     pub const DPadButtons: &'static str = "DpadButtons";
     pub const Gamepad: &'static str = "Gamepad";
     pub const Joystick: &'static str = "Joystick";
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -138,7 +138,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

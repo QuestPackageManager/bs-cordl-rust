@@ -30,11 +30,11 @@ impl crate::GlobalNamespace::XPlatformAccessTokenData {
             "IsValid",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        token: *mut quest_hook::libil2cpp::Il2CppString,
+        token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         platformEnvironment: crate::GlobalNamespace::PlatformEnvironment,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -42,6 +42,6 @@ impl crate::GlobalNamespace::XPlatformAccessTokenData {
             ".ctor",
             (token, platformEnvironment),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

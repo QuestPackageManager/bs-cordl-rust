@@ -29,7 +29,9 @@ impl<
 > crate::System::Threading::SparselyPopulatedArrayAddInfo_1<T> {
     pub fn _ctor(
         &mut self,
-        source: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -41,7 +43,7 @@ impl<
             ".ctor",
             (source, index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Index(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -53,20 +55,22 @@ impl<
             "get_Index",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Source(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<
-            T,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Source", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

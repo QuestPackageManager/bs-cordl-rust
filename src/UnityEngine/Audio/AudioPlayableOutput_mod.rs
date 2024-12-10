@@ -28,7 +28,7 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
             "GetEvaluateOnSeek",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -40,17 +40,19 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTarget(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AudioSource> {
-        let __cordl_ret: *mut crate::UnityEngine::AudioSource = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetTarget",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetEvaluateOnSeek(
         &mut self,
@@ -61,18 +63,18 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
             "SetEvaluateOnSeek",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTarget(
         &mut self,
-        value: *mut crate::UnityEngine::AudioSource,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetTarget",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -83,6 +85,6 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
             ".ctor",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

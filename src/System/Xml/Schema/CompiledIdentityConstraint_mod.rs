@@ -33,22 +33,24 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::CompiledIdentityConstrai
 impl crate::System::Xml::Schema::CompiledIdentityConstraint {
     #[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
     pub type ConstraintRole = crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole;
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_XmlSchemaIdentityConstraint_XmlNamespaceManager1(
-        constraint: *mut crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
-        nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        constraint: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
+        >,
+        nsmgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (constraint, nsmgr))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -58,32 +60,36 @@ impl crate::System::Xml::Schema::CompiledIdentityConstraint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_XmlSchemaIdentityConstraint_XmlNamespaceManager1(
         &mut self,
-        constraint: *mut crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
-        nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
+        constraint: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
+        >,
+        nsmgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (constraint, nsmgr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Fields(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::Asttree>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::Asttree>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::Asttree,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::Asttree>,
         > = __cordl_object.invoke("get_Fields", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Role(
         &mut self,
@@ -95,17 +101,20 @@ impl crate::System::Xml::Schema::CompiledIdentityConstraint {
         );
         let __cordl_ret: crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole = __cordl_object
             .invoke("get_Role", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Selector(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::Asttree> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Asttree>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Schema::Asttree = __cordl_object
-            .invoke("get_Selector", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::Asttree,
+        > = __cordl_object.invoke("get_Selector", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint")]

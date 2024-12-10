@@ -49,22 +49,26 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoteControllerDidInit(
         &mut self,
-        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
+        noteController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteControllerBase,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleNoteControllerDidInit", (noteController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoteControllerNoteDidPassJumpThreeQuarters(
         &mut self,
-        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
+        noteController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteControllerBase,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -74,11 +78,13 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
                 "HandleNoteControllerNoteDidPassJumpThreeQuarters",
                 (noteController),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleNoteControllerNoteDidStartDissolving(
         &mut self,
-        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
+        noteController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteControllerBase,
+        >,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -89,14 +95,14 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
                 "HandleNoteControllerNoteDidStartDissolving",
                 (noteController, duration),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -106,7 +112,7 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -116,13 +122,15 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didInitEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::ColorNoteVisuals,
-            *mut crate::GlobalNamespace::NoteControllerBase,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::ColorNoteVisuals,
+                *mut crate::GlobalNamespace::NoteControllerBase,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -130,13 +138,15 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didInitEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didInitEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::ColorNoteVisuals,
-            *mut crate::GlobalNamespace::NoteControllerBase,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::ColorNoteVisuals,
+                *mut crate::GlobalNamespace::NoteControllerBase,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -144,7 +154,7 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didInitEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_showArrow(
         &mut self,
@@ -155,7 +165,7 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_showArrow", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_showCircle(
         &mut self,
@@ -166,7 +176,7 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_showCircle", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ColorNoteVisuals")]

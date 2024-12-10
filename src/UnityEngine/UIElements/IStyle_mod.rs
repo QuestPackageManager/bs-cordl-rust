@@ -39,7 +39,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleBackgroundSize = __cordl_object
             .invoke("get_backgroundSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_cursor(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleCursor = __cordl_object
             .invoke("get_cursor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_display(
         &mut self,
@@ -64,7 +64,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         let __cordl_ret: crate::UnityEngine::UIElements::StyleEnum_1<
             crate::UnityEngine::UIElements::DisplayStyle,
         > = __cordl_object.invoke("get_display", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_paddingTop(
         &mut self,
@@ -74,7 +74,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleLength = __cordl_object
             .invoke("get_paddingTop", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotate(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleRotate = __cordl_object
             .invoke("get_rotate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_scale(
         &mut self,
@@ -94,7 +94,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleScale = __cordl_object
             .invoke("get_scale", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_textShadow(
         &mut self,
@@ -104,7 +104,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleTextShadow = __cordl_object
             .invoke("get_textShadow", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transformOrigin(
         &mut self,
@@ -116,7 +116,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleTransformOrigin = __cordl_object
             .invoke("get_transformOrigin", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_translate(
         &mut self,
@@ -126,7 +126,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleTranslate = __cordl_object
             .invoke("get_translate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_width(
         &mut self,
@@ -136,7 +136,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleLength = __cordl_object
             .invoke("get_width", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_backgroundColor(
         &mut self,
@@ -147,7 +147,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_backgroundColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderBottomColor(
         &mut self,
@@ -158,7 +158,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderBottomColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderBottomLeftRadius(
         &mut self,
@@ -169,7 +169,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderBottomLeftRadius", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderBottomRightRadius(
         &mut self,
@@ -180,7 +180,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderBottomRightRadius", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderBottomWidth(
         &mut self,
@@ -191,7 +191,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderBottomWidth", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderLeftColor(
         &mut self,
@@ -202,7 +202,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderLeftColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderLeftWidth(
         &mut self,
@@ -213,7 +213,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderLeftWidth", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderRightColor(
         &mut self,
@@ -224,7 +224,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderRightColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderRightWidth(
         &mut self,
@@ -235,7 +235,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderRightWidth", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderTopColor(
         &mut self,
@@ -246,7 +246,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderTopColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderTopLeftRadius(
         &mut self,
@@ -257,7 +257,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderTopLeftRadius", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderTopRightRadius(
         &mut self,
@@ -268,7 +268,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderTopRightRadius", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_borderTopWidth(
         &mut self,
@@ -279,7 +279,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_borderTopWidth", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_bottom(
         &mut self,
@@ -290,7 +290,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_bottom", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_color(
         &mut self,
@@ -301,7 +301,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_color", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_display(
         &mut self,
@@ -314,7 +314,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_display", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flexBasis(
         &mut self,
@@ -325,7 +325,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_flexBasis", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flexDirection(
         &mut self,
@@ -338,7 +338,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_flexDirection", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flexGrow(
         &mut self,
@@ -349,7 +349,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_flexGrow", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_flexShrink(
         &mut self,
@@ -360,7 +360,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_flexShrink", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_fontSize(
         &mut self,
@@ -371,7 +371,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_fontSize", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_height(
         &mut self,
@@ -382,7 +382,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_height", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_left(
         &mut self,
@@ -393,7 +393,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_left", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_marginBottom(
         &mut self,
@@ -404,7 +404,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_marginBottom", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_marginLeft(
         &mut self,
@@ -415,7 +415,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_marginLeft", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_marginRight(
         &mut self,
@@ -426,7 +426,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_marginRight", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_marginTop(
         &mut self,
@@ -437,7 +437,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_marginTop", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maxHeight(
         &mut self,
@@ -448,7 +448,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_maxHeight", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maxWidth(
         &mut self,
@@ -459,7 +459,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_maxWidth", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_minWidth(
         &mut self,
@@ -470,7 +470,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_minWidth", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_opacity(
         &mut self,
@@ -481,7 +481,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_opacity", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_overflow(
         &mut self,
@@ -494,7 +494,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_overflow", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_paddingBottom(
         &mut self,
@@ -505,7 +505,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_paddingBottom", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_paddingLeft(
         &mut self,
@@ -516,7 +516,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_paddingLeft", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_paddingRight(
         &mut self,
@@ -527,7 +527,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_paddingRight", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_paddingTop(
         &mut self,
@@ -538,7 +538,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_paddingTop", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_position(
         &mut self,
@@ -551,7 +551,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_position", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_right(
         &mut self,
@@ -562,7 +562,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_right", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_top(
         &mut self,
@@ -573,7 +573,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_top", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_translate(
         &mut self,
@@ -584,7 +584,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_translate", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_unityBackgroundImageTintColor(
         &mut self,
@@ -595,7 +595,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_unityBackgroundImageTintColor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_unityFont(
         &mut self,
@@ -606,7 +606,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_unityFont", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_unityFontDefinition(
         &mut self,
@@ -617,7 +617,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_unityFontDefinition", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_visibility(
         &mut self,
@@ -630,7 +630,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_visibility", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_width(
         &mut self,
@@ -641,7 +641,7 @@ impl crate::UnityEngine::UIElements::IStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_width", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IStyle")]

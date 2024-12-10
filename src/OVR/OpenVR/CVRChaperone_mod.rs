@@ -30,7 +30,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("AreBoundsVisible", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ForceBoundsVisible(
         &mut self,
@@ -41,7 +41,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ForceBoundsVisible", (bForce))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetBoundsColor(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
                     pOutputCameraColor,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCalibrationState(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         );
         let __cordl_ret: crate::OVR::OpenVR::ChaperoneCalibrationState = __cordl_object
             .invoke("GetCalibrationState", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPlayAreaRect(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("GetPlayAreaRect", (rect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPlayAreaSize(
         &mut self,
@@ -99,16 +99,16 @@ impl crate::OVR::OpenVR::CVRChaperone {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetPlayAreaSize", (pSizeX, pSizeZ))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         pInterface: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pInterface))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReloadInfo(
         &mut self,
@@ -118,7 +118,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReloadInfo", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetSceneColor(
         &mut self,
@@ -129,7 +129,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSceneColor", (color))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -140,7 +140,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (pInterface))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRChaperone")]

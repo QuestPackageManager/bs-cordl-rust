@@ -37,25 +37,25 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsAtLeastOneFieldPopulated(
         &mut self,
-        deeplink: *mut crate::GlobalNamespace::Deeplink,
+        deeplink: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsAtLeastOneFieldPopulated", (deeplink))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OculusPlatformWasInitialized(
         &mut self,
@@ -65,12 +65,14 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OculusPlatformWasInitialized", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetJoinIntentReceivedNotificationCallback(
         &mut self,
-        message: *mut crate::Oculus::Platform::Message_1<
-            *mut crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+        message: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1<
+                *mut crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -78,19 +80,23 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetJoinIntentReceivedNotificationCallback", (message))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateDeeplinkMessage(
         &mut self,
-        joinIntent: *mut crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
-        launchDetails: *mut crate::Oculus::Platform::Models::LaunchDetails,
+        joinIntent: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+        >,
+        launchDetails: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchDetails,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateDeeplinkMessage", (joinIntent, launchDetails))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -100,39 +106,45 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didReceiveDeeplinkEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::Deeplink>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::GlobalNamespace::Deeplink>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didReceiveDeeplinkEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentDeeplink(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::Deeplink> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::Deeplink = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink> = __cordl_object
             .invoke("get_currentDeeplink", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didReceiveDeeplinkEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::Deeplink>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::GlobalNamespace::Deeplink>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didReceiveDeeplinkEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OculusDeeplinkManager")]

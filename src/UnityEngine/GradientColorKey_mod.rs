@@ -33,6 +33,6 @@ impl crate::UnityEngine::GradientColorKey {
             ".ctor",
             (col, _cordl_time),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

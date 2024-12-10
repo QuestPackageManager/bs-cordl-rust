@@ -27,16 +27,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IDecryptorBuilderP
 impl crate::Org::BouncyCastle::Crypto::IDecryptorBuilderProvider {
     pub fn CreateDecryptorBuilder(
         &mut self,
-        algorithmDetails: *mut quest_hook::libil2cpp::Il2CppObject,
+        algorithmDetails: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::ICipherBuilder,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherBuilder>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipherBuilder = __cordl_object
-            .invoke("CreateDecryptorBuilder", (algorithmDetails))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherBuilder,
+        > = __cordl_object.invoke("CreateDecryptorBuilder", (algorithmDetails))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

@@ -36,7 +36,7 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::IMemoryPool_1<TValue> 
             self,
         );
         let __cordl_ret: TValue = __cordl_object.invoke("Spawn", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

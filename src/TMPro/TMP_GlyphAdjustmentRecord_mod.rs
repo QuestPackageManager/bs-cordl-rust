@@ -32,7 +32,7 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
             ".ctor",
             (adjustmentRecord),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_TMP_GlyphValueRecord0(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
             ".ctor",
             (glyphIndex, glyphValueRecord),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_glyphIndex(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -52,7 +52,7 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
             "get_glyphIndex",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_glyphValueRecord(
         &mut self,
@@ -62,7 +62,7 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
             "get_glyphValueRecord",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_glyphIndex(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
             "set_glyphIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_glyphValueRecord(
         &mut self,
@@ -84,6 +84,6 @@ impl crate::TMPro::TMP_GlyphAdjustmentRecord {
             "set_glyphValueRecord",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

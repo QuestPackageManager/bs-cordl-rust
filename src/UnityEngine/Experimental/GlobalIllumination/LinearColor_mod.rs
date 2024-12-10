@@ -32,7 +32,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
             "get_blue",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_green(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -40,7 +40,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
             "get_green",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_red(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -48,7 +48,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
             "get_red",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_blue(
         &mut self,
@@ -59,7 +59,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
             "set_blue",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_green(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
             "set_green",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_red(
         &mut self,
@@ -81,6 +81,6 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
             "set_red",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

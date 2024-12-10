@@ -37,12 +37,12 @@ impl crate::GlobalNamespace::PyramidBloomRendererSO {
     pub type Level = crate::GlobalNamespace::PyramidBloomRendererSO_Level;
     #[cfg(feature = "PyramidBloomRendererSO+Pass")]
     pub type Pass = crate::GlobalNamespace::PyramidBloomRendererSO_Pass;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDisable(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::PyramidBloomRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDisable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
@@ -62,12 +62,12 @@ impl crate::GlobalNamespace::PyramidBloomRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnEnable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RenderBloom__cordl_bool__cordl_bool__cordl_bool0(
         &mut self,
-        src: *mut crate::UnityEngine::RenderTexture,
-        dest: *mut crate::UnityEngine::RenderTexture,
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         radius: f32,
         alphaWeights: bool,
         betterQuality: bool,
@@ -90,12 +90,12 @@ impl crate::GlobalNamespace::PyramidBloomRendererSO {
                     legacyAutoExposure,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RenderBloom_f32_f32_f32__cordl_bool_f32_f32_f32_f32_PyramidBloomRendererSO_Pass_PyramidBloomRendererSO_Pass_PyramidBloomRendererSO_Pass_PyramidBloomRendererSO_Pass__cordl_bool__cordl_bool1(
         &mut self,
-        src: *mut crate::UnityEngine::RenderTexture,
-        dest: *mut crate::UnityEngine::RenderTexture,
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         radius: f32,
         intensity: f32,
         autoExposureLimit: f32,
@@ -140,7 +140,7 @@ impl crate::GlobalNamespace::PyramidBloomRendererSO {
                     isScreenspaceEffect,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -150,7 +150,7 @@ impl crate::GlobalNamespace::PyramidBloomRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "PyramidBloomRendererSO")]

@@ -26,12 +26,12 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlTypeMapMemberF
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberFlatList")]
 impl crate::System::Xml::Serialization::XmlTypeMapMemberFlatList {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -41,28 +41,31 @@ impl crate::System::Xml::Serialization::XmlTypeMapMemberFlatList {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ListMap(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Serialization::ListMap> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::ListMap>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Xml::Serialization::ListMap = __cordl_object
-            .invoke("get_ListMap", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::ListMap,
+        > = __cordl_object.invoke("get_ListMap", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_ListMap(
         &mut self,
-        value: *mut crate::System::Xml::Serialization::ListMap,
+        value: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::ListMap>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ListMap", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberFlatList")]

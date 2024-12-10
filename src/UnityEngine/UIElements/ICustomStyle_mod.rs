@@ -33,7 +33,7 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut1(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut2(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut3(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut4(
         &mut self,
@@ -83,7 +83,7 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut5(
         &mut self,
@@ -98,7 +98,7 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut6(
         &mut self,
@@ -111,7 +111,7 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

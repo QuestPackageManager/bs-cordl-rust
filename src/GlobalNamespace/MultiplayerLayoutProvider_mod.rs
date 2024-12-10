@@ -39,14 +39,14 @@ impl crate::GlobalNamespace::MultiplayerLayoutProvider {
         );
         let __cordl_ret: crate::GlobalNamespace::MultiplayerPlayerLayout = __cordl_object
             .invoke("CalculateLayout", (activePlayersCount))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -56,13 +56,12 @@ impl crate::GlobalNamespace::MultiplayerLayoutProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_playersLayoutWasCalculatedEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            crate::GlobalNamespace::MultiplayerPlayerLayout,
-            i32,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<crate::GlobalNamespace::MultiplayerPlayerLayout, i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -70,14 +69,14 @@ impl crate::GlobalNamespace::MultiplayerLayoutProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_playersLayoutWasCalculatedEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_activePlayerSpotsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_activePlayerSpotsCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_layout(
         &mut self,
@@ -87,13 +86,12 @@ impl crate::GlobalNamespace::MultiplayerLayoutProvider {
         );
         let __cordl_ret: crate::GlobalNamespace::MultiplayerPlayerLayout = __cordl_object
             .invoke("get_layout", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_playersLayoutWasCalculatedEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            crate::GlobalNamespace::MultiplayerPlayerLayout,
-            i32,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<crate::GlobalNamespace::MultiplayerPlayerLayout, i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -101,7 +99,7 @@ impl crate::GlobalNamespace::MultiplayerLayoutProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_playersLayoutWasCalculatedEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_activePlayerSpotsCount(
         &mut self,
@@ -112,7 +110,7 @@ impl crate::GlobalNamespace::MultiplayerLayoutProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_activePlayerSpotsCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_layout(
         &mut self,
@@ -123,7 +121,7 @@ impl crate::GlobalNamespace::MultiplayerLayoutProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_layout", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MultiplayerLayoutProvider")]

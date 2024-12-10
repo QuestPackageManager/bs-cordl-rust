@@ -36,46 +36,48 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         &mut self,
         x: i32,
         z: i32,
-        terrain: *mut crate::UnityEngine::Terrain,
+        terrain: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddTerrainInternal", (x, z, terrain))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTerrain(
         &mut self,
         tileX: i32,
         tileZ: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Terrain> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Terrain = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain> = __cordl_object
             .invoke("GetTerrain", (tileX, tileZ))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn TryToAddTerrain(
         &mut self,
         tileX: i32,
         tileZ: i32,
-        terrain: *mut crate::UnityEngine::Terrain,
+        terrain: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryToAddTerrain", (tileX, tileZ, terrain))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Validate(
         &mut self,
@@ -87,7 +89,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         );
         let __cordl_ret: crate::UnityEngine::TerrainUtils::TerrainMapStatusCode = __cordl_object
             .invoke("Validate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateTerrain(
         &mut self,
@@ -99,7 +101,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ValidateTerrain", (tileX, tileZ))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -109,24 +111,28 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_terrainTiles(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::TerrainUtils::TerrainTileCoord,
-            *mut crate::UnityEngine::Terrain,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::UnityEngine::TerrainUtils::TerrainTileCoord,
+                *mut crate::UnityEngine::Terrain,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::TerrainUtils::TerrainTileCoord,
-            *mut crate::UnityEngine::Terrain,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::UnityEngine::TerrainUtils::TerrainTileCoord,
+                *mut crate::UnityEngine::Terrain,
+            >,
         > = __cordl_object.invoke("get_terrainTiles", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+TerrainUtils+TerrainMap")]

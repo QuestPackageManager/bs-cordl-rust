@@ -37,21 +37,21 @@ impl crate::TMPro::KerningPair {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ConvertLegacyKerningData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_u32_GlyphValueRecord_Legacy_u32_GlyphValueRecord_Legacy2(
         firstGlyph: u32,
         firstGlyphAdjustments: crate::TMPro::GlyphValueRecord_Legacy,
         secondGlyph: u32,
         secondGlyphAdjustments: crate::TMPro::GlyphValueRecord_Legacy,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -59,18 +59,18 @@ impl crate::TMPro::KerningPair {
                 ".ctor",
                 (firstGlyph, firstGlyphAdjustments, secondGlyph, secondGlyphAdjustments),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_u32_u32_f32_1(
         left: u32,
         right: u32,
         offset: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (left, right, offset))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -80,7 +80,7 @@ impl crate::TMPro::KerningPair {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_GlyphValueRecord_Legacy_u32_GlyphValueRecord_Legacy2(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::TMPro::KerningPair {
                 ".ctor",
                 (firstGlyph, firstGlyphAdjustments, secondGlyph, secondGlyphAdjustments),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_u32_f32_1(
         &mut self,
@@ -110,14 +110,14 @@ impl crate::TMPro::KerningPair {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (left, right, offset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_firstGlyph(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_firstGlyph", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_firstGlyphAdjustments(
         &mut self,
@@ -127,7 +127,7 @@ impl crate::TMPro::KerningPair {
         );
         let __cordl_ret: crate::TMPro::GlyphValueRecord_Legacy = __cordl_object
             .invoke("get_firstGlyphAdjustments", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ignoreSpacingAdjustments(
         &mut self,
@@ -137,14 +137,14 @@ impl crate::TMPro::KerningPair {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_ignoreSpacingAdjustments", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_secondGlyph(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_secondGlyph", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_secondGlyphAdjustments(
         &mut self,
@@ -154,7 +154,7 @@ impl crate::TMPro::KerningPair {
         );
         let __cordl_ret: crate::TMPro::GlyphValueRecord_Legacy = __cordl_object
             .invoke("get_secondGlyphAdjustments", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_firstGlyph(
         &mut self,
@@ -165,7 +165,7 @@ impl crate::TMPro::KerningPair {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_firstGlyph", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_secondGlyph(
         &mut self,
@@ -176,7 +176,7 @@ impl crate::TMPro::KerningPair {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_secondGlyph", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TMPro+KerningPair")]

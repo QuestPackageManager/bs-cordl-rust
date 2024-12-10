@@ -26,24 +26,24 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::HttpContentHeader
 #[cfg(feature = "System+Net+Http+Headers+HttpContentHeaders")]
 impl crate::System::Net::Http::Headers::HttpContentHeaders {
     pub fn New(
-        content: *mut crate::System::Net::Http::HttpContent,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        content: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (content))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        content: *mut crate::System::Net::Http::HttpContent,
+        content: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (content))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ContentLength(
         &mut self,
@@ -53,30 +53,35 @@ impl crate::System::Net::Http::Headers::HttpContentHeaders {
         );
         let __cordl_ret: crate::System::Nullable_1<i64> = __cordl_object
             .invoke("get_ContentLength", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ContentType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::Http::Headers::MediaTypeHeaderValue = __cordl_object
-            .invoke("get_ContentType", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+        > = __cordl_object.invoke("get_ContentType", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_ContentType(
         &mut self,
-        value: *mut crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ContentType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+HttpContentHeaders")]

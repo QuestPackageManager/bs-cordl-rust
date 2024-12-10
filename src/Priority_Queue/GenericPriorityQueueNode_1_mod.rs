@@ -32,7 +32,7 @@ for crate::Priority_Queue::GenericPriorityQueueNode_1<TPriority> {
 impl<
     TPriority: quest_hook::libil2cpp::Type,
 > crate::Priority_Queue::GenericPriorityQueueNode_1<TPriority> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TPriority: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -41,7 +41,7 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -53,7 +53,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_InsertionIndex(&mut self) -> quest_hook::libil2cpp::Result<i64>
     where
@@ -64,7 +64,7 @@ impl<
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_InsertionIndex", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Priority(&mut self) -> quest_hook::libil2cpp::Result<TPriority>
     where
@@ -75,7 +75,7 @@ impl<
             self,
         );
         let __cordl_ret: TPriority = __cordl_object.invoke("get_Priority", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_QueueIndex(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -86,7 +86,7 @@ impl<
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_QueueIndex", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_InsertionIndex(
         &mut self,
@@ -101,7 +101,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_InsertionIndex", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Priority(
         &mut self,
@@ -116,7 +116,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Priority", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_QueueIndex(
         &mut self,
@@ -131,7 +131,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_QueueIndex", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Priority_Queue+GenericPriorityQueueNode_1")]

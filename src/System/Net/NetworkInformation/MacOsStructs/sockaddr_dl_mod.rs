@@ -39,6 +39,6 @@ impl crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_dl {
             "Read",
             (ptr),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

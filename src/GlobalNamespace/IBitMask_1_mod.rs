@@ -40,7 +40,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IBitMask_1<T> {
             self,
         );
         let __cordl_ret: u64 = __cordl_object.invoke("GetBits", (offset, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetBits(&mut self, offset: i32, bits: u64) -> quest_hook::libil2cpp::Result<T>
     where
@@ -51,7 +51,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IBitMask_1<T> {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("SetBits", (offset, bits))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -67,7 +67,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IBitMask_1<T> {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_bitCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "IBitMask_1")]

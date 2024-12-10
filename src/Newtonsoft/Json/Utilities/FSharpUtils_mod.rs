@@ -84,8 +84,10 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
     pub fn BuildMapCreator<TKey, TValue>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     >
     where
@@ -97,243 +99,298 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("BuildMapCreator", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateMap(
         &mut self,
-        keyType: *mut crate::System::Type,
-        valueType: *mut crate::System::Type,
+        keyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        valueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("CreateMap", (keyType, valueType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateSeq(
         &mut self,
-        t: *mut crate::System::Type,
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("CreateSeq", (t))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        fsharpCoreAssembly: *mut crate::System::Reflection::Assembly,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        fsharpCoreAssembly: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (fsharpCoreAssembly))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        fsharpCoreAssembly: *mut crate::System::Reflection::Assembly,
+        fsharpCoreAssembly: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (fsharpCoreAssembly))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_FSharpCoreAssembly(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::Assembly> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Reflection::Assembly = __cordl_object
-            .invoke("get_FSharpCoreAssembly", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        > = __cordl_object.invoke("get_FSharpCoreAssembly", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_GetUnionCaseInfoDeclaringType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("get_GetUnionCaseInfoDeclaringType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_GetUnionCaseInfoFields(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("get_GetUnionCaseInfoFields", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_GetUnionCaseInfoName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("get_GetUnionCaseInfoName", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_GetUnionCaseInfoTag(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("get_GetUnionCaseInfoTag", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_GetUnionCases(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("get_GetUnionCases", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsUnion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("get_IsUnion", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PreComputeUnionConstructor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("get_PreComputeUnionConstructor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PreComputeUnionReader(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("get_PreComputeUnionReader", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PreComputeUnionTagReader(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         > = __cordl_object.invoke("get_PreComputeUnionTagReader", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_FSharpCoreAssembly(
         &mut self,
-        value: *mut crate::System::Reflection::Assembly,
+        value: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_FSharpCoreAssembly", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_GetUnionCaseInfoDeclaringType(
         &mut self,
-        value: *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -341,13 +398,15 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_GetUnionCaseInfoDeclaringType", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_GetUnionCaseInfoFields(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -355,13 +414,15 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_GetUnionCaseInfoFields", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_GetUnionCaseInfoName(
         &mut self,
-        value: *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -369,13 +430,15 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_GetUnionCaseInfoName", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_GetUnionCaseInfoTag(
         &mut self,
-        value: *mut crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -383,13 +446,15 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_GetUnionCaseInfoTag", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_GetUnionCases(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -397,13 +462,15 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_GetUnionCases", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_IsUnion(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -411,13 +478,15 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_IsUnion", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_PreComputeUnionConstructor(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -425,13 +494,15 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_PreComputeUnionConstructor", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_PreComputeUnionReader(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -439,13 +510,15 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_PreComputeUnionReader", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_PreComputeUnionTagReader(
         &mut self,
-        value: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -453,7 +526,7 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_PreComputeUnionTagReader", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+FSharpUtils")]

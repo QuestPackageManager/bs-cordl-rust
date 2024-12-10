@@ -36,7 +36,7 @@ impl crate::System::Runtime::InteropServices::SafeBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AcquirePointer", (pointer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReleasePointer(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::System::Runtime::InteropServices::SafeBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReleasePointer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Runtime+InteropServices+SafeBuffer")]

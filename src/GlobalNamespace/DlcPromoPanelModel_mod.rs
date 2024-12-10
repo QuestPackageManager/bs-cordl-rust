@@ -92,97 +92,105 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
     pub type __c__DisplayClass34_0 = crate::GlobalNamespace::DlcPromoPanelModel___c__DisplayClass34_0;
     pub fn BuyLevelButtonWasPressed(
         &mut self,
-        level: *mut crate::GlobalNamespace::BeatmapLevel,
-        page: *mut quest_hook::libil2cpp::Il2CppString,
-        customText: *mut quest_hook::libil2cpp::Il2CppString,
+        level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        page: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BuyLevelButtonWasPressed", (level, page, customText))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BuyLevelButtonWasShown(
         &mut self,
-        level: *mut crate::GlobalNamespace::BeatmapLevel,
-        page: *mut quest_hook::libil2cpp::Il2CppString,
-        customText: *mut quest_hook::libil2cpp::Il2CppString,
+        level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        page: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BuyLevelButtonWasShown", (level, page, customText))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BuyPackButtonWasPressed(
         &mut self,
-        pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-        page: *mut quest_hook::libil2cpp::Il2CppString,
-        customText: *mut quest_hook::libil2cpp::Il2CppString,
+        pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        page: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BuyPackButtonWasPressed", (pack, page, customText))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BuyPackButtonWasShown(
         &mut self,
-        pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-        page: *mut quest_hook::libil2cpp::Il2CppString,
-        customText: *mut quest_hook::libil2cpp::Il2CppString,
+        pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        page: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BuyPackButtonWasShown", (pack, page, customText))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPackDataForMainMenuPromoBanner(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::System::ValueTuple_2<
-                *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                bool,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    bool,
+                >,
             >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::System::ValueTuple_2<
-                *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                bool,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    bool,
+                >,
             >,
         > = __cordl_object.invoke("GetPackDataForMainMenuPromoBanner", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPackDataForMainMenuPromoBannerInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            crate::System::ValueTuple_2<
-                *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                bool,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    bool,
+                >,
             >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::System::ValueTuple_2<
-                *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                bool,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    bool,
+                >,
             >,
         > = __cordl_object.invoke("GetPackDataForMainMenuPromoBannerInternal", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleAdditionalContentModelDidInvalidateData(
         &mut self,
@@ -192,7 +200,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleAdditionalContentModelDidInvalidateData", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleDidCatalogLoadOrUpdate(
         &mut self,
@@ -202,7 +210,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleDidCatalogLoadOrUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
@@ -212,77 +220,99 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("InitializeAsync", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("InitializeAsync", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeInternalAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("InitializeInternalAsync", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("InitializeInternalAsync", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn LoadPackPromoInfoAsync(
         &mut self,
-        pack: *mut crate::GlobalNamespace::PackDefinitionSO,
+        pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::GlobalNamespace::PackPromoInfoSO,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::PackPromoInfoSO,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::GlobalNamespace::PackPromoInfoSO,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::PackPromoInfoSO,
+            >,
         > = __cordl_object.invoke("LoadPackPromoInfoAsync", (pack))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MainMenuDlcPromoBannerWasPressed(
         &mut self,
-        packId: *mut quest_hook::libil2cpp::Il2CppString,
-        customText: *mut quest_hook::libil2cpp::Il2CppString,
+        packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MainMenuDlcPromoBannerWasPressed", (packId, customText))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MainMenuDlcPromoBannerWasShown(
         &mut self,
-        packId: *mut quest_hook::libil2cpp::Il2CppString,
-        customText: *mut quest_hook::libil2cpp::Il2CppString,
+        packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MainMenuDlcPromoBannerWasShown", (packId, customText))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
-        beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-        analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-        defaultDlcPromoPanelData: *mut crate::GlobalNamespace::DlcPromoPanelDataSO,
-        playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-        platformInit: *mut crate::GlobalNamespace::IPlatformInit,
-        metaRemoteAssetsManager: *mut crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        additionalContentModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IAdditionalContentModel,
+        >,
+        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsModel,
+        >,
+        analyticsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IAnalyticsModel,
+        >,
+        defaultDlcPromoPanelData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DlcPromoPanelDataSO,
+        >,
+        playerDataModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerDataModel,
+        >,
+        platformInit: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformInit>,
+        metaRemoteAssetsManager: quest_hook::libil2cpp::Gc<
+            crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -298,57 +328,81 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     metaRemoteAssetsManager,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UpdateDlcPromoPanelDataAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("UpdateDlcPromoPanelDataAsync", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("UpdateDlcPromoPanelDataAsync", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateModelDataAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("UpdateModelDataAsync", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("UpdateModelDataAsync", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateOwnedPacksAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("UpdateOwnedPacksAsync", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("UpdateOwnedPacksAsync", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn UpdatePromoInfosAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("UpdatePromoInfosAsync", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("UpdatePromoInfosAsync", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
-        beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-        analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-        defaultDlcPromoPanelData: *mut crate::GlobalNamespace::DlcPromoPanelDataSO,
-        playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-        platformInit: *mut crate::GlobalNamespace::IPlatformInit,
-        metaRemoteAssetsManager: *mut crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
+        additionalContentModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IAdditionalContentModel,
+        >,
+        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsModel,
+        >,
+        analyticsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IAnalyticsModel,
+        >,
+        defaultDlcPromoPanelData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DlcPromoPanelDataSO,
+        >,
+        playerDataModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerDataModel,
+        >,
+        platformInit: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformInit>,
+        metaRemoteAssetsManager: quest_hook::libil2cpp::Gc<
+            crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -366,51 +420,51 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     metaRemoteAssetsManager,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_hotReloadDidFinish(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_hotReloadDidFinish", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_hotReloadDidStart(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_hotReloadDidStart", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_hotReloadDidFinish(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_hotReloadDidFinish", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_hotReloadDidStart(
         &mut self,
-        value: *mut crate::System::Action,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_hotReloadDidStart", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "DlcPromoPanelModel")]
@@ -457,30 +511,36 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     #[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
     pub type PromoType = crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType;
     pub fn New_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
-        packId: *mut quest_hook::libil2cpp::Il2CppString,
-        promoBannerInfo: *mut crate::GlobalNamespace::PromoBannerInfoSO,
+        packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        promoBannerInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PromoBannerInfoSO,
+        >,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (packId, promoBannerInfo, contentRating))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_PackPromoInfoSO_LevelPromoInfo_PlayerSensitivityFlag1(
-        levelPromoInfo: *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+        levelPromoInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+        >,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (levelPromoInfo, contentRating))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
         &mut self,
-        packId: *mut quest_hook::libil2cpp::Il2CppString,
-        promoBannerInfo: *mut crate::GlobalNamespace::PromoBannerInfoSO,
+        packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        promoBannerInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PromoBannerInfoSO,
+        >,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -488,11 +548,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (packId, promoBannerInfo, contentRating))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_PackPromoInfoSO_LevelPromoInfo_PlayerSensitivityFlag1(
         &mut self,
-        levelPromoInfo: *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+        levelPromoInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+        >,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -500,7 +562,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (levelPromoInfo, contentRating))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "DlcPromoPanelModel+PromoInfo")]

@@ -35,8 +35,8 @@ impl crate::LiteNetLib::NetSocket {
     pub const SioUdpConnreset: i32 = -1744830452i32;
     pub fn Bind(
         &mut self,
-        addressIPv4: *mut crate::System::Net::IPAddress,
-        addressIPv6: *mut crate::System::Net::IPAddress,
+        addressIPv4: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+        addressIPv6: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         port: i32,
         reuseAddress: bool,
         ipv6: bool,
@@ -50,12 +50,12 @@ impl crate::LiteNetLib::NetSocket {
                 "Bind",
                 (addressIPv4, addressIPv6, port, reuseAddress, ipv6, priority),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BindSocket(
         &mut self,
-        socket: *mut crate::System::Net::Sockets::Socket,
-        ep: *mut crate::System::Net::IPEndPoint,
+        socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+        ep: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         reuseAddress: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -63,7 +63,7 @@ impl crate::LiteNetLib::NetSocket {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("BindSocket", (socket, ep, reuseAddress))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Close(
         &mut self,
@@ -74,38 +74,38 @@ impl crate::LiteNetLib::NetSocket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Close", (suspend))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsActive", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        listener: *mut crate::LiteNetLib::INetSocketListener,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        listener: quest_hook::libil2cpp::Gc<crate::LiteNetLib::INetSocketListener>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (listener))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReceiveLogic(
         &mut self,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReceiveLogic", (state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendBroadcast(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
         port: i32,
@@ -115,14 +115,14 @@ impl crate::LiteNetLib::NetSocket {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("SendBroadcast", (data, offset, _cordl_size, port))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendTo(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
-        remoteEndPoint: *mut crate::System::Net::IPEndPoint,
+        remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         errorCode: quest_hook::libil2cpp::ByRefMut<
             crate::System::Net::Sockets::SocketError,
         >,
@@ -132,32 +132,32 @@ impl crate::LiteNetLib::NetSocket {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("SendTo", (data, offset, _cordl_size, remoteEndPoint, errorCode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        listener: *mut crate::LiteNetLib::INetSocketListener,
+        listener: quest_hook::libil2cpp::Gc<crate::LiteNetLib::INetSocketListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (listener))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LocalPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_LocalPort", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Ttl(&mut self) -> quest_hook::libil2cpp::Result<i16> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i16 = __cordl_object.invoke("get_Ttl", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_LocalPort(
         &mut self,
@@ -168,7 +168,7 @@ impl crate::LiteNetLib::NetSocket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_LocalPort", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Ttl(
         &mut self,
@@ -179,7 +179,7 @@ impl crate::LiteNetLib::NetSocket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Ttl", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LiteNetLib+NetSocket")]

@@ -47,23 +47,25 @@ for crate::System::Security::Cryptography::RijndaelManagedTransform {
 impl crate::System::Security::Cryptography::RijndaelManagedTransform {
     pub fn Dec(
         &mut self,
-        decryptindex: *mut quest_hook::libil2cpp::Il2CppObject,
-        decryptKeyExpansion: *mut quest_hook::libil2cpp::Il2CppObject,
-        iT: *mut quest_hook::libil2cpp::Il2CppObject,
-        iTF: *mut quest_hook::libil2cpp::Il2CppObject,
-        work: *mut quest_hook::libil2cpp::Il2CppObject,
-        temp: *mut quest_hook::libil2cpp::Il2CppObject,
+        decryptindex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        decryptKeyExpansion: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        iT: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        iTF: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        work: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        temp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dec", (decryptindex, decryptKeyExpansion, iT, iTF, work, temp))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DecryptData(
         &mut self,
-        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inputBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inputOffset: i32,
         inputCount: i32,
         outputBuffer: quest_hook::libil2cpp::ByRefMut<
@@ -89,7 +91,7 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
                     fLast,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
@@ -99,7 +101,7 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -110,27 +112,29 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Enc(
         &mut self,
-        encryptindex: *mut quest_hook::libil2cpp::Il2CppObject,
-        encryptKeyExpansion: *mut quest_hook::libil2cpp::Il2CppObject,
-        T: *mut quest_hook::libil2cpp::Il2CppObject,
-        TF: *mut quest_hook::libil2cpp::Il2CppObject,
-        work: *mut quest_hook::libil2cpp::Il2CppObject,
-        temp: *mut quest_hook::libil2cpp::Il2CppObject,
+        encryptindex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        encryptKeyExpansion: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        T: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        TF: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        work: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        temp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Enc", (encryptindex, encryptKeyExpansion, T, TF, work, temp))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EncryptData(
         &mut self,
-        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inputBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inputOffset: i32,
         inputCount: i32,
         outputBuffer: quest_hook::libil2cpp::ByRefMut<
@@ -156,28 +160,28 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
                     fLast,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateKeyExpansion(
         &mut self,
-        rgbKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        rgbKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateKeyExpansion", (rgbKey))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        rgbKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        rgbKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         mode: crate::System::Security::Cryptography::CipherMode,
-        rgbIV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        rgbIV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         blockSize: i32,
         feedbackSize: i32,
         PaddingValue: crate::System::Security::Cryptography::PaddingMode,
         transformMode: crate::System::Security::Cryptography::RijndaelManagedTransformMode,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -193,7 +197,7 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
                     transformMode,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(
         &mut self,
@@ -203,14 +207,14 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransformBlock(
         &mut self,
-        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inputBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inputOffset: i32,
         inputCount: i32,
-        outputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        outputBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outputOffset: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -221,26 +225,30 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
                 "TransformBlock",
                 (inputBuffer, inputOffset, inputCount, outputBuffer, outputOffset),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TransformFinalBlock(
         &mut self,
-        inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inputBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inputOffset: i32,
         inputCount: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object
             .invoke("TransformFinalBlock", (inputBuffer, inputOffset, inputCount))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        rgbKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        rgbKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         mode: crate::System::Security::Cryptography::CipherMode,
-        rgbIV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        rgbIV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         blockSize: i32,
         feedbackSize: i32,
         PaddingValue: crate::System::Security::Cryptography::PaddingMode,
@@ -262,7 +270,7 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
                     transformMode,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CanTransformMultipleBlocks(
         &mut self,
@@ -272,21 +280,21 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_CanTransformMultipleBlocks", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_InputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_InputBlockSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_OutputBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_OutputBlockSize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]

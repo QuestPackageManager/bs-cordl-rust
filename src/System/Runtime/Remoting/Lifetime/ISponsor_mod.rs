@@ -26,14 +26,16 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Lifetime::ISponsor
 impl crate::System::Runtime::Remoting::Lifetime::ISponsor {
     pub fn Renewal(
         &mut self,
-        lease: *mut crate::System::Runtime::Remoting::Lifetime::ILease,
+        lease: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Lifetime::ILease,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::System::TimeSpan = __cordl_object
             .invoke("Renewal", (lease))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

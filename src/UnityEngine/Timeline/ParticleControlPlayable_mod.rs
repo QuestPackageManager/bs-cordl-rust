@@ -31,7 +31,7 @@ impl crate::UnityEngine::Timeline::ParticleControlPlayable {
     pub const kUnsetTime: f32 = 340282350000000000000000000000000000000f32;
     pub fn Initialize(
         &mut self,
-        ps: *mut crate::UnityEngine::ParticleSystem,
+        ps: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
         randomSeed: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -39,14 +39,14 @@ impl crate::UnityEngine::Timeline::ParticleControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", (ps, randomSeed))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnBehaviourPause(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::UnityEngine::Timeline::ParticleControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBehaviourPause", (playable, info))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnBehaviourPlay(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::UnityEngine::Timeline::ParticleControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBehaviourPlay", (playable, info))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PrepareFrame(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::UnityEngine::Timeline::ParticleControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PrepareFrame", (playable, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Simulate(
         &mut self,
@@ -94,7 +94,7 @@ impl crate::UnityEngine::Timeline::ParticleControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Simulate", (_cordl_time, restart))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -104,28 +104,30 @@ impl crate::UnityEngine::Timeline::ParticleControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_particleSystem(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::ParticleSystem> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ParticleSystem = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem> = __cordl_object
             .invoke("get_particleSystem", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_particleSystem(
         &mut self,
-        value: *mut crate::UnityEngine::ParticleSystem,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_particleSystem", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ParticleControlPlayable")]

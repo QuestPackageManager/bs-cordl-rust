@@ -46,7 +46,7 @@ impl<
         );
         let __cordl_ret: crate::GlobalNamespace::SyncStateId = __cordl_object
             .invoke("get_id", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_state(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -57,7 +57,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_state", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<i64>
     where
@@ -68,7 +68,7 @@ impl<
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_time", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_id(
         &mut self,
@@ -83,7 +83,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_id", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_state(
         &mut self,
@@ -98,7 +98,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_state", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_time(
         &mut self,
@@ -113,7 +113,7 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_time", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ISyncStateSerializable_1")]

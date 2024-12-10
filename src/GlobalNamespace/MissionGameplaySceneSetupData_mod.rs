@@ -33,15 +33,19 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MissionGameplaySceneSetupDat
 #[cfg(feature = "MissionGameplaySceneSetupData")]
 impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
     pub fn New(
-        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MissionObjective,
+        missionObjectives: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::MissionObjective,
+            >,
         >,
         autoRestart: bool,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -56,18 +60,22 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
                     backButtonText,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MissionObjective,
+        missionObjectives: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::MissionObjective,
+            >,
         >,
         autoRestart: bool,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -84,7 +92,7 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
                     backButtonText,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MissionGameplaySceneSetupData")]

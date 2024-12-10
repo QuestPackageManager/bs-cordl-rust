@@ -72,52 +72,84 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::BeatmapSaveData {
 impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
     pub const kCurrentVersion: &'static str = "3.3.0";
     pub fn New(
-        bpmEvents: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::BpmChangeEventData,
+        bpmEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::BpmChangeEventData,
+            >,
         >,
-        rotationEvents: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::RotationEventData,
+        rotationEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::RotationEventData,
+            >,
         >,
-        colorNotes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::ColorNoteData,
+        colorNotes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::ColorNoteData,
+            >,
         >,
-        bombNotes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::BombNoteData,
+        bombNotes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::BombNoteData,
+            >,
         >,
-        obstacles: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::ObstacleData,
+        obstacles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::ObstacleData,
+            >,
         >,
-        sliders: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::SliderData,
+        sliders: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::SliderData,
+            >,
         >,
-        burstSliders: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::BurstSliderData,
+        burstSliders: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::BurstSliderData,
+            >,
         >,
-        waypoints: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::WaypointData,
+        waypoints: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::WaypointData,
+            >,
         >,
-        basicBeatmapEvents: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::BasicEventData,
+        basicBeatmapEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::BasicEventData,
+            >,
         >,
-        colorBoostBeatmapEvents: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::ColorBoostEventData,
+        colorBoostBeatmapEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::ColorBoostEventData,
+            >,
         >,
-        lightColorEventBoxGroups: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
+        lightColorEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
+            >,
         >,
-        lightRotationEventBoxGroups: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+        lightRotationEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+            >,
         >,
-        lightTranslationEventBoxGroups: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
+        lightTranslationEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
+            >,
         >,
-        vfxEventBoxGroups: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::FxEventBoxGroup,
+        vfxEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::FxEventBoxGroup,
+            >,
         >,
-        fxEventsCollection: *mut crate::BeatmapSaveDataVersion3::FxEventsCollection,
-        basicEventTypesWithKeywords: *mut crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
+        fxEventsCollection: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::FxEventsCollection,
+        >,
+        basicEventTypesWithKeywords: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
+        >,
         useNormalEventsAsCompatibleEvents: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -143,54 +175,86 @@ impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
                     useNormalEventsAsCompatibleEvents,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        bpmEvents: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::BpmChangeEventData,
+        bpmEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::BpmChangeEventData,
+            >,
         >,
-        rotationEvents: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::RotationEventData,
+        rotationEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::RotationEventData,
+            >,
         >,
-        colorNotes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::ColorNoteData,
+        colorNotes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::ColorNoteData,
+            >,
         >,
-        bombNotes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::BombNoteData,
+        bombNotes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::BombNoteData,
+            >,
         >,
-        obstacles: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::ObstacleData,
+        obstacles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::ObstacleData,
+            >,
         >,
-        sliders: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::SliderData,
+        sliders: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::SliderData,
+            >,
         >,
-        burstSliders: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::BurstSliderData,
+        burstSliders: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::BurstSliderData,
+            >,
         >,
-        waypoints: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::WaypointData,
+        waypoints: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::WaypointData,
+            >,
         >,
-        basicBeatmapEvents: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::BasicEventData,
+        basicBeatmapEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::BasicEventData,
+            >,
         >,
-        colorBoostBeatmapEvents: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::ColorBoostEventData,
+        colorBoostBeatmapEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::ColorBoostEventData,
+            >,
         >,
-        lightColorEventBoxGroups: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
+        lightColorEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
+            >,
         >,
-        lightRotationEventBoxGroups: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+        lightRotationEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+            >,
         >,
-        lightTranslationEventBoxGroups: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
+        lightTranslationEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
+            >,
         >,
-        vfxEventBoxGroups: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::FxEventBoxGroup,
+        vfxEventBoxGroups: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatmapSaveDataVersion3::FxEventBoxGroup,
+            >,
         >,
-        fxEventsCollection: *mut crate::BeatmapSaveDataVersion3::FxEventsCollection,
-        basicEventTypesWithKeywords: *mut crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
+        fxEventsCollection: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::FxEventsCollection,
+        >,
+        basicEventTypesWithKeywords: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
+        >,
         useNormalEventsAsCompatibleEvents: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -219,7 +283,7 @@ impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
                     useNormalEventsAsCompatibleEvents,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BeatmapSaveData")]

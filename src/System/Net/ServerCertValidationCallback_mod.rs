@@ -30,20 +30,24 @@ impl crate::System::Net::ServerCertValidationCallback {
     pub type CallbackContext = crate::System::Net::ServerCertValidationCallback_CallbackContext;
     pub fn Callback(
         &mut self,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Callback", (state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
-        request: *mut quest_hook::libil2cpp::Il2CppObject,
-        certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        chain: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
+        request: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
+        chain: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Chain,
+        >,
         sslPolicyErrors: crate::System::Net::Security::SslPolicyErrors,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -51,39 +55,46 @@ impl crate::System::Net::ServerCertValidationCallback {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("Invoke", (request, certificate, chain, sslPolicyErrors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        validationCallback: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        validationCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (validationCallback))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        validationCallback: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
+        validationCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (validationCallback))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ValidationCallback(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Net::Security::RemoteCertificateValidationCallback = __cordl_object
-            .invoke("get_ValidationCallback", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        > = __cordl_object.invoke("get_ValidationCallback", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+ServerCertValidationCallback")]
@@ -131,22 +142,30 @@ for crate::System::Net::ServerCertValidationCallback_CallbackContext {
 #[cfg(feature = "System+Net+ServerCertValidationCallback+CallbackContext")]
 impl crate::System::Net::ServerCertValidationCallback_CallbackContext {
     pub fn New(
-        request: *mut quest_hook::libil2cpp::Il2CppObject,
-        certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        chain: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
+        request: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
+        chain: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Chain,
+        >,
         sslPolicyErrors: crate::System::Net::Security::SslPolicyErrors,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (request, certificate, chain, sslPolicyErrors))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        request: *mut quest_hook::libil2cpp::Il2CppObject,
-        certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        chain: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
+        request: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
+        chain: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Chain,
+        >,
         sslPolicyErrors: crate::System::Net::Security::SslPolicyErrors,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -154,7 +173,7 @@ impl crate::System::Net::ServerCertValidationCallback_CallbackContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (request, certificate, chain, sslPolicyErrors))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Net+ServerCertValidationCallback+CallbackContext")]

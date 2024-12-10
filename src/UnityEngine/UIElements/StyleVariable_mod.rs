@@ -32,14 +32,16 @@ impl crate::UnityEngine::UIElements::StyleVariable {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-        handles: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::UIElements::StyleValueHandle,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        handles: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::StyleValueHandle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -47,6 +49,6 @@ impl crate::UnityEngine::UIElements::StyleVariable {
             ".ctor",
             (name, sheet, handles),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

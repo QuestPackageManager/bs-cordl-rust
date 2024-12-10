@@ -33,6 +33,6 @@ impl crate::LufsMetering::SplitAudioJob {
             "Execute",
             (i),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

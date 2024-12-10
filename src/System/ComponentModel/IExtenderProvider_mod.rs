@@ -26,13 +26,13 @@ impl std::ops::DerefMut for crate::System::ComponentModel::IExtenderProvider {
 impl crate::System::ComponentModel::IExtenderProvider {
     pub fn CanExtend(
         &mut self,
-        extendee: *mut quest_hook::libil2cpp::Il2CppObject,
+        extendee: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CanExtend", (extendee))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

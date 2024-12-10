@@ -44,7 +44,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "SetOrClearRenderTextureCreationFlag",
             (value, flag),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_GraphicsFormat_GraphicsFormat3(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             ".ctor",
             (width, height, colorFormat, depthStencilFormat),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_GraphicsFormat_GraphicsFormat_i32_4(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             ".ctor",
             (width, height, colorFormat, depthStencilFormat, mipCount),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_RenderTextureFormat_i32_0(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             ".ctor",
             (width, height, colorFormat, depthBufferBits),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_RenderTextureFormat_i32_i32_1(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             ".ctor",
             (width, height, colorFormat, depthBufferBits, mipCount),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_RenderTextureFormat_i32_i32_RenderTextureReadWrite2(
         &mut self,
@@ -118,7 +118,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             ".ctor",
             (width, height, colorFormat, depthBufferBits, mipCount, readWrite),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_colorFormat(
         &mut self,
@@ -128,7 +128,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "get_colorFormat",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_depthBufferBits(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -136,7 +136,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "get_depthBufferBits",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_depthStencilFormat(
         &mut self,
@@ -148,7 +148,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "get_depthStencilFormat",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dimension(
         &mut self,
@@ -158,7 +158,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "get_dimension",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_graphicsFormat(
         &mut self,
@@ -170,7 +170,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "get_graphicsFormat",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -178,7 +178,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "get_height",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_msaaSamples(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -186,7 +186,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "get_msaaSamples",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sRGB(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -194,7 +194,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "get_sRGB",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_shadowSamplingMode(
         &mut self,
@@ -206,7 +206,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "get_shadowSamplingMode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_volumeDepth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -214,7 +214,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "get_volumeDepth",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -222,7 +222,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "get_width",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_autoGenerateMips(
         &mut self,
@@ -233,7 +233,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_autoGenerateMips",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_colorFormat(
         &mut self,
@@ -244,7 +244,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_colorFormat",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_createdFromScript(
         &mut self,
@@ -255,7 +255,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_createdFromScript",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_depthBufferBits(
         &mut self,
@@ -266,7 +266,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_depthBufferBits",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_depthStencilFormat(
         &mut self,
@@ -277,7 +277,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_depthStencilFormat",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dimension(
         &mut self,
@@ -288,7 +288,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_dimension",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_enableRandomWrite(
         &mut self,
@@ -299,7 +299,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_enableRandomWrite",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_graphicsFormat(
         &mut self,
@@ -310,7 +310,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_graphicsFormat",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_height(
         &mut self,
@@ -321,7 +321,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_height",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_memoryless(
         &mut self,
@@ -332,7 +332,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_memoryless",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_mipCount(
         &mut self,
@@ -343,7 +343,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_mipCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_msaaSamples(
         &mut self,
@@ -354,7 +354,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_msaaSamples",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sRGB(
         &mut self,
@@ -365,7 +365,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_sRGB",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_shadowSamplingMode(
         &mut self,
@@ -376,7 +376,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_shadowSamplingMode",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_useDynamicScale(
         &mut self,
@@ -387,7 +387,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_useDynamicScale",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_useMipMap(
         &mut self,
@@ -398,7 +398,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_useMipMap",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_volumeDepth(
         &mut self,
@@ -409,7 +409,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_volumeDepth",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_vrUsage(
         &mut self,
@@ -420,7 +420,7 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_vrUsage",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_width(
         &mut self,
@@ -431,6 +431,6 @@ impl crate::UnityEngine::RenderTextureDescriptor {
             "set_width",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

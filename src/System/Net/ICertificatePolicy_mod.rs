@@ -26,9 +26,11 @@ impl std::ops::DerefMut for crate::System::Net::ICertificatePolicy {
 impl crate::System::Net::ICertificatePolicy {
     pub fn CheckValidationResult(
         &mut self,
-        srvPoint: *mut crate::System::Net::ServicePoint,
-        certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        request: *mut crate::System::Net::WebRequest,
+        srvPoint: quest_hook::libil2cpp::Gc<crate::System::Net::ServicePoint>,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
+        request: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
         certificateProblem: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -39,7 +41,7 @@ impl crate::System::Net::ICertificatePolicy {
                 "CheckValidationResult",
                 (srvPoint, certificate, request, certificateProblem),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

@@ -37,31 +37,34 @@ impl crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
         &mut self,
         bitsRequired: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IEntropySource>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::IEntropySource = __cordl_object
-            .invoke("Get", (bitsRequired))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IEntropySource,
+        > = __cordl_object.invoke("Get", (bitsRequired))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_RandomNumberGenerator__cordl_bool1(
-        rng: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
+        rng: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RandomNumberGenerator,
+        >,
         isPredictionResistant: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (rng, isPredictionResistant))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -71,11 +74,13 @@ impl crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_RandomNumberGenerator__cordl_bool1(
         &mut self,
-        rng: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
+        rng: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RandomNumberGenerator,
+        >,
         isPredictionResistant: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -83,7 +88,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rng, isPredictionResistant))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
@@ -140,25 +145,31 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_Crypt
 )]
 impl crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_CryptoApiEntropySource {
     pub fn New(
-        rng: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
+        rng: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RandomNumberGenerator,
+        >,
         predictionResistant: bool,
         entropySize: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (rng, predictionResistant, entropySize))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Org_BouncyCastle_Crypto_IEntropySource_GetEntropy(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object
             .invoke("Org.BouncyCastle.Crypto.IEntropySource.GetEntropy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Org_BouncyCastle_Crypto_IEntropySource_get_EntropySize(
         &mut self,
@@ -168,7 +179,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_Cryp
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("Org.BouncyCastle.Crypto.IEntropySource.get_EntropySize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Org_BouncyCastle_Crypto_IEntropySource_get_IsPredictionResistant(
         &mut self,
@@ -181,11 +192,13 @@ impl crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_Cryp
                 "Org.BouncyCastle.Crypto.IEntropySource.get_IsPredictionResistant",
                 (),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        rng: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
+        rng: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RandomNumberGenerator,
+        >,
         predictionResistant: bool,
         entropySize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -194,7 +207,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_Cryp
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rng, predictionResistant, entropySize))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

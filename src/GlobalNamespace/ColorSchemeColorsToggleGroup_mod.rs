@@ -45,21 +45,26 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CreateColorSchemeFromEditedColors(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ColorScheme> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::ColorScheme = __cordl_object
-            .invoke("CreateColorSchemeFromEditedColors", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorScheme,
+        > = __cordl_object.invoke("CreateColorSchemeFromEditedColors", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn HandleToggleWasSelected(
         &mut self,
-        toggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
+        toggleController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorSchemeColorToggleController,
+        >,
         isOn: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -67,14 +72,14 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleToggleWasSelected", (toggleController, isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnDestroy(
         &mut self,
@@ -84,18 +89,18 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetColorScheme(
         &mut self,
-        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetColorScheme", (colorScheme))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__17_0(
         &mut self,
@@ -106,7 +111,7 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__17_0", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__17_1(
         &mut self,
@@ -117,7 +122,7 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__17_1", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__17_2(
         &mut self,
@@ -128,7 +133,7 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__17_2", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__17_3(
         &mut self,
@@ -139,7 +144,7 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__17_3", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__17_4(
         &mut self,
@@ -150,7 +155,7 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__17_4", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__17_5(
         &mut self,
@@ -161,7 +166,7 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__17_5", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__17_6(
         &mut self,
@@ -172,7 +177,7 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<Awake>b__17_6", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -182,18 +187,20 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_selectedColorDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<crate::UnityEngine::Color>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_selectedColorDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_color(
         &mut self,
@@ -203,18 +210,20 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_color", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_selectedColorDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<crate::UnityEngine::Color>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_selectedColorDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_color(
         &mut self,
@@ -225,7 +234,7 @@ impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_color", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ColorSchemeColorsToggleGroup")]

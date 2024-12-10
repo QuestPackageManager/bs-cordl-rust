@@ -68,19 +68,23 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
     pub type __c = crate::UnityEngine::UIElements::UIR::UIRenderDevice___c;
     pub fn ActiveUpdatesForMeshHandle(
         &mut self,
-        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+            >,
         > = __cordl_object.invoke("ActiveUpdatesForMeshHandle", (mesh))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AdvanceFrame(
         &mut self,
@@ -90,11 +94,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AdvanceFrame", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Allocate_MeshHandle_u32__cordl_bool1(
         &mut self,
-        meshHandle: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        meshHandle: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::MeshHandle,
+        >,
         vertexCount: u32,
         indexCount: u32,
         vertexData: quest_hook::libil2cpp::ByRefMut<
@@ -115,7 +121,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                 "Allocate",
                 (meshHandle, vertexCount, indexCount, vertexData, indexData, shortLived),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Allocate_u32_ByRefMut0(
         &mut self,
@@ -131,17 +137,19 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         >,
         indexOffset: quest_hook::libil2cpp::ByRefMut<u16>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::UIR::MeshHandle = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::MeshHandle,
+        > = __cordl_object
             .invoke(
                 "Allocate",
                 (vertexCount, indexCount, vertexData, indexData, indexOffset),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyBatchState(
         &mut self,
@@ -155,13 +163,15 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyBatchState", (st, allowMaterialChange))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ApplyDrawCommandState(
         &mut self,
-        cmd: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        cmd: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        >,
         textureSlot: i32,
-        newMat: *mut crate::UnityEngine::Material,
+        newMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         newMatDiffers: bool,
         st: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState,
@@ -175,7 +185,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                 "ApplyDrawCommandState",
                 (cmd, textureSlot, newMat, newMatDiffers, st),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompleteCreation(
         &mut self,
@@ -185,7 +195,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CompleteCreation", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
@@ -195,7 +205,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -206,12 +216,16 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawRanges<I, T>(
         &mut self,
-        ib: *mut crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<I>,
-        vb: *mut crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
+        ib: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<I>,
+        >,
+        vb: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
+        >,
         ranges: crate::Unity::Collections::NativeSlice_1<
             crate::UnityEngine::UIElements::UIR::DrawBufferRange,
         >,
@@ -227,21 +241,25 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawRanges", (ib, vb, ranges))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EvaluateChain(
         &mut self,
-        head: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-        initialMat: *mut crate::UnityEngine::Material,
-        defaultMat: *mut crate::UnityEngine::Material,
-        gradientSettings: *mut crate::UnityEngine::Texture,
-        shaderInfo: *mut crate::UnityEngine::Texture,
+        head: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        >,
+        initialMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        defaultMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        gradientSettings: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        shaderInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         pixelsPerPoint: f32,
         transforms: crate::Unity::Collections::NativeSlice_1<
             crate::UnityEngine::UIElements::UIR::Transform3x4,
         >,
         clipRects: crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::Vector4>,
-        stateMatProps: *mut crate::UnityEngine::MaterialPropertyBlock,
+        stateMatProps: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::MaterialPropertyBlock,
+        >,
         allowMaterialChange: bool,
         immediateException: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Exception,
@@ -267,18 +285,18 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                     immediateException,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Free(
         &mut self,
-        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Free", (mesh))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GatherDrawStatistics(
         &mut self,
@@ -290,7 +308,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics = __cordl_object
             .invoke("GatherDrawStatistics", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitVertexDeclaration(
         &mut self,
@@ -300,15 +318,15 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitVertexDeclaration", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn KickRanges(
         &mut self,
-        ranges: *mut quest_hook::libil2cpp::Il2CppObject,
+        ranges: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         rangesReady: quest_hook::libil2cpp::ByRefMut<i32>,
         rangesStart: quest_hook::libil2cpp::ByRefMut<i32>,
         rangesCount: i32,
-        curPage: *mut crate::UnityEngine::UIElements::UIR::Page,
+        curPage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -318,13 +336,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                 "KickRanges",
                 (ranges, rangesReady, rangesStart, rangesCount, curPage),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New__cordl_bool1(
         initialVertexCapacity: u32,
         initialIndexCapacity: u32,
         mockDevice: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -332,17 +350,17 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                 ".ctor",
                 (initialVertexCapacity, initialIndexCapacity, mockDevice),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_u32_u32_0(
         initialVertexCapacity: u32,
         initialIndexCapacity: u32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (initialVertexCapacity, initialIndexCapacity))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnFrameRenderingBegin(
         &mut self,
@@ -352,7 +370,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnFrameRenderingBegin", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PruneUnusedPages(
         &mut self,
@@ -362,11 +380,11 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PruneUnusedPages", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryAllocFromPage(
         &mut self,
-        page: *mut crate::UnityEngine::UIElements::UIR::Page,
+        page: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
         vertexCount: u32,
         indexCount: u32,
         va: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::UIR::Alloc>,
@@ -381,11 +399,11 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                 "TryAllocFromPage",
                 (page, vertexCount, indexCount, va, ia, shortLived),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateAfterGPUUsedData(
         &mut self,
-        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
         vertexCount: u32,
         indexCount: u32,
         vertexData: quest_hook::libil2cpp::ByRefMut<
@@ -419,11 +437,11 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                     copyBackIndices,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateCopyBackIndices(
         &mut self,
-        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
         copyBackIndices: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -431,7 +449,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateCopyBackIndices", (mesh, copyBackIndices))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateFenceValue(
         &mut self,
@@ -441,11 +459,11 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateFenceValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update_ByRefMut0(
         &mut self,
-        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
         vertexCount: u32,
         vertexData: quest_hook::libil2cpp::ByRefMut<
             crate::Unity::Collections::NativeSlice_1<
@@ -458,11 +476,11 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (mesh, vertexCount, vertexData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update_u32_ByRefMut_ByRefMut_ByRefMut1(
         &mut self,
-        mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
         vertexCount: u32,
         indexCount: u32,
         vertexData: quest_hook::libil2cpp::ByRefMut<
@@ -483,7 +501,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                 "Update",
                 (mesh, vertexCount, indexCount, vertexData, indexData, indexOffset),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WaitOnCpuFence(
         &mut self,
@@ -494,7 +512,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WaitOnCpuFence", (fence))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool1(
         &mut self,
@@ -507,7 +525,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (initialVertexCapacity, initialIndexCapacity, mockDevice))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_u32_0(
         &mut self,
@@ -519,35 +537,35 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (initialVertexCapacity, initialIndexCapacity))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_breakBatches(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_breakBatches", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_disposed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_fullyCreated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_fullyCreated", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxVerticesPerPage(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_maxVerticesPerPage", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_breakBatches(
         &mut self,
@@ -558,7 +576,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_breakBatches", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_disposed(
         &mut self,
@@ -569,7 +587,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_disposed", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice")]
@@ -674,7 +692,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]

@@ -51,15 +51,15 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     pub type ThumbstickDirection = crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection;
     pub fn AddChannel(
         &mut self,
-        channel: *mut crate::OVRSimpleJSON::JSONNode,
-        samplers: *mut crate::OVRSimpleJSON::JSONNode,
+        channel: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+        samplers: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddChannel", (channel, samplers))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CloneQuaternion(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
             .invoke("CloneQuaternion", (q))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CloneVector3(
         &mut self,
@@ -81,14 +81,14 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("CloneVector3", (v))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CopyData<T>(
         &mut self,
         dest: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Collections::Generic::List_1<T>,
         >,
-        src: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -99,32 +99,38 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyData", (dest, src))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCardinalThumbsticks(
         &mut self,
         joystick: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Tuple_2<
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Tuple_2<
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Tuple_2<
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Tuple_2<
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            >,
         > = __cordl_object.invoke("GetCardinalThumbsticks", (joystick))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetCardinalWeights(
         &mut self,
         joystick: crate::UnityEngine::Vector2,
-        cardinals: *mut crate::System::Tuple_2<
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+        cardinals: quest_hook::libil2cpp::Gc<
+            crate::System::Tuple_2<
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -132,11 +138,11 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("GetCardinalWeights", (joystick, cardinals))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTransformType(
         &mut self,
-        transform: *mut quest_hook::libil2cpp::Il2CppString,
+        transform: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType,
     > {
@@ -145,15 +151,17 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType = __cordl_object
             .invoke("GetTransformType", (transform))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        jsonData: *mut crate::OVRSimpleJSON::JSONNode,
+        jsonData: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
         inputNodeType: crate::GlobalNamespace::OVRGLTFInputNode,
-        gameObj: *mut crate::UnityEngine::GameObject,
-        morphTargetHandler: *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        gameObj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        morphTargetHandler: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -161,14 +169,14 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                 ".ctor",
                 (jsonData, binaryChunk, inputNodeType, gameObj, morphTargetHandler),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ProcessAnimationSampler(
         &mut self,
-        samplerNode: *mut crate::OVRSimpleJSON::JSONNode,
+        samplerNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         nodeId: i32,
         transformType: crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType,
-        extras: *mut crate::OVRSimpleJSON::JSONNode,
+        extras: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -178,11 +186,11 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                 "ProcessAnimationSampler",
                 (samplerNode, nodeId, transformType, extras),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToOVRInterpolationType(
         &mut self,
-        interpolationType: *mut quest_hook::libil2cpp::Il2CppString,
+        interpolationType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType,
     > {
@@ -191,7 +199,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType = __cordl_object
             .invoke("ToOVRInterpolationType", (interpolationType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdatePose_Vector2_2(
         &mut self,
@@ -202,7 +210,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdatePose", (joystick))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdatePose__cordl_bool0(
         &mut self,
@@ -213,7 +221,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdatePose", (down))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdatePose_f32__cordl_bool1(
         &mut self,
@@ -225,15 +233,17 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdatePose", (t, applyDeadZone))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        jsonData: *mut crate::OVRSimpleJSON::JSONNode,
+        jsonData: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
         inputNodeType: crate::GlobalNamespace::OVRGLTFInputNode,
-        gameObj: *mut crate::UnityEngine::GameObject,
-        morphTargetHandler: *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
+        gameObj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        morphTargetHandler: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -243,7 +253,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                 ".ctor",
                 (jsonData, binaryChunk, inputNodeType, gameObj, morphTargetHandler),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRGLTFAnimatinonNode")]

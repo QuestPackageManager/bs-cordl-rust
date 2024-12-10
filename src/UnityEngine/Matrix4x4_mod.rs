@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Matrix4x
 impl crate::UnityEngine::Matrix4x4 {
     pub fn Equals_Il2CppObject0(
         &mut self,
-        other: *mut quest_hook::libil2cpp::Il2CppObject,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Matrix4x4_1(
         &mut self,
@@ -56,7 +56,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetColumn(
         &mut self,
@@ -67,7 +67,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "GetColumn",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -75,7 +75,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLossyScale(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "GetLossyScale",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRotation(
         &mut self,
@@ -95,7 +95,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "GetRotation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRow(
         &mut self,
@@ -106,7 +106,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "GetRow",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MultiplyPoint(
         &mut self,
@@ -117,7 +117,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "MultiplyPoint",
             (point),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MultiplyPoint3x4(
         &mut self,
@@ -128,7 +128,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "MultiplyPoint3x4",
             (point),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MultiplyVector(
         &mut self,
@@ -139,7 +139,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "MultiplyVector",
             (vector),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetColumn(
         &mut self,
@@ -151,7 +151,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "SetColumn",
             (index, column),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTRS(
         &mut self,
@@ -164,29 +164,33 @@ impl crate::UnityEngine::Matrix4x4 {
             "SetTRS",
             (pos, q, s),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider1(
         &mut self,
-        format: *mut quest_hook::libil2cpp::Il2CppString,
-        formatProvider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (format, formatProvider),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -200,7 +204,7 @@ impl crate::UnityEngine::Matrix4x4 {
             ".ctor",
             (column0, column1, column2, column3),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item_i32_0(
         &mut self,
@@ -212,7 +216,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "get_Item",
             (row, column),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Item_i32_1(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -220,7 +224,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "get_Item",
             (index),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_inverse(
         &mut self,
@@ -230,7 +234,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "get_inverse",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_lossyScale(
         &mut self,
@@ -240,7 +244,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "get_lossyScale",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_rotation(
         &mut self,
@@ -250,7 +254,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "get_rotation",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_transpose(
         &mut self,
@@ -260,7 +264,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "get_transpose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item_f32_1(
         &mut self,
@@ -272,7 +276,7 @@ impl crate::UnityEngine::Matrix4x4 {
             "set_Item",
             (index, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Item_i32_f32_0(
         &mut self,
@@ -285,6 +289,6 @@ impl crate::UnityEngine::Matrix4x4 {
             "set_Item",
             (row, column, value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -39,29 +39,31 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ColorScheme {
 #[cfg(feature = "ColorScheme")]
 impl crate::GlobalNamespace::ColorScheme {
     pub fn New_ColorSchemeSO3(
-        colorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (colorScheme))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_ColorScheme_ColorSchemeSO2(
-        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
-        environmentColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        environmentColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorSchemeSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (colorScheme, environmentColorScheme))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_ColorScheme_Color_Color4(
-        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         environmentColorW: crate::UnityEngine::Color,
         environmentColorWBoost: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -69,10 +71,10 @@ impl crate::GlobalNamespace::ColorScheme {
                 ".ctor",
                 (colorScheme, environmentColorW, environmentColorWBoost),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_ColorScheme_Color_Color_Color_Color_Color__cordl_bool_Color_Color_Color_Color1(
-        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
         environmentColor0: crate::UnityEngine::Color,
@@ -83,7 +85,7 @@ impl crate::GlobalNamespace::ColorScheme {
         environmentColor1Boost: crate::UnityEngine::Color,
         environmentColorWBoost: crate::UnityEngine::Color,
         obstaclesColor: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -103,13 +105,15 @@ impl crate::GlobalNamespace::ColorScheme {
                     obstaclesColor,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppString_Il2CppString__cordl_bool_Il2CppString__cordl_bool_Color_Color_Color_Color_Color__cordl_bool_Color_Color_Color_Color0(
-        colorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
-        colorSchemeNameLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+        colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        colorSchemeNameLocalizationKey: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
         useNonLocalizedName: bool,
-        nonLocalizedName: *mut quest_hook::libil2cpp::Il2CppString,
+        nonLocalizedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isEditable: bool,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
@@ -121,7 +125,7 @@ impl crate::GlobalNamespace::ColorScheme {
         environmentColor1Boost: crate::UnityEngine::Color,
         environmentColorWBoost: crate::UnityEngine::Color,
         obstaclesColor: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -145,34 +149,36 @@ impl crate::GlobalNamespace::ColorScheme {
                     obstaclesColor,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_ColorSchemeSO3(
         &mut self,
-        colorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (colorScheme))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_ColorScheme_ColorSchemeSO2(
         &mut self,
-        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
-        environmentColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        environmentColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorSchemeSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (colorScheme, environmentColorScheme))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_ColorScheme_Color_Color4(
         &mut self,
-        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         environmentColorW: crate::UnityEngine::Color,
         environmentColorWBoost: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -181,11 +187,11 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (colorScheme, environmentColorW, environmentColorWBoost))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_ColorScheme_Color_Color_Color_Color_Color__cordl_bool_Color_Color_Color_Color1(
         &mut self,
-        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
         environmentColor0: crate::UnityEngine::Color,
@@ -217,14 +223,16 @@ impl crate::GlobalNamespace::ColorScheme {
                     obstaclesColor,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_Il2CppString__cordl_bool_Il2CppString__cordl_bool_Color_Color_Color_Color_Color__cordl_bool_Color_Color_Color_Color0(
         &mut self,
-        colorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
-        colorSchemeNameLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+        colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        colorSchemeNameLocalizationKey: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
         useNonLocalizedName: bool,
-        nonLocalizedName: *mut quest_hook::libil2cpp::Il2CppString,
+        nonLocalizedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isEditable: bool,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
@@ -261,27 +269,33 @@ impl crate::GlobalNamespace::ColorScheme {
                     obstaclesColor,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_colorSchemeId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_colorSchemeId", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_colorSchemeId", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_colorSchemeNameLocalizationKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_colorSchemeNameLocalizationKey", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_colorSchemeNameLocalizationKey", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_environmentColor0(
         &mut self,
@@ -291,7 +305,7 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_environmentColor0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_environmentColor0Boost(
         &mut self,
@@ -301,7 +315,7 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_environmentColor0Boost", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_environmentColor1(
         &mut self,
@@ -311,7 +325,7 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_environmentColor1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_environmentColor1Boost(
         &mut self,
@@ -321,7 +335,7 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_environmentColor1Boost", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_environmentColorW(
         &mut self,
@@ -331,7 +345,7 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_environmentColorW", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_environmentColorWBoost(
         &mut self,
@@ -341,24 +355,27 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_environmentColorWBoost", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isEditable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isEditable", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_nonLocalizedName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("get_nonLocalizedName", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_nonLocalizedName", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_obstaclesColor(
         &mut self,
@@ -368,7 +385,7 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_obstaclesColor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_saberAColor(
         &mut self,
@@ -378,7 +395,7 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_saberAColor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_saberBColor(
         &mut self,
@@ -388,7 +405,7 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_saberBColor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_supportsEnvironmentColorBoost(
         &mut self,
@@ -398,14 +415,14 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_supportsEnvironmentColorBoost", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_useNonLocalizedName(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_useNonLocalizedName", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ColorScheme")]

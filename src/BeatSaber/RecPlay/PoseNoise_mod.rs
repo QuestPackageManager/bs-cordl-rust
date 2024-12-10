@@ -33,6 +33,6 @@ impl crate::BeatSaber::RecPlay::PoseNoise {
             "Sample",
             (_cordl_time),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

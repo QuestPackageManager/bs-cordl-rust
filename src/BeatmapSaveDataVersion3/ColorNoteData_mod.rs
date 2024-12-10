@@ -36,7 +36,7 @@ impl crate::BeatmapSaveDataVersion3::ColorNoteData {
         color: crate::BeatmapSaveDataCommon::NoteColorType,
         cutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
         angleOffset: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -44,7 +44,7 @@ impl crate::BeatmapSaveDataVersion3::ColorNoteData {
                 ".ctor",
                 (beat, line, layer, color, cutDirection, angleOffset),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -60,14 +60,14 @@ impl crate::BeatmapSaveDataVersion3::ColorNoteData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (beat, line, layer, color, cutDirection, angleOffset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_angleOffset(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_angleOffset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_color(
         &mut self,
@@ -77,7 +77,7 @@ impl crate::BeatmapSaveDataVersion3::ColorNoteData {
         );
         let __cordl_ret: crate::BeatmapSaveDataCommon::NoteColorType = __cordl_object
             .invoke("get_color", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_cutDirection(
         &mut self,
@@ -87,21 +87,21 @@ impl crate::BeatmapSaveDataVersion3::ColorNoteData {
         );
         let __cordl_ret: crate::BeatmapSaveDataCommon::NoteCutDirection = __cordl_object
             .invoke("get_cutDirection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_layer(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_layer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_line(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_line", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+ColorNoteData")]

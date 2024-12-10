@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ForceStopPlaying", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPanForNode(
         &mut self,
@@ -53,33 +53,39 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetPanForNode", (node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleContinuousAudioCoroutine(
         &mut self,
-        onComplete: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
+        onComplete: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::GlobalNamespace::HapticsAudioClipPlayer>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("HandleContinuousAudioCoroutine", (onComplete))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("HandleContinuousAudioCoroutine", (onComplete))?;
+        Ok(__cordl_ret.into())
     }
     pub fn HandleOneShotPlayEndCoroutine(
         &mut self,
-        onComplete: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
+        onComplete: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::GlobalNamespace::HapticsAudioClipPlayer>,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("HandleOneShotPlayEndCoroutine", (onComplete))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object.invoke("HandleOneShotPlayEndCoroutine", (onComplete))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
@@ -89,21 +95,23 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PlayHapticsPreset(
         &mut self,
         onNode: crate::UnityEngine::XR::XRNode,
-        preset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-        onComplete: *mut crate::System::Action_1<
-            *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
+        preset: quest_hook::libil2cpp::Gc<
+            crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+        >,
+        onComplete: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::GlobalNamespace::HapticsAudioClipPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -111,7 +119,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PlayHapticsPreset", (onNode, preset, onComplete))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
@@ -121,7 +129,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RestartHaptic(
         &mut self,
@@ -131,7 +139,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RestartHaptic", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TriggerContinuousHaptic(
         &mut self,
@@ -141,7 +149,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TriggerContinuousHaptic", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateFadeVolume(
         &mut self,
@@ -152,7 +160,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateFadeVolume", (timeSinceEnd))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _HandleOneShotPlayEndCoroutine_b__11_0(
         &mut self,
@@ -162,7 +170,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("<HandleOneShotPlayEndCoroutine>b__11_0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -172,7 +180,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HapticsAudioClipPlayer")]
@@ -215,56 +223,58 @@ impl std::ops::DerefMut for crate::GlobalNamespace::HapticsAudioClipPlayer_Pool 
 }
 #[cfg(feature = "HapticsAudioClipPlayer+Pool")]
 impl crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnCreated(
         &mut self,
-        item: *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
+        item: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnCreated", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDespawned(
         &mut self,
-        item: *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
+        item: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDespawned", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnDestroyed(
         &mut self,
-        item: *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
+        item: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroyed", (item))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reinitialize(
         &mut self,
-        clipPlayer: *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
+        clipPlayer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::HapticsAudioClipPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reinitialize", (clipPlayer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -274,7 +284,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "HapticsAudioClipPlayer+Pool")]

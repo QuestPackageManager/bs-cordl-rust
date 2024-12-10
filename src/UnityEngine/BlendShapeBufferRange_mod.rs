@@ -32,7 +32,7 @@ impl crate::UnityEngine::BlendShapeBufferRange {
             "set_endIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_startIndex(
         &mut self,
@@ -43,6 +43,6 @@ impl crate::UnityEngine::BlendShapeBufferRange {
             "set_startIndex",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -31,7 +31,7 @@ impl crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CanBeActivated", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPanelActivate(
         &mut self,
@@ -41,7 +41,7 @@ impl crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPanelActivate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPanelDeactivate(
         &mut self,
@@ -51,7 +51,7 @@ impl crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPanelDeactivate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -61,14 +61,15 @@ impl crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
     pub fn get_element(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("get_element", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = __cordl_object.invoke("get_element", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IVisualElementPanelActivatable")]

@@ -60,7 +60,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAfter", (delay))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CancelAfter_i32_1(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancelAfter", (millisecondsDelay))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Cancel_0(
         &mut self,
@@ -81,7 +81,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cancel", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Cancel__cordl_bool1(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cancel", (throwOnFirstException))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CancellationCallbackCoreWork(
         &mut self,
@@ -103,18 +103,18 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancellationCallbackCoreWork", (args))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CancellationCallbackCoreWork_OnSyncContext(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CancellationCallbackCoreWork_OnSyncContext", (obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
@@ -124,7 +124,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool1(
         &mut self,
@@ -135,7 +135,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ExecuteCallbackHandlers(
         &mut self,
@@ -146,7 +146,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ExecuteCallbackHandlers", (throwOnFirstException))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitializeWithTimer(
         &mut self,
@@ -157,14 +157,20 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitializeWithTimer", (millisecondsDelay))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalRegister(
         &mut self,
-        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
-        stateForCallback: *mut quest_hook::libil2cpp::Il2CppObject,
-        targetSyncContext: *mut crate::System::Threading::SynchronizationContext,
-        executionContext: *mut crate::System::Threading::ExecutionContext,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+        stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        targetSyncContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SynchronizationContext,
+        >,
+        executionContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Threading::CancellationTokenRegistration,
     > {
@@ -176,23 +182,23 @@ impl crate::System::Threading::CancellationTokenSource {
                 "InternalRegister",
                 (callback, stateForCallback, targetSyncContext, executionContext),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_TimeSpan1(
         delay: crate::System::TimeSpan,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (delay))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn NotifyCancellation(
         &mut self,
@@ -203,7 +209,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NotifyCancellation", (throwOnFirstException))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ThrowIfDisposed(
         &mut self,
@@ -213,18 +219,20 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ThrowIfDisposed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WaitForCallbackToComplete(
         &mut self,
-        callbackInfo: *mut crate::System::Threading::CancellationCallbackInfo,
+        callbackInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::CancellationCallbackInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WaitForCallbackToComplete", (callbackInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -234,7 +242,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_TimeSpan1(
         &mut self,
@@ -245,19 +253,20 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (delay))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ExecutingCallback(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::CancellationCallbackInfo,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationCallbackInfo>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::CancellationCallbackInfo = __cordl_object
-            .invoke("get_ExecutingCallback", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::CancellationCallbackInfo,
+        > = __cordl_object.invoke("get_ExecutingCallback", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsCancellationCompleted(
         &mut self,
@@ -267,7 +276,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_IsCancellationCompleted", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsCancellationRequested(
         &mut self,
@@ -277,14 +286,14 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_IsCancellationRequested", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsDisposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsDisposed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ThreadIDExecutingCallbacks(
         &mut self,
@@ -294,7 +303,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("get_ThreadIDExecutingCallbacks", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Token(
         &mut self,
@@ -304,7 +313,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: crate::System::Threading::CancellationToken = __cordl_object
             .invoke("get_Token", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ThreadIDExecutingCallbacks(
         &mut self,
@@ -315,7 +324,7 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ThreadIDExecutingCallbacks", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenSource")]

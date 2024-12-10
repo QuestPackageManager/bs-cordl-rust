@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "ToQueryInfo",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryQuerySpaces(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "TryQuerySpaces",
             (requestId),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -101,7 +101,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             ".ctor",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ActionType(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "get_ActionType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ComponentFilter(
         &mut self,
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "get_ComponentFilter",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Location(
         &mut self,
@@ -137,7 +137,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "get_Location",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MaxResults(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "get_MaxResults",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_QueryType(
         &mut self,
@@ -157,7 +157,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "get_QueryType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Timeout(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -165,17 +165,19 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "get_Timeout",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_UuidFilter(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        >,
     > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::System::Guid,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_UuidFilter", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ActionType(
         &mut self,
@@ -186,7 +188,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "set_ActionType",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_ComponentFilter(
         &mut self,
@@ -197,7 +199,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "set_ComponentFilter",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Location(
         &mut self,
@@ -208,7 +210,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "set_Location",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_MaxResults(
         &mut self,
@@ -219,7 +221,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "set_MaxResults",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_QueryType(
         &mut self,
@@ -230,7 +232,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "set_QueryType",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Timeout(
         &mut self,
@@ -241,12 +243,12 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "set_Timeout",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_UuidFilter(
         &mut self,
-        value: *mut crate::System::Collections::Generic::IEnumerable_1<
-            crate::System::Guid,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -254,6 +256,6 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
             "set_UuidFilter",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

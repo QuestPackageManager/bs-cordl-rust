@@ -35,14 +35,14 @@ for crate::UnityEngine::Rendering::StencilState {
 impl crate::UnityEngine::Rendering::StencilState {
     pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_StencilState0(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -61,7 +61,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_compareFunctionBack(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "set_compareFunctionBack",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_compareFunctionFront(
         &mut self,
@@ -83,7 +83,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "set_compareFunctionFront",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_enabled(
         &mut self,
@@ -94,7 +94,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "set_enabled",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_failOperationBack(
         &mut self,
@@ -105,7 +105,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "set_failOperationBack",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_failOperationFront(
         &mut self,
@@ -116,7 +116,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "set_failOperationFront",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_passOperationBack(
         &mut self,
@@ -127,7 +127,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "set_passOperationBack",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_passOperationFront(
         &mut self,
@@ -138,7 +138,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "set_passOperationFront",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_readMask(
         &mut self,
@@ -149,7 +149,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "set_readMask",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_writeMask(
         &mut self,
@@ -160,7 +160,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "set_writeMask",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zFailOperationBack(
         &mut self,
@@ -171,7 +171,7 @@ impl crate::UnityEngine::Rendering::StencilState {
             "set_zFailOperationBack",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_zFailOperationFront(
         &mut self,
@@ -182,6 +182,6 @@ impl crate::UnityEngine::Rendering::StencilState {
             "set_zFailOperationFront",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

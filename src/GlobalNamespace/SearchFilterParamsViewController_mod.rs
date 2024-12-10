@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidDeactivate(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleFilterByNotOwnedValueValueChanged(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleFilterByNotOwnedValueValueChanged", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleFilterByOwnedValueValueChanged(
         &mut self,
@@ -95,11 +95,13 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleFilterByOwnedValueValueChanged", (isOn))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MaxBpmControllerValueDidChange(
         &mut self,
-        maxBpmController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+        maxBpmController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FormattedFloatListSettingsController,
+        >,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -107,11 +109,13 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MaxBpmControllerValueDidChange", (maxBpmController, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MinBpmControllerValueDidChange(
         &mut self,
-        minBpmController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+        minBpmController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FormattedFloatListSettingsController,
+        >,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -119,14 +123,14 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MinBpmControllerValueDidChange", (minBpmController, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OkButtonPressed(
         &mut self,
@@ -136,7 +140,7 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OkButtonPressed", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Refresh(
         &mut self,
@@ -147,7 +151,7 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Refresh", (filter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Setup(
         &mut self,
@@ -158,7 +162,7 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Setup", (filter))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -168,13 +172,15 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::SearchFilterParamsViewController,
-            crate::GlobalNamespace::LevelFilter,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::SearchFilterParamsViewController,
+                crate::GlobalNamespace::LevelFilter,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -182,13 +188,15 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::SearchFilterParamsViewController,
-            crate::GlobalNamespace::LevelFilter,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::GlobalNamespace::SearchFilterParamsViewController,
+                crate::GlobalNamespace::LevelFilter,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -196,7 +204,7 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didFinishEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SearchFilterParamsViewController")]

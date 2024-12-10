@@ -49,18 +49,18 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Free", (alloc2D))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         minSize: crate::UnityEngine::Vector2Int,
         maxSize: crate::UnityEngine::Vector2Int,
         rowHeightBias: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (minSize, maxSize, rowHeightBias))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn TryAllocate(
         &mut self,
@@ -75,7 +75,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryAllocate", (width, height, alloc2D))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -88,7 +88,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (minSize, maxSize, rowHeightBias))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
@@ -130,7 +130,9 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
 impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
     pub fn _ctor(
         &mut self,
-        row: *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+        row: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+        >,
         alloc: crate::UnityEngine::UIElements::UIR::Alloc,
         width: i32,
         height: i32,
@@ -140,7 +142,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
             ".ctor",
             (row, alloc, width, height),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
@@ -173,12 +175,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Allocator2D_Are
 impl crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
     pub fn New(
         rect: crate::UnityEngine::RectInt,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (rect))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -189,7 +191,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
@@ -237,12 +239,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Allocator2D_Row
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
 impl crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -252,7 +254,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]

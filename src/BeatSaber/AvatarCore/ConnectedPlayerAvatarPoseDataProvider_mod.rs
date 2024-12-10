@@ -35,10 +35,16 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarPoseDataProvider")]
 impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
     pub fn New(
-        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-        nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
-        avatarPoseRestriction: *mut crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        connectedPlayer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IConnectedPlayer,
+        >,
+        nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::INodePoseSyncStateManager,
+        >,
+        avatarPoseRestriction: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -46,7 +52,7 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
                 ".ctor",
                 (connectedPlayer, nodePoseSyncStateManager, avatarPoseRestriction),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Tick(
         &mut self,
@@ -56,13 +62,19 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Tick", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-        nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
-        avatarPoseRestriction: *mut crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
+        connectedPlayer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IConnectedPlayer,
+        >,
+        nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::INodePoseSyncStateManager,
+        >,
+        avatarPoseRestriction: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -72,18 +84,20 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
                 ".ctor",
                 (connectedPlayer, nodePoseSyncStateManager, avatarPoseRestriction),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn add_poseDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_poseDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentPose(
         &mut self,
@@ -93,18 +107,20 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
         );
         let __cordl_ret: crate::BeatSaber::AvatarCore::AvatarPoseData = __cordl_object
             .invoke("get_currentPose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn remove_poseDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_poseDidChangeEvent", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarPoseDataProvider")]

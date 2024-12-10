@@ -33,18 +33,18 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -52,17 +52,17 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_BackgroundSizeType1(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
             ".ctor",
             (sizeType),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Length_Length0(
         &mut self,
@@ -85,7 +85,7 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
             ".ctor",
             (sizeX, sizeY),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_sizeType(
         &mut self,
@@ -97,7 +97,7 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
             "get_sizeType",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_x(
         &mut self,
@@ -107,7 +107,7 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
             "get_x",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_y(
         &mut self,
@@ -117,7 +117,7 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
             "get_y",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_sizeType(
         &mut self,
@@ -128,7 +128,7 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
             "set_sizeType",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_x(
         &mut self,
@@ -139,7 +139,7 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
             "set_x",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_y(
         &mut self,
@@ -150,6 +150,6 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
             "set_y",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

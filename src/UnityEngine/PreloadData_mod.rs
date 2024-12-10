@@ -32,7 +32,7 @@ impl crate::UnityEngine::PreloadData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PreloadDataDontStripMe", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+PreloadData")]

@@ -30,6 +30,6 @@ impl crate::Mono::RuntimeRemoteClassHandle {
             "get_ProxyClass",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

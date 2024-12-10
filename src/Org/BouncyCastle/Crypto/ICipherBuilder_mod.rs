@@ -26,14 +26,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::ICipherBuilder {
 impl crate::Org::BouncyCastle::Crypto::ICipherBuilder {
     pub fn BuildCipher(
         &mut self,
-        stream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::ICipher> {
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipher>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::ICipher = __cordl_object
-            .invoke("BuildCipher", (stream))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipher,
+        > = __cordl_object.invoke("BuildCipher", (stream))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetMaxOutputSize(
         &mut self,
@@ -43,7 +46,7 @@ impl crate::Org::BouncyCastle::Crypto::ICipherBuilder {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetMaxOutputSize", (inputLen))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -52,13 +55,16 @@ impl crate::Org::BouncyCastle::Crypto::ICipherBuilder {
     }
     pub fn get_AlgorithmDetails(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("get_AlgorithmDetails", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_AlgorithmDetails", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+ICipherBuilder")]

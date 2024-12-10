@@ -31,27 +31,27 @@ impl crate::MS::Internal::Xml::XPath::Operator {
     pub type Op = crate::MS::Internal::Xml::XPath::Operator_Op;
     pub fn New(
         op: crate::MS::Internal::Xml::XPath::Operator_Op,
-        opnd1: *mut crate::MS::Internal::Xml::XPath::AstNode,
-        opnd2: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        opnd1: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+        opnd2: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (op, opnd1, opnd2))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         op: crate::MS::Internal::Xml::XPath::Operator_Op,
-        opnd1: *mut crate::MS::Internal::Xml::XPath::AstNode,
-        opnd2: *mut crate::MS::Internal::Xml::XPath::AstNode,
+        opnd1: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+        opnd2: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (op, opnd1, opnd2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ReturnType(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::MS::Internal::Xml::XPath::Operator {
         );
         let __cordl_ret: crate::System::Xml::XPath::XPathResultType = __cordl_object
             .invoke("get_ReturnType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
@@ -73,7 +73,7 @@ impl crate::MS::Internal::Xml::XPath::Operator {
         );
         let __cordl_ret: crate::MS::Internal::Xml::XPath::AstNode_AstType = __cordl_object
             .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Operator")]

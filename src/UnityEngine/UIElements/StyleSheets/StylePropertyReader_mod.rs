@@ -60,7 +60,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue = __cordl_object
             .invoke("GetValue", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetValueType(
         &mut self,
@@ -71,7 +71,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleValueType = __cordl_object
             .invoke("GetValueType", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsKeyword(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsKeyword", (index, keyword))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsValueType(
         &mut self,
@@ -94,7 +94,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsValueType", (index, _cordl_type))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LoadProperties(
         &mut self,
@@ -104,7 +104,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LoadProperties", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveNextProperty(
         &mut self,
@@ -116,25 +116,28 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId = __cordl_object
             .invoke("MoveNextProperty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ReadAsString(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ReadAsString", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ReadAsString", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadBackground(
         &mut self,
@@ -145,7 +148,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::Background = __cordl_object
             .invoke("ReadBackground", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundPosition(
         &mut self,
@@ -159,7 +162,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = __cordl_object
             .invoke("ReadBackgroundPosition", (index, keyword))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundPositionX(
         &mut self,
@@ -172,7 +175,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = __cordl_object
             .invoke("ReadBackgroundPositionX", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundPositionY(
         &mut self,
@@ -185,7 +188,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = __cordl_object
             .invoke("ReadBackgroundPositionY", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundRepeat(
         &mut self,
@@ -198,7 +201,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::BackgroundRepeat = __cordl_object
             .invoke("ReadBackgroundRepeat", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundSize(
         &mut self,
@@ -209,7 +212,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = __cordl_object
             .invoke("ReadBackgroundSize", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadColor(
         &mut self,
@@ -220,7 +223,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("ReadColor", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadCursor(
         &mut self,
@@ -231,7 +234,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::Cursor = __cordl_object
             .invoke("ReadCursor", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadEnum(
         &mut self,
@@ -242,25 +245,27 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("ReadEnum", (enumType, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadFloat(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("ReadFloat", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadFont(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Font> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Font = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font> = __cordl_object
             .invoke("ReadFont", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadFontDefinition(
         &mut self,
@@ -271,14 +276,14 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::FontDefinition = __cordl_object
             .invoke("ReadFontDefinition", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadInt(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("ReadInt", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadLength(
         &mut self,
@@ -289,12 +294,14 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::Length = __cordl_object
             .invoke("ReadLength", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadListEasingFunction(
         &mut self,
-        list: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::EasingFunction,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::EasingFunction,
+            >,
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -303,12 +310,14 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadListEasingFunction", (list, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadListStylePropertyName(
         &mut self,
-        list: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StylePropertyName,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StylePropertyName,
+            >,
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -317,12 +326,14 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadListStylePropertyName", (list, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadListTimeValue(
         &mut self,
-        list: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TimeValue,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TimeValue,
+            >,
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -331,7 +342,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadListTimeValue", (list, index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadRotate(
         &mut self,
@@ -342,7 +353,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::Rotate = __cordl_object
             .invoke("ReadRotate", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadScale(
         &mut self,
@@ -353,7 +364,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::Scale = __cordl_object
             .invoke("ReadScale", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadTextShadow(
         &mut self,
@@ -364,7 +375,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::TextShadow = __cordl_object
             .invoke("ReadTextShadow", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadTimeValue(
         &mut self,
@@ -375,7 +386,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::TimeValue = __cordl_object
             .invoke("ReadTimeValue", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadTransformOrigin(
         &mut self,
@@ -386,7 +397,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::TransformOrigin = __cordl_object
             .invoke("ReadTransformOrigin", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ReadTranslate(
         &mut self,
@@ -397,13 +408,17 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::Translate = __cordl_object
             .invoke("ReadTranslate", (index))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetContext(
         &mut self,
-        sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-        selector: *mut crate::UnityEngine::UIElements::StyleComplexSelector,
-        varContext: *mut crate::UnityEngine::UIElements::StyleVariableContext,
+        sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        selector: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleComplexSelector,
+        >,
+        varContext: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleVariableContext,
+        >,
         dpiScaling: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -411,7 +426,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetContext", (sheet, selector, varContext, dpiScaling))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetCurrentProperty(
         &mut self,
@@ -421,16 +436,20 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCurrentProperty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetInlineContext(
         &mut self,
-        sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-        properties: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleProperty,
+        sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        properties: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::UIElements::StyleProperty,
+            >,
         >,
-        propertyIds: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        propertyIds: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
         >,
         dpiScaling: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -439,7 +458,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetInlineContext", (sheet, properties, propertyIds, dpiScaling))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -449,26 +468,27 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dpiScaling(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_dpiScaling", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_property(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::StyleProperty,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::StyleProperty = __cordl_object
-            .invoke("get_property", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleProperty,
+        > = __cordl_object.invoke("get_property", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_propertyId(
         &mut self,
@@ -480,14 +500,14 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId = __cordl_object
             .invoke("get_propertyId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_valueCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_valueCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_dpiScaling(
         &mut self,
@@ -498,18 +518,18 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_dpiScaling", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_property(
         &mut self,
-        value: *mut crate::UnityEngine::UIElements::StyleProperty,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_property", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_propertyId(
         &mut self,
@@ -520,7 +540,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_propertyId", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_valueCount(
         &mut self,
@@ -531,7 +551,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_valueCount", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
@@ -585,28 +605,28 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorId
 impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorIdFunction {
     pub fn Invoke(
         &mut self,
-        sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
+        sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Invoke", (sheet, handle))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -614,7 +634,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorI
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

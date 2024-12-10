@@ -41,12 +41,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OptionalArgument_1<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("GetValueOrDefault", (defaultValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        description: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -55,7 +55,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OptionalArgument_1<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (name, description))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -67,11 +67,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OptionalArgument_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -79,13 +81,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OptionalArgument_1<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn TryParseWithValue(
         &mut self,
-        inValue: *mut quest_hook::libil2cpp::Il2CppString,
+        inValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         outError: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppString,
         >,
@@ -99,12 +102,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OptionalArgument_1<
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryParseWithValue", (inValue, outError))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        description: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -115,7 +118,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OptionalArgument_1<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name, description))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_hasValue(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -126,7 +129,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OptionalArgument_1<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_hasValue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_isOptional(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -137,7 +140,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OptionalArgument_1<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isOptional", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -148,7 +151,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OptionalArgument_1<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_value", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OptionalArgument_1")]

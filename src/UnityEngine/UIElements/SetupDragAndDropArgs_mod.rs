@@ -26,8 +26,12 @@ for crate::UnityEngine::UIElements::SetupDragAndDropArgs {
 impl crate::UnityEngine::UIElements::SetupDragAndDropArgs {
     pub fn _ctor(
         &mut self,
-        draggedElement: *mut crate::UnityEngine::UIElements::VisualElement,
-        selectedIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        draggedElement: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        selectedIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
         startDragArgs: crate::UnityEngine::UIElements::StartDragArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -35,6 +39,6 @@ impl crate::UnityEngine::UIElements::SetupDragAndDropArgs {
             ".ctor",
             (draggedElement, selectedIds, startDragArgs),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataCommon::IBeat {
 impl crate::BeatmapSaveDataCommon::IBeat {
     pub fn System_IComparable_BeatmapSaveDataCommon_IBeat__CompareTo(
         &mut self,
-        other: *mut crate::BeatmapSaveDataCommon::IBeat,
+        other: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -36,7 +36,7 @@ impl crate::BeatmapSaveDataCommon::IBeat {
                 "System.IComparable<BeatmapSaveDataCommon.IBeat>.CompareTo",
                 (other),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -48,7 +48,7 @@ impl crate::BeatmapSaveDataCommon::IBeat {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_beat", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapSaveDataCommon+IBeat")]

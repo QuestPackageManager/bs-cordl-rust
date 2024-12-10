@@ -46,8 +46,8 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
     pub type __c = crate::UnityEngine::UIElements::EventDispatcher___c;
     pub fn ApplyDispatchingStrategies(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-        panel: *mut crate::UnityEngine::UIElements::IPanel,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         imguiEventIsInitiallyUsed: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -58,7 +58,7 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
                 "ApplyDispatchingStrategies",
                 (evt, panel, imguiEventIsInitiallyUsed),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CloseGate(
         &mut self,
@@ -68,12 +68,12 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CloseGate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispatch(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-        panel: *mut crate::UnityEngine::UIElements::IPanel,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -81,18 +81,20 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispatch", (evt, panel, dispatchMode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        strategies: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+        strategies: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (strategies))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OpenGate(
         &mut self,
@@ -102,19 +104,19 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OpenGate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessEvent(
         &mut self,
-        evt: *mut crate::UnityEngine::UIElements::EventBase,
-        panel: *mut crate::UnityEngine::UIElements::IPanel,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessEvent", (evt, panel))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessEventQueue(
         &mut self,
@@ -124,12 +126,14 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessEventQueue", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        strategies: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+        strategies: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -137,26 +141,27 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (strategies))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_dispatchImmediately(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_dispatchImmediately", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_pointerState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::PointerDispatchState,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerDispatchState>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::PointerDispatchState = __cordl_object
-            .invoke("get_pointerState", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PointerDispatchState,
+        > = __cordl_object.invoke("get_pointerState", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn set_processingEvents(
         &mut self,
@@ -167,7 +172,7 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_processingEvents", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher")]

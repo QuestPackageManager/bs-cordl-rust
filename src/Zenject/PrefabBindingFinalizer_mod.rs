@@ -41,9 +41,9 @@ impl crate::Zenject::PrefabBindingFinalizer {
     pub type __c__DisplayClass6_1 = crate::Zenject::PrefabBindingFinalizer___c__DisplayClass6_1;
     pub fn FinalizeBindingConcrete(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        concreteTypes: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Type,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        concreteTypes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -51,29 +51,33 @@ impl crate::Zenject::PrefabBindingFinalizer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FinalizeBindingConcrete", (container, concreteTypes))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn FinalizeBindingSelf(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FinalizeBindingSelf", (container))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        bindInfo: *mut crate::Zenject::BindInfo,
-        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-        prefab: *mut crate::UnityEngine::Object,
-        providerFactory: *mut crate::System::Func_3<
-            *mut crate::System::Type,
-            *mut crate::Zenject::IPrefabInstantiator,
-            *mut crate::Zenject::IProvider,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::GameObjectCreationParameters,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        providerFactory: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                *mut crate::System::Type,
+                *mut crate::Zenject::IPrefabInstantiator,
+                *mut crate::Zenject::IProvider,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -81,28 +85,32 @@ impl crate::Zenject::PrefabBindingFinalizer {
                 ".ctor",
                 (bindInfo, gameObjectBindInfo, prefab, providerFactory),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnFinalizeBinding(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnFinalizeBinding", (container))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        bindInfo: *mut crate::Zenject::BindInfo,
-        gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-        prefab: *mut crate::UnityEngine::Object,
-        providerFactory: *mut crate::System::Func_3<
-            *mut crate::System::Type,
-            *mut crate::Zenject::IPrefabInstantiator,
-            *mut crate::Zenject::IProvider,
+        bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::GameObjectCreationParameters,
+        >,
+        prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        providerFactory: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                *mut crate::System::Type,
+                *mut crate::Zenject::IPrefabInstantiator,
+                *mut crate::Zenject::IProvider,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -110,7 +118,7 @@ impl crate::Zenject::PrefabBindingFinalizer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindInfo, gameObjectBindInfo, prefab, providerFactory))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+PrefabBindingFinalizer")]

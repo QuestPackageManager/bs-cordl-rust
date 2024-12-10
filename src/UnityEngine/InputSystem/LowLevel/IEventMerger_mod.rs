@@ -34,7 +34,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("MergeForward", (currentEventPtr, nextEventPtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

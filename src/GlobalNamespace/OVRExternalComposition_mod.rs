@@ -50,7 +50,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRExternalComposition {
 impl crate::GlobalNamespace::OVRExternalComposition {
     pub fn CacheAudioData(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         channels: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CacheAudioData", (data, channels))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CastMrcFrame(
         &mut self,
@@ -69,7 +69,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("CastMrcFrame", (castTextureIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Cleanup(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cleanup", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CleanupAudioFilter(
         &mut self,
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CleanupAudioFilter", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CompositionMethod(
         &mut self,
@@ -101,7 +101,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_CompositionMethod = __cordl_object
             .invoke("CompositionMethod", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisplayRefreshRateChanged(
         &mut self,
@@ -113,7 +113,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisplayRefreshRateChanged", (fromRefreshRate, toRefreshRate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAndResetAudioData(
         &mut self,
@@ -128,42 +128,46 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetAndResetAudioData", (audioData, audioFrames, channels))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        parentObject: *mut crate::UnityEngine::GameObject,
-        mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        parentObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        configuration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (parentObject, mainCamera, configuration))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RefreshAudioFilter(
         &mut self,
-        mainCamera: *mut crate::UnityEngine::Camera,
+        mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshAudioFilter", (mainCamera))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshCameraObjects(
         &mut self,
-        parentObject: *mut crate::UnityEngine::GameObject,
-        mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        parentObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        configuration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshCameraObjects", (parentObject, mainCamera, configuration))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetCameraTargetTexture(
         &mut self,
@@ -174,13 +178,15 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCameraTargetTexture", (drawTextureIndex))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
-        gameObject: *mut crate::UnityEngine::GameObject,
-        mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        configuration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
         trackingOrigin: crate::GlobalNamespace::OVRManager_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -188,20 +194,22 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (gameObject, mainCamera, configuration, trackingOrigin))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        parentObject: *mut crate::UnityEngine::GameObject,
-        mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        parentObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        configuration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (parentObject, mainCamera, configuration))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OVRExternalComposition")]

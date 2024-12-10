@@ -191,8 +191,10 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
         marginSize: crate::UnityEngine::Vector2,
         isTextAutoSizingEnabled: bool,
         textWrapMode: crate::UnityEngine::TextCore::Text::TextWrappingMode,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -209,7 +211,7 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
                     textInfo,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearMarkupTagAttributes(
         &mut self,
@@ -219,7 +221,7 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearMarkupTagAttributes", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ComputeMarginSize(
         &mut self,
@@ -231,14 +233,16 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ComputeMarginSize", (rect, margins))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoMissingGlyphCallback(
         &mut self,
         unicode: u32,
         stringIndex: i32,
-        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -248,15 +252,17 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
                 "DoMissingGlyphCallback",
                 (unicode, stringIndex, fontAsset, textInfo),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawTextHighlight(
         &mut self,
         start: crate::UnityEngine::Vector3,
         end: crate::UnityEngine::Vector3,
         highlightColor: crate::UnityEngine::Color32,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -266,7 +272,7 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
                 "DrawTextHighlight",
                 (start, end, highlightColor, generationSettings, textInfo),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawUnderlineMesh(
         &mut self,
@@ -277,8 +283,10 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
         maxScale: f32,
         sdfScale: f32,
         underlineColor: crate::UnityEngine::Color32,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -298,69 +306,83 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
                     textInfo,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GenerateTextMesh(
         &mut self,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GenerateTextMesh", (generationSettings, textInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetEllipsisSpecialCharacter(
         &mut self,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetEllipsisSpecialCharacter", (generationSettings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPreferredValuesInternal(
         &mut self,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("GetPreferredValuesInternal", (generationSettings, textInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSpecialCharacters(
         &mut self,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetSpecialCharacters", (generationSettings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTextElement(
         &mut self,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
         unicode: u32,
-        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
         fontStyle: crate::UnityEngine::TextCore::Text::FontStyles,
         fontWeight: crate::UnityEngine::TextCore::Text::TextFontWeight,
         isUsingAlternativeTypeface: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::TextCore::Text::TextElement,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextElement>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::TextCore::Text::TextElement = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextElement,
+        > = __cordl_object
             .invoke(
                 "GetTextElement",
                 (
@@ -372,18 +394,20 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
                     isUsingAlternativeTypeface,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetUnderlineSpecialCharacter(
         &mut self,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetUnderlineSpecialCharacter", (generationSettings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InsertNewLine(
         &mut self,
@@ -397,8 +421,10 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
         lineGap: f32,
         isMaxVisibleDescenderSet: quest_hook::libil2cpp::ByRefMut<bool>,
         maxVisibleDescender: quest_hook::libil2cpp::ByRefMut<f32>,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -421,29 +447,29 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
                     textInfo,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PopulateTextBackingArray_Il2CppString0(
         &mut self,
-        sourceText: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PopulateTextBackingArray", (sourceText))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PopulateTextBackingArray_i32_i32_1(
         &mut self,
-        sourceText: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -452,52 +478,58 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PopulateTextBackingArray", (sourceText, start, length))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PopulateTextProcessingArray(
         &mut self,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PopulateTextProcessingArray", (generationSettings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Prepare(
         &mut self,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Prepare", (generationSettings, textInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RestoreWordWrappingState(
         &mut self,
         state: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::TextCore::Text::WordWrapState,
         >,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("RestoreWordWrappingState", (state, textInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SaveGlyphVertexInfo(
         &mut self,
         padding: f32,
         stylePadding: f32,
         vertexColor: crate::UnityEngine::Color32,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -507,13 +539,15 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
                 "SaveGlyphVertexInfo",
                 (padding, stylePadding, vertexColor, generationSettings, textInfo),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SaveSpriteVertexInfo(
         &mut self,
         vertexColor: crate::UnityEngine::Color32,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -523,7 +557,7 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
                 "SaveSpriteVertexInfo",
                 (vertexColor, generationSettings, textInfo),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SaveWordWrappingState(
         &mut self,
@@ -532,22 +566,26 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
         >,
         index: i32,
         count: i32,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SaveWordWrappingState", (state, index, count, textInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetArraySizes(
         &mut self,
-        textProcessingArray: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::TextCore::Text::TextProcessingElement,
+        textProcessingArray: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::TextCore::Text::TextProcessingElement,
+            >,
         >,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -557,17 +595,21 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
                 "SetArraySizes",
                 (textProcessingArray, generationSettings, textInfo),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateHtmlTag(
         &mut self,
-        chars: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::TextCore::Text::TextProcessingElement,
+        chars: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::TextCore::Text::TextProcessingElement,
+            >,
         >,
         startIndex: i32,
         endIndex: quest_hook::libil2cpp::ByRefMut<i32>,
-        generationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
-        textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        generationSettings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -577,7 +619,7 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
                 "ValidateHtmlTag",
                 (chars, startIndex, endIndex, generationSettings, textInfo),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -587,7 +629,7 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator")]
@@ -633,29 +675,31 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCall
         &mut self,
         unicode: u32,
         stringIndex: i32,
-        text: *mut crate::UnityEngine::TextCore::Text::TextInfo,
-        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+        text: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", (unicode, stringIndex, text, fontAsset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -663,7 +707,7 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCall
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
@@ -706,7 +750,9 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
 impl crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
     pub fn _ctor(
         &mut self,
-        character: *mut crate::UnityEngine::TextCore::Text::Character,
+        character: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::Character,
+        >,
         materialIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -714,6 +760,6 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
             ".ctor",
             (character, materialIndex),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

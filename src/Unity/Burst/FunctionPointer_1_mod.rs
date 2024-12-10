@@ -35,22 +35,26 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::FunctionPointer_1<T> {
             "CheckIsCreated",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Unity_Burst_IFunctionPointer_FromIntPtr(
         &mut self,
         ptr: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Unity::Burst::IFunctionPointer>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Unity::Burst::IFunctionPointer>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::Unity::Burst::IFunctionPointer = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Burst::IFunctionPointer,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Unity.Burst.IFunctionPointer.FromIntPtr",
             (ptr),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -65,7 +69,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::FunctionPointer_1<T> {
             ".ctor",
             (ptr),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Invoke(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -77,7 +81,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::FunctionPointer_1<T> {
             "get_Invoke",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsCreated(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -89,7 +93,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::FunctionPointer_1<T> {
             "get_IsCreated",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<crate::System::IntPtr>
     where
@@ -101,6 +105,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::FunctionPointer_1<T> {
             "get_Value",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

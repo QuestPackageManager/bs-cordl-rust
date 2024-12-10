@@ -34,11 +34,17 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
 impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn CalculatePropertyValues(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
         memberContract: quest_hook::libil2cpp::ByRefMut<
             *mut crate::Newtonsoft::Json::Serialization::JsonContract,
         >,
@@ -54,16 +60,24 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "CalculatePropertyValues",
                 (writer, value, contract, member, property, memberContract, memberValue),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn CheckForCircularReference(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -73,75 +87,88 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "CheckForCircularReference",
                 (writer, value, property, contract, containerContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetContract(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonContract>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonContract = __cordl_object
-            .invoke("GetContract", (value))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        > = __cordl_object.invoke("GetContract", (value))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetContractSafe(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonContract>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonContract = __cordl_object
-            .invoke("GetContractSafe", (value))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        > = __cordl_object.invoke("GetContractSafe", (value))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetInternalSerializer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonSerializerProxy = __cordl_object
-            .invoke("GetInternalSerializer", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
+        > = __cordl_object.invoke("GetInternalSerializer", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPropertyName(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        name: *mut quest_hook::libil2cpp::Il2CppObject,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
         escape: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetPropertyName", (writer, name, contract, escape))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetPropertyName", (writer, name, contract, escape))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetReference(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
-            .invoke("GetReference", (writer, value))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("GetReference", (writer, value))?;
+        Ok(__cordl_ret.into())
     }
     pub fn HandleError(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         initialDepth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -149,19 +176,23 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleError", (writer, initialDepth))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasCreatorParameter(
         &mut self,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("HasCreatorParameter", (contract, property))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasFlag_DefaultValueHandling_DefaultValueHandling0(
         &mut self,
@@ -172,7 +203,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (value, flag))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasFlag_PreserveReferencesHandling_PreserveReferencesHandling1(
         &mut self,
@@ -183,7 +214,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (value, flag))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasFlag_TypeNameHandling_TypeNameHandling2(
         &mut self,
@@ -194,62 +225,76 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (value, flag))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsSpecified(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        target: *mut quest_hook::libil2cpp::Il2CppObject,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsSpecified", (writer, property, target))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (serializer))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnSerialized(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnSerialized", (writer, contract, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnSerializing(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnSerializing", (writer, contract, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResolveIsReference(
         &mut self,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        collectionContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -259,29 +304,35 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "ResolveIsReference",
                 (contract, property, collectionContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Serialize(
         &mut self,
-        jsonWriter: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        objectType: *mut crate::System::Type,
+        jsonWriter: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Serialize", (jsonWriter, value, objectType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeConvertable(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        converter: *mut crate::Newtonsoft::Json::JsonConverter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        converter: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        collectionContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -298,16 +349,24 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                     containerProperty,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeDictionary(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        values: *mut crate::System::Collections::IDictionary,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonDictionaryContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        values: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonDictionaryContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        collectionContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -317,16 +376,26 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "SerializeDictionary",
                 (writer, values, contract, member, collectionContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeDynamic(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Dynamic::IDynamicMetaObjectProvider,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonDynamicContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::IDynamicMetaObjectProvider,
+        >,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonDynamicContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        collectionContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -336,16 +405,26 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "SerializeDynamic",
                 (writer, value, contract, member, collectionContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeISerializable(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Runtime::Serialization::ISerializable,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ISerializable,
+        >,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        collectionContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -355,16 +434,24 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "SerializeISerializable",
                 (writer, value, contract, member, collectionContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeList(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        values: *mut crate::System::Collections::IEnumerable,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonArrayContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        values: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        collectionContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -374,16 +461,24 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "SerializeList",
                 (writer, values, contract, member, collectionContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeMultidimensionalArray_JsonContainerContract_JsonProperty0(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        values: *mut crate::System::Array,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonArrayContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        values: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        collectionContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -393,16 +488,20 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "SerializeMultidimensionalArray",
                 (writer, values, contract, member, collectionContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeMultidimensionalArray_i32_Il2CppArray1(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        values: *mut crate::System::Array,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonArrayContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        values: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
         initialDepth: i32,
-        indices: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        indices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -412,16 +511,24 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "SerializeMultidimensionalArray",
                 (writer, values, contract, member, initialDepth, indices),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeObject(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        collectionContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -431,16 +538,24 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "SerializeObject",
                 (writer, value, contract, member, collectionContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializePrimitive(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonPrimitiveContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonPrimitiveContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -450,29 +565,39 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "SerializePrimitive",
                 (writer, value, contract, member, containerContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeString(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonStringContract,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonStringContract,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SerializeString", (writer, value, contract))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SerializeValue(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        valueContract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        valueContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -489,52 +614,66 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                     containerProperty,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldSerialize(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        target: *mut quest_hook::libil2cpp::Il2CppObject,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldSerialize", (writer, property, target))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldWriteDynamicProperty(
         &mut self,
-        memberValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        memberValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldWriteDynamicProperty", (memberValue))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldWriteProperty(
         &mut self,
-        memberValue: *mut quest_hook::libil2cpp::Il2CppObject,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        memberValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldWriteProperty", (memberValue, containerContract, property))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldWriteReference(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        valueContract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        valueContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        collectionContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -544,15 +683,23 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "ShouldWriteReference",
                 (value, property, valueContract, collectionContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ShouldWriteType(
         &mut self,
         typeNameHandlingFlag: crate::Newtonsoft::Json::TypeNameHandling,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -568,16 +715,24 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                     containerProperty,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteObjectStart(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        collectionContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -587,41 +742,49 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "WriteObjectStart",
                 (writer, value, contract, member, collectionContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteReference(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteReference", (writer, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteReferenceIdProperty(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        _cordl_type: *mut crate::System::Type,
-        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteReferenceIdProperty", (writer, _cordl_type, value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteStartArray(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        values: *mut quest_hook::libil2cpp::Il2CppObject,
-        contract: *mut crate::Newtonsoft::Json::Serialization::JsonArrayContract,
-        member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-        containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+        containerContract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+        >,
+        containerProperty: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -631,30 +794,30 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
                 "WriteStartArray",
                 (writer, values, contract, member, containerContract, containerProperty),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn WriteTypeProperty(
         &mut self,
-        writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        _cordl_type: *mut crate::System::Type,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteTypeProperty", (writer, _cordl_type))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (serializer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalWriter")]

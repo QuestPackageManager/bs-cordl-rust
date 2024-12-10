@@ -26,17 +26,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IVerifier {
 impl crate::Org::BouncyCastle::Crypto::IVerifier {
     pub fn IsVerified_Il2CppArray0(
         &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsVerified", (data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsVerified_i32_i32_1(
         &mut self,
-        source: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Crypto::IVerifier {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsVerified", (source, off, length))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

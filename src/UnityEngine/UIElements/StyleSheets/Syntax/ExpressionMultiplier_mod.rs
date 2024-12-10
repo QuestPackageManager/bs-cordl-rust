@@ -35,7 +35,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
             "SetType",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
             ".ctor",
             (_cordl_type),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_type(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
             "get_type",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_type(
         &mut self,
@@ -69,6 +69,6 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
             "set_type",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

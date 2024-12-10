@@ -28,27 +28,29 @@ impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentCollisionReposito
 }
 #[cfg(feature = "EnvironmentCollisionRepository")]
 impl crate::GlobalNamespace::EnvironmentCollisionRepository {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RegisterColliderEventEffect(
         &mut self,
-        colliderEventEffect: *mut crate::GlobalNamespace::ColliderEventEffect,
+        colliderEventEffect: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColliderEventEffect,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterColliderEventEffect", (colliderEventEffect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryGetColliderEventEffect(
         &mut self,
-        collider: *mut crate::UnityEngine::Collider,
+        collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
         colliderEventEffect: quest_hook::libil2cpp::ByRefMut<
             *mut crate::GlobalNamespace::ColliderEventEffect,
         >,
@@ -58,7 +60,7 @@ impl crate::GlobalNamespace::EnvironmentCollisionRepository {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetColliderEventEffect", (collider, colliderEventEffect))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -68,7 +70,7 @@ impl crate::GlobalNamespace::EnvironmentCollisionRepository {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "EnvironmentCollisionRepository")]

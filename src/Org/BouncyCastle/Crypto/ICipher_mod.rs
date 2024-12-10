@@ -32,7 +32,7 @@ impl crate::Org::BouncyCastle::Crypto::ICipher {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetMaxOutputSize", (inputLen))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetUpdateOutputSize(
         &mut self,
@@ -42,7 +42,7 @@ impl crate::Org::BouncyCastle::Crypto::ICipher {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetUpdateOutputSize", (inputLen))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -51,13 +51,15 @@ impl crate::Org::BouncyCastle::Crypto::ICipher {
     }
     pub fn get_Stream(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
             .invoke("get_Stream", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+ICipher")]

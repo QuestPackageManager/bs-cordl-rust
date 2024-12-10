@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardViewController {
 }
 #[cfg(feature = "LeaderboardViewController")]
 impl crate::GlobalNamespace::LeaderboardViewController {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RefreshLevelStats(
         &mut self,
@@ -39,7 +39,7 @@ impl crate::GlobalNamespace::LeaderboardViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshLevelStats", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetData(
         &mut self,
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::LeaderboardViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetData", (previewDifficultyBeatmap))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::LeaderboardViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "LeaderboardViewController")]

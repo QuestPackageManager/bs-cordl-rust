@@ -32,37 +32,47 @@ impl crate::GlobalNamespace::FileSystemPreviewMediaData {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::UnityEngine::Sprite,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
         > = __cordl_object.invoke("GetCoverSpriteAsync", (cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetPreviewAudioClip(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::UnityEngine::AudioClip,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
         > = __cordl_object.invoke("GetPreviewAudioClip", (cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        spriteAsyncLoader: *mut crate::GlobalNamespace::SpriteAsyncLoader,
-        audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-        rootPath: *mut quest_hook::libil2cpp::Il2CppString,
-        coverSpritePath: *mut quest_hook::libil2cpp::Il2CppString,
-        previewAudioClipPath: *mut quest_hook::libil2cpp::Il2CppString,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        spriteAsyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SpriteAsyncLoader,
+        >,
+        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        rootPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        coverSpritePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        previewAudioClipPath: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -76,7 +86,7 @@ impl crate::GlobalNamespace::FileSystemPreviewMediaData {
                     previewAudioClipPath,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn UnloadPreviewAudioClip(
         &mut self,
@@ -86,15 +96,21 @@ impl crate::GlobalNamespace::FileSystemPreviewMediaData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnloadPreviewAudioClip", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        spriteAsyncLoader: *mut crate::GlobalNamespace::SpriteAsyncLoader,
-        audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-        rootPath: *mut quest_hook::libil2cpp::Il2CppString,
-        coverSpritePath: *mut quest_hook::libil2cpp::Il2CppString,
-        previewAudioClipPath: *mut quest_hook::libil2cpp::Il2CppString,
+        spriteAsyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SpriteAsyncLoader,
+        >,
+        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        rootPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        coverSpritePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        previewAudioClipPath: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -110,7 +126,7 @@ impl crate::GlobalNamespace::FileSystemPreviewMediaData {
                     previewAudioClipPath,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "FileSystemPreviewMediaData")]

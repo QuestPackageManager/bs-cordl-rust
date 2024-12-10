@@ -36,6 +36,6 @@ impl crate::UnityEngine::QueryParameters {
             ".ctor",
             (layerMask, hitMultipleFaces, hitTriggers, hitBackfaces),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

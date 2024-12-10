@@ -32,9 +32,9 @@ for crate::Zenject::LazyInject_1<T> {
 #[cfg(feature = "Zenject+LazyInject_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Zenject::LazyInject_1<T> {
     pub fn New(
-        container: *mut crate::Zenject::DiContainer,
-        context: *mut crate::Zenject::InjectContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self>
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -43,7 +43,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::LazyInject_1<T> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (container, context))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Zenject_IValidatable_Validate(
         &mut self,
@@ -57,12 +57,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::LazyInject_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Zenject.IValidatable.Validate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        container: *mut crate::Zenject::DiContainer,
-        context: *mut crate::Zenject::InjectContext,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -73,7 +73,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::LazyInject_1<T> {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (container, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
@@ -84,7 +84,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::LazyInject_1<T> {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("get_Value", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Zenject+LazyInject_1")]

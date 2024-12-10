@@ -30,17 +30,17 @@ for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierResult {
 impl crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierResult {
     pub fn IsVerified_Il2CppArray0(
         &mut self,
-        signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsVerified", (signature))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsVerified_i32_i32_1(
         &mut self,
-        sig: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
         sigLen: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -49,27 +49,27 @@ impl crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierResult {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsVerified", (sig, sigOff, sigLen))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        signer: *mut crate::Org::BouncyCastle::Crypto::ISigner,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        signer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (signer))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        signer: *mut crate::Org::BouncyCastle::Crypto::ISigner,
+        signer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (signer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierResult")]

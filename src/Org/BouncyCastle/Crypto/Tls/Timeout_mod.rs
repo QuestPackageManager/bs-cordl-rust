@@ -26,22 +26,24 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::Timeout {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+Timeout")]
 impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
-    pub fn New_i64_0(durationMillis: i64) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_i64_0(
+        durationMillis: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (durationMillis))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_i64_1(
         durationMillis: i64,
         currentTimeMillis: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (durationMillis, currentTimeMillis))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemainingMillis(
         &mut self,
@@ -52,7 +54,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
         );
         let __cordl_ret: i64 = __cordl_object
             .invoke("RemainingMillis", (currentTimeMillis))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i64_0(
         &mut self,
@@ -63,7 +65,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (durationMillis))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_i64_1(
         &mut self,
@@ -75,7 +77,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (durationMillis, currentTimeMillis))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+Timeout")]

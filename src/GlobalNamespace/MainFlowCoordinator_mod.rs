@@ -66,14 +66,14 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
     pub type _ProcessMenuDestinationRequest_d__41 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequest_d__41;
     pub fn BackButtonWasPressed(
         &mut self,
-        topViewController: *mut crate::HMUI::ViewController,
+        topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BackButtonWasPressed", (topViewController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidActivate(
         &mut self,
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
                 "DidActivate",
                 (firstActivation, addedToHierarchy, screenSystemEnabling),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DidDeactivate(
         &mut self,
@@ -101,22 +101,24 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleCampaignFlowCoordinatorDidFinish(
         &mut self,
-        flowCoordinator: *mut crate::GlobalNamespace::CampaignFlowCoordinator,
+        flowCoordinator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::CampaignFlowCoordinator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleCampaignFlowCoordinatorDidFinish", (flowCoordinator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleEditAvatarFlowCoordinatorHelperDidFinish(
         &mut self,
-        flowCoordinator: *mut crate::HMUI::FlowCoordinator,
+        flowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
         finishAction: crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -127,18 +129,20 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
                 "HandleEditAvatarFlowCoordinatorHelperDidFinish",
                 (flowCoordinator, finishAction),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleHelpFlowCoordinatorDidFinish(
         &mut self,
-        helpFlowCoordinator: *mut crate::GlobalNamespace::HelpFlowCoordinator,
+        helpFlowCoordinator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::HelpFlowCoordinator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleHelpFlowCoordinatorDidFinish", (helpFlowCoordinator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleHowToPlayViewControllerDidFinish(
         &mut self,
@@ -149,11 +153,13 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleHowToPlayViewControllerDidFinish", (howToPlayOptions))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMainMenuViewControllerDidFinish(
         &mut self,
-        viewController: *mut crate::GlobalNamespace::MainMenuViewController,
+        viewController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MainMenuViewController,
+        >,
         subMenuType: crate::GlobalNamespace::MainMenuViewController_MenuButton,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -164,18 +170,20 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
                 "HandleMainMenuViewControllerDidFinish",
                 (viewController, subMenuType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMainMenuViewControllerPromoButtonWasPressed(
         &mut self,
-        promoInfo: *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+        promoInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleMainMenuViewControllerPromoButtonWasPressed", (promoInfo))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMultiplayerDisclaimerDidFinishAction(
         &mut self,
@@ -186,11 +194,13 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleMultiplayerDisclaimerDidFinishAction", (buttonNumber))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleMultiplayerModeSelectionFlowCoordinatorDidFinish(
         &mut self,
-        multiplayerModeSelectionFlowCoordinator: *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+        multiplayerModeSelectionFlowCoordinator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -200,7 +210,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
                 "HandleMultiplayerModeSelectionFlowCoordinatorDidFinish",
                 (multiplayerModeSelectionFlowCoordinator),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleOptionsViewControllerDidFinish(
         &mut self,
@@ -211,33 +221,37 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleOptionsViewControllerDidFinish", (optionsType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePartyFreePlayFlowCoordinatorDidFinish(
         &mut self,
-        flowCoordinator: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator,
+        flowCoordinator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelSelectionFlowCoordinator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePartyFreePlayFlowCoordinatorDidFinish", (flowCoordinator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerOptionsViewControllerDidFinish(
         &mut self,
-        viewController: *mut crate::HMUI::ViewController,
+        viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePlayerOptionsViewControllerDidFinish", (viewController))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSettingsFlowCoordinatorDidFinish(
         &mut self,
-        settingsFlowCoordinator: *mut crate::GlobalNamespace::SettingsFlowCoordinator,
+        settingsFlowCoordinator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsFlowCoordinator,
+        >,
         finishAction: crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -248,18 +262,20 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
                 "HandleSettingsFlowCoordinatorDidFinish",
                 (settingsFlowCoordinator, finishAction),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSoloFreePlayFlowCoordinatorDidFinish(
         &mut self,
-        flowCoordinator: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator,
+        flowCoordinator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelSelectionFlowCoordinator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSoloFreePlayFlowCoordinatorDidFinish", (flowCoordinator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InitialViewControllerWasPresented(
         &mut self,
@@ -269,25 +285,25 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitialViewControllerWasPresented", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PresentFlowCoordinatorOrAskForTutorial(
         &mut self,
-        flowCoordinator: *mut crate::HMUI::FlowCoordinator,
+        flowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PresentFlowCoordinatorOrAskForTutorial", (flowCoordinator))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator(
         &mut self,
@@ -301,34 +317,38 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
                 "PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator",
                 (presentImmediately),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessMenuDestinationRequest(
         &mut self,
-        destination: *mut crate::GlobalNamespace::MenuDestination,
+        destination: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessMenuDestinationRequest", (destination))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessMenuDestinationRequestAfterFrameCoroutine(
         &mut self,
-        destination: *mut crate::GlobalNamespace::MenuDestination,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        destination: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = __cordl_object
             .invoke("ProcessMenuDestinationRequestAfterFrameCoroutine", (destination))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TopViewControllerWillChange(
         &mut self,
-        oldViewController: *mut crate::HMUI::ViewController,
-        newViewController: *mut crate::HMUI::ViewController,
+        oldViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        newViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -339,7 +359,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
                 "TopViewControllerWillChange",
                 (oldViewController, newViewController, animationType),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _HandleMainMenuViewControllerDidFinish_b__28_0(
         &mut self,
@@ -349,7 +369,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<HandleMainMenuViewControllerDidFinish>b__28_0", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _PresentFlowCoordinatorOrAskForTutorial_b__27_0(
         &mut self,
@@ -360,7 +380,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<PresentFlowCoordinatorOrAskForTutorial>b__27_0", (buttonNumber))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _PresentFlowCoordinatorOrAskForTutorial_b__27_1(
         &mut self,
@@ -370,7 +390,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<PresentFlowCoordinatorOrAskForTutorial>b__27_1", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_b__42_0(
         &mut self,
@@ -384,7 +404,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
                 "<PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator>b__42_0",
                 (buttonNumber),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -394,7 +414,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MainFlowCoordinator")]

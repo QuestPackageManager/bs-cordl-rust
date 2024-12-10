@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IStylePainter {
 impl crate::UnityEngine::UIElements::IStylePainter {
     pub fn DrawImmediate(
         &mut self,
-        callback: *mut crate::System::Action,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         cullingEnabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -34,7 +34,7 @@ impl crate::UnityEngine::UIElements::IStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawImmediate", (callback, cullingEnabled))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawRectangle(
         &mut self,
@@ -45,18 +45,18 @@ impl crate::UnityEngine::UIElements::IStylePainter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawRectangle", (rectParams))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DrawText(
         &mut self,
-        te: *mut crate::UnityEngine::UIElements::TextElement,
+        te: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DrawText", (te))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

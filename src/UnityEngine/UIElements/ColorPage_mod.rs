@@ -33,6 +33,6 @@ impl crate::UnityEngine::UIElements::ColorPage {
             "ToNativeColorPage",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

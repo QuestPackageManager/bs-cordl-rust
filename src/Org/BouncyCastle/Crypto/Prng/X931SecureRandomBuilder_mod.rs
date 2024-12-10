@@ -32,57 +32,71 @@ for crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
 impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
     pub fn Build(
         &mut self,
-        engine: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-        key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        engine: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBlockCipher,
+        >,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
         predictionResistant: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandom,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandom,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandom = __cordl_object
-            .invoke("Build", (engine, key, predictionResistant))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandom,
+        > = __cordl_object.invoke("Build", (engine, key, predictionResistant))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_IEntropySourceProvider2(
-        entropySourceProvider: *mut crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        entropySourceProvider: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (entropySourceProvider))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_SecureRandom__cordl_bool1(
-        entropySource: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        entropySource: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
         predictionResistant: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (entropySource, predictionResistant))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetDateTimeVector(
         &mut self,
-        dateTimeVector: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        dateTimeVector: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder = __cordl_object
-            .invoke("SetDateTimeVector", (dateTimeVector))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder,
+        > = __cordl_object.invoke("SetDateTimeVector", (dateTimeVector))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -92,22 +106,26 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEntropySourceProvider2(
         &mut self,
-        entropySourceProvider: *mut crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
+        entropySourceProvider: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (entropySourceProvider))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_SecureRandom__cordl_bool1(
         &mut self,
-        entropySource: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+        entropySource: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
         predictionResistant: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -115,7 +133,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (entropySource, predictionResistant))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+X931SecureRandomBuilder")]

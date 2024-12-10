@@ -29,11 +29,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SelectLevelDestination {
 #[cfg(feature = "SelectLevelDestination")]
 impl crate::GlobalNamespace::SelectLevelDestination {
     pub fn New(
-        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapLevelPack: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelPack,
+        >,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -46,14 +50,18 @@ impl crate::GlobalNamespace::SelectLevelDestination {
                     beatmapCharacteristic,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapLevelPack: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelPack,
+        >,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -68,7 +76,7 @@ impl crate::GlobalNamespace::SelectLevelDestination {
                     beatmapCharacteristic,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "SelectLevelDestination")]

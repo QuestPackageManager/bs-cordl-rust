@@ -31,7 +31,7 @@ impl crate::LufsMetering::FilteringJob {
             "Execute",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -44,6 +44,6 @@ impl crate::LufsMetering::FilteringJob {
             ".ctor",
             (inputData, outputData, coefficients),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

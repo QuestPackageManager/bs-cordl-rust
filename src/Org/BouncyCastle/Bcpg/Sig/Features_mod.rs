@@ -27,23 +27,23 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
     pub fn New__cordl_bool_Il2CppArray0(
         critical: bool,
         isLongLength: bool,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (critical, isLongLength, data))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_u8_1(
         critical: bool,
         feature: u8,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (critical, feature))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetSupportsFeature(
         &mut self,
@@ -55,7 +55,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSupportsFeature", (feature, support))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SupportsFeature(
         &mut self,
@@ -65,20 +65,20 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("SupportsFeature", (feature))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool_Il2CppArray0(
         &mut self,
         critical: bool,
         isLongLength: bool,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (critical, isLongLength, data))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_u8_1(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (critical, feature))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_SupportsModificationDetection(
         &mut self,
@@ -100,7 +100,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_SupportsModificationDetection", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+Features")]

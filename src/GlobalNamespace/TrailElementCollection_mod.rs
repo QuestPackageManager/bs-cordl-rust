@@ -35,13 +35,16 @@ impl crate::GlobalNamespace::TrailElementCollection {
     pub fn GetElement(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::TrailElement> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrailElement>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::TrailElement = __cordl_object
-            .invoke("GetElement", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TrailElement,
+        > = __cordl_object.invoke("GetElement", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn InitSnapshots(
         &mut self,
@@ -57,7 +60,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
                 "InitSnapshots",
                 (defaultStartPosition, defaultEndPosition, _cordl_time),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Interpolate(
         &mut self,
@@ -74,7 +77,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Interpolate", (t, lerpState, position, normal, _cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MoveTailToHead(
         &mut self,
@@ -84,14 +87,14 @@ impl crate::GlobalNamespace::TrailElementCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveTailToHead", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         capacity: i32,
         defaultStartPosition: crate::UnityEngine::Vector3,
         defaultEndPosition: crate::UnityEngine::Vector3,
         _cordl_time: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -99,7 +102,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
                 ".ctor",
                 (capacity, defaultStartPosition, defaultEndPosition, _cordl_time),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetHeadData(
         &mut self,
@@ -112,7 +115,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetHeadData", (start, end, _cordl_time))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateDistances(
         &mut self,
@@ -122,7 +125,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateDistances", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateLerpState(
         &mut self,
@@ -136,7 +139,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateLerpState", (t, interpolationState))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -153,7 +156,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
                 ".ctor",
                 (capacity, defaultStartPosition, defaultEndPosition, _cordl_time),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "TrailElementCollection")]

@@ -31,7 +31,7 @@ impl<
 > crate::UnityEngine::UIElements::IUxmlObjectFactory_1<T> {
     pub fn CreateObject(
         &mut self,
-        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -42,7 +42,7 @@ impl<
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("CreateObject", (bag, cc))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

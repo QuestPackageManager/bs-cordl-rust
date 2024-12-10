@@ -33,6 +33,6 @@ impl crate::UnityEngine::TerrainUtils::TerrainTileCoord {
             ".ctor",
             (tileX, tileZ),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

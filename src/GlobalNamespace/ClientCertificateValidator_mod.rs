@@ -24,19 +24,23 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ClientCertificateValidator {
 }
 #[cfg(feature = "ClientCertificateValidator")]
 impl crate::GlobalNamespace::ClientCertificateValidator {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn ValidateCertificateChain(
         &mut self,
-        endPoint: *mut crate::GlobalNamespace::DnsEndPoint,
-        certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-        certificateChain: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        endPoint: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DnsEndPoint>,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+        certificateChain: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -47,14 +51,18 @@ impl crate::GlobalNamespace::ClientCertificateValidator {
                 "ValidateCertificateChain",
                 (endPoint, certificate, certificateChain),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ValidateCertificateChainInternal(
         &mut self,
-        endPoint: *mut crate::GlobalNamespace::DnsEndPoint,
-        certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-        certificateChain: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        endPoint: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DnsEndPoint>,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+        certificateChain: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -65,7 +73,7 @@ impl crate::GlobalNamespace::ClientCertificateValidator {
                 "ValidateCertificateChainInternal",
                 (endPoint, certificate, certificateChain),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -75,7 +83,7 @@ impl crate::GlobalNamespace::ClientCertificateValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "ClientCertificateValidator")]

@@ -39,11 +39,11 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearAccessControlSectionsModified", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn InternalGet(
         &mut self,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         includeSections: crate::System::Security::AccessControl::AccessControlSections,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -51,28 +51,30 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("InternalGet", (name, includeSections))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppString_AccessControlSections1(
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         includeSections: crate::System::Security::AccessControl::AccessControlSections,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (isContainer, resourceType, name, includeSections))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_Il2CppString_AccessControlSections_NativeObjectSecurity_ExceptionFromErrorCode_Il2CppObject2(
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         includeSections: crate::System::Security::AccessControl::AccessControlSections,
-        exceptionFromErrorCode: *mut crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
-        exceptionContext: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        exceptionFromErrorCode: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
+        >,
+        exceptionContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -87,14 +89,16 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
                     exceptionContext,
                 ),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn New_NativeObjectSecurity_ExceptionFromErrorCode_Il2CppObject0(
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
-        exceptionFromErrorCode: *mut crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
-        exceptionContext: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        exceptionFromErrorCode: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
+        >,
+        exceptionContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -102,27 +106,29 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
                 ".ctor",
                 (isContainer, resourceType, exceptionFromErrorCode, exceptionContext),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RaiseExceptionOnFailure(
         &mut self,
         errorCode: i32,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        handle: *mut crate::System::Runtime::InteropServices::SafeHandle,
-        context: *mut quest_hook::libil2cpp::Il2CppObject,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        handle: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::InteropServices::SafeHandle,
+        >,
+        context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RaiseExceptionOnFailure", (errorCode, name, handle, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_AccessControlSections1(
         &mut self,
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         includeSections: crate::System::Security::AccessControl::AccessControlSections,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -130,16 +136,18 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (isContainer, resourceType, name, includeSections))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_AccessControlSections_NativeObjectSecurity_ExceptionFromErrorCode_Il2CppObject2(
         &mut self,
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         includeSections: crate::System::Security::AccessControl::AccessControlSections,
-        exceptionFromErrorCode: *mut crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
-        exceptionContext: *mut quest_hook::libil2cpp::Il2CppObject,
+        exceptionFromErrorCode: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
+        >,
+        exceptionContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -156,14 +164,16 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
                     exceptionContext,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_NativeObjectSecurity_ExceptionFromErrorCode_Il2CppObject0(
         &mut self,
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
-        exceptionFromErrorCode: *mut crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
-        exceptionContext: *mut quest_hook::libil2cpp::Il2CppObject,
+        exceptionFromErrorCode: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
+        >,
+        exceptionContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -173,7 +183,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
                 ".ctor",
                 (isContainer, resourceType, exceptionFromErrorCode, exceptionContext),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+AccessControl+NativeObjectSecurity")]
@@ -228,30 +238,34 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromE
     pub fn Invoke(
         &mut self,
         errorCode: i32,
-        name: *mut quest_hook::libil2cpp::Il2CppString,
-        handle: *mut crate::System::Runtime::InteropServices::SafeHandle,
-        context: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        handle: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::InteropServices::SafeHandle,
+        >,
+        context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Exception = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
             .invoke("Invoke", (errorCode, name, handle, context))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        object: *mut quest_hook::libil2cpp::Il2CppObject,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -259,7 +273,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromE
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(

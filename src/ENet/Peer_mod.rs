@@ -33,7 +33,7 @@ impl crate::ENet::Peer {
             "ConfigureThrottle",
             (interval, acceleration, deceleration, threshold),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Disconnect(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::ENet::Peer {
             "Disconnect",
             (data),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisconnectLater(
         &mut self,
@@ -55,7 +55,7 @@ impl crate::ENet::Peer {
             "DisconnectLater",
             (data),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DisconnectNow(
         &mut self,
@@ -66,7 +66,7 @@ impl crate::ENet::Peer {
             "DisconnectNow",
             (data),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Ping(
         &mut self,
@@ -76,7 +76,7 @@ impl crate::ENet::Peer {
             "Ping",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PingInterval(
         &mut self,
@@ -87,7 +87,7 @@ impl crate::ENet::Peer {
             "PingInterval",
             (interval),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Receive(
         &mut self,
@@ -99,7 +99,7 @@ impl crate::ENet::Peer {
             "Receive",
             (channelID, packet),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
@@ -109,7 +109,7 @@ impl crate::ENet::Peer {
             "Reset",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Send(
         &mut self,
@@ -121,7 +121,7 @@ impl crate::ENet::Peer {
             "Send",
             (channelID, packet),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ThrowIfNotCreated(
         &mut self,
@@ -131,7 +131,7 @@ impl crate::ENet::Peer {
             "ThrowIfNotCreated",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Timeout(
         &mut self,
@@ -144,7 +144,7 @@ impl crate::ENet::Peer {
             "Timeout",
             (timeoutLimit, timeoutMinimum, timeoutMaximum),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -155,7 +155,7 @@ impl crate::ENet::Peer {
             ".ctor",
             (peer),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_BytesReceived(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -163,7 +163,7 @@ impl crate::ENet::Peer {
             "get_BytesReceived",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_BytesSent(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -171,7 +171,7 @@ impl crate::ENet::Peer {
             "get_BytesSent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Data(&mut self) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -179,7 +179,7 @@ impl crate::ENet::Peer {
             "get_Data",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_ID(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -187,17 +187,17 @@ impl crate::ENet::Peer {
             "get_ID",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IP(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IP",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_IP", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsSet(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -205,7 +205,7 @@ impl crate::ENet::Peer {
             "get_IsSet",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LastReceiveTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -213,7 +213,7 @@ impl crate::ENet::Peer {
             "get_LastReceiveTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LastRoundTripTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -221,7 +221,7 @@ impl crate::ENet::Peer {
             "get_LastRoundTripTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_LastSendTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -229,7 +229,7 @@ impl crate::ENet::Peer {
             "get_LastSendTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_MTU(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -237,7 +237,7 @@ impl crate::ENet::Peer {
             "get_MTU",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_NativeData(
         &mut self,
@@ -247,7 +247,7 @@ impl crate::ENet::Peer {
             "get_NativeData",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PacketsLost(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -255,7 +255,7 @@ impl crate::ENet::Peer {
             "get_PacketsLost",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PacketsSent(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -263,7 +263,7 @@ impl crate::ENet::Peer {
             "get_PacketsSent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_PacketsThrottle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -271,7 +271,7 @@ impl crate::ENet::Peer {
             "get_PacketsThrottle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Port(&mut self) -> quest_hook::libil2cpp::Result<u16> {
         let __cordl_ret: u16 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -279,7 +279,7 @@ impl crate::ENet::Peer {
             "get_Port",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_RoundTripTime(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -287,7 +287,7 @@ impl crate::ENet::Peer {
             "get_RoundTripTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_State(
         &mut self,
@@ -297,7 +297,7 @@ impl crate::ENet::Peer {
             "get_State",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Data(
         &mut self,
@@ -308,7 +308,7 @@ impl crate::ENet::Peer {
             "set_Data",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_NativeData(
         &mut self,
@@ -319,6 +319,6 @@ impl crate::ENet::Peer {
             "set_NativeData",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

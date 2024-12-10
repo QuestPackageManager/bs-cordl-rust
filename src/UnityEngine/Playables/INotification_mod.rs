@@ -37,7 +37,7 @@ impl crate::UnityEngine::Playables::INotification {
         );
         let __cordl_ret: crate::UnityEngine::PropertyName = __cordl_object
             .invoke("get_id", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Playables+INotification")]

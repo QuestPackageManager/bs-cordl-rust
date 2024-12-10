@@ -35,7 +35,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::IEquatable_1<T> {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

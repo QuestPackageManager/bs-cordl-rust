@@ -37,166 +37,207 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBu
 impl crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder {
     pub fn AddOptional(
         &mut self,
-        v: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+        v: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+        >,
         tagNo: i32,
         isExplicit: bool,
-        obj: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddOptional", (v, tagNo, isExplicit, obj))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Build(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplate,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::CertTemplate>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplate = __cordl_object
-            .invoke("Build", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplate,
+        > = __cordl_object.invoke("Build", ())?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn SetExtensions(
         &mut self,
-        extens: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+        extens: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder = __cordl_object
-            .invoke("SetExtensions", (extens))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        > = __cordl_object.invoke("SetExtensions", (extens))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetIssuer(
         &mut self,
-        name: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        name: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder = __cordl_object
-            .invoke("SetIssuer", (name))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        > = __cordl_object.invoke("SetIssuer", (name))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetIssuerUID(
         &mut self,
-        uid: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+        uid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBitString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder = __cordl_object
-            .invoke("SetIssuerUID", (uid))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        > = __cordl_object.invoke("SetIssuerUID", (uid))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetPublicKey(
         &mut self,
-        spki: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        spki: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder = __cordl_object
-            .invoke("SetPublicKey", (spki))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        > = __cordl_object.invoke("SetPublicKey", (spki))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetSerialNumber(
         &mut self,
-        ser: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+        ser: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder = __cordl_object
-            .invoke("SetSerialNumber", (ser))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        > = __cordl_object.invoke("SetSerialNumber", (ser))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetSigningAlg(
         &mut self,
-        aid: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        aid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder = __cordl_object
-            .invoke("SetSigningAlg", (aid))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        > = __cordl_object.invoke("SetSigningAlg", (aid))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetSubject(
         &mut self,
-        name: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        name: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder = __cordl_object
-            .invoke("SetSubject", (name))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        > = __cordl_object.invoke("SetSubject", (name))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetSubjectUID(
         &mut self,
-        uid: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+        uid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBitString>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder = __cordl_object
-            .invoke("SetSubjectUID", (uid))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        > = __cordl_object.invoke("SetSubjectUID", (uid))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetValidity(
         &mut self,
-        v: *mut crate::Org::BouncyCastle::Asn1::Crmf::OptionalValidity,
+        v: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::OptionalValidity,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder = __cordl_object
-            .invoke("SetValidity", (v))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        > = __cordl_object.invoke("SetValidity", (v))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetVersion(
         &mut self,
         ver: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder = __cordl_object
-            .invoke("SetVersion", (ver))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+        > = __cordl_object.invoke("SetVersion", (ver))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -206,7 +247,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+CertTemplateBuilder")]

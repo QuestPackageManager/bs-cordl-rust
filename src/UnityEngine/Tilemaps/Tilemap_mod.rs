@@ -39,12 +39,14 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoPositionsChangedCallback", (count, positionsIntPtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DoSyncTileCallback(
         &mut self,
-        syncTiles: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
+        syncTiles: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -52,7 +54,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DoSyncTileCallback", (syncTiles))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSyncTileCallbackSettings(
         &mut self,
@@ -65,7 +67,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetSyncTileCallbackSettings", (settings))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTile<T>(
         &mut self,
@@ -79,88 +81,102 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
             self,
         );
         let __cordl_ret: T = __cordl_object.invoke("GetTile", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTileAsset(
         &mut self,
         position: crate::UnityEngine::Vector3Int,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = __cordl_object
             .invoke("GetTileAsset", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTileAsset_Injected(
         &mut self,
         position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3Int>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Object = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = __cordl_object
             .invoke("GetTileAsset_Injected", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTileAssetsBlock(
         &mut self,
         position: crate::UnityEngine::Vector3Int,
         blockDimensions: crate::UnityEngine::Vector3Int,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Object,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
         > = __cordl_object.invoke("GetTileAssetsBlock", (position, blockDimensions))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTileAssetsBlock_Injected(
         &mut self,
         position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3Int>,
         blockDimensions: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3Int>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Object,
-        > = __cordl_object
-            .invoke("GetTileAssetsBlock_Injected", (position, blockDimensions))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetTilesBlock(
-        &mut self,
-        bounds: crate::UnityEngine::BoundsInt,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Tilemaps::TileBase,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Tilemaps::TileBase,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        > = __cordl_object
+            .invoke("GetTileAssetsBlock_Injected", (position, blockDimensions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTilesBlock(
+        &mut self,
+        bounds: crate::UnityEngine::BoundsInt,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::Tilemaps::TileBase,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::Tilemaps::TileBase,
+            >,
         > = __cordl_object.invoke("GetTilesBlock", (bounds))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetUsedTilesCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetUsedTilesCount", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetUsedTilesNonAlloc(
         &mut self,
-        usedTiles: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Tilemaps::TileBase,
+        usedTiles: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::Tilemaps::TileBase,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -168,7 +184,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetUsedTilesNonAlloc", (usedTiles))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandlePositionsChangedCallback(
         &mut self,
@@ -180,12 +196,14 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePositionsChangedCallback", (count, positionsIntPtr))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleSyncTileCallback(
         &mut self,
-        syncTiles: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
+        syncTiles: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -193,7 +211,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleSyncTileCallback", (syncTiles))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasTile(
         &mut self,
@@ -203,12 +221,12 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasTile", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Internal_GetUsedTilesNonAlloc(
         &mut self,
-        usedTiles: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Object,
+        usedTiles: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -216,7 +234,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("Internal_GetUsedTilesNonAlloc", (usedTiles))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshTile(
         &mut self,
@@ -227,7 +245,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshTile", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshTile_Injected(
         &mut self,
@@ -238,11 +256,11 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshTile_Injected", (position))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshTilesNative(
         &mut self,
-        positions: *mut quest_hook::libil2cpp::Il2CppObject,
+        positions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -250,7 +268,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshTilesNative", (positions, count))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendTilemapPositionsChangedCallback(
         &mut self,
@@ -263,12 +281,14 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendTilemapPositionsChangedCallback", (positions))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SendTilemapTileChangedCallback(
         &mut self,
-        syncTiles: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
+        syncTiles: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::Tilemaps::Tilemap_SyncTile,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -276,14 +296,14 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendTilemapTileChangedCallback", (syncTiles))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bufferSyncTile(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_bufferSyncTile", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_cellBounds(
         &mut self,
@@ -293,17 +313,19 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: crate::UnityEngine::BoundsInt = __cordl_object
             .invoke("get_cellBounds", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_layoutGrid(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Grid> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Grid>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::Grid = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Grid> = __cordl_object
             .invoke("get_layoutGrid", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_orientationMatrix(
         &mut self,
@@ -313,7 +335,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = __cordl_object
             .invoke("get_orientationMatrix", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_orientationMatrix_Injected(
         &mut self,
@@ -324,7 +346,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_orientationMatrix_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_origin(
         &mut self,
@@ -334,7 +356,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: crate::UnityEngine::Vector3Int = __cordl_object
             .invoke("get_origin", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_origin_Injected(
         &mut self,
@@ -345,7 +367,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_origin_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_size(
         &mut self,
@@ -355,7 +377,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: crate::UnityEngine::Vector3Int = __cordl_object
             .invoke("get_size", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_size_Injected(
         &mut self,
@@ -366,7 +388,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_size_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tileAnchor(
         &mut self,
@@ -376,7 +398,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_tileAnchor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tileAnchor_Injected(
         &mut self,
@@ -387,7 +409,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_tileAnchor_Injected", (ret))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Tilemaps+Tilemap")]

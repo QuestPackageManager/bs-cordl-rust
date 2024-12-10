@@ -27,27 +27,32 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsAuthentica
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsAuthentication {
     pub fn GetClientCredentials(
         &mut self,
-        certificateRequest: *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+        certificateRequest: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials = __cordl_object
-            .invoke("GetClientCredentials", (certificateRequest))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+        > = __cordl_object.invoke("GetClientCredentials", (certificateRequest))?;
+        Ok(__cordl_ret.into())
     }
     pub fn NotifyServerCertificate(
         &mut self,
-        serverCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+        serverCertificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NotifyServerCertificate", (serverCertificate))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

@@ -55,14 +55,14 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ApplyParams", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn OnValidate(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnValidate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RefreshPropertyIds(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshPropertyIds", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter")]
@@ -145,12 +145,12 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValueP
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameColorValuePair")]
 impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -160,7 +160,7 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValue
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameColorValuePair")]
@@ -203,12 +203,12 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValueP
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameFloatValuePair")]
 impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -218,7 +218,7 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValue
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameFloatValuePair")]
@@ -261,12 +261,12 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePai
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameIntValuePair")]
 impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -276,7 +276,7 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePa
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameIntValuePair")]
@@ -319,12 +319,12 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValue
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
 impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -334,7 +334,7 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValu
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
@@ -378,12 +378,12 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyValuePairBase")]
 impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RefreshPropertyId(
         &mut self,
@@ -393,7 +393,7 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RefreshPropertyId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -403,14 +403,14 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_propertyId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_propertyId", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_propertyId(
         &mut self,
@@ -421,7 +421,7 @@ impl crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase 
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_propertyId", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyValuePairBase")]

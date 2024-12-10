@@ -44,21 +44,23 @@ impl std::ops::DerefMut for crate::Tweening::TweeningManager {
 impl crate::Tweening::TweeningManager {
     pub fn AddTween(
         &mut self,
-        tween: *mut crate::Tweening::Tween,
-        owner: *mut quest_hook::libil2cpp::Il2CppObject,
+        tween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+        owner: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         updateEveryOtherFrame: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Tweening::Tween> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Tweening::Tween = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Tweening::Tween> = __cordl_object
             .invoke("AddTween", (tween, owner, updateEveryOtherFrame))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddTweenToDataStructures(
         &mut self,
-        tween: *mut crate::Tweening::Tween,
-        owner: *mut quest_hook::libil2cpp::Il2CppObject,
+        tween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+        owner: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         updateEveryOtherFrame: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -66,37 +68,37 @@ impl crate::Tweening::TweeningManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("AddTweenToDataStructures", (tween, owner, updateEveryOtherFrame))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AddTweenToOwnerDictionary(
         &mut self,
-        tween: *mut crate::Tweening::Tween,
-        owner: *mut quest_hook::libil2cpp::Il2CppObject,
+        tween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+        owner: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddTweenToOwnerDictionary", (tween, owner))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("GetTime", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn KillAllTweens(
         &mut self,
-        owner: *mut quest_hook::libil2cpp::Il2CppObject,
+        owner: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("KillAllTweens", (owner))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn LateUpdate(
         &mut self,
@@ -106,51 +108,55 @@ impl crate::Tweening::TweeningManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LateUpdate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RemoveTweenFromOwnerDictionary(
         &mut self,
-        tween: *mut crate::Tweening::Tween,
+        tween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveTweenFromOwnerDictionary", (tween))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RestartTween(
         &mut self,
-        tween: *mut crate::Tweening::Tween,
-        owner: *mut quest_hook::libil2cpp::Il2CppObject,
+        tween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+        owner: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         updateEveryOtherFrame: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Tweening::Tween> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Tweening::Tween = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Tweening::Tween> = __cordl_object
             .invoke("RestartTween", (tween, owner, updateEveryOtherFrame))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResumeTween(
         &mut self,
-        tween: *mut crate::Tweening::Tween,
-        owner: *mut quest_hook::libil2cpp::Il2CppObject,
+        tween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+        owner: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         updateEveryOtherFrame: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Tweening::Tween> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Tweening::Tween = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Tweening::Tween> = __cordl_object
             .invoke("ResumeTween", (tween, owner, updateEveryOtherFrame))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -160,7 +166,7 @@ impl crate::Tweening::TweeningManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -170,7 +176,7 @@ impl crate::Tweening::TweeningManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "Tweening+TweeningManager")]

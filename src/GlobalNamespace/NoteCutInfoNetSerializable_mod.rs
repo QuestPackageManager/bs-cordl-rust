@@ -41,37 +41,39 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutInfoNetSerializable {
 impl crate::GlobalNamespace::NoteCutInfoNetSerializable {
     pub fn Deserialize(
         &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Deserialize", (reader))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init_ByRefMut_NoteData_Quaternion_Vector3_0(
         &mut self,
         noteCutInfo: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::NoteCutInfo,
         >,
-        noteData: *mut crate::GlobalNamespace::NoteData,
+        noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         notePosition: crate::UnityEngine::Vector3,
         noteRotation: crate::UnityEngine::Quaternion,
         noteScale: crate::UnityEngine::Vector3,
         moveVec: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutInfoNetSerializable>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::NoteCutInfoNetSerializable = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteCutInfoNetSerializable,
+        > = __cordl_object
             .invoke(
                 "Init",
                 (noteCutInfo, noteData, notePosition, noteRotation, noteScale, moveVec),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init_f32__cordl_bool_Vector3_NoteData_GameplayType_ColorType_NoteLineLayer_i32_f32_f32_Vector3_Quaternion_Vector3_Vector3_1(
         &mut self,
@@ -91,12 +93,14 @@ impl crate::GlobalNamespace::NoteCutInfoNetSerializable {
         noteScale: crate::UnityEngine::Vector3,
         moveVec: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutInfoNetSerializable>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::NoteCutInfoNetSerializable = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteCutInfoNetSerializable,
+        > = __cordl_object
             .invoke(
                 "Init",
                 (
@@ -117,25 +121,25 @@ impl crate::GlobalNamespace::NoteCutInfoNetSerializable {
                     moveVec,
                 ),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Serialize(
         &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Serialize", (writer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -145,7 +149,7 @@ impl crate::GlobalNamespace::NoteCutInfoNetSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "NoteCutInfoNetSerializable")]

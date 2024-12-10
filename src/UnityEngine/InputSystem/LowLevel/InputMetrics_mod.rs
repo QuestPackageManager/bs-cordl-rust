@@ -40,7 +40,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_averageEventBytesPerFrame",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_averageLagTimePerEvent(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -48,7 +48,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_averageLagTimePerEvent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_averageProcessingTimePerEvent(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_averageProcessingTimePerEvent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentControlCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -66,7 +66,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_currentControlCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentLayoutCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -74,7 +74,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_currentLayoutCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentNumDevices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -82,7 +82,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_currentNumDevices",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_currentStateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -90,7 +90,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_currentStateSizeInBytes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxNumDevices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -98,7 +98,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_maxNumDevices",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_maxStateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -106,7 +106,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_maxStateSizeInBytes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalEventBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -114,7 +114,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_totalEventBytes",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalEventCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -122,7 +122,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_totalEventCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalEventLagTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -130,7 +130,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_totalEventLagTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalEventProcessingTime(
         &mut self,
@@ -140,7 +140,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_totalEventProcessingTime",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_totalUpdateCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -148,7 +148,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "get_totalUpdateCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_currentControlCount(
         &mut self,
@@ -159,7 +159,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "set_currentControlCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_currentLayoutCount(
         &mut self,
@@ -170,7 +170,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "set_currentLayoutCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_currentNumDevices(
         &mut self,
@@ -181,7 +181,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "set_currentNumDevices",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_currentStateSizeInBytes(
         &mut self,
@@ -192,7 +192,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "set_currentStateSizeInBytes",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maxNumDevices(
         &mut self,
@@ -203,7 +203,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "set_maxNumDevices",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_maxStateSizeInBytes(
         &mut self,
@@ -214,7 +214,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "set_maxStateSizeInBytes",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_totalEventBytes(
         &mut self,
@@ -225,7 +225,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "set_totalEventBytes",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_totalEventCount(
         &mut self,
@@ -236,7 +236,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "set_totalEventCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_totalEventLagTime(
         &mut self,
@@ -247,7 +247,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "set_totalEventLagTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_totalEventProcessingTime(
         &mut self,
@@ -258,7 +258,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "set_totalEventProcessingTime",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_totalUpdateCount(
         &mut self,
@@ -269,6 +269,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
             "set_totalUpdateCount",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

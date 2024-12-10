@@ -31,40 +31,51 @@ for crate::BeatmapDataLoaderVersion4::SpawnRotationItemConverter {
 impl crate::BeatmapDataLoaderVersion4::SpawnRotationItemConverter {
     pub fn Convert(
         &mut self,
-        index: *mut crate::BeatmapSaveDataVersion4::BeatIndex,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapEventData> {
+        index: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatIndex>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventData = __cordl_object
-            .invoke("Convert", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventData,
+        > = __cordl_object.invoke("Convert", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        spawnRotations: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::BeatmapSaveDataVersion4::SpawnRotation,
+        spawnRotations: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::BeatmapSaveDataVersion4::SpawnRotation,
+            >,
         >,
-        bpmTimeProcessor: *mut crate::GlobalNamespace::IBeatToTimeConverter,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        bpmTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatToTimeConverter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (spawnRotations, bpmTimeProcessor))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        spawnRotations: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::BeatmapSaveDataVersion4::SpawnRotation,
+        spawnRotations: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::BeatmapSaveDataVersion4::SpawnRotation,
+            >,
         >,
-        bpmTimeProcessor: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+        bpmTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatToTimeConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (spawnRotations, bpmTimeProcessor))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+SpawnRotationItemConverter")]

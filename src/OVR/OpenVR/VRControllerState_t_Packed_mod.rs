@@ -40,7 +40,7 @@ impl crate::OVR::OpenVR::VRControllerState_t_Packed {
             "Unpack",
             (unpacked),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -51,6 +51,6 @@ impl crate::OVR::OpenVR::VRControllerState_t_Packed {
             ".ctor",
             (unpacked),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

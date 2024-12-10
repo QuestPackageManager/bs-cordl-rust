@@ -30,7 +30,7 @@ impl crate::System::__DTString {
             "Advance",
             (count),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn AtEnd(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -38,7 +38,7 @@ impl crate::System::__DTString {
             "AtEnd",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ConsumeSubString(
         &mut self,
@@ -49,7 +49,7 @@ impl crate::System::__DTString {
             "ConsumeSubString",
             (sub),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
         let __cordl_ret: char = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -57,7 +57,7 @@ impl crate::System::__DTString {
             "GetChar",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetDigit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -65,7 +65,7 @@ impl crate::System::__DTString {
             "GetDigit",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -73,7 +73,7 @@ impl crate::System::__DTString {
             "GetNext",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetNextDigit(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -81,20 +81,20 @@ impl crate::System::__DTString {
             "GetNextDigit",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRegularToken(
         &mut self,
         tokenType: quest_hook::libil2cpp::ByRefMut<crate::System::TokenType>,
         tokenValue: quest_hook::libil2cpp::ByRefMut<i32>,
-        dtfi: *mut crate::System::Globalization::DateTimeFormatInfo,
+        dtfi: quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetRegularToken",
             (tokenType, tokenValue, dtfi),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetRepeatCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -102,11 +102,13 @@ impl crate::System::__DTString {
             "GetRepeatCount",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSeparatorToken(
         &mut self,
-        dtfi: *mut crate::System::Globalization::DateTimeFormatInfo,
+        dtfi: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::DateTimeFormatInfo,
+        >,
         indexBeforeSeparator: quest_hook::libil2cpp::ByRefMut<i32>,
         charBeforeSeparator: quest_hook::libil2cpp::ByRefMut<char>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TokenType> {
@@ -115,7 +117,7 @@ impl crate::System::__DTString {
             "GetSeparatorToken",
             (dtfi, indexBeforeSeparator, charBeforeSeparator),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetSubString(
         &mut self,
@@ -125,12 +127,12 @@ impl crate::System::__DTString {
             "GetSubString",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MatchLongestWords(
         &mut self,
-        words: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppString,
+        words: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         maxMatchStrLen: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -139,22 +141,22 @@ impl crate::System::__DTString {
             "MatchLongestWords",
             (words, maxMatchStrLen),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MatchSpecifiedWord(
         &mut self,
-        target: *mut quest_hook::libil2cpp::Il2CppString,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "MatchSpecifiedWord",
             (target),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn MatchSpecifiedWords(
         &mut self,
-        target: *mut quest_hook::libil2cpp::Il2CppString,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         checkWordBoundary: bool,
         matchLength: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -163,18 +165,18 @@ impl crate::System::__DTString {
             "MatchSpecifiedWords",
             (target, checkWordBoundary, matchLength),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Match_Il2CppString0(
         &mut self,
-        str: *mut quest_hook::libil2cpp::Il2CppString,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Match",
             (str),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Match__cordl_char1(
         &mut self,
@@ -185,7 +187,7 @@ impl crate::System::__DTString {
             "Match",
             (ch),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveLeadingInQuoteSpaces(
         &mut self,
@@ -195,7 +197,7 @@ impl crate::System::__DTString {
             "RemoveLeadingInQuoteSpaces",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveTrailingInQuoteSpaces(
         &mut self,
@@ -205,7 +207,7 @@ impl crate::System::__DTString {
             "RemoveTrailingInQuoteSpaces",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SkipWhiteSpaceCurrent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -213,7 +215,7 @@ impl crate::System::__DTString {
             "SkipWhiteSpaceCurrent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SkipWhiteSpaces(
         &mut self,
@@ -223,7 +225,7 @@ impl crate::System::__DTString {
             "SkipWhiteSpaces",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TrimTail(
         &mut self,
@@ -233,24 +235,26 @@ impl crate::System::__DTString {
             "TrimTail",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_ReadOnlySpan_1_DateTimeFormatInfo1(
         &mut self,
         str: crate::System::ReadOnlySpan_1<char>,
-        dtfi: *mut crate::System::Globalization::DateTimeFormatInfo,
+        dtfi: quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (str, dtfi),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool0(
         &mut self,
         str: crate::System::ReadOnlySpan_1<char>,
-        dtfi: *mut crate::System::Globalization::DateTimeFormatInfo,
+        dtfi: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::DateTimeFormatInfo,
+        >,
         checkDigitToken: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -258,17 +262,17 @@ impl crate::System::__DTString {
             ".ctor",
             (str, dtfi, checkDigitToken),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_CompareInfo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::CompareInfo> {
-        let __cordl_ret: *mut crate::System::Globalization::CompareInfo = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_CompareInfo",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CompareInfo,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_CompareInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -276,6 +280,6 @@ impl crate::System::__DTString {
             "get_Length",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

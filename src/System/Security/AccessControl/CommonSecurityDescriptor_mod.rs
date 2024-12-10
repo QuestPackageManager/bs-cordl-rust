@@ -36,24 +36,32 @@ for crate::System::Security::AccessControl::CommonSecurityDescriptor {
 impl crate::System::Security::AccessControl::CommonSecurityDescriptor {
     pub fn CheckAclConsistency(
         &mut self,
-        acl: *mut crate::System::Security::AccessControl::CommonAcl,
+        acl: quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::CommonAcl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckAclConsistency", (acl))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
         isContainer: bool,
         isDS: bool,
         flags: crate::System::Security::AccessControl::ControlFlags,
-        owner: *mut crate::System::Security::Principal::SecurityIdentifier,
-        group: *mut crate::System::Security::Principal::SecurityIdentifier,
-        systemAcl: *mut crate::System::Security::AccessControl::SystemAcl,
-        discretionaryAcl: *mut crate::System::Security::AccessControl::DiscretionaryAcl,
+        owner: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        >,
+        group: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        >,
+        systemAcl: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::SystemAcl,
+        >,
+        discretionaryAcl: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::DiscretionaryAcl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,17 +71,25 @@ impl crate::System::Security::AccessControl::CommonSecurityDescriptor {
                 "Init",
                 (isContainer, isDS, flags, owner, group, systemAcl, discretionaryAcl),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
         isContainer: bool,
         isDS: bool,
         flags: crate::System::Security::AccessControl::ControlFlags,
-        owner: *mut crate::System::Security::Principal::SecurityIdentifier,
-        group: *mut crate::System::Security::Principal::SecurityIdentifier,
-        systemAcl: *mut crate::System::Security::AccessControl::SystemAcl,
-        discretionaryAcl: *mut crate::System::Security::AccessControl::DiscretionaryAcl,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        owner: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        >,
+        group: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        >,
+        systemAcl: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::SystemAcl,
+        >,
+        discretionaryAcl: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::DiscretionaryAcl,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -81,17 +97,25 @@ impl crate::System::Security::AccessControl::CommonSecurityDescriptor {
                 ".ctor",
                 (isContainer, isDS, flags, owner, group, systemAcl, discretionaryAcl),
             )?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         isContainer: bool,
         isDS: bool,
         flags: crate::System::Security::AccessControl::ControlFlags,
-        owner: *mut crate::System::Security::Principal::SecurityIdentifier,
-        group: *mut crate::System::Security::Principal::SecurityIdentifier,
-        systemAcl: *mut crate::System::Security::AccessControl::SystemAcl,
-        discretionaryAcl: *mut crate::System::Security::AccessControl::DiscretionaryAcl,
+        owner: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        >,
+        group: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        >,
+        systemAcl: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::SystemAcl,
+        >,
+        discretionaryAcl: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::DiscretionaryAcl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,77 +125,88 @@ impl crate::System::Security::AccessControl::CommonSecurityDescriptor {
                 ".ctor",
                 (isContainer, isDS, flags, owner, group, systemAcl, discretionaryAcl),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_DiscretionaryAcl(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Security::AccessControl::DiscretionaryAcl,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::DiscretionaryAcl,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Security::AccessControl::DiscretionaryAcl = __cordl_object
-            .invoke("get_DiscretionaryAcl", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::DiscretionaryAcl,
+        > = __cordl_object.invoke("get_DiscretionaryAcl", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsContainer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsContainer", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_IsDS(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsDS", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_DiscretionaryAcl(
         &mut self,
-        value: *mut crate::System::Security::AccessControl::DiscretionaryAcl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::DiscretionaryAcl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_DiscretionaryAcl", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Group(
         &mut self,
-        value: *mut crate::System::Security::Principal::SecurityIdentifier,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Group", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_Owner(
         &mut self,
-        value: *mut crate::System::Security::Principal::SecurityIdentifier,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::SecurityIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_Owner", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_SystemAcl(
         &mut self,
-        value: *mut crate::System::Security::AccessControl::SystemAcl,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::SystemAcl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_SystemAcl", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Security+AccessControl+CommonSecurityDescriptor")]

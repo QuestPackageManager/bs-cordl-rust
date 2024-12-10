@@ -32,7 +32,7 @@ impl crate::UnityEngine::Animations::AnimatorControllerPlayable {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
@@ -42,7 +42,7 @@ impl crate::UnityEngine::Animations::AnimatorControllerPlayable {
             "GetHandle",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetHandle(
         &mut self,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::Animations::AnimatorControllerPlayable {
             "SetHandle",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -64,6 +64,6 @@ impl crate::UnityEngine::Animations::AnimatorControllerPlayable {
             ".ctor",
             (handle),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

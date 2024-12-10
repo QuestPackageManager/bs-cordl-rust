@@ -35,7 +35,7 @@ impl crate::System::IO::FileStatus {
             "EnsureStatInitialized",
             (path, continueOnError),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetAttributes(
         &mut self,
@@ -47,7 +47,7 @@ impl crate::System::IO::FileStatus {
             "GetAttributes",
             (path, fileName),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetExists(
         &mut self,
@@ -58,7 +58,7 @@ impl crate::System::IO::FileStatus {
             "GetExists",
             (path),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLastWriteTime(
         &mut self,
@@ -70,7 +70,7 @@ impl crate::System::IO::FileStatus {
             "GetLastWriteTime",
             (path, continueOnError),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetLength(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::System::IO::FileStatus {
             "GetLength",
             (path, continueOnError),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsReadOnly(
         &mut self,
@@ -94,7 +94,7 @@ impl crate::System::IO::FileStatus {
             "IsReadOnly",
             (path, continueOnError),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Refresh(
         &mut self,
@@ -105,7 +105,7 @@ impl crate::System::IO::FileStatus {
             "Refresh",
             (path),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn UnixTimeToDateTimeOffset(
         &mut self,
@@ -117,7 +117,7 @@ impl crate::System::IO::FileStatus {
             "UnixTimeToDateTimeOffset",
             (seconds, nanoseconds),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_InitiallyDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -125,7 +125,7 @@ impl crate::System::IO::FileStatus {
             "get_InitiallyDirectory",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_InitiallyDirectory(
         &mut self,
@@ -136,6 +136,6 @@ impl crate::System::IO::FileStatus {
             "set_InitiallyDirectory",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

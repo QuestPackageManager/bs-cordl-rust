@@ -34,6 +34,6 @@ impl crate::TMPro::GlyphValueRecord_Legacy {
             ".ctor",
             (valueRecord),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

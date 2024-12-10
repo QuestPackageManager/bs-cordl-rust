@@ -31,23 +31,23 @@ impl crate::System::Data::BinaryNode {
     pub type DataTypePrecedence = crate::System::Data::BinaryNode_DataTypePrecedence;
     pub fn BinaryCompare_CompareInfo1(
         &mut self,
-        vLeft: *mut quest_hook::libil2cpp::Il2CppObject,
-        vRight: *mut quest_hook::libil2cpp::Il2CppObject,
+        vLeft: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        vRight: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         resultType: crate::System::Data::Common::StorageType,
         op: i32,
-        comparer: *mut crate::System::Globalization::CompareInfo,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("BinaryCompare", (vLeft, vRight, resultType, op, comparer))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn BinaryCompare_Il2CppObject_Il2CppObject_StorageType_i32_0(
         &mut self,
-        vLeft: *mut quest_hook::libil2cpp::Il2CppObject,
-        vRight: *mut quest_hook::libil2cpp::Il2CppObject,
+        vLeft: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        vRight: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         resultType: crate::System::Data::Common::StorageType,
         op: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -56,13 +56,15 @@ impl crate::System::Data::BinaryNode {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("BinaryCompare", (vLeft, vRight, resultType, op))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Bind(
         &mut self,
-        table: *mut crate::System::Data::DataTable,
-        list: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Data::DataColumn,
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Data::DataColumn,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -70,66 +72,79 @@ impl crate::System::Data::BinaryNode {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Bind", (table, list))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn DependsOn(
         &mut self,
-        column: *mut crate::System::Data::DataColumn,
+        column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("DependsOn", (column))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn EvalBinaryOp(
         &mut self,
         op: i32,
-        left: *mut crate::System::Data::ExpressionNode,
-        right: *mut crate::System::Data::ExpressionNode,
-        row: *mut crate::System::Data::DataRow,
+        left: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+        row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
-        recordNos: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        recordNos: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object
             .invoke("EvalBinaryOp", (op, left, right, row, version, recordNos))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Eval_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("Eval", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Eval", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Eval_DataRow_DataRowVersion1(
         &mut self,
-        row: *mut crate::System::Data::DataRow,
+        row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("Eval", (row, version))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Eval", (row, version))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Eval_Il2CppArray2(
         &mut self,
-        recordNos: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        recordNos: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
-            .invoke("Eval", (recordNos))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Eval", (recordNos))?;
+        Ok(__cordl_ret.into())
     }
     pub fn GetPrecedence(
         &mut self,
@@ -142,28 +157,28 @@ impl crate::System::Data::BinaryNode {
         );
         let __cordl_ret: crate::System::Data::BinaryNode_DataTypePrecedence = __cordl_object
             .invoke("GetPrecedence", (storageType))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasLocalAggregate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HasRemoteAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasRemoteAggregate", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsConstant", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsMixed(
         &mut self,
@@ -174,7 +189,7 @@ impl crate::System::Data::BinaryNode {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsMixed", (left, right))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsMixedSql(
         &mut self,
@@ -185,36 +200,39 @@ impl crate::System::Data::BinaryNode {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsMixedSql", (left, right))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn IsTableConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsTableConstant", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn New(
-        table: *mut crate::System::Data::DataTable,
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         op: i32,
-        left: *mut crate::System::Data::ExpressionNode,
-        right: *mut crate::System::Data::ExpressionNode,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        left: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (table, op, left, right))?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn Optimize(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::ExpressionNode> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Data::ExpressionNode = __cordl_object
-            .invoke("Optimize", ())?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Data::ExpressionNode,
+        > = __cordl_object.invoke("Optimize", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn ResultSqlType(
         &mut self,
@@ -229,7 +247,7 @@ impl crate::System::Data::BinaryNode {
         );
         let __cordl_ret: crate::System::Data::Common::StorageType = __cordl_object
             .invoke("ResultSqlType", (left, right, lc, rc, op))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResultType(
         &mut self,
@@ -244,20 +262,20 @@ impl crate::System::Data::BinaryNode {
         );
         let __cordl_ret: crate::System::Data::Common::StorageType = __cordl_object
             .invoke("ResultType", (left, right, lc, rc, op))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SetTypeMismatchError(
         &mut self,
         op: i32,
-        left: *mut crate::System::Type,
-        right: *mut crate::System::Type,
+        left: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTypeMismatchError", (op, left, right))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SqlResultType(
         &mut self,
@@ -267,21 +285,21 @@ impl crate::System::Data::BinaryNode {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("SqlResultType", (typeCode))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        table: *mut crate::System::Data::DataTable,
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         op: i32,
-        left: *mut crate::System::Data::ExpressionNode,
-        right: *mut crate::System::Data::ExpressionNode,
+        left: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (table, op, left, right))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Data+BinaryNode")]

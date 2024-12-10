@@ -34,6 +34,6 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand {
             "get_typeStatic",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

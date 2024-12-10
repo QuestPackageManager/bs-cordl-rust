@@ -38,7 +38,7 @@ impl crate::UnityEngine::Timeline::INotificationOptionProvider {
         );
         let __cordl_ret: crate::UnityEngine::Timeline::NotificationFlags = __cordl_object
             .invoke("get_flags", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+INotificationOptionProvider")]

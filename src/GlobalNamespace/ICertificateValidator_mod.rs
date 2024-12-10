@@ -26,10 +26,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ICertificateValidator {
 impl crate::GlobalNamespace::ICertificateValidator {
     pub fn ValidateCertificateChain(
         &mut self,
-        endPoint: *mut crate::GlobalNamespace::DnsEndPoint,
-        certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-        certificateChain: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        endPoint: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DnsEndPoint>,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+        certificateChain: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -40,7 +44,7 @@ impl crate::GlobalNamespace::ICertificateValidator {
                 "ValidateCertificateChain",
                 (endPoint, certificate, certificateChain),
             )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

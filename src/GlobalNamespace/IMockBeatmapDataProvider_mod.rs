@@ -26,20 +26,26 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IMockBeatmapDataProvider {
 impl crate::GlobalNamespace::IMockBeatmapDataProvider {
     pub fn GetBeatmapData(
         &mut self,
-        beatmap: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        beatmap: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        >,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::GlobalNamespace::MockBeatmapData,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::MockBeatmapData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::GlobalNamespace::MockBeatmapData,
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::MockBeatmapData,
+            >,
         > = __cordl_object.invoke("GetBeatmapData", (beatmap, cancellationToken))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

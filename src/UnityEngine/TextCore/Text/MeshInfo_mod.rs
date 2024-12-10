@@ -40,7 +40,7 @@ impl crate::UnityEngine::TextCore::Text::MeshInfo {
             "Clear",
             (uploadChanges),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ClearUnusedVertices(
         &mut self,
@@ -50,7 +50,7 @@ impl crate::UnityEngine::TextCore::Text::MeshInfo {
             "ClearUnusedVertices",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ResizeMeshInfo(
         &mut self,
@@ -61,7 +61,7 @@ impl crate::UnityEngine::TextCore::Text::MeshInfo {
             "ResizeMeshInfo",
             (_cordl_size),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SortGeometry(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::UnityEngine::TextCore::Text::MeshInfo {
             "SortGeometry",
             (order),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn SwapVertexData(
         &mut self,
@@ -84,7 +84,7 @@ impl crate::UnityEngine::TextCore::Text::MeshInfo {
             "SwapVertexData",
             (src, dst),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -95,6 +95,6 @@ impl crate::UnityEngine::TextCore::Text::MeshInfo {
             ".ctor",
             (_cordl_size),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

@@ -26,14 +26,14 @@ for crate::UnityEngine::ProBuilder::Normal {
 impl crate::UnityEngine::ProBuilder::Normal {
     pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Equals",
             (obj),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Equals_Normal1(
         &mut self,
@@ -44,7 +44,7 @@ impl crate::UnityEngine::ProBuilder::Normal {
             "Equals",
             (other),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -52,7 +52,7 @@ impl crate::UnityEngine::ProBuilder::Normal {
             "GetHashCode",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_bitangent(
         &mut self,
@@ -62,7 +62,7 @@ impl crate::UnityEngine::ProBuilder::Normal {
             "get_bitangent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_normal(
         &mut self,
@@ -72,7 +72,7 @@ impl crate::UnityEngine::ProBuilder::Normal {
             "get_normal",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_tangent(
         &mut self,
@@ -82,7 +82,7 @@ impl crate::UnityEngine::ProBuilder::Normal {
             "get_tangent",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_bitangent(
         &mut self,
@@ -93,7 +93,7 @@ impl crate::UnityEngine::ProBuilder::Normal {
             "set_bitangent",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_normal(
         &mut self,
@@ -104,7 +104,7 @@ impl crate::UnityEngine::ProBuilder::Normal {
             "set_normal",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_tangent(
         &mut self,
@@ -115,6 +115,6 @@ impl crate::UnityEngine::ProBuilder::Normal {
             "set_tangent",
             (value),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

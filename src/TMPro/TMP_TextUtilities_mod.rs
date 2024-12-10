@@ -73,6 +73,6 @@ impl crate::TMPro::TMP_TextUtilities_LineSegment {
             ".ctor",
             (p1, p2),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }

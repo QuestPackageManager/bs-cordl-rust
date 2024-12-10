@@ -41,7 +41,9 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     pub type HapticPlayerState = crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState;
     pub fn CanPlayHapticPreset(
         &mut self,
-        hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+        hapticPreset: quest_hook::libil2cpp::Gc<
+            crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+        >,
         node: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -49,7 +51,7 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CanPlayHapticPreset", (hapticPreset, node))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
@@ -59,19 +61,23 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn GetHapticClip(
         &mut self,
         node: crate::UnityEngine::XR::XRNode,
-        hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::Oculus::Haptics::HapticClip> {
+        hapticPreset: quest_hook::libil2cpp::Gc<
+            crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::HapticClip>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::Oculus::Haptics::HapticClip = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::HapticClip> = __cordl_object
             .invoke("GetHapticClip", (node, hapticPreset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn HandleApplicationQuitting(
         &mut self,
@@ -81,7 +87,7 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleApplicationQuitting", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
@@ -91,26 +97,28 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn PlayHapticFeedback(
         &mut self,
         node: crate::UnityEngine::XR::XRNode,
-        hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+        hapticPreset: quest_hook::libil2cpp::Gc<
+            crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PlayHapticFeedback", (node, hapticPreset))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn Tick(
         &mut self,
@@ -120,7 +128,7 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Tick", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -130,7 +138,7 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
@@ -175,12 +183,12 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
 impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -190,7 +198,7 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerStat
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]

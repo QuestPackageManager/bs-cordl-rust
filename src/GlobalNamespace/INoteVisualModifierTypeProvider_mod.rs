@@ -37,7 +37,7 @@ impl crate::GlobalNamespace::INoteVisualModifierTypeProvider {
         );
         let __cordl_ret: crate::GlobalNamespace::NoteVisualModifierType = __cordl_object
             .invoke("get_noteVisualModifierType", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "INoteVisualModifierTypeProvider")]

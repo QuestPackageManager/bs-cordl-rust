@@ -34,7 +34,7 @@ impl crate::UnityEngine::Playables::IPlayableBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBehaviourPause", (playable, info))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnBehaviourPlay(
         &mut self,
@@ -46,7 +46,7 @@ impl crate::UnityEngine::Playables::IPlayableBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBehaviourPlay", (playable, info))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnGraphStart(
         &mut self,
@@ -57,7 +57,7 @@ impl crate::UnityEngine::Playables::IPlayableBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnGraphStart", (playable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnGraphStop(
         &mut self,
@@ -68,7 +68,7 @@ impl crate::UnityEngine::Playables::IPlayableBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnGraphStop", (playable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPlayableCreate(
         &mut self,
@@ -79,7 +79,7 @@ impl crate::UnityEngine::Playables::IPlayableBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPlayableCreate", (playable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn OnPlayableDestroy(
         &mut self,
@@ -90,7 +90,7 @@ impl crate::UnityEngine::Playables::IPlayableBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPlayableDestroy", (playable))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn PrepareFrame(
         &mut self,
@@ -102,20 +102,20 @@ impl crate::UnityEngine::Playables::IPlayableBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PrepareFrame", (playable, info))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn ProcessFrame(
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
-        playerData: *mut quest_hook::libil2cpp::Il2CppObject,
+        playerData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessFrame", (playable, info, playerData))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

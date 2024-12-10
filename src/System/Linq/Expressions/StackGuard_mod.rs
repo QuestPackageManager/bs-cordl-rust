@@ -30,16 +30,16 @@ impl crate::System::Linq::Expressions::StackGuard {
         T1: quest_hook::libil2cpp::Type,
         T2: quest_hook::libil2cpp::Type,
     > = crate::System::Linq::Expressions::StackGuard___c__3_2<T1, T2>;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
+        Ok(__cordl_object.into())
     }
     pub fn RunOnEmptyStack<T1, T2>(
         &mut self,
-        action: *mut crate::System::Action_2<T1, T2>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_2<T1, T2>>,
         arg1: T1,
         arg2: T2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -54,12 +54,14 @@ impl crate::System::Linq::Expressions::StackGuard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RunOnEmptyStack", (action, arg1, arg2))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn RunOnEmptyStackCore<R>(
         &mut self,
-        action: *mut crate::System::Func_2<*mut quest_hook::libil2cpp::Il2CppObject, R>,
-        state: *mut quest_hook::libil2cpp::Il2CppObject,
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<*mut quest_hook::libil2cpp::Il2CppObject, R>,
+        >,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<R>
     where
         R: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -70,14 +72,14 @@ impl crate::System::Linq::Expressions::StackGuard {
         );
         let __cordl_ret: R = __cordl_object
             .invoke("RunOnEmptyStackCore", (action, state))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn TryEnterOnCurrentStack(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("TryEnterOnCurrentStack", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -87,7 +89,7 @@ impl crate::System::Linq::Expressions::StackGuard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "System+Linq+Expressions+StackGuard")]

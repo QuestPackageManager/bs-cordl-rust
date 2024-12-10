@@ -31,14 +31,17 @@ impl crate::System::Linq::Expressions::Interpreter::IBoxableInstruction {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Interpreter::Instruction = __cordl_object
-            .invoke("BoxIfIndexMatches", (index))?;
-        Ok(__cordl_ret)
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = __cordl_object.invoke("BoxIfIndexMatches", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,

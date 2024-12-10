@@ -34,7 +34,7 @@ impl crate::BGLib::SaveDataCore::ISerializableSaveData {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isDirty", ())?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn set_isDirty(
         &mut self,
@@ -45,7 +45,7 @@ impl crate::BGLib::SaveDataCore::ISerializableSaveData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_isDirty", (value))?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "BGLib+SaveDataCore+ISerializableSaveData")]

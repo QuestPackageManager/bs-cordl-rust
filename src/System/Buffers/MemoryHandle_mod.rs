@@ -32,29 +32,29 @@ impl crate::System::Buffers::MemoryHandle {
             "Dispose",
             (),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
-        pointer: *mut quest_hook::libil2cpp::Il2CppObject,
+        pointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         handle: crate::System::Runtime::InteropServices::GCHandle,
-        pinnable: *mut crate::System::Buffers::IPinnable,
+        pinnable: quest_hook::libil2cpp::Gc<crate::System::Buffers::IPinnable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (pointer, handle, pinnable),
         )?;
-        Ok(__cordl_ret)
+        Ok(__cordl_ret.into())
     }
     pub fn get_Pointer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Pointer",
-            (),
-        )?;
-        Ok(__cordl_ret)
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Pointer", ())?;
+        Ok(__cordl_ret.into())
     }
 }
