@@ -116,3 +116,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::BaseMeshEffec
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
+impl AsRef<crate::UnityEngine::UI::IMeshModifier>
+for crate::UnityEngine::UI::BaseMeshEffect {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::IMeshModifier {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
+impl AsMut<crate::UnityEngine::UI::IMeshModifier>
+for crate::UnityEngine::UI::BaseMeshEffect {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IMeshModifier {
+        unsafe { std::mem::transmute(self) }
+    }
+}

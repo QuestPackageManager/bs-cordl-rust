@@ -216,6 +216,20 @@ for crate::GlobalNamespace::TableViewWithDetailCell {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TableViewWithDetailCell")]
+impl AsRef<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::TableViewWithDetailCell {
+    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TableViewWithDetailCell")]
+impl AsMut<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::TableViewWithDetailCell {
+    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "TableViewWithDetailCell+IDataSource")]
 #[repr(C)]
 #[derive(Debug)]

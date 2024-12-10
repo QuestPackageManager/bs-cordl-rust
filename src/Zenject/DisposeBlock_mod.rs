@@ -442,6 +442,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::DisposeBlock {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+DisposeBlock")]
+impl AsRef<crate::System::IDisposable> for crate::Zenject::DisposeBlock {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+DisposeBlock")]
+impl AsMut<crate::System::IDisposable> for crate::Zenject::DisposeBlock {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 #[repr(C)]
 #[derive(Debug, Clone)]

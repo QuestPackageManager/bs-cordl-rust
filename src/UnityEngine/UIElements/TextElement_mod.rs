@@ -1201,6 +1201,76 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TextE
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+impl AsRef<crate::UnityEngine::UIElements::IExperimentalFeatures>
+for crate::UnityEngine::UIElements::TextElement {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IExperimentalFeatures {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+impl AsMut<crate::UnityEngine::UIElements::IExperimentalFeatures>
+for crate::UnityEngine::UIElements::TextElement {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IExperimentalFeatures {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+impl AsRef<
+    crate::UnityEngine::UIElements::INotifyValueChanged_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::UnityEngine::UIElements::TextElement {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::INotifyValueChanged_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+impl AsMut<
+    crate::UnityEngine::UIElements::INotifyValueChanged_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::UnityEngine::UIElements::TextElement {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::INotifyValueChanged_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+impl AsRef<crate::UnityEngine::UIElements::ITextEdition>
+for crate::UnityEngine::UIElements::TextElement {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::ITextEdition {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+impl AsMut<crate::UnityEngine::UIElements::ITextEdition>
+for crate::UnityEngine::UIElements::TextElement {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::ITextEdition {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+impl AsRef<crate::UnityEngine::UIElements::ITextSelection>
+for crate::UnityEngine::UIElements::TextElement {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::ITextSelection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+impl AsMut<crate::UnityEngine::UIElements::ITextSelection>
+for crate::UnityEngine::UIElements::TextElement {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::ITextSelection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]

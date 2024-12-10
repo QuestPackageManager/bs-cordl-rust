@@ -363,6 +363,34 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductDa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackProductData")]
+impl AsRef<
+    crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+    >,
+> for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackProductData")]
+impl AsMut<
+    crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+    >,
+> for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "OculusLevelProductCollectionModel+LevelPackRedirectionData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -580,5 +608,19 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OculusLevelProductCollectionModel+LevelProductData")]
+impl AsRef<crate::GlobalNamespace::ILevelProductData>
+for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelProductData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusLevelProductCollectionModel+LevelProductData")]
+impl AsMut<crate::GlobalNamespace::ILevelProductData>
+for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelProductData {
+        unsafe { std::mem::transmute(self) }
     }
 }

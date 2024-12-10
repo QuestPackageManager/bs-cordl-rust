@@ -865,3 +865,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TextMeshProUGUI {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TMPro+TextMeshProUGUI")]
+impl AsRef<crate::UnityEngine::UI::ILayoutElement> for crate::TMPro::TextMeshProUGUI {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TextMeshProUGUI")]
+impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::TMPro::TextMeshProUGUI {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}

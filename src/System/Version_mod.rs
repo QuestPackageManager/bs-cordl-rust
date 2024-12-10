@@ -343,3 +343,71 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Version {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Version")]
+impl AsRef<crate::System::ICloneable> for crate::System::Version {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsMut<crate::System::ICloneable> for crate::System::Version {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsRef<crate::System::IComparable> for crate::System::Version {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsMut<crate::System::IComparable> for crate::System::Version {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsRef<crate::System::IComparable_1<*mut crate::System::Version>>
+for crate::System::Version {
+    fn as_ref(&self) -> &crate::System::IComparable_1<*mut crate::System::Version> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsMut<crate::System::IComparable_1<*mut crate::System::Version>>
+for crate::System::Version {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<*mut crate::System::Version> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::System::Version>>
+for crate::System::Version {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<*mut crate::System::Version> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::System::Version>>
+for crate::System::Version {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::System::Version> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsRef<crate::System::ISpanFormattable> for crate::System::Version {
+    fn as_ref(&self) -> &crate::System::ISpanFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsMut<crate::System::ISpanFormattable> for crate::System::Version {
+    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

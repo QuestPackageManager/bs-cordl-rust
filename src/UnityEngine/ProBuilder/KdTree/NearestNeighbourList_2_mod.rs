@@ -196,3 +196,35 @@ for crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<TItem, TDista
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+NearestNeighbourList_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TDistance: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::UnityEngine::ProBuilder::KdTree::INearestNeighbourList_2<TItem, TDistance>,
+> for crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<TItem, TDistance> {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ProBuilder::KdTree::INearestNeighbourList_2<
+        TItem,
+        TDistance,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+NearestNeighbourList_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TDistance: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::UnityEngine::ProBuilder::KdTree::INearestNeighbourList_2<TItem, TDistance>,
+> for crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<TItem, TDistance> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ProBuilder::KdTree::INearestNeighbourList_2<
+        TItem,
+        TDistance,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

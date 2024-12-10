@@ -218,3 +218,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberMovement
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SaberMovementData")]
+impl AsRef<crate::GlobalNamespace::IBladeMovementData>
+for crate::GlobalNamespace::SaberMovementData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBladeMovementData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SaberMovementData")]
+impl AsMut<crate::GlobalNamespace::IBladeMovementData>
+for crate::GlobalNamespace::SaberMovementData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBladeMovementData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SaberMovementData")]
+impl AsRef<crate::GlobalNamespace::ISaberMovementData>
+for crate::GlobalNamespace::SaberMovementData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ISaberMovementData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SaberMovementData")]
+impl AsMut<crate::GlobalNamespace::ISaberMovementData>
+for crate::GlobalNamespace::SaberMovementData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ISaberMovementData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

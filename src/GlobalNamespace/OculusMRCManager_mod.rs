@@ -730,3 +730,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusMRCMana
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusMRCManager")]
+impl AsRef<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
+for crate::GlobalNamespace::OculusMRCManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusMRCManager")]
+impl AsMut<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
+for crate::GlobalNamespace::OculusMRCManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
+        unsafe { std::mem::transmute(self) }
+    }
+}

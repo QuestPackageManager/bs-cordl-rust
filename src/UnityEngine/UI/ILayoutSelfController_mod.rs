@@ -40,3 +40,17 @@ for crate::UnityEngine::UI::ILayoutSelfController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+ILayoutSelfController")]
+impl AsRef<crate::UnityEngine::UI::ILayoutController>
+for crate::UnityEngine::UI::ILayoutSelfController {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ILayoutSelfController")]
+impl AsMut<crate::UnityEngine::UI::ILayoutController>
+for crate::UnityEngine::UI::ILayoutSelfController {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutController {
+        unsafe { std::mem::transmute(self) }
+    }
+}

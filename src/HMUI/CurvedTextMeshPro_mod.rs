@@ -180,6 +180,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::CurvedTextMeshPro {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+CurvedTextMeshPro")]
+impl AsRef<crate::GlobalNamespace::IComponentRefresher>
+for crate::HMUI::CurvedTextMeshPro {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IComponentRefresher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+CurvedTextMeshPro")]
+impl AsMut<crate::GlobalNamespace::IComponentRefresher>
+for crate::HMUI::CurvedTextMeshPro {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IComponentRefresher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 #[repr(C)]
 #[derive(Debug, Clone)]

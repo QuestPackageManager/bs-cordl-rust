@@ -246,6 +246,76 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+impl AsRef<crate::System::ICloneable>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+impl AsMut<crate::System::ICloneable>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -338,5 +408,61 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }

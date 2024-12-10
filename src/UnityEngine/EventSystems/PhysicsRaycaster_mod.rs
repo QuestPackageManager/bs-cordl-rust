@@ -230,3 +230,27 @@ for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<crate::UnityEngine::RaycastHit>,
+> for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        crate::UnityEngine::RaycastHit,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<crate::UnityEngine::RaycastHit>,
+> for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        crate::UnityEngine::RaycastHit,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

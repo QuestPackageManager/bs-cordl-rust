@@ -1954,3 +1954,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Keyb
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Keyboard")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver>
+for crate::UnityEngine::InputSystem::Keyboard {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Keyboard")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver>
+for crate::UnityEngine::InputSystem::Keyboard {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

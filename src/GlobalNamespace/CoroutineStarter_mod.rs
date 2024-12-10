@@ -75,3 +75,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CoroutineStar
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "CoroutineStarter")]
+impl AsRef<crate::GlobalNamespace::ICoroutineStarter>
+for crate::GlobalNamespace::CoroutineStarter {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ICoroutineStarter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CoroutineStarter")]
+impl AsMut<crate::GlobalNamespace::ICoroutineStarter>
+for crate::GlobalNamespace::CoroutineStarter {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ICoroutineStarter {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -271,3 +271,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockPlayerIns
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MockPlayerInstance")]
+impl AsRef<crate::GlobalNamespace::IStandaloneMonobehavior>
+for crate::GlobalNamespace::MockPlayerInstance {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IStandaloneMonobehavior {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockPlayerInstance")]
+impl AsMut<crate::GlobalNamespace::IStandaloneMonobehavior>
+for crate::GlobalNamespace::MockPlayerInstance {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IStandaloneMonobehavior {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockPlayerInstance")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::MockPlayerInstance {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockPlayerInstance")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::MockPlayerInstance {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

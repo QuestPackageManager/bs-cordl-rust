@@ -483,6 +483,48 @@ for crate::System::ComponentModel::EventDescriptorCollection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::ComponentModel::EventDescriptorCollection {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::ComponentModel::EventDescriptorCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::ComponentModel::EventDescriptorCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::ComponentModel::EventDescriptorCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
+impl AsRef<crate::System::Collections::IList>
+for crate::System::ComponentModel::EventDescriptorCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
+impl AsMut<crate::System::Collections::IList>
+for crate::System::ComponentModel::EventDescriptorCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -576,5 +618,19 @@ for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerat
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
     }
 }

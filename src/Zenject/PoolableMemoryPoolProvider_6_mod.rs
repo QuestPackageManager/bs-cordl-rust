@@ -220,3 +220,45 @@ for crate::Zenject::PoolableMemoryPoolProvider_6<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+PoolableMemoryPoolProvider_6")]
+impl<
+    TParam1: quest_hook::libil2cpp::Type,
+    TParam2: quest_hook::libil2cpp::Type,
+    TParam3: quest_hook::libil2cpp::Type,
+    TParam4: quest_hook::libil2cpp::Type,
+    TContract: quest_hook::libil2cpp::Type,
+    TMemoryPool: quest_hook::libil2cpp::Type,
+> AsRef<crate::Zenject::IValidatable>
+for crate::Zenject::PoolableMemoryPoolProvider_6<
+    TParam1,
+    TParam2,
+    TParam3,
+    TParam4,
+    TContract,
+    TMemoryPool,
+> {
+    fn as_ref(&self) -> &crate::Zenject::IValidatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PoolableMemoryPoolProvider_6")]
+impl<
+    TParam1: quest_hook::libil2cpp::Type,
+    TParam2: quest_hook::libil2cpp::Type,
+    TParam3: quest_hook::libil2cpp::Type,
+    TParam4: quest_hook::libil2cpp::Type,
+    TContract: quest_hook::libil2cpp::Type,
+    TMemoryPool: quest_hook::libil2cpp::Type,
+> AsMut<crate::Zenject::IValidatable>
+for crate::Zenject::PoolableMemoryPoolProvider_6<
+    TParam1,
+    TParam2,
+    TParam3,
+    TParam4,
+    TContract,
+    TMemoryPool,
+> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IValidatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

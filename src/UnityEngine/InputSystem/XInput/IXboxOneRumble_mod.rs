@@ -57,3 +57,33 @@ for crate::UnityEngine::InputSystem::XInput::IXboxOneRumble {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+IXboxOneRumble")]
+impl AsRef<crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble>
+for crate::UnityEngine::InputSystem::XInput::IXboxOneRumble {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+XInput+IXboxOneRumble")]
+impl AsMut<crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble>
+for crate::UnityEngine::InputSystem::XInput::IXboxOneRumble {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+XInput+IXboxOneRumble")]
+impl AsRef<crate::UnityEngine::InputSystem::Haptics::IHaptics>
+for crate::UnityEngine::InputSystem::XInput::IXboxOneRumble {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::Haptics::IHaptics {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+XInput+IXboxOneRumble")]
+impl AsMut<crate::UnityEngine::InputSystem::Haptics::IHaptics>
+for crate::UnityEngine::InputSystem::XInput::IXboxOneRumble {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::InputSystem::Haptics::IHaptics {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -379,6 +379,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelD
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapLevelDataSO")]
+impl AsRef<crate::GlobalNamespace::IAssetSongAudioClipProvider>
+for crate::GlobalNamespace::BeatmapLevelDataSO {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IAssetSongAudioClipProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelDataSO")]
+impl AsMut<crate::GlobalNamespace::IAssetSongAudioClipProvider>
+for crate::GlobalNamespace::BeatmapLevelDataSO {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAssetSongAudioClipProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelDataSO")]
+impl AsRef<crate::GlobalNamespace::IBeatmapLevelData>
+for crate::GlobalNamespace::BeatmapLevelDataSO {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapLevelData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelDataSO")]
+impl AsMut<crate::GlobalNamespace::IBeatmapLevelData>
+for crate::GlobalNamespace::BeatmapLevelDataSO {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapLevelData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmap")]
 #[repr(C)]
 #[derive(Debug)]

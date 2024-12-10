@@ -214,6 +214,20 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
+impl AsRef<crate::GlobalNamespace::IStartSeekSongController>
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IStartSeekSongController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
+impl AsMut<crate::GlobalNamespace::IStartSeekSongController>
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IStartSeekSongController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 #[repr(C)]
 #[derive(Debug)]

@@ -404,6 +404,20 @@ for crate::System::Reflection::RuntimePropertyInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Reflection::RuntimePropertyInfo {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Reflection::RuntimePropertyInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 #[repr(C)]
 #[derive(Debug)]

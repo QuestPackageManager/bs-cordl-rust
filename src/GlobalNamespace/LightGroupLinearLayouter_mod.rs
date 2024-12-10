@@ -55,3 +55,17 @@ for crate::GlobalNamespace::LightGroupLinearLayouter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LightGroupLinearLayouter")]
+impl AsRef<crate::GlobalNamespace::IEditTimeValidated>
+for crate::GlobalNamespace::LightGroupLinearLayouter {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IEditTimeValidated {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LightGroupLinearLayouter")]
+impl AsMut<crate::GlobalNamespace::IEditTimeValidated>
+for crate::GlobalNamespace::LightGroupLinearLayouter {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEditTimeValidated {
+        unsafe { std::mem::transmute(self) }
+    }
+}

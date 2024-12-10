@@ -86,3 +86,31 @@ for crate::GlobalNamespace::InstantMenuButtonTrigger {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "InstantMenuButtonTrigger")]
+impl AsRef<crate::GlobalNamespace::IMenuButtonTrigger>
+for crate::GlobalNamespace::InstantMenuButtonTrigger {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMenuButtonTrigger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "InstantMenuButtonTrigger")]
+impl AsMut<crate::GlobalNamespace::IMenuButtonTrigger>
+for crate::GlobalNamespace::InstantMenuButtonTrigger {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMenuButtonTrigger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "InstantMenuButtonTrigger")]
+impl AsRef<crate::Zenject::ITickable>
+for crate::GlobalNamespace::InstantMenuButtonTrigger {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "InstantMenuButtonTrigger")]
+impl AsMut<crate::Zenject::ITickable>
+for crate::GlobalNamespace::InstantMenuButtonTrigger {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

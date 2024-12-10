@@ -42,6 +42,24 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::SendBufferedHapticCommand {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+SendBufferedHapticCommand")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
+for crate::UnityEngine::InputSystem::XR::Haptics::SendBufferedHapticCommand {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+SendBufferedHapticCommand")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
+for crate::UnityEngine::InputSystem::XR::Haptics::SendBufferedHapticCommand {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+        todo!()
+    }
+}
 #[cfg(
     feature = "UnityEngine+InputSystem+XR+Haptics+SendBufferedHapticCommand+_buffer_e__FixedBuffer"
 )]

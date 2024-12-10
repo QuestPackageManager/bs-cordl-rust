@@ -102,3 +102,21 @@ impl crate::UnityEngine::TextCore::GlyphRect {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect>>
+for crate::UnityEngine::TextCore::GlyphRect {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect>>
+for crate::UnityEngine::TextCore::GlyphRect {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect> {
+        todo!()
+    }
+}

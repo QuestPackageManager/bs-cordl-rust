@@ -69,3 +69,17 @@ for crate::Org::BouncyCastle::Cms::BaseDigestCalculator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Cms+BaseDigestCalculator")]
+impl AsRef<crate::Org::BouncyCastle::Cms::IDigestCalculator>
+for crate::Org::BouncyCastle::Cms::BaseDigestCalculator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::IDigestCalculator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Cms+BaseDigestCalculator")]
+impl AsMut<crate::Org::BouncyCastle::Cms::IDigestCalculator>
+for crate::Org::BouncyCastle::Cms::BaseDigestCalculator {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::IDigestCalculator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

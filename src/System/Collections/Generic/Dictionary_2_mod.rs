@@ -1199,6 +1199,260 @@ for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IDictionary_2<TKey, TValue>>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IDictionary_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IDictionary_2<TKey, TValue>>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IDictionary_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IDictionary>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IDictionary>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -1439,6 +1693,100 @@ impl<
             TValue,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Current", ())?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IDictionaryEnumerator>
+for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionaryEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IDictionaryEnumerator>
+for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionaryEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IDisposable>
+for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IDisposable>
+for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
@@ -1772,6 +2120,114 @@ for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::ICollection_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::ICollection_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
@@ -2112,6 +2568,114 @@ for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TVal
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::ICollection_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::ICollection_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -2261,6 +2825,86 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<TKey>>
+for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<TKey> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<TKey>>
+for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<TKey> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IDisposable>
+for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IDisposable>
+for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -2408,5 +3052,85 @@ impl<
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<TValue>>
+for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<TValue> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<TValue>>
+for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<TValue> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IDisposable>
+for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IDisposable>
+for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }

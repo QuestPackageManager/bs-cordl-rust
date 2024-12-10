@@ -70,3 +70,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
+for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
+for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+        todo!()
+    }
+}

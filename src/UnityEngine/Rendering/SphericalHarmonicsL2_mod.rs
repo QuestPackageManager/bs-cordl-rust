@@ -79,3 +79,27 @@ impl crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::Rendering::SphericalHarmonicsL2>,
+> for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::SphericalHarmonicsL2,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::Rendering::SphericalHarmonicsL2>,
+> for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::SphericalHarmonicsL2,
+    > {
+        todo!()
+    }
+}

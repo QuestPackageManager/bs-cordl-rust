@@ -117,3 +117,17 @@ for crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "GameLiftClientConnectionRequestHandler")]
+impl AsRef<crate::GlobalNamespace::IConnectionRequestHandler>
+for crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectionRequestHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GameLiftClientConnectionRequestHandler")]
+impl AsMut<crate::GlobalNamespace::IConnectionRequestHandler>
+for crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectionRequestHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

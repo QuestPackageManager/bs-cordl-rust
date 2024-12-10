@@ -767,6 +767,22 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+BaseGeneratedStyleHandler")]
+impl AsRef<crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler>
+for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRPassthroughLayer+BaseGeneratedStyleHandler")]
+impl AsMut<crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler>
+for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
 #[repr(C)]
 #[derive(Debug)]
@@ -949,6 +965,22 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
+impl AsRef<crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler>
+for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
+impl AsMut<crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler>
+for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
@@ -1522,6 +1554,22 @@ for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
+impl AsRef<crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler>
+for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
+impl AsMut<crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler>
+for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]

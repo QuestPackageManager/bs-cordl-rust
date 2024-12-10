@@ -74,3 +74,21 @@ impl crate::UnityEngine::XR::InputFeatureUsage {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+XR+InputFeatureUsage")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage>>
+for crate::UnityEngine::XR::InputFeatureUsage {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+XR+InputFeatureUsage")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage>>
+for crate::UnityEngine::XR::InputFeatureUsage {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage> {
+        todo!()
+    }
+}

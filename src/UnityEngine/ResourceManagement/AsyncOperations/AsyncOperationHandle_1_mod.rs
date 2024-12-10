@@ -617,3 +617,67 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle_1")]
+impl<TObject: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+    TObject,
+> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle_1")]
+impl<TObject: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+    TObject,
+> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle_1")]
+impl<
+    TObject: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            TObject,
+        >,
+    >,
+>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+    TObject,
+> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            TObject,
+        >,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle_1")]
+impl<
+    TObject: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            TObject,
+        >,
+    >,
+>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+    TObject,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            TObject,
+        >,
+    > {
+        todo!()
+    }
+}

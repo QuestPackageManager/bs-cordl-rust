@@ -687,6 +687,92 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::Hashtable
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::Hashtable {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::Hashtable {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsRef<crate::System::Collections::IDictionary>
+for crate::System::Collections::Hashtable {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsMut<crate::System::Collections::IDictionary>
+for crate::System::Collections::Hashtable {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Hashtable {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Hashtable {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsRef<crate::System::ICloneable> for crate::System::Collections::Hashtable {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsMut<crate::System::ICloneable> for crate::System::Collections::Hashtable {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Collections::Hashtable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Collections::Hashtable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Collections::Hashtable {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Collections::Hashtable {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
 #[repr(C)]
 #[derive(Debug)]
@@ -870,6 +956,48 @@ for crate::System::Collections::Hashtable_HashtableEnumerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+impl AsRef<crate::System::Collections::IDictionaryEnumerator>
+for crate::System::Collections::Hashtable_HashtableEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionaryEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+impl AsMut<crate::System::Collections::IDictionaryEnumerator>
+for crate::System::Collections::Hashtable_HashtableEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionaryEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Hashtable_HashtableEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Hashtable_HashtableEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+impl AsRef<crate::System::ICloneable>
+for crate::System::Collections::Hashtable_HashtableEnumerator {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+impl AsMut<crate::System::ICloneable>
+for crate::System::Collections::Hashtable_HashtableEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
 #[repr(C)]
 #[derive(Debug)]
@@ -980,6 +1108,34 @@ for crate::System::Collections::Hashtable_KeyCollection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::Hashtable_KeyCollection {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::Hashtable_KeyCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Hashtable_KeyCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Hashtable_KeyCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1088,6 +1244,34 @@ for crate::System::Collections::Hashtable_ValueCollection {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::Hashtable_ValueCollection {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::Hashtable_ValueCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Hashtable_ValueCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Hashtable_ValueCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+bucket")]

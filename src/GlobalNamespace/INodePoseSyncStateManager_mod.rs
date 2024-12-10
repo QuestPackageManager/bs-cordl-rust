@@ -40,3 +40,47 @@ for crate::GlobalNamespace::INodePoseSyncStateManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "INodePoseSyncStateManager")]
+impl AsRef<
+    crate::GlobalNamespace::INodePoseSyncStateManager_5<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+        *mut crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
+        *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+    >,
+> for crate::GlobalNamespace::INodePoseSyncStateManager {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::INodePoseSyncStateManager_5<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+        *mut crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
+        *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "INodePoseSyncStateManager")]
+impl AsMut<
+    crate::GlobalNamespace::INodePoseSyncStateManager_5<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+        *mut crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
+        *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+    >,
+> for crate::GlobalNamespace::INodePoseSyncStateManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INodePoseSyncStateManager_5<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+        *mut crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
+        *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

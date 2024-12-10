@@ -325,6 +325,20 @@ for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>
+for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>
+for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

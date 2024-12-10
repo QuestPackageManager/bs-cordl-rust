@@ -137,3 +137,17 @@ for crate::GlobalNamespace::EnvironmentLightGroups {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "EnvironmentLightGroups")]
+impl AsRef<crate::GlobalNamespace::IEnvironmentLightGroups>
+for crate::GlobalNamespace::EnvironmentLightGroups {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IEnvironmentLightGroups {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EnvironmentLightGroups")]
+impl AsMut<crate::GlobalNamespace::IEnvironmentLightGroups>
+for crate::GlobalNamespace::EnvironmentLightGroups {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEnvironmentLightGroups {
+        unsafe { std::mem::transmute(self) }
+    }
+}

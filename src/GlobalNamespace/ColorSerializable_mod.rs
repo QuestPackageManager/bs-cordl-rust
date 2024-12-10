@@ -96,3 +96,35 @@ impl crate::GlobalNamespace::ColorSerializable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "ColorSerializable")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ColorSerializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "ColorSerializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ColorSerializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "ColorSerializable")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable>>
+for crate::GlobalNamespace::ColorSerializable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable> {
+        todo!()
+    }
+}
+#[cfg(feature = "ColorSerializable")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable>>
+for crate::GlobalNamespace::ColorSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable> {
+        todo!()
+    }
+}

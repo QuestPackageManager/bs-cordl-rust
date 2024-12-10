@@ -151,6 +151,20 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
+impl AsRef<crate::GlobalNamespace::IRefreshable>
+for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IRefreshable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
+impl AsMut<crate::GlobalNamespace::IRefreshable>
+for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRefreshable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
 #[repr(C)]
 #[derive(Debug)]

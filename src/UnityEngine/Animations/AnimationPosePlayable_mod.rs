@@ -55,3 +55,41 @@ impl crate::UnityEngine::Animations::AnimationPosePlayable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationPosePlayable")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::Animations::AnimationPosePlayable>,
+> for crate::UnityEngine::Animations::AnimationPosePlayable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationPosePlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationPosePlayable")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::Animations::AnimationPosePlayable>,
+> for crate::UnityEngine::Animations::AnimationPosePlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationPosePlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationPosePlayable")]
+impl AsRef<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationPosePlayable {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationPosePlayable")]
+impl AsMut<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationPosePlayable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}

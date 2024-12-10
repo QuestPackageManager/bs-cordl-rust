@@ -326,6 +326,30 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Users::InputUser>,
+> for crate::UnityEngine::InputSystem::Users::InputUser {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Users::InputUser,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Users::InputUser>,
+> for crate::UnityEngine::InputSystem::Users::InputUser {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Users::InputUser,
+    > {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -362,6 +386,34 @@ impl crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccou
             (x, y),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut crate::UnityEngine::InputSystem::InputDevice,
+    >,
+> for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        *mut crate::UnityEngine::InputSystem::InputDevice,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut crate::UnityEngine::InputSystem::InputDevice,
+    >,
+> for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        *mut crate::UnityEngine::InputSystem::InputDevice,
+    > {
+        todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]

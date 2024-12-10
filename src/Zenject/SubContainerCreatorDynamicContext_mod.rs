@@ -111,3 +111,17 @@ for crate::Zenject::SubContainerCreatorDynamicContext {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+SubContainerCreatorDynamicContext")]
+impl AsRef<crate::Zenject::ISubContainerCreator>
+for crate::Zenject::SubContainerCreatorDynamicContext {
+    fn as_ref(&self) -> &crate::Zenject::ISubContainerCreator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+SubContainerCreatorDynamicContext")]
+impl AsMut<crate::Zenject::ISubContainerCreator>
+for crate::Zenject::SubContainerCreatorDynamicContext {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ISubContainerCreator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

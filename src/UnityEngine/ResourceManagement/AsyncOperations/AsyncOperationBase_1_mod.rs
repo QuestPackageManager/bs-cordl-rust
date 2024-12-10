@@ -1306,3 +1306,29 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1")]
+impl<
+    TObject: quest_hook::libil2cpp::Type,
+> AsRef<crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    TObject,
+> {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1")]
+impl<
+    TObject: quest_hook::libil2cpp::Type,
+> AsMut<crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    TObject,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
+        unsafe { std::mem::transmute(self) }
+    }
+}

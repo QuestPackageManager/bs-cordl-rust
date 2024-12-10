@@ -111,3 +111,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UxmlA
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UxmlAsset")]
+impl AsRef<crate::UnityEngine::UIElements::IUxmlAttributes>
+for crate::UnityEngine::UIElements::UxmlAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IUxmlAttributes {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UxmlAsset")]
+impl AsMut<crate::UnityEngine::UIElements::IUxmlAttributes>
+for crate::UnityEngine::UIElements::UxmlAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IUxmlAttributes {
+        unsafe { std::mem::transmute(self) }
+    }
+}

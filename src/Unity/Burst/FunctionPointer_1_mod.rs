@@ -108,3 +108,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::FunctionPointer_1<T> {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Burst+FunctionPointer_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::Unity::Burst::IFunctionPointer>
+for crate::Unity::Burst::FunctionPointer_1<T> {
+    fn as_ref(&self) -> &crate::Unity::Burst::IFunctionPointer {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Burst+FunctionPointer_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::Unity::Burst::IFunctionPointer>
+for crate::Unity::Burst::FunctionPointer_1<T> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Burst::IFunctionPointer {
+        todo!()
+    }
+}

@@ -91,3 +91,59 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_ScrollbarEventHandl
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+impl AsRef<crate::UnityEngine::EventSystems::IDeselectHandler>
+for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDeselectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+impl AsMut<crate::UnityEngine::EventSystems::IDeselectHandler>
+for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDeselectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+impl AsRef<crate::UnityEngine::EventSystems::ISelectHandler>
+for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISelectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+impl AsMut<crate::UnityEngine::EventSystems::ISelectHandler>
+for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISelectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

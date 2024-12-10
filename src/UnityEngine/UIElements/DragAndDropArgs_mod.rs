@@ -144,3 +144,17 @@ impl crate::UnityEngine::UIElements::DragAndDropArgs {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
+impl AsRef<crate::UnityEngine::UIElements::IListDragAndDropArgs>
+for crate::UnityEngine::UIElements::DragAndDropArgs {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IListDragAndDropArgs {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
+impl AsMut<crate::UnityEngine::UIElements::IListDragAndDropArgs>
+for crate::UnityEngine::UIElements::DragAndDropArgs {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IListDragAndDropArgs {
+        todo!()
+    }
+}

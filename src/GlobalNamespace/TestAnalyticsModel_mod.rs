@@ -158,3 +158,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TestAnalytics
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TestAnalyticsModel")]
+impl AsRef<crate::GlobalNamespace::IAnalyticsModel>
+for crate::GlobalNamespace::TestAnalyticsModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IAnalyticsModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TestAnalyticsModel")]
+impl AsMut<crate::GlobalNamespace::IAnalyticsModel>
+for crate::GlobalNamespace::TestAnalyticsModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAnalyticsModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

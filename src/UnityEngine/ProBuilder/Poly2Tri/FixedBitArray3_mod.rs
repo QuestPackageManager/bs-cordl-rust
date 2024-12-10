@@ -123,3 +123,33 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
+impl AsRef<crate::System::Collections::Generic::IEnumerable_1<bool>>
+for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<bool> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
+impl AsMut<crate::System::Collections::Generic::IEnumerable_1<bool>>
+for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<bool> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}

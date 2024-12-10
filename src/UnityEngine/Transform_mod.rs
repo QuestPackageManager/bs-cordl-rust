@@ -1764,6 +1764,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Transform {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Transform")]
+impl AsRef<crate::System::Collections::IEnumerable> for crate::UnityEngine::Transform {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Transform")]
+impl AsMut<crate::System::Collections::IEnumerable> for crate::UnityEngine::Transform {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+Transform+Enumerator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1850,5 +1862,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Transform_Enumera
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+Transform+Enumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::Transform_Enumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Transform+Enumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::Transform_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
     }
 }

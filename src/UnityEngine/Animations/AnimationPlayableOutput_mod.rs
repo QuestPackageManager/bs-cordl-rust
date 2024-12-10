@@ -69,3 +69,17 @@ impl crate::UnityEngine::Animations::AnimationPlayableOutput {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationPlayableOutput")]
+impl AsRef<crate::UnityEngine::Playables::IPlayableOutput>
+for crate::UnityEngine::Animations::AnimationPlayableOutput {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableOutput {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationPlayableOutput")]
+impl AsMut<crate::UnityEngine::Playables::IPlayableOutput>
+for crate::UnityEngine::Animations::AnimationPlayableOutput {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableOutput {
+        todo!()
+    }
+}

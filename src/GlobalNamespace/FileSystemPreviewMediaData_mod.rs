@@ -139,3 +139,17 @@ for crate::GlobalNamespace::FileSystemPreviewMediaData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "FileSystemPreviewMediaData")]
+impl AsRef<crate::GlobalNamespace::IPreviewMediaData>
+for crate::GlobalNamespace::FileSystemPreviewMediaData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPreviewMediaData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "FileSystemPreviewMediaData")]
+impl AsMut<crate::GlobalNamespace::IPreviewMediaData>
+for crate::GlobalNamespace::FileSystemPreviewMediaData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPreviewMediaData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

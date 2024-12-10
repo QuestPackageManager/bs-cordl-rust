@@ -541,6 +541,34 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
+impl AsRef<
+    crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    >,
+> for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
+impl AsMut<
+    crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    >,
+> for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -277,3 +277,51 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::SemVe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
+impl AsRef<crate::System::IComparable> for crate::UnityEngine::ProBuilder::SemVer {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
+impl AsMut<crate::System::IComparable> for crate::UnityEngine::ProBuilder::SemVer {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
+impl AsRef<crate::System::IComparable_1<*mut crate::UnityEngine::ProBuilder::SemVer>>
+for crate::UnityEngine::ProBuilder::SemVer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<*mut crate::UnityEngine::ProBuilder::SemVer> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
+impl AsMut<crate::System::IComparable_1<*mut crate::UnityEngine::ProBuilder::SemVer>>
+for crate::UnityEngine::ProBuilder::SemVer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<*mut crate::UnityEngine::ProBuilder::SemVer> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::SemVer>>
+for crate::UnityEngine::ProBuilder::SemVer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::SemVer> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::SemVer>>
+for crate::UnityEngine::ProBuilder::SemVer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::SemVer> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

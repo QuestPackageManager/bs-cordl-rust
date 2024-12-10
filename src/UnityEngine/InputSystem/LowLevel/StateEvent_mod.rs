@@ -83,6 +83,22 @@ impl crate::UnityEngine::InputSystem::LowLevel::StateEvent {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone)]

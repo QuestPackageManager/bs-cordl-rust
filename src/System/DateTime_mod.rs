@@ -823,3 +823,93 @@ impl crate::System::DateTime {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+DateTime")]
+impl AsRef<crate::System::IComparable> for crate::System::DateTime {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsMut<crate::System::IComparable> for crate::System::DateTime {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsRef<crate::System::IComparable_1<crate::System::DateTime>>
+for crate::System::DateTime {
+    fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::DateTime> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsMut<crate::System::IComparable_1<crate::System::DateTime>>
+for crate::System::DateTime {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<crate::System::DateTime> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsRef<crate::System::IConvertible> for crate::System::DateTime {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsMut<crate::System::IConvertible> for crate::System::DateTime {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsRef<crate::System::IEquatable_1<crate::System::DateTime>>
+for crate::System::DateTime {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::DateTime> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsMut<crate::System::IEquatable_1<crate::System::DateTime>>
+for crate::System::DateTime {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::DateTime> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsRef<crate::System::IFormattable> for crate::System::DateTime {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsMut<crate::System::IFormattable> for crate::System::DateTime {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsRef<crate::System::ISpanFormattable> for crate::System::DateTime {
+    fn as_ref(&self) -> &crate::System::ISpanFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsMut<crate::System::ISpanFormattable> for crate::System::DateTime {
+    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::DateTime {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTime")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::DateTime {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        todo!()
+    }
+}

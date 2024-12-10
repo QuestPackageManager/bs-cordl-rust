@@ -111,6 +111,38 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVREnumerable_1<T> 
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVREnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::GlobalNamespace::OVREnumerable_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVREnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::GlobalNamespace::OVREnumerable_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVREnumerable_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+for crate::GlobalNamespace::OVREnumerable_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVREnumerable_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
+for crate::GlobalNamespace::OVREnumerable_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
 #[cfg(feature = "OVREnumerable_1+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -256,5 +288,51 @@ impl<
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVREnumerable_1+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVREnumerable_1+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVREnumerable_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "OVREnumerable_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "OVREnumerable_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVREnumerable_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }

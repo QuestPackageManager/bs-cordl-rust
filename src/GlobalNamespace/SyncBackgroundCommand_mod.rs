@@ -91,3 +91,17 @@ for crate::GlobalNamespace::SyncBackgroundCommand {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SyncBackgroundCommand")]
+impl AsRef<crate::GlobalNamespace::IBackgroundCommand>
+for crate::GlobalNamespace::SyncBackgroundCommand {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBackgroundCommand {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SyncBackgroundCommand")]
+impl AsMut<crate::GlobalNamespace::IBackgroundCommand>
+for crate::GlobalNamespace::SyncBackgroundCommand {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBackgroundCommand {
+        unsafe { std::mem::transmute(self) }
+    }
+}

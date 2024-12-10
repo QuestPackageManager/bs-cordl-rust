@@ -90,6 +90,20 @@ for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Xml+XmlNamedNodeMap")]
 #[repr(C)]
 #[derive(Debug)]
@@ -284,6 +298,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNamedNodeMap {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlNamedNodeMap")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Xml::XmlNamedNodeMap {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlNamedNodeMap")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Xml::XmlNamedNodeMap {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]

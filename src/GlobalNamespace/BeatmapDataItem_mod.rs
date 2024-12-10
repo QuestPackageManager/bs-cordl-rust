@@ -116,6 +116,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataIt
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapDataItem")]
+impl AsRef<crate::System::IComparable_1<*mut crate::GlobalNamespace::BeatmapDataItem>>
+for crate::GlobalNamespace::BeatmapDataItem {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<*mut crate::GlobalNamespace::BeatmapDataItem> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapDataItem")]
+impl AsMut<crate::System::IComparable_1<*mut crate::GlobalNamespace::BeatmapDataItem>>
+for crate::GlobalNamespace::BeatmapDataItem {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::BeatmapDataItem,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

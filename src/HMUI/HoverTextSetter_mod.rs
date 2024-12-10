@@ -113,3 +113,45 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::HoverTextSetter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+HoverTextSetter")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::HMUI::HoverTextSetter {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+HoverTextSetter")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::HMUI::HoverTextSetter {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+HoverTextSetter")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::HMUI::HoverTextSetter {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+HoverTextSetter")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::HMUI::HoverTextSetter {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+HoverTextSetter")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::HMUI::HoverTextSetter {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+HoverTextSetter")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::HMUI::HoverTextSetter {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -104,3 +104,45 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerDownHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerDownHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerDownHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerDownHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerUpHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerUpHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -339,3 +339,33 @@ for crate::Org::BouncyCastle::Crypto::Modes::KCcmBlockCipher {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+KCcmBlockCipher")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher>
+for crate::Org::BouncyCastle::Crypto::Modes::KCcmBlockCipher {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+KCcmBlockCipher")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher>
+for crate::Org::BouncyCastle::Crypto::Modes::KCcmBlockCipher {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+KCcmBlockCipher")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>
+for crate::Org::BouncyCastle::Crypto::Modes::KCcmBlockCipher {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+KCcmBlockCipher")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>
+for crate::Org::BouncyCastle::Crypto::Modes::KCcmBlockCipher {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}

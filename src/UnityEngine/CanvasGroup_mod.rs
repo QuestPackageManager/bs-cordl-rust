@@ -135,3 +135,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CanvasGroup {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+CanvasGroup")]
+impl AsRef<crate::UnityEngine::ICanvasRaycastFilter>
+for crate::UnityEngine::CanvasGroup {
+    fn as_ref(&self) -> &crate::UnityEngine::ICanvasRaycastFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+CanvasGroup")]
+impl AsMut<crate::UnityEngine::ICanvasRaycastFilter>
+for crate::UnityEngine::CanvasGroup {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ICanvasRaycastFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}

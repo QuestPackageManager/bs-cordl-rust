@@ -90,3 +90,19 @@ for crate::System::Runtime::Remoting::Messaging::RemotingSurrogate {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Messaging+RemotingSurrogate")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializationSurrogate>
+for crate::System::Runtime::Remoting::Messaging::RemotingSurrogate {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializationSurrogate {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+RemotingSurrogate")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializationSurrogate>
+for crate::System::Runtime::Remoting::Messaging::RemotingSurrogate {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::ISerializationSurrogate {
+        unsafe { std::mem::transmute(self) }
+    }
+}

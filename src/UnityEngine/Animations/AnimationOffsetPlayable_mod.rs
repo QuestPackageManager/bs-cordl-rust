@@ -55,3 +55,41 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationOffsetPlayable")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::Animations::AnimationOffsetPlayable>,
+> for crate::UnityEngine::Animations::AnimationOffsetPlayable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationOffsetPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationOffsetPlayable")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::Animations::AnimationOffsetPlayable>,
+> for crate::UnityEngine::Animations::AnimationOffsetPlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationOffsetPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationOffsetPlayable")]
+impl AsRef<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationOffsetPlayable {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationOffsetPlayable")]
+impl AsMut<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationOffsetPlayable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}

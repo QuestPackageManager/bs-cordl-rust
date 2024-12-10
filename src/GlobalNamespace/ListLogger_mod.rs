@@ -168,6 +168,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ListLogger {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ListLogger")]
+impl AsRef<crate::GlobalNamespace::IBeatSaberLogger>
+for crate::GlobalNamespace::ListLogger {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatSaberLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ListLogger")]
+impl AsMut<crate::GlobalNamespace::IBeatSaberLogger>
+for crate::GlobalNamespace::ListLogger {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatSaberLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "ListLogger+LogMessage")]
 #[repr(C)]
 #[derive(Debug)]

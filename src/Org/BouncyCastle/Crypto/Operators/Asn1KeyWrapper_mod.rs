@@ -87,3 +87,17 @@ for crate::Org::BouncyCastle::Crypto::Operators::Asn1KeyWrapper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1KeyWrapper")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IKeyWrapper>
+for crate::Org::BouncyCastle::Crypto::Operators::Asn1KeyWrapper {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IKeyWrapper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1KeyWrapper")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IKeyWrapper>
+for crate::Org::BouncyCastle::Crypto::Operators::Asn1KeyWrapper {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IKeyWrapper {
+        unsafe { std::mem::transmute(self) }
+    }
+}

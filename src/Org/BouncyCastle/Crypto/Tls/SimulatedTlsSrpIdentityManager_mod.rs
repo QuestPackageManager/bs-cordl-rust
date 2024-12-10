@@ -89,3 +89,19 @@ for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SimulatedTlsSrpIdentityManager")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager>
+for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SimulatedTlsSrpIdentityManager")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager>
+for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}

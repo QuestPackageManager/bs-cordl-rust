@@ -336,3 +336,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevels
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapLevelsModel")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::BeatmapLevelsModel {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelsModel")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::BeatmapLevelsModel {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

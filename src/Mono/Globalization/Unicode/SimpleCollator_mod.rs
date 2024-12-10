@@ -779,6 +779,20 @@ for crate::Mono::Globalization::Unicode::SimpleCollator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
+impl AsRef<crate::System::Globalization::ISimpleCollator>
+for crate::Mono::Globalization::Unicode::SimpleCollator {
+    fn as_ref(&self) -> &crate::System::Globalization::ISimpleCollator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
+impl AsMut<crate::System::Globalization::ISimpleCollator>
+for crate::Mono::Globalization::Unicode::SimpleCollator {
+    fn as_mut(&mut self) -> &mut crate::System::Globalization::ISimpleCollator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
 #[repr(C)]
 #[derive(Debug, Clone)]

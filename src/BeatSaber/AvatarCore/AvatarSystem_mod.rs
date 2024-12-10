@@ -295,3 +295,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::AvatarCore::AvatarS
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystem")]
+impl AsRef<crate::BeatSaber::AvatarCore::IAvatarSystem>
+for crate::BeatSaber::AvatarCore::AvatarSystem {
+    fn as_ref(&self) -> &crate::BeatSaber::AvatarCore::IAvatarSystem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystem")]
+impl AsMut<crate::BeatSaber::AvatarCore::IAvatarSystem>
+for crate::BeatSaber::AvatarCore::AvatarSystem {
+    fn as_mut(&mut self) -> &mut crate::BeatSaber::AvatarCore::IAvatarSystem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystem")]
+impl AsRef<crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>
+for crate::BeatSaber::AvatarCore::AvatarSystem {
+    fn as_ref(&self) -> &crate::BeatSaber::AvatarCore::IAvatarSystemMetadata {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystem")]
+impl AsMut<crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>
+for crate::BeatSaber::AvatarCore::AvatarSystem {
+    fn as_mut(&mut self) -> &mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata {
+        unsafe { std::mem::transmute(self) }
+    }
+}

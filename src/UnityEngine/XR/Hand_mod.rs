@@ -68,3 +68,19 @@ impl crate::UnityEngine::XR::Hand {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+XR+Hand")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::Hand>>
+for crate::UnityEngine::XR::Hand {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::Hand> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+XR+Hand")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::Hand>>
+for crate::UnityEngine::XR::Hand {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::Hand> {
+        todo!()
+    }
+}

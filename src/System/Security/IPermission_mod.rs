@@ -59,3 +59,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Security::IPermission 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Security+IPermission")]
+impl AsRef<crate::System::Security::ISecurityEncodable>
+for crate::System::Security::IPermission {
+    fn as_ref(&self) -> &crate::System::Security::ISecurityEncodable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+IPermission")]
+impl AsMut<crate::System::Security::ISecurityEncodable>
+for crate::System::Security::IPermission {
+    fn as_mut(&mut self) -> &mut crate::System::Security::ISecurityEncodable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

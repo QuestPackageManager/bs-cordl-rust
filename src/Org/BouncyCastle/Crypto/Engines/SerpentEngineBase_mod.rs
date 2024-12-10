@@ -410,3 +410,17 @@ for crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+SerpentEngineBase")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IBlockCipher>
+for crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IBlockCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+SerpentEngineBase")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IBlockCipher>
+for crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IBlockCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}

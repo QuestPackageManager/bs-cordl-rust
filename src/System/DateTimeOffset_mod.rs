@@ -424,3 +424,103 @@ impl crate::System::DateTimeOffset {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsRef<crate::System::IComparable> for crate::System::DateTimeOffset {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsMut<crate::System::IComparable> for crate::System::DateTimeOffset {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsRef<crate::System::IComparable_1<crate::System::DateTimeOffset>>
+for crate::System::DateTimeOffset {
+    fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::DateTimeOffset> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsMut<crate::System::IComparable_1<crate::System::DateTimeOffset>>
+for crate::System::DateTimeOffset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<crate::System::DateTimeOffset> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsRef<crate::System::IEquatable_1<crate::System::DateTimeOffset>>
+for crate::System::DateTimeOffset {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::DateTimeOffset> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsMut<crate::System::IEquatable_1<crate::System::DateTimeOffset>>
+for crate::System::DateTimeOffset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::System::DateTimeOffset> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsRef<crate::System::IFormattable> for crate::System::DateTimeOffset {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsMut<crate::System::IFormattable> for crate::System::DateTimeOffset {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsRef<crate::System::ISpanFormattable> for crate::System::DateTimeOffset {
+    fn as_ref(&self) -> &crate::System::ISpanFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsMut<crate::System::ISpanFormattable> for crate::System::DateTimeOffset {
+    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::DateTimeOffset {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::DateTimeOffset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::DateTimeOffset {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::DateTimeOffset {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        todo!()
+    }
+}

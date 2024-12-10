@@ -166,3 +166,49 @@ impl crate::GlobalNamespace::PlayerStateHash {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "PlayerStateHash")]
+impl AsRef<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::PlayerStateHash,
+    >,
+> for crate::GlobalNamespace::PlayerStateHash {
+    fn as_ref(
+        &self,
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::PlayerStateHash,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "PlayerStateHash")]
+impl AsMut<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::PlayerStateHash,
+    >,
+> for crate::GlobalNamespace::PlayerStateHash {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::PlayerStateHash,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "PlayerStateHash")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::PlayerStateHash>>
+for crate::GlobalNamespace::PlayerStateHash {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::PlayerStateHash> {
+        todo!()
+    }
+}
+#[cfg(feature = "PlayerStateHash")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::PlayerStateHash>>
+for crate::GlobalNamespace::PlayerStateHash {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::PlayerStateHash> {
+        todo!()
+    }
+}

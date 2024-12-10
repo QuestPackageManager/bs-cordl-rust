@@ -149,6 +149,30 @@ for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapEventDataBoxGroup")]
+impl AsRef<
+    crate::System::IComparable_1<*mut crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
+> for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapEventDataBoxGroup")]
+impl AsMut<
+    crate::System::IComparable_1<*mut crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
+> for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BeatmapEventDataBoxGroup+ElementData")]
 #[repr(C)]
 #[derive(Debug)]

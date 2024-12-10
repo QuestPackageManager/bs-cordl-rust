@@ -125,3 +125,17 @@ for crate::UnityEngine::UIElements::UIElementsUtility {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIElementsUtility")]
+impl AsRef<crate::UnityEngine::UIElements::IUIElementsUtility>
+for crate::UnityEngine::UIElements::UIElementsUtility {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IUIElementsUtility {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIElementsUtility")]
+impl AsMut<crate::UnityEngine::UIElements::IUIElementsUtility>
+for crate::UnityEngine::UIElements::UIElementsUtility {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IUIElementsUtility {
+        unsafe { std::mem::transmute(self) }
+    }
+}

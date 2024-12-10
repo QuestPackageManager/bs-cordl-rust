@@ -273,6 +273,116 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IReadOnlyList_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyList_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IReadOnlyList_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyList_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -391,6 +501,66 @@ impl<
             TValue,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Current", ())?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TValue> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Record")]
@@ -752,5 +922,37 @@ impl<
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Record")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Record")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue>,
+    > {
+        todo!()
     }
 }

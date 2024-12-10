@@ -82,3 +82,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PoolCleanupChecker {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+PoolCleanupChecker")]
+impl AsRef<crate::Zenject::ILateDisposable> for crate::Zenject::PoolCleanupChecker {
+    fn as_ref(&self) -> &crate::Zenject::ILateDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PoolCleanupChecker")]
+impl AsMut<crate::Zenject::ILateDisposable> for crate::Zenject::PoolCleanupChecker {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ILateDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

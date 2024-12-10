@@ -127,3 +127,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LobbyPlayerDa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LobbyPlayerData")]
+impl AsRef<crate::GlobalNamespace::ILevelGameplaySetupData>
+for crate::GlobalNamespace::LobbyPlayerData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelGameplaySetupData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyPlayerData")]
+impl AsMut<crate::GlobalNamespace::ILevelGameplaySetupData>
+for crate::GlobalNamespace::LobbyPlayerData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelGameplaySetupData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyPlayerData")]
+impl AsRef<crate::GlobalNamespace::ILobbyPlayerData>
+for crate::GlobalNamespace::LobbyPlayerData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILobbyPlayerData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyPlayerData")]
+impl AsMut<crate::GlobalNamespace::ILobbyPlayerData>
+for crate::GlobalNamespace::LobbyPlayerData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILobbyPlayerData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

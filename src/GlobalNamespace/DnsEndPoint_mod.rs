@@ -172,3 +172,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DnsEndPoint {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DnsEndPoint")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::GlobalNamespace::DnsEndPoint>>
+for crate::GlobalNamespace::DnsEndPoint {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::GlobalNamespace::DnsEndPoint> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DnsEndPoint")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::GlobalNamespace::DnsEndPoint>>
+for crate::GlobalNamespace::DnsEndPoint {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::GlobalNamespace::DnsEndPoint> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

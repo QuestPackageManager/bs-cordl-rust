@@ -176,3 +176,17 @@ for crate::Zenject::ScriptableObjectInstanceProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+ScriptableObjectInstanceProvider")]
+impl AsRef<crate::Zenject::IProvider>
+for crate::Zenject::ScriptableObjectInstanceProvider {
+    fn as_ref(&self) -> &crate::Zenject::IProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+ScriptableObjectInstanceProvider")]
+impl AsMut<crate::Zenject::IProvider>
+for crate::Zenject::ScriptableObjectInstanceProvider {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

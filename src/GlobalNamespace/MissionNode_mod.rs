@@ -162,3 +162,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionNode {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MissionNode")]
+impl AsRef<crate::GlobalNamespace::IMissionNode>
+for crate::GlobalNamespace::MissionNode {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMissionNode {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionNode")]
+impl AsMut<crate::GlobalNamespace::IMissionNode>
+for crate::GlobalNamespace::MissionNode {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMissionNode {
+        unsafe { std::mem::transmute(self) }
+    }
+}

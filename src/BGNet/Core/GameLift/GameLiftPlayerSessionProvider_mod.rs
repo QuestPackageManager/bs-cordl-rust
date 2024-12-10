@@ -251,3 +251,33 @@ for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
+impl AsRef<crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider>
+for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    fn as_ref(&self) -> &crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
+impl AsMut<crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider>
+for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
+impl AsRef<crate::GlobalNamespace::IPollable>
+for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
+impl AsMut<crate::GlobalNamespace::IPollable>
+for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

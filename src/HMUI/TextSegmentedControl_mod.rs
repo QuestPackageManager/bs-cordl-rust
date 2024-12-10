@@ -97,3 +97,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TextSegmentedControl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+TextSegmentedControl")]
+impl AsRef<crate::HMUI::SegmentedControl_IDataSource>
+for crate::HMUI::TextSegmentedControl {
+    fn as_ref(&self) -> &crate::HMUI::SegmentedControl_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+TextSegmentedControl")]
+impl AsMut<crate::HMUI::SegmentedControl_IDataSource>
+for crate::HMUI::TextSegmentedControl {
+    fn as_mut(&mut self) -> &mut crate::HMUI::SegmentedControl_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}

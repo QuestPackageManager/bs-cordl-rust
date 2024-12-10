@@ -122,3 +122,19 @@ for crate::System::Runtime::Serialization::FormatterConverter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+FormatterConverter")]
+impl AsRef<crate::System::Runtime::Serialization::IFormatterConverter>
+for crate::System::Runtime::Serialization::FormatterConverter {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::IFormatterConverter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Serialization+FormatterConverter")]
+impl AsMut<crate::System::Runtime::Serialization::IFormatterConverter>
+for crate::System::Runtime::Serialization::FormatterConverter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IFormatterConverter {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -65,3 +65,35 @@ for crate::BeatmapSaveDataVersion4::EventBoxGroup {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroup")]
+impl AsRef<crate::BeatmapSaveDataCommon::IBeat>
+for crate::BeatmapSaveDataVersion4::EventBoxGroup {
+    fn as_ref(&self) -> &crate::BeatmapSaveDataCommon::IBeat {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroup")]
+impl AsMut<crate::BeatmapSaveDataCommon::IBeat>
+for crate::BeatmapSaveDataVersion4::EventBoxGroup {
+    fn as_mut(&mut self) -> &mut crate::BeatmapSaveDataCommon::IBeat {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroup")]
+impl AsRef<crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat>>
+for crate::BeatmapSaveDataVersion4::EventBoxGroup {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroup")]
+impl AsMut<crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat>>
+for crate::BeatmapSaveDataVersion4::EventBoxGroup {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -69,3 +69,15 @@ impl crate::UnityEngine::Color32 {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Color32")]
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Color32 {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Color32")]
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Color32 {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}

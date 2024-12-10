@@ -140,6 +140,22 @@ for crate::GlobalNamespace::GoodCutScoringElement {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "GoodCutScoringElement")]
+impl AsRef<crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver>
+for crate::GlobalNamespace::GoodCutScoringElement {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GoodCutScoringElement")]
+impl AsMut<crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver>
+for crate::GlobalNamespace::GoodCutScoringElement {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "GoodCutScoringElement+Pool")]
 #[repr(C)]
 #[derive(Debug)]

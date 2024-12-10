@@ -136,3 +136,17 @@ for crate::Zenject::MethodProviderSimple_1<TReturn> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+MethodProviderSimple_1")]
+impl<TReturn: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IProvider>
+for crate::Zenject::MethodProviderSimple_1<TReturn> {
+    fn as_ref(&self) -> &crate::Zenject::IProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+MethodProviderSimple_1")]
+impl<TReturn: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IProvider>
+for crate::Zenject::MethodProviderSimple_1<TReturn> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -107,3 +107,39 @@ impl crate::UnityEngine::UIElements::StyleColor {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleColor")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleColor>>
+for crate::UnityEngine::UIElements::StyleColor {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleColor> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleColor")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleColor>>
+for crate::UnityEngine::UIElements::StyleColor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleColor> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleColor")]
+impl AsRef<crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::Color>>
+for crate::UnityEngine::UIElements::StyleColor {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::Color> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleColor")]
+impl AsMut<crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::Color>>
+for crate::UnityEngine::UIElements::StyleColor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::Color> {
+        todo!()
+    }
+}

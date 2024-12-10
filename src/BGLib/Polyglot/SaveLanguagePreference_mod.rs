@@ -76,3 +76,17 @@ for crate::BGLib::Polyglot::SaveLanguagePreference {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]
+impl AsRef<crate::BGLib::Polyglot::ILocalize>
+for crate::BGLib::Polyglot::SaveLanguagePreference {
+    fn as_ref(&self) -> &crate::BGLib::Polyglot::ILocalize {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]
+impl AsMut<crate::BGLib::Polyglot::ILocalize>
+for crate::BGLib::Polyglot::SaveLanguagePreference {
+    fn as_mut(&mut self) -> &mut crate::BGLib::Polyglot::ILocalize {
+        unsafe { std::mem::transmute(self) }
+    }
+}

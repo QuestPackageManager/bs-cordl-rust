@@ -293,6 +293,24 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
+impl AsRef<crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
+impl AsMut<crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
 )]

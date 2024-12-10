@@ -36,3 +36,17 @@ impl crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+TexturePlayableOutput")]
+impl AsRef<crate::UnityEngine::Playables::IPlayableOutput>
+for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableOutput {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Playables+TexturePlayableOutput")]
+impl AsMut<crate::UnityEngine::Playables::IPlayableOutput>
+for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableOutput {
+        todo!()
+    }
+}

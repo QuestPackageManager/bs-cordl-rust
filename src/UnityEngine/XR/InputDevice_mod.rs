@@ -121,3 +121,21 @@ impl crate::UnityEngine::XR::InputDevice {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+XR+InputDevice")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::InputDevice>>
+for crate::UnityEngine::XR::InputDevice {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::InputDevice> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+XR+InputDevice")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::InputDevice>>
+for crate::UnityEngine::XR::InputDevice {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::InputDevice> {
+        todo!()
+    }
+}

@@ -212,3 +212,21 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMap
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationMap")]
+impl AsRef<crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator>
+for crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMap {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationMap")]
+impl AsMut<crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator>
+for crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMap {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

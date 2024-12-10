@@ -1090,3 +1090,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataSet {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Data+DataSet")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Data::DataSet {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataSet")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Data::DataSet {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataSet")]
+impl AsRef<crate::System::Xml::Serialization::IXmlSerializable>
+for crate::System::Data::DataSet {
+    fn as_ref(&self) -> &crate::System::Xml::Serialization::IXmlSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataSet")]
+impl AsMut<crate::System::Xml::Serialization::IXmlSerializable>
+for crate::System::Data::DataSet {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::Serialization::IXmlSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

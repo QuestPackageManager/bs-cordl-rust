@@ -52,3 +52,17 @@ for crate::GlobalNamespace::LightColorGroupParent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LightColorGroupParent")]
+impl AsRef<crate::GlobalNamespace::IEditTimeValidated>
+for crate::GlobalNamespace::LightColorGroupParent {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IEditTimeValidated {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LightColorGroupParent")]
+impl AsMut<crate::GlobalNamespace::IEditTimeValidated>
+for crate::GlobalNamespace::LightColorGroupParent {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEditTimeValidated {
+        unsafe { std::mem::transmute(self) }
+    }
+}

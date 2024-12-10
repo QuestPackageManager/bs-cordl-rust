@@ -118,6 +118,26 @@ impl crate::UnityEngine::Rendering::CameraProperties {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::CameraProperties>>
+for crate::UnityEngine::Rendering::CameraProperties {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::CameraProperties> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::CameraProperties>>
+for crate::UnityEngine::Rendering::CameraProperties {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::CameraProperties,
+    > {
+        todo!()
+    }
+}
 #[cfg(
     feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]

@@ -960,3 +960,21 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGenera
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
+)]
+impl AsRef<crate::Org::BouncyCastle::Cms::ISignerInfoGenerator>
+for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::ISignerInfoGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
+)]
+impl AsMut<crate::Org::BouncyCastle::Cms::ISignerInfoGenerator>
+for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::ISignerInfoGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

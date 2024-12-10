@@ -60,3 +60,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatmapSaveDataCommon::IBeat {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+IBeat")]
+impl AsRef<crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat>>
+for crate::BeatmapSaveDataCommon::IBeat {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapSaveDataCommon+IBeat")]
+impl AsMut<crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat>>
+for crate::BeatmapSaveDataCommon::IBeat {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

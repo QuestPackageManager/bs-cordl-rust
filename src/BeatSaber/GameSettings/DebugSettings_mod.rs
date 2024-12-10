@@ -150,3 +150,17 @@ for crate::BeatSaber::GameSettings::DebugSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatSaber+GameSettings+DebugSettings")]
+impl AsRef<crate::BGLib::SaveDataCore::ISerializableSaveData>
+for crate::BeatSaber::GameSettings::DebugSettings {
+    fn as_ref(&self) -> &crate::BGLib::SaveDataCore::ISerializableSaveData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+GameSettings+DebugSettings")]
+impl AsMut<crate::BGLib::SaveDataCore::ISerializableSaveData>
+for crate::BeatSaber::GameSettings::DebugSettings {
+    fn as_mut(&mut self) -> &mut crate::BGLib::SaveDataCore::ISerializableSaveData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

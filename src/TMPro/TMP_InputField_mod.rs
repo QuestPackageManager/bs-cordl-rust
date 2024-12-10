@@ -2491,6 +2491,144 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IBeginDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IBeginDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::IDragHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::IDragHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::IEndDragHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEndDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::IEndDragHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEndDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::IScrollHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IScrollHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::IScrollHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IScrollHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<crate::UnityEngine::UI::ICanvasElement> for crate::TMPro::TMP_InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::TMPro::TMP_InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<crate::UnityEngine::UI::ILayoutElement> for crate::TMPro::TMP_InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::TMPro::TMP_InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

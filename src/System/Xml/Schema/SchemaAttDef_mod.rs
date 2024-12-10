@@ -424,6 +424,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaAtt
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
+impl AsRef<crate::System::Xml::IDtdAttributeInfo>
+for crate::System::Xml::Schema::SchemaAttDef {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdAttributeInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
+impl AsMut<crate::System::Xml::IDtdAttributeInfo>
+for crate::System::Xml::Schema::SchemaAttDef {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdAttributeInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
+impl AsRef<crate::System::Xml::IDtdDefaultAttributeInfo>
+for crate::System::Xml::Schema::SchemaAttDef {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdDefaultAttributeInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
+impl AsMut<crate::System::Xml::IDtdDefaultAttributeInfo>
+for crate::System::Xml::Schema::SchemaAttDef {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdDefaultAttributeInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

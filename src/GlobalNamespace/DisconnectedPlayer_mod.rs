@@ -203,3 +203,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DisconnectedP
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DisconnectedPlayer")]
+impl AsRef<crate::GlobalNamespace::IConnectedPlayer>
+for crate::GlobalNamespace::DisconnectedPlayer {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectedPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DisconnectedPlayer")]
+impl AsMut<crate::GlobalNamespace::IConnectedPlayer>
+for crate::GlobalNamespace::DisconnectedPlayer {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectedPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

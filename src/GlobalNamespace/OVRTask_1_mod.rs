@@ -355,6 +355,42 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRTask_1")]
+impl<TResult: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRTask_1<TResult> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTask_1")]
+impl<TResult: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRTask_1<TResult> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTask_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>>>
+for crate::GlobalNamespace::OVRTask_1<TResult> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTask_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>>>
+for crate::GlobalNamespace::OVRTask_1<TResult> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>> {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRTask_1+Awaiter")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -435,6 +471,26 @@ impl<
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRTask_1+Awaiter")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Runtime::CompilerServices::INotifyCompletion>
+for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::INotifyCompletion {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTask_1+Awaiter")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Runtime::CompilerServices::INotifyCompletion>
+for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::INotifyCompletion {
+        todo!()
     }
 }
 #[cfg(feature = "OVRTask_1+Callback")]

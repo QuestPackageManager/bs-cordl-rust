@@ -172,6 +172,24 @@ impl crate::UnityEngine::UI::Navigation {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Navigation")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UI::Navigation>>
+for crate::UnityEngine::UI::Navigation {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UI::Navigation> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Navigation")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UI::Navigation>>
+for crate::UnityEngine::UI::Navigation {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UI::Navigation> {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Navigation+Mode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

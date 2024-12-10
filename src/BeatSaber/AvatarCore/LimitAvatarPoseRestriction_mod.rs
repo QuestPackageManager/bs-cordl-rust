@@ -100,6 +100,20 @@ for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
+impl AsRef<crate::BeatSaber::AvatarCore::IAvatarPoseRestriction>
+for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
+    fn as_ref(&self) -> &crate::BeatSaber::AvatarCore::IAvatarPoseRestriction {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
+impl AsMut<crate::BeatSaber::AvatarCore::IAvatarPoseRestriction>
+for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
+    fn as_mut(&mut self) -> &mut crate::BeatSaber::AvatarCore::IAvatarPoseRestriction {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction+Parameters")]
 #[repr(C)]
 #[derive(Debug)]

@@ -509,3 +509,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Text {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+Text")]
+impl AsRef<crate::UnityEngine::UI::ILayoutElement> for crate::UnityEngine::UI::Text {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Text")]
+impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::UnityEngine::UI::Text {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}

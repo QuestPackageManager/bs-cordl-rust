@@ -97,3 +97,21 @@ impl crate::System::Drawing::RectangleF {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Drawing+RectangleF")]
+impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::RectangleF>>
+for crate::System::Drawing::RectangleF {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::System::Drawing::RectangleF> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Drawing+RectangleF")]
+impl AsMut<crate::System::IEquatable_1<crate::System::Drawing::RectangleF>>
+for crate::System::Drawing::RectangleF {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::System::Drawing::RectangleF> {
+        todo!()
+    }
+}

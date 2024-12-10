@@ -1307,6 +1307,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRManager")]
+impl AsRef<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
+for crate::GlobalNamespace::OVRManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRManager")]
+impl AsMut<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
+for crate::GlobalNamespace::OVRManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "OVRManager+CameraDevice")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

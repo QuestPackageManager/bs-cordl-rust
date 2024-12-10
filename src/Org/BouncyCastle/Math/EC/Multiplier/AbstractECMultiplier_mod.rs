@@ -99,3 +99,19 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+AbstractECMultiplier")]
+impl AsRef<crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+AbstractECMultiplier")]
+impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier {
+        unsafe { std::mem::transmute(self) }
+    }
+}

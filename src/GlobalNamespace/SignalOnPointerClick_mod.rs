@@ -65,3 +65,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SignalOnPoint
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SignalOnPointerClick")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::GlobalNamespace::SignalOnPointerClick {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SignalOnPointerClick")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::GlobalNamespace::SignalOnPointerClick {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SignalOnPointerClick")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::GlobalNamespace::SignalOnPointerClick {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SignalOnPointerClick")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::GlobalNamespace::SignalOnPointerClick {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

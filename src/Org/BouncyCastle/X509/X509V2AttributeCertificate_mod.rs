@@ -373,3 +373,33 @@ for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
+impl AsRef<crate::Org::BouncyCastle::X509::IX509AttributeCertificate>
+for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::X509::IX509AttributeCertificate {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
+impl AsMut<crate::Org::BouncyCastle::X509::IX509AttributeCertificate>
+for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
+impl AsRef<crate::Org::BouncyCastle::X509::IX509Extension>
+for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::X509::IX509Extension {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
+impl AsMut<crate::Org::BouncyCastle::X509::IX509Extension>
+for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::X509::IX509Extension {
+        unsafe { std::mem::transmute(self) }
+    }
+}

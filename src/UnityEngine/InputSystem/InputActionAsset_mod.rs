@@ -456,6 +456,80 @@ for crate::UnityEngine::InputSystem::InputActionAsset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    >,
+> for crate::UnityEngine::InputSystem::InputActionAsset {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    >,
+> for crate::UnityEngine::InputSystem::InputActionAsset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::InputActionAsset {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::InputActionAsset {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+impl AsRef<crate::UnityEngine::InputSystem::IInputActionCollection>
+for crate::UnityEngine::InputSystem::InputActionAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::IInputActionCollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+impl AsMut<crate::UnityEngine::InputSystem::IInputActionCollection>
+for crate::UnityEngine::InputSystem::InputActionAsset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::IInputActionCollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+impl AsRef<crate::UnityEngine::InputSystem::IInputActionCollection2>
+for crate::UnityEngine::InputSystem::InputActionAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::IInputActionCollection2 {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+impl AsMut<crate::UnityEngine::InputSystem::IInputActionCollection2>
+for crate::UnityEngine::InputSystem::InputActionAsset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::IInputActionCollection2 {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 #[repr(C)]
 #[derive(Debug, Clone)]

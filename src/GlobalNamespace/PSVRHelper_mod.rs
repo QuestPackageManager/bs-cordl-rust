@@ -440,3 +440,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PSVRHelper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PSVRHelper")]
+impl AsRef<crate::GlobalNamespace::IVRPlatformHelper>
+for crate::GlobalNamespace::PSVRHelper {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVRPlatformHelper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PSVRHelper")]
+impl AsMut<crate::GlobalNamespace::IVRPlatformHelper>
+for crate::GlobalNamespace::PSVRHelper {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRPlatformHelper {
+        unsafe { std::mem::transmute(self) }
+    }
+}

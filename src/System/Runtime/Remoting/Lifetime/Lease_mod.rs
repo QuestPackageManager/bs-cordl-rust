@@ -160,6 +160,20 @@ for crate::System::Runtime::Remoting::Lifetime::Lease {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
+impl AsRef<crate::System::Runtime::Remoting::Lifetime::ILease>
+for crate::System::Runtime::Remoting::Lifetime::Lease {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Lifetime::ILease {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
+impl AsMut<crate::System::Runtime::Remoting::Lifetime::ILease>
+for crate::System::Runtime::Remoting::Lifetime::Lease {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Lifetime::ILease {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
 #[repr(C)]
 #[derive(Debug)]

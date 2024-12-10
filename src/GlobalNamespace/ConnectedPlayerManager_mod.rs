@@ -1321,6 +1321,20 @@ for crate::GlobalNamespace::ConnectedPlayerManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ConnectedPlayerManager")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::ConnectedPlayerManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::ConnectedPlayerManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+ConnectedPlayer")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1853,6 +1867,20 @@ for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+ConnectedPlayer")]
+impl AsRef<crate::GlobalNamespace::IConnectedPlayer>
+for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectedPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+ConnectedPlayer")]
+impl AsMut<crate::GlobalNamespace::IConnectedPlayer>
+for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectedPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+InternalMessageType")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -1983,6 +2011,34 @@ for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+KickPlayerPacket")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+KickPlayerPacket")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+KickPlayerPacket")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+KickPlayerPacket")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+MessageType")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -2100,6 +2156,34 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+PingPacket")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PingPacket")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PingPacket")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PingPacket")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PlayerAvatarPacket")]
 #[repr(C)]
 #[derive(Debug)]
@@ -2204,6 +2288,34 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerAvatarPacket")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerAvatarPacket")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerAvatarPacket")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerAvatarPacket")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
@@ -2319,6 +2431,34 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PlayerDisconnectedPacket")]
 #[repr(C)]
 #[derive(Debug)]
@@ -2423,6 +2563,34 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerDisconnectedPacket")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerDisconnectedPacket")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerDisconnectedPacket")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerDisconnectedPacket")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerIdentityPacket")]
@@ -2540,6 +2708,34 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+PlayerIdentityPacket")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerIdentityPacket")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerIdentityPacket")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerIdentityPacket")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]
 #[repr(C)]
 #[derive(Debug)]
@@ -2648,6 +2844,34 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PlayerStatePacket")]
 #[repr(C)]
 #[derive(Debug)]
@@ -2754,6 +2978,34 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+PlayerStatePacket")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerStatePacket")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerStatePacket")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PlayerStatePacket")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PongPacket")]
 #[repr(C)]
 #[derive(Debug)]
@@ -2856,6 +3108,34 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PongPacket")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PongPacket")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PongPacket")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+PongPacket")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
@@ -2961,5 +3241,33 @@ for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
     }
 }

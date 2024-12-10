@@ -72,3 +72,17 @@ for crate::GlobalNamespace::StartMiddleEndButtonsGroup {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "StartMiddleEndButtonsGroup")]
+impl AsRef<crate::UnityEngine::UI::ILayoutController>
+for crate::GlobalNamespace::StartMiddleEndButtonsGroup {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StartMiddleEndButtonsGroup")]
+impl AsMut<crate::UnityEngine::UI::ILayoutController>
+for crate::GlobalNamespace::StartMiddleEndButtonsGroup {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutController {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -105,6 +105,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LeaderboardTa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LeaderboardTableView")]
+impl AsRef<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::LeaderboardTableView {
+    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LeaderboardTableView")]
+impl AsMut<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::LeaderboardTableView {
+    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "LeaderboardTableView+ScoreData")]
 #[repr(C)]
 #[derive(Debug)]

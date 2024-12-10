@@ -297,3 +297,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DBNull {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+DBNull")]
+impl AsRef<crate::System::IConvertible> for crate::System::DBNull {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+DBNull")]
+impl AsMut<crate::System::IConvertible> for crate::System::DBNull {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+DBNull")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::DBNull {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+DBNull")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::DBNull {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

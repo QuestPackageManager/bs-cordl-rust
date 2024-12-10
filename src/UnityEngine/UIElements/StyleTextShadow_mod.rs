@@ -107,3 +107,51 @@ impl crate::UnityEngine::UIElements::StyleTextShadow {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleTextShadow")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTextShadow>>
+for crate::UnityEngine::UIElements::StyleTextShadow {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTextShadow> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleTextShadow")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTextShadow>>
+for crate::UnityEngine::UIElements::StyleTextShadow {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::StyleTextShadow,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleTextShadow")]
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::TextShadow,
+    >,
+> for crate::UnityEngine::UIElements::StyleTextShadow {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::TextShadow,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleTextShadow")]
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::TextShadow,
+    >,
+> for crate::UnityEngine::UIElements::StyleTextShadow {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::TextShadow,
+    > {
+        todo!()
+    }
+}

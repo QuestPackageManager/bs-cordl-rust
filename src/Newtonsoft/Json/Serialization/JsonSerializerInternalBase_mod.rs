@@ -255,3 +255,37 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Reference
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
+)]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+>
+for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
+)]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+>
+for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

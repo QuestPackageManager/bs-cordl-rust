@@ -45,3 +45,21 @@ for crate::Unity::Properties::IPropertyBag_1<TContainer> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Unity+Properties+IPropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::IPropertyBag>
+for crate::Unity::Properties::IPropertyBag_1<TContainer> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+IPropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::IPropertyBag>
+for crate::Unity::Properties::IPropertyBag_1<TContainer> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag {
+        unsafe { std::mem::transmute(self) }
+    }
+}

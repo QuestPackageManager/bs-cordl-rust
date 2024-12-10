@@ -93,3 +93,45 @@ for crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]
+impl AsRef<crate::GlobalNamespace::IJumpOffsetYProvider>
+for crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IJumpOffsetYProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]
+impl AsMut<crate::GlobalNamespace::IJumpOffsetYProvider>
+for crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IJumpOffsetYProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]
+impl AsRef<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]
+impl AsMut<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

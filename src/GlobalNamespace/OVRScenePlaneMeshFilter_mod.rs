@@ -149,6 +149,20 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
+impl AsRef<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
+impl AsMut<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -242,5 +256,19 @@ impl crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NLis
             (value),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }

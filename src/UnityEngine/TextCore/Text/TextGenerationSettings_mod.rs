@@ -146,3 +146,31 @@ for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+    >,
+> for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+    >,
+> for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

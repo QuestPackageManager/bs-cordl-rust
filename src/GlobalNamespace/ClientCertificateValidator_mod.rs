@@ -96,3 +96,17 @@ for crate::GlobalNamespace::ClientCertificateValidator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ClientCertificateValidator")]
+impl AsRef<crate::GlobalNamespace::ICertificateValidator>
+for crate::GlobalNamespace::ClientCertificateValidator {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ICertificateValidator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ClientCertificateValidator")]
+impl AsMut<crate::GlobalNamespace::ICertificateValidator>
+for crate::GlobalNamespace::ClientCertificateValidator {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ICertificateValidator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

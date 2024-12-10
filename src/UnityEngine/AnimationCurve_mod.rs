@@ -148,3 +148,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AnimationCurve {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+AnimationCurve")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::UnityEngine::AnimationCurve>>
+for crate::UnityEngine::AnimationCurve {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::UnityEngine::AnimationCurve> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+AnimationCurve")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::UnityEngine::AnimationCurve>>
+for crate::UnityEngine::AnimationCurve {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::UnityEngine::AnimationCurve> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

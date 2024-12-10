@@ -84,3 +84,19 @@ for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider>
+for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider>
+for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

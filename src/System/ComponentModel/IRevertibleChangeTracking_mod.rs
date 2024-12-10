@@ -51,3 +51,17 @@ for crate::System::ComponentModel::IRevertibleChangeTracking {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ComponentModel+IRevertibleChangeTracking")]
+impl AsRef<crate::System::ComponentModel::IChangeTracking>
+for crate::System::ComponentModel::IRevertibleChangeTracking {
+    fn as_ref(&self) -> &crate::System::ComponentModel::IChangeTracking {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+IRevertibleChangeTracking")]
+impl AsMut<crate::System::ComponentModel::IChangeTracking>
+for crate::System::ComponentModel::IRevertibleChangeTracking {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::IChangeTracking {
+        unsafe { std::mem::transmute(self) }
+    }
+}

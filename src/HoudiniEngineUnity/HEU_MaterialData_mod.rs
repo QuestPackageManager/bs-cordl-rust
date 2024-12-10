@@ -109,6 +109,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Materi
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    >,
+> for crate::HoudiniEngineUnity::HEU_MaterialData {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    >,
+> for crate::HoudiniEngineUnity::HEU_MaterialData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData+Source")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -259,6 +259,48 @@ for crate::System::Collections::Specialized::ListDictionary {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Specialized+ListDictionary")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::Specialized::ListDictionary {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+ListDictionary")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::Specialized::ListDictionary {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+ListDictionary")]
+impl AsRef<crate::System::Collections::IDictionary>
+for crate::System::Collections::Specialized::ListDictionary {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+ListDictionary")]
+impl AsMut<crate::System::Collections::IDictionary>
+for crate::System::Collections::Specialized::ListDictionary {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+ListDictionary")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Specialized::ListDictionary {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+ListDictionary")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Specialized::ListDictionary {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Collections+Specialized+ListDictionary+DictionaryNode")]
 #[repr(C)]
 #[derive(Debug)]
@@ -453,6 +495,34 @@ for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
+impl AsRef<crate::System::Collections::IDictionaryEnumerator>
+for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionaryEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
+impl AsMut<crate::System::Collections::IDictionaryEnumerator>
+for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionaryEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
 #[repr(C)]
 #[derive(Debug)]
@@ -583,6 +653,34 @@ for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollecti
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollection {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
@@ -695,5 +793,23 @@ for crate::System::Collections::Specialized::NodeKeyValueCollection_ListDictiona
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
+)]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Specialized::NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
+)]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Collections::Specialized::NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
     }
 }

@@ -99,3 +99,19 @@ for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
+impl AsRef<crate::System::Runtime::Remoting::Activation::IActivator>
+for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Activation::IActivator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
+impl AsMut<crate::System::Runtime::Remoting::Activation::IActivator>
+for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Remoting::Activation::IActivator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

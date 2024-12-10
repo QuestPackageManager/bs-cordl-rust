@@ -327,6 +327,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::ExecutionCo
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext")]
+impl AsRef<crate::System::IDisposable> for crate::System::Threading::ExecutionContext {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+ExecutionContext")]
+impl AsMut<crate::System::IDisposable> for crate::System::Threading::ExecutionContext {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+ExecutionContext")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Threading::ExecutionContext {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+ExecutionContext")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Threading::ExecutionContext {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -117,6 +117,20 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRMeshJobs+NativeArrayHelper_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRMeshJobs+NativeArrayHelper_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRMeshJobs+TransformToUnitySpaceJob")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -174,6 +188,20 @@ impl crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRMeshJobs+TransformToUnitySpaceJob")]
+impl AsRef<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRMeshJobs+TransformToUnitySpaceJob")]
+impl AsMut<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -211,5 +239,19 @@ impl crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
             (index),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
+impl AsRef<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
+impl AsMut<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
+        todo!()
     }
 }

@@ -128,3 +128,31 @@ for crate::Org::BouncyCastle::Crypto::Signers::Gost3410Signer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Gost3410Signer")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IDsa>
+for crate::Org::BouncyCastle::Crypto::Signers::Gost3410Signer {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDsa {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Gost3410Signer")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IDsa>
+for crate::Org::BouncyCastle::Crypto::Signers::Gost3410Signer {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDsa {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Gost3410Signer")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IDsaExt>
+for crate::Org::BouncyCastle::Crypto::Signers::Gost3410Signer {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDsaExt {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Gost3410Signer")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IDsaExt>
+for crate::Org::BouncyCastle::Crypto::Signers::Gost3410Signer {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDsaExt {
+        unsafe { std::mem::transmute(self) }
+    }
+}

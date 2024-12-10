@@ -105,3 +105,21 @@ impl crate::UnityEngine::UIElements::TimeValue {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TimeValue")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimeValue>>
+for crate::UnityEngine::UIElements::TimeValue {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimeValue> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TimeValue")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimeValue>>
+for crate::UnityEngine::UIElements::TimeValue {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimeValue> {
+        todo!()
+    }
+}

@@ -118,3 +118,21 @@ impl crate::Unity::Mathematics::bool3x3 {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Mathematics+bool3x3")]
+impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::bool3x3>>
+for crate::Unity::Mathematics::bool3x3 {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::bool3x3> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+bool3x3")]
+impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::bool3x3>>
+for crate::Unity::Mathematics::bool3x3 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::Unity::Mathematics::bool3x3> {
+        todo!()
+    }
+}

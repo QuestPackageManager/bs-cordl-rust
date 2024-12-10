@@ -102,3 +102,27 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetIdentifier>,
+> for crate::UnityEngine::Rendering::RenderTargetIdentifier {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::RenderTargetIdentifier,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetIdentifier>,
+> for crate::UnityEngine::Rendering::RenderTargetIdentifier {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::RenderTargetIdentifier,
+    > {
+        todo!()
+    }
+}

@@ -352,6 +352,42 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
+impl AsRef<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
+    fn as_ref(&self) -> &crate::UnityEngine::ResourceManagement::IUpdateReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
+impl AsMut<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::IUpdateReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
+impl AsRef<
+    crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource,
+> for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
+impl AsMut<
+    crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource,
+> for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
 )]

@@ -84,3 +84,23 @@ impl crate::UnityEngine::UIElements::EasingFunction {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::EasingFunction>>
+for crate::UnityEngine::UIElements::EasingFunction {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::EasingFunction> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::EasingFunction>>
+for crate::UnityEngine::UIElements::EasingFunction {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::EasingFunction,
+    > {
+        todo!()
+    }
+}

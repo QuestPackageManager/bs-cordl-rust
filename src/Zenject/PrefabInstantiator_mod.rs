@@ -197,3 +197,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PrefabInstantiator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+PrefabInstantiator")]
+impl AsRef<crate::Zenject::IPrefabInstantiator> for crate::Zenject::PrefabInstantiator {
+    fn as_ref(&self) -> &crate::Zenject::IPrefabInstantiator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PrefabInstantiator")]
+impl AsMut<crate::Zenject::IPrefabInstantiator> for crate::Zenject::PrefabInstantiator {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IPrefabInstantiator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

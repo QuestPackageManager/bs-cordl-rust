@@ -405,3 +405,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataRowView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Data+DataRowView")]
+impl AsRef<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::System::Data::DataRowView {
+    fn as_ref(&self) -> &crate::System::ComponentModel::ICustomTypeDescriptor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataRowView")]
+impl AsMut<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::System::Data::DataRowView {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ICustomTypeDescriptor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataRowView")]
+impl AsRef<crate::System::ComponentModel::INotifyPropertyChanged>
+for crate::System::Data::DataRowView {
+    fn as_ref(&self) -> &crate::System::ComponentModel::INotifyPropertyChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataRowView")]
+impl AsMut<crate::System::ComponentModel::INotifyPropertyChanged>
+for crate::System::Data::DataRowView {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::INotifyPropertyChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}

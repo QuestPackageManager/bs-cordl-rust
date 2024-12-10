@@ -638,3 +638,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Parame
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Parameters")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_Parameters,
+    >,
+> for crate::HoudiniEngineUnity::HEU_Parameters {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_Parameters,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_Parameters")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_Parameters,
+    >,
+> for crate::HoudiniEngineUnity::HEU_Parameters {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_Parameters,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

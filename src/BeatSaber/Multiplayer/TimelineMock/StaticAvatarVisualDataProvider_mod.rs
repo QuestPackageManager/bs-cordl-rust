@@ -69,3 +69,19 @@ for crate::BeatSaber::Multiplayer::TimelineMock::StaticAvatarVisualDataProvider 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatSaber+Multiplayer+TimelineMock+StaticAvatarVisualDataProvider")]
+impl AsRef<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>
+for crate::BeatSaber::Multiplayer::TimelineMock::StaticAvatarVisualDataProvider {
+    fn as_ref(&self) -> &crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+Multiplayer+TimelineMock+StaticAvatarVisualDataProvider")]
+impl AsMut<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>
+for crate::BeatSaber::Multiplayer::TimelineMock::StaticAvatarVisualDataProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

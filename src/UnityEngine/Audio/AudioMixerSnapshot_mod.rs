@@ -76,3 +76,17 @@ for crate::UnityEngine::Audio::AudioMixerSnapshot {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
+impl AsRef<crate::UnityEngine::Internal::ISubAssetNotDuplicatable>
+for crate::UnityEngine::Audio::AudioMixerSnapshot {
+    fn as_ref(&self) -> &crate::UnityEngine::Internal::ISubAssetNotDuplicatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
+impl AsMut<crate::UnityEngine::Internal::ISubAssetNotDuplicatable>
+for crate::UnityEngine::Audio::AudioMixerSnapshot {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Internal::ISubAssetNotDuplicatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

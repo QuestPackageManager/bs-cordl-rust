@@ -73,3 +73,31 @@ for crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JTokenEqualityComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JTokenEqualityComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

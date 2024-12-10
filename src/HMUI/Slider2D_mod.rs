@@ -364,3 +364,73 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::Slider2D {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsRef<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::HMUI::Slider2D {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IBeginDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsMut<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::HMUI::Slider2D {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IBeginDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsRef<crate::UnityEngine::EventSystems::IDragHandler> for crate::HMUI::Slider2D {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsMut<crate::UnityEngine::EventSystems::IDragHandler> for crate::HMUI::Slider2D {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::HMUI::Slider2D {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::HMUI::Slider2D {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsRef<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+for crate::HMUI::Slider2D {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsMut<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+for crate::HMUI::Slider2D {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsRef<crate::UnityEngine::UI::ICanvasElement> for crate::HMUI::Slider2D {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::HMUI::Slider2D {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}

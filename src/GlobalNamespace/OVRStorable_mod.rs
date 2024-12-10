@@ -153,3 +153,45 @@ impl crate::GlobalNamespace::OVRStorable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRStorable")]
+impl AsRef<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRStorable>,
+> for crate::GlobalNamespace::OVRStorable {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRStorable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRStorable")]
+impl AsMut<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRStorable>,
+> for crate::GlobalNamespace::OVRStorable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRStorable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRStorable")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRStorable>>
+for crate::GlobalNamespace::OVRStorable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRStorable> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRStorable")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRStorable>>
+for crate::GlobalNamespace::OVRStorable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRStorable> {
+        todo!()
+    }
+}

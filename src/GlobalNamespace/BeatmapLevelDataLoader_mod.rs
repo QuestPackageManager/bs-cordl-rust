@@ -136,3 +136,17 @@ for crate::GlobalNamespace::BeatmapLevelDataLoader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapLevelDataLoader")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::BeatmapLevelDataLoader {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelDataLoader")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::BeatmapLevelDataLoader {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

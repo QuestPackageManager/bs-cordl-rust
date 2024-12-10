@@ -115,6 +115,34 @@ impl crate::UnityEngine::Rendering::ScriptableCullingParameters {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ScriptableCullingParameters")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::ScriptableCullingParameters,
+    >,
+> for crate::UnityEngine::Rendering::ScriptableCullingParameters {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::ScriptableCullingParameters,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rendering+ScriptableCullingParameters")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::ScriptableCullingParameters,
+    >,
+> for crate::UnityEngine::Rendering::ScriptableCullingParameters {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::ScriptableCullingParameters,
+    > {
+        todo!()
+    }
+}
 #[cfg(
     feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_CullingPlanes_e__FixedBuffer"
 )]

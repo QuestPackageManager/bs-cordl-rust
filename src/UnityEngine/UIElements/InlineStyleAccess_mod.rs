@@ -988,6 +988,20 @@ for crate::UnityEngine::UIElements::InlineStyleAccess {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
+impl AsRef<crate::UnityEngine::UIElements::IStyle>
+for crate::UnityEngine::UIElements::InlineStyleAccess {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IStyle {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
+impl AsMut<crate::UnityEngine::UIElements::IStyle>
+for crate::UnityEngine::UIElements::InlineStyleAccess {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IStyle {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
 #[repr(C)]
 #[derive(Debug, Clone)]

@@ -104,3 +104,17 @@ for crate::GlobalNamespace::OculusPlatformAchievementHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusPlatformAchievementHandler")]
+impl AsRef<crate::GlobalNamespace::IPlatformAchievementsHandler>
+for crate::GlobalNamespace::OculusPlatformAchievementHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPlatformAchievementsHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusPlatformAchievementHandler")]
+impl AsMut<crate::GlobalNamespace::IPlatformAchievementsHandler>
+for crate::GlobalNamespace::OculusPlatformAchievementHandler {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPlatformAchievementsHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

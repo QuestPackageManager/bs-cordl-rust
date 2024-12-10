@@ -66,3 +66,17 @@ for crate::GlobalNamespace::IServerSongPackProviderManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IServerSongPackProviderManager")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::IServerSongPackProviderManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IServerSongPackProviderManager")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::IServerSongPackProviderManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

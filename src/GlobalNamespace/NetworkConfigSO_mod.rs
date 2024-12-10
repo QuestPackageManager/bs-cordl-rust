@@ -186,3 +186,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NetworkConfig
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NetworkConfigSO")]
+impl AsRef<crate::GlobalNamespace::INetworkConfig>
+for crate::GlobalNamespace::NetworkConfigSO {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkConfig {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NetworkConfigSO")]
+impl AsMut<crate::GlobalNamespace::INetworkConfig>
+for crate::GlobalNamespace::NetworkConfigSO {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkConfig {
+        unsafe { std::mem::transmute(self) }
+    }
+}

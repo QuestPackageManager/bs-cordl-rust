@@ -354,3 +354,33 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport>
+for crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport>
+for crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>
+for crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>
+for crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

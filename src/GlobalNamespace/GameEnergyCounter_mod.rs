@@ -325,6 +325,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameEnergyCou
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "GameEnergyCounter")]
+impl AsRef<crate::GlobalNamespace::IGameEnergyCounter>
+for crate::GlobalNamespace::GameEnergyCounter {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IGameEnergyCounter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GameEnergyCounter")]
+impl AsMut<crate::GlobalNamespace::IGameEnergyCounter>
+for crate::GlobalNamespace::GameEnergyCounter {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IGameEnergyCounter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "GameEnergyCounter+InitData")]
 #[repr(C)]
 #[derive(Debug)]

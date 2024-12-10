@@ -114,3 +114,31 @@ for crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSerializedMetaData")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData,
+    >,
+> for crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSerializedMetaData")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData,
+    >,
+> for crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

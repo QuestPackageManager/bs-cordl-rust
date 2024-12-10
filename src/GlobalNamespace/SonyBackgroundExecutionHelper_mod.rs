@@ -119,3 +119,17 @@ for crate::GlobalNamespace::SonyBackgroundExecutionHelper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SonyBackgroundExecutionHelper")]
+impl AsRef<crate::Zenject::ITickable>
+for crate::GlobalNamespace::SonyBackgroundExecutionHelper {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SonyBackgroundExecutionHelper")]
+impl AsMut<crate::Zenject::ITickable>
+for crate::GlobalNamespace::SonyBackgroundExecutionHelper {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

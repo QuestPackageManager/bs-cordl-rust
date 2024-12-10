@@ -241,6 +241,34 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
+)]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IComparer_1<TValue>>
+for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
+    TValue,
+> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IComparer_1<TValue> {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
+)]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IComparer_1<TValue>>
+for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
+    TValue,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<TValue> {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
 #[repr(C)]
 #[derive(Debug, Clone)]

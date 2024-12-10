@@ -153,3 +153,45 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleEnum_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleEnum_1<T>>>
+for crate::UnityEngine::UIElements::StyleEnum_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleEnum_1<T>> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleEnum_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleEnum_1<T>>>
+for crate::UnityEngine::UIElements::StyleEnum_1<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::StyleEnum_1<T>,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleEnum_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::UnityEngine::UIElements::IStyleValue_1<T>>
+for crate::UnityEngine::UIElements::StyleEnum_1<T> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IStyleValue_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleEnum_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::UnityEngine::UIElements::IStyleValue_1<T>>
+for crate::UnityEngine::UIElements::StyleEnum_1<T> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<T> {
+        todo!()
+    }
+}

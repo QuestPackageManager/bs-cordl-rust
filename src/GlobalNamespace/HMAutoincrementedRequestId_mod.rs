@@ -89,3 +89,27 @@ for crate::GlobalNamespace::HMAutoincrementedRequestId {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMAutoincrementedRequestId")]
+impl AsRef<
+    crate::System::IEquatable_1<*mut crate::GlobalNamespace::HMAutoincrementedRequestId>,
+> for crate::GlobalNamespace::HMAutoincrementedRequestId {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::HMAutoincrementedRequestId,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMAutoincrementedRequestId")]
+impl AsMut<
+    crate::System::IEquatable_1<*mut crate::GlobalNamespace::HMAutoincrementedRequestId>,
+> for crate::GlobalNamespace::HMAutoincrementedRequestId {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::HMAutoincrementedRequestId,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

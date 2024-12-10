@@ -681,3 +681,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Graphic {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+Graphic")]
+impl AsRef<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::Graphic {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Graphic")]
+impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::Graphic {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}

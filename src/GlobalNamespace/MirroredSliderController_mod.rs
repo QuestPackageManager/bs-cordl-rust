@@ -159,6 +159,20 @@ for crate::GlobalNamespace::MirroredSliderController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MirroredSliderController")]
+impl AsRef<crate::GlobalNamespace::ISliderDidStartDissolvingEvent>
+for crate::GlobalNamespace::MirroredSliderController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ISliderDidStartDissolvingEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MirroredSliderController")]
+impl AsMut<crate::GlobalNamespace::ISliderDidStartDissolvingEvent>
+for crate::GlobalNamespace::MirroredSliderController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ISliderDidStartDissolvingEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "MirroredSliderController+Pool")]
 #[repr(C)]
 #[derive(Debug)]

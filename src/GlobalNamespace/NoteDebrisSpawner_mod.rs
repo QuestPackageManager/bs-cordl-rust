@@ -152,3 +152,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteDebrisSpa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoteDebrisSpawner")]
+impl AsRef<crate::GlobalNamespace::INoteDebrisDidFinishEvent>
+for crate::GlobalNamespace::NoteDebrisSpawner {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteDebrisDidFinishEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoteDebrisSpawner")]
+impl AsMut<crate::GlobalNamespace::INoteDebrisDidFinishEvent>
+for crate::GlobalNamespace::NoteDebrisSpawner {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteDebrisDidFinishEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}

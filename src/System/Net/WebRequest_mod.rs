@@ -472,6 +472,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebRequest {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+WebRequest")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Net::WebRequest {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+WebRequest")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Net::WebRequest {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
 #[repr(C)]
 #[derive(Debug)]
@@ -537,5 +551,19 @@ for crate::System::Net::WebRequest_DesignerWebRequestCreate {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
+impl AsRef<crate::System::Net::IWebRequestCreate>
+for crate::System::Net::WebRequest_DesignerWebRequestCreate {
+    fn as_ref(&self) -> &crate::System::Net::IWebRequestCreate {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
+impl AsMut<crate::System::Net::IWebRequestCreate>
+for crate::System::Net::WebRequest_DesignerWebRequestCreate {
+    fn as_mut(&mut self) -> &mut crate::System::Net::IWebRequestCreate {
+        unsafe { std::mem::transmute(self) }
     }
 }

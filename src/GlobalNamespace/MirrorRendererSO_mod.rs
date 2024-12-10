@@ -264,3 +264,31 @@ impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+    >,
+> for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+    >,
+> for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+    > {
+        todo!()
+    }
+}

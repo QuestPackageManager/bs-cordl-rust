@@ -412,3 +412,17 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHand
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}

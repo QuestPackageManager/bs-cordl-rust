@@ -139,3 +139,31 @@ impl crate::GlobalNamespace::OVRAnchor {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRAnchor")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::OVRAnchor {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRAnchor")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRAnchor {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRAnchor")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor>>
+for crate::GlobalNamespace::OVRAnchor {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRAnchor")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor>>
+for crate::GlobalNamespace::OVRAnchor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor> {
+        todo!()
+    }
+}

@@ -759,3 +759,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Comman
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+CommandBuffer")]
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::Rendering::CommandBuffer {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Rendering+CommandBuffer")]
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Rendering::CommandBuffer {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

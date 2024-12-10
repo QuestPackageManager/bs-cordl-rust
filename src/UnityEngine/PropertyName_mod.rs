@@ -84,3 +84,19 @@ impl crate::UnityEngine::PropertyName {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+PropertyName")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::PropertyName>>
+for crate::UnityEngine::PropertyName {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::PropertyName> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+PropertyName")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::PropertyName>>
+for crate::UnityEngine::PropertyName {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::PropertyName> {
+        todo!()
+    }
+}

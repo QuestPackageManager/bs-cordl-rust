@@ -37,3 +37,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::DisableDeviceCommand {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+DisableDeviceCommand")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
+for crate::UnityEngine::InputSystem::LowLevel::DisableDeviceCommand {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+DisableDeviceCommand")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
+for crate::UnityEngine::InputSystem::LowLevel::DisableDeviceCommand {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+        todo!()
+    }
+}

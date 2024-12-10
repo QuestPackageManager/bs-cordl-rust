@@ -204,6 +204,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRRaycaster 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRRaycaster")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::GlobalNamespace::OVRRaycaster {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRRaycaster")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::GlobalNamespace::OVRRaycaster {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRRaycaster")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::GlobalNamespace::OVRRaycaster {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRRaycaster")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::GlobalNamespace::OVRRaycaster {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "OVRRaycaster+RaycastHit")]
 #[repr(C)]
 #[derive(Debug, Clone)]

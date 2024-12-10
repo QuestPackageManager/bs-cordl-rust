@@ -72,3 +72,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::PositionInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+PositionInfo")]
+impl AsRef<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::PositionInfo {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+PositionInfo")]
+impl AsMut<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::PositionInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

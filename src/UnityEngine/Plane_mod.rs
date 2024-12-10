@@ -138,3 +138,15 @@ impl crate::UnityEngine::Plane {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Plane")]
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Plane {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Plane")]
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Plane {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}

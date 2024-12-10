@@ -136,3 +136,77 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::JEnumerable_
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::Newtonsoft::Json::Linq::IJEnumerable_1<T>>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Linq::IJEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::Newtonsoft::Json::Linq::IJEnumerable_1<T>>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Linq::IJEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IEquatable_1<crate::Newtonsoft::Json::Linq::JEnumerable_1<T>>>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::Newtonsoft::Json::Linq::JEnumerable_1<T>> {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IEquatable_1<crate::Newtonsoft::Json::Linq::JEnumerable_1<T>>>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::Newtonsoft::Json::Linq::JEnumerable_1<T>,
+    > {
+        todo!()
+    }
+}

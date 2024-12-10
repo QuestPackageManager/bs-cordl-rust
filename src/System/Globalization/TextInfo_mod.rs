@@ -365,3 +365,33 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TextInf
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Globalization+TextInfo")]
+impl AsRef<crate::System::ICloneable> for crate::System::Globalization::TextInfo {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Globalization+TextInfo")]
+impl AsMut<crate::System::ICloneable> for crate::System::Globalization::TextInfo {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Globalization+TextInfo")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Globalization::TextInfo {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Globalization+TextInfo")]
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Globalization::TextInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}

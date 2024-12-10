@@ -161,3 +161,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::RelatedView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Data+RelatedView")]
+impl AsRef<crate::System::Data::IFilter> for crate::System::Data::RelatedView {
+    fn as_ref(&self) -> &crate::System::Data::IFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+RelatedView")]
+impl AsMut<crate::System::Data::IFilter> for crate::System::Data::RelatedView {
+    fn as_mut(&mut self) -> &mut crate::System::Data::IFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}

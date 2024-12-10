@@ -116,3 +116,31 @@ for crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataPacket")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataPacket")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataPacket")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataPacket")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

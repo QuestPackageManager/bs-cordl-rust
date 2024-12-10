@@ -4774,6 +4774,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::DiContainer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+DiContainer")]
+impl AsRef<crate::Zenject::IInstantiator> for crate::Zenject::DiContainer {
+    fn as_ref(&self) -> &crate::Zenject::IInstantiator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+DiContainer")]
+impl AsMut<crate::Zenject::IInstantiator> for crate::Zenject::DiContainer {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInstantiator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Zenject+DiContainer+ProviderInfo")]
 #[repr(C)]
 #[derive(Debug)]

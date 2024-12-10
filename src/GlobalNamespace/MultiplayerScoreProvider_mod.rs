@@ -365,3 +365,31 @@ for crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
+impl AsRef<
+    crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    >,
+> for crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
+impl AsMut<
+    crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    >,
+> for crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

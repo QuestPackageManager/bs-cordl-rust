@@ -191,3 +191,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MainThreadDis
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MainThreadDispatcher")]
+impl AsRef<crate::Zenject::ITickable> for crate::GlobalNamespace::MainThreadDispatcher {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MainThreadDispatcher")]
+impl AsMut<crate::Zenject::ITickable> for crate::GlobalNamespace::MainThreadDispatcher {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

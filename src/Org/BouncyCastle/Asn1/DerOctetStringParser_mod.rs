@@ -85,3 +85,31 @@ for crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]
+impl AsRef<crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser>
+for crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]
+impl AsMut<crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser>
+for crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]
+impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
+for crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]
+impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
+for crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}

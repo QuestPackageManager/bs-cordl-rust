@@ -962,6 +962,148 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::ScrollRect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsRef<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IBeginDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsMut<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IBeginDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsRef<crate::UnityEngine::EventSystems::IDragHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsMut<crate::UnityEngine::EventSystems::IDragHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsRef<crate::UnityEngine::EventSystems::IEndDragHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEndDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsMut<crate::UnityEngine::EventSystems::IEndDragHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEndDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsRef<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsMut<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsRef<crate::UnityEngine::EventSystems::IScrollHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IScrollHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsMut<crate::UnityEngine::EventSystems::IScrollHandler>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IScrollHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsRef<crate::UnityEngine::UI::ICanvasElement>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsMut<crate::UnityEngine::UI::ICanvasElement>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsRef<crate::UnityEngine::UI::ILayoutController>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsMut<crate::UnityEngine::UI::ILayoutController>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsRef<crate::UnityEngine::UI::ILayoutElement>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsMut<crate::UnityEngine::UI::ILayoutElement>
+for crate::UnityEngine::UI::ScrollRect {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsRef<crate::UnityEngine::UI::ILayoutGroup> for crate::UnityEngine::UI::ScrollRect {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutGroup {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+impl AsMut<crate::UnityEngine::UI::ILayoutGroup> for crate::UnityEngine::UI::ScrollRect {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutGroup {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

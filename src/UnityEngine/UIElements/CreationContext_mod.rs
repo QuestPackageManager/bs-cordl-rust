@@ -221,3 +221,23 @@ impl crate::UnityEngine::UIElements::CreationContext {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CreationContext")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::CreationContext>>
+for crate::UnityEngine::UIElements::CreationContext {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::CreationContext> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+CreationContext")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::CreationContext>>
+for crate::UnityEngine::UIElements::CreationContext {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::CreationContext,
+    > {
+        todo!()
+    }
+}

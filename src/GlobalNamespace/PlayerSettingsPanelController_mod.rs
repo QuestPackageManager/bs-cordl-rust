@@ -508,6 +508,20 @@ for crate::GlobalNamespace::PlayerSettingsPanelController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PlayerSettingsPanelController")]
+impl AsRef<crate::GlobalNamespace::IRefreshable>
+for crate::GlobalNamespace::PlayerSettingsPanelController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IRefreshable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PlayerSettingsPanelController")]
+impl AsMut<crate::GlobalNamespace::IRefreshable>
+for crate::GlobalNamespace::PlayerSettingsPanelController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRefreshable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -270,3 +270,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneRoom 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRSceneRoom")]
+impl AsRef<crate::GlobalNamespace::IOVRSceneComponent>
+for crate::GlobalNamespace::OVRSceneRoom {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IOVRSceneComponent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRSceneRoom")]
+impl AsMut<crate::GlobalNamespace::IOVRSceneComponent>
+for crate::GlobalNamespace::OVRSceneRoom {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IOVRSceneComponent {
+        unsafe { std::mem::transmute(self) }
+    }
+}

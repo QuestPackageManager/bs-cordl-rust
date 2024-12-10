@@ -106,3 +106,35 @@ for crate::GlobalNamespace::SteamLevelProductPacksSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SteamLevelProductPacksSO")]
+impl AsRef<
+    crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+    >,
+> for crate::GlobalNamespace::SteamLevelProductPacksSO {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SteamLevelProductPacksSO")]
+impl AsMut<
+    crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+    >,
+> for crate::GlobalNamespace::SteamLevelProductPacksSO {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

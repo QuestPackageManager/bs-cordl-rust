@@ -231,3 +231,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Events::UnityEven
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Events+UnityEventBase")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::Events::UnityEventBase {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Events+UnityEventBase")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::Events::UnityEventBase {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

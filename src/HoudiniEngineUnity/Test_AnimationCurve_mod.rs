@@ -73,3 +73,59 @@ for crate::HoudiniEngineUnity::Test_AnimationCurve {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+Test_AnimationCurve")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+        *mut crate::HoudiniEngineUnity::Test_AnimationCurve,
+    >,
+> for crate::HoudiniEngineUnity::Test_AnimationCurve {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+        *mut crate::HoudiniEngineUnity::Test_AnimationCurve,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+Test_AnimationCurve")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+        *mut crate::HoudiniEngineUnity::Test_AnimationCurve,
+    >,
+> for crate::HoudiniEngineUnity::Test_AnimationCurve {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+        *mut crate::HoudiniEngineUnity::Test_AnimationCurve,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+Test_AnimationCurve")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::Test_AnimationCurve,
+    >,
+> for crate::HoudiniEngineUnity::Test_AnimationCurve {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::Test_AnimationCurve,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+Test_AnimationCurve")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::Test_AnimationCurve,
+    >,
+> for crate::HoudiniEngineUnity::Test_AnimationCurve {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::Test_AnimationCurve,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -169,3 +169,23 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
+impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::Geometry::MinMaxAABB>>
+for crate::Unity::Mathematics::Geometry::MinMaxAABB {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
+impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::Geometry::MinMaxAABB>>
+for crate::Unity::Mathematics::Geometry::MinMaxAABB {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::Unity::Mathematics::Geometry::MinMaxAABB,
+    > {
+        todo!()
+    }
+}

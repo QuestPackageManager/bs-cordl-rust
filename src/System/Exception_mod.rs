@@ -372,6 +372,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Exception {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Exception")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Exception {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Exception")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Exception {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Exception+ExceptionMessageKind")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

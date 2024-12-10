@@ -164,3 +164,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerDataMod
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PlayerDataModel")]
+impl AsRef<crate::GlobalNamespace::IPlayerDataModel>
+for crate::GlobalNamespace::PlayerDataModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPlayerDataModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PlayerDataModel")]
+impl AsMut<crate::GlobalNamespace::IPlayerDataModel>
+for crate::GlobalNamespace::PlayerDataModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPlayerDataModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

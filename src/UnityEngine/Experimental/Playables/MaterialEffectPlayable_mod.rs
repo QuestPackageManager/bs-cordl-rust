@@ -45,3 +45,45 @@ impl crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
+    >,
+> for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
+    >,
+> for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
+impl AsRef<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
+impl AsMut<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}

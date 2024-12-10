@@ -107,3 +107,45 @@ impl crate::UnityEngine::UIElements::StyleScale {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleScale")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleScale>>
+for crate::UnityEngine::UIElements::StyleScale {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleScale> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleScale")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleScale>>
+for crate::UnityEngine::UIElements::StyleScale {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleScale> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleScale")]
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Scale>,
+> for crate::UnityEngine::UIElements::StyleScale {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Scale,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleScale")]
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Scale>,
+> for crate::UnityEngine::UIElements::StyleScale {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Scale,
+    > {
+        todo!()
+    }
+}

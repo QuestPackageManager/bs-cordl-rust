@@ -63,3 +63,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::InvariantComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+InvariantComparer")]
+impl AsRef<crate::System::Collections::IComparer> for crate::System::InvariantComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+InvariantComparer")]
+impl AsMut<crate::System::Collections::IComparer> for crate::System::InvariantComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

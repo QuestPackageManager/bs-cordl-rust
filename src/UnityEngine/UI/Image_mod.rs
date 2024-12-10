@@ -717,6 +717,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Image {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image")]
+impl AsRef<crate::UnityEngine::ICanvasRaycastFilter> for crate::UnityEngine::UI::Image {
+    fn as_ref(&self) -> &crate::UnityEngine::ICanvasRaycastFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Image")]
+impl AsMut<crate::UnityEngine::ICanvasRaycastFilter> for crate::UnityEngine::UI::Image {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ICanvasRaycastFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Image")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::UI::Image {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Image")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::UI::Image {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Image")]
+impl AsRef<crate::UnityEngine::UI::ILayoutElement> for crate::UnityEngine::UI::Image {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Image")]
+impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::UnityEngine::UI::Image {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

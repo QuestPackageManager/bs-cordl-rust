@@ -89,3 +89,17 @@ for crate::System::Threading::QueueUserWorkItemCallback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+QueueUserWorkItemCallback")]
+impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Threading::QueueUserWorkItemCallback {
+    fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+QueueUserWorkItemCallback")]
+impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Threading::QueueUserWorkItemCallback {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}

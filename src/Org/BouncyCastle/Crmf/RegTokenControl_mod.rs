@@ -102,3 +102,17 @@ for crate::Org::BouncyCastle::Crmf::RegTokenControl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crmf+RegTokenControl")]
+impl AsRef<crate::Org::BouncyCastle::Crmf::IControl>
+for crate::Org::BouncyCastle::Crmf::RegTokenControl {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crmf::IControl {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crmf+RegTokenControl")]
+impl AsMut<crate::Org::BouncyCastle::Crmf::IControl>
+for crate::Org::BouncyCastle::Crmf::RegTokenControl {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crmf::IControl {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -79,3 +79,51 @@ impl crate::UnityEngine::UIElements::TransformData {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TransformData")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransformData>>
+for crate::UnityEngine::UIElements::TransformData {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransformData> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TransformData")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransformData>>
+for crate::UnityEngine::UIElements::TransformData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::TransformData,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TransformData")]
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransformData,
+    >,
+> for crate::UnityEngine::UIElements::TransformData {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransformData,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TransformData")]
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransformData,
+    >,
+> for crate::UnityEngine::UIElements::TransformData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransformData,
+    > {
+        todo!()
+    }
+}

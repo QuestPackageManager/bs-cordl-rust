@@ -158,3 +158,17 @@ for crate::UnityEngine::UIElements::UIR::VectorImageManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageManager")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::UIR::VectorImageManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageManager")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::UIR::VectorImageManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

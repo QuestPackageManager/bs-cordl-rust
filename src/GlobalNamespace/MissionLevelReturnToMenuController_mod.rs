@@ -66,3 +66,17 @@ for crate::GlobalNamespace::MissionLevelReturnToMenuController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MissionLevelReturnToMenuController")]
+impl AsRef<crate::GlobalNamespace::IReturnToMenuController>
+for crate::GlobalNamespace::MissionLevelReturnToMenuController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IReturnToMenuController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionLevelReturnToMenuController")]
+impl AsMut<crate::GlobalNamespace::IReturnToMenuController>
+for crate::GlobalNamespace::MissionLevelReturnToMenuController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IReturnToMenuController {
+        unsafe { std::mem::transmute(self) }
+    }
+}

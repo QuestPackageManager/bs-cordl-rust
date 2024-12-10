@@ -107,3 +107,17 @@ for crate::UnityEngine::UIElements::DefaultGroupManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DefaultGroupManager")]
+impl AsRef<crate::UnityEngine::UIElements::IGroupManager>
+for crate::UnityEngine::UIElements::DefaultGroupManager {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IGroupManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+DefaultGroupManager")]
+impl AsMut<crate::UnityEngine::UIElements::IGroupManager>
+for crate::UnityEngine::UIElements::DefaultGroupManager {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IGroupManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}

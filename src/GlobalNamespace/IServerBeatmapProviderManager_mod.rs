@@ -66,3 +66,17 @@ for crate::GlobalNamespace::IServerBeatmapProviderManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IServerBeatmapProviderManager")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::IServerBeatmapProviderManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IServerBeatmapProviderManager")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::IServerBeatmapProviderManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

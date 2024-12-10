@@ -130,6 +130,46 @@ for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompare
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        crate::System::ValueTuple_2<
+            *mut crate::System::Type,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+> for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        crate::System::ValueTuple_2<
+            *mut crate::System::Type,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        crate::System::ValueTuple_2<
+            *mut crate::System::Type,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+> for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        crate::System::ValueTuple_2<
+            *mut crate::System::Type,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
 #[repr(C)]
 #[derive(Debug)]

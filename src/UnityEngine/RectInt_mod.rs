@@ -194,3 +194,31 @@ impl crate::UnityEngine::RectInt {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+RectInt")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::RectInt>>
+for crate::UnityEngine::RectInt {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::RectInt> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+RectInt")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::RectInt>>
+for crate::UnityEngine::RectInt {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::RectInt> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+RectInt")]
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::RectInt {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+RectInt")]
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::RectInt {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}

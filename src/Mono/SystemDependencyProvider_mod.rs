@@ -91,3 +91,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::SystemDependencyProvider
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Mono+SystemDependencyProvider")]
+impl AsRef<crate::Mono::ISystemDependencyProvider>
+for crate::Mono::SystemDependencyProvider {
+    fn as_ref(&self) -> &crate::Mono::ISystemDependencyProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Mono+SystemDependencyProvider")]
+impl AsMut<crate::Mono::ISystemDependencyProvider>
+for crate::Mono::SystemDependencyProvider {
+    fn as_mut(&mut self) -> &mut crate::Mono::ISystemDependencyProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

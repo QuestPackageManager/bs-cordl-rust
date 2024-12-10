@@ -112,3 +112,21 @@ impl crate::UnityEngine::TextCore::GlyphMetrics {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics>>
+for crate::UnityEngine::TextCore::GlyphMetrics {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics>>
+for crate::UnityEngine::TextCore::GlyphMetrics {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics> {
+        todo!()
+    }
+}

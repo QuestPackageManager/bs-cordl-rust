@@ -74,3 +74,41 @@ impl crate::UnityEngine::UIElements::EventDispatcherGate {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::EventDispatcherGate {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::EventDispatcherGate {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::EventDispatcherGate>,
+> for crate::UnityEngine::UIElements::EventDispatcherGate {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::EventDispatcherGate,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::EventDispatcherGate>,
+> for crate::UnityEngine::UIElements::EventDispatcherGate {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::EventDispatcherGate,
+    > {
+        todo!()
+    }
+}

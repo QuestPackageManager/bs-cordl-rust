@@ -595,6 +595,48 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Timelin
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::Timeline::TimelineAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::Timeline::TimelineAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
+impl AsRef<crate::UnityEngine::Timeline::IPropertyPreview>
+for crate::UnityEngine::Timeline::TimelineAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::IPropertyPreview {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
+impl AsMut<crate::UnityEngine::Timeline::IPropertyPreview>
+for crate::UnityEngine::Timeline::TimelineAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::IPropertyPreview {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
+impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
+for crate::UnityEngine::Timeline::TimelineAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
+impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
+for crate::UnityEngine::Timeline::TimelineAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

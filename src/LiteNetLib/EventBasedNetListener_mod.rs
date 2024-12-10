@@ -477,6 +477,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::EventBasedNetListe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LiteNetLib+EventBasedNetListener")]
+impl AsRef<crate::LiteNetLib::IDeliveryEventListener>
+for crate::LiteNetLib::EventBasedNetListener {
+    fn as_ref(&self) -> &crate::LiteNetLib::IDeliveryEventListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+EventBasedNetListener")]
+impl AsMut<crate::LiteNetLib::IDeliveryEventListener>
+for crate::LiteNetLib::EventBasedNetListener {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::IDeliveryEventListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+EventBasedNetListener")]
+impl AsRef<crate::LiteNetLib::INetEventListener>
+for crate::LiteNetLib::EventBasedNetListener {
+    fn as_ref(&self) -> &crate::LiteNetLib::INetEventListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+EventBasedNetListener")]
+impl AsMut<crate::LiteNetLib::INetEventListener>
+for crate::LiteNetLib::EventBasedNetListener {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::INetEventListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnConnectionRequest")]
 #[repr(C)]
 #[derive(Debug)]

@@ -57,3 +57,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CustomLevelLo
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "CustomLevelLoader")]
+impl AsRef<crate::GlobalNamespace::ICustomLevelLoader>
+for crate::GlobalNamespace::CustomLevelLoader {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ICustomLevelLoader {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CustomLevelLoader")]
+impl AsMut<crate::GlobalNamespace::ICustomLevelLoader>
+for crate::GlobalNamespace::CustomLevelLoader {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ICustomLevelLoader {
+        unsafe { std::mem::transmute(self) }
+    }
+}

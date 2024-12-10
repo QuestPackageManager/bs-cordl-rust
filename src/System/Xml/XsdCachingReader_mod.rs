@@ -628,6 +628,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XsdCachingReader 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XsdCachingReader")]
+impl AsRef<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::XsdCachingReader {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XsdCachingReader")]
+impl AsMut<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::XsdCachingReader {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

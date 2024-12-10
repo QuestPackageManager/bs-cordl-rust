@@ -218,3 +218,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JToken
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JTokenReader")]
+impl AsRef<crate::Newtonsoft::Json::IJsonLineInfo>
+for crate::Newtonsoft::Json::Linq::JTokenReader {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::IJsonLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JTokenReader")]
+impl AsMut<crate::Newtonsoft::Json::IJsonLineInfo>
+for crate::Newtonsoft::Json::Linq::JTokenReader {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::IJsonLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

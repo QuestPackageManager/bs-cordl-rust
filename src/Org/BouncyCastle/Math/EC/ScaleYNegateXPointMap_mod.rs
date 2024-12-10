@@ -75,3 +75,17 @@ for crate::Org::BouncyCastle::Math::EC::ScaleYNegateXPointMap {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Math+EC+ScaleYNegateXPointMap")]
+impl AsRef<crate::Org::BouncyCastle::Math::EC::ECPointMap>
+for crate::Org::BouncyCastle::Math::EC::ScaleYNegateXPointMap {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::EC::ECPointMap {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+ScaleYNegateXPointMap")]
+impl AsMut<crate::Org::BouncyCastle::Math::EC::ECPointMap>
+for crate::Org::BouncyCastle::Math::EC::ScaleYNegateXPointMap {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Math::EC::ECPointMap {
+        unsafe { std::mem::transmute(self) }
+    }
+}

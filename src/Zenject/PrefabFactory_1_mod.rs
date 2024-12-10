@@ -92,3 +92,37 @@ for crate::Zenject::PrefabFactory_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+PrefabFactory_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IFactory>
+for crate::Zenject::PrefabFactory_1<T> {
+    fn as_ref(&self) -> &crate::Zenject::IFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PrefabFactory_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IFactory>
+for crate::Zenject::PrefabFactory_1<T> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PrefabFactory_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::Zenject::IFactory_2<*mut crate::UnityEngine::Object, T>>
+for crate::Zenject::PrefabFactory_1<T> {
+    fn as_ref(&self) -> &crate::Zenject::IFactory_2<*mut crate::UnityEngine::Object, T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PrefabFactory_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::Zenject::IFactory_2<*mut crate::UnityEngine::Object, T>>
+for crate::Zenject::PrefabFactory_1<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Zenject::IFactory_2<*mut crate::UnityEngine::Object, T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

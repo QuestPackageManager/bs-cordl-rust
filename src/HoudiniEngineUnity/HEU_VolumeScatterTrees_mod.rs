@@ -77,3 +77,31 @@ for crate::HoudiniEngineUnity::HEU_VolumeScatterTrees {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeScatterTrees")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
+    >,
+> for crate::HoudiniEngineUnity::HEU_VolumeScatterTrees {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeScatterTrees")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
+    >,
+> for crate::HoudiniEngineUnity::HEU_VolumeScatterTrees {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

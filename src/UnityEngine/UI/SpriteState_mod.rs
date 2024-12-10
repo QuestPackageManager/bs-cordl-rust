@@ -128,3 +128,21 @@ impl crate::UnityEngine::UI::SpriteState {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UI+SpriteState")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UI::SpriteState>>
+for crate::UnityEngine::UI::SpriteState {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UI::SpriteState> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UI+SpriteState")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UI::SpriteState>>
+for crate::UnityEngine::UI::SpriteState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UI::SpriteState> {
+        todo!()
+    }
+}

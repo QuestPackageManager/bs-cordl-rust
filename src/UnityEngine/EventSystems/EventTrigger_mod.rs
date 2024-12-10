@@ -362,6 +362,264 @@ for crate::UnityEngine::EventSystems::EventTrigger {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IBeginDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IBeginDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::ICancelHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ICancelHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::ICancelHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ICancelHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IDeselectHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDeselectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IDeselectHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDeselectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IDragHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IDragHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IDropHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDropHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IDropHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDropHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IEndDragHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEndDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IEndDragHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEndDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IMoveHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IMoveHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IMoveHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IMoveHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerDownHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerDownHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerDownHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerDownHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerUpHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerUpHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IScrollHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IScrollHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IScrollHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IScrollHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::ISelectHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISelectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::ISelectHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISelectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+Entry")]
 #[repr(C)]
 #[derive(Debug)]

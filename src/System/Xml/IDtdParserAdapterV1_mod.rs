@@ -60,3 +60,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::IDtdParserAdapter
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
+impl AsRef<crate::System::Xml::IDtdParserAdapter>
+for crate::System::Xml::IDtdParserAdapterV1 {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
+impl AsMut<crate::System::Xml::IDtdParserAdapter>
+for crate::System::Xml::IDtdParserAdapterV1 {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
+impl AsRef<crate::System::Xml::IDtdParserAdapterWithValidation>
+for crate::System::Xml::IDtdParserAdapterV1 {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapterWithValidation {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
+impl AsMut<crate::System::Xml::IDtdParserAdapterWithValidation>
+for crate::System::Xml::IDtdParserAdapterV1 {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapterWithValidation {
+        unsafe { std::mem::transmute(self) }
+    }
+}

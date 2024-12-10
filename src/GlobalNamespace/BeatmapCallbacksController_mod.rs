@@ -331,6 +331,20 @@ for crate::GlobalNamespace::BeatmapCallbacksController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapCallbacksController")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::BeatmapCallbacksController {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapCallbacksController")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::BeatmapCallbacksController {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehavior")]
 #[repr(C)]
 #[derive(Debug)]
@@ -418,6 +432,24 @@ for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehavior")]
+impl AsRef<crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior>
+for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehavior")]
+impl AsMut<crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior>
+for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehaviorWithLastState")]
@@ -511,6 +543,24 @@ for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWith
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehaviorWithLastState")]
+impl AsRef<crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior>
+for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWithLastState {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehaviorWithLastState")]
+impl AsMut<crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior>
+for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWithLastState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapCallbacksController+ICallCallbacksBehavior")]

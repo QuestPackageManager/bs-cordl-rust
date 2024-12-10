@@ -69,3 +69,17 @@ for crate::GlobalNamespace::NoInvitePlatformHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoInvitePlatformHandler")]
+impl AsRef<crate::GlobalNamespace::IInvitePlatformHandler>
+for crate::GlobalNamespace::NoInvitePlatformHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IInvitePlatformHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoInvitePlatformHandler")]
+impl AsMut<crate::GlobalNamespace::IInvitePlatformHandler>
+for crate::GlobalNamespace::NoInvitePlatformHandler {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IInvitePlatformHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

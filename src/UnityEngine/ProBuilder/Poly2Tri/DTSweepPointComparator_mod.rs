@@ -70,3 +70,31 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    >,
+> for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    >,
+> for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

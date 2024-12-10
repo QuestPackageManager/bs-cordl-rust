@@ -76,3 +76,19 @@ for crate::Org::BouncyCastle::Cms::SimpleAttributeTableGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Cms+SimpleAttributeTableGenerator")]
+impl AsRef<crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator>
+for crate::Org::BouncyCastle::Cms::SimpleAttributeTableGenerator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Cms+SimpleAttributeTableGenerator")]
+impl AsMut<crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator>
+for crate::Org::BouncyCastle::Cms::SimpleAttributeTableGenerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

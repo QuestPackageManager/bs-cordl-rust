@@ -96,3 +96,17 @@ impl crate::System::RuntimeMethodHandle {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+RuntimeMethodHandle")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::RuntimeMethodHandle {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+RuntimeMethodHandle")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::RuntimeMethodHandle {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        todo!()
+    }
+}

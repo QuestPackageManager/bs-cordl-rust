@@ -117,3 +117,49 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
+impl AsRef<crate::System::Runtime::Remoting::Channels::IChannel>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Channels::IChannel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
+impl AsMut<crate::System::Runtime::Remoting::Channels::IChannel>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Channels::IChannel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
+impl AsRef<crate::System::Runtime::Remoting::Channels::IChannelReceiver>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Channels::IChannelReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
+impl AsMut<crate::System::Runtime::Remoting::Channels::IChannelReceiver>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Remoting::Channels::IChannelReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
+impl AsRef<crate::System::Runtime::Remoting::Channels::IChannelSender>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Channels::IChannelSender {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
+impl AsMut<crate::System::Runtime::Remoting::Channels::IChannelSender>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Remoting::Channels::IChannelSender {
+        unsafe { std::mem::transmute(self) }
+    }
+}

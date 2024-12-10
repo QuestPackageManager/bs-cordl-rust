@@ -106,3 +106,35 @@ impl crate::GlobalNamespace::PoseSerializable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "PoseSerializable")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::PoseSerializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "PoseSerializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::PoseSerializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "PoseSerializable")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable>>
+for crate::GlobalNamespace::PoseSerializable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable> {
+        todo!()
+    }
+}
+#[cfg(feature = "PoseSerializable")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable>>
+for crate::GlobalNamespace::PoseSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable> {
+        todo!()
+    }
+}

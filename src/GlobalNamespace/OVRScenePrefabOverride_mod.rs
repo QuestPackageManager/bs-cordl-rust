@@ -78,3 +78,17 @@ for crate::GlobalNamespace::OVRScenePrefabOverride {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRScenePrefabOverride")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::GlobalNamespace::OVRScenePrefabOverride {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRScenePrefabOverride")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::GlobalNamespace::OVRScenePrefabOverride {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

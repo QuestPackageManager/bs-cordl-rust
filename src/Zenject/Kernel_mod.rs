@@ -113,3 +113,75 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::Kernel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+Kernel")]
+impl AsRef<crate::System::IDisposable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Kernel")]
+impl AsMut<crate::System::IDisposable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Kernel")]
+impl AsRef<crate::Zenject::IFixedTickable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::Zenject::IFixedTickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Kernel")]
+impl AsMut<crate::Zenject::IFixedTickable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IFixedTickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Kernel")]
+impl AsRef<crate::Zenject::IInitializable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Kernel")]
+impl AsMut<crate::Zenject::IInitializable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Kernel")]
+impl AsRef<crate::Zenject::ILateDisposable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::Zenject::ILateDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Kernel")]
+impl AsMut<crate::Zenject::ILateDisposable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ILateDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Kernel")]
+impl AsRef<crate::Zenject::ILateTickable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::Zenject::ILateTickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Kernel")]
+impl AsMut<crate::Zenject::ILateTickable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ILateTickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Kernel")]
+impl AsRef<crate::Zenject::ITickable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Kernel")]
+impl AsMut<crate::Zenject::ITickable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

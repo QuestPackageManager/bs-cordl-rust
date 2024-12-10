@@ -123,3 +123,17 @@ for crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabWithParams")]
+impl AsRef<crate::Zenject::ISubContainerCreator>
+for crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
+    fn as_ref(&self) -> &crate::Zenject::ISubContainerCreator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabWithParams")]
+impl AsMut<crate::Zenject::ISubContainerCreator>
+for crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ISubContainerCreator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

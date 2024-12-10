@@ -69,3 +69,17 @@ for crate::GlobalNamespace::MonotonicTimeProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MonotonicTimeProvider")]
+impl AsRef<crate::BGNet::Core::ITimeProvider>
+for crate::GlobalNamespace::MonotonicTimeProvider {
+    fn as_ref(&self) -> &crate::BGNet::Core::ITimeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MonotonicTimeProvider")]
+impl AsMut<crate::BGNet::Core::ITimeProvider>
+for crate::GlobalNamespace::MonotonicTimeProvider {
+    fn as_mut(&mut self) -> &mut crate::BGNet::Core::ITimeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

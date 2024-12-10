@@ -288,3 +288,31 @@ for crate::UnityEngine::Timeline::ControlPlayableAsset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+ControlPlayableAsset")]
+impl AsRef<crate::UnityEngine::Timeline::IPropertyPreview>
+for crate::UnityEngine::Timeline::ControlPlayableAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::IPropertyPreview {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+ControlPlayableAsset")]
+impl AsMut<crate::UnityEngine::Timeline::IPropertyPreview>
+for crate::UnityEngine::Timeline::ControlPlayableAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::IPropertyPreview {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+ControlPlayableAsset")]
+impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
+for crate::UnityEngine::Timeline::ControlPlayableAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+ControlPlayableAsset")]
+impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
+for crate::UnityEngine::Timeline::ControlPlayableAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}

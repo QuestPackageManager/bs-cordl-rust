@@ -675,6 +675,118 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Selectable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsRef<crate::UnityEngine::EventSystems::IDeselectHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDeselectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsMut<crate::UnityEngine::EventSystems::IDeselectHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDeselectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsRef<crate::UnityEngine::EventSystems::IMoveHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IMoveHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsMut<crate::UnityEngine::EventSystems::IMoveHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IMoveHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerDownHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerDownHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerDownHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerDownHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerUpHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerUpHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsRef<crate::UnityEngine::EventSystems::ISelectHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISelectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Selectable")]
+impl AsMut<crate::UnityEngine::EventSystems::ISelectHandler>
+for crate::UnityEngine::UI::Selectable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISelectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

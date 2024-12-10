@@ -115,3 +115,17 @@ for crate::GlobalNamespace::BasicConnectionRequestHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BasicConnectionRequestHandler")]
+impl AsRef<crate::GlobalNamespace::IConnectionRequestHandler>
+for crate::GlobalNamespace::BasicConnectionRequestHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectionRequestHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BasicConnectionRequestHandler")]
+impl AsMut<crate::GlobalNamespace::IConnectionRequestHandler>
+for crate::GlobalNamespace::BasicConnectionRequestHandler {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectionRequestHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

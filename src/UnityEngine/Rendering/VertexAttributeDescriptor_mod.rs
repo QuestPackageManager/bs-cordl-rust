@@ -163,3 +163,27 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::Rendering::VertexAttributeDescriptor>,
+> for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::Rendering::VertexAttributeDescriptor>,
+> for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+    > {
+        todo!()
+    }
+}

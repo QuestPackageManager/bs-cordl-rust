@@ -62,3 +62,35 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatmapLevelSaveDataVersion4::
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BpmData")]
+impl AsRef<crate::BeatmapSaveDataCommon::IBeat>
+for crate::BeatmapLevelSaveDataVersion4::BpmData {
+    fn as_ref(&self) -> &crate::BeatmapSaveDataCommon::IBeat {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BpmData")]
+impl AsMut<crate::BeatmapSaveDataCommon::IBeat>
+for crate::BeatmapLevelSaveDataVersion4::BpmData {
+    fn as_mut(&mut self) -> &mut crate::BeatmapSaveDataCommon::IBeat {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BpmData")]
+impl AsRef<crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat>>
+for crate::BeatmapLevelSaveDataVersion4::BpmData {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BpmData")]
+impl AsMut<crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat>>
+for crate::BeatmapLevelSaveDataVersion4::BpmData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<*mut crate::BeatmapSaveDataCommon::IBeat> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

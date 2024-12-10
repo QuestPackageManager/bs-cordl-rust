@@ -87,3 +87,51 @@ impl crate::UnityEngine::UIElements::TransitionData {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TransitionData")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransitionData>>
+for crate::UnityEngine::UIElements::TransitionData {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransitionData> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TransitionData")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransitionData>>
+for crate::UnityEngine::UIElements::TransitionData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::TransitionData,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TransitionData")]
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransitionData,
+    >,
+> for crate::UnityEngine::UIElements::TransitionData {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransitionData,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TransitionData")]
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransitionData,
+    >,
+> for crate::UnityEngine::UIElements::TransitionData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransitionData,
+    > {
+        todo!()
+    }
+}

@@ -797,6 +797,78 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JValue
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsRef<crate::System::IComparable> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsMut<crate::System::IComparable> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsRef<crate::System::IComparable_1<*mut crate::Newtonsoft::Json::Linq::JValue>>
+for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<*mut crate::Newtonsoft::Json::Linq::JValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsMut<crate::System::IComparable_1<*mut crate::Newtonsoft::Json::Linq::JValue>>
+for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<*mut crate::Newtonsoft::Json::Linq::JValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsRef<crate::System::IConvertible> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsMut<crate::System::IConvertible> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::Newtonsoft::Json::Linq::JValue>>
+for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::Newtonsoft::Json::Linq::JValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::Newtonsoft::Json::Linq::JValue>>
+for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::Newtonsoft::Json::Linq::JValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsRef<crate::System::IFormattable> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsMut<crate::System::IFormattable> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
 #[repr(C)]
 #[derive(Debug)]

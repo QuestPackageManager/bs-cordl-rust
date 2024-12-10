@@ -513,3 +513,17 @@ for crate::System::Xml::Schema::SchemaElementDecl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaElementDecl")]
+impl AsRef<crate::System::Xml::IDtdAttributeListInfo>
+for crate::System::Xml::Schema::SchemaElementDecl {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdAttributeListInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+SchemaElementDecl")]
+impl AsMut<crate::System::Xml::IDtdAttributeListInfo>
+for crate::System::Xml::Schema::SchemaElementDecl {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdAttributeListInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

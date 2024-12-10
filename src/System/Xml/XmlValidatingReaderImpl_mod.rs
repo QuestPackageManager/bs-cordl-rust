@@ -753,6 +753,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlValidatingRead
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl")]
+impl AsRef<crate::System::Xml::IXmlLineInfo>
+for crate::System::Xml::XmlValidatingReaderImpl {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl")]
+impl AsMut<crate::System::Xml::IXmlLineInfo>
+for crate::System::Xml::XmlValidatingReaderImpl {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl")]
+impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XmlValidatingReaderImpl {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl")]
+impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XmlValidatingReaderImpl {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ParsingFunction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -874,5 +902,19 @@ for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
+impl AsRef<crate::System::Xml::IValidationEventHandling>
+for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
+    fn as_ref(&self) -> &crate::System::Xml::IValidationEventHandling {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
+impl AsMut<crate::System::Xml::IValidationEventHandling>
+for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IValidationEventHandling {
+        unsafe { std::mem::transmute(self) }
     }
 }

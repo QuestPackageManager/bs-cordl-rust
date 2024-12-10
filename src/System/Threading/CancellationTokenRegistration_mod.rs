@@ -100,3 +100,55 @@ impl crate::System::Threading::CancellationTokenRegistration {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+impl AsRef<crate::System::IAsyncDisposable>
+for crate::System::Threading::CancellationTokenRegistration {
+    fn as_ref(&self) -> &crate::System::IAsyncDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+impl AsMut<crate::System::IAsyncDisposable>
+for crate::System::Threading::CancellationTokenRegistration {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+impl AsRef<crate::System::IDisposable>
+for crate::System::Threading::CancellationTokenRegistration {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+impl AsMut<crate::System::IDisposable>
+for crate::System::Threading::CancellationTokenRegistration {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration>,
+> for crate::System::Threading::CancellationTokenRegistration {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::System::Threading::CancellationTokenRegistration,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration>,
+> for crate::System::Threading::CancellationTokenRegistration {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::System::Threading::CancellationTokenRegistration,
+    > {
+        todo!()
+    }
+}

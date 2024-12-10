@@ -97,3 +97,19 @@ for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Proxies+ProxyAttribute")]
+impl AsRef<crate::System::Runtime::Remoting::Contexts::IContextAttribute>
+for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Contexts::IContextAttribute {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Proxies+ProxyAttribute")]
+impl AsMut<crate::System::Runtime::Remoting::Contexts::IContextAttribute>
+for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Remoting::Contexts::IContextAttribute {
+        unsafe { std::mem::transmute(self) }
+    }
+}

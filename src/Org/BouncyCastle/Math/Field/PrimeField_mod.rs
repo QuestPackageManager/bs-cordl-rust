@@ -97,3 +97,17 @@ for crate::Org::BouncyCastle::Math::Field::PrimeField {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Math+Field+PrimeField")]
+impl AsRef<crate::Org::BouncyCastle::Math::Field::IFiniteField>
+for crate::Org::BouncyCastle::Math::Field::PrimeField {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::Field::IFiniteField {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+Field+PrimeField")]
+impl AsMut<crate::Org::BouncyCastle::Math::Field::IFiniteField>
+for crate::Org::BouncyCastle::Math::Field::PrimeField {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Math::Field::IFiniteField {
+        unsafe { std::mem::transmute(self) }
+    }
+}

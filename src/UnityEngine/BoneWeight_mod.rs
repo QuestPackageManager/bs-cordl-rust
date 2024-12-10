@@ -211,3 +211,19 @@ impl crate::UnityEngine::BoneWeight {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+BoneWeight")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::BoneWeight>>
+for crate::UnityEngine::BoneWeight {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::BoneWeight> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+BoneWeight")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::BoneWeight>>
+for crate::UnityEngine::BoneWeight {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::BoneWeight> {
+        todo!()
+    }
+}

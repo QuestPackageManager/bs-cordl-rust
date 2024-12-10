@@ -90,3 +90,17 @@ for crate::UnityEngine::IntegratedSubsystemDescriptor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+IntegratedSubsystemDescriptor")]
+impl AsRef<crate::UnityEngine::ISubsystemDescriptor>
+for crate::UnityEngine::IntegratedSubsystemDescriptor {
+    fn as_ref(&self) -> &crate::UnityEngine::ISubsystemDescriptor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+IntegratedSubsystemDescriptor")]
+impl AsMut<crate::UnityEngine::ISubsystemDescriptor>
+for crate::UnityEngine::IntegratedSubsystemDescriptor {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISubsystemDescriptor {
+        unsafe { std::mem::transmute(self) }
+    }
+}

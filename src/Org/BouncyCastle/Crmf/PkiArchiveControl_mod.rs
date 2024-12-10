@@ -113,3 +113,17 @@ for crate::Org::BouncyCastle::Crmf::PkiArchiveControl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crmf+PkiArchiveControl")]
+impl AsRef<crate::Org::BouncyCastle::Crmf::IControl>
+for crate::Org::BouncyCastle::Crmf::PkiArchiveControl {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crmf::IControl {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crmf+PkiArchiveControl")]
+impl AsMut<crate::Org::BouncyCastle::Crmf::IControl>
+for crate::Org::BouncyCastle::Crmf::PkiArchiveControl {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crmf::IControl {
+        unsafe { std::mem::transmute(self) }
+    }
+}

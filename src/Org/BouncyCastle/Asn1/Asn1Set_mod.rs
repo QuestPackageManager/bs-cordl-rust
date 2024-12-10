@@ -236,6 +236,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::Asn1S
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::Org::BouncyCastle::Asn1::Asn1Set {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::Org::BouncyCastle::Asn1::Asn1Set {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
 #[repr(C)]
 #[derive(Debug)]
@@ -323,6 +337,34 @@ for crate::Org::BouncyCastle::Asn1::Asn1Set_Asn1SetParserImpl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
+impl AsRef<crate::Org::BouncyCastle::Asn1::Asn1SetParser>
+for crate::Org::BouncyCastle::Asn1::Asn1Set_Asn1SetParserImpl {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::Asn1SetParser {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
+impl AsMut<crate::Org::BouncyCastle::Asn1::Asn1SetParser>
+for crate::Org::BouncyCastle::Asn1::Asn1Set_Asn1SetParserImpl {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::Asn1SetParser {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
+impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
+for crate::Org::BouncyCastle::Asn1::Asn1Set_Asn1SetParserImpl {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
+impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
+for crate::Org::BouncyCastle::Asn1::Asn1Set_Asn1SetParserImpl {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+DerComparer")]
 #[repr(C)]
 #[derive(Debug)]
@@ -386,5 +428,19 @@ for crate::Org::BouncyCastle::Asn1::Asn1Set_DerComparer {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+DerComparer")]
+impl AsRef<crate::System::Collections::IComparer>
+for crate::Org::BouncyCastle::Asn1::Asn1Set_DerComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+DerComparer")]
+impl AsMut<crate::System::Collections::IComparer>
+for crate::Org::BouncyCastle::Asn1::Asn1Set_DerComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
     }
 }

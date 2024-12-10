@@ -133,3 +133,17 @@ for crate::GlobalNamespace::LightTranslationGroup {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LightTranslationGroup")]
+impl AsRef<crate::GlobalNamespace::IEditTimeValidated>
+for crate::GlobalNamespace::LightTranslationGroup {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IEditTimeValidated {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LightTranslationGroup")]
+impl AsMut<crate::GlobalNamespace::IEditTimeValidated>
+for crate::GlobalNamespace::LightTranslationGroup {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEditTimeValidated {
+        unsafe { std::mem::transmute(self) }
+    }
+}

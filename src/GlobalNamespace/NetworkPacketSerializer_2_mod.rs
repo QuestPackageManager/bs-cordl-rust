@@ -500,3 +500,47 @@ for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NetworkPacketSerializer_2")]
+impl<
+    TType: quest_hook::libil2cpp::Type,
+    TData: quest_hook::libil2cpp::Type,
+> AsRef<crate::GlobalNamespace::INetworkPacketSerializer_1<TData>>
+for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPacketSerializer_1<TData> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NetworkPacketSerializer_2")]
+impl<
+    TType: quest_hook::libil2cpp::Type,
+    TData: quest_hook::libil2cpp::Type,
+> AsMut<crate::GlobalNamespace::INetworkPacketSerializer_1<TData>>
+for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INetworkPacketSerializer_1<TData> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NetworkPacketSerializer_2")]
+impl<
+    TType: quest_hook::libil2cpp::Type,
+    TData: quest_hook::libil2cpp::Type,
+> AsRef<crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>>
+for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NetworkPacketSerializer_2")]
+impl<
+    TType: quest_hook::libil2cpp::Type,
+    TData: quest_hook::libil2cpp::Type,
+> AsMut<crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>>
+for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

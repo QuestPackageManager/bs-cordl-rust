@@ -64,3 +64,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IValueTupleInternal {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+IValueTupleInternal")]
+impl AsRef<crate::System::Runtime::CompilerServices::ITuple>
+for crate::System::IValueTupleInternal {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::ITuple {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IValueTupleInternal")]
+impl AsMut<crate::System::Runtime::CompilerServices::ITuple>
+for crate::System::IValueTupleInternal {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::CompilerServices::ITuple {
+        unsafe { std::mem::transmute(self) }
+    }
+}

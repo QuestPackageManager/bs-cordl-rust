@@ -133,3 +133,31 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarPoseDataProvider")]
+impl AsRef<crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider>
+for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
+    fn as_ref(&self) -> &crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarPoseDataProvider")]
+impl AsMut<crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider>
+for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
+    fn as_mut(&mut self) -> &mut crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarPoseDataProvider")]
+impl AsRef<crate::Zenject::ITickable>
+for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarPoseDataProvider")]
+impl AsMut<crate::Zenject::ITickable>
+for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

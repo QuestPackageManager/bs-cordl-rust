@@ -111,3 +111,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BasePlatformI
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BasePlatformInit")]
+impl AsRef<crate::GlobalNamespace::IPlatformInit>
+for crate::GlobalNamespace::BasePlatformInit {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPlatformInit {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BasePlatformInit")]
+impl AsMut<crate::GlobalNamespace::IPlatformInit>
+for crate::GlobalNamespace::BasePlatformInit {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPlatformInit {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BasePlatformInit")]
+impl AsRef<crate::Zenject::IInitializable> for crate::GlobalNamespace::BasePlatformInit {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BasePlatformInit")]
+impl AsMut<crate::Zenject::IInitializable> for crate::GlobalNamespace::BasePlatformInit {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

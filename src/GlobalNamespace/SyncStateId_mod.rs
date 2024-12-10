@@ -128,3 +128,49 @@ impl crate::GlobalNamespace::SyncStateId {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "SyncStateId")]
+impl AsRef<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SyncStateId,
+    >,
+> for crate::GlobalNamespace::SyncStateId {
+    fn as_ref(
+        &self,
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SyncStateId,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "SyncStateId")]
+impl AsMut<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SyncStateId,
+    >,
+> for crate::GlobalNamespace::SyncStateId {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SyncStateId,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "SyncStateId")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::SyncStateId>>
+for crate::GlobalNamespace::SyncStateId {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::SyncStateId> {
+        todo!()
+    }
+}
+#[cfg(feature = "SyncStateId")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::SyncStateId>>
+for crate::GlobalNamespace::SyncStateId {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::SyncStateId> {
+        todo!()
+    }
+}

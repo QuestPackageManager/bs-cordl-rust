@@ -415,3 +415,19 @@ for crate::GlobalNamespace::MultiplayerPlayersManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerPlayersManager")]
+impl AsRef<crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher>
+for crate::GlobalNamespace::MultiplayerPlayersManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerPlayersManager")]
+impl AsMut<crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher>
+for crate::GlobalNamespace::MultiplayerPlayersManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
+        unsafe { std::mem::transmute(self) }
+    }
+}

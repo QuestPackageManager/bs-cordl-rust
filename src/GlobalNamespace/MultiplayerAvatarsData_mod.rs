@@ -134,3 +134,51 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "MultiplayerAvatarsData")]
+impl AsRef<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::MultiplayerAvatarsData,
+    >,
+> for crate::GlobalNamespace::MultiplayerAvatarsData {
+    fn as_ref(
+        &self,
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::MultiplayerAvatarsData,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "MultiplayerAvatarsData")]
+impl AsMut<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::MultiplayerAvatarsData,
+    >,
+> for crate::GlobalNamespace::MultiplayerAvatarsData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::MultiplayerAvatarsData,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "MultiplayerAvatarsData")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::MultiplayerAvatarsData>>
+for crate::GlobalNamespace::MultiplayerAvatarsData {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::MultiplayerAvatarsData> {
+        todo!()
+    }
+}
+#[cfg(feature = "MultiplayerAvatarsData")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::MultiplayerAvatarsData>>
+for crate::GlobalNamespace::MultiplayerAvatarsData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::GlobalNamespace::MultiplayerAvatarsData,
+    > {
+        todo!()
+    }
+}

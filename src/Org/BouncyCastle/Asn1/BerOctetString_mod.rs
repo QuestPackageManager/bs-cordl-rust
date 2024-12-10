@@ -232,6 +232,20 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::Org::BouncyCastle::Asn1::BerOctetString {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::Org::BouncyCastle::Asn1::BerOctetString {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -325,5 +339,19 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
     }
 }

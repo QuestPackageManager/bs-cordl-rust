@@ -89,3 +89,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Playables::Playab
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Playables+PlayableAsset")]
+impl AsRef<crate::UnityEngine::Playables::IPlayableAsset>
+for crate::UnityEngine::Playables::PlayableAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Playables+PlayableAsset")]
+impl AsMut<crate::UnityEngine::Playables::IPlayableAsset>
+for crate::UnityEngine::Playables::PlayableAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}

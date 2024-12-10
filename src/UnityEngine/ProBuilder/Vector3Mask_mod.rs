@@ -141,3 +141,21 @@ impl crate::UnityEngine::ProBuilder::Vector3Mask {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Vector3Mask")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask>>
+for crate::UnityEngine::ProBuilder::Vector3Mask {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+Vector3Mask")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask>>
+for crate::UnityEngine::ProBuilder::Vector3Mask {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask> {
+        todo!()
+    }
+}

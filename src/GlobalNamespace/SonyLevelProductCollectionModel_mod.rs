@@ -444,6 +444,62 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SonyLevelProductCollectionModel+LevelPackProductData")]
+impl AsRef<
+    crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+    >,
+> for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SonyLevelProductCollectionModel+LevelPackProductData")]
+impl AsMut<
+    crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+    >,
+> for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SonyLevelProductCollectionModel+LevelPackProductData")]
+impl AsRef<
+    crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+    >,
+> for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SonyLevelProductCollectionModel+LevelPackProductData")]
+impl AsMut<
+    crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+    >,
+> for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackRedirectionData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -752,6 +808,20 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "SonyLevelProductCollectionModel+LevelProductData")]
+impl AsRef<crate::GlobalNamespace::ILevelProductData>
+for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelProductData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SonyLevelProductCollectionModel+LevelProductData")]
+impl AsMut<crate::GlobalNamespace::ILevelProductData>
+for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelProductData {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+ProductData")]

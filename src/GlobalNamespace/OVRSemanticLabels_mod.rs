@@ -165,3 +165,49 @@ impl crate::GlobalNamespace::OVRSemanticLabels {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRSemanticLabels")]
+impl AsRef<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRSemanticLabels,
+    >,
+> for crate::GlobalNamespace::OVRSemanticLabels {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRSemanticLabels,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRSemanticLabels")]
+impl AsMut<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRSemanticLabels,
+    >,
+> for crate::GlobalNamespace::OVRSemanticLabels {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRSemanticLabels,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRSemanticLabels")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSemanticLabels>>
+for crate::GlobalNamespace::OVRSemanticLabels {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRSemanticLabels> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRSemanticLabels")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSemanticLabels>>
+for crate::GlobalNamespace::OVRSemanticLabels {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRSemanticLabels> {
+        todo!()
+    }
+}

@@ -67,3 +67,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PrefabProviderResourc
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+PrefabProviderResource")]
+impl AsRef<crate::Zenject::IPrefabProvider> for crate::Zenject::PrefabProviderResource {
+    fn as_ref(&self) -> &crate::Zenject::IPrefabProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PrefabProviderResource")]
+impl AsMut<crate::Zenject::IPrefabProvider> for crate::Zenject::PrefabProviderResource {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IPrefabProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

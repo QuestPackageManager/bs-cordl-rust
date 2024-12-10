@@ -188,3 +188,37 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelM
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapLevelMask")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BeatmapLevelMask {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelMask")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BeatmapLevelMask {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelMask")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::GlobalNamespace::BeatmapLevelMask>>
+for crate::GlobalNamespace::BeatmapLevelMask {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::GlobalNamespace::BeatmapLevelMask> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelMask")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::GlobalNamespace::BeatmapLevelMask>>
+for crate::GlobalNamespace::BeatmapLevelMask {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::BeatmapLevelMask,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

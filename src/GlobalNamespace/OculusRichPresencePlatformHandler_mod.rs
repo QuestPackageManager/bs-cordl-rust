@@ -76,3 +76,17 @@ for crate::GlobalNamespace::OculusRichPresencePlatformHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusRichPresencePlatformHandler")]
+impl AsRef<crate::GlobalNamespace::IRichPresencePlatformHandler>
+for crate::GlobalNamespace::OculusRichPresencePlatformHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IRichPresencePlatformHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusRichPresencePlatformHandler")]
+impl AsMut<crate::GlobalNamespace::IRichPresencePlatformHandler>
+for crate::GlobalNamespace::OculusRichPresencePlatformHandler {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRichPresencePlatformHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

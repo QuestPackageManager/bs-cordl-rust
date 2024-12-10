@@ -77,3 +77,17 @@ for crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfo")]
+impl AsRef<crate::System::Xml::IXmlLineInfo>
+for crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfo")]
+impl AsMut<crate::System::Xml::IXmlLineInfo>
+for crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -185,3 +185,45 @@ impl crate::GlobalNamespace::OVRRoomLayout {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRRoomLayout")]
+impl AsRef<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRRoomLayout>,
+> for crate::GlobalNamespace::OVRRoomLayout {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRRoomLayout,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRRoomLayout")]
+impl AsMut<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRRoomLayout>,
+> for crate::GlobalNamespace::OVRRoomLayout {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRRoomLayout,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRRoomLayout")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRRoomLayout>>
+for crate::GlobalNamespace::OVRRoomLayout {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRRoomLayout> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRRoomLayout")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRRoomLayout>>
+for crate::GlobalNamespace::OVRRoomLayout {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRRoomLayout> {
+        todo!()
+    }
+}

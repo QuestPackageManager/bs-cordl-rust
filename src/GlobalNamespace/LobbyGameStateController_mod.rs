@@ -1000,3 +1000,45 @@ for crate::GlobalNamespace::LobbyGameStateController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LobbyGameStateController")]
+impl AsRef<crate::GlobalNamespace::ILobbyGameStateController>
+for crate::GlobalNamespace::LobbyGameStateController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILobbyGameStateController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyGameStateController")]
+impl AsMut<crate::GlobalNamespace::ILobbyGameStateController>
+for crate::GlobalNamespace::LobbyGameStateController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILobbyGameStateController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyGameStateController")]
+impl AsRef<crate::GlobalNamespace::ILobbyGameStateControllerBase>
+for crate::GlobalNamespace::LobbyGameStateController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILobbyGameStateControllerBase {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyGameStateController")]
+impl AsMut<crate::GlobalNamespace::ILobbyGameStateControllerBase>
+for crate::GlobalNamespace::LobbyGameStateController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILobbyGameStateControllerBase {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyGameStateController")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::LobbyGameStateController {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyGameStateController")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::LobbyGameStateController {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

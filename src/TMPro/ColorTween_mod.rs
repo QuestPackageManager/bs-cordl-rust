@@ -179,6 +179,18 @@ impl crate::TMPro::ColorTween {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "TMPro+ColorTween")]
+impl AsRef<crate::TMPro::ITweenValue> for crate::TMPro::ColorTween {
+    fn as_ref(&self) -> &crate::TMPro::ITweenValue {
+        todo!()
+    }
+}
+#[cfg(feature = "TMPro+ColorTween")]
+impl AsMut<crate::TMPro::ITweenValue> for crate::TMPro::ColorTween {
+    fn as_mut(&mut self) -> &mut crate::TMPro::ITweenValue {
+        todo!()
+    }
+}
 #[cfg(feature = "TMPro+ColorTween+ColorTweenCallback")]
 #[repr(C)]
 #[derive(Debug)]

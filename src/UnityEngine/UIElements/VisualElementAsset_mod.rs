@@ -150,3 +150,17 @@ for crate::UnityEngine::UIElements::VisualElementAsset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElementAsset")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::UIElements::VisualElementAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElementAsset")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::UIElements::VisualElementAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

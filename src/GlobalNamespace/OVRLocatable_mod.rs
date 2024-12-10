@@ -183,6 +183,48 @@ impl crate::GlobalNamespace::OVRLocatable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRLocatable")]
+impl AsRef<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRLocatable>,
+> for crate::GlobalNamespace::OVRLocatable {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRLocatable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRLocatable")]
+impl AsMut<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRLocatable>,
+> for crate::GlobalNamespace::OVRLocatable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRLocatable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRLocatable")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable>>
+for crate::GlobalNamespace::OVRLocatable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRLocatable")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable>>
+for crate::GlobalNamespace::OVRLocatable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable> {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRLocatable+TrackingSpacePose")]
 #[repr(C)]
 #[derive(Debug, Clone)]

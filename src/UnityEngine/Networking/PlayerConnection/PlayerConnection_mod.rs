@@ -229,3 +229,21 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
+impl AsRef<crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection>
+for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
+impl AsMut<crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection>
+for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
+        unsafe { std::mem::transmute(self) }
+    }
+}

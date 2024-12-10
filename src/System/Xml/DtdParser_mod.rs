@@ -1216,6 +1216,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::DtdParser {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+DtdParser")]
+impl AsRef<crate::System::Xml::IDtdParser> for crate::System::Xml::DtdParser {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdParser {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+DtdParser")]
+impl AsMut<crate::System::Xml::IDtdParser> for crate::System::Xml::DtdParser {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParser {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Xml+DtdParser+LiteralType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

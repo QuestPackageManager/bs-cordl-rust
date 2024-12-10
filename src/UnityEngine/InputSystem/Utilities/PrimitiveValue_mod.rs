@@ -438,3 +438,45 @@ impl crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
+impl AsRef<crate::System::IConvertible>
+for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
+impl AsMut<crate::System::IConvertible>
+for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        todo!()
+    }
+}

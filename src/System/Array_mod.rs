@@ -885,6 +885,78 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Array {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Array")]
+impl AsRef<crate::System::Collections::ICollection> for crate::System::Array {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array")]
+impl AsMut<crate::System::Collections::ICollection> for crate::System::Array {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array")]
+impl AsRef<crate::System::Collections::IEnumerable> for crate::System::Array {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array")]
+impl AsMut<crate::System::Collections::IEnumerable> for crate::System::Array {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array")]
+impl AsRef<crate::System::Collections::IList> for crate::System::Array {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array")]
+impl AsMut<crate::System::Collections::IList> for crate::System::Array {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array")]
+impl AsRef<crate::System::Collections::IStructuralComparable> for crate::System::Array {
+    fn as_ref(&self) -> &crate::System::Collections::IStructuralComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array")]
+impl AsMut<crate::System::Collections::IStructuralComparable> for crate::System::Array {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array")]
+impl AsRef<crate::System::Collections::IStructuralEquatable> for crate::System::Array {
+    fn as_ref(&self) -> &crate::System::Collections::IStructuralEquatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array")]
+impl AsMut<crate::System::Collections::IStructuralEquatable> for crate::System::Array {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralEquatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array")]
+impl AsRef<crate::System::ICloneable> for crate::System::Array {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array")]
+impl AsMut<crate::System::ICloneable> for crate::System::Array {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Array+ArrayEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -985,6 +1057,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Array_ArrayEnumerator 
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Array+ArrayEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Array_ArrayEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array+ArrayEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Array_ArrayEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array+ArrayEnumerator")]
+impl AsRef<crate::System::ICloneable> for crate::System::Array_ArrayEnumerator {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array+ArrayEnumerator")]
+impl AsMut<crate::System::ICloneable> for crate::System::Array_ArrayEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
@@ -1117,6 +1215,52 @@ for crate::System::Array_EmptyInternalEnumerator_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::System::Array_EmptyInternalEnumerator_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::System::Array_EmptyInternalEnumerator_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Array_EmptyInternalEnumerator_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Array_EmptyInternalEnumerator_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::System::Array_EmptyInternalEnumerator_1<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::System::Array_EmptyInternalEnumerator_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Array+InternalEnumerator_1")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -1227,6 +1371,52 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Array_InternalEnumerator_1<T
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::System::Array_InternalEnumerator_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::System::Array_InternalEnumerator_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Array_InternalEnumerator_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Array_InternalEnumerator_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::System::Array_InternalEnumerator_1<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::System::Array_InternalEnumerator_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }
 #[cfg(feature = "System+Array+RawData")]

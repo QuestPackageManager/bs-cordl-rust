@@ -97,3 +97,55 @@ impl crate::UnityEngine::UIElements::StyleFontDefinition {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleFontDefinition")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFontDefinition>,
+> for crate::UnityEngine::UIElements::StyleFontDefinition {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::StyleFontDefinition,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleFontDefinition")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFontDefinition>,
+> for crate::UnityEngine::UIElements::StyleFontDefinition {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::StyleFontDefinition,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleFontDefinition")]
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::FontDefinition,
+    >,
+> for crate::UnityEngine::UIElements::StyleFontDefinition {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::FontDefinition,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleFontDefinition")]
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::FontDefinition,
+    >,
+> for crate::UnityEngine::UIElements::StyleFontDefinition {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::FontDefinition,
+    > {
+        todo!()
+    }
+}

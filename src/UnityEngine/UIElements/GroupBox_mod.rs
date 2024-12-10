@@ -113,6 +113,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Group
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+GroupBox")]
+impl AsRef<crate::UnityEngine::UIElements::IGroupBox>
+for crate::UnityEngine::UIElements::GroupBox {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IGroupBox {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+GroupBox")]
+impl AsMut<crate::UnityEngine::UIElements::IGroupBox>
+for crate::UnityEngine::UIElements::GroupBox {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IGroupBox {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+GroupBox+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]

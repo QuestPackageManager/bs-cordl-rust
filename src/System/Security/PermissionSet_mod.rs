@@ -239,3 +239,63 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Security::PermissionSe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Security::PermissionSet {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Security::PermissionSet {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Security::PermissionSet {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Security::PermissionSet {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Security::PermissionSet {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Security::PermissionSet {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsRef<crate::System::Security::ISecurityEncodable>
+for crate::System::Security::PermissionSet {
+    fn as_ref(&self) -> &crate::System::Security::ISecurityEncodable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsMut<crate::System::Security::ISecurityEncodable>
+for crate::System::Security::PermissionSet {
+    fn as_mut(&mut self) -> &mut crate::System::Security::ISecurityEncodable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

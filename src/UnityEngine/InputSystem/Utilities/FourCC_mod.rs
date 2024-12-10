@@ -99,3 +99,27 @@ impl crate::UnityEngine::InputSystem::Utilities::FourCC {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+FourCC")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::FourCC>,
+> for crate::UnityEngine::InputSystem::Utilities::FourCC {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+FourCC")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::FourCC>,
+> for crate::UnityEngine::InputSystem::Utilities::FourCC {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        todo!()
+    }
+}

@@ -205,3 +205,30 @@ for crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TPriority> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> AsRef<crate::UnityEngine::ProBuilder::KdTree::IPriorityQueue_2<TItem, TPriority>>
+for crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TPriority> {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ProBuilder::KdTree::IPriorityQueue_2<TItem, TPriority> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> AsMut<crate::UnityEngine::ProBuilder::KdTree::IPriorityQueue_2<TItem, TPriority>>
+for crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TPriority> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ProBuilder::KdTree::IPriorityQueue_2<
+        TItem,
+        TPriority,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

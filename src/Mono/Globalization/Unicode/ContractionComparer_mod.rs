@@ -64,3 +64,31 @@ for crate::Mono::Globalization::Unicode::ContractionComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+ContractionComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut crate::Mono::Globalization::Unicode::Contraction,
+    >,
+> for crate::Mono::Globalization::Unicode::ContractionComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        *mut crate::Mono::Globalization::Unicode::Contraction,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Mono+Globalization+Unicode+ContractionComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut crate::Mono::Globalization::Unicode::Contraction,
+    >,
+> for crate::Mono::Globalization::Unicode::ContractionComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        *mut crate::Mono::Globalization::Unicode::Contraction,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

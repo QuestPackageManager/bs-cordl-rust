@@ -85,3 +85,21 @@ impl crate::UnityEngine::UIElements::Scale {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Scale")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Scale>>
+for crate::UnityEngine::UIElements::Scale {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Scale> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Scale")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Scale>>
+for crate::UnityEngine::UIElements::Scale {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Scale> {
+        todo!()
+    }
+}

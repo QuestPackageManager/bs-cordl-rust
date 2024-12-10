@@ -116,3 +116,87 @@ for crate::System::Resources::FastResourceComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Resources::FastResourceComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Resources::FastResourceComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Resources::FastResourceComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Resources::FastResourceComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsRef<crate::System::Collections::IComparer>
+for crate::System::Resources::FastResourceComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsMut<crate::System::Collections::IComparer>
+for crate::System::Resources::FastResourceComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsRef<crate::System::Collections::IEqualityComparer>
+for crate::System::Resources::FastResourceComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsMut<crate::System::Collections::IEqualityComparer>
+for crate::System::Resources::FastResourceComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

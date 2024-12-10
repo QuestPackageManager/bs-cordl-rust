@@ -107,3 +107,45 @@ impl crate::UnityEngine::UIElements::StyleCursor {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleCursor>>
+for crate::UnityEngine::UIElements::StyleCursor {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleCursor> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleCursor>>
+for crate::UnityEngine::UIElements::StyleCursor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleCursor> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Cursor>,
+> for crate::UnityEngine::UIElements::StyleCursor {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Cursor,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Cursor>,
+> for crate::UnityEngine::UIElements::StyleCursor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Cursor,
+    > {
+        todo!()
+    }
+}

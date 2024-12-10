@@ -238,6 +238,36 @@ for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "EncryptionUtility+EncryptionState")]
+impl AsRef<crate::GlobalNamespace::EncryptionUtility_IEncryptionState>
+for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
+    fn as_ref(&self) -> &crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EncryptionUtility+EncryptionState")]
+impl AsMut<crate::GlobalNamespace::EncryptionUtility_IEncryptionState>
+for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EncryptionUtility+EncryptionState")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EncryptionUtility+EncryptionState")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "EncryptionUtility+IEncryptionState")]
 #[repr(C)]
 #[derive(Debug)]
@@ -313,5 +343,19 @@ for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "EncryptionUtility+IEncryptionState")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EncryptionUtility+IEncryptionState")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }

@@ -463,3 +463,31 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<
+        crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+    >,
+> for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<
+        crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+    >,
+> for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

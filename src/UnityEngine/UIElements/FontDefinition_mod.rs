@@ -94,3 +94,23 @@ impl crate::UnityEngine::UIElements::FontDefinition {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+FontDefinition")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::FontDefinition>>
+for crate::UnityEngine::UIElements::FontDefinition {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::FontDefinition> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+FontDefinition")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::FontDefinition>>
+for crate::UnityEngine::UIElements::FontDefinition {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::FontDefinition,
+    > {
+        todo!()
+    }
+}

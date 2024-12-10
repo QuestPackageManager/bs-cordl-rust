@@ -122,3 +122,33 @@ for crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1CipherBuilderWithKey")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::ICipherBuilder>
+for crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ICipherBuilder {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1CipherBuilderWithKey")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::ICipherBuilder>
+for crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ICipherBuilder {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1CipherBuilderWithKey")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey>
+for crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1CipherBuilderWithKey")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey>
+for crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey {
+        unsafe { std::mem::transmute(self) }
+    }
+}

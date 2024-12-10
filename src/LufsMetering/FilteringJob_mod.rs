@@ -47,3 +47,15 @@ impl crate::LufsMetering::FilteringJob {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "LufsMetering+FilteringJob")]
+impl AsRef<crate::Unity::Jobs::IJob> for crate::LufsMetering::FilteringJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
+#[cfg(feature = "LufsMetering+FilteringJob")]
+impl AsMut<crate::Unity::Jobs::IJob> for crate::LufsMetering::FilteringJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}

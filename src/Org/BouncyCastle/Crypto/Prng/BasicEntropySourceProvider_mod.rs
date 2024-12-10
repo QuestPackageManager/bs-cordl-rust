@@ -84,6 +84,22 @@ for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IEntropySourceProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IEntropySourceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IEntropySourceProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::IEntropySourceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider+BasicEntropySource"
 )]
@@ -202,5 +218,23 @@ for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider_BasicEntr
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider+BasicEntropySource"
+)]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IEntropySource>
+for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider_BasicEntropySource {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IEntropySource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider+BasicEntropySource"
+)]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IEntropySource>
+for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider_BasicEntropySource {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IEntropySource {
+        unsafe { std::mem::transmute(self) }
     }
 }

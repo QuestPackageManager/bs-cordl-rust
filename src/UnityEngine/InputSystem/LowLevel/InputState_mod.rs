@@ -158,3 +158,25 @@ for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDele
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputState+StateChangeMonitorDelegate"
+)]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
+for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputState+StateChangeMonitorDelegate"
+)]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
+for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -118,3 +118,17 @@ for crate::BeatSaber::AvatarCore::OptionalAvatarDataSender {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataSender")]
+impl AsRef<crate::System::IDisposable>
+for crate::BeatSaber::AvatarCore::OptionalAvatarDataSender {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataSender")]
+impl AsMut<crate::System::IDisposable>
+for crate::BeatSaber::AvatarCore::OptionalAvatarDataSender {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

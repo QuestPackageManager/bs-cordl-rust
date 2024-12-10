@@ -250,6 +250,20 @@ for crate::GlobalNamespace::OculusPlatformUserModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusPlatformUserModel")]
+impl AsRef<crate::GlobalNamespace::IPlatformUserModel>
+for crate::GlobalNamespace::OculusPlatformUserModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPlatformUserModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusPlatformUserModel")]
+impl AsMut<crate::GlobalNamespace::IPlatformUserModel>
+for crate::GlobalNamespace::OculusPlatformUserModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPlatformUserModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -308,5 +322,21 @@ impl crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g_
             (stateMachine),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
     }
 }

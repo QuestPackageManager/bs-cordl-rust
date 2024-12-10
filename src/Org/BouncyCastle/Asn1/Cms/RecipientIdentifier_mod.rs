@@ -134,3 +134,17 @@ for crate::Org::BouncyCastle::Asn1::Cms::RecipientIdentifier {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+RecipientIdentifier")]
+impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
+for crate::Org::BouncyCastle::Asn1::Cms::RecipientIdentifier {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Choice {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+RecipientIdentifier")]
+impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
+for crate::Org::BouncyCastle::Asn1::Cms::RecipientIdentifier {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Choice {
+        unsafe { std::mem::transmute(self) }
+    }
+}

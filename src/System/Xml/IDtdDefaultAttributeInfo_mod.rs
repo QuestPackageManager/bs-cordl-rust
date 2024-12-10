@@ -79,3 +79,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::IDtdDefaultAttrib
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+IDtdDefaultAttributeInfo")]
+impl AsRef<crate::System::Xml::IDtdAttributeInfo>
+for crate::System::Xml::IDtdDefaultAttributeInfo {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdAttributeInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+IDtdDefaultAttributeInfo")]
+impl AsMut<crate::System::Xml::IDtdAttributeInfo>
+for crate::System::Xml::IDtdDefaultAttributeInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdAttributeInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

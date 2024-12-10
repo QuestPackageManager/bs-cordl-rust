@@ -86,3 +86,21 @@ impl crate::Zenject::SignalSubscriptionId {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Zenject+SignalSubscriptionId")]
+impl AsRef<crate::System::IEquatable_1<crate::Zenject::SignalSubscriptionId>>
+for crate::Zenject::SignalSubscriptionId {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::Zenject::SignalSubscriptionId> {
+        todo!()
+    }
+}
+#[cfg(feature = "Zenject+SignalSubscriptionId")]
+impl AsMut<crate::System::IEquatable_1<crate::Zenject::SignalSubscriptionId>>
+for crate::Zenject::SignalSubscriptionId {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::Zenject::SignalSubscriptionId> {
+        todo!()
+    }
+}

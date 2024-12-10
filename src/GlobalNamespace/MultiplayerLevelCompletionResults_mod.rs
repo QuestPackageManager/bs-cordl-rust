@@ -182,6 +182,48 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerLevelCompletionResults")]
+impl AsRef<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    >,
+> for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    fn as_ref(
+        &self,
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLevelCompletionResults")]
+impl AsMut<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    >,
+> for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLevelCompletionResults")]
+impl AsRef<crate::System::IComparable>
+for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLevelCompletionResults")]
+impl AsMut<crate::System::IComparable>
+for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

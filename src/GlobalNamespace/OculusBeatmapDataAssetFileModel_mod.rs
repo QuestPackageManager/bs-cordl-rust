@@ -260,6 +260,20 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusBeatmapDataAssetFileModel")]
+impl AsRef<crate::GlobalNamespace::IBeatmapDataAssetFileModel>
+for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapDataAssetFileModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusBeatmapDataAssetFileModel")]
+impl AsMut<crate::GlobalNamespace::IBeatmapDataAssetFileModel>
+for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapDataAssetFileModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "OculusBeatmapDataAssetFileModel+LevelDownloadingData")]
 #[repr(C)]
 #[derive(Debug)]

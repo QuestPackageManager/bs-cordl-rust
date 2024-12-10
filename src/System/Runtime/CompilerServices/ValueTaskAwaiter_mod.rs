@@ -77,3 +77,37 @@ impl crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter")]
+impl AsRef<crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion>
+for crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter")]
+impl AsMut<crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion>
+for crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter")]
+impl AsRef<crate::System::Runtime::CompilerServices::INotifyCompletion>
+for crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::INotifyCompletion {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter")]
+impl AsMut<crate::System::Runtime::CompilerServices::INotifyCompletion>
+for crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::INotifyCompletion {
+        todo!()
+    }
+}

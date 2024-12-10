@@ -59,3 +59,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SyncTimeProvi
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SyncTimeProvider")]
+impl AsRef<crate::GlobalNamespace::ITimeProvider>
+for crate::GlobalNamespace::SyncTimeProvider {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ITimeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SyncTimeProvider")]
+impl AsMut<crate::GlobalNamespace::ITimeProvider>
+for crate::GlobalNamespace::SyncTimeProvider {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ITimeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

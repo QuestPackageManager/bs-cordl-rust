@@ -298,3 +298,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XDRSchema_NameTy
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Data+XDRSchema+NameType")]
+impl AsRef<crate::System::IComparable> for crate::System::Data::XDRSchema_NameType {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+XDRSchema+NameType")]
+impl AsMut<crate::System::IComparable> for crate::System::Data::XDRSchema_NameType {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

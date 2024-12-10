@@ -46,3 +46,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IRemoteProced
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IRemoteProcedureCall")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::IRemoteProcedureCall {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IRemoteProcedureCall")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::IRemoteProcedureCall {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IRemoteProcedureCall")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::IRemoteProcedureCall {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IRemoteProcedureCall")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::IRemoteProcedureCall {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

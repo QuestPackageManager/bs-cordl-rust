@@ -183,3 +183,31 @@ for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
+impl AsRef<crate::UnityEngine::Playables::IPlayableAsset>
+for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
+impl AsMut<crate::UnityEngine::Playables::IPlayableAsset>
+for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
+impl AsRef<crate::UnityEngine::Playables::IPlayableBehaviour>
+for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableBehaviour {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
+impl AsMut<crate::UnityEngine::Playables::IPlayableBehaviour>
+for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableBehaviour {
+        unsafe { std::mem::transmute(self) }
+    }
+}

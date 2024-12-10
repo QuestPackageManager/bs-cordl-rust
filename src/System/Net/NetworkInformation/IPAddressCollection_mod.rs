@@ -168,3 +168,73 @@ for crate::System::Net::NetworkInformation::IPAddressCollection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+NetworkInformation+IPAddressCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::System::Net::IPAddress,
+    >,
+> for crate::System::Net::NetworkInformation::IPAddressCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        *mut crate::System::Net::IPAddress,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+IPAddressCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::System::Net::IPAddress,
+    >,
+> for crate::System::Net::NetworkInformation::IPAddressCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        *mut crate::System::Net::IPAddress,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+IPAddressCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Net::IPAddress,
+    >,
+> for crate::System::Net::NetworkInformation::IPAddressCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Net::IPAddress,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+IPAddressCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Net::IPAddress,
+    >,
+> for crate::System::Net::NetworkInformation::IPAddressCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Net::IPAddress,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+IPAddressCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Net::NetworkInformation::IPAddressCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+IPAddressCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Net::NetworkInformation::IPAddressCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

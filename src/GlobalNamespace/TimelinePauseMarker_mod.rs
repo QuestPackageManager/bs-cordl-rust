@@ -62,3 +62,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TimelinePause
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TimelinePauseMarker")]
+impl AsRef<crate::UnityEngine::Playables::INotification>
+for crate::GlobalNamespace::TimelinePauseMarker {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::INotification {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TimelinePauseMarker")]
+impl AsMut<crate::UnityEngine::Playables::INotification>
+for crate::GlobalNamespace::TimelinePauseMarker {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::INotification {
+        unsafe { std::mem::transmute(self) }
+    }
+}

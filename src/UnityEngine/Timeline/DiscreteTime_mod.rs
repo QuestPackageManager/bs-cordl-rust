@@ -170,3 +170,15 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
+impl AsRef<crate::System::IComparable> for crate::UnityEngine::Timeline::DiscreteTime {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
+impl AsMut<crate::System::IComparable> for crate::UnityEngine::Timeline::DiscreteTime {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        todo!()
+    }
+}

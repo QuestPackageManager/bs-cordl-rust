@@ -117,3 +117,21 @@ impl crate::UnityEngine::UIElements::Rotate {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Rotate")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Rotate>>
+for crate::UnityEngine::UIElements::Rotate {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Rotate> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Rotate")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Rotate>>
+for crate::UnityEngine::UIElements::Rotate {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Rotate> {
+        todo!()
+    }
+}

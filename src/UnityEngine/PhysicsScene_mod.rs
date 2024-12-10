@@ -434,3 +434,19 @@ impl crate::UnityEngine::PhysicsScene {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+PhysicsScene")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene>>
+for crate::UnityEngine::PhysicsScene {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+PhysicsScene")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene>>
+for crate::UnityEngine::PhysicsScene {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene> {
+        todo!()
+    }
+}

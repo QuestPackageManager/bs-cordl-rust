@@ -85,3 +85,27 @@ impl crate::System::Runtime::InteropServices::OSPlatform {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+OSPlatform")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::System::Runtime::InteropServices::OSPlatform>,
+> for crate::System::Runtime::InteropServices::OSPlatform {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::System::Runtime::InteropServices::OSPlatform,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Runtime+InteropServices+OSPlatform")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::System::Runtime::InteropServices::OSPlatform>,
+> for crate::System::Runtime::InteropServices::OSPlatform {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::System::Runtime::InteropServices::OSPlatform,
+    > {
+        todo!()
+    }
+}

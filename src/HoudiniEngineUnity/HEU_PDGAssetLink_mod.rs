@@ -504,6 +504,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_PDGAss
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::HoudiniEngineUnity::HEU_PDGAssetLink {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::HoudiniEngineUnity::HEU_PDGAssetLink {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink+LinkState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

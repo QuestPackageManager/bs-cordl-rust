@@ -108,3 +108,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::HttpMethod 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+Http+HttpMethod")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::System::Net::Http::HttpMethod>>
+for crate::System::Net::Http::HttpMethod {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::System::Net::Http::HttpMethod> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+Http+HttpMethod")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::System::Net::Http::HttpMethod>>
+for crate::System::Net::Http::HttpMethod {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::System::Net::Http::HttpMethod> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

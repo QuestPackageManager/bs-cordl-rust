@@ -1021,6 +1021,174 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JObjec
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
+    >,
+> for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
+    >,
+> for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsRef<
+    crate::System::Collections::Generic::IDictionary_2<
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IDictionary_2<
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsMut<
+    crate::System::Collections::Generic::IDictionary_2<
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IDictionary_2<
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
+    >,
+> for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
+    >,
+> for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsRef<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_ref(&self) -> &crate::System::ComponentModel::ICustomTypeDescriptor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsMut<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ICustomTypeDescriptor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsRef<crate::System::ComponentModel::INotifyPropertyChanged>
+for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_ref(&self) -> &crate::System::ComponentModel::INotifyPropertyChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsMut<crate::System::ComponentModel::INotifyPropertyChanged>
+for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::INotifyPropertyChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsRef<crate::System::ComponentModel::INotifyPropertyChanging>
+for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_ref(&self) -> &crate::System::ComponentModel::INotifyPropertyChanging {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+impl AsMut<crate::System::ComponentModel::INotifyPropertyChanging>
+for crate::Newtonsoft::Json::Linq::JObject {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::INotifyPropertyChanging {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1185,5 +1353,21 @@ impl crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_
             (stateMachine),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
     }
 }

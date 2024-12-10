@@ -151,6 +151,62 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+impl AsRef<crate::GlobalNamespace::IHapticFeedbackPlayer>
+for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IHapticFeedbackPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+impl AsMut<crate::GlobalNamespace::IHapticFeedbackPlayer>
+for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IHapticFeedbackPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+impl AsRef<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+impl AsMut<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+impl AsRef<crate::Zenject::ITickable>
+for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+impl AsMut<crate::Zenject::ITickable>
+for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
 #[repr(C)]
 #[derive(Debug)]

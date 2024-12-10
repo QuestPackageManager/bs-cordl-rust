@@ -256,3 +256,17 @@ for crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1EncodableVector")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1EncodableVector")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

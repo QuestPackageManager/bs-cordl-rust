@@ -348,3 +348,17 @@ for crate::GlobalNamespace::LightWithIds_LightWithId {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LightWithIds+LightWithId")]
+impl AsRef<crate::GlobalNamespace::ILightWithId>
+for crate::GlobalNamespace::LightWithIds_LightWithId {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILightWithId {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LightWithIds+LightWithId")]
+impl AsMut<crate::GlobalNamespace::ILightWithId>
+for crate::GlobalNamespace::LightWithIds_LightWithId {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILightWithId {
+        unsafe { std::mem::transmute(self) }
+    }
+}

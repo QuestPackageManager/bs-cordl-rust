@@ -152,3 +152,59 @@ for crate::System::Linq::OrderedEnumerable_1<TElement> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
+impl<
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<TElement>>
+for crate::System::Linq::OrderedEnumerable_1<TElement> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
+impl<
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<TElement>>
+for crate::System::Linq::OrderedEnumerable_1<TElement> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
+impl<
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Linq::OrderedEnumerable_1<TElement> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
+impl<
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Linq::OrderedEnumerable_1<TElement> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
+impl<
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Linq::IOrderedEnumerable_1<TElement>>
+for crate::System::Linq::OrderedEnumerable_1<TElement> {
+    fn as_ref(&self) -> &crate::System::Linq::IOrderedEnumerable_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
+impl<
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Linq::IOrderedEnumerable_1<TElement>>
+for crate::System::Linq::OrderedEnumerable_1<TElement> {
+    fn as_mut(&mut self) -> &mut crate::System::Linq::IOrderedEnumerable_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

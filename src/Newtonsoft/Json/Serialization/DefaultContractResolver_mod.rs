@@ -884,6 +884,22 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
+impl AsRef<crate::Newtonsoft::Json::Serialization::IContractResolver>
+for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Serialization::IContractResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
+impl AsMut<crate::Newtonsoft::Json::Serialization::IContractResolver>
+for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Newtonsoft::Json::Serialization::IContractResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
 )]
@@ -1074,5 +1090,93 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDi
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+)]
+impl<
+    TEnumeratorKey: quest_hook::libil2cpp::Type,
+    TEnumeratorValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+>
+for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
+    TEnumeratorKey,
+    TEnumeratorValue,
+> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+)]
+impl<
+    TEnumeratorKey: quest_hook::libil2cpp::Type,
+    TEnumeratorValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+>
+for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
+    TEnumeratorKey,
+    TEnumeratorValue,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+)]
+impl<
+    TEnumeratorKey: quest_hook::libil2cpp::Type,
+    TEnumeratorValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
+    TEnumeratorKey,
+    TEnumeratorValue,
+> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+)]
+impl<
+    TEnumeratorKey: quest_hook::libil2cpp::Type,
+    TEnumeratorValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
+    TEnumeratorKey,
+    TEnumeratorValue,
+> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
     }
 }

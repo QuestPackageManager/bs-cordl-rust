@@ -80,3 +80,27 @@ impl crate::GlobalNamespace::BeatmapLevelSelectionMask {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "BeatmapLevelSelectionMask")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapLevelSelectionMask>,
+> for crate::GlobalNamespace::BeatmapLevelSelectionMask {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "BeatmapLevelSelectionMask")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapLevelSelectionMask>,
+> for crate::GlobalNamespace::BeatmapLevelSelectionMask {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    > {
+        todo!()
+    }
+}

@@ -106,3 +106,17 @@ impl crate::Unity::Profiling::ProfilerMarker_AutoScope {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerMarker+AutoScope")]
+impl AsRef<crate::System::IDisposable>
+for crate::Unity::Profiling::ProfilerMarker_AutoScope {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Profiling+ProfilerMarker+AutoScope")]
+impl AsMut<crate::System::IDisposable>
+for crate::Unity::Profiling::ProfilerMarker_AutoScope {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

@@ -546,6 +546,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Curve 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<*mut crate::HoudiniEngineUnity::HEU_Curve>,
+> for crate::HoudiniEngineUnity::HEU_Curve {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_Curve,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<*mut crate::HoudiniEngineUnity::HEU_Curve>,
+> for crate::HoudiniEngineUnity::HEU_Curve {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_Curve,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveDrawCollision")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

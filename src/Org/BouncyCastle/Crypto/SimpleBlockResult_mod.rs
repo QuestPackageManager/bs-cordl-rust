@@ -87,3 +87,17 @@ for crate::Org::BouncyCastle::Crypto::SimpleBlockResult {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+SimpleBlockResult")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IBlockResult>
+for crate::Org::BouncyCastle::Crypto::SimpleBlockResult {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IBlockResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+SimpleBlockResult")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IBlockResult>
+for crate::Org::BouncyCastle::Crypto::SimpleBlockResult {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IBlockResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}

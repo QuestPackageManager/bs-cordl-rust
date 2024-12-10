@@ -58,3 +58,15 @@ impl crate::System::Buffers::MemoryHandle {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Buffers+MemoryHandle")]
+impl AsRef<crate::System::IDisposable> for crate::System::Buffers::MemoryHandle {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Buffers+MemoryHandle")]
+impl AsMut<crate::System::IDisposable> for crate::System::Buffers::MemoryHandle {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

@@ -55,3 +55,41 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationMixerPlayable")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::Animations::AnimationMixerPlayable>,
+> for crate::UnityEngine::Animations::AnimationMixerPlayable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationMixerPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationMixerPlayable")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::Animations::AnimationMixerPlayable>,
+> for crate::UnityEngine::Animations::AnimationMixerPlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationMixerPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationMixerPlayable")]
+impl AsRef<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationMixerPlayable {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationMixerPlayable")]
+impl AsMut<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationMixerPlayable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}

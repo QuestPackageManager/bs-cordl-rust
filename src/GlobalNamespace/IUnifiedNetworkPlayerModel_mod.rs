@@ -140,3 +140,17 @@ for crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IUnifiedNetworkPlayerModel")]
+impl AsRef<crate::GlobalNamespace::INetworkPlayerModel>
+for crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPlayerModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IUnifiedNetworkPlayerModel")]
+impl AsMut<crate::GlobalNamespace::INetworkPlayerModel>
+for crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkPlayerModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

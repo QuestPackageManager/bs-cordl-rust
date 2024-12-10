@@ -84,3 +84,21 @@ for crate::Org::BouncyCastle::Crypto::Generators::Gost3410KeyPairGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator>
+for crate::Org::BouncyCastle::Crypto::Generators::Gost3410KeyPairGenerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator>
+for crate::Org::BouncyCastle::Crypto::Generators::Gost3410KeyPairGenerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

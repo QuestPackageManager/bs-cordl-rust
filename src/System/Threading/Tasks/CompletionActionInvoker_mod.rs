@@ -85,3 +85,17 @@ for crate::System::Threading::Tasks::CompletionActionInvoker {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+Tasks+CompletionActionInvoker")]
+impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Threading::Tasks::CompletionActionInvoker {
+    fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+CompletionActionInvoker")]
+impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Threading::Tasks::CompletionActionInvoker {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}

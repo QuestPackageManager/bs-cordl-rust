@@ -129,3 +129,35 @@ impl crate::GlobalNamespace::Vector4Serializable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Vector4Serializable")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::Vector4Serializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "Vector4Serializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::Vector4Serializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "Vector4Serializable")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::Vector4Serializable>>
+for crate::GlobalNamespace::Vector4Serializable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::Vector4Serializable> {
+        todo!()
+    }
+}
+#[cfg(feature = "Vector4Serializable")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::Vector4Serializable>>
+for crate::GlobalNamespace::Vector4Serializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::Vector4Serializable> {
+        todo!()
+    }
+}

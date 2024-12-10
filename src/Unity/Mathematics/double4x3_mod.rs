@@ -226,3 +226,33 @@ impl crate::Unity::Mathematics::double4x3 {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Mathematics+double4x3")]
+impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::double4x3>>
+for crate::Unity::Mathematics::double4x3 {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::double4x3> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+double4x3")]
+impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::double4x3>>
+for crate::Unity::Mathematics::double4x3 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::Unity::Mathematics::double4x3> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+double4x3")]
+impl AsRef<crate::System::IFormattable> for crate::Unity::Mathematics::double4x3 {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+double4x3")]
+impl AsMut<crate::System::IFormattable> for crate::Unity::Mathematics::double4x3 {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}

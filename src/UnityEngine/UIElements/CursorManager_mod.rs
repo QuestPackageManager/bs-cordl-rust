@@ -92,3 +92,17 @@ for crate::UnityEngine::UIElements::CursorManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CursorManager")]
+impl AsRef<crate::UnityEngine::UIElements::ICursorManager>
+for crate::UnityEngine::UIElements::CursorManager {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::ICursorManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+CursorManager")]
+impl AsMut<crate::UnityEngine::UIElements::ICursorManager>
+for crate::UnityEngine::UIElements::CursorManager {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::ICursorManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -557,3 +557,23 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::BeatAvatarSDK::Avat
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarData")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::BeatSaber::BeatAvatarSDK::AvatarData>>
+for crate::BeatSaber::BeatAvatarSDK::AvatarData {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::BeatSaber::BeatAvatarSDK::AvatarData> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarData")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::BeatSaber::BeatAvatarSDK::AvatarData>>
+for crate::BeatSaber::BeatAvatarSDK::AvatarData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        *mut crate::BeatSaber::BeatAvatarSDK::AvatarData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

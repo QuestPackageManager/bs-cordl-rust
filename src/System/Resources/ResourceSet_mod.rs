@@ -230,3 +230,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Resources::ResourceSet
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Resources+ResourceSet")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Resources::ResourceSet {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+ResourceSet")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Resources::ResourceSet {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+ResourceSet")]
+impl AsRef<crate::System::IDisposable> for crate::System::Resources::ResourceSet {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+ResourceSet")]
+impl AsMut<crate::System::IDisposable> for crate::System::Resources::ResourceSet {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -225,3 +225,17 @@ for crate::System::ComponentModel::CustomTypeDescriptor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ComponentModel+CustomTypeDescriptor")]
+impl AsRef<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::System::ComponentModel::CustomTypeDescriptor {
+    fn as_ref(&self) -> &crate::System::ComponentModel::ICustomTypeDescriptor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+CustomTypeDescriptor")]
+impl AsMut<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::System::ComponentModel::CustomTypeDescriptor {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ICustomTypeDescriptor {
+        unsafe { std::mem::transmute(self) }
+    }
+}

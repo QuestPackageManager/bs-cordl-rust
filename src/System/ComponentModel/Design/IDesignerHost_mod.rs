@@ -67,3 +67,17 @@ for crate::System::ComponentModel::Design::IDesignerHost {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ComponentModel+Design+IDesignerHost")]
+impl AsRef<crate::System::IServiceProvider>
+for crate::System::ComponentModel::Design::IDesignerHost {
+    fn as_ref(&self) -> &crate::System::IServiceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+Design+IDesignerHost")]
+impl AsMut<crate::System::IServiceProvider>
+for crate::System::ComponentModel::Design::IDesignerHost {
+    fn as_mut(&mut self) -> &mut crate::System::IServiceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

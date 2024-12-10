@@ -285,3 +285,49 @@ for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
+for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
+    fn as_ref(&self) -> &crate::Zenject::IDespawnableMemoryPool_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
+for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IDespawnableMemoryPool_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IMemoryPool>
+for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
+    fn as_ref(&self) -> &crate::Zenject::IMemoryPool {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IMemoryPool>
+for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IMemoryPool {
+        unsafe { std::mem::transmute(self) }
+    }
+}

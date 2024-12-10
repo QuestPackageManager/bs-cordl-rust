@@ -222,3 +222,41 @@ for crate::GlobalNamespace::BeatmapKeyNetSerializable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapKeyNetSerializable")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BeatmapKeyNetSerializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapKeyNetSerializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BeatmapKeyNetSerializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapKeyNetSerializable")]
+impl AsRef<
+    crate::System::IEquatable_1<*mut crate::GlobalNamespace::BeatmapKeyNetSerializable>,
+> for crate::GlobalNamespace::BeatmapKeyNetSerializable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapKeyNetSerializable")]
+impl AsMut<
+    crate::System::IEquatable_1<*mut crate::GlobalNamespace::BeatmapKeyNetSerializable>,
+> for crate::GlobalNamespace::BeatmapKeyNetSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

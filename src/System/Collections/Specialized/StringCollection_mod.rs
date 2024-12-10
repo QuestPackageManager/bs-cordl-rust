@@ -322,3 +322,45 @@ for crate::System::Collections::Specialized::StringCollection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Specialized+StringCollection")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::Specialized::StringCollection {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+StringCollection")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::Specialized::StringCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+StringCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Specialized::StringCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+StringCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Specialized::StringCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+StringCollection")]
+impl AsRef<crate::System::Collections::IList>
+for crate::System::Collections::Specialized::StringCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+StringCollection")]
+impl AsMut<crate::System::Collections::IList>
+for crate::System::Collections::Specialized::StringCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}

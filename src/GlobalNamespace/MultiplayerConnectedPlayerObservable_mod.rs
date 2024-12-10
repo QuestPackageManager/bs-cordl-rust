@@ -76,3 +76,17 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerConnectedPlayerObservable")]
+impl AsRef<crate::GlobalNamespace::IMultiplayerObservable>
+for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerObservable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerConnectedPlayerObservable")]
+impl AsMut<crate::GlobalNamespace::IMultiplayerObservable>
+for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMultiplayerObservable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -302,3 +302,67 @@ impl crate::System::TimeSpan {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+TimeSpan")]
+impl AsRef<crate::System::IComparable> for crate::System::TimeSpan {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeSpan")]
+impl AsMut<crate::System::IComparable> for crate::System::TimeSpan {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeSpan")]
+impl AsRef<crate::System::IComparable_1<crate::System::TimeSpan>>
+for crate::System::TimeSpan {
+    fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::TimeSpan> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeSpan")]
+impl AsMut<crate::System::IComparable_1<crate::System::TimeSpan>>
+for crate::System::TimeSpan {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<crate::System::TimeSpan> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeSpan")]
+impl AsRef<crate::System::IEquatable_1<crate::System::TimeSpan>>
+for crate::System::TimeSpan {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::TimeSpan> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeSpan")]
+impl AsMut<crate::System::IEquatable_1<crate::System::TimeSpan>>
+for crate::System::TimeSpan {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::TimeSpan> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeSpan")]
+impl AsRef<crate::System::IFormattable> for crate::System::TimeSpan {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeSpan")]
+impl AsMut<crate::System::IFormattable> for crate::System::TimeSpan {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeSpan")]
+impl AsRef<crate::System::ISpanFormattable> for crate::System::TimeSpan {
+    fn as_ref(&self) -> &crate::System::ISpanFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeSpan")]
+impl AsMut<crate::System::ISpanFormattable> for crate::System::TimeSpan {
+    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
+        todo!()
+    }
+}

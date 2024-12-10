@@ -97,3 +97,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockLevelEndA
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MockLevelEndActions")]
+impl AsRef<crate::GlobalNamespace::ILevelEndActions>
+for crate::GlobalNamespace::MockLevelEndActions {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelEndActions {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockLevelEndActions")]
+impl AsMut<crate::GlobalNamespace::ILevelEndActions>
+for crate::GlobalNamespace::MockLevelEndActions {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelEndActions {
+        unsafe { std::mem::transmute(self) }
+    }
+}

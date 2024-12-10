@@ -217,6 +217,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecordingTool
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "RecordingToolManager")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::RecordingToolManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "RecordingToolManager")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::RecordingToolManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "RecordingToolManager")]
+impl AsRef<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::RecordingToolManager {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "RecordingToolManager")]
+impl AsMut<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::RecordingToolManager {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "RecordingToolManager+SetupData")]
 #[repr(C)]
 #[derive(Debug, Clone)]

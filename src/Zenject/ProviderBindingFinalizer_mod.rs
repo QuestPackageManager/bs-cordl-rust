@@ -241,3 +241,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ProviderBindingFinali
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+ProviderBindingFinalizer")]
+impl AsRef<crate::Zenject::IBindingFinalizer>
+for crate::Zenject::ProviderBindingFinalizer {
+    fn as_ref(&self) -> &crate::Zenject::IBindingFinalizer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+ProviderBindingFinalizer")]
+impl AsMut<crate::Zenject::IBindingFinalizer>
+for crate::Zenject::ProviderBindingFinalizer {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IBindingFinalizer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -387,3 +387,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::X509::X509Cert
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Mono+Security+X509+X509Certificate")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::Mono::Security::X509::X509Certificate {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Mono+Security+X509+X509Certificate")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::Mono::Security::X509::X509Certificate {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

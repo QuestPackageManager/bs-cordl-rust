@@ -259,6 +259,34 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask_1<TResult>>,
+> for crate::System::Threading::Tasks::ValueTask_1<TResult> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::System::Threading::Tasks::ValueTask_1<TResult>,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask_1<TResult>>,
+> for crate::System::Threading::Tasks::ValueTask_1<TResult> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::System::Threading::Tasks::ValueTask_1<TResult>,
+    > {
+        todo!()
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
 #[repr(C)]
 #[derive(Debug)]

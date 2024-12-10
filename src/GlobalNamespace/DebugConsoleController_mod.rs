@@ -274,6 +274,34 @@ for crate::GlobalNamespace::DebugConsoleController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DebugConsoleController")]
+impl AsRef<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::DebugConsoleController {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DebugConsoleController")]
+impl AsMut<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::DebugConsoleController {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DebugConsoleController")]
+impl AsRef<crate::Zenject::ITickable>
+for crate::GlobalNamespace::DebugConsoleController {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DebugConsoleController")]
+impl AsMut<crate::Zenject::ITickable>
+for crate::GlobalNamespace::DebugConsoleController {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "DebugConsoleController+ConsoleMessage")]
 #[repr(C)]
 #[derive(Debug, Clone)]

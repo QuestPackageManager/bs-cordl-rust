@@ -1362,6 +1362,20 @@ for crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceResolverProxy")]
+impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceResolverProxy")]
+impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+SpecialAttribute")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

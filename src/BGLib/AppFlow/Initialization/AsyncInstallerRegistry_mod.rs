@@ -84,3 +84,21 @@ for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
+impl AsRef<crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry>
+for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
+    fn as_ref(
+        &self,
+    ) -> &crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
+impl AsMut<crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry>
+for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
+        unsafe { std::mem::transmute(self) }
+    }
+}

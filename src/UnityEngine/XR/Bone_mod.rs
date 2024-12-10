@@ -68,3 +68,19 @@ impl crate::UnityEngine::XR::Bone {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+XR+Bone")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::Bone>>
+for crate::UnityEngine::XR::Bone {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::Bone> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+XR+Bone")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::Bone>>
+for crate::UnityEngine::XR::Bone {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::Bone> {
+        todo!()
+    }
+}

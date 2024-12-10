@@ -160,3 +160,73 @@ for crate::System::Net::HttpListenerPrefixCollection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Net::HttpListenerPrefixCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Net::HttpListenerPrefixCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Net::HttpListenerPrefixCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Net::HttpListenerPrefixCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Net::HttpListenerPrefixCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Net::HttpListenerPrefixCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

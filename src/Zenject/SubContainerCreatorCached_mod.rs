@@ -73,3 +73,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SubContainerCreatorCa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+SubContainerCreatorCached")]
+impl AsRef<crate::Zenject::ISubContainerCreator>
+for crate::Zenject::SubContainerCreatorCached {
+    fn as_ref(&self) -> &crate::Zenject::ISubContainerCreator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+SubContainerCreatorCached")]
+impl AsMut<crate::Zenject::ISubContainerCreator>
+for crate::Zenject::SubContainerCreatorCached {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ISubContainerCreator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

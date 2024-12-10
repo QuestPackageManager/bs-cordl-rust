@@ -108,6 +108,30 @@ impl crate::UnityEngine::UIElements::StyleSheets::Dimension {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleSheets::Dimension>,
+> for crate::UnityEngine::UIElements::StyleSheets::Dimension {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::StyleSheets::Dimension,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleSheets::Dimension>,
+> for crate::UnityEngine::UIElements::StyleSheets::Dimension {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::StyleSheets::Dimension,
+    > {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

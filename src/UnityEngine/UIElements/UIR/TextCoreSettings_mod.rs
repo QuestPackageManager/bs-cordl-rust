@@ -58,3 +58,27 @@ impl crate::UnityEngine::UIElements::UIR::TextCoreSettings {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::UIR::TextCoreSettings>,
+> for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::UIR::TextCoreSettings,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::UIR::TextCoreSettings>,
+> for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::UIR::TextCoreSettings,
+    > {
+        todo!()
+    }
+}

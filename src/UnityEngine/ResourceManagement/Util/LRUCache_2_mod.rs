@@ -171,3 +171,37 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
+    >,
+> for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
+    >,
+> for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
+    > {
+        todo!()
+    }
+}

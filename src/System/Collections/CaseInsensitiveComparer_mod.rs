@@ -84,3 +84,17 @@ for crate::System::Collections::CaseInsensitiveComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
+impl AsRef<crate::System::Collections::IComparer>
+for crate::System::Collections::CaseInsensitiveComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
+impl AsMut<crate::System::Collections::IComparer>
+for crate::System::Collections::CaseInsensitiveComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

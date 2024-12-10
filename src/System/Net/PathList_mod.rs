@@ -198,3 +198,17 @@ for crate::System::Net::PathList_PathListComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+PathList+PathListComparer")]
+impl AsRef<crate::System::Collections::IComparer>
+for crate::System::Net::PathList_PathListComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+PathList+PathListComparer")]
+impl AsMut<crate::System::Collections::IComparer>
+for crate::System::Net::PathList_PathListComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

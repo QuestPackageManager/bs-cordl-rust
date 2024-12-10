@@ -84,3 +84,17 @@ for crate::System::Collections::CaseInsensitiveHashCodeProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+CaseInsensitiveHashCodeProvider")]
+impl AsRef<crate::System::Collections::IHashCodeProvider>
+for crate::System::Collections::CaseInsensitiveHashCodeProvider {
+    fn as_ref(&self) -> &crate::System::Collections::IHashCodeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+CaseInsensitiveHashCodeProvider")]
+impl AsMut<crate::System::Collections::IHashCodeProvider>
+for crate::System::Collections::CaseInsensitiveHashCodeProvider {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IHashCodeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

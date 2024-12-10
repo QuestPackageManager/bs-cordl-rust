@@ -53,3 +53,17 @@ for crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
+impl AsRef<crate::UnityEngine::InputSystem::Haptics::IHaptics>
+for crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::Haptics::IHaptics {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
+impl AsMut<crate::UnityEngine::InputSystem::Haptics::IHaptics>
+for crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::InputSystem::Haptics::IHaptics {
+        unsafe { std::mem::transmute(self) }
+    }
+}

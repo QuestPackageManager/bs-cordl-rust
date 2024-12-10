@@ -264,6 +264,20 @@ for crate::System::Security::Util::Tokenizer_StreamTokenReader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Security+Util+Tokenizer+StreamTokenReader")]
+impl AsRef<crate::System::Security::Util::Tokenizer_ITokenReader>
+for crate::System::Security::Util::Tokenizer_StreamTokenReader {
+    fn as_ref(&self) -> &crate::System::Security::Util::Tokenizer_ITokenReader {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+Util+Tokenizer+StreamTokenReader")]
+impl AsMut<crate::System::Security::Util::Tokenizer_ITokenReader>
+for crate::System::Security::Util::Tokenizer_StreamTokenReader {
+    fn as_mut(&mut self) -> &mut crate::System::Security::Util::Tokenizer_ITokenReader {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Security+Util+Tokenizer+StringMaker")]
 #[repr(C)]
 #[derive(Debug)]

@@ -130,3 +130,31 @@ for crate::Zenject::PlaceholderFactoryBase_1<TValue> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+PlaceholderFactoryBase_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IPlaceholderFactory>
+for crate::Zenject::PlaceholderFactoryBase_1<TValue> {
+    fn as_ref(&self) -> &crate::Zenject::IPlaceholderFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PlaceholderFactoryBase_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IPlaceholderFactory>
+for crate::Zenject::PlaceholderFactoryBase_1<TValue> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IPlaceholderFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PlaceholderFactoryBase_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IValidatable>
+for crate::Zenject::PlaceholderFactoryBase_1<TValue> {
+    fn as_ref(&self) -> &crate::Zenject::IValidatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PlaceholderFactoryBase_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IValidatable>
+for crate::Zenject::PlaceholderFactoryBase_1<TValue> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IValidatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

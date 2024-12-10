@@ -79,3 +79,19 @@ impl crate::System::Drawing::Point {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Drawing+Point")]
+impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::Point>>
+for crate::System::Drawing::Point {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Drawing::Point> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Drawing+Point")]
+impl AsMut<crate::System::IEquatable_1<crate::System::Drawing::Point>>
+for crate::System::Drawing::Point {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::System::Drawing::Point> {
+        todo!()
+    }
+}

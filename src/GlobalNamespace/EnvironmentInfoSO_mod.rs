@@ -222,6 +222,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnvironmentIn
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "EnvironmentInfoSO")]
+impl AsRef<crate::GlobalNamespace::IEnvironmentInfo>
+for crate::GlobalNamespace::EnvironmentInfoSO {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IEnvironmentInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EnvironmentInfoSO")]
+impl AsMut<crate::GlobalNamespace::IEnvironmentInfo>
+for crate::GlobalNamespace::EnvironmentInfoSO {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEnvironmentInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "EnvironmentInfoSO+Tags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -1038,6 +1038,26 @@ for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1")]
+impl<
+    TValueType: quest_hook::libil2cpp::Type,
+> AsRef<crate::UnityEngine::UIElements::IValueField_1<TValueType>>
+for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IValueField_1<TValueType> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1")]
+impl<
+    TValueType: quest_hook::libil2cpp::Type,
+> AsMut<crate::UnityEngine::UIElements::IValueField_1<TValueType>>
+for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IValueField_1<TValueType> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

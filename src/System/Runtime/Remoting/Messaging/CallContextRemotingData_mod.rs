@@ -100,3 +100,17 @@ for crate::System::Runtime::Remoting::Messaging::CallContextRemotingData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Messaging+CallContextRemotingData")]
+impl AsRef<crate::System::ICloneable>
+for crate::System::Runtime::Remoting::Messaging::CallContextRemotingData {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+CallContextRemotingData")]
+impl AsMut<crate::System::ICloneable>
+for crate::System::Runtime::Remoting::Messaging::CallContextRemotingData {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

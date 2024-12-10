@@ -103,3 +103,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NtpRequest 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+NtpRequest")]
+impl AsRef<crate::LiteNetLib::INetSocketListener>
+for crate::LiteNetLib::Utils::NtpRequest {
+    fn as_ref(&self) -> &crate::LiteNetLib::INetSocketListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+Utils+NtpRequest")]
+impl AsMut<crate::LiteNetLib::INetSocketListener>
+for crate::LiteNetLib::Utils::NtpRequest {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::INetSocketListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}

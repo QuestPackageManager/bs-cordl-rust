@@ -285,3 +285,17 @@ for crate::UnityEngine::UIElements::CallbackEventHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CallbackEventHandler")]
+impl AsRef<crate::UnityEngine::UIElements::IEventHandler>
+for crate::UnityEngine::UIElements::CallbackEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IEventHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+CallbackEventHandler")]
+impl AsMut<crate::UnityEngine::UIElements::IEventHandler>
+for crate::UnityEngine::UIElements::CallbackEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IEventHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

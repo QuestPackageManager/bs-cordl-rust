@@ -202,3 +202,17 @@ for crate::GlobalNamespace::MockPlatformUserModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MockPlatformUserModel")]
+impl AsRef<crate::GlobalNamespace::IPlatformUserModel>
+for crate::GlobalNamespace::MockPlatformUserModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPlatformUserModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockPlatformUserModel")]
+impl AsMut<crate::GlobalNamespace::IPlatformUserModel>
+for crate::GlobalNamespace::MockPlatformUserModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPlatformUserModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

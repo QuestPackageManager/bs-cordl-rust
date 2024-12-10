@@ -95,3 +95,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CaseInsensitiveAs
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+CaseInsensitiveAscii")]
+impl AsRef<crate::System::Collections::IComparer>
+for crate::System::Net::CaseInsensitiveAscii {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+CaseInsensitiveAscii")]
+impl AsMut<crate::System::Collections::IComparer>
+for crate::System::Net::CaseInsensitiveAscii {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+CaseInsensitiveAscii")]
+impl AsRef<crate::System::Collections::IEqualityComparer>
+for crate::System::Net::CaseInsensitiveAscii {
+    fn as_ref(&self) -> &crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+CaseInsensitiveAscii")]
+impl AsMut<crate::System::Collections::IEqualityComparer>
+for crate::System::Net::CaseInsensitiveAscii {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

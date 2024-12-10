@@ -45,3 +45,17 @@ for crate::UnityEngine::InputSystem::IInputInteraction_1<TValue> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+IInputInteraction_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<Blacklisted>
+for crate::UnityEngine::InputSystem::IInputInteraction_1<TValue> {
+    fn as_ref(&self) -> &Blacklisted {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+IInputInteraction_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<Blacklisted>
+for crate::UnityEngine::InputSystem::IInputInteraction_1<TValue> {
+    fn as_mut(&mut self) -> &mut Blacklisted {
+        unsafe { std::mem::transmute(self) }
+    }
+}

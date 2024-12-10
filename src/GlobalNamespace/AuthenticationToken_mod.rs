@@ -64,6 +64,34 @@ impl crate::GlobalNamespace::AuthenticationToken {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "AuthenticationToken")]
+impl AsRef<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::AuthenticationToken,
+    >,
+> for crate::GlobalNamespace::AuthenticationToken {
+    fn as_ref(
+        &self,
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::AuthenticationToken,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "AuthenticationToken")]
+impl AsMut<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::AuthenticationToken,
+    >,
+> for crate::GlobalNamespace::AuthenticationToken {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::AuthenticationToken,
+    > {
+        todo!()
+    }
+}
 #[cfg(feature = "AuthenticationToken+Platform")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -238,3 +238,23 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Winge
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::WingedEdge>>
+for crate::UnityEngine::ProBuilder::WingedEdge {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::WingedEdge> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::WingedEdge>>
+for crate::UnityEngine::ProBuilder::WingedEdge {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

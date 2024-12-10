@@ -142,3 +142,17 @@ for crate::System::ComponentModel::Win32Exception {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ComponentModel+Win32Exception")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::ComponentModel::Win32Exception {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+Win32Exception")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::ComponentModel::Win32Exception {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

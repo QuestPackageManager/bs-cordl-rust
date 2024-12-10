@@ -132,3 +132,17 @@ for crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MockBeatmapDataAssetFileModel")]
+impl AsRef<crate::GlobalNamespace::IBeatmapDataAssetFileModel>
+for crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapDataAssetFileModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockBeatmapDataAssetFileModel")]
+impl AsMut<crate::GlobalNamespace::IBeatmapDataAssetFileModel>
+for crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapDataAssetFileModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

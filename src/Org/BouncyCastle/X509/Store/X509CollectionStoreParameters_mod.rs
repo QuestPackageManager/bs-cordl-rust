@@ -85,3 +85,19 @@ for crate::Org::BouncyCastle::X509::Store::X509CollectionStoreParameters {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CollectionStoreParameters")]
+impl AsRef<crate::Org::BouncyCastle::X509::Store::IX509StoreParameters>
+for crate::Org::BouncyCastle::X509::Store::X509CollectionStoreParameters {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::X509::Store::IX509StoreParameters {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CollectionStoreParameters")]
+impl AsMut<crate::Org::BouncyCastle::X509::Store::IX509StoreParameters>
+for crate::Org::BouncyCastle::X509::Store::X509CollectionStoreParameters {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::X509::Store::IX509StoreParameters {
+        unsafe { std::mem::transmute(self) }
+    }
+}

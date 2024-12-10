@@ -291,6 +291,92 @@ for crate::GlobalNamespace::BurstSliderGameNoteController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsRef<
+    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    >,
+> for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsMut<
+    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    >,
+> for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsRef<crate::GlobalNamespace::IGameNoteMirrorable>
+for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IGameNoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsMut<crate::GlobalNamespace::IGameNoteMirrorable>
+for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IGameNoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsRef<crate::GlobalNamespace::INoteMirrorable>
+for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsMut<crate::GlobalNamespace::INoteMirrorable>
+for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsRef<crate::GlobalNamespace::INoteMovementProvider>
+for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteMovementProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsMut<crate::GlobalNamespace::INoteMovementProvider>
+for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteMovementProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsRef<crate::GlobalNamespace::INoteVisualModifierTypeProvider>
+for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteVisualModifierTypeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsMut<crate::GlobalNamespace::INoteVisualModifierTypeProvider>
+for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INoteVisualModifierTypeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BurstSliderGameNoteController+Pool")]
 #[repr(C)]
 #[derive(Debug)]

@@ -304,3 +304,17 @@ for crate::GlobalNamespace::Hashtable_SyncHashtable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::GlobalNamespace::Hashtable_SyncHashtable {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::GlobalNamespace::Hashtable_SyncHashtable {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

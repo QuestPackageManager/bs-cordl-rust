@@ -80,3 +80,17 @@ for crate::GlobalNamespace::BrowsingMenusRichPresenceData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BrowsingMenusRichPresenceData")]
+impl AsRef<crate::GlobalNamespace::IRichPresenceData>
+for crate::GlobalNamespace::BrowsingMenusRichPresenceData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IRichPresenceData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BrowsingMenusRichPresenceData")]
+impl AsMut<crate::GlobalNamespace::IRichPresenceData>
+for crate::GlobalNamespace::BrowsingMenusRichPresenceData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRichPresenceData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

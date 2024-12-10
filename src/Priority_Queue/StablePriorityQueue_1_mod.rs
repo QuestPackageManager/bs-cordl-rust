@@ -323,3 +323,73 @@ for crate::Priority_Queue::StablePriorityQueue_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Priority_Queue+StablePriorityQueue_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::Priority_Queue::IFixedSizePriorityQueue_2<T, f32>>
+for crate::Priority_Queue::StablePriorityQueue_1<T> {
+    fn as_ref(&self) -> &crate::Priority_Queue::IFixedSizePriorityQueue_2<T, f32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+StablePriorityQueue_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::Priority_Queue::IFixedSizePriorityQueue_2<T, f32>>
+for crate::Priority_Queue::StablePriorityQueue_1<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Priority_Queue::IFixedSizePriorityQueue_2<T, f32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+StablePriorityQueue_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::Priority_Queue::IPriorityQueue_2<T, f32>>
+for crate::Priority_Queue::StablePriorityQueue_1<T> {
+    fn as_ref(&self) -> &crate::Priority_Queue::IPriorityQueue_2<T, f32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+StablePriorityQueue_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::Priority_Queue::IPriorityQueue_2<T, f32>>
+for crate::Priority_Queue::StablePriorityQueue_1<T> {
+    fn as_mut(&mut self) -> &mut crate::Priority_Queue::IPriorityQueue_2<T, f32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+StablePriorityQueue_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::Priority_Queue::StablePriorityQueue_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+StablePriorityQueue_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::Priority_Queue::StablePriorityQueue_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+StablePriorityQueue_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+for crate::Priority_Queue::StablePriorityQueue_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+StablePriorityQueue_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
+for crate::Priority_Queue::StablePriorityQueue_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -76,3 +76,17 @@ impl crate::GlobalNamespace::ColorSchemeNetSerializable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "ColorSchemeNetSerializable")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ColorSchemeNetSerializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "ColorSchemeNetSerializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ColorSchemeNetSerializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}

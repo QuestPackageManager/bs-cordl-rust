@@ -145,3 +145,17 @@ for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
+impl AsRef<crate::GlobalNamespace::IDestinationRequestManager>
+for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IDestinationRequestManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
+impl AsMut<crate::GlobalNamespace::IDestinationRequestManager>
+for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IDestinationRequestManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}

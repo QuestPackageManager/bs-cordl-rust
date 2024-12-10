@@ -92,3 +92,19 @@ for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
+impl AsRef<crate::Newtonsoft::Json::Serialization::ISerializationBinder>
+for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Serialization::ISerializationBinder {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
+impl AsMut<crate::Newtonsoft::Json::Serialization::ISerializationBinder>
+for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Newtonsoft::Json::Serialization::ISerializationBinder {
+        unsafe { std::mem::transmute(self) }
+    }
+}

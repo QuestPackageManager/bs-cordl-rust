@@ -128,3 +128,31 @@ for crate::GlobalNamespace::MainMenuDestinationRequestController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MainMenuDestinationRequestController")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::MainMenuDestinationRequestController {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MainMenuDestinationRequestController")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::MainMenuDestinationRequestController {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MainMenuDestinationRequestController")]
+impl AsRef<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::MainMenuDestinationRequestController {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MainMenuDestinationRequestController")]
+impl AsMut<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::MainMenuDestinationRequestController {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

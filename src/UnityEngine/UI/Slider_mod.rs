@@ -559,6 +559,64 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Slider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsRef<crate::UnityEngine::EventSystems::IDragHandler>
+for crate::UnityEngine::UI::Slider {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsMut<crate::UnityEngine::EventSystems::IDragHandler>
+for crate::UnityEngine::UI::Slider {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::Slider {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::Slider {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsRef<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+for crate::UnityEngine::UI::Slider {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsMut<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+for crate::UnityEngine::UI::Slider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsRef<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::Slider {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::Slider {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Slider+Axis")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

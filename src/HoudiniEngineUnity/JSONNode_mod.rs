@@ -1171,6 +1171,128 @@ for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
+    >,
+> for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
+    >,
+> for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
+    >,
+> for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
+    >,
+> for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]

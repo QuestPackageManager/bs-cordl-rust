@@ -68,3 +68,19 @@ impl crate::UnityEngine::XR::Eyes {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+XR+Eyes")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::Eyes>>
+for crate::UnityEngine::XR::Eyes {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::Eyes> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+XR+Eyes")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::Eyes>>
+for crate::UnityEngine::XR::Eyes {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::Eyes> {
+        todo!()
+    }
+}

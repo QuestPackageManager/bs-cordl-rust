@@ -92,3 +92,31 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
+    >,
+> for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
+    >,
+> for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
+    > {
+        todo!()
+    }
+}

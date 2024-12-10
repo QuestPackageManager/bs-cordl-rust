@@ -53,3 +53,23 @@ impl crate::UnityEngine::Rendering::BatchMaterialID {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+BatchMaterialID")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchMaterialID>>
+for crate::UnityEngine::Rendering::BatchMaterialID {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchMaterialID> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rendering+BatchMaterialID")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchMaterialID>>
+for crate::UnityEngine::Rendering::BatchMaterialID {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::BatchMaterialID,
+    > {
+        todo!()
+    }
+}

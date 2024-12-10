@@ -264,6 +264,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ImageView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+ImageView")]
+impl AsRef<crate::GlobalNamespace::IComponentRefresher> for crate::HMUI::ImageView {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IComponentRefresher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+ImageView")]
+impl AsMut<crate::GlobalNamespace::IComponentRefresher> for crate::HMUI::ImageView {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IComponentRefresher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HMUI+ImageView+GradientDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

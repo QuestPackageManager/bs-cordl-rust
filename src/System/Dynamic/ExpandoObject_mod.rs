@@ -542,6 +542,160 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::ExpandoObject
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsRef<
+    crate::System::Collections::Generic::IDictionary_2<
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IDictionary_2<
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsMut<
+    crate::System::Collections::Generic::IDictionary_2<
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IDictionary_2<
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Dynamic::ExpandoObject {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Dynamic::ExpandoObject {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsRef<crate::System::ComponentModel::INotifyPropertyChanged>
+for crate::System::Dynamic::ExpandoObject {
+    fn as_ref(&self) -> &crate::System::ComponentModel::INotifyPropertyChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsMut<crate::System::ComponentModel::INotifyPropertyChanged>
+for crate::System::Dynamic::ExpandoObject {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::INotifyPropertyChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsRef<crate::System::Dynamic::IDynamicMetaObjectProvider>
+for crate::System::Dynamic::ExpandoObject {
+    fn as_ref(&self) -> &crate::System::Dynamic::IDynamicMetaObjectProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsMut<crate::System::Dynamic::IDynamicMetaObjectProvider>
+for crate::System::Dynamic::ExpandoObject {
+    fn as_mut(&mut self) -> &mut crate::System::Dynamic::IDynamicMetaObjectProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Dynamic+ExpandoObject+ExpandoData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -855,6 +1009,76 @@ for crate::System::Dynamic::ExpandoObject_KeyCollection {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Dynamic::ExpandoObject_KeyCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Dynamic::ExpandoObject_KeyCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Dynamic::ExpandoObject_KeyCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Dynamic::ExpandoObject_KeyCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Dynamic::ExpandoObject_KeyCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Dynamic::ExpandoObject_KeyCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
@@ -1326,6 +1550,76 @@ for crate::System::Dynamic::ExpandoObject_ValueCollection {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+> for crate::System::Dynamic::ExpandoObject_ValueCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+> for crate::System::Dynamic::ExpandoObject_ValueCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+> for crate::System::Dynamic::ExpandoObject_ValueCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+> for crate::System::Dynamic::ExpandoObject_ValueCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Dynamic::ExpandoObject_ValueCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Dynamic::ExpandoObject_ValueCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollectionDebugView")]

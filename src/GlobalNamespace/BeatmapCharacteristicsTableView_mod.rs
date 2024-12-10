@@ -182,3 +182,17 @@ for crate::GlobalNamespace::BeatmapCharacteristicsTableView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapCharacteristicsTableView")]
+impl AsRef<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::BeatmapCharacteristicsTableView {
+    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapCharacteristicsTableView")]
+impl AsMut<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::BeatmapCharacteristicsTableView {
+    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}

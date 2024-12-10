@@ -185,3 +185,63 @@ for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
+impl AsRef<crate::UnityEngine::UIElements::ICollectionDragAndDropController>
+for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::ICollectionDragAndDropController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
+impl AsMut<crate::UnityEngine::UIElements::ICollectionDragAndDropController>
+for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::ICollectionDragAndDropController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
+impl AsRef<
+    crate::UnityEngine::UIElements::IDragAndDropController_1<
+        *mut crate::UnityEngine::UIElements::IListDragAndDropArgs,
+    >,
+> for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IDragAndDropController_1<
+        *mut crate::UnityEngine::UIElements::IListDragAndDropArgs,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
+impl AsMut<
+    crate::UnityEngine::UIElements::IDragAndDropController_1<
+        *mut crate::UnityEngine::UIElements::IListDragAndDropArgs,
+    >,
+> for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IDragAndDropController_1<
+        *mut crate::UnityEngine::UIElements::IListDragAndDropArgs,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
+impl AsRef<crate::UnityEngine::UIElements::IReorderable>
+for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IReorderable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
+impl AsMut<crate::UnityEngine::UIElements::IReorderable>
+for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IReorderable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

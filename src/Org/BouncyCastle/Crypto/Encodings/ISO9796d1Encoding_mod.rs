@@ -188,3 +188,19 @@ for crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher>
+for crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher>
+for crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}

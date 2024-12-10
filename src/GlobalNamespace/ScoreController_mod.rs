@@ -326,3 +326,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreControll
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ScoreController")]
+impl AsRef<crate::GlobalNamespace::IScoreController>
+for crate::GlobalNamespace::ScoreController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IScoreController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ScoreController")]
+impl AsMut<crate::GlobalNamespace::IScoreController>
+for crate::GlobalNamespace::ScoreController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IScoreController {
+        unsafe { std::mem::transmute(self) }
+    }
+}

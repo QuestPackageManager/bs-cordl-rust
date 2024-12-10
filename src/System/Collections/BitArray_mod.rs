@@ -223,6 +223,46 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::BitArray 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+BitArray")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::BitArray {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+BitArray")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::BitArray {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+BitArray")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::BitArray {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+BitArray")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::BitArray {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+BitArray")]
+impl AsRef<crate::System::ICloneable> for crate::System::Collections::BitArray {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+BitArray")]
+impl AsMut<crate::System::ICloneable> for crate::System::Collections::BitArray {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
 #[repr(C)]
 #[derive(Debug)]
@@ -327,5 +367,33 @@ for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
+impl AsRef<crate::System::ICloneable>
+for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
+impl AsMut<crate::System::ICloneable>
+for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
     }
 }

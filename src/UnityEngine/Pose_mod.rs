@@ -95,3 +95,17 @@ impl crate::UnityEngine::Pose {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Pose")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Pose>>
+for crate::UnityEngine::Pose {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Pose> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Pose")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Pose>>
+for crate::UnityEngine::Pose {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Pose> {
+        todo!()
+    }
+}

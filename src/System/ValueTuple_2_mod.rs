@@ -281,3 +281,147 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IStructuralComparable>
+for crate::System::ValueTuple_2<T1, T2> {
+    fn as_ref(&self) -> &crate::System::Collections::IStructuralComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IStructuralComparable>
+for crate::System::ValueTuple_2<T1, T2> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IStructuralEquatable>
+for crate::System::ValueTuple_2<T1, T2> {
+    fn as_ref(&self) -> &crate::System::Collections::IStructuralEquatable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IStructuralEquatable>
+for crate::System::ValueTuple_2<T1, T2> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralEquatable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IComparable> for crate::System::ValueTuple_2<T1, T2> {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IComparable> for crate::System::ValueTuple_2<T1, T2> {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IComparable_1<crate::System::ValueTuple_2<T1, T2>>>
+for crate::System::ValueTuple_2<T1, T2> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<crate::System::ValueTuple_2<T1, T2>> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IComparable_1<crate::System::ValueTuple_2<T1, T2>>>
+for crate::System::ValueTuple_2<T1, T2> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<crate::System::ValueTuple_2<T1, T2>> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IEquatable_1<crate::System::ValueTuple_2<T1, T2>>>
+for crate::System::ValueTuple_2<T1, T2> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::System::ValueTuple_2<T1, T2>> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IEquatable_1<crate::System::ValueTuple_2<T1, T2>>>
+for crate::System::ValueTuple_2<T1, T2> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::System::ValueTuple_2<T1, T2>> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IValueTupleInternal> for crate::System::ValueTuple_2<T1, T2> {
+    fn as_ref(&self) -> &crate::System::IValueTupleInternal {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IValueTupleInternal> for crate::System::ValueTuple_2<T1, T2> {
+    fn as_mut(&mut self) -> &mut crate::System::IValueTupleInternal {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Runtime::CompilerServices::ITuple>
+for crate::System::ValueTuple_2<T1, T2> {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::ITuple {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_2")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Runtime::CompilerServices::ITuple>
+for crate::System::ValueTuple_2<T1, T2> {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::CompilerServices::ITuple {
+        todo!()
+    }
+}

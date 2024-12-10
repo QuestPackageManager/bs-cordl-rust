@@ -54,3 +54,19 @@ for crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+CompilerServices+ICriticalNotifyCompletion")]
+impl AsRef<crate::System::Runtime::CompilerServices::INotifyCompletion>
+for crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::INotifyCompletion {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ICriticalNotifyCompletion")]
+impl AsMut<crate::System::Runtime::CompilerServices::INotifyCompletion>
+for crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::INotifyCompletion {
+        unsafe { std::mem::transmute(self) }
+    }
+}

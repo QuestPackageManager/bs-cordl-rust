@@ -702,6 +702,48 @@ for crate::GlobalNamespace::IgnoranceConnectionManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IgnoranceConnectionManager")]
+impl AsRef<crate::GlobalNamespace::IConnectionManager>
+for crate::GlobalNamespace::IgnoranceConnectionManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectionManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IgnoranceConnectionManager")]
+impl AsMut<crate::GlobalNamespace::IConnectionManager>
+for crate::GlobalNamespace::IgnoranceConnectionManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectionManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IgnoranceConnectionManager")]
+impl AsRef<crate::GlobalNamespace::IPollable>
+for crate::GlobalNamespace::IgnoranceConnectionManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IgnoranceConnectionManager")]
+impl AsMut<crate::GlobalNamespace::IPollable>
+for crate::GlobalNamespace::IgnoranceConnectionManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IgnoranceConnectionManager")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::IgnoranceConnectionManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IgnoranceConnectionManager")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::IgnoranceConnectionManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "IgnoranceConnectionManager+ConnectToServerParams")]
 #[repr(C)]
 #[derive(Debug)]
@@ -953,6 +995,20 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
+impl AsRef<crate::GlobalNamespace::IConnection>
+for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConnection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
+impl AsMut<crate::GlobalNamespace::IConnection>
+for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1013,6 +1069,34 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParams
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
+impl AsRef<
+    crate::GlobalNamespace::IConnectionInitParams_1<
+        *mut crate::GlobalNamespace::IgnoranceConnectionManager,
+    >,
+> for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IConnectionInitParams_1<
+        *mut crate::GlobalNamespace::IgnoranceConnectionManager,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
+impl AsMut<
+    crate::GlobalNamespace::IConnectionInitParams_1<
+        *mut crate::GlobalNamespace::IgnoranceConnectionManager,
+    >,
+> for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IConnectionInitParams_1<
+        *mut crate::GlobalNamespace::IgnoranceConnectionManager,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager+StartServerParams")]

@@ -411,6 +411,20 @@ for crate::UnityEngine::UIElements::GenericDropdownMenu {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu")]
+impl AsRef<crate::UnityEngine::UIElements::IGenericMenu>
+for crate::UnityEngine::UIElements::GenericDropdownMenu {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IGenericMenu {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu")]
+impl AsMut<crate::UnityEngine::UIElements::IGenericMenu>
+for crate::UnityEngine::UIElements::GenericDropdownMenu {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IGenericMenu {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu+MenuItem")]
 #[repr(C)]
 #[derive(Debug)]

@@ -116,3 +116,17 @@ for crate::UnityEngine::InputSystem::Utilities::Observer_1<TValue> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Observer_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::IObserver_1<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::Observer_1<TValue> {
+    fn as_ref(&self) -> &crate::System::IObserver_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Observer_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IObserver_1<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::Observer_1<TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::IObserver_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -147,6 +147,24 @@ impl crate::UnityEngine::UIElements::Length {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Length")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length>>
+for crate::UnityEngine::UIElements::Length {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Length")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length>>
+for crate::UnityEngine::UIElements::Length {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length> {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Length+Unit")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -211,3 +211,45 @@ for crate::Org::BouncyCastle::Utilities::Collections::HashSet {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+HashSet")]
+impl AsRef<crate::Org::BouncyCastle::Utilities::Collections::ISet>
+for crate::Org::BouncyCastle::Utilities::Collections::HashSet {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Utilities::Collections::ISet {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+HashSet")]
+impl AsMut<crate::Org::BouncyCastle::Utilities::Collections::ISet>
+for crate::Org::BouncyCastle::Utilities::Collections::HashSet {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Utilities::Collections::ISet {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+HashSet")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::Org::BouncyCastle::Utilities::Collections::HashSet {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+HashSet")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::Org::BouncyCastle::Utilities::Collections::HashSet {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+HashSet")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::Org::BouncyCastle::Utilities::Collections::HashSet {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+HashSet")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::Org::BouncyCastle::Utilities::Collections::HashSet {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

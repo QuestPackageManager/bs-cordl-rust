@@ -373,6 +373,42 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Enum {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Enum")]
+impl AsRef<crate::System::IComparable> for crate::System::Enum {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Enum")]
+impl AsMut<crate::System::IComparable> for crate::System::Enum {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Enum")]
+impl AsRef<crate::System::IConvertible> for crate::System::Enum {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Enum")]
+impl AsMut<crate::System::IConvertible> for crate::System::Enum {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Enum")]
+impl AsRef<crate::System::IFormattable> for crate::System::Enum {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Enum")]
+impl AsMut<crate::System::IFormattable> for crate::System::Enum {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Enum+EnumResult")]
 #[repr(C)]
 #[derive(Debug, Clone)]

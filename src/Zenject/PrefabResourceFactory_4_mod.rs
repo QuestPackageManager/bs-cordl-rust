@@ -148,3 +148,69 @@ for crate::Zenject::PrefabResourceFactory_4<P1, P2, P3, T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+PrefabResourceFactory_4")]
+impl<
+    P1: quest_hook::libil2cpp::Type,
+    P2: quest_hook::libil2cpp::Type,
+    P3: quest_hook::libil2cpp::Type,
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::Zenject::IFactory>
+for crate::Zenject::PrefabResourceFactory_4<P1, P2, P3, T> {
+    fn as_ref(&self) -> &crate::Zenject::IFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PrefabResourceFactory_4")]
+impl<
+    P1: quest_hook::libil2cpp::Type,
+    P2: quest_hook::libil2cpp::Type,
+    P3: quest_hook::libil2cpp::Type,
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::Zenject::IFactory>
+for crate::Zenject::PrefabResourceFactory_4<P1, P2, P3, T> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PrefabResourceFactory_4")]
+impl<
+    P1: quest_hook::libil2cpp::Type,
+    P2: quest_hook::libil2cpp::Type,
+    P3: quest_hook::libil2cpp::Type,
+    T: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::Zenject::IFactory_5<*mut quest_hook::libil2cpp::Il2CppString, P1, P2, P3, T>,
+> for crate::Zenject::PrefabResourceFactory_4<P1, P2, P3, T> {
+    fn as_ref(
+        &self,
+    ) -> &crate::Zenject::IFactory_5<
+        *mut quest_hook::libil2cpp::Il2CppString,
+        P1,
+        P2,
+        P3,
+        T,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PrefabResourceFactory_4")]
+impl<
+    P1: quest_hook::libil2cpp::Type,
+    P2: quest_hook::libil2cpp::Type,
+    P3: quest_hook::libil2cpp::Type,
+    T: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::Zenject::IFactory_5<*mut quest_hook::libil2cpp::Il2CppString, P1, P2, P3, T>,
+> for crate::Zenject::PrefabResourceFactory_4<P1, P2, P3, T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Zenject::IFactory_5<
+        *mut quest_hook::libil2cpp::Il2CppString,
+        P1,
+        P2,
+        P3,
+        T,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

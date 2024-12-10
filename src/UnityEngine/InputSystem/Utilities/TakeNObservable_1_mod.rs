@@ -94,6 +94,20 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::IObservable_1<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
+    fn as_ref(&self) -> &crate::System::IObservable_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IObservable_1<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::IObservable_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1+Take")]
 #[repr(C)]
 #[derive(Debug)]
@@ -215,5 +229,19 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1+Take")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::IObserver_1<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
+    fn as_ref(&self) -> &crate::System::IObserver_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1+Take")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IObserver_1<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::IObserver_1<TValue> {
+        unsafe { std::mem::transmute(self) }
     }
 }

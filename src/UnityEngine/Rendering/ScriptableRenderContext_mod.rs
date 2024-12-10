@@ -89,3 +89,27 @@ impl crate::UnityEngine::Rendering::ScriptableRenderContext {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::Rendering::ScriptableRenderContext>,
+> for crate::UnityEngine::Rendering::ScriptableRenderContext {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::ScriptableRenderContext,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::Rendering::ScriptableRenderContext>,
+> for crate::UnityEngine::Rendering::ScriptableRenderContext {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::ScriptableRenderContext,
+    > {
+        todo!()
+    }
+}

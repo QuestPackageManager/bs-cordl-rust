@@ -663,6 +663,58 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCo
     }
 }
 #[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+)]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+)]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+)]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+)]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(
     feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 #[repr(C)]
@@ -793,5 +845,75 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEn
             crate::UnityEngine::InputSystem::InputControl,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Current", ())?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+)]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+)]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+)]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+)]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+)]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+)]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }

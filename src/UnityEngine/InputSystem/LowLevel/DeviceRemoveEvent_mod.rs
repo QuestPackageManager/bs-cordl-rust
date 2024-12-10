@@ -49,3 +49,19 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeviceRemoveEvent")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeviceRemoveEvent")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
+        todo!()
+    }
+}

@@ -168,3 +168,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CompositeLogg
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "CompositeLogger")]
+impl AsRef<crate::GlobalNamespace::IBeatSaberLogger>
+for crate::GlobalNamespace::CompositeLogger {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatSaberLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CompositeLogger")]
+impl AsMut<crate::GlobalNamespace::IBeatSaberLogger>
+for crate::GlobalNamespace::CompositeLogger {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatSaberLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}

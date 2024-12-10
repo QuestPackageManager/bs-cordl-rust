@@ -96,6 +96,34 @@ for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable")]
+impl AsRef<
+    crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable")]
+impl AsMut<
+    crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
 #[repr(C)]
 #[derive(Debug)]
@@ -203,5 +231,29 @@ for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevi
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
+impl AsRef<
+    crate::System::IObserver_1<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
+> for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevice {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IObserver_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
+impl AsMut<
+    crate::System::IObserver_1<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
+> for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevice {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IObserver_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }

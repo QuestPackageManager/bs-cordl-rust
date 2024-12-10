@@ -283,3 +283,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::LayoutElement
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+LayoutElement")]
+impl AsRef<crate::UnityEngine::UI::ILayoutElement>
+for crate::UnityEngine::UI::LayoutElement {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+LayoutElement")]
+impl AsMut<crate::UnityEngine::UI::ILayoutElement>
+for crate::UnityEngine::UI::LayoutElement {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+LayoutElement")]
+impl AsRef<crate::UnityEngine::UI::ILayoutIgnorer>
+for crate::UnityEngine::UI::LayoutElement {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutIgnorer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+LayoutElement")]
+impl AsMut<crate::UnityEngine::UI::ILayoutIgnorer>
+for crate::UnityEngine::UI::LayoutElement {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutIgnorer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

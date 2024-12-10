@@ -39,6 +39,22 @@ impl crate::UnityEngine::InputSystem::LowLevel::JoystickState {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

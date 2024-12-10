@@ -219,3 +219,17 @@ for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData_AuthEnvelopedSecureReada
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData+AuthEnvelopedSecureReadable")]
+impl AsRef<crate::Org::BouncyCastle::Cms::CmsSecureReadable>
+for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData_AuthEnvelopedSecureReadable {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::CmsSecureReadable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData+AuthEnvelopedSecureReadable")]
+impl AsMut<crate::Org::BouncyCastle::Cms::CmsSecureReadable>
+for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData_AuthEnvelopedSecureReadable {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::CmsSecureReadable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

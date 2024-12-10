@@ -338,3 +338,17 @@ for crate::System::Runtime::Remoting::ConfigHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+ConfigHandler")]
+impl AsRef<crate::Mono::Xml::SmallXmlParser_IContentHandler>
+for crate::System::Runtime::Remoting::ConfigHandler {
+    fn as_ref(&self) -> &crate::Mono::Xml::SmallXmlParser_IContentHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+ConfigHandler")]
+impl AsMut<crate::Mono::Xml::SmallXmlParser_IContentHandler>
+for crate::System::Runtime::Remoting::ConfigHandler {
+    fn as_mut(&mut self) -> &mut crate::Mono::Xml::SmallXmlParser_IContentHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

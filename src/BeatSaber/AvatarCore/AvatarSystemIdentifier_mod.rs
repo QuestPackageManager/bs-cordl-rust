@@ -67,3 +67,27 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemIdentifier")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::BeatSaber::AvatarCore::AvatarSystemIdentifier>,
+> for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemIdentifier")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::BeatSaber::AvatarCore::AvatarSystemIdentifier>,
+> for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
+    > {
+        todo!()
+    }
+}

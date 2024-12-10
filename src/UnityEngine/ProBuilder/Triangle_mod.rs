@@ -126,3 +126,21 @@ impl crate::UnityEngine::ProBuilder::Triangle {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Triangle")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle>>
+for crate::UnityEngine::ProBuilder::Triangle {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+Triangle")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle>>
+for crate::UnityEngine::ProBuilder::Triangle {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle> {
+        todo!()
+    }
+}

@@ -118,3 +118,21 @@ impl crate::UnityEngine::ProBuilder::Normal {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Normal")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Normal>>
+for crate::UnityEngine::ProBuilder::Normal {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Normal> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+Normal")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Normal>>
+for crate::UnityEngine::ProBuilder::Normal {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Normal> {
+        todo!()
+    }
+}

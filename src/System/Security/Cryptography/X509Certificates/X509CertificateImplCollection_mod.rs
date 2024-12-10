@@ -177,3 +177,21 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
+)]
+impl AsRef<crate::System::IDisposable>
+for crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
+)]
+impl AsMut<crate::System::IDisposable>
+for crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -115,3 +115,31 @@ for crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapEventDataBoxGroupProcessor")]
+impl AsRef<
+    crate::GlobalNamespace::ISortedListItemProcessor_1<
+        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+    >,
+> for crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ISortedListItemProcessor_1<
+        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapEventDataBoxGroupProcessor")]
+impl AsMut<
+    crate::GlobalNamespace::ISortedListItemProcessor_1<
+        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+    >,
+> for crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ISortedListItemProcessor_1<
+        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

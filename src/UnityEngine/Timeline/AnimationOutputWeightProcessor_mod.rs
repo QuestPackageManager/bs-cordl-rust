@@ -97,6 +97,22 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor")]
+impl AsRef<crate::UnityEngine::Timeline::ITimelineEvaluateCallback>
+for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineEvaluateCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor")]
+impl AsMut<crate::UnityEngine::Timeline::ITimelineEvaluateCallback>
+for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::Timeline::ITimelineEvaluateCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 #[repr(C)]
 #[derive(Debug, Clone)]

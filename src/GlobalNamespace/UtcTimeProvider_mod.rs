@@ -65,3 +65,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UtcTimeProvid
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UtcTimeProvider")]
+impl AsRef<crate::BGNet::Core::ITimeProvider>
+for crate::GlobalNamespace::UtcTimeProvider {
+    fn as_ref(&self) -> &crate::BGNet::Core::ITimeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UtcTimeProvider")]
+impl AsMut<crate::BGNet::Core::ITimeProvider>
+for crate::GlobalNamespace::UtcTimeProvider {
+    fn as_mut(&mut self) -> &mut crate::BGNet::Core::ITimeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

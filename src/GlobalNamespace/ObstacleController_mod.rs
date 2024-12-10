@@ -415,6 +415,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ObstacleContr
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ObstacleController")]
+impl AsRef<crate::GlobalNamespace::IBeatmapObjectController>
+for crate::GlobalNamespace::ObstacleController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapObjectController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ObstacleController")]
+impl AsMut<crate::GlobalNamespace::IBeatmapObjectController>
+for crate::GlobalNamespace::ObstacleController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapObjectController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "ObstacleController+Pool")]
 #[repr(C)]
 #[derive(Debug)]

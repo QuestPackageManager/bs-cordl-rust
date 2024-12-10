@@ -193,3 +193,21 @@ impl<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+GetterProvider_2")]
+impl<
+    TObj: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> AsRef<crate::Zenject::IProvider> for crate::Zenject::GetterProvider_2<TObj, TResult> {
+    fn as_ref(&self) -> &crate::Zenject::IProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+GetterProvider_2")]
+impl<
+    TObj: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> AsMut<crate::Zenject::IProvider> for crate::Zenject::GetterProvider_2<TObj, TResult> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

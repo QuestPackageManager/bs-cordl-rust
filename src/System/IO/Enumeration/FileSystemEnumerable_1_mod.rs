@@ -193,6 +193,40 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<TResult>>
+for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TResult> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<TResult>>
+for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TResult> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
+impl<TResult: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
+impl<TResult: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
+for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
 #[repr(C)]
 #[derive(Debug)]

@@ -291,3 +291,17 @@ for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonReader")]
+impl AsRef<crate::Newtonsoft::Json::IJsonLineInfo>
+for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::IJsonLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonReader")]
+impl AsMut<crate::Newtonsoft::Json::IJsonLineInfo>
+for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::IJsonLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

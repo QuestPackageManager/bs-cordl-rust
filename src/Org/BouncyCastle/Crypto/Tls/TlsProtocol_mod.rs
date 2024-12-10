@@ -747,6 +747,20 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>
+for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>
+for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
 #[repr(C)]
 #[derive(Debug)]

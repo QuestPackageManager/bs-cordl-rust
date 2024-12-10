@@ -34,3 +34,15 @@ impl crate::LufsMetering::CalculateRmsBlockJob {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "LufsMetering+CalculateRmsBlockJob")]
+impl AsRef<crate::Unity::Jobs::IJob> for crate::LufsMetering::CalculateRmsBlockJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
+#[cfg(feature = "LufsMetering+CalculateRmsBlockJob")]
+impl AsMut<crate::Unity::Jobs::IJob> for crate::LufsMetering::CalculateRmsBlockJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}

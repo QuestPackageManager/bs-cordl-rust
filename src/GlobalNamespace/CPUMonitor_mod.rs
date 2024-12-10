@@ -72,3 +72,27 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CPUMonitor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "CPUMonitor")]
+impl AsRef<crate::GlobalNamespace::ICPUMonitor> for crate::GlobalNamespace::CPUMonitor {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ICPUMonitor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CPUMonitor")]
+impl AsMut<crate::GlobalNamespace::ICPUMonitor> for crate::GlobalNamespace::CPUMonitor {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ICPUMonitor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CPUMonitor")]
+impl AsRef<crate::GlobalNamespace::IPollable> for crate::GlobalNamespace::CPUMonitor {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CPUMonitor")]
+impl AsMut<crate::GlobalNamespace::IPollable> for crate::GlobalNamespace::CPUMonitor {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

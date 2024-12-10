@@ -143,3 +143,17 @@ for crate::System::Security::Claims::ClaimsPrincipal {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]
+impl AsRef<crate::System::Security::Principal::IPrincipal>
+for crate::System::Security::Claims::ClaimsPrincipal {
+    fn as_ref(&self) -> &crate::System::Security::Principal::IPrincipal {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]
+impl AsMut<crate::System::Security::Principal::IPrincipal>
+for crate::System::Security::Claims::ClaimsPrincipal {
+    fn as_mut(&mut self) -> &mut crate::System::Security::Principal::IPrincipal {
+        unsafe { std::mem::transmute(self) }
+    }
+}

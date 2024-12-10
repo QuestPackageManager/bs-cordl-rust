@@ -271,6 +271,20 @@ for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
+impl AsRef<crate::System::Collections::IComparer>
+for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
+impl AsMut<crate::System::Collections::IComparer>
+for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
 #[repr(C)]
 #[derive(Debug)]

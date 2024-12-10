@@ -153,6 +153,20 @@ impl crate::UnityEngine::UI::CoroutineTween::FloatTween {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween")]
+impl AsRef<crate::UnityEngine::UI::CoroutineTween::ITweenValue>
+for crate::UnityEngine::UI::CoroutineTween::FloatTween {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::CoroutineTween::ITweenValue {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween")]
+impl AsMut<crate::UnityEngine::UI::CoroutineTween::ITweenValue>
+for crate::UnityEngine::UI::CoroutineTween::FloatTween {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::CoroutineTween::ITweenValue {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback")]
 #[repr(C)]
 #[derive(Debug)]

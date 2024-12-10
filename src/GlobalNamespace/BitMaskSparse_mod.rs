@@ -136,3 +136,59 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BitMaskSparse
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BitMaskSparse")]
+impl AsRef<
+    crate::GlobalNamespace::IBitMask_1<*mut crate::GlobalNamespace::BitMaskSparse>,
+> for crate::GlobalNamespace::BitMaskSparse {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IBitMask_1<
+        *mut crate::GlobalNamespace::BitMaskSparse,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskSparse")]
+impl AsMut<
+    crate::GlobalNamespace::IBitMask_1<*mut crate::GlobalNamespace::BitMaskSparse>,
+> for crate::GlobalNamespace::BitMaskSparse {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IBitMask_1<
+        *mut crate::GlobalNamespace::BitMaskSparse,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskSparse")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BitMaskSparse {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskSparse")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BitMaskSparse {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskSparse")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::GlobalNamespace::BitMaskSparse>>
+for crate::GlobalNamespace::BitMaskSparse {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::GlobalNamespace::BitMaskSparse> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskSparse")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::GlobalNamespace::BitMaskSparse>>
+for crate::GlobalNamespace::BitMaskSparse {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::GlobalNamespace::BitMaskSparse> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

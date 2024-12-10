@@ -182,6 +182,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Radio
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+RadioButton")]
+impl AsRef<crate::UnityEngine::UIElements::IGroupBoxOption>
+for crate::UnityEngine::UIElements::RadioButton {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IGroupBoxOption {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+RadioButton")]
+impl AsMut<crate::UnityEngine::UIElements::IGroupBoxOption>
+for crate::UnityEngine::UIElements::RadioButton {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IGroupBoxOption {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]

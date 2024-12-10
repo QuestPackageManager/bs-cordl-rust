@@ -225,6 +225,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNamespaceManag
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XmlNamespaceManager")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Xml::XmlNamespaceManager {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlNamespaceManager")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Xml::XmlNamespaceManager {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlNamespaceManager")]
+impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XmlNamespaceManager {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlNamespaceManager")]
+impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XmlNamespaceManager {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
 #[repr(C)]
 #[derive(Debug, Clone)]

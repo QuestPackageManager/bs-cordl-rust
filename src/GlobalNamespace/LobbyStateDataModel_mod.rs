@@ -255,3 +255,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LobbyStateDat
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LobbyStateDataModel")]
+impl AsRef<crate::GlobalNamespace::ILobbyStateDataModel>
+for crate::GlobalNamespace::LobbyStateDataModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILobbyStateDataModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyStateDataModel")]
+impl AsMut<crate::GlobalNamespace::ILobbyStateDataModel>
+for crate::GlobalNamespace::LobbyStateDataModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILobbyStateDataModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyStateDataModel")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::LobbyStateDataModel {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyStateDataModel")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::LobbyStateDataModel {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

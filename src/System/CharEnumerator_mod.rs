@@ -134,3 +134,55 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::CharEnumerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+CharEnumerator")]
+impl AsRef<crate::System::Collections::Generic::IEnumerator_1<char>>
+for crate::System::CharEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<char> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+CharEnumerator")]
+impl AsMut<crate::System::Collections::Generic::IEnumerator_1<char>>
+for crate::System::CharEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<char> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+CharEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator> for crate::System::CharEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+CharEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator> for crate::System::CharEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+CharEnumerator")]
+impl AsRef<crate::System::ICloneable> for crate::System::CharEnumerator {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+CharEnumerator")]
+impl AsMut<crate::System::ICloneable> for crate::System::CharEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+CharEnumerator")]
+impl AsRef<crate::System::IDisposable> for crate::System::CharEnumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+CharEnumerator")]
+impl AsMut<crate::System::IDisposable> for crate::System::CharEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

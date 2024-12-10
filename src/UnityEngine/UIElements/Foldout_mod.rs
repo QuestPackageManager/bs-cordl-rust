@@ -170,6 +170,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Foldo
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Foldout")]
+impl AsRef<crate::UnityEngine::UIElements::INotifyValueChanged_1<bool>>
+for crate::UnityEngine::UIElements::Foldout {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::INotifyValueChanged_1<bool> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Foldout")]
+impl AsMut<crate::UnityEngine::UIElements::INotifyValueChanged_1<bool>>
+for crate::UnityEngine::UIElements::Foldout {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::INotifyValueChanged_1<bool> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]

@@ -212,3 +212,19 @@ for crate::GlobalNamespace::GameServersListTableView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "GameServersListTableView")]
+impl AsRef<crate::GlobalNamespace::TableViewWithDetailCell_IDataSource>
+for crate::GlobalNamespace::GameServersListTableView {
+    fn as_ref(&self) -> &crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GameServersListTableView")]
+impl AsMut<crate::GlobalNamespace::TableViewWithDetailCell_IDataSource>
+for crate::GlobalNamespace::GameServersListTableView {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}

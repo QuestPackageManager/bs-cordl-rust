@@ -100,3 +100,17 @@ for crate::GlobalNamespace::NoRichPresencePlatformHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoRichPresencePlatformHandler")]
+impl AsRef<crate::GlobalNamespace::IRichPresencePlatformHandler>
+for crate::GlobalNamespace::NoRichPresencePlatformHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IRichPresencePlatformHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoRichPresencePlatformHandler")]
+impl AsMut<crate::GlobalNamespace::IRichPresencePlatformHandler>
+for crate::GlobalNamespace::NoRichPresencePlatformHandler {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRichPresencePlatformHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

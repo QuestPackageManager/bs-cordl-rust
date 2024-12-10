@@ -115,6 +115,22 @@ for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
+impl AsRef<crate::UnityEngine::UI::DefaultControls_IFactoryControls>
+for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::DefaultControls_IFactoryControls {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
+impl AsMut<crate::UnityEngine::UI::DefaultControls_IFactoryControls>
+for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UI::DefaultControls_IFactoryControls {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UI+DefaultControls+IFactoryControls")]
 #[repr(C)]
 #[derive(Debug)]

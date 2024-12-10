@@ -136,6 +136,20 @@ for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "X509CertificateUtility+PasswordFinder")]
+impl AsRef<crate::Org::BouncyCastle::OpenSsl::IPasswordFinder>
+for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::OpenSsl::IPasswordFinder {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "X509CertificateUtility+PasswordFinder")]
+impl AsMut<crate::Org::BouncyCastle::OpenSsl::IPasswordFinder>
+for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::OpenSsl::IPasswordFinder {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 #[repr(C)]
 #[derive(Debug)]
@@ -225,5 +239,33 @@ for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvi
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
+impl AsRef<crate::GlobalNamespace::ICertificateEncryptionProvider>
+for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ICertificateEncryptionProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
+impl AsMut<crate::GlobalNamespace::ICertificateEncryptionProvider>
+for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ICertificateEncryptionProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }

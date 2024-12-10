@@ -1997,3 +1997,17 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

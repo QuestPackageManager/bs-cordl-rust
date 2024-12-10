@@ -128,6 +128,20 @@ for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "RumbleHapticFeedbackPlayer")]
+impl AsRef<crate::GlobalNamespace::IHapticFeedbackPlayer>
+for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IHapticFeedbackPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "RumbleHapticFeedbackPlayer")]
+impl AsMut<crate::GlobalNamespace::IHapticFeedbackPlayer>
+for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IHapticFeedbackPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "RumbleHapticFeedbackPlayer+RumbleData")]
 #[repr(C)]
 #[derive(Debug)]

@@ -91,3 +91,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::VoipPCMSourc
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Oculus+Platform+VoipPCMSourceNative")]
+impl AsRef<crate::Oculus::Platform::IVoipPCMSource>
+for crate::Oculus::Platform::VoipPCMSourceNative {
+    fn as_ref(&self) -> &crate::Oculus::Platform::IVoipPCMSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Oculus+Platform+VoipPCMSourceNative")]
+impl AsMut<crate::Oculus::Platform::IVoipPCMSource>
+for crate::Oculus::Platform::VoipPCMSourceNative {
+    fn as_mut(&mut self) -> &mut crate::Oculus::Platform::IVoipPCMSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}

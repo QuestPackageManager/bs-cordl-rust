@@ -233,6 +233,24 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
     }
 }
 #[cfg(
+    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
+)]
+impl AsRef<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
+    fn as_ref(&self) -> &crate::System::ComponentModel::ICustomTypeDescriptor {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
+)]
+impl AsMut<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ICustomTypeDescriptor {
+        todo!()
+    }
+}
+#[cfg(
     feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
 #[repr(C)]
@@ -465,6 +483,24 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
             (node, objectType, instance),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(
+    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
+)]
+impl AsRef<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
+    fn as_ref(&self) -> &crate::System::ComponentModel::ICustomTypeDescriptor {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
+)]
+impl AsMut<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ICustomTypeDescriptor {
+        todo!()
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor")]
@@ -799,6 +835,20 @@ for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
+impl AsRef<crate::System::Collections::IComparer>
+for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
+impl AsMut<crate::System::Collections::IComparer>
+for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1068,6 +1118,20 @@ for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
+impl AsRef<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
+    fn as_ref(&self) -> &crate::System::ComponentModel::ICustomTypeDescriptor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
+impl AsMut<crate::System::ComponentModel::ICustomTypeDescriptor>
+for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ICustomTypeDescriptor {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]

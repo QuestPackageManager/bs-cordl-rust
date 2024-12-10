@@ -183,3 +183,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::Latin1Encoding {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Text+Latin1Encoding")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Text::Latin1Encoding {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+Latin1Encoding")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Text::Latin1Encoding {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

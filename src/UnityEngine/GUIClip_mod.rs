@@ -82,3 +82,15 @@ impl crate::UnityEngine::GUIClip_ParentClipScope {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::GUIClip_ParentClipScope {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::GUIClip_ParentClipScope {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

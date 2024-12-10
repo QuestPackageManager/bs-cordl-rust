@@ -129,3 +129,33 @@ for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IDerivationFunction>
+for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDerivationFunction {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IDerivationFunction>
+for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDerivationFunction {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IMacDerivationFunction>
+for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IMacDerivationFunction {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IMacDerivationFunction>
+for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::IMacDerivationFunction {
+        unsafe { std::mem::transmute(self) }
+    }
+}

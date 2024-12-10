@@ -4861,3 +4861,15 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::Mesh_MeshDataArray {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Mesh_MeshDataArray {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

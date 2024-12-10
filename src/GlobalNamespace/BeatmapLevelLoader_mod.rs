@@ -344,6 +344,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelL
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapLevelLoader")]
+impl AsRef<crate::GlobalNamespace::IBeatmapLevelLoader>
+for crate::GlobalNamespace::BeatmapLevelLoader {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapLevelLoader {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelLoader")]
+impl AsMut<crate::GlobalNamespace::IBeatmapLevelLoader>
+for crate::GlobalNamespace::BeatmapLevelLoader {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapLevelLoader {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelLoader")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::BeatmapLevelLoader {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelLoader")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::BeatmapLevelLoader {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BeatmapLevelLoader+InitData")]
 #[repr(C)]
 #[derive(Debug)]

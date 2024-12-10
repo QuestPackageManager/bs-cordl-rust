@@ -557,6 +557,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapData")]
+impl AsRef<crate::GlobalNamespace::IReadonlyBeatmapData>
+for crate::GlobalNamespace::BeatmapData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IReadonlyBeatmapData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapData")]
+impl AsMut<crate::GlobalNamespace::IReadonlyBeatmapData>
+for crate::GlobalNamespace::BeatmapData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IReadonlyBeatmapData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
 #[repr(C)]
 #[derive(Debug)]
@@ -637,5 +651,33 @@ for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
+impl AsRef<
+    crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
+    >,
+> for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
+impl AsMut<
+    crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
+    >,
+> for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }

@@ -106,6 +106,24 @@ impl crate::UnityEngine::UIElements::Angle {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Angle")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle>>
+for crate::UnityEngine::UIElements::Angle {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Angle")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle>>
+for crate::UnityEngine::UIElements::Angle {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle> {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Angle+Unit")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

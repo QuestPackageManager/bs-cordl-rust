@@ -455,3 +455,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaEnt
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaEntity")]
+impl AsRef<crate::System::Xml::IDtdEntityInfo>
+for crate::System::Xml::Schema::SchemaEntity {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdEntityInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+SchemaEntity")]
+impl AsMut<crate::System::Xml::IDtdEntityInfo>
+for crate::System::Xml::Schema::SchemaEntity {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdEntityInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

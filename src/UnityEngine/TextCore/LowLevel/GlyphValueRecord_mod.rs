@@ -111,3 +111,27 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord>,
+> for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord>,
+> for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,
+    > {
+        todo!()
+    }
+}

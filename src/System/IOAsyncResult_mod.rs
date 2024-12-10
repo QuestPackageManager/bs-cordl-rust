@@ -174,3 +174,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IOAsyncResult {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+IOAsyncResult")]
+impl AsRef<crate::System::IAsyncResult> for crate::System::IOAsyncResult {
+    fn as_ref(&self) -> &crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IOAsyncResult")]
+impl AsMut<crate::System::IAsyncResult> for crate::System::IOAsyncResult {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}

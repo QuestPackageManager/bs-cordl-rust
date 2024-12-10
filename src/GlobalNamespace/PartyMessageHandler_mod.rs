@@ -132,6 +132,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PartyMessageH
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PartyMessageHandler")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::PartyMessageHandler {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PartyMessageHandler")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::PartyMessageHandler {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerDelegate")]
 #[repr(C)]
 #[derive(Debug)]
@@ -335,6 +347,34 @@ for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PartyMessageHandler+MessageType")]

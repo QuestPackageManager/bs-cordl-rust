@@ -2525,6 +2525,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::JsonWriter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonWriter")]
+impl AsRef<crate::System::IDisposable> for crate::Newtonsoft::Json::JsonWriter {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+JsonWriter")]
+impl AsMut<crate::System::IDisposable> for crate::Newtonsoft::Json::JsonWriter {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -2600,6 +2612,22 @@ impl crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
 #[cfg(
     feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
 )]
@@ -2662,6 +2690,26 @@ impl crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_
             (stateMachine),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+)]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+)]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
     }
 }
 #[cfg(
@@ -2729,6 +2777,26 @@ impl crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitPropert
     }
 }
 #[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+)]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+)]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(
     feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
 )]
 #[repr(C)]
@@ -2789,5 +2857,25 @@ impl crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaini
             (stateMachine),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+)]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+)]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
     }
 }

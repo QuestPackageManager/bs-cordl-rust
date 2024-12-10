@@ -212,6 +212,34 @@ for crate::GlobalNamespace::TutorialNoteController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TutorialNoteController")]
+impl AsRef<crate::GlobalNamespace::IGameNoteMirrorable>
+for crate::GlobalNamespace::TutorialNoteController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IGameNoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TutorialNoteController")]
+impl AsMut<crate::GlobalNamespace::IGameNoteMirrorable>
+for crate::GlobalNamespace::TutorialNoteController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IGameNoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TutorialNoteController")]
+impl AsRef<crate::GlobalNamespace::INoteMirrorable>
+for crate::GlobalNamespace::TutorialNoteController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TutorialNoteController")]
+impl AsMut<crate::GlobalNamespace::INoteMirrorable>
+for crate::GlobalNamespace::TutorialNoteController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "TutorialNoteController+Pool")]
 #[repr(C)]
 #[derive(Debug)]

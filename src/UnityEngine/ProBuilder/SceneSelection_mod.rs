@@ -407,3 +407,27 @@ for crate::UnityEngine::ProBuilder::SceneSelection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+SceneSelection")]
+impl AsRef<
+    crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::SceneSelection>,
+> for crate::UnityEngine::ProBuilder::SceneSelection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        *mut crate::UnityEngine::ProBuilder::SceneSelection,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SceneSelection")]
+impl AsMut<
+    crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::SceneSelection>,
+> for crate::UnityEngine::ProBuilder::SceneSelection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        *mut crate::UnityEngine::ProBuilder::SceneSelection,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

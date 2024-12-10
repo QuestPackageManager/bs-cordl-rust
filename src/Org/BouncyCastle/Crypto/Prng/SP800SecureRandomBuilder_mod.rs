@@ -347,6 +347,20 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProv
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
 )]
@@ -455,6 +469,24 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
     }
 }
 #[cfg(
+    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
+)]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
+)]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
     feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
 )]
 #[repr(C)]
@@ -559,5 +591,23 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPro
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
+)]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
+)]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+        unsafe { std::mem::transmute(self) }
     }
 }

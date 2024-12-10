@@ -219,6 +219,32 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     }
 }
 #[cfg(
+    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
+)]
+impl AsRef<
+    crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer,
+>
+for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
+)]
+impl AsMut<
+    crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer,
+>
+for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
 )]
 #[repr(C)]
@@ -302,5 +328,31 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
+)]
+impl AsRef<
+    crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer,
+>
+for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
+)]
+impl AsMut<
+    crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer,
+>
+for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer {
+        unsafe { std::mem::transmute(self) }
     }
 }

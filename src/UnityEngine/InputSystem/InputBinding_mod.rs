@@ -511,6 +511,26 @@ impl crate::UnityEngine::InputSystem::InputBinding {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputBinding>>
+for crate::UnityEngine::InputSystem::InputBinding {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputBinding> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputBinding>>
+for crate::UnityEngine::InputSystem::InputBinding {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::InputBinding,
+    > {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

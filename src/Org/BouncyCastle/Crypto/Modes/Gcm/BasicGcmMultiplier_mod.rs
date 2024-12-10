@@ -78,3 +78,19 @@ for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmMultiplier {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmMultiplier")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier>
+for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmMultiplier {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmMultiplier")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier>
+for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmMultiplier {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -109,3 +109,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockBeatmapPr
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MockBeatmapProvider")]
+impl AsRef<crate::GlobalNamespace::IServerBeatmapProvider>
+for crate::GlobalNamespace::MockBeatmapProvider {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IServerBeatmapProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockBeatmapProvider")]
+impl AsMut<crate::GlobalNamespace::IServerBeatmapProvider>
+for crate::GlobalNamespace::MockBeatmapProvider {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IServerBeatmapProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -101,3 +101,31 @@ for crate::HoudiniEngineUnity::HEU_GeneratedOutput {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutput")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_GeneratedOutput,
+    >,
+> for crate::HoudiniEngineUnity::HEU_GeneratedOutput {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_GeneratedOutput,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutput")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_GeneratedOutput,
+    >,
+> for crate::HoudiniEngineUnity::HEU_GeneratedOutput {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_GeneratedOutput,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -75,6 +75,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::SecureStringHashe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+SecureStringHasher")]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Xml::SecureStringHasher {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+SecureStringHasher")]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::Xml::SecureStringHasher {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Xml+SecureStringHasher+HashCodeOfStringDelegate")]
 #[repr(C)]
 #[derive(Debug)]

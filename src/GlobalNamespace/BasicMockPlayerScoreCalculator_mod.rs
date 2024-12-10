@@ -73,3 +73,17 @@ for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BasicMockPlayerScoreCalculator")]
+impl AsRef<crate::GlobalNamespace::IMockPlayerScoreCalculator>
+for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMockPlayerScoreCalculator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BasicMockPlayerScoreCalculator")]
+impl AsMut<crate::GlobalNamespace::IMockPlayerScoreCalculator>
+for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMockPlayerScoreCalculator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -125,3 +125,21 @@ for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
+    fn as_ref(&self) -> &crate::System::Threading::Tasks::ITaskCompletionAction {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::Tasks::ITaskCompletionAction {
+        unsafe { std::mem::transmute(self) }
+    }
+}

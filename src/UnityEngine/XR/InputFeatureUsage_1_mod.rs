@@ -110,3 +110,27 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::XR::InputFeatureUsage_1
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage_1<T>>>
+for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage_1<T>> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage_1<T>>>
+for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::XR::InputFeatureUsage_1<T>,
+    > {
+        todo!()
+    }
+}

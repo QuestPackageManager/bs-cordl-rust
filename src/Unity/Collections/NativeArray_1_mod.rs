@@ -332,6 +332,74 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Collections::NativeArray_1<T>
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Collections+NativeArray_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::Unity::Collections::NativeArray_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::Unity::Collections::NativeArray_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+for crate::Unity::Collections::NativeArray_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
+for crate::Unity::Collections::NativeArray_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::Unity::Collections::NativeArray_1<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::Unity::Collections::NativeArray_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IEquatable_1<crate::Unity::Collections::NativeArray_1<T>>>
+for crate::Unity::Collections::NativeArray_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::Unity::Collections::NativeArray_1<T>> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IEquatable_1<crate::Unity::Collections::NativeArray_1<T>>>
+for crate::Unity::Collections::NativeArray_1<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::Unity::Collections::NativeArray_1<T>> {
+        todo!()
+    }
+}
 #[cfg(feature = "Unity+Collections+NativeArray_1+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -445,6 +513,52 @@ impl<
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::Unity::Collections::NativeArray_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::Unity::Collections::NativeArray_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+for crate::Unity::Collections::NativeArray_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+for crate::Unity::Collections::NativeArray_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::Unity::Collections::NativeArray_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::Unity::Collections::NativeArray_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }
 #[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly")]
@@ -584,6 +698,38 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::Unity::Collections::NativeArray_1_ReadOnly<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::Unity::Collections::NativeArray_1_ReadOnly<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+for crate::Unity::Collections::NativeArray_1_ReadOnly<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
+for crate::Unity::Collections::NativeArray_1_ReadOnly<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
 #[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -698,5 +844,51 @@ impl<
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::Unity::Collections::ReadOnly_NativeArray_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::Unity::Collections::ReadOnly_NativeArray_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+for crate::Unity::Collections::ReadOnly_NativeArray_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+for crate::Unity::Collections::ReadOnly_NativeArray_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::Unity::Collections::ReadOnly_NativeArray_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::Unity::Collections::ReadOnly_NativeArray_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }

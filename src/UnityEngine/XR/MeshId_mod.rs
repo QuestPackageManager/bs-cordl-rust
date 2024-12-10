@@ -63,3 +63,19 @@ impl crate::UnityEngine::XR::MeshId {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+XR+MeshId")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::MeshId>>
+for crate::UnityEngine::XR::MeshId {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::MeshId> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+XR+MeshId")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::MeshId>>
+for crate::UnityEngine::XR::MeshId {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::MeshId> {
+        todo!()
+    }
+}

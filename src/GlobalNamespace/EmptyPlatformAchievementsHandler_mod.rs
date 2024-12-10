@@ -97,3 +97,17 @@ for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "EmptyPlatformAchievementsHandler")]
+impl AsRef<crate::GlobalNamespace::IPlatformAchievementsHandler>
+for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPlatformAchievementsHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EmptyPlatformAchievementsHandler")]
+impl AsMut<crate::GlobalNamespace::IPlatformAchievementsHandler>
+for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPlatformAchievementsHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -183,3 +183,51 @@ for crate::System::Runtime::Remoting::Messaging::ErrorMessage {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Messaging+ErrorMessage")]
+impl AsRef<crate::System::Runtime::Remoting::Messaging::IMessage>
+for crate::System::Runtime::Remoting::Messaging::ErrorMessage {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMessage {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+ErrorMessage")]
+impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessage>
+for crate::System::Runtime::Remoting::Messaging::ErrorMessage {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Messaging::IMessage {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+ErrorMessage")]
+impl AsRef<crate::System::Runtime::Remoting::Messaging::IMethodCallMessage>
+for crate::System::Runtime::Remoting::Messaging::ErrorMessage {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Remoting::Messaging::IMethodCallMessage {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+ErrorMessage")]
+impl AsMut<crate::System::Runtime::Remoting::Messaging::IMethodCallMessage>
+for crate::System::Runtime::Remoting::Messaging::ErrorMessage {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMethodCallMessage {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+ErrorMessage")]
+impl AsRef<crate::System::Runtime::Remoting::Messaging::IMethodMessage>
+for crate::System::Runtime::Remoting::Messaging::ErrorMessage {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMethodMessage {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+ErrorMessage")]
+impl AsMut<crate::System::Runtime::Remoting::Messaging::IMethodMessage>
+for crate::System::Runtime::Remoting::Messaging::ErrorMessage {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMethodMessage {
+        unsafe { std::mem::transmute(self) }
+    }
+}

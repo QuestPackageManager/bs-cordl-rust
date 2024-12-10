@@ -39,3 +39,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IHealthCheckS
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IHealthCheckService")]
+impl AsRef<crate::GlobalNamespace::IPollable>
+for crate::GlobalNamespace::IHealthCheckService {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IHealthCheckService")]
+impl AsMut<crate::GlobalNamespace::IPollable>
+for crate::GlobalNamespace::IHealthCheckService {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IHealthCheckService")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::IHealthCheckService {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IHealthCheckService")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::IHealthCheckService {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

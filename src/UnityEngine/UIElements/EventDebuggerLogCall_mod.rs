@@ -43,3 +43,17 @@ impl crate::UnityEngine::UIElements::EventDebuggerLogCall {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogCall")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::EventDebuggerLogCall {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogCall")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::EventDebuggerLogCall {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

@@ -50,3 +50,17 @@ for crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSys
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Rendering+IScriptableRuntimeReflectionSystem")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Rendering+IScriptableRuntimeReflectionSystem")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

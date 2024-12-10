@@ -81,3 +81,17 @@ for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IStreamCalculator>
+for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IStreamCalculator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IStreamCalculator>
+for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IStreamCalculator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -249,3 +249,15 @@ impl crate::ENet::Packet {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "ENet+Packet")]
+impl AsRef<crate::System::IDisposable> for crate::ENet::Packet {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "ENet+Packet")]
+impl AsMut<crate::System::IDisposable> for crate::ENet::Packet {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

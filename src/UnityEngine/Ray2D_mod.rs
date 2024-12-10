@@ -91,3 +91,15 @@ impl crate::UnityEngine::Ray2D {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Ray2D")]
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Ray2D {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Ray2D")]
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Ray2D {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}

@@ -59,3 +59,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IPlatformInit
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IPlatformInit")]
+impl AsRef<crate::Zenject::IInitializable> for crate::GlobalNamespace::IPlatformInit {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IPlatformInit")]
+impl AsMut<crate::Zenject::IInitializable> for crate::GlobalNamespace::IPlatformInit {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

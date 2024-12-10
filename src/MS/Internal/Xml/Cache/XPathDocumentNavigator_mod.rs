@@ -251,3 +251,17 @@ for crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MS+Internal+Xml+Cache+XPathDocumentNavigator")]
+impl AsRef<crate::System::Xml::IXmlLineInfo>
+for crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MS+Internal+Xml+Cache+XPathDocumentNavigator")]
+impl AsMut<crate::System::Xml::IXmlLineInfo>
+for crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

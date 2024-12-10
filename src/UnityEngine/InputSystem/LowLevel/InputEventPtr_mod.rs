@@ -270,3 +270,27 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventPtr")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventPtr")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}

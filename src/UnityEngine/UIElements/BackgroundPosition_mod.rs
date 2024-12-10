@@ -87,3 +87,27 @@ impl crate::UnityEngine::UIElements::BackgroundPosition {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundPosition>,
+> for crate::UnityEngine::UIElements::BackgroundPosition {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::BackgroundPosition,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundPosition>,
+> for crate::UnityEngine::UIElements::BackgroundPosition {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::BackgroundPosition,
+    > {
+        todo!()
+    }
+}

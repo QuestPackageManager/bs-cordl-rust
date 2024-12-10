@@ -65,3 +65,17 @@ for crate::GlobalNamespace::MissionLevelRestartController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MissionLevelRestartController")]
+impl AsRef<crate::GlobalNamespace::ILevelRestartController>
+for crate::GlobalNamespace::MissionLevelRestartController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelRestartController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionLevelRestartController")]
+impl AsMut<crate::GlobalNamespace::ILevelRestartController>
+for crate::GlobalNamespace::MissionLevelRestartController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelRestartController {
+        unsafe { std::mem::transmute(self) }
+    }
+}

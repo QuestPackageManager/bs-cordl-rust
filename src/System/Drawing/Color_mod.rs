@@ -123,3 +123,19 @@ impl crate::System::Drawing::Color {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Drawing+Color")]
+impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::Color>>
+for crate::System::Drawing::Color {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Drawing::Color> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Drawing+Color")]
+impl AsMut<crate::System::IEquatable_1<crate::System::Drawing::Color>>
+for crate::System::Drawing::Color {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::System::Drawing::Color> {
+        todo!()
+    }
+}

@@ -376,6 +376,20 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -408,5 +422,19 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }

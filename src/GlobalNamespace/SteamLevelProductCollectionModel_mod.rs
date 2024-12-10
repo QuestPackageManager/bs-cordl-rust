@@ -334,6 +334,34 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDat
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
+impl AsRef<
+    crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+    >,
+> for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
+impl AsMut<
+    crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+    >,
+> for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ILevelPackProductData_1<
+        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -539,5 +567,19 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
+impl AsRef<crate::GlobalNamespace::ILevelProductData>
+for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelProductData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
+impl AsMut<crate::GlobalNamespace::ILevelProductData>
+for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelProductData {
+        unsafe { std::mem::transmute(self) }
     }
 }

@@ -1083,6 +1083,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameplayRpcMa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "GameplayRpcManager")]
+impl AsRef<crate::GlobalNamespace::IGameplayRpcManager>
+for crate::GlobalNamespace::GameplayRpcManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IGameplayRpcManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GameplayRpcManager")]
+impl AsMut<crate::GlobalNamespace::IGameplayRpcManager>
+for crate::GlobalNamespace::GameplayRpcManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IGameplayRpcManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GameplayRpcManager")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::GameplayRpcManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GameplayRpcManager")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::GameplayRpcManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "GameplayRpcManager+GetGameplaySceneReadyRpc")]
 #[repr(C)]
 #[derive(Debug)]

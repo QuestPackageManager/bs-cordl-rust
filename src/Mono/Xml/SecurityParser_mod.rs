@@ -157,3 +157,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Xml::SecurityParser {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Mono+Xml+SecurityParser")]
+impl AsRef<crate::Mono::Xml::SmallXmlParser_IContentHandler>
+for crate::Mono::Xml::SecurityParser {
+    fn as_ref(&self) -> &crate::Mono::Xml::SmallXmlParser_IContentHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Mono+Xml+SecurityParser")]
+impl AsMut<crate::Mono::Xml::SmallXmlParser_IContentHandler>
+for crate::Mono::Xml::SecurityParser {
+    fn as_mut(&mut self) -> &mut crate::Mono::Xml::SmallXmlParser_IContentHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

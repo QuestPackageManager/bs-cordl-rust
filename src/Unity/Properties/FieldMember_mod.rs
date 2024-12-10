@@ -83,3 +83,17 @@ impl crate::Unity::Properties::FieldMember {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Properties+FieldMember")]
+impl AsRef<crate::Unity::Properties::IMemberInfo>
+for crate::Unity::Properties::FieldMember {
+    fn as_ref(&self) -> &crate::Unity::Properties::IMemberInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Properties+FieldMember")]
+impl AsMut<crate::Unity::Properties::IMemberInfo>
+for crate::Unity::Properties::FieldMember {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IMemberInfo {
+        todo!()
+    }
+}

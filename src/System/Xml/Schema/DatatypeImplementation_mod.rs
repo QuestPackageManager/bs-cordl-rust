@@ -511,3 +511,17 @@ for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap")]
+impl AsRef<crate::System::IComparable>
+for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap")]
+impl AsMut<crate::System::IComparable>
+for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

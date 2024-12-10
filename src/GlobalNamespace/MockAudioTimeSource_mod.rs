@@ -127,3 +127,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockAudioTime
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MockAudioTimeSource")]
+impl AsRef<crate::GlobalNamespace::IAudioTimeSource>
+for crate::GlobalNamespace::MockAudioTimeSource {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IAudioTimeSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockAudioTimeSource")]
+impl AsMut<crate::GlobalNamespace::IAudioTimeSource>
+for crate::GlobalNamespace::MockAudioTimeSource {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAudioTimeSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -106,6 +106,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BpmController
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BpmController")]
+impl AsRef<crate::GlobalNamespace::IBpmController>
+for crate::GlobalNamespace::BpmController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBpmController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BpmController")]
+impl AsMut<crate::GlobalNamespace::IBpmController>
+for crate::GlobalNamespace::BpmController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBpmController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BpmController")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::BpmController {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BpmController")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::BpmController {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BpmController+InitData")]
 #[repr(C)]
 #[derive(Debug)]

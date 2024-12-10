@@ -91,3 +91,49 @@ impl crate::UnityEngine::UIElements::VisualData {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualData")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::VisualData>>
+for crate::UnityEngine::UIElements::VisualData {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::VisualData> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualData")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::VisualData>>
+for crate::UnityEngine::UIElements::VisualData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::VisualData> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualData")]
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::VisualData,
+    >,
+> for crate::UnityEngine::UIElements::VisualData {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::VisualData,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualData")]
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::VisualData,
+    >,
+> for crate::UnityEngine::UIElements::VisualData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::VisualData,
+    > {
+        todo!()
+    }
+}

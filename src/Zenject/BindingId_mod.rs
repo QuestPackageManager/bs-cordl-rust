@@ -116,3 +116,17 @@ impl crate::Zenject::BindingId {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Zenject+BindingId")]
+impl AsRef<crate::System::IEquatable_1<crate::Zenject::BindingId>>
+for crate::Zenject::BindingId {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::Zenject::BindingId> {
+        todo!()
+    }
+}
+#[cfg(feature = "Zenject+BindingId")]
+impl AsMut<crate::System::IEquatable_1<crate::Zenject::BindingId>>
+for crate::Zenject::BindingId {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::Zenject::BindingId> {
+        todo!()
+    }
+}

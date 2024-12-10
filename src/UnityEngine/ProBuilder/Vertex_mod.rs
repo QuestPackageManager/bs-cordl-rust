@@ -518,3 +518,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Verte
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Vertex")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::Vertex>>
+for crate::UnityEngine::ProBuilder::Vertex {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::Vertex> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+Vertex")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::Vertex>>
+for crate::UnityEngine::ProBuilder::Vertex {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::Vertex> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -94,3 +94,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ArraySpec {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ArraySpec")]
+impl AsRef<crate::System::ModifierSpec> for crate::System::ArraySpec {
+    fn as_ref(&self) -> &crate::System::ModifierSpec {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ArraySpec")]
+impl AsMut<crate::System::ModifierSpec> for crate::System::ArraySpec {
+    fn as_mut(&mut self) -> &mut crate::System::ModifierSpec {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -148,3 +148,59 @@ for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NodePoseSyncStateNetSerializable")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NodePoseSyncStateNetSerializable")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NodePoseSyncStateNetSerializable")]
+impl AsRef<
+    crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    >,
+> for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NodePoseSyncStateNetSerializable")]
+impl AsMut<
+    crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    >,
+> for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NodePoseSyncStateNetSerializable")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NodePoseSyncStateNetSerializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

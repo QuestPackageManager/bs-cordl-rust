@@ -304,3 +304,47 @@ for crate::System::Runtime::Remoting::Messaging::AsyncResult {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
+impl AsRef<crate::System::IAsyncResult>
+for crate::System::Runtime::Remoting::Messaging::AsyncResult {
+    fn as_ref(&self) -> &crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
+impl AsMut<crate::System::IAsyncResult>
+for crate::System::Runtime::Remoting::Messaging::AsyncResult {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
+impl AsRef<crate::System::Runtime::Remoting::Messaging::IMessageSink>
+for crate::System::Runtime::Remoting::Messaging::AsyncResult {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMessageSink {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
+impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessageSink>
+for crate::System::Runtime::Remoting::Messaging::AsyncResult {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMessageSink {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
+impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Runtime::Remoting::Messaging::AsyncResult {
+    fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
+impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Runtime::Remoting::Messaging::AsyncResult {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -93,3 +93,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Paint
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Painter2D")]
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::UIElements::Painter2D {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Painter2D")]
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::Painter2D {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

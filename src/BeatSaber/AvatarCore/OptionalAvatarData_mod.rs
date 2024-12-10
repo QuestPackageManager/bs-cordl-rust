@@ -37,3 +37,23 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarData {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
+impl AsRef<crate::System::IEquatable_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>>
+for crate::BeatSaber::AvatarCore::OptionalAvatarData {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::BeatSaber::AvatarCore::OptionalAvatarData> {
+        todo!()
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
+impl AsMut<crate::System::IEquatable_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>>
+for crate::BeatSaber::AvatarCore::OptionalAvatarData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::BeatSaber::AvatarCore::OptionalAvatarData,
+    > {
+        todo!()
+    }
+}

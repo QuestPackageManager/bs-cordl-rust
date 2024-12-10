@@ -160,3 +160,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SimpleTextDropdown {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+SimpleTextDropdown")]
+impl AsRef<crate::HMUI::TableView_IDataSource> for crate::HMUI::SimpleTextDropdown {
+    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+SimpleTextDropdown")]
+impl AsMut<crate::HMUI::TableView_IDataSource> for crate::HMUI::SimpleTextDropdown {
+    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}

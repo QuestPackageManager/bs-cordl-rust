@@ -160,3 +160,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::Audio::G_AudioMa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Tayx+Graphy+Audio+G_AudioManager")]
+impl AsRef<crate::Tayx::Graphy::UI::IModifiableState>
+for crate::Tayx::Graphy::Audio::G_AudioManager {
+    fn as_ref(&self) -> &crate::Tayx::Graphy::UI::IModifiableState {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Tayx+Graphy+Audio+G_AudioManager")]
+impl AsMut<crate::Tayx::Graphy::UI::IModifiableState>
+for crate::Tayx::Graphy::Audio::G_AudioManager {
+    fn as_mut(&mut self) -> &mut crate::Tayx::Graphy::UI::IModifiableState {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Tayx+Graphy+Audio+G_AudioManager")]
+impl AsRef<crate::Tayx::Graphy::UI::IMovable>
+for crate::Tayx::Graphy::Audio::G_AudioManager {
+    fn as_ref(&self) -> &crate::Tayx::Graphy::UI::IMovable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Tayx+Graphy+Audio+G_AudioManager")]
+impl AsMut<crate::Tayx::Graphy::UI::IMovable>
+for crate::Tayx::Graphy::Audio::G_AudioManager {
+    fn as_mut(&mut self) -> &mut crate::Tayx::Graphy::UI::IMovable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

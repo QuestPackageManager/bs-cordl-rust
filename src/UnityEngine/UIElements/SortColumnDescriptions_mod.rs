@@ -222,6 +222,76 @@ for crate::UnityEngine::UIElements::SortColumnDescriptions {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    >,
+> for crate::UnityEngine::UIElements::SortColumnDescriptions {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    >,
+> for crate::UnityEngine::UIElements::SortColumnDescriptions {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    >,
+> for crate::UnityEngine::UIElements::SortColumnDescriptions {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    >,
+> for crate::UnityEngine::UIElements::SortColumnDescriptions {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::UIElements::SortColumnDescriptions {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::UIElements::SortColumnDescriptions {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectFactory_1")]
 #[repr(C)]
 #[derive(Debug)]

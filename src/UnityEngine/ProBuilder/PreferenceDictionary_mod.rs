@@ -484,3 +484,31 @@ for crate::UnityEngine::ProBuilder::PreferenceDictionary {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+PreferenceDictionary")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::ProBuilder::PreferenceDictionary {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+PreferenceDictionary")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::ProBuilder::PreferenceDictionary {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+PreferenceDictionary")]
+impl AsRef<crate::UnityEngine::ProBuilder::IHasDefault>
+for crate::UnityEngine::ProBuilder::PreferenceDictionary {
+    fn as_ref(&self) -> &crate::UnityEngine::ProBuilder::IHasDefault {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+PreferenceDictionary")]
+impl AsMut<crate::UnityEngine::ProBuilder::IHasDefault>
+for crate::UnityEngine::ProBuilder::PreferenceDictionary {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ProBuilder::IHasDefault {
+        unsafe { std::mem::transmute(self) }
+    }
+}

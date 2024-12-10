@@ -39,3 +39,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::IPlaceholderFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+IPlaceholderFactory")]
+impl AsRef<crate::Zenject::IValidatable> for crate::Zenject::IPlaceholderFactory {
+    fn as_ref(&self) -> &crate::Zenject::IValidatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+IPlaceholderFactory")]
+impl AsMut<crate::Zenject::IValidatable> for crate::Zenject::IPlaceholderFactory {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IValidatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -268,6 +268,20 @@ for crate::GlobalNamespace::BeatmapObjectSpawnController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapObjectSpawnController")]
+impl AsRef<crate::GlobalNamespace::IBeatmapObjectSpawnController>
+for crate::GlobalNamespace::BeatmapObjectSpawnController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapObjectSpawnController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectSpawnController")]
+impl AsMut<crate::GlobalNamespace::IBeatmapObjectSpawnController>
+for crate::GlobalNamespace::BeatmapObjectSpawnController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapObjectSpawnController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BeatmapObjectSpawnController+InitData")]
 #[repr(C)]
 #[derive(Debug)]

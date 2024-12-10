@@ -97,3 +97,21 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::InstanceProvider 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+InstanceProvider")]
+impl AsRef<crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::InstanceProvider {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+InstanceProvider")]
+impl AsMut<crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::InstanceProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

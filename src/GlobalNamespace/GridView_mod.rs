@@ -285,6 +285,48 @@ for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "GridView+GridViewCellsEnumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::MonoBehaviour,
+    >,
+> for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::MonoBehaviour,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GridView+GridViewCellsEnumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::MonoBehaviour,
+    >,
+> for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::MonoBehaviour,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GridView+GridViewCellsEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GridView+GridViewCellsEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "GridView+IDataSource")]
 #[repr(C)]
 #[derive(Debug)]

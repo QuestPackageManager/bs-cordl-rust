@@ -98,3 +98,19 @@ for crate::Org::BouncyCastle::Utilities::Encoders::HexTranslator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+HexTranslator")]
+impl AsRef<crate::Org::BouncyCastle::Utilities::Encoders::ITranslator>
+for crate::Org::BouncyCastle::Utilities::Encoders::HexTranslator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Utilities::Encoders::ITranslator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+HexTranslator")]
+impl AsMut<crate::Org::BouncyCastle::Utilities::Encoders::ITranslator>
+for crate::Org::BouncyCastle::Utilities::Encoders::HexTranslator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Utilities::Encoders::ITranslator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -188,3 +188,31 @@ for crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+ShakeDigest")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IDigest>
+for crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDigest {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+ShakeDigest")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IDigest>
+for crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDigest {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+ShakeDigest")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IXof>
+for crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IXof {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+ShakeDigest")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IXof>
+for crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IXof {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -115,3 +115,85 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::StringComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+StringComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::StringComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+StringComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::StringComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+StringComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::StringComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+StringComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+> for crate::System::StringComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+StringComparer")]
+impl AsRef<crate::System::Collections::IComparer> for crate::System::StringComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+StringComparer")]
+impl AsMut<crate::System::Collections::IComparer> for crate::System::StringComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+StringComparer")]
+impl AsRef<crate::System::Collections::IEqualityComparer>
+for crate::System::StringComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+StringComparer")]
+impl AsMut<crate::System::Collections::IEqualityComparer>
+for crate::System::StringComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

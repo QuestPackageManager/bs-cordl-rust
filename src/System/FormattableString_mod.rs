@@ -143,3 +143,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::FormattableString {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+FormattableString")]
+impl AsRef<crate::System::IFormattable> for crate::System::FormattableString {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+FormattableString")]
+impl AsMut<crate::System::IFormattable> for crate::System::FormattableString {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

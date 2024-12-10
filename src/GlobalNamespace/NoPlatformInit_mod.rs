@@ -81,3 +81,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoPlatformIni
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoPlatformInit")]
+impl AsRef<crate::GlobalNamespace::IPlatformInit>
+for crate::GlobalNamespace::NoPlatformInit {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPlatformInit {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoPlatformInit")]
+impl AsMut<crate::GlobalNamespace::IPlatformInit>
+for crate::GlobalNamespace::NoPlatformInit {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPlatformInit {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoPlatformInit")]
+impl AsRef<crate::Zenject::IInitializable> for crate::GlobalNamespace::NoPlatformInit {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoPlatformInit")]
+impl AsMut<crate::Zenject::IInitializable> for crate::GlobalNamespace::NoPlatformInit {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

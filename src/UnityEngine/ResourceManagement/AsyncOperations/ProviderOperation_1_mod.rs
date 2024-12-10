@@ -500,3 +500,59 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::ProviderOperation_1
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ProviderOperation_1")]
+impl<
+    TObject: quest_hook::libil2cpp::Type,
+> AsRef<crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::ProviderOperation_1<
+    TObject,
+> {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ProviderOperation_1")]
+impl<
+    TObject: quest_hook::libil2cpp::Type,
+> AsMut<crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::ProviderOperation_1<
+    TObject,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ProviderOperation_1")]
+impl<
+    TObject: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation,
+>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::ProviderOperation_1<
+    TObject,
+> {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ProviderOperation_1")]
+impl<
+    TObject: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation,
+>
+for crate::UnityEngine::ResourceManagement::AsyncOperations::ProviderOperation_1<
+    TObject,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation {
+        unsafe { std::mem::transmute(self) }
+    }
+}

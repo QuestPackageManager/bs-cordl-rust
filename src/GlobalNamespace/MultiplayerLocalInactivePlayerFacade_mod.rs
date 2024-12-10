@@ -218,6 +218,54 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
+impl AsRef<crate::GlobalNamespace::IMultiplayerLevelEndActionsListener>
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
+impl AsMut<crate::GlobalNamespace::IMultiplayerLevelEndActionsListener>
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
+impl AsRef<crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher>
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
+impl AsMut<crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher>
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
+impl AsRef<crate::GlobalNamespace::IStartSeekSongControllerProvider>
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IStartSeekSongControllerProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
+impl AsMut<crate::GlobalNamespace::IStartSeekSongControllerProvider>
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IStartSeekSongControllerProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
 #[repr(C)]
 #[derive(Debug)]

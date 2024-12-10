@@ -239,6 +239,34 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    >,
+> for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    >,
+> for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    > {
+        todo!()
+    }
+}
 #[cfg(
     feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
 )]

@@ -79,3 +79,17 @@ for crate::System::Collections::Specialized::StringDictionary {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Specialized+StringDictionary")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Specialized::StringDictionary {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+StringDictionary")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Specialized::StringDictionary {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

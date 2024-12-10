@@ -41,6 +41,24 @@ impl crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingComman
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
+for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
+for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+        todo!()
+    }
+}
 #[cfg(
     feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
 )]

@@ -199,6 +199,22 @@ for crate::GlobalNamespace::NoteCutSoundEffectManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoteCutSoundEffectManager")]
+impl AsRef<crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent>
+for crate::GlobalNamespace::NoteCutSoundEffectManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoteCutSoundEffectManager")]
+impl AsMut<crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent>
+for crate::GlobalNamespace::NoteCutSoundEffectManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "NoteCutSoundEffectManager+InitData")]
 #[repr(C)]
 #[derive(Debug)]

@@ -137,6 +137,50 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SignalSubscription {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+SignalSubscription")]
+impl AsRef<crate::System::IDisposable> for crate::Zenject::SignalSubscription {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+SignalSubscription")]
+impl AsMut<crate::System::IDisposable> for crate::Zenject::SignalSubscription {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+SignalSubscription")]
+impl AsRef<
+    crate::Zenject::IPoolable_2<
+        *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        *mut crate::Zenject::SignalDeclaration,
+    >,
+> for crate::Zenject::SignalSubscription {
+    fn as_ref(
+        &self,
+    ) -> &crate::Zenject::IPoolable_2<
+        *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        *mut crate::Zenject::SignalDeclaration,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+SignalSubscription")]
+impl AsMut<
+    crate::Zenject::IPoolable_2<
+        *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        *mut crate::Zenject::SignalDeclaration,
+    >,
+> for crate::Zenject::SignalSubscription {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Zenject::IPoolable_2<
+        *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        *mut crate::Zenject::SignalDeclaration,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Zenject+SignalSubscription+Pool")]
 #[repr(C)]
 #[derive(Debug)]

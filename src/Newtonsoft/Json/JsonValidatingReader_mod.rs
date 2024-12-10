@@ -650,6 +650,20 @@ for crate::Newtonsoft::Json::JsonValidatingReader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
+impl AsRef<crate::Newtonsoft::Json::IJsonLineInfo>
+for crate::Newtonsoft::Json::JsonValidatingReader {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::IJsonLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
+impl AsMut<crate::Newtonsoft::Json::IJsonLineInfo>
+for crate::Newtonsoft::Json::JsonValidatingReader {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::IJsonLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 #[repr(C)]
 #[derive(Debug)]

@@ -263,6 +263,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::LazyAsyncResult {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+LazyAsyncResult")]
+impl AsRef<crate::System::IAsyncResult> for crate::System::Net::LazyAsyncResult {
+    fn as_ref(&self) -> &crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+LazyAsyncResult")]
+impl AsMut<crate::System::IAsyncResult> for crate::System::Net::LazyAsyncResult {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Net+LazyAsyncResult+ThreadContext")]
 #[repr(C)]
 #[derive(Debug)]

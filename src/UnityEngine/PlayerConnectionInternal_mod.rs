@@ -151,3 +151,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::PlayerConnectionI
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+PlayerConnectionInternal")]
+impl AsRef<crate::UnityEngine::IPlayerEditorConnectionNative>
+for crate::UnityEngine::PlayerConnectionInternal {
+    fn as_ref(&self) -> &crate::UnityEngine::IPlayerEditorConnectionNative {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+PlayerConnectionInternal")]
+impl AsMut<crate::UnityEngine::IPlayerEditorConnectionNative>
+for crate::UnityEngine::PlayerConnectionInternal {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::IPlayerEditorConnectionNative {
+        unsafe { std::mem::transmute(self) }
+    }
+}

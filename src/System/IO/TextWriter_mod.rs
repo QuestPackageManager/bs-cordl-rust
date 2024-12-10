@@ -333,3 +333,27 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::TextWriter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+IO+TextWriter")]
+impl AsRef<crate::System::IAsyncDisposable> for crate::System::IO::TextWriter {
+    fn as_ref(&self) -> &crate::System::IAsyncDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+TextWriter")]
+impl AsMut<crate::System::IAsyncDisposable> for crate::System::IO::TextWriter {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+TextWriter")]
+impl AsRef<crate::System::IDisposable> for crate::System::IO::TextWriter {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+TextWriter")]
+impl AsMut<crate::System::IDisposable> for crate::System::IO::TextWriter {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

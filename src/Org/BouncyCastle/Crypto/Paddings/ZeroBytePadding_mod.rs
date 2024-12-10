@@ -100,3 +100,21 @@ for crate::Org::BouncyCastle::Crypto::Paddings::ZeroBytePadding {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+ZeroBytePadding")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding>
+for crate::Org::BouncyCastle::Crypto::Paddings::ZeroBytePadding {
+    fn as_ref(
+        &self,
+    ) -> &crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+ZeroBytePadding")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding>
+for crate::Org::BouncyCastle::Crypto::Paddings::ZeroBytePadding {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding {
+        unsafe { std::mem::transmute(self) }
+    }
+}

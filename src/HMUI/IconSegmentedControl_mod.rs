@@ -110,6 +110,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::IconSegmentedControl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+IconSegmentedControl")]
+impl AsRef<crate::HMUI::SegmentedControl_IDataSource>
+for crate::HMUI::IconSegmentedControl {
+    fn as_ref(&self) -> &crate::HMUI::SegmentedControl_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+IconSegmentedControl")]
+impl AsMut<crate::HMUI::SegmentedControl_IDataSource>
+for crate::HMUI::IconSegmentedControl {
+    fn as_mut(&mut self) -> &mut crate::HMUI::SegmentedControl_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HMUI+IconSegmentedControl+DataItem")]
 #[repr(C)]
 #[derive(Debug)]

@@ -201,3 +201,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongStartHand
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SongStartHandler")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::SongStartHandler {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SongStartHandler")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::SongStartHandler {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

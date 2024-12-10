@@ -75,3 +75,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MediaAsyncLoa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MediaAsyncLoader")]
+impl AsRef<crate::GlobalNamespace::IMediaAsyncLoader>
+for crate::GlobalNamespace::MediaAsyncLoader {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMediaAsyncLoader {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MediaAsyncLoader")]
+impl AsMut<crate::GlobalNamespace::IMediaAsyncLoader>
+for crate::GlobalNamespace::MediaAsyncLoader {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMediaAsyncLoader {
+        unsafe { std::mem::transmute(self) }
+    }
+}

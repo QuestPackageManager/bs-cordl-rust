@@ -212,3 +212,31 @@ for crate::UnityEngine::Pool::ObjectPool_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::UnityEngine::Pool::ObjectPool_1<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::UnityEngine::Pool::ObjectPool_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::UnityEngine::Pool::IObjectPool_1<T>>
+for crate::UnityEngine::Pool::ObjectPool_1<T> {
+    fn as_ref(&self) -> &crate::UnityEngine::Pool::IObjectPool_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::Pool::IObjectPool_1<T>>
+for crate::UnityEngine::Pool::ObjectPool_1<T> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Pool::IObjectPool_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

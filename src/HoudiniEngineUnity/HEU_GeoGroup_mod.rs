@@ -82,3 +82,23 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_GeoGro
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeoGroup")]
+impl AsRef<crate::System::IComparable_1<*mut crate::HoudiniEngineUnity::HEU_GeoGroup>>
+for crate::HoudiniEngineUnity::HEU_GeoGroup {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<*mut crate::HoudiniEngineUnity::HEU_GeoGroup> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeoGroup")]
+impl AsMut<crate::System::IComparable_1<*mut crate::HoudiniEngineUnity::HEU_GeoGroup>>
+for crate::HoudiniEngineUnity::HEU_GeoGroup {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        *mut crate::HoudiniEngineUnity::HEU_GeoGroup,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

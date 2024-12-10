@@ -64,3 +64,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FileWebRequestCre
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+FileWebRequestCreator")]
+impl AsRef<crate::System::Net::IWebRequestCreate>
+for crate::System::Net::FileWebRequestCreator {
+    fn as_ref(&self) -> &crate::System::Net::IWebRequestCreate {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+FileWebRequestCreator")]
+impl AsMut<crate::System::Net::IWebRequestCreate>
+for crate::System::Net::FileWebRequestCreator {
+    fn as_mut(&mut self) -> &mut crate::System::Net::IWebRequestCreate {
+        unsafe { std::mem::transmute(self) }
+    }
+}

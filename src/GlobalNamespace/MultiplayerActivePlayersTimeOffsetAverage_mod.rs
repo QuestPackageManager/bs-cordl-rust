@@ -72,3 +72,17 @@ for crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerActivePlayersTimeOffsetAverage")]
+impl AsRef<crate::GlobalNamespace::IMultiplayerObservable>
+for crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerObservable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerActivePlayersTimeOffsetAverage")]
+impl AsMut<crate::GlobalNamespace::IMultiplayerObservable>
+for crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMultiplayerObservable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

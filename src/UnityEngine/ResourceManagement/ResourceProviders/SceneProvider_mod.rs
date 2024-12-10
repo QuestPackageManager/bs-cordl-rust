@@ -172,6 +172,42 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
+impl AsRef<crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
+impl AsMut<crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
+impl AsRef<crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
+impl AsMut<crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
@@ -442,6 +478,26 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
+)]
+impl AsRef<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
+    fn as_ref(&self) -> &crate::UnityEngine::ResourceManagement::IUpdateReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
+)]
+impl AsMut<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::IUpdateReceiver {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(

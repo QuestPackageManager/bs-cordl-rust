@@ -80,3 +80,17 @@ for crate::Org::BouncyCastle::Crmf::DefaultPKMacResult {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacResult")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IBlockResult>
+for crate::Org::BouncyCastle::Crmf::DefaultPKMacResult {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IBlockResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacResult")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IBlockResult>
+for crate::Org::BouncyCastle::Crmf::DefaultPKMacResult {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IBlockResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}

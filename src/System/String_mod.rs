@@ -1815,6 +1815,106 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::String {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+String")]
+impl AsRef<crate::System::Collections::Generic::IEnumerable_1<char>>
+for crate::System::String {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<char> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsMut<crate::System::Collections::Generic::IEnumerable_1<char>>
+for crate::System::String {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<char> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsRef<crate::System::Collections::IEnumerable> for crate::System::String {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsMut<crate::System::Collections::IEnumerable> for crate::System::String {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsRef<crate::System::ICloneable> for crate::System::String {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsMut<crate::System::ICloneable> for crate::System::String {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsRef<crate::System::IComparable> for crate::System::String {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsMut<crate::System::IComparable> for crate::System::String {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsRef<crate::System::IComparable_1<*mut quest_hook::libil2cpp::Il2CppString>>
+for crate::System::String {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<*mut quest_hook::libil2cpp::Il2CppString> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsMut<crate::System::IComparable_1<*mut quest_hook::libil2cpp::Il2CppString>>
+for crate::System::String {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<*mut quest_hook::libil2cpp::Il2CppString> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsRef<crate::System::IConvertible> for crate::System::String {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsMut<crate::System::IConvertible> for crate::System::String {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsRef<crate::System::IEquatable_1<*mut quest_hook::libil2cpp::Il2CppString>>
+for crate::System::String {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut quest_hook::libil2cpp::Il2CppString> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsMut<crate::System::IEquatable_1<*mut quest_hook::libil2cpp::Il2CppString>>
+for crate::System::String {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut quest_hook::libil2cpp::Il2CppString> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+String+ProbabilisticMap")]
 #[repr(C)]
 #[derive(Debug, Clone)]

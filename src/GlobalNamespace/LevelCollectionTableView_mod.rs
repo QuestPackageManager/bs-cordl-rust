@@ -341,3 +341,17 @@ for crate::GlobalNamespace::LevelCollectionTableView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LevelCollectionTableView")]
+impl AsRef<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::LevelCollectionTableView {
+    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LevelCollectionTableView")]
+impl AsMut<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::LevelCollectionTableView {
+    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}

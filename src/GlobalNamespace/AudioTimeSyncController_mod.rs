@@ -332,6 +332,20 @@ for crate::GlobalNamespace::AudioTimeSyncController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "AudioTimeSyncController")]
+impl AsRef<crate::GlobalNamespace::IAudioTimeSource>
+for crate::GlobalNamespace::AudioTimeSyncController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IAudioTimeSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "AudioTimeSyncController")]
+impl AsMut<crate::GlobalNamespace::IAudioTimeSource>
+for crate::GlobalNamespace::AudioTimeSyncController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAudioTimeSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "AudioTimeSyncController+InitData")]
 #[repr(C)]
 #[derive(Debug)]

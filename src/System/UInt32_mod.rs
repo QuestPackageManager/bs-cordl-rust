@@ -311,3 +311,75 @@ impl crate::System::UInt32 {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+UInt32")]
+impl AsRef<crate::System::IComparable> for crate::System::UInt32 {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt32")]
+impl AsMut<crate::System::IComparable> for crate::System::UInt32 {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt32")]
+impl AsRef<crate::System::IComparable_1<u32>> for crate::System::UInt32 {
+    fn as_ref(&self) -> &crate::System::IComparable_1<u32> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt32")]
+impl AsMut<crate::System::IComparable_1<u32>> for crate::System::UInt32 {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<u32> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt32")]
+impl AsRef<crate::System::IConvertible> for crate::System::UInt32 {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt32")]
+impl AsMut<crate::System::IConvertible> for crate::System::UInt32 {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt32")]
+impl AsRef<crate::System::IEquatable_1<u32>> for crate::System::UInt32 {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<u32> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt32")]
+impl AsMut<crate::System::IEquatable_1<u32>> for crate::System::UInt32 {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<u32> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt32")]
+impl AsRef<crate::System::IFormattable> for crate::System::UInt32 {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt32")]
+impl AsMut<crate::System::IFormattable> for crate::System::UInt32 {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt32")]
+impl AsRef<crate::System::ISpanFormattable> for crate::System::UInt32 {
+    fn as_ref(&self) -> &crate::System::ISpanFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt32")]
+impl AsMut<crate::System::ISpanFormattable> for crate::System::UInt32 {
+    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
+        todo!()
+    }
+}

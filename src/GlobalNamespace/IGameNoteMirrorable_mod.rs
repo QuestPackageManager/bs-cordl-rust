@@ -72,3 +72,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IGameNoteMirr
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IGameNoteMirrorable")]
+impl AsRef<crate::GlobalNamespace::INoteMirrorable>
+for crate::GlobalNamespace::IGameNoteMirrorable {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IGameNoteMirrorable")]
+impl AsMut<crate::GlobalNamespace::INoteMirrorable>
+for crate::GlobalNamespace::IGameNoteMirrorable {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

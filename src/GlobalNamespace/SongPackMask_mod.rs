@@ -168,3 +168,49 @@ impl crate::GlobalNamespace::SongPackMask {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "SongPackMask")]
+impl AsRef<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SongPackMask,
+    >,
+> for crate::GlobalNamespace::SongPackMask {
+    fn as_ref(
+        &self,
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SongPackMask,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "SongPackMask")]
+impl AsMut<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SongPackMask,
+    >,
+> for crate::GlobalNamespace::SongPackMask {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SongPackMask,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "SongPackMask")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::SongPackMask>>
+for crate::GlobalNamespace::SongPackMask {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::SongPackMask> {
+        todo!()
+    }
+}
+#[cfg(feature = "SongPackMask")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::SongPackMask>>
+for crate::GlobalNamespace::SongPackMask {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::SongPackMask> {
+        todo!()
+    }
+}

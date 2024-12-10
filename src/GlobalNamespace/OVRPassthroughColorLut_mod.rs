@@ -37,6 +37,20 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Map
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
+impl AsRef<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
+impl AsMut<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -584,6 +598,20 @@ for crate::GlobalNamespace::OVRPassthroughColorLut {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRPassthroughColorLut")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRPassthroughColorLut {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRPassthroughColorLut")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRPassthroughColorLut {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "OVRPassthroughColorLut+ColorChannels")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -678,5 +706,19 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
             (index),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
+impl AsRef<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
+impl AsMut<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
+        todo!()
     }
 }

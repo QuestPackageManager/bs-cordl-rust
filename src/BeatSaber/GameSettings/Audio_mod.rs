@@ -152,3 +152,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::GameSettings::Audio
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatSaber+GameSettings+Audio")]
+impl AsRef<crate::BGLib::SaveDataCore::ISerializableSaveData>
+for crate::BeatSaber::GameSettings::Audio {
+    fn as_ref(&self) -> &crate::BGLib::SaveDataCore::ISerializableSaveData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+GameSettings+Audio")]
+impl AsMut<crate::BGLib::SaveDataCore::ISerializableSaveData>
+for crate::BeatSaber::GameSettings::Audio {
+    fn as_mut(&mut self) -> &mut crate::BGLib::SaveDataCore::ISerializableSaveData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

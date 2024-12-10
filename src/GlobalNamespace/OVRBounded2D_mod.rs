@@ -198,3 +198,45 @@ impl crate::GlobalNamespace::OVRBounded2D {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRBounded2D")]
+impl AsRef<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRBounded2D>,
+> for crate::GlobalNamespace::OVRBounded2D {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRBounded2D,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRBounded2D")]
+impl AsMut<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRBounded2D>,
+> for crate::GlobalNamespace::OVRBounded2D {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRBounded2D,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRBounded2D")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded2D>>
+for crate::GlobalNamespace::OVRBounded2D {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded2D> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRBounded2D")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded2D>>
+for crate::GlobalNamespace::OVRBounded2D {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded2D> {
+        todo!()
+    }
+}

@@ -393,6 +393,48 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::Timeline::AnimationPlayableAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::Timeline::AnimationPlayableAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
+impl AsRef<crate::UnityEngine::Timeline::IPropertyPreview>
+for crate::UnityEngine::Timeline::AnimationPlayableAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::IPropertyPreview {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
+impl AsMut<crate::UnityEngine::Timeline::IPropertyPreview>
+for crate::UnityEngine::Timeline::AnimationPlayableAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::IPropertyPreview {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
+impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
+for crate::UnityEngine::Timeline::AnimationPlayableAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
+impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
+for crate::UnityEngine::Timeline::AnimationPlayableAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
 )]

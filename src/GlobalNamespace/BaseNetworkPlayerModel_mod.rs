@@ -602,6 +602,20 @@ for crate::GlobalNamespace::BaseNetworkPlayerModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BaseNetworkPlayerModel")]
+impl AsRef<crate::GlobalNamespace::INetworkPlayerModel>
+for crate::GlobalNamespace::BaseNetworkPlayerModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPlayerModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BaseNetworkPlayerModel")]
+impl AsMut<crate::GlobalNamespace::INetworkPlayerModel>
+for crate::GlobalNamespace::BaseNetworkPlayerModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkPlayerModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
 #[repr(C)]
 #[derive(Debug)]

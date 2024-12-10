@@ -110,3 +110,17 @@ for crate::Mono::Security::X509::X509ExtensionCollection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Mono+Security+X509+X509ExtensionCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::Mono::Security::X509::X509ExtensionCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Mono+Security+X509+X509ExtensionCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::Mono::Security::X509::X509ExtensionCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

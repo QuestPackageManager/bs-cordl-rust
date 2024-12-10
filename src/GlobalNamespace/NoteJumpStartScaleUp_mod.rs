@@ -110,3 +110,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteJumpStart
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoteJumpStartScaleUp")]
+impl AsRef<crate::GlobalNamespace::INoteControllerDidInitEvent>
+for crate::GlobalNamespace::NoteJumpStartScaleUp {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteControllerDidInitEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoteJumpStartScaleUp")]
+impl AsMut<crate::GlobalNamespace::INoteControllerDidInitEvent>
+for crate::GlobalNamespace::NoteJumpStartScaleUp {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteControllerDidInitEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}

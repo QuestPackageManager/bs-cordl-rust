@@ -149,3 +149,59 @@ for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+impl AsRef<
+    crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+impl AsMut<
+    crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

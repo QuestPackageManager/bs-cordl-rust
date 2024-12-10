@@ -137,3 +137,21 @@ for crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemObject")]
+impl AsRef<crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator>
+for crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
+    fn as_ref(
+        &self,
+    ) -> &crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemObject")]
+impl AsMut<crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator>
+for crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

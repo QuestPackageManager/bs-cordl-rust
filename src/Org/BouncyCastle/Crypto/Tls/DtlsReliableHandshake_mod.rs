@@ -555,3 +555,19 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Retransmit")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit>
+for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Retransmit")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit>
+for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit {
+        unsafe { std::mem::transmute(self) }
+    }
+}

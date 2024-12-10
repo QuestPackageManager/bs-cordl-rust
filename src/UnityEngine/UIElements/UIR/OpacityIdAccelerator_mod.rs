@@ -127,6 +127,20 @@ for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator+OpacityIdUpdateJob")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -168,5 +182,19 @@ impl crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator_OpacityIdUpdateJo
             (i),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator+OpacityIdUpdateJob")]
+impl AsRef<crate::Unity::Jobs::IJobParallelFor>
+for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator_OpacityIdUpdateJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator+OpacityIdUpdateJob")]
+impl AsMut<crate::Unity::Jobs::IJobParallelFor>
+for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator_OpacityIdUpdateJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
+        todo!()
     }
 }

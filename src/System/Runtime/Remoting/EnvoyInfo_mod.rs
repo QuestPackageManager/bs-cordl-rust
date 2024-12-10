@@ -74,3 +74,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Remoting::Env
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+EnvoyInfo")]
+impl AsRef<crate::System::Runtime::Remoting::IEnvoyInfo>
+for crate::System::Runtime::Remoting::EnvoyInfo {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::IEnvoyInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+EnvoyInfo")]
+impl AsMut<crate::System::Runtime::Remoting::IEnvoyInfo>
+for crate::System::Runtime::Remoting::EnvoyInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::IEnvoyInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

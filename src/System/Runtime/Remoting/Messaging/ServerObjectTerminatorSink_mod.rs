@@ -100,3 +100,19 @@ for crate::System::Runtime::Remoting::Messaging::ServerObjectTerminatorSink {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Messaging+ServerObjectTerminatorSink")]
+impl AsRef<crate::System::Runtime::Remoting::Messaging::IMessageSink>
+for crate::System::Runtime::Remoting::Messaging::ServerObjectTerminatorSink {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMessageSink {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+ServerObjectTerminatorSink")]
+impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessageSink>
+for crate::System::Runtime::Remoting::Messaging::ServerObjectTerminatorSink {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMessageSink {
+        unsafe { std::mem::transmute(self) }
+    }
+}

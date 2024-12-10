@@ -105,3 +105,17 @@ for crate::GlobalNamespace::IAdditionalContentEntitlementModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IAdditionalContentEntitlementModel")]
+impl AsRef<crate::GlobalNamespace::IAdditionalContentModel>
+for crate::GlobalNamespace::IAdditionalContentEntitlementModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IAdditionalContentModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IAdditionalContentEntitlementModel")]
+impl AsMut<crate::GlobalNamespace::IAdditionalContentModel>
+for crate::GlobalNamespace::IAdditionalContentEntitlementModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAdditionalContentModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

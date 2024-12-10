@@ -79,3 +79,21 @@ for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator>
+for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
+    fn as_ref(
+        &self,
+    ) -> &crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator>
+for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

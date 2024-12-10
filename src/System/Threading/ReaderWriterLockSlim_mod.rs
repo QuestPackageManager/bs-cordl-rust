@@ -531,6 +531,20 @@ for crate::System::Threading::ReaderWriterLockSlim {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+ReaderWriterLockSlim")]
+impl AsRef<crate::System::IDisposable>
+for crate::System::Threading::ReaderWriterLockSlim {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+ReaderWriterLockSlim")]
+impl AsMut<crate::System::IDisposable>
+for crate::System::Threading::ReaderWriterLockSlim {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 #[repr(C)]
 #[derive(Debug, Clone)]

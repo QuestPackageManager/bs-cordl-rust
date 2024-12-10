@@ -182,3 +182,49 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRAnchorContainer")]
+impl AsRef<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRAnchorContainer,
+    >,
+> for crate::GlobalNamespace::OVRAnchorContainer {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRAnchorContainer,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRAnchorContainer")]
+impl AsMut<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRAnchorContainer,
+    >,
+> for crate::GlobalNamespace::OVRAnchorContainer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRAnchorContainer,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRAnchorContainer")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer>>
+for crate::GlobalNamespace::OVRAnchorContainer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRAnchorContainer")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer>>
+for crate::GlobalNamespace::OVRAnchorContainer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer> {
+        todo!()
+    }
+}

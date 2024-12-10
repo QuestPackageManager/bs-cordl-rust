@@ -635,6 +635,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+TableView")]
+impl AsRef<crate::HMUI::ITableCellOwner> for crate::HMUI::TableView {
+    fn as_ref(&self) -> &crate::HMUI::ITableCellOwner {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+TableView")]
+impl AsMut<crate::HMUI::ITableCellOwner> for crate::HMUI::TableView {
+    fn as_mut(&mut self) -> &mut crate::HMUI::ITableCellOwner {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HMUI+TableView+CellsGroup")]
 #[repr(C)]
 #[derive(Debug)]

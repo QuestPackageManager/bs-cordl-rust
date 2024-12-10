@@ -90,3 +90,17 @@ for crate::GlobalNamespace::TimelinePauseReceiver {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TimelinePauseReceiver")]
+impl AsRef<crate::UnityEngine::Playables::INotificationReceiver>
+for crate::GlobalNamespace::TimelinePauseReceiver {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::INotificationReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TimelinePauseReceiver")]
+impl AsMut<crate::UnityEngine::Playables::INotificationReceiver>
+for crate::GlobalNamespace::TimelinePauseReceiver {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::INotificationReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

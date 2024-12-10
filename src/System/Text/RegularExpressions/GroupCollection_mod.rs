@@ -484,6 +484,188 @@ for crate::System::Text::RegularExpressions::GroupCollection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IList_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IList_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IList_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IList_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IReadOnlyList_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyList_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IReadOnlyList_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyList_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<crate::System::Collections::IList>
+for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<crate::System::Collections::IList>
+for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -601,5 +783,61 @@ for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::System::Text::RegularExpressions::Group,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }

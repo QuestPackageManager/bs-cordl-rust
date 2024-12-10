@@ -201,3 +201,21 @@ impl crate::UnityEngine::UI::ColorBlock {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UI+ColorBlock")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UI::ColorBlock>>
+for crate::UnityEngine::UI::ColorBlock {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UI::ColorBlock> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UI+ColorBlock")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UI::ColorBlock>>
+for crate::UnityEngine::UI::ColorBlock {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UI::ColorBlock> {
+        todo!()
+    }
+}

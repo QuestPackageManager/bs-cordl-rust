@@ -163,3 +163,31 @@ for crate::GlobalNamespace::ColorSaturationValueSlider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ColorSaturationValueSlider")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::GlobalNamespace::ColorSaturationValueSlider {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ColorSaturationValueSlider")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::GlobalNamespace::ColorSaturationValueSlider {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ColorSaturationValueSlider")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::GlobalNamespace::ColorSaturationValueSlider {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerUpHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ColorSaturationValueSlider")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::GlobalNamespace::ColorSaturationValueSlider {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerUpHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

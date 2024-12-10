@@ -56,3 +56,45 @@ impl crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationRemoveScalePlayable")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationRemoveScalePlayable,
+    >,
+> for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationRemoveScalePlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationRemoveScalePlayable")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationRemoveScalePlayable,
+    >,
+> for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationRemoveScalePlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationRemoveScalePlayable")]
+impl AsRef<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationRemoveScalePlayable")]
+impl AsMut<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationRemoveScalePlayable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}

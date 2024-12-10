@@ -65,3 +65,17 @@ for crate::GlobalNamespace::StandaloneThreadContext {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "StandaloneThreadContext")]
+impl AsRef<crate::GlobalNamespace::IStandaloneThreadRunner>
+for crate::GlobalNamespace::StandaloneThreadContext {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IStandaloneThreadRunner {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandaloneThreadContext")]
+impl AsMut<crate::GlobalNamespace::IStandaloneThreadRunner>
+for crate::GlobalNamespace::StandaloneThreadContext {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IStandaloneThreadRunner {
+        unsafe { std::mem::transmute(self) }
+    }
+}

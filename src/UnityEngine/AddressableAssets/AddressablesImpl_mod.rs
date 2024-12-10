@@ -2459,6 +2459,34 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
+> for crate::UnityEngine::AddressableAssets::AddressablesImpl {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
+> for crate::UnityEngine::AddressableAssets::AddressablesImpl {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
 )]

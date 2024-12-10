@@ -476,6 +476,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DlcPromoPanel
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DlcPromoPanelModel")]
+impl AsRef<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::DlcPromoPanelModel {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DlcPromoPanelModel")]
+impl AsMut<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::DlcPromoPanelModel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
 #[repr(C)]
 #[derive(Debug)]

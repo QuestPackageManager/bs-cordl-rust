@@ -179,3 +179,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Core::DefaultTaskUtilit
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGNet+Core+DefaultTaskUtility")]
+impl AsRef<crate::BGNet::Core::ITaskUtility> for crate::BGNet::Core::DefaultTaskUtility {
+    fn as_ref(&self) -> &crate::BGNet::Core::ITaskUtility {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGNet+Core+DefaultTaskUtility")]
+impl AsMut<crate::BGNet::Core::ITaskUtility> for crate::BGNet::Core::DefaultTaskUtility {
+    fn as_mut(&mut self) -> &mut crate::BGNet::Core::ITaskUtility {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -184,3 +184,31 @@ impl crate::UnityEngine::Vector3 {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Vector3")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Vector3>>
+for crate::UnityEngine::Vector3 {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Vector3> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Vector3")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Vector3>>
+for crate::UnityEngine::Vector3 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Vector3> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Vector3")]
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Vector3 {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Vector3")]
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Vector3 {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}

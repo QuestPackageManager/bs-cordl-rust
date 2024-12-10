@@ -138,3 +138,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRNativeBuff
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRNativeBuffer")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::OVRNativeBuffer {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRNativeBuffer")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRNativeBuffer {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

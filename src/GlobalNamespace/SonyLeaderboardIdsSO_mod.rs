@@ -109,6 +109,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SonyLeaderboa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SonyLeaderboardIdsSO")]
+impl AsRef<crate::GlobalNamespace::ILeaderboardIdContainer>
+for crate::GlobalNamespace::SonyLeaderboardIdsSO {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILeaderboardIdContainer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SonyLeaderboardIdsSO")]
+impl AsMut<crate::GlobalNamespace::ILeaderboardIdContainer>
+for crate::GlobalNamespace::SonyLeaderboardIdsSO {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILeaderboardIdContainer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -194,5 +208,19 @@ for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
+impl AsRef<crate::GlobalNamespace::ILeaderboardIdData>
+for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILeaderboardIdData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
+impl AsMut<crate::GlobalNamespace::ILeaderboardIdData>
+for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILeaderboardIdData {
+        unsafe { std::mem::transmute(self) }
     }
 }

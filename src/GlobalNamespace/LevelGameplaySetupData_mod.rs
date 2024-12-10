@@ -137,3 +137,17 @@ for crate::GlobalNamespace::LevelGameplaySetupData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LevelGameplaySetupData")]
+impl AsRef<crate::GlobalNamespace::ILevelGameplaySetupData>
+for crate::GlobalNamespace::LevelGameplaySetupData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelGameplaySetupData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LevelGameplaySetupData")]
+impl AsMut<crate::GlobalNamespace::ILevelGameplaySetupData>
+for crate::GlobalNamespace::LevelGameplaySetupData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelGameplaySetupData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

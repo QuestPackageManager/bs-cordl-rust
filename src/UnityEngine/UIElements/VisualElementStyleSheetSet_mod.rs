@@ -87,3 +87,31 @@ impl crate::UnityEngine::UIElements::VisualElementStyleSheetSet {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElementStyleSheetSet")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::VisualElementStyleSheetSet,
+    >,
+> for crate::UnityEngine::UIElements::VisualElementStyleSheetSet {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::VisualElementStyleSheetSet,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElementStyleSheetSet")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::VisualElementStyleSheetSet,
+    >,
+> for crate::UnityEngine::UIElements::VisualElementStyleSheetSet {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::VisualElementStyleSheetSet,
+    > {
+        todo!()
+    }
+}

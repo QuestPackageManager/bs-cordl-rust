@@ -161,3 +161,31 @@ for crate::System::Security::AccessControl::GenericAcl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Security+AccessControl+GenericAcl")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Security::AccessControl::GenericAcl {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+AccessControl+GenericAcl")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Security::AccessControl::GenericAcl {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+AccessControl+GenericAcl")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Security::AccessControl::GenericAcl {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+AccessControl+GenericAcl")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Security::AccessControl::GenericAcl {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

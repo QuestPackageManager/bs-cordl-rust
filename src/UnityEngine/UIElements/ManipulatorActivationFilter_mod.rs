@@ -164,3 +164,31 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+    >,
+> for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+    >,
+> for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+    > {
+        todo!()
+    }
+}

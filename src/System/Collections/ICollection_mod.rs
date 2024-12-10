@@ -78,3 +78,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::ICollecti
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+ICollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::ICollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+ICollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::ICollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

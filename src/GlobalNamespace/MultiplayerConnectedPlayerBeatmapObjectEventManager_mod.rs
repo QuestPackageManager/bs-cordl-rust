@@ -315,6 +315,24 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
+impl AsRef<crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager>
+for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
+impl AsMut<crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager>
+for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
 )]

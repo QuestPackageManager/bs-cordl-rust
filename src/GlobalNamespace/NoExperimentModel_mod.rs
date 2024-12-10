@@ -78,3 +78,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoExperimentM
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoExperimentModel")]
+impl AsRef<crate::GlobalNamespace::IExperimentModel>
+for crate::GlobalNamespace::NoExperimentModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IExperimentModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoExperimentModel")]
+impl AsMut<crate::GlobalNamespace::IExperimentModel>
+for crate::GlobalNamespace::NoExperimentModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IExperimentModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

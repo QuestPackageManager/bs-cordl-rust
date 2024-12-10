@@ -157,3 +157,17 @@ for crate::GlobalNamespace::OculusDeeplinkManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusDeeplinkManager")]
+impl AsRef<crate::GlobalNamespace::IDeeplinkManager>
+for crate::GlobalNamespace::OculusDeeplinkManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IDeeplinkManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusDeeplinkManager")]
+impl AsMut<crate::GlobalNamespace::IDeeplinkManager>
+for crate::GlobalNamespace::OculusDeeplinkManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IDeeplinkManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}

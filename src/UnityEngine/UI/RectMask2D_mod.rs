@@ -259,3 +259,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::RectMask2D {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+RectMask2D")]
+impl AsRef<crate::UnityEngine::ICanvasRaycastFilter>
+for crate::UnityEngine::UI::RectMask2D {
+    fn as_ref(&self) -> &crate::UnityEngine::ICanvasRaycastFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+RectMask2D")]
+impl AsMut<crate::UnityEngine::ICanvasRaycastFilter>
+for crate::UnityEngine::UI::RectMask2D {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ICanvasRaycastFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+RectMask2D")]
+impl AsRef<crate::UnityEngine::UI::IClipper> for crate::UnityEngine::UI::RectMask2D {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::IClipper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+RectMask2D")]
+impl AsMut<crate::UnityEngine::UI::IClipper> for crate::UnityEngine::UI::RectMask2D {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IClipper {
+        unsafe { std::mem::transmute(self) }
+    }
+}

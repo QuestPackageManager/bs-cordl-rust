@@ -453,3 +453,19 @@ for crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputRuntime>
+for crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputRuntime>
+for crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
+        unsafe { std::mem::transmute(self) }
+    }
+}

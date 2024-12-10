@@ -152,3 +152,37 @@ for crate::System::Collections::Generic::EqualityComparer_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Generic+EqualityComparer_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEqualityComparer_1<T>>
+for crate::System::Collections::Generic::EqualityComparer_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEqualityComparer_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+EqualityComparer_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEqualityComparer_1<T>>
+for crate::System::Collections::Generic::EqualityComparer_1<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+EqualityComparer_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEqualityComparer>
+for crate::System::Collections::Generic::EqualityComparer_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+EqualityComparer_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEqualityComparer>
+for crate::System::Collections::Generic::EqualityComparer_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

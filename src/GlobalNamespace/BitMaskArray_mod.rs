@@ -134,3 +134,55 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BitMaskArray 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BitMaskArray")]
+impl AsRef<crate::GlobalNamespace::IBitMask_1<*mut crate::GlobalNamespace::BitMaskArray>>
+for crate::GlobalNamespace::BitMaskArray {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IBitMask_1<*mut crate::GlobalNamespace::BitMaskArray> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskArray")]
+impl AsMut<crate::GlobalNamespace::IBitMask_1<*mut crate::GlobalNamespace::BitMaskArray>>
+for crate::GlobalNamespace::BitMaskArray {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IBitMask_1<
+        *mut crate::GlobalNamespace::BitMaskArray,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskArray")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BitMaskArray {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskArray")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BitMaskArray {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskArray")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::GlobalNamespace::BitMaskArray>>
+for crate::GlobalNamespace::BitMaskArray {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::GlobalNamespace::BitMaskArray> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskArray")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::GlobalNamespace::BitMaskArray>>
+for crate::GlobalNamespace::BitMaskArray {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::GlobalNamespace::BitMaskArray> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

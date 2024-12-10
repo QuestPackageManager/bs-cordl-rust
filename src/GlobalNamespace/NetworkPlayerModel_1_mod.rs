@@ -869,6 +869,20 @@ for crate::GlobalNamespace::NetworkPlayerModel_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NetworkPlayerModel_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::GlobalNamespace::INetworkPlayerModel>
+for crate::GlobalNamespace::NetworkPlayerModel_1<T> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPlayerModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NetworkPlayerModel_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::INetworkPlayerModel>
+for crate::GlobalNamespace::NetworkPlayerModel_1<T> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkPlayerModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
 #[repr(C)]
 #[derive(Debug)]
@@ -937,6 +951,38 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T> {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::NetworkPlayerModel_1<T>,
+    >,
+> for crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T> {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::NetworkPlayerModel_1<T>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::NetworkPlayerModel_1<T>,
+    >,
+> for crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::NetworkPlayerModel_1<T>,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NetworkPlayerModel_1+NetworkPlayer")]
@@ -1367,6 +1413,20 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "NetworkPlayerModel_1+NetworkPlayer")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::GlobalNamespace::INetworkPlayer>
+for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NetworkPlayerModel_1+NetworkPlayer")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::INetworkPlayer>
+for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkPlayer {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NetworkPlayerModel_1+NetworkServer")]
@@ -1852,6 +1912,20 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NetworkPlayerModel_1+NetworkServer")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::GlobalNamespace::INetworkPlayer>
+for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NetworkPlayerModel_1+NetworkServer")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::INetworkPlayer>
+for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "NetworkPlayerModel_1+StartClientPartyConfig")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1916,5 +1990,37 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_StartClientPartyConfig<T> {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "NetworkPlayerModel_1+StartClientPartyConfig")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::NetworkPlayerModel_1<T>,
+    >,
+> for crate::GlobalNamespace::NetworkPlayerModel_1_StartClientPartyConfig<T> {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::NetworkPlayerModel_1<T>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NetworkPlayerModel_1+StartClientPartyConfig")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::NetworkPlayerModel_1<T>,
+    >,
+> for crate::GlobalNamespace::NetworkPlayerModel_1_StartClientPartyConfig<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::NetworkPlayerModel_1<T>,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }

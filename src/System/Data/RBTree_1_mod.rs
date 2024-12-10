@@ -954,6 +954,20 @@ for crate::System::Data::RBTree_1<K> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Data+RBTree_1")]
+impl<K: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Data::RBTree_1<K> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1")]
+impl<K: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Data::RBTree_1<K> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Data+RBTree_1+Node")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -1170,6 +1184,52 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+impl<
+    K: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<K>>
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<K> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+impl<
+    K: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<K>>
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<K> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+impl<K: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+impl<K: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+impl<K: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+impl<K: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }
 #[cfg(feature = "System+Data+RBTree_1+TreePage")]

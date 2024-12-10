@@ -817,6 +817,34 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<
+        crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+    >,
+> for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<
+        crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+    >,
+> for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 #[repr(C)]
 #[derive(Debug, Clone)]

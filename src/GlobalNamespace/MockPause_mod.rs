@@ -156,3 +156,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockPause {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MockPause")]
+impl AsRef<crate::GlobalNamespace::IGamePause> for crate::GlobalNamespace::MockPause {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IGamePause {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockPause")]
+impl AsMut<crate::GlobalNamespace::IGamePause> for crate::GlobalNamespace::MockPause {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IGamePause {
+        unsafe { std::mem::transmute(self) }
+    }
+}

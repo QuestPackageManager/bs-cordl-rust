@@ -40,3 +40,17 @@ for crate::UnityEngine::UIElements::IBaseUxmlObjectFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+IBaseUxmlObjectFactory")]
+impl AsRef<crate::UnityEngine::UIElements::IBaseUxmlFactory>
+for crate::UnityEngine::UIElements::IBaseUxmlObjectFactory {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IBaseUxmlFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+IBaseUxmlObjectFactory")]
+impl AsMut<crate::UnityEngine::UIElements::IBaseUxmlFactory>
+for crate::UnityEngine::UIElements::IBaseUxmlObjectFactory {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IBaseUxmlFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}

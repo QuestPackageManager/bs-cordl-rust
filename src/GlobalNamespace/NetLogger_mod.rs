@@ -65,3 +65,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NetLogger {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NetLogger")]
+impl AsRef<crate::LiteNetLib::INetLogger> for crate::GlobalNamespace::NetLogger {
+    fn as_ref(&self) -> &crate::LiteNetLib::INetLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NetLogger")]
+impl AsMut<crate::LiteNetLib::INetLogger> for crate::GlobalNamespace::NetLogger {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::INetLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}

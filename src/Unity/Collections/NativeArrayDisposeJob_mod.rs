@@ -33,3 +33,17 @@ impl crate::Unity::Collections::NativeArrayDisposeJob {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
+impl AsRef<crate::Unity::Jobs::IJob>
+for crate::Unity::Collections::NativeArrayDisposeJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
+impl AsMut<crate::Unity::Jobs::IJob>
+for crate::Unity::Collections::NativeArrayDisposeJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}

@@ -197,6 +197,60 @@ impl<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Linq+Lookup_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
+    >,
+> for crate::System::Linq::Lookup_2<TKey, TElement> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
+    >,
+> for crate::System::Linq::Lookup_2<TKey, TElement> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Linq::Lookup_2<TKey, TElement> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Linq::Lookup_2<TKey, TElement> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Linq+Lookup_2+Grouping")]
 #[repr(C)]
 #[derive(Debug)]
@@ -573,5 +627,109 @@ for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::ICollection_1<TElement>>
+for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::ICollection_1<TElement>>
+for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<TElement>>
+for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<TElement>>
+for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IList_1<TElement>>
+for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IList_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IList_1<TElement>>
+for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IList_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Linq::IGrouping_2<TKey, TElement>>
+for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
+    fn as_ref(&self) -> &crate::System::Linq::IGrouping_2<TKey, TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Linq::IGrouping_2<TKey, TElement>>
+for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
+    fn as_mut(&mut self) -> &mut crate::System::Linq::IGrouping_2<TKey, TElement> {
+        unsafe { std::mem::transmute(self) }
     }
 }

@@ -413,3 +413,17 @@ for crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
+impl AsRef<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
+    fn as_ref(&self) -> &crate::System::Threading::Tasks::ITaskCompletionAction {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
+impl AsMut<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::Tasks::ITaskCompletionAction {
+        unsafe { std::mem::transmute(self) }
+    }
+}

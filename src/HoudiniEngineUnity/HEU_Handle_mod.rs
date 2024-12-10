@@ -317,6 +317,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Handle
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Handle")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<*mut crate::HoudiniEngineUnity::HEU_Handle>,
+> for crate::HoudiniEngineUnity::HEU_Handle {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_Handle,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_Handle")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<*mut crate::HoudiniEngineUnity::HEU_Handle>,
+> for crate::HoudiniEngineUnity::HEU_Handle {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_Handle,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -129,6 +129,64 @@ for crate::GlobalNamespace::MirroredGameNoteController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MirroredGameNoteController")]
+impl AsRef<
+    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        *mut crate::GlobalNamespace::MirroredGameNoteController,
+    >,
+> for crate::GlobalNamespace::MirroredGameNoteController {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        *mut crate::GlobalNamespace::MirroredGameNoteController,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MirroredGameNoteController")]
+impl AsMut<
+    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        *mut crate::GlobalNamespace::MirroredGameNoteController,
+    >,
+> for crate::GlobalNamespace::MirroredGameNoteController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        *mut crate::GlobalNamespace::MirroredGameNoteController,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MirroredGameNoteController")]
+impl AsRef<crate::GlobalNamespace::INoteMovementProvider>
+for crate::GlobalNamespace::MirroredGameNoteController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteMovementProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MirroredGameNoteController")]
+impl AsMut<crate::GlobalNamespace::INoteMovementProvider>
+for crate::GlobalNamespace::MirroredGameNoteController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteMovementProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MirroredGameNoteController")]
+impl AsRef<crate::GlobalNamespace::INoteVisualModifierTypeProvider>
+for crate::GlobalNamespace::MirroredGameNoteController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteVisualModifierTypeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MirroredGameNoteController")]
+impl AsMut<crate::GlobalNamespace::INoteVisualModifierTypeProvider>
+for crate::GlobalNamespace::MirroredGameNoteController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INoteVisualModifierTypeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "MirroredGameNoteController+Pool")]
 #[repr(C)]
 #[derive(Debug)]

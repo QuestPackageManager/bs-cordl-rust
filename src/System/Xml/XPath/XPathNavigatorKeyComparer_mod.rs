@@ -75,3 +75,17 @@ for crate::System::Xml::XPath::XPathNavigatorKeyComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XPath+XPathNavigatorKeyComparer")]
+impl AsRef<crate::System::Collections::IEqualityComparer>
+for crate::System::Xml::XPath::XPathNavigatorKeyComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XPath+XPathNavigatorKeyComparer")]
+impl AsMut<crate::System::Collections::IEqualityComparer>
+for crate::System::Xml::XPath::XPathNavigatorKeyComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

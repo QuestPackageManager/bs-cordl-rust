@@ -53,3 +53,17 @@ impl crate::LufsMetering::CalculateRmsJob {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "LufsMetering+CalculateRmsJob")]
+impl AsRef<crate::Unity::Jobs::IJobParallelFor>
+for crate::LufsMetering::CalculateRmsJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}
+#[cfg(feature = "LufsMetering+CalculateRmsJob")]
+impl AsMut<crate::Unity::Jobs::IJobParallelFor>
+for crate::LufsMetering::CalculateRmsJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}

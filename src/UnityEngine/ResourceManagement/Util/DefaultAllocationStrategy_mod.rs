@@ -82,3 +82,21 @@ for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy")]
+impl AsRef<crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy>
+for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy")]
+impl AsMut<crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy>
+for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
+        unsafe { std::mem::transmute(self) }
+    }
+}

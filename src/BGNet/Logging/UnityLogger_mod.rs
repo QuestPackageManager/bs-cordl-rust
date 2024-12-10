@@ -96,3 +96,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::UnityLogger {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGNet+Logging+UnityLogger")]
+impl AsRef<crate::BGNet::Logging::Debug_ILogger> for crate::BGNet::Logging::UnityLogger {
+    fn as_ref(&self) -> &crate::BGNet::Logging::Debug_ILogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGNet+Logging+UnityLogger")]
+impl AsMut<crate::BGNet::Logging::Debug_ILogger> for crate::BGNet::Logging::UnityLogger {
+    fn as_mut(&mut self) -> &mut crate::BGNet::Logging::Debug_ILogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}

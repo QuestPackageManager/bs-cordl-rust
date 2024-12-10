@@ -77,3 +77,35 @@ impl crate::UnityEngine::Playables::Playable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Playables+Playable")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Playables::Playable>>
+for crate::UnityEngine::Playables::Playable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Playables::Playable> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Playables+Playable")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Playables::Playable>>
+for crate::UnityEngine::Playables::Playable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Playables::Playable> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Playables+Playable")]
+impl AsRef<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Playables::Playable {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Playables+Playable")]
+impl AsMut<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Playables::Playable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}

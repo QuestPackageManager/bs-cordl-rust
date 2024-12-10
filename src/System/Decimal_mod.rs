@@ -718,6 +718,100 @@ impl crate::System::Decimal {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Decimal")]
+impl AsRef<crate::System::IComparable> for crate::System::Decimal {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<crate::System::IComparable> for crate::System::Decimal {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsRef<crate::System::IComparable_1<crate::System::Decimal>>
+for crate::System::Decimal {
+    fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::Decimal> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<crate::System::IComparable_1<crate::System::Decimal>>
+for crate::System::Decimal {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<crate::System::Decimal> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsRef<crate::System::IConvertible> for crate::System::Decimal {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<crate::System::IConvertible> for crate::System::Decimal {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsRef<crate::System::IEquatable_1<crate::System::Decimal>>
+for crate::System::Decimal {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Decimal> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<crate::System::IEquatable_1<crate::System::Decimal>>
+for crate::System::Decimal {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::Decimal> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsRef<crate::System::IFormattable> for crate::System::Decimal {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<crate::System::IFormattable> for crate::System::Decimal {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsRef<crate::System::ISpanFormattable> for crate::System::Decimal {
+    fn as_ref(&self) -> &crate::System::ISpanFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<crate::System::ISpanFormattable> for crate::System::Decimal {
+    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Decimal {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Decimal {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        todo!()
+    }
+}
 #[cfg(feature = "System+Decimal+DecCalc")]
 #[repr(C)]
 #[derive(Debug, Clone)]

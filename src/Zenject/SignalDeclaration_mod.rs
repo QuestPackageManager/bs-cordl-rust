@@ -173,6 +173,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SignalDeclaration {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+SignalDeclaration")]
+impl AsRef<crate::System::IDisposable> for crate::Zenject::SignalDeclaration {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+SignalDeclaration")]
+impl AsMut<crate::System::IDisposable> for crate::Zenject::SignalDeclaration {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+SignalDeclaration")]
+impl AsRef<crate::Zenject::ITickable> for crate::Zenject::SignalDeclaration {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+SignalDeclaration")]
+impl AsMut<crate::Zenject::ITickable> for crate::Zenject::SignalDeclaration {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Zenject+SignalDeclaration+Factory")]
 #[repr(C)]
 #[derive(Debug)]

@@ -143,3 +143,31 @@ for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionaryEnumerator
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionaryEnumerator")]
+impl AsRef<crate::System::Collections::IDictionaryEnumerator>
+for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionaryEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionaryEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionaryEnumerator")]
+impl AsMut<crate::System::Collections::IDictionaryEnumerator>
+for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionaryEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionaryEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionaryEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionaryEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionaryEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionaryEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

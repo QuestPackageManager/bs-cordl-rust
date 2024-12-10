@@ -950,6 +950,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Animati
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationTrack")]
+impl AsRef<crate::UnityEngine::Timeline::ILayerable>
+for crate::UnityEngine::Timeline::AnimationTrack {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ILayerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+AnimationTrack")]
+impl AsMut<crate::UnityEngine::Timeline::ILayerable>
+for crate::UnityEngine::Timeline::AnimationTrack {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ILayerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
 #[repr(C)]
 #[derive(Debug)]

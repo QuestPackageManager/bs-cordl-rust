@@ -297,6 +297,34 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
+    > {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -399,6 +427,34 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType")]

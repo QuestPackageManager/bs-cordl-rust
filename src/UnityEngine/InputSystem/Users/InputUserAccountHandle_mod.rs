@@ -95,3 +95,31 @@ impl crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
+    >,
+> for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
+    >,
+> for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
+    > {
+        todo!()
+    }
+}

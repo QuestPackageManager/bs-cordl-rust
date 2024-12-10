@@ -192,3 +192,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TutorialContr
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TutorialController")]
+impl AsRef<crate::GlobalNamespace::ILevelStartController>
+for crate::GlobalNamespace::TutorialController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelStartController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TutorialController")]
+impl AsMut<crate::GlobalNamespace::ILevelStartController>
+for crate::GlobalNamespace::TutorialController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelStartController {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -66,6 +66,22 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
+        todo!()
+    }
+}
 #[cfg(
     feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
 )]

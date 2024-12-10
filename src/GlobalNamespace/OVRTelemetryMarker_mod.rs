@@ -181,6 +181,18 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRTelemetryMarker")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::OVRTelemetryMarker {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTelemetryMarker")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRTelemetryMarker {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
 #[repr(C)]
 #[derive(Debug, Clone)]

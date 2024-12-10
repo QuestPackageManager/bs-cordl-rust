@@ -1033,6 +1033,144 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapObject
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsRef<crate::GlobalNamespace::IBeatmapObjectSpawner>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapObjectSpawner {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsMut<crate::GlobalNamespace::IBeatmapObjectSpawner>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapObjectSpawner {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsRef<crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsMut<crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsRef<crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsMut<crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsRef<crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsMut<crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsRef<crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsMut<crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsRef<crate::GlobalNamespace::INoteControllerNoteWasCutEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteControllerNoteWasCutEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsMut<crate::GlobalNamespace::INoteControllerNoteWasCutEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteControllerNoteWasCutEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsRef<crate::GlobalNamespace::INoteControllerNoteWasMissedEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteControllerNoteWasMissedEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsMut<crate::GlobalNamespace::INoteControllerNoteWasMissedEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INoteControllerNoteWasMissedEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsRef<crate::GlobalNamespace::ISliderDidDissolveEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ISliderDidDissolveEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsMut<crate::GlobalNamespace::ISliderDidDissolveEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ISliderDidDissolveEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsRef<crate::GlobalNamespace::ISliderDidFinishJumpEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ISliderDidFinishJumpEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapObjectManager")]
+impl AsMut<crate::GlobalNamespace::ISliderDidFinishJumpEvent>
+for crate::GlobalNamespace::BeatmapObjectManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ISliderDidFinishJumpEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BeatmapObjectManager+NoteWasCutDelegate")]
 #[repr(C)]
 #[derive(Debug)]

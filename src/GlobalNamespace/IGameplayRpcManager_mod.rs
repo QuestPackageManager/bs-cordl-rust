@@ -719,3 +719,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IGameplayRpcM
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IGameplayRpcManager")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::IGameplayRpcManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IGameplayRpcManager")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::IGameplayRpcManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

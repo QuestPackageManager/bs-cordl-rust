@@ -69,3 +69,17 @@ for crate::GlobalNamespace::OculusInvitePlatformHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusInvitePlatformHandler")]
+impl AsRef<crate::GlobalNamespace::IInvitePlatformHandler>
+for crate::GlobalNamespace::OculusInvitePlatformHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IInvitePlatformHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusInvitePlatformHandler")]
+impl AsMut<crate::GlobalNamespace::IInvitePlatformHandler>
+for crate::GlobalNamespace::OculusInvitePlatformHandler {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IInvitePlatformHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

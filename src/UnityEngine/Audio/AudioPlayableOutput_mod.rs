@@ -88,3 +88,17 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
+impl AsRef<crate::UnityEngine::Playables::IPlayableOutput>
+for crate::UnityEngine::Audio::AudioPlayableOutput {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableOutput {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
+impl AsMut<crate::UnityEngine::Playables::IPlayableOutput>
+for crate::UnityEngine::Audio::AudioPlayableOutput {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableOutput {
+        todo!()
+    }
+}

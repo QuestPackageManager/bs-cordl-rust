@@ -64,3 +64,27 @@ for crate::UnityEngine::UIElements::UxmlTypeRestriction {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UxmlTypeRestriction")]
+impl AsRef<
+    crate::System::IEquatable_1<*mut crate::UnityEngine::UIElements::UxmlTypeRestriction>,
+> for crate::UnityEngine::UIElements::UxmlTypeRestriction {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        *mut crate::UnityEngine::UIElements::UxmlTypeRestriction,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UxmlTypeRestriction")]
+impl AsMut<
+    crate::System::IEquatable_1<*mut crate::UnityEngine::UIElements::UxmlTypeRestriction>,
+> for crate::UnityEngine::UIElements::UxmlTypeRestriction {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        *mut crate::UnityEngine::UIElements::UxmlTypeRestriction,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

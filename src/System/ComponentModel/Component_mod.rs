@@ -145,3 +145,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::Compon
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ComponentModel+Component")]
+impl AsRef<crate::System::ComponentModel::IComponent>
+for crate::System::ComponentModel::Component {
+    fn as_ref(&self) -> &crate::System::ComponentModel::IComponent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+Component")]
+impl AsMut<crate::System::ComponentModel::IComponent>
+for crate::System::ComponentModel::Component {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::IComponent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+Component")]
+impl AsRef<crate::System::IDisposable> for crate::System::ComponentModel::Component {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+Component")]
+impl AsMut<crate::System::IDisposable> for crate::System::ComponentModel::Component {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

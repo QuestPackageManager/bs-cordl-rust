@@ -1230,6 +1230,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpWebRequest {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+HttpWebRequest")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Net::HttpWebRequest {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+HttpWebRequest")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Net::HttpWebRequest {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -1396,5 +1410,21 @@ impl crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
             (stateMachine),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
     }
 }

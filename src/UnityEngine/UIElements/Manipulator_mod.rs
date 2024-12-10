@@ -96,3 +96,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Manip
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Manipulator")]
+impl AsRef<crate::UnityEngine::UIElements::IManipulator>
+for crate::UnityEngine::UIElements::Manipulator {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IManipulator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Manipulator")]
+impl AsMut<crate::UnityEngine::UIElements::IManipulator>
+for crate::UnityEngine::UIElements::Manipulator {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IManipulator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -283,3 +283,17 @@ for crate::Org::BouncyCastle::Crypto::BufferedCipherBase {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+BufferedCipherBase")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IBufferedCipher>
+for crate::Org::BouncyCastle::Crypto::BufferedCipherBase {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IBufferedCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+BufferedCipherBase")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IBufferedCipher>
+for crate::Org::BouncyCastle::Crypto::BufferedCipherBase {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IBufferedCipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}

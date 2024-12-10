@@ -72,3 +72,17 @@ for crate::BGLib::SaveDataCore::VersionableSaveData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGLib+SaveDataCore+VersionableSaveData")]
+impl AsRef<crate::BGLib::SaveDataCore::ISerializableSaveData>
+for crate::BGLib::SaveDataCore::VersionableSaveData {
+    fn as_ref(&self) -> &crate::BGLib::SaveDataCore::ISerializableSaveData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGLib+SaveDataCore+VersionableSaveData")]
+impl AsMut<crate::BGLib::SaveDataCore::ISerializableSaveData>
+for crate::BGLib::SaveDataCore::VersionableSaveData {
+    fn as_mut(&mut self) -> &mut crate::BGLib::SaveDataCore::ISerializableSaveData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

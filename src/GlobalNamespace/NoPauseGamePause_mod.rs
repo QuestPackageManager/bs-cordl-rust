@@ -158,3 +158,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoPauseGamePa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoPauseGamePause")]
+impl AsRef<crate::GlobalNamespace::IGamePause>
+for crate::GlobalNamespace::NoPauseGamePause {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IGamePause {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoPauseGamePause")]
+impl AsMut<crate::GlobalNamespace::IGamePause>
+for crate::GlobalNamespace::NoPauseGamePause {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IGamePause {
+        unsafe { std::mem::transmute(self) }
+    }
+}

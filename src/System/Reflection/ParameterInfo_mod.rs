@@ -217,3 +217,49 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::ParameterI
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Reflection+ParameterInfo")]
+impl AsRef<crate::System::Reflection::ICustomAttributeProvider>
+for crate::System::Reflection::ParameterInfo {
+    fn as_ref(&self) -> &crate::System::Reflection::ICustomAttributeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Reflection+ParameterInfo")]
+impl AsMut<crate::System::Reflection::ICustomAttributeProvider>
+for crate::System::Reflection::ParameterInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Reflection::ICustomAttributeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Reflection+ParameterInfo")]
+impl AsRef<crate::System::Runtime::InteropServices::_ParameterInfo>
+for crate::System::Reflection::ParameterInfo {
+    fn as_ref(&self) -> &crate::System::Runtime::InteropServices::_ParameterInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Reflection+ParameterInfo")]
+impl AsMut<crate::System::Runtime::InteropServices::_ParameterInfo>
+for crate::System::Reflection::ParameterInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::InteropServices::_ParameterInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Reflection+ParameterInfo")]
+impl AsRef<crate::System::Runtime::Serialization::IObjectReference>
+for crate::System::Reflection::ParameterInfo {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::IObjectReference {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Reflection+ParameterInfo")]
+impl AsMut<crate::System::Runtime::Serialization::IObjectReference>
+for crate::System::Reflection::ParameterInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IObjectReference {
+        unsafe { std::mem::transmute(self) }
+    }
+}

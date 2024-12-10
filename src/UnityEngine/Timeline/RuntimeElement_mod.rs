@@ -120,3 +120,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Runtime
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+RuntimeElement")]
+impl AsRef<crate::UnityEngine::Timeline::IInterval>
+for crate::UnityEngine::Timeline::RuntimeElement {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::IInterval {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+RuntimeElement")]
+impl AsMut<crate::UnityEngine::Timeline::IInterval>
+for crate::UnityEngine::Timeline::RuntimeElement {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::IInterval {
+        unsafe { std::mem::transmute(self) }
+    }
+}

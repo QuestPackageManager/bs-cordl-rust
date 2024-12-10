@@ -82,6 +82,20 @@ for crate::UnityEngine::UIElements::BindableElement {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BindableElement")]
+impl AsRef<crate::UnityEngine::UIElements::IBindable>
+for crate::UnityEngine::UIElements::BindableElement {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IBindable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BindableElement")]
+impl AsMut<crate::UnityEngine::UIElements::IBindable>
+for crate::UnityEngine::UIElements::BindableElement {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IBindable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]

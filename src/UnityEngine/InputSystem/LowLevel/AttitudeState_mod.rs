@@ -36,3 +36,19 @@ impl crate::UnityEngine::InputSystem::LowLevel::AttitudeState {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+AttitudeState")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::AttitudeState {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+AttitudeState")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::AttitudeState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
+        todo!()
+    }
+}

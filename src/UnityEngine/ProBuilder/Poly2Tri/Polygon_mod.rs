@@ -360,3 +360,19 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+Polygon")]
+impl AsRef<crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable>
+for crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
+    fn as_ref(&self) -> &crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+Polygon")]
+impl AsMut<crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable>
+for crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

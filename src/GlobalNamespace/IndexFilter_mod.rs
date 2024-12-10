@@ -257,6 +257,76 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IndexFilter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "IndexFilter")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::ValueTuple_3<i32, i32, i32>,
+    >,
+> for crate::GlobalNamespace::IndexFilter {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::ValueTuple_3<i32, i32, i32>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IndexFilter")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::ValueTuple_3<i32, i32, i32>,
+    >,
+> for crate::GlobalNamespace::IndexFilter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::ValueTuple_3<i32, i32, i32>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IndexFilter")]
+impl AsRef<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::ValueTuple_3<i32, i32, i32>,
+    >,
+> for crate::GlobalNamespace::IndexFilter {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::ValueTuple_3<i32, i32, i32>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IndexFilter")]
+impl AsMut<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::ValueTuple_3<i32, i32, i32>,
+    >,
+> for crate::GlobalNamespace::IndexFilter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::ValueTuple_3<i32, i32, i32>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IndexFilter")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::GlobalNamespace::IndexFilter {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IndexFilter")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::GlobalNamespace::IndexFilter {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

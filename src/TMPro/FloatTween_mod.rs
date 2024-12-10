@@ -151,6 +151,18 @@ impl crate::TMPro::FloatTween {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "TMPro+FloatTween")]
+impl AsRef<crate::TMPro::ITweenValue> for crate::TMPro::FloatTween {
+    fn as_ref(&self) -> &crate::TMPro::ITweenValue {
+        todo!()
+    }
+}
+#[cfg(feature = "TMPro+FloatTween")]
+impl AsMut<crate::TMPro::ITweenValue> for crate::TMPro::FloatTween {
+    fn as_mut(&mut self) -> &mut crate::TMPro::ITweenValue {
+        todo!()
+    }
+}
 #[cfg(feature = "TMPro+FloatTween+FloatTweenCallback")]
 #[repr(C)]
 #[derive(Debug)]

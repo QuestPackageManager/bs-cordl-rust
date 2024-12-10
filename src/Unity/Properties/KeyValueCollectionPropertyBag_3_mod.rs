@@ -117,6 +117,66 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
+impl<
+    TDictionary: quest_hook::libil2cpp::Type,
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::IPropertyBag>
+for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
+    TDictionary,
+    TKey,
+    TValue,
+> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
+impl<
+    TDictionary: quest_hook::libil2cpp::Type,
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::IPropertyBag>
+for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
+    TDictionary,
+    TKey,
+    TValue,
+> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
+impl<
+    TDictionary: quest_hook::libil2cpp::Type,
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::IPropertyBag_1<TDictionary>>
+for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
+    TDictionary,
+    TKey,
+    TValue,
+> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag_1<TDictionary> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
+impl<
+    TDictionary: quest_hook::libil2cpp::Type,
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::IPropertyBag_1<TDictionary>>
+for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
+    TDictionary,
+    TKey,
+    TValue,
+> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag_1<TDictionary> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty")]
 #[repr(C)]
 #[derive(Debug)]

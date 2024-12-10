@@ -92,3 +92,19 @@ for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
+impl AsRef<crate::Newtonsoft::Json::Serialization::IAttributeProvider>
+for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Serialization::IAttributeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
+impl AsMut<crate::Newtonsoft::Json::Serialization::IAttributeProvider>
+for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Newtonsoft::Json::Serialization::IAttributeProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -101,6 +101,22 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IEntropySourceProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IEntropySourceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IEntropySourceProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::IEntropySourceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
 )]
@@ -220,5 +236,23 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_Crypt
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
+)]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IEntropySource>
+for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_CryptoApiEntropySource {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IEntropySource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
+)]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IEntropySource>
+for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_CryptoApiEntropySource {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IEntropySource {
+        unsafe { std::mem::transmute(self) }
     }
 }

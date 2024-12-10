@@ -220,6 +220,20 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
+impl AsRef<crate::UnityEngine::UIElements::IFocusRing>
+for crate::UnityEngine::UIElements::VisualElementFocusRing {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IFocusRing {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
+impl AsMut<crate::UnityEngine::UIElements::IFocusRing>
+for crate::UnityEngine::UIElements::VisualElementFocusRing {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IFocusRing {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

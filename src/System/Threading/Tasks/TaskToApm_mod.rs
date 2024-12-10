@@ -151,3 +151,17 @@ for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
+impl AsRef<crate::System::IAsyncResult>
+for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
+    fn as_ref(&self) -> &crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
+impl AsMut<crate::System::IAsyncResult>
+for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}

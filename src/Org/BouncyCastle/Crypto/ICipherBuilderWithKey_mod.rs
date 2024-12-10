@@ -53,3 +53,17 @@ for crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+ICipherBuilderWithKey")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::ICipherBuilder>
+for crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ICipherBuilder {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+ICipherBuilderWithKey")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::ICipherBuilder>
+for crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ICipherBuilder {
+        unsafe { std::mem::transmute(self) }
+    }
+}

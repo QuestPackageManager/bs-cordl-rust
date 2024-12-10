@@ -395,6 +395,24 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceC
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
+)]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceContext {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
+)]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceContext {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+IInput")]
 #[repr(C)]
 #[derive(Debug)]
@@ -739,6 +757,22 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
+impl AsRef<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>
+for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
+impl AsMut<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>
+for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
 #[repr(C)]
 #[derive(Debug)]
@@ -915,6 +949,22 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
+impl AsRef<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>
+for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
+impl AsMut<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>
+for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+UpdateMode")]

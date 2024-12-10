@@ -95,3 +95,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PoolableSeria
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PoolableSerializable")]
+impl AsRef<crate::GlobalNamespace::IPoolableSerializable>
+for crate::GlobalNamespace::PoolableSerializable {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolableSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PoolableSerializable")]
+impl AsMut<crate::GlobalNamespace::IPoolableSerializable>
+for crate::GlobalNamespace::PoolableSerializable {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolableSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PoolableSerializable")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::PoolableSerializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PoolableSerializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::PoolableSerializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

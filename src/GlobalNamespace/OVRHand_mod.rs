@@ -405,6 +405,72 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHand {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRHand")]
+impl AsRef<crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider>
+for crate::GlobalNamespace::OVRHand {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRHand")]
+impl AsMut<crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider>
+for crate::GlobalNamespace::OVRHand {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRHand")]
+impl AsRef<crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider>
+for crate::GlobalNamespace::OVRHand {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRHand")]
+impl AsMut<crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider>
+for crate::GlobalNamespace::OVRHand {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRHand")]
+impl AsRef<crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider>
+for crate::GlobalNamespace::OVRHand {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRHand")]
+impl AsMut<crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider>
+for crate::GlobalNamespace::OVRHand {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRHand")]
+impl AsRef<crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider>
+for crate::GlobalNamespace::OVRHand {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRHand")]
+impl AsMut<crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider>
+for crate::GlobalNamespace::OVRHand {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "OVRHand+Hand")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

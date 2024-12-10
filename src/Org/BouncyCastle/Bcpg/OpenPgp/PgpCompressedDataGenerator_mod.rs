@@ -139,6 +139,22 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator")]
+impl AsRef<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>
+for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator")]
+impl AsMut<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>
+for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator+SafeCBZip2OutputStream"
 )]

@@ -113,3 +113,17 @@ for crate::Org::BouncyCastle::Cms::PasswordRecipientInfoGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Cms+PasswordRecipientInfoGenerator")]
+impl AsRef<crate::Org::BouncyCastle::Cms::RecipientInfoGenerator>
+for crate::Org::BouncyCastle::Cms::PasswordRecipientInfoGenerator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::RecipientInfoGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Cms+PasswordRecipientInfoGenerator")]
+impl AsMut<crate::Org::BouncyCastle::Cms::RecipientInfoGenerator>
+for crate::Org::BouncyCastle::Cms::PasswordRecipientInfoGenerator {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::RecipientInfoGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

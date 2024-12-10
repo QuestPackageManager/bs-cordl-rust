@@ -109,3 +109,21 @@ impl crate::UnityEngine::ProBuilder::IntVec3 {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+IntVec3")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec3>>
+for crate::UnityEngine::ProBuilder::IntVec3 {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec3> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+IntVec3")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec3>>
+for crate::UnityEngine::ProBuilder::IntVec3 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec3> {
+        todo!()
+    }
+}

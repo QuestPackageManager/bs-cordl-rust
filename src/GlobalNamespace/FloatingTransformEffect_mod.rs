@@ -115,3 +115,17 @@ for crate::GlobalNamespace::FloatingTransformEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "FloatingTransformEffect")]
+impl AsRef<crate::Zenject::ITickable>
+for crate::GlobalNamespace::FloatingTransformEffect {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "FloatingTransformEffect")]
+impl AsMut<crate::Zenject::ITickable>
+for crate::GlobalNamespace::FloatingTransformEffect {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -109,3 +109,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ILogger {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ILogger")]
+impl AsRef<crate::UnityEngine::ILogHandler> for crate::UnityEngine::ILogger {
+    fn as_ref(&self) -> &crate::UnityEngine::ILogHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ILogger")]
+impl AsMut<crate::UnityEngine::ILogHandler> for crate::UnityEngine::ILogger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ILogHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

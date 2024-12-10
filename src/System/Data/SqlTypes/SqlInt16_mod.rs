@@ -169,3 +169,43 @@ impl crate::System::Data::SqlTypes::SqlInt16 {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Data+SqlTypes+SqlInt16")]
+impl AsRef<crate::System::Data::SqlTypes::INullable>
+for crate::System::Data::SqlTypes::SqlInt16 {
+    fn as_ref(&self) -> &crate::System::Data::SqlTypes::INullable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlInt16")]
+impl AsMut<crate::System::Data::SqlTypes::INullable>
+for crate::System::Data::SqlTypes::SqlInt16 {
+    fn as_mut(&mut self) -> &mut crate::System::Data::SqlTypes::INullable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlInt16")]
+impl AsRef<crate::System::IComparable> for crate::System::Data::SqlTypes::SqlInt16 {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlInt16")]
+impl AsMut<crate::System::IComparable> for crate::System::Data::SqlTypes::SqlInt16 {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlInt16")]
+impl AsRef<crate::System::Xml::Serialization::IXmlSerializable>
+for crate::System::Data::SqlTypes::SqlInt16 {
+    fn as_ref(&self) -> &crate::System::Xml::Serialization::IXmlSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlInt16")]
+impl AsMut<crate::System::Xml::Serialization::IXmlSerializable>
+for crate::System::Data::SqlTypes::SqlInt16 {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::Serialization::IXmlSerializable {
+        todo!()
+    }
+}

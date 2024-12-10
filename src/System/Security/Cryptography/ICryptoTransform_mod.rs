@@ -99,3 +99,17 @@ for crate::System::Security::Cryptography::ICryptoTransform {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Security+Cryptography+ICryptoTransform")]
+impl AsRef<crate::System::IDisposable>
+for crate::System::Security::Cryptography::ICryptoTransform {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+Cryptography+ICryptoTransform")]
+impl AsMut<crate::System::IDisposable>
+for crate::System::Security::Cryptography::ICryptoTransform {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

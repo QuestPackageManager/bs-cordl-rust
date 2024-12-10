@@ -130,3 +130,21 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Enu
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
+)]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Enumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
+)]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

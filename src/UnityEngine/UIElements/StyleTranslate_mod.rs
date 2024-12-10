@@ -118,3 +118,51 @@ impl crate::UnityEngine::UIElements::StyleTranslate {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleTranslate")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTranslate>>
+for crate::UnityEngine::UIElements::StyleTranslate {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTranslate> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleTranslate")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTranslate>>
+for crate::UnityEngine::UIElements::StyleTranslate {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::StyleTranslate,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleTranslate")]
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Translate,
+    >,
+> for crate::UnityEngine::UIElements::StyleTranslate {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Translate,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleTranslate")]
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Translate,
+    >,
+> for crate::UnityEngine::UIElements::StyleTranslate {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Translate,
+    > {
+        todo!()
+    }
+}

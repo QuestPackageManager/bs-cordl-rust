@@ -704,3 +704,17 @@ for crate::UnityEngine::Playables::PlayableDirector {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Playables+PlayableDirector")]
+impl AsRef<crate::UnityEngine::IExposedPropertyTable>
+for crate::UnityEngine::Playables::PlayableDirector {
+    fn as_ref(&self) -> &crate::UnityEngine::IExposedPropertyTable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Playables+PlayableDirector")]
+impl AsMut<crate::UnityEngine::IExposedPropertyTable>
+for crate::UnityEngine::Playables::PlayableDirector {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::IExposedPropertyTable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

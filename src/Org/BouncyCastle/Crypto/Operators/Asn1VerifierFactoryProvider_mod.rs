@@ -90,3 +90,19 @@ for crate::Org::BouncyCastle::Crypto::Operators::Asn1VerifierFactoryProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1VerifierFactoryProvider")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider>
+for crate::Org::BouncyCastle::Crypto::Operators::Asn1VerifierFactoryProvider {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1VerifierFactoryProvider")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider>
+for crate::Org::BouncyCastle::Crypto::Operators::Asn1VerifierFactoryProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

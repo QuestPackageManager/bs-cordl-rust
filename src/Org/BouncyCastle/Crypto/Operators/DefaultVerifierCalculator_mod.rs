@@ -84,3 +84,17 @@ for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IStreamCalculator>
+for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IStreamCalculator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierCalculator")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IStreamCalculator>
+for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierCalculator {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IStreamCalculator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

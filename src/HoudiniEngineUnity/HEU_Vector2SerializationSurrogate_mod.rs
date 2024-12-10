@@ -97,3 +97,19 @@ for crate::HoudiniEngineUnity::HEU_Vector2SerializationSurrogate {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Vector2SerializationSurrogate")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializationSurrogate>
+for crate::HoudiniEngineUnity::HEU_Vector2SerializationSurrogate {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializationSurrogate {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_Vector2SerializationSurrogate")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializationSurrogate>
+for crate::HoudiniEngineUnity::HEU_Vector2SerializationSurrogate {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::ISerializationSurrogate {
+        unsafe { std::mem::transmute(self) }
+    }
+}

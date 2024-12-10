@@ -45,3 +45,45 @@ impl crate::UnityEngine::Experimental::Playables::CameraPlayable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::Experimental::Playables::CameraPlayable,
+    >,
+> for crate::UnityEngine::Experimental::Playables::CameraPlayable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Experimental::Playables::CameraPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::Experimental::Playables::CameraPlayable,
+    >,
+> for crate::UnityEngine::Experimental::Playables::CameraPlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Experimental::Playables::CameraPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
+impl AsRef<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Experimental::Playables::CameraPlayable {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
+impl AsMut<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Experimental::Playables::CameraPlayable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}

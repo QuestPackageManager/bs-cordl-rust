@@ -780,6 +780,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_InputN
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_InputNode,
+    >,
+> for crate::HoudiniEngineUnity::HEU_InputNode {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_InputNode,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_InputNode,
+    >,
+> for crate::HoudiniEngineUnity::HEU_InputNode {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_InputNode,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputActions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -761,6 +761,22 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWa
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
 #[cfg(
     feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
 )]
@@ -824,6 +840,26 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduc
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(
+    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+)]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+)]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
 #[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -877,6 +913,22 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduc
             (stateMachine),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
     }
 }
 #[cfg(
@@ -940,5 +992,25 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabi
             (stateMachine),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(
+    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+)]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+)]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
     }
 }

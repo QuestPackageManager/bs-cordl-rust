@@ -73,3 +73,17 @@ for crate::GlobalNamespace::MockQuickPlaySetupModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MockQuickPlaySetupModel")]
+impl AsRef<crate::GlobalNamespace::IQuickPlaySetupModel>
+for crate::GlobalNamespace::MockQuickPlaySetupModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IQuickPlaySetupModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockQuickPlaySetupModel")]
+impl AsMut<crate::GlobalNamespace::IQuickPlaySetupModel>
+for crate::GlobalNamespace::MockQuickPlaySetupModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IQuickPlaySetupModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

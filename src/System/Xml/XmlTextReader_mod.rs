@@ -647,3 +647,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextReader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReader")]
+impl AsRef<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::XmlTextReader {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReader")]
+impl AsMut<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::XmlTextReader {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReader")]
+impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XmlTextReader {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReader")]
+impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XmlTextReader {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

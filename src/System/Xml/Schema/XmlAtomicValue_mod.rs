@@ -387,6 +387,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XmlAtomic
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
+impl AsRef<crate::System::ICloneable> for crate::System::Xml::Schema::XmlAtomicValue {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
+impl AsMut<crate::System::ICloneable> for crate::System::Xml::Schema::XmlAtomicValue {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
 #[repr(C)]
 #[derive(Debug)]
@@ -499,6 +511,20 @@ for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]

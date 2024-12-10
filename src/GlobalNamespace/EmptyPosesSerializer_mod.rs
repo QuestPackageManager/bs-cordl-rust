@@ -110,3 +110,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EmptyPosesSer
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "EmptyPosesSerializer")]
+impl AsRef<crate::GlobalNamespace::IPosesSerializer>
+for crate::GlobalNamespace::EmptyPosesSerializer {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPosesSerializer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EmptyPosesSerializer")]
+impl AsMut<crate::GlobalNamespace::IPosesSerializer>
+for crate::GlobalNamespace::EmptyPosesSerializer {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPosesSerializer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

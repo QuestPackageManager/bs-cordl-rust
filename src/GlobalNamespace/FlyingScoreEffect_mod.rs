@@ -131,6 +131,38 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingScoreEf
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "FlyingScoreEffect")]
+impl AsRef<crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver>
+for crate::GlobalNamespace::FlyingScoreEffect {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "FlyingScoreEffect")]
+impl AsMut<crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver>
+for crate::GlobalNamespace::FlyingScoreEffect {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "FlyingScoreEffect")]
+impl AsRef<crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver>
+for crate::GlobalNamespace::FlyingScoreEffect {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "FlyingScoreEffect")]
+impl AsMut<crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver>
+for crate::GlobalNamespace::FlyingScoreEffect {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "FlyingScoreEffect+Pool")]
 #[repr(C)]
 #[derive(Debug)]

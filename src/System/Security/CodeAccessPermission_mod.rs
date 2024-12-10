@@ -125,3 +125,31 @@ for crate::System::Security::CodeAccessPermission {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Security+CodeAccessPermission")]
+impl AsRef<crate::System::Security::IPermission>
+for crate::System::Security::CodeAccessPermission {
+    fn as_ref(&self) -> &crate::System::Security::IPermission {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+CodeAccessPermission")]
+impl AsMut<crate::System::Security::IPermission>
+for crate::System::Security::CodeAccessPermission {
+    fn as_mut(&mut self) -> &mut crate::System::Security::IPermission {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+CodeAccessPermission")]
+impl AsRef<crate::System::Security::ISecurityEncodable>
+for crate::System::Security::CodeAccessPermission {
+    fn as_ref(&self) -> &crate::System::Security::ISecurityEncodable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+CodeAccessPermission")]
+impl AsMut<crate::System::Security::ISecurityEncodable>
+for crate::System::Security::CodeAccessPermission {
+    fn as_mut(&mut self) -> &mut crate::System::Security::ISecurityEncodable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

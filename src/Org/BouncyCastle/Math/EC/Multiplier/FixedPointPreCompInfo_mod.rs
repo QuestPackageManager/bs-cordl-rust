@@ -126,3 +126,19 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointPreCompInfo")]
+impl AsRef<crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointPreCompInfo")]
+impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -1059,6 +1059,68 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Data+DataView")]
+impl AsRef<crate::System::Collections::ICollection> for crate::System::Data::DataView {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataView")]
+impl AsMut<crate::System::Collections::ICollection> for crate::System::Data::DataView {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataView")]
+impl AsRef<crate::System::Collections::IEnumerable> for crate::System::Data::DataView {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataView")]
+impl AsMut<crate::System::Collections::IEnumerable> for crate::System::Data::DataView {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataView")]
+impl AsRef<crate::System::Collections::IList> for crate::System::Data::DataView {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataView")]
+impl AsMut<crate::System::Collections::IList> for crate::System::Data::DataView {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataView")]
+impl AsRef<crate::System::ComponentModel::IBindingList>
+for crate::System::Data::DataView {
+    fn as_ref(&self) -> &crate::System::ComponentModel::IBindingList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataView")]
+impl AsMut<crate::System::ComponentModel::IBindingList>
+for crate::System::Data::DataView {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::IBindingList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataView")]
+impl AsRef<crate::System::ComponentModel::ITypedList> for crate::System::Data::DataView {
+    fn as_ref(&self) -> &crate::System::ComponentModel::ITypedList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataView")]
+impl AsMut<crate::System::ComponentModel::ITypedList> for crate::System::Data::DataView {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ITypedList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1132,5 +1194,33 @@ for crate::System::Data::DataView_DataRowReferenceComparer {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::System::Data::DataRow,
+    >,
+> for crate::System::Data::DataView_DataRowReferenceComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::System::Data::DataRow,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::System::Data::DataRow,
+    >,
+> for crate::System::Data::DataView_DataRowReferenceComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::System::Data::DataRow,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }

@@ -85,3 +85,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::JumpReceiver 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "JumpReceiver")]
+impl AsRef<crate::UnityEngine::Playables::INotificationReceiver>
+for crate::GlobalNamespace::JumpReceiver {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::INotificationReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "JumpReceiver")]
+impl AsMut<crate::UnityEngine::Playables::INotificationReceiver>
+for crate::GlobalNamespace::JumpReceiver {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::INotificationReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

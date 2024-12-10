@@ -230,3 +230,49 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Share
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
+impl AsRef<crate::System::Collections::Generic::ICollection_1<i32>>
+for crate::UnityEngine::ProBuilder::SharedVertex {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
+impl AsMut<crate::System::Collections::Generic::ICollection_1<i32>>
+for crate::UnityEngine::ProBuilder::SharedVertex {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
+impl AsRef<crate::System::Collections::Generic::IEnumerable_1<i32>>
+for crate::UnityEngine::ProBuilder::SharedVertex {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
+impl AsMut<crate::System::Collections::Generic::IEnumerable_1<i32>>
+for crate::UnityEngine::ProBuilder::SharedVertex {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::ProBuilder::SharedVertex {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::ProBuilder::SharedVertex {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

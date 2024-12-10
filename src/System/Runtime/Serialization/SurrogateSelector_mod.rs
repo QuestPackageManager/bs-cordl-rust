@@ -90,3 +90,19 @@ for crate::System::Runtime::Serialization::SurrogateSelector {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+SurrogateSelector")]
+impl AsRef<crate::System::Runtime::Serialization::ISurrogateSelector>
+for crate::System::Runtime::Serialization::SurrogateSelector {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISurrogateSelector {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Serialization+SurrogateSelector")]
+impl AsMut<crate::System::Runtime::Serialization::ISurrogateSelector>
+for crate::System::Runtime::Serialization::SurrogateSelector {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::ISurrogateSelector {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -555,6 +555,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PSVR2Helper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PSVR2Helper")]
+impl AsRef<crate::GlobalNamespace::IVRPlatformHelper>
+for crate::GlobalNamespace::PSVR2Helper {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVRPlatformHelper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PSVR2Helper")]
+impl AsMut<crate::GlobalNamespace::IVRPlatformHelper>
+for crate::GlobalNamespace::PSVR2Helper {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRPlatformHelper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
 #[repr(C)]
 #[derive(Debug, Clone)]

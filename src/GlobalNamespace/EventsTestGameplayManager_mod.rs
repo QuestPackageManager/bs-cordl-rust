@@ -224,3 +224,17 @@ for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
+impl AsRef<crate::GlobalNamespace::IBeatToTimeConverter>
+for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatToTimeConverter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
+impl AsMut<crate::GlobalNamespace::IBeatToTimeConverter>
+for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatToTimeConverter {
+        unsafe { std::mem::transmute(self) }
+    }
+}

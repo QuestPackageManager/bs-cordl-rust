@@ -143,3 +143,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityDebugLog
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityDebugLogger")]
+impl AsRef<crate::GlobalNamespace::IBeatSaberLogger>
+for crate::GlobalNamespace::UnityDebugLogger {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatSaberLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityDebugLogger")]
+impl AsMut<crate::GlobalNamespace::IBeatSaberLogger>
+for crate::GlobalNamespace::UnityDebugLogger {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatSaberLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}

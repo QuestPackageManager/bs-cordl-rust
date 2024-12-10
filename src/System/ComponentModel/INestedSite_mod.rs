@@ -52,3 +52,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::INeste
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ComponentModel+INestedSite")]
+impl AsRef<crate::System::ComponentModel::ISite>
+for crate::System::ComponentModel::INestedSite {
+    fn as_ref(&self) -> &crate::System::ComponentModel::ISite {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+INestedSite")]
+impl AsMut<crate::System::ComponentModel::ISite>
+for crate::System::ComponentModel::INestedSite {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ISite {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+INestedSite")]
+impl AsRef<crate::System::IServiceProvider>
+for crate::System::ComponentModel::INestedSite {
+    fn as_ref(&self) -> &crate::System::IServiceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+INestedSite")]
+impl AsMut<crate::System::IServiceProvider>
+for crate::System::ComponentModel::INestedSite {
+    fn as_mut(&mut self) -> &mut crate::System::IServiceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

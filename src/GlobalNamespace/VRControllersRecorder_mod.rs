@@ -639,6 +639,48 @@ for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "VRControllersRecorder+Keyframe")]
+impl AsRef<crate::GlobalNamespace::IConstructorStringGenerator>
+for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConstructorStringGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "VRControllersRecorder+Keyframe")]
+impl AsMut<crate::GlobalNamespace::IConstructorStringGenerator>
+for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConstructorStringGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "VRControllersRecorder+Keyframe")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+    >,
+> for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "VRControllersRecorder+Keyframe")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+    >,
+> for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "VRControllersRecorder+Mode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

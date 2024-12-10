@@ -210,3 +210,17 @@ for crate::System::Linq::Expressions::LambdaExpression {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Linq+Expressions+LambdaExpression")]
+impl AsRef<crate::System::Linq::Expressions::IParameterProvider>
+for crate::System::Linq::Expressions::LambdaExpression {
+    fn as_ref(&self) -> &crate::System::Linq::Expressions::IParameterProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+LambdaExpression")]
+impl AsMut<crate::System::Linq::Expressions::IParameterProvider>
+for crate::System::Linq::Expressions::LambdaExpression {
+    fn as_mut(&mut self) -> &mut crate::System::Linq::Expressions::IParameterProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

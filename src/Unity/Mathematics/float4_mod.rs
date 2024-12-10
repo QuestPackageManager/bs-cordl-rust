@@ -4344,6 +4344,34 @@ impl crate::Unity::Mathematics::float4 {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Mathematics+float4")]
+impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::float4>>
+for crate::Unity::Mathematics::float4 {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::float4> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+float4")]
+impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::float4>>
+for crate::Unity::Mathematics::float4 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::Unity::Mathematics::float4> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+float4")]
+impl AsRef<crate::System::IFormattable> for crate::Unity::Mathematics::float4 {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+float4")]
+impl AsMut<crate::System::IFormattable> for crate::Unity::Mathematics::float4 {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}
 #[cfg(feature = "Unity+Mathematics+float4+DebuggerProxy")]
 #[repr(C)]
 #[derive(Debug)]

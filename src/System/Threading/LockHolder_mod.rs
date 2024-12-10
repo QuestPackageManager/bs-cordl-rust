@@ -33,3 +33,15 @@ impl crate::System::Threading::LockHolder {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Threading+LockHolder")]
+impl AsRef<crate::System::IDisposable> for crate::System::Threading::LockHolder {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+LockHolder")]
+impl AsMut<crate::System::IDisposable> for crate::System::Threading::LockHolder {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

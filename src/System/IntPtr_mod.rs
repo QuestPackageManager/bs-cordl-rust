@@ -167,3 +167,31 @@ impl crate::System::IntPtr {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+IntPtr")]
+impl AsRef<crate::System::IEquatable_1<crate::System::IntPtr>>
+for crate::System::IntPtr {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::IntPtr> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+IntPtr")]
+impl AsMut<crate::System::IEquatable_1<crate::System::IntPtr>>
+for crate::System::IntPtr {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::IntPtr> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+IntPtr")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::IntPtr {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+IntPtr")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::IntPtr {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        todo!()
+    }
+}

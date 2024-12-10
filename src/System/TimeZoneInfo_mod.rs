@@ -543,6 +543,54 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TimeZoneInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+TimeZoneInfo")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::System::TimeZoneInfo>>
+for crate::System::TimeZoneInfo {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<*mut crate::System::TimeZoneInfo> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::System::TimeZoneInfo>>
+for crate::System::TimeZoneInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::System::TimeZoneInfo> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo")]
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
 #[repr(C)]
 #[derive(Debug)]
@@ -823,6 +871,58 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TimeZoneInfo_Adjustmen
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::System::TimeZoneInfo_AdjustmentRule>>
+for crate::System::TimeZoneInfo_AdjustmentRule {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<*mut crate::System::TimeZoneInfo_AdjustmentRule> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::System::TimeZoneInfo_AdjustmentRule>>
+for crate::System::TimeZoneInfo_AdjustmentRule {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        *mut crate::System::TimeZoneInfo_AdjustmentRule,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo_AdjustmentRule {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo_AdjustmentRule {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo_AdjustmentRule {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo_AdjustmentRule {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+TimeZoneInfo+CachedData")]
@@ -1175,5 +1275,55 @@ impl crate::System::TimeZoneInfo_TransitionTime {
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+impl AsRef<crate::System::IEquatable_1<crate::System::TimeZoneInfo_TransitionTime>>
+for crate::System::TimeZoneInfo_TransitionTime {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::System::TimeZoneInfo_TransitionTime> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+impl AsMut<crate::System::IEquatable_1<crate::System::TimeZoneInfo_TransitionTime>>
+for crate::System::TimeZoneInfo_TransitionTime {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::System::TimeZoneInfo_TransitionTime> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo_TransitionTime {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo_TransitionTime {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo_TransitionTime {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo_TransitionTime {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        todo!()
     }
 }

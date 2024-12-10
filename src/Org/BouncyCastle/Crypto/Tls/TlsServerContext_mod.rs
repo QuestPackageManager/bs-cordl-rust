@@ -40,3 +40,17 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsServerContext {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsServerContext")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsContext>
+for crate::Org::BouncyCastle::Crypto::Tls::TlsServerContext {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsContext {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsServerContext")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsContext>
+for crate::Org::BouncyCastle::Crypto::Tls::TlsServerContext {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext {
+        unsafe { std::mem::transmute(self) }
+    }
+}

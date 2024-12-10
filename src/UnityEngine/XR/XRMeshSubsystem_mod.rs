@@ -103,3 +103,17 @@ impl crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

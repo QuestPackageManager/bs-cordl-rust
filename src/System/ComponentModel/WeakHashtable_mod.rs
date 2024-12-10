@@ -153,3 +153,17 @@ for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
+impl AsRef<crate::System::Collections::IEqualityComparer>
+for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
+impl AsMut<crate::System::Collections::IEqualityComparer>
+for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

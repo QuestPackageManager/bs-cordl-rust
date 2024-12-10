@@ -138,6 +138,26 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRObjectPool+HashSetScope_1")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -197,6 +217,20 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRObjectPool+ItemScope_1")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -252,6 +286,20 @@ impl<
             (item),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRObjectPool+ItemScope_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRObjectPool+ItemScope_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }
 #[cfg(feature = "OVRObjectPool+ListScope_1")]
@@ -313,6 +361,20 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRObjectPool+ListScope_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRObjectPool+ListScope_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRObjectPool+QueueScope_1")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -372,6 +434,20 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRObjectPool+QueueScope_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRObjectPool+QueueScope_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRObjectPool+StackScope_1")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -429,6 +505,20 @@ impl<
             (stack),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRObjectPool+StackScope_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRObjectPool+StackScope_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }
 #[cfg(feature = "OVRObjectPool+Storage_1")]

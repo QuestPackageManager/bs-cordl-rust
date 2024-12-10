@@ -459,6 +459,20 @@ for crate::Mono::Xml::SmallXmlParser_AttrListImpl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Mono+Xml+SmallXmlParser+AttrListImpl")]
+impl AsRef<crate::Mono::Xml::SmallXmlParser_IAttrList>
+for crate::Mono::Xml::SmallXmlParser_AttrListImpl {
+    fn as_ref(&self) -> &crate::Mono::Xml::SmallXmlParser_IAttrList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Mono+Xml+SmallXmlParser+AttrListImpl")]
+impl AsMut<crate::Mono::Xml::SmallXmlParser_IAttrList>
+for crate::Mono::Xml::SmallXmlParser_AttrListImpl {
+    fn as_mut(&mut self) -> &mut crate::Mono::Xml::SmallXmlParser_IAttrList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Mono+Xml+SmallXmlParser+IAttrList")]
 #[repr(C)]
 #[derive(Debug)]

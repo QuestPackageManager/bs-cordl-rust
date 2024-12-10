@@ -1026,6 +1026,54 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LiteNetLib+NetManager")]
+impl AsRef<crate::LiteNetLib::INetSocketListener> for crate::LiteNetLib::NetManager {
+    fn as_ref(&self) -> &crate::LiteNetLib::INetSocketListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager")]
+impl AsMut<crate::LiteNetLib::INetSocketListener> for crate::LiteNetLib::NetManager {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::INetSocketListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<*mut crate::LiteNetLib::NetPeer>,
+> for crate::LiteNetLib::NetManager {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::LiteNetLib::NetPeer,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<*mut crate::LiteNetLib::NetPeer>,
+> for crate::LiteNetLib::NetManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::LiteNetLib::NetPeer,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager")]
+impl AsRef<crate::System::Collections::IEnumerable> for crate::LiteNetLib::NetManager {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager")]
+impl AsMut<crate::System::Collections::IEnumerable> for crate::LiteNetLib::NetManager {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1099,6 +1147,34 @@ for crate::LiteNetLib::NetManager_IPEndPointComparer {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::System::Net::IPEndPoint,
+    >,
+> for crate::LiteNetLib::NetManager_IPEndPointComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::System::Net::IPEndPoint,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::System::Net::IPEndPoint,
+    >,
+> for crate::LiteNetLib::NetManager_IPEndPointComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::System::Net::IPEndPoint,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
@@ -1190,5 +1266,57 @@ impl crate::LiteNetLib::NetManager_NetPeerEnumerator {
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<*mut crate::LiteNetLib::NetPeer>,
+> for crate::LiteNetLib::NetManager_NetPeerEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::LiteNetLib::NetPeer,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<*mut crate::LiteNetLib::NetPeer>,
+> for crate::LiteNetLib::NetManager_NetPeerEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::LiteNetLib::NetPeer,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::LiteNetLib::NetManager_NetPeerEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::LiteNetLib::NetManager_NetPeerEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::LiteNetLib::NetManager_NetPeerEnumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::LiteNetLib::NetManager_NetPeerEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }

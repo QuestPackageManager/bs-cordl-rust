@@ -843,3 +843,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockPlayer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MockPlayer")]
+impl AsRef<crate::GlobalNamespace::IConnectedPlayer>
+for crate::GlobalNamespace::MockPlayer {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectedPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockPlayer")]
+impl AsMut<crate::GlobalNamespace::IConnectedPlayer>
+for crate::GlobalNamespace::MockPlayer {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectedPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockPlayer")]
+impl AsRef<crate::GlobalNamespace::INetworkPlayer>
+for crate::GlobalNamespace::MockPlayer {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockPlayer")]
+impl AsMut<crate::GlobalNamespace::INetworkPlayer>
+for crate::GlobalNamespace::MockPlayer {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -60,3 +60,17 @@ for crate::System::Resources::ManifestBasedResourceGroveler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Resources+ManifestBasedResourceGroveler")]
+impl AsRef<crate::System::Resources::IResourceGroveler>
+for crate::System::Resources::ManifestBasedResourceGroveler {
+    fn as_ref(&self) -> &crate::System::Resources::IResourceGroveler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+ManifestBasedResourceGroveler")]
+impl AsMut<crate::System::Resources::IResourceGroveler>
+for crate::System::Resources::ManifestBasedResourceGroveler {
+    fn as_mut(&mut self) -> &mut crate::System::Resources::IResourceGroveler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -76,3 +76,23 @@ impl crate::UnityEngine::UIElements::BackgroundRepeat {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundRepeat>>
+for crate::UnityEngine::UIElements::BackgroundRepeat {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundRepeat> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundRepeat>>
+for crate::UnityEngine::UIElements::BackgroundRepeat {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::BackgroundRepeat,
+    > {
+        todo!()
+    }
+}

@@ -178,3 +178,31 @@ for crate::UnityEngine::UIElements::BaseVisualTreeUpdater {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeUpdater")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::BaseVisualTreeUpdater {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeUpdater")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::BaseVisualTreeUpdater {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeUpdater")]
+impl AsRef<crate::UnityEngine::UIElements::IVisualTreeUpdater>
+for crate::UnityEngine::UIElements::BaseVisualTreeUpdater {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IVisualTreeUpdater {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeUpdater")]
+impl AsMut<crate::UnityEngine::UIElements::IVisualTreeUpdater>
+for crate::UnityEngine::UIElements::BaseVisualTreeUpdater {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IVisualTreeUpdater {
+        unsafe { std::mem::transmute(self) }
+    }
+}

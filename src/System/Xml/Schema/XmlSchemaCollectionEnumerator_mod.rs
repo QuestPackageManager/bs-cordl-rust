@@ -123,3 +123,17 @@ for crate::System::Xml::Schema::XmlSchemaCollectionEnumerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaCollectionEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Xml::Schema::XmlSchemaCollectionEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+XmlSchemaCollectionEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Xml::Schema::XmlSchemaCollectionEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -116,3 +116,35 @@ impl crate::UnityEngine::UIElements::StyleFloat {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleFloat")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFloat>>
+for crate::UnityEngine::UIElements::StyleFloat {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFloat> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleFloat")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFloat>>
+for crate::UnityEngine::UIElements::StyleFloat {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFloat> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleFloat")]
+impl AsRef<crate::UnityEngine::UIElements::IStyleValue_1<f32>>
+for crate::UnityEngine::UIElements::StyleFloat {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IStyleValue_1<f32> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleFloat")]
+impl AsMut<crate::UnityEngine::UIElements::IStyleValue_1<f32>>
+for crate::UnityEngine::UIElements::StyleFloat {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<f32> {
+        todo!()
+    }
+}

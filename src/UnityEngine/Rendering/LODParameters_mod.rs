@@ -57,3 +57,21 @@ impl crate::UnityEngine::Rendering::LODParameters {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+LODParameters")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::LODParameters>>
+for crate::UnityEngine::Rendering::LODParameters {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::LODParameters> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rendering+LODParameters")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::LODParameters>>
+for crate::UnityEngine::Rendering::LODParameters {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rendering::LODParameters> {
+        todo!()
+    }
+}

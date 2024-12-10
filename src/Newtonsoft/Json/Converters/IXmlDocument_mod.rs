@@ -237,3 +237,17 @@ for crate::Newtonsoft::Json::Converters::IXmlDocument {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Converters+IXmlDocument")]
+impl AsRef<crate::Newtonsoft::Json::Converters::IXmlNode>
+for crate::Newtonsoft::Json::Converters::IXmlDocument {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Converters::IXmlNode {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Converters+IXmlDocument")]
+impl AsMut<crate::Newtonsoft::Json::Converters::IXmlNode>
+for crate::Newtonsoft::Json::Converters::IXmlDocument {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Converters::IXmlNode {
+        unsafe { std::mem::transmute(self) }
+    }
+}

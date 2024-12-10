@@ -181,6 +181,20 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IWrapper>
+for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IWrapper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IWrapper>
+for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IWrapper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

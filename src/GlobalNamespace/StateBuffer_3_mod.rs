@@ -757,3 +757,65 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
+impl<
+    TStateTable: quest_hook::libil2cpp::Type,
+    TType: quest_hook::libil2cpp::Type,
+    TState: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+            TStateTable,
+            TType,
+            TState,
+        >,
+    >,
+>
+for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+    TStateTable,
+    TType,
+    TState,
+> {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+            TStateTable,
+            TType,
+            TState,
+        >,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
+impl<
+    TStateTable: quest_hook::libil2cpp::Type,
+    TType: quest_hook::libil2cpp::Type,
+    TState: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+            TStateTable,
+            TType,
+            TState,
+        >,
+    >,
+>
+for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+    TStateTable,
+    TType,
+    TState,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+            TStateTable,
+            TType,
+            TState,
+        >,
+    > {
+        todo!()
+    }
+}

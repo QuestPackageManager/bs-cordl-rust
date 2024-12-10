@@ -75,3 +75,19 @@ for crate::UnityEngine::UIElements::DefaultDispatchingStrategy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DefaultDispatchingStrategy")]
+impl AsRef<crate::UnityEngine::UIElements::IEventDispatchingStrategy>
+for crate::UnityEngine::UIElements::DefaultDispatchingStrategy {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IEventDispatchingStrategy {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+DefaultDispatchingStrategy")]
+impl AsMut<crate::UnityEngine::UIElements::IEventDispatchingStrategy>
+for crate::UnityEngine::UIElements::DefaultDispatchingStrategy {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IEventDispatchingStrategy {
+        unsafe { std::mem::transmute(self) }
+    }
+}

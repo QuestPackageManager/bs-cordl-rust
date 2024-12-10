@@ -96,3 +96,17 @@ for crate::GlobalNamespace::RenderingParamsSetupApplicator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "RenderingParamsSetupApplicator")]
+impl AsRef<crate::GlobalNamespace::IRenderingParamsApplicator>
+for crate::GlobalNamespace::RenderingParamsSetupApplicator {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IRenderingParamsApplicator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "RenderingParamsSetupApplicator")]
+impl AsMut<crate::GlobalNamespace::IRenderingParamsApplicator>
+for crate::GlobalNamespace::RenderingParamsSetupApplicator {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRenderingParamsApplicator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

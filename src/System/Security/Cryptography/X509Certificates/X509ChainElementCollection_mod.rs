@@ -186,3 +186,39 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCol
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
+)]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
+)]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
+)]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
+)]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

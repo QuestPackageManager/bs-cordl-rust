@@ -146,3 +146,95 @@ for crate::Unity::Properties::PropertyBag_1<TContainer> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Unity+Properties+PropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::IConstructor>
+for crate::Unity::Properties::PropertyBag_1<TContainer> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IConstructor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+PropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::IConstructor>
+for crate::Unity::Properties::PropertyBag_1<TContainer> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IConstructor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+PropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::IConstructor_1<TContainer>>
+for crate::Unity::Properties::PropertyBag_1<TContainer> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IConstructor_1<TContainer> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+PropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::IConstructor_1<TContainer>>
+for crate::Unity::Properties::PropertyBag_1<TContainer> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IConstructor_1<TContainer> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+PropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::IPropertyBag>
+for crate::Unity::Properties::PropertyBag_1<TContainer> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+PropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::IPropertyBag>
+for crate::Unity::Properties::PropertyBag_1<TContainer> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+PropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::IPropertyBag_1<TContainer>>
+for crate::Unity::Properties::PropertyBag_1<TContainer> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag_1<TContainer> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+PropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::IPropertyBag_1<TContainer>>
+for crate::Unity::Properties::PropertyBag_1<TContainer> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag_1<TContainer> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+PropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::Internal::IPropertyBagRegister>
+for crate::Unity::Properties::PropertyBag_1<TContainer> {
+    fn as_ref(&self) -> &crate::Unity::Properties::Internal::IPropertyBagRegister {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+PropertyBag_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::Internal::IPropertyBagRegister>
+for crate::Unity::Properties::PropertyBag_1<TContainer> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Unity::Properties::Internal::IPropertyBagRegister {
+        unsafe { std::mem::transmute(self) }
+    }
+}

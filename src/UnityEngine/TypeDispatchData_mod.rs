@@ -37,3 +37,15 @@ impl crate::UnityEngine::TypeDispatchData {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+TypeDispatchData")]
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::TypeDispatchData {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+TypeDispatchData")]
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::TypeDispatchData {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

@@ -98,3 +98,17 @@ for crate::Org::BouncyCastle::Crypto::Operators::BufferedCipherWrapper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+BufferedCipherWrapper")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::ICipher>
+for crate::Org::BouncyCastle::Crypto::Operators::BufferedCipherWrapper {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ICipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+BufferedCipherWrapper")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::ICipher>
+for crate::Org::BouncyCastle::Crypto::Operators::BufferedCipherWrapper {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ICipher {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -125,3 +125,45 @@ for crate::System::ComponentModel::MarshalByValueComponent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
+impl AsRef<crate::System::ComponentModel::IComponent>
+for crate::System::ComponentModel::MarshalByValueComponent {
+    fn as_ref(&self) -> &crate::System::ComponentModel::IComponent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
+impl AsMut<crate::System::ComponentModel::IComponent>
+for crate::System::ComponentModel::MarshalByValueComponent {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::IComponent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
+impl AsRef<crate::System::IDisposable>
+for crate::System::ComponentModel::MarshalByValueComponent {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
+impl AsMut<crate::System::IDisposable>
+for crate::System::ComponentModel::MarshalByValueComponent {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
+impl AsRef<crate::System::IServiceProvider>
+for crate::System::ComponentModel::MarshalByValueComponent {
+    fn as_ref(&self) -> &crate::System::IServiceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
+impl AsMut<crate::System::IServiceProvider>
+for crate::System::ComponentModel::MarshalByValueComponent {
+    fn as_mut(&mut self) -> &mut crate::System::IServiceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

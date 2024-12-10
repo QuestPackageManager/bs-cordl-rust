@@ -163,3 +163,17 @@ for crate::GlobalNamespace::EnumTableViewDataSource_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "EnumTableViewDataSource_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::EnumTableViewDataSource_1<T> {
+    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EnumTableViewDataSource_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::EnumTableViewDataSource_1<T> {
+    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}

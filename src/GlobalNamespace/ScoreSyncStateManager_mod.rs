@@ -172,3 +172,61 @@ for crate::GlobalNamespace::ScoreSyncStateManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ScoreSyncStateManager")]
+impl AsRef<crate::GlobalNamespace::IScoreSyncStateManager>
+for crate::GlobalNamespace::ScoreSyncStateManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IScoreSyncStateManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ScoreSyncStateManager")]
+impl AsMut<crate::GlobalNamespace::IScoreSyncStateManager>
+for crate::GlobalNamespace::ScoreSyncStateManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IScoreSyncStateManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ScoreSyncStateManager")]
+impl AsRef<
+    crate::GlobalNamespace::IScoreSyncStateManager_5<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+    >,
+> for crate::GlobalNamespace::ScoreSyncStateManager {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IScoreSyncStateManager_5<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ScoreSyncStateManager")]
+impl AsMut<
+    crate::GlobalNamespace::IScoreSyncStateManager_5<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+    >,
+> for crate::GlobalNamespace::ScoreSyncStateManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IScoreSyncStateManager_5<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

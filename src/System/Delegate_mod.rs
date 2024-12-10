@@ -225,3 +225,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Delegate {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Delegate")]
+impl AsRef<crate::System::ICloneable> for crate::System::Delegate {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Delegate")]
+impl AsMut<crate::System::ICloneable> for crate::System::Delegate {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Delegate")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Delegate {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Delegate")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Delegate {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

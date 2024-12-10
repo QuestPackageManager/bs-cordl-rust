@@ -55,3 +55,23 @@ impl crate::UnityEngine::Rendering::CoreCameraValues {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::CoreCameraValues>>
+for crate::UnityEngine::Rendering::CoreCameraValues {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::CoreCameraValues> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::CoreCameraValues>>
+for crate::UnityEngine::Rendering::CoreCameraValues {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::CoreCameraValues,
+    > {
+        todo!()
+    }
+}

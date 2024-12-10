@@ -308,3 +308,31 @@ for crate::GlobalNamespace::FileSystemBeatmapLevelData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "FileSystemBeatmapLevelData")]
+impl AsRef<crate::GlobalNamespace::IBeatmapLevelData>
+for crate::GlobalNamespace::FileSystemBeatmapLevelData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapLevelData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "FileSystemBeatmapLevelData")]
+impl AsMut<crate::GlobalNamespace::IBeatmapLevelData>
+for crate::GlobalNamespace::FileSystemBeatmapLevelData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapLevelData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "FileSystemBeatmapLevelData")]
+impl AsRef<crate::GlobalNamespace::IFilePathSongAudioClipProvider>
+for crate::GlobalNamespace::FileSystemBeatmapLevelData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IFilePathSongAudioClipProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "FileSystemBeatmapLevelData")]
+impl AsMut<crate::GlobalNamespace::IFilePathSongAudioClipProvider>
+for crate::GlobalNamespace::FileSystemBeatmapLevelData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IFilePathSongAudioClipProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

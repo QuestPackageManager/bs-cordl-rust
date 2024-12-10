@@ -435,6 +435,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelS
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapLevelSO")]
+impl AsRef<crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider>
+for crate::GlobalNamespace::BeatmapLevelSO {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelSO")]
+impl AsMut<crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider>
+for crate::GlobalNamespace::BeatmapLevelSO {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
 #[repr(C)]
 #[derive(Debug)]

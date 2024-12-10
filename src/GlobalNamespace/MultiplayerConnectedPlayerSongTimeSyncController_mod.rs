@@ -188,6 +188,20 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
+impl AsRef<crate::GlobalNamespace::IAudioTimeSource>
+for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IAudioTimeSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
+impl AsMut<crate::GlobalNamespace::IAudioTimeSource>
+for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAudioTimeSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
 #[repr(C)]
 #[derive(Debug)]

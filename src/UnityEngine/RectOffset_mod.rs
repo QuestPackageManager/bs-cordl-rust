@@ -235,3 +235,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::RectOffset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+RectOffset")]
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::RectOffset {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+RectOffset")]
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::RectOffset {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

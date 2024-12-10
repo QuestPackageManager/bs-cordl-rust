@@ -69,3 +69,19 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
+impl AsRef<crate::System::Runtime::CompilerServices::IRuntimeVariables>
+for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IRuntimeVariables {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
+impl AsMut<crate::System::Runtime::CompilerServices::IRuntimeVariables>
+for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IRuntimeVariables {
+        unsafe { std::mem::transmute(self) }
+    }
+}

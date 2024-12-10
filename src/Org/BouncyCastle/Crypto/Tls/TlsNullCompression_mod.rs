@@ -79,3 +79,17 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsNullCompression {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNullCompression")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsCompression>
+for crate::Org::BouncyCastle::Crypto::Tls::TlsNullCompression {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsCompression {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNullCompression")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCompression>
+for crate::Org::BouncyCastle::Crypto::Tls::TlsNullCompression {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsCompression {
+        unsafe { std::mem::transmute(self) }
+    }
+}

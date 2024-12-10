@@ -702,3 +702,17 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

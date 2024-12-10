@@ -194,6 +194,20 @@ for crate::GlobalNamespace::MultiplayerLevelLoader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerLevelLoader")]
+impl AsRef<crate::Zenject::ITickable>
+for crate::GlobalNamespace::MultiplayerLevelLoader {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLevelLoader")]
+impl AsMut<crate::Zenject::ITickable>
+for crate::GlobalNamespace::MultiplayerLevelLoader {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

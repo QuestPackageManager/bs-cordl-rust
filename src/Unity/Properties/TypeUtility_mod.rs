@@ -214,6 +214,24 @@ for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::TypeUtility_ITypeConstructor>
+for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
+    fn as_ref(&self) -> &crate::Unity::Properties::TypeUtility_ITypeConstructor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::TypeUtility_ITypeConstructor>
+for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::TypeUtility_ITypeConstructor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
 #[repr(C)]
 #[derive(Debug)]
@@ -294,6 +312,20 @@ for crate::Unity::Properties::TypeUtility_NonConstructable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
+impl AsRef<crate::Unity::Properties::TypeUtility_ITypeConstructor>
+for crate::Unity::Properties::TypeUtility_NonConstructable {
+    fn as_ref(&self) -> &crate::Unity::Properties::TypeUtility_ITypeConstructor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
+impl AsMut<crate::Unity::Properties::TypeUtility_ITypeConstructor>
+for crate::Unity::Properties::TypeUtility_NonConstructable {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::TypeUtility_ITypeConstructor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
 #[repr(C)]
 #[derive(Debug)]
@@ -363,6 +395,20 @@ for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
+impl AsRef<crate::Unity::Properties::ITypeVisitor>
+for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
+    fn as_ref(&self) -> &crate::Unity::Properties::ITypeVisitor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
+impl AsMut<crate::Unity::Properties::ITypeVisitor>
+for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::ITypeVisitor {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
@@ -509,5 +555,43 @@ for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::TypeUtility_ITypeConstructor>
+for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
+    fn as_ref(&self) -> &crate::Unity::Properties::TypeUtility_ITypeConstructor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::TypeUtility_ITypeConstructor>
+for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::TypeUtility_ITypeConstructor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>>
+for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
+    fn as_ref(&self) -> &crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>>
+for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
+        unsafe { std::mem::transmute(self) }
     }
 }

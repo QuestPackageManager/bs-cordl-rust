@@ -281,3 +281,51 @@ impl crate::System::Char {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Char")]
+impl AsRef<crate::System::IComparable> for crate::System::Char {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Char")]
+impl AsMut<crate::System::IComparable> for crate::System::Char {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Char")]
+impl AsRef<crate::System::IComparable_1<char>> for crate::System::Char {
+    fn as_ref(&self) -> &crate::System::IComparable_1<char> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Char")]
+impl AsMut<crate::System::IComparable_1<char>> for crate::System::Char {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<char> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Char")]
+impl AsRef<crate::System::IConvertible> for crate::System::Char {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Char")]
+impl AsMut<crate::System::IConvertible> for crate::System::Char {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Char")]
+impl AsRef<crate::System::IEquatable_1<char>> for crate::System::Char {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<char> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Char")]
+impl AsMut<crate::System::IEquatable_1<char>> for crate::System::Char {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<char> {
+        todo!()
+    }
+}

@@ -684,6 +684,62 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnifiedNetworkPlayerModel")]
+impl AsRef<crate::GlobalNamespace::INetworkPlayerModel>
+for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPlayerModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnifiedNetworkPlayerModel")]
+impl AsMut<crate::GlobalNamespace::INetworkPlayerModel>
+for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkPlayerModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnifiedNetworkPlayerModel")]
+impl AsRef<crate::GlobalNamespace::IUnifiedNetworkPlayerModel>
+for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnifiedNetworkPlayerModel")]
+impl AsMut<crate::GlobalNamespace::IUnifiedNetworkPlayerModel>
+for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnifiedNetworkPlayerModel")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnifiedNetworkPlayerModel")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnifiedNetworkPlayerModel")]
+impl AsRef<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnifiedNetworkPlayerModel")]
+impl AsMut<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -758,6 +814,34 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
+impl AsRef<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::UnifiedNetworkPlayerModel,
+    >,
+> for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::UnifiedNetworkPlayerModel,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
+impl AsMut<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::UnifiedNetworkPlayerModel,
+    >,
+> for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::UnifiedNetworkPlayerModel,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnifiedNetworkPlayerModel+StartClientPartyConfig")]
 #[repr(C)]
 #[derive(Debug)]
@@ -815,5 +899,33 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnifiedNetworkPlayerModel+StartClientPartyConfig")]
+impl AsRef<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::UnifiedNetworkPlayerModel,
+    >,
+> for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::UnifiedNetworkPlayerModel,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnifiedNetworkPlayerModel+StartClientPartyConfig")]
+impl AsMut<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::UnifiedNetworkPlayerModel,
+    >,
+> for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::UnifiedNetworkPlayerModel,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }

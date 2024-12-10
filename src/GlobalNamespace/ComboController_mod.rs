@@ -163,3 +163,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ComboControll
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ComboController")]
+impl AsRef<crate::GlobalNamespace::IComboController>
+for crate::GlobalNamespace::ComboController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IComboController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ComboController")]
+impl AsMut<crate::GlobalNamespace::IComboController>
+for crate::GlobalNamespace::ComboController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IComboController {
+        unsafe { std::mem::transmute(self) }
+    }
+}

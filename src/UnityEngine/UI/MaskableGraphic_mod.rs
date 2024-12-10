@@ -288,6 +288,48 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::MaskableGraph
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
+impl AsRef<crate::UnityEngine::UI::IClippable>
+for crate::UnityEngine::UI::MaskableGraphic {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::IClippable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
+impl AsMut<crate::UnityEngine::UI::IClippable>
+for crate::UnityEngine::UI::MaskableGraphic {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IClippable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
+impl AsRef<crate::UnityEngine::UI::IMaskable>
+for crate::UnityEngine::UI::MaskableGraphic {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::IMaskable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
+impl AsMut<crate::UnityEngine::UI::IMaskable>
+for crate::UnityEngine::UI::MaskableGraphic {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IMaskable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
+impl AsRef<crate::UnityEngine::UI::IMaterialModifier>
+for crate::UnityEngine::UI::MaskableGraphic {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::IMaterialModifier {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
+impl AsMut<crate::UnityEngine::UI::IMaterialModifier>
+for crate::UnityEngine::UI::MaskableGraphic {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IMaterialModifier {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
 #[repr(C)]
 #[derive(Debug)]

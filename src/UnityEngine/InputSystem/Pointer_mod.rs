@@ -319,3 +319,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Poin
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Pointer")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver>
+for crate::UnityEngine::InputSystem::Pointer {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Pointer")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver>
+for crate::UnityEngine::InputSystem::Pointer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

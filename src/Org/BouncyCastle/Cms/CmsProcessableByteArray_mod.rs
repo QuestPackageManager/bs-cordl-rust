@@ -132,3 +132,31 @@ for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
+impl AsRef<crate::Org::BouncyCastle::Cms::CmsProcessable>
+for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::CmsProcessable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
+impl AsMut<crate::Org::BouncyCastle::Cms::CmsProcessable>
+for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::CmsProcessable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
+impl AsRef<crate::Org::BouncyCastle::Cms::CmsReadable>
+for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::CmsReadable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
+impl AsMut<crate::Org::BouncyCastle::Cms::CmsReadable>
+for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::CmsReadable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

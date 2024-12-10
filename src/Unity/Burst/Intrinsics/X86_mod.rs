@@ -580,6 +580,20 @@ impl crate::Unity::Burst::Intrinsics::X86_RoundingScope {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
+impl AsRef<crate::System::IDisposable>
+for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
+impl AsMut<crate::System::IDisposable>
+for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse")]
 #[repr(C)]
 #[derive(Debug)]

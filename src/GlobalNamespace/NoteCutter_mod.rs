@@ -200,3 +200,17 @@ for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoteCutter+CuttableBySaberSortParamsComparer")]
+impl AsRef<crate::System::Collections::IComparer>
+for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoteCutter+CuttableBySaberSortParamsComparer")]
+impl AsMut<crate::System::Collections::IComparer>
+for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

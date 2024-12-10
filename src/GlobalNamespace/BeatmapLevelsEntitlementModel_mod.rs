@@ -141,3 +141,17 @@ for crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapLevelsEntitlementModel")]
+impl AsRef<crate::GlobalNamespace::IEntitlementModel>
+for crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IEntitlementModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLevelsEntitlementModel")]
+impl AsMut<crate::GlobalNamespace::IEntitlementModel>
+for crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEntitlementModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -261,3 +261,15 @@ impl crate::ENet::SslConfiguration {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "ENet+SslConfiguration")]
+impl AsRef<crate::System::IDisposable> for crate::ENet::SslConfiguration {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "ENet+SslConfiguration")]
+impl AsMut<crate::System::IDisposable> for crate::ENet::SslConfiguration {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

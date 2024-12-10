@@ -251,6 +251,34 @@ for crate::GlobalNamespace::StandardLevelGameplayManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "StandardLevelGameplayManager")]
+impl AsRef<crate::GlobalNamespace::ILevelEndActions>
+for crate::GlobalNamespace::StandardLevelGameplayManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelEndActions {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardLevelGameplayManager")]
+impl AsMut<crate::GlobalNamespace::ILevelEndActions>
+for crate::GlobalNamespace::StandardLevelGameplayManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelEndActions {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardLevelGameplayManager")]
+impl AsRef<crate::GlobalNamespace::ILevelStartController>
+for crate::GlobalNamespace::StandardLevelGameplayManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelStartController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardLevelGameplayManager")]
+impl AsMut<crate::GlobalNamespace::ILevelStartController>
+for crate::GlobalNamespace::StandardLevelGameplayManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelStartController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "StandardLevelGameplayManager+GameState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

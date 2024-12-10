@@ -63,3 +63,17 @@ for crate::GlobalNamespace::TutorialReturnToMenuController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TutorialReturnToMenuController")]
+impl AsRef<crate::GlobalNamespace::IReturnToMenuController>
+for crate::GlobalNamespace::TutorialReturnToMenuController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IReturnToMenuController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TutorialReturnToMenuController")]
+impl AsMut<crate::GlobalNamespace::IReturnToMenuController>
+for crate::GlobalNamespace::TutorialReturnToMenuController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IReturnToMenuController {
+        unsafe { std::mem::transmute(self) }
+    }
+}

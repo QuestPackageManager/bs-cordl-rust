@@ -139,6 +139,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuickPlaySetu
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "QuickPlaySetupModel")]
+impl AsRef<crate::GlobalNamespace::IQuickPlaySetupModel>
+for crate::GlobalNamespace::QuickPlaySetupModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IQuickPlaySetupModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "QuickPlaySetupModel")]
+impl AsMut<crate::GlobalNamespace::IQuickPlaySetupModel>
+for crate::GlobalNamespace::QuickPlaySetupModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IQuickPlaySetupModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
 #[repr(C)]
 #[derive(Debug)]

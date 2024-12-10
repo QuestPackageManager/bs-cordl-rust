@@ -227,3 +227,45 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::SqlTypes::SqlCha
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Data+SqlTypes+SqlChars")]
+impl AsRef<crate::System::Data::SqlTypes::INullable>
+for crate::System::Data::SqlTypes::SqlChars {
+    fn as_ref(&self) -> &crate::System::Data::SqlTypes::INullable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlChars")]
+impl AsMut<crate::System::Data::SqlTypes::INullable>
+for crate::System::Data::SqlTypes::SqlChars {
+    fn as_mut(&mut self) -> &mut crate::System::Data::SqlTypes::INullable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlChars")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Data::SqlTypes::SqlChars {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlChars")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Data::SqlTypes::SqlChars {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlChars")]
+impl AsRef<crate::System::Xml::Serialization::IXmlSerializable>
+for crate::System::Data::SqlTypes::SqlChars {
+    fn as_ref(&self) -> &crate::System::Xml::Serialization::IXmlSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlChars")]
+impl AsMut<crate::System::Xml::Serialization::IXmlSerializable>
+for crate::System::Data::SqlTypes::SqlChars {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::Serialization::IXmlSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -122,3 +122,17 @@ for crate::Org::BouncyCastle::Crypto::Operators::Asn1VerifierFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1VerifierFactory")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IVerifierFactory>
+for crate::Org::BouncyCastle::Crypto::Operators::Asn1VerifierFactory {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IVerifierFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1VerifierFactory")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IVerifierFactory>
+for crate::Org::BouncyCastle::Crypto::Operators::Asn1VerifierFactory {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IVerifierFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}

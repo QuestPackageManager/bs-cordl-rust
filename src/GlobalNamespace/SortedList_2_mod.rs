@@ -222,3 +222,23 @@ impl<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SortedList_2")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+    TBase: quest_hook::libil2cpp::Type,
+> AsRef<crate::GlobalNamespace::ISortedList_1<TBase>>
+for crate::GlobalNamespace::SortedList_2<T, TBase> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ISortedList_1<TBase> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SortedList_2")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+    TBase: quest_hook::libil2cpp::Type,
+> AsMut<crate::GlobalNamespace::ISortedList_1<TBase>>
+for crate::GlobalNamespace::SortedList_2<T, TBase> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ISortedList_1<TBase> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

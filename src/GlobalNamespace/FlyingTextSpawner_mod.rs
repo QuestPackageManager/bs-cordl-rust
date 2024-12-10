@@ -86,3 +86,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingTextSpa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "FlyingTextSpawner")]
+impl AsRef<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>
+for crate::GlobalNamespace::FlyingTextSpawner {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "FlyingTextSpawner")]
+impl AsMut<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>
+for crate::GlobalNamespace::FlyingTextSpawner {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}

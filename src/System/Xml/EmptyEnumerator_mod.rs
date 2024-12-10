@@ -84,3 +84,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::EmptyEnumerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+EmptyEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Xml::EmptyEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+EmptyEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Xml::EmptyEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

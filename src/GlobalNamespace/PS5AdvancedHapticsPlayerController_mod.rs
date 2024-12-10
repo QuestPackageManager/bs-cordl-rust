@@ -143,3 +143,31 @@ for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PS5AdvancedHapticsPlayerController")]
+impl AsRef<crate::GlobalNamespace::IHapticFeedbackPlayer>
+for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IHapticFeedbackPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PS5AdvancedHapticsPlayerController")]
+impl AsMut<crate::GlobalNamespace::IHapticFeedbackPlayer>
+for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IHapticFeedbackPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PS5AdvancedHapticsPlayerController")]
+impl AsRef<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PS5AdvancedHapticsPlayerController")]
+impl AsMut<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

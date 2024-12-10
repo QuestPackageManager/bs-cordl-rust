@@ -165,3 +165,17 @@ for crate::Org::BouncyCastle::Crypto::Macs::Gost28147Mac {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Macs+Gost28147Mac")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IMac>
+for crate::Org::BouncyCastle::Crypto::Macs::Gost28147Mac {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IMac {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Macs+Gost28147Mac")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IMac>
+for crate::Org::BouncyCastle::Crypto::Macs::Gost28147Mac {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IMac {
+        unsafe { std::mem::transmute(self) }
+    }
+}

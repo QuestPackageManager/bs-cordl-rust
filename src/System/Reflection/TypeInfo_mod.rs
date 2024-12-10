@@ -79,3 +79,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::TypeInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Reflection+TypeInfo")]
+impl AsRef<crate::System::Reflection::IReflectableType>
+for crate::System::Reflection::TypeInfo {
+    fn as_ref(&self) -> &crate::System::Reflection::IReflectableType {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Reflection+TypeInfo")]
+impl AsMut<crate::System::Reflection::IReflectableType>
+for crate::System::Reflection::TypeInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Reflection::IReflectableType {
+        unsafe { std::mem::transmute(self) }
+    }
+}

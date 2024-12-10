@@ -45,6 +45,34 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+impl AsRef<
+    crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+impl AsMut<
+    crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}
 #[cfg(
     feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
 )]
@@ -125,6 +153,24 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObse
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
+)]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
+)]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]

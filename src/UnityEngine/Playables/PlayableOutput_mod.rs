@@ -69,3 +69,37 @@ impl crate::UnityEngine::Playables::PlayableOutput {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableOutput>>
+for crate::UnityEngine::Playables::PlayableOutput {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableOutput> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableOutput>>
+for crate::UnityEngine::Playables::PlayableOutput {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Playables::PlayableOutput,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
+impl AsRef<crate::UnityEngine::Playables::IPlayableOutput>
+for crate::UnityEngine::Playables::PlayableOutput {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableOutput {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
+impl AsMut<crate::UnityEngine::Playables::IPlayableOutput>
+for crate::UnityEngine::Playables::PlayableOutput {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableOutput {
+        todo!()
+    }
+}

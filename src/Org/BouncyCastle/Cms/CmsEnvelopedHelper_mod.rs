@@ -251,6 +251,24 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureRead
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsAuthenticatedSecureReadable"
+)]
+impl AsRef<crate::Org::BouncyCastle::Cms::CmsSecureReadable>
+for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::CmsSecureReadable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsAuthenticatedSecureReadable"
+)]
+impl AsMut<crate::Org::BouncyCastle::Cms::CmsSecureReadable>
+for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::CmsSecureReadable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable")]
 #[repr(C)]
 #[derive(Debug)]
@@ -362,5 +380,19 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable")]
+impl AsRef<crate::Org::BouncyCastle::Cms::CmsSecureReadable>
+for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::CmsSecureReadable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable")]
+impl AsMut<crate::Org::BouncyCastle::Cms::CmsSecureReadable>
+for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::CmsSecureReadable {
+        unsafe { std::mem::transmute(self) }
     }
 }

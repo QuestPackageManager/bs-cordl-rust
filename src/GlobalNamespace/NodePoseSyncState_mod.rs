@@ -150,6 +150,84 @@ impl crate::GlobalNamespace::NodePoseSyncState {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "NodePoseSyncState")]
+impl AsRef<
+    crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    >,
+> for crate::GlobalNamespace::NodePoseSyncState {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "NodePoseSyncState")]
+impl AsMut<
+    crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    >,
+> for crate::GlobalNamespace::NodePoseSyncState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "NodePoseSyncState")]
+impl AsRef<
+    crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+    >,
+> for crate::GlobalNamespace::NodePoseSyncState {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "NodePoseSyncState")]
+impl AsMut<
+    crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+    >,
+> for crate::GlobalNamespace::NodePoseSyncState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "NodePoseSyncState")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::NodePoseSyncState {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "NodePoseSyncState")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::NodePoseSyncState {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
 #[cfg(feature = "NodePoseSyncState+NodePose")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

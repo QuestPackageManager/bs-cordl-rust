@@ -137,3 +137,19 @@ for crate::Org::BouncyCastle::Crypto::Signers::PlainDsaEncoding {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+PlainDsaEncoding")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding>
+for crate::Org::BouncyCastle::Crypto::Signers::PlainDsaEncoding {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+PlainDsaEncoding")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding>
+for crate::Org::BouncyCastle::Crypto::Signers::PlainDsaEncoding {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding {
+        unsafe { std::mem::transmute(self) }
+    }
+}

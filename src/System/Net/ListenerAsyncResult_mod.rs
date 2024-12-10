@@ -154,3 +154,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ListenerAsyncResu
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+ListenerAsyncResult")]
+impl AsRef<crate::System::IAsyncResult> for crate::System::Net::ListenerAsyncResult {
+    fn as_ref(&self) -> &crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+ListenerAsyncResult")]
+impl AsMut<crate::System::IAsyncResult> for crate::System::Net::ListenerAsyncResult {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}

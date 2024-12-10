@@ -145,3 +145,17 @@ for crate::System::Net::Http::Headers::ProductHeaderValue {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+Http+Headers+ProductHeaderValue")]
+impl AsRef<crate::System::ICloneable>
+for crate::System::Net::Http::Headers::ProductHeaderValue {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+Http+Headers+ProductHeaderValue")]
+impl AsMut<crate::System::ICloneable>
+for crate::System::Net::Http::Headers::ProductHeaderValue {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

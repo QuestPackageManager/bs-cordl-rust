@@ -93,6 +93,36 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+impl AsRef<crate::System::Collections::Generic::IEnumerable_1<char>>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<char> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+impl AsMut<crate::System::Collections::Generic::IEnumerable_1<char>>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<char> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -180,6 +210,50 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator 
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+impl AsRef<crate::System::Collections::Generic::IEnumerator_1<char>>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<char> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+impl AsMut<crate::System::Collections::Generic::IEnumerator_1<char>>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<char> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }
 #[cfg(

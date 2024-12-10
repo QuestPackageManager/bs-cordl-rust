@@ -100,3 +100,21 @@ impl crate::UnityEngine::UIElements::TimerState {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TimerState")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimerState>>
+for crate::UnityEngine::UIElements::TimerState {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimerState> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TimerState")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimerState>>
+for crate::UnityEngine::UIElements::TimerState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimerState> {
+        todo!()
+    }
+}

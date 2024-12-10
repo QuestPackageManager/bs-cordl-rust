@@ -129,3 +129,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::CachedOpenTypeProvide
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+CachedOpenTypeProvider")]
+impl AsRef<crate::Zenject::IProvider> for crate::Zenject::CachedOpenTypeProvider {
+    fn as_ref(&self) -> &crate::Zenject::IProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+CachedOpenTypeProvider")]
+impl AsMut<crate::Zenject::IProvider> for crate::Zenject::CachedOpenTypeProvider {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

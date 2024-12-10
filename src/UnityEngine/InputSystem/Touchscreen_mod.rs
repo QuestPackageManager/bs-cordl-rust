@@ -266,3 +266,53 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Touc
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset>
+for crate::UnityEngine::InputSystem::Touchscreen {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset>
+for crate::UnityEngine::InputSystem::Touchscreen {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IEventMerger>
+for crate::UnityEngine::InputSystem::Touchscreen {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IEventMerger>
+for crate::UnityEngine::InputSystem::Touchscreen {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver>
+for crate::UnityEngine::InputSystem::Touchscreen {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver>
+for crate::UnityEngine::InputSystem::Touchscreen {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

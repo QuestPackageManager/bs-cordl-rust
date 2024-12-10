@@ -78,3 +78,17 @@ for crate::GlobalNamespace::MultiplayerPlayerResultsData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerPlayerResultsData")]
+impl AsRef<crate::System::IComparable>
+for crate::GlobalNamespace::MultiplayerPlayerResultsData {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerPlayerResultsData")]
+impl AsMut<crate::System::IComparable>
+for crate::GlobalNamespace::MultiplayerPlayerResultsData {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -75,3 +75,17 @@ for crate::GlobalNamespace::TubeLightIntensityAsset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TubeLightIntensityAsset")]
+impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
+for crate::GlobalNamespace::TubeLightIntensityAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TubeLightIntensityAsset")]
+impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
+for crate::GlobalNamespace::TubeLightIntensityAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -96,6 +96,20 @@ impl crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRTelemetry+MarkerPoint")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTelemetry+MarkerPoint")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRTelemetry+NullTelemetryClient")]
 #[repr(C)]
 #[derive(Debug)]

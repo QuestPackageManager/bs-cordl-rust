@@ -148,3 +148,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Color
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+ColorPalette")]
+impl AsRef<crate::UnityEngine::ProBuilder::IHasDefault>
+for crate::UnityEngine::ProBuilder::ColorPalette {
+    fn as_ref(&self) -> &crate::UnityEngine::ProBuilder::IHasDefault {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+ColorPalette")]
+impl AsMut<crate::UnityEngine::ProBuilder::IHasDefault>
+for crate::UnityEngine::ProBuilder::ColorPalette {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ProBuilder::IHasDefault {
+        unsafe { std::mem::transmute(self) }
+    }
+}

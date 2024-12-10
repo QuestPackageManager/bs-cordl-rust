@@ -1317,3 +1317,175 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JConta
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<
+    crate::System::Collections::Generic::IList_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IList_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<
+    crate::System::Collections::Generic::IList_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IList_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::Collections::IList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::Collections::IList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::Collections::Specialized::INotifyCollectionChanged>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Specialized::INotifyCollectionChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::Collections::Specialized::INotifyCollectionChanged>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Specialized::INotifyCollectionChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::ComponentModel::IBindingList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(&self) -> &crate::System::ComponentModel::IBindingList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::ComponentModel::IBindingList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::IBindingList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::ComponentModel::ITypedList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(&self) -> &crate::System::ComponentModel::ITypedList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::ComponentModel::ITypedList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ITypedList {
+        unsafe { std::mem::transmute(self) }
+    }
+}

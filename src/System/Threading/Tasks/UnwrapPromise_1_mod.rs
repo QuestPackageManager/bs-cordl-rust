@@ -179,3 +179,21 @@ for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+Tasks+UnwrapPromise_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
+    fn as_ref(&self) -> &crate::System::Threading::Tasks::ITaskCompletionAction {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+UnwrapPromise_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::Tasks::ITaskCompletionAction {
+        unsafe { std::mem::transmute(self) }
+    }
+}

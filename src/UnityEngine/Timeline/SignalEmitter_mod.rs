@@ -134,3 +134,33 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::SignalE
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
+impl AsRef<crate::UnityEngine::Playables::INotification>
+for crate::UnityEngine::Timeline::SignalEmitter {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::INotification {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
+impl AsMut<crate::UnityEngine::Playables::INotification>
+for crate::UnityEngine::Timeline::SignalEmitter {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::INotification {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
+impl AsRef<crate::UnityEngine::Timeline::INotificationOptionProvider>
+for crate::UnityEngine::Timeline::SignalEmitter {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::INotificationOptionProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
+impl AsMut<crate::UnityEngine::Timeline::INotificationOptionProvider>
+for crate::UnityEngine::Timeline::SignalEmitter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::Timeline::INotificationOptionProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

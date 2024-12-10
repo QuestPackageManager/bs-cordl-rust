@@ -197,6 +197,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CookieCollection 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+CookieCollection")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Net::CookieCollection {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+CookieCollection")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Net::CookieCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+CookieCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Net::CookieCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+CookieCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Net::CookieCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Net+CookieCollection+CookieCollectionEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -292,6 +320,20 @@ for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Net+CookieCollection+CookieCollectionEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+CookieCollection+CookieCollectionEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+CookieCollection+Stamp")]

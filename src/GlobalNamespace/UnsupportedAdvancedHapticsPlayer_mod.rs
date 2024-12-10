@@ -81,3 +81,17 @@ for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
+impl AsRef<crate::GlobalNamespace::IHapticFeedbackPlayer>
+for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IHapticFeedbackPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
+impl AsMut<crate::GlobalNamespace::IHapticFeedbackPlayer>
+for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IHapticFeedbackPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -156,3 +156,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusAnalyti
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusAnalyticsModel")]
+impl AsRef<crate::GlobalNamespace::IAnalyticsModel>
+for crate::GlobalNamespace::OculusAnalyticsModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IAnalyticsModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusAnalyticsModel")]
+impl AsMut<crate::GlobalNamespace::IAnalyticsModel>
+for crate::GlobalNamespace::OculusAnalyticsModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAnalyticsModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

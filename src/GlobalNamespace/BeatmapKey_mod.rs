@@ -96,3 +96,21 @@ impl crate::GlobalNamespace::BeatmapKey {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "BeatmapKey")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapKey>>
+for crate::GlobalNamespace::BeatmapKey {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapKey> {
+        todo!()
+    }
+}
+#[cfg(feature = "BeatmapKey")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapKey>>
+for crate::GlobalNamespace::BeatmapKey {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapKey> {
+        todo!()
+    }
+}

@@ -252,3 +252,31 @@ impl crate::UnityEngine::Bounds {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Bounds")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Bounds>>
+for crate::UnityEngine::Bounds {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Bounds> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Bounds")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Bounds>>
+for crate::UnityEngine::Bounds {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Bounds> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Bounds")]
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Bounds {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Bounds")]
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Bounds {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}

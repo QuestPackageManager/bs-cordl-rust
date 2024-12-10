@@ -86,3 +86,37 @@ impl crate::System::Threading::Tasks::ForceAsyncAwaiter {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
+impl AsRef<crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion>
+for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
+impl AsMut<crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion>
+for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
+impl AsRef<crate::System::Runtime::CompilerServices::INotifyCompletion>
+for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::INotifyCompletion {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
+impl AsMut<crate::System::Runtime::CompilerServices::INotifyCompletion>
+for crate::System::Threading::Tasks::ForceAsyncAwaiter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::INotifyCompletion {
+        todo!()
+    }
+}

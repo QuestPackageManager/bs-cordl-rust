@@ -621,3 +621,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteControlle
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoteController")]
+impl AsRef<crate::GlobalNamespace::IBeatmapObjectController>
+for crate::GlobalNamespace::NoteController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapObjectController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoteController")]
+impl AsMut<crate::GlobalNamespace::IBeatmapObjectController>
+for crate::GlobalNamespace::NoteController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapObjectController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoteController")]
+impl AsRef<crate::GlobalNamespace::INoteMirrorable>
+for crate::GlobalNamespace::NoteController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoteController")]
+impl AsMut<crate::GlobalNamespace::INoteMirrorable>
+for crate::GlobalNamespace::NoteController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteMirrorable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

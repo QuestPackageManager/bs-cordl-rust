@@ -64,3 +64,17 @@ for crate::System::Runtime::Remoting::Channels::IChannelSender {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Channels+IChannelSender")]
+impl AsRef<crate::System::Runtime::Remoting::Channels::IChannel>
+for crate::System::Runtime::Remoting::Channels::IChannelSender {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Channels::IChannel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Channels+IChannelSender")]
+impl AsMut<crate::System::Runtime::Remoting::Channels::IChannel>
+for crate::System::Runtime::Remoting::Channels::IChannelSender {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Channels::IChannel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -129,3 +129,17 @@ for crate::System::Net::ProtocolViolationException {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+ProtocolViolationException")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Net::ProtocolViolationException {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+ProtocolViolationException")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Net::ProtocolViolationException {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -89,3 +89,51 @@ impl crate::UnityEngine::UIElements::InheritedData {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+InheritedData")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::InheritedData>>
+for crate::UnityEngine::UIElements::InheritedData {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::InheritedData> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+InheritedData")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::InheritedData>>
+for crate::UnityEngine::UIElements::InheritedData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::InheritedData,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+InheritedData")]
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::InheritedData,
+    >,
+> for crate::UnityEngine::UIElements::InheritedData {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::InheritedData,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+InheritedData")]
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::InheritedData,
+    >,
+> for crate::UnityEngine::UIElements::InheritedData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::InheritedData,
+    > {
+        todo!()
+    }
+}

@@ -62,3 +62,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Comparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+Comparer")]
+impl AsRef<crate::System::Collections::IComparer> for crate::System::Net::Comparer {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+Comparer")]
+impl AsMut<crate::System::Collections::IComparer> for crate::System::Net::Comparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -752,6 +752,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::Stream {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+IO+Stream")]
+impl AsRef<crate::System::IAsyncDisposable> for crate::System::IO::Stream {
+    fn as_ref(&self) -> &crate::System::IAsyncDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Stream")]
+impl AsMut<crate::System::IAsyncDisposable> for crate::System::IO::Stream {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Stream")]
+impl AsRef<crate::System::IDisposable> for crate::System::IO::Stream {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Stream")]
+impl AsMut<crate::System::IDisposable> for crate::System::IO::Stream {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -903,6 +927,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::Stream_ReadWriteTa
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+impl AsRef<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::System::IO::Stream_ReadWriteTask {
+    fn as_ref(&self) -> &crate::System::Threading::Tasks::ITaskCompletionAction {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+impl AsMut<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::System::IO::Stream_ReadWriteTask {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::Tasks::ITaskCompletionAction {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
@@ -1066,6 +1104,20 @@ for crate::System::IO::Stream_SynchronousAsyncResult {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
+impl AsRef<crate::System::IAsyncResult>
+for crate::System::IO::Stream_SynchronousAsyncResult {
+    fn as_ref(&self) -> &crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
+impl AsMut<crate::System::IAsyncResult>
+for crate::System::IO::Stream_SynchronousAsyncResult {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -1122,5 +1174,21 @@ impl crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
             (stateMachine),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+impl AsRef<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
+    }
+}
+#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
+for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::CompilerServices::IAsyncStateMachine {
+        todo!()
     }
 }

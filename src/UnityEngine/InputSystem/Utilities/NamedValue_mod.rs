@@ -143,3 +143,27 @@ impl crate::UnityEngine::InputSystem::Utilities::NamedValue {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+NamedValue")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::NamedValue>,
+> for crate::UnityEngine::InputSystem::Utilities::NamedValue {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::NamedValue,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+NamedValue")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::NamedValue>,
+> for crate::UnityEngine::InputSystem::Utilities::NamedValue {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::NamedValue,
+    > {
+        todo!()
+    }
+}

@@ -730,6 +730,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderControl
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SliderController")]
+impl AsRef<crate::GlobalNamespace::IBeatmapObjectController>
+for crate::GlobalNamespace::SliderController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapObjectController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SliderController")]
+impl AsMut<crate::GlobalNamespace::IBeatmapObjectController>
+for crate::GlobalNamespace::SliderController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapObjectController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "SliderController+LengthType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

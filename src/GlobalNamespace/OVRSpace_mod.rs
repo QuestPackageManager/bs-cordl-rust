@@ -101,6 +101,22 @@ impl crate::GlobalNamespace::OVRSpace {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRSpace")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace>>
+for crate::GlobalNamespace::OVRSpace {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRSpace")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace>>
+for crate::GlobalNamespace::OVRSpace {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace> {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRSpace+StorageLocation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

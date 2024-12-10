@@ -106,3 +106,35 @@ for crate::GlobalNamespace::OculusLevelProductPacksSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusLevelProductPacksSO")]
+impl AsRef<
+    crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+    >,
+> for crate::GlobalNamespace::OculusLevelProductPacksSO {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusLevelProductPacksSO")]
+impl AsMut<
+    crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+    >,
+> for crate::GlobalNamespace::OculusLevelProductPacksSO {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
+        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

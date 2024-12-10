@@ -450,3 +450,17 @@ for crate::BeatSaber::PerformancePresets::CustomPerformancePreset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatSaber+PerformancePresets+CustomPerformancePreset")]
+impl AsRef<crate::BGLib::SaveDataCore::ISerializableSaveData>
+for crate::BeatSaber::PerformancePresets::CustomPerformancePreset {
+    fn as_ref(&self) -> &crate::BGLib::SaveDataCore::ISerializableSaveData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+PerformancePresets+CustomPerformancePreset")]
+impl AsMut<crate::BGLib::SaveDataCore::ISerializableSaveData>
+for crate::BeatSaber::PerformancePresets::CustomPerformancePreset {
+    fn as_mut(&mut self) -> &mut crate::BGLib::SaveDataCore::ISerializableSaveData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -218,3 +218,19 @@ for crate::Mono::Net::Security::ChainValidationHelper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
+impl AsRef<crate::Mono::Security::Interface::ICertificateValidator>
+for crate::Mono::Net::Security::ChainValidationHelper {
+    fn as_ref(&self) -> &crate::Mono::Security::Interface::ICertificateValidator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
+impl AsMut<crate::Mono::Security::Interface::ICertificateValidator>
+for crate::Mono::Net::Security::ChainValidationHelper {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Mono::Security::Interface::ICertificateValidator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

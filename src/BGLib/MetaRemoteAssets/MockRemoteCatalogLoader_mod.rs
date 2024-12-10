@@ -66,3 +66,17 @@ for crate::BGLib::MetaRemoteAssets::MockRemoteCatalogLoader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGLib+MetaRemoteAssets+MockRemoteCatalogLoader")]
+impl AsRef<crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader>
+for crate::BGLib::MetaRemoteAssets::MockRemoteCatalogLoader {
+    fn as_ref(&self) -> &crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGLib+MetaRemoteAssets+MockRemoteCatalogLoader")]
+impl AsMut<crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader>
+for crate::BGLib::MetaRemoteAssets::MockRemoteCatalogLoader {
+    fn as_mut(&mut self) -> &mut crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -475,3 +475,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusVRHelpe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusVRHelper")]
+impl AsRef<crate::GlobalNamespace::IVRPlatformHelper>
+for crate::GlobalNamespace::OculusVRHelper {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVRPlatformHelper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusVRHelper")]
+impl AsMut<crate::GlobalNamespace::IVRPlatformHelper>
+for crate::GlobalNamespace::OculusVRHelper {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRPlatformHelper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusVRHelper")]
+impl AsRef<crate::GlobalNamespace::IVerboseLogger>
+for crate::GlobalNamespace::OculusVRHelper {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVerboseLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusVRHelper")]
+impl AsMut<crate::GlobalNamespace::IVerboseLogger>
+for crate::GlobalNamespace::OculusVRHelper {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVerboseLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}

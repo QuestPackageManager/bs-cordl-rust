@@ -65,3 +65,21 @@ impl crate::UnityEngine::Rendering::LocalKeyword {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::LocalKeyword>>
+for crate::UnityEngine::Rendering::LocalKeyword {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::LocalKeyword> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::LocalKeyword>>
+for crate::UnityEngine::Rendering::LocalKeyword {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rendering::LocalKeyword> {
+        todo!()
+    }
+}

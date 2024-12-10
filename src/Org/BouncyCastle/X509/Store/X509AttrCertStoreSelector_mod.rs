@@ -383,3 +383,31 @@ for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509AttrCertStoreSelector")]
+impl AsRef<crate::Org::BouncyCastle::X509::Store::IX509Selector>
+for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::X509::Store::IX509Selector {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509AttrCertStoreSelector")]
+impl AsMut<crate::Org::BouncyCastle::X509::Store::IX509Selector>
+for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::X509::Store::IX509Selector {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509AttrCertStoreSelector")]
+impl AsRef<crate::System::ICloneable>
+for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509AttrCertStoreSelector")]
+impl AsMut<crate::System::ICloneable>
+for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

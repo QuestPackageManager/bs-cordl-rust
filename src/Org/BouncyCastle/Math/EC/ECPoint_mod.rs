@@ -730,3 +730,21 @@ for crate::Org::BouncyCastle::Math::EC::ECPoint_ValidityCallback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Math+EC+ECPoint+ValidityCallback")]
+impl AsRef<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
+for crate::Org::BouncyCastle::Math::EC::ECPoint_ValidityCallback {
+    fn as_ref(
+        &self,
+    ) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+ECPoint+ValidityCallback")]
+impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
+for crate::Org::BouncyCastle::Math::EC::ECPoint_ValidityCallback {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}

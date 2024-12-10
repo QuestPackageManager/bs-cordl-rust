@@ -3355,6 +3355,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextReaderImpl
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
+impl AsRef<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::XmlTextReaderImpl {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
+impl AsMut<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::XmlTextReaderImpl {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
+impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XmlTextReaderImpl {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
+impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XmlTextReaderImpl {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
 )]
@@ -3433,6 +3459,38 @@ for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataCompa
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+)]
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+> for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+)]
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+> for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
@@ -3853,6 +3911,48 @@ for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+impl AsRef<crate::System::Xml::IDtdParserAdapter>
+for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+impl AsMut<crate::System::Xml::IDtdParserAdapter>
+for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+impl AsRef<crate::System::Xml::IDtdParserAdapterV1>
+for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapterV1 {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+impl AsMut<crate::System::Xml::IDtdParserAdapterV1>
+for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapterV1 {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+impl AsRef<crate::System::Xml::IDtdParserAdapterWithValidation>
+for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapterWithValidation {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+impl AsMut<crate::System::Xml::IDtdParserAdapterWithValidation>
+for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapterWithValidation {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
@@ -4509,6 +4609,20 @@ for crate::System::Xml::XmlTextReaderImpl_NodeData {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+impl AsRef<crate::System::IComparable>
+for crate::System::Xml::XmlTextReaderImpl_NodeData {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+impl AsMut<crate::System::IComparable>
+for crate::System::Xml::XmlTextReaderImpl_NodeData {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]

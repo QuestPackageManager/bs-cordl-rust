@@ -140,3 +140,21 @@ for crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+OpenSsl+Pkcs8Generator")]
+impl AsRef<crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator>
+for crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
+    fn as_ref(
+        &self,
+    ) -> &crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+OpenSsl+Pkcs8Generator")]
+impl AsMut<crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator>
+for crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -102,3 +102,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::MonoInstallerBase {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+MonoInstallerBase")]
+impl AsRef<crate::Zenject::IInstaller> for crate::Zenject::MonoInstallerBase {
+    fn as_ref(&self) -> &crate::Zenject::IInstaller {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+MonoInstallerBase")]
+impl AsMut<crate::Zenject::IInstaller> for crate::Zenject::MonoInstallerBase {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInstaller {
+        unsafe { std::mem::transmute(self) }
+    }
+}

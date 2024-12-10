@@ -805,3 +805,19 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRMixedRealityCaptureSettings")]
+impl AsRef<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
+for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRMixedRealityCaptureSettings")]
+impl AsMut<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
+for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
+        unsafe { std::mem::transmute(self) }
+    }
+}

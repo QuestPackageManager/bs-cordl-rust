@@ -79,3 +79,31 @@ for crate::GlobalNamespace::PlayerNameEqualityComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PlayerNameEqualityComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    >,
+> for crate::GlobalNamespace::PlayerNameEqualityComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PlayerNameEqualityComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    >,
+> for crate::GlobalNamespace::PlayerNameEqualityComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

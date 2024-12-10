@@ -56,3 +56,31 @@ for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Math+Field+IPolynomialExtensionField")]
+impl AsRef<crate::Org::BouncyCastle::Math::Field::IExtensionField>
+for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::Field::IExtensionField {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+Field+IPolynomialExtensionField")]
+impl AsMut<crate::Org::BouncyCastle::Math::Field::IExtensionField>
+for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Math::Field::IExtensionField {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+Field+IPolynomialExtensionField")]
+impl AsRef<crate::Org::BouncyCastle::Math::Field::IFiniteField>
+for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::Field::IFiniteField {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+Field+IPolynomialExtensionField")]
+impl AsMut<crate::Org::BouncyCastle::Math::Field::IFiniteField>
+for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Math::Field::IFiniteField {
+        unsafe { std::mem::transmute(self) }
+    }
+}

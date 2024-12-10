@@ -142,6 +142,20 @@ for crate::LiteNetLib::EventBasedNatPunchListener {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LiteNetLib+EventBasedNatPunchListener")]
+impl AsRef<crate::LiteNetLib::INatPunchListener>
+for crate::LiteNetLib::EventBasedNatPunchListener {
+    fn as_ref(&self) -> &crate::LiteNetLib::INatPunchListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+EventBasedNatPunchListener")]
+impl AsMut<crate::LiteNetLib::INatPunchListener>
+for crate::LiteNetLib::EventBasedNatPunchListener {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::INatPunchListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionRequest")]
 #[repr(C)]
 #[derive(Debug)]

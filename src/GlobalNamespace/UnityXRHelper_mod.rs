@@ -617,6 +617,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityXRHelper
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityXRHelper")]
+impl AsRef<crate::GlobalNamespace::IVRPlatformHelper>
+for crate::GlobalNamespace::UnityXRHelper {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVRPlatformHelper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityXRHelper")]
+impl AsMut<crate::GlobalNamespace::IVRPlatformHelper>
+for crate::GlobalNamespace::UnityXRHelper {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRPlatformHelper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityXRHelper")]
+impl AsRef<crate::GlobalNamespace::IVerboseLogger>
+for crate::GlobalNamespace::UnityXRHelper {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVerboseLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityXRHelper")]
+impl AsMut<crate::GlobalNamespace::IVerboseLogger>
+for crate::GlobalNamespace::UnityXRHelper {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVerboseLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

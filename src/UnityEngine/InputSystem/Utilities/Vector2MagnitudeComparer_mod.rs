@@ -34,3 +34,23 @@ impl crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Vector2MagnitudeComparer")]
+impl AsRef<crate::System::Collections::Generic::IComparer_1<crate::UnityEngine::Vector2>>
+for crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<crate::UnityEngine::Vector2> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Vector2MagnitudeComparer")]
+impl AsMut<crate::System::Collections::Generic::IComparer_1<crate::UnityEngine::Vector2>>
+for crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        crate::UnityEngine::Vector2,
+    > {
+        todo!()
+    }
+}

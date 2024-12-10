@@ -929,6 +929,48 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XsdValidatingRead
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XsdValidatingReader")]
+impl AsRef<crate::System::Xml::IXmlLineInfo>
+for crate::System::Xml::XsdValidatingReader {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XsdValidatingReader")]
+impl AsMut<crate::System::Xml::IXmlLineInfo>
+for crate::System::Xml::XsdValidatingReader {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XsdValidatingReader")]
+impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XsdValidatingReader {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XsdValidatingReader")]
+impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
+for crate::System::Xml::XsdValidatingReader {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XsdValidatingReader")]
+impl AsRef<crate::System::Xml::Schema::IXmlSchemaInfo>
+for crate::System::Xml::XsdValidatingReader {
+    fn as_ref(&self) -> &crate::System::Xml::Schema::IXmlSchemaInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XsdValidatingReader")]
+impl AsMut<crate::System::Xml::Schema::IXmlSchemaInfo>
+for crate::System::Xml::XsdValidatingReader {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::Schema::IXmlSchemaInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

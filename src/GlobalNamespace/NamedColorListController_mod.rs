@@ -142,6 +142,20 @@ for crate::GlobalNamespace::NamedColorListController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NamedColorListController")]
+impl AsRef<crate::HMUI::IValueChanger_1<i32>>
+for crate::GlobalNamespace::NamedColorListController {
+    fn as_ref(&self) -> &crate::HMUI::IValueChanger_1<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NamedColorListController")]
+impl AsMut<crate::HMUI::IValueChanger_1<i32>>
+for crate::GlobalNamespace::NamedColorListController {
+    fn as_mut(&mut self) -> &mut crate::HMUI::IValueChanger_1<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "NamedColorListController+ColorValuePair")]
 #[repr(C)]
 #[derive(Debug)]

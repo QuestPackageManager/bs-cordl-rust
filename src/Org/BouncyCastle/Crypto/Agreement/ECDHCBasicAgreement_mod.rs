@@ -92,3 +92,17 @@ for crate::Org::BouncyCastle::Crypto::Agreement::ECDHCBasicAgreement {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECDHCBasicAgreement")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::IBasicAgreement>
+for crate::Org::BouncyCastle::Crypto::Agreement::ECDHCBasicAgreement {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IBasicAgreement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECDHCBasicAgreement")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::IBasicAgreement>
+for crate::Org::BouncyCastle::Crypto::Agreement::ECDHCBasicAgreement {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IBasicAgreement {
+        unsafe { std::mem::transmute(self) }
+    }
+}

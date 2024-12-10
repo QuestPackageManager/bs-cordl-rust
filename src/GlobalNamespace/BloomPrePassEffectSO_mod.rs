@@ -109,3 +109,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePassE
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BloomPrePassEffectSO")]
+impl AsRef<crate::GlobalNamespace::IBloomPrePassParams>
+for crate::GlobalNamespace::BloomPrePassEffectSO {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBloomPrePassParams {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BloomPrePassEffectSO")]
+impl AsMut<crate::GlobalNamespace::IBloomPrePassParams>
+for crate::GlobalNamespace::BloomPrePassEffectSO {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBloomPrePassParams {
+        unsafe { std::mem::transmute(self) }
+    }
+}

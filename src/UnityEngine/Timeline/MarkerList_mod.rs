@@ -223,3 +223,17 @@ impl crate::UnityEngine::Timeline::MarkerList {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+MarkerList")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::Timeline::MarkerList {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+MarkerList")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::Timeline::MarkerList {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        todo!()
+    }
+}

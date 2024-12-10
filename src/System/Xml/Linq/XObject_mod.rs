@@ -223,3 +223,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Linq::XObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Linq+XObject")]
+impl AsRef<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::Linq::XObject {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Linq+XObject")]
+impl AsMut<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::Linq::XObject {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

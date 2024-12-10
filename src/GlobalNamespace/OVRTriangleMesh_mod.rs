@@ -212,6 +212,52 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRTriangleMesh")]
+impl AsRef<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    >,
+> for crate::GlobalNamespace::OVRTriangleMesh {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTriangleMesh")]
+impl AsMut<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    >,
+> for crate::GlobalNamespace::OVRTriangleMesh {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTriangleMesh")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh>>
+for crate::GlobalNamespace::OVRTriangleMesh {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTriangleMesh")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh>>
+for crate::GlobalNamespace::OVRTriangleMesh {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh> {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -251,6 +297,20 @@ impl crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+impl AsRef<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+impl AsMut<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -288,6 +348,20 @@ impl crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+impl AsRef<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+impl AsMut<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRTriangleMesh+NegateXJob")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -322,6 +396,20 @@ impl crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
             (index),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+impl AsRef<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+impl AsMut<crate::Unity::Jobs::IJobParallelFor>
+for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
+        todo!()
     }
 }
 #[cfg(feature = "OVRTriangleMesh+Triangle")]

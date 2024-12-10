@@ -73,3 +73,17 @@ for crate::GlobalNamespace::MockMultiplayerStatusModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MockMultiplayerStatusModel")]
+impl AsRef<crate::GlobalNamespace::IMultiplayerStatusModel>
+for crate::GlobalNamespace::MockMultiplayerStatusModel {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerStatusModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockMultiplayerStatusModel")]
+impl AsMut<crate::GlobalNamespace::IMultiplayerStatusModel>
+for crate::GlobalNamespace::MockMultiplayerStatusModel {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMultiplayerStatusModel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

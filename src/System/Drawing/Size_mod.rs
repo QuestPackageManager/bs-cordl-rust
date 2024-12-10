@@ -78,3 +78,19 @@ impl crate::System::Drawing::Size {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Drawing+Size")]
+impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::Size>>
+for crate::System::Drawing::Size {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Drawing::Size> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Drawing+Size")]
+impl AsMut<crate::System::IEquatable_1<crate::System::Drawing::Size>>
+for crate::System::Drawing::Size {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::System::Drawing::Size> {
+        todo!()
+    }
+}

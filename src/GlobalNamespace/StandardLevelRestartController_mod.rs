@@ -64,3 +64,17 @@ for crate::GlobalNamespace::StandardLevelRestartController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "StandardLevelRestartController")]
+impl AsRef<crate::GlobalNamespace::ILevelRestartController>
+for crate::GlobalNamespace::StandardLevelRestartController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelRestartController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardLevelRestartController")]
+impl AsMut<crate::GlobalNamespace::ILevelRestartController>
+for crate::GlobalNamespace::StandardLevelRestartController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelRestartController {
+        unsafe { std::mem::transmute(self) }
+    }
+}

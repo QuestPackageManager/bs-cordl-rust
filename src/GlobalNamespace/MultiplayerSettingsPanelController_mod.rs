@@ -181,3 +181,17 @@ for crate::GlobalNamespace::MultiplayerSettingsPanelController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerSettingsPanelController")]
+impl AsRef<crate::GlobalNamespace::IRefreshable>
+for crate::GlobalNamespace::MultiplayerSettingsPanelController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IRefreshable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerSettingsPanelController")]
+impl AsMut<crate::GlobalNamespace::IRefreshable>
+for crate::GlobalNamespace::MultiplayerSettingsPanelController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRefreshable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

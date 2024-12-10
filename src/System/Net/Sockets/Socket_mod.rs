@@ -1411,6 +1411,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Sockets::Socket {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+Sockets+Socket")]
+impl AsRef<crate::System::IDisposable> for crate::System::Net::Sockets::Socket {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+Sockets+Socket")]
+impl AsMut<crate::System::IDisposable> for crate::System::Net::Sockets::Socket {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1659,6 +1671,40 @@ for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
+impl AsRef<crate::System::Threading::Tasks::Sources::IValueTaskSource>
+for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
+    fn as_ref(&self) -> &crate::System::Threading::Tasks::Sources::IValueTaskSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
+impl AsMut<crate::System::Threading::Tasks::Sources::IValueTaskSource>
+for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Threading::Tasks::Sources::IValueTaskSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
+impl AsRef<crate::System::Threading::Tasks::Sources::IValueTaskSource_1<i32>>
+for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Threading::Tasks::Sources::IValueTaskSource_1<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
+impl AsMut<crate::System::Threading::Tasks::Sources::IValueTaskSource_1<i32>>
+for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Threading::Tasks::Sources::IValueTaskSource_1<i32> {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]

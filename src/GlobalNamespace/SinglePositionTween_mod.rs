@@ -77,3 +77,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SinglePositio
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SinglePositionTween")]
+impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
+for crate::GlobalNamespace::SinglePositionTween {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SinglePositionTween")]
+impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
+for crate::GlobalNamespace::SinglePositionTween {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
+        unsafe { std::mem::transmute(self) }
+    }
+}

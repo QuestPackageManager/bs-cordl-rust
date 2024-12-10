@@ -89,6 +89,48 @@ impl crate::UnityEngine::UIElements::StylePropertyNameCollection {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    >,
+> for crate::UnityEngine::UIElements::StylePropertyNameCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    >,
+> for crate::UnityEngine::UIElements::StylePropertyNameCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::UIElements::StylePropertyNameCollection {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::UIElements::StylePropertyNameCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -182,5 +224,61 @@ impl crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    >,
+> for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    >,
+> for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }

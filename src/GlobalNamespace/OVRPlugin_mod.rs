@@ -6716,6 +6716,20 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRPlugin+PinnedArray_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRPlugin_PinnedArray_1<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRPlugin+PinnedArray_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRPlugin_PinnedArray_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRPlugin+PlatformUI")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -7261,6 +7275,24 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRPlugin+Sizei")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRPlugin_Sizei>>
+for crate::GlobalNamespace::OVRPlugin_Sizei {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRPlugin_Sizei> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRPlugin+Sizei")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRPlugin_Sizei>>
+for crate::GlobalNamespace::OVRPlugin_Sizei {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRPlugin_Sizei> {
+        todo!()
     }
 }
 #[cfg(feature = "OVRPlugin+Skeleton")]

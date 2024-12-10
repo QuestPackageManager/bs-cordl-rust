@@ -159,3 +159,27 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Mask {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+Mask")]
+impl AsRef<crate::UnityEngine::ICanvasRaycastFilter> for crate::UnityEngine::UI::Mask {
+    fn as_ref(&self) -> &crate::UnityEngine::ICanvasRaycastFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Mask")]
+impl AsMut<crate::UnityEngine::ICanvasRaycastFilter> for crate::UnityEngine::UI::Mask {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ICanvasRaycastFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Mask")]
+impl AsRef<crate::UnityEngine::UI::IMaterialModifier> for crate::UnityEngine::UI::Mask {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::IMaterialModifier {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Mask")]
+impl AsMut<crate::UnityEngine::UI::IMaterialModifier> for crate::UnityEngine::UI::Mask {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IMaterialModifier {
+        unsafe { std::mem::transmute(self) }
+    }
+}

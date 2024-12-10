@@ -193,3 +193,51 @@ impl crate::UnityEngine::InputSystem::Utilities::Substring {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
+impl AsRef<
+    crate::System::IComparable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+> for crate::UnityEngine::InputSystem::Utilities::Substring {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<
+        crate::UnityEngine::InputSystem::Utilities::Substring,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
+impl AsMut<
+    crate::System::IComparable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+> for crate::UnityEngine::InputSystem::Utilities::Substring {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        crate::UnityEngine::InputSystem::Utilities::Substring,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+> for crate::UnityEngine::InputSystem::Utilities::Substring {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::Substring,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+> for crate::UnityEngine::InputSystem::Utilities::Substring {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::Substring,
+    > {
+        todo!()
+    }
+}

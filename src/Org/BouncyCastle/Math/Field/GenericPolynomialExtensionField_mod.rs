@@ -140,3 +140,49 @@ for crate::Org::BouncyCastle::Math::Field::GenericPolynomialExtensionField {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField")]
+impl AsRef<crate::Org::BouncyCastle::Math::Field::IExtensionField>
+for crate::Org::BouncyCastle::Math::Field::GenericPolynomialExtensionField {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::Field::IExtensionField {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField")]
+impl AsMut<crate::Org::BouncyCastle::Math::Field::IExtensionField>
+for crate::Org::BouncyCastle::Math::Field::GenericPolynomialExtensionField {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Math::Field::IExtensionField {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField")]
+impl AsRef<crate::Org::BouncyCastle::Math::Field::IFiniteField>
+for crate::Org::BouncyCastle::Math::Field::GenericPolynomialExtensionField {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::Field::IFiniteField {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField")]
+impl AsMut<crate::Org::BouncyCastle::Math::Field::IFiniteField>
+for crate::Org::BouncyCastle::Math::Field::GenericPolynomialExtensionField {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Math::Field::IFiniteField {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField")]
+impl AsRef<crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField>
+for crate::Org::BouncyCastle::Math::Field::GenericPolynomialExtensionField {
+    fn as_ref(
+        &self,
+    ) -> &crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField")]
+impl AsMut<crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField>
+for crate::Org::BouncyCastle::Math::Field::GenericPolynomialExtensionField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
+        unsafe { std::mem::transmute(self) }
+    }
+}

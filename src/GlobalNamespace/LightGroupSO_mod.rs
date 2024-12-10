@@ -109,3 +109,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightGroupSO 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LightGroupSO")]
+impl AsRef<crate::GlobalNamespace::ILightGroup>
+for crate::GlobalNamespace::LightGroupSO {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILightGroup {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LightGroupSO")]
+impl AsMut<crate::GlobalNamespace::ILightGroup>
+for crate::GlobalNamespace::LightGroupSO {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILightGroup {
+        unsafe { std::mem::transmute(self) }
+    }
+}

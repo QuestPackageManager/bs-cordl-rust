@@ -423,3 +423,31 @@ impl crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
+    >,
+> for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
+    >,
+> for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
+    > {
+        todo!()
+    }
+}

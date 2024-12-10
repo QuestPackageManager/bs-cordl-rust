@@ -311,6 +311,76 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SelectableCell {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+SelectableCell")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::HMUI::SelectableCell {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+SelectableCell")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::HMUI::SelectableCell {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+SelectableCell")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::HMUI::SelectableCell {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+SelectableCell")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::HMUI::SelectableCell {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+SelectableCell")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::HMUI::SelectableCell {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+SelectableCell")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::HMUI::SelectableCell {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+SelectableCell")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::HMUI::SelectableCell {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+SelectableCell")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::HMUI::SelectableCell {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+SelectableCell")]
+impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::HMUI::SelectableCell {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+SelectableCell")]
+impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::HMUI::SelectableCell {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HMUI+SelectableCell+TransitionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -547,6 +547,102 @@ for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::ICollection_1<T>>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::ICollection_1<T>>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::ICollection_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IList_1<T>>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IList_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IList_1<T>>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IList_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::ICollection>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::ICollection>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IList>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IList>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
 )]
@@ -705,5 +801,63 @@ for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumer
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }

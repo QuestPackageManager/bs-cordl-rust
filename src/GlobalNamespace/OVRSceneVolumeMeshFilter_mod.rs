@@ -143,6 +143,20 @@ impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+BakeMeshJob")]
+impl AsRef<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRSceneVolumeMeshFilter+BakeMeshJob")]
+impl AsMut<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -178,6 +192,20 @@ impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
+impl AsRef<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
+impl AsMut<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+        todo!()
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
@@ -218,6 +246,20 @@ impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
+impl AsRef<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
+impl AsMut<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -254,5 +296,19 @@ impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
+impl AsRef<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
+impl AsMut<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+        todo!()
     }
 }

@@ -143,3 +143,17 @@ for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OculusTestExperiment+ExperimentData")]
+impl AsRef<crate::GlobalNamespace::IExperimentData>
+for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IExperimentData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OculusTestExperiment+ExperimentData")]
+impl AsMut<crate::GlobalNamespace::IExperimentData>
+for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IExperimentData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

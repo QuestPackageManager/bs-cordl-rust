@@ -37,3 +37,19 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeviceResetEvent")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeviceResetEvent")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
+        todo!()
+    }
+}

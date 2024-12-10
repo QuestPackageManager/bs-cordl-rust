@@ -132,3 +132,37 @@ impl crate::GlobalNamespace::QuaternionSerializable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "QuaternionSerializable")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::QuaternionSerializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "QuaternionSerializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::QuaternionSerializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "QuaternionSerializable")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::QuaternionSerializable>>
+for crate::GlobalNamespace::QuaternionSerializable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::QuaternionSerializable> {
+        todo!()
+    }
+}
+#[cfg(feature = "QuaternionSerializable")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::QuaternionSerializable>>
+for crate::GlobalNamespace::QuaternionSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::GlobalNamespace::QuaternionSerializable,
+    > {
+        todo!()
+    }
+}

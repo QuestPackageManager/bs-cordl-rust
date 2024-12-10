@@ -110,3 +110,25 @@ for crate::GlobalNamespace::InitializeLocalInstruction_Reference {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
+)]
+impl AsRef<crate::System::Linq::Expressions::Interpreter::IBoxableInstruction>
+for crate::GlobalNamespace::InitializeLocalInstruction_Reference {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Linq::Expressions::Interpreter::IBoxableInstruction {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
+)]
+impl AsMut<crate::System::Linq::Expressions::Interpreter::IBoxableInstruction>
+for crate::GlobalNamespace::InitializeLocalInstruction_Reference {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Linq::Expressions::Interpreter::IBoxableInstruction {
+        unsafe { std::mem::transmute(self) }
+    }
+}

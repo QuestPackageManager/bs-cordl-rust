@@ -253,3 +253,53 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CutScoreBuffe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "CutScoreBuffer")]
+impl AsRef<crate::GlobalNamespace::IReadonlyCutScoreBuffer>
+for crate::GlobalNamespace::CutScoreBuffer {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IReadonlyCutScoreBuffer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CutScoreBuffer")]
+impl AsMut<crate::GlobalNamespace::IReadonlyCutScoreBuffer>
+for crate::GlobalNamespace::CutScoreBuffer {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IReadonlyCutScoreBuffer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CutScoreBuffer")]
+impl AsRef<crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver>
+for crate::GlobalNamespace::CutScoreBuffer {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CutScoreBuffer")]
+impl AsMut<crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver>
+for crate::GlobalNamespace::CutScoreBuffer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CutScoreBuffer")]
+impl AsRef<crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver>
+for crate::GlobalNamespace::CutScoreBuffer {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CutScoreBuffer")]
+impl AsMut<crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver>
+for crate::GlobalNamespace::CutScoreBuffer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

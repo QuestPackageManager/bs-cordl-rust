@@ -187,3 +187,17 @@ for crate::Org::BouncyCastle::Crypto::Signers::DsaDigestSigner {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaDigestSigner")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::ISigner>
+for crate::Org::BouncyCastle::Crypto::Signers::DsaDigestSigner {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ISigner {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaDigestSigner")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::ISigner>
+for crate::Org::BouncyCastle::Crypto::Signers::DsaDigestSigner {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ISigner {
+        unsafe { std::mem::transmute(self) }
+    }
+}

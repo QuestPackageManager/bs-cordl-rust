@@ -278,3 +278,51 @@ impl crate::System::Boolean {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Boolean")]
+impl AsRef<crate::System::IComparable> for crate::System::Boolean {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Boolean")]
+impl AsMut<crate::System::IComparable> for crate::System::Boolean {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Boolean")]
+impl AsRef<crate::System::IComparable_1<bool>> for crate::System::Boolean {
+    fn as_ref(&self) -> &crate::System::IComparable_1<bool> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Boolean")]
+impl AsMut<crate::System::IComparable_1<bool>> for crate::System::Boolean {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<bool> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Boolean")]
+impl AsRef<crate::System::IConvertible> for crate::System::Boolean {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Boolean")]
+impl AsMut<crate::System::IConvertible> for crate::System::Boolean {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Boolean")]
+impl AsRef<crate::System::IEquatable_1<bool>> for crate::System::Boolean {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<bool> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Boolean")]
+impl AsMut<crate::System::IEquatable_1<bool>> for crate::System::Boolean {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<bool> {
+        todo!()
+    }
+}

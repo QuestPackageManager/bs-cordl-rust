@@ -117,3 +117,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLineDa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapLineData")]
+impl AsRef<crate::GlobalNamespace::IReadonlyBeatmapLineData>
+for crate::GlobalNamespace::BeatmapLineData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IReadonlyBeatmapLineData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatmapLineData")]
+impl AsMut<crate::GlobalNamespace::IReadonlyBeatmapLineData>
+for crate::GlobalNamespace::BeatmapLineData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IReadonlyBeatmapLineData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

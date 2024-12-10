@@ -260,3 +260,21 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
+for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
+for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
+        unsafe { std::mem::transmute(self) }
+    }
+}

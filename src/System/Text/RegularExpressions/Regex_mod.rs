@@ -420,6 +420,20 @@ for crate::System::Text::RegularExpressions::Regex {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+Regex")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Text::RegularExpressions::Regex {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+Regex")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Text::RegularExpressions::Regex {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
 #[repr(C)]
 #[derive(Debug)]
@@ -602,5 +616,33 @@ impl crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
             (options, cultureKey, pattern),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey,
+    >,
+> for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey,
+    >,
+> for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey,
+    > {
+        todo!()
     }
 }

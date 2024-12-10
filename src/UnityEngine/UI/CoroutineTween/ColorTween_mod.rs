@@ -183,6 +183,20 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween")]
+impl AsRef<crate::UnityEngine::UI::CoroutineTween::ITweenValue>
+for crate::UnityEngine::UI::CoroutineTween::ColorTween {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::CoroutineTween::ITweenValue {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween")]
+impl AsMut<crate::UnityEngine::UI::CoroutineTween::ITweenValue>
+for crate::UnityEngine::UI::CoroutineTween::ColorTween {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::CoroutineTween::ITweenValue {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]
 #[repr(C)]
 #[derive(Debug)]

@@ -214,3 +214,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FileWebStream {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+FileWebStream")]
+impl AsRef<crate::System::Net::ICloseEx> for crate::System::Net::FileWebStream {
+    fn as_ref(&self) -> &crate::System::Net::ICloseEx {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+FileWebStream")]
+impl AsMut<crate::System::Net::ICloseEx> for crate::System::Net::FileWebStream {
+    fn as_mut(&mut self) -> &mut crate::System::Net::ICloseEx {
+        unsafe { std::mem::transmute(self) }
+    }
+}

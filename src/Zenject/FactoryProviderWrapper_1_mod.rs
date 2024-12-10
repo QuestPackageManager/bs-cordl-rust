@@ -83,3 +83,31 @@ for crate::Zenject::FactoryProviderWrapper_1<TContract> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+FactoryProviderWrapper_1")]
+impl<TContract: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IFactory>
+for crate::Zenject::FactoryProviderWrapper_1<TContract> {
+    fn as_ref(&self) -> &crate::Zenject::IFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+FactoryProviderWrapper_1")]
+impl<TContract: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IFactory>
+for crate::Zenject::FactoryProviderWrapper_1<TContract> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+FactoryProviderWrapper_1")]
+impl<TContract: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IFactory_1<TContract>>
+for crate::Zenject::FactoryProviderWrapper_1<TContract> {
+    fn as_ref(&self) -> &crate::Zenject::IFactory_1<TContract> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+FactoryProviderWrapper_1")]
+impl<TContract: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IFactory_1<TContract>>
+for crate::Zenject::FactoryProviderWrapper_1<TContract> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory_1<TContract> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

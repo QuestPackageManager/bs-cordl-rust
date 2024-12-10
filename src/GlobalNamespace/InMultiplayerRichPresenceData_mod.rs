@@ -184,3 +184,31 @@ for crate::GlobalNamespace::InMultiplayerRichPresenceData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "InMultiplayerRichPresenceData")]
+impl AsRef<crate::GlobalNamespace::IMultiplayerRichPresenceData>
+for crate::GlobalNamespace::InMultiplayerRichPresenceData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerRichPresenceData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "InMultiplayerRichPresenceData")]
+impl AsMut<crate::GlobalNamespace::IMultiplayerRichPresenceData>
+for crate::GlobalNamespace::InMultiplayerRichPresenceData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMultiplayerRichPresenceData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "InMultiplayerRichPresenceData")]
+impl AsRef<crate::GlobalNamespace::IRichPresenceData>
+for crate::GlobalNamespace::InMultiplayerRichPresenceData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IRichPresenceData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "InMultiplayerRichPresenceData")]
+impl AsMut<crate::GlobalNamespace::IRichPresenceData>
+for crate::GlobalNamespace::InMultiplayerRichPresenceData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRichPresenceData {
+        unsafe { std::mem::transmute(self) }
+    }
+}

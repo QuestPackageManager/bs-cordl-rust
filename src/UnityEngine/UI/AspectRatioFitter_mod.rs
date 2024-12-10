@@ -255,6 +255,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::AspectRatioFi
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+AspectRatioFitter")]
+impl AsRef<crate::UnityEngine::UI::ILayoutController>
+for crate::UnityEngine::UI::AspectRatioFitter {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+AspectRatioFitter")]
+impl AsMut<crate::UnityEngine::UI::ILayoutController>
+for crate::UnityEngine::UI::AspectRatioFitter {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+AspectRatioFitter")]
+impl AsRef<crate::UnityEngine::UI::ILayoutSelfController>
+for crate::UnityEngine::UI::AspectRatioFitter {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutSelfController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+AspectRatioFitter")]
+impl AsMut<crate::UnityEngine::UI::ILayoutSelfController>
+for crate::UnityEngine::UI::AspectRatioFitter {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutSelfController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -208,3 +208,27 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Logger {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Logger")]
+impl AsRef<crate::UnityEngine::ILogHandler> for crate::UnityEngine::Logger {
+    fn as_ref(&self) -> &crate::UnityEngine::ILogHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Logger")]
+impl AsMut<crate::UnityEngine::ILogHandler> for crate::UnityEngine::Logger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ILogHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Logger")]
+impl AsRef<crate::UnityEngine::ILogger> for crate::UnityEngine::Logger {
+    fn as_ref(&self) -> &crate::UnityEngine::ILogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Logger")]
+impl AsMut<crate::UnityEngine::ILogger> for crate::UnityEngine::Logger {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ILogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}

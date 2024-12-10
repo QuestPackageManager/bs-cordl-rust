@@ -93,3 +93,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::DigestClient {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+DigestClient")]
+impl AsRef<crate::System::Net::IAuthenticationModule>
+for crate::System::Net::DigestClient {
+    fn as_ref(&self) -> &crate::System::Net::IAuthenticationModule {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+DigestClient")]
+impl AsMut<crate::System::Net::IAuthenticationModule>
+for crate::System::Net::DigestClient {
+    fn as_mut(&mut self) -> &mut crate::System::Net::IAuthenticationModule {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -131,3 +131,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGLib::Polyglot::LocalizedText
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGLib+Polyglot+LocalizedTextMesh")]
+impl AsRef<crate::BGLib::Polyglot::ILocalize>
+for crate::BGLib::Polyglot::LocalizedTextMesh {
+    fn as_ref(&self) -> &crate::BGLib::Polyglot::ILocalize {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGLib+Polyglot+LocalizedTextMesh")]
+impl AsMut<crate::BGLib::Polyglot::ILocalize>
+for crate::BGLib::Polyglot::LocalizedTextMesh {
+    fn as_mut(&mut self) -> &mut crate::BGLib::Polyglot::ILocalize {
+        unsafe { std::mem::transmute(self) }
+    }
+}

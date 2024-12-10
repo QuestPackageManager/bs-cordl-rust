@@ -83,3 +83,49 @@ impl crate::UnityEngine::UIElements::RareData {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+RareData")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::RareData>>
+for crate::UnityEngine::UIElements::RareData {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::RareData> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+RareData")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::RareData>>
+for crate::UnityEngine::UIElements::RareData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::RareData> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+RareData")]
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::RareData,
+    >,
+> for crate::UnityEngine::UIElements::RareData {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::RareData,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+RareData")]
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::RareData,
+    >,
+> for crate::UnityEngine::UIElements::RareData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::RareData,
+    > {
+        todo!()
+    }
+}

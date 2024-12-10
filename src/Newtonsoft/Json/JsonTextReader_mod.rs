@@ -1913,3 +1913,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::JsonTextRead
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonTextReader")]
+impl AsRef<crate::Newtonsoft::Json::IJsonLineInfo>
+for crate::Newtonsoft::Json::JsonTextReader {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::IJsonLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+JsonTextReader")]
+impl AsMut<crate::Newtonsoft::Json::IJsonLineInfo>
+for crate::Newtonsoft::Json::JsonTextReader {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::IJsonLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

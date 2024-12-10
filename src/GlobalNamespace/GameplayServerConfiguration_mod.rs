@@ -131,3 +131,55 @@ impl crate::GlobalNamespace::GameplayServerConfiguration {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "GameplayServerConfiguration")]
+impl AsRef<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    >,
+> for crate::GlobalNamespace::GameplayServerConfiguration {
+    fn as_ref(
+        &self,
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "GameplayServerConfiguration")]
+impl AsMut<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    >,
+> for crate::GlobalNamespace::GameplayServerConfiguration {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "GameplayServerConfiguration")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::GlobalNamespace::GameplayServerConfiguration>,
+> for crate::GlobalNamespace::GameplayServerConfiguration {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "GameplayServerConfiguration")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::GlobalNamespace::GameplayServerConfiguration>,
+> for crate::GlobalNamespace::GameplayServerConfiguration {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
+        todo!()
+    }
+}

@@ -146,3 +146,45 @@ for crate::GlobalNamespace::VRPlatformEventsDebugger {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "VRPlatformEventsDebugger")]
+impl AsRef<crate::GlobalNamespace::IVerboseLogger>
+for crate::GlobalNamespace::VRPlatformEventsDebugger {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVerboseLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "VRPlatformEventsDebugger")]
+impl AsMut<crate::GlobalNamespace::IVerboseLogger>
+for crate::GlobalNamespace::VRPlatformEventsDebugger {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVerboseLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "VRPlatformEventsDebugger")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::VRPlatformEventsDebugger {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "VRPlatformEventsDebugger")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::VRPlatformEventsDebugger {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "VRPlatformEventsDebugger")]
+impl AsRef<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::VRPlatformEventsDebugger {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "VRPlatformEventsDebugger")]
+impl AsMut<crate::Zenject::IInitializable>
+for crate::GlobalNamespace::VRPlatformEventsDebugger {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

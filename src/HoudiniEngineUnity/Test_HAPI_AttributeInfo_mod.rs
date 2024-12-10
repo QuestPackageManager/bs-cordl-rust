@@ -68,3 +68,31 @@ for crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+Test_HAPI_AttributeInfo")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo,
+    >,
+> for crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+Test_HAPI_AttributeInfo")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo,
+    >,
+> for crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

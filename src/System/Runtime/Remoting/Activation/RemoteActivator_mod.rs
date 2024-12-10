@@ -70,3 +70,19 @@ for crate::System::Runtime::Remoting::Activation::RemoteActivator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Activation+RemoteActivator")]
+impl AsRef<crate::System::Runtime::Remoting::Activation::IActivator>
+for crate::System::Runtime::Remoting::Activation::RemoteActivator {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Activation::IActivator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Activation+RemoteActivator")]
+impl AsMut<crate::System::Runtime::Remoting::Activation::IActivator>
+for crate::System::Runtime::Remoting::Activation::RemoteActivator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Remoting::Activation::IActivator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -170,6 +170,22 @@ for crate::UnityEngine::UIElements::AbstractProgressBar {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
+impl AsRef<crate::UnityEngine::UIElements::INotifyValueChanged_1<f32>>
+for crate::UnityEngine::UIElements::AbstractProgressBar {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::INotifyValueChanged_1<f32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
+impl AsMut<crate::UnityEngine::UIElements::INotifyValueChanged_1<f32>>
+for crate::UnityEngine::UIElements::AbstractProgressBar {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::INotifyValueChanged_1<f32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]

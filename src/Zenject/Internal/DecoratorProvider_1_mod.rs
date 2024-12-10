@@ -171,3 +171,21 @@ for crate::Zenject::Internal::DecoratorProvider_1<TContract> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+Internal+DecoratorProvider_1")]
+impl<
+    TContract: quest_hook::libil2cpp::Type,
+> AsRef<crate::Zenject::Internal::IDecoratorProvider>
+for crate::Zenject::Internal::DecoratorProvider_1<TContract> {
+    fn as_ref(&self) -> &crate::Zenject::Internal::IDecoratorProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+Internal+DecoratorProvider_1")]
+impl<
+    TContract: quest_hook::libil2cpp::Type,
+> AsMut<crate::Zenject::Internal::IDecoratorProvider>
+for crate::Zenject::Internal::DecoratorProvider_1<TContract> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::Internal::IDecoratorProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

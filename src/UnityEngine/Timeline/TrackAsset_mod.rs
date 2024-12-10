@@ -1198,6 +1198,48 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::TrackAs
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::Timeline::TrackAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::Timeline::TrackAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset")]
+impl AsRef<crate::UnityEngine::Timeline::ICurvesOwner>
+for crate::UnityEngine::Timeline::TrackAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ICurvesOwner {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset")]
+impl AsMut<crate::UnityEngine::Timeline::ICurvesOwner>
+for crate::UnityEngine::Timeline::TrackAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ICurvesOwner {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset")]
+impl AsRef<crate::UnityEngine::Timeline::IPropertyPreview>
+for crate::UnityEngine::Timeline::TrackAsset {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::IPropertyPreview {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset")]
+impl AsMut<crate::UnityEngine::Timeline::IPropertyPreview>
+for crate::UnityEngine::Timeline::TrackAsset {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::IPropertyPreview {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
 #[repr(C)]
 #[derive(Debug)]

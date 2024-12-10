@@ -62,3 +62,15 @@ impl crate::Mono::SafeGPtrArrayHandle {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Mono+SafeGPtrArrayHandle")]
+impl AsRef<crate::System::IDisposable> for crate::Mono::SafeGPtrArrayHandle {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "Mono+SafeGPtrArrayHandle")]
+impl AsMut<crate::System::IDisposable> for crate::Mono::SafeGPtrArrayHandle {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

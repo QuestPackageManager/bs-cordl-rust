@@ -87,3 +87,43 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HealthCheckSe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HealthCheckService")]
+impl AsRef<crate::GlobalNamespace::IHealthCheckService>
+for crate::GlobalNamespace::HealthCheckService {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IHealthCheckService {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HealthCheckService")]
+impl AsMut<crate::GlobalNamespace::IHealthCheckService>
+for crate::GlobalNamespace::HealthCheckService {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IHealthCheckService {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HealthCheckService")]
+impl AsRef<crate::GlobalNamespace::IPollable>
+for crate::GlobalNamespace::HealthCheckService {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HealthCheckService")]
+impl AsMut<crate::GlobalNamespace::IPollable>
+for crate::GlobalNamespace::HealthCheckService {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HealthCheckService")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::HealthCheckService {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HealthCheckService")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::HealthCheckService {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

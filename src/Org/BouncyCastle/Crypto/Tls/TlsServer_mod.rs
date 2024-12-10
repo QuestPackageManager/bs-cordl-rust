@@ -265,3 +265,17 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsServer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsServer")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer>
+for crate::Org::BouncyCastle::Crypto::Tls::TlsServer {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsPeer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsServer")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer>
+for crate::Org::BouncyCastle::Crypto::Tls::TlsServer {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsPeer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

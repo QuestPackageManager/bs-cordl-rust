@@ -250,6 +250,48 @@ for crate::GlobalNamespace::LevelCompletionResults {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LevelCompletionResults")]
+impl AsRef<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::LevelCompletionResults,
+    >,
+> for crate::GlobalNamespace::LevelCompletionResults {
+    fn as_ref(
+        &self,
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::LevelCompletionResults,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LevelCompletionResults")]
+impl AsMut<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::LevelCompletionResults,
+    >,
+> for crate::GlobalNamespace::LevelCompletionResults {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::LevelCompletionResults,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LevelCompletionResults")]
+impl AsRef<crate::System::IComparable>
+for crate::GlobalNamespace::LevelCompletionResults {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LevelCompletionResults")]
+impl AsMut<crate::System::IComparable>
+for crate::GlobalNamespace::LevelCompletionResults {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "LevelCompletionResults+LevelEndAction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -115,3 +115,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::IntegratedSubsyst
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+IntegratedSubsystem")]
+impl AsRef<crate::UnityEngine::ISubsystem> for crate::UnityEngine::IntegratedSubsystem {
+    fn as_ref(&self) -> &crate::UnityEngine::ISubsystem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+IntegratedSubsystem")]
+impl AsMut<crate::UnityEngine::ISubsystem> for crate::UnityEngine::IntegratedSubsystem {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISubsystem {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -221,6 +221,34 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+    >,
+> for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+    >,
+> for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+    > {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
 #[repr(C)]
 #[derive(Debug, Clone)]

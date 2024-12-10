@@ -1311,6 +1311,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::Task
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+Tasks+Task")]
+impl AsRef<crate::System::IAsyncResult> for crate::System::Threading::Tasks::Task {
+    fn as_ref(&self) -> &crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task")]
+impl AsMut<crate::System::IAsyncResult> for crate::System::Threading::Tasks::Task {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncResult {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task")]
+impl AsRef<crate::System::IDisposable> for crate::System::Threading::Tasks::Task {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task")]
+impl AsMut<crate::System::IDisposable> for crate::System::Threading::Tasks::Task {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task")]
+impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Threading::Tasks::Task {
+    fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task")]
+impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Threading::Tasks::Task {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1469,5 +1507,19 @@ for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
+impl AsRef<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
+    fn as_ref(&self) -> &crate::System::Threading::Tasks::ITaskCompletionAction {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
+impl AsMut<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::Tasks::ITaskCompletionAction {
+        unsafe { std::mem::transmute(self) }
     }
 }

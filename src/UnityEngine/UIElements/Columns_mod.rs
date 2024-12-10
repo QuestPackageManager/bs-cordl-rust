@@ -658,6 +658,76 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Colum
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Columns")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::UnityEngine::UIElements::Column,
+    >,
+> for crate::UnityEngine::UIElements::Columns {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        *mut crate::UnityEngine::UIElements::Column,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Columns")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::UnityEngine::UIElements::Column,
+    >,
+> for crate::UnityEngine::UIElements::Columns {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        *mut crate::UnityEngine::UIElements::Column,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Columns")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::UIElements::Column,
+    >,
+> for crate::UnityEngine::UIElements::Columns {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::UIElements::Column,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Columns")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::UIElements::Column,
+    >,
+> for crate::UnityEngine::UIElements::Columns {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::UnityEngine::UIElements::Column,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Columns")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::UIElements::Columns {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Columns")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::UIElements::Columns {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Columns+StretchMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

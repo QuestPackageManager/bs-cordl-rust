@@ -83,3 +83,37 @@ for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Rendering+BuiltinRuntimeReflectionSystem")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Rendering+BuiltinRuntimeReflectionSystem")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Rendering+BuiltinRuntimeReflectionSystem")]
+impl AsRef<
+    crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
+> for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Rendering+BuiltinRuntimeReflectionSystem")]
+impl AsMut<
+    crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
+> for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem {
+        unsafe { std::mem::transmute(self) }
+    }
+}

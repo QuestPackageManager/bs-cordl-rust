@@ -1039,6 +1039,62 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LiteNetLibConnectionManager")]
+impl AsRef<crate::GlobalNamespace::IConnectionManager>
+for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectionManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager")]
+impl AsMut<crate::GlobalNamespace::IConnectionManager>
+for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectionManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager")]
+impl AsRef<crate::GlobalNamespace::IPollable>
+for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager")]
+impl AsMut<crate::GlobalNamespace::IPollable>
+for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager")]
+impl AsRef<crate::LiteNetLib::INetEventListener>
+for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    fn as_ref(&self) -> &crate::LiteNetLib::INetEventListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager")]
+impl AsMut<crate::LiteNetLib::INetEventListener>
+for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::INetEventListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1179,6 +1235,36 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
+impl AsRef<
+    crate::GlobalNamespace::IConnectionInitParams_1<
+        *mut crate::GlobalNamespace::LiteNetLibConnectionManager,
+    >,
+>
+for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IConnectionInitParams_1<
+        *mut crate::GlobalNamespace::LiteNetLibConnectionManager,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
+impl AsMut<
+    crate::GlobalNamespace::IConnectionInitParams_1<
+        *mut crate::GlobalNamespace::LiteNetLibConnectionManager,
+    >,
+>
+for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IConnectionInitParams_1<
+        *mut crate::GlobalNamespace::LiteNetLibConnectionManager,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
@@ -1333,6 +1419,48 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
+impl AsRef<crate::GlobalNamespace::IConnection>
+for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConnection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
+impl AsMut<crate::GlobalNamespace::IConnection>
+for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+    >,
+> for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+    >,
+> for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]

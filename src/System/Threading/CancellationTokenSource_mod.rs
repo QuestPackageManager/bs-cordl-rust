@@ -337,3 +337,17 @@ for crate::System::Threading::CancellationTokenSource {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+CancellationTokenSource")]
+impl AsRef<crate::System::IDisposable>
+for crate::System::Threading::CancellationTokenSource {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+CancellationTokenSource")]
+impl AsMut<crate::System::IDisposable>
+for crate::System::Threading::CancellationTokenSource {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

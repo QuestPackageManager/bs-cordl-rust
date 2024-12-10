@@ -65,3 +65,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::WindowsConsoleDriver {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+WindowsConsoleDriver")]
+impl AsRef<crate::System::IConsoleDriver> for crate::System::WindowsConsoleDriver {
+    fn as_ref(&self) -> &crate::System::IConsoleDriver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+WindowsConsoleDriver")]
+impl AsMut<crate::System::IConsoleDriver> for crate::System::WindowsConsoleDriver {
+    fn as_mut(&mut self) -> &mut crate::System::IConsoleDriver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -134,3 +134,21 @@ impl crate::UnityEngine::ProBuilder::EdgeLookup {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::EdgeLookup>>
+for crate::UnityEngine::ProBuilder::EdgeLookup {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::EdgeLookup> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::EdgeLookup>>
+for crate::UnityEngine::ProBuilder::EdgeLookup {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::EdgeLookup> {
+        todo!()
+    }
+}

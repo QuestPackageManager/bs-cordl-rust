@@ -708,3 +708,41 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_GeoNod
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<*mut crate::HoudiniEngineUnity::HEU_GeoNode>,
+> for crate::HoudiniEngineUnity::HEU_GeoNode {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_GeoNode,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<*mut crate::HoudiniEngineUnity::HEU_GeoNode>,
+> for crate::HoudiniEngineUnity::HEU_GeoNode {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_GeoNode,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::HoudiniEngineUnity::HEU_GeoNode {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::HoudiniEngineUnity::HEU_GeoNode {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

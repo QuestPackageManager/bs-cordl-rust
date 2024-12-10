@@ -123,3 +123,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PrefabInstantiatorCac
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+PrefabInstantiatorCached")]
+impl AsRef<crate::Zenject::IPrefabInstantiator>
+for crate::Zenject::PrefabInstantiatorCached {
+    fn as_ref(&self) -> &crate::Zenject::IPrefabInstantiator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+PrefabInstantiatorCached")]
+impl AsMut<crate::Zenject::IPrefabInstantiator>
+for crate::Zenject::PrefabInstantiatorCached {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IPrefabInstantiator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

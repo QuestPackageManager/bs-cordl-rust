@@ -133,3 +133,43 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeIdentifiers_Displa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+TypeIdentifiers+Display")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::System::TypeName>>
+for crate::System::TypeIdentifiers_Display {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<*mut crate::System::TypeName> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeIdentifiers+Display")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::System::TypeName>>
+for crate::System::TypeIdentifiers_Display {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::System::TypeName> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeIdentifiers+Display")]
+impl AsRef<crate::System::TypeIdentifier> for crate::System::TypeIdentifiers_Display {
+    fn as_ref(&self) -> &crate::System::TypeIdentifier {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeIdentifiers+Display")]
+impl AsMut<crate::System::TypeIdentifier> for crate::System::TypeIdentifiers_Display {
+    fn as_mut(&mut self) -> &mut crate::System::TypeIdentifier {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeIdentifiers+Display")]
+impl AsRef<crate::System::TypeName> for crate::System::TypeIdentifiers_Display {
+    fn as_ref(&self) -> &crate::System::TypeName {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeIdentifiers+Display")]
+impl AsMut<crate::System::TypeName> for crate::System::TypeIdentifiers_Display {
+    fn as_mut(&mut self) -> &mut crate::System::TypeName {
+        unsafe { std::mem::transmute(self) }
+    }
+}

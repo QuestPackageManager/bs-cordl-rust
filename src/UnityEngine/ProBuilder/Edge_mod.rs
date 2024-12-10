@@ -131,3 +131,21 @@ impl crate::UnityEngine::ProBuilder::Edge {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Edge")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Edge>>
+for crate::UnityEngine::ProBuilder::Edge {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Edge> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+Edge")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Edge>>
+for crate::UnityEngine::ProBuilder::Edge {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Edge> {
+        todo!()
+    }
+}

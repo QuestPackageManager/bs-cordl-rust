@@ -55,3 +55,41 @@ impl crate::UnityEngine::Animations::AnimationScriptPlayable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationScriptPlayable")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::Animations::AnimationScriptPlayable>,
+> for crate::UnityEngine::Animations::AnimationScriptPlayable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationScriptPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationScriptPlayable")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::Animations::AnimationScriptPlayable>,
+> for crate::UnityEngine::Animations::AnimationScriptPlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationScriptPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationScriptPlayable")]
+impl AsRef<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationScriptPlayable {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationScriptPlayable")]
+impl AsMut<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationScriptPlayable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}

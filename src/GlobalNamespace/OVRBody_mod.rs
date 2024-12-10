@@ -203,3 +203,37 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBody {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRBody")]
+impl AsRef<crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider>
+for crate::GlobalNamespace::OVRBody {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRBody")]
+impl AsMut<crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider>
+for crate::GlobalNamespace::OVRBody {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRBody")]
+impl AsRef<crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider>
+for crate::GlobalNamespace::OVRBody {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRBody")]
+impl AsMut<crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider>
+for crate::GlobalNamespace::OVRBody {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

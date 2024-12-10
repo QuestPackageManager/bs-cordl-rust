@@ -659,3 +659,101 @@ for crate::Newtonsoft::Json::Linq::JProperty_JPropertyList {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JProperty_JPropertyList {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JProperty_JPropertyList {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JProperty_JPropertyList {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JProperty_JPropertyList {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList")]
+impl AsRef<
+    crate::System::Collections::Generic::IList_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JProperty_JPropertyList {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IList_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList")]
+impl AsMut<
+    crate::System::Collections::Generic::IList_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JProperty_JPropertyList {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IList_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JProperty_JPropertyList {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JProperty_JPropertyList {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

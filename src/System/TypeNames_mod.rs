@@ -128,3 +128,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeNames_ATypeName {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+TypeNames+ATypeName")]
+impl AsRef<crate::System::IEquatable_1<*mut crate::System::TypeName>>
+for crate::System::TypeNames_ATypeName {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<*mut crate::System::TypeName> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeNames+ATypeName")]
+impl AsMut<crate::System::IEquatable_1<*mut crate::System::TypeName>>
+for crate::System::TypeNames_ATypeName {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<*mut crate::System::TypeName> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeNames+ATypeName")]
+impl AsRef<crate::System::TypeName> for crate::System::TypeNames_ATypeName {
+    fn as_ref(&self) -> &crate::System::TypeName {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeNames+ATypeName")]
+impl AsMut<crate::System::TypeName> for crate::System::TypeNames_ATypeName {
+    fn as_mut(&mut self) -> &mut crate::System::TypeName {
+        unsafe { std::mem::transmute(self) }
+    }
+}

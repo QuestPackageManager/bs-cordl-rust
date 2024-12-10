@@ -408,3 +408,29 @@ impl crate::UnityEngine::Rect {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Rect")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rect>>
+for crate::UnityEngine::Rect {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Rect> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rect")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rect>>
+for crate::UnityEngine::Rect {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rect> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rect")]
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Rect {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rect")]
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Rect {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}

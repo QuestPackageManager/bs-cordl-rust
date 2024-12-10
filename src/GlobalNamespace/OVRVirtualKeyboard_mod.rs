@@ -661,6 +661,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRVirtualKey
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRVirtualKeyboard")]
+impl AsRef<crate::GlobalNamespace::OVRManager_EventListener>
+for crate::GlobalNamespace::OVRVirtualKeyboard {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRManager_EventListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRVirtualKeyboard")]
+impl AsMut<crate::GlobalNamespace::OVRManager_EventListener>
+for crate::GlobalNamespace::OVRVirtualKeyboard {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::OVRManager_EventListener {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "OVRVirtualKeyboard+BaseInputSource")]
 #[repr(C)]
 #[derive(Debug)]
@@ -757,6 +771,36 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRVirtualKeyboard+BaseInputSource")]
+impl AsRef<crate::GlobalNamespace::OVRVirtualKeyboard_IInputSource>
+for crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRVirtualKeyboard_IInputSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRVirtualKeyboard+BaseInputSource")]
+impl AsMut<crate::GlobalNamespace::OVRVirtualKeyboard_IInputSource>
+for crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::OVRVirtualKeyboard_IInputSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRVirtualKeyboard+BaseInputSource")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRVirtualKeyboard+BaseInputSource")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboard+ControllerInputSource")]

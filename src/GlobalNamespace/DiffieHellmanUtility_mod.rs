@@ -167,6 +167,20 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
+impl AsRef<crate::GlobalNamespace::IDiffieHellmanKeyPair>
+for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IDiffieHellmanKeyPair {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
+impl AsMut<crate::GlobalNamespace::IDiffieHellmanKeyPair>
+for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IDiffieHellmanKeyPair {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
 #[repr(C)]
 #[derive(Debug)]
@@ -290,6 +304,20 @@ for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
+impl AsRef<crate::GlobalNamespace::IDiffieHellmanKeyPair>
+for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IDiffieHellmanKeyPair {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
+impl AsMut<crate::GlobalNamespace::IDiffieHellmanKeyPair>
+for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IDiffieHellmanKeyPair {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "DiffieHellmanUtility+KeyType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -370,5 +398,19 @@ for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }

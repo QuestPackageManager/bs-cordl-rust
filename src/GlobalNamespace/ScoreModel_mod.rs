@@ -133,6 +133,34 @@ for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
+impl AsRef<
+    crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+    >,
+> for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
+impl AsMut<
+    crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+    >,
+> for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        *mut crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "ScoreModel+NoteScoreDefinition")]
 #[repr(C)]
 #[derive(Debug)]

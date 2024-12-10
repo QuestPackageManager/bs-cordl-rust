@@ -493,3 +493,17 @@ for crate::System::Security::Claims::ClaimsIdentity {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Security+Claims+ClaimsIdentity")]
+impl AsRef<crate::System::Security::Principal::IIdentity>
+for crate::System::Security::Claims::ClaimsIdentity {
+    fn as_ref(&self) -> &crate::System::Security::Principal::IIdentity {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+Claims+ClaimsIdentity")]
+impl AsMut<crate::System::Security::Principal::IIdentity>
+for crate::System::Security::Claims::ClaimsIdentity {
+    fn as_mut(&mut self) -> &mut crate::System::Security::Principal::IIdentity {
+        unsafe { std::mem::transmute(self) }
+    }
+}

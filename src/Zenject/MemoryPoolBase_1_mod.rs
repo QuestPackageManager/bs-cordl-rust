@@ -378,3 +378,45 @@ for crate::Zenject::MemoryPoolBase_1<TContract> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+MemoryPoolBase_1")]
+impl<TContract: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+for crate::Zenject::MemoryPoolBase_1<TContract> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+MemoryPoolBase_1")]
+impl<TContract: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+for crate::Zenject::MemoryPoolBase_1<TContract> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+MemoryPoolBase_1")]
+impl<TContract: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IMemoryPool>
+for crate::Zenject::MemoryPoolBase_1<TContract> {
+    fn as_ref(&self) -> &crate::Zenject::IMemoryPool {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+MemoryPoolBase_1")]
+impl<TContract: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IMemoryPool>
+for crate::Zenject::MemoryPoolBase_1<TContract> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IMemoryPool {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+MemoryPoolBase_1")]
+impl<TContract: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IValidatable>
+for crate::Zenject::MemoryPoolBase_1<TContract> {
+    fn as_ref(&self) -> &crate::Zenject::IValidatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+MemoryPoolBase_1")]
+impl<TContract: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IValidatable>
+for crate::Zenject::MemoryPoolBase_1<TContract> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IValidatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

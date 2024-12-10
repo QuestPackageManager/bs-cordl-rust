@@ -172,3 +172,37 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyC
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
+)]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
+    >,
+>
+for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
+)]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
+    >,
+>
+for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

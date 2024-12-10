@@ -265,6 +265,34 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
+impl AsRef<crate::System::IDisposable>
+for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
+impl AsMut<crate::System::IDisposable>
+for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
+impl AsRef<crate::Zenject::IInitializable>
+for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
+impl AsMut<crate::Zenject::IInitializable>
+for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
 )]

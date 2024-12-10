@@ -198,3 +198,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FileBrowserTa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "FileBrowserTableView")]
+impl AsRef<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::FileBrowserTableView {
+    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "FileBrowserTableView")]
+impl AsMut<crate::HMUI::TableView_IDataSource>
+for crate::GlobalNamespace::FileBrowserTableView {
+    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
+        unsafe { std::mem::transmute(self) }
+    }
+}

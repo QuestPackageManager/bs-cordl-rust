@@ -105,3 +105,17 @@ for crate::GlobalNamespace::OVRSemanticClassification {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRSemanticClassification")]
+impl AsRef<crate::GlobalNamespace::IOVRSceneComponent>
+for crate::GlobalNamespace::OVRSemanticClassification {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IOVRSceneComponent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRSemanticClassification")]
+impl AsMut<crate::GlobalNamespace::IOVRSceneComponent>
+for crate::GlobalNamespace::OVRSemanticClassification {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IOVRSceneComponent {
+        unsafe { std::mem::transmute(self) }
+    }
+}

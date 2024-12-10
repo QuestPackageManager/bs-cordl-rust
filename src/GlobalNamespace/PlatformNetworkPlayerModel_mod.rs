@@ -140,3 +140,31 @@ for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
+impl AsRef<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::PlatformNetworkPlayerModel,
+    >,
+> for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::PlatformNetworkPlayerModel,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
+impl AsMut<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::PlatformNetworkPlayerModel,
+    >,
+> for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
+        *mut crate::GlobalNamespace::PlatformNetworkPlayerModel,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}

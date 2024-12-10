@@ -121,3 +121,17 @@ for crate::System::Collections::CompatibleComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+CompatibleComparer")]
+impl AsRef<crate::System::Collections::IEqualityComparer>
+for crate::System::Collections::CompatibleComparer {
+    fn as_ref(&self) -> &crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+CompatibleComparer")]
+impl AsMut<crate::System::Collections::IEqualityComparer>
+for crate::System::Collections::CompatibleComparer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEqualityComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -92,3 +92,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IOSelectorJob {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+IOSelectorJob")]
+impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::IOSelectorJob {
+    fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IOSelectorJob")]
+impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::IOSelectorJob {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -69,3 +69,19 @@ for crate::System::Diagnostics::DiagnosticsConfigurationHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Diagnostics+DiagnosticsConfigurationHandler")]
+impl AsRef<crate::System::Configuration::IConfigurationSectionHandler>
+for crate::System::Diagnostics::DiagnosticsConfigurationHandler {
+    fn as_ref(&self) -> &crate::System::Configuration::IConfigurationSectionHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Diagnostics+DiagnosticsConfigurationHandler")]
+impl AsMut<crate::System::Configuration::IConfigurationSectionHandler>
+for crate::System::Diagnostics::DiagnosticsConfigurationHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Configuration::IConfigurationSectionHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}

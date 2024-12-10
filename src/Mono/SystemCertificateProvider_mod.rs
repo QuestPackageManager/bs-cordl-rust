@@ -166,3 +166,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::SystemCertificateProvide
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Mono+SystemCertificateProvider")]
+impl AsRef<crate::Mono::ISystemCertificateProvider>
+for crate::Mono::SystemCertificateProvider {
+    fn as_ref(&self) -> &crate::Mono::ISystemCertificateProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Mono+SystemCertificateProvider")]
+impl AsMut<crate::Mono::ISystemCertificateProvider>
+for crate::Mono::SystemCertificateProvider {
+    fn as_mut(&mut self) -> &mut crate::Mono::ISystemCertificateProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

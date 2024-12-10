@@ -310,6 +310,30 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch")]
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
+> for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch")]
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
+> for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    > {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
 #[repr(C)]
 #[derive(Debug, Clone)]

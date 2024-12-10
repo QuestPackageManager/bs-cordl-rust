@@ -82,3 +82,17 @@ for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
+impl AsRef<crate::GlobalNamespace::IPollable>
+for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
+impl AsMut<crate::GlobalNamespace::IPollable>
+for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -153,3 +153,17 @@ for crate::UnityEngine::UIElements::DefaultDragAndDropClient {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DefaultDragAndDropClient")]
+impl AsRef<crate::UnityEngine::UIElements::IDragAndDrop>
+for crate::UnityEngine::UIElements::DefaultDragAndDropClient {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IDragAndDrop {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+DefaultDragAndDropClient")]
+impl AsMut<crate::UnityEngine::UIElements::IDragAndDrop>
+for crate::UnityEngine::UIElements::DefaultDragAndDropClient {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IDragAndDrop {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -128,3 +128,23 @@ impl crate::UnityEngine::UIElements::TransformOrigin {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TransformOrigin")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransformOrigin>>
+for crate::UnityEngine::UIElements::TransformOrigin {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransformOrigin> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TransformOrigin")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransformOrigin>>
+for crate::UnityEngine::UIElements::TransformOrigin {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::TransformOrigin,
+    > {
+        todo!()
+    }
+}

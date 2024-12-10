@@ -145,3 +145,21 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+XR+MeshGenerationResult")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::MeshGenerationResult>>
+for crate::UnityEngine::XR::MeshGenerationResult {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::MeshGenerationResult> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+XR+MeshGenerationResult")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::MeshGenerationResult>>
+for crate::UnityEngine::XR::MeshGenerationResult {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::MeshGenerationResult> {
+        todo!()
+    }
+}

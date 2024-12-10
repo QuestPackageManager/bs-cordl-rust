@@ -156,3 +156,21 @@ impl crate::UnityEngine::UIElements::Background {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Background")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Background>>
+for crate::UnityEngine::UIElements::Background {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Background> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Background")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Background>>
+for crate::UnityEngine::UIElements::Background {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Background> {
+        todo!()
+    }
+}

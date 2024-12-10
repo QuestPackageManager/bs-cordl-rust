@@ -260,6 +260,54 @@ for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
+impl AsRef<
+    crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+> for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::InputRemoting_Message,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
+impl AsMut<
+    crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+> for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::InputRemoting_Message,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
+impl AsRef<
+    crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+> for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IObserver_1<
+        crate::UnityEngine::InputSystem::InputRemoting_Message,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
+impl AsMut<
+    crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+> for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IObserver_1<
+        crate::UnityEngine::InputSystem::InputRemoting_Message,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
 #[repr(C)]
 #[derive(Debug)]
@@ -329,5 +377,19 @@ for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }

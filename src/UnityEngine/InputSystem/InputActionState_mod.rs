@@ -1416,6 +1416,52 @@ for crate::UnityEngine::InputSystem::InputActionState {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
+impl AsRef<crate::System::ICloneable>
+for crate::UnityEngine::InputSystem::InputActionState {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
+impl AsMut<crate::System::ICloneable>
+for crate::UnityEngine::InputSystem::InputActionState {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionState {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionState {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
+for crate::UnityEngine::InputSystem::InputActionState {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
+for crate::UnityEngine::InputSystem::InputActionState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -2687,6 +2733,20 @@ impl crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]

@@ -96,3 +96,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::ConsoleLogger 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGNet+Logging+ConsoleLogger")]
+impl AsRef<crate::BGNet::Logging::Debug_ILogger>
+for crate::BGNet::Logging::ConsoleLogger {
+    fn as_ref(&self) -> &crate::BGNet::Logging::Debug_ILogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGNet+Logging+ConsoleLogger")]
+impl AsMut<crate::BGNet::Logging::Debug_ILogger>
+for crate::BGNet::Logging::ConsoleLogger {
+    fn as_mut(&mut self) -> &mut crate::BGNet::Logging::Debug_ILogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}

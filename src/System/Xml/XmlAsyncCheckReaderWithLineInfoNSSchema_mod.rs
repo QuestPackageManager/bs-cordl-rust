@@ -143,3 +143,17 @@ for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
+impl AsRef<crate::System::Xml::Schema::IXmlSchemaInfo>
+for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
+    fn as_ref(&self) -> &crate::System::Xml::Schema::IXmlSchemaInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
+impl AsMut<crate::System::Xml::Schema::IXmlSchemaInfo>
+for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::Schema::IXmlSchemaInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}

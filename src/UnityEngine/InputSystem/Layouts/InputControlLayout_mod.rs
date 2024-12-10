@@ -1314,6 +1314,20 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstan
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
 #[repr(C)]
 #[derive(Debug, Clone)]

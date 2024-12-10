@@ -164,6 +164,28 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasep
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+ConfigureBasepointCallback"
+)]
+impl AsRef<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasepointCallback {
+    fn as_ref(
+        &self,
+    ) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+ConfigureBasepointCallback"
+)]
+impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasepointCallback {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+MapPointCallback")]
 #[repr(C)]
 #[derive(Debug)]
@@ -255,6 +277,24 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallba
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+MapPointCallback")]
+impl AsRef<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallback {
+    fn as_ref(
+        &self,
+    ) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+MapPointCallback")]
+impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallback {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeCallback")]
@@ -374,6 +414,24 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCall
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeCallback")]
+impl AsRef<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCallback {
+    fn as_ref(
+        &self,
+    ) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeCallback")]
+impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCallback {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
@@ -517,5 +575,27 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWith
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeWithPointMapCallback"
+)]
+impl AsRef<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWithPointMapCallback {
+    fn as_ref(
+        &self,
+    ) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeWithPointMapCallback"
+)]
+impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWithPointMapCallback {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+        unsafe { std::mem::transmute(self) }
     }
 }

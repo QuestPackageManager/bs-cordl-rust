@@ -67,3 +67,45 @@ impl crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationMotionXToDeltaPlayable")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable,
+    >,
+> for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationMotionXToDeltaPlayable")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable,
+    >,
+> for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationMotionXToDeltaPlayable")]
+impl AsRef<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Animations+AnimationMotionXToDeltaPlayable")]
+impl AsMut<crate::UnityEngine::Playables::IPlayable>
+for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}

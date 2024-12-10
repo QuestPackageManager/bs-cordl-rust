@@ -206,3 +206,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataExpression {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Data+DataExpression")]
+impl AsRef<crate::System::Data::IFilter> for crate::System::Data::DataExpression {
+    fn as_ref(&self) -> &crate::System::Data::IFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Data+DataExpression")]
+impl AsMut<crate::System::Data::IFilter> for crate::System::Data::DataExpression {
+    fn as_mut(&mut self) -> &mut crate::System::Data::IFilter {
+        unsafe { std::mem::transmute(self) }
+    }
+}

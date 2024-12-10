@@ -409,6 +409,38 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEqualityComparer_1<T>>
+for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
+    TKey,
+    TValue,
+    T,
+> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEqualityComparer_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEqualityComparer_1<T>>
+for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
+    TKey,
+    TValue,
+    T,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+Entry")]
 #[repr(C)]
 #[derive(Debug)]

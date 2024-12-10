@@ -146,6 +146,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BpmTimeProces
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BpmTimeProcessor")]
+impl AsRef<crate::GlobalNamespace::IBeatToTimeConverter>
+for crate::GlobalNamespace::BpmTimeProcessor {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatToTimeConverter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BpmTimeProcessor")]
+impl AsMut<crate::GlobalNamespace::IBeatToTimeConverter>
+for crate::GlobalNamespace::BpmTimeProcessor {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatToTimeConverter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
 #[repr(C)]
 #[derive(Debug, Clone)]

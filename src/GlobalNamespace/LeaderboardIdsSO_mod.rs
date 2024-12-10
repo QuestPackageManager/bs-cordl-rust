@@ -125,6 +125,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LeaderboardId
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LeaderboardIdsSO")]
+impl AsRef<crate::GlobalNamespace::ILeaderboardIdContainer>
+for crate::GlobalNamespace::LeaderboardIdsSO {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILeaderboardIdContainer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LeaderboardIdsSO")]
+impl AsMut<crate::GlobalNamespace::ILeaderboardIdContainer>
+for crate::GlobalNamespace::LeaderboardIdsSO {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILeaderboardIdContainer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "LeaderboardIdsSO+LeaderboardIdData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -219,5 +233,19 @@ for crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "LeaderboardIdsSO+LeaderboardIdData")]
+impl AsRef<crate::GlobalNamespace::ILeaderboardIdData>
+for crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILeaderboardIdData {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LeaderboardIdsSO+LeaderboardIdData")]
+impl AsMut<crate::GlobalNamespace::ILeaderboardIdData>
+for crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILeaderboardIdData {
+        unsafe { std::mem::transmute(self) }
     }
 }

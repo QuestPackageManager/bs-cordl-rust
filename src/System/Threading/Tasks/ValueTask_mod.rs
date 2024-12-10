@@ -165,6 +165,24 @@ impl crate::System::Threading::Tasks::ValueTask {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "System+Threading+Tasks+ValueTask")]
+impl AsRef<crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask>>
+for crate::System::Threading::Tasks::ValueTask {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+ValueTask")]
+impl AsMut<crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask>>
+for crate::System::Threading::Tasks::ValueTask {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask> {
+        todo!()
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+ValueTask+ValueTaskSourceAsTask")]
 #[repr(C)]
 #[derive(Debug)]

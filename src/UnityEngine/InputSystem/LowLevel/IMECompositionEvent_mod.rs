@@ -38,3 +38,19 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionEvent {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionEvent")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionEvent {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionEvent")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionEvent {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
+        todo!()
+    }
+}

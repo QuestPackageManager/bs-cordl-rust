@@ -128,3 +128,21 @@ impl crate::UnityEngine::UIElements::Cursor {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Cursor")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor>>
+for crate::UnityEngine::UIElements::Cursor {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Cursor")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor>>
+for crate::UnityEngine::UIElements::Cursor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor> {
+        todo!()
+    }
+}

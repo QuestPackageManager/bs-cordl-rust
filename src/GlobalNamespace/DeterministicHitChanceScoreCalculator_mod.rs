@@ -70,3 +70,17 @@ for crate::GlobalNamespace::DeterministicHitChanceScoreCalculator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DeterministicHitChanceScoreCalculator")]
+impl AsRef<crate::GlobalNamespace::IMockPlayerScoreCalculator>
+for crate::GlobalNamespace::DeterministicHitChanceScoreCalculator {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMockPlayerScoreCalculator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DeterministicHitChanceScoreCalculator")]
+impl AsMut<crate::GlobalNamespace::IMockPlayerScoreCalculator>
+for crate::GlobalNamespace::DeterministicHitChanceScoreCalculator {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMockPlayerScoreCalculator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

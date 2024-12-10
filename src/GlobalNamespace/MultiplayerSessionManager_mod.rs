@@ -942,6 +942,20 @@ for crate::GlobalNamespace::MultiplayerSessionManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerSessionManager")]
+impl AsRef<crate::GlobalNamespace::IMultiplayerSessionManager>
+for crate::GlobalNamespace::MultiplayerSessionManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerSessionManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerSessionManager")]
+impl AsMut<crate::GlobalNamespace::IMultiplayerSessionManager>
+for crate::GlobalNamespace::MultiplayerSessionManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMultiplayerSessionManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

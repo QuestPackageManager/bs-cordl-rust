@@ -1043,6 +1043,116 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JToken
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsRef<crate::Newtonsoft::Json::IJsonLineInfo>
+for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::IJsonLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsMut<crate::Newtonsoft::Json::IJsonLineInfo>
+for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::IJsonLineInfo {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsRef<
+    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_ref(
+        &self,
+    ) -> &crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsMut<
+    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    >,
+> for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        *mut crate::Newtonsoft::Json::Linq::JToken,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsRef<crate::System::Dynamic::IDynamicMetaObjectProvider>
+for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_ref(&self) -> &crate::System::Dynamic::IDynamicMetaObjectProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsMut<crate::System::Dynamic::IDynamicMetaObjectProvider>
+for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_mut(&mut self) -> &mut crate::System::Dynamic::IDynamicMetaObjectProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsRef<crate::System::ICloneable> for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
+impl AsMut<crate::System::ICloneable> for crate::Newtonsoft::Json::Linq::JToken {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Linq+JToken+LineInfoAnnotation")]
 #[repr(C)]
 #[derive(Debug)]

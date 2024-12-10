@@ -252,6 +252,34 @@ for crate::GlobalNamespace::MissionLevelGameplayManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MissionLevelGameplayManager")]
+impl AsRef<crate::GlobalNamespace::ILevelEndActions>
+for crate::GlobalNamespace::MissionLevelGameplayManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelEndActions {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionLevelGameplayManager")]
+impl AsMut<crate::GlobalNamespace::ILevelEndActions>
+for crate::GlobalNamespace::MissionLevelGameplayManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelEndActions {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionLevelGameplayManager")]
+impl AsRef<crate::GlobalNamespace::ILevelStartController>
+for crate::GlobalNamespace::MissionLevelGameplayManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelStartController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionLevelGameplayManager")]
+impl AsMut<crate::GlobalNamespace::ILevelStartController>
+for crate::GlobalNamespace::MissionLevelGameplayManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelStartController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "MissionLevelGameplayManager+GameState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

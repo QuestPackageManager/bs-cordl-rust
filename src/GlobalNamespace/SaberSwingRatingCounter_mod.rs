@@ -202,3 +202,31 @@ for crate::GlobalNamespace::SaberSwingRatingCounter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SaberSwingRatingCounter")]
+impl AsRef<crate::GlobalNamespace::ISaberMovementDataProcessor>
+for crate::GlobalNamespace::SaberSwingRatingCounter {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ISaberMovementDataProcessor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SaberSwingRatingCounter")]
+impl AsMut<crate::GlobalNamespace::ISaberMovementDataProcessor>
+for crate::GlobalNamespace::SaberSwingRatingCounter {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ISaberMovementDataProcessor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SaberSwingRatingCounter")]
+impl AsRef<crate::GlobalNamespace::ISaberSwingRatingCounter>
+for crate::GlobalNamespace::SaberSwingRatingCounter {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ISaberSwingRatingCounter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "SaberSwingRatingCounter")]
+impl AsMut<crate::GlobalNamespace::ISaberSwingRatingCounter>
+for crate::GlobalNamespace::SaberSwingRatingCounter {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ISaberSwingRatingCounter {
+        unsafe { std::mem::transmute(self) }
+    }
+}

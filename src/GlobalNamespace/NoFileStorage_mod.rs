@@ -118,3 +118,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoFileStorage
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoFileStorage")]
+impl AsRef<crate::GlobalNamespace::IFileStorage>
+for crate::GlobalNamespace::NoFileStorage {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IFileStorage {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NoFileStorage")]
+impl AsMut<crate::GlobalNamespace::IFileStorage>
+for crate::GlobalNamespace::NoFileStorage {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IFileStorage {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -137,6 +137,32 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
+impl<
+    TSource: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IObservable_1<TResult>>
+for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
+    TSource,
+    TResult,
+> {
+    fn as_ref(&self) -> &crate::System::IObservable_1<TResult> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
+impl<
+    TSource: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IObservable_1<TResult>>
+for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
+    TSource,
+    TResult,
+> {
+    fn as_mut(&mut self) -> &mut crate::System::IObservable_1<TResult> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select")]
 #[repr(C)]
 #[derive(Debug)]
@@ -304,5 +330,31 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select<
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select")]
+impl<
+    TSource: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IObserver_1<TSource>>
+for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select<
+    TSource,
+    TResult,
+> {
+    fn as_ref(&self) -> &crate::System::IObserver_1<TSource> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select")]
+impl<
+    TSource: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IObserver_1<TSource>>
+for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select<
+    TSource,
+    TResult,
+> {
+    fn as_mut(&mut self) -> &mut crate::System::IObserver_1<TSource> {
+        unsafe { std::mem::transmute(self) }
     }
 }

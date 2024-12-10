@@ -154,6 +154,24 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBinding
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
+)]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
+)]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -276,6 +294,58 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
             (state, parameter, mapIndex),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+)]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+)]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+)]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+)]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
     }
 }
 #[cfg(
@@ -430,6 +500,76 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
     }
 }
 #[cfg(
@@ -1410,6 +1550,24 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOpe
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
+)]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
+)]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(

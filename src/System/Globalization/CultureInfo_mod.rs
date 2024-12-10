@@ -573,6 +573,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::Culture
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Globalization+CultureInfo")]
+impl AsRef<crate::System::ICloneable> for crate::System::Globalization::CultureInfo {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Globalization+CultureInfo")]
+impl AsMut<crate::System::ICloneable> for crate::System::Globalization::CultureInfo {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Globalization+CultureInfo")]
+impl AsRef<crate::System::IFormatProvider>
+for crate::System::Globalization::CultureInfo {
+    fn as_ref(&self) -> &crate::System::IFormatProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Globalization+CultureInfo")]
+impl AsMut<crate::System::IFormatProvider>
+for crate::System::Globalization::CultureInfo {
+    fn as_mut(&mut self) -> &mut crate::System::IFormatProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "System+Globalization+CultureInfo+Data")]
 #[repr(C)]
 #[derive(Debug, Clone)]

@@ -52,3 +52,15 @@ impl crate::Mono::SafeStringMarshal {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Mono+SafeStringMarshal")]
+impl AsRef<crate::System::IDisposable> for crate::Mono::SafeStringMarshal {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "Mono+SafeStringMarshal")]
+impl AsMut<crate::System::IDisposable> for crate::Mono::SafeStringMarshal {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

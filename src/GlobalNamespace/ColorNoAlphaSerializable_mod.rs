@@ -96,3 +96,37 @@ impl crate::GlobalNamespace::ColorNoAlphaSerializable {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "ColorNoAlphaSerializable")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ColorNoAlphaSerializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "ColorNoAlphaSerializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::ColorNoAlphaSerializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "ColorNoAlphaSerializable")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::ColorNoAlphaSerializable>>
+for crate::GlobalNamespace::ColorNoAlphaSerializable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::ColorNoAlphaSerializable> {
+        todo!()
+    }
+}
+#[cfg(feature = "ColorNoAlphaSerializable")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::ColorNoAlphaSerializable>>
+for crate::GlobalNamespace::ColorNoAlphaSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::GlobalNamespace::ColorNoAlphaSerializable,
+    > {
+        todo!()
+    }
+}

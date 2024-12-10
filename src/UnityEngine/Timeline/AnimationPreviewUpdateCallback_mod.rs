@@ -82,3 +82,19 @@ for crate::UnityEngine::Timeline::AnimationPreviewUpdateCallback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationPreviewUpdateCallback")]
+impl AsRef<crate::UnityEngine::Timeline::ITimelineEvaluateCallback>
+for crate::UnityEngine::Timeline::AnimationPreviewUpdateCallback {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineEvaluateCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+AnimationPreviewUpdateCallback")]
+impl AsMut<crate::UnityEngine::Timeline::ITimelineEvaluateCallback>
+for crate::UnityEngine::Timeline::AnimationPreviewUpdateCallback {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::Timeline::ITimelineEvaluateCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}

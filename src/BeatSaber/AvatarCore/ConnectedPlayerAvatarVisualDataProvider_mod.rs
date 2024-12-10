@@ -73,3 +73,19 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarVisualDataProvider")]
+impl AsRef<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>
+for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
+    fn as_ref(&self) -> &crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarVisualDataProvider")]
+impl AsMut<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>
+for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}

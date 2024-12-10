@@ -72,6 +72,34 @@ for crate::HoudiniEngineUnity::HEU_ParameterModifier {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_ParameterModifier,
+    >,
+> for crate::HoudiniEngineUnity::HEU_ParameterModifier {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_ParameterModifier,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_ParameterModifier,
+    >,
+> for crate::HoudiniEngineUnity::HEU_ParameterModifier {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::HEU_ParameterModifier,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier+ModifierAction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

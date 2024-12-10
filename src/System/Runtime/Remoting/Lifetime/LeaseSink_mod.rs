@@ -110,3 +110,19 @@ for crate::System::Runtime::Remoting::Lifetime::LeaseSink {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Lifetime+LeaseSink")]
+impl AsRef<crate::System::Runtime::Remoting::Messaging::IMessageSink>
+for crate::System::Runtime::Remoting::Lifetime::LeaseSink {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMessageSink {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Lifetime+LeaseSink")]
+impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessageSink>
+for crate::System::Runtime::Remoting::Lifetime::LeaseSink {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMessageSink {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -94,6 +94,24 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
+impl AsRef<crate::UnityEngine::ResourceManagement::Util::IInitializableObject>
+for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
+impl AsMut<crate::UnityEngine::ResourceManagement::Util::IInitializableObject>
+for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization+CacheInitOp"
 )]
@@ -206,5 +224,25 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_C
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization+CacheInitOp"
+)]
+impl AsRef<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
+for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_CacheInitOp {
+    fn as_ref(&self) -> &crate::UnityEngine::ResourceManagement::IUpdateReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization+CacheInitOp"
+)]
+impl AsMut<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
+for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_CacheInitOp {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::IUpdateReceiver {
+        unsafe { std::mem::transmute(self) }
     }
 }

@@ -113,3 +113,59 @@ impl crate::UnityEngine::InputSystem::Utilities::InternedString {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
+impl AsRef<
+    crate::System::IComparable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::InternedString {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
+impl AsMut<
+    crate::System::IComparable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::InternedString {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::InternedString {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    >,
+> for crate::UnityEngine::InputSystem::Utilities::InternedString {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    > {
+        todo!()
+    }
+}

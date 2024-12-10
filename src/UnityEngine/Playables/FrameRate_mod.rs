@@ -115,3 +115,21 @@ impl crate::UnityEngine::Playables::FrameRate {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Playables+FrameRate")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Playables::FrameRate>>
+for crate::UnityEngine::Playables::FrameRate {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Playables::FrameRate> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Playables+FrameRate")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Playables::FrameRate>>
+for crate::UnityEngine::Playables::FrameRate {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Playables::FrameRate> {
+        todo!()
+    }
+}

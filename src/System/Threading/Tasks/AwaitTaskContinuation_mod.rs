@@ -127,3 +127,17 @@ for crate::System::Threading::Tasks::AwaitTaskContinuation {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
+impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Threading::Tasks::AwaitTaskContinuation {
+    fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
+impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Threading::Tasks::AwaitTaskContinuation {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -295,6 +295,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRScenePlane
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRScenePlane")]
+impl AsRef<crate::GlobalNamespace::IOVRSceneComponent>
+for crate::GlobalNamespace::OVRScenePlane {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IOVRSceneComponent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRScenePlane")]
+impl AsMut<crate::GlobalNamespace::IOVRSceneComponent>
+for crate::GlobalNamespace::OVRScenePlane {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IOVRSceneComponent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -342,6 +356,20 @@ impl crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
+impl AsRef<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
+impl AsMut<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
 #[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -377,5 +405,19 @@ impl crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
             (),
         )?;
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
+impl AsRef<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
+impl AsMut<crate::Unity::Jobs::IJob>
+for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+        todo!()
     }
 }

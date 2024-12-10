@@ -129,6 +129,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatEffectSpa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatEffectSpawner")]
+impl AsRef<crate::GlobalNamespace::IBeatEffectDidFinishEvent>
+for crate::GlobalNamespace::BeatEffectSpawner {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatEffectDidFinishEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BeatEffectSpawner")]
+impl AsMut<crate::GlobalNamespace::IBeatEffectDidFinishEvent>
+for crate::GlobalNamespace::BeatEffectSpawner {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatEffectDidFinishEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "BeatEffectSpawner+InitData")]
 #[repr(C)]
 #[derive(Debug)]

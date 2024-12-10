@@ -184,3 +184,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::LayoutRebuild
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+LayoutRebuilder")]
+impl AsRef<crate::UnityEngine::UI::ICanvasElement>
+for crate::UnityEngine::UI::LayoutRebuilder {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+LayoutRebuilder")]
+impl AsMut<crate::UnityEngine::UI::ICanvasElement>
+for crate::UnityEngine::UI::LayoutRebuilder {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -399,6 +399,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameplayModif
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "GameplayModifiers")]
+impl AsRef<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::GameplayModifiers,
+    >,
+> for crate::GlobalNamespace::GameplayModifiers {
+    fn as_ref(
+        &self,
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::GameplayModifiers,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GameplayModifiers")]
+impl AsMut<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::GameplayModifiers,
+    >,
+> for crate::GlobalNamespace::GameplayModifiers {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        *mut crate::GlobalNamespace::GameplayModifiers,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "GameplayModifiers+EnabledObstacleType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

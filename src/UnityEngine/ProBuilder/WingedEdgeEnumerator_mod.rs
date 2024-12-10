@@ -110,3 +110,59 @@ for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    >,
+> for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    >,
+> for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

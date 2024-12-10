@@ -160,6 +160,84 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "StandardScoreSyncState")]
+impl AsRef<
+    crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncState {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "StandardScoreSyncState")]
+impl AsMut<
+    crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "StandardScoreSyncState")]
+impl AsRef<
+    crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncState {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "StandardScoreSyncState")]
+impl AsMut<
+    crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "StandardScoreSyncState")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::StandardScoreSyncState {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "StandardScoreSyncState")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::StandardScoreSyncState {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
 #[cfg(feature = "StandardScoreSyncState+Score")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

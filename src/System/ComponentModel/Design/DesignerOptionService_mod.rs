@@ -555,6 +555,24 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
     }
 }
 #[cfg(
+    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
+)]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
+)]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
 )]
 #[repr(C)]

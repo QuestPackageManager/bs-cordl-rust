@@ -409,3 +409,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DevicelessVRH
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DevicelessVRHelper")]
+impl AsRef<crate::GlobalNamespace::IVRPlatformHelper>
+for crate::GlobalNamespace::DevicelessVRHelper {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVRPlatformHelper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DevicelessVRHelper")]
+impl AsMut<crate::GlobalNamespace::IVRPlatformHelper>
+for crate::GlobalNamespace::DevicelessVRHelper {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRPlatformHelper {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DevicelessVRHelper")]
+impl AsRef<crate::GlobalNamespace::IVerboseLogger>
+for crate::GlobalNamespace::DevicelessVRHelper {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVerboseLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DevicelessVRHelper")]
+impl AsMut<crate::GlobalNamespace::IVerboseLogger>
+for crate::GlobalNamespace::DevicelessVRHelper {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVerboseLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}

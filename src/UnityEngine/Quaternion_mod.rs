@@ -170,3 +170,31 @@ impl crate::UnityEngine::Quaternion {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Quaternion")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Quaternion>>
+for crate::UnityEngine::Quaternion {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Quaternion> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Quaternion")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Quaternion>>
+for crate::UnityEngine::Quaternion {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Quaternion> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Quaternion")]
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Quaternion {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Quaternion")]
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Quaternion {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}

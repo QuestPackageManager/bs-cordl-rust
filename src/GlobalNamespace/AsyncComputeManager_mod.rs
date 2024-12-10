@@ -109,3 +109,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AsyncComputeM
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "AsyncComputeManager")]
+impl AsRef<crate::GlobalNamespace::IAsyncComputeManager>
+for crate::GlobalNamespace::AsyncComputeManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IAsyncComputeManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "AsyncComputeManager")]
+impl AsMut<crate::GlobalNamespace::IAsyncComputeManager>
+for crate::GlobalNamespace::AsyncComputeManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAsyncComputeManager {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "AsyncComputeManager")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::AsyncComputeManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "AsyncComputeManager")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::AsyncComputeManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}

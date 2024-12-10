@@ -88,6 +88,46 @@ for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2")]
+impl<
+    TSet: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::IPropertyBag>
+for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2")]
+impl<
+    TSet: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::IPropertyBag>
+for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2")]
+impl<
+    TSet: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::IPropertyBag_1<TSet>>
+for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag_1<TSet> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2")]
+impl<
+    TSet: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::IPropertyBag_1<TSet>>
+for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag_1<TSet> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
 #[repr(C)]
 #[derive(Debug)]

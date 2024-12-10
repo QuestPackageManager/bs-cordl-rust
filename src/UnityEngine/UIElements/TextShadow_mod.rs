@@ -65,3 +65,21 @@ impl crate::UnityEngine::UIElements::TextShadow {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TextShadow")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TextShadow>>
+for crate::UnityEngine::UIElements::TextShadow {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TextShadow> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TextShadow")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TextShadow>>
+for crate::UnityEngine::UIElements::TextShadow {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::TextShadow> {
+        todo!()
+    }
+}

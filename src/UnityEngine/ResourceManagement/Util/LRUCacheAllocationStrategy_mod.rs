@@ -145,3 +145,21 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy")]
+impl AsRef<crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy>
+for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCacheAllocationStrategy")]
+impl AsMut<crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy>
+for crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy {
+        unsafe { std::mem::transmute(self) }
+    }
+}

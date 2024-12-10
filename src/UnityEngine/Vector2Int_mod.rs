@@ -129,3 +129,31 @@ impl crate::UnityEngine::Vector2Int {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+Vector2Int")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Vector2Int>>
+for crate::UnityEngine::Vector2Int {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Vector2Int> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Vector2Int")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Vector2Int>>
+for crate::UnityEngine::Vector2Int {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Vector2Int> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Vector2Int")]
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Vector2Int {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Vector2Int")]
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Vector2Int {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}

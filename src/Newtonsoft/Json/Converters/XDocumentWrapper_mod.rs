@@ -307,3 +307,31 @@ for crate::Newtonsoft::Json::Converters::XDocumentWrapper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]
+impl AsRef<crate::Newtonsoft::Json::Converters::IXmlDocument>
+for crate::Newtonsoft::Json::Converters::XDocumentWrapper {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Converters::IXmlDocument {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]
+impl AsMut<crate::Newtonsoft::Json::Converters::IXmlDocument>
+for crate::Newtonsoft::Json::Converters::XDocumentWrapper {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Converters::IXmlDocument {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]
+impl AsRef<crate::Newtonsoft::Json::Converters::IXmlNode>
+for crate::Newtonsoft::Json::Converters::XDocumentWrapper {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Converters::IXmlNode {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]
+impl AsMut<crate::Newtonsoft::Json::Converters::IXmlNode>
+for crate::Newtonsoft::Json::Converters::XDocumentWrapper {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Converters::IXmlNode {
+        unsafe { std::mem::transmute(self) }
+    }
+}

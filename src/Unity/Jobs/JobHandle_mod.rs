@@ -52,3 +52,19 @@ impl crate::Unity::Jobs::JobHandle {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "Unity+Jobs+JobHandle")]
+impl AsRef<crate::System::IEquatable_1<crate::Unity::Jobs::JobHandle>>
+for crate::Unity::Jobs::JobHandle {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::Unity::Jobs::JobHandle> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Jobs+JobHandle")]
+impl AsMut<crate::System::IEquatable_1<crate::Unity::Jobs::JobHandle>>
+for crate::Unity::Jobs::JobHandle {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::Unity::Jobs::JobHandle> {
+        todo!()
+    }
+}

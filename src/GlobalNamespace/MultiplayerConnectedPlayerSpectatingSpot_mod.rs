@@ -242,3 +242,17 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerConnectedPlayerSpectatingSpot")]
+impl AsRef<crate::GlobalNamespace::IMultiplayerSpectatingSpot>
+for crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerSpectatingSpot {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerConnectedPlayerSpectatingSpot")]
+impl AsMut<crate::GlobalNamespace::IMultiplayerSpectatingSpot>
+for crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMultiplayerSpectatingSpot {
+        unsafe { std::mem::transmute(self) }
+    }
+}

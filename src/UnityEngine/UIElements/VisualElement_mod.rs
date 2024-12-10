@@ -3714,6 +3714,98 @@ for crate::UnityEngine::UIElements::VisualElement {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsRef<crate::UnityEngine::UIElements::Experimental::ITransitionAnimations>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::Experimental::ITransitionAnimations {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsMut<crate::UnityEngine::UIElements::Experimental::ITransitionAnimations>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::Experimental::ITransitionAnimations {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsRef<crate::UnityEngine::UIElements::IExperimentalFeatures>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IExperimentalFeatures {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsMut<crate::UnityEngine::UIElements::IExperimentalFeatures>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IExperimentalFeatures {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsRef<crate::UnityEngine::UIElements::IResolvedStyle>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IResolvedStyle {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsMut<crate::UnityEngine::UIElements::IResolvedStyle>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IResolvedStyle {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsRef<crate::UnityEngine::UIElements::IStylePropertyAnimations>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IStylePropertyAnimations {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsMut<crate::UnityEngine::UIElements::IStylePropertyAnimations>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStylePropertyAnimations {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsRef<crate::UnityEngine::UIElements::ITransform>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::ITransform {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsMut<crate::UnityEngine::UIElements::ITransform>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::ITransform {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsRef<crate::UnityEngine::UIElements::IVisualElementScheduler>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IVisualElementScheduler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+impl AsMut<crate::UnityEngine::UIElements::IVisualElementScheduler>
+for crate::UnityEngine::UIElements::VisualElement {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IVisualElementScheduler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
 #[repr(C)]
 #[derive(Debug)]
@@ -3901,6 +3993,38 @@ for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+impl AsRef<crate::UnityEngine::UIElements::IVisualElementPanelActivatable>
+for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+impl AsMut<crate::UnityEngine::UIElements::IVisualElementPanelActivatable>
+for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+impl AsRef<crate::UnityEngine::UIElements::IVisualElementScheduledItem>
+for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IVisualElementScheduledItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+impl AsMut<crate::UnityEngine::UIElements::IVisualElementScheduledItem>
+for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IVisualElementScheduledItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
 #[repr(C)]
 #[derive(Debug)]
@@ -4082,6 +4206,20 @@ for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+impl AsRef<crate::UnityEngine::UIElements::ICustomStyle>
+for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::ICustomStyle {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+impl AsMut<crate::UnityEngine::UIElements::ICustomStyle>
+for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::ICustomStyle {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]

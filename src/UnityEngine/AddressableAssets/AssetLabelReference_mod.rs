@@ -105,3 +105,17 @@ for crate::UnityEngine::AddressableAssets::AssetLabelReference {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+AddressableAssets+AssetLabelReference")]
+impl AsRef<crate::UnityEngine::AddressableAssets::IKeyEvaluator>
+for crate::UnityEngine::AddressableAssets::AssetLabelReference {
+    fn as_ref(&self) -> &crate::UnityEngine::AddressableAssets::IKeyEvaluator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+AddressableAssets+AssetLabelReference")]
+impl AsMut<crate::UnityEngine::AddressableAssets::IKeyEvaluator>
+for crate::UnityEngine::AddressableAssets::AssetLabelReference {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::AddressableAssets::IKeyEvaluator {
+        unsafe { std::mem::transmute(self) }
+    }
+}

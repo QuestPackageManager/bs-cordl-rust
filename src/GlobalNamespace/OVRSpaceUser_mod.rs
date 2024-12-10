@@ -60,3 +60,15 @@ impl crate::GlobalNamespace::OVRSpaceUser {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "OVRSpaceUser")]
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::OVRSpaceUser {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRSpaceUser")]
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRSpaceUser {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}

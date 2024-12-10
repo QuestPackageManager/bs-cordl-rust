@@ -188,6 +188,42 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
+impl AsRef<crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
+impl AsMut<crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
+impl AsRef<crate::UnityEngine::ResourceManagement::Util::IInitializableObject>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
+impl AsMut<crate::UnityEngine::ResourceManagement::Util::IInitializableObject>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]

@@ -168,3 +168,21 @@ for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+LocationWrapper")]
+impl AsRef<crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation>
+for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+LocationWrapper")]
+impl AsMut<crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation>
+for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -546,6 +546,20 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

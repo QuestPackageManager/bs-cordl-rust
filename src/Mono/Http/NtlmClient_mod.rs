@@ -95,3 +95,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Http::NtlmClient {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Mono+Http+NtlmClient")]
+impl AsRef<crate::System::Net::IAuthenticationModule> for crate::Mono::Http::NtlmClient {
+    fn as_ref(&self) -> &crate::System::Net::IAuthenticationModule {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Mono+Http+NtlmClient")]
+impl AsMut<crate::System::Net::IAuthenticationModule> for crate::Mono::Http::NtlmClient {
+    fn as_mut(&mut self) -> &mut crate::System::Net::IAuthenticationModule {
+        unsafe { std::mem::transmute(self) }
+    }
+}

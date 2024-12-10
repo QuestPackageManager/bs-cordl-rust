@@ -144,6 +144,20 @@ for crate::GlobalNamespace::NamedIntListController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NamedIntListController")]
+impl AsRef<crate::HMUI::IValueChanger_1<i32>>
+for crate::GlobalNamespace::NamedIntListController {
+    fn as_ref(&self) -> &crate::HMUI::IValueChanger_1<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NamedIntListController")]
+impl AsMut<crate::HMUI::IValueChanger_1<i32>>
+for crate::GlobalNamespace::NamedIntListController {
+    fn as_mut(&mut self) -> &mut crate::HMUI::IValueChanger_1<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "NamedIntListController+TextValuePair")]
 #[repr(C)]
 #[derive(Debug)]

@@ -644,6 +644,20 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter")]
+impl AsRef<crate::UnityEngine::UIElements::IStylePainter>
+for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IStylePainter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter")]
+impl AsMut<crate::UnityEngine::UIElements::IStylePainter>
+for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IStylePainter {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
 #[repr(C)]
 #[derive(Debug, Clone)]

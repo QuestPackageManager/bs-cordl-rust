@@ -413,3 +413,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TermInfoDriver {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+TermInfoDriver")]
+impl AsRef<crate::System::IConsoleDriver> for crate::System::TermInfoDriver {
+    fn as_ref(&self) -> &crate::System::IConsoleDriver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TermInfoDriver")]
+impl AsMut<crate::System::IConsoleDriver> for crate::System::TermInfoDriver {
+    fn as_mut(&mut self) -> &mut crate::System::IConsoleDriver {
+        unsafe { std::mem::transmute(self) }
+    }
+}

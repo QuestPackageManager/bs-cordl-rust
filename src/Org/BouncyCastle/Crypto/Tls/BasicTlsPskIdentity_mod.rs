@@ -131,3 +131,17 @@ for crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+BasicTlsPskIdentity")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity>
+for crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+BasicTlsPskIdentity")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity>
+for crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
+        unsafe { std::mem::transmute(self) }
+    }
+}

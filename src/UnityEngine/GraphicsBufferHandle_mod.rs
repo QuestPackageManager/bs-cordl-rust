@@ -53,3 +53,21 @@ impl crate::UnityEngine::GraphicsBufferHandle {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle>>
+for crate::UnityEngine::GraphicsBufferHandle {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle>>
+for crate::UnityEngine::GraphicsBufferHandle {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle> {
+        todo!()
+    }
+}

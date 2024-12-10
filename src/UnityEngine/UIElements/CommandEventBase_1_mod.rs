@@ -122,3 +122,17 @@ for crate::UnityEngine::UIElements::CommandEventBase_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CommandEventBase_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::UnityEngine::UIElements::ICommandEvent>
+for crate::UnityEngine::UIElements::CommandEventBase_1<T> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::ICommandEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+CommandEventBase_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::UIElements::ICommandEvent>
+for crate::UnityEngine::UIElements::CommandEventBase_1<T> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::ICommandEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}

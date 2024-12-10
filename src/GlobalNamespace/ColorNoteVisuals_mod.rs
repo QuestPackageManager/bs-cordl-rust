@@ -188,3 +188,53 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorNoteVisu
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ColorNoteVisuals")]
+impl AsRef<crate::GlobalNamespace::INoteControllerDidInitEvent>
+for crate::GlobalNamespace::ColorNoteVisuals {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteControllerDidInitEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ColorNoteVisuals")]
+impl AsMut<crate::GlobalNamespace::INoteControllerDidInitEvent>
+for crate::GlobalNamespace::ColorNoteVisuals {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteControllerDidInitEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ColorNoteVisuals")]
+impl AsRef<crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent>
+for crate::GlobalNamespace::ColorNoteVisuals {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ColorNoteVisuals")]
+impl AsMut<crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent>
+for crate::GlobalNamespace::ColorNoteVisuals {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ColorNoteVisuals")]
+impl AsRef<crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent>
+for crate::GlobalNamespace::ColorNoteVisuals {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ColorNoteVisuals")]
+impl AsMut<crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent>
+for crate::GlobalNamespace::ColorNoteVisuals {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}

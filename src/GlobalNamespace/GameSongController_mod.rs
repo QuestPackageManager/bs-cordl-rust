@@ -157,3 +157,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameSongContr
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "GameSongController")]
+impl AsRef<crate::GlobalNamespace::IStartSeekSongController>
+for crate::GlobalNamespace::GameSongController {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IStartSeekSongController {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GameSongController")]
+impl AsMut<crate::GlobalNamespace::IStartSeekSongController>
+for crate::GlobalNamespace::GameSongController {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IStartSeekSongController {
+        unsafe { std::mem::transmute(self) }
+    }
+}

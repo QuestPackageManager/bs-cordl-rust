@@ -149,3 +149,17 @@ for crate::GlobalNamespace::DeactivateOnInputFocusCapture {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DeactivateOnInputFocusCapture")]
+impl AsRef<crate::GlobalNamespace::IVerboseLogger>
+for crate::GlobalNamespace::DeactivateOnInputFocusCapture {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVerboseLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "DeactivateOnInputFocusCapture")]
+impl AsMut<crate::GlobalNamespace::IVerboseLogger>
+for crate::GlobalNamespace::DeactivateOnInputFocusCapture {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVerboseLogger {
+        unsafe { std::mem::transmute(self) }
+    }
+}

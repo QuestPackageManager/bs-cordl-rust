@@ -62,6 +62,20 @@ for crate::GlobalNamespace::StaticJumpOffsetYProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "StaticJumpOffsetYProvider")]
+impl AsRef<crate::GlobalNamespace::IJumpOffsetYProvider>
+for crate::GlobalNamespace::StaticJumpOffsetYProvider {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IJumpOffsetYProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StaticJumpOffsetYProvider")]
+impl AsMut<crate::GlobalNamespace::IJumpOffsetYProvider>
+for crate::GlobalNamespace::StaticJumpOffsetYProvider {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IJumpOffsetYProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "StaticJumpOffsetYProvider+InitData")]
 #[repr(C)]
 #[derive(Debug)]

@@ -62,3 +62,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::ReverseCom
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+ReverseCompare")]
+impl AsRef<crate::System::Collections::IComparer>
+for crate::HoudiniEngineUnity::ReverseCompare {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+ReverseCompare")]
+impl AsMut<crate::System::Collections::IComparer>
+for crate::HoudiniEngineUnity::ReverseCompare {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+        unsafe { std::mem::transmute(self) }
+    }
+}

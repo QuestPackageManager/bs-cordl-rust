@@ -157,3 +157,27 @@ for crate::GlobalNamespace::ReferenceCountingCache_2<TKey, TValue> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ReferenceCountingCache_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::GlobalNamespace::IReferenceCountingCache_2<TKey, TValue>>
+for crate::GlobalNamespace::ReferenceCountingCache_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IReferenceCountingCache_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ReferenceCountingCache_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::GlobalNamespace::IReferenceCountingCache_2<TKey, TValue>>
+for crate::GlobalNamespace::ReferenceCountingCache_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IReferenceCountingCache_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

@@ -160,3 +160,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::CurveNodeD
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+CurveNodeData")]
+impl AsRef<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::CurveNodeData,
+    >,
+> for crate::HoudiniEngineUnity::CurveNodeData {
+    fn as_ref(
+        &self,
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::CurveNodeData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+CurveNodeData")]
+impl AsMut<
+    crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::CurveNodeData,
+    >,
+> for crate::HoudiniEngineUnity::CurveNodeData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+        *mut crate::HoudiniEngineUnity::CurveNodeData,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
