@@ -74,6 +74,17 @@ impl crate::GlobalNamespace::IReadonlyBeatmapData {
         > = __cordl_object.invoke("GetFilteredCopy", (processDataItem))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsBasicEventSpecialKeywordEnabled(
+        &mut self,
+        keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IsBasicEventSpecialKeywordEnabled", (keyword))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn add_beatmapEventDataWasInsertedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
@@ -147,6 +158,13 @@ impl crate::GlobalNamespace::IReadonlyBeatmapData {
         > = __cordl_object.invoke("get_allBeatmapDataItems", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_areValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_areValid", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_bombsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -173,16 +191,6 @@ impl crate::GlobalNamespace::IReadonlyBeatmapData {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_obstaclesCount", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_spawnRotationEventsCount(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("get_spawnRotationEventsCount", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_specialBasicBeatmapEventKeywords(

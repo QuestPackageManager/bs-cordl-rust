@@ -15,6 +15,7 @@ pub struct LightPairRotationEventEffect {
     pub _transformR: *mut crate::UnityEngine::Transform,
     pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _random: *mut crate::System::Random,
     pub _rotationDataL: *mut crate::GlobalNamespace::LightPairRotationEventEffect_RotationData,
     pub _rotationDataR: *mut crate::GlobalNamespace::LightPairRotationEventEffect_RotationData,
     pub _randomGenerationFrameNum: i32,

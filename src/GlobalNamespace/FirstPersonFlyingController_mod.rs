@@ -18,6 +18,7 @@ pub struct FirstPersonFlyingController {
     pub _cameraTransform: *mut crate::UnityEngine::Transform,
     pub _originalStereoTargetEyeMask: crate::UnityEngine::StereoTargetEyeMask,
     pub _originalCameraFov: f32,
+    pub _overrideDisableMovement: bool,
 }
 #[cfg(feature = "FirstPersonFlyingController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -48,6 +49,7 @@ impl crate::GlobalNamespace::FirstPersonFlyingController {
         trackedPoseDriver: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::SpatialTracking::TrackedPoseDriver,
         >,
+        overrideDisableMovement: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -55,7 +57,14 @@ impl crate::GlobalNamespace::FirstPersonFlyingController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "Inject",
-                (camera, centerAdjust, controller0, controller1, trackedPoseDriver),
+                (
+                    camera,
+                    centerAdjust,
+                    controller0,
+                    controller1,
+                    trackedPoseDriver,
+                    overrideDisableMovement,
+                ),
             )?;
         Ok(__cordl_ret.into())
     }

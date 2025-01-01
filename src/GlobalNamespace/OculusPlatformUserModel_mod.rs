@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct OculusPlatformUserModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _platformInit: *mut crate::GlobalNamespace::IPlatformInit,
+    pub _platformInit: *mut crate::BeatSaber::Init::IPlatformInit,
     pub _userInfoTask: *mut crate::System::Threading::Tasks::Task_1<
         *mut crate::GlobalNamespace::UserInfo,
     >,
@@ -163,8 +163,18 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         > = __cordl_object.invoke("GetUserNamesForUserIds", (userIds))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetUsersSystemLanguage(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::BGLib::Polyglot::Language = __cordl_object
+            .invoke("GetUsersSystemLanguage", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
-        platformInit: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformInit>,
+        platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -194,7 +204,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
     }
     pub fn _ctor(
         &mut self,
-        platformInit: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformInit>,
+        platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

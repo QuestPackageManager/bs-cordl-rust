@@ -60,8 +60,8 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     pub type _OpenLevelProductStoreAsync_d__11 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__OpenLevelProductStoreAsync_d__11;
     #[cfg(feature = "OculusPlatformAdditionalContentModel+__c__DisplayClass13_0")]
     pub type __c__DisplayClass13_0 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel___c__DisplayClass13_0;
-    #[cfg(feature = "OculusPlatformAdditionalContentModel+__c__DisplayClass15_0")]
-    pub type __c__DisplayClass15_0 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel___c__DisplayClass15_0;
+    #[cfg(feature = "OculusPlatformAdditionalContentModel+__c__DisplayClass16_0")]
+    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel___c__DisplayClass16_0;
     pub fn CheckForNewEntitlementsAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -322,7 +322,18 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
             .invoke("OpenLevelProductStoreAsync", (levelId, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _HasLevelPackEntitlement_b__18_0(
+    pub fn OpenStore(
+        &mut self,
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OpenStore", (uri))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _HasLevelPackEntitlement_b__19_0(
         &mut self,
         levelProductData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
@@ -332,7 +343,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("<HasLevelPackEntitlement>b__18_0", (levelProductData))?;
+            .invoke("<HasLevelPackEntitlement>b__19_0", (levelProductData))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

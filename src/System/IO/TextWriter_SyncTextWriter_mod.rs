@@ -278,6 +278,17 @@ impl crate::GlobalNamespace::TextWriter_SyncTextWriter {
         > = __cordl_object.invoke("get_NewLine", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn set_NewLine(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_NewLine", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
 impl quest_hook::libil2cpp::ObjectType

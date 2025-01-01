@@ -31,12 +31,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StandaloneMonobehavior {
 }
 #[cfg(feature = "StandaloneMonobehavior")]
 impl crate::GlobalNamespace::StandaloneMonobehavior {
-    #[cfg(feature = "StandaloneMonobehavior+_DispatchAsync_d__21")]
-    pub type _DispatchAsync_d__21 = crate::GlobalNamespace::StandaloneMonobehavior__DispatchAsync_d__21;
-    #[cfg(feature = "StandaloneMonobehavior+_Dispatch_d__20")]
-    pub type _Dispatch_d__20 = crate::GlobalNamespace::StandaloneMonobehavior__Dispatch_d__20;
     #[cfg(feature = "StandaloneMonobehavior+_RunAsyncCoroutine_d__25")]
     pub type _RunAsyncCoroutine_d__25 = crate::GlobalNamespace::StandaloneMonobehavior__RunAsyncCoroutine_d__25;
+    #[cfg(feature = "StandaloneMonobehavior+_WhenReadyAsync_d__21")]
+    pub type _WhenReadyAsync_d__21 = crate::GlobalNamespace::StandaloneMonobehavior__WhenReadyAsync_d__21;
+    #[cfg(feature = "StandaloneMonobehavior+_WhenReady_d__20")]
+    pub type _WhenReady_d__20 = crate::GlobalNamespace::StandaloneMonobehavior__WhenReady_d__20;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -45,33 +45,6 @@ impl crate::GlobalNamespace::StandaloneMonobehavior {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Dispatch(
-        &mut self,
-        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispatch", (action))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn DispatchAsync(
-        &mut self,
-        action: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<*mut crate::System::Threading::Tasks::Task>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = __cordl_object.invoke("DispatchAsync", (action))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetLastFrameTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -171,6 +144,33 @@ impl crate::GlobalNamespace::StandaloneMonobehavior {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WhenReady(
+        &mut self,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WhenReady", (action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WhenReadyAsync(
+        &mut self,
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<*mut crate::System::Threading::Tasks::Task>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("WhenReadyAsync", (action))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

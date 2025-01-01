@@ -77,7 +77,26 @@ impl crate::UnityEngine::GUILayoutEntry {
             .invoke("CalcWidth", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New(
+    pub fn New_Il2CppArray1(
+        _minWidth: f32,
+        _maxWidth: f32,
+        _minHeight: f32,
+        _maxHeight: f32,
+        _style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+        options: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (_minWidth, _maxWidth, _minHeight, _maxHeight, _style, options),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_f32_f32_f32_f32_GUIStyle0(
         _minWidth: f32,
         _maxWidth: f32,
         _minHeight: f32,
@@ -130,7 +149,28 @@ impl crate::UnityEngine::GUILayoutEntry {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
+    pub fn _ctor_Il2CppArray1(
+        &mut self,
+        _minWidth: f32,
+        _maxWidth: f32,
+        _minHeight: f32,
+        _maxHeight: f32,
+        _style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+        options: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (_minWidth, _maxWidth, _minHeight, _maxHeight, _style, options),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_f32_f32_f32_f32_GUIStyle0(
         &mut self,
         _minWidth: f32,
         _maxWidth: f32,

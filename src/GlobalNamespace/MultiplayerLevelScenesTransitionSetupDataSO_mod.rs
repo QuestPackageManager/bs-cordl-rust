@@ -107,8 +107,8 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
         >,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         beatmapDataLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataLoader,
@@ -131,7 +131,7 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
                     playerSpecificSettings,
                     practiceSettings,
                     audioClipAsyncLoader,
-                    performancePreset,
+                    settingsManager,
                     beatmapDataLoader,
                     useTestNoteCutSoundEffects,
                 ),

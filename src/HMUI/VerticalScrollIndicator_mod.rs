@@ -4,8 +4,6 @@
 pub struct VerticalScrollIndicator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _handle: *mut crate::UnityEngine::RectTransform,
-    pub _normalAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _disabledAnimationClip: *mut crate::UnityEngine::AnimationClip,
     pub _padding: f32,
     pub _progress: f32,
     pub _normalizedPageHeight: f32,
@@ -79,17 +77,6 @@ impl crate::HMUI::VerticalScrollIndicator {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_progress", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_disabled(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_disabled", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_normalizedPageHeight(

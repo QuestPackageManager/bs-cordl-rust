@@ -3,7 +3,8 @@
 #[derive(Debug)]
 pub struct LanguageSettingsController {
     __cordl_parent: crate::GlobalNamespace::DropdownSettingsController,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _language: crate::BGLib::Polyglot::Language,
 }
 #[cfg(feature = "LanguageSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -77,6 +78,16 @@ impl crate::GlobalNamespace::LanguageSettingsController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_language(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::BGLib::Polyglot::Language = __cordl_object
+            .invoke("get_language", ())?;
         Ok(__cordl_ret.into())
     }
 }

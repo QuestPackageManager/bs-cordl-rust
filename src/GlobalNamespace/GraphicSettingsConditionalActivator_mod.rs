@@ -5,7 +5,7 @@ pub struct GraphicSettingsConditionalActivator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _activatorType: crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType,
     pub _activateOnFalse: bool,
-    pub _graphicsSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
 }
 #[cfg(feature = "GraphicSettingsConditionalActivator")]

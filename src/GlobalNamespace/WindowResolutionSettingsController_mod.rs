@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct WindowResolutionSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
-    pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-    pub _windowResolutions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector2Int,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _windowResolutions: *mut crate::System::Collections::Generic::List_1<
+        crate::Unity::Mathematics::int2,
     >,
 }
 #[cfg(feature = "WindowResolutionSettingsController")]

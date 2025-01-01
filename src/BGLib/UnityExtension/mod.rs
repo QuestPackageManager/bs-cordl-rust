@@ -4,15 +4,23 @@ pub use AddressablesExtensions_mod::*;
 // class AssetBundleExtensions_mod; export all
 mod AssetBundleExtensions_mod;
 pub use AssetBundleExtensions_mod::*;
+// namespace BezierCurves;
+pub mod BezierCurves;
 // class ButtonAttribute_mod; export all
 mod ButtonAttribute_mod;
 pub use ButtonAttribute_mod::*;
 // class Debouncer_1_mod; export all
 mod Debouncer_1_mod;
 pub use Debouncer_1_mod::*;
+// class ExternalFileReader_mod; export all
+mod ExternalFileReader_mod;
+pub use ExternalFileReader_mod::*;
 // class InfoBoxAttribute_mod; export all
 mod InfoBoxAttribute_mod;
 pub use InfoBoxAttribute_mod::*;
+// class SerializableDictionary_2_mod; export all
+mod SerializableDictionary_2_mod;
+pub use SerializableDictionary_2_mod::*;
 // class ShaderPropertyAttributeFilter_mod; export all
 mod ShaderPropertyAttributeFilter_mod;
 pub use ShaderPropertyAttributeFilter_mod::*;

@@ -3,8 +3,7 @@
 #[derive(Debug)]
 pub struct RenderingParamsSetupApplicator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-    pub _graphicsSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
 }
 #[cfg(feature = "RenderingParamsSetupApplicator")]

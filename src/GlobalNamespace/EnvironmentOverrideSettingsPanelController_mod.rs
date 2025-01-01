@@ -107,14 +107,14 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
             .invoke("SetData", (overrideEnvironmentSettings))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _HandleOverrideEnvironmentsToggleValueChanged_b__16_0(
+    pub fn _HandleOverrideEnvironmentsToggleValueChanged_b__14_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<HandleOverrideEnvironmentsToggleValueChanged>b__16_0", ())?;
+            .invoke("<HandleOverrideEnvironmentsToggleValueChanged>b__14_0", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -125,19 +125,6 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_overrideEnvironmentSettings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OverrideEnvironmentSettings>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OverrideEnvironmentSettings,
-        > = __cordl_object.invoke("get_overrideEnvironmentSettings", ())?;
         Ok(__cordl_ret.into())
     }
 }

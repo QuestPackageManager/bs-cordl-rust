@@ -3,6 +3,7 @@
 #[derive(Debug)]
 pub struct PlayerAgreements {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub agreedToEulaEvent: *mut crate::System::Action,
     pub eulaVersion: i32,
     pub privacyPolicyVersion: i32,
     pub healthAndSafetyVersion: i32,
@@ -232,6 +233,28 @@ impl crate::GlobalNamespace::PlayerAgreements {
                     endOfLifeNoticeVersion,
                 ),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_agreedToEulaEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_agreedToEulaEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_agreedToEulaEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_agreedToEulaEvent", (value))?;
         Ok(__cordl_ret.into())
     }
 }

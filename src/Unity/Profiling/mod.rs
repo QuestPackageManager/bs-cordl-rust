@@ -17,6 +17,18 @@ pub use ProfilerCategory_mod::*;
 // class ProfilerCounterOptions_mod; export all
 mod ProfilerCounterOptions_mod;
 pub use ProfilerCounterOptions_mod::*;
+// class ProfilerMarkerDataUnit_mod; export all
+mod ProfilerMarkerDataUnit_mod;
+pub use ProfilerMarkerDataUnit_mod::*;
 // class ProfilerMarker_mod; export all
 mod ProfilerMarker_mod;
 pub use ProfilerMarker_mod::*;
+// class ProfilerRecorderDebugView_mod; export all
+mod ProfilerRecorderDebugView_mod;
+pub use ProfilerRecorderDebugView_mod::*;
+// class ProfilerRecorderOptions_mod; export all
+mod ProfilerRecorderOptions_mod;
+pub use ProfilerRecorderOptions_mod::*;
+// class ProfilerRecorder_mod; export all
+mod ProfilerRecorder_mod;
+pub use ProfilerRecorder_mod::*;

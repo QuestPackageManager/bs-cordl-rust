@@ -70,10 +70,12 @@ impl crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupData
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
         >,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
-        useFirstPersonFlyingController: bool,
+        data: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::BeatmapEditorStartTestLevelData,
+        >,
         beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         levelFinishedCallback: quest_hook::libil2cpp::Gc<
             crate::System::Action_2<
@@ -98,8 +100,8 @@ impl crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupData
                     colorScheme,
                     environmentsListModel,
                     audioClipAsyncLoader,
-                    performancePreset,
-                    useFirstPersonFlyingController,
+                    settingsManager,
+                    data,
                     beforeSceneSwitchCallback,
                     levelFinishedCallback,
                 ),

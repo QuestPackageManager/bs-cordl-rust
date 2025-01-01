@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameServerLobbyFlowCoordinator: *mut crate::GlobalNamespace::GameServerLobbyFlowCoordinator,
+    pub _gameServerLobbyFlowCoordinator: *mut crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase,
     pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
 }
 #[cfg(feature = "MultiplayerLobbyAnalytics")]
@@ -38,7 +38,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAnalytics {
     }
     pub fn GetEventTypeFromLobbyType(
         &mut self,
-        lobbyType: crate::GlobalNamespace::GameServerLobbyFlowCoordinator_LobbyType,
+        lobbyType: crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {

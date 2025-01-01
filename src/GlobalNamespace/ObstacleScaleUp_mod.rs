@@ -6,6 +6,7 @@ pub struct ObstacleScaleUp {
     pub _fullScalePart: f32,
     pub _targetTransform: *mut crate::UnityEngine::Transform,
     pub _obstacleController: *mut crate::GlobalNamespace::ObstacleController,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
 }
 #[cfg(feature = "ObstacleScaleUp")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

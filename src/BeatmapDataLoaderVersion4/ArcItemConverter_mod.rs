@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArcItemConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverterProvider,
+    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _colorNotes: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::BeatmapSaveDataVersion4::ColorNote,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataLoaderVersion4+ArcItemConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::ArcItemConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverterProvider;
+    type Target = crate::GlobalNamespace::BeatToTimeConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

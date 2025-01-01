@@ -6,7 +6,6 @@ pub struct TutorialBeatmapObjectPoolsInstaller {
     pub _basicNotePrefab: *mut crate::GlobalNamespace::TutorialNoteController,
     pub _bombNotePrefab: *mut crate::GlobalNamespace::BombNoteController,
     pub _obstaclePrefab: *mut crate::GlobalNamespace::ObstacleController,
-    pub _noteLineConnectionControllerPrefab: *mut crate::GlobalNamespace::NoteLineConnectionController,
 }
 #[cfg(feature = "TutorialBeatmapObjectPoolsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

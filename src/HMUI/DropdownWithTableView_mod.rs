@@ -5,8 +5,10 @@ pub struct DropdownWithTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _button: *mut crate::UnityEngine::UI::Button,
     pub _tableView: *mut crate::HMUI::TableView,
-    pub _modalView: *mut crate::HMUI::ModalView,
+    pub _modalView: *mut crate::HMUI::ModalViewBase,
+    pub _extraSpace: f32,
     pub _numberOfVisibleCells: i32,
+    pub _hideOnSelection: bool,
     pub didSelectCellWithIdxEvent: *mut crate::System::Action_2<
         *mut crate::HMUI::DropdownWithTableView,
         i32,
@@ -41,6 +43,17 @@ impl crate::HMUI::DropdownWithTableView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNewTableViewRectSize(
+        &mut self,
+        dataSource: quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("GetNewTableViewRectSize", (dataSource))?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleModalViewBlockerClicked(

@@ -11,9 +11,9 @@ pub struct MultiplayerLocalActivePlayerGameplayManager {
     pub _inGameMenuController: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController,
     pub _platformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub _disconnectHelper: *mut crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper,
-    pub _initData: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData,
     pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _levelFinishedOrFailed: bool,
+    pub _initData: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData,
+    pub _levelFinishedOrQuit: bool,
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -204,7 +204,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerGameplayManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub failOn0Energy: bool,
+    pub continueGameplayWith0Energy: bool,
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -230,23 +230,23 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]
 impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData {
     pub fn New(
-        failOn0Energy: bool,
+        continueGameplayWith0Energy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (failOn0Energy))?;
+            .invoke_void(".ctor", (continueGameplayWith0Energy))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        failOn0Energy: bool,
+        continueGameplayWith0Energy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (failOn0Energy))?;
+            .invoke(".ctor", (continueGameplayWith0Energy))?;
         Ok(__cordl_ret.into())
     }
 }

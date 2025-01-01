@@ -12,6 +12,7 @@ pub struct BeatmapEventDataBoxGroupList {
     pub _groupId: i32,
     pub _beatmapData: *mut crate::GlobalNamespace::BeatmapData,
     pub _beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+    pub _lightEventConverter: *mut crate::GlobalNamespace::IBeatmapLightEventConverter,
     pub _nonSyncedInsertsExist: bool,
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupList")]
@@ -62,11 +63,17 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupList {
         beatToTimeConverter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (groupId, beatmapData, beatToTimeConverter))?;
+            .invoke_void(
+                ".ctor",
+                (groupId, beatmapData, beatToTimeConverter, lightEventConverter),
+            )?;
         Ok(__cordl_object.into())
     }
     pub fn Remove(
@@ -101,12 +108,18 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupList {
         beatToTimeConverter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (groupId, beatmapData, beatToTimeConverter))?;
+            .invoke(
+                ".ctor",
+                (groupId, beatmapData, beatToTimeConverter, lightEventConverter),
+            )?;
         Ok(__cordl_ret.into())
     }
 }

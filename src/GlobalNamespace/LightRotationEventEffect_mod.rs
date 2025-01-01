@@ -8,6 +8,7 @@ pub struct LightRotationEventEffect {
     pub _rotationSpeedMultiplier: f32,
     pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _random: *mut crate::System::Random,
     pub _transform: *mut crate::UnityEngine::Transform,
     pub _startRotation: crate::UnityEngine::Quaternion,
     pub _rotationSpeed: f32,

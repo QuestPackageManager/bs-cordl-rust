@@ -76,6 +76,8 @@ impl crate::GlobalNamespace::NoteData {
     pub fn CopyWith(
         &mut self,
         _cordl_time: crate::System::Nullable_1<f32>,
+        beat: crate::System::Nullable_1<i32>,
+        rotation: crate::System::Nullable_1<i32>,
         lineIndex: crate::System::Nullable_1<i32>,
         noteLineLayer: crate::System::Nullable_1<crate::GlobalNamespace::NoteLineLayer>,
         beforeJumpNoteLineLayer: crate::System::Nullable_1<
@@ -108,6 +110,8 @@ impl crate::GlobalNamespace::NoteData {
                 "CopyWith",
                 (
                     _cordl_time,
+                    beat,
+                    rotation,
                     lineIndex,
                     noteLineLayer,
                     beforeJumpNoteLineLayer,
@@ -171,6 +175,8 @@ impl crate::GlobalNamespace::NoteData {
     }
     pub fn New(
         _cordl_time: f32,
+        beat: f32,
+        rotation: i32,
         lineIndex: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
         beforeJumpNoteLineLayer: crate::GlobalNamespace::NoteLineLayer,
@@ -192,6 +198,8 @@ impl crate::GlobalNamespace::NoteData {
                 ".ctor",
                 (
                     _cordl_time,
+                    beat,
+                    rotation,
                     lineIndex,
                     noteLineLayer,
                     beforeJumpNoteLineLayer,
@@ -275,6 +283,8 @@ impl crate::GlobalNamespace::NoteData {
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,
+        beat: f32,
+        rotation: i32,
         lineIndex: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
         beforeJumpNoteLineLayer: crate::GlobalNamespace::NoteLineLayer,
@@ -297,6 +307,8 @@ impl crate::GlobalNamespace::NoteData {
                 ".ctor",
                 (
                     _cordl_time,
+                    beat,
+                    rotation,
                     lineIndex,
                     noteLineLayer,
                     beforeJumpNoteLineLayer,
@@ -637,13 +649,16 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum NoteData_ScoringType {
-    BurstSliderElement = 5i32,
-    BurstSliderHead = 4i32,
+    ArcHead = 2i32,
+    ArcHeadArcTail = 6i32,
+    ArcTail = 3i32,
+    ChainHead = 4i32,
+    ChainHeadArcTail = 7i32,
+    ChainLink = 5i32,
+    ChainLinkArcHead = 8i32,
     Ignore = -1i32,
     NoScore = 0i32,
     Normal = 1i32,
-    SliderHead = 2i32,
-    SliderTail = 3i32,
 }
 #[cfg(feature = "NoteData+ScoringType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

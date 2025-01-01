@@ -4,7 +4,14 @@
 pub struct HelpMenuViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _helpMenuSegmentedControl: *mut crate::HMUI::TextSegmentedControl,
-    pub didSelectHelpSubMenuEvent: *mut crate::System::Action_1<i32>,
+    pub _howToPlayViewController: *mut crate::GlobalNamespace::HowToPlayViewController,
+    pub _healthWarningDisplayViewController: *mut crate::GlobalNamespace::HealthWarningDisplayViewController,
+    pub _privacyPolicyDisplayViewController: *mut crate::GlobalNamespace::PrivacyPolicyDisplayViewController,
+    pub _eulaDisplayViewController: *mut crate::GlobalNamespace::EulaDisplayViewController,
+    pub _licensesDisplayViewController: *mut crate::GlobalNamespace::LicensesDisplayViewController,
+    pub didSelectHelpSubMenuEvent: *mut crate::System::Action_1<
+        *mut crate::HMUI::ViewController,
+    >,
     pub _viewControllers: *mut crate::System::Collections::Generic::List_1<
         crate::System::ValueTuple_2<
             *mut crate::HMUI::ViewController,
@@ -32,6 +39,11 @@ impl std::ops::DerefMut for crate::GlobalNamespace::HelpMenuViewController {
 }
 #[cfg(feature = "HelpMenuViewController")]
 impl crate::GlobalNamespace::HelpMenuViewController {
+    pub const kEulaMenu: &'static str = "EULA_MENU";
+    pub const kHealthWarningMenu: &'static str = "HEALTH_AND_SAFETY_MENU";
+    pub const kHowToPlayMenu: &'static str = "LABEL_HOW_TO_PLAY";
+    pub const kLicensesMenu: &'static str = "SOFTWARE_LICENSES";
+    pub const kPrivacyPolicyMenu: &'static str = "PRIVACY_POLICY_MENU";
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -63,24 +75,6 @@ impl crate::GlobalNamespace::HelpMenuViewController {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init(
-        &mut self,
-        viewControllers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::ValueTuple_2<
-                    *mut crate::HMUI::ViewController,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (viewControllers))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -100,7 +94,9 @@ impl crate::GlobalNamespace::HelpMenuViewController {
     }
     pub fn add_didSelectHelpSubMenuEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::HMUI::ViewController>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -111,7 +107,9 @@ impl crate::GlobalNamespace::HelpMenuViewController {
     }
     pub fn remove_didSelectHelpSubMenuEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::HMUI::ViewController>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

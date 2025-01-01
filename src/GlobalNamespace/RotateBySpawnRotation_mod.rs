@@ -43,15 +43,13 @@ impl crate::GlobalNamespace::RotateBySpawnRotation {
     }
     pub fn HandleSpawnRotationBeatmapEvent(
         &mut self,
-        beatmapEventData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SpawnRotationBeatmapEventData,
-        >,
+        data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSpawnRotationBeatmapEvent", (beatmapEventData))?;
+            .invoke("HandleSpawnRotationBeatmapEvent", (data))?;
         Ok(__cordl_ret.into())
     }
     pub fn LateUpdate(

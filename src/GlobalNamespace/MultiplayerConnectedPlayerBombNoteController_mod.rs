@@ -32,31 +32,15 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
     pub fn Init(
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-        worldRotation: f32,
-        moveStartPos: crate::UnityEngine::Vector3,
-        moveEndPos: crate::UnityEngine::Vector3,
-        jumpEndPos: crate::UnityEngine::Vector3,
-        moveDuration: f32,
-        jumpDuration: f32,
-        jumpGravity: f32,
+        noteSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NoteSpawnData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "Init",
-                (
-                    noteData,
-                    worldRotation,
-                    moveStartPos,
-                    moveEndPos,
-                    jumpEndPos,
-                    moveDuration,
-                    jumpDuration,
-                    jumpGravity,
-                ),
-            )?;
+            .invoke("Init", (noteData, noteSpawnData))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

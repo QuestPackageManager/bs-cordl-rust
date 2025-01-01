@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::LevelStatsView {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ShowStats(
+    pub fn ShowStats_ByRefMut_PlayerData0(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         playerData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
@@ -54,6 +54,19 @@ impl crate::GlobalNamespace::LevelStatsView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ShowStats", (beatmapKey, playerData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShowStats_PlayerLevelStatsData1(
+        &mut self,
+        playerLevelStats: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerLevelStatsData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ShowStats", (playerLevelStats))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

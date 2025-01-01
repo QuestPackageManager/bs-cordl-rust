@@ -7,6 +7,9 @@ pub use BasicEventItemConverter_mod::*;
 // class BeatmapDataLoader_mod; export all
 mod BeatmapDataLoader_mod;
 pub use BeatmapDataLoader_mod::*;
+// class BeatmapLevelSaveDataUtils_mod; export all
+mod BeatmapLevelSaveDataUtils_mod;
+pub use BeatmapLevelSaveDataUtils_mod::*;
 // class BombNoteItemConverter_mod; export all
 mod BombNoteItemConverter_mod;
 pub use BombNoteItemConverter_mod::*;
@@ -52,12 +55,12 @@ pub use LightTranslationBaseDataConverter_mod::*;
 // class LightTranslationEventBoxGroupConverter_mod; export all
 mod LightTranslationEventBoxGroupConverter_mod;
 pub use LightTranslationEventBoxGroupConverter_mod::*;
+// class NjsEventConverter_mod; export all
+mod NjsEventConverter_mod;
+pub use NjsEventConverter_mod::*;
 // class ObstacleItemConverter_mod; export all
 mod ObstacleItemConverter_mod;
 pub use ObstacleItemConverter_mod::*;
-// class SpawnRotationItemConverter_mod; export all
-mod SpawnRotationItemConverter_mod;
-pub use SpawnRotationItemConverter_mod::*;
 // class SpecialEventsFilter_mod; export all
 mod SpecialEventsFilter_mod;
 pub use SpecialEventsFilter_mod::*;

@@ -5,6 +5,7 @@ pub struct BeatmapCallbacksUpdater {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _prevSongTime: f32,
 }
 #[cfg(feature = "BeatmapCallbacksUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

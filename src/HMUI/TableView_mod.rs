@@ -6,13 +6,20 @@ pub struct TableView {
     pub _scrollView: *mut crate::HMUI::ScrollView,
     pub _scrollToTopOnEnable: bool,
     pub _alignToCenter: bool,
+    pub _spacing: f32,
+    pub _padding: *mut crate::HMUI::FloatRectOffset,
     pub _tableType: crate::HMUI::TableView_TableType,
     pub _selectionType: crate::HMUI::TableViewSelectionType,
     pub _canSelectSelectedCell: bool,
+    pub _spawnCellsThatAreNotVisible: bool,
     pub _preallocatedCells: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::HMUI::TableView_CellsGroup,
     >,
     pub didSelectCellWithIdxEvent: *mut crate::System::Action_2<
+        *mut crate::HMUI::TableView,
+        i32,
+    >,
+    pub didDeselectCellWithIdxEvent: *mut crate::System::Action_2<
         *mut crate::HMUI::TableView,
         i32,
     >,
@@ -59,6 +66,7 @@ impl std::ops::DerefMut for crate::HMUI::TableView {
 }
 #[cfg(feature = "HMUI+TableView")]
 impl crate::HMUI::TableView {
+    pub const kFixedCellSizeIndex: i32 = -1i32;
     #[cfg(feature = "HMUI+TableView+CellsGroup")]
     pub type CellsGroup = crate::HMUI::TableView_CellsGroup;
     #[cfg(feature = "HMUI+TableView+IDataSource")]
@@ -154,6 +162,47 @@ impl crate::HMUI::TableView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DidSelectCellWithIdx", (idx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCellAtIndex(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::TableCell> = __cordl_object
+            .invoke("GetCellAtIndex", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCellPosition(&mut self, idx: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetCellPosition", (idx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCellSize(&mut self, idx: i32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetCellSize", (idx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMaxVisibleIdx(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetMaxVisibleIdx", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMinVisibleIdx(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetMinVisibleIdx", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetVisibleCellsIdRange(
@@ -332,6 +381,18 @@ impl crate::HMUI::TableView {
             .invoke("ScrollToCellWithIdx", (idx, scrollPositionType, animated))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ScrollToPosition(
+        &mut self,
+        position: f32,
+        animated: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ScrollToPosition", (position, animated))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SelectCellWithIdx(
         &mut self,
         idx: i32,
@@ -364,6 +425,16 @@ impl crate::HMUI::TableView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Show", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateCachedData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateCachedData", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -400,6 +471,19 @@ impl crate::HMUI::TableView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didDeleteCellsEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_didDeselectCellWithIdxEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<*mut crate::HMUI::TableView, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didDeselectCellWithIdxEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn add_didInsertCellsEvent(
@@ -455,6 +539,13 @@ impl crate::HMUI::TableView {
         let __cordl_ret: f32 = __cordl_object.invoke("get_cellSize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_contentSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_contentSize", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_contentTransform(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -486,6 +577,20 @@ impl crate::HMUI::TableView {
         let __cordl_ret: i32 = __cordl_object.invoke("get_numberOfCells", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_paddingEnd(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_paddingEnd", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_paddingStart(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_paddingStart", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_scrollView(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -508,6 +613,13 @@ impl crate::HMUI::TableView {
             .invoke("get_selectionType", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_spacing(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_spacing", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_tableType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::HMUI::TableView_TableType> {
@@ -516,6 +628,13 @@ impl crate::HMUI::TableView {
         );
         let __cordl_ret: crate::HMUI::TableView_TableType = __cordl_object
             .invoke("get_tableType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_totalPadding(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_totalPadding", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_viewportTransform(
@@ -573,6 +692,19 @@ impl crate::HMUI::TableView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didDeleteCellsEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_didDeselectCellWithIdxEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<*mut crate::HMUI::TableView, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didDeselectCellWithIdxEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_didInsertCellsEvent(
@@ -772,11 +904,11 @@ impl crate::HMUI::TableView_IDataSource {
             .invoke("CellForIdx", (tableView, idx))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn CellSize(&mut self, idx: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", (idx))?;
         Ok(__cordl_ret.into())
     }
     pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {

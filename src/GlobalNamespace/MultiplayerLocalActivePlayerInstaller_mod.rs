@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
     pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _optionalAvatarDataSender: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSender,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

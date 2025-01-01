@@ -4,9 +4,9 @@
 pub struct ChainBeatIndex {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hb: f32,
-    pub hr: f32,
+    pub hr: i32,
     pub tb: f32,
-    pub tr: f32,
+    pub tr: i32,
     pub i: i32,
     pub ci: i32,
 }

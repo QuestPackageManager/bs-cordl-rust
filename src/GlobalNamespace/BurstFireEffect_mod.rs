@@ -8,6 +8,7 @@ pub struct BurstFireEffect {
     pub _bloomFadeOutCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
     pub _songTimeTweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
+    pub _environmentContext: crate::GlobalNamespace::EnvironmentContext,
     pub _fadeOutTween: *mut crate::Tweening::FloatTween,
 }
 #[cfg(feature = "BurstFireEffect")]

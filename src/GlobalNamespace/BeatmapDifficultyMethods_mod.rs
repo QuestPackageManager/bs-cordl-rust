@@ -23,7 +23,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDifficultyMethods {
     }
 }
 #[cfg(feature = "BeatmapDifficultyMethods")]
-impl crate::GlobalNamespace::BeatmapDifficultyMethods {}
+impl crate::GlobalNamespace::BeatmapDifficultyMethods {
+    pub const kDefaultDifficultyNjs: f32 = 10f32;
+    pub const kExpertDifficultyNjs: f32 = 12f32;
+    pub const kExpertPlusDifficultyNjs: f32 = 16f32;
+    pub const kFastNotesNjs: f32 = 20f32;
+}
 #[cfg(feature = "BeatmapDifficultyMethods")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDifficultyMethods {

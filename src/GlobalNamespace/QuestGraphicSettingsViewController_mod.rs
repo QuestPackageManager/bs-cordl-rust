@@ -30,13 +30,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::QuestGraphicSettingsViewCont
 }
 #[cfg(feature = "QuestGraphicSettingsViewController")]
 impl crate::GlobalNamespace::QuestGraphicSettingsViewController {
-    pub const kBalancedPresetKey: &'static str = "Balanced";
-    pub const kFrameratePresetKey: &'static str = "Framerate";
-    pub const kNoMirrorSuffix: &'static str = "_NoMirror";
-    #[cfg(feature = "QuestGraphicSettingsViewController+_InitializeSettingsAsync_d__8")]
-    pub type _InitializeSettingsAsync_d__8 = crate::GlobalNamespace::QuestGraphicSettingsViewController__InitializeSettingsAsync_d__8;
-    #[cfg(feature = "QuestGraphicSettingsViewController+_UpdatePreset_d__12")]
-    pub type _UpdatePreset_d__12 = crate::GlobalNamespace::QuestGraphicSettingsViewController__UpdatePreset_d__12;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -65,20 +58,7 @@ impl crate::GlobalNamespace::QuestGraphicSettingsViewController {
             .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPresetKey(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("GetPresetKey", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Handle120HzToggleValueChangedAsync(
+    pub fn Handle120HzToggleValueChanged(
         &mut self,
         newState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -86,7 +66,7 @@ impl crate::GlobalNamespace::QuestGraphicSettingsViewController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Handle120HzToggleValueChangedAsync", (newState))?;
+            .invoke("Handle120HzToggleValueChanged", (newState))?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleMirrorChanged(
@@ -100,33 +80,12 @@ impl crate::GlobalNamespace::QuestGraphicSettingsViewController {
             .invoke("HandleMirrorChanged", (newValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitializeSettingsAsync(
-        &mut self,
-        firstActivation: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitializeSettingsAsync", (firstActivation))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
-    }
-    pub fn UpdatePreset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdatePreset", ())?;
-        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

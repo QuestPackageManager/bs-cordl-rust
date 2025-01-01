@@ -3,6 +3,12 @@
 #[derive(Debug)]
 pub struct UnityXRHelper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _leftControllerConfiguration: *mut crate::GlobalNamespace::UnityXRController_Configuration,
+    pub _rightControllerConfiguration: *mut crate::GlobalNamespace::UnityXRController_Configuration,
+    pub _userPresenceActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    pub _headPositionActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    pub _headOrientationActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    pub _pauseGameActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
     pub inputFocusWasCapturedEvent: *mut crate::System::Action,
     pub inputFocusWasReleasedEvent: *mut crate::System::Action,
     pub vrFocusWasCapturedEvent: *mut crate::System::Action,
@@ -12,15 +18,6 @@ pub struct UnityXRHelper {
     pub controllersDidChangeReferenceEvent: *mut crate::System::Action,
     pub controllersDidDisconnectEvent: *mut crate::System::Action,
     pub _hasVrFocus_k__BackingField: bool,
-    pub _oculusOffsetPose: crate::UnityEngine::Pose,
-    pub _valveIndexOffsetPose: crate::UnityEngine::Pose,
-    pub _htcViveOffsetPose: crate::UnityEngine::Pose,
-    pub _leftControllerConfiguration: *mut crate::GlobalNamespace::UnityXRController_Configuration,
-    pub _rightControllerConfiguration: *mut crate::GlobalNamespace::UnityXRController_Configuration,
-    pub _userPresenceActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub _headPositionActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub _headOrientationActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub _pauseGameActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
     pub _leftController: *mut crate::GlobalNamespace::UnityXRController,
     pub _rightController: *mut crate::GlobalNamespace::UnityXRController,
     pub _headPositionAction: *mut crate::UnityEngine::InputSystem::InputAction,
@@ -115,6 +112,28 @@ impl crate::GlobalNamespace::UnityXRHelper {
         );
         let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
             .invoke("GetPoseOffsetForManufacturer", (manufacturerName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRootPositionOffsetForLegacyNodePose_UnityXRHelper_VRControllerManufacturerName1(
+        &mut self,
+        manufacturerName: crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
+            .invoke("GetRootPositionOffsetForLegacyNodePose", (manufacturerName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRootPositionOffsetForLegacyNodePose_XRNode0(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
+            .invoke("GetRootPositionOffsetForLegacyNodePose", (node))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetThumbstickValue(
@@ -332,6 +351,19 @@ impl crate::GlobalNamespace::UnityXRHelper {
             .invoke("TriggerHapticPulse", (node, duration, strength, frequency))?;
         Ok(__cordl_ret.into())
     }
+    pub fn TryGetLegacyPoseOffsetForNode(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        rotation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetLegacyPoseOffsetForNode", (node, position, rotation))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn TryGetPoseOffsetForNode(
         &mut self,
         node: crate::UnityEngine::XR::XRNode,
@@ -474,6 +506,19 @@ impl crate::GlobalNamespace::UnityXRHelper {
         let __cordl_ret: bool = __cordl_object.invoke("get_isAlwaysWireless", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_leftController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UnityXRController>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::UnityXRController,
+        > = __cordl_object.invoke("get_leftController", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_loggerPrefix(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -485,6 +530,19 @@ impl crate::GlobalNamespace::UnityXRHelper {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_loggerPrefix", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_rightController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UnityXRController>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::UnityXRController,
+        > = __cordl_object.invoke("get_rightController", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_vrPlatformSDK(

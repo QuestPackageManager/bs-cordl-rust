@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::MissionSelectionNavigationController {
         viewController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MissionSelectionMapViewController,
         >,
-        _missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+        missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::MissionSelectionNavigationController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "HandleMissionSelectionMapViewControllerDidSelectMissionLevel",
-                (viewController, _missionNode),
+                (viewController, missionNode),
             )?;
         Ok(__cordl_ret.into())
     }

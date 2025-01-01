@@ -5,10 +5,10 @@ pub struct ArcBeatIndex {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hb: f32,
     pub hi: i32,
-    pub hr: f32,
+    pub hr: i32,
     pub tb: f32,
     pub ti: i32,
-    pub tr: f32,
+    pub tr: i32,
     pub ai: i32,
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+ArcBeatIndex")]

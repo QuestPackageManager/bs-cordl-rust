@@ -17,6 +17,7 @@ pub struct MissionResultsViewController {
     pub _continueButton: *mut crate::UnityEngine::UI::Button,
     pub _retryButton: *mut crate::UnityEngine::UI::Button,
     pub _levelClearedAudioClip: *mut crate::UnityEngine::AudioClip,
+    pub _levelClearedLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub _fireworksController: *mut crate::GlobalNamespace::FireworksController,
     pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
     pub continueButtonPressedEvent: *mut crate::System::Action_1<
@@ -49,10 +50,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MissionResultsViewController
 }
 #[cfg(feature = "MissionResultsViewController")]
 impl crate::GlobalNamespace::MissionResultsViewController {
-    #[cfg(feature = "MissionResultsViewController+_StartFireworksAfterDelay_d__28")]
-    pub type _StartFireworksAfterDelay_d__28 = crate::GlobalNamespace::MissionResultsViewController__StartFireworksAfterDelay_d__28;
-    #[cfg(feature = "MissionResultsViewController+__c__DisplayClass29_0")]
-    pub type __c__DisplayClass29_0 = crate::GlobalNamespace::MissionResultsViewController___c__DisplayClass29_0;
+    #[cfg(feature = "MissionResultsViewController+_StartFireworksAfterDelay_d__29")]
+    pub type _StartFireworksAfterDelay_d__29 = crate::GlobalNamespace::MissionResultsViewController__StartFireworksAfterDelay_d__29;
+    #[cfg(feature = "MissionResultsViewController+__c__DisplayClass30_0")]
+    pub type __c__DisplayClass30_0 = crate::GlobalNamespace::MissionResultsViewController___c__DisplayClass30_0;
     pub fn ContinueButtonPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

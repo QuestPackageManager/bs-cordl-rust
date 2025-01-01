@@ -29,18 +29,6 @@ for crate::GlobalNamespace::MemoryPoolContainer_1<T> {
 }
 #[cfg(feature = "MemoryPoolContainer_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::MemoryPoolContainer_1<T> {
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn Despawn(
         &mut self,
         item: T,
@@ -54,6 +42,34 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::MemoryPoolContainer
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Despawn", (item))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DespawnAll(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DespawnAll", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DestroyAll(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DestroyAll", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

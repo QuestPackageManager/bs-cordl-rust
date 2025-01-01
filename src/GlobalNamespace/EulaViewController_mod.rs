@@ -6,8 +6,8 @@ pub struct EulaViewController {
     pub _agreeButton: *mut crate::UnityEngine::UI::Button,
     pub _doNotAgreeButton: *mut crate::UnityEngine::UI::Button,
     pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _disableButtonsProgress: *mut crate::UnityEngine::UI::Image,
     pub _disabledButtonDelay: f32,
+    pub _disableButtonsProgress: *mut crate::UnityEngine::UI::Image,
     pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
     pub _eulaLocalizedTextAsset: *mut crate::GlobalNamespace::LocalizedTextAsset,
     pub _updateNoticeLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
@@ -44,8 +44,18 @@ impl crate::GlobalNamespace::EulaViewController {
     pub type ButtonType = crate::GlobalNamespace::EulaViewController_ButtonType;
     #[cfg(feature = "EulaViewController+InitData")]
     pub type InitData = crate::GlobalNamespace::EulaViewController_InitData;
-    #[cfg(feature = "EulaViewController+_EnableButtonsCoroutine_d__21")]
-    pub type _EnableButtonsCoroutine_d__21 = crate::GlobalNamespace::EulaViewController__EnableButtonsCoroutine_d__21;
+    #[cfg(feature = "EulaViewController+_EnableButtonsCoroutine_d__22")]
+    pub type _EnableButtonsCoroutine_d__22 = crate::GlobalNamespace::EulaViewController__EnableButtonsCoroutine_d__22;
+    pub fn Awake(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Awake", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -107,34 +117,34 @@ impl crate::GlobalNamespace::EulaViewController {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn _DidActivate_b__18_0(
+    pub fn _DidActivate_b__19_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<DidActivate>b__18_0", ())?;
+            .invoke("<DidActivate>b__19_0", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _DidActivate_b__18_1(
+    pub fn _DidActivate_b__19_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<DidActivate>b__18_1", ())?;
+            .invoke("<DidActivate>b__19_1", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _DidActivate_b__18_2(
+    pub fn _DidActivate_b__19_2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<DidActivate>b__18_2", ())?;
+            .invoke("<DidActivate>b__19_2", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

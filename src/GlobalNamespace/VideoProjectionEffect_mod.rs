@@ -366,6 +366,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_InitData {
 #[derive(Debug)]
 pub struct VideoProjectionEffect_VideoProjectionBehavior {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _coverLoaded: bool,
     pub _eventValue: i32,
     pub _videoClipHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::UnityEngine::Video::VideoClip,
@@ -398,13 +399,13 @@ for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
 #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
 impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
     #[cfg(
-        feature = "VideoProjectionEffect+VideoProjectionBehavior+_LoadPreviewCoverAsset_d__8"
+        feature = "VideoProjectionEffect+VideoProjectionBehavior+_LoadPreviewCoverAsset_d__9"
     )]
-    pub type _LoadPreviewCoverAsset_d__8 = crate::GlobalNamespace::VideoProjectionBehavior_VideoProjectionEffect__LoadPreviewCoverAsset_d__8;
+    pub type _LoadPreviewCoverAsset_d__9 = crate::GlobalNamespace::VideoProjectionBehavior_VideoProjectionEffect__LoadPreviewCoverAsset_d__9;
     #[cfg(
-        feature = "VideoProjectionEffect+VideoProjectionBehavior+__c__DisplayClass7_0"
+        feature = "VideoProjectionEffect+VideoProjectionBehavior+__c__DisplayClass8_0"
     )]
-    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::VideoProjectionBehavior_VideoProjectionEffect___c__DisplayClass7_0;
+    pub type __c__DisplayClass8_0 = crate::GlobalNamespace::VideoProjectionBehavior_VideoProjectionEffect___c__DisplayClass8_0;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -450,6 +451,16 @@ impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (dataModel, videoPlayer, beatmapLevel))?;
         Ok(__cordl_object.into())
+    }
+    pub fn UnloadCoverAsset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnloadCoverAsset", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

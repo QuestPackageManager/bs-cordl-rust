@@ -24,18 +24,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::QuestSettingsApplicatorSO {
 }
 #[cfg(feature = "QuestSettingsApplicatorSO")]
 impl crate::GlobalNamespace::QuestSettingsApplicatorSO {
-    pub fn ApplyPerformancePreset(
+    pub fn ApplyGraphicSettings(
         &mut self,
-        preset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
-        >,
+        settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         sceneType: crate::GlobalNamespace::SceneType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyPerformancePreset", (preset, sceneType))?;
+            .invoke("ApplyGraphicSettings", (settings, sceneType))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct SpriteAsyncLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cache: *mut crate::BGLib::DotnetExtension::Collections::LRUCache_2<
+    pub _lruCache: *mut crate::BGLib::DotnetExtension::Collections::LRUCache_2<
         *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::UnityEngine::Sprite,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _loadingTasks: *mut crate::System::Collections::Generic::Dictionary_2<
+    pub _referenceCountingCache: *mut crate::GlobalNamespace::ReferenceCountingCache_2<
         *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
     >,
+    pub _loadFunc: *mut crate::System::Func_3<
+        *mut quest_hook::libil2cpp::Il2CppString,
+        crate::System::Threading::CancellationToken,
+        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+    >,
+    pub _destroyFunc: *mut crate::System::Action_1<*mut crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "SpriteAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -32,8 +38,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SpriteAsyncLoader {
 }
 #[cfg(feature = "SpriteAsyncLoader")]
 impl crate::GlobalNamespace::SpriteAsyncLoader {
-    #[cfg(feature = "SpriteAsyncLoader+_LoadSpriteAsyncInternal_d__4")]
-    pub type _LoadSpriteAsyncInternal_d__4 = crate::GlobalNamespace::SpriteAsyncLoader__LoadSpriteAsyncInternal_d__4;
+    #[cfg(feature = "SpriteAsyncLoader+_DestroySpriteTask_d__10")]
+    pub type _DestroySpriteTask_d__10 = crate::GlobalNamespace::SpriteAsyncLoader__DestroySpriteTask_d__10;
+    #[cfg(feature = "SpriteAsyncLoader+_UnloadSprite_d__9")]
+    pub type _UnloadSprite_d__9 = crate::GlobalNamespace::SpriteAsyncLoader__UnloadSprite_d__9;
     pub fn ClearCache(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -44,55 +52,119 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
             .invoke("ClearCache", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadSpriteAsync(
+    pub fn DestroySpriteTask(
         &mut self,
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
+        spriteTask: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
         >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
-        > = __cordl_object.invoke("LoadSpriteAsync", (path, cancellationToken))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn LoadSpriteAsyncInternal(
-        &mut self,
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
-        > = __cordl_object.invoke("LoadSpriteAsyncInternal", (path, cancellationToken))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object.into())
-    }
-    pub fn _ctor(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+            .invoke("DestroySpriteTask", (spriteTask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleItemWillBeRemovedFromCache(
+        &mut self,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl__: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleItemWillBeRemovedFromCache", (path, _cordl__))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadSpriteAsync(
+        &mut self,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+        > = __cordl_object.invoke("LoadSpriteAsync", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn New(
+        loadFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                crate::System::Threading::CancellationToken,
+                *mut crate::System::Threading::Tasks::Task_1<
+                    *mut crate::UnityEngine::Sprite,
+                >,
+            >,
+        >,
+        destroyFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::Sprite>,
+        >,
+        cacheSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (loadFunc, destroyFunc, cacheSize))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn UnloadSprite_IReferenceCountingCache_2_Il2CppString1(
+        &mut self,
+        cache: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReferenceCountingCache_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::System::Threading::Tasks::Task_1<
+                    *mut crate::UnityEngine::Sprite,
+                >,
+            >,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnloadSprite", (cache, path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnloadSprite_Il2CppString0(
+        &mut self,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnloadSprite", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        loadFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                crate::System::Threading::CancellationToken,
+                *mut crate::System::Threading::Tasks::Task_1<
+                    *mut crate::UnityEngine::Sprite,
+                >,
+            >,
+        >,
+        destroyFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::Sprite>,
+        >,
+        cacheSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (loadFunc, destroyFunc, cacheSize))?;
         Ok(__cordl_ret.into())
     }
 }

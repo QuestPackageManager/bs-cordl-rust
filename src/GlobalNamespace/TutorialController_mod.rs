@@ -12,7 +12,6 @@ pub struct TutorialController {
     pub _pauseController: *mut crate::GlobalNamespace::PauseController,
     pub levelWillStartIntroEvent: *mut crate::System::Action,
     pub levelDidStartEvent: *mut crate::System::Action,
-    pub _paused: bool,
     pub _doingOutroTransition: bool,
 }
 #[cfg(feature = "TutorialController")]
@@ -35,8 +34,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TutorialController {
 }
 #[cfg(feature = "TutorialController")]
 impl crate::GlobalNamespace::TutorialController {
-    #[cfg(feature = "TutorialController+_OutroCoroutine_d__19")]
-    pub type _OutroCoroutine_d__19 = crate::GlobalNamespace::TutorialController__OutroCoroutine_d__19;
+    #[cfg(feature = "TutorialController+_OutroCoroutine_d__18")]
+    pub type _OutroCoroutine_d__18 = crate::GlobalNamespace::TutorialController__OutroCoroutine_d__18;
     pub fn HandleIntroTutorialDidFinishEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,26 +55,6 @@ impl crate::GlobalNamespace::TutorialController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePauseControllerCanPause", (canPause))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn HandlePauseControllerDidPause(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandlePauseControllerDidPause", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn HandlePauseControllerDidResume(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandlePauseControllerDidResume", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleTutorialSongControllerSongDidFinishEvent(

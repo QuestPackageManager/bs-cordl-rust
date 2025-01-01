@@ -28,6 +28,7 @@ for crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
 #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
 impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     pub const kFirstAlphabet: &'static str = "A";
+    pub const kLastAlphabet: &'static str = "Z";
     pub const kMaxCharactersCount: i32 = 28i32;
     pub const kNonAlphabetChar: char = '#';
     #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper+__c")]

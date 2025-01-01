@@ -82,7 +82,7 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
         pageId: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
+            crate::System::Collections::Generic::IReadOnlyList_1<
                 *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack,
             >,
         >,
@@ -91,7 +91,7 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
+            crate::System::Collections::Generic::IReadOnlyList_1<
                 *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack,
             >,
         > = __cordl_object.invoke("GetSpawnableEventBoxGroupTracks", (pageId))?;

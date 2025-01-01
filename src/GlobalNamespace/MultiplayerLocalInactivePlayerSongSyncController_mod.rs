@@ -4,8 +4,7 @@
 pub struct MultiplayerLocalInactivePlayerSongSyncController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: *mut crate::GlobalNamespace::CrossFadeAudioSource,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-    pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _initData: *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData,
     pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
@@ -13,6 +12,7 @@ pub struct MultiplayerLocalInactivePlayerSongSyncController {
     pub _startSongTime: f32,
     pub _songTimeOffset: f32,
     pub _songTime: f32,
+    pub _songLoadingStarted: bool,
     pub _audioStarted: bool,
     pub _currentObservableIsFailed: bool,
     pub _observable: *mut crate::GlobalNamespace::IMultiplayerObservable,
@@ -174,14 +174,14 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _get_waitUntilIsReadyToStartTheSong_b__8_0(
+    pub fn _get_waitUntilIsReadyToStartTheSong_b__7_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("<get_waitUntilIsReadyToStartTheSong>b__8_0", ())?;
+            .invoke("<get_waitUntilIsReadyToStartTheSong>b__7_0", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_isAudioLoaded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -189,6 +189,13 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isAudioLoaded", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_songFailedToLoad(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_songFailedToLoad", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_waitUntilIsReadyToStartTheSong(

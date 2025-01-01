@@ -3,16 +3,20 @@
 #[derive(Debug)]
 pub struct SettingsFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _mainSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
-    pub _settingsNavigationController: *mut crate::GlobalNamespace::SettingsNavigationController,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-    pub _flushingService: *mut crate::BGLib::SaveDataCore::SaveDataFlushingService,
-    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
     pub didFinishEvent: *mut crate::System::Action_2<
         *mut crate::GlobalNamespace::SettingsFlowCoordinator,
         crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction,
     >,
+    pub _mainSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
+    pub _settingsNavigationController: *mut crate::GlobalNamespace::SettingsNavigationController,
+    pub fileStorage: *mut crate::GlobalNamespace::IFileStorage,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
+    pub _controllerProfilesModel: *mut crate::BeatSaber::GameSettings::ControllerProfilesModel,
+    pub _dropdownDialogPromptViewController: *mut crate::GlobalNamespace::DropdownDialogPromptViewController,
+    pub _controllerProfilesViewController: *mut crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController,
+    pub _undoSettings: crate::BeatSaber::Settings::Settings,
 }
 #[cfg(feature = "SettingsFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -36,14 +40,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SettingsFlowCoordinator {
 impl crate::GlobalNamespace::SettingsFlowCoordinator {
     #[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
     pub type FinishAction = crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction;
-    #[cfg(feature = "SettingsFlowCoordinator+_ApplySettingsAsync_d__17")]
-    pub type _ApplySettingsAsync_d__17 = crate::GlobalNamespace::SettingsFlowCoordinator__ApplySettingsAsync_d__17;
-    #[cfg(feature = "SettingsFlowCoordinator+_CancelSettingsAsync_d__18")]
-    pub type _CancelSettingsAsync_d__18 = crate::GlobalNamespace::SettingsFlowCoordinator__CancelSettingsAsync_d__18;
+    #[cfg(feature = "SettingsFlowCoordinator+_ApplySettingsAsync_d__22")]
+    pub type _ApplySettingsAsync_d__22 = crate::GlobalNamespace::SettingsFlowCoordinator__ApplySettingsAsync_d__22;
+    #[cfg(feature = "SettingsFlowCoordinator+_CancelSettingsAsync_d__23")]
+    pub type _CancelSettingsAsync_d__23 = crate::GlobalNamespace::SettingsFlowCoordinator__CancelSettingsAsync_d__23;
     #[cfg(
-        feature = "SettingsFlowCoordinator+_HandleSettingsNavigationControllerDidFinishAsync_d__16"
+        feature = "SettingsFlowCoordinator+_HandleSettingsNavigationControllerDidFinishAsync_d__21"
     )]
-    pub type _HandleSettingsNavigationControllerDidFinishAsync_d__16 = crate::GlobalNamespace::SettingsFlowCoordinator__HandleSettingsNavigationControllerDidFinishAsync_d__16;
+    pub type _HandleSettingsNavigationControllerDidFinishAsync_d__21 = crate::GlobalNamespace::SettingsFlowCoordinator__HandleSettingsNavigationControllerDidFinishAsync_d__21;
     pub fn ApplySettingsAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -112,6 +116,24 @@ impl crate::GlobalNamespace::SettingsFlowCoordinator {
             .invoke("HandleDidSelectSettingsSubMenu", (settingsSubMenuInfo, idx))?;
         Ok(__cordl_ret.into())
     }
+    pub fn HandleRequestToSelectProfileToCopyFrom(
+        &mut self,
+        profilesToCopyFrom: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::ValueTuple_2<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                    i32,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleRequestToSelectProfileToCopyFrom", (profilesToCopyFrom))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleSettingsNavigationControllerDidFinishAsync(
         &mut self,
         finishAction: crate::GlobalNamespace::SettingsNavigationController_FinishAction,
@@ -150,6 +172,17 @@ impl crate::GlobalNamespace::SettingsFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ShowSecretViewController", (viewController))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _HandleRequestToSelectProfileToCopyFrom_b__20_0(
+        &mut self,
+        arguments: crate::System::ValueTuple_2<i32, i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<HandleRequestToSelectProfileToCopyFrom>b__20_0", (arguments))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

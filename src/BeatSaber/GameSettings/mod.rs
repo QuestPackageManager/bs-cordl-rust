@@ -1,42 +1,27 @@
-// class Audio_mod; export all
-mod Audio_mod;
-pub use Audio_mod::*;
-// class Controllers_mod; export all
-mod Controllers_mod;
-pub use Controllers_mod::*;
-// class CustomServer_mod; export all
-mod CustomServer_mod;
-pub use CustomServer_mod::*;
-// class DebugSettings_mod; export all
-mod DebugSettings_mod;
-pub use DebugSettings_mod::*;
-// class GraphicSettingsHandler_mod; export all
-mod GraphicSettingsHandler_mod;
-pub use GraphicSettingsHandler_mod::*;
-// class GraphicSettings_mod; export all
-mod GraphicSettings_mod;
-pub use GraphicSettings_mod::*;
-// class LanguageHelper_mod; export all
-mod LanguageHelper_mod;
-pub use LanguageHelper_mod::*;
-// class LegacyModelConverter_mod; export all
-mod LegacyModelConverter_mod;
-pub use LegacyModelConverter_mod::*;
-// class LegacySettingsModel_mod; export all
-mod LegacySettingsModel_mod;
-pub use LegacySettingsModel_mod::*;
-// class MainSettingsHandler_mod; export all
-mod MainSettingsHandler_mod;
-pub use MainSettingsHandler_mod::*;
-// class MainSettings_mod; export all
-mod MainSettings_mod;
-pub use MainSettings_mod::*;
-// class PredefinedSettings_mod; export all
-mod PredefinedSettings_mod;
-pub use PredefinedSettings_mod::*;
-// class SmoothCamera_mod; export all
-mod SmoothCamera_mod;
-pub use SmoothCamera_mod::*;
-// class WindowMode_mod; export all
-mod WindowMode_mod;
-pub use WindowMode_mod::*;
+// class ControllerProfileFileModel_mod; export all
+mod ControllerProfileFileModel_mod;
+pub use ControllerProfileFileModel_mod::*;
+// class ControllerProfileInstaller_mod; export all
+mod ControllerProfileInstaller_mod;
+pub use ControllerProfileInstaller_mod::*;
+// class ControllerProfileSaveData_mod; export all
+mod ControllerProfileSaveData_mod;
+pub use ControllerProfileSaveData_mod::*;
+// class ControllerProfile_mod; export all
+mod ControllerProfile_mod;
+pub use ControllerProfile_mod::*;
+// class ControllerProfilesModel_mod; export all
+mod ControllerProfilesModel_mod;
+pub use ControllerProfilesModel_mod::*;
+// class ControllerProfilesSaveData_mod; export all
+mod ControllerProfilesSaveData_mod;
+pub use ControllerProfilesSaveData_mod::*;
+// class ControllerProfilesSettingsViewController_mod; export all
+mod ControllerProfilesSettingsViewController_mod;
+pub use ControllerProfilesSettingsViewController_mod::*;
+// class Controller_mod; export all
+mod Controller_mod;
+pub use Controller_mod::*;
+// class ControllersTransformSettings_mod; export all
+mod ControllersTransformSettings_mod;
+pub use ControllersTransformSettings_mod::*;

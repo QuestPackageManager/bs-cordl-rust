@@ -6,7 +6,7 @@ pub struct PlayerHeightSettingsController {
     pub _text: *mut crate::TMPro::TextMeshProUGUI,
     pub _setButton: *mut crate::UnityEngine::UI::Button,
     pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub valueDidChangeEvent: *mut crate::System::Action_1<f32>,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
     pub _value: f32,

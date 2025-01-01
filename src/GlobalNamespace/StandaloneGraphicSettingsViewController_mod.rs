@@ -154,19 +154,6 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
             .invoke("HandleVrRenderingScaleChanged", (_cordl__, newValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadPerformancePresetSettings(
-        &mut self,
-        preset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadPerformancePresetSettings", (preset))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

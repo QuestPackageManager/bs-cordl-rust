@@ -34,23 +34,24 @@ impl std::ops::DerefMut for crate::BGNet::Core::GameLift::GameLiftPlayerSessionP
 }
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    pub const kCancelMatchmakingRequestTimeoutSeconds: i32 = 5i32;
     pub const kCancelMatchmakingTicketPath: &'static str = "beat_saber_multiplayer_cancel_matchmaking_ticket";
     pub const kGetMatchmakingInstancePath: &'static str = "beat_saber_get_multiplayer_instance";
     pub const kMatchmakingTimeoutMs: i32 = 120000i32;
     pub const kMaxPingCount: i32 = 10i32;
     pub const kPingFrequencyMs: i32 = 3000i32;
     #[cfg(
-        feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_GetGameLiftPlayerSessionInfo_d__14"
+        feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_GetGameLiftPlayerSessionInfo_d__15"
     )]
-    pub type _GetGameLiftPlayerSessionInfo_d__14 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__GetGameLiftPlayerSessionInfo_d__14;
+    pub type _GetGameLiftPlayerSessionInfo_d__15 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__GetGameLiftPlayerSessionInfo_d__15;
     #[cfg(
-        feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_PingAllAwsGameLiftRegions_d__15"
+        feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_PingAllAwsGameLiftRegions_d__16"
     )]
-    pub type _PingAllAwsGameLiftRegions_d__15 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__PingAllAwsGameLiftRegions_d__15;
+    pub type _PingAllAwsGameLiftRegions_d__16 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__PingAllAwsGameLiftRegions_d__16;
     #[cfg(
-        feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_PingRegionAsync_d__17"
+        feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_PingRegionAsync_d__18"
     )]
-    pub type _PingRegionAsync_d__17 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__PingRegionAsync_d__17;
+    pub type _PingRegionAsync_d__18 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__PingRegionAsync_d__18;
     #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+__c")]
     pub type __c = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider___c;
     pub fn GetAverageLatencies(
@@ -200,7 +201,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             .invoke("PollUpdate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _PingAllAwsGameLiftRegions_b__15_0(
+    pub fn _PingAllAwsGameLiftRegions_b__16_0(
         &mut self,
         region: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -223,7 +224,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                     i64,
                 >,
             >,
-        > = __cordl_object.invoke("<PingAllAwsGameLiftRegions>b__15_0", (region))?;
+        > = __cordl_object.invoke("<PingAllAwsGameLiftRegions>b__16_0", (region))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

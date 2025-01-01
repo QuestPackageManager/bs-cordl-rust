@@ -11,6 +11,7 @@ pub struct SaberBurnMarkArea {
     pub _fadeOutShader: *mut crate::UnityEngine::Shader,
     pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
     pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _disableBlitTimer: f32,
     pub _renderer: *mut crate::UnityEngine::Renderer,
     pub _fadeOutStrengthShaderPropertyID: i32,
@@ -34,6 +35,7 @@ pub struct SaberBurnMarkArea {
     >,
     pub _emitParams: crate::UnityEngine::ParticleSystem_EmitParams,
     pub _fadeOutMaterial: *mut crate::UnityEngine::Material,
+    pub _random: *mut crate::System::Random,
 }
 #[cfg(feature = "SaberBurnMarkArea")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

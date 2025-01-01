@@ -24,6 +24,25 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoPlatformInit {
 }
 #[cfg(feature = "NoPlatformInit")]
 impl crate::GlobalNamespace::NoPlatformInit {
+    pub fn GetAppVersionAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        > = __cordl_object.invoke("GetAppVersionAsync", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -82,16 +101,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoPlatformIni
     }
 }
 #[cfg(feature = "NoPlatformInit")]
-impl AsRef<crate::GlobalNamespace::IPlatformInit>
+impl AsRef<crate::BeatSaber::Init::IPlatformInit>
 for crate::GlobalNamespace::NoPlatformInit {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPlatformInit {
+    fn as_ref(&self) -> &crate::BeatSaber::Init::IPlatformInit {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NoPlatformInit")]
-impl AsMut<crate::GlobalNamespace::IPlatformInit>
+impl AsMut<crate::BeatSaber::Init::IPlatformInit>
 for crate::GlobalNamespace::NoPlatformInit {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPlatformInit {
+    fn as_mut(&mut self) -> &mut crate::BeatSaber::Init::IPlatformInit {
         unsafe { std::mem::transmute(self) }
     }
 }

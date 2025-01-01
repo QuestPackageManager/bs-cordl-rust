@@ -16,13 +16,15 @@ pub struct HealthWarningFlowCoordinator {
     pub _fadeInOut: *mut crate::GlobalNamespace::FadeInOutController,
     pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
     pub _initData: *mut crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData,
-    pub _flushingService: *mut crate::BGLib::SaveDataCore::SaveDataFlushingService,
-    pub _platformInit: *mut crate::GlobalNamespace::IPlatformInit,
+    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _platformInit: *mut crate::BeatSaber::Init::IPlatformInit,
     pub _viewControllerTitles: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::HMUI::ViewController,
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _selectedRegion: crate::GlobalNamespace::SelectRegionViewController_Region,
+    pub _openedWithLanguage: crate::BGLib::Polyglot::Language,
 }
 #[cfg(feature = "HealthWarningFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -46,12 +48,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::HealthWarningFlowCoordinator
 impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
     #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
     pub type InitData = crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData;
+    #[cfg(feature = "HealthWarningFlowCoordinator+_GoToNextScene_d__38")]
+    pub type _GoToNextScene_d__38 = crate::GlobalNamespace::HealthWarningFlowCoordinator__GoToNextScene_d__38;
     #[cfg(
-        feature = "HealthWarningFlowCoordinator+_HandleSelectLanguageViewControllerDidChangeLanguageAsync_d__21"
+        feature = "HealthWarningFlowCoordinator+_HandleSelectLanguageViewControllerDidPressContinueButtonAsync_d__24"
     )]
-    pub type _HandleSelectLanguageViewControllerDidChangeLanguageAsync_d__21 = crate::GlobalNamespace::HealthWarningFlowCoordinator__HandleSelectLanguageViewControllerDidChangeLanguageAsync_d__21;
-    #[cfg(feature = "HealthWarningFlowCoordinator+_WaitForUserAgeCategory_d__29")]
-    pub type _WaitForUserAgeCategory_d__29 = crate::GlobalNamespace::HealthWarningFlowCoordinator__WaitForUserAgeCategory_d__29;
+    pub type _HandleSelectLanguageViewControllerDidPressContinueButtonAsync_d__24 = crate::GlobalNamespace::HealthWarningFlowCoordinator__HandleSelectLanguageViewControllerDidPressContinueButtonAsync_d__24;
+    #[cfg(feature = "HealthWarningFlowCoordinator+_WaitForUserAgeCategory_d__31")]
+    pub type _WaitForUserAgeCategory_d__31 = crate::GlobalNamespace::HealthWarningFlowCoordinator__WaitForUserAgeCategory_d__31;
     pub fn CheckPlayerSensitivityFlagAndContinueFlow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -102,12 +106,15 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
     }
     pub fn GoToNextScene(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GoToNextScene", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("GoToNextScene", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleEndOfLifeNoticeViewControllerDidFinish(
@@ -163,33 +170,36 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
     }
     pub fn HandlePrivacyPolicyViewControllerDidFinish(
         &mut self,
-        buttonType: crate::GlobalNamespace::PrivacyPolicyViewController_ButtonType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandlePrivacyPolicyViewControllerDidFinish", (buttonType))?;
+            .invoke("HandlePrivacyPolicyViewControllerDidFinish", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn HandleSelectLanguageViewControllerDidChangeLanguageAsync(
+    pub fn HandleSelectLanguageViewControllerDidChangeLanguage(
+        &mut self,
+        language: crate::BGLib::Polyglot::Language,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleSelectLanguageViewControllerDidChangeLanguage", (language))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleSelectLanguageViewControllerDidPressContinueButtonAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSelectLanguageViewControllerDidChangeLanguageAsync", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn HandleSelectLanguageViewControllerDidPressContinueButton(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSelectLanguageViewControllerDidPressContinueButton", ())?;
+            .invoke(
+                "HandleSelectLanguageViewControllerDidPressContinueButtonAsync",
+                (),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleSelectRegionViewControllerDidPressContinueButton(

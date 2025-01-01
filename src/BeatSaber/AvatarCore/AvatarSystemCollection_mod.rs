@@ -50,11 +50,15 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     pub type __c = crate::BeatSaber::AvatarCore::AvatarSystemCollection___c;
     pub fn CreateDefaultAvatarsForAvatarSystemsWithoutUserCreatedAvatarAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object
             .invoke(
                 "CreateDefaultAvatarsForAvatarSystemsWithoutUserCreatedAvatarAsync",
                 (),

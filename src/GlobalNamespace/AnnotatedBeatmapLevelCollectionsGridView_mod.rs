@@ -85,27 +85,6 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
             .invoke("CloseLevelCollection", (animated))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCellHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetCellHeight", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetCellWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetCellWidth", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetNumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetNumberOfCells", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn HandleAdditionalContentModelDidInvalidateData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -301,6 +280,27 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didSelectAnnotatedBeatmapLevelCollectionEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_cellHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_cellHeight", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_cellWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_cellWidth", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_numberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_numberOfCells", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_didCloseAnnotatedBeatmapLevelCollectionEvent(

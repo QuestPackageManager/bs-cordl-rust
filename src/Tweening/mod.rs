@@ -10,6 +10,12 @@ pub use FrameParityExtensions_mod::*;
 // class FrameParity_mod; export all
 mod FrameParity_mod;
 pub use FrameParity_mod::*;
+// class IntTween_mod; export all
+mod IntTween_mod;
+pub use IntTween_mod::*;
+// class QuaternionTween_mod; export all
+mod QuaternionTween_mod;
+pub use QuaternionTween_mod::*;
 // class SongTimeTweeningManager_mod; export all
 mod SongTimeTweeningManager_mod;
 pub use SongTimeTweeningManager_mod::*;

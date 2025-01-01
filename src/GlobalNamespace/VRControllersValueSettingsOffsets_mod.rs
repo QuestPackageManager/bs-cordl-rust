@@ -3,7 +3,8 @@
 #[derive(Debug)]
 pub struct VRControllersValueSettingsOffsets {
     __cordl_parent: crate::GlobalNamespace::VRControllerTransformOffset,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _controllersProfile: *mut crate::BeatSaber::GameSettings::ControllerProfilesModel,
 }
 #[cfg(feature = "VRControllersValueSettingsOffsets")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -43,6 +44,33 @@ impl crate::GlobalNamespace::VRControllersValueSettingsOffsets {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_alternativeHandling(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_alternativeHandling", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_leftPositionOffset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_leftPositionOffset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_leftRotationOffset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_leftRotationOffset", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_positionOffset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -51,6 +79,26 @@ impl crate::GlobalNamespace::VRControllersValueSettingsOffsets {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_positionOffset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_rightPositionOffset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_rightPositionOffset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_rightRotationOffset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_rightRotationOffset", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_rotationOffset(

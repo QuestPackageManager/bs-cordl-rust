@@ -9,7 +9,7 @@ pub struct BeatmapObjectAvoidanceYOffsetEvaluator {
         crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData,
     >,
     pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::IBeatmapObjectSpawnController,
+    pub _jumpOffsetYProvider: *mut crate::GlobalNamespace::IJumpOffsetYProvider,
 }
 #[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -62,11 +62,13 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
         audioTimeSource: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IAudioTimeSource,
         >,
-        beatmapObjectSpawnController: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IBeatmapObjectSpawnController,
+        jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IJumpOffsetYProvider,
+        >,
+        variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IVariableMovementDataProvider,
         >,
         moveToPlayerHeadTParam: f32,
-        noteSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -75,9 +77,9 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
                 ".ctor",
                 (
                     audioTimeSource,
-                    beatmapObjectSpawnController,
+                    jumpOffsetYProvider,
+                    variableMovementDataProvider,
                     moveToPlayerHeadTParam,
-                    noteSpawnData,
                 ),
             )?;
         Ok(__cordl_object.into())
@@ -87,11 +89,13 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
         audioTimeSource: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IAudioTimeSource,
         >,
-        beatmapObjectSpawnController: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IBeatmapObjectSpawnController,
+        jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IJumpOffsetYProvider,
+        >,
+        variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IVariableMovementDataProvider,
         >,
         moveToPlayerHeadTParam: f32,
-        noteSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,9 +105,9 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
                 ".ctor",
                 (
                     audioTimeSource,
-                    beatmapObjectSpawnController,
+                    jumpOffsetYProvider,
+                    variableMovementDataProvider,
                     moveToPlayerHeadTParam,
-                    noteSpawnData,
                 ),
             )?;
         Ok(__cordl_ret.into())

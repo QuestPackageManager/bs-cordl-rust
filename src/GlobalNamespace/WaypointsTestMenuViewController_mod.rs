@@ -19,7 +19,7 @@ pub struct WaypointsTestMenuViewController {
     pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
     pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
     pub _beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
-    pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
     pub _isCancelled: bool,
     pub _waitingForLevelFinish: bool,

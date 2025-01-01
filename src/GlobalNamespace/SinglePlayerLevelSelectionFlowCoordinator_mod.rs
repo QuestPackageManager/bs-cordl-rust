@@ -9,6 +9,7 @@ pub struct SinglePlayerLevelSelectionFlowCoordinator {
     pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
     pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub _appStaticSettings: *mut crate::GlobalNamespace::AppStaticSettingsSO,
+    pub _customLevelsSettings: *mut crate::GlobalNamespace::CustomLevelsSettings,
     pub _safeAreaFocusedSimpleDialogPromptViewController: *mut crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController,
     pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
     pub didFinishEvent: *mut crate::System::Action_1<
@@ -38,8 +39,8 @@ for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
 }
 #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
 impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
-    #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator+__c__DisplayClass38_0")]
-    pub type __c__DisplayClass38_0 = crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator___c__DisplayClass38_0;
+    #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator+__c__DisplayClass39_0")]
+    pub type __c__DisplayClass39_0 = crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator___c__DisplayClass39_0;
     pub fn ActionButtonWasPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

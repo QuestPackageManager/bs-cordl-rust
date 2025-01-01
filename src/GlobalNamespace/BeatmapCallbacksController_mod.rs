@@ -3,6 +3,7 @@
 #[derive(Debug)]
 pub struct BeatmapCallbacksController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub willStartProcessingCallbacksThisFrameEvent: *mut crate::System::Action_1<f32>,
     pub didProcessAllCallbacksThisFrameEvent: *mut crate::System::Action,
     pub _callbacksInTimes: *mut crate::System::Collections::Generic::Dictionary_2<
         f32,
@@ -281,6 +282,17 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
             .invoke("add_didProcessAllCallbacksThisFrameEvent", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_willStartProcessingCallbacksThisFrameEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_willStartProcessingCallbacksThisFrameEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_sendCallbacksOnBeatmapDataChange(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -307,6 +319,17 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didProcessAllCallbacksThisFrameEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_willStartProcessingCallbacksThisFrameEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_willStartProcessingCallbacksThisFrameEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_sendCallbacksOnBeatmapDataChange(

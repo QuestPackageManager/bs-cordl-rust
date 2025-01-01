@@ -3,8 +3,7 @@
 #[derive(Debug)]
 pub struct SmoothCameraSmoothnessSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-    pub _smoothnesses: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "SmoothCameraSmoothnessSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

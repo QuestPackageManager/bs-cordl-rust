@@ -16,7 +16,8 @@ pub struct StandardLevelScenesTransitionSetupDataSO {
     pub _usingOverrideColorScheme_k__BackingField: bool,
     pub _colorScheme_k__BackingField: *mut crate::GlobalNamespace::ColorScheme,
     pub _usingOverrideEnvironment_k__BackingField: bool,
-    pub _environmentInfo_k__BackingField: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _targetEnvironmentInfo_k__BackingField: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _originalEnvironmentInfo_k__BackingField: *mut crate::GlobalNamespace::EnvironmentInfoSO,
     pub _gameplayModifiers_k__BackingField: *mut crate::GlobalNamespace::GameplayModifiers,
 }
 #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
@@ -42,6 +43,8 @@ for crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
 }
 #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
 impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
+    #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO+__c__DisplayClass48_0")]
+    pub type __c__DisplayClass48_0 = crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO___c__DisplayClass48_0;
     pub fn Finish(
         &mut self,
         levelCompletionResults: quest_hook::libil2cpp::Gc<
@@ -75,9 +78,10 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
     }
     pub fn InitColorInfo(
         &mut self,
-        overrideColorScheme: quest_hook::libil2cpp::Gc<
+        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
+        playerOverrideLightshowColors: bool,
         beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
@@ -86,7 +90,14 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitColorInfo", (overrideColorScheme, beatmapOverrideColorScheme))?;
+            .invoke(
+                "InitColorInfo",
+                (
+                    playerOverrideColorScheme,
+                    playerOverrideLightshowColors,
+                    beatmapOverrideColorScheme,
+                ),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn InitEnvironmentInfo(
@@ -108,7 +119,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_ByRefMut_BeatmapLevel_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_AudioClipAsyncLoader_BeatmapDataLoader_Il2CppString_BeatmapLevelsModel_BeatmapLevelsEntitlementModel1(
+    pub fn Init_ByRefMut_BeatmapLevel_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_AudioClipAsyncLoader_BeatmapDataLoader_Il2CppString_BeatmapLevelsModel_BeatmapLevelsEntitlementModel1(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -116,9 +127,10 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         overrideEnvironmentSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OverrideEnvironmentSettings,
         >,
-        overrideColorScheme: quest_hook::libil2cpp::Gc<
+        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
+        playerOverrideLightshowColors: bool,
         beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
@@ -140,8 +152,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         beatmapDataLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataLoader,
         >,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapLevelsModel: quest_hook::libil2cpp::Gc<
@@ -167,7 +179,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     beatmapKey,
                     beatmapLevel,
                     overrideEnvironmentSettings,
-                    overrideColorScheme,
+                    playerOverrideColorScheme,
+                    playerOverrideLightshowColors,
                     beatmapOverrideColorScheme,
                     gameplayModifiers,
                     playerSpecificSettings,
@@ -175,7 +188,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     environmentsListModel,
                     audioClipAsyncLoader,
                     beatmapDataLoader,
-                    performancePreset,
+                    settingsManager,
                     backButtonText,
                     beatmapLevelsModel,
                     beatmapLevelsEntitlementModel,
@@ -186,7 +199,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_IBeatmapLevelData_ByRefMut_BeatmapLevel_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel_Il2CppString0(
+    pub fn Init_IBeatmapLevelData_ByRefMut_BeatmapLevel_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel_Il2CppString0(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapLevelData: quest_hook::libil2cpp::Gc<
@@ -197,9 +210,10 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         overrideEnvironmentSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OverrideEnvironmentSettings,
         >,
-        overrideColorScheme: quest_hook::libil2cpp::Gc<
+        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
+        playerOverrideLightshowColors: bool,
         beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
@@ -218,8 +232,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
         >,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         beatmapDataLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataLoader,
@@ -246,14 +260,15 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     beatmapKey,
                     beatmapLevel,
                     overrideEnvironmentSettings,
-                    overrideColorScheme,
+                    playerOverrideColorScheme,
+                    playerOverrideLightshowColors,
                     beatmapOverrideColorScheme,
                     gameplayModifiers,
                     playerSpecificSettings,
                     practiceSettings,
                     environmentsListModel,
                     audioClipAsyncLoader,
-                    performancePreset,
+                    settingsManager,
                     beatmapDataLoader,
                     beatmapLevelsEntitlementModel,
                     backButtonText,
@@ -333,19 +348,6 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         > = __cordl_object.invoke("get_colorScheme", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_environmentInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentInfoSO,
-        > = __cordl_object.invoke("get_environmentInfo", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn get_gameMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -372,6 +374,19 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         > = __cordl_object.invoke("get_gameplayModifiers", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_originalEnvironmentInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        > = __cordl_object.invoke("get_originalEnvironmentInfo", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_practiceSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -383,6 +398,19 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PracticeSettings,
         > = __cordl_object.invoke("get_practiceSettings", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_targetEnvironmentInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        > = __cordl_object.invoke("get_targetEnvironmentInfo", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_usingOverrideColorScheme(
@@ -454,17 +482,6 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
             .invoke("set_colorScheme", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn set_environmentInfo(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_environmentInfo", (value))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn set_gameMode(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -487,6 +504,17 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
             .invoke("set_gameplayModifiers", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn set_originalEnvironmentInfo(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_originalEnvironmentInfo", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_practiceSettings(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PracticeSettings>,
@@ -496,6 +524,17 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_practiceSettings", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_targetEnvironmentInfo(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_targetEnvironmentInfo", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_usingOverrideColorScheme(

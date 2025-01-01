@@ -10,7 +10,7 @@ pub struct FakeMirrorObjectsInstaller {
     pub _mirroredObstacleControllerPrefab: *mut crate::GlobalNamespace::MirroredObstacleController,
     pub _mirroredSliderControllerPrefab: *mut crate::GlobalNamespace::MirroredSliderController,
     pub _mirrorRendererGraphicsSettingsPresets: *mut crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets,
-    pub _graphicSettings: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "FakeMirrorObjectsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

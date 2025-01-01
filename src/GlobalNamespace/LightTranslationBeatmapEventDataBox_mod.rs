@@ -78,6 +78,9 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
         beatToTimeConverter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
         output: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 *mut crate::GlobalNamespace::BeatmapEventData,
@@ -98,6 +101,7 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
                     distributionOrderIndex,
                     maxBeat,
                     beatToTimeConverter,
+                    lightEventConverter,
                     output,
                 ),
             )?;

@@ -58,14 +58,13 @@ impl crate::GlobalNamespace::MultiplayerLocalActiveClient {
     pub fn HandleNoteWasAdded(
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-        noteSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
-        rotation: f32,
+        noteSpawnData: crate::GlobalNamespace::NoteSpawnData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteWasAdded", (noteData, noteSpawnData, rotation))?;
+            .invoke("HandleNoteWasAdded", (noteData, noteSpawnData))?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleNoteWasCut(
@@ -96,7 +95,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActiveClient {
     pub fn HandleObstacleWasAdded(
         &mut self,
         obstacleData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
-        obstacleSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
+        obstacleSpawnData: crate::GlobalNamespace::ObstacleSpawnData,
         rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -124,14 +123,13 @@ impl crate::GlobalNamespace::MultiplayerLocalActiveClient {
     pub fn HandleSliderWasAdded(
         &mut self,
         sliderData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
-        sliderSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
-        rotation: f32,
+        sliderSpawnData: crate::GlobalNamespace::SliderSpawnData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSliderWasAdded", (sliderData, sliderSpawnData, rotation))?;
+            .invoke("HandleSliderWasAdded", (sliderData, sliderSpawnData))?;
         Ok(__cordl_ret.into())
     }
     pub fn LateUpdate(

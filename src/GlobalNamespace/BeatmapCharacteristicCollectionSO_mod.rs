@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyCollection_1<
+            crate::System::Collections::Generic::IReadOnlyList_1<
                 *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
             >,
         >,
@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyCollection_1<
+            crate::System::Collections::Generic::IReadOnlyList_1<
                 *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
             >,
         > = __cordl_object.invoke("get_allBeatmapCharacteristics", ())?;

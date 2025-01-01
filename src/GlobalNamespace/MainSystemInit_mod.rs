@@ -44,8 +44,7 @@ pub struct MainSystemInit {
     pub _menuTransitionHelperPrefab: *mut crate::GlobalNamespace::MenuTransitionsHelper,
     pub _defaultMaxCachedBeatmapLevels: i32,
     pub _ps4MaxCachedBeatmapLevels: i32,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-    pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "MainSystemInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

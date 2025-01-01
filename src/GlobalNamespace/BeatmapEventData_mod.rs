@@ -26,6 +26,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventData {
 }
 #[cfg(feature = "BeatmapEventData")]
 impl crate::GlobalNamespace::BeatmapEventData {
+    pub const kGroupIdMultiplier: i32 = 10000i32;
+    pub const kSecondaryGroupIdMultiplier: i32 = 10000000i32;
     pub fn GetDefault_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

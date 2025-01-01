@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorBoostEventItemConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverterProvider,
+    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _colorBoostEvents: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::BeatmapSaveDataVersion4::ColorBoostEvent,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverterProvider;
+    type Target = crate::GlobalNamespace::BeatToTimeConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,15 +32,17 @@ impl crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
     pub fn Convert(
         &mut self,
         index: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatIndex>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
-    > {
+        output: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::BeatmapEventData,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapEventData,
-        > = __cordl_object.invoke("Convert", (index))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Convert", (index, output))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

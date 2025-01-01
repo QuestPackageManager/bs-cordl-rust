@@ -10,6 +10,7 @@ pub struct BeatmapEventDataBoxGroupLists {
     pub _beatmapData: *mut crate::GlobalNamespace::BeatmapData,
     pub _beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
     pub _updateBeatmapDataOnInsert: bool,
+    pub _lightEventConverter: *mut crate::GlobalNamespace::IBeatmapLightEventConverter,
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupLists")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -60,13 +61,21 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
         updateBeatmapDataOnInsert: bool,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(
                 ".ctor",
-                (beatmapData, beatToTimeConverter, updateBeatmapDataOnInsert),
+                (
+                    beatmapData,
+                    beatToTimeConverter,
+                    updateBeatmapDataOnInsert,
+                    lightEventConverter,
+                ),
             )?;
         Ok(__cordl_object.into())
     }
@@ -114,6 +123,9 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
         updateBeatmapDataOnInsert: bool,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -121,7 +133,12 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 ".ctor",
-                (beatmapData, beatToTimeConverter, updateBeatmapDataOnInsert),
+                (
+                    beatmapData,
+                    beatToTimeConverter,
+                    updateBeatmapDataOnInsert,
+                    lightEventConverter,
+                ),
             )?;
         Ok(__cordl_ret.into())
     }

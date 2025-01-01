@@ -7,7 +7,7 @@ pub struct FloorAdjustViewController {
     pub _yDecButton: *mut crate::UnityEngine::UI::Button,
     pub _playerHeightText: *mut crate::TMPro::TextMeshProUGUI,
     pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
     pub _playerHeight: f32,
 }

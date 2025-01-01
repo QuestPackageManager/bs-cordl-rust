@@ -24,6 +24,9 @@ pub struct BeatmapLevelSO {
     pub _environmentNames: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::GlobalNamespace::EnvironmentName,
     >,
+    pub _colorSchemes: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+    >,
     pub _previewDifficultyBeatmapSets: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
     >,
@@ -49,6 +52,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelSO {
 }
 #[cfg(feature = "BeatmapLevelSO")]
 impl crate::GlobalNamespace::BeatmapLevelSO {
+    #[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+    pub type ColorScheme = crate::GlobalNamespace::BeatmapLevelSO_ColorScheme;
     #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
     pub type PreviewDifficultyBeatmap = crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap;
     #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
@@ -101,6 +106,11 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
         environmentNames: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::EnvironmentName>,
         >,
+        colorSchemes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -125,6 +135,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
                     environmentName,
                     allDirectionEnvironmentName,
                     environmentNames,
+                    colorSchemes,
                 ),
             )?;
         Ok(__cordl_ret.into())
@@ -213,6 +224,25 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_beatsPerMinute", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_colorSchemes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+            >,
+        > = __cordl_object.invoke("get_colorSchemes", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_contentRating(
@@ -451,6 +481,216 @@ for crate::GlobalNamespace::BeatmapLevelSO {
         unsafe { std::mem::transmute(self) }
     }
 }
+#[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct BeatmapLevelSO_ColorScheme {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _colorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _overrideNotes: bool,
+    pub _saberAColor: crate::UnityEngine::Color,
+    pub _saberBColor: crate::UnityEngine::Color,
+    pub _obstaclesColor: crate::UnityEngine::Color,
+    pub _overrideLights: bool,
+    pub _environmentColor0: crate::UnityEngine::Color,
+    pub _environmentColor1: crate::UnityEngine::Color,
+    pub _environmentColor0Boost: crate::UnityEngine::Color,
+    pub _environmentColor1Boost: crate::UnityEngine::Color,
+}
+#[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelSO_ColorScheme =>
+    ""."BeatmapLevelSO/ColorScheme"
+);
+#[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+impl crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
+    pub fn New(
+        colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        overrideNotes: bool,
+        saberAColor: crate::UnityEngine::Color,
+        saberBColor: crate::UnityEngine::Color,
+        obstaclesColor: crate::UnityEngine::Color,
+        overrideLights: bool,
+        environmentColor0: crate::UnityEngine::Color,
+        environmentColor1: crate::UnityEngine::Color,
+        environmentColor0Boost: crate::UnityEngine::Color,
+        environmentColor1Boost: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    colorSchemeId,
+                    overrideNotes,
+                    saberAColor,
+                    saberBColor,
+                    obstaclesColor,
+                    overrideLights,
+                    environmentColor0,
+                    environmentColor1,
+                    environmentColor0Boost,
+                    environmentColor1Boost,
+                ),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        overrideNotes: bool,
+        saberAColor: crate::UnityEngine::Color,
+        saberBColor: crate::UnityEngine::Color,
+        obstaclesColor: crate::UnityEngine::Color,
+        overrideLights: bool,
+        environmentColor0: crate::UnityEngine::Color,
+        environmentColor1: crate::UnityEngine::Color,
+        environmentColor0Boost: crate::UnityEngine::Color,
+        environmentColor1Boost: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (
+                    colorSchemeId,
+                    overrideNotes,
+                    saberAColor,
+                    saberBColor,
+                    obstaclesColor,
+                    overrideLights,
+                    environmentColor0,
+                    environmentColor1,
+                    environmentColor0Boost,
+                    environmentColor1Boost,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_colorSchemeId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_colorSchemeId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_environmentColor0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_environmentColor0", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_environmentColor0Boost(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_environmentColor0Boost", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_environmentColor1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_environmentColor1", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_environmentColor1Boost(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_environmentColor1Boost", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_obstaclesColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_obstaclesColor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_overrideLights(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_overrideLights", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_overrideNotes(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_overrideNotes", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_saberAColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_saberAColor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_saberBColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
+            .invoke("get_saberBColor", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
 #[repr(C)]
 #[derive(Debug)]
@@ -496,6 +736,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
         environmentNameIdx: i32,
         beatmapColorSchemeIdx: i32,
         notesCount: i32,
+        cuttableBeatmapObjectsCount: i32,
         obstaclesCount: i32,
         bombsCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -511,6 +752,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
                     environmentNameIdx,
                     beatmapColorSchemeIdx,
                     notesCount,
+                    cuttableBeatmapObjectsCount,
                     obstaclesCount,
                     bombsCount,
                 ),
@@ -525,6 +767,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
         environmentNameIdx: i32,
         beatmapColorSchemeIdx: i32,
         notesCount: i32,
+        cuttableBeatmapObjectsCount: i32,
         obstaclesCount: i32,
         bombsCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -541,6 +784,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
                     environmentNameIdx,
                     beatmapColorSchemeIdx,
                     notesCount,
+                    cuttableBeatmapObjectsCount,
                     obstaclesCount,
                     bombsCount,
                 ),

@@ -6,6 +6,8 @@ pub struct DlcPromoPanelDataSO {
     pub _cutOffTest: i32,
     pub _minNumberOfNotOwnedPacks: i32,
     pub _defaultPromoInfoId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _dlcPromoPanelType: crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType,
+    pub _customDlcPromoBanner: *mut crate::GlobalNamespace::PromoBannerInfoSO,
 }
 #[cfg(feature = "DlcPromoPanelDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,6 +29,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelDataSO {
 }
 #[cfg(feature = "DlcPromoPanelDataSO")]
 impl crate::GlobalNamespace::DlcPromoPanelDataSO {
+    #[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
+    pub type DlcPromoPanelType = crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,6 +46,19 @@ impl crate::GlobalNamespace::DlcPromoPanelDataSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_customDlcPromoBanner(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PromoBannerInfoSO>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PromoBannerInfoSO,
+        > = __cordl_object.invoke("get_customDlcPromoBanner", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_cutOffTest(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -62,6 +79,18 @@ impl crate::GlobalNamespace::DlcPromoPanelDataSO {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_defaultPromoInfoId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_dlcPromoPanelType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType = __cordl_object
+            .invoke("get_dlcPromoPanelType", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_minNumberOfNotOwnedPacks(
@@ -95,3 +124,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DlcPromoPanel
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum DlcPromoPanelDataSO_DlcPromoPanelType {
+    Pack = 0i32,
+    Store = 1i32,
+}
+#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType => ""
+    ."DlcPromoPanelDataSO/DlcPromoPanelType"
+);

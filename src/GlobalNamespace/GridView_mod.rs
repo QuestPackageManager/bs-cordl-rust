@@ -6,7 +6,6 @@ pub struct GridView {
     pub _contentTransform: *mut crate::UnityEngine::RectTransform,
     pub _columnCount: i32,
     pub _visibleColumnCount: i32,
-    pub _cellsEnumerator_k__BackingField: *mut crate::GlobalNamespace::GridView_GridViewCellsEnumerator,
     pub _dataSource: *mut crate::GlobalNamespace::GridView_IDataSource,
     pub _rowCount: i32,
     pub _availableCellsPerPrefabDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
@@ -21,6 +20,7 @@ pub struct GridView {
             *mut crate::UnityEngine::MonoBehaviour,
         >,
     >,
+    pub _cellsEnumerator_k__BackingField: *mut crate::GlobalNamespace::GridView_GridViewCellsEnumerator,
 }
 #[cfg(feature = "GridView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -79,6 +79,16 @@ impl crate::GlobalNamespace::GridView {
         let __cordl_ret: T = __cordl_object.invoke("GetReusableCellView", (prefab))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Hide(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Hide", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -108,6 +118,16 @@ impl crate::GlobalNamespace::GridView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDataSource", (newDataSource, reloadData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Show(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Show", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -140,6 +160,18 @@ impl crate::GlobalNamespace::GridView {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_columnCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_contentTransform(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform> = __cordl_object
+            .invoke("get_contentTransform", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_dataSource(
@@ -367,31 +399,31 @@ impl crate::GlobalNamespace::GridView_IDataSource {
             .invoke("CellForIdx", (gridView, idx))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCellHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetCellHeight", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetCellWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetCellWidth", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetNumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetNumberOfCells", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_cellHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_cellHeight", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_cellWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_cellWidth", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_numberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_numberOfCells", ())?;
+        Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "GridView+IDataSource")]

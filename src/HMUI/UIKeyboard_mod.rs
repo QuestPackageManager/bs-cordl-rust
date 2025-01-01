@@ -4,6 +4,7 @@
 pub struct UIKeyboard {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _okButton: *mut crate::UnityEngine::UI::Button,
+    pub _startsUpperCase: bool,
     pub okButtonWasPressedEvent: *mut crate::System::Action,
     pub keyWasPressedEvent: *mut crate::System::Action_1<char>,
     pub deleteButtonWasPressedEvent: *mut crate::System::Action,
@@ -32,8 +33,8 @@ impl std::ops::DerefMut for crate::HMUI::UIKeyboard {
 }
 #[cfg(feature = "HMUI+UIKeyboard")]
 impl crate::HMUI::UIKeyboard {
-    #[cfg(feature = "HMUI+UIKeyboard+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::HMUI::UIKeyboard___c__DisplayClass13_0;
+    #[cfg(feature = "HMUI+UIKeyboard+__c__DisplayClass14_0")]
+    pub type __c__DisplayClass14_0 = crate::HMUI::UIKeyboard___c__DisplayClass14_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -104,24 +105,34 @@ impl crate::HMUI::UIKeyboard {
             .invoke("SetKeyboardCapitalization", (capitalize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__13_0(
+    pub fn _Awake_b__14_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__13_0", ())?;
+            .invoke("<Awake>b__14_0", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__13_1(
+    pub fn _Awake_b__14_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__13_1", ())?;
+            .invoke("<Awake>b__14_1", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _Awake_b__14_2(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<Awake>b__14_2", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

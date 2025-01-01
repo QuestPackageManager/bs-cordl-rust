@@ -10,15 +10,17 @@ pub struct GameplayCoreSceneSetupData {
     pub playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
     pub practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
     pub useTestNoteCutSoundEffects: bool,
-    pub environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub targetEnvironmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub originalEnvironmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
     pub colorScheme: *mut crate::GlobalNamespace::ColorScheme,
     pub recordingToolData: crate::System::Nullable_1<
         crate::GlobalNamespace::RecordingToolManager_SetupData,
     >,
+    pub environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
     pub _songAudioClip_k__BackingField: *mut crate::UnityEngine::AudioClip,
     pub _beatmapLevelData_k__BackingField: *mut crate::GlobalNamespace::IBeatmapLevelData,
     pub _transformedBeatmapData_k__BackingField: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
-    pub _performancePreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
     pub _beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
     pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
@@ -46,10 +48,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameplayCoreSceneSetupData {
 }
 #[cfg(feature = "GameplayCoreSceneSetupData")]
 impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
-    #[cfg(feature = "GameplayCoreSceneSetupData+_LoadBeatmapLevelData_d__37")]
-    pub type _LoadBeatmapLevelData_d__37 = crate::GlobalNamespace::GameplayCoreSceneSetupData__LoadBeatmapLevelData_d__37;
-    #[cfg(feature = "GameplayCoreSceneSetupData+_LoadTransformedBeatmapDataAsync_d__35")]
-    pub type _LoadTransformedBeatmapDataAsync_d__35 = crate::GlobalNamespace::GameplayCoreSceneSetupData__LoadTransformedBeatmapDataAsync_d__35;
+    #[cfg(feature = "GameplayCoreSceneSetupData+_LoadBeatmapLevelData_d__39")]
+    pub type _LoadBeatmapLevelData_d__39 = crate::GlobalNamespace::GameplayCoreSceneSetupData__LoadBeatmapLevelData_d__39;
+    #[cfg(feature = "GameplayCoreSceneSetupData+_LoadTransformedBeatmapDataAsync_d__37")]
+    pub type _LoadTransformedBeatmapDataAsync_d__37 = crate::GlobalNamespace::GameplayCoreSceneSetupData__LoadTransformedBeatmapDataAsync_d__37;
     pub fn ApplyDisableUpdateAlwaysConfiguration(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -103,7 +105,7 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
         > = __cordl_object.invoke("LoadTransformedBeatmapDataAsync", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_PerformancePreset_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_Nullable_1_2(
+    pub fn New_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_2(
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
@@ -116,12 +118,15 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::PracticeSettings,
         >,
         useTestNoteCutSoundEffects: bool,
-        environmentInfo: quest_hook::libil2cpp::Gc<
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
         >,
         colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
@@ -133,6 +138,9 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
         >,
         enableBeatmapDataCaching: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
         recordingToolData: crate::System::Nullable_1<
             crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
@@ -149,19 +157,21 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
                     playerSpecificSettings,
                     practiceSettings,
                     useTestNoteCutSoundEffects,
-                    environmentInfo,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
                     colorScheme,
-                    performancePreset,
+                    settingsManager,
                     audioClipAsyncLoader,
                     beatmapDataLoader,
                     beatmapLevelsEntitlementModel,
                     enableBeatmapDataCaching,
+                    environmentsListModel,
                     recordingToolData,
                 ),
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_PerformancePreset_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool__cordl_bool_Nullable_1_3(
+    pub fn New_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool__cordl_bool_EnvironmentsListModel_Nullable_1_3(
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
@@ -174,12 +184,15 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::PracticeSettings,
         >,
         useTestNoteCutSoundEffects: bool,
-        environmentInfo: quest_hook::libil2cpp::Gc<
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
         >,
         colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
@@ -192,6 +205,9 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
         >,
         enableBeatmapDataCaching: bool,
         allowNullBeatmapLevelData: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
         recordingToolData: crate::System::Nullable_1<
             crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
@@ -208,20 +224,22 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
                     playerSpecificSettings,
                     practiceSettings,
                     useTestNoteCutSoundEffects,
-                    environmentInfo,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
                     colorScheme,
-                    performancePreset,
+                    settingsManager,
                     audioClipAsyncLoader,
                     beatmapDataLoader,
                     beatmapLevelsEntitlementModel,
                     enableBeatmapDataCaching,
                     allowNullBeatmapLevelData,
+                    environmentsListModel,
                     recordingToolData,
                 ),
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_PerformancePreset_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsModel_BeatmapLevelsEntitlementModel__cordl_bool_Nullable_1_0(
+    pub fn New_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsModel_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_0(
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
@@ -234,12 +252,15 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::PracticeSettings,
         >,
         useTestNoteCutSoundEffects: bool,
-        environmentInfo: quest_hook::libil2cpp::Gc<
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
         >,
         colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
@@ -254,6 +275,9 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
         >,
         enableBeatmapDataCaching: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
         recordingToolData: crate::System::Nullable_1<
             crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
@@ -270,20 +294,22 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
                     playerSpecificSettings,
                     practiceSettings,
                     useTestNoteCutSoundEffects,
-                    environmentInfo,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
                     colorScheme,
-                    performancePreset,
+                    settingsManager,
                     audioClipAsyncLoader,
                     beatmapDataLoader,
                     beatmapLevelsModel,
                     beatmapLevelsEntitlementModel,
                     enableBeatmapDataCaching,
+                    environmentsListModel,
                     recordingToolData,
                 ),
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IBeatmapLevelData_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_PerformancePreset_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_Nullable_1_1(
+    pub fn New_IBeatmapLevelData_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_1(
         beatmapLevelData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatmapLevelData,
         >,
@@ -299,12 +325,15 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::PracticeSettings,
         >,
         useTestNoteCutSoundEffects: bool,
-        environmentInfo: quest_hook::libil2cpp::Gc<
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
         >,
         colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
@@ -316,6 +345,9 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
         >,
         enableBeatmapDataCaching: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
         recordingToolData: crate::System::Nullable_1<
             crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
@@ -333,13 +365,15 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
                     playerSpecificSettings,
                     practiceSettings,
                     useTestNoteCutSoundEffects,
-                    environmentInfo,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
                     colorScheme,
-                    performancePreset,
+                    settingsManager,
                     audioClipAsyncLoader,
                     beatmapDataLoader,
                     beatmapLevelsEntitlementModel,
                     enableBeatmapDataCaching,
+                    environmentsListModel,
                     recordingToolData,
                 ),
             )?;
@@ -361,7 +395,7 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
         > = __cordl_object.invoke("TransformBeatmapData", (beatmapData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_PerformancePreset_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_Nullable_1_2(
+    pub fn _ctor_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_2(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -375,12 +409,15 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::PracticeSettings,
         >,
         useTestNoteCutSoundEffects: bool,
-        environmentInfo: quest_hook::libil2cpp::Gc<
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
         >,
         colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
@@ -392,6 +429,9 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
         >,
         enableBeatmapDataCaching: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
         recordingToolData: crate::System::Nullable_1<
             crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
@@ -409,19 +449,21 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
                     playerSpecificSettings,
                     practiceSettings,
                     useTestNoteCutSoundEffects,
-                    environmentInfo,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
                     colorScheme,
-                    performancePreset,
+                    settingsManager,
                     audioClipAsyncLoader,
                     beatmapDataLoader,
                     beatmapLevelsEntitlementModel,
                     enableBeatmapDataCaching,
+                    environmentsListModel,
                     recordingToolData,
                 ),
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_PerformancePreset_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool__cordl_bool_Nullable_1_3(
+    pub fn _ctor_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool__cordl_bool_EnvironmentsListModel_Nullable_1_3(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -435,12 +477,15 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::PracticeSettings,
         >,
         useTestNoteCutSoundEffects: bool,
-        environmentInfo: quest_hook::libil2cpp::Gc<
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
         >,
         colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
@@ -453,6 +498,9 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
         >,
         enableBeatmapDataCaching: bool,
         allowNullBeatmapLevelData: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
         recordingToolData: crate::System::Nullable_1<
             crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
@@ -470,20 +518,22 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
                     playerSpecificSettings,
                     practiceSettings,
                     useTestNoteCutSoundEffects,
-                    environmentInfo,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
                     colorScheme,
-                    performancePreset,
+                    settingsManager,
                     audioClipAsyncLoader,
                     beatmapDataLoader,
                     beatmapLevelsEntitlementModel,
                     enableBeatmapDataCaching,
                     allowNullBeatmapLevelData,
+                    environmentsListModel,
                     recordingToolData,
                 ),
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_PerformancePreset_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsModel_BeatmapLevelsEntitlementModel__cordl_bool_Nullable_1_0(
+    pub fn _ctor_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsModel_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_0(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -497,12 +547,15 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::PracticeSettings,
         >,
         useTestNoteCutSoundEffects: bool,
-        environmentInfo: quest_hook::libil2cpp::Gc<
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
         >,
         colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
@@ -517,6 +570,9 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
         >,
         enableBeatmapDataCaching: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
         recordingToolData: crate::System::Nullable_1<
             crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
@@ -534,20 +590,22 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
                     playerSpecificSettings,
                     practiceSettings,
                     useTestNoteCutSoundEffects,
-                    environmentInfo,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
                     colorScheme,
-                    performancePreset,
+                    settingsManager,
                     audioClipAsyncLoader,
                     beatmapDataLoader,
                     beatmapLevelsModel,
                     beatmapLevelsEntitlementModel,
                     enableBeatmapDataCaching,
+                    environmentsListModel,
                     recordingToolData,
                 ),
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IBeatmapLevelData_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_PerformancePreset_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_Nullable_1_1(
+    pub fn _ctor_IBeatmapLevelData_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_1(
         &mut self,
         beatmapLevelData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatmapLevelData,
@@ -564,12 +622,15 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::PracticeSettings,
         >,
         useTestNoteCutSoundEffects: bool,
-        environmentInfo: quest_hook::libil2cpp::Gc<
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
         >,
         colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
@@ -581,6 +642,9 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
         >,
         enableBeatmapDataCaching: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
         recordingToolData: crate::System::Nullable_1<
             crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
@@ -599,13 +663,15 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
                     playerSpecificSettings,
                     practiceSettings,
                     useTestNoteCutSoundEffects,
-                    environmentInfo,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
                     colorScheme,
-                    performancePreset,
+                    settingsManager,
                     audioClipAsyncLoader,
                     beatmapDataLoader,
                     beatmapLevelsEntitlementModel,
                     enableBeatmapDataCaching,
+                    environmentsListModel,
                     recordingToolData,
                 ),
             )?;

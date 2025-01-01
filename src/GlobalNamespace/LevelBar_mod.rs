@@ -19,6 +19,7 @@ pub struct LevelBar {
     pub _defaultArtworkImage: *mut crate::UnityEngine::Sprite,
     pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
+    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
 }
 #[cfg(feature = "LevelBar")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -39,12 +40,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelBar {
 }
 #[cfg(feature = "LevelBar")]
 impl crate::GlobalNamespace::LevelBar {
-    #[cfg(feature = "LevelBar+_SetupData_d__20")]
-    pub type _SetupData_d__20 = crate::GlobalNamespace::LevelBar__SetupData_d__20;
-    #[cfg(feature = "LevelBar+_Setup_d__18")]
-    pub type _Setup_d__18 = crate::GlobalNamespace::LevelBar__Setup_d__18;
+    #[cfg(feature = "LevelBar+_SetupData_d__21")]
+    pub type _SetupData_d__21 = crate::GlobalNamespace::LevelBar__SetupData_d__21;
     #[cfg(feature = "LevelBar+_Setup_d__19")]
     pub type _Setup_d__19 = crate::GlobalNamespace::LevelBar__Setup_d__19;
+    #[cfg(feature = "LevelBar+_Setup_d__20")]
+    pub type _Setup_d__20 = crate::GlobalNamespace::LevelBar__Setup_d__20;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

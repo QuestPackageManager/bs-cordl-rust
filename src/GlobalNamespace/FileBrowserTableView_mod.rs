@@ -49,11 +49,11 @@ impl crate::GlobalNamespace::FileBrowserTableView {
             .invoke("CellForIdx", (tableView, row))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn CellSize(&mut self, idx: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", (idx))?;
         Ok(__cordl_ret.into())
     }
     pub fn ClearSelection(

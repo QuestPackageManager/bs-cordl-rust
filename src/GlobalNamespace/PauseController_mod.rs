@@ -13,11 +13,13 @@ pub struct PauseController {
     pub _levelStartController: *mut crate::GlobalNamespace::ILevelStartController,
     pub _initData: *mut crate::GlobalNamespace::PauseController_InitData,
     pub didPauseEvent: *mut crate::System::Action,
+    pub didStartToResumeEvent: *mut crate::System::Action,
     pub didResumeEvent: *mut crate::System::Action,
     pub canPauseEvent: *mut crate::System::Action_1<*mut crate::System::Action_1<bool>>,
     pub didReturnToMenuEvent: *mut crate::System::Action,
+    pub _pauseChangedStateTime: f32,
     pub _wantsToPause: bool,
-    pub _paused: bool,
+    pub _paused: crate::GlobalNamespace::PauseController_PauseState,
 }
 #[cfg(feature = "PauseController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -39,10 +41,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PauseController {
 }
 #[cfg(feature = "PauseController")]
 impl crate::GlobalNamespace::PauseController {
+    pub const kChangeStateDelay: f32 = 0.05f32;
     #[cfg(feature = "PauseController+InitData")]
     pub type InitData = crate::GlobalNamespace::PauseController_InitData;
-    #[cfg(feature = "PauseController+__c__DisplayClass25_0")]
-    pub type __c__DisplayClass25_0 = crate::GlobalNamespace::PauseController___c__DisplayClass25_0;
+    #[cfg(feature = "PauseController+PauseState")]
+    pub type PauseState = crate::GlobalNamespace::PauseController_PauseState;
+    #[cfg(feature = "PauseController+__c__DisplayClass29_0")]
+    pub type __c__DisplayClass29_0 = crate::GlobalNamespace::PauseController___c__DisplayClass29_0;
     pub fn GetDefaultPausedState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,6 +65,16 @@ impl crate::GlobalNamespace::PauseController {
             .invoke("HandleControllersDidDisconnectEvent", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn HandleFocusWasCaptured(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleFocusWasCaptured", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleHMDUnmounted(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -68,16 +83,6 @@ impl crate::GlobalNamespace::PauseController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleHMDUnmounted", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn HandleInputFocusWasCaptured(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleInputFocusWasCaptured", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleLevelDidStart(
@@ -150,6 +155,16 @@ impl crate::GlobalNamespace::PauseController {
             .invoke("HandlePauseMenuManagerDidPressRestartButton", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn HandlePauseMenuManagerDidStartResumeAnimation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandlePauseMenuManagerDidStartResumeAnimation", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -196,6 +211,16 @@ impl crate::GlobalNamespace::PauseController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PauseGameOnStartupIfItShouldBePaused", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Restart(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Restart", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Start(
@@ -264,6 +289,24 @@ impl crate::GlobalNamespace::PauseController {
             .invoke("add_didReturnToMenuEvent", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_didStartToResumeEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didStartToResumeEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_canChangePauseState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_canChangePauseState", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_canPause(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -322,6 +365,17 @@ impl crate::GlobalNamespace::PauseController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didReturnToMenuEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_didStartToResumeEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didStartToResumeEvent", (value))?;
         Ok(__cordl_ret.into())
     }
 }
@@ -392,3 +446,16 @@ for crate::GlobalNamespace::PauseController_InitData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PauseController+PauseState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PauseController_PauseState {
+    Paused = 0i32,
+    Playing = 2i32,
+    Resuming = 1i32,
+}
+#[cfg(feature = "PauseController+PauseState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PauseController_PauseState =>
+    ""."PauseController/PauseState"
+);

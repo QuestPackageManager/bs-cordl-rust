@@ -93,12 +93,18 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroup {
         beatToTimeConverter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SyncWithBeatmapData", (groupId, beatmapData, beatToTimeConverter))?;
+            .invoke(
+                "SyncWithBeatmapData",
+                (groupId, beatmapData, beatToTimeConverter, lightEventConverter),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -115,6 +121,25 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (beat, beatmapEventDataBoxList))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_beatmapEventDataBoxList(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyCollection_1<
+                *mut crate::GlobalNamespace::BeatmapEventDataBox,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyCollection_1<
+                *mut crate::GlobalNamespace::BeatmapEventDataBox,
+            >,
+        > = __cordl_object.invoke("get_beatmapEventDataBoxList", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_elementDataDict(

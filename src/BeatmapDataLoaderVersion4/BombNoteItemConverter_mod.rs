@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BombNoteItemConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverterProvider,
+    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _bombNotes: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::BeatmapSaveDataVersion4::BombNote,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataLoaderVersion4+BombNoteItemConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::BombNoteItemConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverterProvider;
+    type Target = crate::GlobalNamespace::BeatToTimeConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

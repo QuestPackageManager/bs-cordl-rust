@@ -25,6 +25,7 @@ pub enum BasicBeatmapEventType {
     Event7 = 7i32,
     Event8 = 8i32,
     Event9 = 9i32,
+    NoteJumpMovementSpeedChange = 1000i32,
     Special0 = 40i32,
     Special1 = 41i32,
     Special2 = 42i32,

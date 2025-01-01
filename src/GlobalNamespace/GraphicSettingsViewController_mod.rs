@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GraphicSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "GraphicSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

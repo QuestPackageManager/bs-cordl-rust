@@ -28,7 +28,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StaticPreviewMediaData {
 impl crate::GlobalNamespace::StaticPreviewMediaData {
     pub fn GetCoverSpriteAsync(
         &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
@@ -39,12 +38,11 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
-        > = __cordl_object.invoke("GetCoverSpriteAsync", (cancellationToken))?;
+        > = __cordl_object.invoke("GetCoverSpriteAsync", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetPreviewAudioClip(
         &mut self,
-        cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
@@ -55,7 +53,7 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
-        > = __cordl_object.invoke("GetPreviewAudioClip", (cancellationToken))?;
+        > = __cordl_object.invoke("GetPreviewAudioClip", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -67,6 +65,16 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (coverSprite, previewAudioClip))?;
         Ok(__cordl_object.into())
+    }
+    pub fn UnloadCoverSprite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnloadCoverSprite", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn UnloadPreviewAudioClip(
         &mut self,

@@ -84,6 +84,7 @@ for crate::GlobalNamespace::ShowTextOnGameEventController {
 pub struct ShowTextOnGameEventController_EventTextBinding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _signal: *mut crate::GlobalNamespace::Signal,
+    pub _delay: f32,
     pub _text: *mut quest_hook::libil2cpp::Il2CppString,
     pub _textFadeTransitions: *mut crate::GlobalNamespace::TextFadeTransitions,
 }

@@ -34,10 +34,21 @@ impl crate::GlobalNamespace::BeatmapLevelDataSO {
     pub type DifficultyBeatmap = crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap;
     #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmapSet")]
     pub type DifficultyBeatmapSet = crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet;
-    #[cfg(feature = "BeatmapLevelDataSO+__c__DisplayClass21_0")]
-    pub type __c__DisplayClass21_0 = crate::GlobalNamespace::BeatmapLevelDataSO___c__DisplayClass21_0;
     #[cfg(feature = "BeatmapLevelDataSO+__c__DisplayClass22_0")]
     pub type __c__DisplayClass22_0 = crate::GlobalNamespace::BeatmapLevelDataSO___c__DisplayClass22_0;
+    #[cfg(feature = "BeatmapLevelDataSO+__c__DisplayClass23_0")]
+    pub type __c__DisplayClass23_0 = crate::GlobalNamespace::BeatmapLevelDataSO___c__DisplayClass23_0;
+    pub fn ContainsBeatmapData(
+        &mut self,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ContainsBeatmapData", (beatmapKey))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAudioDataString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -170,6 +181,17 @@ impl crate::GlobalNamespace::BeatmapLevelDataSO {
                 *mut quest_hook::libil2cpp::Il2CppString,
             >,
         > = __cordl_object.invoke("GetLightshowStringAsync", (beatmapKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IBeatmapLevelData_ContainsBeatmapData(
+        &mut self,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IBeatmapLevelData.ContainsBeatmapData", (beatmapKey))?;
         Ok(__cordl_ret.into())
     }
     pub fn IBeatmapLevelData_GetBeatmapString(

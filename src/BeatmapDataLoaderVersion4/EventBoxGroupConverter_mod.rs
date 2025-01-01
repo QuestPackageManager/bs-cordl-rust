@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBoxGroupConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverterProvider,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lightshowSaveData: *mut crate::BeatmapSaveDataVersion4::LightshowSaveData,
     pub _lightGroups: *mut crate::GlobalNamespace::IEnvironmentLightGroups,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataLoaderVersion4+EventBoxGroupConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverterProvider;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

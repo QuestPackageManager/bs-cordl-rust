@@ -9,13 +9,14 @@ pub struct ColorsOverrideSettingsPanelController {
     pub _editColorSchemeController: *mut crate::GlobalNamespace::EditColorSchemeController,
     pub _editColorSchemeModalView: *mut crate::HMUI::ModalView,
     pub _editColorSchemeButton: *mut crate::UnityEngine::UI::Button,
+    pub _colorOverrideTypeDropdown: *mut crate::HMUI::SimpleTextDropdown,
     pub _presentPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
     pub _dismissPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
     pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
     pub _colorSchemesSettings: *mut crate::GlobalNamespace::ColorSchemesSettings,
     pub _initialized: bool,
-    pub _isDirty: bool,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _isDirty: bool,
 }
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -39,6 +40,21 @@ for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
 }
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]
 impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
+    pub fn HandleColorOverrideTypeDropdownDidSelectCellWithIdx(
+        &mut self,
+        _cordl__: quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "HandleColorOverrideTypeDropdownDidSelectCellWithIdx",
+                (_cordl__, idx),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleDropDownDidSelectCellWithIdx(
         &mut self,
         dropDownWithTableView: quest_hook::libil2cpp::Gc<
@@ -96,6 +112,17 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleOverrideColorsToggleValueChanged", (isOn))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HideDropdown(
+        &mut self,
+        animated: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HideDropdown", (animated))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -158,14 +185,14 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
             .invoke("SetData", (colorSchemesSettings))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _HandleOverrideColorsToggleValueChanged_b__19_0(
+    pub fn _HandleOverrideColorsToggleValueChanged_b__23_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<HandleOverrideColorsToggleValueChanged>b__19_0", ())?;
+            .invoke("<HandleOverrideColorsToggleValueChanged>b__23_0", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -176,6 +203,18 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_editColorSchemeModalView(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HMUI::ModalView>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::ModalView> = __cordl_object
+            .invoke("get_editColorSchemeModalView", ())?;
         Ok(__cordl_ret.into())
     }
 }

@@ -5,6 +5,7 @@ pub struct BeatmapDataBasicInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _numberOfLines_k__BackingField: i32,
     pub _cuttableNotesCount_k__BackingField: i32,
+    pub _cuttableScoringObjectsCount_k__BackingField: i32,
     pub _obstaclesCount_k__BackingField: i32,
     pub _bombsCount_k__BackingField: i32,
 }
@@ -31,6 +32,7 @@ impl crate::GlobalNamespace::BeatmapDataBasicInfo {
     pub fn New(
         numberOfLines: i32,
         cuttableNotesCount: i32,
+        cuttableScoringObjectsCount: i32,
         obstaclesCount: i32,
         bombsCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -39,7 +41,13 @@ impl crate::GlobalNamespace::BeatmapDataBasicInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(
                 ".ctor",
-                (numberOfLines, cuttableNotesCount, obstaclesCount, bombsCount),
+                (
+                    numberOfLines,
+                    cuttableNotesCount,
+                    cuttableScoringObjectsCount,
+                    obstaclesCount,
+                    bombsCount,
+                ),
             )?;
         Ok(__cordl_object.into())
     }
@@ -47,6 +55,7 @@ impl crate::GlobalNamespace::BeatmapDataBasicInfo {
         &mut self,
         numberOfLines: i32,
         cuttableNotesCount: i32,
+        cuttableScoringObjectsCount: i32,
         obstaclesCount: i32,
         bombsCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,7 +65,13 @@ impl crate::GlobalNamespace::BeatmapDataBasicInfo {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 ".ctor",
-                (numberOfLines, cuttableNotesCount, obstaclesCount, bombsCount),
+                (
+                    numberOfLines,
+                    cuttableNotesCount,
+                    cuttableScoringObjectsCount,
+                    obstaclesCount,
+                    bombsCount,
+                ),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -72,6 +87,16 @@ impl crate::GlobalNamespace::BeatmapDataBasicInfo {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_cuttableNotesCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_cuttableScoringObjectsCount(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("get_cuttableScoringObjectsCount", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_numberOfLines(&mut self) -> quest_hook::libil2cpp::Result<i32> {

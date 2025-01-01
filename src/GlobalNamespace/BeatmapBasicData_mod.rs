@@ -8,6 +8,7 @@ pub struct BeatmapBasicData {
     pub environmentName: crate::GlobalNamespace::EnvironmentName,
     pub beatmapColorScheme: *mut crate::GlobalNamespace::ColorScheme,
     pub notesCount: i32,
+    pub cuttableObjectsCount: i32,
     pub obstaclesCount: i32,
     pub bombsCount: i32,
     pub mappers: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -45,6 +46,7 @@ impl crate::GlobalNamespace::BeatmapBasicData {
             crate::GlobalNamespace::ColorScheme,
         >,
         notesCount: i32,
+        cuttableObjectsCount: i32,
         obstaclesCount: i32,
         bombsCount: i32,
         mappers: quest_hook::libil2cpp::Gc<
@@ -65,6 +67,7 @@ impl crate::GlobalNamespace::BeatmapBasicData {
                     environmentName,
                     beatmapColorScheme,
                     notesCount,
+                    cuttableObjectsCount,
                     obstaclesCount,
                     bombsCount,
                     mappers,
@@ -82,6 +85,7 @@ impl crate::GlobalNamespace::BeatmapBasicData {
             crate::GlobalNamespace::ColorScheme,
         >,
         notesCount: i32,
+        cuttableObjectsCount: i32,
         obstaclesCount: i32,
         bombsCount: i32,
         mappers: quest_hook::libil2cpp::Gc<
@@ -103,6 +107,7 @@ impl crate::GlobalNamespace::BeatmapBasicData {
                     environmentName,
                     beatmapColorScheme,
                     notesCount,
+                    cuttableObjectsCount,
                     obstaclesCount,
                     bombsCount,
                     mappers,

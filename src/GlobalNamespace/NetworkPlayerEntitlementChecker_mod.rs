@@ -6,6 +6,8 @@ pub struct NetworkPlayerEntitlementChecker {
     pub _rpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
     pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
     pub _entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
 }
 #[cfg(feature = "NetworkPlayerEntitlementChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,10 +29,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NetworkPlayerEntitlementChec
 }
 #[cfg(feature = "NetworkPlayerEntitlementChecker")]
 impl crate::GlobalNamespace::NetworkPlayerEntitlementChecker {
-    #[cfg(feature = "NetworkPlayerEntitlementChecker+_GetEntitlementStatus_d__7")]
-    pub type _GetEntitlementStatus_d__7 = crate::GlobalNamespace::NetworkPlayerEntitlementChecker__GetEntitlementStatus_d__7;
-    #[cfg(feature = "NetworkPlayerEntitlementChecker+_HandleGetIsEntitledToLevel_d__6")]
-    pub type _HandleGetIsEntitledToLevel_d__6 = crate::GlobalNamespace::NetworkPlayerEntitlementChecker__HandleGetIsEntitledToLevel_d__6;
+    #[cfg(feature = "NetworkPlayerEntitlementChecker+_GetEntitlementStatus_d__10")]
+    pub type _GetEntitlementStatus_d__10 = crate::GlobalNamespace::NetworkPlayerEntitlementChecker__GetEntitlementStatus_d__10;
+    #[cfg(feature = "NetworkPlayerEntitlementChecker+_HandleGetIsEntitledToLevel_d__8")]
+    pub type _HandleGetIsEntitledToLevel_d__8 = crate::GlobalNamespace::NetworkPlayerEntitlementChecker__HandleGetIsEntitledToLevel_d__8;
     pub fn GetEntitlementStatus(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -71,6 +73,16 @@ impl crate::GlobalNamespace::NetworkPlayerEntitlementChecker {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandleGetIsEntitledToLevel", (userId, levelId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSensitivityValid(
+        &mut self,
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsSensitivityValid", (levelId))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

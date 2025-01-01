@@ -15,6 +15,9 @@ pub struct BeatmapLevelsModel {
     pub _entitlements: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
     pub _allLoadedBeatmapLevelsRepository: *mut crate::GlobalNamespace::BeatmapLevelsRepository,
     pub _allExistingBeatmapLevelsRepository: *mut crate::GlobalNamespace::BeatmapLevelsRepository,
+    pub newPackWasCreatedFromDefinitionEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    >,
 }
 #[cfg(feature = "BeatmapLevelsModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -37,14 +40,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelsModel {
 #[cfg(feature = "BeatmapLevelsModel")]
 impl crate::GlobalNamespace::BeatmapLevelsModel {
     pub const kExplicitSongLocalizationKey: &'static str = "EXPLICIT_SONG";
-    #[cfg(feature = "BeatmapLevelsModel+_CheckBeatmapLevelDataExistsAsync_d__24")]
-    pub type _CheckBeatmapLevelDataExistsAsync_d__24 = crate::GlobalNamespace::BeatmapLevelsModel__CheckBeatmapLevelDataExistsAsync_d__24;
-    #[cfg(feature = "BeatmapLevelsModel+_LoadBeatmapLevelDataAsync_d__23")]
-    pub type _LoadBeatmapLevelDataAsync_d__23 = crate::GlobalNamespace::BeatmapLevelsModel__LoadBeatmapLevelDataAsync_d__23;
-    #[cfg(feature = "BeatmapLevelsModel+_SelectPacks_d__25")]
-    pub type _SelectPacks_d__25 = crate::GlobalNamespace::BeatmapLevelsModel__SelectPacks_d__25;
-    #[cfg(feature = "BeatmapLevelsModel+__c__DisplayClass27_0")]
-    pub type __c__DisplayClass27_0 = crate::GlobalNamespace::BeatmapLevelsModel___c__DisplayClass27_0;
+    #[cfg(feature = "BeatmapLevelsModel+_CheckBeatmapLevelDataExistsAsync_d__27")]
+    pub type _CheckBeatmapLevelDataExistsAsync_d__27 = crate::GlobalNamespace::BeatmapLevelsModel__CheckBeatmapLevelDataExistsAsync_d__27;
+    #[cfg(feature = "BeatmapLevelsModel+_LoadBeatmapLevelDataAsync_d__26")]
+    pub type _LoadBeatmapLevelDataAsync_d__26 = crate::GlobalNamespace::BeatmapLevelsModel__LoadBeatmapLevelDataAsync_d__26;
+    #[cfg(feature = "BeatmapLevelsModel+_SelectPacks_d__28")]
+    pub type _SelectPacks_d__28 = crate::GlobalNamespace::BeatmapLevelsModel__SelectPacks_d__28;
+    #[cfg(feature = "BeatmapLevelsModel+__c__DisplayClass31_0")]
+    pub type __c__DisplayClass31_0 = crate::GlobalNamespace::BeatmapLevelsModel___c__DisplayClass31_0;
     pub fn CheckBeatmapLevelDataExistsAsync(
         &mut self,
         levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -73,6 +76,32 @@ impl crate::GlobalNamespace::BeatmapLevelsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearLoadedBeatmapLevelsCaches", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateBeatmapLevelPack(
+        &mut self,
+        pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
+        desiredSensitivityFlag: crate::GlobalNamespace::PlayerSensitivityFlag,
+        censoredLocalizedSongName: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::ValueTuple_2<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::ValueTuple_2<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        > = __cordl_object
+            .invoke(
+                "CreateBeatmapLevelPack",
+                (pack, desiredSensitivityFlag, censoredLocalizedSongName),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
@@ -216,6 +245,16 @@ impl crate::GlobalNamespace::BeatmapLevelsModel {
             )?;
         Ok(__cordl_object.into())
     }
+    pub fn ReloadAllBeatmapLevelPacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReloadAllBeatmapLevelPacks", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ReloadCustomLevelPackCollectionAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -294,6 +333,19 @@ impl crate::GlobalNamespace::BeatmapLevelsModel {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_newPackWasCreatedFromDefinitionEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapLevelPack>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_newPackWasCreatedFromDefinitionEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_entitlements(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -324,6 +376,19 @@ impl crate::GlobalNamespace::BeatmapLevelsModel {
                 *mut crate::GlobalNamespace::PackDefinitionSO,
             >,
         > = __cordl_object.invoke("get_packDefinitions", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_newPackWasCreatedFromDefinitionEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapLevelPack>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_newPackWasCreatedFromDefinitionEvent", (value))?;
         Ok(__cordl_ret.into())
     }
 }

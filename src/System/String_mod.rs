@@ -844,7 +844,7 @@ impl crate::System::String {
         > = __cordl_object.invoke("Normalize", (normalizationForm))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PadLeft(
+    pub fn PadLeft__cordl_char1(
         &mut self,
         totalWidth: i32,
         paddingChar: char,
@@ -857,6 +857,20 @@ impl crate::System::String {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("PadLeft", (totalWidth, paddingChar))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PadLeft_i32_0(
+        &mut self,
+        totalWidth: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("PadLeft", (totalWidth))?;
         Ok(__cordl_ret.into())
     }
     pub fn PadRight(

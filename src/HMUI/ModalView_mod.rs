@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ModalView {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: crate::HMUI::ModalViewBase,
     pub _presentPanelAnimations: *mut crate::HMUI::PanelAnimationSO,
     pub _dismissPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
     pub _animateParentCanvas: bool,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ModalView")]
 impl std::ops::Deref for crate::HMUI::ModalView {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = crate::HMUI::ModalViewBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,10 +35,10 @@ impl std::ops::DerefMut for crate::HMUI::ModalView {
 }
 #[cfg(feature = "HMUI+ModalView")]
 impl crate::HMUI::ModalView {
-    #[cfg(feature = "HMUI+ModalView+__c__DisplayClass17_0")]
-    pub type __c__DisplayClass17_0 = crate::HMUI::ModalView___c__DisplayClass17_0;
-    #[cfg(feature = "HMUI+ModalView+__c__DisplayClass21_0")]
-    pub type __c__DisplayClass21_0 = crate::HMUI::ModalView___c__DisplayClass21_0;
+    #[cfg(feature = "HMUI+ModalView+__c__DisplayClass19_0")]
+    pub type __c__DisplayClass19_0 = crate::HMUI::ModalView___c__DisplayClass19_0;
+    #[cfg(feature = "HMUI+ModalView+__c__DisplayClass23_0")]
+    pub type __c__DisplayClass23_0 = crate::HMUI::ModalView___c__DisplayClass23_0;
     pub fn CreateBlocker(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -158,6 +158,13 @@ impl crate::HMUI::ModalView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_blockerClickedEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isShown(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isShown", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_blockerClickedEvent(

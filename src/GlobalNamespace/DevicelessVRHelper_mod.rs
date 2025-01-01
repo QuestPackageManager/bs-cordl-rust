@@ -73,6 +73,17 @@ impl crate::GlobalNamespace::DevicelessVRHelper {
             .invoke("GetNodePose", (nodeType, idx, pos, rot))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetRootPositionOffsetForLegacyNodePose(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
+            .invoke("GetRootPositionOffsetForLegacyNodePose", (node))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetThumbstickValue(
         &mut self,
         node: crate::UnityEngine::XR::XRNode,
@@ -145,6 +156,19 @@ impl crate::GlobalNamespace::DevicelessVRHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TriggerHapticPulse", (node, duration, strength, frequency))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetLegacyPoseOffsetForNode(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        rotation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetLegacyPoseOffsetForNode", (node, position, rotation))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryGetPoseOffsetForNode(

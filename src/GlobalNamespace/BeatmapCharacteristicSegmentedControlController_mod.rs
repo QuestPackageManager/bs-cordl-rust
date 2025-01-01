@@ -9,7 +9,7 @@ pub struct BeatmapCharacteristicSegmentedControlController {
         *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
     pub _selectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-    pub _beatmapCharacteristics: *mut crate::System::Collections::Generic::List_1<
+    pub _currentlyAvailableBeatmapCharacteristics: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
 }

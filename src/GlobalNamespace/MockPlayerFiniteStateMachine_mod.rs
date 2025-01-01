@@ -35,6 +35,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         Ok(__cordl_ret.into())
     }
     pub fn New(
+        taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IMultiplayerSessionManager,
         >,
@@ -60,6 +61,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
             .invoke_void(
                 ".ctor",
                 (
+                    taskUtility,
                     multiplayerSessionManager,
                     gameplayRpcManager,
                     menuRpcManager,
@@ -105,6 +107,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
     }
     pub fn _ctor(
         &mut self,
+        taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IMultiplayerSessionManager,
         >,
@@ -131,6 +134,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
             .invoke(
                 ".ctor",
                 (
+                    taskUtility,
                     multiplayerSessionManager,
                     gameplayRpcManager,
                     menuRpcManager,

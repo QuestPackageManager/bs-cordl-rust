@@ -11,8 +11,8 @@ pub struct AudioLatencyViewController {
     pub _visualMetronome: *mut crate::GlobalNamespace::VisualMetronome,
     pub _disabledAlpha: f32,
     pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-    pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
 }
 #[cfg(feature = "AudioLatencyViewController")]

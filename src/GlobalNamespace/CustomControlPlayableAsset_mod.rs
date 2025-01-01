@@ -3,7 +3,6 @@
 #[derive(Debug)]
 pub struct CustomControlPlayableAsset {
     __cordl_parent: crate::UnityEngine::Timeline::ControlPlayableAsset,
-    pub _template: *mut crate::GlobalNamespace::AvatarColorBehaviour,
 }
 #[cfg(feature = "CustomControlPlayableAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,7 +5,7 @@ pub struct InputFieldView {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub _textView: *mut crate::TMPro::TextMeshProUGUI,
     pub _textViewCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _blinkingCaret: *mut crate::HMUI::ImageView,
+    pub _blinkingCaret: *mut crate::HMUI::ImageViewBase,
     pub _placeholderText: *mut crate::UnityEngine::GameObject,
     pub _clearSearchButton: *mut crate::UnityEngine::UI::Button,
     pub _useGlobalKeyboard: bool,

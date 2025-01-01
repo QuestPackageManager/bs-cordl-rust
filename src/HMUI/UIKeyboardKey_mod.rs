@@ -7,6 +7,7 @@ pub struct UIKeyboardKey {
     pub _text: *mut crate::TMPro::TextMeshProUGUI,
     pub _overrideText: *mut quest_hook::libil2cpp::Il2CppString,
     pub _canBeUppercase: bool,
+    pub _dontSetText: bool,
 }
 #[cfg(feature = "HMUI+UIKeyboardKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

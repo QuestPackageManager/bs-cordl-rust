@@ -10,6 +10,8 @@ pub struct NoteDebrisSpawner {
     pub _normalNotesDebrisPool: *mut crate::GlobalNamespace::NoteDebris_Pool,
     pub _burstSliderHeadNotesDebrisPool: *mut crate::GlobalNamespace::NoteDebris_Pool,
     pub _burstSliderElementNotesDebrisPool: *mut crate::GlobalNamespace::NoteDebris_Pool,
+    pub _random: *mut crate::System::Random,
+    pub _determinismConfig: *mut crate::GlobalNamespace::DeterminismConfig,
     pub _poolForNoteGameplayType: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::GlobalNamespace::NoteData_GameplayType,
         *mut crate::GlobalNamespace::NoteDebris_Pool,

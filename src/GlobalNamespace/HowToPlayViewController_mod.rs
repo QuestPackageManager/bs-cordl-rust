@@ -54,35 +54,24 @@ impl crate::GlobalNamespace::HowToPlayViewController {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Setup(
+    pub fn _DidActivate_b__6_0(
         &mut self,
-        showTutorialButton: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Setup", (showTutorialButton))?;
+            .invoke("<DidActivate>b__6_0", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _DidActivate_b__7_0(
+    pub fn _DidActivate_b__6_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<DidActivate>b__7_0", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _DidActivate_b__7_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<DidActivate>b__7_1", ())?;
+            .invoke("<DidActivate>b__6_1", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

@@ -16,6 +16,7 @@ pub struct PauseMenuManager {
     pub didPressContinueButtonEvent: *mut crate::System::Action,
     pub didPressMenuButtonEvent: *mut crate::System::Action,
     pub didPressRestartButtonEvent: *mut crate::System::Action,
+    pub didStartResumeAnimationEvent: *mut crate::System::Action,
     pub didFinishResumeAnimationEvent: *mut crate::System::Action,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
     pub _disabledInteractionRemainingTime: f32,
@@ -204,6 +205,17 @@ impl crate::GlobalNamespace::PauseMenuManager {
             .invoke("add_didPressRestartButtonEvent", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_didStartResumeAnimationEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didStartResumeAnimationEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn remove_didFinishResumeAnimationEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -246,6 +258,17 @@ impl crate::GlobalNamespace::PauseMenuManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_didPressRestartButtonEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_didStartResumeAnimationEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didStartResumeAnimationEvent", (value))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -11,10 +11,11 @@ pub struct MissionLevelGameplayManager {
     pub _initData: *mut crate::GlobalNamespace::MissionLevelGameplayManager_InitData,
     pub levelWillStartIntroEvent: *mut crate::System::Action,
     pub levelDidStartEvent: *mut crate::System::Action,
-    pub levelFailedEvent: *mut crate::System::Action,
     pub levelFinishedEvent: *mut crate::System::Action,
+    pub levelFailedEvent: *mut crate::System::Action,
     pub _gameState: crate::GlobalNamespace::MissionLevelGameplayManager_GameState,
     pub _prePauseGameState: crate::GlobalNamespace::MissionLevelGameplayManager_GameState,
+    pub _levelEndStateType: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
 }
 #[cfg(feature = "MissionLevelGameplayManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -40,8 +41,8 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     pub type GameState = crate::GlobalNamespace::MissionLevelGameplayManager_GameState;
     #[cfg(feature = "MissionLevelGameplayManager+InitData")]
     pub type InitData = crate::GlobalNamespace::MissionLevelGameplayManager_InitData;
-    #[cfg(feature = "MissionLevelGameplayManager+_Start_d__23")]
-    pub type _Start_d__23 = crate::GlobalNamespace::MissionLevelGameplayManager__Start_d__23;
+    #[cfg(feature = "MissionLevelGameplayManager+_Start_d__26")]
+    pub type _Start_d__26 = crate::GlobalNamespace::MissionLevelGameplayManager__Start_d__26;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -101,6 +102,16 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePauseControllerDidResume", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandlePauseControllerDidStartResume(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandlePauseControllerDidStartResume", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleSongDidFinish(
@@ -197,6 +208,18 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
             .invoke("add_levelWillStartIntroEvent", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_levelEndStateType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType = __cordl_object
+            .invoke("get_levelEndStateType", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn remove_levelDidStartEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -284,11 +307,12 @@ for crate::GlobalNamespace::MissionLevelGameplayManager {
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum MissionLevelGameplayManager_GameState {
-    Failed = 4i32,
-    Finished = 3i32,
+    Failed = 5i32,
+    Finished = 4i32,
     Intro = 0i32,
     Paused = 2i32,
     Playing = 1i32,
+    Resuming = 3i32,
 }
 #[cfg(feature = "MissionLevelGameplayManager+GameState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -13,6 +13,9 @@ pub use BeatmapEventType_mod::*;
 // class DistributionParamType_mod; export all
 mod DistributionParamType_mod;
 pub use DistributionParamType_mod::*;
+// class EaseTypeConvertor_mod; export all
+mod EaseTypeConvertor_mod;
+pub use EaseTypeConvertor_mod::*;
 // class EaseType_mod; export all
 mod EaseType_mod;
 pub use EaseType_mod::*;

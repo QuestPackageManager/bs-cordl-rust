@@ -34,11 +34,11 @@ pub struct BeatmapSaveData {
     pub arcsData: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::BeatmapSaveDataVersion4::Arc,
     >,
-    pub spawnRotations: *mut quest_hook::libil2cpp::Il2CppArray<
+    pub njsEvents: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::BeatmapSaveDataVersion4::BeatIndex,
     >,
-    pub spawnRotationsData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::SpawnRotation,
+    pub njsEventData: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::BeatmapSaveDataVersion4::NoteJumpMovementSpeedEvent,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+BeatmapSaveData")]
@@ -61,7 +61,7 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion4::BeatmapSaveData {
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+BeatmapSaveData")]
 impl crate::BeatmapSaveDataVersion4::BeatmapSaveData {
-    pub const kCurrentVersion: &'static str = "4.0.0";
+    pub const kCurrentVersion: &'static str = "4.1.0";
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

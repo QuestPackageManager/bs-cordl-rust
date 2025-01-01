@@ -54,8 +54,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteController {
 }
 #[cfg(feature = "NoteController")]
 impl crate::GlobalNamespace::NoteController {
-    #[cfg(feature = "NoteController+_DissolveCoroutine_d__75")]
-    pub type _DissolveCoroutine_d__75 = crate::GlobalNamespace::NoteController__DissolveCoroutine_d__75;
+    #[cfg(feature = "NoteController+_DissolveCoroutine_d__69")]
+    pub type _DissolveCoroutine_d__69 = crate::GlobalNamespace::NoteController__DissolveCoroutine_d__69;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -157,13 +157,9 @@ impl crate::GlobalNamespace::NoteController {
     pub fn Init(
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-        worldRotation: f32,
-        moveStartPos: crate::UnityEngine::Vector3,
-        moveEndPos: crate::UnityEngine::Vector3,
-        jumpEndPos: crate::UnityEngine::Vector3,
-        moveDuration: f32,
-        jumpDuration: f32,
-        jumpGravity: f32,
+        noteSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NoteSpawnData,
+        >,
         endRotation: f32,
         uniformScale: f32,
         rotateTowardsPlayer: bool,
@@ -177,13 +173,7 @@ impl crate::GlobalNamespace::NoteController {
                 "Init",
                 (
                     noteData,
-                    worldRotation,
-                    moveStartPos,
-                    moveEndPos,
-                    jumpEndPos,
-                    moveDuration,
-                    jumpDuration,
-                    jumpGravity,
+                    noteSpawnData,
                     endRotation,
                     uniformScale,
                     rotateTowardsPlayer,
@@ -375,23 +365,6 @@ impl crate::GlobalNamespace::NoteController {
             .invoke("get_inverseWorldRotation", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_jumpDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDuration", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_jumpMoveVec(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_jumpMoveVec", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn get_jumpStartPos(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -400,20 +373,6 @@ impl crate::GlobalNamespace::NoteController {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_jumpStartPos", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_moveDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_moveDuration", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_moveStartTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_moveStartTime", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_moveVec(
@@ -531,6 +490,13 @@ impl crate::GlobalNamespace::NoteController {
                 *mut crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent,
             >,
         > = __cordl_object.invoke("get_noteDidStartJumpEvent", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_noteTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteTime", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_noteTransform(

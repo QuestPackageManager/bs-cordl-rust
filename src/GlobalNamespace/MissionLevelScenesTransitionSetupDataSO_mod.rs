@@ -75,8 +75,8 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
         >,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         beatmapDataLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataLoader,
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
                     environmentsListModel,
                     beatmapLevelsModel,
                     audioClipAsyncLoader,
-                    performancePreset,
+                    settingsManager,
                     beatmapDataLoader,
                     backButtonText,
                 ),
@@ -135,8 +135,8 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
         >,
-        performancePreset: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::PerformancePresets::PerformancePreset,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         beatmapDataLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataLoader,
@@ -160,7 +160,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
                     playerSpecificSettings,
                     environmentsListModel,
                     audioClipAsyncLoader,
-                    performancePreset,
+                    settingsManager,
                     beatmapDataLoader,
                     backButtonText,
                 ),

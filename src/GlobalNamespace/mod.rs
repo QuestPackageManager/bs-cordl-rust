@@ -1,3 +1,6 @@
+// class AOTEnforcer_mod; export all
+mod AOTEnforcer_mod;
+pub use AOTEnforcer_mod::*;
 // class AbTestExperimentDefinitionSO_mod; export all
 mod AbTestExperimentDefinitionSO_mod;
 pub use AbTestExperimentDefinitionSO_mod::*;
@@ -31,6 +34,9 @@ pub use AddressablesConstants_mod::*;
 // class AlphaFloatFxGroupEffectTarget_mod; export all
 mod AlphaFloatFxGroupEffectTarget_mod;
 pub use AlphaFloatFxGroupEffectTarget_mod::*;
+// class AlphaSO_mod; export all
+mod AlphaSO_mod;
+pub use AlphaSO_mod::*;
 // class AlphabetScrollInfo_mod; export all
 mod AlphabetScrollInfo_mod;
 pub use AlphabetScrollInfo_mod::*;
@@ -151,6 +157,9 @@ pub use AudioPlayerBase_mod::*;
 // class AudioReferenceCountingCache_mod; export all
 mod AudioReferenceCountingCache_mod;
 pub use AudioReferenceCountingCache_mod::*;
+// class AudioSettingsDspTimeProvider_mod; export all
+mod AudioSettingsDspTimeProvider_mod;
+pub use AudioSettingsDspTimeProvider_mod::*;
 // class AudioTimeSyncController_mod; export all
 mod AudioTimeSyncController_mod;
 pub use AudioTimeSyncController_mod::*;
@@ -322,9 +331,15 @@ pub use BeatLineManager_mod::*;
 // class BeatLine_mod; export all
 mod BeatLine_mod;
 pub use BeatLine_mod::*;
-// class BeatToTimeConverterProvider_mod; export all
-mod BeatToTimeConverterProvider_mod;
-pub use BeatToTimeConverterProvider_mod::*;
+// class BeatSaberSessionEventType_mod; export all
+mod BeatSaberSessionEventType_mod;
+pub use BeatSaberSessionEventType_mod::*;
+// class BeatToTimeAndRotationConverter_mod; export all
+mod BeatToTimeAndRotationConverter_mod;
+pub use BeatToTimeAndRotationConverter_mod::*;
+// class BeatToTimeConverter_mod; export all
+mod BeatToTimeConverter_mod;
+pub use BeatToTimeConverter_mod::*;
 // class BeatmapBasicData_mod; export all
 mod BeatmapBasicData_mod;
 pub use BeatmapBasicData_mod::*;
@@ -454,6 +469,9 @@ pub use BeatmapEditorSceneSetupData_mod::*;
 // class BeatmapEditorScenesTransitionSetupDataSO_mod; export all
 mod BeatmapEditorScenesTransitionSetupDataSO_mod;
 pub use BeatmapEditorScenesTransitionSetupDataSO_mod::*;
+// class BeatmapEditorStartTestLevelData_mod; export all
+mod BeatmapEditorStartTestLevelData_mod;
+pub use BeatmapEditorStartTestLevelData_mod::*;
 // class BeatmapEventDataBoxGroupList_mod; export all
 mod BeatmapEventDataBoxGroupList_mod;
 pub use BeatmapEventDataBoxGroupList_mod::*;
@@ -529,6 +547,9 @@ pub use BeatmapLevelLoader_mod::*;
 // class BeatmapLevelMask_mod; export all
 mod BeatmapLevelMask_mod;
 pub use BeatmapLevelMask_mod::*;
+// class BeatmapLevelPackGroup_mod; export all
+mod BeatmapLevelPackGroup_mod;
+pub use BeatmapLevelPackGroup_mod::*;
 // class BeatmapLevelPackSO_mod; export all
 mod BeatmapLevelPackSO_mod;
 pub use BeatmapLevelPackSO_mod::*;
@@ -559,6 +580,9 @@ pub use BeatmapLevelsPromoModel_mod::*;
 // class BeatmapLevelsRepository_mod; export all
 mod BeatmapLevelsRepository_mod;
 pub use BeatmapLevelsRepository_mod::*;
+// class BeatmapLightEventConverterNoConvert_mod; export all
+mod BeatmapLightEventConverterNoConvert_mod;
+pub use BeatmapLightEventConverterNoConvert_mod::*;
 // class BeatmapLineData_mod; export all
 mod BeatmapLineData_mod;
 pub use BeatmapLineData_mod::*;
@@ -877,6 +901,9 @@ pub use ColliderEventEffect_mod::*;
 // class Color32Serializable_mod; export all
 mod Color32Serializable_mod;
 pub use Color32Serializable_mod::*;
+// class ColorAlphaVariationSO_mod; export all
+mod ColorAlphaVariationSO_mod;
+pub use ColorAlphaVariationSO_mod::*;
 // class ColorArrayLightWithIdsGroupEntry_mod; export all
 mod ColorArrayLightWithIdsGroupEntry_mod;
 pub use ColorArrayLightWithIdsGroupEntry_mod::*;
@@ -937,6 +964,9 @@ pub use ColorSchemeConverter_mod::*;
 // class ColorSchemeDropdown_mod; export all
 mod ColorSchemeDropdown_mod;
 pub use ColorSchemeDropdown_mod::*;
+// class ColorSchemeExtensions_mod; export all
+mod ColorSchemeExtensions_mod;
+pub use ColorSchemeExtensions_mod::*;
 // class ColorSchemeNetSerializable_mod; export all
 mod ColorSchemeNetSerializable_mod;
 pub use ColorSchemeNetSerializable_mod::*;
@@ -961,9 +991,18 @@ pub use ColorSerializable_mod::*;
 // class ColorSignal_mod; export all
 mod ColorSignal_mod;
 pub use ColorSignal_mod::*;
+// class ColorStateTransition_1_mod; export all
+mod ColorStateTransition_1_mod;
+pub use ColorStateTransition_1_mod::*;
 // class ColorStepValuePicker_mod; export all
 mod ColorStepValuePicker_mod;
 pub use ColorStepValuePicker_mod::*;
+// class ColorStyleSO_mod; export all
+mod ColorStyleSO_mod;
+pub use ColorStyleSO_mod::*;
+// class ColorStyle_mod; export all
+mod ColorStyle_mod;
+pub use ColorStyle_mod::*;
 // class ColorTMPTextStateTransition_mod; export all
 mod ColorTMPTextStateTransition_mod;
 pub use ColorTMPTextStateTransition_mod::*;
@@ -1099,9 +1138,6 @@ pub use CreateServerFormData_mod::*;
 // class CreateServerViewController_mod; export all
 mod CreateServerViewController_mod;
 pub use CreateServerViewController_mod::*;
-// class CreditsContent_mod; export all
-mod CreditsContent_mod;
-pub use CreditsContent_mod::*;
 // class CreditsController_mod; export all
 mod CreditsController_mod;
 pub use CreditsController_mod::*;
@@ -1138,12 +1174,21 @@ pub use CustomControlPlayableAsset_mod::*;
 // class CustomControlTrack_mod; export all
 mod CustomControlTrack_mod;
 pub use CustomControlTrack_mod::*;
+// class CustomLODGroup_mod; export all
+mod CustomLODGroup_mod;
+pub use CustomLODGroup_mod::*;
 // class CustomLevelLoader_mod; export all
 mod CustomLevelLoader_mod;
 pub use CustomLevelLoader_mod::*;
 // class CustomLevelPathHelper_mod; export all
 mod CustomLevelPathHelper_mod;
 pub use CustomLevelPathHelper_mod::*;
+// class CustomLevelsSettingsAsyncInstaller_mod; export all
+mod CustomLevelsSettingsAsyncInstaller_mod;
+pub use CustomLevelsSettingsAsyncInstaller_mod::*;
+// class CustomLevelsSettings_mod; export all
+mod CustomLevelsSettings_mod;
+pub use CustomLevelsSettings_mod::*;
 // class CustomNetworkConfig_mod; export all
 mod CustomNetworkConfig_mod;
 pub use CustomNetworkConfig_mod::*;
@@ -1177,9 +1222,9 @@ pub use DeactivateAfterFirstFrame_mod::*;
 // class DeactivateAnimatorOnInputFocusCapture_mod; export all
 mod DeactivateAnimatorOnInputFocusCapture_mod;
 pub use DeactivateAnimatorOnInputFocusCapture_mod::*;
-// class DeactivateOnInputFocusCapture_mod; export all
-mod DeactivateOnInputFocusCapture_mod;
-pub use DeactivateOnInputFocusCapture_mod::*;
+// class DeactivateMenuControllersOnFocusCaptureOrTrackingLost_mod; export all
+mod DeactivateMenuControllersOnFocusCaptureOrTrackingLost_mod;
+pub use DeactivateMenuControllersOnFocusCaptureOrTrackingLost_mod::*;
 // class DebugConsoleController_mod; export all
 mod DebugConsoleController_mod;
 pub use DebugConsoleController_mod::*;
@@ -1219,6 +1264,9 @@ pub use DelegateList_1_mod::*;
 // class DepthTextureController_mod; export all
 mod DepthTextureController_mod;
 pub use DepthTextureController_mod::*;
+// class DeterminismConfig_mod; export all
+mod DeterminismConfig_mod;
+pub use DeterminismConfig_mod::*;
 // class DeterministicHitChanceScoreCalculator_mod; export all
 mod DeterministicHitChanceScoreCalculator_mod;
 pub use DeterministicHitChanceScoreCalculator_mod::*;
@@ -1252,6 +1300,15 @@ pub use DisableGCWhileEnabled_mod::*;
 // class DisableIfNotPlatform_mod; export all
 mod DisableIfNotPlatform_mod;
 pub use DisableIfNotPlatform_mod::*;
+// class DisableOnNonOculus_mod; export all
+mod DisableOnNonOculus_mod;
+pub use DisableOnNonOculus_mod::*;
+// class DisableOnNonQuest_mod; export all
+mod DisableOnNonQuest_mod;
+pub use DisableOnNonQuest_mod::*;
+// class DisableOnNonSteam_mod; export all
+mod DisableOnNonSteam_mod;
+pub use DisableOnNonSteam_mod::*;
 // class DisableOnPlatform_mod; export all
 mod DisableOnPlatform_mod;
 pub use DisableOnPlatform_mod::*;
@@ -1303,6 +1360,9 @@ pub use DrawIfAttribute_mod::*;
 // class DroneHover_mod; export all
 mod DroneHover_mod;
 pub use DroneHover_mod::*;
+// class DropdownDialogPromptViewController_mod; export all
+mod DropdownDialogPromptViewController_mod;
+pub use DropdownDialogPromptViewController_mod::*;
 // class DropdownSettingsController_mod; export all
 mod DropdownSettingsController_mod;
 pub use DropdownSettingsController_mod::*;
@@ -1312,6 +1372,9 @@ pub use DroppedFramesLabel_mod::*;
 // class DuplicateMirrorForReflectionProbe_mod; export all
 mod DuplicateMirrorForReflectionProbe_mod;
 pub use DuplicateMirrorForReflectionProbe_mod::*;
+// class DynamicScenesTransitionSetupDataSO_mod; export all
+mod DynamicScenesTransitionSetupDataSO_mod;
+pub use DynamicScenesTransitionSetupDataSO_mod::*;
 // class EaseType_mod; export all
 mod EaseType_mod;
 pub use EaseType_mod::*;
@@ -1435,6 +1498,9 @@ pub use EnvironmentSceneSetupData_mod::*;
 // class EnvironmentSceneSetup_mod; export all
 mod EnvironmentSceneSetup_mod;
 pub use EnvironmentSceneSetup_mod::*;
+// class EnvironmentShaderWarmupDebugger_mod; export all
+mod EnvironmentShaderWarmupDebugger_mod;
+pub use EnvironmentShaderWarmupDebugger_mod::*;
 // class EnvironmentShaderWarmup_mod; export all
 mod EnvironmentShaderWarmup_mod;
 pub use EnvironmentShaderWarmup_mod::*;
@@ -1474,6 +1540,9 @@ pub use EventsTestSceneSetup_mod::*;
 // class EventsTestScenesTransitionSetupDataSO_mod; export all
 mod EventsTestScenesTransitionSetupDataSO_mod;
 pub use EventsTestScenesTransitionSetupDataSO_mod::*;
+// class ExceptionExtensions_mod; export all
+mod ExceptionExtensions_mod;
+pub use ExceptionExtensions_mod::*;
 // class ExpiringDictionary_2_mod; export all
 mod ExpiringDictionary_2_mod;
 pub use ExpiringDictionary_2_mod::*;
@@ -1582,6 +1651,9 @@ pub use FirstPersonFlyingController_mod::*;
 // class FixedScenesScenesTransitionSetupDataSO_mod; export all
 mod FixedScenesScenesTransitionSetupDataSO_mod;
 pub use FixedScenesScenesTransitionSetupDataSO_mod::*;
+// class FixedSizeQueue_1_mod; export all
+mod FixedSizeQueue_1_mod;
+pub use FixedSizeQueue_1_mod::*;
 // class FixedUpdateSmoothValue_1_mod; export all
 mod FixedUpdateSmoothValue_1_mod;
 pub use FixedUpdateSmoothValue_1_mod::*;
@@ -1591,6 +1663,9 @@ pub use FixedUpdateVector3SmoothValue_mod::*;
 // class FlickeringNeonSign_mod; export all
 mod FlickeringNeonSign_mod;
 pub use FlickeringNeonSign_mod::*;
+// class FloatArrayMaterialPropertyEffectTarget_mod; export all
+mod FloatArrayMaterialPropertyEffectTarget_mod;
+pub use FloatArrayMaterialPropertyEffectTarget_mod::*;
 // class FloatFxBaseData_mod; export all
 mod FloatFxBaseData_mod;
 pub use FloatFxBaseData_mod::*;
@@ -1627,6 +1702,9 @@ pub use FloatSO_mod::*;
 // class FloatSignal_mod; export all
 mod FloatSignal_mod;
 pub use FloatSignal_mod::*;
+// class FloatTransitionSO_mod; export all
+mod FloatTransitionSO_mod;
+pub use FloatTransitionSO_mod::*;
 // class FloatingTransformEffect_mod; export all
 mod FloatingTransformEffect_mod;
 pub use FloatingTransformEffect_mod::*;
@@ -1666,6 +1744,9 @@ pub use FlyingTextSpawner_mod::*;
 // class FormattedFloatListSettingsController_mod; export all
 mod FormattedFloatListSettingsController_mod;
 pub use FormattedFloatListSettingsController_mod::*;
+// class FormattedIntListSettingsController_mod; export all
+mod FormattedIntListSettingsController_mod;
+pub use FormattedIntListSettingsController_mod::*;
 // class FriendsViewController_mod; export all
 mod FriendsViewController_mod;
 pub use FriendsViewController_mod::*;
@@ -1714,6 +1795,9 @@ pub use GameNoteController_mod::*;
 // class GameObjectIntSwitchEventEffect_mod; export all
 mod GameObjectIntSwitchEventEffect_mod;
 pub use GameObjectIntSwitchEventEffect_mod::*;
+// class GameObjectKeywordSwitchEffect_mod; export all
+mod GameObjectKeywordSwitchEffect_mod;
+pub use GameObjectKeywordSwitchEffect_mod::*;
 // class GameObjectSwitchEventEffect_mod; export all
 mod GameObjectSwitchEventEffect_mod;
 pub use GameObjectSwitchEventEffect_mod::*;
@@ -1741,6 +1825,9 @@ pub use GameServerListItem_mod::*;
 // class GameServerListTableCell_mod; export all
 mod GameServerListTableCell_mod;
 pub use GameServerListTableCell_mod::*;
+// class GameServerLobbyFlowCoordinatorBase_mod; export all
+mod GameServerLobbyFlowCoordinatorBase_mod;
+pub use GameServerLobbyFlowCoordinatorBase_mod::*;
 // class GameServerLobbyFlowCoordinator_mod; export all
 mod GameServerLobbyFlowCoordinator_mod;
 pub use GameServerLobbyFlowCoordinator_mod::*;
@@ -1765,6 +1852,9 @@ pub use GameServersFilter_mod::*;
 // class GameServersListTableView_mod; export all
 mod GameServersListTableView_mod;
 pub use GameServersListTableView_mod::*;
+// class GameSessionAnalyticsManager_mod; export all
+mod GameSessionAnalyticsManager_mod;
+pub use GameSessionAnalyticsManager_mod::*;
 // class GameSongController_mod; export all
 mod GameSongController_mod;
 pub use GameSongController_mod::*;
@@ -1870,12 +1960,18 @@ pub use GhostEffectAsset_mod::*;
 // class GhostEffectBehaviour_mod; export all
 mod GhostEffectBehaviour_mod;
 pub use GhostEffectBehaviour_mod::*;
+// class GlobalShaderColorLightWithIds_mod; export all
+mod GlobalShaderColorLightWithIds_mod;
+pub use GlobalShaderColorLightWithIds_mod::*;
 // class GoodCutScoringElement_mod; export all
 mod GoodCutScoringElement_mod;
 pub use GoodCutScoringElement_mod::*;
 // class GoodCutsMissionObjectiveChecker_mod; export all
 mod GoodCutsMissionObjectiveChecker_mod;
 pub use GoodCutsMissionObjectiveChecker_mod::*;
+// class GradientDirection_mod; export all
+mod GradientDirection_mod;
+pub use GradientDirection_mod::*;
 // class GradientImageViewStateTransition_mod; export all
 mod GradientImageViewStateTransition_mod;
 pub use GradientImageViewStateTransition_mod::*;
@@ -1885,9 +1981,6 @@ pub use GradientTransitionSO_mod::*;
 // class GraphAPIClient_mod; export all
 mod GraphAPIClient_mod;
 pub use GraphAPIClient_mod::*;
-// class GraphicSettingHelper_mod; export all
-mod GraphicSettingHelper_mod;
-pub use GraphicSettingHelper_mod::*;
 // class GraphicSettingsConditionalActivator_mod; export all
 mod GraphicSettingsConditionalActivator_mod;
 pub use GraphicSettingsConditionalActivator_mod::*;
@@ -1897,6 +1990,9 @@ pub use GraphicSettingsViewController_mod::*;
 // class GridView_mod; export all
 mod GridView_mod;
 pub use GridView_mod::*;
+// class GroundShadow_mod; export all
+mod GroundShadow_mod;
+pub use GroundShadow_mod::*;
 // class GroupPresenceSample_mod; export all
 mod GroupPresenceSample_mod;
 pub use GroupPresenceSample_mod::*;
@@ -1945,6 +2041,12 @@ pub use HapticFeedbackManager_mod::*;
 // class HapticsAudioClipPlayer_mod; export all
 mod HapticsAudioClipPlayer_mod;
 pub use HapticsAudioClipPlayer_mod::*;
+// class HardwareCategories_mod; export all
+mod HardwareCategories_mod;
+pub use HardwareCategories_mod::*;
+// class HardwareCategory_mod; export all
+mod HardwareCategory_mod;
+pub use HardwareCategory_mod::*;
 // class HeadInObstacleHapticEffect_mod; export all
 mod HeadInObstacleHapticEffect_mod;
 pub use HeadInObstacleHapticEffect_mod::*;
@@ -2053,12 +2155,12 @@ pub use IBeatmapLevelData_mod::*;
 // class IBeatmapLevelLoader_mod; export all
 mod IBeatmapLevelLoader_mod;
 pub use IBeatmapLevelLoader_mod::*;
+// class IBeatmapLightEventConverter_mod; export all
+mod IBeatmapLightEventConverter_mod;
+pub use IBeatmapLightEventConverter_mod::*;
 // class IBeatmapObjectController_mod; export all
 mod IBeatmapObjectController_mod;
 pub use IBeatmapObjectController_mod::*;
-// class IBeatmapObjectSpawnController_mod; export all
-mod IBeatmapObjectSpawnController_mod;
-pub use IBeatmapObjectSpawnController_mod::*;
 // class IBeatmapObjectSpawner_mod; export all
 mod IBeatmapObjectSpawner_mod;
 pub use IBeatmapObjectSpawner_mod::*;
@@ -2137,12 +2239,18 @@ pub use IDestinationRequestManager_mod::*;
 // class IDiffieHellmanKeyPair_mod; export all
 mod IDiffieHellmanKeyPair_mod;
 pub use IDiffieHellmanKeyPair_mod::*;
+// class IDspTimeProvider_mod; export all
+mod IDspTimeProvider_mod;
+pub use IDspTimeProvider_mod::*;
 // class IEditTimeValidated_mod; export all
 mod IEditTimeValidated_mod;
 pub use IEditTimeValidated_mod::*;
 // class IEntitlementModel_mod; export all
 mod IEntitlementModel_mod;
 pub use IEntitlementModel_mod::*;
+// class IEnvironmentColorProvider_mod; export all
+mod IEnvironmentColorProvider_mod;
+pub use IEnvironmentColorProvider_mod::*;
 // class IEnvironmentInfo_mod; export all
 mod IEnvironmentInfo_mod;
 pub use IEnvironmentInfo_mod::*;
@@ -2371,9 +2479,6 @@ pub use IPacketPool_mod::*;
 // class IPlatformAchievementsHandler_mod; export all
 mod IPlatformAchievementsHandler_mod;
 pub use IPlatformAchievementsHandler_mod::*;
-// class IPlatformInit_mod; export all
-mod IPlatformInit_mod;
-pub use IPlatformInit_mod::*;
 // class IPlatformUserModel_mod; export all
 mod IPlatformUserModel_mod;
 pub use IPlatformUserModel_mod::*;
@@ -2398,6 +2503,12 @@ pub use IPreviewMediaData_mod::*;
 // class IQuickPlaySetupModel_mod; export all
 mod IQuickPlaySetupModel_mod;
 pub use IQuickPlaySetupModel_mod::*;
+// class IReadOnlyColorStyle_mod; export all
+mod IReadOnlyColorStyle_mod;
+pub use IReadOnlyColorStyle_mod::*;
+// class IReadOnlyTextStyle_mod; export all
+mod IReadOnlyTextStyle_mod;
+pub use IReadOnlyTextStyle_mod::*;
 // class IReadonlyBeatmapData_mod; export all
 mod IReadonlyBeatmapData_mod;
 pub use IReadonlyBeatmapData_mod::*;
@@ -2530,12 +2641,18 @@ pub use IUnifiedNetworkPlayerModel_mod::*;
 // class IUnityXRHapticsHandler_mod; export all
 mod IUnityXRHapticsHandler_mod;
 pub use IUnityXRHapticsHandler_mod::*;
+// class IVRInputModule_mod; export all
+mod IVRInputModule_mod;
+pub use IVRInputModule_mod::*;
 // class IVRPlatformHelper_mod; export all
 mod IVRPlatformHelper_mod;
 pub use IVRPlatformHelper_mod::*;
 // class IValue_1_mod; export all
 mod IValue_1_mod;
 pub use IValue_1_mod::*;
+// class IVariableMovementDataProvider_mod; export all
+mod IVariableMovementDataProvider_mod;
+pub use IVariableMovementDataProvider_mod::*;
 // class IVerboseLogger_mod; export all
 mod IVerboseLogger_mod;
 pub use IVerboseLogger_mod::*;
@@ -2569,6 +2686,9 @@ pub use IndexFilter_mod::*;
 // class InputActions_mod; export all
 mod InputActions_mod;
 pub use InputActions_mod::*;
+// class InputFieldSelectableStateController_mod; export all
+mod InputFieldSelectableStateController_mod;
+pub use InputFieldSelectableStateController_mod::*;
 // class InstancedMaterialLightWithId_mod; export all
 mod InstancedMaterialLightWithId_mod;
 pub use InstancedMaterialLightWithId_mod::*;
@@ -2629,9 +2749,15 @@ pub use KawaseBlurRendererSO_mod::*;
 // class KnucklesUnityXRHapticsHandler_mod; export all
 mod KnucklesUnityXRHapticsHandler_mod;
 pub use KnucklesUnityXRHapticsHandler_mod::*;
+// class LanguageFactory_mod; export all
+mod LanguageFactory_mod;
+pub use LanguageFactory_mod::*;
 // class LanguageSettingsController_mod; export all
 mod LanguageSettingsController_mod;
 pub use LanguageSettingsController_mod::*;
+// class LanguageSettingsViewController_mod; export all
+mod LanguageSettingsViewController_mod;
+pub use LanguageSettingsViewController_mod::*;
 // class LastUsedBeatmapDataCache_mod; export all
 mod LastUsedBeatmapDataCache_mod;
 pub use LastUsedBeatmapDataCache_mod::*;
@@ -2731,9 +2857,6 @@ pub use LevelPackInfo_mod::*;
 // class LevelParamsPanel_mod; export all
 mod LevelParamsPanel_mod;
 pub use LevelParamsPanel_mod::*;
-// class LevelRecording_mod; export all
-mod LevelRecording_mod;
-pub use LevelRecording_mod::*;
 // class LevelScenesTransitionSetupDataSO_mod; export all
 mod LevelScenesTransitionSetupDataSO_mod;
 pub use LevelScenesTransitionSetupDataSO_mod::*;
@@ -2803,6 +2926,9 @@ pub use LightGroupGridLayouter_mod::*;
 // class LightGroupLinearLayouter_mod; export all
 mod LightGroupLinearLayouter_mod;
 pub use LightGroupLinearLayouter_mod::*;
+// class LightGroupRotationSpreadLayouter_mod; export all
+mod LightGroupRotationSpreadLayouter_mod;
+pub use LightGroupRotationSpreadLayouter_mod::*;
 // class LightGroupRotationXTransform_mod; export all
 mod LightGroupRotationXTransform_mod;
 pub use LightGroupRotationXTransform_mod::*;
@@ -2830,6 +2956,9 @@ pub use LightGroupTranslationZTransform_mod::*;
 // class LightGroup_mod; export all
 mod LightGroup_mod;
 pub use LightGroup_mod::*;
+// class LightIdColorPair_mod; export all
+mod LightIdColorPair_mod;
+pub use LightIdColorPair_mod::*;
 // class LightManager_mod; export all
 mod LightManager_mod;
 pub use LightManager_mod::*;
@@ -2920,6 +3049,9 @@ pub use LightmappingGameplayManager_mod::*;
 // class LightmappingSceneSetup_mod; export all
 mod LightmappingSceneSetup_mod;
 pub use LightmappingSceneSetup_mod::*;
+// class LightmappingSongController_mod; export all
+mod LightmappingSongController_mod;
+pub use LightmappingSongController_mod::*;
 // class LightsAnimator_mod; export all
 mod LightsAnimator_mod;
 pub use LightsAnimator_mod::*;
@@ -3106,6 +3238,9 @@ pub use MaterialPropertyBlockColorAnimator_mod::*;
 // class MaterialPropertyBlockColorSetter_mod; export all
 mod MaterialPropertyBlockColorSetter_mod;
 pub use MaterialPropertyBlockColorSetter_mod::*;
+// class MaterialPropertyBlockControllerArrayRandomValueSetter_mod; export all
+mod MaterialPropertyBlockControllerArrayRandomValueSetter_mod;
+pub use MaterialPropertyBlockControllerArrayRandomValueSetter_mod::*;
 // class MaterialPropertyBlockControllerRandomValueSetter_mod; export all
 mod MaterialPropertyBlockControllerRandomValueSetter_mod;
 pub use MaterialPropertyBlockControllerRandomValueSetter_mod::*;
@@ -3118,6 +3253,9 @@ pub use MaterialPropertyBlockFloatAnimator_mod::*;
 // class MaterialPropertyBlockFloatCurve_mod; export all
 mod MaterialPropertyBlockFloatCurve_mod;
 pub use MaterialPropertyBlockFloatCurve_mod::*;
+// class MaterialPropertyBlockLocalScaleAnimator_mod; export all
+mod MaterialPropertyBlockLocalScaleAnimator_mod;
+pub use MaterialPropertyBlockLocalScaleAnimator_mod::*;
 // class MaterialPropertyBlockPositionUpdater_mod; export all
 mod MaterialPropertyBlockPositionUpdater_mod;
 pub use MaterialPropertyBlockPositionUpdater_mod::*;
@@ -3130,6 +3268,12 @@ pub use MaterialPropertyBlockVectorAnimator_mod::*;
 // class MaterialPropertyValuesSetter_mod; export all
 mod MaterialPropertyValuesSetter_mod;
 pub use MaterialPropertyValuesSetter_mod::*;
+// class MaterialSwapGraphicViewStateTransition_mod; export all
+mod MaterialSwapGraphicViewStateTransition_mod;
+pub use MaterialSwapGraphicViewStateTransition_mod::*;
+// class MaterialSwapTransitionSO_mod; export all
+mod MaterialSwapTransitionSO_mod;
+pub use MaterialSwapTransitionSO_mod::*;
 // class MathfExtra_mod; export all
 mod MathfExtra_mod;
 pub use MathfExtra_mod::*;
@@ -3316,6 +3460,9 @@ pub use MissionObjectiveGameUIView_mod::*;
 // class MissionObjectiveResult_mod; export all
 mod MissionObjectiveResult_mod;
 pub use MissionObjectiveResult_mod::*;
+// class MissionObjectiveStyleSO_mod; export all
+mod MissionObjectiveStyleSO_mod;
+pub use MissionObjectiveStyleSO_mod::*;
 // class MissionObjectiveTypeSO_mod; export all
 mod MissionObjectiveTypeSO_mod;
 pub use MissionObjectiveTypeSO_mod::*;
@@ -3457,6 +3604,9 @@ pub use MockScoreSyncStateSender_mod::*;
 // class MockServerSettings_mod; export all
 mod MockServerSettings_mod;
 pub use MockServerSettings_mod::*;
+// class MockVRHelper_mod; export all
+mod MockVRHelper_mod;
+pub use MockVRHelper_mod::*;
 // class ModifiersSelectionView_mod; export all
 mod ModifiersSelectionView_mod;
 pub use ModifiersSelectionView_mod::*;
@@ -3490,6 +3640,9 @@ pub use MovementBeatmapEventEffect_mod::*;
 // class MovementHistoryRecorder_mod; export all
 mod MovementHistoryRecorder_mod;
 pub use MovementHistoryRecorder_mod::*;
+// class MultiClickButtonController_mod; export all
+mod MultiClickButtonController_mod;
+pub use MultiClickButtonController_mod::*;
 // class MultiplayerActivePlayersTimeOffsetAverage_mod; export all
 mod MultiplayerActivePlayersTimeOffsetAverage_mod;
 pub use MultiplayerActivePlayersTimeOffsetAverage_mod::*;
@@ -3982,6 +4135,9 @@ pub use NetworkStatisticsState_mod::*;
 // class NetworkUtility_mod; export all
 mod NetworkUtility_mod;
 pub use NetworkUtility_mod::*;
+// class NoAlphaColorSO_mod; export all
+mod NoAlphaColorSO_mod;
+pub use NoAlphaColorSO_mod::*;
 // class NoAnalyticsModel_mod; export all
 mod NoAnalyticsModel_mod;
 pub use NoAnalyticsModel_mod::*;
@@ -4021,6 +4177,9 @@ pub use NoTransitionToggleSelectableStateController_mod::*;
 // class NoUserAgeWarningViewController_mod; export all
 mod NoUserAgeWarningViewController_mod;
 pub use NoUserAgeWarningViewController_mod::*;
+// class NoVRInputModule_mod; export all
+mod NoVRInputModule_mod;
+pub use NoVRInputModule_mod::*;
 // class NodePoseSyncStateDeltaNetSerializable_mod; export all
 mod NodePoseSyncStateDeltaNetSerializable_mod;
 pub use NodePoseSyncStateDeltaNetSerializable_mod::*;
@@ -4084,9 +4243,6 @@ pub use NoteCutSoundEffect_mod::*;
 // class NoteCutter_mod; export all
 mod NoteCutter_mod;
 pub use NoteCutter_mod::*;
-// class NoteDataFromNoteSpawnInfoNetSerializable_mod; export all
-mod NoteDataFromNoteSpawnInfoNetSerializable_mod;
-pub use NoteDataFromNoteSpawnInfoNetSerializable_mod::*;
 // class NoteData_mod; export all
 mod NoteData_mod;
 pub use NoteData_mod::*;
@@ -4120,6 +4276,12 @@ pub use NoteJumpDurationTypeSettingsDropdown_mod::*;
 // class NoteJumpDurationTypeSettings_mod; export all
 mod NoteJumpDurationTypeSettings_mod;
 pub use NoteJumpDurationTypeSettings_mod::*;
+// class NoteJumpSpeedEventDataProcessor_mod; export all
+mod NoteJumpSpeedEventDataProcessor_mod;
+pub use NoteJumpSpeedEventDataProcessor_mod::*;
+// class NoteJumpSpeedEventData_mod; export all
+mod NoteJumpSpeedEventData_mod;
+pub use NoteJumpSpeedEventData_mod::*;
 // class NoteJumpStartBeatOffsetDropdown_mod; export all
 mod NoteJumpStartBeatOffsetDropdown_mod;
 pub use NoteJumpStartBeatOffsetDropdown_mod::*;
@@ -4129,9 +4291,9 @@ pub use NoteJumpStartScaleUp_mod::*;
 // class NoteJump_mod; export all
 mod NoteJump_mod;
 pub use NoteJump_mod::*;
-// class NoteLineConnectionController_mod; export all
-mod NoteLineConnectionController_mod;
-pub use NoteLineConnectionController_mod::*;
+// class NoteLODGroup_mod; export all
+mod NoteLODGroup_mod;
+pub use NoteLODGroup_mod::*;
 // class NoteLineLayer_mod; export all
 mod NoteLineLayer_mod;
 pub use NoteLineLayer_mod::*;
@@ -4141,6 +4303,9 @@ pub use NoteMissInfoNetSerializable_mod::*;
 // class NoteMovement_mod; export all
 mod NoteMovement_mod;
 pub use NoteMovement_mod::*;
+// class NoteSpawnData_mod; export all
+mod NoteSpawnData_mod;
+pub use NoteSpawnData_mod::*;
 // class NoteSpawnInfoNetSerializable_mod; export all
 mod NoteSpawnInfoNetSerializable_mod;
 pub use NoteSpawnInfoNetSerializable_mod::*;
@@ -4153,12 +4318,18 @@ pub use NoteTrailParticleSystem_mod::*;
 // class NoteVisualModifierType_mod; export all
 mod NoteVisualModifierType_mod;
 pub use NoteVisualModifierType_mod::*;
+// class NoteWaiting_mod; export all
+mod NoteWaiting_mod;
+pub use NoteWaiting_mod::*;
 // class NullAllowedIf_mod; export all
 mod NullAllowedIf_mod;
 pub use NullAllowedIf_mod::*;
 // class NullAllowed_mod; export all
 mod NullAllowed_mod;
 pub use NullAllowed_mod::*;
+// class NullableScriptableObjectInstaller_mod; export all
+mod NullableScriptableObjectInstaller_mod;
+pub use NullableScriptableObjectInstaller_mod::*;
 // class OVRAnchorContainer_mod; export all
 mod OVRAnchorContainer_mod;
 pub use OVRAnchorContainer_mod::*;
@@ -4654,12 +4825,15 @@ pub use ObstacleSaberSparkleEffect_mod::*;
 // class ObstacleScaleUp_mod; export all
 mod ObstacleScaleUp_mod;
 pub use ObstacleScaleUp_mod::*;
+// class ObstacleShaderWarmup_mod; export all
+mod ObstacleShaderWarmup_mod;
+pub use ObstacleShaderWarmup_mod::*;
+// class ObstacleSpawnData_mod; export all
+mod ObstacleSpawnData_mod;
+pub use ObstacleSpawnData_mod::*;
 // class ObstacleSpawnInfoNetSerializable_mod; export all
 mod ObstacleSpawnInfoNetSerializable_mod;
 pub use ObstacleSpawnInfoNetSerializable_mod::*;
-// class ObstaclesQualitySO_mod; export all
-mod ObstaclesQualitySO_mod;
-pub use ObstaclesQualitySO_mod::*;
 // class OculusAdvancedHapticFeedbackPlayer_mod; export all
 mod OculusAdvancedHapticFeedbackPlayer_mod;
 pub use OculusAdvancedHapticFeedbackPlayer_mod::*;
@@ -4687,6 +4861,9 @@ pub use OculusLevelProductPacksSO_mod::*;
 // class OculusMRCManager_mod; export all
 mod OculusMRCManager_mod;
 pub use OculusMRCManager_mod::*;
+// class OculusMetrics_mod; export all
+mod OculusMetrics_mod;
+pub use OculusMetrics_mod::*;
 // class OculusNetworkPlayerModel_mod; export all
 mod OculusNetworkPlayerModel_mod;
 pub use OculusNetworkPlayerModel_mod::*;
@@ -4705,6 +4882,9 @@ pub use OculusPlatformLeaderboardsHandler_mod::*;
 // class OculusPlatformUserModel_mod; export all
 mod OculusPlatformUserModel_mod;
 pub use OculusPlatformUserModel_mod::*;
+// class OculusRequestExtensions_mod; export all
+mod OculusRequestExtensions_mod;
+pub use OculusRequestExtensions_mod::*;
 // class OculusRichPresencePlatformHandler_mod; export all
 mod OculusRichPresencePlatformHandler_mod;
 pub use OculusRichPresencePlatformHandler_mod::*;
@@ -4756,9 +4936,15 @@ pub use OrderedSet_1_mod::*;
 // class OtherSettingsViewController_mod; export all
 mod OtherSettingsViewController_mod;
 pub use OtherSettingsViewController_mod::*;
+// class OverridableGradientDirection_mod; export all
+mod OverridableGradientDirection_mod;
+pub use OverridableGradientDirection_mod::*;
 // class OverrideEnvironmentSettings_mod; export all
 mod OverrideEnvironmentSettings_mod;
 pub use OverrideEnvironmentSettings_mod::*;
+// class OvrToolMetrics_mod; export all
+mod OvrToolMetrics_mod;
+pub use OvrToolMetrics_mod::*;
 // class PCAppInit_mod; export all
 mod PCAppInit_mod;
 pub use PCAppInit_mod::*;
@@ -4813,6 +4999,9 @@ pub use PSVR2Helper_mod::*;
 // class PSVRHelper_mod; export all
 mod PSVRHelper_mod;
 pub use PSVRHelper_mod::*;
+// class PackBuyOption_mod; export all
+mod PackBuyOption_mod;
+pub use PackBuyOption_mod::*;
 // class PackDefinitionAsyncInstaller_mod; export all
 mod PackDefinitionAsyncInstaller_mod;
 pub use PackDefinitionAsyncInstaller_mod::*;
@@ -4849,6 +5038,12 @@ pub use PageControl_mod::*;
 // class Parametric3SliceSpriteController_mod; export all
 mod Parametric3SliceSpriteController_mod;
 pub use Parametric3SliceSpriteController_mod::*;
+// class Parametric3SliceSpriteWidthEndFloatFxEffectTarget_mod; export all
+mod Parametric3SliceSpriteWidthEndFloatFxEffectTarget_mod;
+pub use Parametric3SliceSpriteWidthEndFloatFxEffectTarget_mod::*;
+// class Parametric3SliceUpdater_mod; export all
+mod Parametric3SliceUpdater_mod;
+pub use Parametric3SliceUpdater_mod::*;
 // class ParametricBoxController_mod; export all
 mod ParametricBoxController_mod;
 pub use ParametricBoxController_mod::*;
@@ -4966,15 +5161,12 @@ pub use PlatformNetworkPlayerModel_mod::*;
 // class PlatformUserAuthTokenData_mod; export all
 mod PlatformUserAuthTokenData_mod;
 pub use PlatformUserAuthTokenData_mod::*;
+// class PlatformUserModelUtils_mod; export all
+mod PlatformUserModelUtils_mod;
+pub use PlatformUserModelUtils_mod::*;
 // class PlayAudioOnGameEventController_mod; export all
 mod PlayAudioOnGameEventController_mod;
 pub use PlayAudioOnGameEventController_mod::*;
-// class PlaybackHelpers_mod; export all
-mod PlaybackHelpers_mod;
-pub use PlaybackHelpers_mod::*;
-// class PlaybackRecord_mod; export all
-mod PlaybackRecord_mod;
-pub use PlaybackRecord_mod::*;
 // class PlaybackRenderer_mod; export all
 mod PlaybackRenderer_mod;
 pub use PlaybackRenderer_mod::*;
@@ -5146,6 +5338,9 @@ pub use PracticeSettings_mod::*;
 // class PracticeViewController_mod; export all
 mod PracticeViewController_mod;
 pub use PracticeViewController_mod::*;
+// class PredefinedSettings_mod; export all
+mod PredefinedSettings_mod;
+pub use PredefinedSettings_mod::*;
 // class PrefabTemplate_mod; export all
 mod PrefabTemplate_mod;
 pub use PrefabTemplate_mod::*;
@@ -5176,6 +5371,9 @@ pub use ProcessPort_mod::*;
 // class ProfanityFilter_mod; export all
 mod ProfanityFilter_mod;
 pub use ProfanityFilter_mod::*;
+// class ProfilerMetrics_mod; export all
+mod ProfilerMetrics_mod;
+pub use ProfilerMetrics_mod::*;
 // class ProgressActivitySO_mod; export all
 mod ProgressActivitySO_mod;
 pub use ProgressActivitySO_mod::*;
@@ -5230,6 +5428,9 @@ pub use RGBPanelController_mod::*;
 // class RandomAnimationStartTime_mod; export all
 mod RandomAnimationStartTime_mod;
 pub use RandomAnimationStartTime_mod::*;
+// class RandomExtensions_mod; export all
+mod RandomExtensions_mod;
+pub use RandomExtensions_mod::*;
 // class RandomNoteRotation_mod; export all
 mod RandomNoteRotation_mod;
 pub use RandomNoteRotation_mod::*;
@@ -5251,6 +5452,9 @@ pub use RankModel_mod::*;
 // class Ray2DExtensions_mod; export all
 mod Ray2DExtensions_mod;
 pub use Ray2DExtensions_mod::*;
+// class RecPlayBehaviour_mod; export all
+mod RecPlayBehaviour_mod;
+pub use RecPlayBehaviour_mod::*;
 // class RecordingConverter_mod; export all
 mod RecordingConverter_mod;
 pub use RecordingConverter_mod::*;
@@ -5359,6 +5563,9 @@ pub use ResetLocalLeaderboardOnKey_mod::*;
 // class ResetPitchOnGameplayFinished_mod; export all
 mod ResetPitchOnGameplayFinished_mod;
 pub use ResetPitchOnGameplayFinished_mod::*;
+// class ResizablePanel_mod; export all
+mod ResizablePanel_mod;
+pub use ResizablePanel_mod::*;
 // class ResizableTextMeshPro_mod; export all
 mod ResizableTextMeshPro_mod;
 pub use ResizableTextMeshPro_mod::*;
@@ -5383,6 +5590,9 @@ pub use RichPresenceManager_mod::*;
 // class RollingAverage_mod; export all
 mod RollingAverage_mod;
 pub use RollingAverage_mod::*;
+// class RomanNumerals_mod; export all
+mod RomanNumerals_mod;
+pub use RomanNumerals_mod::*;
 // class RoomAdjustSettingsViewController_mod; export all
 mod RoomAdjustSettingsViewController_mod;
 pub use RoomAdjustSettingsViewController_mod::*;
@@ -5392,6 +5602,9 @@ pub use RotateBySpawnRotation_mod::*;
 // class Rotate_mod; export all
 mod Rotate_mod;
 pub use Rotate_mod::*;
+// class RotationTimeProcessor_mod; export all
+mod RotationTimeProcessor_mod;
+pub use RotationTimeProcessor_mod::*;
 // class RpcHandler_1_mod; export all
 mod RpcHandler_1_mod;
 pub use RpcHandler_1_mod::*;
@@ -5497,6 +5710,9 @@ pub use SceneStartHandler_mod::*;
 // class SceneStartSyncController_mod; export all
 mod SceneStartSyncController_mod;
 pub use SceneStartSyncController_mod::*;
+// class SceneTransitionFadingExtensions_mod; export all
+mod SceneTransitionFadingExtensions_mod;
+pub use SceneTransitionFadingExtensions_mod::*;
 // class SceneType_mod; export all
 mod SceneType_mod;
 pub use SceneType_mod::*;
@@ -5590,6 +5806,9 @@ pub use SelectableStateController_1_mod::*;
 // class SelectableStateController_mod; export all
 mod SelectableStateController_mod;
 pub use SelectableStateController_mod::*;
+// class ServerAppVersionFileManager_mod; export all
+mod ServerAppVersionFileManager_mod;
+pub use ServerAppVersionFileManager_mod::*;
 // class ServerCodeEntryViewController_mod; export all
 mod ServerCodeEntryViewController_mod;
 pub use ServerCodeEntryViewController_mod::*;
@@ -5617,6 +5836,9 @@ pub use SetBlocksBladeSaberGlowColor_mod::*;
 // class SetChildrenLightId_mod; export all
 mod SetChildrenLightId_mod;
 pub use SetChildrenLightId_mod::*;
+// class SetGlobalShaderFloat_mod; export all
+mod SetGlobalShaderFloat_mod;
+pub use SetGlobalShaderFloat_mod::*;
 // class SetPSSaberGlowColor_mod; export all
 mod SetPSSaberGlowColor_mod;
 pub use SetPSSaberGlowColor_mod::*;
@@ -5641,6 +5863,12 @@ pub use SettingsApplicatorSO_mod::*;
 // class SettingsFlowCoordinator_mod; export all
 mod SettingsFlowCoordinator_mod;
 pub use SettingsFlowCoordinator_mod::*;
+// class SettingsIO_mod; export all
+mod SettingsIO_mod;
+pub use SettingsIO_mod::*;
+// class SettingsManager_mod; export all
+mod SettingsManager_mod;
+pub use SettingsManager_mod::*;
 // class SettingsNavigationController_mod; export all
 mod SettingsNavigationController_mod;
 pub use SettingsNavigationController_mod::*;
@@ -5677,6 +5905,9 @@ pub use SignalListener_mod::*;
 // class SignalOnPointerClick_mod; export all
 mod SignalOnPointerClick_mod;
 pub use SignalOnPointerClick_mod::*;
+// class SignalOnToggleChange_mod; export all
+mod SignalOnToggleChange_mod;
+pub use SignalOnToggleChange_mod::*;
 // class SignalOnUIButtonClick_mod; export all
 mod SignalOnUIButtonClick_mod;
 pub use SignalOnUIButtonClick_mod::*;
@@ -5701,6 +5932,9 @@ pub use SimpleLevelStarter_mod::*;
 // class SimpleMemoryPool_1_mod; export all
 mod SimpleMemoryPool_1_mod;
 pub use SimpleMemoryPool_1_mod::*;
+// class SimpleScriptableObjectsPool_1_mod; export all
+mod SimpleScriptableObjectsPool_1_mod;
+pub use SimpleScriptableObjectsPool_1_mod::*;
 // class SimpleTemporalFiltering_mod; export all
 mod SimpleTemporalFiltering_mod;
 pub use SimpleTemporalFiltering_mod::*;
@@ -5770,6 +6004,9 @@ pub use SliderShaderHelper_mod::*;
 // class SliderShaderWarmup_mod; export all
 mod SliderShaderWarmup_mod;
 pub use SliderShaderWarmup_mod::*;
+// class SliderSpawnData_mod; export all
+mod SliderSpawnData_mod;
+pub use SliderSpawnData_mod::*;
 // class SliderSpawnInfoNetSerializable_mod; export all
 mod SliderSpawnInfoNetSerializable_mod;
 pub use SliderSpawnInfoNetSerializable_mod::*;
@@ -5926,18 +6163,18 @@ pub use SpawnChevronObjectPoolsInstaller_mod::*;
 // class SpawnLaserAnimation_mod; export all
 mod SpawnLaserAnimation_mod;
 pub use SpawnLaserAnimation_mod::*;
-// class SpawnRotationBeatmapEventDataProcessor_mod; export all
-mod SpawnRotationBeatmapEventDataProcessor_mod;
-pub use SpawnRotationBeatmapEventDataProcessor_mod::*;
-// class SpawnRotationBeatmapEventData_mod; export all
-mod SpawnRotationBeatmapEventData_mod;
-pub use SpawnRotationBeatmapEventData_mod::*;
 // class SpawnRotationChevronManager_mod; export all
 mod SpawnRotationChevronManager_mod;
 pub use SpawnRotationChevronManager_mod::*;
 // class SpawnRotationChevron_mod; export all
 mod SpawnRotationChevron_mod;
 pub use SpawnRotationChevron_mod::*;
+// class SpectrogramMultiplierFloatFxEffectTarget_mod; export all
+mod SpectrogramMultiplierFloatFxEffectTarget_mod;
+pub use SpectrogramMultiplierFloatFxEffectTarget_mod::*;
+// class SpectrogramRowPropertyAnimator_mod; export all
+mod SpectrogramRowPropertyAnimator_mod;
+pub use SpectrogramRowPropertyAnimator_mod::*;
 // class SpectrogramRow_mod; export all
 mod SpectrogramRow_mod;
 pub use SpectrogramRow_mod::*;
@@ -5965,6 +6202,9 @@ pub use SpriteSwapTransitionSO_mod::*;
 // class StandaloneGraphicSettingsViewController_mod; export all
 mod StandaloneGraphicSettingsViewController_mod;
 pub use StandaloneGraphicSettingsViewController_mod::*;
+// class StandaloneMonobehaviorExtensions_mod; export all
+mod StandaloneMonobehaviorExtensions_mod;
+pub use StandaloneMonobehaviorExtensions_mod::*;
 // class StandaloneMonobehavior_mod; export all
 mod StandaloneMonobehavior_mod;
 pub use StandaloneMonobehavior_mod::*;
@@ -6094,6 +6334,9 @@ pub use SteamNetworkPlayerModel_mod::*;
 // class SteamPlatformAdditionalContentModel_mod; export all
 mod SteamPlatformAdditionalContentModel_mod;
 pub use SteamPlatformAdditionalContentModel_mod::*;
+// class StepFloatMaterialPropertyEffectTarget_mod; export all
+mod StepFloatMaterialPropertyEffectTarget_mod;
+pub use StepFloatMaterialPropertyEffectTarget_mod::*;
 // class StepValuePicker_mod; export all
 mod StepValuePicker_mod;
 pub use StepValuePicker_mod::*;
@@ -6130,6 +6373,9 @@ pub use SyncBackgroundCommand_mod::*;
 // class SyncStateId_mod; export all
 mod SyncStateId_mod;
 pub use SyncStateId_mod::*;
+// class SyncText_mod; export all
+mod SyncText_mod;
+pub use SyncText_mod::*;
 // class SyncTimeProvider_mod; export all
 mod SyncTimeProvider_mod;
 pub use SyncTimeProvider_mod::*;
@@ -6181,6 +6427,12 @@ pub use TextMeshProInstaller_mod::*;
 // class TextOnlyTableCell_mod; export all
 mod TextOnlyTableCell_mod;
 pub use TextOnlyTableCell_mod::*;
+// class TextStyleSO_mod; export all
+mod TextStyleSO_mod;
+pub use TextStyleSO_mod::*;
+// class TextStyle_mod; export all
+mod TextStyle_mod;
+pub use TextStyle_mod::*;
 // class TextureEffectSO_mod; export all
 mod TextureEffectSO_mod;
 pub use TextureEffectSO_mod::*;
@@ -6199,12 +6451,18 @@ pub use TimeHelper_mod::*;
 // class TimelineArrayReference_mod; export all
 mod TimelineArrayReference_mod;
 pub use TimelineArrayReference_mod::*;
+// class TimelineExtensions_mod; export all
+mod TimelineExtensions_mod;
+pub use TimelineExtensions_mod::*;
 // class TimelinePauseMarker_mod; export all
 mod TimelinePauseMarker_mod;
 pub use TimelinePauseMarker_mod::*;
 // class TimelinePauseReceiver_mod; export all
 mod TimelinePauseReceiver_mod;
 pub use TimelinePauseReceiver_mod::*;
+// class TimelineUtils_mod; export all
+mod TimelineUtils_mod;
+pub use TimelineUtils_mod::*;
 // class ToggleableCanvasGroup_mod; export all
 mod ToggleableCanvasGroup_mod;
 pub use ToggleableCanvasGroup_mod::*;
@@ -6328,6 +6586,9 @@ pub use TutorialScenesTransitionSetupDataSO_mod::*;
 // class TutorialSongController_mod; export all
 mod TutorialSongController_mod;
 pub use TutorialSongController_mod::*;
+// class UIExtensionMethods_mod; export all
+mod UIExtensionMethods_mod;
+pub use UIExtensionMethods_mod::*;
 // class UIKeyboardManager_mod; export all
 mod UIKeyboardManager_mod;
 pub use UIKeyboardManager_mod::*;
@@ -6361,6 +6622,9 @@ pub use UnityScenesHelper_mod::*;
 // class UnitySourceGeneratedAssemblyMonoScriptTypes_v1_mod; export all
 mod UnitySourceGeneratedAssemblyMonoScriptTypes_v1_mod;
 pub use UnitySourceGeneratedAssemblyMonoScriptTypes_v1_mod::*;
+// class UnitySpecificRandomExtensions_mod; export all
+mod UnitySpecificRandomExtensions_mod;
+pub use UnitySpecificRandomExtensions_mod::*;
 // class UnityXRController_mod; export all
 mod UnityXRController_mod;
 pub use UnityXRController_mod::*;
@@ -6424,6 +6688,12 @@ pub use ValueDropdownController_1_mod::*;
 // class VarIntExtensions_mod; export all
 mod VarIntExtensions_mod;
 pub use VarIntExtensions_mod::*;
+// class VariableMovementDataProviderDebugWindow_mod; export all
+mod VariableMovementDataProviderDebugWindow_mod;
+pub use VariableMovementDataProviderDebugWindow_mod::*;
+// class VariableMovementDataProvider_mod; export all
+mod VariableMovementDataProvider_mod;
+pub use VariableMovementDataProvider_mod::*;
 // class Vector2Extensions_mod; export all
 mod Vector2Extensions_mod;
 pub use Vector2Extensions_mod::*;
@@ -6478,6 +6748,9 @@ pub use WhiteColorOrAlphaGroupEffectManager_mod::*;
 // class WhiteColorOrAlphaGroupEffect_mod; export all
 mod WhiteColorOrAlphaGroupEffect_mod;
 pub use WhiteColorOrAlphaGroupEffect_mod::*;
+// class WillNotBeUsedAttribute_mod; export all
+mod WillNotBeUsedAttribute_mod;
+pub use WillNotBeUsedAttribute_mod::*;
 // class WindowResolutionSettingsController_mod; export all
 mod WindowResolutionSettingsController_mod;
 pub use WindowResolutionSettingsController_mod::*;

@@ -212,10 +212,10 @@ for crate::GlobalNamespace::LevelPackDetailViewController {
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum LevelPackDetailViewController_ContentType {
-    Buy = 2i32,
+    Buyable = 2i32,
     Error = 3i32,
     Loading = 0i32,
-    Owned = 1i32,
+    NonBuyable = 1i32,
 }
 #[cfg(feature = "LevelPackDetailViewController+ContentType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

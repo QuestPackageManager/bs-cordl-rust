@@ -4,6 +4,7 @@
 pub struct LightGroup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightGroupSO: *mut crate::GlobalNamespace::LightGroupSO,
+    pub _lightWithIdManager: *mut crate::GlobalNamespace::LightWithIdManager,
     pub respawnEvent: *mut crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
     pub didRefreshContentEvent: *mut crate::System::Action_1<
         *mut crate::UnityEngine::GameObject,
@@ -34,6 +35,17 @@ impl crate::GlobalNamespace::LightGroup {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn SetColor(
+        &mut self,
+        color: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetColor", (color))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

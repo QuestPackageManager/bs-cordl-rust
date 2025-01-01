@@ -7,12 +7,13 @@ pub struct PlayerTransforms {
     pub _originTransform: *mut crate::UnityEngine::Transform,
     pub _leftHandTransform: *mut crate::UnityEngine::Transform,
     pub _rightHandTransform: *mut crate::UnityEngine::Transform,
+    pub _beatmapKey: crate::System::Nullable_1<crate::GlobalNamespace::BeatmapKey>,
     pub _overrideHeadPos: bool,
-    pub _overriddenHeadPos: crate::UnityEngine::Vector3,
     pub _headWorldPos: crate::UnityEngine::Vector3,
     pub _headWorldRot: crate::UnityEngine::Quaternion,
     pub _headPseudoLocalPos: crate::UnityEngine::Vector3,
     pub _headPseudoLocalRot: crate::UnityEngine::Quaternion,
+    pub _headPseudLocalZOnlyPos: crate::UnityEngine::Vector3,
     pub _leftHandPseudoLocalPos: crate::UnityEngine::Vector3,
     pub _leftHandPseudoLocalRot: crate::UnityEngine::Quaternion,
     pub _rightHandPseudoLocalPos: crate::UnityEngine::Vector3,
@@ -58,58 +59,6 @@ impl crate::GlobalNamespace::PlayerTransforms {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearHeadPositionOverride", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetZPos(
-        &mut self,
-        start: f32,
-        end: f32,
-        headOffsetZ: f32,
-        t: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetZPos", (start, end, headOffsetZ, t))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetZPosOffsetByHeadPosAtTime(
-        &mut self,
-        start: f32,
-        end: f32,
-        t: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetZPosOffsetByHeadPosAtTime", (start, end, t))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn HeadOffsetZ(
-        &mut self,
-        noteInverseWorldRotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("HeadOffsetZ", (noteInverseWorldRotation))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn MoveTowardsHead(
-        &mut self,
-        start: f32,
-        end: f32,
-        noteInverseWorldRotation: crate::UnityEngine::Quaternion,
-        t: f32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("MoveTowardsHead", (start, end, noteInverseWorldRotation, t))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -168,6 +117,16 @@ impl crate::GlobalNamespace::PlayerTransforms {
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
             .invoke("get_headPseudoLocalRot", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_headPseudoLocalZOnlyPos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_headPseudoLocalZOnlyPos", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_headWorldPos(

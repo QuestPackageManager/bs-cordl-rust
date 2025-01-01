@@ -28,12 +28,14 @@ impl std::ops::DerefMut for crate::HMUI::ContainerViewController {
 }
 #[cfg(feature = "HMUI+ContainerViewController")]
 impl crate::HMUI::ContainerViewController {
-    #[cfg(feature = "HMUI+ContainerViewController+_AddViewControllerCoroutine_d__15")]
-    pub type _AddViewControllerCoroutine_d__15 = crate::HMUI::ContainerViewController__AddViewControllerCoroutine_d__15;
+    #[cfg(feature = "HMUI+ContainerViewController+_AddViewControllerCoroutine_d__16")]
+    pub type _AddViewControllerCoroutine_d__16 = crate::HMUI::ContainerViewController__AddViewControllerCoroutine_d__16;
     #[cfg(
-        feature = "HMUI+ContainerViewController+_RemoveViewControllersCoroutine_d__17"
+        feature = "HMUI+ContainerViewController+_RemoveViewControllersCoroutine_d__18"
     )]
-    pub type _RemoveViewControllersCoroutine_d__17 = crate::HMUI::ContainerViewController__RemoveViewControllersCoroutine_d__17;
+    pub type _RemoveViewControllersCoroutine_d__18 = crate::HMUI::ContainerViewController__RemoveViewControllersCoroutine_d__18;
+    #[cfg(feature = "HMUI+ContainerViewController+__c")]
+    pub type __c = crate::HMUI::ContainerViewController___c;
     pub fn AddViewController(
         &mut self,
         viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -121,6 +123,13 @@ impl crate::HMUI::ContainerViewController {
                 "GetNewXPositionsForViewControllers",
                 (viewControllers, exludeFromEndCount),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsChildInTransition(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsChildInTransition", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn LayoutViewControllers(

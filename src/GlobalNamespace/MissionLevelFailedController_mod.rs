@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct MissionLevelFailedController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
     pub _levelFailedTextEffect: *mut crate::GlobalNamespace::LevelFailedTextEffect,
     pub _missionLevelSceneSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
     pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
     pub _initData: *mut crate::GlobalNamespace::MissionLevelFailedController_InitData,
     pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::BeatmapObjectSpawnController,

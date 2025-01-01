@@ -26,6 +26,9 @@ impl std::ops::DerefMut for crate::BeatSaber::Init::BSAppInit {
 #[cfg(feature = "BeatSaber+Init+BSAppInit")]
 impl crate::BeatSaber::Init::BSAppInit {
     pub const kAutoPlayOptionIdentifier: &'static str = "--auto_play";
+    pub const kAutoRecOptionIdentifier: &'static str = "--auto_rec";
+    pub const kCustomSettingsOptionIdentifier: &'static str = "--customSettings";
+    pub const kInBuildGameVersion: &'static str = "InBuildGameVersion";
     pub const kRecordingToolOptionIdentifier: &'static str = "--enable_recording_tool";
     pub fn InstallBindings(
         &mut self,

@@ -22,6 +22,7 @@ pub struct MainFlowCoordinator {
     pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
     pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
     pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
+    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
     pub _menuDestinationRequest: *mut crate::GlobalNamespace::MenuDestination,
     pub _afterDialogPromptFlowCoordinator: *mut crate::HMUI::FlowCoordinator,
     pub _goToMultiplayerAfterAvatarCreation: bool,
@@ -47,23 +48,23 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MainFlowCoordinator {
 #[cfg(feature = "MainFlowCoordinator")]
 impl crate::GlobalNamespace::MainFlowCoordinator {
     #[cfg(
-        feature = "MainFlowCoordinator+_HandleEditAvatarFlowCoordinatorHelperDidFinish_d__34"
+        feature = "MainFlowCoordinator+_HandleEditAvatarFlowCoordinatorHelperDidFinish_d__35"
     )]
-    pub type _HandleEditAvatarFlowCoordinatorHelperDidFinish_d__34 = crate::GlobalNamespace::MainFlowCoordinator__HandleEditAvatarFlowCoordinatorHelperDidFinish_d__34;
+    pub type _HandleEditAvatarFlowCoordinatorHelperDidFinish_d__35 = crate::GlobalNamespace::MainFlowCoordinator__HandleEditAvatarFlowCoordinatorHelperDidFinish_d__35;
     #[cfg(
-        feature = "MainFlowCoordinator+_HandleMultiplayerDisclaimerDidFinishAction_d__29"
+        feature = "MainFlowCoordinator+_HandleMultiplayerDisclaimerDidFinishAction_d__30"
     )]
-    pub type _HandleMultiplayerDisclaimerDidFinishAction_d__29 = crate::GlobalNamespace::MainFlowCoordinator__HandleMultiplayerDisclaimerDidFinishAction_d__29;
+    pub type _HandleMultiplayerDisclaimerDidFinishAction_d__30 = crate::GlobalNamespace::MainFlowCoordinator__HandleMultiplayerDisclaimerDidFinishAction_d__30;
     #[cfg(
-        feature = "MainFlowCoordinator+_PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__42"
+        feature = "MainFlowCoordinator+_PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__43"
     )]
-    pub type _PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__42 = crate::GlobalNamespace::MainFlowCoordinator__PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__42;
+    pub type _PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__43 = crate::GlobalNamespace::MainFlowCoordinator__PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__43;
     #[cfg(
-        feature = "MainFlowCoordinator+_ProcessMenuDestinationRequestAfterFrameCoroutine_d__43"
+        feature = "MainFlowCoordinator+_ProcessMenuDestinationRequestAfterFrameCoroutine_d__44"
     )]
-    pub type _ProcessMenuDestinationRequestAfterFrameCoroutine_d__43 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequestAfterFrameCoroutine_d__43;
-    #[cfg(feature = "MainFlowCoordinator+_ProcessMenuDestinationRequest_d__41")]
-    pub type _ProcessMenuDestinationRequest_d__41 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequest_d__41;
+    pub type _ProcessMenuDestinationRequestAfterFrameCoroutine_d__44 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequestAfterFrameCoroutine_d__44;
+    #[cfg(feature = "MainFlowCoordinator+_ProcessMenuDestinationRequest_d__42")]
+    pub type _ProcessMenuDestinationRequest_d__42 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequest_d__42;
     pub fn BackButtonWasPressed(
         &mut self,
         topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -361,17 +362,17 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _HandleMainMenuViewControllerDidFinish_b__28_0(
+    pub fn _HandleMainMenuViewControllerDidFinish_b__29_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<HandleMainMenuViewControllerDidFinish>b__28_0", ())?;
+            .invoke("<HandleMainMenuViewControllerDidFinish>b__29_0", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__27_0(
+    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__28_0(
         &mut self,
         buttonNumber: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -379,20 +380,20 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<PresentFlowCoordinatorOrAskForTutorial>b__27_0", (buttonNumber))?;
+            .invoke("<PresentFlowCoordinatorOrAskForTutorial>b__28_0", (buttonNumber))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__27_1(
+    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__28_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<PresentFlowCoordinatorOrAskForTutorial>b__27_1", ())?;
+            .invoke("<PresentFlowCoordinatorOrAskForTutorial>b__28_1", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_b__42_0(
+    pub fn _PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_b__43_0(
         &mut self,
         buttonNumber: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -401,7 +402,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
-                "<PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator>b__42_0",
+                "<PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator>b__43_0",
                 (buttonNumber),
             )?;
         Ok(__cordl_ret.into())

@@ -4,7 +4,6 @@
 pub struct SonyOnGoingToBackgroundSaveHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _flushingService: *mut crate::BGLib::SaveDataCore::SaveDataFlushingService,
     pub _sonyBackgroundExecutionHelper: *mut crate::GlobalNamespace::SonyBackgroundExecutionHelper,
     pub _localLeaderboardModel: *mut crate::GlobalNamespace::LocalLeaderboardsModel,
 }

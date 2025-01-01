@@ -24,6 +24,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IBeatmapLevelData {
 }
 #[cfg(feature = "IBeatmapLevelData")]
 impl crate::GlobalNamespace::IBeatmapLevelData {
+    pub fn ContainsBeatmapData(
+        &mut self,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ContainsBeatmapData", (beatmapKey))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAudioDataString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

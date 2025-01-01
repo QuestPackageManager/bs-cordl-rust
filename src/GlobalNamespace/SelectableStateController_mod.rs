@@ -102,18 +102,6 @@ impl crate::GlobalNamespace::SelectableStateController {
         > = __cordl_object.invoke("get_tweeningManager", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_viewState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::SelectableStateController_ViewState,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::SelectableStateController_ViewState = __cordl_object
-            .invoke("get_viewState", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn remove_stateDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<

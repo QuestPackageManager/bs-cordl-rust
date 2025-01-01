@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct NoteDebrisSimplePhysics {
     __cordl_parent: crate::GlobalNamespace::NoteDebrisPhysics,
-    pub _currentForce: crate::UnityEngine::Vector3,
-    pub _currentTorque: crate::UnityEngine::Vector3,
+    pub _currentLinearVelocity: crate::UnityEngine::Vector3,
+    pub _currentAngularVelocityDegrees: crate::UnityEngine::Vector3,
     pub _transform: *mut crate::UnityEngine::Transform,
     pub _gravity: crate::UnityEngine::Vector3,
     pub _firstUpdate: bool,
+    pub _position: crate::UnityEngine::Vector3,
+    pub _rotation: crate::UnityEngine::Quaternion,
 }
 #[cfg(feature = "NoteDebrisSimplePhysics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -29,27 +31,27 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebrisSimplePhysics {
 }
 #[cfg(feature = "NoteDebrisSimplePhysics")]
 impl crate::GlobalNamespace::NoteDebrisSimplePhysics {
-    pub fn AddVelocity(
+    pub fn Awake(
         &mut self,
-        force: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddVelocity", (force))?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
-        force: crate::UnityEngine::Vector3,
-        torque: crate::UnityEngine::Vector3,
+        linearVelocity: crate::UnityEngine::Vector3,
+        angularVelocity: crate::UnityEngine::Vector3,
+        forceOnlySimplePhysics: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (force, torque))?;
+            .invoke("Init", (linearVelocity, angularVelocity, forceOnlySimplePhysics))?;
         Ok(__cordl_ret.into())
     }
     pub fn LateUpdate(
@@ -69,16 +71,6 @@ impl crate::GlobalNamespace::NoteDebrisSimplePhysics {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -89,14 +81,24 @@ impl crate::GlobalNamespace::NoteDebrisSimplePhysics {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_position(
+    pub fn get_currentAngularVelocityDegrees(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_position", ())?;
+            .invoke("get_currentAngularVelocityDegrees", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_currentLinearVelocity(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_currentLinearVelocity", ())?;
         Ok(__cordl_ret.into())
     }
 }

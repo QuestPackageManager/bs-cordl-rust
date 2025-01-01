@@ -14,6 +14,7 @@ pub struct SliderData {
     pub _headCutDirectionAngleOffset_k__BackingField: f32,
     pub _hasTailNote_k__BackingField: bool,
     pub _tailTime_k__BackingField: f32,
+    pub _tailRotation_k__BackingField: i32,
     pub _tailLineIndex_k__BackingField: i32,
     pub _tailControlPointLengthMultiplier_k__BackingField: f32,
     pub _tailLineLayer_k__BackingField: crate::GlobalNamespace::NoteLineLayer,
@@ -74,6 +75,8 @@ impl crate::GlobalNamespace::SliderData {
         colorType: crate::GlobalNamespace::ColorType,
         hasHeadNote: bool,
         headTime: f32,
+        headBeat: f32,
+        headRotation: i32,
         headLineIndex: i32,
         headLineLayer: crate::GlobalNamespace::NoteLineLayer,
         headBeforeJumpLineLayer: crate::GlobalNamespace::NoteLineLayer,
@@ -82,6 +85,7 @@ impl crate::GlobalNamespace::SliderData {
         headCutDirectionAngleOffset: f32,
         hasTailNote: bool,
         tailTime: f32,
+        tailRotation: i32,
         tailLineIndex: i32,
         tailLineLayer: crate::GlobalNamespace::NoteLineLayer,
         tailBeforeJumpLineLayer: crate::GlobalNamespace::NoteLineLayer,
@@ -102,6 +106,8 @@ impl crate::GlobalNamespace::SliderData {
                     colorType,
                     hasHeadNote,
                     headTime,
+                    headBeat,
+                    headRotation,
                     headLineIndex,
                     headLineLayer,
                     headBeforeJumpLineLayer,
@@ -110,6 +116,7 @@ impl crate::GlobalNamespace::SliderData {
                     headCutDirectionAngleOffset,
                     hasTailNote,
                     tailTime,
+                    tailRotation,
                     tailLineIndex,
                     tailLineLayer,
                     tailBeforeJumpLineLayer,
@@ -188,6 +195,8 @@ impl crate::GlobalNamespace::SliderData {
         colorType: crate::GlobalNamespace::ColorType,
         hasHeadNote: bool,
         headTime: f32,
+        headBeat: f32,
+        headRotation: i32,
         headLineIndex: i32,
         headLineLayer: crate::GlobalNamespace::NoteLineLayer,
         headBeforeJumpLineLayer: crate::GlobalNamespace::NoteLineLayer,
@@ -196,6 +205,7 @@ impl crate::GlobalNamespace::SliderData {
         headCutDirectionAngleOffset: f32,
         hasTailNote: bool,
         tailTime: f32,
+        tailRotation: i32,
         tailLineIndex: i32,
         tailLineLayer: crate::GlobalNamespace::NoteLineLayer,
         tailBeforeJumpLineLayer: crate::GlobalNamespace::NoteLineLayer,
@@ -217,6 +227,8 @@ impl crate::GlobalNamespace::SliderData {
                     colorType,
                     hasHeadNote,
                     headTime,
+                    headBeat,
+                    headRotation,
                     headLineIndex,
                     headLineLayer,
                     headBeforeJumpLineLayer,
@@ -225,6 +237,7 @@ impl crate::GlobalNamespace::SliderData {
                     headCutDirectionAngleOffset,
                     hasTailNote,
                     tailTime,
+                    tailRotation,
                     tailLineIndex,
                     tailLineLayer,
                     tailBeforeJumpLineLayer,
@@ -415,6 +428,13 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = __cordl_object
             .invoke("get_tailLineLayer", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_tailRotation(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_tailRotation", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_tailTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -631,6 +651,17 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_tailLineLayer", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_tailRotation(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_tailRotation", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_tailTime(

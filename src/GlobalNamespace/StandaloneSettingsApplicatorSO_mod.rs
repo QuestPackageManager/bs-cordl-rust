@@ -26,14 +26,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StandaloneSettingsApplicator
 impl crate::GlobalNamespace::StandaloneSettingsApplicatorSO {
     pub fn ApplyWindowSettings(
         &mut self,
-        resolution: crate::UnityEngine::Vector2Int,
-        windowMode: crate::BeatSaber::GameSettings::WindowMode,
+        settings: quest_hook::libil2cpp::ByRefMut<
+            crate::BeatSaber::Settings::WindowSettings,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyWindowSettings", (resolution, windowMode))?;
+            .invoke("ApplyWindowSettings", (settings))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

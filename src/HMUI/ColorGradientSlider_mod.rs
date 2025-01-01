@@ -7,7 +7,7 @@ pub struct ColorGradientSlider {
     pub _color0: crate::UnityEngine::Color,
     pub _color1: crate::UnityEngine::Color,
     pub _gradientImages: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::HMUI::ImageView,
+        *mut crate::HMUI::ImageViewBase,
     >,
     pub _darkColor: crate::UnityEngine::Color,
     pub _lightColor: crate::UnityEngine::Color,

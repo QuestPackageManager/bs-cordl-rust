@@ -4,31 +4,31 @@
 pub struct MultiplayerOutroAnimationController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _outroPlayableDirector: *mut crate::UnityEngine::Playables::PlayableDirector,
+    pub _localPlayerTrackName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _playerTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _ringTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _resultsTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _localPlayerTimelinePropertyName: crate::UnityEngine::PropertyName,
     pub _playerTimelinePropertyNames: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::PropertyName,
+    >,
+    pub _resultsTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _resultsTimelinePropertyNames: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::PropertyName,
     >,
-    pub _localPlayerTrackName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _localPlayerTimelinePropertyName: crate::UnityEngine::PropertyName,
+    pub _badgeStartTransform: *mut crate::UnityEngine::Transform,
+    pub _badgeMidTransform: *mut crate::UnityEngine::Transform,
     pub _badgeTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _badgeTimelinePropertyNames: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::PropertyName,
     >,
-    pub _badgeStartTransform: *mut crate::UnityEngine::Transform,
-    pub _badgeMidTransform: *mut crate::UnityEngine::Transform,
     pub _songPreviewTrackName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _resultsMocksActivationTrack: *mut quest_hook::libil2cpp::Il2CppString,
     pub _multiplayerScoreRingManager: *mut crate::GlobalNamespace::MultiplayerScoreRingManager,
@@ -135,16 +135,6 @@ impl crate::GlobalNamespace::MultiplayerOutroAnimationController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn OnValidate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnValidate", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Start(

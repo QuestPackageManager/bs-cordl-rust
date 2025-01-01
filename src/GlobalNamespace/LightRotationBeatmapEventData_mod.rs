@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct LightRotationBeatmapEventData {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
-    pub groupId: i32,
-    pub elementId: i32,
-    pub usePreviousEventValue: bool,
-    pub easeType: crate::GlobalNamespace::EaseType,
-    pub axis: crate::GlobalNamespace::LightAxis,
-    pub loopCount: i32,
-    pub rotationDirection: crate::GlobalNamespace::LightRotationDirection,
+    pub _groupId_k__BackingField: i32,
+    pub _elementId_k__BackingField: i32,
+    pub _usePreviousEventValue_k__BackingField: bool,
+    pub _easeType_k__BackingField: crate::GlobalNamespace::EaseType,
+    pub _axis_k__BackingField: crate::GlobalNamespace::LightAxis,
+    pub _loopCount_k__BackingField: i32,
+    pub _rotationDirection_k__BackingField: crate::GlobalNamespace::LightRotationDirection,
     pub _rotation_k__BackingField: f32,
 }
 #[cfg(feature = "LightRotationBeatmapEventData")]
@@ -131,11 +131,124 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_axis(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::LightAxis> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::LightAxis = __cordl_object
+            .invoke("get_axis", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_easeType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EaseType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::EaseType = __cordl_object
+            .invoke("get_easeType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_elementId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_elementId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_groupId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_groupId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_loopCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_loopCount", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_rotation(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_rotation", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_rotationDirection(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::LightRotationDirection> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::LightRotationDirection = __cordl_object
+            .invoke("get_rotationDirection", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_usePreviousEventValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_usePreviousEventValue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_axis(
+        &mut self,
+        value: crate::GlobalNamespace::LightAxis,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_axis", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_easeType(
+        &mut self,
+        value: crate::GlobalNamespace::EaseType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_easeType", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_elementId(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_elementId", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_groupId(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_groupId", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_loopCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_loopCount", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_rotation(
@@ -147,6 +260,28 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_rotation", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_rotationDirection(
+        &mut self,
+        value: crate::GlobalNamespace::LightRotationDirection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_rotationDirection", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_usePreviousEventValue(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_usePreviousEventValue", (value))?;
         Ok(__cordl_ret.into())
     }
 }

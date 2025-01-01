@@ -101,6 +101,13 @@ impl crate::HMUI::FlowCoordinator {
             .invoke("BackButtonWasPressed", (topViewController))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CanPressBackButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CanPressBackButton", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Deactivate(
         &mut self,
         removedFromHierarchy: bool,

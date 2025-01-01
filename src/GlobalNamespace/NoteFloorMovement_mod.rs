@@ -6,14 +6,13 @@ pub struct NoteFloorMovement {
     pub _rotatedObject: *mut crate::UnityEngine::Transform,
     pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
     pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub floorMovementDidFinishEvent: *mut crate::System::Action,
-    pub _startPos: crate::UnityEngine::Vector3,
-    pub _endPos: crate::UnityEngine::Vector3,
-    pub _moveDuration: f32,
-    pub _startTime: f32,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
+    pub _localPosition: crate::UnityEngine::Vector3,
+    pub _beatTime: f32,
+    pub _moveStartOffset: crate::UnityEngine::Vector3,
+    pub _moveEndOffset: crate::UnityEngine::Vector3,
     pub _worldRotation: crate::UnityEngine::Quaternion,
     pub _inverseWorldRotation: crate::UnityEngine::Quaternion,
-    pub _localPosition: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "NoteFloorMovement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -38,16 +37,15 @@ impl crate::GlobalNamespace::NoteFloorMovement {
     pub fn Init(
         &mut self,
         worldRotation: f32,
-        startPos: crate::UnityEngine::Vector3,
-        endPos: crate::UnityEngine::Vector3,
-        moveDuration: f32,
-        startTime: f32,
+        beatTime: f32,
+        moveStartOffset: crate::UnityEngine::Vector3,
+        moveEndOffset: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (worldRotation, startPos, endPos, moveDuration, startTime))?;
+            .invoke("Init", (worldRotation, beatTime, moveStartOffset, moveEndOffset))?;
         Ok(__cordl_ret.into())
     }
     pub fn ManualUpdate(
@@ -77,6 +75,13 @@ impl crate::GlobalNamespace::NoteFloorMovement {
             .invoke("SetToStart", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ShouldMove(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ShouldMove", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -85,17 +90,6 @@ impl crate::GlobalNamespace::NoteFloorMovement {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn add_floorMovementDidFinishEvent(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_floorMovementDidFinishEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_distanceToPlayer(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -135,28 +129,11 @@ impl crate::GlobalNamespace::NoteFloorMovement {
             .invoke("get_localPosition", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_moveDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_noteTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_moveDuration", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_startPos(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_startPos", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_startTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_startTime", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteTime", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_worldRotation(
@@ -167,17 +144,6 @@ impl crate::GlobalNamespace::NoteFloorMovement {
         );
         let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
             .invoke("get_worldRotation", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn remove_floorMovementDidFinishEvent(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_floorMovementDidFinishEvent", (value))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -4,7 +4,8 @@
 pub struct MirroredSliderController {
     __cordl_parent: crate::GlobalNamespace::SliderControllerBase,
     pub _meshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::IBeatmapObjectSpawnController,
+    pub _jumpOffsetYProvider: *mut crate::GlobalNamespace::IJumpOffsetYProvider,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
     pub _followedSlider: *mut crate::GlobalNamespace::SliderController,
     pub _transform: *mut crate::UnityEngine::Transform,
     pub _followedTransform: *mut crate::UnityEngine::Transform,

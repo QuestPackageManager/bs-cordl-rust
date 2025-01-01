@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct LeaderboardTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tableView: *mut crate::HMUI::TableView,
     pub _cellPrefab: *mut crate::GlobalNamespace::LeaderboardTableCell,
+    pub _tableView: *mut crate::HMUI::TableView,
     pub _rowHeight: f32,
     pub _scores: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::LeaderboardTableView_ScoreData,
@@ -48,11 +48,11 @@ impl crate::GlobalNamespace::LeaderboardTableView {
             .invoke("CellForIdx", (tableView, row))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn CellSize(&mut self, idx: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", (idx))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

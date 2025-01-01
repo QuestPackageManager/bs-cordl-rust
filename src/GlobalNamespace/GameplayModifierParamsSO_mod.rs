@@ -5,8 +5,6 @@ pub struct GameplayModifierParamsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _modifierNameLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub _descriptionLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _multiplier: f32,
-    pub _multiplierConditionallyValid: bool,
     pub _icon: *mut crate::UnityEngine::Sprite,
     pub _mutuallyExclusives: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::GameplayModifierParamsSO,
@@ -17,6 +15,8 @@ pub struct GameplayModifierParamsSO {
     pub _requiredBy: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::GameplayModifierParamsSO,
     >,
+    pub _multiplier: f32,
+    pub _multiplierConditionallyValid: bool,
     pub _isInBeta: bool,
 }
 #[cfg(feature = "GameplayModifierParamsSO")]

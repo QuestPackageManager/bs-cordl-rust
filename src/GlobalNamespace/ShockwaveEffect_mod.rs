@@ -4,7 +4,7 @@
 pub struct ShockwaveEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _shockwavePS: *mut crate::UnityEngine::ParticleSystem,
-    pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _shockwavePSEmitParams: crate::UnityEngine::ParticleSystem_EmitParams,
     pub _prevShockwaveParticleSpawnTime: f32,
 }

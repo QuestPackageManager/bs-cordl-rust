@@ -71,6 +71,9 @@ impl crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
         beatToTimeConverter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
         output: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 *mut crate::GlobalNamespace::BeatmapEventData,
@@ -91,6 +94,7 @@ impl crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
                     distributionOrderIndex,
                     maxBeat,
                     beatToTimeConverter,
+                    lightEventConverter,
                     output,
                 ),
             )?;

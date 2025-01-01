@@ -43,6 +43,9 @@ pub use CustomFormatRangeValuesSlider_mod::*;
 // class DropdownWithTableView_mod; export all
 mod DropdownWithTableView_mod;
 pub use DropdownWithTableView_mod::*;
+// class DropdownWithTitleView_mod; export all
+mod DropdownWithTitleView_mod;
+pub use DropdownWithTitleView_mod::*;
 // class EmptyBoxGraphic_mod; export all
 mod EmptyBoxGraphic_mod;
 pub use EmptyBoxGraphic_mod::*;
@@ -52,6 +55,9 @@ pub use EventSystemHelpers_mod::*;
 // class EventSystemListener_mod; export all
 mod EventSystemListener_mod;
 pub use EventSystemListener_mod::*;
+// class FloatRectOffset_mod; export all
+mod FloatRectOffset_mod;
+pub use FloatRectOffset_mod::*;
 // class FlowCoordinator_mod; export all
 mod FlowCoordinator_mod;
 pub use FlowCoordinator_mod::*;
@@ -76,18 +82,33 @@ pub use HoverTextController_mod::*;
 // class HoverTextSetter_mod; export all
 mod HoverTextSetter_mod;
 pub use HoverTextSetter_mod::*;
+// class IColorStyledComponent_mod; export all
+mod IColorStyledComponent_mod;
+pub use IColorStyledComponent_mod::*;
+// class IGlobalLightTintIntensity_mod; export all
+mod IGlobalLightTintIntensity_mod;
+pub use IGlobalLightTintIntensity_mod::*;
 // class ITableCellOwner_mod; export all
 mod ITableCellOwner_mod;
 pub use ITableCellOwner_mod::*;
 // class IValueChanger_1_mod; export all
 mod IValueChanger_1_mod;
 pub use IValueChanger_1_mod::*;
+// class IconAndTextSegmentedControlCell_mod; export all
+mod IconAndTextSegmentedControlCell_mod;
+pub use IconAndTextSegmentedControlCell_mod::*;
+// class IconAndTextSegmentedControl_mod; export all
+mod IconAndTextSegmentedControl_mod;
+pub use IconAndTextSegmentedControl_mod::*;
 // class IconSegmentedControlCell_mod; export all
 mod IconSegmentedControlCell_mod;
 pub use IconSegmentedControlCell_mod::*;
 // class IconSegmentedControl_mod; export all
 mod IconSegmentedControl_mod;
 pub use IconSegmentedControl_mod::*;
+// class ImageViewBase_mod; export all
+mod ImageViewBase_mod;
+pub use ImageViewBase_mod::*;
 // class ImageView_mod; export all
 mod ImageView_mod;
 pub use ImageView_mod::*;
@@ -109,6 +130,9 @@ pub use InputFieldView_mod::*;
 // class InteractableTextMeshPro_mod; export all
 mod InteractableTextMeshPro_mod;
 pub use InteractableTextMeshPro_mod::*;
+// class InteractableTiltEffect_mod; export all
+mod InteractableTiltEffect_mod;
+pub use InteractableTiltEffect_mod::*;
 // class Interactable_mod; export all
 mod Interactable_mod;
 pub use Interactable_mod::*;
@@ -118,6 +142,9 @@ pub use ItemForFocussedScrolling_mod::*;
 // class KeyboardBinder_mod; export all
 mod KeyboardBinder_mod;
 pub use KeyboardBinder_mod::*;
+// class ModalViewBase_mod; export all
+mod ModalViewBase_mod;
+pub use ModalViewBase_mod::*;
 // class ModalView_mod; export all
 mod ModalView_mod;
 pub use ModalView_mod::*;
@@ -148,6 +175,15 @@ pub use RangeValuesTextSlider_mod::*;
 // class RaycastUITopLevelChecker_mod; export all
 mod RaycastUITopLevelChecker_mod;
 pub use RaycastUITopLevelChecker_mod::*;
+// class RoundedCornersDirectionExtensions_mod; export all
+mod RoundedCornersDirectionExtensions_mod;
+pub use RoundedCornersDirectionExtensions_mod::*;
+// class RoundedCornersDirection_mod; export all
+mod RoundedCornersDirection_mod;
+pub use RoundedCornersDirection_mod::*;
+// class ScreenBase_mod; export all
+mod ScreenBase_mod;
+pub use ScreenBase_mod::*;
 // class ScreenModeController_mod; export all
 mod ScreenModeController_mod;
 pub use ScreenModeController_mod::*;
@@ -214,6 +250,9 @@ pub use TableCell_mod::*;
 // class TableViewSelectionType_mod; export all
 mod TableViewSelectionType_mod;
 pub use TableViewSelectionType_mod::*;
+// class TableViewWithVariableSizedCells_mod; export all
+mod TableViewWithVariableSizedCells_mod;
+pub use TableViewWithVariableSizedCells_mod::*;
 // class TableView_mod; export all
 mod TableView_mod;
 pub use TableView_mod::*;
@@ -262,6 +301,9 @@ pub use ValueChangedBinder_1_mod::*;
 // class VerticalScrollIndicator_mod; export all
 mod VerticalScrollIndicator_mod;
 pub use VerticalScrollIndicator_mod::*;
+// class ViewControllerBase_mod; export all
+mod ViewControllerBase_mod;
+pub use ViewControllerBase_mod::*;
 // class ViewControllerTransitionHelpers_mod; export all
 mod ViewControllerTransitionHelpers_mod;
 pub use ViewControllerTransitionHelpers_mod::*;

@@ -21,7 +21,7 @@ pub struct StandardLevelDetailView {
     pub _beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
     pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
     pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
     pub didChangeDifficultyBeatmapEvent: *mut crate::System::Action_1<
         *mut crate::GlobalNamespace::StandardLevelDetailView,
@@ -36,7 +36,6 @@ pub struct StandardLevelDetailView {
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _levelParamsPanelCanvasGroupTween: *mut crate::Tweening::Tween,
-    pub _songLength: crate::System::Nullable_1<f32>,
 }
 #[cfg(feature = "StandardLevelDetailView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -58,16 +57,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelDetailView {
 }
 #[cfg(feature = "StandardLevelDetailView")]
 impl crate::GlobalNamespace::StandardLevelDetailView {
-    #[cfg(feature = "StandardLevelDetailView+_CalculateAndSetContent_d__61")]
-    pub type _CalculateAndSetContent_d__61 = crate::GlobalNamespace::StandardLevelDetailView__CalculateAndSetContent_d__61;
-    #[cfg(feature = "StandardLevelDetailView+_CheckIfBeatmapLevelDataExists_d__57")]
-    pub type _CheckIfBeatmapLevelDataExists_d__57 = crate::GlobalNamespace::StandardLevelDetailView__CheckIfBeatmapLevelDataExists_d__57;
+    #[cfg(feature = "StandardLevelDetailView+_CalculateAndSetContentAsync_d__61")]
+    pub type _CalculateAndSetContentAsync_d__61 = crate::GlobalNamespace::StandardLevelDetailView__CalculateAndSetContentAsync_d__61;
+    #[cfg(feature = "StandardLevelDetailView+_CheckIfBeatmapLevelDataExists_d__56")]
+    pub type _CheckIfBeatmapLevelDataExists_d__56 = crate::GlobalNamespace::StandardLevelDetailView__CheckIfBeatmapLevelDataExists_d__56;
     #[cfg(feature = "StandardLevelDetailView+_SetBeatmapLevelVersions_d__62")]
     pub type _SetBeatmapLevelVersions_d__62 = crate::GlobalNamespace::StandardLevelDetailView__SetBeatmapLevelVersions_d__62;
     #[cfg(feature = "StandardLevelDetailView+__c")]
     pub type __c = crate::GlobalNamespace::StandardLevelDetailView___c;
-    #[cfg(feature = "StandardLevelDetailView+__c__DisplayClass45_0")]
-    pub type __c__DisplayClass45_0 = crate::GlobalNamespace::StandardLevelDetailView___c__DisplayClass45_0;
+    #[cfg(feature = "StandardLevelDetailView+__c__DisplayClass44_0")]
+    pub type __c__DisplayClass44_0 = crate::GlobalNamespace::StandardLevelDetailView___c__DisplayClass44_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -86,6 +85,22 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CalculateAndSetContent", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateAndSetContentAsync(
+        &mut self,
+        beatmapKey: crate::GlobalNamespace::BeatmapKey,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object
+            .invoke("CalculateAndSetContentAsync", (beatmapKey, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
     pub fn CheckIfBeatmapLevelDataExists(
@@ -297,6 +312,20 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetData(
+        &mut self,
+        notesCount: i32,
+        obstaclesCount: i32,
+        bombsCount: i32,
+        songLength: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetData", (notesCount, obstaclesCount, bombsCount, songLength))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ShowContent(
         &mut self,
         contentType: crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
@@ -319,7 +348,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
             .invoke("TriggerEvent", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__47_0(
+    pub fn _Awake_b__46_0(
         &mut self,
         _cordl__: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -327,10 +356,10 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__47_0", (_cordl__))?;
+            .invoke("<Awake>b__46_0", (_cordl__))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _CalculateAndSetContent_b__61_0(
+    pub fn _CalculateAndSetContentAsync_b__61_0(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -338,7 +367,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<CalculateAndSetContent>b__61_0", (value))?;
+            .invoke("<CalculateAndSetContentAsync>b__61_0", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

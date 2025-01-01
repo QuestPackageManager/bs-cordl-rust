@@ -7,9 +7,8 @@ pub struct MainSettingsAsyncLoader {
     pub _hapticFeedbackControllerPrefab: *mut crate::GlobalNamespace::HapticFeedbackManager,
     pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
     pub _setupData: *mut crate::GlobalNamespace::AppInitSetupData,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-    pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-    pub _flushingService: *mut crate::BGLib::SaveDataCore::SaveDataFlushingService,
+    pub _commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
+    pub _settingManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "MainSettingsAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -31,8 +30,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MainSettingsAsyncLoader {
 }
 #[cfg(feature = "MainSettingsAsyncLoader")]
 impl crate::GlobalNamespace::MainSettingsAsyncLoader {
-    #[cfg(feature = "MainSettingsAsyncLoader+_LoadResourcesBeforeInstallAsync_d__10")]
-    pub type _LoadResourcesBeforeInstallAsync_d__10 = crate::GlobalNamespace::MainSettingsAsyncLoader__LoadResourcesBeforeInstallAsync_d__10;
+    #[cfg(feature = "MainSettingsAsyncLoader+_LoadResourcesBeforeInstallAsync_d__9")]
+    pub type _LoadResourcesBeforeInstallAsync_d__9 = crate::GlobalNamespace::MainSettingsAsyncLoader__LoadResourcesBeforeInstallAsync_d__9;
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

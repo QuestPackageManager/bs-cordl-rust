@@ -132,8 +132,8 @@ for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
 #[derive(Debug)]
 pub struct PS4PublisherSKUSettingsSO_PS4BuildVersion {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _masterVersion: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _applicationVersion: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _masterVersion: *mut crate::GlobalNamespace::SonyVersion,
+    pub _applicationVersion: *mut crate::GlobalNamespace::SonyVersion,
 }
 #[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -158,6 +158,29 @@ for crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
 }
 #[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
 impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
+    pub fn CopyValueFrom(
+        &mut self,
+        newVersion: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CopyValueFrom", (newVersion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IncreaseAppVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("IncreaseAppVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -178,26 +201,26 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
     pub fn get_applicationVersion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
+            crate::GlobalNamespace::SonyVersion,
         > = __cordl_object.invoke("get_applicationVersion", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_masterVersion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
+            crate::GlobalNamespace::SonyVersion,
         > = __cordl_object.invoke("get_masterVersion", ())?;
         Ok(__cordl_ret.into())
     }

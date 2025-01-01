@@ -11,6 +11,7 @@ pub struct TrackLaneRingsRotationEffectSpawner {
     pub _rotationPropagationSpeed: i32,
     pub _rotationFlexySpeed: f32,
     pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _random: *mut crate::System::Random,
     pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]

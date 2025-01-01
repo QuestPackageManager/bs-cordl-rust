@@ -33,17 +33,16 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
     pub type __c__DisplayClass4_0 = crate::GlobalNamespace::PerformanceToolLauncher___c__DisplayClass4_0;
     pub fn Initialize(
         &mut self,
-        sceneContext: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
-        mainSettingsHandler: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::GameSettings::MainSettingsHandler,
-        >,
-        graphicSettingsHandler: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
         >,
         playerDataModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerDataModel,
         >,
         mainCamera: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainCamera>,
+        recPlayState: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RecPlayBehaviour_State,
+        >,
         songController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SongController,
         >,
@@ -62,11 +61,10 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
             .invoke(
                 "Initialize",
                 (
-                    sceneContext,
-                    mainSettingsHandler,
-                    graphicSettingsHandler,
+                    settingsManager,
                     playerDataModel,
                     mainCamera,
+                    recPlayState,
                     songController,
                     gamePause,
                     sceneSetupData,

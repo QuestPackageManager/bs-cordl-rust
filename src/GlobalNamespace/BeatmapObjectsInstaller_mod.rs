@@ -12,7 +12,6 @@ pub struct BeatmapObjectsInstaller {
     pub _sliderShortPrefab: *mut crate::GlobalNamespace::SliderController,
     pub _sliderMediumPrefab: *mut crate::GlobalNamespace::SliderController,
     pub _sliderLongPrefab: *mut crate::GlobalNamespace::SliderController,
-    pub _noteLineConnectionControllerPrefab: *mut crate::GlobalNamespace::NoteLineConnectionController,
     pub _beatLinePrefab: *mut crate::GlobalNamespace::BeatLine,
     pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
 }

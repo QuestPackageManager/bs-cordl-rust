@@ -71,7 +71,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData {
 }
 #[cfg(feature = "PlayerSaveData")]
 impl crate::GlobalNamespace::PlayerSaveData {
-    pub const kCurrentVersion: &'static str = "2.0.27";
+    pub const kCurrentVersion: &'static str = "2.0.28";
+    #[cfg(feature = "PlayerSaveData+ColorOverrideType")]
+    pub type ColorOverrideType = crate::GlobalNamespace::PlayerSaveData_ColorOverrideType;
     #[cfg(feature = "PlayerSaveData+ColorScheme")]
     pub type ColorScheme = crate::GlobalNamespace::PlayerSaveData_ColorScheme;
     #[cfg(feature = "PlayerSaveData+ColorSchemesSettings")]
@@ -131,6 +133,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PlayerSaveData_ColorOverrideType {
+    All = 0i32,
+    NotesOnly = 1i32,
+}
+#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayerSaveData_ColorOverrideType => ""
+    ."PlayerSaveData/ColorOverrideType"
+);
 #[cfg(feature = "PlayerSaveData+ColorScheme")]
 #[repr(C)]
 #[derive(Debug)]
@@ -241,6 +256,7 @@ pub struct PlayerSaveData_ColorSchemesSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub overrideDefaultColors: bool,
     pub selectedColorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub colorOverrideType: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
     pub colorSchemes: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::PlayerSaveData_ColorScheme,
     >,
@@ -271,6 +287,7 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
         selectedColorSchemeId: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         >,
+        colorOverrideType: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
         colorSchemes: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 *mut crate::GlobalNamespace::PlayerSaveData_ColorScheme,
@@ -282,7 +299,12 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(
                 ".ctor",
-                (overrideDefaultColors, selectedColorSchemeId, colorSchemes),
+                (
+                    overrideDefaultColors,
+                    selectedColorSchemeId,
+                    colorOverrideType,
+                    colorSchemes,
+                ),
             )?;
         Ok(__cordl_object.into())
     }
@@ -292,6 +314,7 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
         selectedColorSchemeId: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         >,
+        colorOverrideType: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
         colorSchemes: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 *mut crate::GlobalNamespace::PlayerSaveData_ColorScheme,
@@ -304,7 +327,12 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 ".ctor",
-                (overrideDefaultColors, selectedColorSchemeId, colorSchemes),
+                (
+                    overrideDefaultColors,
+                    selectedColorSchemeId,
+                    colorOverrideType,
+                    colorSchemes,
+                ),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -325,6 +353,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
 pub struct PlayerSaveData_GameplayModifiers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub energyType: crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType,
+    pub noFailOn0Energy: bool,
     pub instaFail: bool,
     pub failOnSaberClash: bool,
     pub enabledObstacleType: crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType,
@@ -335,7 +364,6 @@ pub struct PlayerSaveData_GameplayModifiers {
     pub noBombs: bool,
     pub songSpeed: crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed,
     pub noArrows: bool,
-    pub noFailOn0Energy: bool,
     pub proMode: bool,
     pub zenMode: bool,
     pub smallCubes: bool,
@@ -1013,12 +1041,12 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
         missedCutsCount: i32,
         totalScore: i64,
         playedLevelsCount: i32,
-        cleardLevelsCount: i32,
+        clearedLevelsCount: i32,
         failedLevelsCount: i32,
         fullComboCount: i32,
         timePlayed: f32,
         handDistanceTravelled: i32,
-        cummulativeCutScoreWithoutMultiplier: i64,
+        cumulativeCutScoreWithoutMultiplier: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -1031,12 +1059,12 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
                     missedCutsCount,
                     totalScore,
                     playedLevelsCount,
-                    cleardLevelsCount,
+                    clearedLevelsCount,
                     failedLevelsCount,
                     fullComboCount,
                     timePlayed,
                     handDistanceTravelled,
-                    cummulativeCutScoreWithoutMultiplier,
+                    cumulativeCutScoreWithoutMultiplier,
                 ),
             )?;
         Ok(__cordl_object.into())
@@ -1058,12 +1086,12 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
         missedCutsCount: i32,
         totalScore: i64,
         playedLevelsCount: i32,
-        cleardLevelsCount: i32,
+        clearedLevelsCount: i32,
         failedLevelsCount: i32,
         fullComboCount: i32,
         timePlayed: f32,
         handDistanceTravelled: i32,
-        cummulativeCutScoreWithoutMultiplier: i64,
+        cumulativeCutScoreWithoutMultiplier: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1077,12 +1105,12 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
                     missedCutsCount,
                     totalScore,
                     playedLevelsCount,
-                    cleardLevelsCount,
+                    clearedLevelsCount,
                     failedLevelsCount,
                     fullComboCount,
                     timePlayed,
                     handDistanceTravelled,
-                    cummulativeCutScoreWithoutMultiplier,
+                    cumulativeCutScoreWithoutMultiplier,
                 ),
             )?;
         Ok(__cordl_ret.into())

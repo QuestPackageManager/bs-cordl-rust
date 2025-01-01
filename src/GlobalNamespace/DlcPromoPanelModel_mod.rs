@@ -8,7 +8,7 @@ pub struct DlcPromoPanelModel {
     pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
     pub _dlcPromoPanelData: *mut crate::GlobalNamespace::DlcPromoPanelDataSO,
     pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _platformInit: *mut crate::GlobalNamespace::IPlatformInit,
+    pub _platformInit: *mut crate::BeatSaber::Init::IPlatformInit,
     pub _metaRemoteAssetsManager: *mut crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
     pub _notOwnedMusicPackPromoInfos: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
@@ -29,6 +29,9 @@ pub struct DlcPromoPanelModel {
             *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
             bool,
         >,
+    >,
+    pub _loadDlcPromoPanelDataHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+        *mut crate::GlobalNamespace::DlcPromoPanelDataSO,
     >,
     pub _loadPackPromoInfoHandles: *mut crate::System::Collections::Generic::List_1<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -61,35 +64,35 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
     #[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
     pub type PromoInfo = crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo;
     #[cfg(
-        feature = "DlcPromoPanelModel+_GetPackDataForMainMenuPromoBannerInternal_d__34"
+        feature = "DlcPromoPanelModel+_GetPackDataForMainMenuPromoBannerInternal_d__35"
     )]
-    pub type _GetPackDataForMainMenuPromoBannerInternal_d__34 = crate::GlobalNamespace::DlcPromoPanelModel__GetPackDataForMainMenuPromoBannerInternal_d__34;
-    #[cfg(feature = "DlcPromoPanelModel+_GetPackDataForMainMenuPromoBanner_d__33")]
-    pub type _GetPackDataForMainMenuPromoBanner_d__33 = crate::GlobalNamespace::DlcPromoPanelModel__GetPackDataForMainMenuPromoBanner_d__33;
+    pub type _GetPackDataForMainMenuPromoBannerInternal_d__35 = crate::GlobalNamespace::DlcPromoPanelModel__GetPackDataForMainMenuPromoBannerInternal_d__35;
+    #[cfg(feature = "DlcPromoPanelModel+_GetPackDataForMainMenuPromoBanner_d__34")]
+    pub type _GetPackDataForMainMenuPromoBanner_d__34 = crate::GlobalNamespace::DlcPromoPanelModel__GetPackDataForMainMenuPromoBanner_d__34;
     #[cfg(
-        feature = "DlcPromoPanelModel+_HandleAdditionalContentModelDidInvalidateData_d__43"
+        feature = "DlcPromoPanelModel+_HandleAdditionalContentModelDidInvalidateData_d__44"
     )]
-    pub type _HandleAdditionalContentModelDidInvalidateData_d__43 = crate::GlobalNamespace::DlcPromoPanelModel__HandleAdditionalContentModelDidInvalidateData_d__43;
-    #[cfg(feature = "DlcPromoPanelModel+_HandleDidCatalogLoadOrUpdate_d__29")]
-    pub type _HandleDidCatalogLoadOrUpdate_d__29 = crate::GlobalNamespace::DlcPromoPanelModel__HandleDidCatalogLoadOrUpdate_d__29;
-    #[cfg(feature = "DlcPromoPanelModel+_InitializeInternalAsync_d__27")]
-    pub type _InitializeInternalAsync_d__27 = crate::GlobalNamespace::DlcPromoPanelModel__InitializeInternalAsync_d__27;
-    #[cfg(feature = "DlcPromoPanelModel+_Initialize_d__25")]
-    pub type _Initialize_d__25 = crate::GlobalNamespace::DlcPromoPanelModel__Initialize_d__25;
-    #[cfg(feature = "DlcPromoPanelModel+_LoadPackPromoInfoAsync_d__32")]
-    pub type _LoadPackPromoInfoAsync_d__32 = crate::GlobalNamespace::DlcPromoPanelModel__LoadPackPromoInfoAsync_d__32;
-    #[cfg(feature = "DlcPromoPanelModel+_UpdateDlcPromoPanelDataAsync_d__30")]
-    pub type _UpdateDlcPromoPanelDataAsync_d__30 = crate::GlobalNamespace::DlcPromoPanelModel__UpdateDlcPromoPanelDataAsync_d__30;
-    #[cfg(feature = "DlcPromoPanelModel+_UpdateModelDataAsync_d__28")]
-    pub type _UpdateModelDataAsync_d__28 = crate::GlobalNamespace::DlcPromoPanelModel__UpdateModelDataAsync_d__28;
-    #[cfg(feature = "DlcPromoPanelModel+_UpdateOwnedPacksAsync_d__42")]
-    pub type _UpdateOwnedPacksAsync_d__42 = crate::GlobalNamespace::DlcPromoPanelModel__UpdateOwnedPacksAsync_d__42;
-    #[cfg(feature = "DlcPromoPanelModel+_UpdatePromoInfosAsync_d__31")]
-    pub type _UpdatePromoInfosAsync_d__31 = crate::GlobalNamespace::DlcPromoPanelModel__UpdatePromoInfosAsync_d__31;
+    pub type _HandleAdditionalContentModelDidInvalidateData_d__44 = crate::GlobalNamespace::DlcPromoPanelModel__HandleAdditionalContentModelDidInvalidateData_d__44;
+    #[cfg(feature = "DlcPromoPanelModel+_HandleDidCatalogLoadOrUpdate_d__30")]
+    pub type _HandleDidCatalogLoadOrUpdate_d__30 = crate::GlobalNamespace::DlcPromoPanelModel__HandleDidCatalogLoadOrUpdate_d__30;
+    #[cfg(feature = "DlcPromoPanelModel+_InitializeInternalAsync_d__28")]
+    pub type _InitializeInternalAsync_d__28 = crate::GlobalNamespace::DlcPromoPanelModel__InitializeInternalAsync_d__28;
+    #[cfg(feature = "DlcPromoPanelModel+_Initialize_d__26")]
+    pub type _Initialize_d__26 = crate::GlobalNamespace::DlcPromoPanelModel__Initialize_d__26;
+    #[cfg(feature = "DlcPromoPanelModel+_LoadPackPromoInfoAsync_d__33")]
+    pub type _LoadPackPromoInfoAsync_d__33 = crate::GlobalNamespace::DlcPromoPanelModel__LoadPackPromoInfoAsync_d__33;
+    #[cfg(feature = "DlcPromoPanelModel+_UpdateDlcPromoPanelDataAsync_d__31")]
+    pub type _UpdateDlcPromoPanelDataAsync_d__31 = crate::GlobalNamespace::DlcPromoPanelModel__UpdateDlcPromoPanelDataAsync_d__31;
+    #[cfg(feature = "DlcPromoPanelModel+_UpdateModelDataAsync_d__29")]
+    pub type _UpdateModelDataAsync_d__29 = crate::GlobalNamespace::DlcPromoPanelModel__UpdateModelDataAsync_d__29;
+    #[cfg(feature = "DlcPromoPanelModel+_UpdateOwnedPacksAsync_d__43")]
+    pub type _UpdateOwnedPacksAsync_d__43 = crate::GlobalNamespace::DlcPromoPanelModel__UpdateOwnedPacksAsync_d__43;
+    #[cfg(feature = "DlcPromoPanelModel+_UpdatePromoInfosAsync_d__32")]
+    pub type _UpdatePromoInfosAsync_d__32 = crate::GlobalNamespace::DlcPromoPanelModel__UpdatePromoInfosAsync_d__32;
     #[cfg(feature = "DlcPromoPanelModel+__c")]
     pub type __c = crate::GlobalNamespace::DlcPromoPanelModel___c;
-    #[cfg(feature = "DlcPromoPanelModel+__c__DisplayClass34_0")]
-    pub type __c__DisplayClass34_0 = crate::GlobalNamespace::DlcPromoPanelModel___c__DisplayClass34_0;
+    #[cfg(feature = "DlcPromoPanelModel+__c__DisplayClass35_0")]
+    pub type __c__DisplayClass35_0 = crate::GlobalNamespace::DlcPromoPanelModel___c__DisplayClass35_0;
     pub fn BuyLevelButtonWasPressed(
         &mut self,
         level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -308,7 +311,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         playerDataModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerDataModel,
         >,
-        platformInit: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformInit>,
+        platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
         metaRemoteAssetsManager: quest_hook::libil2cpp::Gc<
             crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
         >,
@@ -399,7 +402,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         playerDataModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerDataModel,
         >,
-        platformInit: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformInit>,
+        platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
         metaRemoteAssetsManager: quest_hook::libil2cpp::Gc<
             crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
         >,
@@ -524,19 +527,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo
 impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     #[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
     pub type PromoType = crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType;
-    pub fn New_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
-        packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        promoBannerInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PromoBannerInfoSO,
-        >,
-        contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (packId, promoBannerInfo, contentRating))?;
-        Ok(__cordl_object.into())
-    }
     pub fn New_PackPromoInfoSO_LevelPromoInfo_PlayerSensitivityFlag1(
         levelPromoInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
@@ -549,20 +539,19 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
             .invoke_void(".ctor", (levelPromoInfo, contentRating))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
-        &mut self,
-        packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fn New_PromoInfo_DlcPromoPanelModel_PromoType_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
+        promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         promoBannerInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PromoBannerInfoSO,
         >,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (packId, promoBannerInfo, contentRating))?;
-        Ok(__cordl_ret.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (promoType, id, promoBannerInfo, contentRating))?;
+        Ok(__cordl_object.into())
     }
     pub fn _ctor_PackPromoInfoSO_LevelPromoInfo_PlayerSensitivityFlag1(
         &mut self,
@@ -576,6 +565,22 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (levelPromoInfo, contentRating))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_PromoInfo_DlcPromoPanelModel_PromoType_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
+        &mut self,
+        promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        promoBannerInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PromoBannerInfoSO,
+        >,
+        contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (promoType, id, promoBannerInfo, contentRating))?;
         Ok(__cordl_ret.into())
     }
 }
@@ -595,6 +600,7 @@ for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
 pub enum PromoInfo_DlcPromoPanelModel_PromoType {
     Level = 1i32,
     Pack = 0i32,
+    Store = 2i32,
 }
 #[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

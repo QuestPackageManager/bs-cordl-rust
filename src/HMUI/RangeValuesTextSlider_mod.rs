@@ -121,24 +121,24 @@ impl crate::HMUI::RangeValuesTextSlider {
         > = __cordl_object.invoke("TextForValue", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__17_0(
+    pub fn _Awake_b__19_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__17_0", ())?;
+            .invoke("<Awake>b__19_0", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__17_1(
+    pub fn _Awake_b__19_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__17_1", ())?;
+            .invoke("<Awake>b__19_1", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -196,6 +196,17 @@ impl crate::HMUI::RangeValuesTextSlider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_valueDidChangeEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_interactable(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_interactable", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_maxValue(

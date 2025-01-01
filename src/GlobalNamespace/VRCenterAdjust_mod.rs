@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct VRCenterAdjust {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
 }
 #[cfg(feature = "VRCenterAdjust")]

@@ -94,7 +94,7 @@ impl crate::UnityEngine::Renderer {
         let __cordl_ret: i32 = __cordl_object.invoke("GetMaterialCount", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPropertyBlock_MaterialPropertyBlock0(
+    pub fn GetPropertyBlock(
         &mut self,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -103,18 +103,6 @@ impl crate::UnityEngine::Renderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetPropertyBlock", (properties))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetPropertyBlock_i32_1(
-        &mut self,
-        properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
-        materialIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetPropertyBlock", (properties, materialIndex))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetSharedMaterial(
@@ -170,18 +158,6 @@ impl crate::UnityEngine::Renderer {
             .invoke("Internal_GetPropertyBlock", (dest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Internal_GetPropertyBlockMaterialIndex(
-        &mut self,
-        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
-        materialIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Internal_GetPropertyBlockMaterialIndex", (dest, materialIndex))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn Internal_SetPropertyBlock(
         &mut self,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -191,21 +167,6 @@ impl crate::UnityEngine::Renderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Internal_SetPropertyBlock", (properties))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Internal_SetPropertyBlockMaterialIndex(
-        &mut self,
-        properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
-        materialIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "Internal_SetPropertyBlockMaterialIndex",
-                (properties, materialIndex),
-            )?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -253,7 +214,7 @@ impl crate::UnityEngine::Renderer {
             .invoke("SetMaterialArray", (m, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPropertyBlock_MaterialPropertyBlock0(
+    pub fn SetPropertyBlock(
         &mut self,
         properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -262,18 +223,6 @@ impl crate::UnityEngine::Renderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPropertyBlock", (properties))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetPropertyBlock_i32_1(
-        &mut self,
-        properties: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
-        materialIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetPropertyBlock", (properties, materialIndex))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

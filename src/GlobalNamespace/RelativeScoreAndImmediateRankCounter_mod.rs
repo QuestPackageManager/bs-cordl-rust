@@ -4,8 +4,8 @@
 pub struct RelativeScoreAndImmediateRankCounter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
-    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
     pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
     pub relativeScoreOrImmediateRankDidChangeEvent: *mut crate::System::Action,
     pub _relativeScore_k__BackingField: f32,
     pub _immediateRank_k__BackingField: crate::GlobalNamespace::RankModel_Rank,

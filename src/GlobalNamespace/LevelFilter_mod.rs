@@ -32,12 +32,12 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::Leve
 }
 #[cfg(feature = "LevelFilter")]
 impl crate::GlobalNamespace::LevelFilter {
-    #[cfg(feature = "LevelFilter+_FilterLevelsAsync_d__13")]
-    pub type _FilterLevelsAsync_d__13 = crate::GlobalNamespace::LevelFilter__FilterLevelsAsync_d__13;
+    #[cfg(feature = "LevelFilter+_FilterLevelsAsync_d__14")]
+    pub type _FilterLevelsAsync_d__14 = crate::GlobalNamespace::LevelFilter__FilterLevelsAsync_d__14;
     #[cfg(feature = "LevelFilter+__c")]
     pub type __c = crate::GlobalNamespace::LevelFilter___c;
-    #[cfg(feature = "LevelFilter+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::GlobalNamespace::LevelFilter___c__DisplayClass13_0;
-    #[cfg(feature = "LevelFilter+__c__DisplayClass13_1")]
-    pub type __c__DisplayClass13_1 = crate::GlobalNamespace::LevelFilter___c__DisplayClass13_1;
+    #[cfg(feature = "LevelFilter+__c__DisplayClass14_0")]
+    pub type __c__DisplayClass14_0 = crate::GlobalNamespace::LevelFilter___c__DisplayClass14_0;
+    #[cfg(feature = "LevelFilter+__c__DisplayClass14_1")]
+    pub type __c__DisplayClass14_1 = crate::GlobalNamespace::LevelFilter___c__DisplayClass14_1;
 }

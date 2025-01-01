@@ -6,8 +6,8 @@ pub struct UIItemsList_1<T: quest_hook::libil2cpp::Type> {
     pub _prefab: T,
     pub _itemsContainer: *mut crate::UnityEngine::Transform,
     pub _insertInTheBeginning: bool,
-    pub _container: *mut crate::Zenject::DiContainer,
     pub _items: *mut crate::System::Collections::Generic::List_1<T>,
+    pub _container: *mut crate::Zenject::DiContainer,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "HMUI+UIItemsList_1")]

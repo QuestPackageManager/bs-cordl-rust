@@ -96,7 +96,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_BasicEventConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverterProvider,
+    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _specialEventsFilter: *mut crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SpecialEventsFilter,
     pub _canUseEnvironmentEventsAndShouldLoadDynamicEvents: bool,
 }
@@ -113,7 +113,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_BasicEventConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverterProvider;
+    type Target = crate::GlobalNamespace::BeatToTimeConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -212,7 +212,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_BasicEvent
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_ColorNoteConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverterProvider,
+    __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+ColorNoteConverter"
@@ -227,7 +227,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ColorNoteConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverterProvider;
+    type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -265,11 +265,14 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ColorNote
         bpmTimeProcessor: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        rotationTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RotationTimeProcessor,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bpmTimeProcessor))?;
+            .invoke_void(".ctor", (bpmTimeProcessor, rotationTimeProcessor))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -277,12 +280,15 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ColorNote
         bpmTimeProcessor: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        rotationTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RotationTimeProcessor,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bpmTimeProcessor))?;
+            .invoke(".ctor", (bpmTimeProcessor, rotationTimeProcessor))?;
         Ok(__cordl_ret.into())
     }
 }
@@ -304,7 +310,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ColorNoteC
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_ObstacleConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverterProvider,
+    __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+ObstacleConverter"
@@ -319,7 +325,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ObstacleConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverterProvider;
+    type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -357,11 +363,14 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ObstacleC
         bpmTimeProcessor: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        rotationTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RotationTimeProcessor,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bpmTimeProcessor))?;
+            .invoke_void(".ctor", (bpmTimeProcessor, rotationTimeProcessor))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -369,12 +378,15 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ObstacleC
         bpmTimeProcessor: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        rotationTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RotationTimeProcessor,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bpmTimeProcessor))?;
+            .invoke(".ctor", (bpmTimeProcessor, rotationTimeProcessor))?;
         Ok(__cordl_ret.into())
     }
 }
@@ -396,7 +408,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ObstacleCo
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_SliderConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverterProvider,
+    __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+SliderConverter"
@@ -411,7 +423,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SliderConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverterProvider;
+    type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -448,11 +460,14 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SliderCon
         bpmTimeProcessor: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        rotationTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RotationTimeProcessor,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bpmTimeProcessor))?;
+            .invoke_void(".ctor", (bpmTimeProcessor, rotationTimeProcessor))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -460,12 +475,15 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SliderCon
         bpmTimeProcessor: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        rotationTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RotationTimeProcessor,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bpmTimeProcessor))?;
+            .invoke(".ctor", (bpmTimeProcessor, rotationTimeProcessor))?;
         Ok(__cordl_ret.into())
     }
 }
@@ -583,7 +601,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SpecialEve
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_WaypointConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverterProvider,
+    __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+WaypointConverter"
@@ -598,7 +616,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_WaypointConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverterProvider;
+    type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -636,11 +654,14 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_WaypointC
         bpmTimeProcessor: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        rotationTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RotationTimeProcessor,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bpmTimeProcessor))?;
+            .invoke_void(".ctor", (bpmTimeProcessor, rotationTimeProcessor))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -648,12 +669,15 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_WaypointC
         bpmTimeProcessor: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
+        rotationTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RotationTimeProcessor,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bpmTimeProcessor))?;
+            .invoke(".ctor", (bpmTimeProcessor, rotationTimeProcessor))?;
         Ok(__cordl_ret.into())
     }
 }

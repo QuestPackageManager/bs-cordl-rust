@@ -154,6 +154,7 @@ pub struct SongRunningHelper_QueuedSongParams {
         *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
         *mut crate::GlobalNamespace::LevelCompletionResults,
     >,
+    pub zenMode: bool,
 }
 #[cfg(feature = "SongRunningHelper+QueuedSongParams")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -182,6 +183,7 @@ impl crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
         advancedHud: bool,
         songSpeed: crate::GlobalNamespace::GameplayModifiers_SongSpeed,
         recordingToolData: crate::GlobalNamespace::RecordingToolManager_SetupData,
+        zenMode: bool,
         songFinishedCallback: quest_hook::libil2cpp::Gc<
             crate::System::Action_2<
                 *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
@@ -199,6 +201,7 @@ impl crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
                 advancedHud,
                 songSpeed,
                 recordingToolData,
+                zenMode,
                 songFinishedCallback,
             ),
         )?;

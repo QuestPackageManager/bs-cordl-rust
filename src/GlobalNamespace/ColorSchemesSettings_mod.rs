@@ -3,7 +3,8 @@
 #[derive(Debug)]
 pub struct ColorSchemesSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub overrideDefaultColors: bool,
+    pub _colorOverrideType_k__BackingField: crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType,
+    pub didChangeOverrideSettingsEvent: *mut crate::System::Action,
     pub _colorSchemesList: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::ColorScheme,
     >,
@@ -12,6 +13,7 @@ pub struct ColorSchemesSettings {
         *mut crate::GlobalNamespace::ColorScheme,
     >,
     pub _selectedColorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _overrideDefaultColors: bool,
 }
 #[cfg(feature = "ColorSchemesSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -33,6 +35,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemesSettings {
 }
 #[cfg(feature = "ColorSchemesSettings")]
 impl crate::GlobalNamespace::ColorSchemesSettings {
+    #[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
+    pub type ColorOverrideType = crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType;
     #[cfg(feature = "ColorSchemesSettings+__c")]
     pub type __c = crate::GlobalNamespace::ColorSchemesSettings___c;
     pub fn GetColorSchemeForId(
@@ -140,6 +144,16 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
             .invoke("SetColorSchemeForId", (colorScheme))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ShouldOverrideLightshowColors(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ShouldOverrideLightshowColors", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_IEnumerable_1_0(
         &mut self,
         colorSchemes: quest_hook::libil2cpp::Gc<
@@ -170,6 +184,36 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
             .invoke(".ctor", (colorSchemeSOs))?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_didChangeOverrideSettingsEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didChangeOverrideSettingsEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_colorOverrideType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType = __cordl_object
+            .invoke("get_colorOverrideType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_overrideDefaultColors(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_overrideDefaultColors", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_selectedColorSchemeId(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -181,6 +225,39 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_selectedColorSchemeId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_didChangeOverrideSettingsEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didChangeOverrideSettingsEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_colorOverrideType(
+        &mut self,
+        value: crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_colorOverrideType", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_overrideDefaultColors(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_overrideDefaultColors", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_selectedColorSchemeId(
@@ -204,3 +281,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSchemesS
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ColorSchemesSettings_ColorOverrideType {
+    All = 0i32,
+    NotesOnly = 1i32,
+}
+#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ColorSchemesSettings_ColorOverrideType => ""
+    ."ColorSchemesSettings/ColorOverrideType"
+);

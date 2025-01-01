@@ -10,7 +10,6 @@ pub struct GameplaySetupViewController {
     pub _colorsOverrideSettingsPanelController: *mut crate::GlobalNamespace::ColorsOverrideSettingsPanelController,
     pub _multiplayerSettingsPanelController: *mut crate::GlobalNamespace::MultiplayerSettingsPanelController,
     pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub didChangeGameplayModifiersEvent: *mut crate::System::Action,
     pub _panels: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::GameplaySetupViewController_Panel,
     >,
@@ -156,6 +155,17 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
             .invoke("SetActivePanel", (panelIdx))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetIsInteractable(
+        &mut self,
+        interactable: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetIsInteractable", (interactable))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Setup(
         &mut self,
         showModifiers: bool,
@@ -188,17 +198,6 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn add_didChangeGameplayModifiersEvent(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_didChangeGameplayModifiersEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_colorSchemesSettings(
@@ -251,17 +250,6 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
         > = __cordl_object.invoke("get_playerSettings", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn remove_didChangeGameplayModifiersEvent(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_didChangeGameplayModifiersEvent", (value))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -3,6 +3,7 @@
 #[derive(Debug)]
 pub struct RandomValueToShader {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    pub _random: *mut crate::System::Random,
     pub _lastFrameNum: i32,
 }
 #[cfg(feature = "RandomValueToShader")]
@@ -31,6 +32,17 @@ impl crate::GlobalNamespace::RandomValueToShader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn SetRandomSeed(
+        &mut self,
+        seed: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetRandomSeed", (seed))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetRandomValueToShaders(
         &mut self,

@@ -4,7 +4,7 @@
 pub struct BeatmapBeatIndex {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub b: f32,
-    pub r: f32,
+    pub r: i32,
     pub i: i32,
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+BeatmapBeatIndex")]

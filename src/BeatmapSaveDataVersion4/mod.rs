@@ -70,6 +70,9 @@ pub use LightTranslationEvent_mod::*;
 // class LightshowSaveData_mod; export all
 mod LightshowSaveData_mod;
 pub use LightshowSaveData_mod::*;
+// class NoteJumpMovementSpeedEvent_mod; export all
+mod NoteJumpMovementSpeedEvent_mod;
+pub use NoteJumpMovementSpeedEvent_mod::*;
 // class Obstacle_mod; export all
 mod Obstacle_mod;
 pub use Obstacle_mod::*;

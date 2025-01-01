@@ -10,6 +10,8 @@ pub struct NoteJump {
     pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
     pub _playerSpaceConvertor: *mut crate::GlobalNamespace::PlayerSpaceConvertor,
     pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
+    pub noteJumpDidStartEvent: *mut crate::System::Action,
     pub noteJumpDidFinishEvent: *mut crate::System::Action,
     pub noteJumpDidPassMissedMarkerEvent: *mut crate::System::Action,
     pub noteJumpDidPassThreeQuartersEvent: *mut crate::System::Action_1<
@@ -17,25 +19,28 @@ pub struct NoteJump {
     >,
     pub noteJumpDidPassHalfEvent: *mut crate::System::Action,
     pub noteJumpDidUpdateProgressEvent: *mut crate::System::Action_1<f32>,
-    pub _startPos: crate::UnityEngine::Vector3,
-    pub _endPos: crate::UnityEngine::Vector3,
-    pub _jumpDuration: f32,
-    pub _moveVec: crate::UnityEngine::Vector3,
-    pub _beatTime: f32,
-    pub _startVerticalVelocity: f32,
-    pub _startRotation: crate::UnityEngine::Quaternion,
-    pub _middleRotation: crate::UnityEngine::Quaternion,
-    pub _endRotation: crate::UnityEngine::Quaternion,
-    pub _gravity: f32,
-    pub _yAvoidance: f32,
-    pub _missedTime: f32,
-    pub _missedMarkReported: bool,
-    pub _threeQuartersMarkReported: bool,
-    pub _halfJumpMarkReported: bool,
-    pub _localPosition: crate::UnityEngine::Vector3,
     pub _randomRotations: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::Vector3,
     >,
+    pub _localPosition: crate::UnityEngine::Vector3,
+    pub _noteTime: f32,
+    pub _yAvoidance: f32,
+    pub _startRotation: crate::UnityEngine::Quaternion,
+    pub _middleRotation: crate::UnityEngine::Quaternion,
+    pub _endRotation: crate::UnityEngine::Quaternion,
+    pub _startOffset: crate::UnityEngine::Vector3,
+    pub _endOffset: crate::UnityEngine::Vector3,
+    pub _gravityBase: f32,
+    pub _halfJumpDuration: f32,
+    pub _jumpDuration: f32,
+    pub _gravity: f32,
+    pub _startPos: crate::UnityEngine::Vector3,
+    pub _endPos: crate::UnityEngine::Vector3,
+    pub _missedTime: f32,
+    pub _jumpStartedReported: bool,
+    pub _missedMarkReported: bool,
+    pub _threeQuartersMarkReported: bool,
+    pub _halfJumpMarkReported: bool,
     pub _worldRotation: crate::UnityEngine::Quaternion,
     pub _inverseWorldRotation: crate::UnityEngine::Quaternion,
     pub _rotateTowardsPlayer: bool,
@@ -62,12 +67,11 @@ impl crate::GlobalNamespace::NoteJump {
     pub const kMissedTimeOffset: f32 = 0.15f32;
     pub fn Init(
         &mut self,
-        beatTime: f32,
+        noteTime: f32,
         worldRotation: f32,
-        startPos: crate::UnityEngine::Vector3,
-        endPos: crate::UnityEngine::Vector3,
-        jumpDuration: f32,
-        gravity: f32,
+        moveEndOffset: crate::UnityEngine::Vector3,
+        jumpEndOffset: crate::UnityEngine::Vector3,
+        gravityBase: f32,
         flipYSide: f32,
         endRotation: f32,
         rotateTowardsPlayer: bool,
@@ -80,12 +84,11 @@ impl crate::GlobalNamespace::NoteJump {
             .invoke(
                 "Init",
                 (
-                    beatTime,
+                    noteTime,
                     worldRotation,
-                    startPos,
-                    endPos,
-                    jumpDuration,
-                    gravity,
+                    moveEndOffset,
+                    jumpEndOffset,
+                    gravityBase,
                     flipYSide,
                     endRotation,
                     rotateTowardsPlayer,
@@ -167,6 +170,17 @@ impl crate::GlobalNamespace::NoteJump {
             .invoke("add_noteJumpDidPassThreeQuartersEvent", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_noteJumpDidStartEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_noteJumpDidStartEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn add_noteJumpDidUpdateProgressEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
@@ -195,13 +209,6 @@ impl crate::GlobalNamespace::NoteJump {
         let __cordl_ret: f32 = __cordl_object.invoke("get_distanceToPlayer", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_jumpDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDuration", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn get_localPosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -220,6 +227,13 @@ impl crate::GlobalNamespace::NoteJump {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_moveVec", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_noteTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteTime", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_noteJumpDidFinishEvent(
@@ -266,6 +280,17 @@ impl crate::GlobalNamespace::NoteJump {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_noteJumpDidPassThreeQuartersEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_noteJumpDidStartEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_noteJumpDidStartEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_noteJumpDidUpdateProgressEvent(

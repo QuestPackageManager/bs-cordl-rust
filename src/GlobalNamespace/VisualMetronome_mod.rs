@@ -8,8 +8,8 @@ pub struct VisualMetronome {
     pub _rightPadding: f32,
     pub _ticker: *mut crate::UnityEngine::RectTransform,
     pub _movingTicker: *mut crate::UnityEngine::RectTransform,
-    pub _tickerImage: *mut crate::UnityEngine::UI::Image,
-    pub _movingTickerImage: *mut crate::UnityEngine::UI::Image,
+    pub _tickerImage: *mut crate::UnityEngine::UI::Graphic,
+    pub _movingTickerImage: *mut crate::UnityEngine::UI::Graphic,
     pub _metronomeInterval: f32,
     pub _normalTickerSize: crate::UnityEngine::Vector2,
     pub _tickTickerSize0: crate::UnityEngine::Vector2,
@@ -113,28 +113,6 @@ impl crate::GlobalNamespace::VisualMetronome {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_zeroOffset", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_movingTickerColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_movingTickerColor", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_tickerColor(
-        &mut self,
-        value: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_tickerColor", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_zeroOffset(

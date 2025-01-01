@@ -3,6 +3,7 @@
 #[derive(Debug)]
 pub struct ObstacleData {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectData,
+    pub _endBeat_k__BackingField: f32,
     pub _lineIndex_k__BackingField: i32,
     pub _lineLayer_k__BackingField: crate::GlobalNamespace::NoteLineLayer,
     pub _duration_k__BackingField: f32,
@@ -55,6 +56,9 @@ impl crate::GlobalNamespace::ObstacleData {
     }
     pub fn New(
         _cordl_time: f32,
+        startBeat: f32,
+        endBeat: f32,
+        rotation: i32,
         lineIndex: i32,
         lineLayer: crate::GlobalNamespace::NoteLineLayer,
         duration: f32,
@@ -66,7 +70,17 @@ impl crate::GlobalNamespace::ObstacleData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(
                 ".ctor",
-                (_cordl_time, lineIndex, lineLayer, duration, width, height),
+                (
+                    _cordl_time,
+                    startBeat,
+                    endBeat,
+                    rotation,
+                    lineIndex,
+                    lineLayer,
+                    duration,
+                    width,
+                    height,
+                ),
             )?;
         Ok(__cordl_object.into())
     }
@@ -84,6 +98,9 @@ impl crate::GlobalNamespace::ObstacleData {
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,
+        startBeat: f32,
+        endBeat: f32,
+        rotation: i32,
         lineIndex: i32,
         lineLayer: crate::GlobalNamespace::NoteLineLayer,
         duration: f32,
@@ -96,7 +113,17 @@ impl crate::GlobalNamespace::ObstacleData {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 ".ctor",
-                (_cordl_time, lineIndex, lineLayer, duration, width, height),
+                (
+                    _cordl_time,
+                    startBeat,
+                    endBeat,
+                    rotation,
+                    lineIndex,
+                    lineLayer,
+                    duration,
+                    width,
+                    height,
+                ),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -105,6 +132,13 @@ impl crate::GlobalNamespace::ObstacleData {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_duration", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_endBeat(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_endBeat", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -147,6 +181,17 @@ impl crate::GlobalNamespace::ObstacleData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_duration", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_endBeat(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_endBeat", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_height(

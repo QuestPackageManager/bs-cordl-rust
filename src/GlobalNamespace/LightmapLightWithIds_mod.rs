@@ -97,6 +97,17 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
             .invoke("ProcessNewColorData", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetChannelColorDirect(
+        &mut self,
+        channelColor: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetChannelColorDirect", (channelColor))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetDataToShaders(
         &mut self,
         lightmapColor: crate::UnityEngine::Color,

@@ -8,9 +8,11 @@ pub struct ColorScheme {
     pub _useNonLocalizedName: bool,
     pub _nonLocalizedName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _isEditable: bool,
+    pub _overrideNotes: bool,
     pub _saberAColor: crate::UnityEngine::Color,
     pub _saberBColor: crate::UnityEngine::Color,
     pub _obstaclesColor: crate::UnityEngine::Color,
+    pub _overrideLights: bool,
     pub _environmentColor0: crate::UnityEngine::Color,
     pub _environmentColor1: crate::UnityEngine::Color,
     pub _environmentColorW: crate::UnityEngine::Color,
@@ -73,10 +75,12 @@ impl crate::GlobalNamespace::ColorScheme {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ColorScheme_Color_Color_Color_Color_Color__cordl_bool_Color_Color_Color_Color1(
+    pub fn New_ColorScheme__cordl_bool_Color_Color__cordl_bool_Color_Color_Color__cordl_bool_Color_Color_Color_Color1(
         colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        overrideNotes: bool,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
+        overrideLights: bool,
         environmentColor0: crate::UnityEngine::Color,
         environmentColor1: crate::UnityEngine::Color,
         environmentColorW: crate::UnityEngine::Color,
@@ -93,8 +97,10 @@ impl crate::GlobalNamespace::ColorScheme {
                 ".ctor",
                 (
                     colorScheme,
+                    overrideNotes,
                     saberAColor,
                     saberBColor,
+                    overrideLights,
                     environmentColor0,
                     environmentColor1,
                     environmentColorW,
@@ -107,7 +113,7 @@ impl crate::GlobalNamespace::ColorScheme {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString__cordl_bool_Il2CppString__cordl_bool_Color_Color_Color_Color_Color__cordl_bool_Color_Color_Color_Color0(
+    pub fn New_Il2CppString_Il2CppString__cordl_bool_Il2CppString__cordl_bool__cordl_bool_Color_Color__cordl_bool_Color_Color_Color__cordl_bool_Color_Color_Color_Color0(
         colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         colorSchemeNameLocalizationKey: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -115,8 +121,10 @@ impl crate::GlobalNamespace::ColorScheme {
         useNonLocalizedName: bool,
         nonLocalizedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isEditable: bool,
+        overrideNotes: bool,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
+        overrideLights: bool,
         environmentColor0: crate::UnityEngine::Color,
         environmentColor1: crate::UnityEngine::Color,
         environmentColorW: crate::UnityEngine::Color,
@@ -137,8 +145,10 @@ impl crate::GlobalNamespace::ColorScheme {
                     useNonLocalizedName,
                     nonLocalizedName,
                     isEditable,
+                    overrideNotes,
                     saberAColor,
                     saberBColor,
+                    overrideLights,
                     environmentColor0,
                     environmentColor1,
                     environmentColorW,
@@ -189,11 +199,13 @@ impl crate::GlobalNamespace::ColorScheme {
             .invoke(".ctor", (colorScheme, environmentColorW, environmentColorWBoost))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ColorScheme_Color_Color_Color_Color_Color__cordl_bool_Color_Color_Color_Color1(
+    pub fn _ctor_ColorScheme__cordl_bool_Color_Color__cordl_bool_Color_Color_Color__cordl_bool_Color_Color_Color_Color1(
         &mut self,
         colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        overrideNotes: bool,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
+        overrideLights: bool,
         environmentColor0: crate::UnityEngine::Color,
         environmentColor1: crate::UnityEngine::Color,
         environmentColorW: crate::UnityEngine::Color,
@@ -211,8 +223,10 @@ impl crate::GlobalNamespace::ColorScheme {
                 ".ctor",
                 (
                     colorScheme,
+                    overrideNotes,
                     saberAColor,
                     saberBColor,
+                    overrideLights,
                     environmentColor0,
                     environmentColor1,
                     environmentColorW,
@@ -225,7 +239,7 @@ impl crate::GlobalNamespace::ColorScheme {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString__cordl_bool_Il2CppString__cordl_bool_Color_Color_Color_Color_Color__cordl_bool_Color_Color_Color_Color0(
+    pub fn _ctor_Il2CppString_Il2CppString__cordl_bool_Il2CppString__cordl_bool__cordl_bool_Color_Color__cordl_bool_Color_Color_Color__cordl_bool_Color_Color_Color_Color0(
         &mut self,
         colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         colorSchemeNameLocalizationKey: quest_hook::libil2cpp::Gc<
@@ -234,8 +248,10 @@ impl crate::GlobalNamespace::ColorScheme {
         useNonLocalizedName: bool,
         nonLocalizedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isEditable: bool,
+        overrideNotes: bool,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
+        overrideLights: bool,
         environmentColor0: crate::UnityEngine::Color,
         environmentColor1: crate::UnityEngine::Color,
         environmentColorW: crate::UnityEngine::Color,
@@ -257,8 +273,10 @@ impl crate::GlobalNamespace::ColorScheme {
                     useNonLocalizedName,
                     nonLocalizedName,
                     isEditable,
+                    overrideNotes,
                     saberAColor,
                     saberBColor,
+                    overrideLights,
                     environmentColor0,
                     environmentColor1,
                     environmentColorW,
@@ -385,6 +403,20 @@ impl crate::GlobalNamespace::ColorScheme {
         );
         let __cordl_ret: crate::UnityEngine::Color = __cordl_object
             .invoke("get_obstaclesColor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_overrideLights(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_overrideLights", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_overrideNotes(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_overrideNotes", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_saberAColor(

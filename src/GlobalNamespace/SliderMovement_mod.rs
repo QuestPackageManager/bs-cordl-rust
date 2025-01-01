@@ -4,21 +4,15 @@
 pub struct SliderMovement {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
     pub movementDidFinishEvent: *mut crate::System::Action,
     pub movementDidMoveEvent: *mut crate::System::Action_1<f32>,
     pub headDidMovePastCutMarkEvent: *mut crate::System::Action,
     pub tailDidMovePastCutMarkEvent: *mut crate::System::Action,
-    pub _headNoteJumpStartPos: crate::UnityEngine::Vector3,
-    pub _headNoteJumpEndPos: crate::UnityEngine::Vector3,
-    pub _headNoteTime: f32,
-    pub _tailNoteTime: f32,
     pub _localPosition: crate::UnityEngine::Vector3,
     pub _worldRotation: crate::UnityEngine::Quaternion,
-    pub _inverseWorldRotation: crate::UnityEngine::Quaternion,
-    pub _jumpDuration: f32,
-    pub _headNoteGravity: f32,
-    pub _tailNoteGravity: f32,
+    pub _sliderData: *mut crate::GlobalNamespace::SliderData,
+    pub _sliderSpawnData: crate::GlobalNamespace::SliderSpawnData,
     pub _transform: *mut crate::UnityEngine::Transform,
     pub _movementEndReported: bool,
     pub _headDidMovePastCutMarkReported: bool,
@@ -47,32 +41,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SliderMovement {
 impl crate::GlobalNamespace::SliderMovement {
     pub fn Init(
         &mut self,
-        headNoteTime: f32,
-        tailNoteTime: f32,
-        worldRotation: f32,
-        headNoteJumpStartPos: crate::UnityEngine::Vector3,
-        headNoteJumpEndPos: crate::UnityEngine::Vector3,
-        jumpDuration: f32,
-        headNoteGravity: f32,
-        tailNoteGravity: f32,
+        sliderData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+        sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::SliderSpawnData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "Init",
-                (
-                    headNoteTime,
-                    tailNoteTime,
-                    worldRotation,
-                    headNoteJumpStartPos,
-                    headNoteJumpEndPos,
-                    jumpDuration,
-                    headNoteGravity,
-                    tailNoteGravity,
-                ),
-            )?;
+            .invoke("Init", (sliderData, sliderSpawnData))?;
         Ok(__cordl_ret.into())
     }
     pub fn ManualUpdate(
@@ -154,27 +132,6 @@ impl crate::GlobalNamespace::SliderMovement {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_tailDidMovePastCutMarkEvent", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_headNoteGravity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_headNoteGravity", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_jumpDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDuration", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_tailNoteGravity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_tailNoteGravity", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_timeSinceHeadNoteJump(&mut self) -> quest_hook::libil2cpp::Result<f32> {

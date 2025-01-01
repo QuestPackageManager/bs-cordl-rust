@@ -13,6 +13,9 @@ pub struct SelectableCell {
         *mut crate::HMUI::SelectableCell,
         crate::HMUI::SelectableCell_TransitionType,
     >,
+    pub nonInteractableCellWasPressedEvent: *mut crate::System::Action_1<
+        *mut crate::HMUI::SelectableCell,
+    >,
     pub _highlighted_k__BackingField: bool,
     pub _selected_k__BackingField: bool,
 }
@@ -215,6 +218,19 @@ impl crate::HMUI::SelectableCell {
             .invoke("add_highlightDidChangeEvent", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_nonInteractableCellWasPressedEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::HMUI::SelectableCell>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_nonInteractableCellWasPressedEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn add_selectionDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
@@ -260,6 +276,19 @@ impl crate::HMUI::SelectableCell {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_highlightDidChangeEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_nonInteractableCellWasPressedEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::HMUI::SelectableCell>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_nonInteractableCellWasPressedEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_selectionDidChangeEvent(

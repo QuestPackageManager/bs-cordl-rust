@@ -25,6 +25,17 @@ impl std::ops::DerefMut for crate::HMUI::TextPageScrollView {
 }
 #[cfg(feature = "HMUI+TextPageScrollView")]
 impl crate::HMUI::TextPageScrollView {
+    pub fn AddText(
+        &mut self,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddText", (text))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -41,6 +52,16 @@ impl crate::HMUI::TextPageScrollView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetText", (text))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateMeshes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateMeshes", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

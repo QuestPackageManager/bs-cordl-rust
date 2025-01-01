@@ -131,6 +131,7 @@ pub struct IconSegmentedControl_DataItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _icon_k__BackingField: *mut crate::UnityEngine::Sprite,
     pub _hintText_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _interactable_k__BackingField: bool,
 }
 #[cfg(feature = "HMUI+IconSegmentedControl+DataItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -155,23 +156,25 @@ impl crate::HMUI::IconSegmentedControl_DataItem {
     pub fn New(
         icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         hintText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        interactable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (icon, hintText))?;
+            .invoke_void(".ctor", (icon, hintText, interactable))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         hintText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        interactable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (icon, hintText))?;
+            .invoke(".ctor", (icon, hintText, interactable))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_hintText(
@@ -199,6 +202,13 @@ impl crate::HMUI::IconSegmentedControl_DataItem {
             .invoke("get_icon", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_interactable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_interactable", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_hintText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -219,6 +229,17 @@ impl crate::HMUI::IconSegmentedControl_DataItem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_icon", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_interactable(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_interactable", (value))?;
         Ok(__cordl_ret.into())
     }
 }

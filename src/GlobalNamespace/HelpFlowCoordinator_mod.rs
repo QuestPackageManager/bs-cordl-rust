@@ -4,23 +4,13 @@
 pub struct HelpFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
     pub _helpMenuViewController: *mut crate::GlobalNamespace::HelpMenuViewController,
-    pub _helpNavigationController: *mut crate::GlobalNamespace::HelpNavigationController,
+    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
     pub _howToPlayViewController: *mut crate::GlobalNamespace::HowToPlayViewController,
-    pub _healthWarningDisplayViewController: *mut crate::GlobalNamespace::HealthWarningDisplayViewController,
-    pub _privacyPolicyDisplayViewController: *mut crate::GlobalNamespace::PrivacyPolicyDisplayViewController,
-    pub _eulaDisplayViewController: *mut crate::GlobalNamespace::EulaDisplayViewController,
-    pub _licensesDisplayViewController: *mut crate::GlobalNamespace::LicensesDisplayViewController,
+    pub _helpNavigationController: *mut crate::GlobalNamespace::HelpNavigationController,
     pub _playerStatisticsViewController: *mut crate::GlobalNamespace::PlayerStatisticsViewController,
     pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
     pub didFinishEvent: *mut crate::System::Action_1<
         *mut crate::GlobalNamespace::HelpFlowCoordinator,
-    >,
-    pub _viewControllers: *mut crate::System::Collections::Generic::List_1<
-        crate::System::ValueTuple_2<
-            *mut crate::HMUI::ViewController,
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
     >,
 }
 #[cfg(feature = "HelpFlowCoordinator")]
@@ -89,13 +79,13 @@ impl crate::GlobalNamespace::HelpFlowCoordinator {
     }
     pub fn HandleDidSelectHelpSubMenu(
         &mut self,
-        idx: i32,
+        viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleDidSelectHelpSubMenu", (idx))?;
+            .invoke("HandleDidSelectHelpSubMenu", (viewController))?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleHowToPlayViewControllerDidFinish(

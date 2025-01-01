@@ -13,15 +13,14 @@ pub struct MenuTransitionsHelper {
     pub _beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
     pub _beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
     pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-    pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
     pub _standardLevelFinishedCallback: *mut crate::System::Action_2<
         *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
         *mut crate::GlobalNamespace::LevelCompletionResults,
     >,
     pub _standardLevelRestartedCallback: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
+        *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
         *mut crate::GlobalNamespace::LevelCompletionResults,
     >,
     pub _multiplayerLevelFinishedCallback: *mut crate::System::Action_2<
@@ -65,18 +64,18 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MenuTransitionsHelper {
 }
 #[cfg(feature = "MenuTransitionsHelper")]
 impl crate::GlobalNamespace::MenuTransitionsHelper {
+    #[cfg(feature = "MenuTransitionsHelper+__c")]
+    pub type __c = crate::GlobalNamespace::MenuTransitionsHelper___c;
+    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass32_0")]
+    pub type __c__DisplayClass32_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass32_0;
     #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass33_0")]
     pub type __c__DisplayClass33_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass33_0;
     #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass34_0")]
     pub type __c__DisplayClass34_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass34_0;
     #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass35_0")]
     pub type __c__DisplayClass35_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass35_0;
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass36_0")]
-    pub type __c__DisplayClass36_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass36_0;
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass37_0")]
-    pub type __c__DisplayClass37_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass37_0;
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass40_0")]
-    pub type __c__DisplayClass40_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass40_0;
+    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass39_0")]
+    pub type __c__DisplayClass39_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass39_0;
     pub fn HandleBeatmapEditorGameSceneDidFinish(
         &mut self,
         beatmapEditorStandardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
@@ -290,7 +289,9 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         environmentsListModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentsListModel,
         >,
-        useFirstPersonFlyingController: bool,
+        data: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::BeatmapEditorStartTestLevelData,
+        >,
         beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         levelFinishedCallback: quest_hook::libil2cpp::Gc<
             crate::System::Action_2<
@@ -314,7 +315,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                     practiceSettings,
                     colorScheme,
                     environmentsListModel,
-                    useFirstPersonFlyingController,
+                    data,
                     beforeSceneSwitchCallback,
                     levelFinishedCallback,
                 ),
@@ -497,7 +498,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn StartStandardLevel_IBeatmapLevelData_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Action_1_Action_2_Nullable_1_1(
+    pub fn StartStandardLevel_IBeatmapLevelData_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Action_1_Action_2_Nullable_1_1(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -508,9 +509,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         overrideEnvironmentSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OverrideEnvironmentSettings,
         >,
-        overrideColorScheme: quest_hook::libil2cpp::Gc<
+        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
+        playerOverrideLightshowColors: bool,
         beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
@@ -561,7 +563,8 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                     beatmapLevel,
                     beatmapLevelData,
                     overrideEnvironmentSettings,
-                    overrideColorScheme,
+                    playerOverrideColorScheme,
+                    playerOverrideLightshowColors,
                     beatmapOverrideColorScheme,
                     gameplayModifiers,
                     playerSpecificSettings,
@@ -579,7 +582,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn StartStandardLevel_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Action_1_Action_2_Nullable_1_0(
+    pub fn StartStandardLevel_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Action_1_Action_2_Nullable_1_0(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -587,9 +590,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         overrideEnvironmentSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OverrideEnvironmentSettings,
         >,
-        overrideColorScheme: quest_hook::libil2cpp::Gc<
+        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
+        playerOverrideLightshowColors: bool,
         beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
@@ -608,8 +612,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         useTestNoteCutSoundEffects: bool,
         startPaused: bool,
-        beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
-        afterSceneSwitchCallback: quest_hook::libil2cpp::Gc<
+        beforeSceneSwitchToGameplayCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action,
+        >,
+        afterSceneSwitchToGameplayCallback: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<*mut crate::Zenject::DiContainer>,
         >,
         levelFinishedCallback: quest_hook::libil2cpp::Gc<
@@ -620,7 +626,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         >,
         levelRestartedCallback: quest_hook::libil2cpp::Gc<
             crate::System::Action_2<
-                *mut crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
+                *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
                 *mut crate::GlobalNamespace::LevelCompletionResults,
             >,
         >,
@@ -639,7 +645,8 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                     beatmapKey,
                     beatmapLevel,
                     overrideEnvironmentSettings,
-                    overrideColorScheme,
+                    playerOverrideColorScheme,
+                    playerOverrideLightshowColors,
                     beatmapOverrideColorScheme,
                     gameplayModifiers,
                     playerSpecificSettings,
@@ -648,8 +655,8 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                     backButtonText,
                     useTestNoteCutSoundEffects,
                     startPaused,
-                    beforeSceneSwitchCallback,
-                    afterSceneSwitchCallback,
+                    beforeSceneSwitchToGameplayCallback,
+                    afterSceneSwitchToGameplayCallback,
                     levelFinishedCallback,
                     levelRestartedCallback,
                     recordingToolData,
@@ -684,7 +691,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             .invoke("StopStandardLevel", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _HandleBeatmapEditorSceneDidFinish_b__39_0(
+    pub fn _HandleBeatmapEditorSceneDidFinish_b__38_0(
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -692,7 +699,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<HandleBeatmapEditorSceneDidFinish>b__39_0", (container))?;
+            .invoke("<HandleBeatmapEditorSceneDidFinish>b__38_0", (container))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

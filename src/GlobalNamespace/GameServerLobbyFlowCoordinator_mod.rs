@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerLobbyFlowCoordinator {
-    __cordl_parent: crate::HMUI::FlowCoordinator,
+    __cordl_parent: crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase,
     pub _screenMode: *mut crate::HMUI::ScreenModeSO,
     pub _ambienceAudioClip: *mut crate::UnityEngine::AudioClip,
     pub _serverPlayerListViewController: *mut crate::GlobalNamespace::ServerPlayerListViewController,
@@ -13,6 +13,7 @@ pub struct GameServerLobbyFlowCoordinator {
     pub _connectionErrorDialogViewController: *mut crate::GlobalNamespace::ConnectionErrorDialogViewController,
     pub _multiplayerSettingsPanelController: *mut crate::GlobalNamespace::MultiplayerSettingsPanelController,
     pub _gameplaySetupViewController: *mut crate::GlobalNamespace::GameplaySetupViewController,
+    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
     pub _multiplayerLobbyController: *mut crate::GlobalNamespace::MultiplayerLobbyController,
     pub _fadeInOutController: *mut crate::GlobalNamespace::FadeInOutController,
     pub _centerStageScreenController: *mut crate::GlobalNamespace::CenterStageScreenController,
@@ -49,7 +50,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameServerLobbyFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
-    type Target = crate::HMUI::FlowCoordinator;
+    type Target = crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,12 +65,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameServerLobbyFlowCoordinat
 impl crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
     pub const kMaxPredictedStartTimeDifferenceMs: i64 = 1500i64;
     pub const kPlayersMissingEntitlementKey: &'static str = "LABEL_PLAYERS_MISSING_ENTITLEMENT";
-    #[cfg(feature = "GameServerLobbyFlowCoordinator+LobbyType")]
-    pub type LobbyType = crate::GlobalNamespace::GameServerLobbyFlowCoordinator_LobbyType;
     #[cfg(feature = "GameServerLobbyFlowCoordinator+__c__DisplayClass71_0")]
     pub type __c__DisplayClass71_0 = crate::GlobalNamespace::GameServerLobbyFlowCoordinator___c__DisplayClass71_0;
-    #[cfg(feature = "GameServerLobbyFlowCoordinator+__c__DisplayClass86_0")]
-    pub type __c__DisplayClass86_0 = crate::GlobalNamespace::GameServerLobbyFlowCoordinator___c__DisplayClass86_0;
+    #[cfg(feature = "GameServerLobbyFlowCoordinator+__c__DisplayClass87_0")]
+    pub type __c__DisplayClass87_0 = crate::GlobalNamespace::GameServerLobbyFlowCoordinator___c__DisplayClass87_0;
     pub fn BackButtonWasPressed(
         &mut self,
         topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -144,12 +143,12 @@ impl crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
     pub fn GetLobbyType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::GameServerLobbyFlowCoordinator_LobbyType,
+        crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::GlobalNamespace::GameServerLobbyFlowCoordinator_LobbyType = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType = __cordl_object
             .invoke("GetLobbyType", ())?;
         Ok(__cordl_ret.into())
     }
@@ -582,6 +581,19 @@ impl crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
             .invoke("SetLobbyPlayerDataToViews", (userId))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetLocalPlayerSelectedLevel(
+        &mut self,
+        state: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetLocalPlayerSelectedLevel", (state))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetPlayersMissingLevelText(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -709,14 +721,14 @@ impl crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
             .invoke("<PresentBackButtonConfirmationDialog>b__70_0", (btnIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ShowDisconnectDialogAndFinish_b__106_0(
+    pub fn _ShowDisconnectDialogAndFinish_b__107_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<ShowDisconnectDialogAndFinish>b__106_0", ())?;
+            .invoke("<ShowDisconnectDialogAndFinish>b__107_0", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -903,18 +915,3 @@ for crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinator+LobbyType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GameServerLobbyFlowCoordinator_LobbyType {
-    ClientSetup = 1i32,
-    HostSetup = 0i32,
-    Party = 3i32,
-    QuickPlayLobby = 2i32,
-}
-#[cfg(feature = "GameServerLobbyFlowCoordinator+LobbyType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameServerLobbyFlowCoordinator_LobbyType => ""
-    ."GameServerLobbyFlowCoordinator/LobbyType"
-);

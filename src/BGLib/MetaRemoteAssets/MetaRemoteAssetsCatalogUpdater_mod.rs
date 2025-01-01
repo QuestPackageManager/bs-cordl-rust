@@ -33,9 +33,9 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
     pub const kGameplaySceneName: &'static str = "GameCore";
     pub const kWaitIntervalInSeconds: i32 = 20i32;
     #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater+_CheckForCatalogUpdateWithInterval_d__9"
+        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater+_CheckForCatalogUpdateWithInterval_d__10"
     )]
-    pub type _CheckForCatalogUpdateWithInterval_d__9 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater__CheckForCatalogUpdateWithInterval_d__9;
+    pub type _CheckForCatalogUpdateWithInterval_d__10 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater__CheckForCatalogUpdateWithInterval_d__10;
     #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater+__c")]
     pub type __c = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater___c;
     pub fn CheckForCatalogUpdateWithInterval(
@@ -53,8 +53,19 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
             .invoke("CheckForCatalogUpdateWithInterval", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleGameSceneChanged(
         &mut self,
+        sceneTransitionType: crate::GlobalNamespace::GameScenesManager_SceneTransitionType,
         transitionSetupDataSo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         >,
@@ -64,7 +75,10 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleGameSceneChanged", (transitionSetupDataSo, container))?;
+            .invoke(
+                "HandleGameSceneChanged",
+                (sceneTransitionType, transitionSetupDataSo, container),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn Initialize(
@@ -116,6 +130,20 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
+impl AsRef<crate::System::IDisposable>
+for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
+impl AsMut<crate::System::IDisposable>
+for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]

@@ -5,8 +5,8 @@ pub struct BeatmapDataItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _time_k__BackingField: f32,
     pub _executionOrder_k__BackingField: i32,
-    pub subtypeIdentifier: i32,
-    pub _cordl_type: crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType,
+    pub _subtypeIdentifier_k__BackingField: i32,
+    pub _type_k__BackingField: crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType,
 }
 #[cfg(feature = "BeatmapDataItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -99,11 +99,63 @@ impl crate::GlobalNamespace::BeatmapDataItem {
         let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeGroupIdentifier", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_subtypeIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeIdentifier", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_time", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType = __cordl_object
+            .invoke("get_type", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_subtypeIdentifier(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_subtypeIdentifier", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_time(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_time", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_type(
+        &mut self,
+        value: crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_type", (value))?;
         Ok(__cordl_ret.into())
     }
 }

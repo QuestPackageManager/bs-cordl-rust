@@ -5,6 +5,8 @@ pub struct TextSegmentedControl {
     __cordl_parent: crate::HMUI::SegmentedControl,
     pub _fontSize: f32,
     pub _overrideCellSize: bool,
+    pub _fixedCellSize: bool,
+    pub _fixedCellSizeAmount: f32,
     pub _padding: f32,
     pub _hideCellBackground: bool,
     pub _firstCellPrefab: *mut crate::HMUI::TextSegmentedControlCell,
@@ -14,6 +16,7 @@ pub struct TextSegmentedControl {
     pub _texts: *mut crate::System::Collections::Generic::IReadOnlyList_1<
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
+    pub _disabledIndexes: *mut crate::System::Collections::Generic::HashSet_1<i32>,
 }
 #[cfg(feature = "HMUI+TextSegmentedControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -69,12 +72,15 @@ impl crate::HMUI::TextSegmentedControl {
                 *mut quest_hook::libil2cpp::Il2CppString,
             >,
         >,
+        disabledIndexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTexts", (texts))?;
+            .invoke("SetTexts", (texts, disabledIndexes))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

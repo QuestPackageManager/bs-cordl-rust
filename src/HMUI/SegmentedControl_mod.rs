@@ -9,6 +9,10 @@ pub struct SegmentedControl {
         *mut crate::HMUI::SegmentedControl,
         i32,
     >,
+    pub didPressNonInteractableCellEvent: *mut crate::System::Action_2<
+        *mut crate::HMUI::SegmentedControl,
+        i32,
+    >,
     pub _numberOfCells: i32,
     pub _cells: *mut crate::System::Collections::Generic::List_1<
         *mut crate::HMUI::SegmentedControlCell,
@@ -95,6 +99,17 @@ impl crate::HMUI::SegmentedControl {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn HandleNonInteractableCellWasPressed(
+        &mut self,
+        selectableCell: quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleNonInteractableCellWasPressed", (selectableCell))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -143,6 +158,19 @@ impl crate::HMUI::SegmentedControl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_didPressNonInteractableCellEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<*mut crate::HMUI::SegmentedControl, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didPressNonInteractableCellEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn add_didSelectCellEvent(
@@ -195,6 +223,19 @@ impl crate::HMUI::SegmentedControl {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_selectedCellNumber", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_didPressNonInteractableCellEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<*mut crate::HMUI::SegmentedControl, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didPressNonInteractableCellEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_didSelectCellEvent(

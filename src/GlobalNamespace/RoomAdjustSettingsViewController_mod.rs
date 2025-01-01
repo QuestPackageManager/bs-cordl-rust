@@ -8,7 +8,7 @@ pub struct RoomAdjustSettingsViewController {
     pub _zStepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
     pub _rotStepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
     pub _resetButton: *mut crate::UnityEngine::UI::Button,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
 }
 #[cfg(feature = "RoomAdjustSettingsViewController")]
@@ -74,13 +74,13 @@ impl crate::GlobalNamespace::RoomAdjustSettingsViewController {
         stepValuePicker: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::StepValuePicker,
         >,
-        roomOffsetValue: f32,
+        value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshRoomOffsetValuePicker", (stepValuePicker, roomOffsetValue))?;
+            .invoke("RefreshRoomOffsetValuePicker", (stepValuePicker, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn RefreshTexts(

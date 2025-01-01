@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct NoteMovement {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _waiting: *mut crate::GlobalNamespace::NoteWaiting,
     pub _floorMovement: *mut crate::GlobalNamespace::NoteFloorMovement,
     pub _jump: *mut crate::GlobalNamespace::NoteJump,
     pub _zOffset: f32,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
     pub didInitEvent: *mut crate::System::Action,
     pub noteDidStartJumpEvent: *mut crate::System::Action,
     pub noteDidFinishJumpEvent: *mut crate::System::Action,
@@ -15,11 +17,11 @@ pub struct NoteMovement {
         *mut crate::GlobalNamespace::NoteMovement,
     >,
     pub noteDidMoveInJumpPhaseEvent: *mut crate::System::Action,
-    pub _movementPhase_k__BackingField: crate::GlobalNamespace::NoteMovement_MovementPhase,
     pub _position: crate::UnityEngine::Vector3,
     pub _prevPosition: crate::UnityEngine::Vector3,
     pub _localPosition: crate::UnityEngine::Vector3,
     pub _prevLocalPosition: crate::UnityEngine::Vector3,
+    pub _distanceToPlayer: f32,
 }
 #[cfg(feature = "NoteMovement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -41,8 +43,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteMovement {
 }
 #[cfg(feature = "NoteMovement")]
 impl crate::GlobalNamespace::NoteMovement {
-    #[cfg(feature = "NoteMovement+MovementPhase")]
-    pub type MovementPhase = crate::GlobalNamespace::NoteMovement_MovementPhase;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -51,16 +51,6 @@ impl crate::GlobalNamespace::NoteMovement {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Awake", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn HandleFloorMovementDidFinish(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleFloorMovementDidFinish", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleNoteJumpDidFinish(
@@ -94,6 +84,16 @@ impl crate::GlobalNamespace::NoteMovement {
             .invoke("HandleNoteJumpDidPassThreeQuarters", (noteJump))?;
         Ok(__cordl_ret.into())
     }
+    pub fn HandleNoteJumpDidStart(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleNoteJumpDidStart", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleNoteJumpNoteJumpDidPassHalf(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -106,14 +106,11 @@ impl crate::GlobalNamespace::NoteMovement {
     }
     pub fn Init(
         &mut self,
-        beatTime: f32,
+        noteTime: f32,
         worldRotation: f32,
-        moveStartPos: crate::UnityEngine::Vector3,
-        moveEndPos: crate::UnityEngine::Vector3,
-        jumpEndPos: crate::UnityEngine::Vector3,
-        moveDuration: f32,
-        jumpDuration: f32,
-        jumpGravity: f32,
+        noteSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NoteSpawnData,
+        >,
         flipYSide: f32,
         endRotation: f32,
         rotateTowardsPlayer: bool,
@@ -126,14 +123,9 @@ impl crate::GlobalNamespace::NoteMovement {
             .invoke(
                 "Init",
                 (
-                    beatTime,
+                    noteTime,
                     worldRotation,
-                    moveStartPos,
-                    moveEndPos,
-                    jumpEndPos,
-                    moveDuration,
-                    jumpDuration,
-                    jumpGravity,
+                    noteSpawnData,
                     flipYSide,
                     endRotation,
                     rotateTowardsPlayer,
@@ -285,13 +277,6 @@ impl crate::GlobalNamespace::NoteMovement {
             .invoke("get_inverseWorldRotation", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_jumpDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDuration", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn get_jumpMoveVec(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -312,13 +297,6 @@ impl crate::GlobalNamespace::NoteMovement {
             .invoke("get_localPosition", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_moveDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_moveDuration", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn get_moveEndPos(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -329,23 +307,11 @@ impl crate::GlobalNamespace::NoteMovement {
             .invoke("get_moveEndPos", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_moveStartTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_noteTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_moveStartTime", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_movementPhase(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::NoteMovement_MovementPhase,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::NoteMovement_MovementPhase = __cordl_object
-            .invoke("get_movementPhase", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteTime", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_position(
@@ -467,17 +433,6 @@ impl crate::GlobalNamespace::NoteMovement {
             .invoke("remove_noteDidStartJumpEvent", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn set_movementPhase(
-        &mut self,
-        value: crate::GlobalNamespace::NoteMovement_MovementPhase,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_movementPhase", (value))?;
-        Ok(__cordl_ret.into())
-    }
 }
 #[cfg(feature = "NoteMovement")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteMovement {
@@ -488,16 +443,3 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteMovement 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "NoteMovement+MovementPhase")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NoteMovement_MovementPhase {
-    Jumping = 2i32,
-    MovingOnTheFloor = 1i32,
-    None = 0i32,
-}
-#[cfg(feature = "NoteMovement+MovementPhase")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteMovement_MovementPhase =>
-    ""."NoteMovement/MovementPhase"
-);

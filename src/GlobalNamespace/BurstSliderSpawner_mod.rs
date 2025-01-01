@@ -69,9 +69,8 @@ impl crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
+            crate::GlobalNamespace::NoteSpawnData,
         >,
-        rotation: f32,
         forceIsFirstNote: bool,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -84,14 +83,14 @@ impl crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
             .invoke(
                 "BeginInvoke",
-                (noteData, noteSpawnData, rotation, forceIsFirstNote, callback, object),
+                (noteData, noteSpawnData, forceIsFirstNote, callback, object),
             )?;
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
+            crate::GlobalNamespace::NoteSpawnData,
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -106,16 +105,15 @@ impl crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
+            crate::GlobalNamespace::NoteSpawnData,
         >,
-        rotation: f32,
         forceIsFirstNote: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (noteData, noteSpawnData, rotation, forceIsFirstNote))?;
+            .invoke("Invoke", (noteData, noteSpawnData, forceIsFirstNote))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

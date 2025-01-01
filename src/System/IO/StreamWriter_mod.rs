@@ -204,7 +204,18 @@ impl crate::System::IO::StreamWriter {
             .invoke_void(".ctor", (path, append))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString__cordl_bool_Encoding_i32_7(
+    pub fn New_Il2CppString__cordl_bool_Encoding7(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        append: bool,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path, append, encoding))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString__cordl_bool_Encoding_i32_8(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         append: bool,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -404,7 +415,20 @@ impl crate::System::IO::StreamWriter {
             .invoke(".ctor", (path, append))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString__cordl_bool_Encoding_i32_7(
+    pub fn _ctor_Il2CppString__cordl_bool_Encoding7(
+        &mut self,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        append: bool,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (path, append, encoding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString__cordl_bool_Encoding_i32_8(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         append: bool,

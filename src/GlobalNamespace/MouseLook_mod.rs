@@ -48,13 +48,12 @@ impl crate::GlobalNamespace::MouseLook {
     pub fn Init(
         &mut self,
         character: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (character, camera))?;
+            .invoke("Init", (character))?;
         Ok(__cordl_ret.into())
     }
     pub fn InternalLockUpdate(

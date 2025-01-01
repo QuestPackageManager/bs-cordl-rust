@@ -16,6 +16,9 @@ pub struct GameplayCoreInstaller {
     pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
     pub _perceivedLoudnessPerLevelModel: *mut crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
     pub _commandLineArguments: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
+    pub _performanceToolConfig: crate::System::Nullable_1<
+        crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
+    >,
 }
 #[cfg(feature = "GameplayCoreInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -45,16 +48,6 @@ impl crate::GlobalNamespace::GameplayCoreInstaller {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InstallBindings", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn InstallRecordingTool(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InstallRecordingTool", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -20,6 +20,7 @@ pub struct LevelListTableCell {
     pub _defaultCoverImage: *mut crate::UnityEngine::Sprite,
     pub _refreshingAvailabilityCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _settingDataCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
+    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     pub _notOwned: bool,
     pub _refreshingAvailabilityLevelID: *mut quest_hook::libil2cpp::Il2CppString,
     pub _settingDataFromLevelId: *mut quest_hook::libil2cpp::Il2CppString,
@@ -44,10 +45,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelListTableCell {
 }
 #[cfg(feature = "LevelListTableCell")]
 impl crate::GlobalNamespace::LevelListTableCell {
-    #[cfg(feature = "LevelListTableCell+_RefreshAvailabilityAsync_d__25")]
-    pub type _RefreshAvailabilityAsync_d__25 = crate::GlobalNamespace::LevelListTableCell__RefreshAvailabilityAsync_d__25;
-    #[cfg(feature = "LevelListTableCell+_SetDataFromLevelAsync_d__20")]
-    pub type _SetDataFromLevelAsync_d__20 = crate::GlobalNamespace::LevelListTableCell__SetDataFromLevelAsync_d__20;
+    #[cfg(feature = "LevelListTableCell+_RefreshAvailabilityAsync_d__26")]
+    pub type _RefreshAvailabilityAsync_d__26 = crate::GlobalNamespace::LevelListTableCell__RefreshAvailabilityAsync_d__26;
+    #[cfg(feature = "LevelListTableCell+_SetDataFromLevelAsync_d__21")]
+    pub type _SetDataFromLevelAsync_d__21 = crate::GlobalNamespace::LevelListTableCell__SetDataFromLevelAsync_d__21;
     pub fn CancelAsyncOperations(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -113,10 +114,11 @@ impl crate::GlobalNamespace::LevelListTableCell {
     }
     pub fn SetDataFromLevelAsync(
         &mut self,
-        level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         isFavorite: bool,
         isPromoted: bool,
         isUpdated: bool,
+        interactable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,7 +126,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "SetDataFromLevelAsync",
-                (level, isFavorite, isPromoted, isUpdated),
+                (beatmapLevel, isFavorite, isPromoted, isUpdated, interactable),
             )?;
         Ok(__cordl_ret.into())
     }

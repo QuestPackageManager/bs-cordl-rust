@@ -5,6 +5,7 @@ pub struct StandardLevelNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
     pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
     pub _standardLevelNoTransitionInstallerData: *mut crate::GlobalNamespace::StandardLevelNoTransitionInstallerData,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "StandardLevelNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -27,15 +27,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebrisRigidbodyPhysics {
 }
 #[cfg(feature = "NoteDebrisRigidbodyPhysics")]
 impl crate::GlobalNamespace::NoteDebrisRigidbodyPhysics {
-    pub fn AddVelocity(
+    pub fn Awake(
         &mut self,
-        force: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddVelocity", (force))?;
+            .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn FixedUpdate(
@@ -50,14 +49,15 @@ impl crate::GlobalNamespace::NoteDebrisRigidbodyPhysics {
     }
     pub fn Init(
         &mut self,
-        force: crate::UnityEngine::Vector3,
-        torque: crate::UnityEngine::Vector3,
+        linearVelocity: crate::UnityEngine::Vector3,
+        angularVelocity: crate::UnityEngine::Vector3,
+        forceOnlySimplePhysics: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (force, torque))?;
+            .invoke("Init", (linearVelocity, angularVelocity, forceOnlySimplePhysics))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -75,16 +75,6 @@ impl crate::GlobalNamespace::NoteDebrisRigidbodyPhysics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_position(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_position", ())?;
         Ok(__cordl_ret.into())
     }
 }

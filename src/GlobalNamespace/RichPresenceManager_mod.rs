@@ -63,6 +63,7 @@ impl crate::GlobalNamespace::RichPresenceManager {
     }
     pub fn HandleGameScenesManagerTransitionDidFinish(
         &mut self,
+        sceneTransitionType: crate::GlobalNamespace::GameScenesManager_SceneTransitionType,
         scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         >,
@@ -74,7 +75,7 @@ impl crate::GlobalNamespace::RichPresenceManager {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "HandleGameScenesManagerTransitionDidFinish",
-                (scenesTransitionSetupData, diContainer),
+                (sceneTransitionType, scenesTransitionSetupData, diContainer),
             )?;
         Ok(__cordl_ret.into())
     }

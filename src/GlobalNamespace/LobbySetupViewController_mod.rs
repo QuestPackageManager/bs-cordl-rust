@@ -131,6 +131,17 @@ impl crate::GlobalNamespace::LobbySetupViewController {
             .invoke("SetPlayersMissingLevelText", (playersMissingLevelText))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetReadyButtonActive(
+        &mut self,
+        active: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetReadyButtonActive", (active))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetStartGameEnabled(
         &mut self,
         cannotStartGameReason: crate::GlobalNamespace::CannotStartGameReason,

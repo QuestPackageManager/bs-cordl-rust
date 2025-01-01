@@ -6,7 +6,7 @@ pub struct ServerSettingsViewController {
     pub _enabled: *mut crate::UnityEngine::UI::Toggle,
     pub _hostName: *mut crate::HMUI::InputFieldView,
     pub _forceGameLift: *mut crate::UnityEngine::UI::Toggle,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "ServerSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

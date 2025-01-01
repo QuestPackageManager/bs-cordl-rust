@@ -46,6 +46,17 @@ impl std::ops::DerefMut for crate::UnityEngine::GUILayoutGroup {
 }
 #[cfg(feature = "UnityEngine+GUILayoutGroup")]
 impl crate::UnityEngine::GUILayoutGroup {
+    pub fn Add(
+        &mut self,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutEntry>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Add", (e))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ApplyOptions(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
@@ -88,6 +99,18 @@ impl crate::UnityEngine::GUILayoutGroup {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CalcWidth", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutEntry>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutEntry> = __cordl_object
+            .invoke("GetNext", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

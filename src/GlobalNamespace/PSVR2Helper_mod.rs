@@ -5,6 +5,7 @@ pub struct PSVR2Helper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _leftController: *mut crate::GlobalNamespace::UnityXRController_Configuration,
     pub _rightController: *mut crate::GlobalNamespace::UnityXRController_Configuration,
+    pub _pauseGameActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
     pub _defaultPose: crate::UnityEngine::Pose,
     pub _controllers: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::UnityEngine::XR::XRNode,
@@ -14,9 +15,12 @@ pub struct PSVR2Helper {
         crate::UnityEngine::XR::XRNode,
         *mut crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
     >,
+    pub _pauseGameAction: *mut crate::UnityEngine::InputSystem::InputAction,
     pub _timeWhenStartedPlayingHaptic: f32,
     pub _lastTimeWhenTriggeredHaptic: f32,
     pub _hasInputFocus: bool,
+    pub _menuButtonDown: bool,
+    pub _menuButtonDownThisFrame: bool,
     pub _maximumHapticFrequencyLimits: *mut crate::System::Collections::Generic::List_1<
         crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit,
     >,
@@ -56,8 +60,8 @@ impl crate::GlobalNamespace::PSVR2Helper {
     pub const kRumbleMinimalDuration: f32 = 0.05f32;
     #[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
     pub type HeadsetHapticFrequencyLimit = crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit;
-    #[cfg(feature = "PSVR2Helper+_CheckControllerConnectionOnStartup_d__69")]
-    pub type _CheckControllerConnectionOnStartup_d__69 = crate::GlobalNamespace::PSVR2Helper__CheckControllerConnectionOnStartup_d__69;
+    #[cfg(feature = "PSVR2Helper+_CheckControllerConnectionOnStartup_d__75")]
+    pub type _CheckControllerConnectionOnStartup_d__75 = crate::GlobalNamespace::PSVR2Helper__CheckControllerConnectionOnStartup_d__75;
     #[cfg(feature = "PSVR2Helper+__c")]
     pub type __c = crate::GlobalNamespace::PSVR2Helper___c;
     pub fn AddControllerToMap(
@@ -133,6 +137,17 @@ impl crate::GlobalNamespace::PSVR2Helper {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetNodePose", (nodeType, idx, pos, rot))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRootPositionOffsetForLegacyNodePose(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Pose = __cordl_object
+            .invoke("GetRootPositionOffsetForLegacyNodePose", (node))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetTRCCompliantHeadsetHapticFrequency(
@@ -242,6 +257,16 @@ impl crate::GlobalNamespace::PSVR2Helper {
             .invoke("IsAdvancedHapticsSupported", (node))?;
         Ok(__cordl_ret.into())
     }
+    pub fn LateUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LateUpdate", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -257,6 +282,28 @@ impl crate::GlobalNamespace::PSVR2Helper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnPauseGameCancelled(
+        &mut self,
+        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPauseGameCancelled", (context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnPauseGamePerformed(
+        &mut self,
+        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPauseGamePerformed", (context))?;
         Ok(__cordl_ret.into())
     }
     pub fn RefreshControllersReference(
@@ -292,6 +339,19 @@ impl crate::GlobalNamespace::PSVR2Helper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TriggerHapticPulse", (node, duration, strength, frequency))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetLegacyPoseOffsetForNode(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        rotation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetLegacyPoseOffsetForNode", (node, position, rotation))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryGetPoseOffsetForNode(

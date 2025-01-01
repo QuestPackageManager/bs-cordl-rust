@@ -44,8 +44,6 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
         feature = "BeatmapLevelLoader+_CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__16"
     )]
     pub type _CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__16 = crate::GlobalNamespace::BeatmapLevelLoader__CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__16;
-    #[cfg(feature = "BeatmapLevelLoader+_DownloadAssetBundleAndGetPath_d__19")]
-    pub type _DownloadAssetBundleAndGetPath_d__19 = crate::GlobalNamespace::BeatmapLevelLoader__DownloadAssetBundleAndGetPath_d__19;
     #[cfg(feature = "BeatmapLevelLoader+_LoadBeatmapLevelDataAsync_d__13")]
     pub type _LoadBeatmapLevelDataAsync_d__13 = crate::GlobalNamespace::BeatmapLevelLoader__LoadBeatmapLevelDataAsync_d__13;
     #[cfg(feature = "BeatmapLevelLoader+_LoadBeatmapLevelDataFromAssetBundle_d__18")]

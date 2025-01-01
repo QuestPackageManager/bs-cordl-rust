@@ -61,6 +61,8 @@ impl crate::GlobalNamespace::NoteDebris {
         force: crate::UnityEngine::Vector3,
         torque: crate::UnityEngine::Vector3,
         lifeTime: f32,
+        cutoutOffset: crate::UnityEngine::Vector3,
+        forceOnlySimplePhysics: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,6 +83,8 @@ impl crate::GlobalNamespace::NoteDebris {
                     force,
                     torque,
                     lifeTime,
+                    cutoutOffset,
+                    forceOnlySimplePhysics,
                 ),
             )?;
         Ok(__cordl_ret.into())

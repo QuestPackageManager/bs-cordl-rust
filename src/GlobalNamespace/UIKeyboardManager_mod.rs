@@ -7,7 +7,7 @@ pub struct UIKeyboardManager {
     pub _keyboardModalView: *mut crate::HMUI::ModalView,
     pub _keyboardContainerTransform: *mut crate::UnityEngine::RectTransform,
     pub _parentContainerTransform: *mut crate::UnityEngine::Transform,
-    pub _vrInputModule: *mut crate::VRUIControls::VRInputModule,
+    pub _vrInputModule: *mut crate::GlobalNamespace::IVRInputModule,
     pub _selectedInput: *mut crate::HMUI::InputFieldView,
 }
 #[cfg(feature = "UIKeyboardManager")]

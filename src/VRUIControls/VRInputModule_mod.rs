@@ -6,8 +6,12 @@ pub struct VRInputModule {
     pub _vrPointer: *mut crate::VRUIControls::VRPointer,
     pub _rumblePreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
     pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
+    pub _useMouseForPressInput_k__BackingField: bool,
     pub onProcessMousePressEvent: *mut crate::System::Action_1<
         *mut crate::UnityEngine::GameObject,
+    >,
+    pub pointerDidClickEvent: *mut crate::System::Action_1<
+        *mut crate::UnityEngine::EventSystems::PointerEventData,
     >,
     pub _pointerData: *mut crate::System::Collections::Generic::Dictionary_2<
         i32,
@@ -258,6 +262,40 @@ impl crate::VRUIControls::VRInputModule {
             .invoke("add_onProcessMousePressEvent", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_pointerDidClickEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::UnityEngine::EventSystems::PointerEventData,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_pointerDidClickEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_useMouseForPressInput(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_useMouseForPressInput", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_vrPointer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::VRUIControls::VRPointer>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::VRUIControls::VRPointer> = __cordl_object
+            .invoke("get_vrPointer", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn remove_onProcessMousePressEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
@@ -271,6 +309,32 @@ impl crate::VRUIControls::VRInputModule {
             .invoke("remove_onProcessMousePressEvent", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn remove_pointerDidClickEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::UnityEngine::EventSystems::PointerEventData,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_pointerDidClickEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_useMouseForPressInput(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_useMouseForPressInput", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "VRUIControls+VRInputModule")]
 impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRInputModule {
@@ -279,5 +343,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRInputModule {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "VRUIControls+VRInputModule")]
+impl AsRef<crate::GlobalNamespace::IVRInputModule>
+for crate::VRUIControls::VRInputModule {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVRInputModule {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "VRUIControls+VRInputModule")]
+impl AsMut<crate::GlobalNamespace::IVRInputModule>
+for crate::VRUIControls::VRInputModule {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRInputModule {
+        unsafe { std::mem::transmute(self) }
     }
 }

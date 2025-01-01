@@ -7,7 +7,7 @@ pub struct OtherSettingsViewController {
     pub _hideExplicitToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _pausePressDuration: *mut crate::GlobalNamespace::NamedIntListSettingsController,
     pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
     pub _explicitToggleAvailable: bool,
 }
 #[cfg(feature = "OtherSettingsViewController")]

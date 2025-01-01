@@ -7,7 +7,7 @@ pub struct PerformanceConfigurationChecks {
     pub xrConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig,
     pub ovrConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig,
     pub oculusXrConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig,
-    pub gameConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_GameConfig,
+    pub settingsConfig: crate::BeatSaber::Settings::Settings,
     pub playerConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig,
     pub levelConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig,
     pub invalid: *mut crate::System::Collections::Generic::Dictionary_2<
@@ -37,8 +37,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PerformanceConfigurationChec
 impl crate::GlobalNamespace::PerformanceConfigurationChecks {
     #[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
     pub type AppConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig;
-    #[cfg(feature = "PerformanceConfigurationChecks+GameConfig")]
-    pub type GameConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_GameConfig;
     #[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
     pub type LevelConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig;
     #[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
@@ -80,25 +78,20 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
     }
     pub fn SetExpected(
         &mut self,
-        mainSettingsHandler: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::GameSettings::MainSettingsHandler,
-        >,
-        graphicSettingsHandler: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-        >,
+        settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         playerSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
         >,
         modifiers: crate::GlobalNamespace::GameplayModifierMask,
+        recPlayState: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RecPlayBehaviour_State,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "SetExpected",
-                (mainSettingsHandler, graphicSettingsHandler, playerSettings, modifiers),
-            )?;
+            .invoke("SetExpected", (settings, playerSettings, modifiers, recPlayState))?;
         Ok(__cordl_ret.into())
     }
     pub fn VerifyEntry<T>(
@@ -120,16 +113,14 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
     }
     pub fn VerifyExpected(
         &mut self,
-        mainSettingsHandler: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::GameSettings::MainSettingsHandler,
-        >,
-        graphicSettingsHandler: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-        >,
+        settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         playerSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
         >,
         modifiers: crate::GlobalNamespace::GameplayModifierMask,
+        recPlayState: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RecPlayBehaviour_State,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +128,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
         let __cordl_ret: bool = __cordl_object
             .invoke(
                 "VerifyExpected",
-                (mainSettingsHandler, graphicSettingsHandler, playerSettings, modifiers),
+                (settings, playerSettings, modifiers, recPlayState),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -190,76 +181,6 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
 }
 #[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {}
-#[cfg(feature = "PerformanceConfigurationChecks+GameConfig")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct PerformanceConfigurationChecks_GameConfig {
-    pub roomCenter: crate::UnityEngine::Vector3,
-    pub roomRotation: f64,
-    pub controllerPosition: crate::UnityEngine::Vector3,
-    pub controllerRotation: crate::UnityEngine::Vector3,
-    pub hapticFeedback: bool,
-    pub smoothCameraEnabled: bool,
-    pub smoothCameraFieldOfView: f64,
-    pub smoothCameraPositionSmooth: f64,
-    pub smoothCameraRotationSmooth: f64,
-    pub smoothCameraThirdPersonEnabled: bool,
-    pub smoothCameraThirdPersonPosition: crate::UnityEngine::Vector3,
-    pub smoothCameraThirdPersonEulerAngles: crate::UnityEngine::Vector3,
-    pub volume: f64,
-    pub ambientVolumeScale: f64,
-    pub overrideAudioLatency: bool,
-    pub audioLatency: f64,
-    pub enableFPSCounter: bool,
-    pub enableFPSRecorder: bool,
-    pub enableMemoryTracker: bool,
-    pub createScreenshotDuringTheGame: bool,
-    pub language: crate::BGLib::Polyglot::Language,
-    pub pauseButtonPressDurationLevel: i32,
-    pub useCustomServerEnvironment: bool,
-    pub forceGameLiftServerEnvironment: bool,
-    pub customServerHostName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub windowResolution: crate::UnityEngine::Vector2Int,
-    pub windowMode: crate::BeatSaber::GameSettings::WindowMode,
-    pub performancePresetKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub renderViewportScale: f64,
-    pub targetFramerate: f64,
-    pub vSyncCount: i32,
-    pub maxQueuedFrames: i32,
-    pub vrResolutionScale: f64,
-    pub menuVRResolutionScaleMultiplier: f64,
-    pub antiAliasingLevel: i32,
-    pub bloomPrePassTextureEffect: crate::BeatSaber::PerformancePresets::BloomPrepassTextureEffectPreset,
-    pub mainEffectGraphicsSettings: crate::BeatSaber::PerformancePresets::MainEffectPreset,
-    pub mirrorGraphicsSettings: crate::BeatSaber::PerformancePresets::MirrorQualityPreset,
-    pub maxNumberOfCutSoundEffects: i32,
-    pub maxShockwaveParticles: i32,
-    pub burnMarkTrailsEnabled: bool,
-    pub smokeGraphicsSettings: bool,
-    pub screenDisplacementEffectsEnabled: bool,
-    pub obstaclesQuality: crate::BeatSaber::PerformancePresets::ObstaclesQuality,
-    pub cpuLevel: i32,
-    pub gpuLevel: i32,
-}
-#[cfg(feature = "PerformanceConfigurationChecks+GameConfig")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PerformanceConfigurationChecks_GameConfig => ""
-    ."PerformanceConfigurationChecks/GameConfig"
-);
-#[cfg(feature = "PerformanceConfigurationChecks+GameConfig")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PerformanceConfigurationChecks_GameConfig {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "PerformanceConfigurationChecks+GameConfig")]
-impl crate::GlobalNamespace::PerformanceConfigurationChecks_GameConfig {}
 #[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
 #[repr(C)]
 #[derive(Debug, Clone)]

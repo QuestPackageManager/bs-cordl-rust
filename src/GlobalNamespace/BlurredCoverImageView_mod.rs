@@ -5,6 +5,7 @@ pub struct BlurredCoverImageView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _coverImage: *mut crate::HMUI::ImageView,
     pub _kawaseBlurRenderer: *mut crate::GlobalNamespace::KawaseBlurRendererSO,
+    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     pub _settingTextureForLevelId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _blurredCoverTexture: *mut crate::UnityEngine::Texture2D,
@@ -29,8 +30,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BlurredCoverImageView {
 }
 #[cfg(feature = "BlurredCoverImageView")]
 impl crate::GlobalNamespace::BlurredCoverImageView {
-    #[cfg(feature = "BlurredCoverImageView+_SetTextureAsync_d__6")]
-    pub type _SetTextureAsync_d__6 = crate::GlobalNamespace::BlurredCoverImageView__SetTextureAsync_d__6;
+    #[cfg(feature = "BlurredCoverImageView+_SetTextureAsync_d__7")]
+    pub type _SetTextureAsync_d__7 = crate::GlobalNamespace::BlurredCoverImageView__SetTextureAsync_d__7;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

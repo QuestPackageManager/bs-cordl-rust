@@ -181,10 +181,11 @@ pub struct SliderController {
     pub _sliderMeshController: *mut crate::GlobalNamespace::SliderMeshController,
     pub _sliderMovement: *mut crate::GlobalNamespace::SliderMovement,
     pub _closeInteractionSaberPosSmoothParam: f32,
-    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::IBeatmapObjectSpawnController,
     pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
     pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
     pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
+    pub _jumpOffsetYProvider: *mut crate::GlobalNamespace::IJumpOffsetYProvider,
     pub _sliderDidFinishMovement: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
         *mut crate::GlobalNamespace::ISliderDidFinishJumpEvent,
     >,
@@ -202,14 +203,14 @@ pub struct SliderController {
     >,
     pub _lengthType: crate::GlobalNamespace::SliderController_LengthType,
     pub _sliderData: *mut crate::GlobalNamespace::SliderData,
+    pub _sliderSpawnData: crate::GlobalNamespace::SliderSpawnData,
     pub _saber: *mut crate::GlobalNamespace::Saber,
-    pub _headJumpOffsetY: f32,
     pub _sliderDuration: f32,
     pub _initColor: crate::UnityEngine::Color,
     pub _attractingSaber: bool,
     pub _randomValue: f32,
     pub _zDistanceBetweenNotes: f32,
-    pub _jumpDistance: f32,
+    pub _jumpOffsetY: f32,
     pub _closeSmoothedSaberInteractionPos: *mut crate::GlobalNamespace::FixedUpdateVector3SmoothValue,
 }
 #[cfg(feature = "SliderController")]
@@ -237,8 +238,8 @@ impl crate::GlobalNamespace::SliderController {
     pub type LengthType = crate::GlobalNamespace::SliderController_LengthType;
     #[cfg(feature = "SliderController+Pool")]
     pub type Pool = crate::GlobalNamespace::SliderController_Pool;
-    #[cfg(feature = "SliderController+_DissolveCoroutine_d__70")]
-    pub type _DissolveCoroutine_d__70 = crate::GlobalNamespace::SliderController__DissolveCoroutine_d__70;
+    #[cfg(feature = "SliderController+_DissolveCoroutine_d__71")]
+    pub type _DissolveCoroutine_d__71 = crate::GlobalNamespace::SliderController__DissolveCoroutine_d__71;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -364,15 +365,11 @@ impl crate::GlobalNamespace::SliderController {
         &mut self,
         lengthType: crate::GlobalNamespace::SliderController_LengthType,
         sliderData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
-        worldRotation: f32,
-        headNoteJumpStartPos: crate::UnityEngine::Vector3,
-        tailNoteJumpStartPos: crate::UnityEngine::Vector3,
-        headNoteJumpEndPos: crate::UnityEngine::Vector3,
-        tailNoteJumpEndPos: crate::UnityEngine::Vector3,
-        jumpDuration: f32,
-        startNoteJumpGravity: f32,
-        endNoteJumpGravity: f32,
+        sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::SliderSpawnData,
+        >,
         noteUniformScale: f32,
+        randomValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -380,19 +377,7 @@ impl crate::GlobalNamespace::SliderController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "Init",
-                (
-                    lengthType,
-                    sliderData,
-                    worldRotation,
-                    headNoteJumpStartPos,
-                    tailNoteJumpStartPos,
-                    headNoteJumpEndPos,
-                    tailNoteJumpEndPos,
-                    jumpDuration,
-                    startNoteJumpGravity,
-                    endNoteJumpGravity,
-                    noteUniformScale,
-                ),
+                (lengthType, sliderData, sliderSpawnData, noteUniformScale, randomValue),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -510,13 +495,6 @@ impl crate::GlobalNamespace::SliderController {
         > = __cordl_object.invoke("get_closeSmoothedSaberInteractionPos", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_headJumpOffsetY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_headJumpOffsetY", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn get_initColor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
@@ -527,11 +505,11 @@ impl crate::GlobalNamespace::SliderController {
             .invoke("get_initColor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_jumpDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_jumpOffsetY(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpDistance", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_jumpOffsetY", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_lengthType(
@@ -694,6 +672,16 @@ impl crate::GlobalNamespace::SliderController {
         > = __cordl_object.invoke("get_sliderMovement", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_sliderSpawnData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SliderSpawnData> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::SliderSpawnData = __cordl_object
+            .invoke("get_sliderSpawnData", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_sliderTailDidMovePastCutMark(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -762,6 +750,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct SliderController_Pool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::VariableMovementDataProvider,
     pub _shortPool: *mut crate::GlobalNamespace::Pool_SliderController_Short,
     pub _mediumPool: *mut crate::GlobalNamespace::Pool_SliderController_Medium,
     pub _longPool: *mut crate::GlobalNamespace::Pool_SliderController_Long,
@@ -794,6 +783,20 @@ impl crate::GlobalNamespace::SliderController_Pool {
     pub type Medium = crate::GlobalNamespace::Pool_SliderController_Medium;
     #[cfg(feature = "SliderController+Pool+Short")]
     pub type Short = crate::GlobalNamespace::Pool_SliderController_Short;
+    pub fn GetLengthFromSliderData(
+        &mut self,
+        sliderNoteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+        sliderSpawnData: crate::GlobalNamespace::SliderSpawnData,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::SliderController_LengthType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::SliderController_LengthType = __cordl_object
+            .invoke("GetLengthFromSliderData", (sliderNoteData, sliderSpawnData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPool(
         &mut self,
         lengthType: crate::GlobalNamespace::SliderController_LengthType,
@@ -815,6 +818,9 @@ impl crate::GlobalNamespace::SliderController_Pool {
         Ok(__cordl_ret.into())
     }
     pub fn New(
+        variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::VariableMovementDataProvider,
+        >,
         shortPool: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::Pool_SliderController_Short,
         >,
@@ -828,11 +834,17 @@ impl crate::GlobalNamespace::SliderController_Pool {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (shortPool, mediumPool, longPool))?;
+            .invoke_void(
+                ".ctor",
+                (variableMovementDataProvider, shortPool, mediumPool, longPool),
+            )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
+        variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::VariableMovementDataProvider,
+        >,
         shortPool: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::Pool_SliderController_Short,
         >,
@@ -847,7 +859,10 @@ impl crate::GlobalNamespace::SliderController_Pool {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (shortPool, mediumPool, longPool))?;
+            .invoke(
+                ".ctor",
+                (variableMovementDataProvider, shortPool, mediumPool, longPool),
+            )?;
         Ok(__cordl_ret.into())
     }
 }

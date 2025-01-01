@@ -4,15 +4,15 @@
 pub struct StandardLevelBuyView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
+    pub _steamMessageGameObject: *mut crate::UnityEngine::GameObject,
     pub _buyButton: *mut crate::UnityEngine::UI::Button,
     pub _favoriteToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _steamMessageGameObject: *mut crate::UnityEngine::GameObject,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub didFavoriteToggleChangeEvent: *mut crate::System::Action_1<
         *mut crate::UnityEngine::UI::Toggle,
     >,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
     pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub _playerData: *mut crate::GlobalNamespace::PlayerData,
+    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
 }
 #[cfg(feature = "StandardLevelBuyView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -74,13 +74,12 @@ impl crate::GlobalNamespace::StandardLevelBuyView {
     pub fn SetContent(
         &mut self,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        playerData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetContent", (beatmapLevel, playerData))?;
+            .invoke("SetContent", (beatmapLevel))?;
         Ok(__cordl_ret.into())
     }
     pub fn _Awake_b__12_0(

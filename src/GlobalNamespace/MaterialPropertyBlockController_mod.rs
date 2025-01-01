@@ -7,10 +7,6 @@ pub struct MaterialPropertyBlockController {
         *mut crate::UnityEngine::Renderer,
     >,
     pub _materialPropertyBlock: *mut crate::UnityEngine::MaterialPropertyBlock,
-    pub _numberOfMaterialsInRenderers: *mut crate::System::Collections::Generic::List_1<
-        i32,
-    >,
-    pub _isInitialized: bool,
 }
 #[cfg(feature = "MaterialPropertyBlockController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

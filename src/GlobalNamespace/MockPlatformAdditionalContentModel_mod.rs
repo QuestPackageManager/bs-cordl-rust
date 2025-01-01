@@ -48,9 +48,9 @@ impl crate::GlobalNamespace::MockPlatformAdditionalContentModel {
     )]
     pub type _IsPackBetterBuyThanLevelAsync_d__9 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__IsPackBetterBuyThanLevelAsync_d__9;
     #[cfg(
-        feature = "MockPlatformAdditionalContentModel+_OpenLevelPackProductStoreAsync_d__12"
+        feature = "MockPlatformAdditionalContentModel+_OpenLevelPackProductStoreAsync_d__13"
     )]
-    pub type _OpenLevelPackProductStoreAsync_d__12 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__OpenLevelPackProductStoreAsync_d__12;
+    pub type _OpenLevelPackProductStoreAsync_d__13 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__OpenLevelPackProductStoreAsync_d__13;
     #[cfg(
         feature = "MockPlatformAdditionalContentModel+_OpenLevelProductStoreAsync_d__10"
     )]
@@ -215,6 +215,17 @@ impl crate::GlobalNamespace::MockPlatformAdditionalContentModel {
                 crate::GlobalNamespace::OpenProductStoreResult,
             >,
         > = __cordl_object.invoke("OpenLevelProductStoreAsync", (levelId, token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OpenStore(
+        &mut self,
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OpenStore", (uri))?;
         Ok(__cordl_ret.into())
     }
     pub fn Wait(

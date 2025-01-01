@@ -3,6 +3,7 @@
 #[derive(Debug)]
 pub struct ObstacleControllerBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
     pub didInitEvent: *mut crate::System::Action_1<
         *mut crate::GlobalNamespace::ObstacleControllerBase,
     >,

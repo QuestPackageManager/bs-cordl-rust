@@ -8,6 +8,7 @@ pub struct BeatmapLevelPackSO {
     pub _shortPackName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _coverImage: *mut crate::UnityEngine::Sprite,
     pub _smallCoverImage: *mut crate::UnityEngine::Sprite,
+    pub _packBuyOption: crate::GlobalNamespace::PackBuyOption,
     pub _contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     pub _beatmapLevelCollection: *mut crate::GlobalNamespace::BeatmapLevelCollectionSO,
 }
@@ -94,6 +95,16 @@ impl crate::GlobalNamespace::BeatmapLevelPackSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = __cordl_object
             .invoke("get_coverImage", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_packBuyOption(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PackBuyOption> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::PackBuyOption = __cordl_object
+            .invoke("get_packBuyOption", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_packID(

@@ -10,8 +10,6 @@ pub struct ObstacleMaterialSetter {
     pub _fakeGlowTexturedMaterial: *mut crate::UnityEngine::Material,
     pub _obstacleCoreRenderer: *mut crate::UnityEngine::Renderer,
     pub _obstacleFakeGlowRenderer: *mut crate::UnityEngine::Renderer,
-    pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-    pub _currentPreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
 }
 #[cfg(feature = "ObstacleMaterialSetter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -33,6 +31,18 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleMaterialSetter {
 }
 #[cfg(feature = "ObstacleMaterialSetter")]
 impl crate::GlobalNamespace::ObstacleMaterialSetter {
+    pub fn Init(
+        &mut self,
+        obstacleQuality: crate::BeatSaber::Settings::QualitySettings_ObstacleQuality,
+        screenDisplacementEffects: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (obstacleQuality, screenDisplacementEffects))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,33 +53,29 @@ impl crate::GlobalNamespace::ObstacleMaterialSetter {
     pub fn SetCoreMaterial(
         &mut self,
         renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+        obstacleQuality: crate::BeatSaber::Settings::QualitySettings_ObstacleQuality,
+        screenDisplacementEffects: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCoreMaterial", (renderer))?;
+            .invoke(
+                "SetCoreMaterial",
+                (renderer, obstacleQuality, screenDisplacementEffects),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn SetFakeGlowMaterial(
         &mut self,
         renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+        obstacleQuality: crate::BeatSaber::Settings::QualitySettings_ObstacleQuality,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetFakeGlowMaterial", (renderer))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
+            .invoke("SetFakeGlowMaterial", (renderer, obstacleQuality))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

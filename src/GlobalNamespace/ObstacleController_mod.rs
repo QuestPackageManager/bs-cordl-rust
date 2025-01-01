@@ -8,13 +8,13 @@ pub struct ObstacleController {
     pub _visualWrappers: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::GameObject,
     >,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+    pub _obstacleMaterialSetter: *mut crate::GlobalNamespace::ObstacleMaterialSetter,
     pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
     pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
     pub finishedMovementEvent: *mut crate::System::Action_1<
         *mut crate::GlobalNamespace::ObstacleController,
     >,
-    pub passedThreeQuartersOfMove2Event: *mut crate::System::Action_1<
+    pub passedThreeQuartersOfJumpDurationEvent: *mut crate::System::Action_1<
         *mut crate::GlobalNamespace::ObstacleController,
     >,
     pub passedAvoidedMarkEvent: *mut crate::System::Action_1<
@@ -30,23 +30,22 @@ pub struct ObstacleController {
     pub _width: f32,
     pub _height: f32,
     pub _length: f32,
-    pub _startPos: crate::UnityEngine::Vector3,
-    pub _midPos: crate::UnityEngine::Vector3,
-    pub _endPos: crate::UnityEngine::Vector3,
-    pub _move1Duration: f32,
-    pub _move2Duration: f32,
-    pub _startTimeOffset: f32,
     pub _obstacleDuration: f32,
-    pub _passedThreeQuartersOfMove2Reported: bool,
+    pub _passedThreeQuartersOfJumpDurationReported: bool,
     pub _passedAvoidedMarkReported: bool,
-    pub _passedAvoidedMarkTime: f32,
-    pub _finishMovementTime: f32,
     pub _bounds: crate::UnityEngine::Bounds,
     pub _dissolving: bool,
     pub _obstacleData: *mut crate::GlobalNamespace::ObstacleData,
+    pub _obstacleSpawnData: crate::GlobalNamespace::ObstacleSpawnData,
     pub _color: crate::UnityEngine::Color,
+    pub _startPos: crate::UnityEngine::Vector3,
+    pub _midPos: crate::UnityEngine::Vector3,
+    pub _endPos: crate::UnityEngine::Vector3,
+    pub _startTimeOffset: f32,
+    pub _passedThreeQuartersOfJumpDurationTime: f32,
+    pub _passedAvoidedMarkTime: f32,
+    pub _finishMovementTime: f32,
     pub _worldRotation: crate::UnityEngine::Quaternion,
-    pub _inverseWorldRotation: crate::UnityEngine::Quaternion,
 }
 #[cfg(feature = "ObstacleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -71,8 +70,8 @@ impl crate::GlobalNamespace::ObstacleController {
     pub const kAvoidMarkTimeOffset: f32 = 0.15f32;
     #[cfg(feature = "ObstacleController+Pool")]
     pub type Pool = crate::GlobalNamespace::ObstacleController_Pool;
-    #[cfg(feature = "ObstacleController+_DissolveCoroutine_d__65")]
-    pub type _DissolveCoroutine_d__65 = crate::GlobalNamespace::ObstacleController__DissolveCoroutine_d__65;
+    #[cfg(feature = "ObstacleController+_DissolveCoroutine_d__64")]
+    pub type _DissolveCoroutine_d__64 = crate::GlobalNamespace::ObstacleController__DissolveCoroutine_d__64;
     pub fn Dissolve(
         &mut self,
         duration: f32,
@@ -96,6 +95,13 @@ impl crate::GlobalNamespace::ObstacleController {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
         > = __cordl_object.invoke("DissolveCoroutine", (duration))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetObstacleLength(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("GetObstacleLength", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetPosForTime(
@@ -123,33 +129,26 @@ impl crate::GlobalNamespace::ObstacleController {
     pub fn Init(
         &mut self,
         obstacleData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
-        worldRotation: f32,
-        startPos: crate::UnityEngine::Vector3,
-        midPos: crate::UnityEngine::Vector3,
-        endPos: crate::UnityEngine::Vector3,
-        move1Duration: f32,
-        move2Duration: f32,
-        singleLineWidth: f32,
-        height: f32,
+        obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::ObstacleSpawnData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "Init",
-                (
-                    obstacleData,
-                    worldRotation,
-                    startPos,
-                    midPos,
-                    endPos,
-                    move1Duration,
-                    move2Duration,
-                    singleLineWidth,
-                    height,
-                ),
-            )?;
+            .invoke("Init", (obstacleData, obstacleSpawnData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitGraphics(
+        &mut self,
+        settings: crate::BeatSaber::Settings::Settings,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitGraphics", (settings))?;
         Ok(__cordl_ret.into())
     }
     pub fn ManualUpdate(
@@ -252,7 +251,7 @@ impl crate::GlobalNamespace::ObstacleController {
             .invoke("add_passedAvoidedMarkEvent", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn add_passedThreeQuartersOfMove2Event(
+    pub fn add_passedThreeQuartersOfJumpDurationEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleController>,
@@ -262,7 +261,7 @@ impl crate::GlobalNamespace::ObstacleController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_passedThreeQuartersOfMove2Event", (value))?;
+            .invoke("add_passedThreeQuartersOfJumpDurationEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_bounds(
@@ -306,18 +305,11 @@ impl crate::GlobalNamespace::ObstacleController {
         let __cordl_ret: f32 = __cordl_object.invoke("get_length", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_move1Duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn get_manualUvOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_move1Duration", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_move2Duration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_move2Duration", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("get_manualUvOffset", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_obstacleData(
@@ -392,7 +384,7 @@ impl crate::GlobalNamespace::ObstacleController {
             .invoke("remove_passedAvoidedMarkEvent", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn remove_passedThreeQuartersOfMove2Event(
+    pub fn remove_passedThreeQuartersOfJumpDurationEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleController>,
@@ -402,7 +394,7 @@ impl crate::GlobalNamespace::ObstacleController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_passedThreeQuartersOfMove2Event", (value))?;
+            .invoke("remove_passedThreeQuartersOfJumpDurationEvent", (value))?;
         Ok(__cordl_ret.into())
     }
 }
@@ -436,6 +428,7 @@ pub struct ObstacleController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         *mut crate::GlobalNamespace::ObstacleController,
     >,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "ObstacleController+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -465,6 +458,17 @@ impl crate::GlobalNamespace::ObstacleController_Pool {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn OnCreated(
+        &mut self,
+        item: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnCreated", (item))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

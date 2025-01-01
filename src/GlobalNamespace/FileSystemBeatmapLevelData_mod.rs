@@ -35,6 +35,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FileSystemBeatmapLevelData {
 }
 #[cfg(feature = "FileSystemBeatmapLevelData")]
 impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
+    pub fn ContainsBeatmapData(
+        &mut self,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ContainsBeatmapData", (beatmapKey))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAudioDataString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -147,6 +158,17 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                 *mut quest_hook::libil2cpp::Il2CppString,
             >,
         > = __cordl_object.invoke("GetLightshowStringAsync", (beatmapKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IBeatmapLevelData_ContainsBeatmapData(
+        &mut self,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("IBeatmapLevelData.ContainsBeatmapData", (beatmapKey))?;
         Ok(__cordl_ret.into())
     }
     pub fn IBeatmapLevelData_GetBeatmapString(

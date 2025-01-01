@@ -14,6 +14,7 @@ pub struct MissionLevelNoTransitionInstaller {
     pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
     pub _backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
     pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "MissionLevelNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -89,13 +89,6 @@ impl crate::Mono::Math::BigInteger {
             .invoke("Incr2", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsProbablePrime(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsProbablePrime", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn LowestSetBit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -187,29 +180,6 @@ impl crate::Mono::Math::BigInteger {
             .invoke("Normalize", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Randomize_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Randomize", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Randomize_RandomNumberGenerator0(
-        &mut self,
-        rng: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::RandomNumberGenerator,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Randomize", (rng))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn SetBit__cordl_bool1(
         &mut self,
         bitNum: u32,
@@ -233,14 +203,7 @@ impl crate::Mono::Math::BigInteger {
             .invoke("SetBit", (bitNum))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TestBit_i32_1(&mut self, bitNum: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TestBit", (bitNum))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn TestBit_u32_0(&mut self, bitNum: u32) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn TestBit(&mut self, bitNum: i32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );

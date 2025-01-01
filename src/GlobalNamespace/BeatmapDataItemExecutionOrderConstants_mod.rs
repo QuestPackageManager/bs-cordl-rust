@@ -26,11 +26,12 @@ for crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
 }
 #[cfg(feature = "BeatmapDataItemExecutionOrderConstants")]
 impl crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
-    pub const kBPMChangeBeatmapEventExecutionOrder: i32 = -1001i32;
+    pub const kBPMChangeBeatmapEventExecutionOrder: i32 = -1100i32;
     pub const kCommonBeatmapEventExecutionOrder: i32 = -100i32;
     pub const kCommonBeatmapObjectDataExecutionOrder: i32 = 100i32;
     pub const kEarlySpawnRotationBeatmapEventExecutionOrder: i32 = -1000i32;
     pub const kLateSpawnRotationBeatmapEventExecutionOrder: i32 = 1000i32;
+    pub const kNoteJumpSpeedBeatmapEventExecutionOrder: i32 = -1010i32;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

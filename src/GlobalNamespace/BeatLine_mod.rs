@@ -8,9 +8,8 @@ pub struct BeatLine {
     pub _jumpFadeCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _alphaMul: f32,
     pub _maxAlpha: f32,
-    pub _highlights: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::BeatLine_HighlightData,
-    >,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::VariableMovementDataProvider,
+    pub _highlightTimes: *mut crate::System::Collections::Generic::List_1<f32>,
     pub _color: crate::UnityEngine::Color,
     pub _rotation: f32,
 }
@@ -33,21 +32,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatLine {
 }
 #[cfg(feature = "BeatLine")]
 impl crate::GlobalNamespace::BeatLine {
-    #[cfg(feature = "BeatLine+HighlightData")]
-    pub type HighlightData = crate::GlobalNamespace::BeatLine_HighlightData;
     #[cfg(feature = "BeatLine+Pool")]
     pub type Pool = crate::GlobalNamespace::BeatLine_Pool;
     pub fn AddHighlight(
         &mut self,
-        startTime: f32,
-        arriveDuration: f32,
-        jumpDuration: f32,
+        noteTime: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddHighlight", (startTime, arriveDuration, jumpDuration))?;
+            .invoke("AddHighlight", (noteTime))?;
         Ok(__cordl_ret.into())
     }
     pub fn ColorWasSet(
@@ -125,32 +120,6 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatLine {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatLine+HighlightData")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct BeatLine_HighlightData {
-    pub startTime: f32,
-    pub arriveDuration: f32,
-    pub halfJumpDuration: f32,
-}
-#[cfg(feature = "BeatLine+HighlightData")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatLine_HighlightData => ""
-    ."BeatLine/HighlightData"
-);
-#[cfg(feature = "BeatLine+HighlightData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::BeatLine_HighlightData {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "BeatLine+HighlightData")]
-impl crate::GlobalNamespace::BeatLine_HighlightData {}
 #[cfg(feature = "BeatLine+Pool")]
 #[repr(C)]
 #[derive(Debug)]

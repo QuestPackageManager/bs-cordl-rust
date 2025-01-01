@@ -1,9 +1,18 @@
 // class FrameSample_mod; export all
 mod FrameSample_mod;
 pub use FrameSample_mod::*;
+// class PlayerPoseCapturer_mod; export all
+mod PlayerPoseCapturer_mod;
+pub use PlayerPoseCapturer_mod::*;
+// class PlayerPoseFrame_mod; export all
+mod PlayerPoseFrame_mod;
+pub use PlayerPoseFrame_mod::*;
 // class PlayerPoseFrames_mod; export all
 mod PlayerPoseFrames_mod;
 pub use PlayerPoseFrames_mod::*;
+// class PlayerPoseIO_mod; export all
+mod PlayerPoseIO_mod;
+pub use PlayerPoseIO_mod::*;
 // class PlayerPoseSampler_mod; export all
 mod PlayerPoseSampler_mod;
 pub use PlayerPoseSampler_mod::*;

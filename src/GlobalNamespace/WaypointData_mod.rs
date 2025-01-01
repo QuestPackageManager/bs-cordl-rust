@@ -63,6 +63,8 @@ impl crate::GlobalNamespace::WaypointData {
     }
     pub fn New(
         _cordl_time: f32,
+        beat: f32,
+        rotation: i32,
         lineIndex: i32,
         lineLayer: crate::GlobalNamespace::NoteLineLayer,
         offsetDirection: crate::GlobalNamespace::OffsetDirection,
@@ -70,12 +72,17 @@ impl crate::GlobalNamespace::WaypointData {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_time, lineIndex, lineLayer, offsetDirection))?;
+            .invoke_void(
+                ".ctor",
+                (_cordl_time, beat, rotation, lineIndex, lineLayer, offsetDirection),
+            )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,
+        beat: f32,
+        rotation: i32,
         lineIndex: i32,
         lineLayer: crate::GlobalNamespace::NoteLineLayer,
         offsetDirection: crate::GlobalNamespace::OffsetDirection,
@@ -84,7 +91,10 @@ impl crate::GlobalNamespace::WaypointData {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_time, lineIndex, lineLayer, offsetDirection))?;
+            .invoke(
+                ".ctor",
+                (_cordl_time, beat, rotation, lineIndex, lineLayer, offsetDirection),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn get_lineIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MockLevelEndActions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub levelFailedEvent: *mut crate::System::Action,
     pub levelFinishedEvent: *mut crate::System::Action,
+    pub levelFailedEvent: *mut crate::System::Action,
 }
 #[cfg(feature = "MockLevelEndActions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

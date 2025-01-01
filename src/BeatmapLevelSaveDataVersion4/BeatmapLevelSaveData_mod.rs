@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSav
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
-    pub const kCurrentVersion: &'static str = "4.0.0";
+    pub const kCurrentVersion: &'static str = "4.0.1";
     #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
     pub type AudioData = crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData;
     #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
@@ -147,9 +147,11 @@ impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {}
 pub struct BeatmapLevelSaveData_ColorScheme {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub colorSchemeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub overrideNotes: bool,
     pub saberAColor: *mut quest_hook::libil2cpp::Il2CppString,
     pub saberBColor: *mut quest_hook::libil2cpp::Il2CppString,
     pub obstaclesColor: *mut quest_hook::libil2cpp::Il2CppString,
+    pub overrideLights: bool,
     pub environmentColor0: *mut quest_hook::libil2cpp::Il2CppString,
     pub environmentColor1: *mut quest_hook::libil2cpp::Il2CppString,
     pub environmentColor0Boost: *mut quest_hook::libil2cpp::Il2CppString,

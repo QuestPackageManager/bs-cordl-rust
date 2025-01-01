@@ -9,6 +9,8 @@ pub enum GameplayModifierMask {
     FasterSong = 256u16,
     GhostNotes = 2048u16,
     InstaFail = 4u16,
+    MakingGameEasier = 17944u16,
+    MakingGameHarder = 47584u16,
     NoArrows = 1024u16,
     NoBombs = 16u16,
     NoFail = 2u16,

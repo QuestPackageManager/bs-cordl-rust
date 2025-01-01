@@ -6,10 +6,10 @@ pub struct EnvironmentsListModel {
     pub _envInfos: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::EnvironmentInfoSO,
     >,
-    pub _environmentSerializedNames: *mut quest_hook::libil2cpp::Il2CppArray<
+    pub _normalEnvironmentSerializedNames: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _environmentNames: *mut quest_hook::libil2cpp::Il2CppArray<
+    pub _normalEnvironmentNames: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _envInfoMap: *mut crate::System::Collections::Generic::Dictionary_2<
@@ -171,36 +171,6 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         > = __cordl_object.invoke("get_environmentInfos", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_environmentNames(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        > = __cordl_object.invoke("get_environmentNames", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_environmentSerializedNames(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        > = __cordl_object.invoke("get_environmentSerializedNames", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn get_loggerPrefix(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -212,6 +182,36 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_loggerPrefix", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_normalEnvironmentNames(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = __cordl_object.invoke("get_normalEnvironmentNames", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_normalEnvironmentSerializedNames(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = __cordl_object.invoke("get_normalEnvironmentSerializedNames", ())?;
         Ok(__cordl_ret.into())
     }
 }

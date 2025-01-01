@@ -8,22 +8,15 @@ pub struct SliderIntensityEffect {
     pub _tailIntensity: f32,
     pub _fadeOutDuration: f32,
     pub _stayOffDuration: f32,
-    pub _flashBoost: f32,
-    pub _flashInDuration: f32,
-    pub _flashOutDuration: f32,
     pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _initData: *mut crate::GlobalNamespace::SliderIntensityEffect_InitData,
     pub fadeInDidStartEvent: *mut crate::System::Action,
     pub _coreIntensity: f32,
     pub _effectIntensity: f32,
-    pub _halfJumpDuration: f32,
     pub _sliderDuration: f32,
-    pub headIntensity: f32,
+    pub _headIntensity: f32,
     pub _intensityCalculationDelegate: *mut crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate,
     pub _dipEffectFadeElements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
-    >,
-    pub _flashEffectFadeElements: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
     >,
     pub _fadeInEffectFadeElements: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -56,8 +49,8 @@ impl crate::GlobalNamespace::SliderIntensityEffect {
     pub type InitData = crate::GlobalNamespace::SliderIntensityEffect_InitData;
     #[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
     pub type IntensityCalculationDelegate = crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate;
-    #[cfg(feature = "SliderIntensityEffect+_ProcessEffectCoroutine_d__32")]
-    pub type _ProcessEffectCoroutine_d__32 = crate::GlobalNamespace::SliderIntensityEffect__ProcessEffectCoroutine_d__32;
+    #[cfg(feature = "SliderIntensityEffect+_ProcessEffectCoroutine_d__27")]
+    pub type _ProcessEffectCoroutine_d__27 = crate::GlobalNamespace::SliderIntensityEffect__ProcessEffectCoroutine_d__27;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -71,25 +64,26 @@ impl crate::GlobalNamespace::SliderIntensityEffect {
     pub fn Init(
         &mut self,
         sliderDuration: f32,
-        halfJumpDuration: f32,
+        initialHalfJumpDuration: f32,
         startVisible: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (sliderDuration, halfJumpDuration, startVisible))?;
+            .invoke("Init", (sliderDuration, initialHalfJumpDuration, startVisible))?;
         Ok(__cordl_ret.into())
     }
     pub fn ManualUpdate(
         &mut self,
         timeSinceHeadNoteJump: f32,
+        halfJumpDuration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ManualUpdate", (timeSinceHeadNoteJump))?;
+            .invoke("ManualUpdate", (timeSinceHeadNoteJump, halfJumpDuration))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -117,16 +111,6 @@ impl crate::GlobalNamespace::SliderIntensityEffect {
         > = __cordl_object.invoke("ProcessEffectCoroutine", (fadeElements))?;
         Ok(__cordl_ret.into())
     }
-    pub fn StartFlashEffect(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartFlashEffect", ())?;
-        Ok(__cordl_ret.into())
-    }
     pub fn StartIntensityDipEffect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -147,24 +131,24 @@ impl crate::GlobalNamespace::SliderIntensityEffect {
             .invoke("StartIntensityFadeInEffect", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__29_0(
+    pub fn _Awake_b__24_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__29_0", ())?;
+            .invoke("<Awake>b__24_0", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__29_1(
+    pub fn _Awake_b__24_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__29_1", ())?;
+            .invoke("<Awake>b__24_1", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

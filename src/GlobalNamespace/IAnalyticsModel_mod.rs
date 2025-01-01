@@ -109,6 +109,18 @@ impl crate::GlobalNamespace::IAnalyticsModel {
             .invoke("LogImpression", (impressionType, impressionData))?;
         Ok(__cordl_ret.into())
     }
+    pub fn LogSessionEvent(
+        &mut self,
+        eventType: crate::GlobalNamespace::BeatSaberSessionEventType,
+        timeSinceSessionStart: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("LogSessionEvent", (eventType, timeSinceSessionStart))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn OpenDataPrivacyPage(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

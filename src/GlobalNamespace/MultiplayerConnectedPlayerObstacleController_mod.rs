@@ -33,33 +33,15 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController {
     pub fn Init(
         &mut self,
         obstacleData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
-        worldRotation: f32,
-        startPos: crate::UnityEngine::Vector3,
-        midPos: crate::UnityEngine::Vector3,
-        endPos: crate::UnityEngine::Vector3,
-        move1Duration: f32,
-        move2Duration: f32,
-        singleLineWidth: f32,
-        height: f32,
+        obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::ObstacleSpawnData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "Init",
-                (
-                    obstacleData,
-                    worldRotation,
-                    startPos,
-                    midPos,
-                    endPos,
-                    move1Duration,
-                    move2Duration,
-                    singleLineWidth,
-                    height,
-                ),
-            )?;
+            .invoke("Init", (obstacleData, obstacleSpawnData))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -97,6 +79,7 @@ pub struct MultiplayerConnectedPlayerObstacleController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         *mut crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
     >,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObstacleController+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -129,6 +112,19 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController_Pool {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn OnCreated(
+        &mut self,
+        item: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnCreated", (item))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

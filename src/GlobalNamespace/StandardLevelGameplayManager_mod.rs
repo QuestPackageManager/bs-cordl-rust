@@ -8,11 +8,16 @@ pub struct StandardLevelGameplayManager {
     pub _gameEnergyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
     pub _pauseController: *mut crate::GlobalNamespace::PauseController,
     pub _initData: *mut crate::GlobalNamespace::StandardLevelGameplayManager_InitData,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
+    pub _beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+    pub _returnToMenuController: *mut crate::GlobalNamespace::IReturnToMenuController,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub levelWillStartIntroEvent: *mut crate::System::Action,
     pub levelDidStartEvent: *mut crate::System::Action,
-    pub levelFailedEvent: *mut crate::System::Action,
     pub levelFinishedEvent: *mut crate::System::Action,
+    pub levelFailedEvent: *mut crate::System::Action,
     pub _gameState: crate::GlobalNamespace::StandardLevelGameplayManager_GameState,
+    pub _levelEndStateType: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
     pub _prePauseGameState: crate::GlobalNamespace::StandardLevelGameplayManager_GameState,
 }
 #[cfg(feature = "StandardLevelGameplayManager")]
@@ -39,8 +44,8 @@ impl crate::GlobalNamespace::StandardLevelGameplayManager {
     pub type GameState = crate::GlobalNamespace::StandardLevelGameplayManager_GameState;
     #[cfg(feature = "StandardLevelGameplayManager+InitData")]
     pub type InitData = crate::GlobalNamespace::StandardLevelGameplayManager_InitData;
-    #[cfg(feature = "StandardLevelGameplayManager+_Start_d__22")]
-    pub type _Start_d__22 = crate::GlobalNamespace::StandardLevelGameplayManager__Start_d__22;
+    #[cfg(feature = "StandardLevelGameplayManager+_Start_d__29")]
+    pub type _Start_d__29 = crate::GlobalNamespace::StandardLevelGameplayManager__Start_d__29;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -90,6 +95,16 @@ impl crate::GlobalNamespace::StandardLevelGameplayManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("HandlePauseControllerDidResume", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandlePauseControllerDidStartResume(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandlePauseControllerDidStartResume", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleSongDidFinish(
@@ -196,6 +211,18 @@ impl crate::GlobalNamespace::StandardLevelGameplayManager {
             .invoke("add_levelWillStartIntroEvent", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_levelEndStateType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType = __cordl_object
+            .invoke("get_levelEndStateType", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn remove_levelDidStartEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -283,11 +310,12 @@ for crate::GlobalNamespace::StandardLevelGameplayManager {
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum StandardLevelGameplayManager_GameState {
-    Failed = 4i32,
-    Finished = 3i32,
+    Failed = 5i32,
+    Finished = 4i32,
     Intro = 0i32,
     Paused = 2i32,
     Playing = 1i32,
+    Resuming = 3i32,
 }
 #[cfg(feature = "StandardLevelGameplayManager+GameState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -300,7 +328,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct StandardLevelGameplayManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub failOn0Energy: bool,
+    pub continueGameplayWith0Energy: bool,
 }
 #[cfg(feature = "StandardLevelGameplayManager+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -325,23 +353,23 @@ for crate::GlobalNamespace::StandardLevelGameplayManager_InitData {
 #[cfg(feature = "StandardLevelGameplayManager+InitData")]
 impl crate::GlobalNamespace::StandardLevelGameplayManager_InitData {
     pub fn New(
-        failOn0Energy: bool,
+        continueGameplayWith0Energy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (failOn0Energy))?;
+            .invoke_void(".ctor", (continueGameplayWith0Energy))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        failOn0Energy: bool,
+        continueGameplayWith0Energy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (failOn0Energy))?;
+            .invoke(".ctor", (continueGameplayWith0Energy))?;
         Ok(__cordl_ret.into())
     }
 }

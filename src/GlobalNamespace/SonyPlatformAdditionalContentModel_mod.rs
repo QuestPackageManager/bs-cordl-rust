@@ -33,8 +33,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SonyPlatformAdditionalConten
 }
 #[cfg(feature = "SonyPlatformAdditionalContentModel")]
 impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
-    #[cfg(feature = "SonyPlatformAdditionalContentModel+_EnsureDataValidity_d__20")]
-    pub type _EnsureDataValidity_d__20 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__EnsureDataValidity_d__20;
+    #[cfg(feature = "SonyPlatformAdditionalContentModel+_EnsureDataValidity_d__21")]
+    pub type _EnsureDataValidity_d__21 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__EnsureDataValidity_d__21;
     #[cfg(
         feature = "SonyPlatformAdditionalContentModel+_GetLevelDataVersionInternalAsync_d__12"
     )]
@@ -48,9 +48,9 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     )]
     pub type _GetPackEntitlementStatusInternalAsync_d__11 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetPackEntitlementStatusInternalAsync_d__11;
     #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_GetRedirectedLevelPackProductData_d__16"
+        feature = "SonyPlatformAdditionalContentModel+_GetRedirectedLevelPackProductData_d__17"
     )]
-    pub type _GetRedirectedLevelPackProductData_d__16 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetRedirectedLevelPackProductData_d__16;
+    pub type _GetRedirectedLevelPackProductData_d__17 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetRedirectedLevelPackProductData_d__17;
     #[cfg(
         feature = "SonyPlatformAdditionalContentModel+_IsPackBetterBuyThanLevelAsync_d__15"
     )]
@@ -63,8 +63,8 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         feature = "SonyPlatformAdditionalContentModel+_OpenLevelProductStoreAsync_d__13"
     )]
     pub type _OpenLevelProductStoreAsync_d__13 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__OpenLevelProductStoreAsync_d__13;
-    #[cfg(feature = "SonyPlatformAdditionalContentModel+_UpdateEntitlementsAsync_d__21")]
-    pub type _UpdateEntitlementsAsync_d__21 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__UpdateEntitlementsAsync_d__21;
+    #[cfg(feature = "SonyPlatformAdditionalContentModel+_UpdateEntitlementsAsync_d__22")]
+    pub type _UpdateEntitlementsAsync_d__22 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__UpdateEntitlementsAsync_d__22;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -320,6 +320,17 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             .invoke("OpenLevelProductStoreAsync", (levelId, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
+    pub fn OpenStore(
+        &mut self,
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OpenStore", (uri))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn UpdateEntitlementsAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -340,7 +351,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         > = __cordl_object.invoke("UpdateEntitlementsAsync", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _HasLevelPackEntitlement_b__18_0(
+    pub fn _HasLevelPackEntitlement_b__19_0(
         &mut self,
         levelProductData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
@@ -350,7 +361,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("<HasLevelPackEntitlement>b__18_0", (levelProductData))?;
+            .invoke("<HasLevelPackEntitlement>b__19_0", (levelProductData))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

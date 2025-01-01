@@ -5,7 +5,9 @@ pub struct SelectLanguageViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _continueButton: *mut crate::UnityEngine::UI::Button,
     pub _languageSettingsController: *mut crate::GlobalNamespace::LanguageSettingsController,
-    pub didChangeLanguageEvent: *mut crate::System::Action,
+    pub didChangeLanguageEvent: *mut crate::System::Action_1<
+        crate::BGLib::Polyglot::Language,
+    >,
     pub didPressContinueButtonEvent: *mut crate::System::Action,
 }
 #[cfg(feature = "SelectLanguageViewController")]
@@ -93,7 +95,9 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
     }
     pub fn add_didChangeLanguageEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -115,7 +119,9 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
     }
     pub fn remove_didChangeLanguageEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

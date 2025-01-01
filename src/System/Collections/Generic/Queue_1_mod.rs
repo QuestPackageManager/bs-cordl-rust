@@ -128,6 +128,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Queue_
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn New_IEnumerable_1_2(
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (collection))?;
+        Ok(__cordl_object.into())
+    }
     pub fn New_i32_1(
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -294,6 +309,20 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Queue_
         let __cordl_ret: bool = __cordl_object.invoke("TryDequeue", (result))?;
         Ok(__cordl_ret.into())
     }
+    pub fn TryPeek(
+        &mut self,
+        result: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryPeek", (result))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -306,6 +335,23 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Queue_
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_IEnumerable_1_2(
+        &mut self,
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (collection))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_1(

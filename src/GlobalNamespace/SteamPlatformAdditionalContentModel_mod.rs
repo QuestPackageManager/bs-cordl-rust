@@ -322,7 +322,18 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
             .invoke("OpenProductStore", (appId))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _HasLevelPackEntitlement_b__21_0(
+    pub fn OpenStore(
+        &mut self,
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OpenStore", (uri))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _HasLevelPackEntitlement_b__22_0(
         &mut self,
         levelProductData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
@@ -332,7 +343,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
             self,
         );
         let __cordl_ret: bool = __cordl_object
-            .invoke("<HasLevelPackEntitlement>b__21_0", (levelProductData))?;
+            .invoke("<HasLevelPackEntitlement>b__22_0", (levelProductData))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

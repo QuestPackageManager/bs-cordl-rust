@@ -9,6 +9,7 @@ pub struct TextFadeTransitions {
     pub _state: crate::GlobalNamespace::TextFadeTransitions_State,
     pub _nextText: *mut quest_hook::libil2cpp::Il2CppString,
     pub _fade: f32,
+    pub _delay: f32,
 }
 #[cfg(feature = "TextFadeTransitions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -72,12 +73,13 @@ impl crate::GlobalNamespace::TextFadeTransitions {
     pub fn ShowText(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        delay: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ShowText", (text))?;
+            .invoke("ShowText", (text, delay))?;
         Ok(__cordl_ret.into())
     }
     pub fn Update(

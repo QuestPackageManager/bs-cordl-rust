@@ -4,6 +4,13 @@
 pub struct SetApplicationVersionText {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _versionText: *mut crate::TMPro::TextMeshPro,
+    pub _labelText: *mut crate::TMPro::TextMeshPro,
+    pub _buildIdText: *mut crate::TMPro::TextMeshPro,
+    pub _platformIdText: *mut crate::TMPro::TextMeshPro,
+    pub _footSprite: *mut crate::UnityEngine::SpriteRenderer,
+    pub _rcBuildColor: crate::UnityEngine::Color,
+    pub _nonRCBuildColor: crate::UnityEngine::Color,
+    pub _gameVersionProvider: *mut crate::BeatSaber::Init::GameVersionProvider,
 }
 #[cfg(feature = "SetApplicationVersionText")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -25,12 +32,25 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SetApplicationVersionText {
 }
 #[cfg(feature = "SetApplicationVersionText")]
 impl crate::GlobalNamespace::SetApplicationVersionText {
+    #[cfg(feature = "SetApplicationVersionText+_Start_d__8")]
+    pub type _Start_d__8 = crate::GlobalNamespace::SetApplicationVersionText__Start_d__8;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn SetText(
+        &mut self,
+        gameVersion: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetText", (gameVersion))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,

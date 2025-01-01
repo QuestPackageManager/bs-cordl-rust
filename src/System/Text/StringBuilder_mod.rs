@@ -213,7 +213,7 @@ impl crate::System::Text::StringBuilder {
             .invoke("AppendSpanFormattable", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_Il2CppArray13(
+    pub fn Append_Il2CppArray14(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -241,7 +241,7 @@ impl crate::System::Text::StringBuilder {
             .invoke("Append", (value, startIndex, charCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_Il2CppObject12(
+    pub fn Append_Il2CppObject13(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -254,7 +254,7 @@ impl crate::System::Text::StringBuilder {
             .invoke("Append", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_Il2CppObject_i32_15(
+    pub fn Append_Il2CppObject_i32_16(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         valueCount: i32,
@@ -296,7 +296,7 @@ impl crate::System::Text::StringBuilder {
             .invoke("Append", (value, startIndex, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_ReadOnlySpan_1_14(
+    pub fn Append_ReadOnlySpan_1_15(
         &mut self,
         value: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<
@@ -362,7 +362,20 @@ impl crate::System::Text::StringBuilder {
             .invoke("Append", (value, repeatCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_f64_10(
+    pub fn Append_f32_10(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
+            .invoke("Append", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Append_f64_11(
         &mut self,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<
@@ -401,7 +414,7 @@ impl crate::System::Text::StringBuilder {
             .invoke("Append", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_u32_11(
+    pub fn Append_u32_12(
         &mut self,
         value: u32,
     ) -> quest_hook::libil2cpp::Result<

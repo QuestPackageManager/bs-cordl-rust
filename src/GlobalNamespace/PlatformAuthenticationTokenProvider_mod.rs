@@ -81,7 +81,7 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
     pub fn GetXPlatformAccessToken(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-        skipCache: bool,
+        skipCacheRead: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
                 crate::GlobalNamespace::XPlatformAccessTokenData,
             >,
         > = __cordl_object
-            .invoke("GetXPlatformAccessToken", (cancellationToken, skipCache))?;
+            .invoke("GetXPlatformAccessToken", (cancellationToken, skipCacheRead))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

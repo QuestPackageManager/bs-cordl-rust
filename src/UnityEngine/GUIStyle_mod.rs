@@ -38,7 +38,43 @@ impl std::ops::DerefMut for crate::UnityEngine::GUIStyle {
 }
 #[cfg(feature = "UnityEngine+GUIStyle")]
 impl crate::UnityEngine::GUIStyle {
-    pub fn Draw__cordl_bool__cordl_bool0(
+    pub fn CalcHeight(
+        &mut self,
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        width: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("CalcHeight", (content, width))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalcMinMaxWidth(
+        &mut self,
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        minWidth: quest_hook::libil2cpp::ByRefMut<f32>,
+        maxWidth: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CalcMinMaxWidth", (content, minWidth, maxWidth))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalcSizeWithConstraints(
+        &mut self,
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        constraints: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("CalcSizeWithConstraints", (content, constraints))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Draw__cordl_bool__cordl_bool__cordl_bool__cordl_bool0(
         &mut self,
         position: crate::UnityEngine::Rect,
         content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
@@ -62,6 +98,19 @@ impl crate::UnityEngine::GUIStyle {
         position: crate::UnityEngine::Rect,
         content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
         controlID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Draw", (position, content, controlID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Draw_i32__cordl_bool__cordl_bool2(
+        &mut self,
+        position: crate::UnityEngine::Rect,
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        controlID: i32,
         on: bool,
         hover: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -72,7 +121,7 @@ impl crate::UnityEngine::GUIStyle {
             .invoke("Draw", (position, content, controlID, on, hover))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Draw_i32__cordl_bool__cordl_bool2(
+    pub fn Draw_i32__cordl_bool__cordl_bool__cordl_bool__cordl_bool3(
         &mut self,
         position: crate::UnityEngine::Rect,
         content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
@@ -122,6 +171,69 @@ impl crate::UnityEngine::GUIStyle {
         );
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("GetStyleStatePtr", (idx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CalcHeight(
+        &mut self,
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        width: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object
+            .invoke("Internal_CalcHeight", (content, width))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CalcMinMaxWidth(
+        &mut self,
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("Internal_CalcMinMaxWidth", (content))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CalcMinMaxWidth_Injected(
+        &mut self,
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Internal_CalcMinMaxWidth_Injected", (content, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CalcSizeWithConstraints(
+        &mut self,
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        maxSize: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("Internal_CalcSizeWithConstraints", (content, maxSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CalcSizeWithConstraints_Injected(
+        &mut self,
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        maxSize: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "Internal_CalcSizeWithConstraints_Injected",
+                (content, maxSize, ret),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn Internal_Draw(
@@ -234,6 +346,26 @@ impl crate::UnityEngine::GUIStyle {
         let __cordl_ret: f32 = __cordl_object.invoke("get_fixedWidth", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_imagePosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ImagePosition> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ImagePosition = __cordl_object
+            .invoke("get_imagePosition", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isHeightDependantOnWidth(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_isHeightDependantOnWidth", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_margin(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -310,6 +442,13 @@ impl crate::UnityEngine::GUIStyle {
         let __cordl_ret: bool = __cordl_object.invoke("get_stretchWidth", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_wordWrap(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_wordWrap", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_name(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -341,6 +480,17 @@ impl crate::UnityEngine::GUIStyle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_stretchHeight", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_stretchWidth(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_stretchWidth", (value))?;
         Ok(__cordl_ret.into())
     }
 }

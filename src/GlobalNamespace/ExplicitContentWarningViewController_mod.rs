@@ -6,6 +6,7 @@ pub struct ExplicitContentWarningViewController {
     pub _toggleExplicit: *mut crate::UnityEngine::UI::Toggle,
     pub _continueButton: *mut crate::UnityEngine::UI::Button,
     pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
     pub didFinishEvent: *mut crate::System::Action,
 }
 #[cfg(feature = "ExplicitContentWarningViewController")]
@@ -30,8 +31,8 @@ for crate::GlobalNamespace::ExplicitContentWarningViewController {
 }
 #[cfg(feature = "ExplicitContentWarningViewController")]
 impl crate::GlobalNamespace::ExplicitContentWarningViewController {
-    #[cfg(feature = "ExplicitContentWarningViewController+_HandleClickedEvent_d__8")]
-    pub type _HandleClickedEvent_d__8 = crate::GlobalNamespace::ExplicitContentWarningViewController__HandleClickedEvent_d__8;
+    #[cfg(feature = "ExplicitContentWarningViewController+_HandleClickedEvent_d__9")]
+    pub type _HandleClickedEvent_d__9 = crate::GlobalNamespace::ExplicitContentWarningViewController__HandleClickedEvent_d__9;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

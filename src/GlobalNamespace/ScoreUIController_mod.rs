@@ -4,8 +4,8 @@
 pub struct ScoreUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scoreText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _initData: *mut crate::GlobalNamespace::ScoreUIController_InitData,
     pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
+    pub _initData: *mut crate::GlobalNamespace::ScoreUIController_InitData,
     pub _stringBuilder: *mut crate::System::Text::StringBuilder,
 }
 #[cfg(feature = "ScoreUIController")]
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::ScoreUIController {
             .invoke("UnregisterFromEvents", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateScore(
+    pub fn UpdateScore_i32_0(
         &mut self,
         multipliedScore: i32,
         modifiedScore: i32,
@@ -112,6 +112,17 @@ impl crate::GlobalNamespace::ScoreUIController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateScore", (multipliedScore, modifiedScore))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateScore_i32_1(
+        &mut self,
+        displayScore: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateScore", (displayScore))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

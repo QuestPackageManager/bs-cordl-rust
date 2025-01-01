@@ -11,6 +11,7 @@ pub struct BurstSliderGameNoteController {
     >,
     pub _wrapperGO: *mut crate::UnityEngine::GameObject,
     pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
     pub cubeNoteControllerDidInitEvent: *mut crate::System::Action_1<
         *mut crate::GlobalNamespace::BurstSliderGameNoteController,
     >,
@@ -19,6 +20,8 @@ pub struct BurstSliderGameNoteController {
     pub _bigCuttableBySaber: *mut crate::GlobalNamespace::BoxCuttableBySaber,
     pub _originalColliderSize: crate::UnityEngine::Vector3,
     pub _originalColliderCenter: crate::UnityEngine::Vector3,
+    pub _moveEndOffsetZ: f32,
+    pub _jumpEndOffsetZ: f32,
 }
 #[cfg(feature = "BurstSliderGameNoteController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -118,13 +121,9 @@ impl crate::GlobalNamespace::BurstSliderGameNoteController {
     pub fn Init(
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-        worldRotation: f32,
-        moveStartPos: crate::UnityEngine::Vector3,
-        moveEndPos: crate::UnityEngine::Vector3,
-        jumpEndPos: crate::UnityEngine::Vector3,
-        moveDuration: f32,
-        jumpDuration: f32,
-        jumpGravity: f32,
+        noteSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NoteSpawnData,
+        >,
         noteVisualModifierType: crate::GlobalNamespace::NoteVisualModifierType,
         uniformScale: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -134,19 +133,18 @@ impl crate::GlobalNamespace::BurstSliderGameNoteController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "Init",
-                (
-                    noteData,
-                    worldRotation,
-                    moveStartPos,
-                    moveEndPos,
-                    jumpEndPos,
-                    moveDuration,
-                    jumpDuration,
-                    jumpGravity,
-                    noteVisualModifierType,
-                    uniformScale,
-                ),
+                (noteData, noteSpawnData, noteVisualModifierType, uniformScale),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ManualUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ManualUpdate", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -205,6 +203,16 @@ impl crate::GlobalNamespace::BurstSliderGameNoteController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Pause", (pause))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetBigCuttableColliderSize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetBigCuttableColliderSize", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

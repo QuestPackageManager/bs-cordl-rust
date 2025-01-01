@@ -3,7 +3,6 @@
 #[derive(Debug)]
 pub struct MultiplayerMockSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _isEnabled: bool,
     pub _localPlayer: *mut crate::GlobalNamespace::MockPlayerSettings,
     pub _otherPlayers: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::MockPlayerSettings,
@@ -47,13 +46,6 @@ impl crate::GlobalNamespace::MultiplayerMockSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_isEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isEnabled", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_localPlayer(
@@ -125,17 +117,6 @@ impl crate::GlobalNamespace::MultiplayerMockSettings {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockServerSettings,
         > = __cordl_object.invoke("get_quickplayServer", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_isEnabled(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_isEnabled", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_multiplayerStatusData(

@@ -652,6 +652,9 @@ pub use GUITargetAttribute_mod::*;
 // class GUIUtility_mod; export all
 mod GUIUtility_mod;
 pub use GUIUtility_mod::*;
+// class GUIWordWrapSizer_mod; export all
+mod GUIWordWrapSizer_mod;
+pub use GUIWordWrapSizer_mod::*;
 // class GUI_mod; export all
 mod GUI_mod;
 pub use GUI_mod::*;
@@ -766,6 +769,9 @@ pub use ImageConversion_mod::*;
 // class ImageEffectAllowedInSceneView_mod; export all
 mod ImageEffectAllowedInSceneView_mod;
 pub use ImageEffectAllowedInSceneView_mod::*;
+// class ImagePosition_mod; export all
+mod ImagePosition_mod;
+pub use ImagePosition_mod::*;
 // namespace InputSystem;
 pub mod InputSystem;
 // class Input_mod; export all

@@ -89,6 +89,8 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     pub type __c__DisplayClass77_0 = crate::GlobalNamespace::IgnoranceConnectionManager___c__DisplayClass77_0;
     #[cfg(feature = "IgnoranceConnectionManager+__c__DisplayClass77_1")]
     pub type __c__DisplayClass77_1 = crate::GlobalNamespace::IgnoranceConnectionManager___c__DisplayClass77_1;
+    #[cfg(feature = "IgnoranceConnectionManager+__c__DisplayClass80_0")]
+    pub type __c__DisplayClass80_0 = crate::GlobalNamespace::IgnoranceConnectionManager___c__DisplayClass80_0;
     pub fn BackgroundDisconnectSentry(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -2,6 +2,7 @@
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum TableViewSelectionType {
+    DeselectableSingle = 3i32,
     Multiple = 2i32,
     None = 0i32,
     Single = 1i32,

@@ -5,7 +5,7 @@ pub struct GameCoreSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _screenCaptureAfterDelayPrefab: *mut crate::GlobalNamespace::ScreenCaptureAfterDelay,
     pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "GameCoreSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameCoreSceneSetup {
 }
 #[cfg(feature = "GameCoreSceneSetup")]
 impl crate::GlobalNamespace::GameCoreSceneSetup {
-    pub const kPauseButtonPressDurationMultiplier: f32 = 0.75f32;
+    pub const kPauseButtonPressDuration: f32 = 0.75f32;
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

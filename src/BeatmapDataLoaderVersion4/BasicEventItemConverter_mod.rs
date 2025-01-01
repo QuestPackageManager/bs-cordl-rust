@@ -2,11 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicEventItemConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverterProvider,
+    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _basicEvents: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::BeatmapSaveDataVersion4::BasicEvent,
     >,
     pub _specialEventsFilter: *mut crate::BeatmapDataLoaderVersion4::SpecialEventsFilter,
+    pub _lightEventConverter: *mut crate::GlobalNamespace::IBeatmapLightEventConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+BasicEventItemConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -16,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataLoaderVersion4+BasicEventItemConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverterProvider;
+    type Target = crate::GlobalNamespace::BeatToTimeConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,15 +33,17 @@ impl crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
     pub fn Convert(
         &mut self,
         index: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatIndex>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
-    > {
+        output: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::BeatmapEventData,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapEventData,
-        > = __cordl_object.invoke("Convert", (index))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Convert", (index, output))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -55,11 +58,17 @@ impl crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
         bpmTimeProcessor: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BpmTimeProcessor,
         >,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (basicEvents, specialEventsFilter, bpmTimeProcessor))?;
+            .invoke_void(
+                ".ctor",
+                (basicEvents, specialEventsFilter, bpmTimeProcessor, lightEventConverter),
+            )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -75,12 +84,18 @@ impl crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
         bpmTimeProcessor: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BpmTimeProcessor,
         >,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (basicEvents, specialEventsFilter, bpmTimeProcessor))?;
+            .invoke(
+                ".ctor",
+                (basicEvents, specialEventsFilter, bpmTimeProcessor, lightEventConverter),
+            )?;
         Ok(__cordl_ret.into())
     }
 }

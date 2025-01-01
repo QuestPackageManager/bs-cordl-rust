@@ -10,7 +10,7 @@ pub struct ControllersTransformSettingsViewController {
     pub _rotYSlider: *mut crate::HMUI::RangeValuesTextSlider,
     pub _rotZSlider: *mut crate::HMUI::RangeValuesTextSlider,
     pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "ControllersTransformSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

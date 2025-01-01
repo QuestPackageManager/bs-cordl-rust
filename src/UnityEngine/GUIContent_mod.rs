@@ -35,6 +35,15 @@ impl crate::UnityEngine::GUIContent {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn New_GUIContent3(
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (src))?;
+        Ok(__cordl_object.into())
+    }
     pub fn New_Il2CppString1(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -76,6 +85,17 @@ impl crate::UnityEngine::GUIContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_GUIContent3(
+        &mut self,
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (src))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString1(

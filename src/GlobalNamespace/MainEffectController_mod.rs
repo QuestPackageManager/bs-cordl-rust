@@ -133,6 +133,13 @@ impl crate::GlobalNamespace::MainEffectController {
             .invoke("add_afterImageEffectEvent", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_fadeValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_fadeValue", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn remove_afterImageEffectEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<

@@ -95,6 +95,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlatformExcep
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum PlatformException_ErrorType {
+    InvalidPlatformVersion = 3i32,
     PlatformInitialization = 1i32,
     PlatformNotInstalled = 0i32,
     PlatformUserEntitlement = 2i32,

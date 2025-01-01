@@ -26,6 +26,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LightConstants {
 impl crate::GlobalNamespace::LightConstants {
     pub const kBaseLightId: i32 = 25i32;
     pub const kLightProbeLightBakeIdPrefix: &'static str = "_LightProbeLightBakeId";
+    pub const kLightmapLightBakeIdPrefix: &'static str = "_LightmapLightBakeId";
     #[cfg(feature = "LightConstants+BakeId")]
     pub type BakeId = crate::GlobalNamespace::LightConstants_BakeId;
 }

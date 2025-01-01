@@ -496,19 +496,11 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         rank: i32,
         playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-            >,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (score, rank, playerName, playerId, gameplayModifiers),
-            )?;
+            .invoke_void(".ctor", (score, rank, playerName, playerId))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -517,17 +509,12 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         rank: i32,
         playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-            >,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (score, rank, playerName, playerId, gameplayModifiers))?;
+            .invoke(".ctor", (score, rank, playerName, playerId))?;
         Ok(__cordl_ret.into())
     }
 }

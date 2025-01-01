@@ -11,7 +11,6 @@ pub struct Saber {
     pub _saberBladeTopPos: crate::UnityEngine::Vector3,
     pub _saberBladeBottomPos: crate::UnityEngine::Vector3,
     pub _handlePos: crate::UnityEngine::Vector3,
-    pub _handleRot: crate::UnityEngine::Quaternion,
 }
 #[cfg(feature = "Saber")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -78,6 +77,13 @@ impl crate::GlobalNamespace::Saber {
         let __cordl_ret: f32 = __cordl_object.invoke("get_bladeSpeed", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_bladeSpeedForLogic(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_bladeSpeedForLogic", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_handlePos(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -88,17 +94,7 @@ impl crate::GlobalNamespace::Saber {
             .invoke("get_handlePos", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_handleRot(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("get_handleRot", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_movementData(
+    pub fn get_movementDataForLogic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberMovementData>,
@@ -108,7 +104,20 @@ impl crate::GlobalNamespace::Saber {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SaberMovementData,
-        > = __cordl_object.invoke("get_movementData", ())?;
+        > = __cordl_object.invoke("get_movementDataForLogic", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_movementDataForVisualEffects(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberMovementData>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SaberMovementData,
+        > = __cordl_object.invoke("get_movementDataForVisualEffects", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_saberBladeBottomPos(
@@ -121,6 +130,26 @@ impl crate::GlobalNamespace::Saber {
             .invoke("get_saberBladeBottomPos", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_saberBladeBottomPosForLogic(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_saberBladeBottomPosForLogic", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_saberBladeBottomPosForVisualEffects(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_saberBladeBottomPosForVisualEffects", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_saberBladeTopPos(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -129,6 +158,26 @@ impl crate::GlobalNamespace::Saber {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_saberBladeTopPos", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_saberBladeTopPosForLogic(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_saberBladeTopPosForLogic", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_saberBladeTopPosForVisualEffects(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_saberBladeTopPosForVisualEffects", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_saberType(

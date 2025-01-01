@@ -9,6 +9,7 @@ pub struct FadeInOutController {
     pub _fadeInStartDelay: f32,
     pub _defaultFadeOutDuration: f32,
     pub _defaultFadeInDuration: f32,
+    pub _inTransition_k__BackingField: bool,
 }
 #[cfg(feature = "FadeInOutController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -30,8 +31,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FadeInOutController {
 }
 #[cfg(feature = "FadeInOutController")]
 impl crate::GlobalNamespace::FadeInOutController {
-    #[cfg(feature = "FadeInOutController+_Fade_d__15")]
-    pub type _Fade_d__15 = crate::GlobalNamespace::FadeInOutController__Fade_d__15;
+    #[cfg(feature = "FadeInOutController+_Fade_d__19")]
+    pub type _Fade_d__19 = crate::GlobalNamespace::FadeInOutController__Fade_d__19;
     pub fn Fade(
         &mut self,
         fromValue: f32,
@@ -168,6 +169,24 @@ impl crate::GlobalNamespace::FadeInOutController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_inTransition(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_inTransition", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_inTransition(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_inTransition", (value))?;
         Ok(__cordl_ret.into())
     }
 }

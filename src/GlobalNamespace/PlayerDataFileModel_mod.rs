@@ -32,6 +32,32 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     pub const kPlayerDataFileName: &'static str = "PlayerData.dat";
     #[cfg(feature = "PlayerDataFileModel+_LoadAsync_d__13")]
     pub type _LoadAsync_d__13 = crate::GlobalNamespace::PlayerDataFileModel__LoadAsync_d__13;
+    pub fn ColorOverrideTypeFromSaveData(
+        &mut self,
+        c: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType = __cordl_object
+            .invoke("ColorOverrideTypeFromSaveData", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ColorOverrideTypeToSaveData(
+        &mut self,
+        c: crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType = __cordl_object
+            .invoke("ColorOverrideTypeToSaveData", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateDefaultOverrideEnvironmentSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

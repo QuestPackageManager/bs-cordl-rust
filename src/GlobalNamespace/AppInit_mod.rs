@@ -70,12 +70,17 @@ impl crate::GlobalNamespace::AppInit {
     }
     pub fn HandleBeforeDismissingScenes(
         &mut self,
+        scenes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleBeforeDismissingScenes", ())?;
+            .invoke("HandleBeforeDismissingScenes", (scenes))?;
         Ok(__cordl_ret.into())
     }
     pub fn InitializeAsync(

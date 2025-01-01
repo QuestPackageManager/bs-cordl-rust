@@ -22,6 +22,7 @@ pub struct MultiplayerConnectedPlayerBeatmapObjectManager {
     >,
     pub _beatmapObjectEventManager: *mut crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
     pub _initData: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_InitData,
+    pub _defaultBeatmapObjectSpawnMovementData: *mut crate::GlobalNamespace::BeatmapObjectSpawnMovementData,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -181,6 +182,9 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
         obstaclePool: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController_Pool,
         >,
+        variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::VariableMovementDataProvider,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -195,6 +199,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
                     burstSliderGameNotePool,
                     bombNotePool,
                     obstaclePool,
+                    variableMovementDataProvider,
                 ),
             )?;
         Ok(__cordl_object.into())
@@ -203,9 +208,8 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
+            crate::GlobalNamespace::NoteSpawnData,
         >,
-        rotation: f32,
         forceIsFirstNoteBehaviour: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -214,7 +218,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "ProcessNoteData",
-                (noteData, noteSpawnData, rotation, forceIsFirstNoteBehaviour),
+                (noteData, noteSpawnData, forceIsFirstNoteBehaviour),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -222,30 +226,28 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
         &mut self,
         obstacleData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
         obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
+            crate::GlobalNamespace::ObstacleSpawnData,
         >,
-        rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessObstacleData", (obstacleData, obstacleSpawnData, rotation))?;
+            .invoke("ProcessObstacleData", (obstacleData, obstacleSpawnData))?;
         Ok(__cordl_ret.into())
     }
     pub fn ProcessSliderData(
         &mut self,
         sliderData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
         sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
+            crate::GlobalNamespace::SliderSpawnData,
         >,
-        rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessSliderData", (sliderData, sliderSpawnData, rotation))?;
+            .invoke("ProcessSliderData", (sliderData, sliderSpawnData))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -271,6 +273,9 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
         obstaclePool: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController_Pool,
         >,
+        variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::VariableMovementDataProvider,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -286,6 +291,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
                     burstSliderGameNotePool,
                     bombNotePool,
                     obstaclePool,
+                    variableMovementDataProvider,
                 ),
             )?;
         Ok(__cordl_ret.into())
@@ -342,6 +348,8 @@ pub struct MultiplayerConnectedPlayerBeatmapObjectManager_InitData {
     pub disappearingArrows: bool,
     pub ghostNotes: bool,
     pub notesUniformScale: f32,
+    pub noteJumpMovementSpeed: f32,
+    pub bpm: f32,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -370,11 +378,22 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_Init
         disappearingArrows: bool,
         ghostNotes: bool,
         notesUniformScale: f32,
+        noteJumpMovementSpeed: f32,
+        bpm: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (disappearingArrows, ghostNotes, notesUniformScale))?;
+            .invoke_void(
+                ".ctor",
+                (
+                    disappearingArrows,
+                    ghostNotes,
+                    notesUniformScale,
+                    noteJumpMovementSpeed,
+                    bpm,
+                ),
+            )?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -382,12 +401,23 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_Init
         disappearingArrows: bool,
         ghostNotes: bool,
         notesUniformScale: f32,
+        noteJumpMovementSpeed: f32,
+        bpm: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (disappearingArrows, ghostNotes, notesUniformScale))?;
+            .invoke(
+                ".ctor",
+                (
+                    disappearingArrows,
+                    ghostNotes,
+                    notesUniformScale,
+                    noteJumpMovementSpeed,
+                    bpm,
+                ),
+            )?;
         Ok(__cordl_ret.into())
     }
 }

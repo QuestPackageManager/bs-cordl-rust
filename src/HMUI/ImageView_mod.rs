@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageView {
-    __cordl_parent: crate::UnityEngine::UI::Image,
+    __cordl_parent: crate::HMUI::ImageViewBase,
     pub _useScriptableObjectColors: bool,
     pub _colorSo: *mut crate::GlobalNamespace::ColorSO,
     pub _color0So: *mut crate::GlobalNamespace::ColorSO,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ImageView")]
 impl std::ops::Deref for crate::HMUI::ImageView {
-    type Target = crate::UnityEngine::UI::Image;
+    type Target = crate::HMUI::ImageViewBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

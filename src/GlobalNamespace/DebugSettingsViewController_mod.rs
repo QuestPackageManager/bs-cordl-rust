@@ -7,7 +7,7 @@ pub struct DebugSettingsViewController {
     pub _fpsRecorder: *mut crate::UnityEngine::UI::Toggle,
     pub _memoryTracker: *mut crate::UnityEngine::UI::Toggle,
     pub _showBeatmapLevelVersions: *mut crate::UnityEngine::UI::Toggle,
-    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
 }
 #[cfg(feature = "DebugSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

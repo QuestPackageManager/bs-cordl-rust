@@ -168,8 +168,8 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct PS5SharedPackageSKUsSO_PS5BuildVersion {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _masterVersion: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _contentVersion: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _masterVersion: *mut crate::GlobalNamespace::SonyVersion,
+    pub _contentVersion: *mut crate::GlobalNamespace::SonyContentVersion,
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -193,6 +193,29 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
 impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
+    pub fn CopyValueFrom(
+        &mut self,
+        newVersion: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CopyValueFrom", (newVersion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IncreaseContentVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("IncreaseContentVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -213,26 +236,26 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
     pub fn get_contentVersion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyContentVersion>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
+            crate::GlobalNamespace::SonyContentVersion,
         > = __cordl_object.invoke("get_contentVersion", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_masterVersion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
+            crate::GlobalNamespace::SonyVersion,
         > = __cordl_object.invoke("get_masterVersion", ())?;
         Ok(__cordl_ret.into())
     }

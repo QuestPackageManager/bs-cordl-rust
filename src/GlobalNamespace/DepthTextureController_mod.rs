@@ -3,10 +3,6 @@
 #[derive(Debug)]
 pub struct DepthTextureController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _handler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    pub _camera: *mut crate::UnityEngine::Camera,
-    pub _cachedPreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
 }
 #[cfg(feature = "DepthTextureController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -29,44 +25,25 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DepthTextureController {
 #[cfg(feature = "DepthTextureController")]
 impl crate::GlobalNamespace::DepthTextureController {
     pub const kDepthTextureEnabledKeyword: &'static str = "DEPTH_TEXTURE_ENABLED";
+    pub fn Init(
+        &mut self,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (settingsManager))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
-    }
-    pub fn OnPreRender(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPreRender", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetShaderKeyword(
-        &mut self,
-        keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetShaderKeyword", (keyword, value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

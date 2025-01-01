@@ -24,14 +24,14 @@ pub struct LevelCollectionTableView {
     pub _beatmapLevels: *mut crate::System::Collections::Generic::IReadOnlyList_1<
         *mut crate::GlobalNamespace::BeatmapLevel,
     >,
+    pub _selectedRow: i32,
+    pub _selectedBeatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     pub _headerSprite: *mut crate::UnityEngine::Sprite,
     pub _headerText: *mut quest_hook::libil2cpp::Il2CppString,
     pub _showLevelPackHeader: bool,
     pub _favoriteLevelIds: *mut crate::System::Collections::Generic::HashSet_1<
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _selectedRow: i32,
-    pub _selectedBeatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
 }
 #[cfg(feature = "LevelCollectionTableView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn CellForIdx(
         &mut self,
         tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-        row: i32,
+        index: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
     > {
@@ -74,14 +74,14 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::TableCell> = __cordl_object
-            .invoke("CellForIdx", (tableView, row))?;
+            .invoke("CellForIdx", (tableView, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+    pub fn CellSize(&mut self, idx: i32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
+        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", (idx))?;
         Ok(__cordl_ret.into())
     }
     pub fn ClearSelection(
@@ -104,16 +104,16 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
             .invoke("HandleAdditionalContentModelDidInvalidateData", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn HandleDidSelectRowEvent(
+    pub fn HandleDidSelectCellWithIndex(
         &mut self,
         tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-        row: i32,
+        index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleDidSelectRowEvent", (tableView, row))?;
+            .invoke("HandleDidSelectCellWithIndex", (tableView, index))?;
         Ok(__cordl_ret.into())
     }
     pub fn Init_1(
@@ -207,6 +207,16 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
             .invoke("RefreshLevelsAvailability", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ReloadCellsData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReloadCellsData", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SelectLevel(
         &mut self,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -256,6 +266,16 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
                     sortBeatmapLevels,
                 ),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateScrollviewContentSize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateScrollviewContentSize", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

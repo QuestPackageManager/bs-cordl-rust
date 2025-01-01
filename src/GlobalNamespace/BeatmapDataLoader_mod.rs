@@ -96,6 +96,9 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
         environmentInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IEnvironmentInfo,
         >,
+        lightshowEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentInfo,
+        >,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiers,
@@ -120,6 +123,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
                     startBpm,
                     loadingForDesignatedEnvironment,
                     environmentInfo,
+                    lightshowEnvironmentInfo,
                     beatmapLevelDataVersion,
                     gameplayModifiers,
                     playerSpecificSettings,
@@ -135,7 +139,10 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
         beatmapKey: crate::GlobalNamespace::BeatmapKey,
         startBpm: f32,
         loadingForDesignatedEnvironment: bool,
-        environmentInfo: quest_hook::libil2cpp::Gc<
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentInfo,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IEnvironmentInfo,
         >,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
@@ -168,7 +175,8 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
                     beatmapKey,
                     startBpm,
                     loadingForDesignatedEnvironment,
-                    environmentInfo,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
                     beatmapLevelDataVersion,
                     gameplayModifiers,
                     playerSpecificSettings,

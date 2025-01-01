@@ -3,7 +3,8 @@
 #[derive(Debug)]
 pub struct OverrideEnvironmentSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub overrideEnvironments: bool,
+    pub didChangeOverrideSettingsEvent: *mut crate::System::Action,
+    pub _overrideEnvironments: bool,
     pub _data: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::GlobalNamespace::EnvironmentType,
         *mut crate::GlobalNamespace::EnvironmentInfoSO,
@@ -73,6 +74,46 @@ impl crate::GlobalNamespace::OverrideEnvironmentSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_didChangeOverrideSettingsEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didChangeOverrideSettingsEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_overrideEnvironments(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_overrideEnvironments", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_didChangeOverrideSettingsEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didChangeOverrideSettingsEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_overrideEnvironments(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_overrideEnvironments", (value))?;
         Ok(__cordl_ret.into())
     }
 }

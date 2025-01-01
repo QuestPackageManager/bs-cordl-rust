@@ -11,6 +11,8 @@ pub struct DebugConsoleController {
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _container: *mut crate::Zenject::DiContainer,
+    pub _commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
+    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
     pub _commands: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::ConsoleCommandBase,
@@ -39,12 +41,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DebugConsoleController {
 impl crate::GlobalNamespace::DebugConsoleController {
     #[cfg(feature = "DebugConsoleController+ConsoleMessage")]
     pub type ConsoleMessage = crate::GlobalNamespace::DebugConsoleController_ConsoleMessage;
-    #[cfg(feature = "DebugConsoleController+_ExecuteCommandsAsync_d__9")]
-    pub type _ExecuteCommandsAsync_d__9 = crate::GlobalNamespace::DebugConsoleController__ExecuteCommandsAsync_d__9;
-    #[cfg(feature = "DebugConsoleController+_ExecuteCommands_d__8")]
-    pub type _ExecuteCommands_d__8 = crate::GlobalNamespace::DebugConsoleController__ExecuteCommands_d__8;
-    #[cfg(feature = "DebugConsoleController+_TryExecuteCommand_d__11")]
-    pub type _TryExecuteCommand_d__11 = crate::GlobalNamespace::DebugConsoleController__TryExecuteCommand_d__11;
+    #[cfg(feature = "DebugConsoleController+_ExecuteCommandsAsync_d__11")]
+    pub type _ExecuteCommandsAsync_d__11 = crate::GlobalNamespace::DebugConsoleController__ExecuteCommandsAsync_d__11;
+    #[cfg(feature = "DebugConsoleController+_ExecuteCommands_d__10")]
+    pub type _ExecuteCommands_d__10 = crate::GlobalNamespace::DebugConsoleController__ExecuteCommands_d__10;
+    #[cfg(feature = "DebugConsoleController+_TryExecuteCommand_d__13")]
+    pub type _TryExecuteCommand_d__13 = crate::GlobalNamespace::DebugConsoleController__TryExecuteCommand_d__13;
     pub fn CheckCommand(
         &mut self,
         command: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
@@ -251,6 +253,16 @@ impl crate::GlobalNamespace::DebugConsoleController {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
         > = __cordl_object.invoke("TryExecuteCommand", (commandText, messages))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _Initialize_b__8_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<Initialize>b__8_0", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

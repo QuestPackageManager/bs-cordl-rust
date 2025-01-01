@@ -37,13 +37,9 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
     pub fn Init(
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-        worldRotation: f32,
-        moveStartPos: crate::UnityEngine::Vector3,
-        moveEndPos: crate::UnityEngine::Vector3,
-        jumpEndPos: crate::UnityEngine::Vector3,
-        moveDuration: f32,
-        jumpDuration: f32,
-        jumpGravity: f32,
+        noteSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NoteSpawnData,
+        >,
         noteVisualModifierType: crate::GlobalNamespace::NoteVisualModifierType,
         uniformScale: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,18 +49,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "Init",
-                (
-                    noteData,
-                    worldRotation,
-                    moveStartPos,
-                    moveEndPos,
-                    jumpEndPos,
-                    moveDuration,
-                    jumpDuration,
-                    jumpGravity,
-                    noteVisualModifierType,
-                    uniformScale,
-                ),
+                (noteData, noteSpawnData, noteVisualModifierType, uniformScale),
             )?;
         Ok(__cordl_ret.into())
     }

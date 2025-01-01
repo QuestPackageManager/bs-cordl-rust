@@ -41,6 +41,20 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
     pub type MenuItem = crate::UnityEngine::UIElements::GenericDropdownMenu_MenuItem;
     #[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu+__c__DisplayClass39_0")]
     pub type __c__DisplayClass39_0 = crate::UnityEngine::UIElements::GenericDropdownMenu___c__DisplayClass39_0;
+    #[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu+__c__DisplayClass54_0")]
+    pub type __c__DisplayClass54_0 = crate::UnityEngine::UIElements::GenericDropdownMenu___c__DisplayClass54_0;
+    pub fn AddDisabledItem(
+        &mut self,
+        itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isChecked: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddDisabledItem", (itemName, isChecked))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AddItem_Action0(
         &mut self,
         itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -291,6 +305,18 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnTargetElementDetachFromPanel", (evt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateItem(
+        &mut self,
+        itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isChecked: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateItem", (itemName, isChecked))?;
         Ok(__cordl_ret.into())
     }
     pub fn UpdateSelection(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BasicBeatmapObjectManager {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
-    pub _firstBasicNoteTime: crate::System::Nullable_1<f32>,
+    pub _sliderControllerPool: *mut crate::GlobalNamespace::SliderController_Pool,
+    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::VariableMovementDataProvider,
     pub _initData: *mut crate::GlobalNamespace::BasicBeatmapObjectManager_InitData,
+    pub _random: *mut crate::System::Random,
     pub _basicGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
         *mut crate::GlobalNamespace::GameNoteController,
     >,
@@ -26,6 +28,7 @@ pub struct BasicBeatmapObjectManager {
             *mut crate::GlobalNamespace::SliderController,
         >,
     >,
+    pub _firstBasicNoteTime: crate::System::Nullable_1<f32>,
 }
 #[cfg(feature = "BasicBeatmapObjectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -91,6 +94,10 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
         initData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BasicBeatmapObjectManager_InitData,
         >,
+        random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+        variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::VariableMovementDataProvider,
+        >,
         basicGameNotePool: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameNoteController_Pool,
         >,
@@ -118,6 +125,8 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
                 "Init",
                 (
                     initData,
+                    random,
+                    variableMovementDataProvider,
                     basicGameNotePool,
                     burstSliderHeadGameNotePool,
                     burstSliderGameNotePool,
@@ -139,9 +148,8 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
+            crate::GlobalNamespace::NoteSpawnData,
         >,
-        rotation: f32,
         forceIsFirstNoteBehaviour: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -150,7 +158,7 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "ProcessNoteData",
-                (noteData, noteSpawnData, rotation, forceIsFirstNoteBehaviour),
+                (noteData, noteSpawnData, forceIsFirstNoteBehaviour),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -158,30 +166,48 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
         &mut self,
         obstacleData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
         obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
+            crate::GlobalNamespace::ObstacleSpawnData,
         >,
-        rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessObstacleData", (obstacleData, obstacleSpawnData, rotation))?;
+            .invoke("ProcessObstacleData", (obstacleData, obstacleSpawnData))?;
         Ok(__cordl_ret.into())
     }
     pub fn ProcessSliderData(
         &mut self,
         sliderData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
         sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
+            crate::GlobalNamespace::SliderSpawnData,
         >,
-        rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessSliderData", (sliderData, sliderSpawnData, rotation))?;
+            .invoke("ProcessSliderData", (sliderData, sliderSpawnData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn __InvalidateBombNotePool(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("__InvalidateBombNotePool", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn __InvalidateGameNotePools(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("__InvalidateGameNotePools", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

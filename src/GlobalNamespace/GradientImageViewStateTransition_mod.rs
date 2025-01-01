@@ -119,6 +119,9 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             crate::System::Action_1<crate::UnityEngine::Color>,
         >,
         onCompleteAction: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        transitionTiming: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TransitionTimingSO,
+        >,
         colorTween: quest_hook::libil2cpp::ByRefMut<*mut crate::Tweening::ColorTween>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -127,7 +130,14 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "StartTween",
-                (startColor, endColor, tweenAction, onCompleteAction, colorTween),
+                (
+                    startColor,
+                    endColor,
+                    tweenAction,
+                    onCompleteAction,
+                    transitionTiming,
+                    colorTween,
+                ),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -135,75 +145,106 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         &mut self,
         endColor1: crate::UnityEngine::Color,
         endColor2: crate::UnityEngine::Color,
+        transitionTiming: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TransitionTimingSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartTweens", (endColor1, endColor2))?;
+            .invoke("StartTweens", (endColor1, endColor2, transitionTiming))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StopCurrentTransitionAnimation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopCurrentTransitionAnimation", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn TransitionToDisabledState(
         &mut self,
+        transitionTiming: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TransitionTimingSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToDisabledState", ())?;
+            .invoke("TransitionToDisabledState", (transitionTiming))?;
         Ok(__cordl_ret.into())
     }
     pub fn TransitionToHighlightedState(
         &mut self,
+        transitionTiming: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TransitionTimingSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToHighlightedState", ())?;
+            .invoke("TransitionToHighlightedState", (transitionTiming))?;
         Ok(__cordl_ret.into())
     }
     pub fn TransitionToNormalState(
         &mut self,
+        transitionTiming: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TransitionTimingSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToNormalState", ())?;
+            .invoke("TransitionToNormalState", (transitionTiming))?;
         Ok(__cordl_ret.into())
     }
     pub fn TransitionToPressedState(
         &mut self,
+        transitionTiming: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TransitionTimingSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToPressedState", ())?;
+            .invoke("TransitionToPressedState", (transitionTiming))?;
         Ok(__cordl_ret.into())
     }
     pub fn TransitionToSelectedAndHighlightedState(
         &mut self,
+        transitionTiming: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TransitionTimingSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToSelectedAndHighlightedState", ())?;
+            .invoke("TransitionToSelectedAndHighlightedState", (transitionTiming))?;
         Ok(__cordl_ret.into())
     }
     pub fn TransitionToSelectedState(
         &mut self,
+        transitionTiming: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TransitionTimingSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionToSelectedState", ())?;
+            .invoke("TransitionToSelectedState", (transitionTiming))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _StartTweens_b__17_2(
+    pub fn _StartTweens_b__18_2(
         &mut self,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -211,10 +252,10 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<StartTweens>b__17_2", (color))?;
+            .invoke("<StartTweens>b__18_2", (color))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _StartTweens_b__17_3(
+    pub fn _StartTweens_b__18_3(
         &mut self,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -222,27 +263,27 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<StartTweens>b__17_3", (color))?;
+            .invoke("<StartTweens>b__18_3", (color))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _StartTweens_g__Color1CompleteAction_17_0(
+    pub fn _StartTweens_g__Color1CompleteAction_18_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<StartTweens>g__Color1CompleteAction|17_0", ())?;
+            .invoke("<StartTweens>g__Color1CompleteAction|18_0", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _StartTweens_g__Color2CompleteAction_17_1(
+    pub fn _StartTweens_g__Color2CompleteAction_18_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<StartTweens>g__Color2CompleteAction|17_1", ())?;
+            .invoke("<StartTweens>g__Color2CompleteAction|18_1", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

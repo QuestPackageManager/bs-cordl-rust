@@ -4,9 +4,15 @@
 pub struct MenuLightsManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _defaultPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _smooth: f32,
     pub _lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
+    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
     pub _preset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
+    pub _originalColors: *mut crate::System::Collections::Generic::Dictionary_2<
+        i32,
+        crate::UnityEngine::Color,
+    >,
+    pub _animationTween: *mut crate::Tweening::FloatTween,
+    pub _alphaMultiplier: f32,
 }
 #[cfg(feature = "MenuLightsManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -28,8 +34,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MenuLightsManager {
 }
 #[cfg(feature = "MenuLightsManager")]
 impl crate::GlobalNamespace::MenuLightsManager {
-    #[cfg(feature = "MenuLightsManager+_Start_d__4")]
-    pub type _Start_d__4 = crate::GlobalNamespace::MenuLightsManager__Start_d__4;
+    pub const kDefaultAnimationDuration: f32 = 0.5f32;
+    #[cfg(feature = "MenuLightsManager+_Start_d__8")]
+    pub type _Start_d__8 = crate::GlobalNamespace::MenuLightsManager__Start_d__8;
     pub fn CurrentColorForID(
         &mut self,
         lightId: i32,
@@ -41,16 +48,34 @@ impl crate::GlobalNamespace::MenuLightsManager {
             .invoke("CurrentColorForID", (lightId))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsColorVeryCloseToColor(
+    pub fn GetLightForIndex(
         &mut self,
-        color0: crate::UnityEngine::Color,
-        color1: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::ValueTuple_2<i32, crate::UnityEngine::Color>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsColorVeryCloseToColor", (color0, color1))?;
+        let __cordl_ret: crate::System::ValueTuple_2<i32, crate::UnityEngine::Color> = __cordl_object
+            .invoke("GetLightForIndex", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLightsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetLightsCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleTweenFinished(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleTweenFinished", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -70,15 +95,38 @@ impl crate::GlobalNamespace::MenuLightsManager {
             .invoke("RefreshColors", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn RefreshLightsDictForPreset(
+    pub fn ResetColorPresetToDefault(
         &mut self,
-        preset: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsPresetSO>,
+        animated: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshLightsDictForPreset", (preset))?;
+            .invoke("ResetColorPresetToDefault", (animated))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveOriginalColors(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SaveOriginalColors", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetAlphaMultiplier(
+        &mut self,
+        alphaMultiplier: f32,
+        animated: bool,
+        duration: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetAlphaMultiplier", (alphaMultiplier, animated, duration))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetColor(
@@ -97,24 +145,35 @@ impl crate::GlobalNamespace::MenuLightsManager {
         &mut self,
         preset: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsPresetSO>,
         animated: bool,
+        duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColorPreset", (preset, animated))?;
+            .invoke("SetColorPreset", (preset, animated, duration))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetColorsFromPreset(
+    pub fn SetDefaultPreset(
         &mut self,
         preset: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsPresetSO>,
-        interpolationFactor: f32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+        animated: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("SetColorsFromPreset", (preset, interpolationFactor))?;
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetDefaultPreset", (preset, animated))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTargetColors(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetTargetColors", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Start(
@@ -130,14 +189,26 @@ impl crate::GlobalNamespace::MenuLightsManager {
         > = __cordl_object.invoke("Start", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Update(
+    pub fn StartLightAnimation(
         &mut self,
+        duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+            .invoke("StartLightAnimation", (duration))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateColors(
+        &mut self,
+        interpolationFactor: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateColors", (interpolationFactor))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

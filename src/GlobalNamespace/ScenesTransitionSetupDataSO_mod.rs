@@ -9,6 +9,7 @@ pub struct ScenesTransitionSetupDataSO {
     pub _sceneSetupDataArray: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::SceneSetupData,
     >,
+    pub beforeScenesWillBeActivatedEvent: *mut crate::System::Action,
 }
 #[cfg(feature = "ScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -30,6 +31,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ScenesTransitionSetupDataSO 
 }
 #[cfg(feature = "ScenesTransitionSetupDataSO")]
 impl crate::GlobalNamespace::ScenesTransitionSetupDataSO {
+    pub fn BeforeScenesWillBeActivated(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BeforeScenesWillBeActivated", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn BeforeScenesWillBeActivatedAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -79,6 +90,16 @@ impl crate::GlobalNamespace::ScenesTransitionSetupDataSO {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn _BeforeScenesWillBeActivatedAsync_b__10_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<BeforeScenesWillBeActivatedAsync>b__10_0", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -87,6 +108,17 @@ impl crate::GlobalNamespace::ScenesTransitionSetupDataSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_beforeScenesWillBeActivatedEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_beforeScenesWillBeActivatedEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_scenes(
@@ -102,6 +134,17 @@ impl crate::GlobalNamespace::ScenesTransitionSetupDataSO {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::SceneInfo>,
         > = __cordl_object.invoke("get_scenes", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_beforeScenesWillBeActivatedEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_beforeScenesWillBeActivatedEvent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_scenes(

@@ -9,6 +9,7 @@ pub struct EnvironmentColorManager {
     pub _environmentColor0Boost: *mut crate::GlobalNamespace::SimpleColorSO,
     pub _environmentColor1Boost: *mut crate::GlobalNamespace::SimpleColorSO,
     pub _colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+    pub didChangeColorEvent: *mut crate::System::Action,
 }
 #[cfg(feature = "EnvironmentColorManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -78,6 +79,17 @@ impl crate::GlobalNamespace::EnvironmentColorManager {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_didChangeColorEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_didChangeColorEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_environmentColor0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
@@ -118,6 +130,17 @@ impl crate::GlobalNamespace::EnvironmentColorManager {
             .invoke("get_environmentColor1Boost", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn remove_didChangeColorEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_didChangeColorEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "EnvironmentColorManager")]
 impl quest_hook::libil2cpp::ObjectType
@@ -127,5 +150,19 @@ for crate::GlobalNamespace::EnvironmentColorManager {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "EnvironmentColorManager")]
+impl AsRef<crate::GlobalNamespace::IEnvironmentColorProvider>
+for crate::GlobalNamespace::EnvironmentColorManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IEnvironmentColorProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "EnvironmentColorManager")]
+impl AsMut<crate::GlobalNamespace::IEnvironmentColorProvider>
+for crate::GlobalNamespace::EnvironmentColorManager {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEnvironmentColorProvider {
+        unsafe { std::mem::transmute(self) }
     }
 }
